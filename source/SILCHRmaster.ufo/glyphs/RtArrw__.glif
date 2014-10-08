@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="RtArrw" format="1">
+  <advance width="2048"/>
+  <unicode hex="2192"/>
+  <outline>
+    <contour>
+      <point x="1915" y="545" type="line" name="hr00"/>
+      <point x="1915" y="684" type="line"/>
+      <point x="1317" y="942" type="line"/>
+      <point x="1280" y="848" type="line"/>
+      <point x="1702" y="678" type="line"/>
+      <point x="133" y="678" type="line"/>
+      <point x="133" y="551" type="line"/>
+      <point x="1702" y="551" type="line"/>
+      <point x="1280" y="381" type="line"/>
+      <point x="1317" y="287" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="hr00">
+      <hstem pos="551" width="127" />
+      <vstem pos="133" width="1782" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

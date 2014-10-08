@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Dagger" format="1">
+  <advance width="1024"/>
+  <unicode hex="2020"/>
+  <outline>
+    <contour>
+      <point x="772" y="1311" type="line" name="hr01"/>
+      <point x="698" y="1497" type="line"/>
+      <point x="553" y="1311" type="line"/>
+      <point x="580" y="1022" type="line"/>
+      <point x="639" y="1022" type="line"/>
+    </contour>
+    <contour>
+      <point x="1114" y="985" type="line" name="hr02"/>
+      <point x="973" y="1085" type="line" name="hr03"/>
+      <point x="645" y="997" type="line"/>
+      <point x="639" y="963" type="line" name="hr04"/>
+      <point x="934" y="887" type="line"/>
+    </contour>
+    <contour>
+      <point x="563" y="999" type="line" name="hr05"/>
+      <point x="264" y="1085" type="line" name="hr06"/>
+      <point x="88" y="985" type="line"/>
+      <point x="223" y="887" type="line"/>
+      <point x="555" y="963" type="line" name="hr07"/>
+    </contour>
+    <contour>
+      <point x="645" y="600" type="line"/>
+      <point x="625" y="942" type="line"/>
+      <point x="563" y="942" type="line"/>
+      <point x="416" y="600" type="line"/>
+      <point x="332" y="-264" type="line"/>
+      <point x="391" y="-264" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="hr01">
+      <hstem pos="999" width="-20" />
+      <vstem pos="88" width="1026" />
+    </hintset>
+    <hintset pointTag="hr02">
+      <hstem pos="985" width="-20" />
+      <vstem pos="88" width="1026" />
+    </hintset>
+    <hintset pointTag="hr03">
+      <hstem pos="997" width="-20" />
+      <vstem pos="88" width="1026" />
+    </hintset>
+    <hintset pointTag="hr04">
+      <hstem pos="985" width="-20" />
+      <vstem pos="88" width="1026" />
+    </hintset>
+    <hintset pointTag="hr05">
+      <hstem pos="999" width="-20" />
+      <vstem pos="88" width="1026" />
+    </hintset>
+    <hintset pointTag="hr06">
+      <hstem pos="985" width="-20" />
+      <vstem pos="88" width="1026" />
+    </hintset>
+    <hintset pointTag="hr07">
+      <hstem pos="999" width="-20" />
+      <vstem pos="88" width="1026" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

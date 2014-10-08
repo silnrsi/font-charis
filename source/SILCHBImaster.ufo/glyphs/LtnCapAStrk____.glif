@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapAStrk" format="1">
+  <advance width="1464"/>
+  <unicode hex="023A"/>
+  <outline>
+    <contour>
+      <point x="183" y="-90" type="line" name="hr00"/>
+      <point x="331" y="-197" type="line"/>
+      <point x="1433" y="1460" type="line"/>
+      <point x="1269" y="1563" type="line"/>
+    </contour>
+    <contour>
+      <point x="888" y="1500" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="600" y="-100" type="move" name="L"/>
+    </contour>
+    <contour>
+      <point x="1254" y="0" type="move" name="O"/>
+    </contour>
+    <contour>
+      <point x="1080" y="0" type="move" name="H"/>
+    </contour>
+    <component base="LtnCapA"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="hr00">
+      <hstem pos="-197" width="1760" />
+      <vstem pos="183" width="1250" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

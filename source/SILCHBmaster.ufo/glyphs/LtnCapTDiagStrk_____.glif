@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapTDiagStrk" format="1">
+  <advance width="1247"/>
+  <unicode hex="023E"/>
+  <outline>
+    <contour>
+      <point x="1036" y="1532" type="line" name="hr00"/>
+      <point x="94" y="-117" type="line"/>
+      <point x="198" y="-178" type="line"/>
+      <point x="1142" y="1473" type="line"/>
+    </contour>
+    <contour>
+      <point x="623" y="1500" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="623" y="-100" type="move" name="L"/>
+    </contour>
+    <contour>
+      <point x="623" y="0" type="move" name="H"/>
+    </contour>
+    <component base="LtnCapT"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="hr00">
+      <hstem pos="-178" width="1710" />
+      <vstem pos="94" width="1048" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

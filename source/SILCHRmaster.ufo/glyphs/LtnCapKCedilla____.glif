@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapKCedilla" format="1">
+  <advance width="1307"/>
+  <unicode hex="0136"/>
+  <outline>
+    <component base="LtnCapK"/>
+    <component base="CombCommaBlw" xOffset="1243"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.typemytype.robofont.mark</key>
+  <array>
+    <real>0.807</real>
+    <real>1</real>
+    <real>0.6</real>
+    <real>1</real>
+  </array>
+  </dict>
+  </lib>
+</glyph>

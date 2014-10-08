@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CombMacron_GraveDep" format="1">
+  <advance width="844"/>
+  <unicode hex="F173"/>
+  <outline>
+    <contour>
+      <point x="140" y="1098" type="line" name="hr01"/>
+      <point x="988" y="1098" type="line"/>
+      <point x="988" y="1595" type="line"/>
+      <point x="140" y="1595" type="line"/>
+    </contour>
+    <contour>
+      <point x="858" y="1128" type="line"/>
+      <point x="627" y="1399" type="line" name="hr02"/>
+      <point x="170" y="1399" type="line"/>
+      <point x="203" y="1565" type="line"/>
+      <point x="678" y="1565" type="line" smooth="yes"/>
+      <point x="768" y="1565"/>
+      <point x="782" y="1546"/>
+      <point x="831" y="1462" type="curve"/>
+      <point x="958" y="1128" type="line" name="hr03"/>
+    </contour>
+    <contour>
+      <point x="531" y="1100" type="move" name="_U"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="hr01">
+      <hstem pos="1098" width="30" />
+      <hstem pos="1565" width="30" />
+      <vstem pos="140" width="30" />
+      <vstem pos="958" width="30" />
+    </hintset>
+    <hintset pointTag="hr02">
+      <hstem pos="1098" width="301" />
+      <hstem pos="1565" width="30" />
+      <vstem pos="140" width="30" />
+      <vstem pos="958" width="30" />
+    </hintset>
+    <hintset pointTag="hr03">
+      <hstem pos="1098" width="30" />
+      <hstem pos="1565" width="30" />
+      <vstem pos="140" width="30" />
+      <vstem pos="958" width="30" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

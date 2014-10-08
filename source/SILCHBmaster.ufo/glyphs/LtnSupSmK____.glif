@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSupSmK" format="1">
+  <advance width="788"/>
+  <unicode hex="1D4F"/>
+  <outline>
+    <contour>
+      <point x="774" y="784" type="line" name="hr01"/>
+      <point x="774" y="842" type="line"/>
+      <point x="698" y="848" type="line"/>
+      <point x="492" y="1165" type="line"/>
+      <point x="635" y="1317" type="line" name="hr02"/>
+      <point x="723" y="1325" type="line"/>
+      <point x="723" y="1382" type="line"/>
+      <point x="446" y="1382" type="line"/>
+      <point x="446" y="1325" type="line"/>
+      <point x="496" y="1321" type="line" smooth="yes"/>
+      <point x="510" y="1319"/>
+      <point x="514" y="1309"/>
+      <point x="506" y="1300" type="curve" smooth="yes"/>
+      <point x="328" y="1104" type="line"/>
+      <point x="299" y="1104" type="line"/>
+      <point x="299" y="1694" type="line"/>
+      <point x="231" y="1694" type="line"/>
+      <point x="27" y="1632" type="line"/>
+      <point x="27" y="1581" type="line"/>
+      <point x="121" y="1581" type="line"/>
+      <point x="121" y="874" type="line" smooth="yes"/>
+      <point x="121" y="858"/>
+      <point x="106" y="846"/>
+      <point x="90" y="846" type="curve" smooth="yes"/>
+      <point x="35" y="842" type="line"/>
+      <point x="35" y="784" type="line"/>
+      <point x="381" y="784" type="line"/>
+      <point x="381" y="842" type="line"/>
+      <point x="328" y="846" type="line" smooth="yes"/>
+      <point x="311" y="846"/>
+      <point x="299" y="858"/>
+      <point x="299" y="874" type="curve" smooth="yes"/>
+      <point x="299" y="1063" type="line"/>
+      <point x="360" y="1063" type="line"/>
+      <point x="508" y="834" type="line" name="hr03"/>
+      <point x="508" y="784" type="line"/>
+    </contour>
+    <contour>
+      <point x="400" y="1700" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="400" y="725" type="move" name="L"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="hr01">
+      <hstem pos="784" width="62" />
+      <hstem pos="1063" width="41" />
+      <hstem pos="1323" width="59" />
+      <vstem pos="121" width="178" />
+      <vstem pos="508" width="266" />
+    </hintset>
+    <hintset pointTag="hr02">
+      <hstem pos="784" width="62" />
+      <hstem pos="1063" width="41" />
+      <hstem pos="1323" width="59" />
+      <hstem pos="1581" width="51" />
+      <vstem pos="121" width="178" />
+      <vstem pos="446" width="277" />
+    </hintset>
+    <hintset pointTag="hr03">
+      <hstem pos="784" width="62" />
+      <hstem pos="1063" width="41" />
+      <hstem pos="1323" width="59" />
+      <vstem pos="121" width="178" />
+      <vstem pos="508" width="266" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

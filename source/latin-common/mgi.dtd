@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- DOCTYPE glyphs SYSTEM "mgi.dtd" --> <!-- put at top of XML file to validate -->
+
+<!ELEMENT glyphs (glyph+)>
+<!ELEMENT glyph (comment?, ps_name, (var_uid | lig_uids)?, feature?, composite?)>
+<!ATTLIST glyph
+	family CDATA #REQUIRED
+	inactive (0 | 1) "0"
+	contourTT CDATA #IMPLIED
+	sort CDATA #REQUIRED
+	name CDATA #REQUIRED>
+<!ELEMENT comment (#PCDATA)>
+<!ELEMENT ps_name EMPTY>
+<!ATTLIST ps_name value CDATA #REQUIRED>
+<!ELEMENT var_uid (#PCDATA)>
+<!ELEMENT lig_uids (#PCDATA)>
+<!ELEMENT feature EMPTY>
+<!ATTLIST feature
+	category CDATA #REQUIRED
+	value CDATA #IMPLIED>
+<!ELEMENT composite (comment?, comp_glyph+)> <!-- composite DTD based on FLGlyphBuilder -->
+<!ATTLIST composite draft CDATA #IMPLIED>
+<!ELEMENT comp_glyph (base+)>
+<!ATTLIST comp_glyph
+	PSName CDATA #REQUIRED
+	UID CDATA #IMPLIED>
+<!ELEMENT base (attach | shift)*>
+<!ATTLIST base PSName CDATA #REQUIRED>
+<!ELEMENT attach (attach | shift)*> <!-- is this legal? -->
+<!ATTLIST attach
+	PSName CDATA #REQUIRED
+	with   CDATA #REQUIRED
+	at     CDATA #REQUIRED>
+<!ELEMENT shift EMPTY>
+<!ATTLIST shift
+	x CDATA #IMPLIED
+	y CDATA #IMPLIED>

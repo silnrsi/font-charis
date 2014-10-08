@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnAlveolarClick" format="1">
+  <advance width="863"/>
+  <unicode hex="01C2"/>
+  <outline>
+    <contour>
+      <point x="100" y="609" type="line" name="hr00"/>
+      <point x="853" y="609" type="line"/>
+      <point x="853" y="743" type="line"/>
+      <point x="100" y="743" type="line"/>
+    </contour>
+    <contour>
+      <point x="40" y="323" type="line"/>
+      <point x="793" y="323" type="line"/>
+      <point x="793" y="457" type="line"/>
+      <point x="40" y="457" type="line"/>
+    </contour>
+    <contour>
+      <point x="634" y="1540" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="242" y="-500" type="move" name="L"/>
+    </contour>
+    <component base="LtnDentalClick" xOffset="200"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="hr00">
+      <hstem pos="323" width="134" />
+      <hstem pos="609" width="134" />
+      <vstem pos="40" width="813" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

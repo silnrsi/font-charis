@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CombVertLineBlw" format="1">
+  <advance width="0"/>
+  <unicode hex="0329"/>
+  <outline>
+    <contour>
+      <point x="-596" y="-125" type="line" name="hr00"/>
+      <point x="-690" y="-125" type="line"/>
+      <point x="-760" y="-475" type="line"/>
+      <point x="-666" y="-475" type="line"/>
+    </contour>
+    <contour>
+      <point x="-713" y="-500" type="move" name="L"/>
+    </contour>
+    <contour>
+      <point x="-637" y="-100" type="move" name="_L"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="hr00">
+      <hstem pos="-475" width="350" />
+      <vstem pos="-760" width="164" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapADotAbv" format="1">
+  <advance width="1405"/>
+  <unicode hex="0226"/>
+  <outline>
+    <component base="LtnCapA"/>
+    <component base="DotAbv" xOffset="556" yOffset="400"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.typemytype.robofont.mark</key>
+  <array>
+    <real>0.807</real>
+    <real>1</real>
+    <real>0.6</real>
+    <real>1</real>
+  </array>
+  </dict>
+  </lib>
+</glyph>

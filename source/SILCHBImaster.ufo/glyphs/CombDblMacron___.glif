@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CombDblMacron" format="1">
+  <advance width="0"/>
+  <unicode hex="035E"/>
+  <outline>
+    <contour>
+      <point x="951" y="1795" type="line" name="hr00"/>
+      <point x="-447" y="1795" type="line"/>
+      <point x="-480" y="1630" type="line"/>
+      <point x="920" y="1630" type="line"/>
+    </contour>
+    <contour>
+      <point x="254" y="1905" type="move" name="U"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="hr00">
+      <hstem pos="1630" width="165" />
+      <vstem pos="-480" width="1431" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

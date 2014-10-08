@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmLMiddleDot" format="1">
+  <advance width="965"/>
+  <unicode hex="0140"/>
+  <outline>
+    <component base="LtnSmL"/>
+    <component base="MiddleDot" xOffset="632"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="lsb">
+      <hstem pos="21" width="-21" />
+      <hstem pos="1423" width="-20" />
+      <vstem pos="211" width="167" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

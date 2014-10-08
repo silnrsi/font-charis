@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DigitSeven" format="1">
+  <advance width="1153"/>
+  <unicode hex="0037"/>
+  <outline>
+    <contour>
+      <point x="1067" y="1260" type="line" name="hr00"/>
+      <point x="1067" y="1374" type="line"/>
+      <point x="86" y="1374" type="line"/>
+      <point x="86" y="1014" type="line"/>
+      <point x="190" y="1014" type="line"/>
+      <point x="223" y="1200" type="line"/>
+      <point x="854" y="1200" type="line"/>
+      <point x="178" y="-33" type="line"/>
+      <point x="395" y="-33" type="line"/>
+      <point x="395" y="35" type="line"/>
+    </contour>
+    <contour>
+      <point x="576" y="1500" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="576" y="-100" type="move" name="L"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="hr00">
+      <hstem pos="-12" width="-21" />
+      <hstem pos="1200" width="174" />
+      <vstem pos="86" width="104" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

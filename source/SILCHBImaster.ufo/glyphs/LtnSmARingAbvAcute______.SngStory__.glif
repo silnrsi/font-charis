@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmARingAbvAcute.SngStory" format="1">
+  <advance width="1163"/>
+  <outline>
+    <component base="LtnSmAlpha"/>
+    <component base="RingAbv" xOffset="389"/>
+    <component base="CombAcute" xOffset="1262" yOffset="560"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.typemytype.robofont.mark</key>
+  <array>
+    <real>0.807</real>
+    <real>1</real>
+    <real>0.6</real>
+    <real>1</real>
+  </array>
+  </dict>
+  </lib>
+</glyph>

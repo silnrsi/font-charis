@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CombRtArrwhdDwnArrwhdBlw" format="1">
+  <advance width="0"/>
+  <unicode hex="1DFF"/>
+  <outline>
+    <contour>
+      <point x="-527" y="-41" type="line" name="hr00"/>
+      <point x="-187" y="-778" type="line"/>
+      <point x="-97" y="-778" type="line"/>
+      <point x="243" y="-41" type="line"/>
+      <point x="150" y="-41" type="line"/>
+      <point x="-142" y="-700" type="line"/>
+      <point x="-435" y="-41" type="line"/>
+    </contour>
+    <contour>
+      <point x="-557" y="-100" type="move" name="_L"/>
+    </contour>
+    <contour>
+      <point x="-557" y="-850" type="move" name="L"/>
+    </contour>
+    <component base="ModRtArrwhd" xOffset="-1489" yOffset="-1611"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="hr00">
+      <hstem pos="-778" width="737" />
+      <vstem pos="-527" width="770" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

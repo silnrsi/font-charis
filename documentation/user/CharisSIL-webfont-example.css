@@ -1,0 +1,46 @@
+/*
+CharisSIL-webfont-example.css
+Charis SIL v 4.108
+25 Aug 2011
+This file is part of Charis SIL font family (http://scripts.sil.org/CharisSILfont)
+and is Copyright (c) 1994-2011 SIL International (http://www.sil.org/),
+with Reserved Font Names "Charis" and "SIL". This Font Software is licensed
+under the SIL Open Font License, Version 1.1. You should have received a copy
+of the license along with this Font Software. If this is not the case, go to
+(http://scripts.sil.org/OFL) for all the details including a FAQ.
+*/
+
+/* use Charis SIL - Regular in .woff format */
+@font-face {
+  font-family: CharisSILW;
+  src: url(CharisSIL-R.woff);
+}
+/* use Charis SIL - Italic in .woff format */
+@font-face {
+  font-family: CharisSILW;
+  font-style: italic;
+  src: url(CharisSIL-I.woff);
+}
+
+@font-face {
+	font-family: CharisSILW;
+	font-weight: bold;
+	src: url(CharisSIL-B.woff);
+}
+
+@font-face {
+	font-family: CharisSILW;
+	font-weight: bold;
+	font-style: italic;
+	src: url(CharisSIL-BI.woff);
+}
+
+/* set body to use Charis SIL in .ttf format */
+body {
+  font-family: CharisSILW, sans-serif;
+    /* fall back to sans serif so that it's really obvious if the fonts don't load */
+}
+/* remove bold styling from heading */
+h1 {
+  font-weight: normal;	
+}

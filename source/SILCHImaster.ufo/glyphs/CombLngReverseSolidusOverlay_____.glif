@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CombLngReverseSolidusOverlay" format="1">
+  <advance width="0"/>
+  <unicode hex="20E5"/>
+  <outline>
+    <contour>
+      <point x="-251" y="-275" type="line" name="hr00"/>
+      <point x="-734" y="1230" type="line"/>
+      <point x="-831" y="1179" type="line"/>
+      <point x="-341" y="-326" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="hr00">
+      <hstem pos="-326" width="1556" />
+      <vstem pos="-831" width="580" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmBarredO" format="1">
+  <advance width="1114"/>
+  <unicode hex="0275"/>
+  <outline>
+    <contour>
+      <point x="1044" y="492" type="curve" smooth="yes" name="hr00"/>
+      <point x="1044" y="780"/>
+      <point x="866" y="1012"/>
+      <point x="561" y="1012" type="curve" smooth="yes"/>
+      <point x="258" y="1012"/>
+      <point x="70" y="784"/>
+      <point x="70" y="492" type="curve" smooth="yes"/>
+      <point x="70" y="197"/>
+      <point x="256" y="-25"/>
+      <point x="555" y="-25" type="curve" smooth="yes"/>
+      <point x="854" y="-25"/>
+      <point x="1044" y="201"/>
+    </contour>
+    <contour>
+      <point x="829" y="555" type="curve"/>
+      <point x="287" y="555" type="line"/>
+      <point x="301" y="754"/>
+      <point x="387" y="920"/>
+      <point x="559" y="920" type="curve" smooth="yes"/>
+      <point x="727" y="920"/>
+      <point x="815" y="754"/>
+    </contour>
+    <contour>
+      <point x="831" y="453" type="line"/>
+      <point x="821" y="246"/>
+      <point x="733" y="68"/>
+      <point x="557" y="68" type="curve" smooth="yes"/>
+      <point x="385" y="68"/>
+      <point x="297" y="248"/>
+      <point x="287" y="453" type="curve"/>
+    </contour>
+    <contour>
+      <point x="557" y="1100" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="557" y="-100" type="move" name="L"/>
+    </contour>
+    <contour>
+      <point x="1114" y="1000" type="move" name="R"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="hr00">
+      <hstem pos="-25" width="93" />
+      <hstem pos="453" width="102" />
+      <hstem pos="920" width="92" />
+      <vstem pos="70" width="217" />
+      <vstem pos="831" width="213" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

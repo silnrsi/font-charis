@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ZeroWidthNoBreakSpace.ShowInv" format="1">
+  <advance width="2400"/>
+  <outline>
+    <component base="BoxDotted"/>
+    <component base="LtnCapZ.Sophia" xOffset="424" yOffset="986"/>
+    <component base="LtnCapW.Sophia" xOffset="842" yOffset="986"/>
+    <component base="LtnCapN.Sophia" xOffset="1484" yOffset="986"/>
+    <component base="LtnCapB.Sophia" xOffset="395" yOffset="260"/>
+    <component base="LtnCapS.Sophia" xOffset="956" yOffset="260"/>
+    <component base="LtnCapP.Sophia" xOffset="1513" yOffset="260"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.typemytype.robofont.mark</key>
+  <array>
+    <real>0.807</real>
+    <real>1</real>
+    <real>0.6</real>
+    <real>1</real>
+  </array>
+  </dict>
+  </lib>
+</glyph>

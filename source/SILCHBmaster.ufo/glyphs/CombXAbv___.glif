@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CombXAbv" format="1">
+  <advance width="0"/>
+  <unicode hex="033D"/>
+  <outline>
+    <contour>
+      <point x="-301" y="1128" type="line" name="hr00"/>
+      <point x="-506" y="1329" type="line"/>
+      <point x="-305" y="1532" type="line"/>
+      <point x="-489" y="1532" type="line"/>
+      <point x="-600" y="1421" type="line"/>
+      <point x="-709" y="1532" type="line"/>
+      <point x="-895" y="1532" type="line"/>
+      <point x="-692" y="1329" type="line"/>
+      <point x="-893" y="1128" type="line"/>
+      <point x="-711" y="1128" type="line"/>
+      <point x="-600" y="1237" type="line"/>
+      <point x="-489" y="1128" type="line"/>
+    </contour>
+    <contour>
+      <point x="-598" y="1500" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="-598" y="1100" type="move" name="_U"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="hr00">
+      <hstem pos="1128" width="404" />
+      <vstem pos="-895" width="594" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

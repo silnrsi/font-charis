@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CombUpTackBlw" format="1">
+  <advance width="0"/>
+  <unicode hex="031D"/>
+  <outline>
+    <contour>
+      <point x="-536" y="-289" type="line" name="hr00"/>
+      <point x="-669" y="-289" type="line"/>
+      <point x="-638" y="-125" type="line"/>
+      <point x="-749" y="-125" type="line"/>
+      <point x="-782" y="-289" type="line"/>
+      <point x="-915" y="-289" type="line"/>
+      <point x="-937" y="-399" type="line"/>
+      <point x="-559" y="-399" type="line"/>
+    </contour>
+    <contour>
+      <point x="-763" y="-500" type="move" name="L"/>
+    </contour>
+    <contour>
+      <point x="-687" y="-100" type="move" name="_L"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="hr00">
+      <hstem pos="-399" width="110" />
+      <vstem pos="-937" width="401" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

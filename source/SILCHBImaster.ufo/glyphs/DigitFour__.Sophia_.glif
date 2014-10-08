@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DigitFour.Sophia" format="1">
+  <advance width="412"/>
+  <outline>
+    <contour>
+      <point x="390" y="130" type="line" name="hr01"/>
+      <point x="390" y="191" type="line"/>
+      <point x="324" y="191" type="line"/>
+      <point x="324" y="533" type="line"/>
+      <point x="243" y="533" type="line"/>
+      <point x="22" y="207" type="line"/>
+      <point x="22" y="130" type="line"/>
+      <point x="256" y="130" type="line"/>
+      <point x="256" y="0" type="line" name="hr02"/>
+      <point x="324" y="0" type="line"/>
+      <point x="324" y="130" type="line" name="hr03"/>
+    </contour>
+    <contour>
+      <point x="256" y="191" type="line"/>
+      <point x="81" y="191" type="line"/>
+      <point x="256" y="451" type="line"/>
+    </contour>
+    <contour>
+      <point x="206" y="266" type="move" name="_C"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="hr01">
+      <hstem pos="130" width="61" />
+      <vstem pos="256" width="68" />
+    </hintset>
+    <hintset pointTag="hr02">
+      <hstem pos="0" width="191" />
+      <vstem pos="256" width="68" />
+    </hintset>
+    <hintset pointTag="hr03">
+      <hstem pos="130" width="61" />
+      <vstem pos="256" width="68" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

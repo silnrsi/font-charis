@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ModAcuteAccent.ChinantecTn" format="1">
+  <advance width="632"/>
+  <outline>
+    <contour>
+      <point x="737" y="1501" type="line" name="hr00"/>
+      <point x="646" y="1591" type="line"/>
+      <point x="193" y="1135" type="line"/>
+      <point x="283" y="1045" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="hr00">
+      <hstem pos="1045" width="546" />
+      <vstem pos="193" width="544" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CombDblInvBreveLft" format="1">
+  <advance width="0"/>
+  <unicode hex="FE20"/>
+  <outline>
+    <contour>
+      <point x="272" y="1893" type="line" name="hr00"/>
+      <point x="-236" y="1893"/>
+      <point x="-566" y="1795"/>
+      <point x="-713" y="1621" type="curve"/>
+      <point x="-652" y="1555" type="line"/>
+      <point x="-527" y="1688"/>
+      <point x="-154" y="1715"/>
+      <point x="237" y="1715" type="curve"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="hr00">
+      <hstem pos="1715" width="178" />
+      <vstem pos="-713" width="985" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

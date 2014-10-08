@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnBidentalPercussive" format="1">
+  <advance width="966"/>
+  <unicode hex="02AD"/>
+  <outline>
+    <contour>
+      <point x="945" y="955" type="line" name="hr01"/>
+      <point x="945" y="1410" type="line"/>
+      <point x="60" y="1410" type="line"/>
+      <point x="60" y="955" type="line"/>
+      <point x="159" y="955" type="line"/>
+      <point x="159" y="1232" type="line"/>
+      <point x="846" y="1232" type="line"/>
+      <point x="846" y="955" type="line"/>
+    </contour>
+    <contour>
+      <point x="955" y="0" type="line" name="hr02"/>
+      <point x="955" y="455" type="line"/>
+      <point x="70" y="455" type="line"/>
+      <point x="70" y="0" type="line"/>
+      <point x="169" y="0" type="line"/>
+      <point x="169" y="277" type="line"/>
+      <point x="856" y="277" type="line"/>
+      <point x="856" y="0" type="line"/>
+    </contour>
+    <contour>
+      <point x="507" y="1540" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="507" y="-100" type="move" name="L"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="hr01">
+      <hstem pos="21" width="-21" />
+      <hstem pos="277" width="178" />
+      <hstem pos="1232" width="178" />
+      <vstem pos="60" width="99" />
+      <vstem pos="846" width="99" />
+    </hintset>
+    <hintset pointTag="hr02">
+      <hstem pos="21" width="-21" />
+      <hstem pos="277" width="178" />
+      <hstem pos="1232" width="178" />
+      <vstem pos="70" width="99" />
+      <vstem pos="856" width="99" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

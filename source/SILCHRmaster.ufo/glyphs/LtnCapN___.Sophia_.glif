@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapN.Sophia" format="1">
+  <advance width="533"/>
+  <outline>
+    <contour>
+      <point x="474" y="0" type="line" name="hr01"/>
+      <point x="474" y="533" type="line"/>
+      <point x="400" y="533" type="line"/>
+      <point x="400" y="96" type="line" name="hr02"/>
+      <point x="165" y="533" type="line"/>
+      <point x="59" y="533" type="line"/>
+      <point x="59" y="0" type="line"/>
+      <point x="134" y="0" type="line"/>
+      <point x="134" y="436" type="line"/>
+      <point x="368" y="0" type="line"/>
+    </contour>
+    <contour>
+      <point x="266" y="266" type="move" name="_C"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="hr01">
+      <hstem pos="21" width="-21" />
+      <vstem pos="59" width="75" />
+      <vstem pos="400" width="74" />
+    </hintset>
+    <hintset pointTag="hr02">
+      <hstem pos="0" width="96" />
+      <vstem pos="59" width="75" />
+      <vstem pos="400" width="74" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

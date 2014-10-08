@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="SupplRaisedInterpMkr" format="1">
+  <advance width="851"/>
+  <unicode hex="2E06"/>
+  <outline>
+    <contour>
+      <point x="74" y="1374" type="line" name="hr00"/>
+      <point x="74" y="1254" type="line"/>
+      <point x="366" y="1254" type="line"/>
+      <point x="366" y="724" type="line"/>
+      <point x="485" y="724" type="line"/>
+      <point x="485" y="1254" type="line"/>
+      <point x="777" y="1254" type="line"/>
+      <point x="777" y="1374" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="hr00">
+      <hstem pos="1254" width="120" />
+      <vstem pos="366" width="119" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSupSmA" format="1">
+  <advance width="692"/>
+  <unicode hex="1D43"/>
+  <outline>
+    <contour>
+      <point x="791" y="817" type="curve" name="hr01"/>
+      <point x="791" y="860" type="line"/>
+      <point x="776" y="858"/>
+      <point x="721" y="842"/>
+      <point x="702" y="842" type="curve" smooth="yes"/>
+      <point x="666" y="842"/>
+      <point x="643" y="856"/>
+      <point x="643" y="897" type="curve" smooth="yes"/>
+      <point x="643" y="952"/>
+      <point x="713" y="1241"/>
+      <point x="729" y="1307" type="curve" smooth="yes"/>
+      <point x="733" y="1319"/>
+      <point x="750" y="1358"/>
+      <point x="756" y="1376" type="curve"/>
+      <point x="666" y="1376" type="line"/>
+      <point x="645" y="1348" type="line" name="hr02"/>
+      <point x="621" y="1368"/>
+      <point x="575" y="1391"/>
+      <point x="526" y="1391" type="curve" smooth="yes"/>
+      <point x="276" y="1391"/>
+      <point x="141" y="1180"/>
+      <point x="141" y="989" type="curve" smooth="yes"/>
+      <point x="141" y="901"/>
+      <point x="178" y="770"/>
+      <point x="336" y="770" type="curve" smooth="yes"/>
+      <point x="416" y="770"/>
+      <point x="483" y="817"/>
+      <point x="524" y="854" type="curve"/>
+      <point x="528" y="799"/>
+      <point x="553" y="770"/>
+      <point x="616" y="770" type="curve" smooth="yes" name="hr03"/>
+      <point x="670" y="770"/>
+      <point x="770" y="809"/>
+    </contour>
+    <contour>
+      <point x="594" y="1266" type="curve" name="hr05"/>
+      <point x="524" y="928" type="line"/>
+      <point x="506" y="909"/>
+      <point x="440" y="850"/>
+      <point x="379" y="850" type="curve" smooth="yes"/>
+      <point x="295" y="850"/>
+      <point x="274" y="928"/>
+      <point x="274" y="997" type="curve" smooth="yes"/>
+      <point x="274" y="1133"/>
+      <point x="342" y="1331"/>
+      <point x="545" y="1331" type="curve" smooth="yes"/>
+      <point x="561" y="1331"/>
+      <point x="596" y="1274"/>
+    </contour>
+    <contour>
+      <point x="557" y="1450" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="428" y="750" type="move" name="L"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="hr01">
+      <hstem pos="770" width="72" />
+      <hstem pos="1376" width="-20" />
+      <vstem pos="141" width="133" />
+      <vstem pos="524" width="119" />
+    </hintset>
+    <hintset pointTag="hr02">
+      <hstem pos="770" width="80" />
+      <hstem pos="1331" width="60" />
+      <vstem pos="141" width="133" />
+      <vstem pos="524" width="119" />
+    </hintset>
+    <hintset pointTag="hr03">
+      <hstem pos="770" width="72" />
+      <hstem pos="1331" width="60" />
+      <vstem pos="141" width="133" />
+      <vstem pos="524" width="119" />
+    </hintset>
+    <hintset pointTag="hr04">
+      <hstem pos="770" width="72" />
+      <hstem pos="1376" width="-20" />
+      <vstem pos="141" width="133" />
+      <vstem pos="524" width="119" />
+    </hintset>
+    <hintset pointTag="hr05">
+      <hstem pos="770" width="80" />
+      <hstem pos="1331" width="60" />
+      <vstem pos="141" width="133" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

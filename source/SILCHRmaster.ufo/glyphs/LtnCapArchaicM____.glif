@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapArchaicM" format="1">
+  <advance width="2604"/>
+  <unicode hex="A7FF"/>
+  <outline>
+    <contour>
+      <point x="1472" y="1127" type="line" name="hr01"/>
+      <point x="1871" y="-33" type="line" name="hr02"/>
+      <point x="2027" y="-33" type="line"/>
+      <point x="2466" y="1264" type="line"/>
+      <point x="2584" y="1286" type="line"/>
+      <point x="2584" y="1374" type="line" name="hr03"/>
+      <point x="2177" y="1374" type="line"/>
+      <point x="2177" y="1286" type="line" name="hr04"/>
+      <point x="2290" y="1276" type="line" smooth="yes" name="hr05"/>
+      <point x="2308" y="1274"/>
+      <point x="2324" y="1251"/>
+      <point x="2318" y="1235" type="curve"/>
+      <point x="1992" y="247" type="line"/>
+      <point x="1593" y="1407" type="line" name="hr06"/>
+      <point x="1437" y="1407" type="line"/>
+      <point x="1089" y="377" type="line"/>
+      <point x="733" y="1407" type="line"/>
+      <point x="577" y="1407" type="line"/>
+      <point x="138" y="110" type="line"/>
+      <point x="20" y="88" type="line"/>
+      <point x="20" y="0" type="line" name="hr07"/>
+      <point x="427" y="0" type="line"/>
+      <point x="427" y="88" type="line" name="hr08"/>
+      <point x="314" y="98" type="line" smooth="yes" name="hr09"/>
+      <point x="296" y="100"/>
+      <point x="280" y="123"/>
+      <point x="286" y="139" type="curve"/>
+      <point x="612" y="1127" type="line"/>
+      <point x="952" y="135" type="line" smooth="yes"/>
+      <point x="956" y="123"/>
+      <point x="948" y="100"/>
+      <point x="934" y="98" type="curve"/>
+      <point x="813" y="88" type="line" name="hr10"/>
+      <point x="813" y="0" type="line" name="hr11"/>
+      <point x="1303" y="0" type="line"/>
+      <point x="1303" y="88" type="line" name="hr12"/>
+      <point x="1182" y="108" type="line"/>
+      <point x="1158" y="176" type="line"/>
+    </contour>
+    <contour>
+      <point x="1292" y="1500" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="1292" y="-100" type="move" name="L"/>
+    </contour>
+    <contour>
+      <point x="1302" y="0" type="move" name="O"/>
+    </contour>
+    <contour>
+      <point x="1292" y="0" type="move" name="H"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="hr01">
+      <hstem pos="0" width="93" />
+      <hstem pos="1286" width="121" />
+      <vstem pos="20" width="2564" />
+    </hintset>
+    <hintset pointTag="hr02">
+      <hstem pos="-33" width="121" />
+      <hstem pos="1286" width="121" />
+      <vstem pos="20" width="2564" />
+    </hintset>
+    <hintset pointTag="hr03">
+      <hstem pos="0" width="93" />
+      <hstem pos="1281" width="93" />
+      <vstem pos="20" width="2564" />
+    </hintset>
+    <hintset pointTag="hr04">
+      <hstem pos="0" width="93" />
+      <hstem pos="1286" width="121" />
+      <vstem pos="20" width="2564" />
+    </hintset>
+    <hintset pointTag="hr05">
+      <hstem pos="0" width="93" />
+      <hstem pos="1281" width="93" />
+      <vstem pos="20" width="2564" />
+    </hintset>
+    <hintset pointTag="hr06">
+      <hstem pos="-33" width="121" />
+      <hstem pos="1286" width="121" />
+      <vstem pos="20" width="2564" />
+    </hintset>
+    <hintset pointTag="hr07">
+      <hstem pos="0" width="93" />
+      <hstem pos="1286" width="121" />
+      <vstem pos="20" width="2564" />
+    </hintset>
+    <hintset pointTag="hr08">
+      <hstem pos="-33" width="121" />
+      <hstem pos="1286" width="121" />
+      <vstem pos="20" width="2564" />
+    </hintset>
+    <hintset pointTag="hr09">
+      <hstem pos="0" width="93" />
+      <hstem pos="1286" width="121" />
+      <vstem pos="20" width="2564" />
+    </hintset>
+    <hintset pointTag="hr10">
+      <hstem pos="-33" width="121" />
+      <hstem pos="1286" width="121" />
+      <vstem pos="20" width="2564" />
+    </hintset>
+    <hintset pointTag="hr11">
+      <hstem pos="0" width="93" />
+      <hstem pos="1286" width="121" />
+      <vstem pos="20" width="2564" />
+    </hintset>
+    <hintset pointTag="hr12">
+      <hstem pos="-33" width="121" />
+      <hstem pos="1286" width="121" />
+      <vstem pos="20" width="2564" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

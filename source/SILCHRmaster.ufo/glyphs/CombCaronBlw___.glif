@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CombCaronBlw" format="1">
+  <advance width="0"/>
+  <unicode hex="032C"/>
+  <outline>
+    <contour>
+      <point x="-222" y="-125" type="line" name="hr01"/>
+      <point x="-345" y="-125" type="line"/>
+      <point x="-556" y="-328" type="line" name="hr02"/>
+      <point x="-769" y="-125" type="line"/>
+      <point x="-892" y="-125" type="line"/>
+      <point x="-634" y="-471" type="line"/>
+      <point x="-480" y="-471" type="line"/>
+    </contour>
+    <contour>
+      <point x="-557" y="-500" type="move" name="L"/>
+    </contour>
+    <contour>
+      <point x="-557" y="-100" type="move" name="_L"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="hr01">
+      <hstem pos="-450" width="-21" />
+      <vstem pos="-892" width="670" />
+    </hintset>
+    <hintset pointTag="hr02">
+      <hstem pos="-471" width="143" />
+      <vstem pos="-892" width="670" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

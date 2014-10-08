@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="SupplRtAngleSubMkr" format="1">
+  <advance width="576"/>
+  <outline>
+    <contour>
+      <point x="688" y="1374" type="line" name="hr00"/>
+      <point x="222" y="1374" type="line"/>
+      <point x="95" y="724" type="line"/>
+      <point x="255" y="724" type="line"/>
+      <point x="348" y="1199" type="line"/>
+      <point x="654" y="1199" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="hr00">
+      <hstem pos="1199" width="175" />
+      <vstem pos="95" width="593" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmDzCaron" format="1">
+  <advance width="2165"/>
+  <unicode hex="01C6"/>
+  <outline>
+    <component base="LtnSmD"/>
+    <component base="LtnSmZ" xOffset="1159"/>
+    <component base="CombCaron" xOffset="2230"/>
+  </outline>
+</glyph>

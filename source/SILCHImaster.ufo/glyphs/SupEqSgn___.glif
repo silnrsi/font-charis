@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="SupEqSgn" format="1">
+  <advance width="538"/>
+  <unicode hex="207C"/>
+  <outline>
+    <contour>
+      <point x="656" y="1268" type="line" name="hr00"/>
+      <point x="672" y="1344" type="line"/>
+      <point x="213" y="1344" type="line"/>
+      <point x="197" y="1268" type="line"/>
+    </contour>
+    <contour>
+      <point x="611" y="1045" type="line"/>
+      <point x="627" y="1121" type="line"/>
+      <point x="168" y="1121" type="line"/>
+      <point x="152" y="1045" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="hr00">
+      <hstem pos="1045" width="76" />
+      <hstem pos="1268" width="76" />
+      <vstem pos="152" width="520" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

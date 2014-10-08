@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ModCapW" format="1">
+  <advance width="1239"/>
+  <unicode hex="1D42"/>
+  <outline>
+    <component base="LtnCapW" xScale="0.65" yScale="0.6" xOffset="5" yOffset="785"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="lsb">
+      <hstem pos="-11" width="-21" />
+      <hstem pos="1356" width="-20" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

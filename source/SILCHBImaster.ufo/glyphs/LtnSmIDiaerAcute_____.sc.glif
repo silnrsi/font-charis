@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmIDiaerAcute.sc" format="1">
+  <advance width="671"/>
+  <outline>
+    <component base="LtnSmI.sc"/>
+    <component base="CombDiaer" xOffset="932" yOffset="138"/>
+    <component base="CombAcute" xOffset="976" yOffset="538"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.typemytype.robofont.mark</key>
+  <array>
+    <real>0.807</real>
+    <real>1</real>
+    <real>0.6</real>
+    <real>1</real>
+  </array>
+  </dict>
+  </lib>
+</glyph>

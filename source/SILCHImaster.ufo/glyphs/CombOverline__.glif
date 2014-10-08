@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CombOverline" format="1">
+  <advance width="0"/>
+  <unicode hex="0305"/>
+  <outline>
+    <contour>
+      <point x="329" y="1565" type="line" name="hr00"/>
+      <point x="-908" y="1565" type="line"/>
+      <point x="-937" y="1430" type="line"/>
+      <point x="303" y="1430" type="line"/>
+    </contour>
+    <contour>
+      <point x="-383" y="1100" type="move" name="_U"/>
+    </contour>
+    <contour>
+      <point x="-303" y="1580" type="move" name="U"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="hr00">
+      <hstem pos="1430" width="135" />
+      <vstem pos="-937" width="1266" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnLateralClick" format="1">
+  <advance width="753"/>
+  <unicode hex="01C1"/>
+  <outline>
+    <contour>
+      <point x="435" y="-440" type="line" name="hr00"/>
+      <point x="806" y="1507" type="line"/>
+      <point x="651" y="1507" type="line"/>
+      <point x="280" y="-440" type="line"/>
+    </contour>
+    <contour>
+      <point x="145" y="-440" type="line"/>
+      <point x="516" y="1507" type="line"/>
+      <point x="361" y="1507" type="line"/>
+      <point x="-10" y="-440" type="line"/>
+    </contour>
+    <contour>
+      <point x="585" y="1540" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="193" y="-500" type="move" name="L"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="hr00">
+      <hstem pos="-440" width="1947" />
+      <vstem pos="-10" width="816" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

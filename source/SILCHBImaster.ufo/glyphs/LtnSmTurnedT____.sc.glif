@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmTurnedT.sc" format="1">
+  <advance width="1183"/>
+  <outline>
+    <contour>
+      <point x="-115" y="0" type="line" name="hr00"/>
+      <point x="985" y="0" type="line"/>
+      <point x="1052" y="303" type="line"/>
+      <point x="908" y="303" type="line"/>
+      <point x="835" y="124" type="line"/>
+      <point x="832" y="112"/>
+      <point x="802" y="106"/>
+      <point x="784" y="106" type="curve"/>
+      <point x="595" y="106" type="line"/>
+      <point x="784" y="994" type="line"/>
+      <point x="787" y="1009"/>
+      <point x="807" y="1014"/>
+      <point x="834" y="1015" type="curve"/>
+      <point x="834" y="1015"/>
+      <point x="888" y="1019"/>
+      <point x="936" y="1023" type="curve"/>
+      <point x="936" y="1120" type="line"/>
+      <point x="378" y="1120" type="line"/>
+      <point x="378" y="1023" type="line"/>
+      <point x="428" y="1017"/>
+      <point x="485" y="1014"/>
+      <point x="485" y="1014" type="curve"/>
+      <point x="504" y="1012"/>
+      <point x="520" y="1008"/>
+      <point x="520" y="999" type="curve"/>
+      <point x="329" y="100" type="line"/>
+      <point x="329" y="106" type="line"/>
+      <point x="128" y="106" type="line"/>
+      <point x="110" y="106"/>
+      <point x="86" y="110"/>
+      <point x="87" y="119" type="curve"/>
+      <point x="97" y="303" type="line"/>
+      <point x="-45" y="303" type="line"/>
+    </contour>
+    <contour>
+      <point x="747" y="1238" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="482" y="-74" type="move" name="L"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="hr00">
+      <hstem pos="0" width="107" />
+      <hstem pos="1014" width="106" />
+      <vstem pos="120" width="1162" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

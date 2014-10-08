@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapO" format="1">
+  <advance width="1540"/>
+  <unicode hex="004F"/>
+  <outline>
+    <contour>
+      <point x="1501" y="854" type="curve" smooth="yes" name="hr00"/>
+      <point x="1501" y="1145"/>
+      <point x="1298" y="1407"/>
+      <point x="903" y="1407" type="curve" smooth="yes"/>
+      <point x="397" y="1407"/>
+      <point x="98" y="965"/>
+      <point x="98" y="539" type="curve" smooth="yes"/>
+      <point x="98" y="207"/>
+      <point x="317" y="-33"/>
+      <point x="698" y="-33" type="curve" smooth="yes"/>
+      <point x="1235" y="-33"/>
+      <point x="1501" y="434"/>
+    </contour>
+    <contour>
+      <point x="1182" y="854" type="curve" smooth="yes"/>
+      <point x="1182" y="498"/>
+      <point x="954" y="94"/>
+      <point x="713" y="94" type="curve" smooth="yes"/>
+      <point x="578" y="94"/>
+      <point x="416" y="240"/>
+      <point x="416" y="522" type="curve" smooth="yes"/>
+      <point x="416" y="891"/>
+      <point x="641" y="1284"/>
+      <point x="885" y="1284" type="curve" smooth="yes"/>
+      <point x="1026" y="1284"/>
+      <point x="1182" y="1128"/>
+    </contour>
+    <contour>
+      <point x="936" y="1500" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="648" y="-100" type="move" name="L"/>
+    </contour>
+    <contour>
+      <point x="1500" y="1200" type="move" name="R"/>
+    </contour>
+    <contour>
+      <point x="931" y="0" type="move" name="O"/>
+    </contour>
+    <contour>
+      <point x="668" y="0" type="move" name="H"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="hr00">
+      <hstem pos="-33" width="127" />
+      <hstem pos="1284" width="123" />
+      <vstem pos="98" width="318" />
+      <vstem pos="1182" width="319" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

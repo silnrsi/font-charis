@@ -1,0 +1,47 @@
+[I started to modify this text for the v1.3 release of RFComposer, then decided to just pull it out of the TypeCaster doc completely. I didn't want to describe the multitude of candiate glyphs that are sometimes availabe for encode cmds or how these candidate glyphs were evaluated (since that system will probably change) or to deal with WPFeatures being generated.]
+
+h1:RFComposer
+
+RFComposer.pl is the script that creates the Features file for our Roman fonts. It contains hard-coded information on some features. It depends on the Feat table to enumerate all features and settings and the Roman GSI XML file to find glyph variants associated with various feature settings. It also uses the Roman DblEnc.txt file to find double encoded glyphs for deprecated PUA characters and an optional GSI file that contains data on encoded glyph variants. 
+
+The file it produces is not finished. Two sections need to be edited. 1) The "Line spacing" feature must be edited based on the font family. Be careful to {em:not} delete the "Imported" value at the end of the section. 2) The interactions section will probably require some editing to specify which glyph to re-encode when multiple features effect the same character. XML comments are placed in the file to indicate where editing needs to be done. It's advisable to validate the finished file using the feat_all.dtd file, but please note that this will not verify that all the needed edits (discussed below) have been made since the checking provided by the DTD is still limited to the overall structure of the XML.
+
+Where two or more features interact, RFComposer may produce an encode command that looks like:
+
+code:
+<interactions>
+	<test select="SlntItlc-T SmCp-T VIEdiacs-T">
+		<!-- edit below line(s) -->
+		<cmd name="encode" args="1EAF uni1EAF.2StorySlantItalic uni1EAF.SC 
+		uni1EAF.2StorySlantItalic.SC uni1EAF.VN.SC uni1EAF.VN"/>
+
+
+(In the file the cmd element is on one line. That line is broken here for formatting.)
+code-end:
+
+Someone has to pick which of the glyphs (indicated by PS name) should be re-encoded and delete the alternatives. Note that it indicates the glyphs that are associated with each feature and also any other glyphs that are variants for the USV according to the GSI data. If the USV being encoded corresponds to a double encoded glyph, the deprecated USV will be listed in a second {literal:cmd} element.
+
+To produce a file suitable for testing TypeTuner without the need for editing, use the -t switch. This switch will cause Doulos line spacing to be used and only the first glyph choice to be specified. 
+
+RFComposer uses a hash table called %nm_to_tag to map feature and setting names to tags. This hash needs to be updated as features are added or changed. To produce this hash table initially or to update it if many feature changes are made, use the hidden -l switch with a font name as the argument. A file called featset_list.txt will be produced. This will take into account the current mapping and create new entries with simple tags for new features or settings that are in the font's Feat table. The new entries can be edited by hand to provide more readable tags. This hash can then be pasted into the RFComposer.pl source file.
+
+feat_all_DR_mod.xml and feat_all_CR_mod.xml are the Features files for our Roman fonts. They were produced by RFComposer and edited to hopefully re-encode the correct glyphs for interacting features. The only difference between the two is in the "Line spacing" feature.
+
+The RFComposer usage message is:
+
+code:
+RFComposer ver 1.3 (c) SIL International 2007-2009. All rights reserved.
+usage:
+RFComposer <switches> <font.ttf> <gsi.xml> <dblenc.txt>  [<gsi_supp_fn.xm>]
+	switches:
+		-g - output no OpenType cmds (Graphite only)
+		-q - output no Graphite cmds (OpenType only)
+		-d - debug output
+		-t - output a file that needs no editing
+			(for testing TypeTuner)
+
+        output is to feat_all_composer.xml
+code-end:
+
+The undocumented -w switch is used to produce the WPFeatures.wpx test.
+

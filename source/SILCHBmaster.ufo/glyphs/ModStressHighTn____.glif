@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ModStressHighTn" format="1">
+  <advance width="1164"/>
+  <unicode hex="A720"/>
+  <outline>
+    <contour>
+      <point x="1114" y="1300" type="line" name="hr00"/>
+      <point x="1114" y="1420" type="line"/>
+      <point x="50" y="1420" type="line"/>
+      <point x="50" y="990" type="line"/>
+      <point x="168" y="990" type="line"/>
+      <point x="168" y="1300" type="line"/>
+      <point x="450" y="1300" type="line"/>
+      <point x="450" y="990" type="line"/>
+      <point x="568" y="990" type="line"/>
+      <point x="568" y="1300" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="hr00">
+      <hstem pos="1300" width="120" />
+      <vstem pos="50" width="118" />
+      <vstem pos="450" width="118" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="SqrTxtBracLowLft" format="1">
+  <advance width="800"/>
+  <unicode hex="230A"/>
+  <outline>
+    <contour>
+      <point x="600" y="-222" type="line" name="hr00"/>
+      <point x="600" y="-135" type="line"/>
+      <point x="287" y="-135" type="line"/>
+      <point x="287" y="1102" type="line"/>
+      <point x="200" y="1102" type="line"/>
+      <point x="200" y="-222" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="hr00">
+      <hstem pos="-222" width="87" />
+      <vstem pos="200" width="87" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

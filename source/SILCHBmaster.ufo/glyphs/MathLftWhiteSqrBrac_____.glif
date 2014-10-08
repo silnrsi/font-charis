@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="MathLftWhiteSqrBrac" format="1">
+  <advance width="902"/>
+  <unicode hex="27E6"/>
+  <outline>
+    <contour>
+      <point x="827" y="-406" type="line" name="hr00"/>
+      <point x="827" y="-327" type="line"/>
+      <point x="536" y="-327" type="line"/>
+      <point x="536" y="1311" type="line"/>
+      <point x="827" y="1311" type="line"/>
+      <point x="827" y="1388" type="line"/>
+      <point x="166" y="1388" type="line"/>
+      <point x="166" y="-406" type="line"/>
+    </contour>
+    <contour>
+      <point x="286" y="1311" type="line"/>
+      <point x="416" y="1311" type="line"/>
+      <point x="416" y="-327" type="line"/>
+      <point x="286" y="-327" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="hr00">
+      <hstem pos="-406" width="79" />
+      <hstem pos="1311" width="77" />
+      <vstem pos="166" width="120" />
+      <vstem pos="416" width="120" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

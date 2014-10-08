@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="RomNumFiftyEarly" format="1">
+  <advance width="1378"/>
+  <unicode hex="2186"/>
+  <outline>
+    <contour>
+      <point x="1382" y="864" type="line" name="hr00"/>
+      <point x="1126" y="864" type="line"/>
+      <point x="603" y="157" type="line"/>
+      <point x="336" y="864" type="line"/>
+      <point x="84" y="864" type="line"/>
+      <point x="471" y="-33" type="line"/>
+      <point x="663" y="-33" type="line"/>
+    </contour>
+    <contour>
+      <point x="973" y="1374" type="line"/>
+      <point x="687" y="1374" type="line"/>
+      <point x="451" y="141" type="line" smooth="yes"/>
+      <point x="433" y="43"/>
+      <point x="734" y="122"/>
+      <point x="737" y="141" type="curve" smooth="yes"/>
+    </contour>
+    <contour>
+      <point x="851" y="1500" type="move" name="U"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="hr00">
+      <hstem pos="-12" width="-21" />
+      <hstem pos="93" width="64" />
+      <hstem pos="1374" width="-20" />
+      <vstem pos="84" width="1298" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

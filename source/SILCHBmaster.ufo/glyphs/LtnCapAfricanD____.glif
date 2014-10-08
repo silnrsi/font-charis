@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapAfricanD" format="1">
+  <advance width="1483"/>
+  <unicode hex="0189"/>
+  <outline>
+    <contour>
+      <point x="29" y="653" type="line" name="hr00"/>
+      <point x="812" y="653" type="line"/>
+      <point x="812" y="786" type="line"/>
+      <point x="29" y="786" type="line"/>
+    </contour>
+    <contour>
+      <point x="718" y="1500" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="718" y="-100" type="move" name="L"/>
+    </contour>
+    <component base="LtnCapD"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="hr00">
+      <hstem pos="653" width="133" />
+      <vstem pos="29" width="783" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

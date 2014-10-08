@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmSMiddleTilde" format="1">
+  <advance width="850"/>
+  <unicode hex="1D74"/>
+  <outline>
+    <component base="LtnSmS"/>
+    <component base="SmTilde" xOffset="-110" yOffset="-820"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+  <hintSetList>
+    <hintset pointTag="lsb">
+      <hstem pos="-30" width="62" />
+      <hstem pos="-30" width="62" />
+      <hstem pos="8" width="-21" />
+      <hstem pos="8" width="-21" />
+      <hstem pos="885" width="57" />
+      <hstem pos="885" width="57" />
+      <vstem pos="105" width="112" />
+      <vstem pos="105" width="112" />
+      <vstem pos="577" width="149" />
+      <vstem pos="577" width="149" />
+    </hintset>
+  </hintSetList>
+  </data>
+  </dict>
+  </lib>
+</glyph>

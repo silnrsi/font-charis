@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapKCaron" format="1">
+  <advance width="1307"/>
+  <unicode hex="01E8"/>
+  <outline>
+    <component base="LtnCapK"/>
+    <component base="CombCaron" xOffset="1243" yOffset="400"/>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.typemytype.robofont.mark</key>
+  <array>
+    <real>0.807</real>
+    <real>1</real>
+    <real>0.6</real>
+    <real>1</real>
+  </array>
+  </dict>
+  </lib>
+</glyph>
