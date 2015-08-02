@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ModLowDwnArrwhd" format="1">
+  <advance width="487"/>
+  <unicode hex="02EF"/>
+  <outline>
+    <component base="ModDwnArrwhd" xScale="0.5" yScale="0.5" yOffset="-925"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.guides</key>
+      <array>
+        <dict>
+          <key>angle</key>
+          <real>0</real>
+          <key>isGlobal</key>
+          <false/>
+          <key>magnetic</key>
+          <integer>5</integer>
+          <key>x</key>
+          <real>0</real>
+          <key>y</key>
+          <real>-100</real>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

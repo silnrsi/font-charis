@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapTDiagStrk" format="1">
+  <advance width="1200"/>
+  <unicode hex="023E"/>
+  <outline>
+    <contour>
+      <point x="1207" y="1470" type="line"/>
+      <point x="1102" y="1534" type="line"/>
+      <point x="45" y="-98" type="line"/>
+      <point x="133" y="-164" type="line"/>
+    </contour>
+    <component base="LtnCapT"/>
+    <contour>
+      <point x="768" y="1500" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="480" y="-100" type="move" name="L"/>
+    </contour>
+    <contour>
+      <point x="500" y="0" type="move" name="H"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapOpenSix" format="1">
+  <advance width="1179"/>
+  <unicode hex="1EFC"/>
+  <outline>
+    <contour>
+      <point x="601" y="78" type="curve" smooth="yes"/>
+      <point x="396" y="78"/>
+      <point x="311" y="312"/>
+      <point x="311" y="537" type="curve" smooth="yes"/>
+      <point x="311" y="825"/>
+      <point x="395" y="1131"/>
+      <point x="789" y="1300" type="curve"/>
+      <point x="769" y="1407" type="line"/>
+      <point x="349" y="1291"/>
+      <point x="80" y="950"/>
+      <point x="80" y="578" type="curve" smooth="yes"/>
+      <point x="80" y="190"/>
+      <point x="298" y="-25"/>
+      <point x="591" y="-25" type="curve" smooth="yes"/>
+      <point x="907" y="-25"/>
+      <point x="1099" y="210"/>
+      <point x="1099" y="479" type="curve" smooth="yes"/>
+      <point x="1099" y="691"/>
+      <point x="939" y="849"/>
+      <point x="673" y="913" type="curve"/>
+      <point x="664" y="889"/>
+      <point x="650" y="814"/>
+      <point x="641" y="800" type="curve"/>
+      <point x="820" y="739"/>
+      <point x="870" y="624"/>
+      <point x="870" y="452" type="curve" smooth="yes"/>
+      <point x="870" y="278"/>
+      <point x="798" y="78"/>
+    </contour>
+    <contour>
+      <point x="590" y="1500" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="590" y="-100" type="move" name="L"/>
+    </contour>
+  </outline>
+</glyph>
