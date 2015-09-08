@@ -3,7 +3,7 @@
 CharisSIL-WOFF-metadata.html
 Charis SIL v5.000
 This file is part of Charis SIL font family (http://scripts.sil.org/CharisSILfont)
-and is Copyright (c) 2003-2014 SIL International (http://www.sil.org/),
+and is Copyright (c) 2003-2015 SIL International (http://www.sil.org/),
 with Reserved Font Names "Charis" and "SIL". This Font Software is licensed
 under the SIL Open Font License, Version 1.1. You should have received a copy
 of the license along with this Font Software. If this is not the case, go to
@@ -87,6 +87,17 @@ of the license along with this Font Software. If this is not the case, go to
       ChangeLog
       ---------
       (This should list both major and minor changes, most recent first.)
+
+      7 Jul 2015 (SIL NRSI team) Charis SIL Regular version 5.000
+      - Added Graphite support to font subsets  
+      - added U+207F to America subset
+      - added U+030B and U+030F to Africa subset
+
+      17 Mar 2015 (SIL NRSI team) Charis SIL version 5.000
+      - Created OpenType-only font subsets for Africa (Afr), Americas (Am), 
+        Europe/Eurasia (Eur), Asia/Pacific (APac), Vietnam (Viet), 
+        IPA/Phonetics/Transliteration (Phon), Basic Cyrillic (Cyr),
+        and Extended Cyrillic (CyrE)  
       
       27 Oct 2014 (SIL NRSI team) Charis SIL version 5.000
       - Added Stylistic Sets to the font for OpenType support 
@@ -354,7 +365,7 @@ of the license along with this Font Software. If this is not the case, go to
 		</text>
     </license>
     <copyright>
-        <text lang="en">Copyright (c) 2003-2014 SIL International (http://www.sil.org/)</text>
+        <text lang="en">Copyright (c) 2003-2015 SIL International (http://www.sil.org/)</text>
     </copyright>
     <trademark>
         <text lang="en">CharisSIL is a trademark of SIL International</text>
