@@ -150,6 +150,7 @@ ChangeLog
 - "Hide tone contour staves" feature now works with single tonebar
 - U+1DBF now follows weight and italic changes
 - Allowed combining marks to render properly with U+02D0
+- Removed AAT support
 
 10 Jun 2013 (SIL NRSI team) Charis SIL version 4.114
 - optimized Graphite code for faster processing of plain ASCII text
