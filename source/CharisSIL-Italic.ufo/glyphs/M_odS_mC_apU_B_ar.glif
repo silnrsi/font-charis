@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ModSmCapUBar" format="1">
+  <advance width="752"/>
+  <unicode hex="F1CD"/>
+  <outline>
+    <component base="LtnCapUBar" xScale="0.52" yScale="0.43" xOffset="90" yOffset="785"/>
+    <contour>
+      <point x="531" y="1450" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="400" y="725" type="move" name="L"/>
+    </contour>
+  </outline>
+</glyph>

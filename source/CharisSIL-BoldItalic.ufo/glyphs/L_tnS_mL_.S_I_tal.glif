@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmL.SItal" format="1">
+  <advance width="692"/>
+  <outline>
+    <contour>
+      <point x="688" y="1509" type="line"/>
+      <point x="584" y="1509" type="line"/>
+      <point x="203" y="1407" type="line"/>
+      <point x="203" y="1323" type="line"/>
+      <point x="379" y="1323" type="line"/>
+      <point x="145" y="150" type="line" smooth="yes"/>
+      <point x="141" y="123"/>
+      <point x="119" y="102"/>
+      <point x="90" y="102" type="curve"/>
+      <point x="-29" y="96" type="line"/>
+      <point x="-29" y="0" type="line"/>
+      <point x="565" y="0" type="line"/>
+      <point x="565" y="96" type="line"/>
+      <point x="455" y="102" type="line"/>
+      <point x="428" y="102"/>
+      <point x="414" y="123"/>
+      <point x="420" y="150" type="curve" smooth="yes"/>
+    </contour>
+    <contour>
+      <point x="545" y="1580" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="221" y="-100" type="move" name="L"/>
+    </contour>
+    <contour>
+      <point x="592" y="1000" type="move" name="R"/>
+    </contour>
+    <contour>
+      <point x="241" y="0" type="move" name="H"/>
+    </contour>
+  </outline>
+</glyph>

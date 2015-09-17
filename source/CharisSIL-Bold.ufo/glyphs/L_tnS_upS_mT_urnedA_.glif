@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSupSmTurnedA" format="1">
+  <advance width="736"/>
+  <unicode hex="1D44"/>
+  <outline>
+    <component base="LtnSmTurnedA" xScale="0.65" yScale="0.6" yOffset="785"/>
+    <contour>
+      <point x="358" y="1457" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="358" y="725" type="move" name="L"/>
+    </contour>
+  </outline>
+</glyph>

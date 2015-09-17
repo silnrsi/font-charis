@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ModSmCapL" format="1">
+  <advance width="586"/>
+  <unicode hex="1DAB"/>
+  <outline>
+    <component base="LtnSmCapL" xScale="0.65" yScale="0.6" xOffset="5" yOffset="785"/>
+    <contour>
+      <point x="304" y="725" type="move" name="L"/>
+    </contour>
+    <contour>
+      <point x="304" y="1450" type="move" name="U"/>
+    </contour>
+  </outline>
+</glyph>

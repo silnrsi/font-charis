@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CombCandrabindu" format="1">
+  <advance width="0"/>
+  <unicode hex="0310"/>
+  <outline>
+    <component base="CombBreve"/>
+    <component base="DotAbv" xOffset="-598" yOffset="150"/>
+    <contour>
+      <point x="-383" y="1100" type="move" name="_U"/>
+    </contour>
+    <contour>
+      <point x="-339" y="1500" type="move" name="U"/>
+    </contour>
+  </outline>
+</glyph>

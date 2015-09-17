@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmLMiddleDot" format="1">
+  <advance width="816"/>
+  <unicode hex="0140"/>
+  <outline>
+    <component base="LtnSmL"/>
+    <component base="MiddleDot" xOffset="493"/>
+    <contour>
+      <point x="86" y="-100" type="move" name="L"/>
+    </contour>
+    <contour>
+      <point x="410" y="1580" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="107" y="0" type="move" name="H"/>
+    </contour>
+  </outline>
+</glyph>

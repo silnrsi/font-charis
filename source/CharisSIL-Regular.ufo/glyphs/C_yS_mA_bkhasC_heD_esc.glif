@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CySmAbkhasCheDesc" format="1">
+  <advance width="1239"/>
+  <unicode hex="04BF"/>
+  <outline>
+    <contour>
+      <point x="517" y="88" type="line"/>
+      <point x="549" y="40" type="line"/>
+      <point x="692" y="1"/>
+      <point x="703" y="-29"/>
+      <point x="703" y="-320" type="curve"/>
+      <point x="828" y="-320" type="line"/>
+      <point x="828" y="-29"/>
+      <point x="832" y="1"/>
+      <point x="990" y="40" type="curve"/>
+      <point x="1014" y="88" type="line"/>
+    </contour>
+    <component base="CySmAbkhasChe"/>
+    <contour>
+      <point x="765" y="1100" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="765" y="-400" type="move" name="L"/>
+    </contour>
+  </outline>
+</glyph>

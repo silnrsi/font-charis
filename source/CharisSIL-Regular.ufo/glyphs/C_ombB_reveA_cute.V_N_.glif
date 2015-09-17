@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CombBreveAcute.VN" format="1">
+  <advance width="610"/>
+  <outline>
+    <component base="CombBreve" xOffset="862"/>
+    <component base="CombAcute" xOffset="981" yOffset="290"/>
+    <contour>
+      <point x="305" y="1100" type="move" name="_U"/>
+    </contour>
+    <contour>
+      <point x="424" y="1790" type="move" name="U"/>
+    </contour>
+  </outline>
+</glyph>

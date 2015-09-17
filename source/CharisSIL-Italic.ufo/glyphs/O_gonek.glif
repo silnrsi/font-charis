@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Ogonek" format="1">
+  <advance width="377"/>
+  <unicode hex="02DB"/>
+  <outline>
+    <component base="CombOgonek" xOffset="572"/>
+    <contour>
+      <point x="38" y="-400" type="move" name="L"/>
+    </contour>
+  </outline>
+</glyph>

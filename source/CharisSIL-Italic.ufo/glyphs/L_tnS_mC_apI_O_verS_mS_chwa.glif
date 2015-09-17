@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmCapIOverSmSchwa" format="1">
+  <advance width="578"/>
+  <unicode hex="F258"/>
+  <outline>
+    <component base="LtnSupSmSchwa" xOffset="-150" yOffset="-795"/>
+    <component base="LtnSupSmCapI" xOffset="90" yOffset="-100"/>
+    <contour>
+      <point x="157" y="-100" type="move" name="L"/>
+    </contour>
+    <contour>
+      <point x="447" y="1405" type="move" name="U"/>
+    </contour>
+  </outline>
+</glyph>

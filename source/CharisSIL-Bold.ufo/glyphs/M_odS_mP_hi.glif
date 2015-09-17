@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ModSmPhi" format="1">
+  <advance width="800"/>
+  <unicode hex="1DB2"/>
+  <outline>
+    <component base="LtnSmPhi" xScale="0.65" yScale="0.6" yOffset="785"/>
+    <contour>
+      <point x="400" y="1700" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="400" y="485" type="move" name="L"/>
+    </contour>
+  </outline>
+</glyph>

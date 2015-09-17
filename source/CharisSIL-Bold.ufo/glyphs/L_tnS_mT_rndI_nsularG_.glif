@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmTrndInsularG" format="1">
+  <advance width="1085"/>
+  <unicode hex="A77F"/>
+  <outline>
+    <contour>
+      <point x="952" y="-239" type="line"/>
+      <point x="420" y="-239" type="line"/>
+      <point x="700" y="-156"/>
+      <point x="756" y="-43"/>
+      <point x="756" y="86" type="curve" smooth="yes"/>
+      <point x="756" y="183"/>
+      <point x="721" y="247"/>
+      <point x="668" y="299" type="curve"/>
+      <point x="871" y="368"/>
+      <point x="1020" y="494"/>
+      <point x="1020" y="672" type="curve" smooth="yes"/>
+      <point x="1020" y="866"/>
+      <point x="850" y="1024"/>
+      <point x="557" y="1024" type="curve" smooth="yes"/>
+      <point x="268" y="1024"/>
+      <point x="65" y="817"/>
+      <point x="65" y="598" type="curve" smooth="yes"/>
+      <point x="65" y="251"/>
+      <point x="546" y="212"/>
+      <point x="546" y="-2" type="curve" smooth="yes"/>
+      <point x="546" y="-89"/>
+      <point x="382" y="-203"/>
+      <point x="141" y="-239" type="curve"/>
+      <point x="121" y="-239" type="line"/>
+      <point x="121" y="-448" type="line"/>
+      <point x="952" y="-448" type="line"/>
+    </contour>
+    <contour>
+      <point x="572" y="373" type="curve"/>
+      <point x="442" y="457"/>
+      <point x="312" y="512"/>
+      <point x="312" y="675" type="curve" smooth="yes"/>
+      <point x="312" y="818"/>
+      <point x="426" y="892"/>
+      <point x="507" y="892" type="curve" smooth="yes"/>
+      <point x="637" y="892"/>
+      <point x="763" y="775"/>
+      <point x="763" y="639" type="curve" smooth="yes"/>
+      <point x="763" y="531"/>
+      <point x="689" y="440"/>
+    </contour>
+    <contour>
+      <point x="529" y="-500" type="move" name="L"/>
+    </contour>
+    <contour>
+      <point x="529" y="1100" type="move" name="U"/>
+    </contour>
+  </outline>
+</glyph>

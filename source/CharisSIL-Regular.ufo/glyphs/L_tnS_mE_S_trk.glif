@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmEStrk" format="1">
+  <advance width="1004"/>
+  <unicode hex="0247"/>
+  <outline>
+    <component base="LtnSmE"/>
+    <component base="CombShortSolidusOverlay" xOffset="1077"/>
+    <contour>
+      <point x="525" y="1100" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="525" y="-100" type="move" name="L"/>
+    </contour>
+  </outline>
+</glyph>

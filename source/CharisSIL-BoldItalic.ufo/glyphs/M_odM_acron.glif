@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ModMacron" format="1">
+  <advance width="696"/>
+  <unicode hex="02C9"/>
+  <outline>
+    <component base="CombMacron" xOffset="901"/>
+    <contour>
+      <point x="517" y="1470" type="move" name="U"/>
+    </contour>
+  </outline>
+</glyph>

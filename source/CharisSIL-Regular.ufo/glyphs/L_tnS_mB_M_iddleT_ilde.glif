@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmBMiddleTilde" format="1">
+  <advance width="1184"/>
+  <unicode hex="1D6C"/>
+  <outline>
+    <component base="LtnSmB" xOffset="47"/>
+    <component base="SmTilde" xOffset="-30" yOffset="-140"/>
+    <contour>
+      <point x="600" y="1540" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="600" y="-100" type="move" name="L"/>
+    </contour>
+  </outline>
+</glyph>
