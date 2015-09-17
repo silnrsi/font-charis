@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmOCircumHookAbv" format="1">
+  <advance width="1114"/>
+  <unicode hex="1ED5"/>
+  <outline>
+    <component base="LtnSmO"/>
+    <component base="CombCircum" xOffset="1114"/>
+    <component base="CombHookAbv" xOffset="1114" yOffset="400"/>
+    <contour>
+      <point x="557" y="0" type="move" name="H"/>
+    </contour>
+    <contour>
+      <point x="1114" y="1000" type="move" name="R"/>
+    </contour>
+    <contour>
+      <point x="557" y="1900" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="557" y="-100" type="move" name="L"/>
+    </contour>
+    <contour>
+      <point x="838" y="0" type="move" name="O"/>
+    </contour>
+  </outline>
+</glyph>

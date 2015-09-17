@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapLAcute" format="1">
+  <advance width="1087"/>
+  <unicode hex="0139"/>
+  <outline>
+    <component base="LtnCapL"/>
+    <component base="CombAcute" xOffset="1110" yOffset="400"/>
+    <contour>
+      <point x="553" y="0" type="move" name="H"/>
+    </contour>
+    <contour>
+      <point x="587" y="1000" type="move" name="R"/>
+    </contour>
+    <contour>
+      <point x="553" y="1900" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="553" y="-100" type="move" name="L"/>
+    </contour>
+  </outline>
+</glyph>

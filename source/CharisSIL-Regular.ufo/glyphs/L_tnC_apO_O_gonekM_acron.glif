@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapOOgonekMacron" format="1">
+  <advance width="1497"/>
+  <unicode hex="01EC"/>
+  <outline>
+    <component base="LtnCapO"/>
+    <component base="CombMacron" xOffset="1305" yOffset="400"/>
+    <component base="CombOgonek" xOffset="1336"/>
+    <contour>
+      <point x="748" y="0" type="move" name="H"/>
+    </contour>
+    <contour>
+      <point x="1487" y="1350" type="move" name="R"/>
+    </contour>
+    <contour>
+      <point x="748" y="1870" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="721" y="-500" type="move" name="L"/>
+    </contour>
+  </outline>
+</glyph>

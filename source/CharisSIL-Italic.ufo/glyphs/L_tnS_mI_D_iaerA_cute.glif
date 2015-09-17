@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmIDiaerAcute" format="1">
+  <advance width="545"/>
+  <unicode hex="1E2F"/>
+  <outline>
+    <component base="LtnSmDotlessI"/>
+    <component base="CombDiaer" xOffset="763"/>
+    <component base="CombAcute" xOffset="807" yOffset="400"/>
+    <contour>
+      <point x="194" y="0" type="move" name="H"/>
+    </contour>
+    <contour>
+      <point x="545" y="1000" type="move" name="R"/>
+    </contour>
+    <contour>
+      <point x="468" y="1900" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="150" y="-100" type="move" name="L"/>
+    </contour>
+    <contour>
+      <point x="410" y="0" type="move" name="O"/>
+    </contour>
+  </outline>
+</glyph>

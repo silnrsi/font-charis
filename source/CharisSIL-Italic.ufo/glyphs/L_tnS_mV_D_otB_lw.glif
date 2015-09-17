@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmVDotBlw" format="1">
+  <advance width="946"/>
+  <unicode hex="1E7F"/>
+  <outline>
+    <component base="LtnSmV"/>
+    <component base="CombDotBlw" xOffset="913"/>
+    <contour>
+      <point x="308" y="0" type="move" name="H"/>
+    </contour>
+    <contour>
+      <point x="520" y="1100" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="200" y="-500" type="move" name="L"/>
+    </contour>
+    <contour>
+      <point x="401" y="0" type="move" name="O"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapMDotAbv" format="1">
+  <advance width="1765"/>
+  <unicode hex="1E40"/>
+  <outline>
+    <component base="LtnCapM"/>
+    <component base="DotAbv" xOffset="815" yOffset="400"/>
+    <contour>
+      <point x="1336" y="0" type="move" name="H"/>
+    </contour>
+    <contour>
+      <point x="1092" y="1900" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="760" y="-100" type="move" name="L"/>
+    </contour>
+  </outline>
+</glyph>

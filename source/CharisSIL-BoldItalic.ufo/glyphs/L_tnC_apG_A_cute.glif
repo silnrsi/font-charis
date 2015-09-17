@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapGAcute" format="1">
+  <advance width="1495"/>
+  <unicode hex="01F4"/>
+  <outline>
+    <component base="LtnCapG"/>
+    <component base="CombAcute" xOffset="1421" yOffset="400"/>
+    <contour>
+      <point x="710" y="0" type="move" name="H"/>
+    </contour>
+    <contour>
+      <point x="1022" y="1900" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="690" y="-100" type="move" name="L"/>
+    </contour>
+  </outline>
+</glyph>

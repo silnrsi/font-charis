@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapOOgonekMacron.RetroHook" format="1">
+  <advance width="1968"/>
+  <outline>
+    <component base="LtnCapO"/>
+    <component base="CombMacron" xOffset="1373" yOffset="400"/>
+    <component base="Ogonek.RetroHook" xOffset="565"/>
+    <contour>
+      <point x="775" y="0" type="move" name="H"/>
+    </contour>
+    <contour>
+      <point x="1508" y="1250" type="move" name="R"/>
+    </contour>
+    <contour>
+      <point x="775" y="1870" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="775" y="-500" type="move" name="L"/>
+    </contour>
+    <contour>
+      <point x="1043" y="0" type="move" name="O"/>
+    </contour>
+  </outline>
+</glyph>

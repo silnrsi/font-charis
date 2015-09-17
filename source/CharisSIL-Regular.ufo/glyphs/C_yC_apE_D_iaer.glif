@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CyCapEDiaer" format="1">
+  <advance width="1276"/>
+  <unicode hex="04EC"/>
+  <outline>
+    <component base="CyCapE"/>
+    <component base="CombDiaer" xOffset="1157" yOffset="400"/>
+    <contour>
+      <point x="600" y="1900" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="600" y="-100" type="move" name="L"/>
+    </contour>
+  </outline>
+</glyph>

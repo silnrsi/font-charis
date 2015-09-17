@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapHCaron" format="1">
+  <advance width="1522"/>
+  <unicode hex="021E"/>
+  <outline>
+    <component base="LtnCapH"/>
+    <component base="CombCaron" xOffset="1318" yOffset="400"/>
+    <contour>
+      <point x="320" y="0" type="move" name="H"/>
+    </contour>
+    <contour>
+      <point x="761" y="1900" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="761" y="-100" type="move" name="L"/>
+    </contour>
+  </outline>
+</glyph>

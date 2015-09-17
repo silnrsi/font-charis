@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmLCedilla.sc" format="1">
+  <advance width="1044"/>
+  <outline>
+    <component base="LtnSmL.sc"/>
+    <component base="CombCommaBlw" xOffset="1130" yOffset="26"/>
+    <contour>
+      <point x="532" y="8" type="move" name="H"/>
+    </contour>
+    <contour>
+      <point x="584" y="828" type="move" name="R"/>
+    </contour>
+    <contour>
+      <point x="532" y="1238" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="532" y="-474" type="move" name="L"/>
+    </contour>
+  </outline>
+</glyph>

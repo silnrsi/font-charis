@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmAeMacron.2StorySItal" format="1">
+  <advance width="1513"/>
+  <outline>
+    <component base="LtnSmAe.2StorySItal"/>
+    <component base="CombMacron" xOffset="1344"/>
+    <contour>
+      <point x="677" y="0" type="move" name="H"/>
+    </contour>
+    <contour>
+      <point x="1513" y="1000" type="move" name="R"/>
+    </contour>
+    <contour>
+      <point x="960" y="1470" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="657" y="-100" type="move" name="L"/>
+    </contour>
+    <contour>
+      <point x="733" y="0" type="move" name="O"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapTLineBlw" format="1">
+  <advance width="1247"/>
+  <unicode hex="1E6E"/>
+  <outline>
+    <component base="LtnCapT"/>
+    <component base="ModLowMacron" xOffset="275"/>
+    <contour>
+      <point x="623" y="0" type="move" name="H"/>
+    </contour>
+    <contour>
+      <point x="623" y="1500" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="623" y="-500" type="move" name="L"/>
+    </contour>
+  </outline>
+</glyph>

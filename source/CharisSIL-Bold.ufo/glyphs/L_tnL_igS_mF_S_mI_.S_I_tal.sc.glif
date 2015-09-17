@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnLigSmFSmI.SItal.sc" format="1">
+  <advance width="1729"/>
+  <outline>
+    <component base="LtnSmF.sc"/>
+    <component base="LtnSmI.sc" xOffset="1053"/>
+    <contour>
+      <point x="1390" y="8" type="move" name="H"/>
+    </contour>
+    <contour>
+      <point x="1729" y="992" type="move" name="R"/>
+    </contour>
+    <contour>
+      <point x="1390" y="1238" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="1390" y="-74" type="move" name="L"/>
+    </contour>
+    <contour>
+      <point x="1560" y="8" type="move" name="O"/>
+    </contour>
+  </outline>
+</glyph>

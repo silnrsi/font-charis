@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmABreveTilde.2StorySItal.VN" format="1">
+  <advance width="1804"/>
+  <outline>
+    <component base="LtnSmA.2StorySItal"/>
+    <component base="CombBreveTilde.VN" xOffset="202"/>
+    <contour>
+      <point x="445" y="0" type="move" name="H"/>
+    </contour>
+    <contour>
+      <point x="1085" y="1000" type="move" name="R"/>
+    </contour>
+    <contour>
+      <point x="822" y="1789" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="418" y="-100" type="move" name="L"/>
+    </contour>
+    <contour>
+      <point x="914" y="0" type="move" name="O"/>
+    </contour>
+  </outline>
+</glyph>

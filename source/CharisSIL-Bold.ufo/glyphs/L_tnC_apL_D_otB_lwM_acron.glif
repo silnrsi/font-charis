@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapLDotBlwMacron" format="1">
+  <advance width="1135"/>
+  <unicode hex="1E38"/>
+  <outline>
+    <component base="LtnCapL"/>
+    <component base="CombDotBlw" xOffset="1176"/>
+    <component base="CombMacron" xOffset="1176" yOffset="400"/>
+    <contour>
+      <point x="578" y="0" type="move" name="H"/>
+    </contour>
+    <contour>
+      <point x="635" y="1000" type="move" name="R"/>
+    </contour>
+    <contour>
+      <point x="578" y="1870" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="578" y="-500" type="move" name="L"/>
+    </contour>
+  </outline>
+</glyph>

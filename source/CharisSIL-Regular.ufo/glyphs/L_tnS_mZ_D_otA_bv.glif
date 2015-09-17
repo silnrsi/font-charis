@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmZDotAbv" format="1">
+  <advance width="946"/>
+  <unicode hex="017C"/>
+  <outline>
+    <component base="LtnSmZ"/>
+    <component base="DotAbv" xOffset="369"/>
+    <contour>
+      <point x="483" y="0" type="move" name="H"/>
+    </contour>
+    <contour>
+      <point x="483" y="1500" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="483" y="-100" type="move" name="L"/>
+    </contour>
+  </outline>
+</glyph>

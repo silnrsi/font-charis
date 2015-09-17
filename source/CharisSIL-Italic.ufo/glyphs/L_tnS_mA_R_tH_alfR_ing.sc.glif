@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmARtHalfRing.sc" format="1">
+  <advance width="1268"/>
+  <outline>
+    <component base="LtnSmA.sc"/>
+    <component base="CombRtHalfRingBlw" xOffset="1509" yOffset="1831"/>
+    <contour>
+      <point x="530" y="8" type="move" name="H"/>
+    </contour>
+    <contour>
+      <point x="852" y="1718" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="507" y="-74" type="move" name="L"/>
+    </contour>
+    <contour>
+      <point x="1081" y="8" type="move" name="O"/>
+    </contour>
+  </outline>
+</glyph>

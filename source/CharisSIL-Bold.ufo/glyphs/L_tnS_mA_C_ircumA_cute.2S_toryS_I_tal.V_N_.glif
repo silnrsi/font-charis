@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmACircumAcute.2StorySItal.VN" format="1">
+  <advance width="2188"/>
+  <outline>
+    <component base="LtnSmA.2StorySItal"/>
+    <component base="CombCircumAcute.VN" xOffset="-12"/>
+    <contour>
+      <point x="524" y="0" type="move" name="H"/>
+    </contour>
+    <contour>
+      <point x="1133" y="1000" type="move" name="R"/>
+    </contour>
+    <contour>
+      <point x="524" y="-100" type="move" name="L"/>
+    </contour>
+    <contour>
+      <point x="983" y="0" type="move" name="O"/>
+    </contour>
+  </outline>
+</glyph>

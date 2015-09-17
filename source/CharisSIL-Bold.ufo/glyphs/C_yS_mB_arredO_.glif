@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CySmBarredO" format="1">
+  <advance width="1196"/>
+  <unicode hex="04E9"/>
+  <outline>
+    <component base="LtnSmBarredO"/>
+    <contour>
+      <point x="1196" y="1000" type="move" name="R"/>
+    </contour>
+    <contour>
+      <point x="599" y="1100" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="599" y="-100" type="move" name="L"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmBLineBlw" format="1">
+  <advance width="1137"/>
+  <unicode hex="1E07"/>
+  <outline>
+    <component base="LtnSmB"/>
+    <component base="ModLowMacron" xOffset="257"/>
+    <contour>
+      <point x="558" y="0" type="move" name="H"/>
+    </contour>
+    <contour>
+      <point x="1137" y="1000" type="move" name="R"/>
+    </contour>
+    <contour>
+      <point x="600" y="1540" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="600" y="-500" type="move" name="L"/>
+    </contour>
+  </outline>
+</glyph>

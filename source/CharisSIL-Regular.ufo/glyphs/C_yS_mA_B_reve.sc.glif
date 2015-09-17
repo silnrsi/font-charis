@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CySmABreve.sc" format="1">
+  <advance width="1270"/>
+  <outline>
+    <component base="CySmA.sc"/>
+    <component base="CombBreve.CyShortMrkAlt.UCHt" xOffset="1357" yOffset="-262"/>
+    <contour>
+      <point x="628" y="1673" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="628" y="-74" type="move" name="L"/>
+    </contour>
+  </outline>
+</glyph>

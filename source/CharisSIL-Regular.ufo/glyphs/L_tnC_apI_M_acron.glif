@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapIMacron" format="1">
+  <advance width="1162"/>
+  <unicode hex="012A"/>
+  <outline>
+    <component base="LtnCapI"/>
+    <component base="CombMacron.Short" xOffset="95" yOffset="400"/>
+    <contour>
+      <point x="338" y="0" type="move" name="H"/>
+    </contour>
+    <contour>
+      <point x="676" y="1200" type="move" name="R"/>
+    </contour>
+    <contour>
+      <point x="338" y="1870" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="338" y="-100" type="move" name="L"/>
+    </contour>
+    <contour>
+      <point x="494" y="0" type="move" name="O"/>
+    </contour>
+  </outline>
+</glyph>

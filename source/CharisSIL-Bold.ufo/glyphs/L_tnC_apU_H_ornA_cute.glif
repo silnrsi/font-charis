@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapUHornAcute" format="1">
+  <advance width="1726"/>
+  <unicode hex="1EE8"/>
+  <outline>
+    <component base="LtnCapUHorn"/>
+    <component base="CombAcute" xOffset="1356" yOffset="400"/>
+    <contour>
+      <point x="758" y="1900" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="758" y="-100" type="move" name="L"/>
+    </contour>
+  </outline>
+</glyph>

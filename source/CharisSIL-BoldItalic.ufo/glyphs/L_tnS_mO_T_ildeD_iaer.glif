@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmOTildeDiaer" format="1">
+  <advance width="1133"/>
+  <unicode hex="1E4F"/>
+  <outline>
+    <component base="LtnSmO"/>
+    <component base="SmTilde" xOffset="207"/>
+    <component base="CombDiaer" xOffset="1177" yOffset="400"/>
+    <contour>
+      <point x="466" y="0" type="move" name="H"/>
+    </contour>
+    <contour>
+      <point x="1133" y="1000" type="move" name="R"/>
+    </contour>
+    <contour>
+      <point x="778" y="1900" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="446" y="-100" type="move" name="L"/>
+    </contour>
+    <contour>
+      <point x="693" y="0" type="move" name="O"/>
+    </contour>
+  </outline>
+</glyph>

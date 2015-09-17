@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapRInvBreve" format="1">
+  <advance width="1399"/>
+  <unicode hex="0212"/>
+  <outline>
+    <component base="LtnCapR"/>
+    <component base="CombInvBreve" xOffset="1244" yOffset="400"/>
+    <contour>
+      <point x="243" y="0" type="move" name="H"/>
+    </contour>
+    <contour>
+      <point x="845" y="1900" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="513" y="-100" type="move" name="L"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmLLineBlw.SItal" format="1">
+  <advance width="692"/>
+  <outline>
+    <component base="LtnSmL.SItal"/>
+    <component base="CombMacronBlw.Short" xOffset="614"/>
+    <contour>
+      <point x="241" y="0" type="move" name="H"/>
+    </contour>
+    <contour>
+      <point x="592" y="1000" type="move" name="R"/>
+    </contour>
+    <contour>
+      <point x="545" y="1580" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="145" y="-500" type="move" name="L"/>
+    </contour>
+  </outline>
+</glyph>

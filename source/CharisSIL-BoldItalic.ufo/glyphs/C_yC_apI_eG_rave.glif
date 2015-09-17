@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CyCapIeGrave" format="1">
+  <advance width="1229"/>
+  <unicode hex="0400"/>
+  <outline>
+    <component base="CyCapIe"/>
+    <component base="CombGrave" xOffset="1219" yOffset="400"/>
+    <contour>
+      <point x="820" y="1900" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="488" y="-100" type="move" name="L"/>
+    </contour>
+  </outline>
+</glyph>

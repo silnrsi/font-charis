@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmIAcute.SItal" format="1">
+  <advance width="602"/>
+  <outline>
+    <component base="LtnSmDotlessI.SItal"/>
+    <component base="CombAcute" xOffset="880"/>
+    <contour>
+      <point x="213" y="0" type="move" name="H"/>
+    </contour>
+    <contour>
+      <point x="602" y="1000" type="move" name="R"/>
+    </contour>
+    <contour>
+      <point x="481" y="1500" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="193" y="-100" type="move" name="L"/>
+    </contour>
+    <contour>
+      <point x="400" y="0" type="move" name="O"/>
+    </contour>
+  </outline>
+</glyph>

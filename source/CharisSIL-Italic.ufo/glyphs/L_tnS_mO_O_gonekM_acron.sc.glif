@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmOOgonekMacron.sc" format="1">
+  <advance width="1338"/>
+  <outline>
+    <component base="LtnSmO.sc"/>
+    <component base="CombMacron" xOffset="1205" yOffset="138"/>
+    <component base="CombOgonek" xOffset="1213" yOffset="8"/>
+    <contour>
+      <point x="575" y="8" type="move" name="H"/>
+    </contour>
+    <contour>
+      <point x="1316" y="992" type="move" name="R"/>
+    </contour>
+    <contour>
+      <point x="881" y="1608" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="679" y="-392" type="move" name="L"/>
+    </contour>
+  </outline>
+</glyph>

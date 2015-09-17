@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmVTilde.sc" format="1">
+  <advance width="1212"/>
+  <outline>
+    <component base="LtnSmV.sc"/>
+    <component base="SmTilde" xOffset="304" yOffset="138"/>
+    <contour>
+      <point x="540" y="8" type="move" name="H"/>
+    </contour>
+    <contour>
+      <point x="831" y="1638" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="522" y="-74" type="move" name="L"/>
+    </contour>
+    <contour>
+      <point x="560" y="8" type="move" name="O"/>
+    </contour>
+  </outline>
+</glyph>

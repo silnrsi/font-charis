@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmAOgonek.2StorySItal" format="1">
+  <advance width="1133"/>
+  <outline>
+    <component base="LtnSmA.2StorySItal"/>
+    <component base="CombOgonek" xOffset="1333"/>
+    <contour>
+      <point x="524" y="0" type="move" name="H"/>
+    </contour>
+    <contour>
+      <point x="1133" y="1000" type="move" name="R"/>
+    </contour>
+    <contour>
+      <point x="524" y="1100" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="671" y="-500" type="move" name="L"/>
+    </contour>
+  </outline>
+</glyph>

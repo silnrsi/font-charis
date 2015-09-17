@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapVTilde" format="1">
+  <advance width="1446"/>
+  <unicode hex="1E7C"/>
+  <outline>
+    <component base="LtnCapV"/>
+    <component base="SmTilde" xOffset="388" yOffset="400"/>
+    <contour>
+      <point x="730" y="0" type="move" name="H"/>
+    </contour>
+    <contour>
+      <point x="747" y="1900" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="747" y="-100" type="move" name="L"/>
+    </contour>
+    <contour>
+      <point x="881" y="0" type="move" name="O"/>
+    </contour>
+  </outline>
+</glyph>

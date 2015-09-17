@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapOCircumDotBlw" format="1">
+  <advance width="1540"/>
+  <unicode hex="1ED8"/>
+  <outline>
+    <component base="LtnCapO"/>
+    <component base="CombDotBlw" xOffset="1335"/>
+    <component base="CombCircum" xOffset="1379" yOffset="400"/>
+    <contour>
+      <point x="668" y="0" type="move" name="H"/>
+    </contour>
+    <contour>
+      <point x="1520" y="1250" type="move" name="R"/>
+    </contour>
+    <contour>
+      <point x="980" y="1900" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="572" y="-500" type="move" name="L"/>
+    </contour>
+    <contour>
+      <point x="931" y="0" type="move" name="O"/>
+    </contour>
+  </outline>
+</glyph>

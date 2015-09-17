@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmSAcuteDotAbv.sc" format="1">
+  <advance width="1061"/>
+  <outline>
+    <component base="LtnSmS.sc"/>
+    <component base="CombAcute" xOffset="1152" yOffset="138"/>
+    <component base="DotAbv" xOffset="480" yOffset="538"/>
+    <contour>
+      <point x="443" y="8" type="move" name="H"/>
+    </contour>
+    <contour>
+      <point x="797" y="2038" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="424" y="-74" type="move" name="L"/>
+    </contour>
+  </outline>
+</glyph>

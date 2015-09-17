@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapACircumTilde.VN" format="1">
+  <advance width="2124"/>
+  <outline>
+    <component base="LtnCapA"/>
+    <component base="CombCircumTilde.VN" xOffset="335" yOffset="400"/>
+    <contour>
+      <point x="695" y="0" type="move" name="H"/>
+    </contour>
+    <contour>
+      <point x="695" y="2225" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="695" y="-100" type="move" name="L"/>
+    </contour>
+    <contour>
+      <point x="1290" y="0" type="move" name="O"/>
+    </contour>
+  </outline>
+</glyph>

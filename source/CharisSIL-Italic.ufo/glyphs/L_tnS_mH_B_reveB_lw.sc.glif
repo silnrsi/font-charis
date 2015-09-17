@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmHBreveBlw.sc" format="1">
+  <advance width="1366"/>
+  <outline>
+    <component base="LtnSmH.sc"/>
+    <component base="CombBreveBlw" xOffset="1207" yOffset="26"/>
+    <contour>
+      <point x="196" y="8" type="move" name="H"/>
+    </contour>
+    <contour>
+      <point x="835" y="1238" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="494" y="-474" type="move" name="L"/>
+    </contour>
+  </outline>
+</glyph>

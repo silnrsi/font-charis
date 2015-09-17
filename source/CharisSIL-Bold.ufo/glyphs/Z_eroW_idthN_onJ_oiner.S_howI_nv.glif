@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ZeroWidthNonJoiner.ShowInv" format="1">
+  <advance width="4523"/>
+  <outline>
+    <component base="BoxDotted"/>
+    <component base="LtnCapZ.Sophia" xOffset="600" yOffset="986"/>
+    <component base="LtnCapW.Sophia" xOffset="1194" yOffset="986"/>
+    <component base="LtnCapN.Sophia" xOffset="560" yOffset="260"/>
+    <component base="LtnCapJ.Sophia" xOffset="1350" yOffset="265"/>
+    <contour>
+      <point x="1552" y="900" type="move" name="C22"/>
+    </contour>
+    <contour>
+      <point x="1200" y="900" type="move" name="C23"/>
+    </contour>
+    <contour>
+      <point x="1200" y="526" type="move" name="L11"/>
+    </contour>
+    <contour>
+      <point x="650" y="526" type="move" name="L13"/>
+    </contour>
+    <contour>
+      <point x="1200" y="1252" type="move" name="U11"/>
+    </contour>
+    <contour>
+      <point x="1200" y="526" type="move" name="L23"/>
+    </contour>
+    <contour>
+      <point x="1750" y="1252" type="move" name="U33"/>
+    </contour>
+    <contour>
+      <point x="1750" y="526" type="move" name="L33"/>
+    </contour>
+    <contour>
+      <point x="1200" y="1252" type="move" name="U23"/>
+    </contour>
+    <contour>
+      <point x="650" y="900" type="move" name="C13"/>
+    </contour>
+    <contour>
+      <point x="826" y="900" type="move" name="C12"/>
+    </contour>
+    <contour>
+      <point x="1200" y="900" type="move" name="C11"/>
+    </contour>
+    <contour>
+      <point x="650" y="1252" type="move" name="U13"/>
+    </contour>
+    <contour>
+      <point x="1750" y="900" type="move" name="C33"/>
+    </contour>
+  </outline>
+</glyph>

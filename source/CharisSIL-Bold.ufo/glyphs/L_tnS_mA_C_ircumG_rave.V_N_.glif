@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmACircumGrave.VN" format="1">
+  <advance width="2087"/>
+  <outline>
+    <component base="LtnSmA"/>
+    <component base="CombCircumGrave.VN" xOffset="33"/>
+    <contour>
+      <point x="550" y="0" type="move" name="H"/>
+    </contour>
+    <contour>
+      <point x="1133" y="1000" type="move" name="R"/>
+    </contour>
+    <contour>
+      <point x="550" y="-100" type="move" name="L"/>
+    </contour>
+    <contour>
+      <point x="983" y="0" type="move" name="O"/>
+    </contour>
+  </outline>
+</glyph>

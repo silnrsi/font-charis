@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmITildeBlw.SItal" format="1">
+  <advance width="510"/>
+  <outline>
+    <component base="LtnSmI.SItal"/>
+    <component base="CombTildeBlw" xOffset="792"/>
+    <contour>
+      <point x="170" y="0" type="move" name="H"/>
+    </contour>
+    <contour>
+      <point x="510" y="1000" type="move" name="R"/>
+    </contour>
+    <contour>
+      <point x="394" y="1100" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="79" y="-500" type="move" name="L"/>
+    </contour>
+    <contour>
+      <point x="334" y="0" type="move" name="O"/>
+    </contour>
+  </outline>
+</glyph>

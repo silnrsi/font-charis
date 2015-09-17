@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmOStrkAcute.sc" format="1">
+  <advance width="1424"/>
+  <outline>
+    <component base="LtnSmOStrk.sc"/>
+    <component base="CombAcute" xOffset="1311" yOffset="138"/>
+    <contour>
+      <point x="713" y="1638" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="713" y="-74" type="move" name="L"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapUHornTilde" format="1">
+  <advance width="1693"/>
+  <unicode hex="1EEE"/>
+  <outline>
+    <component base="LtnCapUHorn"/>
+    <component base="SmTilde" xOffset="395" yOffset="400"/>
+    <contour>
+      <point x="750" y="1900" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="750" y="-100" type="move" name="L"/>
+    </contour>
+  </outline>
+</glyph>

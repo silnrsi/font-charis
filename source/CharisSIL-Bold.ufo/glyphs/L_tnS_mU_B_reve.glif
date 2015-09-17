@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmUBreve" format="1">
+  <advance width="1270"/>
+  <unicode hex="016D"/>
+  <outline>
+    <component base="LtnSmU"/>
+    <component base="CombBreve" xOffset="1235"/>
+    <contour>
+      <point x="637" y="0" type="move" name="H"/>
+    </contour>
+    <contour>
+      <point x="1270" y="1000" type="move" name="R"/>
+    </contour>
+    <contour>
+      <point x="637" y="1500" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="637" y="-100" type="move" name="L"/>
+    </contour>
+    <contour>
+      <point x="1083" y="0" type="move" name="O"/>
+    </contour>
+  </outline>
+</glyph>

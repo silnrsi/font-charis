@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmHDiaer" format="1">
+  <advance width="1157"/>
+  <unicode hex="1E27"/>
+  <outline>
+    <component base="LtnSmH"/>
+    <component base="CombDiaer" xOffset="1232" yOffset="440"/>
+    <contour>
+      <point x="171" y="0" type="move" name="H"/>
+    </contour>
+    <contour>
+      <point x="833" y="1940" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="473" y="-100" type="move" name="L"/>
+    </contour>
+  </outline>
+</glyph>

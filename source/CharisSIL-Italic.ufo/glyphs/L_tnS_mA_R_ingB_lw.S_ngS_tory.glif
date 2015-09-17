@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmARingBlw.SngStory" format="1">
+  <advance width="1067"/>
+  <outline>
+    <component base="LtnSmAlpha"/>
+    <component base="CombRingBlw" xOffset="1092"/>
+    <contour>
+      <point x="475" y="0" type="move" name="H"/>
+    </contour>
+    <contour>
+      <point x="1067" y="1000" type="move" name="R"/>
+    </contour>
+    <contour>
+      <point x="700" y="1100" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="349" y="-657" type="move" name="L"/>
+    </contour>
+    <contour>
+      <point x="943" y="0" type="move" name="O"/>
+    </contour>
+  </outline>
+</glyph>

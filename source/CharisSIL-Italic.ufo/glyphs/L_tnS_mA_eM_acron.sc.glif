@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmAeMacron.sc" format="1">
+  <advance width="1764"/>
+  <outline>
+    <component base="LtnSmAe.sc"/>
+    <component base="CombMacron" xOffset="1550" yOffset="138"/>
+    <contour>
+      <point x="1226" y="1608" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="903" y="-74" type="move" name="L"/>
+    </contour>
+  </outline>
+</glyph>

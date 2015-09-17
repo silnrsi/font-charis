@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmOTildeMacron" format="1">
+  <advance width="1036"/>
+  <unicode hex="022D"/>
+  <outline>
+    <component base="LtnSmO"/>
+    <component base="SmTilde" xOffset="160"/>
+    <component base="CombMacron" xOffset="1070" yOffset="400"/>
+    <contour>
+      <point x="419" y="0" type="move" name="H"/>
+    </contour>
+    <contour>
+      <point x="996" y="900" type="move" name="R"/>
+    </contour>
+    <contour>
+      <point x="746" y="1870" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="399" y="-100" type="move" name="L"/>
+    </contour>
+    <contour>
+      <point x="625" y="0" type="move" name="O"/>
+    </contour>
+  </outline>
+</glyph>

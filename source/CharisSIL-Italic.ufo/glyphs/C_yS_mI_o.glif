@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CySmIo" format="1">
+  <advance width="889"/>
+  <unicode hex="0451"/>
+  <outline>
+    <component base="CySmIe"/>
+    <component base="CombDiaer" xOffset="1023"/>
+    <contour>
+      <point x="684" y="1500" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="396" y="-100" type="move" name="L"/>
+    </contour>
+  </outline>
+</glyph>

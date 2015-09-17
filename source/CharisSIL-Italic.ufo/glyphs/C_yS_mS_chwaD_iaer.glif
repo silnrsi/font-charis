@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CySmSchwaDiaer" format="1">
+  <advance width="889"/>
+  <unicode hex="04DB"/>
+  <outline>
+    <component base="LtnSmSchwa"/>
+    <component base="CombDiaer" xOffset="895"/>
+    <contour>
+      <point x="292" y="0" type="move" name="H"/>
+    </contour>
+    <contour>
+      <point x="556" y="1500" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="272" y="-100" type="move" name="L"/>
+    </contour>
+    <contour>
+      <point x="438" y="0" type="move" name="O"/>
+    </contour>
+  </outline>
+</glyph>
