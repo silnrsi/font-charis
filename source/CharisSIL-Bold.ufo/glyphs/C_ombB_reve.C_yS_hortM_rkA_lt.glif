@@ -37,4 +37,16 @@
       <point x="-662" y="1100" type="move" name="_U"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>org.sil.assocFeature</key>
+      <string>sbrv</string>
+      <key>org.sil.assocUIDs</key>
+      <array>
+        <string>0306</string>
+      </array>
+      <key>public.postscriptname</key>
+      <string>uni0306.CyShortMrkAlt</string>
+    </dict>
+  </lib>
 </glyph>

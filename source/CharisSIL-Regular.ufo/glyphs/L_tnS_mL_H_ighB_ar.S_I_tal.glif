@@ -36,4 +36,16 @@
       <point x="323" y="-100" type="move" name="L"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>org.sil.assocFeature</key>
+      <string>ital</string>
+      <key>org.sil.assocUIDs</key>
+      <array>
+        <string>A749</string>
+      </array>
+      <key>public.postscriptname</key>
+      <string>uniA749.SItal</string>
+    </dict>
+  </lib>
 </glyph>

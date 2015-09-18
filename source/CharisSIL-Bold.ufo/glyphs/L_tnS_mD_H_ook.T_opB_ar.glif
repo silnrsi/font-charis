@@ -10,4 +10,16 @@
       <point x="642" y="-100" type="move" name="L"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>org.sil.assocFeature</key>
+      <string>D_hk</string>
+      <key>org.sil.assocUIDs</key>
+      <array>
+        <string>0257</string>
+      </array>
+      <key>public.postscriptname</key>
+      <string>uni0257.TopBar</string>
+    </dict>
+  </lib>
 </glyph>

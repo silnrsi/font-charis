@@ -47,4 +47,16 @@
       <point x="1024" y="99"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>org.sil.assocFeature</key>
+      <string>smcp</string>
+      <key>org.sil.assocUIDs</key>
+      <array>
+        <string>A72B</string>
+      </array>
+      <key>public.postscriptname</key>
+      <string>uniA72B.sc</string>
+    </dict>
+  </lib>
 </glyph>

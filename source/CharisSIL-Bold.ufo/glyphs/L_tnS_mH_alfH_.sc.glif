@@ -52,4 +52,16 @@
       <point x="332" y="8" type="move" name="H"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>org.sil.assocFeature</key>
+      <string>smcp</string>
+      <key>org.sil.assocUIDs</key>
+      <array>
+        <string>2C76</string>
+      </array>
+      <key>public.postscriptname</key>
+      <string>uni2C76.sc</string>
+    </dict>
+  </lib>
 </glyph>

@@ -11,4 +11,16 @@
       <point x="895" y="-74" type="move" name="L"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>org.sil.assocFeature</key>
+      <string>smcp</string>
+      <key>org.sil.assocUIDs</key>
+      <array>
+        <string>1E83</string>
+      </array>
+      <key>public.postscriptname</key>
+      <string>wacute.sc</string>
+    </dict>
+  </lib>
 </glyph>

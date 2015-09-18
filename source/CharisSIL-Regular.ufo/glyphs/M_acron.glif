@@ -5,4 +5,10 @@
   <outline>
     <component base="CombMacron" xOffset="900"/>
   </outline>
+  <lib>
+    <dict>
+      <key>public.postscriptname</key>
+      <string>macron</string>
+    </dict>
+  </lib>
 </glyph>

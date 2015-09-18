@@ -20,4 +20,17 @@
       <point x="1473" y="8" type="move" name="O"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>org.sil.assocFeature</key>
+      <string>smcp</string>
+      <key>org.sil.assocUIDs</key>
+      <array>
+        <string>0066</string>
+        <string>0069</string>
+      </array>
+      <key>public.postscriptname</key>
+      <string>f_i.SItal.sc</string>
+    </dict>
+  </lib>
 </glyph>

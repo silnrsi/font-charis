@@ -14,4 +14,16 @@
       <point x="875" y="-492" type="move" name="L"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>org.sil.assocFeature</key>
+      <string>smcp</string>
+      <key>org.sil.assocUIDs</key>
+      <array>
+        <string>0105</string>
+      </array>
+      <key>public.postscriptname</key>
+      <string>aogonek.sc</string>
+    </dict>
+  </lib>
 </glyph>

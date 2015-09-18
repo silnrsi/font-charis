@@ -20,4 +20,16 @@
       <point x="335" y="0" type="move" name="O"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>org.sil.assocFeature</key>
+      <string>ital</string>
+      <key>org.sil.assocUIDs</key>
+      <array>
+        <string>012B</string>
+      </array>
+      <key>public.postscriptname</key>
+      <string>imacron.SItal</string>
+    </dict>
+  </lib>
 </glyph>

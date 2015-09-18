@@ -17,4 +17,16 @@
       <point x="1187" y="8" type="move" name="O"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>org.sil.assocFeature</key>
+      <string>smcp</string>
+      <key>org.sil.assocUIDs</key>
+      <array>
+        <string>0103</string>
+      </array>
+      <key>public.postscriptname</key>
+      <string>abreve.sc</string>
+    </dict>
+  </lib>
 </glyph>

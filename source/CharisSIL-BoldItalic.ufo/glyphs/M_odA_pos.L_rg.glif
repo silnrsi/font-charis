@@ -4,4 +4,16 @@
   <outline>
     <component base="ModApos" xScale="1.3009" yScale="1.30047" xOffset="-114" yOffset="-463"/>
   </outline>
+  <lib>
+    <dict>
+      <key>org.sil.assocFeature</key>
+      <string>apos</string>
+      <key>org.sil.assocUIDs</key>
+      <array>
+        <string>02BC</string>
+      </array>
+      <key>public.postscriptname</key>
+      <string>uni02BC.Lrg</string>
+    </dict>
+  </lib>
 </glyph>

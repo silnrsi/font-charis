@@ -48,4 +48,16 @@
       <point x="622" y="992" type="move" name="R"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>org.sil.assocFeature</key>
+      <string>smcp</string>
+      <key>org.sil.assocUIDs</key>
+      <array>
+        <string>0069</string>
+      </array>
+      <key>public.postscriptname</key>
+      <string>i.sc</string>
+    </dict>
+  </lib>
 </glyph>

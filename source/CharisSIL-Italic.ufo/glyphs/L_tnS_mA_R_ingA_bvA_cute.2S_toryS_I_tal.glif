@@ -21,4 +21,16 @@
       <point x="843" y="0" type="move" name="O"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>org.sil.assocFeature</key>
+      <string>ital</string>
+      <key>org.sil.assocUIDs</key>
+      <array>
+        <string>01FB</string>
+      </array>
+      <key>public.postscriptname</key>
+      <string>aringacute.2StorySItal</string>
+    </dict>
+  </lib>
 </glyph>

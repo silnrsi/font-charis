@@ -59,4 +59,16 @@
       <point x="649" y="-100" type="move" name="L"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>org.sil.assocFeature</key>
+      <string>D_hk</string>
+      <key>org.sil.assocUIDs</key>
+      <array>
+        <string>018A</string>
+      </array>
+      <key>public.postscriptname</key>
+      <string>uni018A.TopBar</string>
+    </dict>
+  </lib>
 </glyph>

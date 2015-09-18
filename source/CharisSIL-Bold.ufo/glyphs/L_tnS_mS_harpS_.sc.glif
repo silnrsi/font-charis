@@ -14,4 +14,16 @@
       <point x="1523" y="-74" type="move" name="L"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>org.sil.assocFeature</key>
+      <string>smcp</string>
+      <key>org.sil.assocUIDs</key>
+      <array>
+        <string>00DF</string>
+      </array>
+      <key>public.postscriptname</key>
+      <string>germandbls.sc</string>
+    </dict>
+  </lib>
 </glyph>

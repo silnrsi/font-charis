@@ -50,4 +50,16 @@
       <point x="1750" y="900" type="move" name="C33"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>org.sil.assocFeature</key>
+      <string>invs</string>
+      <key>org.sil.assocUIDs</key>
+      <array>
+        <string>200B</string>
+      </array>
+      <key>public.postscriptname</key>
+      <string>uni200B.ShowInv</string>
+    </dict>
+  </lib>
 </glyph>

@@ -10,4 +10,16 @@
       <point x="335" y="-500" type="move" name="L"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>org.sil.assocFeature</key>
+      <string>Ezhr</string>
+      <key>org.sil.assocUIDs</key>
+      <array>
+        <string>0292</string>
+      </array>
+      <key>public.postscriptname</key>
+      <string>uni0292.RevSigmaStyle</string>
+    </dict>
+  </lib>
 </glyph>

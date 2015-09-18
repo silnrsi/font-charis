@@ -47,4 +47,16 @@
       <point x="427" y="-100" type="move" name="L"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>org.sil.assocFeature</key>
+      <string>opnO</string>
+      <key>org.sil.assocUIDs</key>
+      <array>
+        <string>1D10</string>
+      </array>
+      <key>public.postscriptname</key>
+      <string>uni1D10.TopSerif</string>
+    </dict>
+  </lib>
 </glyph>

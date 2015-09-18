@@ -68,4 +68,14 @@
       <point x="632" y="-500" type="move" name="L"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>org.sil.assocFeature</key>
+      <string>Engs</string>
+      <key>org.sil.assocFeatureValue</key>
+      <integer>0</integer>
+      <key>public.postscriptname</key>
+      <string>Eng</string>
+    </dict>
+  </lib>
 </glyph>

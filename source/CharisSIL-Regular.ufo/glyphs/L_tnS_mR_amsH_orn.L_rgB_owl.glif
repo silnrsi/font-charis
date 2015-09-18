@@ -66,4 +66,18 @@
       <point x="1083" y="1000" type="move" name="R"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>org.sil.assocFeature</key>
+      <string>ramh</string>
+      <key>org.sil.assocFeatureValue</key>
+      <integer>1</integer>
+      <key>org.sil.assocUIDs</key>
+      <array>
+        <string>0264</string>
+      </array>
+      <key>public.postscriptname</key>
+      <string>uni0264.LrgBowl</string>
+    </dict>
+  </lib>
 </glyph>

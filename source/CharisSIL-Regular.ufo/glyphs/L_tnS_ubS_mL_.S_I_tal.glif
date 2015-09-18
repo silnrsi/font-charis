@@ -28,4 +28,16 @@
       <point x="216" y="-520" type="move" name="L"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>org.sil.assocFeature</key>
+      <string>ital</string>
+      <key>org.sil.assocUIDs</key>
+      <array>
+        <string>2097</string>
+      </array>
+      <key>public.postscriptname</key>
+      <string>uni2097.SItal</string>
+    </dict>
+  </lib>
 </glyph>

@@ -17,4 +17,16 @@
       <point x="630" y="-100" type="move" name="L"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>org.sil.assocFeature</key>
+      <string>carn</string>
+      <key>org.sil.assocUIDs</key>
+      <array>
+        <string>010F</string>
+      </array>
+      <key>public.postscriptname</key>
+      <string>dcaron.Caron</string>
+    </dict>
+  </lib>
 </glyph>

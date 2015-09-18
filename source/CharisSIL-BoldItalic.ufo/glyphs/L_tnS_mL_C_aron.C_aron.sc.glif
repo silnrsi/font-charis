@@ -17,4 +17,16 @@
       <point x="413" y="-74" type="move" name="L"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>org.sil.assocFeature</key>
+      <string>smcp</string>
+      <key>org.sil.assocUIDs</key>
+      <array>
+        <string>013E</string>
+      </array>
+      <key>public.postscriptname</key>
+      <string>lcaron.Caron.sc</string>
+    </dict>
+  </lib>
 </glyph>

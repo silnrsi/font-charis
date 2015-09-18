@@ -64,4 +64,16 @@
       <point x="661" y="-402" type="move" name="L"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>org.sil.assocFeature</key>
+      <string>smcp</string>
+      <key>org.sil.assocUIDs</key>
+      <array>
+        <string>024B</string>
+      </array>
+      <key>public.postscriptname</key>
+      <string>uni024B.sc</string>
+    </dict>
+  </lib>
 </glyph>

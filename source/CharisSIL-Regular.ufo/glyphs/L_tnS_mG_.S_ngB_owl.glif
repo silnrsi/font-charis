@@ -69,4 +69,16 @@
       <point x="596" y="-432" type="move" name="H"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>org.sil.assocFeature</key>
+      <string>litr</string>
+      <key>org.sil.assocUIDs</key>
+      <array>
+        <string>0067</string>
+      </array>
+      <key>public.postscriptname</key>
+      <string>g.SngBowl</string>
+    </dict>
+  </lib>
 </glyph>

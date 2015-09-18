@@ -75,4 +75,16 @@
       <point x="550" y="0" type="move" name="H"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>org.sil.assocFeature</key>
+      <string>ital</string>
+      <key>org.sil.assocUIDs</key>
+      <array>
+        <string>2C65</string>
+      </array>
+      <key>public.postscriptname</key>
+      <string>uni2C65.2StorySItal</string>
+    </dict>
+  </lib>
 </glyph>

@@ -14,4 +14,16 @@
       <point x="324" y="-100" type="move" name="L"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>org.sil.assocFeature</key>
+      <string>ital</string>
+      <key>org.sil.assocUIDs</key>
+      <array>
+        <string>017C</string>
+      </array>
+      <key>public.postscriptname</key>
+      <string>zdotaccent.SItal</string>
+    </dict>
+  </lib>
 </glyph>

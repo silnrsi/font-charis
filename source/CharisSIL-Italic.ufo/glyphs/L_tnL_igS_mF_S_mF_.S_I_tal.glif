@@ -67,4 +67,17 @@
       <point x="1512" y="1303"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>org.sil.assocFeature</key>
+      <string>ital</string>
+      <key>org.sil.assocUIDs</key>
+      <array>
+        <string>0066</string>
+        <string>0066</string>
+      </array>
+      <key>public.postscriptname</key>
+      <string>f_f.SItal</string>
+    </dict>
+  </lib>
 </glyph>

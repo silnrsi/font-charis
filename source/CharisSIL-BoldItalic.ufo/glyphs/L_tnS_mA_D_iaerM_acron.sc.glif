@@ -18,4 +18,16 @@
       <point x="1154" y="8" type="move" name="O"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>org.sil.assocFeature</key>
+      <string>smcp</string>
+      <key>org.sil.assocUIDs</key>
+      <array>
+        <string>01DF</string>
+      </array>
+      <key>public.postscriptname</key>
+      <string>uni01DF.sc</string>
+    </dict>
+  </lib>
 </glyph>

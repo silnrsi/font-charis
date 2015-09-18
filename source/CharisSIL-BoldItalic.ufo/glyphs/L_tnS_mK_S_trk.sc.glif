@@ -93,4 +93,16 @@
       <point x="586" y="8" type="move" name="H"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>org.sil.assocFeature</key>
+      <string>smcp</string>
+      <key>org.sil.assocUIDs</key>
+      <array>
+        <string>A741</string>
+      </array>
+      <key>public.postscriptname</key>
+      <string>uniA741.sc</string>
+    </dict>
+  </lib>
 </glyph>

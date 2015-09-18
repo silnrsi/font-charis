@@ -70,4 +70,16 @@
       <point x="590" y="-74" type="move" name="L"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>org.sil.assocFeature</key>
+      <string>smcp</string>
+      <key>org.sil.assocUIDs</key>
+      <array>
+        <string>1EFF</string>
+      </array>
+      <key>public.postscriptname</key>
+      <string>uni1EFF.sc</string>
+    </dict>
+  </lib>
 </glyph>

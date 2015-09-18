@@ -52,4 +52,16 @@
       <point x="1750" y="900" type="move" name="C33"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>org.sil.assocFeature</key>
+      <string>invs</string>
+      <key>org.sil.assocUIDs</key>
+      <array>
+        <string>FE05</string>
+      </array>
+      <key>public.postscriptname</key>
+      <string>uniFE05.ShowInv</string>
+    </dict>
+  </lib>
 </glyph>

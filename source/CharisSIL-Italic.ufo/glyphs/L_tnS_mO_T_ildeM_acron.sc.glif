@@ -21,4 +21,16 @@
       <point x="803" y="8" type="move" name="O"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>org.sil.assocFeature</key>
+      <string>smcp</string>
+      <key>org.sil.assocUIDs</key>
+      <array>
+        <string>022D</string>
+      </array>
+      <key>public.postscriptname</key>
+      <string>uni022D.sc</string>
+    </dict>
+  </lib>
 </glyph>

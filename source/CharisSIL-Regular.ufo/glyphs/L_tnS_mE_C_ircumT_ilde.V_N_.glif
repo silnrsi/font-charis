@@ -20,4 +20,16 @@
       <point x="808" y="0" type="move" name="O"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>org.sil.assocFeature</key>
+      <string>viet</string>
+      <key>org.sil.assocUIDs</key>
+      <array>
+        <string>1EC5</string>
+      </array>
+      <key>public.postscriptname</key>
+      <string>uni1EC5.VN</string>
+    </dict>
+  </lib>
 </glyph>

@@ -66,4 +66,16 @@
       <point x="600" y="-100" type="move" name="L"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>org.sil.assocFeature</key>
+      <string>mone</string>
+      <key>org.sil.assocUIDs</key>
+      <array>
+        <string>042D</string>
+      </array>
+      <key>public.postscriptname</key>
+      <string>uni042D.MongolStyle</string>
+    </dict>
+  </lib>
 </glyph>
