@@ -8,7 +8,7 @@ As a reminder: these source files are Copyright (c) 1997-2014 SIL International 
 with Reserved Font Names "Charis" and "SIL".
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
             
-font.gdl              - definition of glyphs and glyph classes; auto-generated from the font
+charis.gdl            - definition of glyphs and glyph classes; auto-generated from the font
 main.gdh              - bulk of Graphite rules and extra definitions to support them
 features.gdh          - feature and language-feature definitions
 pitches.gdh           - rules and definitions to support tone ligatures
