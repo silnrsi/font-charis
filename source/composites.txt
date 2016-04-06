@@ -784,6 +784,8 @@ LftStemTnLtr4 = TnLtrSpcFlatLeft & TnLtrBar & TnLtrSeg44 & TnLtrSpcPointRight |A
 LftStemTnLtr3 = TnLtrSpcFlatLeft & TnLtrBar & TnLtrSeg33 & TnLtrSpcPointRight |A714
 LftStemTnLtr2 = TnLtrSpcFlatLeft & TnLtrBar & TnLtrSeg22 & TnLtrSpcPointRight |A715
 LftStemTnLtr1 = TnLtrSpcFlatLeft & TnLtrBar & TnLtrSeg11 & TnLtrSpcPointRight |A716
+MathLftAngBrac = LftPtngAngBrac |27E8
+MathRtAngBrac = RtPtngAngBrac |27E9
 Hyphen_Soft.ShowInv = BoxDotted + LtnCapS.Sophia@C13 [with=_C] + LtnCapH.Sophia@BoxDotted:C23 [with=_C] + LtnCapY.Sophia@BoxDotted:C33 [with=_C]
 CombGraphemeJoiner.ShowInv = BoxDotted + LtnCapC.Sophia@C13 [with=_C] + LtnCapG.Sophia@BoxDotted:C23 [with=_C] + LtnCapJ.Sophia@BoxDotted:C33 [with=_C]
 FunctionApplication.ShowInv = BoxDotted + LtnCapF.Sophia@C13 [with=_C] + LftParen.Sophia@BoxDotted:C23 [with=_C] + RtParen.Sophia@BoxDotted:C33 [with=_C]
