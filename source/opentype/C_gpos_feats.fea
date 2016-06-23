@@ -1,0 +1,107 @@
+feature mark {
+
+ script DFLT;
+     language dflt ;
+      lookup markMarkPositioninglookup0;
+#      lookup markMarkPositioninglookup1;
+      lookup base_U_base;
+      lookup base_L_base;
+      lookup base_O_base;
+      lookup base_H_base;
+      lookup base_R_base;
+      
+ script cyrl;
+     language dflt ;
+      lookup markMarkPositioninglookup0;
+      lookup base_U_base;
+      lookup base_L_base;
+      lookup base_O_base;
+      lookup base_H_base;
+      lookup base_R_base;
+
+     language SRB  exclude_dflt;
+      lookup markMarkPositioninglookup0;
+      lookup base_U_base;
+      lookup base_L_base;
+      lookup base_O_base;
+      lookup base_H_base;
+      lookup base_R_base;
+
+
+ script latn;
+     language dflt ;
+      lookup markMarkPositioninglookup0;
+      lookup base_U_base;
+      lookup base_L_base;
+      lookup base_O_base;
+      lookup base_H_base;
+      lookup base_R_base;
+
+     language IPPH exclude_dflt;
+      lookup markMarkPositioninglookup0;
+      lookup base_U_base;
+      lookup base_L_base;
+      lookup base_O_base;
+      lookup base_H_base;
+      lookup base_R_base;
+
+     language VIT  exclude_dflt;
+      lookup markMarkPositioninglookup0;
+      lookup base_U_base;
+      lookup base_L_base;
+      lookup base_O_base;
+      lookup base_H_base;
+      lookup base_R_base;
+
+} mark;
+
+feature mkmk {
+
+ script DFLT;
+     language dflt ;
+#      lookup mkmkMarktoMarklookup2;
+      lookup base_U_mark;
+#      lookup mkmkMarktoMarklookup3;
+      lookup base_L_mark;
+
+
+ script cyrl;
+     language dflt ;
+      lookup base_U_mark;
+      lookup base_L_mark;
+     language SRB  exclude_dflt;
+      lookup base_U_mark;
+      lookup base_L_mark;
+
+ script latn;
+     language dflt ;
+      lookup base_U_mark;
+      lookup base_L_mark;
+     language IPPH exclude_dflt;
+      lookup base_U_mark;
+      lookup base_L_mark;
+     language VIT  exclude_dflt;
+      lookup base_U_mark;
+      lookup base_L_mark;
+} mkmk;
+
+feature kern {
+
+ script DFLT;
+     language dflt ;
+      lookup kernHorizontalKerninglookup4;
+
+ script cyrl;
+     language dflt ;
+      lookup kernHorizontalKerninglookup4;
+     language SRB  exclude_dflt;
+      lookup kernHorizontalKerninglookup4;
+
+ script latn;
+     language dflt ;
+      lookup kernHorizontalKerninglookup4;
+     language IPPH exclude_dflt;
+      lookup kernHorizontalKerninglookup4;
+     language VIT  exclude_dflt;
+      lookup kernHorizontalKerninglookup4;
+} kern;
