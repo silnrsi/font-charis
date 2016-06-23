@@ -1,0 +1,5 @@
+include(C_gsub.fea);
+include(CI_gpos_lkups.fea);
+include(CI_gpos_ap_lkups.fea);
+include(C_gpos_feats.fea);
+include(C_gdef.fea);
