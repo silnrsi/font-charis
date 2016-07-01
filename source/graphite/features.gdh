@@ -1,10 +1,10 @@
 /*
     Title:  Roman Font GDL description -- feature definitions
     Author: Martin Hosken, Bob Hallissy, Sharon Correll
-    
 
-	This file is part of Charis font family 
-	(http://scripts.sil.org/CharisSIL) and is 
+
+	This file is part of Charis font family
+	(http://scripts.sil.org/CharisSIL) and is
 	Copyright (c) 2003-2010 SIL International (http://www.sil.org/),
 	with Reserved Font Names "Charis" and "SIL".
 
@@ -25,7 +25,7 @@ SJC 2008-Apr-23  Changed Tat alternates back to H-stroke alternates
 SJC 2008-Jan-29  Added Andika features; reworked various things
 SJC 2007-Oct     Marked some features to only include in non-basic font
 SJC 2007-Jan-23  Removed Cyrillic cursive italic feature (merged with slant italic specials)
-SJC 2006-Dec-05  Additions to support Unicode 5.0: 9-level pitches, Cyrillic cursive italics, 
+SJC 2006-Dec-05  Additions to support Unicode 5.0: 9-level pitches, Cyrillic cursive italics,
 		open-o, Chinantec tones; removed Orthographic glottal alt; added language table
 SJC 2006-Apr-12  Added code for small-caps and all-caps features (turned off)
 SJC 2006-Jan-19  Added feature 1056; reordered list slightly
@@ -41,7 +41,7 @@ RMH 2003-Sep-25	 Took a shot at re-wording features to:
 		add named values for many features to see how we like it.
 RMH 01-Sep-2003	 Reworked all features PC's design
 RMH 17-Jul-2003	 Changed Ameriphon ID so it doesn't conflict with invis
-RMH 10-Jul-2003	 Per RFS team decisions:	
+RMH 10-Jul-2003	 Per RFS team decisions:
 		Remove "left-stem tone letter" option
 		Make "Pitches as Numbers" a true boolean
 MJPH 04-Nov-2002  original
@@ -80,7 +80,7 @@ MJPH 04-Nov-2002  original
 //	Features
 //
 
-table(feature) 
+table(feature)
 
 smallcaps {
 	id = "smcp";
@@ -282,7 +282,7 @@ ramshorn {
 		gamma {
 			value = 2;
 			name.1033 = string("Small gamma");
-		}	
+		}
 	}
 }
 
@@ -677,7 +677,7 @@ modlowcolon {
 		}
 	}
 }
-	
+
 caron {
 	id = "carn";
 	name.1033 = string("Non-European caron alternates");
@@ -958,7 +958,7 @@ select_diac {
 }
 --------------------------- */
 
-#if DEBUG  
+#if DEBUG
 debug {
 	id = "dbug";
 	name.1033 = string("DeBuG");

@@ -1,6 +1,25 @@
-results
+# Directories to ignore
+/dist
+/local
+/results
+
+# Temp files
+*~
+*.log
+
+# smith
+.waf-*
+.lock-*
+
+# Graphite (are these needed, or would they be in ignored directories)
 $_temp.gdl
 font-raw.ttf
 font_gdl.gdx
 font_gdl.ttf
 gdlerr.txt
+
+
+# installers (are these needed, or would they be in ignored directories)
+*.exe
+*.deb
+*.pkg

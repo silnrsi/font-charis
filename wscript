@@ -27,13 +27,24 @@ DEBPKG = 'fonts-sil-charis'
 
 # set the build and test parameters
 
-for style in ('-Regular','-Bold') :
-    font(target = FILENAMEBASE + style + '.ttf',
-#        source = 'source/' + FILENAMEBASE + style + '.ufo',
-        source = create(FILENAMEBASE + style + '-not.sfd', cmd("../tools/FFRemoveOverlapAll.py ${SRC} ${TGT}", ['source/' + FILENAMEBASE + style + '.ufo']),
-                                          cmd("../tools/FFRemoveOverlapAll.py ${DEP} ${TGT}")),
+#for style in ('-Regular','-Bold') :
+for style in ('-Regular',) :
+    fname = FILENAMEBASE + style
+    font(target = fname + '.ttf',
+#        source = 'source/' + fname + '.ufo',
+        source = create(fname + '-not.sfd', cmd("../tools/FFRemoveOverlapAll.py ${SRC} ${TGT}", ['source/' + fname + '.ufo'])),
         version = VERSION,
+        ap =  'source/' + fname +'_ap' + '.xml',
+        #classes = 'source/' + fname +'_classes' + '.xml',
+        opentype = fea('source/' + fname + '.fea',
+            master = 'source/opentype/' + fname + '.fea',
+            #preinclude = 'font-source/padauk' + f + '_init.fea',
+            make_params="-o 'C L11 L12 L13 L21 L22 L23 L31 L32 L33 C11 C12 C13 C21 C22 C23 C31 C32 C33 U11 U12 U13 U21 U22 U23 U31 U32 U33'",
+           # depends = map(lambda x:"font-source/padauk-"+x+".fea",
+           #     ('mym2_features', 'mym2_GSUB', 'dflt_GSUB'))
+            ),
+        graphite = gdl('source/' + fname + '.gdl',
+            master = 'source/graphite/charis.gdl'),
         license = ofl('CharisSIL','SIL'),
-        opentype = internal(),
         woff = woff()
-    )
+        )
