@@ -25,7 +25,9 @@ used for building, testing and releasing.
 DESC_NAME = "CharisSIL"
 DEBPKG = 'fonts-sil-charis'
 
-pysilfontscripts = "../../pysilfont/scripts/"
+import os
+pysilfontscripts = os.path.abspath("../pysilfont/scripts/")
+print pysilfontscripts
 
 # set the build and test parameters
 
@@ -33,7 +35,7 @@ for style in ('-Regular','-Italic') :
     fname = FILENAMEBASE + style
     feabase = 'source/opentype/'+FILENAMEBASE
     font( target = process(fname + '.ttf', name(fname, lang='en-US', subfamily=('Regular')),
-            cmd(pysilfontscripts+'tools/FFchangeGlyphNames.py -i ../local/psnames ${DEP} ${TGT}')),
+            cmd(pysilfontscripts+'/tools/FFchangeGlyphNames.py -i ../local/psnames ${DEP} ${TGT}')),
         source = create(fname + '-not.sfd', cmd("../tools/FFRemoveOverlapAll.py ${SRC} ${TGT}", ['source/' + fname + '.ufo'])),
         version = VERSION,
         ap =  'source/' + fname +'_ap' + '.xml',
@@ -49,4 +51,4 @@ for style in ('-Regular','-Italic') :
         woff = woff()
         )
 def configure(ctx) :
-    ctx.find_program('FFchangeGlyphNames.py', path_list = '../pysilfont/scripts/tools')
+    ctx.find_program('FFchangeGlyphNames.py', path_list = pysilfontscripts+'/tools/')
