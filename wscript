@@ -35,7 +35,7 @@ for style in ('-Regular','-Italic') :
     fname = FILENAMEBASE + style
     feabase = 'source/opentype/'+FILENAMEBASE
     font( target = process(fname + '.ttf', name(fname, lang='en-US', subfamily=('Regular')),
-            cmd(pysilfontscripts+'/tools/FFchangeGlyphNames.py -i ../local/psnames ${DEP} ${TGT}')),
+            cmd(pysilfontscripts+'/tools/FFchangeGlyphNames.py -i ../source/psnames ${DEP} ${TGT}')),
         source = create(fname + '-not.sfd', cmd("../tools/FFRemoveOverlapAll.py ${SRC} ${TGT}", ['source/' + fname + '.ufo'])),
         version = VERSION,
         ap =  'source/' + fname +'_ap' + '.xml',
