@@ -1,5 +1,4 @@
 include(CharisSIL_gsub.fea);
-include(CharisSIL-Regular_gpos_lkups.fea);
+include(CharisSIL-Italic_gpos_lkups.fea);
 include(CharisSIL_gpos_feats.fea);
 include(CharisSIL_gdef.fea);
-

@@ -122,7 +122,7 @@ AutoPseudo = 0;
 ////#define KERNPASS 3
 
 #if DEBUG
-#define DeBuG gltncapd g_e gltncapb g_u gltncapg g_colon
+#define DeBuG g__ltn_cap_d g__ltn_sm_e g__ltn_cap_b g__ltn_sm_u g__ltn_cap_g g__colon
 #endif
 
 //////////////////////////////////////////////////////////////////////////////////////
@@ -139,84 +139,92 @@ table(glyph);
 //			{ dir = DIR_WHITESPACE };
 
 
+// Temp additions by David Raymond
+
+cBarBowl = (g__ltn_sm_b_barred_bowl, g__ltn_sm_d_barred_bowl, g__ltn_sm_g_barred_bowl);
+
+cno_BarBowl = (g__ltn_sm_b_barred_stem, g__ltn_sm_d_barred_stem, g__ltn_sm_g_strk);
+
+
+
 // Additions to feature classes for small caps; these are not included
 // automatically by make_gdl.
 
-cBaselineHook += (gltnsmeng_BaselineHook_sc); // but these classes aren't really used
-cUCStyle += (gltnsmeng_UCStyle_sc);
-cKom += (gltnsmeng_Kom_sc);
-cno_BaselineHook += (gltnsmeng_sc);
-cno_UCStyle += (gltnsmeng_sc);
-cno_Kom += (gltnsmeng_sc);
+cBaselineHook += (g__ltn_sm_eng_baseline_hook_sc); // but these classes aren't really used
+cUCStyle += (g__ltn_sm_eng_u_c_style_sc);
+cKom += (g__ltn_sm_eng_kom_sc);
+cno_BaselineHook += (g__ltn_sm_eng_sc);
+cno_UCStyle += (g__ltn_sm_eng_sc);
+cno_Kom += (g__ltn_sm_eng_sc);
 
 // This class is not useful since there are two different features that use "topBar":
 //cTopBar += (g0253_topBar_sc);
 //cno_TopBar += (g0253_sc);
 
-cTopBarB = (gltnsmbhook_topbar, gltncapbhook_topbar, gltnsmbhook_TopBar_sc);
-cno_TopBarB = (gltnsmbhook, gltncapbhook, gltnsmbhook_sc);
+cTopBarB = (g__ltn_sm_b_hook_top_bar, g__ltn_cap_b_hook_top_bar, g__ltn_sm_b_hook_top_bar_sc);
+cno_TopBarB = (g__ltn_sm_b_hook, g__ltn_cap_b_hook, g__ltn_sm_b_hook_sc);
 
-cTopBarD = (gltncapdhook_topbar, gltnsmdhook_TopBar_sc);
-cno_TopBarD = (gltncapdhook, gltnsmdhook_sc);
+cTopBarD = (g__ltn_cap_d_hook_top_bar, g__ltn_sm_d_hook_top_bar_sc);
+cno_TopBarD = (g__ltn_cap_d_hook, g__ltn_sm_d_hook_sc);
 
-cVertStrk += (gltnsmhstrk_VertStrk_sc);
-cno_VertStrk += (gltnsmhstrk_sc);
+cVertStrk += (g__ltn_sm_h_strk_vert_strk_sc);
+cno_VertStrk += (g__ltn_sm_h_strk_sc);
 
 //cCommaStyle += (g_scedilla_comma_style_sc, g0163_commaStyle_sc);
 //cno_CommaStyle += (g_scedilla_sc, g0163_sc);
 
-cTopSerif += (gltnsmopno_TopSerif_sc);
-cno_TopSerif += (gltnsmopno_sc);
+cTopSerif += (g__ltn_sm_opn_o_top_serif_sc);
+cno_TopSerif += (g__ltn_sm_opn_o_sc);
 
-cLCStyleNhook = (gltncapnlfthook_lcstyle, gltnsmnlfthook_LCStyle_sc);
-cno_LCStyleNhook = (gltncapnlfthook, gltnsmnlfthook_sc);
+cLCStyleNhook = (g__ltn_cap_n_lft_hook_l_c_style, g__ltn_sm_n_lft_hook_l_c_style_sc);
+cno_LCStyleNhook = (g__ltn_cap_n_lft_hook, g__ltn_sm_n_lft_hook_sc);
 
-cLCStyleRtail = (gltncapsmrhooktail, gltnsmcapsmrhooktail); // what about lowercase r-tail SC?
-cno_LCStyleRtail = (gltncaprhooktail, gltnsmrhooktail_sc);
+cLCStyleRtail = (g__ltn_cap_sm_r_hook_tail, g__ltn_sm_cap_sm_r_hook_tail); // what about lowercase r-tail SC?
+cno_LCStyleRtail = (g__ltn_cap_r_hook_tail, g__ltn_sm_r_hook_tail_sc);
 
-cRtHookThook = (gltncapthook_rthook, gltnsmthook_RtHook_sc);
-cno_RtHookThook = (gltncapthook, gltnsmthook_sc);
+cRtHookThook = (g__ltn_cap_t_hook_rt_hook, g__ltn_sm_t_hook_rt_hook_sc);
+cno_RtHookThook = (g__ltn_cap_t_hook, g__ltn_sm_t_hook_sc);
 
-cRtHookYhook = (gltncapyhook_rthook, gltnsmyhook_RtHook_sc);
-cno_RtHookYhook = (gltncapyhook, gltnsmyhook_sc);
+cRtHookYhook = (g__ltn_cap_y_hook_rt_hook, g__ltn_sm_y_hook_rt_hook_sc);
+cno_RtHookYhook = (g__ltn_cap_y_hook, g__ltn_sm_y_hook_sc);
 
-cStraightLft += (gltnsmvhook_StraightLft_sc);
-cStraightLftHighHook += (gltnsmvhook_StraightLftHighHook_sc);
-cno_StraightLft += (gltnsmvhook_sc);
-cno_StraightLftHighHook += (gltnsmvhook_sc);
+cStraightLft += (g__ltn_sm_v_hook_straight_lft_sc);
+cStraightLftHighHook += (g__ltn_sm_v_hook_straight_lft_high_hook_sc);
+cno_StraightLft += (g__ltn_sm_v_hook_sc);
+cno_StraightLftHighHook += (g__ltn_sm_v_hook_sc);
 
-cRevSigmaStyle += (gcysmabkhasdze_RevSigmaStyle_sc, gltnsmezh_RevSigmaStyle_sc);
-cno_RevSigmaStyle += (gcysmabkhasdze_sc, gltnsmezh_sc);
+cRevSigmaStyle += (g__cy_sm_abkhas_dze_rev_sigma_style_sc, g__ltn_sm_ezh_rev_sigma_style_sc);
+cno_RevSigmaStyle += (g__cy_sm_abkhas_dze_sc, g__ltn_sm_ezh_sc);
 
-cOpenTop += (gltnsmou_OpenTop_sc);
-cno_OpenTop += (gltnsmou_sc);
+cOpenTop += (g__ltn_sm_ou_open_top_sc);
+cno_OpenTop += (g__ltn_sm_ou_sc);
 
-cMongolStyle += (gcysme_MongolStyle_sc);
-cno_MongolStyle += (gcysme_sc);
+cMongolStyle += (g__cy_sm_e_mongol_style_sc);
+cno_MongolStyle += (g__cy_sm_e_sc);
 
-cLrg += (gltnsmsaltillo_Lrg_sc);
-cno_Lrg += (gltnsmsaltillo_sc);
+cLrg += (g__ltn_sm_saltillo_lrg_sc);
+cno_Lrg += (g__ltn_sm_saltillo_sc);
 
 cRetroHook += (
-		gltnsmaogonek_RetroHook_sc,	gltnsmaogonek_SngStory_RetroHook_sc,	gltnsmeogonek_RetroHook_sc,
-		gltnsmiogonek_RetroHook_sc,	gltnsmuogonek_RetroHook_sc, 			gltnsmoogonek_RetroHook_sc,			gltnsmoogonekmacron_RetroHook_sc);
+		g__ltn_sm_a_ogonek_retro_hook_sc,	g__ltn_sm_a_ogonek_sng_story_retro_hook_sc,	g__ltn_sm_e_ogonek_retro_hook_sc,
+		g__ltn_sm_i_ogonek_retro_hook_sc,	g__ltn_sm_u_ogonek_retro_hook_sc, 			g__ltn_sm_o_ogonek_retro_hook_sc,			g__ltn_sm_o_ogonek_macron_retro_hook_sc);
 cno_RetroHook += (
-		gltnsmaogonek_sc,					gltnsmaogonek_SngStory_sc,			gltnsmeogonek_sc,
-		gltnsmiogonek_sc,					gltnsmuogonek_sc,					gltnsmoogonek_sc,					gltnsmoogonekmacron_sc);
+		g__ltn_sm_a_ogonek_sc,					g__ltn_sm_a_ogonek_sng_story_sc,			g__ltn_sm_e_ogonek_sc,
+		g__ltn_sm_i_ogonek_sc,					g__ltn_sm_u_ogonek_sc,					g__ltn_sm_o_ogonek_sc,					g__ltn_sm_o_ogonek_macron_sc);
 
 
 
-cVN += (gltnsmacircumacute_VN_sc,	gltnsmacircumgrave_VN_sc,	gltnsmacircumtilde_VN_sc,	gltnsmacircumhookabv_VN_sc,
-		gltnsmabreveacute_VN_sc,	gltnsmabrevegrave_VN_sc,	gltnsmabrevetilde_VN_sc,	gltnsmabrevehookabv_VN_sc,
-		gltnsmacircumacute_SngStory_VN_sc,	gltnsmacircumgrave_SngStory_VN_sc,	gltnsmacircumtilde_SngStory_VN_sc,	gltnsmacircumhookabv_SngStory_VN_sc,
-		gltnsmabreveacute_SngStory_VN_sc,	gltnsmabrevegrave_SngStory_VN_sc,	gltnsmabrevetilde_SngStory_VN_sc,	gltnsmabrevehookabv_SngStory_VN_sc,
-		gltnsmecircumacute_VN_sc,	gltnsmecircumgrave_VN_sc,	gltnsmecircumtilde_VN_sc,	gltnsmecircumhookabv_VN_sc,	gltnsmocircumacute_VN_sc,	gltnsmocircumgrave_VN_sc,	gltnsmocircumtilde_VN_sc,	gltnsmocircumhookabv_VN_sc);
+cVN += (g__ltn_sm_a_circum_acute_v_n_sc,	g__ltn_sm_a_circum_grave_v_n_sc,	g__ltn_sm_a_circum_tilde_v_n_sc,	g__ltn_sm_a_circum_hook_abv_v_n_sc,
+		g__ltn_sm_a_breve_acute_v_n_sc,	g__ltn_sm_a_breve_grave_v_n_sc,	g__ltn_sm_a_breve_tilde_v_n_sc,	g__ltn_sm_a_breve_hook_abv_v_n_sc,
+		g__ltn_sm_a_circum_acute_sng_story_v_n_sc,	g__ltn_sm_a_circum_grave_sng_story_v_n_sc,	g__ltn_sm_a_circum_tilde_sng_story_v_n_sc,	g__ltn_sm_a_circum_hook_abv_sng_story_v_n_sc,
+		g__ltn_sm_a_breve_acute_sng_story_v_n_sc,	g__ltn_sm_a_breve_grave_sng_story_v_n_sc,	g__ltn_sm_a_breve_tilde_sng_story_v_n_sc,	g__ltn_sm_a_breve_hook_abv_sng_story_v_n_sc,
+		g__ltn_sm_e_circum_acute_v_n_sc,	g__ltn_sm_e_circum_grave_v_n_sc,	g__ltn_sm_e_circum_tilde_v_n_sc,	g__ltn_sm_e_circum_hook_abv_v_n_sc,	g__ltn_sm_o_circum_acute_v_n_sc,	g__ltn_sm_o_circum_grave_v_n_sc,	g__ltn_sm_o_circum_tilde_v_n_sc,	g__ltn_sm_o_circum_hook_abv_v_n_sc);
 
-cno_VN += (gltnsmacircumacute_sc,	gltnsmacircumgrave_sc,		gltnsmacircumtilde_sc,		gltnsmacircumhookabv_sc,
-		gltnsmabreveacute_sc,		gltnsmabrevegrave_sc,		gltnsmabrevetilde_sc,		gltnsmabrevehookabv_sc,
-		gltnsmacircumacute_SngStory_sc,		gltnsmacircumgrave_SngStory_sc,		gltnsmacircumtilde_SngStory_sc,		gltnsmacircumhookabv_SngStory_sc,
-		gltnsmabreveacute_SngStory_sc,		gltnsmabrevegrave_SngStory_sc,		gltnsmabrevetilde_SngStory_sc,		gltnsmabrevehookabv_SngStory_sc,
-		gltnsmecircumacute_sc,		gltnsmecircumgrave_sc,		gltnsmecircumtilde_sc,		gltnsmecircumhookabv_sc,		gltnsmocircumacute_sc,		gltnsmocircumgrave_sc,		gltnsmocircumtilde_sc,		gltnsmocircumhookabv_sc);
+cno_VN += (g__ltn_sm_a_circum_acute_sc,	g__ltn_sm_a_circum_grave_sc,		g__ltn_sm_a_circum_tilde_sc,		g__ltn_sm_a_circum_hook_abv_sc,
+		g__ltn_sm_a_breve_acute_sc,		g__ltn_sm_a_breve_grave_sc,		g__ltn_sm_a_breve_tilde_sc,		g__ltn_sm_a_breve_hook_abv_sc,
+		g__ltn_sm_a_circum_acute_sng_story_sc,		g__ltn_sm_a_circum_grave_sng_story_sc,		g__ltn_sm_a_circum_tilde_sng_story_sc,		g__ltn_sm_a_circum_hook_abv_sng_story_sc,
+		g__ltn_sm_a_breve_acute_sng_story_sc,		g__ltn_sm_a_breve_grave_sng_story_sc,		g__ltn_sm_a_breve_tilde_sng_story_sc,		g__ltn_sm_a_breve_hook_abv_sng_story_sc,
+		g__ltn_sm_e_circum_acute_sc,		g__ltn_sm_e_circum_grave_sc,		g__ltn_sm_e_circum_tilde_sc,		g__ltn_sm_e_circum_hook_abv_sc,		g__ltn_sm_o_circum_acute_sc,		g__ltn_sm_o_circum_grave_sc,		g__ltn_sm_o_circum_tilde_sc,		g__ltn_sm_o_circum_hook_abv_sc);
 
 
 // Why is there no g_lcaron_caron_sc??
@@ -226,8 +234,8 @@ c_sc = csc;
 
 
 // Classes of double-diacritics above and below:
-cUDblDia = (gcombdblbreve  gcombdblmacron  gcombdbltilde  gcombdblinvbreve  gf17a	gcombdblcircum);
-cLDblDia = (gcombdblmacronblw  gcombdblrtarrwblw  gcombdblbreveblw);
+cUDblDia = (g__comb_dbl_breve  g__comb_dbl_macron  g__comb_dbl_tilde  g__comb_dbl_inv_breve  g__comb_dbl_diaer  g__comb_dbl_circum);
+cLDblDia = (g__comb_dbl_macron_blw  g__comb_dbl_rt_arrw_blw  g__comb_dbl_breve_blw);
 
 
 // Various classes of diacritics; the classes generated by make_gdl are not helpful.
@@ -242,15 +250,15 @@ cDia =  (cHDia cLDia cODia cRDia cUDia);	// Any (but not double dias)
 
 // ff, fi, fl ligatures
 
-cfLigC2 = (gltnsmf  gltnsmi  gltnsml);
-cfLig  = (gltnligsmfsmf  gltnligsmfsmi  gltnligsmfsml);
-cffLigC3 = (gltnsmi  gltnsml);
-cffLig = (gltnligsmfsmfsmi  gltnligsmfsmfsml);
+cfLigC2 = (g__ltn_sm_f  g__ltn_sm_i  g__ltn_sm_l);
+cfLig  = (g__ltn_lig_sm_f_sm_f  g__ltn_lig_sm_f_sm_i  g__ltn_lig_sm_f_sm_l);
+cffLigC3 = (g__ltn_sm_i  g__ltn_sm_l);
+cffLig = (g__ltn_lig_sm_f_sm_f_sm_i  g__ltn_lig_sm_f_sm_f_sm_l);
 
-cfLigC2_sItal  = (gltnsmf_sital, gltnsmi_sital, gltnsml_sital);
-cfLig_sItal    = (gltnligsmfsmf_sital, gltnligsmfsmi_sital, gltnligsmfsml_sital);
-cffLigC3_sItal = (gltnsmi_sital, gltnsml_sital);
-cffLig_sItal   = (gltnligsmfsmfsmi_sital, gltnligsmfsmfsml_sital);
+cfLigC2_sItal  = (g__ltn_sm_f_s_ital, g__ltn_sm_i_s_ital, g__ltn_sm_l_s_ital);
+cfLig_sItal    = (g__ltn_lig_sm_f_sm_f_s_ital, g__ltn_lig_sm_f_sm_i_s_ital, g__ltn_lig_sm_f_sm_l_s_ital);
+cffLigC3_sItal = (g__ltn_sm_i_s_ital, g__ltn_sm_l_s_ital);
+cffLig_sItal   = (g__ltn_lig_sm_f_sm_f_sm_i_s_ital, g__ltn_lig_sm_f_sm_f_sm_l_s_ital);
 
 cfLig_all = (cfLig  cfLig_sItal)
 	{ component {f1 = box(0, -descent, aw/2, ascent); f2 = box(aw/2, -descent, aw, ascent) }};
@@ -259,120 +267,120 @@ cffLig_all = (cffLig  cffLig_sItal)
 					f2 = box(aw/3, -descent, (2*aw)/3, ascent);
 					f3 = box((2*aw)/3, -descent, aw, ascent) }}
 
-cSpecialDotted = (gltnsmitildeblw  gltnsmidotblw);		// i with lower diacritics
-cSpecialDottedDia = (gcombtildeblw  gcombdotblw);
+cSpecialDotted = (g__ltn_sm_i_tilde_blw  g__ltn_sm_i_dot_blw);		// i with lower diacritics
+cSpecialDottedDia = (g__comb_tilde_blw  g__comb_dot_blw);
 
 
 // Special class defs for cedilla compositions that are rendered as commaaccent:
-cCedillaBase = (gltncapg  gltnsmg  gltncapk  gltnsmk  gltncapl  gltnsml  gltncapn  gltnsmn  gltncapr  gltnsmr);
-cCedillaComposite = (gltncapgcedilla g_gcommaaccent gltncapkcedilla g_kcommaaccent
-		g__lcommaaccent	gltnsmlcedilla g__ncommaaccent gltnsmncedilla g__rcommaaccent
-		gltnsmrcedilla);
+cCedillaBase = (g__ltn_cap_g  g__ltn_sm_g  g__ltn_cap_k  g__ltn_sm_k  g__ltn_cap_l  g__ltn_sm_l  g__ltn_cap_n  g__ltn_sm_n  g__ltn_cap_r  g__ltn_sm_r);
+cCedillaComposite = (g__ltn_cap_g_cedilla g__ltn_sm_g_cedilla g__ltn_cap_k_cedilla g__ltn_sm_k_cedilla
+		g__ltn_cap_l_cedilla	g__ltn_sm_l_cedilla g__ltn_cap_n_cedilla g__ltn_sm_n_cedilla g__ltn_cap_r_cedilla
+		g__ltn_sm_r_cedilla);
 
 // Add in other cedilla composites:
-cCedillaBase += (gltncapc  gltnsmc  gltncaps  gltnsms  gltncapt  gltnsmt  gltncape  gltnsme  gltnsms_sc  gltnsmt_sc)
-cCedillaComposite += (gltncapccedilla g_ccedilla gltncapscedilla g_scedilla
-		gltncaptcedilla  gltnsmtcedilla  gltncapecedilla  gltnsmecedilla  gltnsmscedilla_sc  gltnsmtcedilla_sc)
+cCedillaBase += (g__ltn_cap_c  g__ltn_sm_c  g__ltn_cap_s  g__ltn_sm_s  g__ltn_cap_t  g__ltn_sm_t  g__ltn_cap_e  g__ltn_sm_e  g__ltn_sm_s_sc  g__ltn_sm_t_sc)
+cCedillaComposite += (g__ltn_cap_c_cedilla g__ltn_sm_c_cedilla g__ltn_cap_s_cedilla g__ltn_sm_s_cedilla
+		g__ltn_cap_t_cedilla  g__ltn_sm_t_cedilla  g__ltn_cap_e_cedilla  g__ltn_sm_e_cedilla  g__ltn_sm_s_cedilla_sc  g__ltn_sm_t_cedilla_sc)
 
 // Ogonek composites:
-cOgonekBase = (gltncapa  gltnsma  gltncape  gltnsme  gltncapu  gltnsmu  gltncapo  gltnsmo  gltncapomacron  gltnsmomacron);
-cOgonekComposite = (gltncapaogonek g_aogonek gltncapeogonek g_eogonek g__uogonek
-		gltnsmuogonek  gltncapoogonek  gltnsmoogonek  gltncapoogonekmacron  gltnsmoogonekmacron);
+cOgonekBase = (g__ltn_cap_a  g__ltn_sm_a  g__ltn_cap_e  g__ltn_sm_e  g__ltn_cap_u  g__ltn_sm_u  g__ltn_cap_o  g__ltn_sm_o  g__ltn_cap_o_macron  g__ltn_sm_o_macron);
+cOgonekComposite = (g__ltn_cap_a_ogonek g__ltn_sm_a_ogonek g__ltn_cap_e_ogonek g__ltn_sm_e_ogonek g__ltn_cap_u_ogonek
+		g__ltn_sm_u_ogonek  g__ltn_cap_o_ogonek  g__ltn_sm_o_ogonek  g__ltn_cap_o_ogonek_macron  g__ltn_sm_o_ogonek_macron);
 
 // Horn composites:
-cHornBase = (gltncapo  gltnsmo  gltncapu  gltnsmu);
-cHornComposite = (gltncapohorn  gltnsmohorn  gltncapuhorn  gltnsmuhorn);
+cHornBase = (g__ltn_cap_o  g__ltn_sm_o  g__ltn_cap_u  g__ltn_sm_u);
+cHornComposite = (g__ltn_cap_o_horn  g__ltn_sm_o_horn  g__ltn_cap_u_horn  g__ltn_sm_u_horn);
 
 // Modifier superscripts that require smaller diacritics:
-cModSuper = (gmodsmh  gmodsmhhook  gmodsmj  gmodsmr  gmodsmtrndr  gmodsmtrndrhook  gmodsmcapinvr  gmodsmw  g02b8
-		gmodglottalstop  gmodrevglottalstop  gmodsmgamma  gmodsml  gmodsms  gmodsmx  g02e4
-		gmodcapa  gmodcapae  gmodcapb  g1d2f
-		gmodcapd  gmodcape  gmodcapreve  gmodcapg  gmodcaph  gmodcapi  gmodcapj  g1d37
-		gmodcapl  gmodcapm  gmodcapn  gmodcaprevn  gmodcapo  gmodcapou  gmodcapp  g1d3f
-		gmodcapt  gmodcapu  gmodcapw  gltnsupsma  gltnsupsmturneda  gltnsupsmalpha  gmodsmtrndae  g1d47
-		gltnsupsmd  gltnsupsme  gltnsupsmschwa  gltnsupsmopne  gmodsmtrndopne  gltnsupsmg  gmodsmtrndi  g1d4f
-		gltnsupsmm  gltnsupsmeng  gltnsupsmo  gltnsupsmopno  gmodsmtophalfo  gmodsmbottomhalfo  gltnsupsmp  g1d57
-		gltnsupsmu  gmodsmsdwysu  gltnsupsmturnedm  gltnsupsmv  gmodsmain  gmodsmbeta  gmodsmgrgamma  gmodsmdelta  gmodsmgrphi  gmodsmchi  g1d78
-		gltnsupsmturnedalpha  gmodsmc  gltnsupsmccurl  gmodsmeth  g1d9f
-		gltnsupsmf  gltnsupsmdotlessjstrk  gltnsupsmscriptg  gmodsmturnedh  gltnsupsmistrk  gmodsmiota  gltnsupsmcapi  g1da7
-		gmodsmjcrossedtail  gltnsupsmlretrhook  gmodsmlpalhook  gmodsmcapl  gmodsmmhook  gltnsupsmturnedmlngleg  gltnsupsmnlfthook  g1daf
-		gmodsmcapn  gltnsupsmbarredo  gmodsmphi  gmodsmshook  gltnsupsmesh  gmodsmtpalhook  gltnsupsmubar  g1db7
-		gmodsmcapu  gmodsmvhook  gltnsupsmturnedv  gltnsupsmz  gmodsmzretrhook  gltnsupsmzcurl  gltnsupsmezh  gmodsmtheta  gltnsupsmi  g207f
-		gltnsupsmi_dotless  gmodsmj_dotless  gltnsupsmistrk_dotless  gmodsmjcrossedtail_dotless);
+cModSuper = (g__mod_sm_h  g__mod_sm_h_hook  g__mod_sm_j  g__mod_sm_r  g__mod_sm_trnd_r  g__mod_sm_trnd_r_hook  g__mod_sm_cap_inv_r  g__mod_sm_w  g__mod_sm_y
+		g__mod_glottal_stop  g__mod_rev_glottal_stop  g__mod_sm_gamma  g__mod_sm_l  g__mod_sm_s  g__mod_sm_x  g__mod_sm_rev_glottal_stop
+		g__mod_cap_a  g__mod_cap_ae  g__mod_cap_b  g__mod_cap_barred_b
+		g__mod_cap_d  g__mod_cap_e  g__mod_cap_rev_e  g__mod_cap_g  g__mod_cap_h  g__mod_cap_i  g__mod_cap_j  g__mod_cap_k
+		g__mod_cap_l  g__mod_cap_m  g__mod_cap_n  g__mod_cap_rev_n  g__mod_cap_o  g__mod_cap_ou  g__mod_cap_p  g__mod_cap_r
+		g__mod_cap_t  g__mod_cap_u  g__mod_cap_w  g__ltn_sup_sm_a  g__ltn_sup_sm_turned_a  g__ltn_sup_sm_alpha  g__mod_sm_trnd_ae  g__ltn_sup_sm_b
+		g__ltn_sup_sm_d  g__ltn_sup_sm_e  g__ltn_sup_sm_schwa  g__ltn_sup_sm_opn_e  g__mod_sm_trnd_opn_e  g__ltn_sup_sm_g  g__mod_sm_trnd_i  g__ltn_sup_sm_k
+		g__ltn_sup_sm_m  g__ltn_sup_sm_eng  g__ltn_sup_sm_o  g__ltn_sup_sm_opn_o  g__mod_sm_top_half_o  g__mod_sm_bottom_half_o  g__ltn_sup_sm_p  g__ltn_sup_sm_t
+		g__ltn_sup_sm_u  g__mod_sm_sdwys_u  g__ltn_sup_sm_turned_m  g__ltn_sup_sm_v  g__mod_sm_ain  g__mod_sm_beta  g__mod_sm_gr_gamma  g__mod_sm_delta  g__mod_sm_gr_phi  g__mod_sm_chi  g__mod_cy_cap_en
+		g__ltn_sup_sm_turned_alpha  g__mod_sm_c  g__ltn_sup_sm_c_curl  g__mod_sm_eth  g__ltn_sup_sm_rev_opn_e
+		g__ltn_sup_sm_f  g__ltn_sup_sm_dotless_j_strk  g__ltn_sup_sm_script_g  g__mod_sm_turned_h  g__ltn_sup_sm_i_strk  g__mod_sm_iota  g__ltn_sup_sm_cap_i  g__mod_sm_cap_i_strk
+		g__mod_sm_j_crossed_tail  g__ltn_sup_sm_l_retr_hook  g__mod_sm_l_pal_hook  g__mod_sm_cap_l  g__mod_sm_m_hook  g__ltn_sup_sm_turned_m_lng_leg  g__ltn_sup_sm_n_lft_hook  g__mod_sm_n_retr_hook
+		g__mod_sm_cap_n  g__ltn_sup_sm_barred_o  g__mod_sm_phi  g__mod_sm_s_hook  g__ltn_sup_sm_esh  g__mod_sm_t_pal_hook  g__ltn_sup_sm_u_bar  g__ltn_sup_sm_upsilon
+		g__mod_sm_cap_u  g__mod_sm_v_hook  g__ltn_sup_sm_turned_v  g__ltn_sup_sm_z  g__mod_sm_z_retr_hook  g__ltn_sup_sm_z_curl  g__ltn_sup_sm_ezh  g__mod_sm_theta  g__ltn_sup_sm_i  g__ltn_sup_sm_n
+		g__ltn_sup_sm_i_dotless  g__mod_sm_j_dotless  g__ltn_sup_sm_i_strk_dotless  g__mod_sm_j_crossed_tail_dotless);
 
 // Modifier subscripts that require smaller diacritics:
-cModSub = (gltnsubsmi  gltnsubsmr  gltnsubsmu  gltnsubsmv  ggrsubsmbeta  ggrsubsmgamma  ggrsubsmrho  ggrsubsmphi  g1d6a
-		gltnsubsma  gltnsubsme  gltnsubsmo  gltnsubsmx  g2094
-		gltnsubsmi_dotless);
+cModSub = (g__ltn_sub_sm_i  g__ltn_sub_sm_r  g__ltn_sub_sm_u  g__ltn_sub_sm_v  g__gr_sub_sm_beta  g__gr_sub_sm_gamma  g__gr_sub_sm_rho  g__gr_sub_sm_phi  g__gr_sub_sm_chi
+		g__ltn_sub_sm_a  g__ltn_sub_sm_e  g__ltn_sub_sm_o  g__ltn_sub_sm_x  g__ltn_sub_sm_schwa
+		g__ltn_sub_sm_i_dotless);
 
 // Vietnamese diacritic combinations
 
 #if (FONT == GENTIUMfont)
-c0302_noVN = (gcombcircum  gcombcircum_lp);
+c0302_noVN = (g__comb_circum  g__comb_circum_l_p);
 #else
-c0302_noVN = (gcombcircum);
+c0302_noVN = (g__comb_circum);
 #endif
 
-c0306_noVN = (gcombbreve);
+c0306_noVN = (g__comb_breve);
 
-cDiac_noVN = (g_acutecomb		g_gravecomb		gcombhookabv 	gcombtilde);
-c_0302_DiacVN = (	g0302_acutecomb_vN		g0302_gravecomb_vN
-					g0302_hookabovecomb_vN	gcombcircumtilde_vn);
-c_0306_DiacVN = (	g0306_acutecomb_vN		g0306_gravecomb_vN
-					g0306_hookabovecomb_vN	gcombbrevetilde_vn);
+cDiac_noVN = (g__comb_acute		g__comb_grave		g__comb_hook_abv 	g__comb_tilde);
+c_0302_DiacVN = (	g__comb_circum_acute_v_n		g__comb_circum_grave_v_n
+					g__comb_circum_hook_v_n	g__comb_circum_tilde_v_n);
+c_0306_DiacVN = (	g__comb_breve_acute_v_n		g__comb_breve_grave_v_n
+					g__comb_breve_hook_v_n	g__comb_breve_tilde_v_n);
 
 #if (FONT == GENTIUMfont)
-cno_LP += (	g0302_acutecomb_vN		g0302_gravecomb_vN		g0302_tildecomb_vN		g0302_hookabovecomb_vN
-			g0306_acutecomb_vN		g0306_gravecomb_vN		gcombbrevetilde_vn );
-cLP += 	(	g0302_acutecomb_vNLP	g0302_gravecomb_vNLP	g0302_tildecomb_vNLP	g0302_hookabovecomb_vNLP
-			g0306_acutecomb_vNLP	g0306_gravecomb_vNLP	gcombbrevetilde_vnlp );
+cno_LP += (	g__comb_circum_acute_v_n		g__comb_circum_grave_v_n		g__comb_circum_tilde_v_n		g__comb_circum_hook_v_n
+			g__comb_breve_acute_v_n		g__comb_breve_grave_v_n		g__comb_breve_tilde_v_n );
+cLP += 	(	g__comb_circum_acute_v_n_l_p	g__comb_circum_grave_v_n_l_p	g__comb_circum_tilde_v_n_l_p	g__comb_circum_hook_v_n_l_p
+			g__comb_breve_acute_v_n_l_p	g__comb_breve_grave_v_n_l_p	g__comb_breve_tilde_v_n_l_p );
 #endif
 
 // Precomposed base + first diac
-c_baseCircum = (gltncapacircum, gltnsmacircum, gltncapecircum, gltnsmecircum,
-				gltncapicircum, gltnsmicircum, gltncapocircum, gltnsmocircum,
-				gltncapucircum, gltnsmucircum);
-c_baseBreve  = (gltncapabreve, gltnsmabreve, gltncapebreve, gltnsmebreve,
-				gltncapibreve, gltnsmibreve, gltncapobreve, gltnsmobreve, gltncapubreve, gltnsmubreve);
-c_base_noDiac = (gltncapa, gltnsma, gltncape, gltnsme, gltncapi, gltnsmi, gltncapo, gltnsmo, gltncapu, gltnsmu);
+c_baseCircum = (g__ltn_cap_a_circum, g__ltn_sm_a_circum, g__ltn_cap_e_circum, g__ltn_sm_e_circum,
+				g__ltn_cap_i_circum, g__ltn_sm_i_circum, g__ltn_cap_o_circum, g__ltn_sm_o_circum,
+				g__ltn_cap_u_circum, g__ltn_sm_u_circum);
+c_baseBreve  = (g__ltn_cap_a_breve, g__ltn_sm_a_breve, g__ltn_cap_e_breve, g__ltn_sm_e_breve,
+				g__ltn_cap_i_breve, g__ltn_sm_i_breve, g__ltn_cap_o_breve, g__ltn_sm_o_breve, g__ltn_cap_u_breve, g__ltn_sm_u_breve);
+c_base_noDiac = (g__ltn_cap_a, g__ltn_sm_a, g__ltn_cap_e, g__ltn_sm_e, g__ltn_cap_i, g__ltn_sm_i, g__ltn_cap_o, g__ltn_sm_o, g__ltn_cap_u, g__ltn_sm_u);
 
 // Vietnamese/literacy combinations
 
 // a with stacked diacritics
-c_aStack_noLit = (gltnsmacircumacute  gltnsmacircumgrave  gltnsmacircumhookabv  gltnsmacircumtilde  gltnsmabreveacute  gltnsmabrevegrave  gltnsmabrevetilde  gltnsmabrevehookabv); // eg, a+circum+acute
-c_diacComb_vN = (gcombcircumacute_vn, gcombcircumgrave_vn,
-			gcombcircumhook_vn, gcombcircumtilde_vn,
-			gcombbreveacute_vn, gcombbrevegrave_vn,
-			gcombbrevehook_vn, gcombbrevetilde_vn);
+c_aStack_noLit = (g__ltn_sm_a_circum_acute  g__ltn_sm_a_circum_grave  g__ltn_sm_a_circum_hook_abv  g__ltn_sm_a_circum_tilde  g__ltn_sm_a_breve_acute  g__ltn_sm_a_breve_grave  g__ltn_sm_a_breve_tilde  g__ltn_sm_a_breve_hook_abv); // eg, a+circum+acute
+c_diacComb_vN = (g__comb_circum_acute_v_n, g__comb_circum_grave_v_n,
+			g__comb_circum_hook_v_n, g__comb_circum_tilde_v_n,
+			g__comb_breve_acute_v_n, g__comb_breve_grave_v_n,
+			g__comb_breve_hook_v_n, g__comb_breve_tilde_v_n);
 
 
 // These caron combinations are treated specially by European languages, which is the default:
-cCaronEuro = (gltnsmdcaron, gltnsmlcaron, gltncaplcaron, gltnsmlcaron_sc, gltnsmtcaron);
-cno_CaronEuro = (gltnsmd, gltnsml, gltncapl, gltnsml_sc, gltnsmt);
+cCaronEuro = (g__ltn_sm_d_caron, g__ltn_sm_l_caron, g__ltn_cap_l_caron, g__ltn_sm_l_caron_sc, g__ltn_sm_t_caron);
+cno_CaronEuro = (g__ltn_sm_d, g__ltn_sm_l, g__ltn_cap_l, g__ltn_sm_l_sc, g__ltn_sm_t);
 
 // These work for Doulos:
-gltnsmdcaron {comp {base = box(0, bb.bottom-50m, (3*aw)/4, bb.top+50m);
+g__ltn_sm_d_caron {comp {base = box(0, bb.bottom-50m, (3*aw)/4, bb.top+50m);
                 caron = box((3*aw)/4, bb.top - 450m, aw,bb.top+50m) }};
 
-gltnsmlcaron {comp {base = box(0,bb.bottom-70m, (2*aw)/3, bb.top+50m);
+g__ltn_sm_l_caron {comp {base = box(0,bb.bottom-70m, (2*aw)/3, bb.top+50m);
                 caron = box((5*aw)/8, bb.top - 450m, aw,bb.top+50m) }};
 
-gltncaplcaron {comp {base = box(0,bb.bottom-50m, aw/2+70m, bb.top+50m);
+g__ltn_cap_l_caron {comp {base = box(0,bb.bottom-50m, aw/2+70m, bb.top+50m);
                 caron = box(bb.right-450m, bb.top-500m, bb.right-200m,bb.top+50m) }};
 
-gltnsmlcaron_sc {comp {base = box(0,bb.bottom-50m, aw/2+70m, bb.top+50m);
+g__ltn_sm_l_caron_sc {comp {base = box(0,bb.bottom-50m, aw/2+70m, bb.top+50m);
                 caron = box(bb.right-450m, bb.top-500m, bb.right-100m,bb.top+50m) }};
 
-gltnsmtcaron {comp {base = box(0,bb.bottom-50m, bb.right-200m, bb.top-200m);
+g__ltn_sm_t_caron {comp {base = box(0,bb.bottom-50m, bb.right-200m, bb.top-200m);
                 caron = box(bb.right-300m, bb.top-450m, bb.right+50m, bb.top+50m) }};
 
 
 // Uppercase-eng variations
 // (The extra composite glyphs aren't really needed, they only happen to be in the font for AAT.)
-c_eng_Descender = (gltncapeng, gltnsmeng_sc);                    // cno_BaselineHook = cno_Kom
-c_eng_UCStyle = (gltncapeng_ucstyle, gltnsmeng_UCStyle_sc);  // (g__eng_u_c_style, g014A0301_uCStyle, g014A0300_uCStyle, g014A0302_uCStyle, g014A0303_uCStyle, g014A0323_uCStyle);
-c_eng_BaselineHook = (gltncapeng_baselinehook, gltnsmeng_BaselineHook_sc);  // cBaselineHook;
-c_eng_Kom = (gltncapeng_kom, gltnsmeng_Kom_sc);                  // cKom;
+c_eng_Descender = (g__ltn_cap_eng, g__ltn_sm_eng_sc);                    // cno_BaselineHook = cno_Kom
+c_eng_UCStyle = (g__ltn_cap_eng_u_c_style, g__ltn_sm_eng_u_c_style_sc);  // (g__eng_u_c_style, g014A0301_uCStyle, g014A0300_uCStyle, g014A0302_uCStyle, g014A0303_uCStyle, g014A0323_uCStyle);
+c_eng_BaselineHook = (g__ltn_cap_eng_baseline_hook, g__ltn_sm_eng_baseline_hook_sc);  // cBaselineHook;
+c_eng_Kom = (g__ltn_cap_eng_kom, g__ltn_sm_eng_kom_sc);                  // cKom;
 
 // V-hook variations
 c_vhook_Curved = cno_StraightLft; // = cno_StraightLftHighHook
@@ -380,66 +388,66 @@ c_vhook_StraightLeft = cStraightLft;
 c_vhook_HighHook = cStraightLftHighHook;
 
 // Cyrillic shha (uses same tag as uppercase eng so we define these clases by hand):
-cUCStyleCyrShha = (gcysmshha_ucstyle);
-cno_UCStyleCyrShha = (gcysmshha);
+cUCStyleCyrShha = (g__cy_sm_shha_u_c_style);
+cno_UCStyleCyrShha = (g__cy_sm_shha);
 
 // We need to add these explicitly because makegdl does not recognize the fact that
 // 'g_dotlessi_s_italic' needs to be in the cDotless class.
 // TODO: recheck when we switch over to the new version of make_gdl.
-cDotless += (gltnsmdotlessi_sital); // g_dotlessi_tail_i;
-cno_Dotless += (gltnsmi_sital);     // g_i_tail_i;
+cDotless += (g__ltn_sm_dotless_i_s_ital); // g_dotlessi_tail_i;
+cno_Dotless += (g__ltn_sm_i_s_ital);     // g_i_tail_i;
 
 // Same with tail-i and j-serif.
 #if (ANDIKAfamily)
-cDotless    += (g_dotlessi_tail_i	gltnsmdotlessj_toplftserif);
-cno_Dotless += (g_i_tail_i			gltnsmj_toplftserif);
+cDotless    += (g__ltn_sm_dotless_i_tail_i	g__ltn_sm_dotless_j_toplftserif);
+cno_Dotless += (g__ltn_sm_i_tail_i			g__ltn_sm_j_toplftserif);
 #endif
 
 // Same with the low-profile i and j.
 #if (FONT == GENTIUMfont)
-cDotless    += (g_i_dotless	gltnsmj_dotless);
-cno_Dotless += (g_i_l_p		gltnsmj_lp);
+cDotless    += (g__ltn_sm_i_dotless	g__ltn_sm_j_dotless);
+cno_Dotless += (g__ltn_sm_i_l_p		g__ltn_sm_j_l_p);
 
 // Also handle converting low-profile i/j to small caps.
-cno_sc	+= (g_i_l_p		gltnsmj_lp);
-c_sc	+= (g_i_sc		gltnsmj_sc);
+cno_sc	+= (g__ltn_sm_i_l_p		g__ltn_sm_j_l_p);
+c_sc	+= (g__ltn_sm_i_sc		g__ltn_sm_j_sc);
 #endif
 
 #if (ANDIKAfamily)
 // makegdl can't figure out that 'g_q_diag_tail_sc' needs to be in the cDiagTail class.
-cno_DiagTail += (gltnsmq_sc);
-cDiagTail    += (gltnsmq_diagtail_sc);
+cno_DiagTail += (g__ltn_sm_q_sc);
+cDiagTail    += (g__ltn_sm_q_diagtail_sc);
 #endif
 
-cno_BrInvBreve = (gcombinvbreve    gcombdblinvbreve);
-cBrInvBreve_uU = (gcombinvbreve_uu g0361_uU);
-cBrInvBreve_uL = (gcombinvbreve_ul g0361_uL);
-cBrInvBreve_lL = (gcombinvbreve_ll g0361_lL);
+cno_BrInvBreve = (g__comb_inv_breve    g__comb_dbl_inv_breve);
+cBrInvBreve_uU = (g__comb_inv_breve_u_u g__comb_dbl_inv_breve_u_u);
+cBrInvBreve_uL = (g__comb_inv_breve_u_l g__comb_dbl_inv_breve_u_l);
+cBrInvBreve_lL = (g__comb_inv_breve_l_l g__comb_dbl_inv_breve_l_l);
 
-cBridgeDiac = ( gcombdiaer_uu  gcombdiaer_ul  g0308_lL
-				gcombinvbreve_uu  gcombinvbreve_ul  g0311_lL
-				gcombdblinvbreve_uu  gcombdblinvbreve_ul  gcombdblinvbreve_ll);
+cBridgeDiac = ( g__comb_diaer_u_u  g__comb_diaer_u_l  g__comb_diaer_l_l
+				g__comb_inv_breve_u_u  g__comb_inv_breve_u_l  g__comb_inv_breve_l_l
+				g__comb_dbl_inv_breve_u_u  g__comb_dbl_inv_breve_u_l  g__comb_dbl_inv_breve_l_l);
 
 
 // Narrow characters that need a narrow macron.
 // Since this subsitution is done in the first pass, we only need to include encoded glyphs.
 
-c_narrowMacron = (gltnsmi, gltnsml, gltnsmr, gltnsmt,
-	gltnsmigrave, gltnsmiacute, gltnsmicircum, gltnsmidiaer, gltnsmitilde, gltnsmimacron, gltnsmibreve, gltnsmiogonek, gltnsmdotlessi,
-	gltnsmlacute, gltnsmlcedilla, gltnsmlcaron, gltnsmlmiddledot, gltnsmlstrk,
-	gltnsmracute, gltnsmrcedilla, gltnsmrcaron, gltnsmtcedilla, gltnsmtcaron, gltnsmtstrk, gltncapiota, gltnsmlbar, gltnsmthook, gltnsmicaron, gltnsmidblgrave,
-	gltnsmiinvbreve, gltnsmrdblgrave, gltnsmrinvbreve, gltnsmtcommablw,
-	gltnsmlcurl, gltnsmtcurl // l-curl, t-curl
-	gltnsmrbar, gltnsmistrk, gltnsmiota, gltnsmlmiddletilde, gltnsmlbelt, gltnsmlretrhook, gltnsmrlngleg, gltnsmrfishhook, gltnsmturnedt, gltnsmtretrhook,
-	gltnsmrmiddletilde, gltnsmrfishhookmiddletilde, gltnsmtmiddletilde, gltnsmiotastrk,
-	gltnsmrpalhook,
+c_narrowMacron = (g__ltn_sm_i, g__ltn_sm_l, g__ltn_sm_r, g__ltn_sm_t,
+	g__ltn_sm_i_grave, g__ltn_sm_i_acute, g__ltn_sm_i_circum, g__ltn_sm_i_diaer, g__ltn_sm_i_tilde, g__ltn_sm_i_macron, g__ltn_sm_i_breve, g__ltn_sm_i_ogonek, g__ltn_sm_dotless_i,
+	g__ltn_sm_l_acute, g__ltn_sm_l_cedilla, g__ltn_sm_l_caron, g__ltn_sm_l_middle_dot, g__ltn_sm_l_strk,
+	g__ltn_sm_r_acute, g__ltn_sm_r_cedilla, g__ltn_sm_r_caron, g__ltn_sm_t_cedilla, g__ltn_sm_t_caron, g__ltn_sm_t_strk, g__ltn_cap_iota, g__ltn_sm_l_bar, g__ltn_sm_t_hook, g__ltn_sm_i_caron, g__ltn_sm_i_dbl_grave,
+	g__ltn_sm_i_inv_breve, g__ltn_sm_r_dbl_grave, g__ltn_sm_r_inv_breve, g__ltn_sm_t_comma_blw,
+	g__ltn_sm_l_curl, g__ltn_sm_t_curl // l-curl, t-curl
+	g__ltn_sm_r_bar, g__ltn_sm_i_strk, g__ltn_sm_iota, g__ltn_sm_l_middle_tilde, g__ltn_sm_l_belt, g__ltn_sm_l_retr_hook, g__ltn_sm_r_lng_leg, g__ltn_sm_r_fishhook, g__ltn_sm_turned_t, g__ltn_sm_t_retr_hook,
+	g__ltn_sm_r_middle_tilde, g__ltn_sm_r_fishhook_middle_tilde, g__ltn_sm_t_middle_tilde, g__ltn_sm_iota_strk,
+	g__ltn_sm_r_pal_hook,
 	// g1e2d, g1e3d, g1e71, // i-lower-tilde, l-lower-circumflex, t-lower-circumflex
-	gltnsmidiaeracute, gltnsmhdiaer, gltnsmldotblwmacron, gltnsmllineblw, gltnsmrdotabv, gltnsmrdotblw, gltnsmrdotblwmacron, gltnsmrlineblw, gltnsmtdotabv, gltnsmtdotblw, gltnsmtlineblw, gltnsmtdiaer, gltnsmihookabv,
-	gltnsmidotblw, gltnsmdblbarredl, gltnsmtdiagstrk, gltnsmlhighbar,
-	gltnsmlum, gltnsmrum, gltnsmtum // lum, rum, tum??
-	gltnsminsularf, gltnsmltrnd, gltnsminsulars, gltnsmlretrhookbelt, gltnsmrdiagstrk);
+	g__ltn_sm_i_diaer_acute, g__ltn_sm_h_diaer, g__ltn_sm_l_dot_blw_macron, g__ltn_sm_l_line_blw, g__ltn_sm_r_dot_abv, g__ltn_sm_r_dot_blw, g__ltn_sm_r_dot_blw_macron, g__ltn_sm_r_line_blw, g__ltn_sm_t_dot_abv, g__ltn_sm_t_dot_blw, g__ltn_sm_t_line_blw, g__ltn_sm_t_diaer, g__ltn_sm_i_hook_abv,
+	g__ltn_sm_i_dot_blw, g__ltn_sm_dbl_barred_l, g__ltn_sm_t_diag_strk, g__ltn_sm_l_high_bar,
+	g__ltn_sm_lum, g__ltn_sm_rum, g__ltn_sm_tum // lum, rum, tum??
+	g__ltn_sm_insular_f, g__ltn_sm_l_trnd, g__ltn_sm_insular_s, g__ltn_sm_l_retr_hook_belt, g__ltn_sm_r_diag_strk);
 
-c_narrowLowerDiac = (gcomblfthalfringblw, gcombuptackblw, gcombdwntackblw, gcombdotblw, gcombcommablw, gcombcedilla, gcombogonek, gcombvertlineblw, gcombbridgeblw, gcombdblvertlineblw);
+c_narrowLowerDiac = (g__comb_lft_half_ring_blw, g__comb_up_tack_blw, g__comb_dwn_tack_blw, g__comb_dot_blw, g__comb_comma_blw, g__comb_cedilla, g__comb_ogonek, g__comb_vert_line_blw, g__comb_bridge_blw, g__comb_dbl_vert_line_blw);
 
 /****
 c_narrowMacron = (g_i,
@@ -495,19 +503,19 @@ table(glyph) {AttributeOverride = true}
 
 cno_LP { lp_subclass = LP_BASEDIAC };
 // The following glyphs have low-profile versions but do not have diacritics attached:
-gltnsmi  { lp_subclass = LP_BASEONLY };
-gltnsmj  { lp_subclass = LP_BASEONLY };
-gltnsmligij { lp_subclass = LP_BASEONLY };
+g__ltn_sm_i  { lp_subclass = LP_BASEONLY };
+g__ltn_sm_j  { lp_subclass = LP_BASEONLY };
+g__ltn_sm_lig_ij { lp_subclass = LP_BASEONLY };
 // The following glyphs are just diacritics:
 cUDia { lp_subclass = LP_DIACONLY };
 
 
 // The following are lower-case glyphs with precomposed upper diacritics that have no low-profile equivalents.
 // Any diacritics that stack on top of them should be low-profile.
-c_lowerWnonLPdiacs = ( gltnsmaringabv, gltnsmabreve, gltnsmebreve, gltnsmgbreve, gltnsmibreve, gltnsmobreve,
-	gltnsmodblacute, gltnsmubreve, gltnsmudblacute, gltnsmadblgrave, gltnsmainvbreve, gltnsmedblgrave, gltnsmeinvbreve, gltnsmidblgrave,
-	gltnsmiinvbreve, gltnsmodblgrave, gltnsmoinvbreve, gltnsmrdblgrave, gltnsmrinvbreve, gltnsmudblgrave, gltnsmuinvbreve, gltnsmecedillabreve, gltnsmwringabv, gltnsmyringabv, gltnsmarthalfring, gltnsmahookabv,
-	gltnsmabrevedotblw, gltnsmehookabv, gltnsmihookabv, gltnsmohookabv, gltnsmohornhookabv, gltnsmuhookabv, gltnsmuhornhookabv, gltnsmyhookabv );
+c_lowerWnonLPdiacs = ( g__ltn_sm_a_ring_abv, g__ltn_sm_a_breve, g__ltn_sm_e_breve, g__ltn_sm_g_breve, g__ltn_sm_i_breve, g__ltn_sm_o_breve,
+	g__ltn_sm_o_dbl_acute, g__ltn_sm_u_breve, g__ltn_sm_u_dbl_acute, g__ltn_sm_a_dbl_grave, g__ltn_sm_a_inv_breve, g__ltn_sm_e_dbl_grave, g__ltn_sm_e_inv_breve, g__ltn_sm_i_dbl_grave,
+	g__ltn_sm_i_inv_breve, g__ltn_sm_o_dbl_grave, g__ltn_sm_o_inv_breve, g__ltn_sm_r_dbl_grave, g__ltn_sm_r_inv_breve, g__ltn_sm_u_dbl_grave, g__ltn_sm_u_inv_breve, g__ltn_sm_e_cedilla_breve, g__ltn_sm_w_ring_abv, g__ltn_sm_y_ring_abv, g__ltn_sm_a_rt_half_ring, g__ltn_sm_a_hook_abv,
+	g__ltn_sm_a_breve_dot_blw, g__ltn_sm_e_hook_abv, g__ltn_sm_i_hook_abv, g__ltn_sm_o_hook_abv, g__ltn_sm_o_horn_hook_abv, g__ltn_sm_u_hook_abv, g__ltn_sm_u_horn_hook_abv, g__ltn_sm_y_hook_abv );
 
 endtable;
 
@@ -546,8 +554,8 @@ c_pua  >  c_noPua {pua = 1}  /  ^ _ ;
 -------------------------- */
 
 // Decompose possible vietnamese base + diac
-c_baseCircum  _  >  c_base_noDiac:1  g0302:1  / ^ _ _;
-c_baseBreve   _  >  c_base_noDiac:1  g0306:1  / ^ _ _;
+c_baseCircum  _  >  c_base_noDiac:1  g__comb_circum:1  / ^ _ _;
+c_baseBreve   _  >  c_base_noDiac:1  g__comb_breve:1  / ^ _ _;
 
 // For the special bridging diacritic stuff, upper diacritics need to come first so they will attach
 // to the first base (0311 and 0361 seem to be treated differently by NFD).
@@ -559,7 +567,7 @@ endif;
 // Narrow macrons
 
 if (!smallcaps)
-gcombmacronblw  >  gcombmacronblw_short  /  c_narrowMacron  c_narrowLowerDiac? _ ;
+g__comb_macron_blw  >  g__comb_macron_blw_short  /  c_narrowMacron  c_narrowLowerDiac? _ ;
 endif;
 
 endpass;  // sub - 1
@@ -595,7 +603,7 @@ if (literacy == 1)
 	// g01e5_barBowl_sngBowl is conceptually equal to g01e5_sngBowl (since the forms are the same).
 	// Don't add this correspondence to the SngBowl forms to avoid confusing the reverse rules below;
 	// just use a separate rule:
-	gltnsmgstrk  >  g01e5_barBowl_sngBowl;
+	g__ltn_sm_g_strk  >  g__ltn_sm_g_barred_sng_bowl;
 
 	cno_SngStory > cSngStory;
 
@@ -626,22 +634,22 @@ pass(3)  {MaxBackup = 15; MaxRuleLoop = 30}
 
 if (slant_italic == 1)
 	// ff, fi, fl ligatures
-	gltnsmf  cfLigC2  >  gltnsmf_sital cfLigC2_sItal   / _ _ cDia;  // don't create a ligature, a following diac stops ligature from forming
-	gltnsmf  cfLigC2  >  _ cfLig_sItal:(1 2) {component {f1.ref = @1; f2.ref = @2}};
+	g__ltn_sm_f  cfLigC2  >  g__ltn_sm_f_s_ital cfLigC2_sItal   / _ _ cDia;  // don't create a ligature, a following diac stops ligature from forming
+	g__ltn_sm_f  cfLigC2  >  _ cfLig_sItal:(1 2) {component {f1.ref = @1; f2.ref = @2}};
 
-	gltnsmf  gltnsmf  cffLigC3  >  gltnsmf_sital  gltnsmf_sital  cffLigC3_sItal  / _ _ _ cDia;  // don't create a ligature
-	gltnsmf  gltnsmf  cffLigC3  >  _ _  cffLig_sItal:(1 2 3) {component {f1.ref = @1; f2.ref = @2; f3.ref = @3}};
+	g__ltn_sm_f  g__ltn_sm_f  cffLigC3  >  g__ltn_sm_f_s_ital  g__ltn_sm_f_s_ital  cffLigC3_sItal  / _ _ _ cDia;  // don't create a ligature
+	g__ltn_sm_f  g__ltn_sm_f  cffLigC3  >  _ _  cffLig_sItal:(1 2 3) {component {f1.ref = @1; f2.ref = @2; f3.ref = @3}};
 
 	cno_SItal  >  cSItal;		// f, i, l, v
 	cno_2StorySItal  >  c2StorySItal;  // a, ae
 else
 	// ff, fi, fl ligatures
-	gltnsmf  cfLigC2  >  @1 @2 / _ _ cDia; // do nothing, a following diac stops ligature from forming
-	gltnsmf  cfLigC2  >  _ cfLig:(1 2) {component {f1.ref = @1; f2.ref = @2}}
+	g__ltn_sm_f  cfLigC2  >  @1 @2 / _ _ cDia; // do nothing, a following diac stops ligature from forming
+	g__ltn_sm_f  cfLigC2  >  _ cfLig:(1 2) {component {f1.ref = @1; f2.ref = @2}}
 		/  _ ^ _ ;	// back up to handle i-alternates
 
-	gltnsmf  gltnsmf  cffLigC3  >  @1 @2 @3 / _ _ _ cDia;  // do nothing
-	gltnsmf  gltnsmf  cffLigC3  >  _ _ cffLig:(1 2 3) {component {f1.ref = @1; f2.ref = @2; f3.ref = @3}}
+	g__ltn_sm_f  g__ltn_sm_f  cffLigC3  >  @1 @2 @3 / _ _ _ cDia;  // do nothing
+	g__ltn_sm_f  g__ltn_sm_f  cffLigC3  >  _ _ cffLig:(1 2 3) {component {f1.ref = @1; f2.ref = @2; f3.ref = @3}}
 		/  _  _ ^ _;	// back up to handle i-alternates
 
 	cSItal        >  cno_SItal;
@@ -650,8 +658,8 @@ endif;
 
 
 // Turn combining half-marks into one double-width combining mark
-gfe20=d1  gfe21=d2  >  g0361:(d1 d2) _  /  ^ _  cTakesUDia  DIASTR5(cDia)  _ ;
-gfe22=d1  gfe23=d2  >  g0360:(d1 d2) _  /  ^ _  cTakesUDia  DIASTR5(cDia)  _ ;
+g__comb_dbl_inv_breve_lft=d1  g__comb_dbl_inv_breve_rt=d2  >  g__comb_dbl_inv_breve:(d1 d2) _  /  ^ _  cTakesUDia  DIASTR5(cDia)  _ ;
+g__comb_dbl_tilde_lft=d1  g__comb_dbl_tilde_rt=d2  >  g__comb_dbl_tilde:(d1 d2) _  /  ^ _  cTakesUDia  DIASTR5(cDia)  _ ;
 
 // For Chinantec, make the standard Unicode characters look like the special PUA characters.
 if (chinantec_tone == 1)
@@ -661,13 +669,13 @@ else
 endif;
 
 // Handle ogoneks; backup needed to also handle literacy feature:
-cOgonekBase  gcombogonek  >  cOgonekComposite$1:(b d)  _ {passKeySlot = true}  / ^ _=b  DIASTR4(cnODiaX)  _=d;
+cOgonekBase  g__comb_ogonek  >  cOgonekComposite$1:(b d)  _ {passKeySlot = true}  / ^ _=b  DIASTR4(cnODiaX)  _=d;
 
 // Handle cedillas (including those that need to look like comma-accent by precomposing them);
 // back-up needed to also handle rom feature:
-cCedillaBase  gcombcedilla  >  cCedillaComposite$1:(b d)  _ {passKeySlot = true}  / ^ _=b  DIASTR4(cnHDiaX)  _=d;
+cCedillaBase  g__comb_cedilla  >  cCedillaComposite$1:(b d)  _ {passKeySlot = true}  / ^ _=b  DIASTR4(cnHDiaX)  _=d;
 // Handle horns:
-cHornBase  gcombhorn  >  cHornComposite$1:(b d)  _ {passKeySlot = true}  /  _=b  DIASTR4(cnRDiaX)  _=d;
+cHornBase  g__comb_horn  >  cHornComposite$1:(b d)  _ {passKeySlot = true}  /  _=b  DIASTR4(cnRDiaX)  _=d;
 
 // Handle Vietnamese
 /* jw comments
@@ -676,7 +684,7 @@ cHornBase  gcombhorn  >  cHornComposite$1:(b d)  _ {passKeySlot = true}  /  _=b 
 if (viet == 1)
 	// decompose the stacked form and replace the base 'a' with the literacy form,
 	// the diacritics with the Vietnamese form
-	_  c_aStack_noLit  >  g_a_sng_story:2  c_diacComb_vN / _ _ {literacy == 1};
+	_  c_aStack_noLit  >  g__ltn_sm_a_sng_story:2  c_diacComb_vN / _ _ {literacy == 1};
 
 	c0302_noVN  cDiac_noVN  >  c_0302_DiacVN$d:(b d)  _  / _=b DIASTR4(cnUDiaX) _=d;
 	c0306_noVN  cDiac_noVN  >  c_0306_DiacVN$d:(b d)  _  / _=b DIASTR4(cnUDiaX) _=d;
@@ -687,29 +695,29 @@ else
 endif;
 
 table(glyph)
-cls_l_lower = (gltnsml, gltnsml_sc);	// include small caps
-cls_o_lower = (gltnsmo, gltnsmo_sc);
-cls_u_lower = (gltnsmu, gltnsmu_sc);
+cls_l_lower = (g__ltn_sm_l, g__ltn_sm_l_sc);	// include small caps
+cls_o_lower = (g__ltn_sm_o, g__ltn_sm_o_sc);
+cls_u_lower = (g__ltn_sm_u, g__ltn_sm_u_sc);
 endtable;
 
 if (bridging_diac)
 	// LL with bridging diaeresis (U+035F is possible intervening bridging underbar)
-	gcombdiaer  >  gcombdiaer_uu  /  gltncapl  gcombdblmacronblw?  _  gcombdblmacronblw?  g__l;
-	gcombdiaer  >  gcombdiaer_ul  /  gltncapl  gcombdblmacronblw?  _  gcombdblmacronblw?  cls_l_lower;
-	gcombdiaer  >  gcombdiaer_ll  /  cls_l_lower  gcombdblmacronblw?  _  gcombdblmacronblw?  cls_l_lower;
+	g__comb_diaer  >  g__comb_diaer_u_u  /  g__ltn_cap_l  g__comb_dbl_macron_blw?  _  g__comb_dbl_macron_blw?  g__ltn_cap_l;
+	g__comb_diaer  >  g__comb_diaer_u_l  /  g__ltn_cap_l  g__comb_dbl_macron_blw?  _  g__comb_dbl_macron_blw?  cls_l_lower;
+	g__comb_diaer  >  g__comb_diaer_l_l  /  cls_l_lower  g__comb_dbl_macron_blw?  _  g__comb_dbl_macron_blw?  cls_l_lower;
 
 	// OU with bridging inverted breve (0311 / 0361)
-	cno_BrInvBreve  >  cBrInvBreve_uU  /  gltncapo  gcombdblmacronblw?  _  gcombdblmacronblw?  g__u;
-	cno_BrInvBreve  >  cBrInvBreve_uL  /  gltncapo  gcombdblmacronblw?  _  gcombdblmacronblw?  cls_u_lower;
-	cno_BrInvBreve  >  cBrInvBreve_lL  /  cls_o_lower  gcombdblmacronblw?  _  gcombdblmacronblw?  cls_u_lower;
+	cno_BrInvBreve  >  cBrInvBreve_uU  /  g__ltn_cap_o  g__comb_dbl_macron_blw?  _  g__comb_dbl_macron_blw?  g__ltn_cap_u;
+	cno_BrInvBreve  >  cBrInvBreve_uL  /  g__ltn_cap_o  g__comb_dbl_macron_blw?  _  g__comb_dbl_macron_blw?  cls_u_lower;
+	cno_BrInvBreve  >  cBrInvBreve_lL  /  cls_o_lower  g__comb_dbl_macron_blw?  _  g__comb_dbl_macron_blw?  cls_u_lower;
 endif;
 
 #if DEBUG
 
 if (debug == 1)
-	gqstnmrk > g_one		/ DeBuG gspace g_e gltnsmn g_g geqsgn _ {eng == 0};
-	gqstnmrk > g_two		/ DeBuG gspace g_e gltnsmn g_g geqsgn _ {eng == 1};
-	gqstnmrk > g_three	/ DeBuG gspace g_e gltnsmn g_g geqsgn _ {eng == 2};
+	g__qstn_mrk > g__digit_one		/ DeBuG g__space g__ltn_sm_e g__ltn_sm_n g__ltn_sm_g g__eq_sgn _ {eng == 0};
+	g__qstn_mrk > g__digit_two		/ DeBuG g__space g__ltn_sm_e g__ltn_sm_n g__ltn_sm_g g__eq_sgn _ {eng == 1};
+	g__qstn_mrk > g__digit_three	/ DeBuG g__space g__ltn_sm_e g__ltn_sm_n g__ltn_sm_g g__eq_sgn _ {eng == 2};
 endif;
 
 #endif  // DEBUG
@@ -758,15 +766,15 @@ endif;
 
 if (ramshorn == small)
 	// for fonts with default = large or gamma
-	(gltnsmramshorn_lrgbowl  gltnsmramshorn_gammastyle) > g0264;
+	(g__ltn_sm_rams_horn_lrg_bowl  g__ltn_sm_rams_horn_gamma_style) > g__ltn_sm_rams_horn;
 endif;
 if (ramshorn == large)
 	// for fonts with default = small or gamma
-	(gltnsmramshorn 	gltnsmramshorn_gammastyle)	> g0264_lrgBowl;
+	(g__ltn_sm_rams_horn 	g__ltn_sm_rams_horn_gamma_style)	> g__ltn_sm_rams_horn_lrg_bowl;
 endif;
 if (ramshorn == gamma)
 	// for fonts with default = small or large
-	(gltnsmramshorn  gltnsmramshorn_lrgbowl)		> g0264_gammaStyle;
+	(g__ltn_sm_rams_horn  g__ltn_sm_rams_horn_lrg_bowl)		> g__ltn_sm_rams_horn_gamma_style;
 endif
 
 // supernum feature dealt with in pitches.gdh
@@ -850,9 +858,9 @@ else
 endif;
 
 if (ezh_curl == 1)
-	gltnsmezhcurl  >  g0293_lrgBowl;
+	g__ltn_sm_ezh_curl  >  g__ltn_sm_ezh_curl_lrg_bowl;
 else
-	gltnsmezhcurl_lrgbowl  >  g0293;
+	g__ltn_sm_ezh_curl_lrg_bowl  >  g__ltn_sm_ezh_curl;
 endif;
 
 if (t_hook == 1)
@@ -928,12 +936,12 @@ if (caron == 0)
 	//if (select_diac)
 	//	cno_CaronEuro  g030c  >  _  cCaronEuro$1:(1 2) {comp {base.ref = @1; caron.ref = @2}; passKeySlot=1};
 	//else
-		cno_CaronEuro  gcombcaron  >  _  cCaronEuro$1:(1 2) {passKeySlot=1};
+		cno_CaronEuro  g__comb_caron  >  _  cCaronEuro$1:(1 2) {passKeySlot=1};
 	//endif;
 endif;
 if (caron == 1)
 	// Non-European caron but NFC: decompose and use standard caron
-	cCaronEuro  _  >  cno_CaronEuro:1  g030c:1;
+	cCaronEuro  _  >  cno_CaronEuro:1  g__comb_caron:1;
 endif;
 
 if (ou == 1)
@@ -1108,7 +1116,7 @@ endif;
 // decomposed sequences:
 cno_Dotless  cUDia=D  >  cDotless  @D {passKeySlot=1}  /  _  ^  DIASTR4(cnUDiaX)  _=D;
 // precomposed chars with i are done by decomposition:
-cSpecialDotted  _  cUDia=D  >  gltnsmi_dotless  cSpecialDottedDia$1:1  @D {passKeySlot=1}
+cSpecialDotted  _  cUDia=D  >  g__ltn_sm_i_dotless  cSpecialDottedDia$1:1  @D {passKeySlot=1}
 	/  _  _  ^  DIASTR4(cnUDiaX)  _=D;
 
 // Now that ogonek has been composed with its vowels, do retrohook style if wanted:
@@ -1227,7 +1235,7 @@ pass(3)
 	// Double-diacritics below:
 
 	// Special case for two bridging diacritics:
-	gcombdblmacronblw {shift.y = min(@B.boundingbox.bottom.1, @A.boundingbox.bottom.1) - @D.boundingbox.top -100m ;
+	g__comb_dbl_macron_blw {shift.y = min(@B.boundingbox.bottom.1, @A.boundingbox.bottom.1) - @D.boundingbox.top -100m ;
 		  shift.x = (@A.boundingbox.width - @B.boundingbox.width)/2; insert = 1}
 		  / cTakesLDia=B  DIASTR3(cDia)  cUDblDia?  _=D  cUDblDia?  DIASTR3(cDia)  cTakesLDia=A;
 	cLDblDia {shift.y = min(@B.boundingbox.bottom.1, @A.boundingbox.bottom.1) - @D.boundingbox.top -100m ;

@@ -25,26 +25,28 @@ used for building, testing and releasing.
 DESC_NAME = "CharisSIL"
 DEBPKG = 'fonts-sil-charis'
 
+pysilfontscripts = "../../pysilfont/scripts/"
+
 # set the build and test parameters
 
-#for style in ('-Regular','-Bold') :
-for style in ('-Regular',) :
+for style in ('-Regular','-Italic') :
     fname = FILENAMEBASE + style
-    font(target = fname + '.ttf',
-#        source = 'source/' + fname + '.ufo',
+    feabase = 'source/opentype/'+FILENAMEBASE
+    font( target = process(fname + '.ttf', name(fname, lang='en-US', subfamily=('Regular')),
+            cmd(pysilfontscripts+'tools/FFchangeGlyphNames.py -i ../local/psnames ${DEP} ${TGT}')),
         source = create(fname + '-not.sfd', cmd("../tools/FFRemoveOverlapAll.py ${SRC} ${TGT}", ['source/' + fname + '.ufo'])),
         version = VERSION,
         ap =  'source/' + fname +'_ap' + '.xml',
-        #classes = 'source/' + fname +'_classes' + '.xml',
         opentype = fea('source/' + fname + '.fea',
             master = 'source/opentype/' + fname + '.fea',
-            #preinclude = 'font-source/padauk' + f + '_init.fea',
             make_params="-o 'C L11 L12 L13 L21 L22 L23 L31 L32 L33 C11 C12 C13 C21 C22 C23 C31 C32 C33 U11 U12 U13 U21 U22 U23 U31 U32 U33'",
-           # depends = map(lambda x:"font-source/padauk-"+x+".fea",
-           #     ('mym2_features', 'mym2_GSUB', 'dflt_GSUB'))
+           depends = (feabase + '_gsub.fea', feabase + style + '_gpos_lkups.fea', feabase + '_gpos_feats.fea', feabase + '_gdef.fea')
             ),
         graphite = gdl('source/' + fname + '.gdl',
-            master = 'source/graphite/charis.gdl'),
+            master = 'source/graphite/main.gdh'),
+#        extra_srcs = [pysilfontscripts+'tools/FFchangeGlyphNames.py'],
         license = ofl('CharisSIL','SIL'),
         woff = woff()
         )
+def configure(ctx) :
+    ctx.find_program('FFchangeGlyphNames.py', path_list = '../pysilfont/scripts/tools')
