@@ -26,17 +26,16 @@ DESC_NAME = "CharisSIL"
 DEBPKG = 'fonts-sil-charis'
 
 import os
-pysilfontscripts = os.path.abspath("../pysilfont/scripts/")
-print pysilfontscripts
+pysilfontscripts = os.path.abspath("../pysilfont/scripts/") # Currently requires pysilfont repo checked out in same directory as font project
 
 # set the build and test parameters
 
 for style in ('-Regular','-Italic') :
     fname = FILENAMEBASE + style
     feabase = 'source/opentype/'+FILENAMEBASE
-    font( target = process(fname + '.ttf', name(fname, lang='en-US', subfamily=('Regular')),
-            cmd(pysilfontscripts+'/tools/FFchangeGlyphNames.py -i ../source/psnames ${DEP} ${TGT}')),
-        source = create(fname + '-not.sfd', cmd("../tools/FFRemoveOverlapAll.py ${SRC} ${TGT}", ['source/' + fname + '.ufo'])),
+    font( target = process(fname + '.ttf', name(FILENAMEBASE, lang='en-US', subfamily=(style[1:])),
+            cmd('${FFCHANGEGLYPHNAMES.PY} -i ../source/psnames ${DEP} ${TGT}')),
+        source = create(fname + '-not.sfd', cmd("${FFREMOVEOVERLAPALL.PY} ${SRC} ${TGT}", ['source/' + fname + '.ufo'])),
         version = VERSION,
         ap =  'source/' + fname +'_ap' + '.xml',
         opentype = fea('source/' + fname + '.fea',
@@ -52,3 +51,4 @@ for style in ('-Regular','-Italic') :
         )
 def configure(ctx) :
     ctx.find_program('FFchangeGlyphNames.py', path_list = pysilfontscripts+'/tools/')
+    ctx.find_program('FFRemoveOverlapAll.py', path_list = pysilfontscripts+'/tools/')
