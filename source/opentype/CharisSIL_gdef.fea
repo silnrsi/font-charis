@@ -834,9 +834,6 @@
 	\LftStemTnLtr1Dep \ModRaisedDwnArrwDep \ModRaisedUpArrwDep 
 	\ModTnYinShangDep \ModTnYinPingDep \ModTnYinQuDep \ModTnYinRuDep 
 	\ModTnYangShangDep \ModTnYangPingDep \ModTnYangQuDep \ModTnYangRuDep ];
-@GDEF_Ligature = [\NotEqTo \ThereDoesNotExist \LtnLigSmFSmFSmI \LtnLigSmFSmFSmL 
-	\LtnLigSmFSmF \NotParallelTo \NotIdenticalTo \NotSubsetOf \NotSupersetOf 
-	\LftArrwStrk \RtArrwStrk ];
 @GDEF_Mark = [\CombLtnSmA \CombLtnSmA.SngStory \CombLtnSmC \CombLtnSmD 
 	\CombLtnSmE \CombLtnSmH \CombLtnSmI \CombLtnSmM \CombLtnSmO \CombLtnSmRBlw 
 	\CombLtnSmR \CombLtnSmT \CombLtnSmU \CombLtnSmV \CombLtnSmX \CombTrndCommaAbv 
@@ -874,7 +871,7 @@
 	\CombSnakeBlwDep ];
 
 table GDEF {
-  GlyphClassDef @GDEF_Simple, @GDEF_Ligature, @GDEF_Mark, ;
+  GlyphClassDef @GDEF_Simple, , @GDEF_Mark, ;
 
 } GDEF;
 
