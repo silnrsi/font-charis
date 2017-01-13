@@ -1,3 +1,25 @@
+# GDEF Mark Attachment Classes
+@MarkClass1=[\CombLtnSmA \CombLtnSmA.SngStory \CombLtnSmC \CombLtnSmD 
+\CombLtnSmE \CombLtnSmH \CombLtnSmI \CombLtnSmM \CombLtnSmO \CombLtnSmR 
+\CombLtnSmT \CombLtnSmU \CombLtnSmV \CombLtnSmX \CombTrndCommaAbv 
+\CombRevCommaAbv \CombAcute \CombDblAcute \CombGrave \CombDblGrave \CombCircum 
+\CombCircumAcute.VN \CombCircumGrave.VN \CombCircumTilde.VN \CombCircumHook.VN 
+\CombInvBreve \CombInvBreve.UU \CombInvBreve.UL \CombInvBreve.LL \CombFermata 
+\CombDblInvBreve.UU \CombDblInvBreve.UL \CombDblInvBreve.LL \CombBreve 
+\CombBreveAcute.VN \CombBreveGrave.VN \CombBreveTilde.VN \CombBreveHook.VN 
+\CombCandrabindu \CombBreve.CyShortMrkAlt \CombBreve.CyShortMrkAlt.UCHt 
+\CombBreve_Macron \CombCaron \CombAcute_Macron \CombMacron_Acute 
+\CombMacron_Breve \CombGrave_Macron \CombMacron_Grave \CombAcute_Grave_Acute 
+\CombGrave_Acute_Grave \CombTilde \CombNotTildeAbv \CombAlmostEqToAbv 
+\CombHomotheticAbv \CombVertTilde \CombZigZagAbv \CombXAbv \CombMacron 
+\CombMacron.Short \CombOverline \CombDblOverline \CombDiaer \CombDiaer.UU 
+\CombDiaer.LL \CombDiaer.UL \CombDiaer.Sup \CombDotAbv \CombCommaAbv 
+\CombRingAbv \CombLftHalfRingAbv \CombRtHalfRingAbv \CombHookAbv 
+\CombVertLineAbv \CombDblVertLineAbv \CombBridgeAbv \CombLftArrwhdAbv 
+\CombRtArrwhdAbv \CombAcute_MacronDep \CombMacron_AcuteDep 
+\CombGrave_MacronDep \CombMacron_GraveDep \CombAcute_Grave_AcuteDep 
+\CombGrave_Acute_GraveDep ]; 
+
 languagesystem DFLT dflt;
 languagesystem cyrl dflt;
 languagesystem cyrl SRB ;
@@ -168,7 +190,7 @@ lookup ccmpGlyphCompositionDecompositionlookup3 {
 } ccmpGlyphCompositionDecompositionlookup3;
 
 lookup ccmpGlyphCompositionDecompositioninLatinlookup4 {
-  lookupflag 0;
+  lookupflag MarkAttachmentType @MarkClass1;
     sub \CombCircum \CombAcute  by \CombCircumAcute.VN;
     sub \CombCircum \CombGrave  by \CombCircumGrave.VN;
     sub \CombCircum \CombTilde  by \CombCircumTilde.VN;
