@@ -39,7 +39,7 @@ for style in ('-Regular','-Italic','-Bold','-BoldItalic') :
         version = VERSION,
         ap =  'source/' + fname +'_ap' + '.xml',
         opentype = fea('source/' + fname + '.fea',
-            master = 'source/opentype/' + fname + '_bld.fea',
+            master = 'source/opentype/' + fname + '.fea',
             make_params="-o 'C L11 L12 L13 L21 L22 L23 L31 L32 L33 C11 C12 C13 C21 C22 C23 C31 C32 C33 U11 U12 U13 U21 U22 U23 U31 U32 U33'",
            depends = (feabase + '_gsub.fea', feabase + style + '_gpos_lkups.fea', feabase + '_gpos_feats.fea', feabase + '_gdef.fea')
             ),
