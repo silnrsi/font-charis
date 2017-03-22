@@ -51,4 +51,4 @@ for style in ('-Regular','-Italic','-Bold','-BoldItalic') :
         )
 def configure(ctx) :
     ctx.find_program('FFchangeGlyphNames.py', path_list = pysilfontscripts)
-    ctx.find_program('FFRemoveAllOverlaps.py', path_list = pysilfontscripts)
+    ctx.find_program('FFremoveAllOverlaps.py', path_list = pysilfontscripts)
