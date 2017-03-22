@@ -35,7 +35,7 @@ for style in ('-Regular','-Italic','-Bold','-BoldItalic') :
     feabase = 'source/opentype/'+FILENAMEBASE
     font( target = process(fname + '.ttf', name(FILENAMEBASE, lang='en-US', subfamily=(style[1:])),
             cmd('${FFCHANGEGLYPHNAMES.PY} -i ../source/psnames ${DEP} ${TGT}')),
-        source = create(fname + '-not.sfd', cmd("${FFREMOVEOVERLAPALL.PY} ${SRC} ${TGT}", ['source/' + fname + '.ufo'])),
+        source = create(fname + '-not.sfd', cmd("${FFREMOVEALLOVERLAPS.PY} ${SRC} ${TGT}", ['source/' + fname + '.ufo'])),
         version = VERSION,
         ap =  'source/' + fname +'_ap' + '.xml',
         opentype = fea('source/' + fname + '.fea',
@@ -45,10 +45,10 @@ for style in ('-Regular','-Italic','-Bold','-BoldItalic') :
             ),
         graphite = gdl('source/' + fname + '.gdl',
             master = 'source/graphite/main.gdh'),
-#        extra_srcs = [pysilfontscripts+'tools/FFchangeGlyphNames.py'],
+#        extra_srcs = [pysilfontscripts+'scripts/FFchangeGlyphNames.py'],
         license = ofl('CharisSIL','SIL'),
         woff = woff()
         )
 def configure(ctx) :
-    ctx.find_program('FFchangeGlyphNames.py', path_list = pysilfontscripts+'/tools/')
-    ctx.find_program('FFRemoveOverlapAll.py', path_list = pysilfontscripts+'/tools/')
+    ctx.find_program('FFchangeGlyphNames.py', path_list = pysilfontscripts)
+    ctx.find_program('FFRemoveAllOverlaps.py', path_list = pysilfontscripts)
