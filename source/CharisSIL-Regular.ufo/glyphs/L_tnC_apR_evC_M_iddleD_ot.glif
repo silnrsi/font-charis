@@ -43,10 +43,10 @@
     </contour>
     <component base="MiddleDot" xOffset="340"/>
     <contour>
-      <point x="615" y="1500" type="move" name="U"/>
+      <point x="615" y="-100" type="move" name="L"/>
     </contour>
     <contour>
-      <point x="615" y="-100" type="move" name="L"/>
+      <point x="615" y="1500" type="move" name="U"/>
     </contour>
   </outline>
   <lib>

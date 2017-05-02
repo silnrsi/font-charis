@@ -8,10 +8,22 @@
     <component base="DigitOne.Sophia" xOffset="639" yOffset="260"/>
     <component base="DigitZero.Sophia" xOffset="1346" yOffset="260"/>
     <contour>
+      <point x="1200" y="900" type="move" name="C11"/>
+    </contour>
+    <contour>
+      <point x="826" y="900" type="move" name="C12"/>
+    </contour>
+    <contour>
+      <point x="650" y="900" type="move" name="C13"/>
+    </contour>
+    <contour>
       <point x="1552" y="900" type="move" name="C22"/>
     </contour>
     <contour>
       <point x="1200" y="900" type="move" name="C23"/>
+    </contour>
+    <contour>
+      <point x="1750" y="900" type="move" name="C33"/>
     </contour>
     <contour>
       <point x="1200" y="526" type="move" name="L11"/>
@@ -20,34 +32,22 @@
       <point x="650" y="526" type="move" name="L13"/>
     </contour>
     <contour>
-      <point x="1200" y="1252" type="move" name="U11"/>
-    </contour>
-    <contour>
       <point x="1200" y="526" type="move" name="L23"/>
-    </contour>
-    <contour>
-      <point x="1750" y="1252" type="move" name="U33"/>
     </contour>
     <contour>
       <point x="1750" y="526" type="move" name="L33"/>
     </contour>
     <contour>
-      <point x="1200" y="1252" type="move" name="U23"/>
-    </contour>
-    <contour>
-      <point x="650" y="900" type="move" name="C13"/>
-    </contour>
-    <contour>
-      <point x="826" y="900" type="move" name="C12"/>
-    </contour>
-    <contour>
-      <point x="1200" y="900" type="move" name="C11"/>
+      <point x="1200" y="1252" type="move" name="U11"/>
     </contour>
     <contour>
       <point x="650" y="1252" type="move" name="U13"/>
     </contour>
     <contour>
-      <point x="1750" y="900" type="move" name="C33"/>
+      <point x="1200" y="1252" type="move" name="U23"/>
+    </contour>
+    <contour>
+      <point x="1750" y="1252" type="move" name="U33"/>
     </contour>
   </outline>
   <lib>

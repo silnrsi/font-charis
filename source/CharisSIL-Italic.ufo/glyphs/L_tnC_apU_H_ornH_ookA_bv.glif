@@ -6,10 +6,10 @@
     <component base="LtnCapUHorn"/>
     <component base="CombHookAbv" xOffset="1260" yOffset="400"/>
     <contour>
-      <point x="921" y="1900" type="move" name="U"/>
+      <point x="589" y="-100" type="move" name="L"/>
     </contour>
     <contour>
-      <point x="589" y="-100" type="move" name="L"/>
+      <point x="921" y="1900" type="move" name="U"/>
     </contour>
   </outline>
   <lib>

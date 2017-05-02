@@ -6,10 +6,10 @@
     <component base="CyCapU"/>
     <component base="DblAcuteAccent" xOffset="459" yOffset="400"/>
     <contour>
-      <point x="967" y="1900" type="move" name="U"/>
+      <point x="587" y="-100" type="move" name="L"/>
     </contour>
     <contour>
-      <point x="587" y="-100" type="move" name="L"/>
+      <point x="967" y="1900" type="move" name="U"/>
     </contour>
   </outline>
   <lib>

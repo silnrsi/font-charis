@@ -4,13 +4,13 @@
   <outline>
     <component base="LtnSmDotlessJStrk"/>
     <contour>
+      <point x="136" y="-500" type="move" name="L"/>
+    </contour>
+    <contour>
       <point x="664" y="1000" type="move" name="R"/>
     </contour>
     <contour>
       <point x="357" y="1100" type="move" name="U"/>
-    </contour>
-    <contour>
-      <point x="136" y="-500" type="move" name="L"/>
     </contour>
   </outline>
   <lib>

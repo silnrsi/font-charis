@@ -18,10 +18,10 @@
     <component base="CyCapI"/>
     <component base="CombBreve.CyShortMrkAlt.UCHt" xOffset="1537"/>
     <contour>
-      <point x="769" y="1907" type="move" name="U"/>
+      <point x="769" y="-100" type="move" name="L"/>
     </contour>
     <contour>
-      <point x="769" y="-100" type="move" name="L"/>
+      <point x="769" y="1907" type="move" name="U"/>
     </contour>
   </outline>
   <lib>

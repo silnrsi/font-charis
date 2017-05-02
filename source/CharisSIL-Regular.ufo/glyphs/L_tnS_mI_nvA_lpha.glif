@@ -43,13 +43,13 @@
       <point x="782" y="801" type="curve"/>
     </contour>
     <contour>
-      <point x="587" y="1100" type="move" name="U"/>
-    </contour>
-    <contour>
       <point x="587" y="-100" type="move" name="L"/>
     </contour>
     <contour>
       <point x="1311" y="971" type="move" name="R"/>
+    </contour>
+    <contour>
+      <point x="587" y="1100" type="move" name="U"/>
     </contour>
   </outline>
   <lib>

@@ -6,13 +6,13 @@
     <component base="LtnSmD"/>
     <component base="DotAbv" xOffset="584" yOffset="440"/>
     <contour>
-      <point x="1023" y="1000" type="move" name="R"/>
+      <point x="521" y="0" type="move" name="H"/>
     </contour>
     <contour>
       <point x="501" y="-100" type="move" name="L"/>
     </contour>
     <contour>
-      <point x="521" y="0" type="move" name="H"/>
+      <point x="1023" y="1000" type="move" name="R"/>
     </contour>
     <contour>
       <point x="861" y="1940" type="move" name="U"/>

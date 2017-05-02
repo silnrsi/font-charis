@@ -12,10 +12,10 @@
     <component base="LtnSmT"/>
     <component base="LtnSmH" xOffset="696"/>
     <contour>
-      <point x="962" y="1540" type="move" name="U"/>
+      <point x="962" y="-100" type="move" name="L"/>
     </contour>
     <contour>
-      <point x="962" y="-100" type="move" name="L"/>
+      <point x="962" y="1540" type="move" name="U"/>
     </contour>
   </outline>
   <lib>

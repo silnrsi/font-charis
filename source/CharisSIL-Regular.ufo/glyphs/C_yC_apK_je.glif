@@ -6,10 +6,10 @@
     <component base="CyCapKa"/>
     <component base="CombAcute" xOffset="1239" yOffset="400"/>
     <contour>
-      <point x="682" y="1900" type="move" name="U"/>
+      <point x="682" y="-100" type="move" name="L"/>
     </contour>
     <contour>
-      <point x="682" y="-100" type="move" name="L"/>
+      <point x="682" y="1900" type="move" name="U"/>
     </contour>
   </outline>
   <lib>

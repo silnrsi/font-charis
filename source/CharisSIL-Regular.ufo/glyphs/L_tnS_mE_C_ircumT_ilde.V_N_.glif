@@ -8,16 +8,16 @@
       <point x="502" y="0" type="move" name="H"/>
     </contour>
     <contour>
-      <point x="1004" y="1000" type="move" name="R"/>
-    </contour>
-    <contour>
-      <point x="535" y="1825" type="move" name="U"/>
-    </contour>
-    <contour>
       <point x="535" y="-100" type="move" name="L"/>
     </contour>
     <contour>
       <point x="808" y="0" type="move" name="O"/>
+    </contour>
+    <contour>
+      <point x="1004" y="1000" type="move" name="R"/>
+    </contour>
+    <contour>
+      <point x="535" y="1825" type="move" name="U"/>
     </contour>
   </outline>
   <lib>

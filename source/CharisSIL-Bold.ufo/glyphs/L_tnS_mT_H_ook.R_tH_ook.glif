@@ -4,10 +4,10 @@
   <outline>
     <component base="LtnSmTHook"/>
     <contour>
-      <point x="441" y="1540" type="move" name="U"/>
+      <point x="441" y="-100" type="move" name="L"/>
     </contour>
     <contour>
-      <point x="441" y="-100" type="move" name="L"/>
+      <point x="441" y="1540" type="move" name="U"/>
     </contour>
   </outline>
   <lib>

@@ -5,10 +5,10 @@
   <outline>
     <component base="ModCntrdRtHalfRing" yOffset="708"/>
     <contour>
-      <point x="270" y="1540" type="move" name="U"/>
+      <point x="270" y="-100" type="move" name="L"/>
     </contour>
     <contour>
-      <point x="270" y="-100" type="move" name="L"/>
+      <point x="270" y="1540" type="move" name="U"/>
     </contour>
   </outline>
   <lib>

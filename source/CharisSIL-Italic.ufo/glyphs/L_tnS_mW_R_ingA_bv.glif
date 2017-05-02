@@ -6,10 +6,10 @@
     <component base="LtnSmW"/>
     <component base="RingAbv" xOffset="435"/>
     <contour>
-      <point x="865" y="1660" type="move" name="U"/>
+      <point x="521" y="-100" type="move" name="L"/>
     </contour>
     <contour>
-      <point x="521" y="-100" type="move" name="L"/>
+      <point x="865" y="1660" type="move" name="U"/>
     </contour>
   </outline>
   <lib>

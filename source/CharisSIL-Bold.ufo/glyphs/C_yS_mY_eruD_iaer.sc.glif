@@ -5,10 +5,10 @@
     <component base="CySmYeru.sc"/>
     <component base="CombDiaer" xOffset="1470" yOffset="138"/>
     <contour>
-      <point x="872" y="1638" type="move" name="U"/>
+      <point x="872" y="-74" type="move" name="L"/>
     </contour>
     <contour>
-      <point x="872" y="-74" type="move" name="L"/>
+      <point x="872" y="1638" type="move" name="U"/>
     </contour>
   </outline>
   <lib>

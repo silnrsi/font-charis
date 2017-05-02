@@ -6,13 +6,13 @@
     <component base="LtnSmBarredO"/>
     <component base="CombDiaer" xOffset="1197"/>
     <contour>
+      <point x="599" y="-100" type="move" name="L"/>
+    </contour>
+    <contour>
       <point x="1196" y="1000" type="move" name="R"/>
     </contour>
     <contour>
       <point x="599" y="1500" type="move" name="U"/>
-    </contour>
-    <contour>
-      <point x="599" y="-100" type="move" name="L"/>
     </contour>
   </outline>
   <lib>

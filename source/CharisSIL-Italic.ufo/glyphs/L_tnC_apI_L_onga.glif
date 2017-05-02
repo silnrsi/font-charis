@@ -30,7 +30,7 @@
       <point x="658" y="1578" type="curve" smooth="yes"/>
     </contour>
     <contour>
-      <point x="548" y="1800" type="move" name="U"/>
+      <point x="220" y="0" type="move" name="H"/>
     </contour>
     <contour>
       <point x="200" y="-100" type="move" name="L"/>
@@ -39,10 +39,10 @@
       <point x="384" y="0" type="move" name="O"/>
     </contour>
     <contour>
-      <point x="220" y="0" type="move" name="H"/>
+      <point x="767" y="1200" type="move" name="R"/>
     </contour>
     <contour>
-      <point x="767" y="1200" type="move" name="R"/>
+      <point x="548" y="1800" type="move" name="U"/>
     </contour>
   </outline>
   <lib>

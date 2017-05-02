@@ -88,19 +88,19 @@
       <point x="772" y="819"/>
     </contour>
     <contour>
-      <point x="1059" y="1100" type="move" name="U"/>
+      <point x="845" y="0" type="move" name="H"/>
     </contour>
     <contour>
       <point x="815" y="-100" type="move" name="L"/>
     </contour>
     <contour>
-      <point x="1773" y="1000" type="move" name="R"/>
-    </contour>
-    <contour>
       <point x="1634" y="0" type="move" name="O"/>
     </contour>
     <contour>
-      <point x="845" y="0" type="move" name="H"/>
+      <point x="1773" y="1000" type="move" name="R"/>
+    </contour>
+    <contour>
+      <point x="1059" y="1100" type="move" name="U"/>
     </contour>
   </outline>
   <lib>

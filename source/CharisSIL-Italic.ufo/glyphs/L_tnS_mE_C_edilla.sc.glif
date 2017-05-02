@@ -5,16 +5,16 @@
     <component base="LtnSmE.sc"/>
     <component base="CombCedilla" xOffset="1046" yOffset="8"/>
     <contour>
-      <point x="1202" y="992" type="move" name="R"/>
-    </contour>
-    <contour>
-      <point x="675" y="1238" type="move" name="U"/>
-    </contour>
-    <contour>
       <point x="313" y="-592" type="move" name="L"/>
     </contour>
     <contour>
       <point x="780" y="8" type="move" name="O"/>
+    </contour>
+    <contour>
+      <point x="1202" y="992" type="move" name="R"/>
+    </contour>
+    <contour>
+      <point x="675" y="1238" type="move" name="U"/>
     </contour>
   </outline>
   <lib>

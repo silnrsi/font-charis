@@ -7,6 +7,12 @@
     <component base="CombMacron" xOffset="1067" yOffset="400"/>
     <component base="DotAbv" xOffset="396"/>
     <contour>
+      <point x="761" y="0" type="move" name="H"/>
+    </contour>
+    <contour>
+      <point x="510" y="-100" type="move" name="L"/>
+    </contour>
+    <contour>
       <point x="904" y="0" type="move" name="O"/>
     </contour>
     <contour>
@@ -14,12 +20,6 @@
     </contour>
     <contour>
       <point x="510" y="1905" type="move" name="U"/>
-    </contour>
-    <contour>
-      <point x="761" y="0" type="move" name="H"/>
-    </contour>
-    <contour>
-      <point x="510" y="-100" type="move" name="L"/>
     </contour>
   </outline>
   <lib>

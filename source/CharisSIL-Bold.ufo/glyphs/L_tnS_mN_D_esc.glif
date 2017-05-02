@@ -58,13 +58,13 @@
       <point x="888" y="58" type="line"/>
     </contour>
     <contour>
-      <point x="624" y="1100" type="move" name="U"/>
+      <point x="939" y="0" type="move" name="H"/>
     </contour>
     <contour>
       <point x="624" y="-100" type="move" name="L"/>
     </contour>
     <contour>
-      <point x="939" y="0" type="move" name="H"/>
+      <point x="624" y="1100" type="move" name="U"/>
     </contour>
   </outline>
   <lib>

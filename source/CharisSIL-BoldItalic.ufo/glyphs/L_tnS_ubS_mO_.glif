@@ -5,10 +5,10 @@
   <outline>
     <component base="LtnSmO" xScale="0.65" yScale="0.6" xOffset="5" yOffset="-460"/>
     <contour>
-      <point x="313" y="200" type="move" name="U"/>
+      <point x="171" y="-525" type="move" name="L"/>
     </contour>
     <contour>
-      <point x="171" y="-525" type="move" name="L"/>
+      <point x="313" y="200" type="move" name="U"/>
     </contour>
   </outline>
   <lib>

@@ -23,19 +23,19 @@
       <point x="70" y="0" type="line"/>
     </contour>
     <contour>
-      <point x="310" y="1100" type="move" name="U"/>
+      <point x="310" y="0" type="move" name="H"/>
     </contour>
     <contour>
       <point x="310" y="-100" type="move" name="L"/>
     </contour>
     <contour>
-      <point x="621" y="1000" type="move" name="R"/>
-    </contour>
-    <contour>
       <point x="467" y="0" type="move" name="O"/>
     </contour>
     <contour>
-      <point x="310" y="0" type="move" name="H"/>
+      <point x="621" y="1000" type="move" name="R"/>
+    </contour>
+    <contour>
+      <point x="310" y="1100" type="move" name="U"/>
     </contour>
   </outline>
   <lib>

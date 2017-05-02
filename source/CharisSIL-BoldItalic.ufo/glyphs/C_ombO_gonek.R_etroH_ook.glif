@@ -4,10 +4,10 @@
   <outline>
     <component base="Ogonek.RetroHook"/>
     <contour>
-      <point x="71" y="-100" type="move" name="_L"/>
+      <point x="-4" y="-500" type="move" name="L"/>
     </contour>
     <contour>
-      <point x="-4" y="-500" type="move" name="L"/>
+      <point x="71" y="-100" type="move" name="_L"/>
     </contour>
   </outline>
   <lib>

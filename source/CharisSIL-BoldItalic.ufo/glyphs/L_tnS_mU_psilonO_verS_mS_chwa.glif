@@ -6,10 +6,10 @@
     <component base="LtnSupSmUpsilon" xOffset="-8" yOffset="-100"/>
     <component base="LtnSupSmSchwa" xOffset="-60" yOffset="-795"/>
     <contour>
-      <point x="564" y="1405" type="move" name="U"/>
+      <point x="274" y="-100" type="move" name="L"/>
     </contour>
     <contour>
-      <point x="274" y="-100" type="move" name="L"/>
+      <point x="564" y="1405" type="move" name="U"/>
     </contour>
   </outline>
   <lib>

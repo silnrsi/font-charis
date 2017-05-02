@@ -6,10 +6,10 @@
     <component base="LtnCapOStrk"/>
     <component base="CombAcute" xOffset="1379" yOffset="400"/>
     <contour>
-      <point x="980" y="1900" type="move" name="U"/>
+      <point x="648" y="-100" type="move" name="L"/>
     </contour>
     <contour>
-      <point x="648" y="-100" type="move" name="L"/>
+      <point x="980" y="1900" type="move" name="U"/>
     </contour>
   </outline>
   <lib>

@@ -5,13 +5,13 @@
   <outline>
     <component base="LtnSmQ"/>
     <contour>
+      <point x="623" y="-500" type="move" name="L"/>
+    </contour>
+    <contour>
       <point x="1235" y="1000" type="move" name="R"/>
     </contour>
     <contour>
       <point x="623" y="1100" type="move" name="U"/>
-    </contour>
-    <contour>
-      <point x="623" y="-500" type="move" name="L"/>
     </contour>
   </outline>
   <lib>

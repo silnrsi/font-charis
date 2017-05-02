@@ -74,13 +74,13 @@
       <point x="1597" y="901" type="curve" smooth="yes"/>
     </contour>
     <contour>
-      <point x="871" y="1100" type="move" name="U"/>
-    </contour>
-    <contour>
       <point x="871" y="-100" type="move" name="L"/>
     </contour>
     <contour>
       <point x="1741" y="1000" type="move" name="R"/>
+    </contour>
+    <contour>
+      <point x="871" y="1100" type="move" name="U"/>
     </contour>
   </outline>
   <lib>

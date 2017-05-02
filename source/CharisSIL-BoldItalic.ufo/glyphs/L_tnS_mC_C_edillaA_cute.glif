@@ -7,13 +7,13 @@
     <component base="CombAcute" xOffset="1113"/>
     <component base="CombCedilla" xOffset="1123"/>
     <contour>
+      <point x="340" y="-600" type="move" name="L"/>
+    </contour>
+    <contour>
       <point x="985" y="1000" type="move" name="R"/>
     </contour>
     <contour>
       <point x="714" y="1500" type="move" name="U"/>
-    </contour>
-    <contour>
-      <point x="340" y="-600" type="move" name="L"/>
     </contour>
   </outline>
   <lib>

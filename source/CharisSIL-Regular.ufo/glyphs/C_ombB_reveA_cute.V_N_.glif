@@ -5,10 +5,10 @@
     <component base="CombBreve" xOffset="862"/>
     <component base="CombAcute" xOffset="981" yOffset="290"/>
     <contour>
-      <point x="305" y="1100" type="move" name="_U"/>
+      <point x="424" y="1790" type="move" name="U"/>
     </contour>
     <contour>
-      <point x="424" y="1790" type="move" name="U"/>
+      <point x="305" y="1100" type="move" name="_U"/>
     </contour>
   </outline>
   <lib>

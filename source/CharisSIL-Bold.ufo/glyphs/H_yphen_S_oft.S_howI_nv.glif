@@ -7,6 +7,12 @@
     <component base="LtnCapH.Sophia" xOffset="938" yOffset="634"/>
     <component base="LtnCapY.Sophia" xOffset="1504" yOffset="634"/>
     <contour>
+      <point x="1200" y="900" type="move" name="C11"/>
+    </contour>
+    <contour>
+      <point x="826" y="900" type="move" name="C12"/>
+    </contour>
+    <contour>
       <point x="1552" y="900" type="move" name="C22"/>
     </contour>
     <contour>
@@ -19,19 +25,22 @@
       <point x="650" y="526" type="move" name="L13"/>
     </contour>
     <contour>
-      <point x="1200" y="1252" type="move" name="U11"/>
+      <point x="1552" y="526" type="move" name="L22"/>
     </contour>
     <contour>
       <point x="1200" y="526" type="move" name="L23"/>
     </contour>
     <contour>
-      <point x="1552" y="526" type="move" name="L22"/>
-    </contour>
-    <contour>
-      <point x="1750" y="1252" type="move" name="U33"/>
-    </contour>
-    <contour>
       <point x="1750" y="526" type="move" name="L33"/>
+    </contour>
+    <contour>
+      <point x="1200" y="1252" type="move" name="U11"/>
+    </contour>
+    <contour>
+      <point x="826" y="1252" type="move" name="U12"/>
+    </contour>
+    <contour>
+      <point x="650" y="1252" type="move" name="U13"/>
     </contour>
     <contour>
       <point x="1552" y="1252" type="move" name="U22"/>
@@ -40,16 +49,7 @@
       <point x="1200" y="1252" type="move" name="U23"/>
     </contour>
     <contour>
-      <point x="826" y="900" type="move" name="C12"/>
-    </contour>
-    <contour>
-      <point x="1200" y="900" type="move" name="C11"/>
-    </contour>
-    <contour>
-      <point x="826" y="1252" type="move" name="U12"/>
-    </contour>
-    <contour>
-      <point x="650" y="1252" type="move" name="U13"/>
+      <point x="1750" y="1252" type="move" name="U33"/>
     </contour>
   </outline>
   <lib>

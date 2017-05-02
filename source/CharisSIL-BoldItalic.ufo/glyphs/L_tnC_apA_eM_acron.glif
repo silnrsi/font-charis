@@ -6,10 +6,10 @@
     <component base="LtnCapAe"/>
     <component base="CombMacron" xOffset="1761" yOffset="400"/>
     <contour>
-      <point x="1377" y="1870" type="move" name="U"/>
+      <point x="1030" y="-100" type="move" name="L"/>
     </contour>
     <contour>
-      <point x="1030" y="-100" type="move" name="L"/>
+      <point x="1377" y="1870" type="move" name="U"/>
     </contour>
   </outline>
   <lib>

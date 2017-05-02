@@ -4,16 +4,16 @@
   <unicode hex="034F"/>
   <outline>
     <contour>
-      <point x="0" y="0" type="move" name="_U"/>
-    </contour>
-    <contour>
-      <point x="0" y="0" type="move" name="_L"/>
+      <point x="0" y="0" type="move" name="L"/>
     </contour>
     <contour>
       <point x="0" y="0" type="move" name="U"/>
     </contour>
     <contour>
-      <point x="0" y="0" type="move" name="L"/>
+      <point x="0" y="0" type="move" name="_L"/>
+    </contour>
+    <contour>
+      <point x="0" y="0" type="move" name="_U"/>
     </contour>
   </outline>
   <lib>
