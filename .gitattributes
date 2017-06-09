@@ -1,0 +1,53 @@
+# .gitattributes template for an open font design workflow 
+# Designed to tell git how to best deal with certain file formats 
+# To tweak to your particular needs, see http://git-scm.com/book/en/Customizing-Git-Git-Attributes
+
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text=auto
+
+# Set the default behavior, we expect Windows users to use a VM for now 
+[attr]text eol=lf
+
+# Explicitly declare text files to always be normalized and converted
+# to native line endings on checkout.
+*.cfg text
+*.ftml text
+*.gdl text
+*.gdh text
+*.htxt text
+*.md text
+*.sile text
+*.srctext text 
+*.tex text
+*.txt text
+*.TXT text
+*.vtp text
+*.xdvtxt text
+*.xsl text
+*.xml text
+
+wscript text
+
+# Declare text files that will stay in LF (i.e. not expected to be used on Windows)
+*.sh eol=lf
+*.sfd text eol=lf
+
+# Keep these as Linux because vfb2ufo generates Linux line-endings, even on Windows:
+*.glif text eol=lf
+*.plist text eol=lf
+
+# Declare all files that are truly binary and should not be modified.
+*.png binary
+*.jpg binary
+*.vfb binary
+*.ttf binary
+*.pdf binary
+*.PDF binary
+
+# other document formats
+*.pdf  diff=astextplain
+*.PDF diff=astextplain
+*.doc diff=astextplain
+*.DOC diff=astextplain
+*.docx diff=astextplain
+*.DOCX diff=astextplain
