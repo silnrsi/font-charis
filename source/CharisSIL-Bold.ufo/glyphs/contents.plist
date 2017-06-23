@@ -26,6 +26,8 @@
   <string>A_ustralS_ign.glif</string>
   <key>Because</key>
   <string>B_ecause.glif</string>
+  <key>BitcoinSgn</key>
+  <string>B_itcoinS_gn.glif</string>
   <key>BoxDotted</key>
   <string>B_oxD_otted.glif</string>
   <key>Breve</key>
@@ -160,6 +162,8 @@
   <string>C_ombD_blM_acron.glif</string>
   <key>CombDblMacronBlw</key>
   <string>C_ombD_blM_acronB_lw.glif</string>
+  <key>CombDblOpnMrkBlw</key>
+  <string>C_ombD_blO_pnM_rkB_lw.glif</string>
   <key>CombDblOverline</key>
   <string>C_ombD_blO_verline.glif</string>
   <key>CombDblRingBlw</key>
@@ -188,10 +192,16 @@
   <string>C_ombD_iaer.U_U_.glif</string>
   <key>CombDiaerBlw</key>
   <string>C_ombD_iaerB_lw.glif</string>
+  <key>CombDiaerRing</key>
+  <string>C_ombD_iaerR_ing.glif</string>
   <key>CombDotAbv</key>
   <string>C_ombD_otA_bv.glif</string>
   <key>CombDotBlw</key>
   <string>C_ombD_otB_lw.glif</string>
+  <key>CombDoubledCircum</key>
+  <string>C_ombD_oubledC_ircum.glif</string>
+  <key>CombDwnArrw</key>
+  <string>C_ombD_wnA_rrw.glif</string>
   <key>CombDwnTackBlw</key>
   <string>C_ombD_wnT_ackB_lw.glif</string>
   <key>CombEqSgnBlw</key>
@@ -220,6 +230,8 @@
   <string>C_ombH_ookA_bv.glif</string>
   <key>CombHorn</key>
   <string>C_ombH_orn.glif</string>
+  <key>CombInfinity</key>
+  <string>C_ombI_nfinity.glif</string>
   <key>CombInvBreve</key>
   <string>C_ombI_nvB_reve.glif</string>
   <key>CombInvBreve.LL</key>
@@ -254,6 +266,8 @@
   <string>C_ombL_ftR_tA_rrwB_lw.glif</string>
   <key>CombLftTackBlw</key>
   <string>C_ombL_ftT_ackB_lw.glif</string>
+  <key>CombLightCentralizationStrkBlw</key>
+  <string>C_ombL_ightC_entralizationS_trkB_lw.glif</string>
   <key>CombLngReverseSolidusOverlay</key>
   <string>C_ombL_ngR_everseS_olidusO_verlay.glif</string>
   <key>CombLngSolidusOverlay</key>
@@ -322,6 +336,8 @@
   <string>C_ombO_gonek.L_rg.glif</string>
   <key>CombOgonek.RetroHook</key>
   <string>C_ombO_gonek.R_etroH_ook.glif</string>
+  <key>CombOpnMrkBlw</key>
+  <string>C_ombO_pnM_rkB_lw.glif</string>
   <key>CombOverline</key>
   <string>C_ombO_verline.glif</string>
   <key>CombPlusSgnBlw</key>
@@ -364,6 +380,8 @@
   <string>C_ombS_nakeB_lwD_ep.glif</string>
   <key>CombSqrBlw</key>
   <string>C_ombS_qrB_lw.glif</string>
+  <key>CombStrongCentralizationStrkBlw</key>
+  <string>C_ombS_trongC_entralizationS_trkB_lw.glif</string>
   <key>CombTilde</key>
   <string>C_ombT_ilde.glif</string>
   <key>CombTildeBlw</key>
@@ -372,10 +390,14 @@
   <string>C_ombT_ildeO_verlay.glif</string>
   <key>CombTildeOverlay.Lrg</key>
   <string>C_ombT_ildeO_verlay.L_rg.glif</string>
+  <key>CombTripleDot</key>
+  <string>C_ombT_ripleD_ot.glif</string>
   <key>CombTrndCommaAbv</key>
   <string>C_ombT_rndC_ommaA_bv.glif</string>
   <key>CombUpArrwBlw</key>
   <string>C_ombU_pA_rrwB_lw.glif</string>
+  <key>CombUpTackAbv</key>
+  <string>C_ombU_pT_ackA_bv.glif</string>
   <key>CombUpTackBlw</key>
   <string>C_ombU_pT_ackB_lw.glif</string>
   <key>CombVertLineAbv</key>
@@ -384,10 +406,14 @@
   <string>C_ombV_ertL_ineB_lw.glif</string>
   <key>CombVertTilde</key>
   <string>C_ombV_ertT_ilde.glif</string>
+  <key>CombWigglyLineBlw</key>
+  <string>C_ombW_igglyL_ineB_lw.glif</string>
   <key>CombXAbv</key>
   <string>C_ombX_A_bv.glif</string>
   <key>CombXBlw</key>
   <string>C_ombX_B_lw.glif</string>
+  <key>CombXXBlw</key>
+  <string>C_ombX_X_B_lw.glif</string>
   <key>CombZigZagAbv</key>
   <string>C_ombZ_igZ_agA_bv.glif</string>
   <key>Comma</key>
@@ -1466,6 +1492,8 @@
   <string>G_rC_apP_si.glif</string>
   <key>GrCapTheta</key>
   <string>G_rC_apT_heta.glif</string>
+  <key>GrCapThetaSym</key>
+  <string>G_rC_apT_hetaS_ym.glif</string>
   <key>GrCapXi</key>
   <string>G_rC_apX_i.glif</string>
   <key>GrSmAlpha</key>
@@ -1516,6 +1544,8 @@
   <string>G_rS_ubS_mP_hi.glif</string>
   <key>GrSubSmRho</key>
   <string>G_rS_ubS_mR_ho.glif</string>
+  <key>GrThetaSym</key>
+  <string>G_rT_hetaS_ym.glif</string>
   <key>GraveAccent</key>
   <string>G_raveA_ccent.glif</string>
   <key>GuaraniSign</key>
@@ -1578,6 +1608,8 @@
   <string>L_T_O_rE_qT_o.glif</string>
   <key>LTSgn</key>
   <string>L_T_S_gn.glif</string>
+  <key>LariSgn</key>
+  <string>L_ariS_gn.glif</string>
   <key>LftArrw</key>
   <string>L_ftA_rrw.glif</string>
   <key>LftArrwStrk</key>
@@ -1810,6 +1842,8 @@
   <string>L_tnC_apB_L_ineB_lw.glif</string>
   <key>LtnCapBTopbar</key>
   <string>L_tnC_apB_T_opbar.glif</string>
+  <key>LtnCapBeta</key>
+  <string>L_tnC_apB_eta.glif</string>
   <key>LtnCapC</key>
   <string>L_tnC_apC_.glif</string>
   <key>LtnCapC.Sophia</key>
@@ -1832,6 +1866,8 @@
   <string>L_tnC_apC_H_ook.glif</string>
   <key>LtnCapCStrk</key>
   <string>L_tnC_apC_S_trk.glif</string>
+  <key>LtnCapChi</key>
+  <string>L_tnC_apC_hi.glif</string>
   <key>LtnCapCuatrillo</key>
   <string>L_tnC_apC_uatrillo.glif</string>
   <key>LtnCapCuatrilloComma</key>
@@ -2342,6 +2378,8 @@
   <string>L_tnC_apO_T_ildeM_acron.glif</string>
   <key>LtnCapOi</key>
   <string>L_tnC_apO_i.glif</string>
+  <key>LtnCapOmega</key>
+  <string>L_tnC_apO_mega.glif</string>
   <key>LtnCapOpenNine</key>
   <string>L_tnC_apO_penN_ine.glif</string>
   <key>LtnCapOpenSix</key>
@@ -2474,6 +2512,8 @@
   <string>L_tnC_apS_mA_lpha.glif</string>
   <key>LtnCapSmAlphaDep</key>
   <string>L_tnC_apS_mA_lphaD_ep.glif</string>
+  <key>LtnCapSmCapI</key>
+  <string>L_tnC_apS_mC_apI_.glif</string>
   <key>LtnCapSmQHookTail</key>
   <string>L_tnC_apS_mQ_H_ookT_ail.glif</string>
   <key>LtnCapSmQHookTailDep</key>
@@ -2788,6 +2828,8 @@
   <string>L_tnR_evG_lottalS_top.glif</string>
   <key>LtnRevGlottalStopStrk</key>
   <string>L_tnR_evG_lottalS_topS_trk.glif</string>
+  <key>LtnSinolDot</key>
+  <string>L_tnS_inolD_ot.glif</string>
   <key>LtnSmA</key>
   <string>L_tnS_mA_.glif</string>
   <key>LtnSmA.2StorySItal</key>
@@ -3304,8 +3346,12 @@
   <string>L_tnS_mB_T_opbar.glif</string>
   <key>LtnSmBTopbar.sc</key>
   <string>L_tnS_mB_T_opbar.sc.glif</string>
+  <key>LtnSmBarredAlpha</key>
+  <string>L_tnS_mB_arredA_lpha.glif</string>
   <key>LtnSmBarredO</key>
   <string>L_tnS_mB_arredO_.glif</string>
+  <key>LtnSmBeta</key>
+  <string>L_tnS_mB_eta.glif</string>
   <key>LtnSmBottomHalfO</key>
   <string>L_tnS_mB_ottomH_alfO_.glif</string>
   <key>LtnSmC</key>
@@ -3454,6 +3500,8 @@
   <string>L_tnS_mC_apY_.glif</string>
   <key>LtnSmCapZ</key>
   <string>L_tnS_mC_apZ_.glif</string>
+  <key>LtnSmChi</key>
+  <string>L_tnS_mC_hi.glif</string>
   <key>LtnSmClosedOmega</key>
   <string>L_tnS_mC_losedO_mega.glif</string>
   <key>LtnSmClosedOpnE</key>
@@ -4672,6 +4720,8 @@
   <string>L_tnS_mO_i.glif</string>
   <key>LtnSmOi.sc</key>
   <string>L_tnS_mO_i.sc.glif</string>
+  <key>LtnSmOmega</key>
+  <string>L_tnS_mO_mega.glif</string>
   <key>LtnSmOpenNine</key>
   <string>L_tnS_mO_penN_ine.glif</string>
   <key>LtnSmOpenNine.sc</key>
@@ -5600,6 +5650,8 @@
   <string>L_tnS_ubS_mI_.D_otless.glif</string>
   <key>LtnSubSmJ</key>
   <string>L_tnS_ubS_mJ_.glif</string>
+  <key>LtnSubSmJ.Dotless</key>
+  <string>L_tnS_ubS_mJ_.D_otless.glif</string>
   <key>LtnSubSmK</key>
   <string>L_tnS_ubS_mK_.glif</string>
   <key>LtnSubSmL</key>
@@ -6354,6 +6406,8 @@
   <string>Q_uotM_rk.glif</string>
   <key>R_Response</key>
   <string>R__R_esponse.glif</string>
+  <key>RefMrk</key>
+  <string>R_efM_rk.glif</string>
   <key>RegisteredSgn</key>
   <string>R_egisteredS_gn.glif</string>
   <key>ReplChar</key>
@@ -6626,6 +6680,16 @@
   <string>S_upersetO_f.glif</string>
   <key>SupersetOfEqTo</key>
   <string>S_upersetO_fE_qT_o.glif</string>
+  <key>SupplBottomLftHalfBrac</key>
+  <string>S_upplB_ottomL_ftH_alfB_rac.glif</string>
+  <key>SupplBottomRtHalfBrac</key>
+  <string>S_upplB_ottomR_tH_alfB_rac.glif</string>
+  <key>SupplDblDiagHyphen</key>
+  <string>S_upplD_blD_iagH_yphen.glif</string>
+  <key>SupplDottedObelos</key>
+  <string>S_upplD_ottedO_belos.glif</string>
+  <key>SupplDownwardsAncora</key>
+  <string>S_upplD_ownwardsA_ncora.glif</string>
   <key>SupplLftRaisedOmBrac</key>
   <string>S_upplL_ftR_aisedO_mB_rac.glif</string>
   <key>SupplLftSubBrac</key>
@@ -6654,6 +6718,10 @@
   <string>S_upplR_tS_ubB_racD_ot.glif</string>
   <key>SupplRtTransBrac</key>
   <string>S_upplR_tT_ransB_rac.glif</string>
+  <key>SupplTopLftHalfBrac</key>
+  <string>S_upplT_opL_ftH_alfB_rac.glif</string>
+  <key>SupplTopRtHalfBrac</key>
+  <string>S_upplT_opR_tH_alfB_rac.glif</string>
   <key>SwingDash</key>
   <string>S_wingD_ash.glif</string>
   <key>TengeSgn</key>

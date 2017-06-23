@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CombDoubledCircum" format="1">
+  <advance width="0"/>
+  <unicode hex="1AB0"/>
+  <outline>
+    <component base="CombCircum"/>
+    <contour>
+      <point x="-557" y="1500" type="move" name="U"/>
+    </contour>
+    <contour>
+      <point x="-557" y="1100" type="move" name="_U"/>
+    </contour>
+  </outline>
+</glyph>
