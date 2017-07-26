@@ -1,12 +1,25 @@
 # .gitattributes template for an open font design workflow 
 # Designed to tell git how to best deal with certain file formats 
-# To tweak to your particular needs, see http://git-scm.com/book/en/Customizing-Git-Git-Attributes
+# The goal for eols is to have LF in the repo and 
+# LF in the working copy on all platforms.
+# To tweak to your particular needs, 
+# see http://git-scm.com/book/en/Customizing-Git-Git-Attributes
 
-# Set the default behavior, in case people don't have core.autocrlf set.
+# Windows users should use consider setting "core.autocrlf" to "input" and 
+# "core.eol" to "lf" 
+# to catch files that are not explicitly declared below.
+# See http://git-scm.com/docs/git-config
+
+# This causes git to auto detect text files
+# which will have eol conversion applied according to core.autocrlf and core.eol 
 * text=auto
 
-# Explicitly declare text files to always be normalized and converted
-# to native line endings on checkout.
+# Explicitly declare the below matches to be text files, to keep LF eols when 
+# writing to the working copy, and to convert CRLF to LF eols when adding to the repo.
+# TODO: consider uncommenting the below line starting with [attr] and 
+# removing "eol=lf" from the below lines
+#[attr]text text eol=lf
+
 *.cfg text eol=lf
 *.css text eol=lf
 *.fea text eol=lf
@@ -17,7 +30,7 @@
 *.htxt text eol=lf
 *.md text eol=lf
 *.sil text eol=lf
-*.srctext text  eol=lf
+*.srctext text eol=lf
 *.tex text eol=lf
 *.txt text eol=lf
 *.TXT text eol=lf
@@ -30,7 +43,7 @@ preflight text eol=lf
 wscript text eol=lf
 
 # Declare text files that will stay in LF (i.e. not expected to be used on Windows)
-*.sh eol=lf
+*.sh text eol=lf
 *.sfd text eol=lf
 
 # Keep these as LF because vfb2ufo generates LF, even on Windows:
@@ -46,7 +59,7 @@ wscript text eol=lf
 *.PDF binary
 
 # other document formats
-*.pdf  diff=astextplain
+*.pdf diff=astextplain
 *.PDF diff=astextplain
 *.doc diff=astextplain
 *.DOC diff=astextplain
