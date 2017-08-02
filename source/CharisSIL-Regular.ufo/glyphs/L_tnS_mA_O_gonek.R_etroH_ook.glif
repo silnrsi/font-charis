@@ -84,16 +84,4 @@
       <point x="510" y="1100" type="move" name="U"/>
     </contour>
   </outline>
-  <lib>
-    <dict>
-      <key>org.sil.assocFeature</key>
-      <string>ogon</string>
-      <key>org.sil.assocUIDs</key>
-      <array>
-        <string>0105</string>
-      </array>
-      <key>public.postscriptname</key>
-      <string>aogonek.RetroHook</string>
-    </dict>
-  </lib>
 </glyph>
