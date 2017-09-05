@@ -34,7 +34,7 @@ for style in ('-Regular','-Italic','-Bold','-BoldItalic') :
     feabase = 'source/opentype/'+FILENAMEBASE
     font( target = process(fname + '.ttf', name(FILENAMEBASE, lang='en-US', subfamily=(style[1:])),
             cmd('FFchangeGlyphNames -i ../source/psnames ${DEP} ${TGT}')),
-        source = create(fname + '-not.sfd', cmd("FFremoveAllOverlaps ${SRC} ${TGT}", ['source/' + fname + '.ufo'])),
+        source = create(fname + '-not.sfd', cmd("ffremovealloverlaps ${SRC} ${TGT}", ['source/' + fname + '.ufo'])),
         version = VERSION,
         ap =  'source/' + fname +'_ap' + '.xml',
         opentype = fea('source/' + fname + '.fea',
