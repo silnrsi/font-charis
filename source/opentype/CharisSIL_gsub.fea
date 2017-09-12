@@ -2608,29 +2608,29 @@ feature locl {
 
 feature aalt {
 
- script DFLT;
-     language dflt ;
+# script DFLT;
+#     language dflt ;
       lookup aaltAccessAllAlternateslookup7;
       lookup aaltAccessAllAlternateslookup8;
 
- script cyrl;
-     language dflt ;
-      lookup aaltAccessAllAlternateslookup7;
-      lookup aaltAccessAllAlternateslookup8;
-     language SRB  exclude_dflt;
-      lookup aaltAccessAllAlternateslookup7;
-      lookup aaltAccessAllAlternateslookup8;
+# script cyrl;
+#     language dflt ;
+#      lookup aaltAccessAllAlternateslookup7;
+#      lookup aaltAccessAllAlternateslookup8;
+#     language SRB  exclude_dflt;
+#      lookup aaltAccessAllAlternateslookup7;
+#      lookup aaltAccessAllAlternateslookup8;
 
- script latn;
-     language dflt ;
-      lookup aaltAccessAllAlternateslookup7;
-      lookup aaltAccessAllAlternateslookup8;
-     language IPPH exclude_dflt;
-      lookup aaltAccessAllAlternateslookup7;
-      lookup aaltAccessAllAlternateslookup8;
-     language VIT  exclude_dflt;
-      lookup aaltAccessAllAlternateslookup7;
-      lookup aaltAccessAllAlternateslookup8;
+# script latn;
+#     language dflt ;
+#      lookup aaltAccessAllAlternateslookup7;
+#      lookup aaltAccessAllAlternateslookup8;
+#     language IPPH exclude_dflt;
+#      lookup aaltAccessAllAlternateslookup7;
+#      lookup aaltAccessAllAlternateslookup8;
+#     language VIT  exclude_dflt;
+#      lookup aaltAccessAllAlternateslookup7;
+#      lookup aaltAccessAllAlternateslookup8;
 } aalt;
 
 feature smcp {
