@@ -8222,6 +8222,8 @@
     <string>uni2235</string>
     <key>BitcoinSgn</key>
     <string>uni20BF</string>
+    <key>BoxDotted</key>
+    <string>compBoxDotted</string>
     <key>Breve</key>
     <string>breve</string>
     <key>BrokenBar</key>
@@ -8282,6 +8284,8 @@
     <string>uni0306</string>
     <key>CombBreve.CyShortMrkAlt</key>
     <string>uni0306.CyShortMrkAlt</string>
+    <key>CombBreve.CyShortMrkAlt.UCHt</key>
+    <string>uni0306.CyShortMrkAlt.UCHt</string>
     <key>CombBreveAcute.VN</key>
     <string>uni0306_acutecomb.VN</string>
     <key>CombBreveAcute.VNLP</key>
@@ -8570,6 +8574,8 @@
     <string>uni034A</string>
     <key>CombOgonek</key>
     <string>uni0328</string>
+    <key>CombOgonek.Lrg</key>
+    <string>uni0328.Lrg</string>
     <key>CombOgonek.RetroHook</key>
     <string>uni0328.RetroHook</string>
     <key>CombOpnMrkBlw</key>
@@ -8626,6 +8632,8 @@
     <string>uni0330</string>
     <key>CombTildeOverlay</key>
     <string>uni0334</string>
+    <key>CombTildeOverlay.Lrg</key>
+    <string>uni0334.Lrg</string>
     <key>CombTripleDot</key>
     <string>uni1AB4</string>
     <key>CombTrndCommaAbv</key>
@@ -8654,6 +8662,8 @@
     <string>uni035B</string>
     <key>Comma</key>
     <string>comma</string>
+    <key>Comma.Sophia</key>
+    <string>compComma</string>
     <key>CopCapEie</key>
     <string>uni2C88</string>
     <key>CopyrightSgn</key>
@@ -9560,36 +9570,56 @@
     <string>dieresis.LP</string>
     <key>DigitEight</key>
     <string>eight</string>
+    <key>DigitEight.Sophia</key>
+    <string>compDigitEight</string>
     <key>DigitFive</key>
     <string>five</string>
+    <key>DigitFive.Sophia</key>
+    <string>compDigitFive</string>
     <key>DigitFour</key>
     <string>four</string>
     <key>DigitFour.Open</key>
     <string>four.Open</string>
+    <key>DigitFour.Sophia</key>
+    <string>compDigitFour</string>
     <key>DigitNine</key>
     <string>nine</string>
     <key>DigitNine.Diag</key>
     <string>nine.Diag</string>
+    <key>DigitNine.Sophia</key>
+    <string>compDigitNine</string>
     <key>DigitOne</key>
     <string>one</string>
     <key>DigitOne.NoBase</key>
     <string>one.NoBase</string>
+    <key>DigitOne.Sophia</key>
+    <string>compDigitOne</string>
     <key>DigitSeven</key>
     <string>seven</string>
     <key>DigitSeven.Bar</key>
     <string>seven.Bar</string>
+    <key>DigitSeven.Sophia</key>
+    <string>compDigitSeven</string>
     <key>DigitSix</key>
     <string>six</string>
     <key>DigitSix.Diag</key>
     <string>six.Diag</string>
+    <key>DigitSix.Sophia</key>
+    <string>compDigitSix</string>
     <key>DigitThree</key>
     <string>three</string>
+    <key>DigitThree.Sophia</key>
+    <string>compDigitThree</string>
     <key>DigitTwo</key>
     <string>two</string>
+    <key>DigitTwo.Sophia</key>
+    <string>compDigitTwo</string>
     <key>DigitZero</key>
     <string>zero</string>
     <key>DigitZero.Slash</key>
     <string>zero.Slash</string>
+    <key>DigitZero.Sophia</key>
+    <string>compDigitZero</string>
     <key>DivSgn</key>
     <string>divide</string>
     <key>DollarSgn</key>
@@ -10622,6 +10652,8 @@
     <string>uni23A2</string>
     <key>LftParen</key>
     <string>parenleft</string>
+    <key>LftParen.Sophia</key>
+    <string>compLftParen</string>
     <key>LftPtngAngBrac</key>
     <string>angleleft</string>
     <key>LftPtngDblAngQuotMrk</key>
@@ -10808,6 +10840,8 @@
     <string>uniF248</string>
     <key>LtnCapB</key>
     <string>B</string>
+    <key>LtnCapB.Sophia</key>
+    <string>compLtnCapB</string>
     <key>LtnCapBBarredLowStem</key>
     <string>uni0243</string>
     <key>LtnCapBBarredLowStemDep</key>
@@ -10830,6 +10864,8 @@
     <string>uniA7B4</string>
     <key>LtnCapC</key>
     <string>C</string>
+    <key>LtnCapC.Sophia</key>
+    <string>compLtnCapC</string>
     <key>LtnCapCAcute</key>
     <string>Cacute</string>
     <key>LtnCapCBar</key>
@@ -10856,6 +10892,8 @@
     <string>uniA72E</string>
     <key>LtnCapD</key>
     <string>D</string>
+    <key>LtnCapD.Sophia</key>
+    <string>compLtnCapD</string>
     <key>LtnCapDCaron</key>
     <string>Dcaron</string>
     <key>LtnCapDCedilla</key>
@@ -10900,6 +10938,8 @@
     <string>uni01C4</string>
     <key>LtnCapE</key>
     <string>E</string>
+    <key>LtnCapE.Sophia</key>
+    <string>compLtnCapE</string>
     <key>LtnCapEAcute</key>
     <string>Eacute</string>
     <key>LtnCapEBreve</key>
@@ -10992,6 +11032,8 @@
     <string>uni01B8</string>
     <key>LtnCapF</key>
     <string>F</string>
+    <key>LtnCapF.Sophia</key>
+    <string>compLtnCapF</string>
     <key>LtnCapFDotAbv</key>
     <string>uni1E1E</string>
     <key>LtnCapFHook</key>
@@ -11000,6 +11042,8 @@
     <string>uniA798</string>
     <key>LtnCapG</key>
     <string>G</string>
+    <key>LtnCapG.Sophia</key>
+    <string>compLtnCapG</string>
     <key>LtnCapGAcute</key>
     <string>uni01F4</string>
     <key>LtnCapGBreve</key>
@@ -11026,6 +11070,8 @@
     <string>uni0241</string>
     <key>LtnCapH</key>
     <string>H</string>
+    <key>LtnCapH.Sophia</key>
+    <string>compLtnCapH</string>
     <key>LtnCapHBreveBlw</key>
     <string>uni1E2A</string>
     <key>LtnCapHCaron</key>
@@ -11118,6 +11164,8 @@
     <string>J</string>
     <key>LtnCapJ.BarTop</key>
     <string>J.BarTop</string>
+    <key>LtnCapJ.Sophia</key>
+    <string>compLtnCapJ</string>
     <key>LtnCapJCircum</key>
     <string>Jcircumflex</string>
     <key>LtnCapJCircum.BarTop</key>
@@ -11160,6 +11208,8 @@
     <string>uniA744</string>
     <key>LtnCapL</key>
     <string>L</string>
+    <key>LtnCapL.Sophia</key>
+    <string>compLtnCapL</string>
     <key>LtnCapLAcute</key>
     <string>Lacute</string>
     <key>LtnCapLBar</key>
@@ -11212,6 +11262,8 @@
     <string>uni01C7</string>
     <key>LtnCapM</key>
     <string>M</string>
+    <key>LtnCapM.Sophia</key>
+    <string>compLtnCapM</string>
     <key>LtnCapMAcute</key>
     <string>uni1E3E</string>
     <key>LtnCapMDotAbv</key>
@@ -11224,6 +11276,8 @@
     <string>uniF25B</string>
     <key>LtnCapN</key>
     <string>N</string>
+    <key>LtnCapN.Sophia</key>
+    <string>compLtnCapN</string>
     <key>LtnCapNAcute</key>
     <string>Nacute</string>
     <key>LtnCapNCaron</key>
@@ -11262,6 +11316,8 @@
     <string>uni01CA</string>
     <key>LtnCapO</key>
     <string>O</string>
+    <key>LtnCapO.Sophia</key>
+    <string>compLtnCapO</string>
     <key>LtnCapOAcute</key>
     <string>Oacute</string>
     <key>LtnCapOBreve</key>
@@ -11374,6 +11430,8 @@
     <string>uni0222.OpenTop</string>
     <key>LtnCapP</key>
     <string>P</string>
+    <key>LtnCapP.Sophia</key>
+    <string>compLtnCapP</string>
     <key>LtnCapPAcute</key>
     <string>uni1E54</string>
     <key>LtnCapPDotAbv</key>
@@ -11404,6 +11462,8 @@
     <string>uniA756.DiagTail</string>
     <key>LtnCapR</key>
     <string>R</string>
+    <key>LtnCapR.Sophia</key>
+    <string>compLtnCapR</string>
     <key>LtnCapRAcute</key>
     <string>Racute</string>
     <key>LtnCapRBarredStem</key>
@@ -11448,6 +11508,8 @@
     <string>uniA75C</string>
     <key>LtnCapS</key>
     <string>S</string>
+    <key>LtnCapS.Sophia</key>
+    <string>compLtnCapS</string>
     <key>LtnCapSAcute</key>
     <string>Sacute</string>
     <key>LtnCapSAcuteDotAbv</key>
@@ -11634,6 +11696,8 @@
     <string>uni01B1</string>
     <key>LtnCapV</key>
     <string>V</string>
+    <key>LtnCapV.Sophia</key>
+    <string>compLtnCapV</string>
     <key>LtnCapVDiagStrk</key>
     <string>uniA75E</string>
     <key>LtnCapVDotBlw</key>
@@ -11654,6 +11718,8 @@
     <string>uniA762</string>
     <key>LtnCapW</key>
     <string>W</string>
+    <key>LtnCapW.Sophia</key>
+    <string>compLtnCapW</string>
     <key>LtnCapWAcute</key>
     <string>Wacute</string>
     <key>LtnCapWCircum</key>
@@ -11674,12 +11740,16 @@
     <string>uni01F7</string>
     <key>LtnCapX</key>
     <string>X</string>
+    <key>LtnCapX.Sophia</key>
+    <string>compLtnCapX</string>
     <key>LtnCapXDiaer</key>
     <string>uni1E8C</string>
     <key>LtnCapXDotAbv</key>
     <string>uni1E8A</string>
     <key>LtnCapY</key>
     <string>Y</string>
+    <key>LtnCapY.Sophia</key>
+    <string>compLtnCapY</string>
     <key>LtnCapYAcute</key>
     <string>Yacute</string>
     <key>LtnCapYCircum</key>
@@ -11712,6 +11782,8 @@
     <string>uni021C</string>
     <key>LtnCapZ</key>
     <string>Z</string>
+    <key>LtnCapZ.Sophia</key>
+    <string>compLtnCapZ</string>
     <key>LtnCapZAcute</key>
     <string>Zacute</string>
     <key>LtnCapZCaron</key>
@@ -15598,8 +15670,12 @@
     <string>u1D517</string>
     <key>MathFrktCapV</key>
     <string>u1D519</string>
+    <key>MathLftAngBrac</key>
+    <string>uni27E8</string>
     <key>MathLftWhiteSqrBrac</key>
     <string>uni27E6</string>
+    <key>MathRtAngBrac</key>
+    <string>uni27E9</string>
     <key>MathRtWhiteSqrBrac</key>
     <string>uni27E7</string>
     <key>MicroSgn</key>
@@ -16232,6 +16308,8 @@
     <string>uni23A5</string>
     <key>RtParen</key>
     <string>parenright</string>
+    <key>RtParen.Sophia</key>
+    <string>compRtParen</string>
     <key>RtPtngAngBrac</key>
     <string>angleright</string>
     <key>RtPtngDblAngQuotMrk</key>
@@ -16622,6 +16700,82 @@
     <string>uni02E5</string>
     <key>TnLtr5no</key>
     <string>uni02E5.no</string>
+    <key>TnLtrBar</key>
+    <string>compTnLtrBar</string>
+    <key>TnLtrDot1</key>
+    <string>compTnLtrDot1</string>
+    <key>TnLtrDot2</key>
+    <string>compTnLtrDot2</string>
+    <key>TnLtrDot3</key>
+    <string>compTnLtrDot3</string>
+    <key>TnLtrDot4</key>
+    <string>compTnLtrDot4</string>
+    <key>TnLtrDot5</key>
+    <string>compTnLtrDot5</string>
+    <key>TnLtrSeg11</key>
+    <string>compTnLtrSeg11</string>
+    <key>TnLtrSeg12</key>
+    <string>compTnLtrSeg12</string>
+    <key>TnLtrSeg13</key>
+    <string>compTnLtrSeg13</string>
+    <key>TnLtrSeg14</key>
+    <string>compTnLtrSeg14</string>
+    <key>TnLtrSeg15</key>
+    <string>compTnLtrSeg15</string>
+    <key>TnLtrSeg21</key>
+    <string>compTnLtrSeg21</string>
+    <key>TnLtrSeg22</key>
+    <string>compTnLtrSeg22</string>
+    <key>TnLtrSeg23</key>
+    <string>compTnLtrSeg23</string>
+    <key>TnLtrSeg24</key>
+    <string>compTnLtrSeg24</string>
+    <key>TnLtrSeg25</key>
+    <string>compTnLtrSeg25</string>
+    <key>TnLtrSeg31</key>
+    <string>compTnLtrSeg31</string>
+    <key>TnLtrSeg32</key>
+    <string>compTnLtrSeg32</string>
+    <key>TnLtrSeg33</key>
+    <string>compTnLtrSeg33</string>
+    <key>TnLtrSeg34</key>
+    <string>compTnLtrSeg34</string>
+    <key>TnLtrSeg35</key>
+    <string>compTnLtrSeg35</string>
+    <key>TnLtrSeg41</key>
+    <string>compTnLtrSeg41</string>
+    <key>TnLtrSeg42</key>
+    <string>compTnLtrSeg42</string>
+    <key>TnLtrSeg43</key>
+    <string>compTnLtrSeg43</string>
+    <key>TnLtrSeg44</key>
+    <string>compTnLtrSeg44</string>
+    <key>TnLtrSeg45</key>
+    <string>compTnLtrSeg45</string>
+    <key>TnLtrSeg51</key>
+    <string>compTnLtrSeg51</string>
+    <key>TnLtrSeg52</key>
+    <string>compTnLtrSeg52</string>
+    <key>TnLtrSeg53</key>
+    <string>compTnLtrSeg53</string>
+    <key>TnLtrSeg54</key>
+    <string>compTnLtrSeg54</string>
+    <key>TnLtrSeg55</key>
+    <string>compTnLtrSeg55</string>
+    <key>TnLtrSpcDotLeft</key>
+    <string>compTnLtrSpcDotLeft</string>
+    <key>TnLtrSpcDotMiddle</key>
+    <string>compTnLtrSpcDotMiddle</string>
+    <key>TnLtrSpcDotRight</key>
+    <string>compTnLtrSpcDotRight</string>
+    <key>TnLtrSpcFlatLeft</key>
+    <string>compTnLtrSpcFlatLeft</string>
+    <key>TnLtrSpcFlatRight</key>
+    <string>compTnLtrSpcFlatRight</string>
+    <key>TnLtrSpcPointLeft</key>
+    <string>compTnLtrSpcPointLeft</string>
+    <key>TnLtrSpcPointRight</key>
+    <string>compTnLtrSpcPointRight</string>
     <key>TnStaffLft1</key>
     <string>uniA716.lstaff</string>
     <key>TnStaffLft1no</key>
