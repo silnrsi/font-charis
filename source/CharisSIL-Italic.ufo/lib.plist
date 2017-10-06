@@ -4101,6 +4101,7 @@
     <string>LtnSmTurnedA.2StorySItal</string>
     <string>LtnSupSmTurnedA</string>
     <string>LtnSmAlpha</string>
+    <string>LtnSmBarredAlpha</string>
     <string>LtnSmAStrk.2StorySItal</string>
     <string>LtnSmA.SngStory</string>
     <string>LtnSmAAcute.SngStory</string>
@@ -4184,6 +4185,7 @@
     <string>ModSmTrndAe</string>
     <string>GrSmAlpha</string>
     <string>CyCapA</string>
+    <string>GrCapAlpha</string>
     <string>ModCapA</string>
     <string>LtnSmCapA</string>
     <string>LtnCapADblGrave</string>
@@ -4261,6 +4263,7 @@
     <string>CySmYeruDiaer</string>
     <string>CySmVe</string>
     <string>CyCapVe</string>
+    <string>GrCapBeta</string>
     <string>ModCapB</string>
     <string>LtnSmCapB</string>
     <string>LtnCapBDotAbv</string>
@@ -4274,6 +4277,7 @@
     <string>LtnCapTnSix</string>
     <string>LtnCapBTopbar</string>
     <string>LtnCapBHook.TopBar</string>
+    <string>LtnCapBeta</string>
     <string>CyCapBe</string>
     <string>CyCapSoftSgn</string>
     <string>CyCapSemisoftSgn</string>
@@ -4282,9 +4286,14 @@
     <string>CyCapYeru</string>
     <string>CyCapYeruDiaer</string>
     <string>MathFrktCapB</string>
+    <string>BitcoinSgn</string>
     <string>GrSmBeta</string>
     <string>GrSubSmBeta</string>
     <string>ModSmBeta</string>
+    <string>GrSmBeta.Serif</string>
+    <string>GrSubSmBeta.Serif</string>
+    <string>ModSmBeta.Serif</string>
+    <string>LtnSmBeta</string>
     <string>LtnCapSharpS</string>
     <string>CySmEs</string>
     <string>SmRomNumOneHundred</string>
@@ -4461,6 +4470,7 @@
     <string>LtnSmRevE</string>
     <string>LtnSupSmRevE</string>
     <string>LtnSmOpnE</string>
+    <string>GrSmEpsilon</string>
     <string>LtnSupSmOpnE</string>
     <string>LtnSmOpnERetrHook</string>
     <string>LtnSmRevOpnE</string>
@@ -4479,6 +4489,7 @@
     <string>CySmKomiDzje</string>
     <string>CySmKomiZje</string>
     <string>CyCapIe</string>
+    <string>GrCapEpsilon</string>
     <string>ModCapE</string>
     <string>LtnSmCapE</string>
     <string>CyCapIeGrave</string>
@@ -4538,14 +4549,22 @@
     <string>LtnSmFHookStrk</string>
     <string>LtnLigSmFSmI</string>
     <string>LtnLigSmFSmI.SItal</string>
+    <string>LtnLigSmFSmI.TailI</string>
+    <string>LtnSmLigFi.TailI</string>
     <string>LtnLigSmFSmL</string>
     <string>LtnLigSmFSmL.SItal</string>
+    <string>LtnLigSmFSmL.TailL</string>
+    <string>LtnSmLigFl.TailL</string>
     <string>LtnLigSmFSmFSmI</string>
     <string>LtnLigSmFSmFSmI.SItal</string>
+    <string>LtnLigSmFSmFSmI.TailI</string>
     <string>LtnSmLigFfi</string>
+    <string>LtnSmLigFfi.TailI</string>
     <string>LtnLigSmFSmFSmL</string>
     <string>LtnLigSmFSmFSmL.SItal</string>
+    <string>LtnLigSmFSmFSmL.TailL</string>
     <string>LtnSmLigFfl</string>
+    <string>LtnSmLigFfl.TailL</string>
     <string>LtnLigSmFSmF</string>
     <string>LtnLigSmFSmF.SItal</string>
     <string>LtnSmLigFf</string>
@@ -4680,6 +4699,7 @@
     <string>CySmShcha</string>
     <string>GrSmCapPi</string>
     <string>CyCapEn</string>
+    <string>GrCapEta</string>
     <string>ModCapH</string>
     <string>ModCyCapEn</string>
     <string>LtnSmCapH</string>
@@ -4775,12 +4795,14 @@
     <string>SmRomNumFour</string>
     <string>SmRomNumNine</string>
     <string>LtnSmIota</string>
+    <string>GrSmIota</string>
     <string>ModSmIota</string>
     <string>LtnSmIotaStrk</string>
     <string>CySmYu</string>
     <string>CyCapByelorusUkrainI</string>
     <string>CyPalochka</string>
     <string>CySmPalochka</string>
+    <string>GrCapIota</string>
     <string>RomNumOne</string>
     <string>ModCapI</string>
     <string>LtnSmCapI</string>
@@ -4803,6 +4825,7 @@
     <string>LtnSmCapIStrk</string>
     <string>ModSmCapIStrk</string>
     <string>LtnCapILonga</string>
+    <string>LtnCapSmCapI</string>
     <string>LtnCapLigIj</string>
     <string>RomNumTwo</string>
     <string>RomNumThree</string>
@@ -4823,6 +4846,7 @@
     <string>LtnSmJ.Dotless</string>
     <string>LtnSmDotlessJ</string>
     <string>CySmJe.Dotless</string>
+    <string>LtnSubSmJ.Dotless</string>
     <string>ModSmJ.Dotless</string>
     <string>LtnSmDotlessJStrk</string>
     <string>LtnSmJStrk.Dotless</string>
@@ -5010,6 +5034,7 @@
     <string>CySmEm</string>
     <string>CySmEmTail</string>
     <string>CyCapEm</string>
+    <string>GrCapMu</string>
     <string>RomNumOneThousand</string>
     <string>ModCapM</string>
     <string>LtnSmCapM</string>
@@ -5053,6 +5078,7 @@
     <string>LtnSmNDesc</string>
     <string>LtnSmNLngRtLeg</string>
     <string>LtnSmNj</string>
+    <string>GrSmEta</string>
     <string>CySmI</string>
     <string>CySmIGrave</string>
     <string>CySmShortI</string>
@@ -5092,6 +5118,7 @@
     <string>CyCapIDiaer</string>
     <string>CyCapIMacron</string>
     <string>CySmO</string>
+    <string>GrSmOmicron</string>
     <string>LtnSubSmO</string>
     <string>LtnSupSmO</string>
     <string>CombLtnSmO</string>
@@ -5131,6 +5158,7 @@
     <string>LtnSupSmBarredO</string>
     <string>CySmBarredODiaer</string>
     <string>GrSmTheta</string>
+    <string>GrThetaSym</string>
     <string>LtnSmOLngStrk</string>
     <string>ModSmTheta</string>
     <string>CySmFita</string>
@@ -5161,6 +5189,7 @@
     <string>LtnSmTopHalfO</string>
     <string>ModSmTopHalfO</string>
     <string>CyCapO</string>
+    <string>GrCapOmicron</string>
     <string>ModCapO</string>
     <string>LtnSmCapO</string>
     <string>LtnCapODblAcute</string>
@@ -5197,6 +5226,7 @@
     <string>CyCapBarredO</string>
     <string>CyCapBarredODiaer</string>
     <string>GrCapTheta</string>
+    <string>GrCapThetaSym</string>
     <string>LtnCapOLngStrk</string>
     <string>CyCapFita</string>
     <string>LtnCapOStrkAcute</string>
@@ -5251,6 +5281,7 @@
     <string>ModSmGrPhi</string>
     <string>SmTaillessPhi</string>
     <string>CyCapEr</string>
+    <string>GrCapRho</string>
     <string>ModCapP</string>
     <string>LtnSmCapP</string>
     <string>GrSmCapRho</string>
@@ -5273,6 +5304,7 @@
     <string>LtnCapWynn</string>
     <string>MathFrktCapP</string>
     <string>LtnCapRevP</string>
+    <string>GrCapPhi</string>
     <string>CyCapEf</string>
     <string>CySmQa</string>
     <string>LtnSmQStrk</string>
@@ -5376,6 +5408,7 @@
     <string>LtnSmSDiagStrk</string>
     <string>LtnSmSSwashTail</string>
     <string>LtnSmTnTwo</string>
+    <string>GrSmFinSigma</string>
     <string>LtnSmEsh</string>
     <string>LtnSupSmEsh</string>
     <string>LtnSmEshHook</string>
@@ -5429,12 +5462,14 @@
     <string>LtnSmTzDigraph</string>
     <string>LtnSmInsularT</string>
     <string>LtnSmTurnedT</string>
+    <string>GrSmTau</string>
     <string>CySmTe</string>
     <string>CySmTe.Serb</string>
     <string>CySmTeDesc</string>
     <string>CySmKomiTje</string>
     <string>CySmLigTeTse</string>
     <string>CyCapTe</string>
+    <string>GrCapTau</string>
     <string>ModCapT</string>
     <string>LtnSmCapT</string>
     <string>LtnCapTCaron</string>
@@ -5605,6 +5640,7 @@
     <string>LtnSmWHook</string>
     <string>LtnBilabialPercussive</string>
     <string>LtnSmTurnedW</string>
+    <string>LtnSmOmega</string>
     <string>GrSmOmega</string>
     <string>LtnSmClosedOmega</string>
     <string>CyCapWe</string>
@@ -5617,6 +5653,7 @@
     <string>LtnCapWDotAbv</string>
     <string>LtnCapWDotBlw</string>
     <string>LtnCapWHook</string>
+    <string>LtnCapOmega</string>
     <string>WonSgn</string>
     <string>CySmHa</string>
     <string>SmRomNumTen</string>
@@ -5631,10 +5668,12 @@
     <string>CySmHaDesc</string>
     <string>SmRomNumEleven</string>
     <string>SmRomNumTwelve</string>
+    <string>LtnSmChi</string>
     <string>GrSmChi</string>
     <string>GrSubSmChi</string>
     <string>ModSmChi</string>
     <string>CyCapHa</string>
+    <string>GrCapChi</string>
     <string>RomNumTen</string>
     <string>LtnCapXDiaer</string>
     <string>LtnCapXDotAbv</string>
@@ -5643,6 +5682,7 @@
     <string>CyCapHaDesc</string>
     <string>RomNumEleven</string>
     <string>RomNumTwelve</string>
+    <string>LtnCapChi</string>
     <string>CySmU</string>
     <string>ModSmY</string>
     <string>LtnSmYAcute</string>
@@ -5675,7 +5715,9 @@
     <string>CySmCheDesc</string>
     <string>CySmKhakasChe</string>
     <string>CySmDeCheLig</string>
+    <string>GrSmPsi</string>
     <string>CyCapStraightU</string>
+    <string>GrCapUpsilon</string>
     <string>LtnSmCapY</string>
     <string>LtnSupSmCapY</string>
     <string>LtnCapYAcute</string>
@@ -5729,6 +5771,7 @@
     <string>LtnSmZDesc</string>
     <string>LtnSmZSwashTail</string>
     <string>LtnSmVisigothicZ</string>
+    <string>GrCapZeta</string>
     <string>LtnSmCapZ</string>
     <string>LtnCapZAcute</string>
     <string>LtnCapZCircum</string>
@@ -5743,6 +5786,7 @@
     <string>LtnCapZSwashTail</string>
     <string>LtnCapVisigothicZ</string>
     <string>LtnCapEsh</string>
+    <string>GrCapSigma</string>
     <string>LtnCapEzh.RevSigmaStyle</string>
     <string>CyCapAbkhasDze.RevSigmaStyle</string>
     <string>LtnSmEzh</string>
@@ -5780,12 +5824,15 @@
     <string>LtnInvGlottalStop</string>
     <string>LtnInvGlottalStopStrk</string>
     <string>LtnVcdLrynglSpirant</string>
+    <string>GrSmZeta</string>
+    <string>GrSmXi</string>
     <string>LtnAin</string>
     <string>ModSmAin</string>
     <string>LtrSamShin</string>
     <string>NewSheqelSgn</string>
     <string>NordicMarkSgn</string>
     <string>ManatSgn</string>
+    <string>LariSgn</string>
     <string>SubZero</string>
     <string>SupZero</string>
     <string>SubOne</string>
@@ -5852,6 +5899,7 @@
     <string>ModRaisedColon</string>
     <string>ModLowColon</string>
     <string>ModLowColon.Wide</string>
+    <string>GrQstnMrk</string>
     <string>ModTurnedComma</string>
     <string>CombTrndCommaAbv</string>
     <string>SglHighRev9QuotMrk</string>
@@ -5866,6 +5914,7 @@
     <string>GrAnoTeleia</string>
     <string>HyphenationPt</string>
     <string>BulletOperator</string>
+    <string>LtnSinolDot</string>
     <string>SubLftParen</string>
     <string>SupLftParen</string>
     <string>SubRtParen</string>
@@ -5880,6 +5929,10 @@
     <string>SqrTxtBracLowLftShort</string>
     <string>SqrTxtBracLowRt</string>
     <string>SqrTxtBracLowRtShort</string>
+    <string>SupplTopLftHalfBrac</string>
+    <string>SupplTopRtHalfBrac</string>
+    <string>SupplBottomLftHalfBrac</string>
+    <string>SupplBottomRtHalfBrac</string>
     <string>LftTopParen</string>
     <string>LftMidParen</string>
     <string>LftBtmParen</string>
@@ -5907,6 +5960,8 @@
     <string>NotParallelTo</string>
     <string>Therefore</string>
     <string>Because</string>
+    <string>RefMrk</string>
+    <string>SupplDottedObelos</string>
     <string>NotIdenticalTo</string>
     <string>SubsetOf</string>
     <string>SubsetOfEqTo</string>
@@ -5949,6 +6004,7 @@
     <string>SupplRaisedSqr</string>
     <string>SupplLftRaisedOmBrac</string>
     <string>SupplRtRaisedOmBrac</string>
+    <string>SupplDblDiagHyphen</string>
     <string>ModLowAcuteAccent</string>
     <string>CombAcuteBlw</string>
     <string>ModAcuteAccent</string>
@@ -5979,6 +6035,7 @@
     <string>CombCircumGrave.VN</string>
     <string>CombCircumTilde.VN</string>
     <string>CombCircumHook.VN</string>
+    <string>CombDoubledCircum</string>
     <string>CombInvBreveBlw</string>
     <string>CombInvBreve</string>
     <string>CombInvBreve.UU</string>
@@ -6032,12 +6089,14 @@
     <string>CombDblTildeLft</string>
     <string>CombDblTildeRt</string>
     <string>CombVertTilde</string>
+    <string>CombWigglyLineBlw</string>
     <string>CombZigZagAbv</string>
     <string>CombAsteriskBlw</string>
     <string>CombXBlw</string>
     <string>ModCrossAccent</string>
     <string>CombXAbv</string>
     <string>MultSgn</string>
+    <string>CombXXBlw</string>
     <string>CombInvDblArchBlw</string>
     <string>CombSeagullBlw</string>
     <string>ModLowMacron</string>
@@ -6068,6 +6127,8 @@
     <string>CombDiaer.UL</string>
     <string>CombDiaer.Sup</string>
     <string>CombDblDiaer</string>
+    <string>CombDiaerRing</string>
+    <string>CombTripleDot</string>
     <string>CombDotBlw</string>
     <string>CombDotAbv</string>
     <string>CombRtDotAbv</string>
@@ -6079,6 +6140,7 @@
     <string>CombRingBlw</string>
     <string>CombRingAbv</string>
     <string>CombDblRingBlw</string>
+    <string>CombInfinity</string>
     <string>CombLftHalfRingBlw</string>
     <string>ModCntrdLftHalfRing</string>
     <string>ModLftHalfRing</string>
@@ -6104,6 +6166,7 @@
     <string>ModDwnTack</string>
     <string>CombUpTackBlw</string>
     <string>ModUpTack</string>
+    <string>CombUpTackAbv</string>
     <string>CombLftTackBlw</string>
     <string>CombRtTackBlw</string>
     <string>ModYangDepartingToneMrk</string>
@@ -6128,7 +6191,13 @@
     <string>CombOgonek.Lrg</string>
     <string>CombOgonek.RetroHook</string>
     <string>Ogonek.RetroHook</string>
+    <string>CombOpnMrkBlw</string>
+    <string>CombDblOpnMrkBlw</string>
+    <string>GrYpo</string>
+    <string>CombGrYpo</string>
     <string>CombSnakeBlw</string>
+    <string>CombLightCentralizationStrkBlw</string>
+    <string>CombStrongCentralizationStrkBlw</string>
     <string>CombBridgeBlw</string>
     <string>CombBridgeAbv</string>
     <string>CombInvBridgeBlw</string>
@@ -6278,6 +6347,7 @@
     <string>DwnArrw</string>
     <string>RomNumFiftyEarly</string>
     <string>ModRaisedDwnArrw</string>
+    <string>CombDwnArrw</string>
     <string>UpArrw</string>
     <string>ModRaisedUpArrw</string>
     <string>CombUpArrwBlw</string>
@@ -6305,6 +6375,7 @@
     <string>SEArrw</string>
     <string>NEArrw</string>
     <string>SWArrw</string>
+    <string>SupplDownwardsAncora</string>
     <string>CheckMrk</string>
     <string>ModDwnArrwhd</string>
     <string>ModLowDwnArrwhd</string>
@@ -6315,11 +6386,13 @@
     <string>CombLftArrwhdBlw</string>
     <string>ModLowLftArrwhd</string>
     <string>LftPtngAngBrac</string>
+    <string>MathLftAngBrac</string>
     <string>ModRtArrwhd</string>
     <string>CombRtArrwhdAbv</string>
     <string>CombRtArrwhdBlw</string>
     <string>ModLowRtArrwhd</string>
     <string>RtPtngAngBrac</string>
+    <string>MathRtAngBrac</string>
     <string>CombRtArrwhdUpArrwhdBlw</string>
     <string>CombRtArrwhdDwnArrwhdBlw</string>
     <string>FemaleSgn</string>
@@ -6466,7 +6539,784 @@
     <string>ModBeginLowTn</string>
     <string>ModEndHighTn</string>
     <string>ModEndLowTn</string>
+    <string>LtnSmAAcute.LP</string>
+    <string>LtnSmAGrave.LP</string>
+    <string>LtnSmACircumDotBlw.LP</string>
+    <string>LtnSmACircumAcute.VN.LP</string>
+    <string>LtnSmACircumAcute.2StorySItal.LP</string>
+    <string>LtnSmACircumAcute.2StorySItal.VN.LP</string>
+    <string>LtnSmACircumAcute.LP</string>
+    <string>LtnSmACircumGrave.VN.LP</string>
+    <string>LtnSmACircumGrave.2StorySItal.LP</string>
+    <string>LtnSmACircumGrave.2StorySItal.VN.LP</string>
+    <string>LtnSmACircumGrave.LP</string>
+    <string>LtnSmACircumTilde.VN.LP</string>
+    <string>LtnSmACircumTilde.2StorySItal.VN.LP</string>
+    <string>LtnSmACircumTilde.2StorySItal.LP</string>
+    <string>LtnSmACircumTilde.LP</string>
+    <string>LtnSmACircumHookAbv.VN.LP</string>
+    <string>LtnSmACircumHookAbv.2StorySItal.LP</string>
+    <string>LtnSmACircumHookAbv.2StorySItal.VN.LP</string>
+    <string>LtnSmACircumHookAbv.LP</string>
+    <string>LtnSmACircum.LP</string>
+    <string>LtnSmABreveAcute.LP</string>
+    <string>LtnSmABreveAcute.VN.LP</string>
+    <string>LtnSmABreveAcute.2StorySItal.VN.LP</string>
+    <string>LtnSmABreveGrave.VN.LP</string>
+    <string>LtnSmABreveGrave.2StorySItal.VN.LP</string>
+    <string>LtnSmABreveGrave.LP</string>
+    <string>LtnSmABreveTilde.VN.LP</string>
+    <string>LtnSmABreveTilde.2StorySItal.VN.LP</string>
+    <string>LtnSmABreveTilde.LP</string>
+    <string>LtnSmABreveHookAbv.VN.LP</string>
+    <string>LtnSmABreveHookAbv.2StorySItal.VN.LP</string>
+    <string>LtnSmACaron.LP</string>
+    <string>LtnSmATilde.LP</string>
+    <string>LtnSmAMacron.LP</string>
+    <string>LtnSmADiaerMacron.LP</string>
+    <string>LtnSmADiaer.LP</string>
+    <string>LtnSmADotAbvMacron.LP</string>
+    <string>LtnSmADotAbv.LP</string>
+    <string>LtnSmATilde.2StorySItal.LP</string>
+    <string>LtnSmAAcute.SngStory.LP</string>
+    <string>LtnSmAGrave.SngStory.LP</string>
+    <string>LtnSmACircum.SngStory.LP</string>
+    <string>LtnSmACircumDotBlw.SngStory.LP</string>
+    <string>LtnSmACircumAcute.SngStory.LP</string>
+    <string>LtnSmACircumAcute.SngStory.VN.LP</string>
+    <string>LtnSmACircumGrave.SngStory.LP</string>
+    <string>LtnSmACircumGrave.SngStory.VN.LP</string>
+    <string>LtnSmACircumTilde.SngStory.LP</string>
+    <string>LtnSmACircumTilde.SngStory.VN.LP</string>
+    <string>LtnSmACircumHookAbv.SngStory.LP</string>
+    <string>LtnSmACircumHookAbv.SngStory.VN.LP</string>
+    <string>LtnSmABreveAcute.SngStory.LP</string>
+    <string>LtnSmABreveAcute.SngStory.VN.LP</string>
+    <string>LtnSmABreveGrave.SngStory.LP</string>
+    <string>LtnSmABreveGrave.SngStory.VN.LP</string>
+    <string>LtnSmABreveTilde.SngStory.LP</string>
+    <string>LtnSmABreveTilde.SngStory.VN.LP</string>
+    <string>LtnSmABreveHookAbv.SngStory.VN.LP</string>
+    <string>LtnSmACaron.SngStory.LP</string>
+    <string>LtnSmATilde.SngStory.LP</string>
+    <string>LtnSmAMacron.SngStory.LP</string>
+    <string>LtnSmADiaer.SngStory.LP</string>
+    <string>LtnSmADiaerMacron.SngStory.LP</string>
+    <string>LtnSmADotAbv.SngStory.LP</string>
+    <string>LtnSmADotAbvMacron.SngStory.LP</string>
+    <string>LtnSmAAcute.2StorySItal.LP</string>
+    <string>LtnSmAGrave.2StorySItal.LP</string>
+    <string>LtnSmACircum.2StorySItal.LP</string>
+    <string>LtnSmACircumDotBlw.2StorySItal.LP</string>
+    <string>LtnSmABreveAcute.2StorySItal.LP</string>
+    <string>LtnSmABreveGrave.2StorySItal.LP</string>
+    <string>LtnSmABreveTilde.2StorySItal.LP</string>
+    <string>LtnSmACaron.2StorySItal.LP</string>
+    <string>LtnSmAMacron.2StorySItal.LP</string>
+    <string>LtnSmADiaer.2StorySItal.LP</string>
+    <string>LtnSmADiaerMacron.2StorySItal.LP</string>
+    <string>LtnSmADotAbv.2StorySItal.LP</string>
+    <string>LtnSmADotAbvMacron.2StorySItal.LP</string>
+    <string>LtnSmAeAcute.2StorySItal.LP</string>
+    <string>LtnSmAeAcute.LP</string>
+    <string>LtnSmAeMacron.2StorySItal.LP</string>
+    <string>LtnSmAeMacron.LP</string>
+    <string>GrSmAlphaWTonos</string>
+    <string>GrSmAlphaWOxia</string>
+    <string>GrSmAlphaWOxiaYpo</string>
+    <string>GrSmAlphaWVaria</string>
+    <string>GrSmAlphaWVariaYpo</string>
+    <string>GrSmAlphaWPeris</string>
+    <string>GrSmAlphaWPeris.Por</string>
+    <string>GrSmAlphaWPerisYpo</string>
+    <string>GrSmAlphaWPerisYpo.Por</string>
+    <string>GrSmAlphaWMacron</string>
+    <string>GrSmAlphaWVrachy</string>
+    <string>GrSmAlphaWYpo</string>
+    <string>GrSmAlphaWDasia</string>
+    <string>GrSmAlphaWDasiaOxia</string>
+    <string>GrSmAlphaWDasiaOxiaYpo</string>
+    <string>GrSmAlphaWDasiaVaria</string>
+    <string>GrSmAlphaWDasiaVariaYpo</string>
+    <string>GrSmAlphaWDasiaPeris</string>
+    <string>GrSmAlphaWDasiaPeris.Por</string>
+    <string>GrSmAlphaWDasiaPerisYpo</string>
+    <string>GrSmAlphaWDasiaPerisYpo.Por</string>
+    <string>GrSmAlphaWDasiaYpo</string>
+    <string>GrSmAlphaWPsili</string>
+    <string>GrSmAlphaWPsiliOxia</string>
+    <string>GrSmAlphaWPsiliOxiaYpo</string>
+    <string>GrSmAlphaWPsiliVaria</string>
+    <string>GrSmAlphaWPsiliVariaYpo</string>
+    <string>GrSmAlphaWPsiliPeris</string>
+    <string>GrSmAlphaWPsiliPeris.Por</string>
+    <string>GrSmAlphaWPsiliPerisYpo</string>
+    <string>GrSmAlphaWPsiliPerisYpo.Por</string>
+    <string>GrSmAlphaWPsiliYpo</string>
+    <string>GrCapAlphaWTonos</string>
+    <string>GrCapAlphaWOxia</string>
+    <string>GrCapAlphaWVaria</string>
+    <string>GrCapAlphaWMacron</string>
+    <string>GrCapAlphaWVrachy</string>
+    <string>GrCapAlphaWPros</string>
+    <string>GrCapAlphaWDasia</string>
+    <string>GrCapAlphaWDasiaOxia</string>
+    <string>GrCapAlphaWDasiaOxiaPros</string>
+    <string>GrCapAlphaWDasiaVaria</string>
+    <string>GrCapAlphaWDasiaVariaPros</string>
+    <string>GrCapAlphaWDasiaPeris</string>
+    <string>GrCapAlphaWDasiaPeris.Por</string>
+    <string>GrCapAlphaWDasiaPerisPros</string>
+    <string>GrCapAlphaWDasiaPerisPros.Por</string>
+    <string>GrCapAlphaWDasiaPros</string>
+    <string>GrCapAlphaWPsili</string>
+    <string>GrCapAlphaWPsiliOxia</string>
+    <string>GrCapAlphaWPsiliOxiaPros</string>
+    <string>GrCapAlphaWPsiliVaria</string>
+    <string>GrCapAlphaWPsiliVariaPros</string>
+    <string>GrCapAlphaWPsiliPeris</string>
+    <string>GrCapAlphaWPsiliPeris.Por</string>
+    <string>GrCapAlphaWPsiliPerisPros</string>
+    <string>GrCapAlphaWPsiliPerisPros.Por</string>
+    <string>GrCapAlphaWPsiliPros</string>
+    <string>GrCapLamda</string>
+    <string>LtnSmBDotAbv.LP</string>
+    <string>GrBetaSym</string>
+    <string>LtnSmCAcute.LP</string>
+    <string>LtnSmCCircum.LP</string>
+    <string>LtnSmCCaron.LP</string>
+    <string>LtnSmCDotAbv.LP</string>
+    <string>LtnSmCCedillaAcute.LP</string>
+    <string>GrLunateSigma</string>
+    <string>GrRevLunateSigma</string>
+    <string>GrDottedLunateSigma</string>
+    <string>GrRevDottedLunateSigma</string>
+    <string>GrLunateEpsilon</string>
+    <string>GrRevLunateEpsilon</string>
+    <string>GrCapLunateSigma</string>
+    <string>GrCapRevLunateSigma</string>
+    <string>GrCapDottedLunateSigma</string>
+    <string>GrCapRevDottedLunateSigma</string>
+    <string>LtnSmDCaron.Caron.LP</string>
+    <string>LtnSmDDotAbv.LP</string>
+    <string>LtnSmDzCaron.LP</string>
+    <string>LtnCapDSmZCaron.LP</string>
+    <string>LtnSmEAcute.LP</string>
+    <string>LtnSmEGrave.LP</string>
+    <string>LtnSmECircumAcute.VN.LP</string>
+    <string>LtnSmECircumAcute.LP</string>
+    <string>LtnSmECircumGrave.VN.LP</string>
+    <string>LtnSmECircumGrave.LP</string>
+    <string>LtnSmECircumTilde.VN.LP</string>
+    <string>LtnSmECircumTilde.LP</string>
+    <string>LtnSmECircumHookAbv.VN.LP</string>
+    <string>LtnSmECircumHookAbv.LP</string>
+    <string>LtnSmECircumDotBlw.LP</string>
+    <string>LtnSmECircum.LP</string>
+    <string>LtnSmECaron.LP</string>
+    <string>LtnSmETilde.LP</string>
+    <string>LtnSmEMacronAcute.LP</string>
+    <string>LtnSmEMacronGrave.LP</string>
+    <string>LtnSmEMacron.LP</string>
+    <string>LtnSmEDiaer.LP</string>
+    <string>LtnSmEDotAbv.LP</string>
+    <string>GrSmEpsilonWTonos</string>
+    <string>GrSmEpsilonWOxia</string>
+    <string>GrSmEpsilonWVaria</string>
+    <string>GrSmEpsilonWDasia</string>
+    <string>GrSmEpsilonWDasiaOxia</string>
+    <string>GrSmEpsilonWDasiaVaria</string>
+    <string>GrSmEpsilonWPsili</string>
+    <string>GrSmEpsilonWPsiliOxia</string>
+    <string>GrSmEpsilonWPsiliVaria</string>
+    <string>GrCapEpsilonWTonos</string>
+    <string>GrCapEpsilonWOxia</string>
+    <string>GrCapEpsilonWVaria</string>
+    <string>GrCapEpsilonWDasia</string>
+    <string>GrCapEpsilonWDasiaOxia</string>
+    <string>GrCapEpsilonWDasiaVaria</string>
+    <string>GrCapEpsilonWPsili</string>
+    <string>GrCapEpsilonWPsiliOxia</string>
+    <string>GrCapEpsilonWPsiliVaria</string>
+    <string>LtnSmLigFi.LP</string>
+    <string>LtnSmLigFfi.LP</string>
+    <string>GrSmDigamma</string>
+    <string>GrDigamma</string>
+    <string>LtnSmGAcute.LP</string>
+    <string>LtnSmGCircum.LP</string>
+    <string>LtnSmGCaron.LP</string>
+    <string>LtnSmGMacron.LP</string>
+    <string>LtnSmGDotAbv.LP</string>
+    <string>LtnSmGAcute.SngBowl.LP</string>
+    <string>LtnSmGCircum.SngBowl.LP</string>
+    <string>LtnSmGCaron.SngBowl.LP</string>
+    <string>LtnSmGMacron.SngBowl.LP</string>
+    <string>LtnSmGDotAbv.SngBowl.LP</string>
+    <string>GrSmHeta</string>
+    <string>GrCapHeta</string>
+    <string>GrCapEtaWTonos</string>
+    <string>GrCapEtaWOxia</string>
+    <string>GrCapEtaWVaria</string>
+    <string>GrCapEtaWPros</string>
+    <string>GrCapEtaWDasia</string>
+    <string>GrCapEtaWDasiaOxia</string>
+    <string>GrCapEtaWDasiaOxiaPros</string>
+    <string>GrCapEtaWDasiaVaria</string>
+    <string>GrCapEtaWDasiaVariaPros</string>
+    <string>GrCapEtaWDasiaPeris</string>
+    <string>GrCapEtaWDasiaPeris.Por</string>
+    <string>GrCapEtaWDasiaPerisPros</string>
+    <string>GrCapEtaWDasiaPerisPros.Por</string>
+    <string>GrCapEtaWDasiaPros</string>
+    <string>GrCapEtaWPsili</string>
+    <string>GrCapEtaWPsiliOxia</string>
+    <string>GrCapEtaWPsiliOxiaPros</string>
+    <string>GrCapEtaWPsiliVaria</string>
+    <string>GrCapEtaWPsiliVariaPros</string>
+    <string>GrCapEtaWPsiliPeris</string>
+    <string>GrCapEtaWPsiliPeris.Por</string>
+    <string>GrCapEtaWPsiliPerisPros</string>
+    <string>GrCapEtaWPsiliPerisPros.Por</string>
+    <string>GrCapEtaWPsiliPros</string>
+    <string>LtnSmI.LP</string>
+    <string>LtnSmI.SItal.LP</string>
+    <string>LtnSmIAcute.SItal.LP</string>
+    <string>LtnSmIAcute.LP</string>
+    <string>LtnSmIGrave.SItal.LP</string>
+    <string>LtnSmIGrave.LP</string>
+    <string>LtnSmICircum.SItal.LP</string>
+    <string>LtnSmICircum.LP</string>
+    <string>LtnSmICaron.SItal.LP</string>
+    <string>LtnSmICaron.LP</string>
+    <string>LtnSmITilde.SItal.LP</string>
+    <string>LtnSmITilde.LP</string>
+    <string>LtnSmIMacron.SItal.LP</string>
+    <string>LtnSmIMacron.LP</string>
+    <string>LtnSmIDiaer.SItal.LP</string>
+    <string>LtnSmIDiaerAcute.SItal.LP</string>
+    <string>LtnSmIDiaerAcute.LP</string>
+    <string>LtnSmIDiaer.LP</string>
+    <string>LtnSmIDotAbv.LP</string>
+    <string>LtnSmIDotAbv.SItal.LP</string>
+    <string>LtnSmITildeBlw.SItal.LP</string>
+    <string>LtnSmITildeBlw.LP</string>
+    <string>LtnSmIDotBlw.SItal.LP</string>
+    <string>LtnSmIDotBlw.LP</string>
+    <string>LtnSmIOgonek.LP</string>
+    <string>LtnSmIOgonek.RetroHook.LP</string>
+    <string>LtnSmIStrk.LP</string>
+    <string>LtnSmLigIj.LP</string>
+    <string>GrSmIotaWTonos</string>
+    <string>GrSmIotaWOxia</string>
+    <string>GrSmIotaWVaria</string>
+    <string>GrSmIotaWPeris</string>
+    <string>GrSmIotaWPeris.Por</string>
+    <string>GrSmIotaWMacron</string>
+    <string>GrSmIotaWVrachy</string>
+    <string>GrSmIotaWDasia</string>
+    <string>GrSmIotaWDasiaOxia</string>
+    <string>GrSmIotaWDasiaVaria</string>
+    <string>GrSmIotaWDasiaPeris</string>
+    <string>GrSmIotaWDasiaPeris.Por</string>
+    <string>GrSmIotaWPsili</string>
+    <string>GrSmIotaWPsiliOxia</string>
+    <string>GrSmIotaWPsiliVaria</string>
+    <string>GrSmIotaWPsiliPeris</string>
+    <string>GrSmIotaWPsiliPeris.Por</string>
+    <string>GrSmIotaWDial</string>
+    <string>GrSmIotaWDialTonos</string>
+    <string>GrSmIotaWDialOxia</string>
+    <string>GrSmIotaWDialVaria</string>
+    <string>GrSmIotaWDialPeris</string>
+    <string>GrSmIotaWDialPeris.Por</string>
+    <string>GrPros</string>
+    <string>GrCapIotaWTonos</string>
+    <string>GrCapIotaWOxia</string>
+    <string>GrCapIotaWVaria</string>
+    <string>GrCapIotaWMacron</string>
+    <string>GrCapIotaWVrachy</string>
+    <string>GrCapIotaWDasia</string>
+    <string>GrCapIotaWDasiaOxia</string>
+    <string>GrCapIotaWDasiaVaria</string>
+    <string>GrCapIotaWDasiaPeris</string>
+    <string>GrCapIotaWDasiaPeris.Por</string>
+    <string>GrCapIotaWPsili</string>
+    <string>GrCapIotaWPsiliOxia</string>
+    <string>GrCapIotaWPsiliVaria</string>
+    <string>GrCapIotaWPsiliPeris</string>
+    <string>GrCapIotaWPsiliPeris.Por</string>
+    <string>GrCapIotaWDial</string>
+    <string>GrYot</string>
+    <string>LtnSmJ.LP</string>
+    <string>LtnSmJCircum.LP</string>
+    <string>LtnSmJCaron.LP</string>
+    <string>LtnSmJCrossedTail.LP</string>
+    <string>GrCapYot</string>
+    <string>GrSmKappa</string>
+    <string>GrKappaSym</string>
+    <string>GrKaiSym</string>
+    <string>GrCapKappa</string>
+    <string>GrCapKaiSym</string>
+    <string>LtnSmLj.LP</string>
+    <string>LtnCapLSmJ.LP</string>
+    <string>LtnSmMAcute.LP</string>
+    <string>LtnSmMDotAbv.LP</string>
+    <string>GrSmSan</string>
+    <string>GrCapSan</string>
+    <string>LtnSmNAcute.LP</string>
+    <string>LtnSmNGrave.LP</string>
+    <string>LtnSmNCaron.LP</string>
+    <string>LtnSmNTilde.LP</string>
+    <string>LtnSmNDotAbv.LP</string>
+    <string>LtnSmNj.LP</string>
+    <string>GrSmEtaWTonos</string>
+    <string>GrSmEtaWOxia</string>
+    <string>GrSmEtaWOxiaYpo</string>
+    <string>GrSmEtaWVaria</string>
+    <string>GrSmEtaWVariaYpo</string>
+    <string>GrSmEtaWPeris</string>
+    <string>GrSmEtaWPeris.Por</string>
+    <string>GrSmEtaWPerisYpo</string>
+    <string>GrSmEtaWPerisYpo.Por</string>
+    <string>GrSmEtaWDasia</string>
+    <string>GrSmEtaWDasiaOxia</string>
+    <string>GrSmEtaWDasiaOxiaYpo</string>
+    <string>GrSmEtaWDasiaVaria</string>
+    <string>GrSmEtaWDasiaVariaYpo</string>
+    <string>GrSmEtaWDasiaPeris</string>
+    <string>GrSmEtaWDasiaPeris.Por</string>
+    <string>GrSmEtaWDasiaPerisYpo</string>
+    <string>GrSmEtaWDasiaPerisYpo.Por</string>
+    <string>GrSmEtaWDasiaYpo</string>
+    <string>GrSmEtaWPsili</string>
+    <string>GrSmEtaWPsiliOxia</string>
+    <string>GrSmEtaWPsiliOxiaYpo</string>
+    <string>GrSmEtaWPsiliVaria</string>
+    <string>GrSmEtaWPsiliVariaYpo</string>
+    <string>GrSmEtaWPsiliPeris</string>
+    <string>GrSmEtaWPsiliPeris.Por</string>
+    <string>GrSmEtaWPsiliPerisYpo</string>
+    <string>GrSmEtaWPsiliPerisYpo.Por</string>
+    <string>GrSmEtaWPsiliYpo</string>
+    <string>GrSmEtaWYpo</string>
+    <string>GrCapNu</string>
+    <string>GrSmPamphylianDigamma</string>
+    <string>GrCapPamphylianDigamma</string>
+    <string>LtnCapNSmJ.LP</string>
+    <string>LtnSmOAcute.LP</string>
+    <string>LtnSmOGrave.LP</string>
+    <string>LtnSmOCircumAcute.VN.LP</string>
+    <string>LtnSmOCircumAcute.LP</string>
+    <string>LtnSmOCircumGrave.VN.LP</string>
+    <string>LtnSmOCircumGrave.LP</string>
+    <string>LtnSmOCircumTilde.VN.LP</string>
+    <string>LtnSmOCircumTilde.LP</string>
+    <string>LtnSmOCircumHookAbv.VN.LP</string>
+    <string>LtnSmOCircumHookAbv.LP</string>
+    <string>LtnSmOCircumDotBlw.LP</string>
+    <string>LtnSmOCircum.LP</string>
+    <string>LtnSmOCaron.LP</string>
+    <string>LtnSmOTildeAcute.LP</string>
+    <string>LtnSmOTildeMacron.LP</string>
+    <string>LtnSmOTildeDiaer.LP</string>
+    <string>LtnSmOTilde.LP</string>
+    <string>LtnSmOMacronAcute.LP</string>
+    <string>LtnSmOMacronGrave.LP</string>
+    <string>LtnSmOMacron.LP</string>
+    <string>LtnSmODiaerMacron.LP</string>
+    <string>LtnSmODiaer.LP</string>
+    <string>LtnSmODotAbvMacron.LP</string>
+    <string>LtnSmODotAbv.LP</string>
+    <string>LtnSmOOgonekMacron.LP</string>
+    <string>LtnSmOOgonekMacron.RetroHook.LP</string>
+    <string>LtnSmOStrkAcute.LP</string>
+    <string>LtnSmOHornAcute.LP</string>
+    <string>LtnSmOHornGrave.LP</string>
+    <string>LtnSmOHornTilde.LP</string>
+    <string>GrSmOmicronWTonos</string>
+    <string>GrSmOmicronWOxia</string>
+    <string>GrSmOmicronWVaria</string>
+    <string>GrSmOmicronWDasia</string>
+    <string>GrSmOmicronWDasiaOxia</string>
+    <string>GrSmOmicronWDasiaVaria</string>
+    <string>GrSmOmicronWPsili</string>
+    <string>GrSmOmicronWPsiliOxia</string>
+    <string>GrSmOmicronWPsiliVaria</string>
+    <string>GrSmArchaicKoppa</string>
+    <string>GrCapOmicronWTonos</string>
+    <string>GrCapOmicronWOxia</string>
+    <string>GrCapOmicronWVaria</string>
+    <string>GrCapOmicronWDasia</string>
+    <string>GrCapOmicronWDasiaOxia</string>
+    <string>GrCapOmicronWDasiaVaria</string>
+    <string>GrCapOmicronWPsili</string>
+    <string>GrCapOmicronWPsiliOxia</string>
+    <string>GrCapOmicronWPsiliVaria</string>
+    <string>GrArchaicKoppa</string>
+    <string>GrCapOmegaWTonos</string>
+    <string>GrCapOmegaWOxia</string>
+    <string>GrCapOmegaWVaria</string>
+    <string>GrCapOmegaWPros</string>
+    <string>GrCapOmegaWDasia</string>
+    <string>GrCapOmegaWDasiaOxia</string>
+    <string>GrCapOmegaWDasiaOxiaPros</string>
+    <string>GrCapOmegaWDasiaVaria</string>
+    <string>GrCapOmegaWDasiaVariaPros</string>
+    <string>GrCapOmegaWDasiaPeris</string>
+    <string>GrCapOmegaWDasiaPeris.Por</string>
+    <string>GrCapOmegaWDasiaPerisPros</string>
+    <string>GrCapOmegaWDasiaPerisPros.Por</string>
+    <string>GrCapOmegaWDasiaPros</string>
+    <string>GrCapOmegaWPsili</string>
+    <string>GrCapOmegaWPsiliOxia</string>
+    <string>GrCapOmegaWPsiliOxiaPros</string>
+    <string>GrCapOmegaWPsiliVaria</string>
+    <string>GrCapOmegaWPsiliVariaPros</string>
+    <string>GrCapOmegaWPsiliPeris</string>
+    <string>GrCapOmegaWPsiliPeris.Por</string>
+    <string>GrCapOmegaWPsiliPerisPros</string>
+    <string>GrCapOmegaWPsiliPerisPros.Por</string>
+    <string>GrCapOmegaWPsiliPros</string>
+    <string>LtnSmPAcute.LP</string>
+    <string>LtnSmPDotAbv.LP</string>
+    <string>GrSmRhoWDasia</string>
+    <string>GrSmRhoWPsili</string>
+    <string>GrSmRhoStrkSym</string>
+    <string>GrRhoSym</string>
+    <string>GrSmSho</string>
+    <string>GrPhiSym</string>
+    <string>GrCapRhoWDasia</string>
+    <string>GrCapSho</string>
+    <string>LtnSmRAcute.LP</string>
+    <string>LtnSmRCaron.LP</string>
+    <string>LtnSmRDotAbv.LP</string>
+    <string>LtnSmRDotBlwMacron.LP</string>
+    <string>LtnSmSAcuteDotAbv.LP</string>
+    <string>LtnSmSAcute.LP</string>
+    <string>LtnSmSCircum.LP</string>
+    <string>LtnSmSCaronDotAbv.LP</string>
+    <string>LtnSmSCaron.LP</string>
+    <string>LtnSmSDotAbv.LP</string>
+    <string>LtnSmSDotBlwDotAbv.LP</string>
+    <string>GrSmStigma</string>
+    <string>GrStigma</string>
+    <string>LtnSmTCaron.Caron.LP</string>
+    <string>LtnSmTDiaer.LP</string>
+    <string>LtnSmTDotAbv.LP</string>
+    <string>GrSmArchaicSampi</string>
+    <string>GrCapArchaicSampi</string>
+    <string>LtnSmUAcute.LP</string>
+    <string>LtnSmUGrave.LP</string>
+    <string>LtnSmUCircum.LP</string>
+    <string>LtnSmUCaron.LP</string>
+    <string>LtnSmUTildeAcute.LP</string>
+    <string>LtnSmUTilde.LP</string>
+    <string>LtnSmUMacronDiaer.LP</string>
+    <string>LtnSmUMacron.LP</string>
+    <string>LtnSmUDiaerAcute.LP</string>
+    <string>LtnSmUDiaerGrave.LP</string>
+    <string>LtnSmUDiaerCaron.LP</string>
+    <string>LtnSmUDiaerMacron.LP</string>
+    <string>LtnSmUDiaer.LP</string>
+    <string>LtnSmUHornAcute.LP</string>
+    <string>LtnSmUHornGrave.LP</string>
+    <string>LtnSmUHornTilde.LP</string>
+    <string>GrSmUpsilon</string>
+    <string>GrSmUpsilonWTonos</string>
+    <string>GrSmUpsilonWOxia</string>
+    <string>GrSmUpsilonWVaria</string>
+    <string>GrSmUpsilonWPeris</string>
+    <string>GrSmUpsilonWPeris.Por</string>
+    <string>GrSmUpsilonWMacron</string>
+    <string>GrSmUpsilonWVrachy</string>
+    <string>GrSmUpsilonWDasia</string>
+    <string>GrSmUpsilonWDasiaOxia</string>
+    <string>GrSmUpsilonWDasiaVaria</string>
+    <string>GrSmUpsilonWDasiaPeris</string>
+    <string>GrSmUpsilonWDasiaPeris.Por</string>
+    <string>GrSmUpsilonWPsili</string>
+    <string>GrSmUpsilonWPsiliOxia</string>
+    <string>GrSmUpsilonWPsiliVaria</string>
+    <string>GrSmUpsilonWPsiliPeris</string>
+    <string>GrSmUpsilonWPsiliPeris.Por</string>
+    <string>GrSmUpsilonWDial</string>
+    <string>GrSmUpsilonWDialTonos</string>
+    <string>GrSmUpsilonWDialOxia</string>
+    <string>GrSmUpsilonWDialVaria</string>
+    <string>GrSmUpsilonWDialPeris</string>
+    <string>GrSmUpsilonWDialPeris.Por</string>
+    <string>LtnSmVTilde.SItal.LP</string>
+    <string>LtnSmVTilde.LP</string>
+    <string>GrSmNu</string>
+    <string>LtnSmWAcute.LP</string>
+    <string>LtnSmWGrave.LP</string>
+    <string>LtnSmWCircum.LP</string>
+    <string>LtnSmWDiaer.LP</string>
+    <string>LtnSmWDotAbv.LP</string>
+    <string>GrSmOmegaWTonos</string>
+    <string>GrSmOmegaWOxia</string>
+    <string>GrSmOmegaWOxiaYpo</string>
+    <string>GrSmOmegaWVaria</string>
+    <string>GrSmOmegaWVariaYpo</string>
+    <string>GrSmOmegaWPeris</string>
+    <string>GrSmOmegaWPeris.Por</string>
+    <string>GrSmOmegaWPerisYpo</string>
+    <string>GrSmOmegaWPerisYpo.Por</string>
+    <string>GrSmOmegaWYpo</string>
+    <string>GrSmOmegaWDasia</string>
+    <string>GrSmOmegaWDasiaOxia</string>
+    <string>GrSmOmegaWDasiaOxiaYpo</string>
+    <string>GrSmOmegaWDasiaVaria</string>
+    <string>GrSmOmegaWDasiaVariaYpo</string>
+    <string>GrSmOmegaWDasiaPeris</string>
+    <string>GrSmOmegaWDasiaPeris.Por</string>
+    <string>GrSmOmegaWDasiaPerisYpo</string>
+    <string>GrSmOmegaWDasiaPerisYpo.Por</string>
+    <string>GrSmOmegaWDasiaYpo</string>
+    <string>GrSmOmegaWPsili</string>
+    <string>GrSmOmegaWPsiliOxia</string>
+    <string>GrSmOmegaWPsiliOxiaYpo</string>
+    <string>GrSmOmegaWPsiliVaria</string>
+    <string>GrSmOmegaWPsiliVariaYpo</string>
+    <string>GrSmOmegaWPsiliPeris</string>
+    <string>GrSmOmegaWPsiliPeris.Por</string>
+    <string>GrSmOmegaWPsiliPerisYpo</string>
+    <string>GrSmOmegaWPsiliPerisYpo.Por</string>
+    <string>GrSmOmegaWPsiliYpo</string>
+    <string>GrPiSym</string>
+    <string>LtnSmXDiaer.LP</string>
+    <string>LtnSmXDotAbv.LP</string>
+    <string>LtnSmYAcute.LP</string>
+    <string>LtnSmYGrave.LP</string>
+    <string>LtnSmYCircum.LP</string>
+    <string>LtnSmYTilde.LP</string>
+    <string>LtnSmYMacron.LP</string>
+    <string>LtnSmYDiaer.LP</string>
+    <string>LtnSmYDotAbv.LP</string>
+    <string>GrCapUpsilonWTonos</string>
+    <string>GrCapUpsilonWOxia</string>
+    <string>GrCapUpsilonWVaria</string>
+    <string>GrCapUpsilonWMacron</string>
+    <string>GrCapUpsilonWVrachy</string>
+    <string>GrCapUpsilonWDasia</string>
+    <string>GrCapUpsilonWDasiaOxia</string>
+    <string>GrCapUpsilonWDasiaVaria</string>
+    <string>GrCapUpsilonWDasiaPeris</string>
+    <string>GrCapUpsilonWDasiaPeris.Por</string>
+    <string>GrCapUpsilonWDial</string>
+    <string>GrUpsilonWHookSym</string>
+    <string>GrUpsilonWAcuteHookSym</string>
+    <string>GrUpsilonWDiaerHookSym</string>
+    <string>LtnSmZAcute.SItal.LP</string>
+    <string>LtnSmZAcute.LP</string>
+    <string>LtnSmZCircum.SItal.LP</string>
+    <string>LtnSmZCircum.LP</string>
+    <string>LtnSmZCaron.SItal.LP</string>
+    <string>LtnSmZCaron.LP</string>
+    <string>LtnSmZDotAbv.SItal.LP</string>
+    <string>LtnSmZDotAbv.LP</string>
+    <string>LtnSmEzhCaron.LP</string>
     <string>GrCapXi</string>
+    <string>GrSmKoppa</string>
+    <string>GrKoppa</string>
+    <string>GrSmSampi</string>
+    <string>GrSampi</string>
+    <string>AcuteAccent.LP</string>
+    <string>ModAcuteAccent.LP</string>
+    <string>CombAcute.LP</string>
+    <string>GrTonos</string>
+    <string>GrOxia</string>
+    <string>GrLowNumSgn</string>
+    <string>GrNumSgn</string>
+    <string>GraveAccent.LP</string>
+    <string>ModGraveAccent.LP</string>
+    <string>CombGrave.LP</string>
+    <string>GrVaria</string>
+    <string>ModCircumAccent.LP</string>
+    <string>CombCircum.LP</string>
+    <string>CombCircumAcute.VNLP</string>
+    <string>CombCircumGrave.VNLP</string>
+    <string>CombCircumTilde.VNLP</string>
+    <string>CombCircumHook.VNLP</string>
+    <string>GrPeris.Por</string>
+    <string>CombGrPeris.Por</string>
+    <string>CombBreveAcute.VNLP</string>
+    <string>CombBreveGrave.VNLP</string>
+    <string>CombBreveTilde.VNLP</string>
+    <string>CombBreveHook.VNLP</string>
+    <string>Caron.LP</string>
+    <string>CombCaron.LP</string>
+    <string>SmTilde.LP</string>
+    <string>CombTilde.LP</string>
+    <string>GrPeris</string>
+    <string>CombGrPeris</string>
+    <string>Macron.LP</string>
+    <string>CombMacron.LP</string>
+    <string>CombMacron.Short.LP</string>
+    <string>Diaer.LP</string>
+    <string>CombDiaer.LP</string>
+    <string>GrDialTonos</string>
+    <string>CombGrDialTonos</string>
+    <string>GrDialOxia</string>
+    <string>GrDialVaria</string>
+    <string>GrDialPeris</string>
+    <string>GrDialPeris.Por</string>
+    <string>DotAbv.LP</string>
+    <string>CombDotAbv.LP</string>
+    <string>GrDasia</string>
+    <string>GrDasiaOxia</string>
+    <string>GrDasiaVaria</string>
+    <string>GrDasiaPeris</string>
+    <string>GrDasiaPeris.Por</string>
+    <string>GrPsili</string>
+    <string>GrPsiliOxia</string>
+    <string>GrPsiliVaria</string>
+    <string>GrPsiliPeris</string>
+    <string>GrPsiliPeris.Por</string>
+    <string>GrKoronis</string>
+    <string>CombGrKoronis</string>
+    <string>LtnSmIOgonek.TailI.RetroHook</string>
+    <string>LtnSmIStrk.TailI</string>
+    <string>LtnSupSmIStrk.TailI</string>
+    <string>LtnSubSmI.Dotless.TailI</string>
+    <string>LtnSupSmI.Dotless.TailI</string>
+    <string>LtnSmIStrk.Dotless.TailI</string>
+    <string>LtnSupSmIStrk.Dotless.TailI</string>
+    <string>LtnSmI.TailI</string>
+    <string>LtnSmDotlessI.TailI</string>
+    <string>LtnSubSmI.TailI</string>
+    <string>LtnSupSmI.TailI</string>
+    <string>CombLtnSmI.TailI</string>
+    <string>LtnSmIAcute.TailI</string>
+    <string>LtnSmIGrave.TailI</string>
+    <string>LtnSmIDblGrave.TailI</string>
+    <string>LtnSmICircum.TailI</string>
+    <string>LtnSmIInvBreve.TailI</string>
+    <string>LtnSmIBreve.TailI</string>
+    <string>LtnSmICaron.TailI</string>
+    <string>LtnSmITilde.TailI</string>
+    <string>LtnSmIMacron.TailI</string>
+    <string>LtnSmIDiaerAcute.TailI</string>
+    <string>LtnSmIDiaer.TailI</string>
+    <string>LtnSmIHookAbv.TailI</string>
+    <string>LtnSmITildeBlw.TailI</string>
+    <string>LtnSmIDotBlw.TailI</string>
+    <string>LtnSmIOgonek.TailI</string>
+    <string>LtnSubSmJ.TopLftSerif</string>
+    <string>LtnSmJ.BarTop</string>
+    <string>LtnSmJCircum.BarTop</string>
+    <string>LtnSmJStrk.BarTop</string>
+    <string>LtnSmJCrossedTail.BarTop</string>
+    <string>ModSmJ.Dotless.TopLftSerif</string>
+    <string>LtnSmJCrossedTail.Dotless.TopLftSerif</string>
+    <string>ModSmJCrossedTail.Dotless.TopLftSerif</string>
+    <string>LtnSmJ.TopLftSerif</string>
+    <string>LtnSmDotlessJ.TopLftSerif</string>
+    <string>ModSmJ.TopLftSerif</string>
+    <string>LtnSmJCircum.TopLftSerif</string>
+    <string>LtnSmJCaron.TopLftSerif</string>
+    <string>LtnSmJStrk.TopLftSerif</string>
+    <string>LtnSupSmDotlessJStrk.TopLftSerif</string>
+    <string>ModSmJCrossedTail.TopLftSerif</string>
+    <string>LtnSmJCrossedTail.TopLftSerif</string>
+    <string>LtnSmDotlessJStrk.TopLftSerif</string>
+    <string>LtnCapJ.BarTop</string>
+    <string>ModCapJ.BarTop</string>
+    <string>LtnSmCapJ.BarTop</string>
+    <string>LtnCapJCircum.BarTop</string>
+    <string>LtnCapJStrk.BarTop</string>
+    <string>LtnCapJCrossedTail.BarTop</string>
+    <string>LtnSubSmL.TailL</string>
+    <string>LtnSmLCaron.Caron.TailL</string>
+    <string>LtnSmLHighBar.TailL</string>
+    <string>LtnSmL.TailL</string>
+    <string>ModSmL.TailL</string>
+    <string>LtnSmLAcute.TailL</string>
+    <string>LtnSmLCircumBlw.TailL</string>
+    <string>LtnSmLLineBlw.TailL</string>
+    <string>LtnSmLDotBlw.TailL</string>
+    <string>LtnSmLDotBlwMacron.TailL</string>
+    <string>LtnSmLCedilla.TailL</string>
+    <string>LtnSmLMiddleDot.TailL</string>
+    <string>LtnSmLCaron.TailL</string>
+    <string>LtnSmLPalHook.TailL</string>
+    <string>ModSmLPalHook.TailL</string>
+    <string>LtnSmLBar.TailL</string>
+    <string>LtnSmDblBarredL.TailL</string>
+    <string>LtnSmLMiddleTilde.TailL</string>
+    <string>LtnSmLStrk.TailL</string>
+    <string>LtnSmLBelt.TailL</string>
+    <string>LtnSmQStrk.Point</string>
+    <string>LtnSmQDiagStrk.Point</string>
+    <string>LtnSmQ.Point</string>
+    <string>LtnSmQHook.Point</string>
+    <string>LtnSmQ.DiagTail</string>
+    <string>LtnCapQStrk.DiagTail</string>
+    <string>LtnCapQDiagStrk.DiagTail</string>
+    <string>LtnCapQ.DiagTail</string>
+    <string>LtnSmQStrk.DiagTail</string>
+    <string>LtnSmQDiagStrk.DiagTail</string>
+    <string>LtnSubSmT.NoTailT</string>
+    <string>LtnSmTCaron.Caron.NoTailT</string>
+    <string>LtnSmT.NoTailT</string>
+    <string>LtnSupSmT.NoTailT</string>
+    <string>CombLtnSmT.NoTailT</string>
+    <string>LtnSmTDiaer.NoTailT</string>
+    <string>LtnSmTDotAbv.NoTailT</string>
+    <string>LtnSmTCircumBlw.NoTailT</string>
+    <string>LtnSmTLineBlw.NoTailT</string>
+    <string>LtnSmTDotBlw.NoTailT</string>
+    <string>LtnSmTCommaBlw.NoTailT</string>
+    <string>LtnSmTCaron.NoTailT</string>
+    <string>LtnSmTCedilla.NoTailT</string>
+    <string>LtnSmTPalHook.NoTailT</string>
+    <string>ModSmTPalHook.NoTailT</string>
+    <string>LtnSmTStrk.NoTailT</string>
+    <string>LtnSmTMiddleTilde.NoTailT</string>
+    <string>LtnSmTDiagStrk.NoTailT</string>
+    <string>LtnSmTHook.NoTailT</string>
+    <string>LtnSmTHStrk.NoTailT</string>
+    <string>LtnSmTcDigraphCurl.NoTailT</string>
+    <string>LtnSmTsDigraph.NoTailT</string>
+    <string>LtnSmTeshDigraph.NoTailT</string>
+    <string>LtnSmTzDigraph.NoTailT</string>
+    <string>LtnSmTurnedT.NoTailT</string>
+    <string>LtnSmY.NoTailY</string>
+    <string>ModSmY.NoTailY</string>
+    <string>LtnSmYAcute.NoTailY</string>
+    <string>LtnSmYGrave.NoTailY</string>
+    <string>LtnSmYCircum.NoTailY</string>
+    <string>LtnSmYTilde.NoTailY</string>
+    <string>LtnSmYMacron.NoTailY</string>
+    <string>LtnSmYDiaer.NoTailY</string>
+    <string>LtnSmYDotAbv.NoTailY</string>
+    <string>LtnSmYRingAbv.NoTailY</string>
+    <string>LtnSmYHookAbv.NoTailY</string>
+    <string>LtnSmYDotBlw.NoTailY</string>
+    <string>LtnSmYStrk.NoTailY</string>
+    <string>LtnSmYHook.NoTailY</string>
+    <string>LtnSmYHook.RtHook.NoTailY</string>
+    <string>LtnSmTurnedY.NoTailY</string>
+    <string>ModSmTurnedY.NoTailY</string>
+    <string>LtnSmTurnedYBelt.NoTailY</string>
+    <string>DigitZero.Slash</string>
+    <string>SubZero.Slash</string>
+    <string>SupZero.Slash</string>
+    <string>DigitOne.NoBase</string>
+    <string>SubOne.NoBase</string>
+    <string>SupOne.NoBase</string>
+    <string>DigitFour.Open</string>
+    <string>SubFour.Open</string>
+    <string>SupFour.Open</string>
+    <string>DigitSix.Diag</string>
+    <string>SubSix.Diag</string>
+    <string>SupSix.Diag</string>
+    <string>DigitSeven.Bar</string>
+    <string>SubSeven.Bar</string>
+    <string>SupSeven.Bar</string>
+    <string>DigitNine.Diag</string>
+    <string>SubNine.Diag</string>
+    <string>SupNine.Diag</string>
     <string>LtnSmA.sc</string>
     <string>CySmA.sc</string>
     <string>LtnSmAAcute.sc</string>
@@ -6624,6 +7474,7 @@
     <string>LtnSmEth.sc</string>
     <string>LtnCapDSmZ.sc</string>
     <string>LtnCapDSmZCaron.sc</string>
+    <string>LtnCapDSmZCaron.LP.sc</string>
     <string>LtnSmE.sc</string>
     <string>CySmIe.sc</string>
     <string>LtnSmEAcute.sc</string>
@@ -6789,6 +7640,10 @@
     <string>LtnSmJ.sc</string>
     <string>CySmJe.sc</string>
     <string>LtnSmJCircum.sc</string>
+    <string>LtnSmJ.BarTop.sc</string>
+    <string>LtnSmJCircum.BarTop.sc</string>
+    <string>LtnSmJStrk.BarTop.sc</string>
+    <string>LtnSmJCrossedTail.BarTop.sc</string>
     <string>LtnSmJStrk.sc</string>
     <string>LtnSmIs.sc</string>
     <string>CySmEl.sc</string>
@@ -6961,6 +7816,9 @@
     <string>LtnSmQStrk.sc</string>
     <string>LtnSmQDiagStrk.sc</string>
     <string>LtnSmQHookTail.sc</string>
+    <string>LtnSmQ.DiagTail.sc</string>
+    <string>LtnSmQStrk.DiagTail.sc</string>
+    <string>LtnSmQDiagStrk.DiagTail.sc</string>
     <string>LtnSmR.sc</string>
     <string>LtnSmRAcute.sc</string>
     <string>LtnSmRDblGrave.sc</string>
@@ -7002,6 +7860,7 @@
     <string>LtnSmEsh.sc</string>
     <string>LtnSmT.sc</string>
     <string>LtnSmTCaron.Caron.sc</string>
+    <string>LtnSmTCaron.Caron.NoTailT.sc</string>
     <string>LtnSmTDotAbv.sc</string>
     <string>LtnSmTCircumBlw.sc</string>
     <string>LtnSmTLineBlw.sc</string>
@@ -7101,6 +7960,7 @@
     <string>LtnSmYStrk.sc</string>
     <string>LtnSmYHook.RtHook.sc</string>
     <string>LtnSmYHook.sc</string>
+    <string>LtnSmYHook.RtHook.NoTailY.sc</string>
     <string>LtnSmYLoop.sc</string>
     <string>CySmStraightU.sc</string>
     <string>CySmStraightUStrk.sc</string>
@@ -7335,42 +8195,6 @@
     <string>ModTnYangPingDep</string>
     <string>ModTnYangQuDep</string>
     <string>ModTnYangRuDep</string>
-    <string>LtnCapBeta</string>
-    <string>LtnCapChi</string>
-    <string>LtnCapOmega</string>
-    <string>LtnSmBeta</string>
-    <string>LtnSmOmega</string>
-    <string>LtnSinolDot</string>
-    <string>GrCapThetaSym</string>
-    <string>GrThetaSym</string>
-    <string>LtnSmBarredAlpha</string>
-    <string>LtnSmChi</string>
-    <string>RefMrk</string>
-    <string>SupplDottedObelos</string>
-    <string>SupplDownwardsAncora</string>
-    <string>SupplBottomLftHalfBrac</string>
-    <string>SupplBottomRtHalfBrac</string>
-    <string>SupplTopLftHalfBrac</string>
-    <string>SupplTopRtHalfBrac</string>
-    <string>SupplDblDiagHyphen</string>
-    <string>MathLftAngBrac</string>
-    <string>MathRtAngBrac</string>
-    <string>LariSgn</string>
-    <string>CombDblOpnMrkBlw</string>
-    <string>CombDiaerRing</string>
-    <string>CombDoubledCircum</string>
-    <string>CombDwnArrw</string>
-    <string>CombInfinity</string>
-    <string>CombLightCentralizationStrkBlw</string>
-    <string>CombOpnMrkBlw</string>
-    <string>CombStrongCentralizationStrkBlw</string>
-    <string>CombTripleDot</string>
-    <string>CombUpTackAbv</string>
-    <string>CombWigglyLineBlw</string>
-    <string>CombXXBlw</string>
-    <string>BitcoinSgn</string>
-    <string>LtnCapSmCapI</string>
-    <string>LtnSubSmJ.Dotless</string>
   </array>
   <key>public.postscriptNames</key>
   <dict>
