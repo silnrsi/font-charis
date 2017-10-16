@@ -1,0 +1,11 @@
+#!/bin/sh
+
+psfsetpsnames -i source/glyph_data.csv source/CharisSIL-Regular.ufo
+psfsetpsnames -i source/glyph_data.csv source/CharisSIL-Italic.ufo
+psfsetpsnames -i source/glyph_data.csv source/CharisSIL-Bold.ufo
+psfsetpsnames -i source/glyph_data.csv source/CharisSIL-BoldItalic.ufo
+psfsetglyphorder --header sort_final_cdg -i source/glyph_data.csv source/CharisSIL-Regular.ufo
+psfsetglyphorder --header sort_final_cdg -i source/glyph_data.csv source/CharisSIL-Italic.ufo
+psfsetglyphorder --header sort_final_cdg -i source/glyph_data.csv source/CharisSIL-Bold.ufo
+psfsetglyphorder --header sort_final_cdg -i source/glyph_data.csv source/CharisSIL-BoldItalic.ufo
+psfsyncmeta source/CharisSIL-Regular.ufo
