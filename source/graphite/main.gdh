@@ -1173,7 +1173,7 @@ endpass;  // sub - 4
 endtable; // substitution
 
 
-// #include "pitches.gdh"
+#include "pitches.gdh"
 
 
 table(positioning) {MUnits = 1000};
