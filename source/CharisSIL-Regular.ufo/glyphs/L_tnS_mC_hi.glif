@@ -1,17 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="LtnSmChi" format="1">
-  <advance width="1044"/>
+  <advance width="1104"/>
   <unicode hex="AB53"/>
   <outline>
-    <component base="LtnSmX"/>
     <contour>
-      <point x="785" y="0" type="move" name="H"/>
+      <point x="565" y="384" type="line"/>
+      <point x="620" y="260" type="line"/>
+      <point x="950" y="889" type="line"/>
+      <point x="1060" y="907" type="line"/>
+      <point x="1060" y="987" type="line"/>
+      <point x="702" y="987" type="line"/>
+      <point x="702" y="907" type="line"/>
+      <point x="790" y="897" type="line" smooth="yes"/>
+      <point x="808" y="895"/>
+      <point x="823" y="872"/>
+      <point x="808" y="843" type="curve" smooth="yes"/>
     </contour>
     <contour>
-      <point x="522" y="-100" type="move" name="L"/>
+      <point x="182" y="889" type="line"/>
+      <point x="805" y="-446" type="line"/>
+      <point x="1084" y="-446" type="line"/>
+      <point x="1084" y="-366" type="line"/>
+      <point x="960" y="-350" type="line"/>
+      <point x="339" y="982" type="line"/>
+      <point x="51" y="982" type="line"/>
+      <point x="51" y="907" type="line"/>
     </contour>
     <contour>
-      <point x="522" y="1100" type="move" name="U"/>
+      <point x="568" y="219" type="line"/>
+      <point x="511" y="338" type="line"/>
+      <point x="137" y="-350" type="line"/>
+      <point x="20" y="-366" type="line"/>
+      <point x="20" y="-446" type="line"/>
+      <point x="400" y="-446" type="line"/>
+      <point x="400" y="-366" type="line"/>
+      <point x="297" y="-358" type="line" smooth="yes"/>
+      <point x="279" y="-357"/>
+      <point x="266" y="-335"/>
+      <point x="285" y="-300" type="curve" smooth="yes"/>
+    </contour>
+    <contour>
+      <point x="562" y="-500" type="move" name="L"/>
+    </contour>
+    <contour>
+      <point x="562" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>
