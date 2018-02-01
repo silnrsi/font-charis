@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CySmRevZeDep" format="1">
+<glyph name="CySmRevZeDep" format="2">
   <advance width="907"/>
   <unicode hex="F32B"/>
+  <anchor x="426" y="0" name="H"/>
+  <anchor x="352" y="-100" name="L"/>
+  <anchor x="372" y="0" name="O"/>
+  <anchor x="907" y="1000" name="R"/>
+  <anchor x="596" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="-21" y="-55" type="line"/>
@@ -57,21 +62,6 @@
       <point x="342" y="518" type="curve"/>
       <point x="217" y="553"/>
       <point x="109" y="643"/>
-    </contour>
-    <contour>
-      <point x="426" y="0" type="move" name="H"/>
-    </contour>
-    <contour>
-      <point x="352" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="372" y="0" type="move" name="O"/>
-    </contour>
-    <contour>
-      <point x="907" y="1000" type="move" name="R"/>
-    </contour>
-    <contour>
-      <point x="596" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

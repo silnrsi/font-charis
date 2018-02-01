@@ -1,22 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CySmByelorusUkrainI.sc" format="1">
+<glyph name="CySmByelorusUkrainI.sc" format="2">
   <advance width="622"/>
+  <anchor x="311" y="8" name="H"/>
+  <anchor x="311" y="-74" name="L"/>
+  <anchor x="454" y="8" name="O"/>
+  <anchor x="622" y="992" name="R"/>
+  <anchor x="311" y="1238" name="U"/>
   <outline>
     <component base="LtnSmI.sc"/>
-    <contour>
-      <point x="311" y="8" type="move" name="H"/>
-    </contour>
-    <contour>
-      <point x="311" y="-74" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="454" y="8" type="move" name="O"/>
-    </contour>
-    <contour>
-      <point x="622" y="992" type="move" name="R"/>
-    </contour>
-    <contour>
-      <point x="311" y="1238" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

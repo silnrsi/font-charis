@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmNTilde.sc" format="1">
+<glyph name="LtnSmNTilde.sc" format="2">
   <advance width="1340"/>
+  <anchor x="968" y="8" name="H"/>
+  <anchor x="550" y="-74" name="L"/>
+  <anchor x="859" y="1638" name="U"/>
   <outline>
     <component base="LtnSmN.sc"/>
     <component base="SmTilde" xOffset="332" yOffset="138"/>
-    <contour>
-      <point x="968" y="8" type="move" name="H"/>
-    </contour>
-    <contour>
-      <point x="550" y="-74" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="859" y="1638" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmZDescDep" format="1">
+<glyph name="LtnSmZDescDep" format="2">
   <advance width="911"/>
   <unicode hex="F264"/>
+  <anchor x="358" y="-100" name="L"/>
+  <anchor x="602" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="-63" y="-321" type="line"/>
@@ -69,12 +71,6 @@
       <point x="723" y="924" type="curve"/>
       <point x="768" y="1038" type="line"/>
       <point x="922" y="958" type="line"/>
-    </contour>
-    <contour>
-      <point x="358" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="602" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

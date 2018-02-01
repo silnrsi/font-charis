@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmRevE" format="1">
+<glyph name="LtnSmRevE" format="2">
   <advance width="1022"/>
   <unicode hex="0258"/>
+  <anchor x="387" y="-100" name="L"/>
+  <anchor x="1022" y="1000" name="R"/>
+  <anchor x="631" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="956" y="614" type="curve" smooth="yes"/>
@@ -43,15 +46,6 @@
       <point x="561" y="920" type="curve" smooth="yes"/>
       <point x="694" y="920"/>
       <point x="737" y="774"/>
-    </contour>
-    <contour>
-      <point x="387" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="1022" y="1000" type="move" name="R"/>
-    </contour>
-    <contour>
-      <point x="631" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

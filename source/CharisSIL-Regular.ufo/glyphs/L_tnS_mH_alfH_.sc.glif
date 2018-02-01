@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmHalfH.sc" format="1">
+<glyph name="LtnSmHalfH.sc" format="2">
   <advance width="906"/>
+  <anchor x="295" y="8" name="H"/>
+  <anchor x="700" y="-74" name="L"/>
+  <anchor x="700" y="1238" name="U"/>
   <outline>
     <contour>
       <point x="387" y="531" type="line"/>
@@ -45,15 +48,6 @@
       <point x="399" y="95"/>
       <point x="387" y="109"/>
       <point x="387" y="121" type="curve"/>
-    </contour>
-    <contour>
-      <point x="295" y="8" type="move" name="H"/>
-    </contour>
-    <contour>
-      <point x="700" y="-74" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="700" y="1238" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

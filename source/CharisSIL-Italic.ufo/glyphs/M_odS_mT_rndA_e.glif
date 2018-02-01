@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="ModSmTrndAe" format="1">
+<glyph name="ModSmTrndAe" format="2">
   <advance width="936"/>
   <unicode hex="1D46"/>
+  <anchor x="520" y="725" name="L"/>
+  <anchor x="656" y="1450" name="U"/>
   <outline>
     <component base="LtnSmTrndAe" xScale="0.65" yScale="0.6" xOffset="115" yOffset="785"/>
-    <contour>
-      <point x="520" y="725" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="656" y="1450" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

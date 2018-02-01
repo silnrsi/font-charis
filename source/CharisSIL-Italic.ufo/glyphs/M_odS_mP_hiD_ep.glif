@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="ModSmPhiDep" format="1">
+<glyph name="ModSmPhiDep" format="2">
   <advance width="753"/>
   <unicode hex="F1C3"/>
+  <anchor x="368" y="485" name="L"/>
+  <anchor x="596" y="1700" name="U"/>
   <outline>
     <contour>
       <point x="128" y="487" type="line"/>
@@ -66,12 +68,6 @@
       <point x="292" y="929"/>
       <point x="331" y="876"/>
       <point x="376" y="847" type="curve"/>
-    </contour>
-    <contour>
-      <point x="368" y="485" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="596" y="1700" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

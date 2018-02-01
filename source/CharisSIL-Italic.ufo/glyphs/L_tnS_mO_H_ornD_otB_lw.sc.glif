@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmOHornDotBlw.sc" format="1">
+<glyph name="LtnSmOHornDotBlw.sc" format="2">
   <advance width="1442"/>
+  <anchor x="452" y="-474" name="L"/>
+  <anchor x="793" y="1238" name="U"/>
   <outline>
     <component base="LtnSmOHorn.sc"/>
     <component base="CombDotBlw" xOffset="1165" yOffset="26"/>
-    <contour>
-      <point x="452" y="-474" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="793" y="1238" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

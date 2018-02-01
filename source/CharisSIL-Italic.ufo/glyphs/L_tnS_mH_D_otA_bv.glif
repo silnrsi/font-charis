@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmHDotAbv" format="1">
+<glyph name="LtnSmHDotAbv" format="2">
   <advance width="1073"/>
   <unicode hex="1E23"/>
+  <anchor x="131" y="0" name="H"/>
+  <anchor x="431" y="-100" name="L"/>
+  <anchor x="791" y="1940" name="U"/>
   <outline>
     <component base="LtnSmH"/>
     <component base="DotAbv" xOffset="514" yOffset="440"/>
-    <contour>
-      <point x="131" y="0" type="move" name="H"/>
-    </contour>
-    <contour>
-      <point x="431" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="791" y="1940" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

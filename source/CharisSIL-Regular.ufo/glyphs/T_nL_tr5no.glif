@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="TnLtr5no" format="1">
+<glyph name="TnLtr5no" format="2">
   <advance width="808"/>
+  <anchor x="147" y="1423" name="_TL"/>
   <outline>
     <component base="TnLtrSpcPointLeft"/>
     <component base="TnLtrSeg55" xOffset="146"/>
     <component base="TnLtrSpcFlatRight" xOffset="596"/>
-    <contour>
-      <point x="147" y="1423" type="move" name="_TL"/>
-    </contour>
   </outline>
 </glyph>

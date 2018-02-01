@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmMum" format="1">
+<glyph name="LtnSmMum" format="2">
   <advance width="1883"/>
   <unicode hex="A773"/>
+  <anchor x="672" y="-100" name="L"/>
+  <anchor x="884" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="1481" y="752" type="line" smooth="yes"/>
@@ -61,12 +63,6 @@
       <point x="1172" y="-401" type="line"/>
       <point x="1264" y="-401" type="line"/>
       <point x="1873" y="821" type="line"/>
-    </contour>
-    <contour>
-      <point x="672" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="884" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

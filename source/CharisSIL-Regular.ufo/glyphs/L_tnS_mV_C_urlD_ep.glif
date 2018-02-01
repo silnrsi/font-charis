@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmVCurlDep" format="1">
+<glyph name="LtnSmVCurlDep" format="2">
   <advance width="983"/>
   <unicode hex="F25E"/>
+  <anchor x="487" y="0" name="H"/>
+  <anchor x="487" y="-100" name="L"/>
+  <anchor x="542" y="0" name="O"/>
+  <anchor x="487" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="-18" y="-30" type="line"/>
@@ -57,18 +61,6 @@
       <point x="313" y="655" type="curve"/>
       <point x="360" y="690"/>
       <point x="395" y="745"/>
-    </contour>
-    <contour>
-      <point x="487" y="0" type="move" name="H"/>
-    </contour>
-    <contour>
-      <point x="487" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="542" y="0" type="move" name="O"/>
-    </contour>
-    <contour>
-      <point x="487" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

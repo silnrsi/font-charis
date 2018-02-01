@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmIotaStrkDep" format="1">
+<glyph name="LtnSmIotaStrkDep" format="2">
   <advance width="674"/>
   <unicode hex="F25D"/>
+  <anchor x="320" y="0" name="H"/>
+  <anchor x="320" y="-100" name="L"/>
+  <anchor x="431" y="0" name="O"/>
+  <anchor x="674" y="1000" name="R"/>
+  <anchor x="320" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="40" y="-55" type="line"/>
@@ -37,21 +42,6 @@
       <point x="213" y="25"/>
       <point x="213" y="240" type="curve" smooth="yes"/>
       <point x="213" y="455" type="line"/>
-    </contour>
-    <contour>
-      <point x="320" y="0" type="move" name="H"/>
-    </contour>
-    <contour>
-      <point x="320" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="431" y="0" type="move" name="O"/>
-    </contour>
-    <contour>
-      <point x="674" y="1000" type="move" name="R"/>
-    </contour>
-    <contour>
-      <point x="320" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

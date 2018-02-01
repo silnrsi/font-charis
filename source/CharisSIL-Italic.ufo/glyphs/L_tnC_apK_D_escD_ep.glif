@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnCapKDescDep" format="1">
+<glyph name="LtnCapKDescDep" format="2">
   <advance width="1343"/>
   <unicode hex="F263"/>
+  <anchor x="525" y="-100" name="L"/>
+  <anchor x="813" y="1500" name="U"/>
   <outline>
     <contour>
       <point x="-63" y="-450" type="line"/>
@@ -63,12 +65,6 @@
       <point x="1180" y="82"/>
       <point x="1227" y="86"/>
       <point x="1260" y="88" type="curve"/>
-    </contour>
-    <contour>
-      <point x="525" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="813" y="1500" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

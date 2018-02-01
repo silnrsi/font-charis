@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnDentalClick" format="1">
+<glyph name="LtnDentalClick" format="2">
   <advance width="453"/>
   <unicode hex="01C0"/>
+  <anchor x="28" y="-500" name="L"/>
+  <anchor x="420" y="1540" name="U"/>
   <outline>
     <contour>
       <point x="105" y="-440" type="line"/>
       <point x="476" y="1507" type="line"/>
       <point x="361" y="1507" type="line"/>
       <point x="-10" y="-440" type="line"/>
-    </contour>
-    <contour>
-      <point x="28" y="-500" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="420" y="1540" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

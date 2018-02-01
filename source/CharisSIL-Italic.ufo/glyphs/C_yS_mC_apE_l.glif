@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CySmCapEl" format="1">
+<glyph name="CySmCapEl" format="2">
   <advance width="1151"/>
   <unicode hex="1D2B"/>
+  <anchor x="480" y="-100" name="L"/>
+  <anchor x="775" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="1030" y="78" type="line"/>
@@ -49,12 +51,6 @@
       <point x="557" y="78" type="line"/>
       <point x="557" y="0" type="line"/>
       <point x="1030" y="0" type="line"/>
-    </contour>
-    <contour>
-      <point x="480" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="775" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

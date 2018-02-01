@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CombRingAbv" format="1">
+<glyph name="CombRingAbv" format="2">
   <advance width="0"/>
   <unicode hex="030A"/>
+  <anchor x="-557" y="1660" name="U"/>
+  <anchor x="-557" y="1100" name="_U"/>
   <outline>
     <component base="RingAbv" xOffset="-800"/>
-    <contour>
-      <point x="-557" y="1660" type="move" name="U"/>
-    </contour>
-    <contour>
-      <point x="-557" y="1100" type="move" name="_U"/>
-    </contour>
   </outline>
 </glyph>

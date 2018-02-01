@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CyCapShcha" format="1">
+<glyph name="CyCapShcha" format="2">
   <advance width="1982"/>
   <unicode hex="0429"/>
+  <anchor x="866" y="-100" name="L"/>
+  <anchor x="1154" y="1500" name="U"/>
   <outline>
     <contour>
       <point x="2077" y="1286" type="line"/>
@@ -72,12 +74,6 @@
       <point x="1907" y="1251"/>
       <point x="1927" y="1274"/>
       <point x="1956" y="1278" type="curve"/>
-    </contour>
-    <contour>
-      <point x="866" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="1154" y="1500" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

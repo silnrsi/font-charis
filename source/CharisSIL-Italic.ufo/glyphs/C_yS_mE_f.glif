@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CySmEf" format="1">
+<glyph name="CySmEf" format="2">
   <advance width="1501"/>
   <unicode hex="0444"/>
+  <anchor x="554" y="-500" name="L"/>
+  <anchor x="946" y="1540" name="U"/>
   <outline>
     <contour>
       <point x="1438" y="629" type="curve" smooth="yes"/>
@@ -77,12 +79,6 @@
       <point x="606" y="915" type="curve" smooth="yes"/>
       <point x="696" y="915"/>
       <point x="733" y="879"/>
-    </contour>
-    <contour>
-      <point x="554" y="-500" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="946" y="1540" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

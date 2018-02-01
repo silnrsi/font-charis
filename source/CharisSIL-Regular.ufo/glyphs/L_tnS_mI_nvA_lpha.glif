@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmInvAlpha" format="1">
+<glyph name="LtnSmInvAlpha" format="2">
   <advance width="1155"/>
   <unicode hex="AB64"/>
+  <anchor x="587" y="-100" name="L"/>
+  <anchor x="1311" y="971" name="R"/>
+  <anchor x="587" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="782" y="987" type="line"/>
@@ -41,15 +44,6 @@
       <point x="653" y="868"/>
       <point x="729" y="833"/>
       <point x="782" y="801" type="curve"/>
-    </contour>
-    <contour>
-      <point x="587" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="1311" y="971" type="move" name="R"/>
-    </contour>
-    <contour>
-      <point x="587" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

@@ -1,24 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmARtHalfRing" format="1">
+<glyph name="LtnSmARtHalfRing" format="2">
   <advance width="1042"/>
   <unicode hex="1E9A"/>
+  <anchor x="510" y="0" name="H"/>
+  <anchor x="510" y="-100" name="L"/>
+  <anchor x="904" y="0" name="O"/>
+  <anchor x="1042" y="1000" name="R"/>
+  <anchor x="510" y="1580" name="U"/>
   <outline>
     <component base="LtnSmA"/>
     <component base="CombRtHalfRingBlw" xOffset="1067" yOffset="1692"/>
-    <contour>
-      <point x="510" y="0" type="move" name="H"/>
-    </contour>
-    <contour>
-      <point x="510" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="904" y="0" type="move" name="O"/>
-    </contour>
-    <contour>
-      <point x="1042" y="1000" type="move" name="R"/>
-    </contour>
-    <contour>
-      <point x="510" y="1580" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

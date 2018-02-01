@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmThorn.sc" format="1">
+<glyph name="LtnSmThorn.sc" format="2">
   <advance width="1089"/>
+  <anchor x="538" y="-74" name="L"/>
+  <anchor x="538" y="1238" name="U"/>
   <outline>
     <contour>
       <point x="1001" y="578" type="curve" smooth="yes"/>
@@ -62,12 +64,6 @@
       <point x="502" y="821" type="curve" smooth="yes"/>
       <point x="719" y="821"/>
       <point x="790" y="731"/>
-    </contour>
-    <contour>
-      <point x="538" y="-74" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="538" y="1238" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

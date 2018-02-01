@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmDMiddleTilde" format="1">
+<glyph name="LtnSmDMiddleTilde" format="2">
   <advance width="1200"/>
   <unicode hex="1D6D"/>
+  <anchor x="586" y="-100" name="L"/>
+  <anchor x="586" y="1540" name="U"/>
   <outline>
     <component base="LtnSmD"/>
     <component base="SmTilde" xOffset="519" yOffset="-134"/>
-    <contour>
-      <point x="586" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="586" y="1540" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

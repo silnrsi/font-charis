@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CySmLigEnGhe" format="1">
+<glyph name="CySmLigEnGhe" format="2">
   <advance width="1405"/>
   <unicode hex="04A5"/>
+  <anchor x="700" y="-100" name="L"/>
+  <anchor x="700" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="1165" y="0" type="line"/>
@@ -67,12 +69,6 @@
       <point x="1261" y="718" type="line"/>
       <point x="1345" y="718" type="line"/>
       <point x="1345" y="987" type="line"/>
-    </contour>
-    <contour>
-      <point x="700" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="700" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

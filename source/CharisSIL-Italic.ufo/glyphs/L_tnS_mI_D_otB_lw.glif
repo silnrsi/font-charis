@@ -1,24 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmIDotBlw" format="1">
+<glyph name="LtnSmIDotBlw" format="2">
   <advance width="545"/>
   <unicode hex="1ECB"/>
+  <anchor x="194" y="0" name="H"/>
+  <anchor x="105" y="-500" name="L"/>
+  <anchor x="408" y="0" name="O"/>
+  <anchor x="545" y="1000" name="R"/>
+  <anchor x="418" y="1100" name="U"/>
   <outline>
     <component base="LtnSmI"/>
     <component base="CombDotBlw" xOffset="818"/>
-    <contour>
-      <point x="194" y="0" type="move" name="H"/>
-    </contour>
-    <contour>
-      <point x="105" y="-500" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="408" y="0" type="move" name="O"/>
-    </contour>
-    <contour>
-      <point x="545" y="1000" type="move" name="R"/>
-    </contour>
-    <contour>
-      <point x="418" y="1100" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

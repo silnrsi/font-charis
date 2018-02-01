@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmWRingAbv" format="1">
+<glyph name="LtnSmWRingAbv" format="2">
   <advance width="1604"/>
   <unicode hex="1E98"/>
+  <anchor x="801" y="-100" name="L"/>
+  <anchor x="830" y="1660" name="U"/>
   <outline>
     <component base="LtnSmW"/>
     <component base="RingAbv" xOffset="587"/>
-    <contour>
-      <point x="801" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="830" y="1660" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

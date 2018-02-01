@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CySmSemisoftSgn" format="1">
+<glyph name="CySmSemisoftSgn" format="2">
   <advance width="889"/>
   <unicode hex="048D"/>
+  <anchor x="279" y="-100" name="L"/>
+  <anchor x="540" y="1300" name="U"/>
   <outline>
     <contour>
       <point x="823" y="354" type="curve" smooth="yes"/>
@@ -46,12 +48,6 @@
       <point x="621" y="885" type="line"/>
       <point x="621" y="987" type="line"/>
       <point x="38" y="987" type="line"/>
-    </contour>
-    <contour>
-      <point x="279" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="540" y="1300" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

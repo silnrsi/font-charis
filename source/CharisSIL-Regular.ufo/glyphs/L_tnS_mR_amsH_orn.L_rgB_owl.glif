@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmRamsHorn.LrgBowl" format="1">
+<glyph name="LtnSmRamsHorn.LrgBowl" format="2">
   <advance width="1083"/>
+  <anchor x="541" y="-100" name="L"/>
+  <anchor x="1083" y="1000" name="R"/>
+  <anchor x="541" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="1067" y="743" type="line"/>
@@ -55,15 +58,6 @@
       <point x="551" y="772" type="curve"/>
       <point x="678" y="659"/>
       <point x="752" y="477"/>
-    </contour>
-    <contour>
-      <point x="541" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="1083" y="1000" type="move" name="R"/>
-    </contour>
-    <contour>
-      <point x="541" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

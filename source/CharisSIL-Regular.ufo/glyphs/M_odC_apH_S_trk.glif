@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="ModCapHStrk" format="1">
+<glyph name="ModCapHStrk" format="2">
   <advance width="989"/>
   <unicode hex="A7F8"/>
+  <anchor x="500" y="725" name="L"/>
+  <anchor x="500" y="1685" name="U"/>
   <outline>
     <contour>
       <point x="951" y="785" type="line"/>
@@ -62,12 +64,6 @@
       <point x="951" y="1433" type="line"/>
       <point x="48" y="1433" type="line"/>
       <point x="48" y="1371" type="line"/>
-    </contour>
-    <contour>
-      <point x="500" y="725" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="500" y="1685" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmRevOpnEHook" format="1">
+<glyph name="LtnSmRevOpnEHook" format="2">
   <advance width="1155"/>
   <unicode hex="025D"/>
+  <anchor x="440" y="-100" name="L"/>
+  <anchor x="440" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="1180" y="752" type="curve"/>
@@ -71,12 +73,6 @@
       <point x="1024" y="555" type="curve" smooth="yes"/>
       <point x="1153" y="555"/>
       <point x="1171" y="668"/>
-    </contour>
-    <contour>
-      <point x="440" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="440" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

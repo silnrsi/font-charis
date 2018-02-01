@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmAOgonek.RetroHook" format="1">
+<glyph name="LtnSmAOgonek.RetroHook" format="2">
   <advance width="1042"/>
+  <anchor x="510" y="-500" name="L"/>
+  <anchor x="904" y="0" name="O"/>
+  <anchor x="1042" y="1000" name="R"/>
+  <anchor x="510" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="1008" y="0" type="line"/>
@@ -70,18 +74,6 @@
       <point x="688" y="-467" type="curve" smooth="yes"/>
       <point x="809" y="-467"/>
       <point x="899" y="-397"/>
-    </contour>
-    <contour>
-      <point x="510" y="-500" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="904" y="0" type="move" name="O"/>
-    </contour>
-    <contour>
-      <point x="1042" y="1000" type="move" name="R"/>
-    </contour>
-    <contour>
-      <point x="510" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

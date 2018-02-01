@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmOpnO.TopSerif" format="1">
+<glyph name="LtnSmOpnO.TopSerif" format="2">
   <advance width="954"/>
+  <anchor x="477" y="0" name="H"/>
+  <anchor x="477" y="-100" name="L"/>
+  <anchor x="530" y="0" name="O"/>
+  <anchor x="954" y="1000" name="R"/>
+  <anchor x="477" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="885" y="487" type="curve" smooth="yes"/>
@@ -35,21 +40,6 @@
       <point x="416" y="-25" type="curve" smooth="yes"/>
       <point x="702" y="-25"/>
       <point x="885" y="192"/>
-    </contour>
-    <contour>
-      <point x="477" y="0" type="move" name="H"/>
-    </contour>
-    <contour>
-      <point x="477" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="530" y="0" type="move" name="O"/>
-    </contour>
-    <contour>
-      <point x="954" y="1000" type="move" name="R"/>
-    </contour>
-    <contour>
-      <point x="477" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

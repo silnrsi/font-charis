@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="GrSmCapOmega" format="1">
+<glyph name="GrSmCapOmega" format="2">
   <advance width="1120"/>
   <unicode hex="AB65"/>
+  <anchor x="560" y="-100" name="L"/>
+  <anchor x="560" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="560" y="920" type="curve" smooth="yes"/>
@@ -46,12 +48,6 @@
       <point x="286" y="596" type="curve" smooth="yes"/>
       <point x="286" y="755"/>
       <point x="372" y="920"/>
-    </contour>
-    <contour>
-      <point x="560" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="560" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

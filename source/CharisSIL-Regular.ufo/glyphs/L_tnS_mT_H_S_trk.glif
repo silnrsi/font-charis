@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmTHStrk" format="1">
+<glyph name="LtnSmTHStrk" format="2">
   <advance width="1872"/>
   <unicode hex="1D7A"/>
+  <anchor x="962" y="-100" name="L"/>
+  <anchor x="962" y="1540" name="U"/>
   <outline>
     <contour>
       <point x="372" y="-104" type="line"/>
@@ -11,11 +13,5 @@
     </contour>
     <component base="LtnSmT"/>
     <component base="LtnSmH" xOffset="696"/>
-    <contour>
-      <point x="962" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="962" y="1540" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

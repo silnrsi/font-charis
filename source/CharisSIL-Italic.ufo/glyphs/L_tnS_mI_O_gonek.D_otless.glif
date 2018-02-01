@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmIOgonek.Dotless" format="1">
+<glyph name="LtnSmIOgonek.Dotless" format="2">
   <advance width="545"/>
+  <anchor x="194" y="0" name="H"/>
+  <anchor x="286" y="-400" name="L"/>
+  <anchor x="545" y="1000" name="R"/>
+  <anchor x="380" y="1100" name="U"/>
   <outline>
     <component base="LtnSmDotlessI"/>
     <component base="CombOgonek" xOffset="820"/>
-    <contour>
-      <point x="194" y="0" type="move" name="H"/>
-    </contour>
-    <contour>
-      <point x="286" y="-400" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="545" y="1000" type="move" name="R"/>
-    </contour>
-    <contour>
-      <point x="380" y="1100" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

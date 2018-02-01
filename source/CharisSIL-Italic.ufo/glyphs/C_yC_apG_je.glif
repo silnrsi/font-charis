@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CyCapGje" format="1">
+<glyph name="CyCapGje" format="2">
   <advance width="1081"/>
   <unicode hex="0403"/>
+  <anchor x="415" y="-100" name="L"/>
+  <anchor x="747" y="1900" name="U"/>
   <outline>
     <component base="CyCapGhe"/>
     <component base="CombAcute" xOffset="1086" yOffset="400"/>
-    <contour>
-      <point x="415" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="747" y="1900" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

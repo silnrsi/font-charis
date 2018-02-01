@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CySmHaHook.sc" format="1">
+<glyph name="CySmHaHook.sc" format="2">
   <advance width="1178"/>
+  <anchor x="589" y="-402" name="L"/>
+  <anchor x="589" y="1238" name="U"/>
   <outline>
     <contour>
       <point x="1142" y="1033" type="line"/>
@@ -63,12 +65,6 @@
       <point x="684" y="604" type="line"/>
       <point x="1023" y="1021" type="line"/>
       <point x="1023" y="1018" type="line"/>
-    </contour>
-    <contour>
-      <point x="589" y="-402" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="589" y="1238" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

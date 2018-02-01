@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSupSmOpnE" format="1">
+<glyph name="LtnSupSmOpnE" format="2">
   <advance width="598"/>
   <unicode hex="1D4B"/>
+  <anchor x="303" y="725" name="L"/>
+  <anchor x="303" y="1457" name="U"/>
   <outline>
     <contour>
       <point x="557" y="860" type="curve"/>
@@ -52,12 +54,6 @@
       <point x="326" y="770" type="curve" smooth="yes"/>
       <point x="399" y="770"/>
       <point x="489" y="805"/>
-    </contour>
-    <contour>
-      <point x="303" y="725" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="303" y="1457" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

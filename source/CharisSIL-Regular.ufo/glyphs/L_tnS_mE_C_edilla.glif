@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmECedilla" format="1">
+<glyph name="LtnSmECedilla" format="2">
   <advance width="1004"/>
   <unicode hex="0229"/>
+  <anchor x="502" y="-600" name="L"/>
+  <anchor x="808" y="0" name="O"/>
+  <anchor x="1004" y="1000" name="R"/>
+  <anchor x="535" y="1100" name="U"/>
   <outline>
     <component base="LtnSmE"/>
     <component base="CombCedilla" xOffset="1059"/>
-    <contour>
-      <point x="502" y="-600" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="808" y="0" type="move" name="O"/>
-    </contour>
-    <contour>
-      <point x="1004" y="1000" type="move" name="R"/>
-    </contour>
-    <contour>
-      <point x="535" y="1100" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

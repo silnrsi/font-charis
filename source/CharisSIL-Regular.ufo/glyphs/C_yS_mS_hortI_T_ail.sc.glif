@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CySmShortITail.sc" format="1">
+<glyph name="CySmShortITail.sc" format="2">
   <advance width="1341"/>
+  <anchor x="672" y="-74" name="L"/>
+  <anchor x="672" y="1572" name="U"/>
   <outline>
     <contour>
       <point x="1147" y="85" type="line"/>
@@ -103,12 +105,6 @@
       <point x="664" y="1225" type="curve" smooth="yes"/>
       <point x="793" y="1225"/>
       <point x="925" y="1305"/>
-    </contour>
-    <contour>
-      <point x="672" y="-74" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="672" y="1572" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

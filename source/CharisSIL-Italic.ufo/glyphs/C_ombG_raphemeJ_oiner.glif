@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CombGraphemeJoiner" format="1">
+<glyph name="CombGraphemeJoiner" format="2">
   <advance width="0"/>
   <unicode hex="034F"/>
-  <outline>
-    <contour>
-      <point x="0" y="0" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="0" y="0" type="move" name="U"/>
-    </contour>
-    <contour>
-      <point x="0" y="0" type="move" name="_L"/>
-    </contour>
-    <contour>
-      <point x="0" y="0" type="move" name="_U"/>
-    </contour>
-  </outline>
+  <anchor x="0" y="0" name="L"/>
+  <anchor x="0" y="0" name="U"/>
+  <anchor x="0" y="0" name="_L"/>
+  <anchor x="0" y="0" name="_U"/>
+  <outline/>
 </glyph>

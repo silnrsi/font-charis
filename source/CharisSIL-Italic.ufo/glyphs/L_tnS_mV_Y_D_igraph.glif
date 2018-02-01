@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmVYDigraph" format="1">
+<glyph name="LtnSmVYDigraph" format="2">
   <advance width="1445"/>
   <unicode hex="A761"/>
+  <anchor x="407" y="-500" name="L"/>
+  <anchor x="791" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="1500" y="909" type="line"/>
@@ -45,12 +47,6 @@
       <point x="1267" y="659"/>
       <point x="1365" y="815"/>
       <point x="1398" y="846" type="curve"/>
-    </contour>
-    <contour>
-      <point x="407" y="-500" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="791" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

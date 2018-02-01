@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="NonBreakingHyphen" format="1">
+<glyph name="NonBreakingHyphen" format="2">
   <advance width="655"/>
   <unicode hex="2011"/>
+  <anchor x="327" y="1100" name="U"/>
   <outline>
     <component base="HyphenMinus"/>
-    <contour>
-      <point x="327" y="1100" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

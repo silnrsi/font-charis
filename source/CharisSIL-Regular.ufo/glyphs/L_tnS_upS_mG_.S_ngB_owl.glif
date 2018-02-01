@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSupSmG.SngBowl" format="1">
+<glyph name="LtnSupSmG.SngBowl" format="2">
   <advance width="736"/>
+  <anchor x="343" y="485" name="L"/>
+  <anchor x="343" y="1457" name="U"/>
   <outline>
     <component base="LtnSmG.SngBowl" xOffset="5" yOffset="785"/>
-    <contour>
-      <point x="343" y="485" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="343" y="1457" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

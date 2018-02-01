@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmHLineBlw" format="1">
+<glyph name="LtnSmHLineBlw" format="2">
   <advance width="1176"/>
   <unicode hex="1E96"/>
+  <anchor x="280" y="0" name="H"/>
+  <anchor x="579" y="-500" name="L"/>
+  <anchor x="579" y="1540" name="U"/>
   <outline>
     <component base="LtnSmH"/>
     <component base="ModLowMacron" xOffset="236"/>
-    <contour>
-      <point x="280" y="0" type="move" name="H"/>
-    </contour>
-    <contour>
-      <point x="579" y="-500" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="579" y="1540" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

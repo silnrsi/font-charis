@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSupSmOpnO.TopSerif" format="1">
+<glyph name="LtnSupSmOpnO.TopSerif" format="2">
   <advance width="620"/>
+  <anchor x="315" y="725" name="L"/>
+  <anchor x="315" y="1457" name="U"/>
   <outline>
     <component base="LtnSmOpnO.TopSerif" xScale="0.65" yScale="0.6" xOffset="5" yOffset="785"/>
-    <contour>
-      <point x="315" y="725" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="315" y="1457" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

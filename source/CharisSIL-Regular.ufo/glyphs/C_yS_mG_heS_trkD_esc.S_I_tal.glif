@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CySmGheStrkDesc.SItal" format="1">
+<glyph name="CySmGheStrkDesc.SItal" format="2">
   <advance width="899"/>
+  <anchor x="444" y="-500" name="L"/>
+  <anchor x="444" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="858" y="686" type="line"/>
@@ -39,12 +41,6 @@
       <point x="600" y="553" type="line"/>
       <point x="31" y="553" type="line"/>
       <point x="31" y="453" type="line"/>
-    </contour>
-    <contour>
-      <point x="444" y="-500" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="444" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

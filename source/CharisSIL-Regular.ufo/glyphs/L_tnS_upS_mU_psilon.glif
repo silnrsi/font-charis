@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSupSmUpsilon" format="1">
+<glyph name="LtnSupSmUpsilon" format="2">
   <advance width="737"/>
   <unicode hex="1DB7"/>
+  <anchor x="368" y="725" name="L"/>
+  <anchor x="368" y="1450" name="U"/>
   <outline>
     <contour>
       <point x="688" y="1063" type="curve" smooth="yes"/>
@@ -40,12 +42,6 @@
       <point x="369" y="770" type="curve" smooth="yes"/>
       <point x="578" y="770"/>
       <point x="688" y="913"/>
-    </contour>
-    <contour>
-      <point x="368" y="725" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="368" y="1450" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

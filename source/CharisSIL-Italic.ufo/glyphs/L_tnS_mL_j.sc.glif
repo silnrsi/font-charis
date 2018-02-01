@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmLj.sc" format="1">
+<glyph name="LtnSmLj.sc" format="2">
   <advance width="1857"/>
+  <anchor x="392" y="8" name="H"/>
+  <anchor x="1226" y="-74" name="L"/>
+  <anchor x="516" y="828" name="R"/>
+  <anchor x="1721" y="1238" name="U"/>
   <outline>
     <component base="LtnSmL.sc"/>
     <component base="LtnSmJ.sc" xOffset="976"/>
-    <contour>
-      <point x="392" y="8" type="move" name="H"/>
-    </contour>
-    <contour>
-      <point x="1226" y="-74" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="516" y="828" type="move" name="R"/>
-    </contour>
-    <contour>
-      <point x="1721" y="1238" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

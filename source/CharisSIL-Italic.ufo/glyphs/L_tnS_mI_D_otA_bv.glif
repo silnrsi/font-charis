@@ -1,22 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmIDotAbv" format="1">
+<glyph name="LtnSmIDotAbv" format="2">
   <advance width="545"/>
+  <anchor x="194" y="0" name="H"/>
+  <anchor x="181" y="-100" name="L"/>
+  <anchor x="408" y="0" name="O"/>
+  <anchor x="545" y="1000" name="R"/>
+  <anchor x="418" y="1100" name="U"/>
   <outline>
     <component base="LtnSmI"/>
-    <contour>
-      <point x="194" y="0" type="move" name="H"/>
-    </contour>
-    <contour>
-      <point x="181" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="408" y="0" type="move" name="O"/>
-    </contour>
-    <contour>
-      <point x="545" y="1000" type="move" name="R"/>
-    </contour>
-    <contour>
-      <point x="418" y="1100" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

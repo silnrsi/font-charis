@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CySmAbkhasDze" format="1">
+<glyph name="CySmAbkhasDze" format="2">
   <advance width="971"/>
   <unicode hex="04E1"/>
+  <anchor x="289" y="-500" name="L"/>
+  <anchor x="609" y="1100" name="U"/>
   <outline>
     <component base="LtnSmEzh"/>
-    <contour>
-      <point x="289" y="-500" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="609" y="1100" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

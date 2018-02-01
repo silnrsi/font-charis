@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CombDblBreveBlwDep" format="1">
+<glyph name="CombDblBreveBlwDep" format="2">
   <advance width="0"/>
   <unicode hex="F176"/>
+  <anchor x="-253" y="-700" name="L"/>
   <outline>
     <contour>
       <point x="-1150" y="-720" type="line"/>
@@ -24,9 +25,6 @@
       <point x="156" y="-553"/>
       <point x="541" y="-516"/>
       <point x="666" y="-383" type="curve"/>
-    </contour>
-    <contour>
-      <point x="-253" y="-700" type="move" name="L"/>
     </contour>
   </outline>
 </glyph>

@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CySmIMacron.sc" format="1">
+<glyph name="CySmIMacron.sc" format="2">
   <advance width="1341"/>
+  <anchor x="672" y="-74" name="L"/>
+  <anchor x="672" y="1608" name="U"/>
   <outline>
     <component base="CySmI.sc"/>
     <component base="CombMacron" xOffset="1229" yOffset="138"/>
-    <contour>
-      <point x="672" y="-74" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="672" y="1608" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmClosedOmega" format="1">
+<glyph name="LtnSmClosedOmega" format="2">
   <advance width="1366"/>
   <unicode hex="0277"/>
+  <anchor x="562" y="-100" name="L"/>
+  <anchor x="1366" y="1000" name="R"/>
+  <anchor x="806" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="1292" y="543" type="curve" smooth="yes"/>
@@ -54,15 +57,6 @@
       <point x="770" y="918" type="curve" smooth="yes"/>
       <point x="993" y="918"/>
       <point x="1090" y="737"/>
-    </contour>
-    <contour>
-      <point x="562" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="1366" y="1000" type="move" name="R"/>
-    </contour>
-    <contour>
-      <point x="806" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

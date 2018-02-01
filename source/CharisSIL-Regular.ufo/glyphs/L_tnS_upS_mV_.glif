@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSupSmV" format="1">
+<glyph name="LtnSupSmV" format="2">
   <advance width="705"/>
   <unicode hex="1D5B"/>
+  <anchor x="351" y="725" name="L"/>
+  <anchor x="351" y="1450" name="U"/>
   <outline>
     <contour>
       <point x="690" y="1327" type="line"/>
@@ -25,12 +27,6 @@
       <point x="301" y="784" type="line"/>
       <point x="387" y="784" type="line"/>
       <point x="621" y="1321" type="line"/>
-    </contour>
-    <contour>
-      <point x="351" y="725" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="351" y="1450" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

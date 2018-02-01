@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnCapTurnedH" format="1">
+<glyph name="LtnCapTurnedH" format="2">
   <advance width="1346"/>
   <unicode hex="A78D"/>
+  <anchor x="1025" y="0" name="H"/>
+  <anchor x="673" y="-100" name="L"/>
+  <anchor x="673" y="1500" name="U"/>
   <outline>
     <contour>
       <point x="1283" y="0" type="line"/>
@@ -54,15 +57,6 @@
       <point x="879" y="96" type="curve" smooth="yes"/>
       <point x="779" y="88" type="line"/>
       <point x="779" y="0" type="line"/>
-    </contour>
-    <contour>
-      <point x="1025" y="0" type="move" name="H"/>
-    </contour>
-    <contour>
-      <point x="673" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="673" y="1500" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="GrSmSigma" format="1">
+<glyph name="GrSmSigma" format="2">
   <advance width="1135"/>
   <unicode hex="03C3"/>
+  <anchor x="545" y="-100" name="L"/>
+  <anchor x="545" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="1198" y="1047" type="curve"/>
@@ -43,12 +45,6 @@
       <point x="557" y="918" type="curve" smooth="yes"/>
       <point x="741" y="918"/>
       <point x="831" y="715"/>
-    </contour>
-    <contour>
-      <point x="545" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="545" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmEng.UCStyle.sc" format="1">
+<glyph name="LtnSmEng.UCStyle.sc" format="2">
   <advance width="1340"/>
+  <anchor x="480" y="-402" name="L"/>
+  <anchor x="815" y="1238" name="U"/>
   <outline>
     <contour>
       <point x="1401" y="1035" type="line"/>
@@ -58,12 +60,6 @@
       <point x="1255" y="1017"/>
       <point x="1272" y="1026"/>
       <point x="1296" y="1027" type="curve"/>
-    </contour>
-    <contour>
-      <point x="480" y="-402" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="815" y="1238" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

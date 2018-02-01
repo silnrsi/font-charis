@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="ModSmCapLDep" format="1">
+<glyph name="ModSmCapLDep" format="2">
   <advance width="551"/>
   <unicode hex="F1BF"/>
+  <anchor x="311" y="725" name="L"/>
+  <anchor x="442" y="1450" name="U"/>
   <outline>
     <contour>
       <point x="57" y="755" type="line"/>
@@ -36,12 +38,6 @@
       <point x="519" y="853" type="curve" smooth="yes"/>
       <point x="558" y="957" type="line"/>
       <point x="632" y="957" type="line"/>
-    </contour>
-    <contour>
-      <point x="311" y="725" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="442" y="1450" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

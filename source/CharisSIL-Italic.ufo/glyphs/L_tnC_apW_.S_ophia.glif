@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnCapW.Sophia" format="1">
+<glyph name="LtnCapW.Sophia" format="2">
   <advance width="717"/>
+  <anchor x="358" y="266" name="_C"/>
   <outline>
     <contour>
       <point x="706" y="533" type="line"/>
@@ -16,9 +17,6 @@
       <point x="358" y="444" type="line"/>
       <point x="482" y="0" type="line"/>
       <point x="548" y="0" type="line"/>
-    </contour>
-    <contour>
-      <point x="358" y="266" type="move" name="_C"/>
     </contour>
   </outline>
 </glyph>

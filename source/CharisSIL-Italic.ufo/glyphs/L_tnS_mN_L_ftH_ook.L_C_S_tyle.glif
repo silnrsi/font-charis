@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmNLftHook.LCStyle" format="1">
+<glyph name="LtnSmNLftHook.LCStyle" format="2">
   <advance width="1085"/>
+  <anchor x="350" y="-500" name="L"/>
+  <anchor x="650" y="1100" name="U"/>
   <outline>
     <component base="LtnSmNLftHook"/>
-    <contour>
-      <point x="350" y="-500" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="650" y="1100" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmWHook.sc" format="1">
+<glyph name="LtnSmWHook.sc" format="2">
   <advance width="2000"/>
+  <anchor x="877" y="-74" name="L"/>
+  <anchor x="877" y="1238" name="U"/>
   <outline>
     <contour>
       <point x="1315" y="-26" type="line"/>
@@ -44,12 +46,6 @@
       <point x="569" y="-26" type="line"/>
       <point x="873" y="891" type="line"/>
       <point x="1183" y="-26" type="line"/>
-    </contour>
-    <contour>
-      <point x="877" y="-74" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="877" y="1238" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

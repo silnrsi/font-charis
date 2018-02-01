@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="ModSmJ" format="1">
+<glyph name="ModSmJ" format="2">
   <advance width="365"/>
   <unicode hex="02B2"/>
+  <anchor x="76" y="485" name="L"/>
+  <anchor x="294" y="1650" name="U"/>
   <outline>
     <contour>
       <point x="455" y="1573" type="curve" smooth="yes"/>
@@ -37,12 +39,6 @@
       <point x="193" y="516"/>
       <point x="299" y="760"/>
       <point x="322" y="883" type="curve" smooth="yes"/>
-    </contour>
-    <contour>
-      <point x="76" y="485" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="294" y="1650" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

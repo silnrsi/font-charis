@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmUpsilon" format="1">
+<glyph name="LtnSmUpsilon" format="2">
   <advance width="1137"/>
   <unicode hex="028A"/>
+  <anchor x="456" y="0" name="H"/>
+  <anchor x="436" y="-100" name="L"/>
+  <anchor x="662" y="0" name="O"/>
+  <anchor x="1137" y="1000" name="R"/>
+  <anchor x="680" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="1124" y="987" type="line"/>
@@ -38,21 +43,6 @@
       <point x="958" y="891"/>
       <point x="1059" y="901"/>
       <point x="1110" y="905" type="curve"/>
-    </contour>
-    <contour>
-      <point x="456" y="0" type="move" name="H"/>
-    </contour>
-    <contour>
-      <point x="436" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="662" y="0" type="move" name="O"/>
-    </contour>
-    <contour>
-      <point x="1137" y="1000" type="move" name="R"/>
-    </contour>
-    <contour>
-      <point x="680" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

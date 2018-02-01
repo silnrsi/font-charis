@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmSSwashTail" format="1">
+<glyph name="LtnSmSSwashTail" format="2">
   <advance width="815"/>
   <unicode hex="023F"/>
+  <anchor x="442" y="-500" name="L"/>
+  <anchor x="442" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="745" y="297" type="curve" smooth="yes"/>
@@ -59,12 +61,6 @@
       <point x="354" y="-25" type="curve"/>
       <point x="598" y="-25"/>
       <point x="745" y="96"/>
-    </contour>
-    <contour>
-      <point x="442" y="-500" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="442" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

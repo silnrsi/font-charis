@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmInsularR" format="1">
+<glyph name="LtnSmInsularR" format="2">
   <advance width="1163"/>
   <unicode hex="A783"/>
+  <anchor x="387" y="-500" name="L"/>
+  <anchor x="650" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="977" y="833" type="curve"/>
@@ -44,12 +46,6 @@
       <point x="844" y="199" type="curve" smooth="yes"/>
       <point x="844" y="298"/>
       <point x="980" y="701"/>
-    </contour>
-    <contour>
-      <point x="387" y="-500" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="650" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

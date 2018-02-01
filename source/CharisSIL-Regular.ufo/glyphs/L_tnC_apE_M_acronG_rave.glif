@@ -1,25 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnCapEMacronGrave" format="1">
+<glyph name="LtnCapEMacronGrave" format="2">
   <advance width="1194"/>
   <unicode hex="1E14"/>
+  <anchor x="597" y="0" name="H"/>
+  <anchor x="597" y="-100" name="L"/>
+  <anchor x="980" y="0" name="O"/>
+  <anchor x="1194" y="1200" name="R"/>
+  <anchor x="597" y="2270" name="U"/>
   <outline>
     <component base="LtnCapE"/>
     <component base="CombMacron" xOffset="1154" yOffset="400"/>
     <component base="CombGrave" xOffset="1154" yOffset="770"/>
-    <contour>
-      <point x="597" y="0" type="move" name="H"/>
-    </contour>
-    <contour>
-      <point x="597" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="980" y="0" type="move" name="O"/>
-    </contour>
-    <contour>
-      <point x="1194" y="1200" type="move" name="R"/>
-    </contour>
-    <contour>
-      <point x="597" y="2270" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

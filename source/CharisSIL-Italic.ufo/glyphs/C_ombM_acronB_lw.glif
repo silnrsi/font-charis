@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CombMacronBlw" format="1">
+<glyph name="CombMacronBlw" format="2">
   <advance width="0"/>
   <unicode hex="0331"/>
+  <anchor x="-713" y="-500" name="L"/>
+  <anchor x="-637" y="-100" name="_L"/>
   <outline>
     <component base="ModLowMacron" xOffset="-832"/>
-    <contour>
-      <point x="-713" y="-500" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="-637" y="-100" type="move" name="_L"/>
-    </contour>
   </outline>
 </glyph>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="DigitZero.Sophia" format="1">
+<glyph name="DigitZero.Sophia" format="2">
   <advance width="412"/>
+  <anchor x="206" y="266" name="_C"/>
   <outline>
     <contour>
       <point x="375" y="277" type="curve" smooth="yes"/>
@@ -29,9 +30,6 @@
       <point x="206" y="481" type="curve" smooth="yes"/>
       <point x="293" y="481"/>
       <point x="304" y="391"/>
-    </contour>
-    <contour>
-      <point x="206" y="266" type="move" name="_C"/>
     </contour>
   </outline>
 </glyph>

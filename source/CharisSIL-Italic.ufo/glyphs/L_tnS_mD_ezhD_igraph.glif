@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmDezhDigraph" format="1">
+<glyph name="LtnSmDezhDigraph" format="2">
   <advance width="1587"/>
   <unicode hex="02A4"/>
+  <anchor x="629" y="-500" name="L"/>
+  <anchor x="1017" y="1580" name="U"/>
   <outline>
     <contour>
       <point x="1649" y="920" type="line"/>
@@ -85,12 +87,6 @@
       <point x="641" y="920" type="curve" smooth="yes"/>
       <point x="694" y="920"/>
       <point x="772" y="819"/>
-    </contour>
-    <contour>
-      <point x="629" y="-500" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="1017" y="1580" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

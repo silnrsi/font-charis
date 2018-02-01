@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnCapOHornAcute" format="1">
+<glyph name="LtnCapOHornAcute" format="2">
   <advance width="1567"/>
   <unicode hex="1EDA"/>
+  <anchor x="574" y="-100" name="L"/>
+  <anchor x="906" y="1900" name="U"/>
   <outline>
     <component base="LtnCapOHorn"/>
     <component base="CombAcute" xOffset="1245" yOffset="400"/>
-    <contour>
-      <point x="574" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="906" y="1900" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSupSmAlpha" format="1">
+<glyph name="LtnSupSmAlpha" format="2">
   <advance width="750"/>
   <unicode hex="1D45"/>
+  <anchor x="386" y="725" name="L"/>
+  <anchor x="386" y="1457" name="U"/>
   <outline>
     <component base="LtnSmAlpha" xScale="0.65" yScale="0.6" xOffset="5" yOffset="785"/>
-    <contour>
-      <point x="386" y="725" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="386" y="1457" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmABreveDotBlw.SngStory.sc" format="1">
+<glyph name="LtnSmABreveDotBlw.SngStory.sc" format="2">
   <advance width="1270"/>
+  <anchor x="628" y="8" name="H"/>
+  <anchor x="628" y="-474" name="L"/>
+  <anchor x="1166" y="8" name="O"/>
+  <anchor x="628" y="1638" name="U"/>
   <outline>
     <component base="LtnSmA.sc"/>
     <component base="CombDotBlw" xOffset="1185" yOffset="26"/>
     <component base="CombBreve" xOffset="1185" yOffset="138"/>
-    <contour>
-      <point x="628" y="8" type="move" name="H"/>
-    </contour>
-    <contour>
-      <point x="628" y="-474" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="1166" y="8" type="move" name="O"/>
-    </contour>
-    <contour>
-      <point x="628" y="1638" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

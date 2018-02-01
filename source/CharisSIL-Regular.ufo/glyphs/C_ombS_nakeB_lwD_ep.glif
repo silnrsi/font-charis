@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CombSnakeBlwDep" format="1">
+<glyph name="CombSnakeBlwDep" format="2">
   <advance width="319"/>
   <unicode hex="F170"/>
+  <anchor x="159" y="-815" name="L"/>
+  <anchor x="159" y="-100" name="_L"/>
   <outline>
     <contour>
       <point x="-30" y="-786" type="line"/>
@@ -45,12 +47,6 @@
       <point x="180" y="-125" type="curve" smooth="yes"/>
       <point x="315" y="-125"/>
       <point x="319" y="-186"/>
-    </contour>
-    <contour>
-      <point x="159" y="-815" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="159" y="-100" type="move" name="_L"/>
     </contour>
   </outline>
 </glyph>

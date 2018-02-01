@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CombLtnSmT" format="1">
+<glyph name="CombLtnSmT" format="2">
   <advance width="0"/>
   <unicode hex="036D"/>
+  <anchor x="-557" y="2000" name="U"/>
+  <anchor x="-557" y="1100" name="_U"/>
   <outline>
     <component base="LtnSupSmT" xOffset="-802" yOffset="375"/>
-    <contour>
-      <point x="-557" y="2000" type="move" name="U"/>
-    </contour>
-    <contour>
-      <point x="-557" y="1100" type="move" name="_U"/>
-    </contour>
   </outline>
 </glyph>

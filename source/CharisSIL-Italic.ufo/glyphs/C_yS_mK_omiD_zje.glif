@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CySmKomiDzje" format="1">
+<glyph name="CySmKomiDzje" format="2">
   <advance width="990"/>
   <unicode hex="0507"/>
+  <anchor x="355" y="-100" name="L"/>
+  <anchor x="599" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="560" y="109" type="line"/>
@@ -75,12 +77,6 @@
       <point x="701" y="-121" type="curve" smooth="yes"/>
       <point x="701" y="-104"/>
       <point x="732" y="-41"/>
-    </contour>
-    <contour>
-      <point x="355" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="599" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

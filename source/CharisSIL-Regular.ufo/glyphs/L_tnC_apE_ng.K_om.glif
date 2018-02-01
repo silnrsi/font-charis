@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnCapEng.Kom" format="1">
+<glyph name="LtnCapEng.Kom" format="2">
   <advance width="1470"/>
+  <anchor x="769" y="-100" name="L"/>
+  <anchor x="769" y="1500" name="U"/>
   <outline>
     <contour>
       <point x="1286" y="969" type="line"/>
@@ -56,12 +58,6 @@
       <point x="1025" y="-33"/>
       <point x="1286" y="197"/>
       <point x="1286" y="497" type="curve" smooth="yes"/>
-    </contour>
-    <contour>
-      <point x="769" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="769" y="1500" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

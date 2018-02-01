@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="ModCapT" format="1">
+<glyph name="ModCapT" format="2">
   <advance width="797"/>
   <unicode hex="1D40"/>
+  <anchor x="403" y="725" name="L"/>
+  <anchor x="403" y="1650" name="U"/>
   <outline>
     <component base="LtnCapT" xScale="0.65" yScale="0.6" xOffset="5" yOffset="785"/>
-    <contour>
-      <point x="403" y="725" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="403" y="1650" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

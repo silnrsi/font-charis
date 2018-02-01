@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CyCapRha" format="1">
+<glyph name="CyCapRha" format="2">
   <advance width="1637"/>
   <unicode hex="0516"/>
+  <anchor x="743" y="-100" name="L"/>
+  <anchor x="1020" y="1500" name="U"/>
   <outline>
     <contour>
       <point x="1169" y="1047" type="curve" smooth="yes"/>
@@ -76,12 +78,6 @@
       <point x="639" y="1278" type="curve" smooth="yes"/>
       <point x="874" y="1278"/>
       <point x="956" y="1169"/>
-    </contour>
-    <contour>
-      <point x="743" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="1020" y="1500" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

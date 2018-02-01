@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CySmEnLftHook.sc" format="1">
+<glyph name="CySmEnLftHook.sc" format="2">
   <advance width="1400"/>
+  <anchor x="700" y="-402" name="L"/>
+  <anchor x="700" y="1238" name="U"/>
   <outline>
     <contour>
       <point x="201" y="307" type="line"/>
@@ -74,12 +76,6 @@
       <point x="957" y="93" type="curve"/>
       <point x="852" y="87" type="line"/>
       <point x="852" y="0" type="line"/>
-    </contour>
-    <contour>
-      <point x="700" y="-402" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="700" y="1238" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

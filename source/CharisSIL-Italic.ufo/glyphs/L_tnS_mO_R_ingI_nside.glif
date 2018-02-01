@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmORingInside" format="1">
+<glyph name="LtnSmORingInside" format="2">
   <advance width="1036"/>
   <unicode hex="2C7A"/>
+  <anchor x="419" y="0" name="H"/>
+  <anchor x="399" y="-100" name="L"/>
+  <anchor x="625" y="0" name="O"/>
+  <anchor x="1036" y="1000" name="R"/>
+  <anchor x="643" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="973" y="614" type="curve" smooth="yes"/>
@@ -50,21 +55,6 @@
       <point x="498" y="351" type="curve" smooth="yes"/>
       <point x="560" y="351"/>
       <point x="607" y="310"/>
-    </contour>
-    <contour>
-      <point x="419" y="0" type="move" name="H"/>
-    </contour>
-    <contour>
-      <point x="399" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="625" y="0" type="move" name="O"/>
-    </contour>
-    <contour>
-      <point x="1036" y="1000" type="move" name="R"/>
-    </contour>
-    <contour>
-      <point x="643" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

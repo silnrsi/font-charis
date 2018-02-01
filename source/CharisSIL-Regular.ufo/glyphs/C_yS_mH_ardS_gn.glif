@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CySmHardSgn" format="1">
+<glyph name="CySmHardSgn" format="2">
   <advance width="1147"/>
   <unicode hex="044A"/>
+  <anchor x="550" y="-100" name="L"/>
+  <anchor x="550" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="1077" y="297" type="curve" smooth="yes"/>
@@ -52,12 +54,6 @@
       <point x="645" y="526" type="curve" smooth="yes"/>
       <point x="823" y="526"/>
       <point x="874" y="432"/>
-    </contour>
-    <contour>
-      <point x="550" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="550" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

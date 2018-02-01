@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="ModSmMHook" format="1">
+<glyph name="ModSmMHook" format="2">
   <advance width="1124"/>
   <unicode hex="1DAC"/>
+  <anchor x="522" y="485" name="L"/>
+  <anchor x="522" y="1450" name="U"/>
   <outline>
     <contour>
       <point x="1014" y="879" type="curve"/>
@@ -74,12 +76,6 @@
       <point x="741" y="516" type="curve" smooth="yes"/>
       <point x="965" y="516"/>
       <point x="1014" y="713"/>
-    </contour>
-    <contour>
-      <point x="522" y="485" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="522" y="1450" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

@@ -1,23 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CySmLigAIe" format="1">
+<glyph name="CySmLigAIe" format="2">
   <advance width="1526"/>
   <unicode hex="04D5"/>
+  <anchor x="711" y="0" name="H"/>
+  <anchor x="691" y="-100" name="L"/>
+  <anchor x="1183" y="0" name="O"/>
+  <anchor x="1526" y="1000" name="R"/>
+  <anchor x="935" y="1100" name="U"/>
   <outline>
     <component base="LtnSmAe"/>
-    <contour>
-      <point x="711" y="0" type="move" name="H"/>
-    </contour>
-    <contour>
-      <point x="691" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="1183" y="0" type="move" name="O"/>
-    </contour>
-    <contour>
-      <point x="1526" y="1000" type="move" name="R"/>
-    </contour>
-    <contour>
-      <point x="935" y="1100" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

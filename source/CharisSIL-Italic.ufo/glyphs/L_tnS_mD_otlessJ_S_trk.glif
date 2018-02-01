@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmDotlessJStrk" format="1">
+<glyph name="LtnSmDotlessJStrk" format="2">
   <advance width="559"/>
   <unicode hex="025F"/>
+  <anchor x="-24" y="-500" name="L"/>
+  <anchor x="559" y="1000" name="R"/>
+  <anchor x="400" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="575" y="442" type="line"/>
@@ -31,15 +34,6 @@
       <point x="293" y="-41"/>
       <point x="328" y="164" type="curve" smooth="yes"/>
       <point x="377" y="442" type="line"/>
-    </contour>
-    <contour>
-      <point x="-24" y="-500" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="559" y="1000" type="move" name="R"/>
-    </contour>
-    <contour>
-      <point x="400" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

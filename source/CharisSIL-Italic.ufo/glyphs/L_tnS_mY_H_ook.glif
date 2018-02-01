@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmYHook" format="1">
+<glyph name="LtnSmYHook" format="2">
   <advance width="1081"/>
+  <anchor x="234" y="-500" name="L"/>
+  <anchor x="593" y="1100" name="U"/>
   <outline>
     <component base="LtnSmYHook.RtHook"/>
-    <contour>
-      <point x="234" y="-500" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="593" y="1100" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

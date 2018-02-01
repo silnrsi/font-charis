@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CyCapEnMiddleHook" format="1">
+<glyph name="CyCapEnMiddleHook" format="2">
   <advance width="2000"/>
   <unicode hex="0522"/>
+  <anchor x="761" y="-100" name="L"/>
+  <anchor x="761" y="1500" name="U"/>
   <outline>
     <contour>
       <point x="1376" y="0" type="line"/>
@@ -84,12 +86,6 @@
       <point x="1294" y="858"/>
       <point x="1180" y="848"/>
       <point x="1180" y="848" type="curve"/>
-    </contour>
-    <contour>
-      <point x="761" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="761" y="1500" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

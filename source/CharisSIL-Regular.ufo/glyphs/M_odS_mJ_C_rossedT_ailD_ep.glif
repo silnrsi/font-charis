@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="ModSmJCrossedTailDep" format="1">
+<glyph name="ModSmJCrossedTailDep" format="2">
   <advance width="416"/>
   <unicode hex="F1BD"/>
+  <anchor x="155" y="485" name="L"/>
+  <anchor x="155" y="1650" name="U"/>
   <outline>
     <contour>
       <point x="-130" y="474" type="line"/>
@@ -69,12 +71,6 @@
       <point x="25" y="554" type="curve" smooth="yes"/>
       <point x="98" y="554"/>
       <point x="136" y="656"/>
-    </contour>
-    <contour>
-      <point x="155" y="485" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="155" y="1650" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

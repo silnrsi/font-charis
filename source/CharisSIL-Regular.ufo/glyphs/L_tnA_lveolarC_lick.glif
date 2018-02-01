@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnAlveolarClick" format="1">
+<glyph name="LtnAlveolarClick" format="2">
   <advance width="853"/>
   <unicode hex="01C2"/>
+  <anchor x="426" y="-500" name="L"/>
+  <anchor x="426" y="1540" name="U"/>
   <outline>
     <contour>
       <point x="50" y="619" type="line"/>
@@ -16,11 +18,5 @@
       <point x="50" y="447" type="line"/>
     </contour>
     <component base="LtnDentalClick" xOffset="200"/>
-    <contour>
-      <point x="426" y="-500" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="426" y="1540" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

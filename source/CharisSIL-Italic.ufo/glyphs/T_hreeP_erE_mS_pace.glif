@@ -1,22 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="ThreePerEmSpace" format="1">
+<glyph name="ThreePerEmSpace" format="2">
   <advance width="657"/>
   <unicode hex="2004"/>
-  <outline>
-    <contour>
-      <point x="328" y="0" type="move" name="H"/>
-    </contour>
-    <contour>
-      <point x="308" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="378" y="0" type="move" name="O"/>
-    </contour>
-    <contour>
-      <point x="657" y="1000" type="move" name="R"/>
-    </contour>
-    <contour>
-      <point x="596" y="1500" type="move" name="U"/>
-    </contour>
-  </outline>
+  <anchor x="328" y="0" name="H"/>
+  <anchor x="308" y="-100" name="L"/>
+  <anchor x="378" y="0" name="O"/>
+  <anchor x="657" y="1000" name="R"/>
+  <anchor x="596" y="1500" name="U"/>
+  <outline/>
 </glyph>

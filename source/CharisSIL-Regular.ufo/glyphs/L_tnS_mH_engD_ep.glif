@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmHengDep" format="1">
+<glyph name="LtnSmHengDep" format="2">
   <advance width="1136"/>
   <unicode hex="F25A"/>
+  <anchor x="587" y="-500" name="L"/>
+  <anchor x="587" y="1540" name="U"/>
   <outline>
     <contour>
       <point x="1" y="-499" type="line"/>
@@ -55,12 +57,6 @@
       <point x="31" y="1430" type="line"/>
       <point x="293" y="1509" type="line"/>
       <point x="373" y="1509" type="line"/>
-    </contour>
-    <contour>
-      <point x="587" y="-500" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="587" y="1540" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>
