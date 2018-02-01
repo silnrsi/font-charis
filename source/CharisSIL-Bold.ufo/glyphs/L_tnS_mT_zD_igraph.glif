@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmTzDigraph" format="1">
+<glyph name="LtnSmTzDigraph" format="2">
   <advance width="1337"/>
   <unicode hex="A729"/>
+  <anchor x="670" y="-500" name="L"/>
+  <anchor x="670" y="1363" name="U"/>
   <outline>
     <contour>
       <point x="1271" y="49" type="curve" smooth="yes"/>
@@ -59,12 +61,6 @@
       <point x="696" y="-473" type="curve" smooth="yes"/>
       <point x="1011" y="-473"/>
       <point x="1271" y="-213"/>
-    </contour>
-    <contour>
-      <point x="670" y="-500" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="670" y="1363" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmBDotAbv.sc" format="1">
+<glyph name="LtnSmBDotAbv.sc" format="2">
   <advance width="1204"/>
+  <anchor x="593" y="-74" name="L"/>
+  <anchor x="593" y="1638" name="U"/>
   <outline>
     <component base="LtnSmB.sc"/>
     <component base="DotAbv" xOffset="454" yOffset="138"/>
-    <contour>
-      <point x="593" y="-74" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="593" y="1638" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

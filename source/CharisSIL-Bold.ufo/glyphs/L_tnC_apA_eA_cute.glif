@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnCapAeAcute" format="1">
+<glyph name="LtnCapAeAcute" format="2">
   <advance width="1985"/>
   <unicode hex="01FC"/>
+  <anchor x="1146" y="-100" name="L"/>
+  <anchor x="1146" y="1900" name="U"/>
   <outline>
     <component base="LtnCapAe"/>
     <component base="CombAcute" xOffset="1744" yOffset="400"/>
-    <contour>
-      <point x="1146" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="1146" y="1900" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

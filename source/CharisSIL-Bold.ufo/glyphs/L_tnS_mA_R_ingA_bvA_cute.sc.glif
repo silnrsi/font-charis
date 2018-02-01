@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmARingAbvAcute.sc" format="1">
+<glyph name="LtnSmARingAbvAcute.sc" format="2">
   <advance width="1293"/>
+  <anchor x="639" y="8" name="H"/>
+  <anchor x="639" y="-74" name="L"/>
+  <anchor x="1187" y="8" name="O"/>
+  <anchor x="639" y="2198" name="U"/>
   <outline>
     <component base="LtnSmA.sc"/>
     <component base="RingAbv" xOffset="380" yOffset="138"/>
     <component base="CombAcute" xOffset="1237" yOffset="698"/>
-    <contour>
-      <point x="639" y="8" type="move" name="H"/>
-    </contour>
-    <contour>
-      <point x="639" y="-74" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="1187" y="8" type="move" name="O"/>
-    </contour>
-    <contour>
-      <point x="639" y="2198" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

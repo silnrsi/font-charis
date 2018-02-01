@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmRDblGrave" format="1">
+<glyph name="LtnSmRDblGrave" format="2">
   <advance width="858"/>
   <unicode hex="0211"/>
+  <anchor x="151" y="0" name="H"/>
+  <anchor x="131" y="-100" name="L"/>
+  <anchor x="594" y="1500" name="U"/>
   <outline>
     <component base="LtnSmR"/>
     <component base="CombDblGrave" xOffset="993"/>
-    <contour>
-      <point x="151" y="0" type="move" name="H"/>
-    </contour>
-    <contour>
-      <point x="131" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="594" y="1500" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

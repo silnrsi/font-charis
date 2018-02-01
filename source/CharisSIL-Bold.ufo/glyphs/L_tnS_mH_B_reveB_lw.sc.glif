@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmHBreveBlw.sc" format="1">
+<glyph name="LtnSmHBreveBlw.sc" format="2">
   <advance width="1449"/>
+  <anchor x="332" y="8" name="H"/>
+  <anchor x="724" y="-474" name="L"/>
+  <anchor x="724" y="1238" name="U"/>
   <outline>
     <component base="LtnSmH.sc"/>
     <component base="CombBreveBlw" xOffset="1322" yOffset="26"/>
-    <contour>
-      <point x="332" y="8" type="move" name="H"/>
-    </contour>
-    <contour>
-      <point x="724" y="-474" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="724" y="1238" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

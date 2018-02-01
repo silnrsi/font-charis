@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmFengDigraph" format="1">
+<glyph name="LtnSmFengDigraph" format="2">
   <advance width="1940"/>
   <unicode hex="02A9"/>
+  <anchor x="909" y="-500" name="L"/>
+  <anchor x="943" y="1540" name="U"/>
   <outline>
     <contour>
       <point x="1776" y="-23" type="curve"/>
@@ -82,12 +84,6 @@
       <point x="1278" y="-473" type="curve" smooth="yes"/>
       <point x="1602" y="-473"/>
       <point x="1776" y="-272"/>
-    </contour>
-    <contour>
-      <point x="909" y="-500" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="943" y="1540" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

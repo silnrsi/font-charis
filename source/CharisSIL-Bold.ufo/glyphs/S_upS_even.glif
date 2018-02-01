@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="SupSeven" format="1">
+<glyph name="SupSeven" format="2">
   <advance width="780"/>
   <unicode hex="2077"/>
+  <anchor x="390" y="725" name="L"/>
+  <anchor x="390" y="1650" name="U"/>
   <outline>
     <contour>
       <point x="731" y="1522" type="line"/>
@@ -14,12 +16,6 @@
       <point x="115" y="764" type="line"/>
       <point x="283" y="764" type="line"/>
       <point x="283" y="801" type="line"/>
-    </contour>
-    <contour>
-      <point x="390" y="725" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="390" y="1650" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

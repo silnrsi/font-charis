@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmEStrk" format="1">
+<glyph name="LtnSmEStrk" format="2">
   <advance width="1083"/>
   <unicode hex="0247"/>
+  <anchor x="568" y="-100" name="L"/>
+  <anchor x="568" y="1100" name="U"/>
   <outline>
     <component base="LtnSmE"/>
     <component base="CombShortSolidusOverlay" xOffset="1150"/>
-    <contour>
-      <point x="568" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="568" y="1100" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

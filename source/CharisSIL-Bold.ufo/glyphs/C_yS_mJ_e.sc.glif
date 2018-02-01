@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CySmJe.sc" format="1">
+<glyph name="CySmJe.sc" format="2">
   <advance width="965"/>
+  <anchor x="399" y="-74" name="L"/>
+  <anchor x="661" y="1238" name="U"/>
   <outline>
     <contour>
       <point x="910" y="1021" type="line"/>
@@ -31,12 +33,6 @@
       <point x="757" y="1000"/>
       <point x="775" y="1010"/>
       <point x="798" y="1013" type="curve"/>
-    </contour>
-    <contour>
-      <point x="399" y="-74" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="661" y="1238" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

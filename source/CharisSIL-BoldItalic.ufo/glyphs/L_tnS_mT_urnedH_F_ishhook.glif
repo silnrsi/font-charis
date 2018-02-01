@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmTurnedHFishhook" format="1">
+<glyph name="LtnSmTurnedHFishhook" format="2">
   <advance width="1225"/>
   <unicode hex="02AE"/>
+  <anchor x="368" y="-500" name="L"/>
+  <anchor x="688" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="1169" y="999" type="line"/>
@@ -39,12 +41,6 @@
       <point x="1075" y="-403" type="line"/>
       <point x="1075" y="-332" type="line"/>
       <point x="895" y="-313" type="line"/>
-    </contour>
-    <contour>
-      <point x="368" y="-500" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="688" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

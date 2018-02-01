@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="ModSmGamma" format="1">
+<glyph name="ModSmGamma" format="2">
   <advance width="678"/>
   <unicode hex="02E0"/>
+  <anchor x="286" y="485" name="L"/>
+  <anchor x="466" y="1450" name="U"/>
   <outline>
     <contour>
       <point x="797" y="1319" type="curve" smooth="yes"/>
@@ -61,12 +63,6 @@
       <point x="313" y="750" type="curve"/>
       <point x="315" y="733"/>
       <point x="322" y="678"/>
-    </contour>
-    <contour>
-      <point x="286" y="485" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="466" y="1450" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

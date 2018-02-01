@@ -1,23 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmACircumTilde.2StorySItal.VN" format="1">
+<glyph name="LtnSmACircumTilde.2StorySItal.VN" format="2">
   <advance width="1804"/>
+  <anchor x="445" y="0" name="H"/>
+  <anchor x="418" y="-100" name="L"/>
+  <anchor x="914" y="0" name="O"/>
+  <anchor x="1085" y="1000" name="R"/>
+  <anchor x="842" y="1825" name="U"/>
   <outline>
     <component base="LtnSmA.2StorySItal"/>
     <component base="CombCircumTilde.VN" xOffset="202"/>
-    <contour>
-      <point x="445" y="0" type="move" name="H"/>
-    </contour>
-    <contour>
-      <point x="418" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="914" y="0" type="move" name="O"/>
-    </contour>
-    <contour>
-      <point x="1085" y="1000" type="move" name="R"/>
-    </contour>
-    <contour>
-      <point x="842" y="1825" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmJCrossedTail" format="1">
+<glyph name="LtnSmJCrossedTail" format="2">
   <advance width="698"/>
   <unicode hex="029D"/>
+  <anchor x="124" y="-500" name="L"/>
+  <anchor x="323" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="514" y="1358" type="curve" smooth="yes"/>
@@ -61,12 +63,6 @@
       <point x="131" y="-152" type="curve" smooth="yes"/>
       <point x="160" y="-152"/>
       <point x="188" y="-164"/>
-    </contour>
-    <contour>
-      <point x="124" y="-500" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="323" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmTHook.RtHook.sc" format="1">
+<glyph name="LtnSmTHook.RtHook.sc" format="2">
   <advance width="1147"/>
+  <anchor x="584" y="-74" name="L"/>
+  <anchor x="584" y="1238" name="U"/>
   <outline>
     <contour>
       <point x="1121" y="891" type="curve" smooth="yes"/>
@@ -41,12 +43,6 @@
       <point x="953" y="711" type="curve" smooth="yes"/>
       <point x="1056" y="711"/>
       <point x="1121" y="790"/>
-    </contour>
-    <contour>
-      <point x="584" y="-74" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="584" y="1238" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

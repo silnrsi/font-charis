@@ -1,22 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnCapACircumTilde" format="1">
+<glyph name="LtnCapACircumTilde" format="2">
   <advance width="1405"/>
   <unicode hex="1EAA"/>
+  <anchor x="695" y="0" name="H"/>
+  <anchor x="695" y="-100" name="L"/>
+  <anchor x="1290" y="0" name="O"/>
+  <anchor x="695" y="2300" name="U"/>
   <outline>
     <component base="LtnCapA"/>
     <component base="CombCircum" xOffset="1293" yOffset="400"/>
     <component base="SmTilde" xOffset="336" yOffset="800"/>
-    <contour>
-      <point x="695" y="0" type="move" name="H"/>
-    </contour>
-    <contour>
-      <point x="695" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="1290" y="0" type="move" name="O"/>
-    </contour>
-    <contour>
-      <point x="695" y="2300" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

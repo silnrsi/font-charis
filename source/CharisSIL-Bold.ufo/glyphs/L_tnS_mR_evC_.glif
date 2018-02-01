@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmRevC" format="1">
+<glyph name="LtnSmRevC" format="2">
   <advance width="1028"/>
   <unicode hex="2184"/>
+  <anchor x="567" y="0" name="H"/>
+  <anchor x="510" y="-100" name="L"/>
+  <anchor x="1028" y="1000" name="R"/>
+  <anchor x="510" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="66" y="90" type="line"/>
@@ -36,18 +40,6 @@
       <point x="228" y="147"/>
       <point x="93" y="227"/>
       <point x="66" y="248" type="curve"/>
-    </contour>
-    <contour>
-      <point x="567" y="0" type="move" name="H"/>
-    </contour>
-    <contour>
-      <point x="510" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="1028" y="1000" type="move" name="R"/>
-    </contour>
-    <contour>
-      <point x="510" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

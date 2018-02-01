@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CySmEmTail" format="1">
+<glyph name="CySmEmTail" format="2">
   <advance width="1546"/>
   <unicode hex="04CE"/>
+  <anchor x="773" y="-100" name="L"/>
+  <anchor x="773" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="1481" y="0" type="line"/>
@@ -57,12 +59,6 @@
       <point x="1300" y="-310" type="line"/>
       <point x="1481" y="0" type="line"/>
       <point x="1481" y="76" type="line"/>
-    </contour>
-    <contour>
-      <point x="773" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="773" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

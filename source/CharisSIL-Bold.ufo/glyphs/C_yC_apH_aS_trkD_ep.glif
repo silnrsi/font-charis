@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CyCapHaStrkDep" format="1">
+<glyph name="CyCapHaStrkDep" format="2">
   <advance width="1374"/>
   <unicode hex="F328"/>
+  <anchor x="687" y="-100" name="L"/>
+  <anchor x="687" y="1500" name="U"/>
   <outline>
     <contour>
       <point x="-10" y="-30" type="line"/>
@@ -56,12 +58,6 @@
       <point x="20" y="104" type="line"/>
       <point x="152" y="121" type="line"/>
       <point x="550" y="643" type="line"/>
-    </contour>
-    <contour>
-      <point x="687" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="687" y="1500" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

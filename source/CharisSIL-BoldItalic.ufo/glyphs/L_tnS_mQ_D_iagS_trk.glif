@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmQDiagStrk" format="1">
+<glyph name="LtnSmQDiagStrk" format="2">
   <advance width="1492"/>
   <unicode hex="A759"/>
+  <anchor x="445" y="-500" name="L"/>
+  <anchor x="765" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="1102" y="1024" type="line"/>
@@ -80,12 +82,6 @@
       <point x="208" y="-296" type="line"/>
       <point x="208" y="-406" type="line"/>
       <point x="763" y="-70" type="line"/>
-    </contour>
-    <contour>
-      <point x="445" y="-500" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="765" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

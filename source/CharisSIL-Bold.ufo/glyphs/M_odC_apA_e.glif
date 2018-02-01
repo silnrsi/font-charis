@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="ModCapAe" format="1">
+<glyph name="ModCapAe" format="2">
   <advance width="1290"/>
   <unicode hex="1D2D"/>
+  <anchor x="740" y="725" name="L"/>
+  <anchor x="740" y="1650" name="U"/>
   <outline>
     <component base="LtnCapAe" xScale="0.65" yScale="0.6" yOffset="785"/>
-    <contour>
-      <point x="740" y="725" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="740" y="1650" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

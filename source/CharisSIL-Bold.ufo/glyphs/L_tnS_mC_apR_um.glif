@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmCapRum" format="1">
+<glyph name="LtnSmCapRum" format="2">
   <advance width="1153"/>
   <unicode hex="A776"/>
+  <anchor x="559" y="-500" name="L"/>
+  <anchor x="562" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="1153" y="0" type="curve"/>
@@ -69,12 +71,6 @@
       <point x="706" y="-401" type="line"/>
       <point x="840" y="-401" type="line"/>
       <point x="1241" y="821" type="line"/>
-    </contour>
-    <contour>
-      <point x="559" y="-500" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="562" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

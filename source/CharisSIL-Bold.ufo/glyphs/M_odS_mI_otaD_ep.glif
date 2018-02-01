@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="ModSmIotaDep" format="1">
+<glyph name="ModSmIotaDep" format="2">
   <advance width="507"/>
   <unicode hex="F1CA"/>
+  <anchor x="270" y="725" name="L"/>
+  <anchor x="270" y="1450" name="U"/>
   <outline>
     <contour>
       <point x="3" y="740" type="line"/>
@@ -29,12 +31,6 @@
       <point x="348" y="892"/>
       <point x="385" y="892"/>
       <point x="410" y="940" type="curve"/>
-    </contour>
-    <contour>
-      <point x="270" y="725" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="270" y="1450" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

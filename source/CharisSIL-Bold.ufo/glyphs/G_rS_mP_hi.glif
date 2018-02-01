@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="GrSmPhi" format="1">
+<glyph name="GrSmPhi" format="2">
   <advance width="1663"/>
   <unicode hex="03C6"/>
+  <anchor x="821" y="-101" name="L"/>
+  <anchor x="821" y="1113" name="U"/>
   <outline>
     <contour>
       <point x="822" y="90" type="curve" smooth="yes"/>
@@ -38,12 +40,6 @@
       <point x="1294" y="505" type="curve" smooth="yes"/>
       <point x="1294" y="281"/>
       <point x="1186" y="90"/>
-    </contour>
-    <contour>
-      <point x="821" y="-101" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="821" y="1113" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

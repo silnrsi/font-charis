@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="SupZero" format="1">
+<glyph name="SupZero" format="2">
   <advance width="772"/>
   <unicode hex="2070"/>
+  <anchor x="386" y="725" name="L"/>
+  <anchor x="386" y="1650" name="U"/>
   <outline>
     <contour>
       <point x="729" y="1196" type="curve" smooth="yes"/>
@@ -30,12 +32,6 @@
       <point x="387" y="1552" type="curve" smooth="yes"/>
       <point x="531" y="1552"/>
       <point x="537" y="1303"/>
-    </contour>
-    <contour>
-      <point x="386" y="725" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="386" y="1650" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

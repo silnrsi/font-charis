@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CySmAbkhasChe.sc" format="1">
+<glyph name="CySmAbkhasChe.sc" format="2">
   <advance width="1550"/>
+  <anchor x="948" y="-74" name="L"/>
+  <anchor x="1155" y="8" name="O"/>
+  <anchor x="948" y="1238" name="U"/>
   <outline>
     <contour>
       <point x="1470" y="627" type="line"/>
@@ -53,15 +56,6 @@
       <point x="1066" y="997"/>
       <point x="1162" y="864"/>
       <point x="1162" y="723" type="curve"/>
-    </contour>
-    <contour>
-      <point x="948" y="-74" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="1155" y="8" type="move" name="O"/>
-    </contour>
-    <contour>
-      <point x="948" y="1238" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

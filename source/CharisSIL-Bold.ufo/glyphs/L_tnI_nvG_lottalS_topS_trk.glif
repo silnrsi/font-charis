@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnInvGlottalStopStrk" format="1">
+<glyph name="LtnInvGlottalStopStrk" format="2">
   <advance width="983"/>
   <unicode hex="01BE"/>
+  <anchor x="485" y="-100" name="L"/>
+  <anchor x="485" y="1540" name="U"/>
   <outline>
     <contour>
       <point x="907" y="365" type="curve" smooth="yes"/>
@@ -50,12 +52,6 @@
       <point x="442" y="-25" type="curve" smooth="yes"/>
       <point x="709" y="-25"/>
       <point x="907" y="127"/>
-    </contour>
-    <contour>
-      <point x="485" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="485" y="1540" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

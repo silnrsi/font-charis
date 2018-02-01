@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmDotlessJ" format="1">
+<glyph name="LtnSmDotlessJ" format="2">
   <advance width="664"/>
   <unicode hex="0237"/>
+  <anchor x="146" y="-500" name="L"/>
+  <anchor x="373" y="1100" name="U"/>
   <outline>
     <component base="LtnSmJ.Dotless"/>
-    <contour>
-      <point x="146" y="-500" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="373" y="1100" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

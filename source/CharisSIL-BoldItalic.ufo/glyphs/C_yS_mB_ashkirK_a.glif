@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CySmBashkirKa" format="1">
+<glyph name="CySmBashkirKa" format="2">
   <advance width="1304"/>
   <unicode hex="04A1"/>
+  <anchor x="557" y="-100" name="L"/>
+  <anchor x="801" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="1298" y="918" type="curve" smooth="yes"/>
@@ -66,12 +68,6 @@
       <point x="246" y="881"/>
       <point x="271" y="881" type="curve" smooth="yes"/>
       <point x="639" y="881" type="line"/>
-    </contour>
-    <contour>
-      <point x="557" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="801" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

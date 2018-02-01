@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSupSmIStrk.Dotless" format="1">
+<glyph name="LtnSupSmIStrk.Dotless" format="2">
   <advance width="414"/>
+  <anchor x="262" y="725" name="L"/>
+  <anchor x="394" y="1457" name="U"/>
   <outline>
     <contour>
       <point x="522" y="823" type="curve"/>
@@ -30,12 +32,6 @@
       <point x="299" y="770" type="curve" smooth="yes"/>
       <point x="377" y="770"/>
       <point x="442" y="784"/>
-    </contour>
-    <contour>
-      <point x="262" y="725" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="394" y="1457" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

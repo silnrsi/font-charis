@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmEng.BaselineHook.sc" format="1">
+<glyph name="LtnSmEng.BaselineHook.sc" format="2">
   <advance width="1447"/>
+  <anchor x="760" y="-74" name="L"/>
+  <anchor x="760" y="1238" name="U"/>
   <outline>
     <contour>
       <point x="1257" y="225" type="curve"/>
@@ -53,12 +55,6 @@
       <point x="995" y="-26" type="curve" smooth="yes"/>
       <point x="1106" y="-26"/>
       <point x="1257" y="71"/>
-    </contour>
-    <contour>
-      <point x="760" y="-74" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="760" y="1238" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

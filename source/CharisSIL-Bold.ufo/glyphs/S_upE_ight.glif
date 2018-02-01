@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="SupEight" format="1">
+<glyph name="SupEight" format="2">
   <advance width="780"/>
   <unicode hex="2078"/>
+  <anchor x="390" y="725" name="L"/>
+  <anchor x="390" y="1650" name="U"/>
   <outline>
     <contour>
       <point x="733" y="1010" type="curve" smooth="yes"/>
@@ -56,12 +58,6 @@
       <point x="297" y="1165" type="curve"/>
       <point x="379" y="1128"/>
       <point x="553" y="1087"/>
-    </contour>
-    <contour>
-      <point x="390" y="725" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="390" y="1650" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

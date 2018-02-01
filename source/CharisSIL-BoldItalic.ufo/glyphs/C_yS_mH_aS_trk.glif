@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CySmHaStrk" format="1">
+<glyph name="CySmHaStrk" format="2">
   <advance width="1180"/>
   <unicode hex="04FF"/>
+  <anchor x="473" y="-100" name="L"/>
+  <anchor x="717" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="1200" y="895" type="curve" smooth="yes"/>
@@ -63,12 +65,6 @@
       <point x="983" y="576" type="line"/>
       <point x="179" y="576" type="line"/>
       <point x="179" y="455" type="line"/>
-    </contour>
-    <contour>
-      <point x="473" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="717" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

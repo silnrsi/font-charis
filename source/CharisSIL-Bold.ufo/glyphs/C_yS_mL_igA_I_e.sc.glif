@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CySmLigAIe.sc" format="1">
+<glyph name="CySmLigAIe.sc" format="2">
   <advance width="1826"/>
+  <anchor x="1054" y="-74" name="L"/>
+  <anchor x="1054" y="1238" name="U"/>
   <outline>
     <component base="LtnSmAe.sc"/>
-    <contour>
-      <point x="1054" y="-74" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="1054" y="1238" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

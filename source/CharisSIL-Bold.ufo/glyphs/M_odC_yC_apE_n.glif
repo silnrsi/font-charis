@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="ModCyCapEn" format="1">
+<glyph name="ModCyCapEn" format="2">
   <advance width="1023"/>
   <unicode hex="1D78"/>
+  <anchor x="511" y="725" name="L"/>
+  <anchor x="511" y="1650" name="U"/>
   <outline>
     <component base="LtnCapH" yOffset="785"/>
-    <contour>
-      <point x="511" y="725" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="511" y="1650" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

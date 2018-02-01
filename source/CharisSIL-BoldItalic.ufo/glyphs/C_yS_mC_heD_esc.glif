@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CySmCheDesc" format="1">
+<glyph name="CySmCheDesc" format="2">
   <advance width="1024"/>
   <unicode hex="04B7"/>
+  <anchor x="408" y="-100" name="L"/>
+  <anchor x="652" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="1024" y="66" type="curve"/>
@@ -58,12 +60,6 @@
       <point x="795" y="-20" type="curve"/>
       <point x="877" y="-10"/>
       <point x="950" y="18"/>
-    </contour>
-    <contour>
-      <point x="408" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="652" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

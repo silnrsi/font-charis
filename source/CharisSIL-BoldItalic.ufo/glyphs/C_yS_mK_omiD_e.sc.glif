@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CySmKomiDe.sc" format="1">
+<glyph name="CySmKomiDe.sc" format="2">
   <advance width="1181"/>
+  <anchor x="459" y="-74" name="L"/>
+  <anchor x="724" y="1238" name="U"/>
   <outline>
     <contour>
       <point x="56" y="345" type="curve" smooth="yes"/>
@@ -62,12 +64,6 @@
       <point x="333" y="277" type="curve" smooth="yes"/>
       <point x="333" y="297"/>
       <point x="336" y="318"/>
-    </contour>
-    <contour>
-      <point x="459" y="-74" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="724" y="1238" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

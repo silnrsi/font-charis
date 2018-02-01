@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmOOgonekMacron" format="1">
+<glyph name="LtnSmOOgonekMacron" format="2">
   <advance width="1133"/>
   <unicode hex="01ED"/>
+  <anchor x="466" y="0" name="H"/>
+  <anchor x="453" y="-400" name="L"/>
+  <anchor x="1133" y="1000" name="R"/>
+  <anchor x="749" y="1470" name="U"/>
   <outline>
     <contour>
       <point x="701" y="-256" type="line"/>
@@ -27,17 +31,5 @@
     </contour>
     <component base="LtnSmO" xOffset="130"/>
     <component base="CombMacron" xOffset="1133"/>
-    <contour>
-      <point x="466" y="0" type="move" name="H"/>
-    </contour>
-    <contour>
-      <point x="453" y="-400" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="1133" y="1000" type="move" name="R"/>
-    </contour>
-    <contour>
-      <point x="749" y="1470" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

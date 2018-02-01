@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CySmDe.Serb" format="1">
+<glyph name="CySmDe.Serb" format="2">
   <advance width="1231"/>
+  <anchor x="429" y="-500" name="L"/>
+  <anchor x="728" y="1050" name="U"/>
   <outline>
     <contour>
       <point x="1176" y="1024" type="line"/>
@@ -52,12 +54,6 @@
       <point x="739" y="903" type="curve" smooth="yes"/>
       <point x="791" y="903"/>
       <point x="831" y="864"/>
-    </contour>
-    <contour>
-      <point x="429" y="-500" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="728" y="1050" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

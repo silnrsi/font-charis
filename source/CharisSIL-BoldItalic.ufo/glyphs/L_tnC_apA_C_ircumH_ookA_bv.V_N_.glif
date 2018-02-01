@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnCapACircumHookAbv.VN" format="1">
+<glyph name="LtnCapACircumHookAbv.VN" format="2">
   <advance width="2408"/>
+  <anchor x="600" y="0" name="H"/>
+  <anchor x="591" y="-100" name="L"/>
+  <anchor x="1254" y="0" name="O"/>
   <outline>
     <component base="LtnCapA"/>
     <component base="CombCircumHook.VN" xOffset="295" yOffset="400"/>
-    <contour>
-      <point x="600" y="0" type="move" name="H"/>
-    </contour>
-    <contour>
-      <point x="591" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="1254" y="0" type="move" name="O"/>
-    </contour>
   </outline>
 </glyph>

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CySmYat" format="1">
+<glyph name="CySmYat" format="2">
   <advance width="1155"/>
   <unicode hex="0463"/>
+  <anchor x="591" y="-100" name="L"/>
+  <anchor x="591" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="1092" y="281" type="curve" smooth="yes"/>
@@ -65,12 +67,6 @@
       <point x="637" y="475" type="curve" smooth="yes"/>
       <point x="741" y="475"/>
       <point x="807" y="406"/>
-    </contour>
-    <contour>
-      <point x="591" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="591" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

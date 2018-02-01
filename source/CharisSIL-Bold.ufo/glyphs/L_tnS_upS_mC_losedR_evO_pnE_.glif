@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSupSmClosedRevOpnE" format="1">
+<glyph name="LtnSupSmClosedRevOpnE" format="2">
   <advance width="725"/>
   <unicode hex="F1A4"/>
+  <anchor x="363" y="725" name="L"/>
+  <anchor x="363" y="1457" name="U"/>
   <outline>
     <component base="LtnSmClosedRevOpnE" xScale="0.65" yScale="0.6" yOffset="785"/>
-    <contour>
-      <point x="363" y="725" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="363" y="1457" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

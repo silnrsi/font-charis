@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmTurnedAlpha" format="1">
+<glyph name="LtnSmTurnedAlpha" format="2">
   <advance width="1163"/>
   <unicode hex="0252"/>
+  <anchor x="398" y="0" name="H"/>
+  <anchor x="378" y="-100" name="L"/>
+  <anchor x="457" y="0" name="O"/>
+  <anchor x="1163" y="1000" name="R"/>
+  <anchor x="622" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="1098" y="649" type="curve" smooth="yes"/>
@@ -52,21 +57,6 @@
       <point x="688" y="868" type="curve" smooth="yes"/>
       <point x="813" y="868"/>
       <point x="809" y="743"/>
-    </contour>
-    <contour>
-      <point x="398" y="0" type="move" name="H"/>
-    </contour>
-    <contour>
-      <point x="378" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="457" y="0" type="move" name="O"/>
-    </contour>
-    <contour>
-      <point x="1163" y="1000" type="move" name="R"/>
-    </contour>
-    <contour>
-      <point x="622" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

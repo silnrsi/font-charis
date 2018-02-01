@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnCapDSmZ.sc" format="1">
+<glyph name="LtnCapDSmZ.sc" format="2">
   <advance width="2459"/>
+  <anchor x="1931" y="-74" name="L"/>
+  <anchor x="1931" y="1238" name="U"/>
   <outline>
     <component base="LtnSmD.sc"/>
     <component base="LtnSmZ.sc" xOffset="1364"/>
-    <contour>
-      <point x="1931" y="-74" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="1931" y="1238" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

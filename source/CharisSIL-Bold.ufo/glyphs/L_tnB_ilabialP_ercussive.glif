@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnBilabialPercussive" format="1">
+<glyph name="LtnBilabialPercussive" format="2">
   <advance width="1120"/>
   <unicode hex="02AC"/>
+  <anchor x="560" y="-100" name="L"/>
+  <anchor x="560" y="1540" name="U"/>
   <outline>
     <contour>
       <point x="1108" y="542" type="line"/>
@@ -60,12 +62,6 @@
       <point x="707" y="776" type="line"/>
       <point x="854" y="776" type="line"/>
       <point x="1032" y="1309" type="line"/>
-    </contour>
-    <contour>
-      <point x="560" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="560" y="1540" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

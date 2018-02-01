@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CombDblAcute" format="1">
+<glyph name="CombDblAcute" format="2">
   <advance width="0"/>
   <unicode hex="030B"/>
+  <anchor x="-399" y="1500" name="U"/>
+  <anchor x="-443" y="1100" name="_U"/>
   <outline>
     <component base="DblAcuteAccent" xOffset="-907"/>
-    <contour>
-      <point x="-399" y="1500" type="move" name="U"/>
-    </contour>
-    <contour>
-      <point x="-443" y="1100" type="move" name="_U"/>
-    </contour>
   </outline>
 </glyph>

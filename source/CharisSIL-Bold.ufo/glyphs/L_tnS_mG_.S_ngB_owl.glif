@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmG.SngBowl" format="1">
+<glyph name="LtnSmG.SngBowl" format="2">
   <advance width="1243"/>
+  <anchor x="645" y="-432" name="H"/>
+  <anchor x="645" y="-500" name="L"/>
+  <anchor x="1243" y="1000" name="R"/>
+  <anchor x="645" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="1061" y="20" type="curve"/>
@@ -53,18 +57,6 @@
       <point x="668" y="901"/>
       <point x="760" y="844"/>
       <point x="788" y="797" type="curve"/>
-    </contour>
-    <contour>
-      <point x="645" y="-432" type="move" name="H"/>
-    </contour>
-    <contour>
-      <point x="645" y="-500" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="1243" y="1000" type="move" name="R"/>
-    </contour>
-    <contour>
-      <point x="645" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

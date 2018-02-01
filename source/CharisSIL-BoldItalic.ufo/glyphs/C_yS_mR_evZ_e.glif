@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CySmRevZe" format="1">
+<glyph name="CySmRevZe" format="2">
   <advance width="983"/>
   <unicode hex="0511"/>
+  <anchor x="474" y="0" name="H"/>
+  <anchor x="394" y="-100" name="L"/>
+  <anchor x="672" y="0" name="O"/>
+  <anchor x="983" y="1000" name="R"/>
+  <anchor x="638" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="171" y="803" type="curve" smooth="yes"/>
@@ -55,21 +60,6 @@
       <point x="618" y="1024" type="curve" smooth="yes"/>
       <point x="394" y="1024"/>
       <point x="225" y="936"/>
-    </contour>
-    <contour>
-      <point x="474" y="0" type="move" name="H"/>
-    </contour>
-    <contour>
-      <point x="394" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="672" y="0" type="move" name="O"/>
-    </contour>
-    <contour>
-      <point x="983" y="1000" type="move" name="R"/>
-    </contour>
-    <contour>
-      <point x="638" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

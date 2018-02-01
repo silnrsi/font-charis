@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="ModSmHStrk" format="1">
+<glyph name="ModSmHStrk" format="2">
   <advance width="752"/>
   <unicode hex="F1BC"/>
+  <anchor x="425" y="725" name="L"/>
+  <anchor x="604" y="1700" name="U"/>
   <outline>
     <component base="LtnSmHStrk" xScale="0.65" yScale="0.6" xOffset="115" yOffset="785"/>
-    <contour>
-      <point x="425" y="725" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="604" y="1700" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

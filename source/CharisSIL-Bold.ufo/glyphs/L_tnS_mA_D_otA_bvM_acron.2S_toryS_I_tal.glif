@@ -1,24 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmADotAbvMacron.2StorySItal" format="1">
+<glyph name="LtnSmADotAbvMacron.2StorySItal" format="2">
   <advance width="1133"/>
+  <anchor x="524" y="0" name="H"/>
+  <anchor x="524" y="-100" name="L"/>
+  <anchor x="983" y="0" name="O"/>
+  <anchor x="1133" y="1000" name="R"/>
+  <anchor x="524" y="1870" name="U"/>
   <outline>
     <component base="LtnSmA.2StorySItal"/>
     <component base="DotAbv" xOffset="385"/>
     <component base="CombMacron" xOffset="1122" yOffset="400"/>
-    <contour>
-      <point x="524" y="0" type="move" name="H"/>
-    </contour>
-    <contour>
-      <point x="524" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="983" y="0" type="move" name="O"/>
-    </contour>
-    <contour>
-      <point x="1133" y="1000" type="move" name="R"/>
-    </contour>
-    <contour>
-      <point x="524" y="1870" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

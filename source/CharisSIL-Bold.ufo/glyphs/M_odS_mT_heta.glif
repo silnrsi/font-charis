@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="ModSmTheta" format="1">
+<glyph name="ModSmTheta" format="2">
   <advance width="800"/>
   <unicode hex="1DBF"/>
+  <anchor x="405" y="725" name="L"/>
+  <anchor x="404" y="1709" name="U"/>
   <outline>
     <contour>
       <point x="762" y="1191" type="curve" smooth="yes"/>
@@ -34,12 +36,6 @@
       <point x="260" y="847"/>
       <point x="250" y="1045"/>
       <point x="246" y="1165" type="curve"/>
-    </contour>
-    <contour>
-      <point x="405" y="725" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="404" y="1709" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

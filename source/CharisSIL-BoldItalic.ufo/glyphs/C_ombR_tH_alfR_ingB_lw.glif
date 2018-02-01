@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CombRtHalfRingBlw" format="1">
+<glyph name="CombRtHalfRingBlw" format="2">
   <advance width="0"/>
   <unicode hex="0339"/>
+  <anchor x="-763" y="-500" name="L"/>
+  <anchor x="-687" y="-100" name="_L"/>
   <outline>
     <contour>
       <point x="-608" y="-291" type="curve" smooth="yes"/>
@@ -18,12 +20,6 @@
       <point x="-905" y="-567" type="line"/>
       <point x="-739" y="-567"/>
       <point x="-608" y="-467"/>
-    </contour>
-    <contour>
-      <point x="-763" y="-500" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="-687" y="-100" type="move" name="_L"/>
     </contour>
   </outline>
 </glyph>

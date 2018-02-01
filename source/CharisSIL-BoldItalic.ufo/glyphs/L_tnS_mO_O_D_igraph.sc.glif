@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmOODigraph.sc" format="1">
+<glyph name="LtnSmOODigraph.sc" format="2">
   <advance width="2318"/>
+  <anchor x="1550" y="8" name="H"/>
+  <anchor x="1088" y="-74" name="L"/>
+  <anchor x="1785" y="8" name="O"/>
+  <anchor x="1380" y="992" name="R"/>
+  <anchor x="1308" y="1238" name="U"/>
   <outline>
     <contour>
       <point x="2249" y="695" type="curve" smooth="yes"/>
@@ -57,21 +62,6 @@
       <point x="792" y="1032" type="curve" smooth="yes"/>
       <point x="919" y="1032"/>
       <point x="1041" y="910"/>
-    </contour>
-    <contour>
-      <point x="1550" y="8" type="move" name="H"/>
-    </contour>
-    <contour>
-      <point x="1088" y="-74" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="1785" y="8" type="move" name="O"/>
-    </contour>
-    <contour>
-      <point x="1380" y="992" type="move" name="R"/>
-    </contour>
-    <contour>
-      <point x="1308" y="1238" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmCapGHook" format="1">
+<glyph name="LtnSmCapGHook" format="2">
   <advance width="1247"/>
   <unicode hex="029B"/>
+  <anchor x="477" y="-100" name="L"/>
+  <anchor x="762" y="1300" name="U"/>
   <outline>
     <contour>
       <point x="1536" y="1251" type="curve" smooth="yes"/>
@@ -62,12 +64,6 @@
       <point x="1415" y="1120" type="line"/>
       <point x="1483" y="1141"/>
       <point x="1536" y="1161"/>
-    </contour>
-    <contour>
-      <point x="477" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="762" y="1300" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

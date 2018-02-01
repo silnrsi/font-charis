@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmTurnedHFishhookTail" format="1">
+<glyph name="LtnSmTurnedHFishhookTail" format="2">
   <advance width="1444"/>
   <unicode hex="02AF"/>
+  <anchor x="824" y="-500" name="L"/>
+  <anchor x="824" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="1702" y="-322" type="curve" smooth="yes"/>
@@ -58,12 +60,6 @@
       <point x="1485" y="-473" type="curve" smooth="yes"/>
       <point x="1575" y="-473"/>
       <point x="1702" y="-426"/>
-    </contour>
-    <contour>
-      <point x="824" y="-500" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="824" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

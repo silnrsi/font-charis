@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CySmHaStrk" format="1">
+<glyph name="CySmHaStrk" format="2">
   <advance width="1118"/>
   <unicode hex="04FF"/>
+  <anchor x="560" y="-100" name="L"/>
+  <anchor x="560" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="1100" y="0" type="line"/>
@@ -50,12 +52,6 @@
       <point x="933" y="576" type="line"/>
       <point x="149" y="576" type="line"/>
       <point x="149" y="455" type="line"/>
-    </contour>
-    <contour>
-      <point x="560" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="560" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

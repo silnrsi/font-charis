@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmEzhPalHook" format="1">
+<glyph name="LtnSmEzhPalHook" format="2">
   <advance width="1619"/>
   <unicode hex="F235"/>
+  <anchor x="569" y="-500" name="L"/>
+  <anchor x="569" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="1599" y="-96" type="curve"/>
@@ -24,11 +26,5 @@
       <point x="1599" y="-278"/>
     </contour>
     <component base="LtnSmEzh"/>
-    <contour>
-      <point x="569" y="-500" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="569" y="1100" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

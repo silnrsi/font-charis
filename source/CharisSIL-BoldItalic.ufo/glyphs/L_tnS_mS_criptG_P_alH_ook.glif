@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmScriptGPalHook" format="1">
+<glyph name="LtnSmScriptGPalHook" format="2">
   <advance width="1587"/>
   <unicode hex="1D83"/>
+  <anchor x="369" y="-539" name="L"/>
+  <anchor x="697" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="1487" y="210" type="line"/>
@@ -24,11 +26,5 @@
       <point x="1435" y="-71" type="curve"/>
     </contour>
     <component base="LtnSmG.SngBowl"/>
-    <contour>
-      <point x="369" y="-539" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="697" y="1100" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CySmKaHook.sc" format="1">
+<glyph name="CySmKaHook.sc" format="2">
   <advance width="1275"/>
+  <anchor x="474" y="-402" name="L"/>
+  <anchor x="809" y="1238" name="U"/>
   <outline>
     <contour>
       <point x="1371" y="1023" type="curve" smooth="yes"/>
@@ -93,12 +95,6 @@
       <point x="1277" y="893" type="line"/>
       <point x="1338" y="929"/>
       <point x="1371" y="950"/>
-    </contour>
-    <contour>
-      <point x="474" y="-402" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="809" y="1238" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

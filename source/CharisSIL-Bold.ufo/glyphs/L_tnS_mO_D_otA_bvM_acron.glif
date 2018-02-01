@@ -1,25 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmODotAbvMacron" format="1">
+<glyph name="LtnSmODotAbvMacron" format="2">
   <advance width="1196"/>
   <unicode hex="0231"/>
+  <anchor x="599" y="0" name="H"/>
+  <anchor x="599" y="-100" name="L"/>
+  <anchor x="847" y="0" name="O"/>
+  <anchor x="1196" y="1000" name="R"/>
+  <anchor x="599" y="1870" name="U"/>
   <outline>
     <component base="LtnSmO"/>
     <component base="DotAbv" xOffset="460"/>
     <component base="CombMacron" xOffset="1197" yOffset="400"/>
-    <contour>
-      <point x="599" y="0" type="move" name="H"/>
-    </contour>
-    <contour>
-      <point x="599" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="847" y="0" type="move" name="O"/>
-    </contour>
-    <contour>
-      <point x="1196" y="1000" type="move" name="R"/>
-    </contour>
-    <contour>
-      <point x="599" y="1870" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

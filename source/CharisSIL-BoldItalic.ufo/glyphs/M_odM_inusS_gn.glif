@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="ModMinusSgn" format="1">
+<glyph name="ModMinusSgn" format="2">
   <advance width="713"/>
   <unicode hex="02D7"/>
+  <anchor x="475" y="1100" name="U"/>
   <outline>
     <component base="HyphenMinus"/>
-    <contour>
-      <point x="475" y="1100" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

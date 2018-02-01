@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmLZDigraph" format="1">
+<glyph name="LtnSmLZDigraph" format="2">
   <advance width="1326"/>
   <unicode hex="02AB"/>
+  <anchor x="659" y="-100" name="L"/>
+  <anchor x="720" y="1580" name="U"/>
   <outline>
     <contour>
       <point x="1260" y="0" type="line"/>
@@ -35,12 +37,6 @@
       <point x="910" y="883" type="line"/>
       <point x="477" y="263" type="line"/>
       <point x="477" y="682" type="line"/>
-    </contour>
-    <contour>
-      <point x="659" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="720" y="1580" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

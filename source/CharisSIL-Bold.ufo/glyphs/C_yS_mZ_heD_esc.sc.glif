@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CySmZheDesc.sc" format="1">
+<glyph name="CySmZheDesc.sc" format="2">
   <advance width="1816"/>
+  <anchor x="908" y="-74" name="L"/>
+  <anchor x="908" y="1238" name="U"/>
   <outline>
     <contour>
       <point x="1777" y="1036" type="curve" smooth="yes"/>
@@ -129,12 +131,6 @@
       <point x="1679" y="904" type="line"/>
       <point x="1750" y="954"/>
       <point x="1777" y="995"/>
-    </contour>
-    <contour>
-      <point x="908" y="-74" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="908" y="1238" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

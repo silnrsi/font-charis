@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmLRetrHookBelt" format="1">
+<glyph name="LtnSmLRetrHookBelt" format="2">
   <advance width="788"/>
   <unicode hex="A78E"/>
+  <anchor x="420" y="-500" name="L"/>
+  <anchor x="420" y="1540" name="U"/>
   <outline>
     <contour>
       <point x="524" y="537" type="line"/>
@@ -53,12 +55,6 @@
       <point x="190" y="885"/>
       <point x="236" y="874"/>
       <point x="252" y="799" type="curve"/>
-    </contour>
-    <contour>
-      <point x="420" y="-500" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="420" y="1540" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

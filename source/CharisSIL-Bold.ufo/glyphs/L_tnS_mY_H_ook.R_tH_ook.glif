@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmYHook.RtHook" format="1">
+<glyph name="LtnSmYHook.RtHook" format="2">
   <advance width="1328"/>
   <unicode hex="01B4"/>
+  <anchor x="602" y="-500" name="L"/>
+  <anchor x="646" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="1468" y="1135" type="curve" smooth="yes"/>
@@ -42,12 +44,6 @@
       <point x="1350" y="981" type="line"/>
       <point x="1409" y="1010"/>
       <point x="1468" y="1057"/>
-    </contour>
-    <contour>
-      <point x="602" y="-500" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="646" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

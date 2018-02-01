@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnCapC.Sophia" format="1">
+<glyph name="LtnCapC.Sophia" format="2">
   <advance width="502"/>
+  <anchor x="250" y="266" name="_C"/>
   <outline>
     <contour>
       <point x="458" y="142" type="curve"/>
@@ -29,9 +30,6 @@
       <point x="263" y="-10" type="curve" smooth="yes"/>
       <point x="386" y="-10"/>
       <point x="458" y="58"/>
-    </contour>
-    <contour>
-      <point x="250" y="266" type="move" name="_C"/>
     </contour>
   </outline>
 </glyph>

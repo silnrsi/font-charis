@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmAVDigraphStrk.sc" format="1">
+<glyph name="LtnSmAVDigraphStrk.sc" format="2">
   <advance width="1712"/>
+  <anchor x="856" y="-74" name="L"/>
+  <anchor x="856" y="1238" name="U"/>
   <outline>
     <contour>
       <point x="1668" y="1021" type="line"/>
@@ -48,12 +50,6 @@
       <point x="1577" y="499" type="line"/>
       <point x="960" y="499" type="line"/>
       <point x="960" y="385" type="line"/>
-    </contour>
-    <contour>
-      <point x="856" y="-74" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="856" y="1238" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

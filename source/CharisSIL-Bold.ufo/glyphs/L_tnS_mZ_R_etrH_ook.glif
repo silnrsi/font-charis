@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmZRetrHook" format="1">
+<glyph name="LtnSmZRetrHook" format="2">
   <advance width="1006"/>
   <unicode hex="0290"/>
+  <anchor x="516" y="-500" name="L"/>
+  <anchor x="516" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="1331" y="-305" type="curve" smooth="yes"/>
@@ -38,12 +40,6 @@
       <point x="1096" y="-473" type="curve" smooth="yes"/>
       <point x="1196" y="-473"/>
       <point x="1331" y="-403"/>
-    </contour>
-    <contour>
-      <point x="516" y="-500" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="516" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

@@ -1,25 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnCapEMacronAcute" format="1">
+<glyph name="LtnCapEMacronAcute" format="2">
   <advance width="1229"/>
   <unicode hex="1E16"/>
+  <anchor x="508" y="0" name="H"/>
+  <anchor x="488" y="-100" name="L"/>
+  <anchor x="920" y="0" name="O"/>
+  <anchor x="1300" y="1200" name="R"/>
+  <anchor x="879" y="2270" name="U"/>
   <outline>
     <component base="LtnCapE"/>
     <component base="CombMacron" xOffset="1219" yOffset="400"/>
     <component base="CombAcute" xOffset="1278" yOffset="770"/>
-    <contour>
-      <point x="508" y="0" type="move" name="H"/>
-    </contour>
-    <contour>
-      <point x="488" y="-100" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="920" y="0" type="move" name="O"/>
-    </contour>
-    <contour>
-      <point x="1300" y="1200" type="move" name="R"/>
-    </contour>
-    <contour>
-      <point x="879" y="2270" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>

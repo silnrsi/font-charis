@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmTurnedT" format="1">
+<glyph name="LtnSmTurnedT" format="2">
   <advance width="768"/>
   <unicode hex="0287"/>
+  <anchor x="364" y="-500" name="L"/>
+  <anchor x="364" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="719" y="49" type="line"/>
@@ -28,12 +30,6 @@
       <point x="311" y="-262" type="line"/>
       <point x="451" y="-262" type="line"/>
       <point x="561" y="-45" type="line"/>
-    </contour>
-    <contour>
-      <point x="364" y="-500" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="364" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

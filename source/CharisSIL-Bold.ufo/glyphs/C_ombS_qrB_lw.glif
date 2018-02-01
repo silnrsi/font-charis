@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CombSqrBlw" format="1">
+<glyph name="CombSqrBlw" format="2">
   <advance width="0"/>
   <unicode hex="033B"/>
+  <anchor x="-598" y="-500" name="L"/>
+  <anchor x="-598" y="-100" name="_L"/>
   <outline>
     <contour>
       <point x="-298" y="-563" type="line"/>
@@ -14,12 +16,6 @@
       <point x="-799" y="-465" type="line"/>
       <point x="-799" y="-223" type="line"/>
       <point x="-397" y="-223" type="line"/>
-    </contour>
-    <contour>
-      <point x="-598" y="-500" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="-598" y="-100" type="move" name="_L"/>
     </contour>
   </outline>
 </glyph>

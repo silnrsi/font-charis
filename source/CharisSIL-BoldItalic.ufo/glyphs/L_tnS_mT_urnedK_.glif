@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmTurnedK" format="1">
+<glyph name="LtnSmTurnedK" format="2">
   <advance width="1126"/>
   <unicode hex="029E"/>
+  <anchor x="369" y="-500" name="L"/>
+  <anchor x="689" y="1100" name="U"/>
   <outline>
     <contour>
       <point x="1102" y="999" type="line"/>
@@ -46,12 +48,6 @@
       <point x="1016" y="-403" type="line"/>
       <point x="1016" y="-332" type="line"/>
       <point x="836" y="-313" type="line"/>
-    </contour>
-    <contour>
-      <point x="369" y="-500" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="689" y="1100" type="move" name="U"/>
     </contour>
   </outline>
 </glyph>

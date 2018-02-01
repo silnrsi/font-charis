@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="CombDblVertLineBlw" format="1">
+<glyph name="CombDblVertLineBlw" format="2">
   <advance width="0"/>
   <unicode hex="0348"/>
+  <anchor x="-598" y="-500" name="L"/>
+  <anchor x="-598" y="-100" name="_L"/>
   <outline>
     <contour>
       <point x="-395" y="-502" type="line"/>
@@ -14,12 +16,6 @@
       <point x="-674" y="-125" type="line"/>
       <point x="-801" y="-125" type="line"/>
       <point x="-801" y="-502" type="line"/>
-    </contour>
-    <contour>
-      <point x="-598" y="-500" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="-598" y="-100" type="move" name="_L"/>
     </contour>
   </outline>
 </glyph>

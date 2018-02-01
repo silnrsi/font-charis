@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="LtnSmVDotBlw.sc" format="1">
+<glyph name="LtnSmVDotBlw.sc" format="2">
   <advance width="1291"/>
+  <anchor x="582" y="8" name="H"/>
+  <anchor x="488" y="-474" name="L"/>
+  <anchor x="604" y="8" name="O"/>
+  <anchor x="829" y="1238" name="U"/>
   <outline>
     <component base="LtnSmV.sc"/>
     <component base="CombDotBlw" xOffset="1251" yOffset="26"/>
-    <contour>
-      <point x="582" y="8" type="move" name="H"/>
-    </contour>
-    <contour>
-      <point x="488" y="-474" type="move" name="L"/>
-    </contour>
-    <contour>
-      <point x="604" y="8" type="move" name="O"/>
-    </contour>
-    <contour>
-      <point x="829" y="1238" type="move" name="U"/>
-    </contour>
   </outline>
 </glyph>
