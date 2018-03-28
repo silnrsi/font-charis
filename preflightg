@@ -1,11 +1,17 @@
 #!/bin/sh
 
-psfsetpsnames -i source/glyph_data.csv source/CharisSIL-Regular.ufo
-psfsetpsnames -i source/glyph_data.csv source/CharisSIL-Italic.ufo
-psfsetpsnames -i source/glyph_data.csv source/CharisSIL-Bold.ufo
-psfsetpsnames -i source/glyph_data.csv source/CharisSIL-BoldItalic.ufo
-psfsetglyphorder --header sort_final_cdg -i source/glyph_data.csv source/CharisSIL-Regular.ufo
-psfsetglyphorder --header sort_final_cdg -i source/glyph_data.csv source/CharisSIL-Italic.ufo
-psfsetglyphorder --header sort_final_cdg -i source/glyph_data.csv source/CharisSIL-Bold.ufo
-psfsetglyphorder --header sort_final_cdg -i source/glyph_data.csv source/CharisSIL-BoldItalic.ufo
-psfsyncmeta source/CharisSIL-Regular.ufo
+# Produce individual UFOs from Glyphs files
+psfglyphs2ufo source/CharisSILRoman.glyphs source -l source/logs/glyphsexportR.log
+psfglyphs2ufo source/CharisSILItalic.glyphs source -l source/logs/glyphsexportI.log
+
+# update psnames and sort order in Regular, which also normalizes it
+psfsetpsnames -p checkfix=fix -i source/glyph_data.csv source/CharisSIL-Regular.ufo -l source/logs/psnames.log
+psfsetglyphorder --header sort_final_cdg -i source/glyph_data.csv source/CharisSIL-Regular.ufo -l source/logs/sortorder.log
+
+# normalize other family members
+psfnormalize -p checkfix=fix source/CharisSIL-Bold.ufo -l source/logs/normB.log
+psfnormalize -p checkfix=fix source/CharisSIL-Italic.ufo -l source/logs/normI.log
+psfnormalize -p checkfix=fix source/CharisSIL-BoldItalic.ufo -l source/logs/normBI.log
+
+# copy psnames and glyphorder and any other updates to all fonts
+psfsyncmasters source/CharisSILRoman.designspace source/CharisSILItalic.designspace -l source/logs/sync.log
