@@ -1,8 +1,8 @@
 #!/bin/sh
 
 # Produce individual UFOs from Glyphs files
-psfglyphs2ufo source/CharisSILRoman.glyphs source -l source/logs/glyphsexportR.log
-psfglyphs2ufo source/CharisSILItalic.glyphs source -l source/logs/glyphsexportI.log
+psfglyphs2ufo --nofea source/CharisSILRoman.glyphs source -l source/logs/glyphsexportR.log
+psfglyphs2ufo --nofea source/CharisSILItalic.glyphs source -l source/logs/glyphsexportI.log
 
 # update psnames and sort order in Regular, which also normalizes it
 psfsetpsnames -p checkfix=fix -i source/glyph_data.csv source/CharisSIL-Regular.ufo -l source/logs/psnames.log
