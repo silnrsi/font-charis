@@ -42,7 +42,8 @@ for style in ('-Regular','-Italic','-Bold','-BoldItalic') :
             depends = (feabase + '_gsub.fea', feabase + style + '_gpos_lkups.fea', feabase + '_gpos_feats.fea', feabase + '_gdef.fea')
             ),
         graphite = gdl(source_fname + '.gdl',
-            master = 'source/graphite/main.gdh'),
+            master = 'source/graphite/main.gdh', params = '-e gdlerr' + style + '.txt',
+                      ),
         license = ofl('CharisSIL','SIL'),
         woff = woff()
         )
