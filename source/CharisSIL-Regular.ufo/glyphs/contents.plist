@@ -1710,10 +1710,14 @@
   <string>L_tnA_in.glif</string>
   <key>LtnAlveolarClick</key>
   <string>L_tnA_lveolarC_lick.glif</string>
+  <key>LtnAlveolarClick.sc</key>
+  <string>L_tnA_lveolarC_lick.sc.glif</string>
   <key>LtnBidentalPercussive</key>
   <string>L_tnB_identalP_ercussive.glif</string>
   <key>LtnBilabialClick</key>
   <string>L_tnB_ilabialC_lick.glif</string>
+  <key>LtnBilabialClick.sc</key>
+  <string>L_tnB_ilabialC_lick.sc.glif</string>
   <key>LtnBilabialPercussive</key>
   <string>L_tnB_ilabialP_ercussive.glif</string>
   <key>LtnCapA</key>
@@ -2646,6 +2650,8 @@
   <string>L_tnC_apU_O_gonek.R_etroH_ook.glif</string>
   <key>LtnCapURingAbv</key>
   <string>L_tnC_apU_R_ingA_bv.glif</string>
+  <key>LtnCapUStrk</key>
+  <string>L_tnC_apU_S_trk.glif</string>
   <key>LtnCapUTilde</key>
   <string>L_tnC_apU_T_ilde.glif</string>
   <key>LtnCapUTildeAcute</key>
@@ -2770,6 +2776,8 @@
   <string>L_tnC_apZ_S_washT_ail.glif</string>
   <key>LtnDentalClick</key>
   <string>L_tnD_entalC_lick.glif</string>
+  <key>LtnDentalClick.sc</key>
+  <string>L_tnD_entalC_lick.sc.glif</string>
   <key>LtnGlottalStop</key>
   <string>L_tnG_lottalS_top.glif</string>
   <key>LtnGlottalStopStrk</key>
@@ -2780,6 +2788,8 @@
   <string>L_tnI_nvG_lottalS_topS_trk.glif</string>
   <key>LtnLateralClick</key>
   <string>L_tnL_ateralC_lick.glif</string>
+  <key>LtnLateralClick.sc</key>
+  <string>L_tnL_ateralC_lick.sc.glif</string>
   <key>LtnLigSmFSmF</key>
   <string>L_tnL_igS_mF_S_mF_.glif</string>
   <key>LtnLigSmFSmF.SItal</key>
@@ -2822,6 +2832,8 @@
   <string>L_tnL_igS_mF_S_mL_.sc.glif</string>
   <key>LtnRetrClick</key>
   <string>L_tnR_etrC_lick.glif</string>
+  <key>LtnRetrClick.sc</key>
+  <string>L_tnR_etrC_lick.sc.glif</string>
   <key>LtnRevEshLoop</key>
   <string>L_tnR_evE_shL_oop.glif</string>
   <key>LtnRevGlottalStop</key>
@@ -3464,6 +3476,8 @@
   <string>L_tnS_mC_apO_u.O_penT_op.glif</string>
   <key>LtnSmCapP</key>
   <string>L_tnS_mC_apP_.glif</string>
+  <key>LtnSmCapQ</key>
+  <string>L_tnS_mC_apQ_.glif</string>
   <key>LtnSmCapR</key>
   <string>L_tnS_mC_apR_.glif</string>
   <key>LtnSmCapR.sc</key>
@@ -5356,6 +5370,8 @@
   <string>L_tnS_mU_R_ingA_bv.glif</string>
   <key>LtnSmURingAbv.sc</key>
   <string>L_tnS_mU_R_ingA_bv.sc.glif</string>
+  <key>LtnSmUStrk</key>
+  <string>L_tnS_mU_S_trk.glif</string>
   <key>LtnSmUTilde</key>
   <string>L_tnS_mU_T_ilde.glif</string>
   <key>LtnSmUTilde.sc</key>
