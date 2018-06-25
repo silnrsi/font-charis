@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="LtnLateralClick.sc" format="2">
-  <advance width="713"/>
-  <anchor x="356" y="-500" name="L"/>
-  <anchor x="356" y="1540" name="U"/>
+  <advance width="890"/>
+  <anchor x="442" y="-74" name="L"/>
+  <anchor x="442" y="1238" name="U"/>
   <outline>
-    <component base="LtnLateralClick"/>
+    <contour>
+      <point x="350" y="-26" type="line"/>
+      <point x="350" y="1147" type="line"/>
+      <point x="175" y="1147" type="line"/>
+      <point x="175" y="-26" type="line"/>
+    </contour>
+    <contour>
+      <point x="710" y="-26" type="line"/>
+      <point x="710" y="1147" type="line"/>
+      <point x="535" y="1147" type="line"/>
+      <point x="535" y="-26" type="line"/>
+    </contour>
   </outline>
 </glyph>
