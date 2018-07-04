@@ -1548,6 +1548,8 @@
   <string>G_rS_ubS_mR_ho.glif</string>
   <key>GrThetaSym</key>
   <string>G_rT_hetaS_ym.glif</string>
+  <key>GrThetaSym.sc</key>
+  <string>G_rT_hetaS_ym.sc.glif</string>
   <key>GraveAccent</key>
   <string>G_raveA_ccent.glif</string>
   <key>GuaraniSign</key>
@@ -2012,6 +2014,8 @@
   <string>L_tnC_apE_zh.R_evS_igmaS_tyle.glif</string>
   <key>LtnCapEzhCaron</key>
   <string>L_tnC_apE_zhC_aron.glif</string>
+  <key>LtnCapEzhDep.RevSigmaStyle</key>
+  <string>L_tnC_apE_zhD_ep.R_evS_igmaS_tyle.glif</string>
   <key>LtnCapEzhRev</key>
   <string>L_tnC_apE_zhR_ev.glif</string>
   <key>LtnCapF</key>
@@ -2152,6 +2156,8 @@
   <string>L_tnC_apJ_C_ircum.glif</string>
   <key>LtnCapJCrossedTail</key>
   <string>L_tnC_apJ_C_rossedT_ail.glif</string>
+  <key>LtnCapJCrossedTailDep</key>
+  <string>L_tnC_apJ_C_rossedT_ailD_ep.glif</string>
   <key>LtnCapJStrk</key>
   <string>L_tnC_apJ_S_trk.glif</string>
   <key>LtnCapJStrkDep</key>
@@ -3366,6 +3372,8 @@
   <string>L_tnS_mB_arredO_.glif</string>
   <key>LtnSmBeta</key>
   <string>L_tnS_mB_eta.glif</string>
+  <key>LtnSmBeta.sc</key>
+  <string>L_tnS_mB_eta.sc.glif</string>
   <key>LtnSmBottomHalfO</key>
   <string>L_tnS_mB_ottomH_alfO_.glif</string>
   <key>LtnSmC</key>
@@ -3408,6 +3416,8 @@
   <string>L_tnS_mC_H_ook.sc.glif</string>
   <key>LtnSmCPalHook</key>
   <string>L_tnS_mC_P_alH_ook.glif</string>
+  <key>LtnSmCPalHookDep</key>
+  <string>L_tnS_mC_P_alH_ookD_ep.glif</string>
   <key>LtnSmCStrk</key>
   <string>L_tnS_mC_S_trk.glif</string>
   <key>LtnSmCStrk.sc</key>
@@ -3442,6 +3452,8 @@
   <string>L_tnS_mC_apH_.glif</string>
   <key>LtnSmCapI</key>
   <string>L_tnS_mC_apI_.glif</string>
+  <key>LtnSmCapI.sc</key>
+  <string>L_tnS_mC_apI_.sc.glif</string>
   <key>LtnSmCapIOverSmSchwa</key>
   <string>L_tnS_mC_apI_O_verS_mS_chwa.glif</string>
   <key>LtnSmCapIStrk</key>
@@ -3518,6 +3530,8 @@
   <string>L_tnS_mC_apZ_.glif</string>
   <key>LtnSmChi</key>
   <string>L_tnS_mC_hi.glif</string>
+  <key>LtnSmChi.sc</key>
+  <string>L_tnS_mC_hi.sc.glif</string>
   <key>LtnSmClosedOmega</key>
   <string>L_tnS_mC_losedO_mega.glif</string>
   <key>LtnSmClosedOpnE</key>
@@ -4234,6 +4248,8 @@
   <string>L_tnS_mJ_C_rossedT_ail.glif</string>
   <key>LtnSmJCrossedTail.Dotless</key>
   <string>L_tnS_mJ_C_rossedT_ail.D_otless.glif</string>
+  <key>LtnSmJCrossedTail.sc</key>
+  <string>L_tnS_mJ_C_rossedT_ail.sc.glif</string>
   <key>LtnSmJStrk</key>
   <string>L_tnS_mJ_S_trk.glif</string>
   <key>LtnSmJStrk.Dotless</key>
@@ -4738,6 +4754,8 @@
   <string>L_tnS_mO_i.sc.glif</string>
   <key>LtnSmOmega</key>
   <string>L_tnS_mO_mega.glif</string>
+  <key>LtnSmOmega.sc</key>
+  <string>L_tnS_mO_mega.sc.glif</string>
   <key>LtnSmOpenNine</key>
   <string>L_tnS_mO_penN_ine.glif</string>
   <key>LtnSmOpenNine.sc</key>
@@ -6178,6 +6196,8 @@
   <string>M_odS_mH_H_ook.glif</string>
   <key>ModSmHStrk</key>
   <string>M_odS_mH_S_trk.glif</string>
+  <key>ModSmHeng</key>
+  <string>M_odS_mH_eng.glif</string>
   <key>ModSmIota</key>
   <string>M_odS_mI_ota.glif</string>
   <key>ModSmIotaDep</key>
@@ -6194,6 +6214,8 @@
   <string>M_odS_mJ_C_rossedT_ailD_ep.glif</string>
   <key>ModSmL</key>
   <string>M_odS_mL_.glif</string>
+  <key>ModSmLMiddleTilde</key>
+  <string>M_odS_mL_M_iddleT_ilde.glif</string>
   <key>ModSmLPalHook</key>
   <string>M_odS_mL_P_alH_ook.glif</string>
   <key>ModSmLPalHookDep</key>
