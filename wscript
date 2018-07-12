@@ -32,13 +32,13 @@ for style in ('-Regular','-Italic','-Bold','-BoldItalic') :
     source_fname = 'source/' + fname
     feabase = 'source/opentype/' + FILENAMEBASE
     font( target = process(fname + '.ttf', name(FILENAMEBASE, lang='en-US', subfamily=(style[1:])),
-            cmd('${PSFCHANGETTFGLYPHNAMES} ${SRC} ${DEP} ${TGT}', [source_fname + '.ufo'])),
+            cmd('psfchangettfglyphnames ${SRC} ${DEP} ${TGT}', [source_fname + '.ufo'])),
         source = source_fname + '.ufo',
         version = VERSION,
         ap =  source_fname +'_ap' + '.xml',
-        opentype = fea(source_fname + '.fea', old_make_fea = True,
+        opentype = fea(source_fname + '.fea',
             master = feabase + style + '.fea',
-            make_params="-o 'C L11 L12 L13 L21 L22 L23 L31 L32 L33 C11 C12 C13 C21 C22 C23 C31 C32 C33 U11 U12 U13 U21 U22 U23 U31 U32 U33'",
+            make_params="--omitaps 'C L11 L12 L13 L21 L22 L23 L31 L32 L33 C11 C12 C13 C21 C22 C23 C31 C32 C33 U11 U12 U13 U21 U22 U23 U31 U32 U33'",
             depends = (feabase + '_gsub.fea', feabase + style + '_gpos_lkups.fea', feabase + '_gpos_feats.fea', feabase + '_gdef.fea')
             ),
         graphite = gdl(source_fname + '.gdl',
@@ -47,6 +47,3 @@ for style in ('-Regular','-Italic','-Bold','-BoldItalic') :
         license = ofl('CharisSIL','SIL'),
         woff = woff()
         )
-
-def configure(ctx):
-    ctx.find_program('psfchangettfglyphnames')
