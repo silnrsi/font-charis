@@ -20,13 +20,6 @@
 \CombGrave_MacronDep \CombMacron_GraveDep \CombAcute_Grave_AcuteDep 
 \CombGrave_Acute_GraveDep ]; 
 
-#languagesystem DFLT dflt;
-#languagesystem cyrl dflt;
-#languagesystem cyrl SRB ;
-#languagesystem latn dflt;
-#languagesystem latn IPPH;
-#languagesystem latn VIT ;
-
 
 lookup SingleSubstitutionlookup1 {
   lookupflag 0;
