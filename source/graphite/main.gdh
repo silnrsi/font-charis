@@ -399,8 +399,8 @@ cno_Dotless += (g__ltn_sm_i_s_ital);     // g_i_tail_i;
 
 // Same with tail-i and j-serif.
 #if (ANDIKAfamily)
-cDotless    += (g__ltn_sm_dotless_i_tail_i	g__ltn_sm_dotless_j_toplftserif);
-cno_Dotless += (g__ltn_sm_i_tail_i			g__ltn_sm_j_toplftserif);
+cDotless    += (g__ltn_sm_dotless_i_tail_i	g__ltn_sm_dotless_j_top_lft_serif);
+cno_Dotless += (g__ltn_sm_i_tail_i			g__ltn_sm_j_top_lft_serif);
 #endif
 
 // Same with the low-profile i and j.
@@ -416,7 +416,7 @@ c_sc	+= (g__ltn_sm_i_sc		g__ltn_sm_j_sc);
 #if (ANDIKAfamily)
 // makegdl can't figure out that 'g_q_diag_tail_sc' needs to be in the cDiagTail class.
 cno_DiagTail += (g__ltn_sm_q_sc);
-cDiagTail    += (g__ltn_sm_q_diagtail_sc);
+cDiagTail    += (g__ltn_sm_q_diag_tail_sc);
 #endif
 
 cno_BrInvBreve = (g__comb_inv_breve    g__comb_dbl_inv_breve);
