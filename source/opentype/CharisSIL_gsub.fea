@@ -21,7 +21,7 @@
 \CombGrave_Acute_GraveDep ]; 
 
 
-lookup SingleSubstitutionlookup1 {
+lookup di_ctx {
   lookupflag 0;
     sub \LtnSmI by \LtnSmI.Dotless ;
     sub \LtnSmJ by \LtnSmJ.Dotless ;
@@ -39,17 +39,17 @@ lookup SingleSubstitutionlookup1 {
     sub \LtnSmJCrossedTail by \LtnSmJCrossedTail.Dotless ;
     sub \ModSmJCrossedTail by \ModSmJCrossedTail.Dotless ;
     sub \LtnSmI.sc by \LtnSmI.Dotless.sc ;
-} SingleSubstitutionlookup1;
+} di_ctx;
 
-lookup MultipleSubstitutionlookup2 {
+lookup di_sub {
   lookupflag 0;
     sub \LtnSmITildeBlw by \LtnSmI.Dotless \CombTildeBlw ;
     sub \LtnSmITildeBlw.SItal by \LtnSmI.Dotless.SItal \CombTildeBlw ;
     sub \LtnSmIDotBlw by \LtnSmI.Dotless \CombDotBlw ;
     sub \LtnSmIDotBlw.SItal by \LtnSmI.Dotless.SItal \CombDotBlw ;
-} MultipleSubstitutionlookup2;
+} di_sub;
 
-lookup ccmpGlyphCompositionDecompositionlookup0 {
+lookup di_csub {
   lookupflag 0;
     @cc0_match_0 = [\LtnSmI \LtnSmJ \LtnSmI.SItal \CySmByelorusUkrainI \LtnSubSmI \LtnSupSmI 
 	\LtnSmIOgonek \LtnSmIRetrHook \LtnSmIStrk \LtnSupSmIStrk \CySmJe 
@@ -95,19 +95,19 @@ lookup ccmpGlyphCompositionDecompositionlookup0 {
 	\CombMacron_AcuteDep \CombGrave_MacronDep \CombMacron_GraveDep 
 	\CombAcute_Grave_AcuteDep \CombGrave_Acute_GraveDep ];
     @cc0_match_3 = [\LtnSmITildeBlw \LtnSmITildeBlw.SItal \LtnSmIDotBlw \LtnSmIDotBlw.SItal ];
-    sub @cc0_match_0'lookup SingleSubstitutionlookup1  @cc0_match_1' @cc0_match_2' ;
-    sub @cc0_match_0'lookup SingleSubstitutionlookup1  @cc0_match_1' @cc0_match_1' @cc0_match_2' ;
-    sub @cc0_match_0'lookup SingleSubstitutionlookup1  @cc0_match_1' @cc0_match_1' @cc0_match_1' @cc0_match_2' ;
-    sub @cc0_match_0'lookup SingleSubstitutionlookup1  @cc0_match_1' @cc0_match_1' @cc0_match_1' @cc0_match_1' @cc0_match_2' ;
-    sub @cc0_match_0'lookup SingleSubstitutionlookup1  @cc0_match_2' ;
-    sub @cc0_match_3'lookup MultipleSubstitutionlookup2  @cc0_match_1' @cc0_match_2' ;
-    sub @cc0_match_3'lookup MultipleSubstitutionlookup2  @cc0_match_1' @cc0_match_1' @cc0_match_2' ;
-    sub @cc0_match_3'lookup MultipleSubstitutionlookup2  @cc0_match_1' @cc0_match_1' @cc0_match_1' @cc0_match_2' ;
-    sub @cc0_match_3'lookup MultipleSubstitutionlookup2  @cc0_match_1' @cc0_match_1' @cc0_match_1' @cc0_match_1' @cc0_match_2' ;
-    sub @cc0_match_3'lookup MultipleSubstitutionlookup2  @cc0_match_2' ;
-} ccmpGlyphCompositionDecompositionlookup0;
+    sub @cc0_match_0'lookup di_ctx  @cc0_match_1' @cc0_match_2' ;
+    sub @cc0_match_0'lookup di_ctx  @cc0_match_1' @cc0_match_1' @cc0_match_2' ;
+    sub @cc0_match_0'lookup di_ctx  @cc0_match_1' @cc0_match_1' @cc0_match_1' @cc0_match_2' ;
+    sub @cc0_match_0'lookup di_ctx  @cc0_match_1' @cc0_match_1' @cc0_match_1' @cc0_match_1' @cc0_match_2' ;
+    sub @cc0_match_0'lookup di_ctx  @cc0_match_2' ;
+    sub @cc0_match_3'lookup di_sub  @cc0_match_1' @cc0_match_2' ;
+    sub @cc0_match_3'lookup di_sub  @cc0_match_1' @cc0_match_1' @cc0_match_2' ;
+    sub @cc0_match_3'lookup di_sub  @cc0_match_1' @cc0_match_1' @cc0_match_1' @cc0_match_2' ;
+    sub @cc0_match_3'lookup di_sub  @cc0_match_1' @cc0_match_1' @cc0_match_1' @cc0_match_1' @cc0_match_2' ;
+    sub @cc0_match_3'lookup di_sub  @cc0_match_2' ;
+} di_csub;
 
-lookup ccmpGlyphCompositionDecompositionlookup3 {
+lookup c_sub {
   lookupflag 0;
     sub \LtnCapC \CombCedilla  by \LtnCapCCedilla;
     sub \LtnSmC \CombCedilla  by \LtnSmCCedilla;
@@ -180,9 +180,9 @@ lookup ccmpGlyphCompositionDecompositionlookup3 {
     sub \SupersetOf \CombLngSolidusOverlay  by \NotSupersetOf;
     sub \LftArrw \CombLngSolidusOverlay  by \LftArrwStrk;
     sub \RtArrw \CombLngSolidusOverlay  by \RtArrwStrk;
-} ccmpGlyphCompositionDecompositionlookup3;
+} c_sub;
 
-lookup ccmpGlyphCompositionDecompositioninLatinlookup4 {
+lookup vd_sub {
   lookupflag MarkAttachmentType @MarkClass1;
     sub \CombCircum \CombAcute  by \CombCircumAcute.VN;
     sub \CombCircum \CombGrave  by \CombCircumGrave.VN;
@@ -192,9 +192,9 @@ lookup ccmpGlyphCompositionDecompositioninLatinlookup4 {
     sub \CombBreve \CombGrave  by \CombBreveGrave.VN;
     sub \CombBreve \CombTilde  by \CombBreveTilde.VN;
     sub \CombBreve \CombHookAbv  by \CombBreveHook.VN;
-} ccmpGlyphCompositionDecompositioninLatinlookup4;
+} vd_sub;
 
-lookup ccmpGlyphCompositionDecompositioninLatinlookup5 {
+lookup vc_sub {
   lookupflag 0;
     sub \LtnSmACircumAcute by \LtnSmACircumAcute.VN ;
     sub \LtnSmACircumAcute.2StorySItal by \LtnSmACircumAcute.2StorySItal.VN ;
@@ -268,18 +268,14 @@ lookup ccmpGlyphCompositionDecompositioninLatinlookup5 {
     sub \LtnSmOCircumGrave.sc by \LtnSmOCircumGrave.VN.sc ;
     sub \LtnSmOCircumTilde.sc by \LtnSmOCircumTilde.VN.sc ;
     sub \LtnSmOCircumHookAbv.sc by \LtnSmOCircumHookAbv.VN.sc ;
-} ccmpGlyphCompositionDecompositioninLatinlookup5;
+} vc_sub;
 
-lookup loclLocalizedFormsinCyrilliclookup6 {
+lookup srb_sub {
   lookupflag 0;
-    sub \CySmBe by \CySmBe.Serb ;
-    sub \CySmGhe by \CySmGhe.Serb ;
-    sub \CySmPe by \CySmPe.Serb ;
-    sub \CySmDe by \CySmDe.Serb ;
-    sub \CySmTe by \CySmTe.Serb ;
-} loclLocalizedFormsinCyrilliclookup6;
+    sub @cno_Serb by @c_Serb;
+} srb_sub;
 
-lookup aaltAccessAllAlternateslookup7 {
+lookup ma_sub {
   lookupflag 0;
     sub \LtnSmA from [\LtnSmA.2StorySItal \LtnSmA.SngStory ];
     sub \LtnSmAAcute from [\LtnSmAAcute.SngStory \LtnSmAAcute.2StorySItal ];
@@ -336,9 +332,9 @@ lookup aaltAccessAllAlternateslookup7 {
     sub \LtnSmGStrk.sc from [\LtnSmGBarredBowl.sc \LtnSmGStrk.SngBowl.sc ];
     sub \LtnSmEng.sc from [\LtnSmEng.BaselineHook.sc \LtnSmEng.UCStyle.sc \LtnSmEng.Kom.sc ];
     sub \LtnSmVHook.sc from [\LtnSmVHook.StraightLft.sc \LtnSmVHook.StraightLftHighHook.sc ];
-} aaltAccessAllAlternateslookup7;
+} ma_sub;
 
-lookup aaltAccessAllAlternateslookup8 {
+lookup sa_sub {
   lookupflag 0;
 #    sub \Space by \Space.Lines ;
     sub \LtnSmF by \LtnSmF.SItal ;
@@ -602,14 +598,14 @@ lookup aaltAccessAllAlternateslookup8 {
     sub \LtnSmEzh.sc by \LtnSmEzh.RevSigmaStyle.sc ;
     sub \CySmAbkhasDze.sc by \CySmAbkhasDze.RevSigmaStyle.sc ;
     sub \LtnSmSaltillo.sc by \LtnSmSaltillo.Lrg.sc ;
-} aaltAccessAllAlternateslookup8;
+} sa_sub;
 
-lookup SingleSubstitutionlookup10 {
+lookup ss_sub {
   lookupflag 0;
-    sub \CombDiaer by \CombDiaer.Sup ;
-} SingleSubstitutionlookup10;
+    sub @cno_Sup by @c_Sup;
+} ss_sub;
 
-lookup ccmpGlyphCompositionDecompositionlookup9 {
+lookup ss_ctx {
   lookupflag 0;
     @cc9_match_0 = [\.notdef \LtnSubSmA \LtnSubSmA.SngStory \LtnSupSmA \LtnSupSmA.SngStory 
 	\LtnSupSmTurnedA \LtnSupSmAlpha \LtnSupSmTurnedAlpha \ModSmTrndAe 
@@ -678,689 +674,16 @@ lookup ccmpGlyphCompositionDecompositionlookup9 {
 	\CombLftArrwhdAbv \CombRtArrwhdAbv \CombAcute_MacronDep 
 	\CombMacron_AcuteDep \CombGrave_MacronDep \CombMacron_GraveDep 
 	\CombAcute_Grave_AcuteDep \CombGrave_Acute_GraveDep ];
-    sub @cc9_match_0' @cc9_match_1'lookup SingleSubstitutionlookup10  ;
-    sub @cc9_match_0' @cc9_match_2'lookup SingleSubstitutionlookup10  ;
-} ccmpGlyphCompositionDecompositionlookup9;
+    sub @cc9_match_0' @cc9_match_1'lookup ss_sub  ;
+    sub @cc9_match_0' @cc9_match_2'lookup ss_sub  ;
+} ss_ctx;
 
-lookup smcpLowercasetoSmallCapitalslookup11 {
+lookup sc1_sub {
   lookupflag 0;
-    sub \LtnSmA by \LtnSmA.sc ;
-    sub \LtnSmB by \LtnSmB.sc ;
-    sub \LtnSmC by \LtnSmC.sc ;
-    sub \LtnSmD by \LtnSmD.sc ;
-    sub \LtnSmE by \LtnSmE.sc ;
-    sub \LtnSmF by \LtnSmF.sc ;
-    sub \LtnSmG by \LtnSmG.sc ;
-    sub \LtnSmH by \LtnSmH.sc ;
-    sub \LtnSmI by \LtnSmI.sc ;
-    sub \LtnSmJ by \LtnSmJ.sc ;
-    sub \LtnSmK by \LtnSmK.sc ;
-    sub \LtnSmL by \LtnSmL.sc ;
-    sub \LtnSmM by \LtnSmM.sc ;
-    sub \LtnSmN by \LtnSmN.sc ;
-    sub \LtnSmO by \LtnSmO.sc ;
-    sub \LtnSmP by \LtnSmP.sc ;
-    sub \LtnSmQ by \LtnSmQ.sc ;
-    sub \LtnSmR by \LtnSmR.sc ;
-    sub \LtnSmS by \LtnSmS.sc ;
-    sub \LtnSmT by \LtnSmT.sc ;
-    sub \LtnSmU by \LtnSmU.sc ;
-    sub \LtnSmV by \LtnSmV.sc ;
-    sub \LtnSmW by \LtnSmW.sc ;
-    sub \LtnSmX by \LtnSmX.sc ;
-    sub \LtnSmY by \LtnSmY.sc ;
-    sub \LtnSmZ by \LtnSmZ.sc ;
-    sub \LtnSmAAcute by \LtnSmAAcute.sc ;
-    sub \LtnSmAGrave by \LtnSmAGrave.sc ;
-    sub \LtnSmACircum by \LtnSmACircum.sc ;
-    sub \LtnSmADiaer by \LtnSmADiaer.sc ;
-    sub \LtnSmATilde by \LtnSmATilde.sc ;
-    sub \LtnSmARingAbv by \LtnSmARingAbv.sc ;
-    sub \LtnSmCCedilla by \LtnSmCCedilla.sc ;
-    sub \LtnSmEAcute by \LtnSmEAcute.sc ;
-    sub \LtnSmEGrave by \LtnSmEGrave.sc ;
-    sub \LtnSmECircum by \LtnSmECircum.sc ;
-    sub \LtnSmEDiaer by \LtnSmEDiaer.sc ;
-    sub \LtnSmIAcute by \LtnSmIAcute.sc ;
-    sub \LtnSmIGrave by \LtnSmIGrave.sc ;
-    sub \LtnSmICircum by \LtnSmICircum.sc ;
-    sub \LtnSmIDiaer by \LtnSmIDiaer.sc ;
-    sub \LtnSmNTilde by \LtnSmNTilde.sc ;
-    sub \LtnSmOAcute by \LtnSmOAcute.sc ;
-    sub \LtnSmOGrave by \LtnSmOGrave.sc ;
-    sub \LtnSmOCircum by \LtnSmOCircum.sc ;
-    sub \LtnSmODiaer by \LtnSmODiaer.sc ;
-    sub \LtnSmOTilde by \LtnSmOTilde.sc ;
-    sub \LtnSmUAcute by \LtnSmUAcute.sc ;
-    sub \LtnSmUGrave by \LtnSmUGrave.sc ;
-    sub \LtnSmUCircum by \LtnSmUCircum.sc ;
-    sub \LtnSmUDiaer by \LtnSmUDiaer.sc ;
-    sub \LtnSmSharpS by \LtnSmSharpS.sc ;
-    sub \LtnSmAe by \LtnSmAe.sc ;
-    sub \LtnSmOStrk by \LtnSmOStrk.sc ;
-    sub \LtnSmFHook by \LtnSmFHook.sc ;
-    sub \LtnSmLigOe by \LtnSmLigOe.sc ;
-    sub \LtnSmYDiaer by \LtnSmYDiaer.sc ;
-    sub \LtnSmDotlessI by \LtnSmDotlessI.sc ;
-    sub \CySmA by \CySmA.sc ;
-    sub \LtnSmADblGrave by \LtnSmADblGrave.sc ;
-    sub \LtnSmACircumDotBlw by \LtnSmACircumDotBlw.sc ;
-    sub \LtnSmACircumAcute by \LtnSmACircumAcute.sc ;
-    sub \LtnSmACircumAcute.VN by \LtnSmACircumAcute.VN.sc ;
-    sub \LtnSmACircumGrave by \LtnSmACircumGrave.sc ;
-    sub \LtnSmACircumGrave.VN by \LtnSmACircumGrave.VN.sc ;
-    sub \LtnSmACircumTilde by \LtnSmACircumTilde.sc ;
-    sub \LtnSmACircumTilde.VN by \LtnSmACircumTilde.VN.sc ;
-    sub \LtnSmACircumHookAbv by \LtnSmACircumHookAbv.sc ;
-    sub \LtnSmACircumHookAbv.VN by \LtnSmACircumHookAbv.VN.sc ;
-    sub \LtnSmAInvBreve by \LtnSmAInvBreve.sc ;
-    sub \LtnSmABreve by \LtnSmABreve.sc ;
-    sub \LtnSmABreveDotBlw by \LtnSmABreveDotBlw.sc ;
-    sub \LtnSmABreveAcute by \LtnSmABreveAcute.sc ;
-    sub \LtnSmABreveAcute.VN by \LtnSmABreveAcute.VN.sc ;
-    sub \LtnSmABreveGrave by \LtnSmABreveGrave.sc ;
-    sub \LtnSmABreveGrave.VN by \LtnSmABreveGrave.VN.sc ;
-    sub \LtnSmABreveTilde by \LtnSmABreveTilde.sc ;
-    sub \LtnSmABreveTilde.VN by \LtnSmABreveTilde.VN.sc ;
-    sub \LtnSmABreveHookAbv by \LtnSmABreveHookAbv.sc ;
-    sub \LtnSmABreveHookAbv.VN by \LtnSmABreveHookAbv.VN.sc ;
-    sub \CySmABreve by \CySmABreve.sc ;
-    sub \LtnSmACaron by \LtnSmACaron.sc ;
-    sub \LtnSmAMacron by \LtnSmAMacron.sc ;
-    sub \CySmADiaer by \CySmADiaer.sc ;
-    sub \LtnSmADiaerMacron by \LtnSmADiaerMacron.sc ;
-    sub \LtnSmADotAbv by \LtnSmADotAbv.sc ;
-    sub \LtnSmADotAbvMacron by \LtnSmADotAbvMacron.sc ;
-    sub \LtnSmARingAbvAcute by \LtnSmARingAbvAcute.sc ;
-    sub \LtnSmARtHalfRing by \LtnSmARtHalfRing.sc ;
-    sub \LtnSmAHookAbv by \LtnSmAHookAbv.sc ;
-    sub \LtnSmADotBlw by \LtnSmADotBlw.sc ;
-    sub \LtnSmARingBlw by \LtnSmARingBlw.sc ;
-    sub \LtnSmAOgonek by \LtnSmAOgonek.sc ;
-    sub \LtnSmAOgonek.RetroHook by \LtnSmAOgonek.RetroHook.sc ;
-    sub \LtnSmAStrk by \LtnSmAStrk.sc ;
-    sub \LtnSmAADigraph by \LtnSmAADigraph.sc ;
-    sub \LtnSmAODigraph by \LtnSmAODigraph.sc ;
-    sub \LtnSmAUDigraph by \LtnSmAUDigraph.sc ;
-    sub \LtnSmAVDigraph by \LtnSmAVDigraph.sc ;
-    sub \LtnSmAVDigraphStrk by \LtnSmAVDigraphStrk.sc ;
-    sub \LtnSmAYDigraph by \LtnSmAYDigraph.sc ;
-    sub \LtnSmTurnedA by \LtnSmTurnedA.sc ;
-    sub \LtnSmAlpha by \LtnSmAlpha.sc ;
-    sub \LtnSmA.SngStory by \LtnSmA.SngStory.sc ;
-    sub \LtnSmAAcute.SngStory by \LtnSmAAcute.SngStory.sc ;
-    sub \LtnSmAGrave.SngStory by \LtnSmAGrave.SngStory.sc ;
-    sub \LtnSmADblGrave.SngStory by \LtnSmADblGrave.SngStory.sc ;
-    sub \LtnSmACircum.SngStory by \LtnSmACircum.SngStory.sc ;
-    sub \LtnSmACircumDotBlw.SngStory by \LtnSmACircumDotBlw.SngStory.sc ;
-    sub \LtnSmACircumAcute.SngStory by \LtnSmACircumAcute.SngStory.sc ;
-    sub \LtnSmACircumAcute.SngStory.VN by \LtnSmACircumAcute.SngStory.VN.sc ;
-    sub \LtnSmACircumGrave.SngStory by \LtnSmACircumGrave.SngStory.sc ;
-    sub \LtnSmACircumGrave.SngStory.VN by \LtnSmACircumGrave.SngStory.VN.sc ;
-    sub \LtnSmACircumTilde.SngStory by \LtnSmACircumTilde.SngStory.sc ;
-    sub \LtnSmACircumTilde.SngStory.VN by \LtnSmACircumTilde.SngStory.VN.sc ;
-    sub \LtnSmACircumHookAbv.SngStory by \LtnSmACircumHookAbv.SngStory.sc ;
-    sub \LtnSmACircumHookAbv.SngStory.VN by \LtnSmACircumHookAbv.SngStory.VN.sc ;
-    sub \LtnSmAInvBreve.SngStory by \LtnSmAInvBreve.SngStory.sc ;
-    sub \LtnSmABreve.SngStory by \LtnSmABreve.SngStory.sc ;
-    sub \LtnSmABreveDotBlw.SngStory by \LtnSmABreveDotBlw.SngStory.sc ;
-    sub \LtnSmABreveAcute.SngStory by \LtnSmABreveAcute.SngStory.sc ;
-    sub \LtnSmABreveAcute.SngStory.VN by \LtnSmABreveAcute.SngStory.VN.sc ;
-    sub \LtnSmABreveGrave.SngStory by \LtnSmABreveGrave.SngStory.sc ;
-    sub \LtnSmABreveGrave.SngStory.VN by \LtnSmABreveGrave.SngStory.VN.sc ;
-    sub \LtnSmABreveTilde.SngStory by \LtnSmABreveTilde.SngStory.sc ;
-    sub \LtnSmABreveTilde.SngStory.VN by \LtnSmABreveTilde.SngStory.VN.sc ;
-    sub \LtnSmABreveHookAbv.SngStory by \LtnSmABreveHookAbv.SngStory.sc ;
-    sub \LtnSmABreveHookAbv.SngStory.VN by \LtnSmABreveHookAbv.SngStory.VN.sc ;
-    sub \LtnSmACaron.SngStory by \LtnSmACaron.SngStory.sc ;
-    sub \LtnSmATilde.SngStory by \LtnSmATilde.SngStory.sc ;
-    sub \LtnSmAMacron.SngStory by \LtnSmAMacron.SngStory.sc ;
-    sub \LtnSmADiaer.SngStory by \LtnSmADiaer.SngStory.sc ;
-    sub \LtnSmADiaerMacron.SngStory by \LtnSmADiaerMacron.SngStory.sc ;
-    sub \LtnSmADotAbv.SngStory by \LtnSmADotAbv.SngStory.sc ;
-    sub \LtnSmADotAbvMacron.SngStory by \LtnSmADotAbvMacron.SngStory.sc ;
-    sub \LtnSmARingAbv.SngStory by \LtnSmARingAbv.SngStory.sc ;
-    sub \LtnSmARingAbvAcute.SngStory by \LtnSmARingAbvAcute.SngStory.sc ;
-    sub \LtnSmARtHalfRing.SngStory by \LtnSmARtHalfRing.SngStory.sc ;
-    sub \LtnSmAHookAbv.SngStory by \LtnSmAHookAbv.SngStory.sc ;
-    sub \LtnSmADotBlw.SngStory by \LtnSmADotBlw.SngStory.sc ;
-    sub \LtnSmARingBlw.SngStory by \LtnSmARingBlw.SngStory.sc ;
-    sub \LtnSmAOgonek.SngStory by \LtnSmAOgonek.SngStory.sc ;
-    sub \LtnSmAOgonek.SngStory.RetroHook by \LtnSmAOgonek.SngStory.RetroHook.sc ;
-    sub \LtnSmAStrk.SngStory by \LtnSmAStrk.SngStory.sc ;
-    sub \LtnSmTurnedAlpha by \LtnSmTurnedAlpha.sc ;
-    sub \CySmLigAIe by \CySmLigAIe.sc ;
-    sub \LtnSmAeAcute by \LtnSmAeAcute.sc ;
-    sub \LtnSmAeMacron by \LtnSmAeMacron.sc ;
-    sub \LtnSmBDotAbv by \LtnSmBDotAbv.sc ;
-    sub \LtnSmBLineBlw by \LtnSmBLineBlw.sc ;
-    sub \LtnSmBDotBlw by \LtnSmBDotBlw.sc ;
-    sub \LtnSmBBarredBowl by \LtnSmBBarredBowl.sc ;
-    sub \LtnSmBBarredStem by \LtnSmBBarredStem.sc ;
-    sub \LtnSmBHook by \LtnSmBHook.sc ;
-    sub \LtnSmBHook.TopBar by \LtnSmBHook.TopBar.sc ;
-    sub \LtnSmBLftMidHook by \LtnSmBLftMidHook.sc ;
-    sub \LtnSmTnSix by \LtnSmTnSix.sc ;
-    sub \LtnSmBTopbar by \LtnSmBTopbar.sc ;
-    sub \CySmBe by \CySmBe.sc ;
-    sub \CySmSoftSgn by \CySmSoftSgn.sc ;
-    sub \CySmSemisoftSgn by \CySmSemisoftSgn.sc ;
-    sub \CySmHardSgn by \CySmHardSgn.sc ;
-    sub \CySmYat by \CySmYat.sc ;
-    sub \CySmYeru by \CySmYeru.sc ;
-    sub \CySmYeruDiaer by \CySmYeruDiaer.sc ;
-    sub \CySmVe by \CySmVe.sc ;
-    sub \CySmEs by \CySmEs.sc ;
-    sub \LtnSmCAcute by \LtnSmCAcute.sc ;
-    sub \LtnSmCCircum by \LtnSmCCircum.sc ;
-    sub \LtnSmCCaron by \LtnSmCCaron.sc ;
-    sub \LtnSmCDotAbv by \LtnSmCDotAbv.sc ;
-    sub \LtnSmCCedillaAcute by \LtnSmCCedillaAcute.sc ;
-    sub \CySmEsDesc by \CySmEsDesc.sc ;
-    sub \LtnSmCBar by \LtnSmCBar.sc ;
-    sub \LtnSmCStrk by \LtnSmCStrk.sc ;
-    sub \LtnSmCHook by \LtnSmCHook.sc ;
-    sub \LtnSmOpnO by \LtnSmOpnO.sc ;
-    sub \LtnSmOpnO.TopSerif by \LtnSmOpnO.TopSerif.sc ;
-    sub \LtnSmRevCMiddleDot by \LtnSmRevCMiddleDot.sc ;
-    sub \CySmUkrainIe by \CySmUkrainIe.sc ;
-    sub \CySmE by \CySmE.sc ;
-    sub \CySmEDiaer by \CySmEDiaer.sc ;
-    sub \CySmE.MongolStyle by \CySmE.MongolStyle.sc ;
-    sub \CySmKomiDe by \CySmKomiDe.sc ;
-    sub \LtnSmDCaron.Caron by \LtnSmDCaron.Caron.sc ;
-    sub \LtnSmDDotAbv by \LtnSmDDotAbv.sc ;
-    sub \LtnSmDCircumBlw by \LtnSmDCircumBlw.sc ;
-    sub \LtnSmDLineBlw by \LtnSmDLineBlw.sc ;
-    sub \LtnSmDDotBlw by \LtnSmDDotBlw.sc ;
-    sub \LtnSmDCedilla by \LtnSmDCedilla.sc ;
-    sub \LtnSmDCaron by \LtnSmDCaron.sc ;
-    sub \LtnSmDBarredBowl by \LtnSmDBarredBowl.sc ;
-    sub \LtnSmDBarredStem by \LtnSmDBarredStem.sc ;
-    sub \LtnSmDHook by \LtnSmDHook.sc ;
-    sub \LtnSmDHook.TopBar by \LtnSmDHook.TopBar.sc ;
-    sub \LtnSmDTail by \LtnSmDTail.sc ;
-    sub \LtnSmDTopbar by \LtnSmDTopbar.sc ;
-    sub \LtnSmDz by \LtnSmDz.sc ;
-    sub \LtnSmDzCaron by \LtnSmDzCaron.sc ;
-    sub \CySmKomiDje by \CySmKomiDje.sc ;
-    sub \LtnSmEth by \LtnSmEth.sc ;
-    sub \LtnCapDSmZ by \LtnCapDSmZ.sc ;
-    sub \LtnCapDSmZCaron by \LtnCapDSmZCaron.sc ;
-    sub \CySmIe by \CySmIe.sc ;
-    sub \CySmIeGrave by \CySmIeGrave.sc ;
-    sub \LtnSmEDblGrave by \LtnSmEDblGrave.sc ;
-    sub \LtnSmECircumAcute by \LtnSmECircumAcute.sc ;
-    sub \LtnSmECircumAcute.VN by \LtnSmECircumAcute.VN.sc ;
-    sub \LtnSmECircumGrave by \LtnSmECircumGrave.sc ;
-    sub \LtnSmECircumGrave.VN by \LtnSmECircumGrave.VN.sc ;
-    sub \LtnSmECircumTilde by \LtnSmECircumTilde.sc ;
-    sub \LtnSmECircumTilde.VN by \LtnSmECircumTilde.VN.sc ;
-    sub \LtnSmECircumHookAbv by \LtnSmECircumHookAbv.sc ;
-    sub \LtnSmECircumHookAbv.VN by \LtnSmECircumHookAbv.VN.sc ;
-    sub \LtnSmECircumDotBlw by \LtnSmECircumDotBlw.sc ;
-    sub \LtnSmEInvBreve by \LtnSmEInvBreve.sc ;
-    sub \LtnSmEBreve by \LtnSmEBreve.sc ;
-    sub \CySmIeBreve by \CySmIeBreve.sc ;
-    sub \LtnSmECaron by \LtnSmECaron.sc ;
-    sub \LtnSmETilde by \LtnSmETilde.sc ;
-    sub \LtnSmEMacron by \LtnSmEMacron.sc ;
-    sub \LtnSmEMacronAcute by \LtnSmEMacronAcute.sc ;
-    sub \LtnSmEMacronGrave by \LtnSmEMacronGrave.sc ;
-    sub \CySmIo by \CySmIo.sc ;
-    sub \LtnSmEDotAbv by \LtnSmEDotAbv.sc ;
-    sub \LtnSmEHookAbv by \LtnSmEHookAbv.sc ;
-    sub \LtnSmECircumBlw by \LtnSmECircumBlw.sc ;
-    sub \LtnSmETildeBlw by \LtnSmETildeBlw.sc ;
-    sub \LtnSmEDotBlw by \LtnSmEDotBlw.sc ;
-    sub \LtnSmECedilla by \LtnSmECedilla.sc ;
-    sub \LtnSmECedillaBreve by \LtnSmECedillaBreve.sc ;
-    sub \LtnSmEOgonek by \LtnSmEOgonek.sc ;
-    sub \LtnSmEOgonek.RetroHook by \LtnSmEOgonek.RetroHook.sc ;
-    sub \LtnSmEStrk by \LtnSmEStrk.sc ;
-    sub \CySmAbkhasChe by \CySmAbkhasChe.sc ;
-    sub \CySmAbkhasCheDesc by \CySmAbkhasCheDesc.sc ;
-    sub \LtnSmTurnedE by \LtnSmRevE.sc ;
-    sub \LtnSmSchwa by \LtnSmSchwa.sc ;
-    sub \CySmSchwa by \CySmSchwa.sc ;
-    sub \CySmSchwaDiaer by \CySmSchwaDiaer.sc ;
-    sub \LtnSmOpnE by \LtnSmOpnE.sc ;
-    sub \LtnSmRevOpnE by \LtnSmRevOpnE.sc ;
-    sub \CySmRevZe by \CySmRevZe.sc ;
-    sub \CySmZe by \CySmZe.sc ;
-    sub \CySmZeDiaer by \CySmZeDiaer.sc ;
-    sub \CySmZeDesc by \CySmZeDesc.sc ;
-    sub \CySmKomiDzje by \CySmKomiDzje.sc ;
-    sub \CySmKomiZje by \CySmKomiZje.sc ;
-    sub \LtnSmFDotAbv by \LtnSmFDotAbv.sc ;
-    sub \LtnSmFHookStrk by \LtnSmFHookStrk.sc ;
-    sub \LtnLigSmFSmI by \LtnLigSmFSmI.sc ;
-    sub \LtnLigSmFSmI.SItal by \LtnLigSmFSmI.SItal.sc ;
-    sub \LtnLigSmFSmL by \LtnLigSmFSmL.sc ;
-    sub \LtnLigSmFSmL.SItal by \LtnLigSmFSmL.SItal.sc ;
-    sub \LtnLigSmFSmFSmI by \LtnLigSmFSmFSmI.sc ;
-    sub \LtnLigSmFSmFSmI.SItal by \LtnLigSmFSmFSmI.SItal.sc ;
-    sub \LtnLigSmFSmFSmL by \LtnLigSmFSmFSmL.sc ;
-    sub \LtnLigSmFSmFSmL.SItal by \LtnLigSmFSmFSmL.SItal.sc ;
-    sub \LtnLigSmFSmF by \LtnLigSmFSmF.sc ;
-    sub \LtnLigSmFSmF.SItal by \LtnLigSmFSmF.SItal.sc ;
-    sub \CySmGhe by \CySmGhe.sc ;
-    sub \CySmGje by \CySmGje.sc ;
-    sub \CySmGheUpturn by \CySmGheUpturn.sc ;
-    sub \CySmGheDesc by \CySmGheDesc.sc ;
-    sub \CySmGheStrk by \CySmGheStrk.sc ;
-    sub \CySmGheStrkDesc by \CySmGheStrkDesc.sc ;
-    sub \CySmGheStrkHook by \CySmGheStrkHook.sc ;
-    sub \LtnSmGAcute by \LtnSmGAcute.sc ;
-    sub \LtnSmGCircum by \LtnSmGCircum.sc ;
-    sub \LtnSmGBreve by \LtnSmGBreve.sc ;
-    sub \LtnSmGCaron by \LtnSmGCaron.sc ;
-    sub \LtnSmGMacron by \LtnSmGMacron.sc ;
-    sub \LtnSmGDotAbv by \LtnSmGDotAbv.sc ;
-    sub \LtnSmGCedilla by \LtnSmGCedilla.sc ;
-    sub \LtnSmGBarredBowl by \LtnSmGBarredBowl.sc ;
-    sub \LtnSmGStrk by \LtnSmGStrk.sc ;
-    sub \LtnSmGDiagStrk by \LtnSmGDiagStrk.sc ;
-    sub \LtnSmGDiagStrk.SngBowl by \LtnSmGDiagStrk.SngBowl.sc ;
-    sub \LtnSmG.SngBowl by \LtnSmG.SngBowl.sc ;
-    sub \LtnSmScriptG by \LtnSmScriptG.sc ;
-    sub \LtnSmGAcute.SngBowl by \LtnSmGAcute.SngBowl.sc ;
-    sub \LtnSmGCircum.SngBowl by \LtnSmGCircum.SngBowl.sc ;
-    sub \LtnSmGBreve.SngBowl by \LtnSmGBreve.SngBowl.sc ;
-    sub \LtnSmGCaron.SngBowl by \LtnSmGCaron.SngBowl.sc ;
-    sub \LtnSmGMacron.SngBowl by \LtnSmGMacron.SngBowl.sc ;
-    sub \LtnSmGDotAbv.SngBowl by \LtnSmGDotAbv.SngBowl.sc ;
-    sub \LtnSmGCedilla.SngBowl by \LtnSmGCedilla.SngBowl.sc ;
-    sub \LtnSmGBarredSngBowl by \LtnSmGBarredSngBowl.sc ;
-    sub \LtnSmGHook by \LtnSmGHook.sc ;
-    sub \LtnSmInsularG by \LtnSmInsularG.sc ;
-    sub \LtnSmTrndInsularG by \LtnSmTrndInsularG.sc ;
-    sub \CySmKomiSje by \CySmKomiSje.sc ;
-    sub \LtnSmHCircum by \LtnSmHCircum.sc ;
-    sub \LtnSmHCaron by \LtnSmHCaron.sc ;
-    sub \LtnSmHDiaer by \LtnSmHDiaer.sc ;
-    sub \LtnSmHDotAbv by \LtnSmHDotAbv.sc ;
-    sub \LtnSmHBreveBlw by \LtnSmHBreveBlw.sc ;
-    sub \LtnSmHDotBlw by \LtnSmHDotBlw.sc ;
-    sub \LtnSmHCedilla by \LtnSmHCedilla.sc ;
-    sub \LtnSmHStrk by \LtnSmHStrk.sc ;
-    sub \LtnSmHStrk.VertStrk by \LtnSmHStrk.VertStrk.sc ;
-    sub \CySmTshe by \CySmTshe.sc ;
-    sub \CySmDje by \CySmDje.sc ;
-    sub \LtnSmHHook by \LtnSmHHook.sc ;
-    sub \LtnSmHeng by \LtnSmHeng.sc ;
-    sub \LtnSmHDesc by \LtnSmHDesc.sc ;
-    sub \LtnSmHv by \LtnSmHv.sc ;
-    sub \LtnSmHalfH by \LtnSmHalfH.sc ;
-    sub \LtnSmTurnedH by \LtnSmTurnedH.sc ;
-    sub \CySmShha by \CySmShha.sc ;
-    sub \CySmGheMiddleHook by \CySmGheMiddleHook.sc ;
-    sub \CySmShhaDesc by \CySmShhaDesc.sc ;
-    sub \CySmEn by \CySmEn.sc ;
-    sub \CySmLigEnGhe by \CySmLigEnGhe.sc ;
-    sub \CySmEnDesc by \CySmEnDesc.sc ;
-    sub \CySmEnTail by \CySmEnTail.sc ;
-    sub \CySmNje by \CySmNje.sc ;
-    sub \CySmEnHook by \CySmEnHook.sc ;
-    sub \CySmEnLftHook by \CySmEnLftHook.sc ;
-    sub \CySmKomiNje by \CySmKomiNje.sc ;
-    sub \CySmEnMiddleHook by \CySmEnMiddleHook.sc ;
-    sub \CySmPe by \CySmPe.sc ;
-    sub \CySmPeDesc by \CySmPeDesc.sc ;
-    sub \CySmPeMiddleHook by \CySmPeMiddleHook.sc ;
-    sub \CySmDzhe by \CySmDzhe.sc ;
-    sub \CySmTse by \CySmTse.sc ;
-    sub \CySmSha by \CySmSha.sc ;
-    sub \CySmShcha by \CySmShcha.sc ;
-    sub \CySmByelorusUkrainI by \CySmByelorusUkrainI.sc ;
-    sub \LtnSmIDblGrave by \LtnSmIDblGrave.sc ;
-    sub \LtnSmIInvBreve by \LtnSmIInvBreve.sc ;
-    sub \LtnSmIBreve by \LtnSmIBreve.sc ;
-    sub \LtnSmICaron by \LtnSmICaron.sc ;
-    sub \LtnSmITilde by \LtnSmITilde.sc ;
-    sub \LtnSmIMacron by \LtnSmIMacron.sc ;
-    sub \CySmYi by \CySmYi.sc ;
-    sub \LtnSmIDiaerAcute by \LtnSmIDiaerAcute.sc ;
-    sub \LtnSmIDotAbv by \LtnSmIDotAbv.sc ;
-    sub \LtnSmIHookAbv by \LtnSmIHookAbv.sc ;
-    sub \LtnSmITildeBlw by \LtnSmITildeBlw.sc ;
-    sub \LtnSmIDotBlw by \LtnSmIDotBlw.sc ;
-    sub \LtnSmIOgonek by \LtnSmIOgonek.sc ;
-    sub \LtnSmIOgonek.RetroHook by \LtnSmIOgonek.RetroHook.sc ;
-    sub \LtnSmIStrk by \LtnSmIStrk.sc ;
-    sub \LtnSmI.Dotless by \LtnSmI.Dotless.sc ;
-    sub \LtnSmLigIj by \LtnSmLigIj.sc ;
-    sub \LtnSmIota by \LtnSmIota.sc ;
-    sub \CySmYu by \CySmYu.sc ;
-    sub \CySmPalochka by \CyPalochka.sc ;
-    sub \CySmJe by \CySmJe.sc ;
-    sub \LtnSmJCircum by \LtnSmJCircum.sc ;
-    sub \LtnSmJStrk by \LtnSmJStrk.sc ;
-    sub \LtnSmIs by \LtnSmIs.sc ;
-    sub \CySmEl by \CySmEl.sc ;
-    sub \CySmElDesc by \CySmElDesc.sc ;
-    sub \CySmElTail by \CySmElTail.sc ;
-    sub \CySmLje by \CySmLje.sc ;
-    sub \CySmElHook by \CySmElHook.sc ;
-    sub \CySmKomiLje by \CySmKomiLje.sc ;
-    sub \CySmElMiddleHook by \CySmElMiddleHook.sc ;
-    sub \CySmDe by \CySmDe.sc ;
-    sub \CySmDeZheLig by \CySmDeZheLig.sc ;
-    sub \CySmLha by \CySmLha.sc ;
-    sub \LtnSmKAcute by \LtnSmKAcute.sc ;
-    sub \LtnSmKCaron by \LtnSmKCaron.sc ;
-    sub \LtnSmKLineBlw by \LtnSmKLineBlw.sc ;
-    sub \LtnSmKDotBlw by \LtnSmKDotBlw.sc ;
-    sub \LtnSmKCedilla by \LtnSmKCedilla.sc ;
-    sub \LtnSmKStrk by \LtnSmKStrk.sc ;
-    sub \LtnSmKStrkRtDiagStrk by \LtnSmKStrkRtDiagStrk.sc ;
-    sub \LtnSmKRtDiagStrk by \LtnSmKRtDiagStrk.sc ;
-    sub \LtnSmKDiagStrk by \LtnSmKDiagStrk.sc ;
-    sub \LtnSmKHook by \LtnSmKHook.sc ;
-    sub \LtnSmKDesc by \LtnSmKDesc.sc ;
-    sub \LtnSmTurnedK by \LtnSmTurnedK.sc ;
-    sub \CySmKa by \CySmKa.sc ;
-    sub \CySmKje by \CySmKje.sc ;
-    sub \CySmKaDesc by \CySmKaDesc.sc ;
-    sub \CySmBashkirKa by \CySmBashkirKa.sc ;
-    sub \CySmKaStrk by \CySmKaStrk.sc ;
-    sub \CySmKaVertStrk by \CySmKaVertStrk.sc ;
-    sub \CySmKaHook by \CySmKaHook.sc ;
-    sub \CySmAleutKa by \CySmAleutKa.sc ;
-    sub \CySmZhe by \CySmZhe.sc ;
-    sub \CySmZheBreve by \CySmZheBreve.sc ;
-    sub \CySmZheDiaer by \CySmZheDiaer.sc ;
-    sub \CySmZheDesc by \CySmZheDesc.sc ;
-    sub \LtnSmLAcute by \LtnSmLAcute.sc ;
-    sub \LtnSmLCaron.Caron by \LtnSmLCaron.Caron.sc ;
-    sub \LtnSmLCircumBlw by \LtnSmLCircumBlw.sc ;
-    sub \LtnSmLLineBlw by \LtnSmLLineBlw.sc ;
-    sub \LtnSmLDotBlw by \LtnSmLDotBlw.sc ;
-    sub \LtnSmLDotBlwMacron by \LtnSmLDotBlwMacron.sc ;
-    sub \LtnSmLCedilla by \LtnSmLCedilla.sc ;
-    sub \LtnSmLMiddleDot by \LtnSmLMiddleDot.sc ;
-    sub \LtnSmLCaron by \LtnSmLCaron.sc ;
-    sub \LtnSmLBar by \LtnSmLBar.sc ;
-    sub \LtnSmLHighBar by \LtnSmLHighBar.sc ;
-    sub \LtnSmDblBarredL by \LtnSmDblBarredL.sc ;
-    sub \LtnSmLMiddleTilde by \LtnSmLMiddleTilde.sc ;
-    sub \LtnSmLStrk by \LtnSmLStrk.sc ;
-    sub \LtnSmLBelt by \LtnSmLBelt.sc ;
-    sub \LtnSmLBrkn by \LtnSmLBrkn.sc ;
-    sub \LtnSmLTrnd by \LtnSmLTrnd.sc ;
-    sub \LtnSmLj by \LtnSmLj.sc ;
-    sub \LtnSmLLDigraph by \LtnSmLLDigraph.sc ;
-    sub \LtnCapLSmJ by \LtnCapLSmJ.sc ;
-    sub \LtnSmMAcute by \LtnSmMAcute.sc ;
-    sub \LtnSmMDotAbv by \LtnSmMDotAbv.sc ;
-    sub \LtnSmMDotBlw by \LtnSmMDotBlw.sc ;
-    sub \LtnSmMHook by \LtnSmMHook.sc ;
-    sub \LtnSmTurnedM by \LtnSmTurnedM.sc ;
-    sub \CySmEm by \CySmEm.sc ;
-    sub \CySmEmTail by \CySmEmTail.sc ;
-    sub \LtnSmNAcute by \LtnSmNAcute.sc ;
-    sub \LtnSmNGrave by \LtnSmNGrave.sc ;
-    sub \LtnSmNCaron by \LtnSmNCaron.sc ;
-    sub \LtnSmNDotAbv by \LtnSmNDotAbv.sc ;
-    sub \LtnSmNCircumBlw by \LtnSmNCircumBlw.sc ;
-    sub \LtnSmNLineBlw by \LtnSmNLineBlw.sc ;
-    sub \LtnSmNDotBlw by \LtnSmNDotBlw.sc ;
-    sub \LtnSmNCedilla by \LtnSmNCedilla.sc ;
-    sub \LtnSmNDiagStrk by \LtnSmNDiagStrk.sc ;
-    sub \LtnSmNLftHook by \LtnSmNLftHook.sc ;
-    sub \LtnSmNLftHook.LCStyle by \LtnSmNLftHook.LCStyle.sc ;
-    sub \LtnSmEng by \LtnSmEng.sc ;
-    sub \LtnSmEng.BaselineHook by \LtnSmEng.BaselineHook.sc ;
-    sub \LtnSmEng.UCStyle by \LtnSmEng.UCStyle.sc ;
-    sub \LtnSmEng.Kom by \LtnSmEng.Kom.sc ;
-    sub \LtnSmNDesc by \LtnSmNDesc.sc ;
-    sub \LtnSmNLngRtLeg by \LtnSmNLngRtLeg.sc ;
-    sub \LtnSmNj by \LtnSmNj.sc ;
-    sub \CySmI by \CySmI.sc ;
-    sub \CySmIGrave by \CySmIGrave.sc ;
-    sub \CySmShortI by \CySmShortI.sc ;
-    sub \CySmShortITail by \CySmShortITail.sc ;
-    sub \CySmIMacron by \CySmIMacron.sc ;
-    sub \CySmIDiaer by \CySmIDiaer.sc ;
-    sub \LtnCapNSmJ by \LtnCapNSmJ.sc ;
-    sub \CySmO by \CySmO.sc ;
-    sub \LtnSmODblAcute by \LtnSmODblAcute.sc ;
-    sub \LtnSmODblGrave by \LtnSmODblGrave.sc ;
-    sub \LtnSmOCircumAcute by \LtnSmOCircumAcute.sc ;
-    sub \LtnSmOCircumAcute.VN by \LtnSmOCircumAcute.VN.sc ;
-    sub \LtnSmOCircumGrave by \LtnSmOCircumGrave.sc ;
-    sub \LtnSmOCircumGrave.VN by \LtnSmOCircumGrave.VN.sc ;
-    sub \LtnSmOCircumTilde by \LtnSmOCircumTilde.sc ;
-    sub \LtnSmOCircumTilde.VN by \LtnSmOCircumTilde.VN.sc ;
-    sub \LtnSmOCircumHookAbv by \LtnSmOCircumHookAbv.sc ;
-    sub \LtnSmOCircumHookAbv.VN by \LtnSmOCircumHookAbv.VN.sc ;
-    sub \LtnSmOCircumDotBlw by \LtnSmOCircumDotBlw.sc ;
-    sub \LtnSmOInvBreve by \LtnSmOInvBreve.sc ;
-    sub \LtnSmOBreve by \LtnSmOBreve.sc ;
-    sub \LtnSmOCaron by \LtnSmOCaron.sc ;
-    sub \LtnSmOTildeAcute by \LtnSmOTildeAcute.sc ;
-    sub \LtnSmOTildeMacron by \LtnSmOTildeMacron.sc ;
-    sub \LtnSmOTildeDiaer by \LtnSmOTildeDiaer.sc ;
-    sub \LtnSmOMacron by \LtnSmOMacron.sc ;
-    sub \LtnSmOMacronAcute by \LtnSmOMacronAcute.sc ;
-    sub \LtnSmOMacronGrave by \LtnSmOMacronGrave.sc ;
-    sub \CySmODiaer by \CySmODiaer.sc ;
-    sub \LtnSmODiaerMacron by \LtnSmODiaerMacron.sc ;
-    sub \LtnSmODotAbv by \LtnSmODotAbv.sc ;
-    sub \LtnSmODotAbvMacron by \LtnSmODotAbvMacron.sc ;
-    sub \LtnSmOHookAbv by \LtnSmOHookAbv.sc ;
-    sub \LtnSmODotBlw by \LtnSmODotBlw.sc ;
-    sub \LtnSmOOgonek by \LtnSmOOgonek.sc ;
-    sub \LtnSmOOgonekMacron by \LtnSmOOgonekMacron.sc ;
-    sub \LtnSmOOgonek.RetroHook by \LtnSmOOgonek.RetroHook.sc ;
-    sub \LtnSmOOgonekMacron.RetroHook by \LtnSmOOgonekMacron.RetroHook.sc ;
-    sub \LtnSmBarredO by \LtnSmOMiddleTilde.sc ;
-    sub \CySmBarredO by \CySmBarredO.sc ;
-    sub \CySmBarredODiaer by \CySmBarredODiaer.sc ;
-    sub \LtnSmOLngStrk by \LtnSmOLngStrk.sc ;
-    sub \CySmFita by \CySmFita.sc ;
-    sub \LtnSmOStrkAcute by \LtnSmOStrkAcute.sc ;
-    sub \LtnSmOCurl by \LtnSmOCurl.sc ;
-    sub \LtnSmInsularD by \LtnSmInsularD.sc ;
-    sub \LtnSmOHorn by \LtnSmOHorn.sc ;
-    sub \LtnSmOHornAcute by \LtnSmOHornAcute.sc ;
-    sub \LtnSmOHornGrave by \LtnSmOHornGrave.sc ;
-    sub \LtnSmOHornTilde by \LtnSmOHornTilde.sc ;
-    sub \LtnSmOHornHookAbv by \LtnSmOHornHookAbv.sc ;
-    sub \LtnSmOHornDotBlw by \LtnSmOHornDotBlw.sc ;
-    sub \CySmAbkhasHa by \CySmAbkhasHa.sc ;
-    sub \LtnSmOi by \LtnSmOi.sc ;
-    sub \LtnSmOODigraph by \LtnSmOODigraph.sc ;
-    sub \LtnSmOu by \LtnSmOu.sc ;
-    sub \LtnSmOu.OpenTop by \LtnSmOu.OpenTop.sc ;
-    sub \CySmEr by \CySmEr.sc ;
-    sub \LtnSmPAcute by \LtnSmPAcute.sc ;
-    sub \LtnSmPDotAbv by \LtnSmPDotAbv.sc ;
-    sub \LtnSmPStrk by \LtnSmPStrk.sc ;
-    sub \LtnSmPLowStrk by \LtnSmPLowStrk.sc ;
-    sub \CySmErTick by \CySmErTick.sc ;
-    sub \LtnSmThorn by \LtnSmThorn.sc ;
-    sub \LtnSmPHook by \LtnSmPHook.sc ;
-    sub \LtnSmThornHighStrk by \LtnSmThornHighStrk.sc ;
-    sub \LtnSmThornLowStrk by \LtnSmThornLowStrk.sc ;
-    sub \LtnSmPHighCurl by \LtnSmPHighCurl.sc ;
-    sub \LtnSmPLowCurl by \LtnSmPLowCurl.sc ;
-    sub \CySmRha by \CySmRha.sc ;
-    sub \LtnWynn by \LtnWynn.sc ;
-    sub \CySmEf by \CySmEf.sc ;
-    sub \CySmQa by \CySmQa.sc ;
-    sub \LtnSmQStrk by \LtnSmQStrk.sc ;
-    sub \LtnSmQDiagStrk by \LtnSmQDiagStrk.sc ;
-    sub \LtnSmQHookTail by \LtnSmQHookTail.sc ;
-    sub \LtnSmRAcute by \LtnSmRAcute.sc ;
-    sub \LtnSmRDblGrave by \LtnSmRDblGrave.sc ;
-    sub \LtnSmRInvBreve by \LtnSmRInvBreve.sc ;
-    sub \LtnSmRCaron by \LtnSmRCaron.sc ;
-    sub \LtnSmRDotAbv by \LtnSmRDotAbv.sc ;
-    sub \LtnSmRLineBlw by \LtnSmRLineBlw.sc ;
-    sub \LtnSmRDotBlw by \LtnSmRDotBlw.sc ;
-    sub \LtnSmRDotBlwMacron by \LtnSmRDotBlwMacron.sc ;
-    sub \LtnSmRCedilla by \LtnSmRCedilla.sc ;
-    sub \LtnSmRBar by \LtnSmRBarredStem.sc ;
-    sub \LtnSmRDiagStrk by \LtnSmRDiagStrk.sc ;
-    sub \LtnSmRHookTail by \LtnSmRHookTail.sc ;
-    sub \LtnSmRHookTail.LCStyle by \LtnSmCapSmRHookTail ;
-    sub \LtnSmRRotunda by \LtnSmRRotunda.sc ;
-    sub \LtnSmRumRotunda by \LtnSmRumRotunda.sc ;
-    sub \LtnSmInsularR by \LtnSmInsularR.sc ;
-    sub \LtnSmInsularS by \LtnSmInsularS.sc ;
-    sub \LtnSmInsularF by \LtnSmInsularF.sc ;
-    sub \LtnSmCapR by \LtnSmCapR.sc ;
-    sub \CySmYa by \CySmYa.sc ;
-    sub \CySmYae by \CySmYae.sc ;
-    sub \CySmDze by \CySmDze.sc ;
-    sub \LtnSmSAcute by \LtnSmSAcute.sc ;
-    sub \LtnSmSAcuteDotAbv by \LtnSmSAcuteDotAbv.sc ;
-    sub \LtnSmSCircum by \LtnSmSCircum.sc ;
-    sub \LtnSmSCaron by \LtnSmSCaron.sc ;
-    sub \LtnSmSCaronDotAbv by \LtnSmSCaronDotAbv.sc ;
-    sub \LtnSmSDotAbv by \LtnSmSDotAbv.sc ;
-    sub \LtnSmSDotBlw by \LtnSmSDotBlw.sc ;
-    sub \LtnSmSDotBlwDotAbv by \LtnSmSDotBlwDotAbv.sc ;
-    sub \LtnSmSCommaBlw by \LtnSmSCommaBlw.sc ;
-    sub \LtnSmSCedilla by \LtnSmSCedilla.sc ;
-    sub \LtnSmSDiagStrk by \LtnSmSDiagStrk.sc ;
-    sub \LtnSmSSwashTail by \LtnSmSSwashTail.sc ;
-    sub \LtnSmTnTwo by \LtnSmTnTwo.sc ;
-    sub \LtnSmEsh by \LtnSmEsh.sc ;
-    sub \LtnSmTCaron.Caron by \LtnSmTCaron.Caron.sc ;
-    sub \LtnSmTDotAbv by \LtnSmTDotAbv.sc ;
-    sub \LtnSmTCircumBlw by \LtnSmTCircumBlw.sc ;
-    sub \LtnSmTLineBlw by \LtnSmTLineBlw.sc ;
-    sub \LtnSmTDotBlw by \LtnSmTDotBlw.sc ;
-    sub \LtnSmTCommaBlw by \LtnSmTCommaBlw.sc ;
-    sub \LtnSmTCaron by \LtnSmTCaron.sc ;
-    sub \LtnSmTCedilla by \LtnSmTCedilla.sc ;
-    sub \LtnSmTStrk by \LtnSmTStrk.sc ;
-    sub \LtnSmTDiagStrk by \LtnSmTDiagStrk.sc ;
-    sub \LtnSmTHook by \LtnSmTHook.sc ;
-    sub \LtnSmTHook.RtHook by \LtnSmTHook.RtHook.sc ;
-    sub \LtnSmTRetrHook by \LtnSmTRetrHook.sc ;
-    sub \LtnSmTzDigraph by \LtnSmTzDigraph.sc ;
-    sub \LtnSmInsularT by \LtnSmInsularT.sc ;
-    sub \LtnSmTurnedT by \LtnSmTurnedT.sc ;
-    sub \CySmTe by \CySmTe.sc ;
-    sub \CySmTeDesc by \CySmTeDesc.sc ;
-    sub \CySmKomiTje by \CySmKomiTje.sc ;
-    sub \CySmLigTeTse by \CySmLigTeTse.sc ;
-    sub \LtnSmUDblAcute by \LtnSmUDblAcute.sc ;
-    sub \LtnSmUDblGrave by \LtnSmUDblGrave.sc ;
-    sub \LtnSmUInvBreve by \LtnSmUInvBreve.sc ;
-    sub \LtnSmUBreve by \LtnSmUBreve.sc ;
-    sub \LtnSmUCaron by \LtnSmUCaron.sc ;
-    sub \LtnSmUTilde by \LtnSmUTilde.sc ;
-    sub \LtnSmUTildeAcute by \LtnSmUTildeAcute.sc ;
-    sub \LtnSmUMacron by \LtnSmUMacron.sc ;
-    sub \LtnSmUMacronDiaer by \LtnSmUMacronDiaer.sc ;
-    sub \LtnSmUDiaerAcute by \LtnSmUDiaerAcute.sc ;
-    sub \LtnSmUDiaerGrave by \LtnSmUDiaerGrave.sc ;
-    sub \LtnSmUDiaerCaron by \LtnSmUDiaerCaron.sc ;
-    sub \LtnSmUDiaerMacron by \LtnSmUDiaerMacron.sc ;
-    sub \LtnSmURingAbv by \LtnSmURingAbv.sc ;
-    sub \LtnSmUHookAbv by \LtnSmUHookAbv.sc ;
-    sub \LtnSmUCircumBlw by \LtnSmUCircumBlw.sc ;
-    sub \LtnSmUTildeBlw by \LtnSmUTildeBlw.sc ;
-    sub \LtnSmUDiaerBlw by \LtnSmUDiaerBlw.sc ;
-    sub \LtnSmUDotBlw by \LtnSmUDotBlw.sc ;
-    sub \LtnSmUOgonek by \LtnSmUOgonek.sc ;
-    sub \LtnSmUOgonek.RetroHook by \LtnSmUOgonek.RetroHook.sc ;
-    sub \LtnSmUBar by \LtnSmUBar.sc ;
-    sub \LtnSmUHorn by \LtnSmUHorn.sc ;
-    sub \LtnSmUHornAcute by \LtnSmUHornAcute.sc ;
-    sub \LtnSmUHornGrave by \LtnSmUHornGrave.sc ;
-    sub \LtnSmUHornTilde by \LtnSmUHornTilde.sc ;
-    sub \LtnSmUHornHookAbv by \LtnSmUHornHookAbv.sc ;
-    sub \LtnSmUHornDotBlw by \LtnSmUHornDotBlw.sc ;
-    sub \LtnSmVHook by \LtnSmVHook.sc ;
-    sub \LtnSmUpsilon by \LtnSmUpsilon.sc ;
-    sub \LtnSmVTilde by \LtnSmVTilde.sc ;
-    sub \LtnSmVDotBlw by \LtnSmVDotBlw.sc ;
-    sub \LtnSmVHook.StraightLft by \LtnSmVHook.StraightLft.sc ;
-    sub \LtnSmVHook.StraightLftHighHook by \LtnSmVHook.StraightLftHighHook.sc ;
-    sub \LtnSmVDiagStrk by \LtnSmVDiagStrk.sc ;
-    sub \LtnSmVYDigraph by \LtnSmVYDigraph.sc ;
-    sub \LtnSmVend by \LtnSmVend.sc ;
-    sub \LtnSmTurnedV by \LtnSmTurnedV.sc ;
-    sub \LtnSmGamma by \LtnSmGamma.sc ;
-    sub \CySmIzhitsa by \CySmIzhitsa.sc ;
-    sub \CySmWe by \CySmWe.sc ;
-    sub \LtnSmWAcute by \LtnSmWAcute.sc ;
-    sub \LtnSmWGrave by \LtnSmWGrave.sc ;
-    sub \LtnSmWCircum by \LtnSmWCircum.sc ;
-    sub \LtnSmWDiaer by \LtnSmWDiaer.sc ;
-    sub \LtnSmWDotAbv by \LtnSmWDotAbv.sc ;
-    sub \LtnSmWDotBlw by \LtnSmWDotBlw.sc ;
-    sub \LtnSmWHook by \LtnSmWHook.sc ;
-    sub \CySmHa by \CySmHa.sc ;
-    sub \LtnSmXDiaer by \LtnSmXDiaer.sc ;
-    sub \LtnSmXDotAbv by \LtnSmXDotAbv.sc ;
-    sub \CySmHaStrk by \CySmHaStrk.sc ;
-    sub \CySmHaHook by \CySmHaHook.sc ;
-    sub \CySmHaDesc by \CySmHaDesc.sc ;
-    sub \CySmU by \CySmU.sc ;
-    sub \LtnSmYAcute by \LtnSmYAcute.sc ;
-    sub \CySmUDblAcute by \CySmUDblAcute.sc ;
-    sub \LtnSmYGrave by \LtnSmYGrave.sc ;
-    sub \LtnSmYCircum by \LtnSmYCircum.sc ;
-    sub \CySmShortU by \CySmShortU.sc ;
-    sub \LtnSmYTilde by \LtnSmYTilde.sc ;
-    sub \LtnSmYMacron by \LtnSmYMacron.sc ;
-    sub \CySmUMacron by \CySmUMacron.sc ;
-    sub \CySmUDiaer by \CySmUDiaer.sc ;
-    sub \LtnSmYDotAbv by \LtnSmYDotAbv.sc ;
-    sub \LtnSmYHookAbv by \LtnSmYHookAbv.sc ;
-    sub \LtnSmYDotBlw by \LtnSmYDotBlw.sc ;
-    sub \LtnSmYStrk by \LtnSmYStrk.sc ;
-    sub \LtnSmYHook.RtHook by \LtnSmYHook.RtHook.sc ;
-    sub \LtnSmYHook by \LtnSmYHook.sc ;
-    sub \LtnSmYLoop by \LtnSmYLoop.sc ;
-    sub \CySmStraightU by \CySmStraightU.sc ;
-    sub \CySmStraightUStrk by \CySmStraightUStrk.sc ;
-    sub \CySmChe by \CySmChe.sc ;
-    sub \CySmCheDiaer by \CySmCheDiaer.sc ;
-    sub \CySmCheVertStrk by \CySmCheVertStrk.sc ;
-    sub \CySmCheDesc by \CySmCheDesc.sc ;
-    sub \CySmKhakasChe by \CySmKhakasChe.sc ;
-    sub \CySmDeCheLig by \CySmDeCheLig.sc ;
-    sub \LtnSmZAcute by \LtnSmZAcute.sc ;
-    sub \LtnSmZCircum by \LtnSmZCircum.sc ;
-    sub \LtnSmZCaron by \LtnSmZCaron.sc ;
-    sub \LtnSmZDotAbv by \LtnSmZDotAbv.sc ;
-    sub \LtnSmZLineBlw by \LtnSmZLineBlw.sc ;
-    sub \LtnSmZDotBlw by \LtnSmZDotBlw.sc ;
-    sub \LtnSmZPalHook by \LtnSmZPalHook.sc ;
-    sub \LtnSmZStrk by \LtnSmZStrk.sc ;
-    sub \LtnSmZHook by \LtnSmZHook.sc ;
-    sub \LtnSmZDesc by \LtnSmZDesc.sc ;
-    sub \LtnSmZSwashTail by \LtnSmZSwashTail.sc ;
-    sub \LtnSmVisigothicZ by \LtnSmVisigothicZ.sc ;
-    sub \LtnSmEzh by \LtnSmEzh.sc ;
-    sub \LtnSmEzh.RevSigmaStyle by \LtnSmEzh.RevSigmaStyle.sc ;
-    sub \CySmAbkhasDze by \CySmAbkhasDze.sc ;
-    sub \CySmAbkhasDze.RevSigmaStyle by \CySmAbkhasDze.RevSigmaStyle.sc ;
-    sub \LtnSmEzhCaron by \LtnSmEzhCaron.sc ;
-    sub \LtnSmEzhRev by \LtnSmEzhRev.sc ;
-    sub \LtnSmTresillo by \LtnSmTresillo.sc ;
-    sub \LtnSmYogh by \LtnSmYogh.sc ;
-    sub \LtnSmEt by \LtnSmEt.sc ;
-    sub \LtnSmGlottalStop by \LtnSmGlottalStop.sc ;
-    sub \LtnSmCuatrillo by \LtnSmCuatrillo.sc ;
-    sub \LtnSmCuatrilloComma by \LtnSmCuatrilloComma.sc ;
-    sub \LtnSmTnFive by \LtnSmTnFive.sc ;
-    sub \LtnSmOpenSix by \LtnSmOpenSix.sc ;
-    sub \LtnSmOpenNine by \LtnSmOpenNine.sc ;
-    sub \LtnSmSaltillo by \LtnSmSaltillo.sc ;
-    sub \LtnSmSaltillo.Lrg by \LtnSmSaltillo.Lrg.sc ;
-    sub \LtnSmEgAin by \LtnSmEgAin.sc ;
-    sub \LtnSmEgAlef by \LtnSmEgAlef.sc ;
-} smcpLowercasetoSmallCapitalslookup11;
+    sub @cno_sc by @c_sc;
+} sc1_sub;
 
-lookup c2scCapitalstoSmallCapitalslookup12 {
+lookup sc2_sub {
   lookupflag 0;
     sub \LtnCapA by \LtnSmA.sc ;
     sub \LtnCapB by \LtnSmB.sc ;
@@ -1913,18 +1236,18 @@ lookup c2scCapitalstoSmallCapitalslookup12 {
     sub \LtnCapSaltillo by \LtnSmSaltillo.sc ;
     sub \LtnCapEgAin by \LtnSmEgAin.sc ;
     sub \LtnCapEgAlef by \LtnSmEgAlef.sc ;
-} c2scCapitalstoSmallCapitalslookup12;
+} sc2_sub;
 
-lookup ligaStandardLigatureslookup13 {
+lookup f_sub {
   lookupflag 0;
     sub \LtnSmF \LtnSmI  by \LtnLigSmFSmI;
     sub \LtnSmF \LtnSmL  by \LtnLigSmFSmL;
     sub \LtnSmF \LtnSmF \LtnSmI  by \LtnLigSmFSmFSmI;
     sub \LtnSmF \LtnSmF \LtnSmL  by \LtnLigSmFSmFSmL;
     sub \LtnSmF \LtnSmF  by \LtnLigSmFSmF;
-} ligaStandardLigatureslookup13;
+} f_sub;
 
-lookup ccmpGlyphCompositionDecompositionlookup14 {
+lookup tn_ctx {
   lookupflag 0;
     sub [\TnLtr5 \TnLtr4 \TnLtr3 \TnLtr2 \TnLtr1 ]' [\TnLtr1 ]  by [\TnContRt51 \TnContRt41 \TnContRt31 
 	\TnContRt21 \TnContRt11 ];
@@ -1951,152 +1274,152 @@ lookup ccmpGlyphCompositionDecompositionlookup14 {
     sub [\TnContLft15 \TnContLft25 \TnContLft35 \TnContLft45 \TnContLft55 
 	\LftStemTnLtr5 ] [\LftStemTnLtr5 \LftStemTnLtr4 \LftStemTnLtr3 \LftStemTnLtr2 \LftStemTnLtr1 ]'  by [\TnContLft55 \TnContLft54 \TnContLft53 
 	\TnContLft52 \TnContLft51 ];
-} ccmpGlyphCompositionDecompositionlookup14;
+} tn_ctx;
 
-lookup MultipleSubstitutionlookup26 {
+lookup tnsr_dcmp {
   lookupflag 0;
     sub \TnLtr5 by \TnContRt55 \TnStaffRt5 ;
     sub \TnLtr4 by \TnContRt44 \TnStaffRt4 ;
     sub \TnLtr3 by \TnContRt33 \TnStaffRt3 ;
     sub \TnLtr2 by \TnContRt22 \TnStaffRt2 ;
     sub \TnLtr1 by \TnContRt11 \TnStaffRt1 ;
-} MultipleSubstitutionlookup26;
+} tnsr_dcmp;
 
-lookup SingleSubstitutionlookup27 {
+lookup tnsr_sub {
   lookupflag 0;
     sub \TnLtr5 by \TnStaffRt5 ;
     sub \TnLtr4 by \TnStaffRt4 ;
     sub \TnLtr3 by \TnStaffRt3 ;
     sub \TnLtr2 by \TnStaffRt2 ;
     sub \TnLtr1 by \TnStaffRt1 ;
-} SingleSubstitutionlookup27;
+} tnsr_sub;
 
-lookup SingleSubstitutionlookup29 {
+lookup tnsl_sub {
   lookupflag 0;
     sub \LftStemTnLtr5 by \TnStaffLft5 ;
     sub \LftStemTnLtr4 by \TnStaffLft4 ;
     sub \LftStemTnLtr3 by \TnStaffLft3 ;
     sub \LftStemTnLtr2 by \TnStaffLft2 ;
     sub \LftStemTnLtr1 by \TnStaffLft1 ;
-} SingleSubstitutionlookup29;
+} tnsl_sub;
 
-lookup MultipleSubstitutionlookup28 {
+lookup tnsl_dcmp {
   lookupflag 0;
     sub \LftStemTnLtr5 by \TnStaffLft5 \TnContLft55 ;
     sub \LftStemTnLtr4 by \TnStaffLft4 \TnContLft44 ;
     sub \LftStemTnLtr3 by \TnStaffLft3 \TnContLft33 ;
     sub \LftStemTnLtr2 by \TnStaffLft2 \TnContLft22 ;
     sub \LftStemTnLtr1 by \TnStaffLft1 \TnContLft11 ;
-} MultipleSubstitutionlookup28;
+} tnsl_dcmp;
 
-lookup ccmpGlyphCompositionDecompositionlookup25 {
+lookup tne_ctx {
   lookupflag 0;
-    sub [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ] [\TnLtr5 \TnLtr4 \TnLtr3 \TnLtr2 \TnLtr1 ]'lookup MultipleSubstitutionlookup26  ;
+    sub [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ] [\TnLtr5 \TnLtr4 \TnLtr3 \TnLtr2 \TnLtr1 ]'lookup tnsr_dcmp  ;
     sub [\TnContRt12 \TnContRt13 \TnContRt14 \TnContRt15 \TnContRt21 \TnContRt23 
 	\TnContRt24 \TnContRt25 \TnContRt31 \TnContRt32 \TnContRt34 
 	\TnContRt35 \TnContRt41 \TnContRt42 \TnContRt43 \TnContRt45 
-	\TnContRt51 \TnContRt52 \TnContRt53 \TnContRt54 ] [\TnLtr5 \TnLtr4 \TnLtr3 \TnLtr2 \TnLtr1 ]'lookup SingleSubstitutionlookup27  ;
+	\TnContRt51 \TnContRt52 \TnContRt53 \TnContRt54 ] [\TnLtr5 \TnLtr4 \TnLtr3 \TnLtr2 \TnLtr1 ]'lookup tnsr_sub  ;
     sub [\TnContRt12 \TnContRt13 \TnContRt14 \TnContRt15 \TnContRt21 \TnContRt23 
 	\TnContRt24 \TnContRt25 \TnContRt31 \TnContRt32 \TnContRt34 
 	\TnContRt35 \TnContRt41 \TnContRt42 \TnContRt43 \TnContRt45 
-	\TnContRt51 \TnContRt52 \TnContRt53 \TnContRt54 ] [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnLtr5 \TnLtr4 \TnLtr3 \TnLtr2 \TnLtr1 ]'lookup SingleSubstitutionlookup27  ;
+	\TnContRt51 \TnContRt52 \TnContRt53 \TnContRt54 ] [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnLtr5 \TnLtr4 \TnLtr3 \TnLtr2 \TnLtr1 ]'lookup tnsr_sub  ;
     sub [\TnContRt12 \TnContRt13 \TnContRt14 \TnContRt15 \TnContRt21 \TnContRt23 
 	\TnContRt24 \TnContRt25 \TnContRt31 \TnContRt32 \TnContRt34 
 	\TnContRt35 \TnContRt41 \TnContRt42 \TnContRt43 \TnContRt45 
-	\TnContRt51 \TnContRt52 \TnContRt53 \TnContRt54 ] [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnLtr5 \TnLtr4 \TnLtr3 \TnLtr2 \TnLtr1 ]'lookup SingleSubstitutionlookup27  ;
+	\TnContRt51 \TnContRt52 \TnContRt53 \TnContRt54 ] [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnLtr5 \TnLtr4 \TnLtr3 \TnLtr2 \TnLtr1 ]'lookup tnsr_sub  ;
     sub [\TnContRt12 \TnContRt13 \TnContRt14 \TnContRt15 \TnContRt21 \TnContRt23 
 	\TnContRt24 \TnContRt25 \TnContRt31 \TnContRt32 \TnContRt34 
 	\TnContRt35 \TnContRt41 \TnContRt42 \TnContRt43 \TnContRt45 
-	\TnContRt51 \TnContRt52 \TnContRt53 \TnContRt54 ] [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnLtr5 \TnLtr4 \TnLtr3 \TnLtr2 \TnLtr1 ]'lookup SingleSubstitutionlookup27  ;
+	\TnContRt51 \TnContRt52 \TnContRt53 \TnContRt54 ] [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnLtr5 \TnLtr4 \TnLtr3 \TnLtr2 \TnLtr1 ]'lookup tnsr_sub  ;
     sub [\TnContRt12 \TnContRt13 \TnContRt14 \TnContRt15 \TnContRt21 \TnContRt23 
 	\TnContRt24 \TnContRt25 \TnContRt31 \TnContRt32 \TnContRt34 
 	\TnContRt35 \TnContRt41 \TnContRt42 \TnContRt43 \TnContRt45 
-	\TnContRt51 \TnContRt52 \TnContRt53 \TnContRt54 ] [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnLtr5 \TnLtr4 \TnLtr3 \TnLtr2 \TnLtr1 ]'lookup SingleSubstitutionlookup27  ;
+	\TnContRt51 \TnContRt52 \TnContRt53 \TnContRt54 ] [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnLtr5 \TnLtr4 \TnLtr3 \TnLtr2 \TnLtr1 ]'lookup tnsr_sub  ;
     sub [\TnContRt12 \TnContRt13 \TnContRt14 \TnContRt15 \TnContRt21 \TnContRt23 
 	\TnContRt24 \TnContRt25 \TnContRt31 \TnContRt32 \TnContRt34 
 	\TnContRt35 \TnContRt41 \TnContRt42 \TnContRt43 \TnContRt45 
-	\TnContRt51 \TnContRt52 \TnContRt53 \TnContRt54 ] [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnLtr5 \TnLtr4 \TnLtr3 \TnLtr2 \TnLtr1 ]'lookup SingleSubstitutionlookup27  ;
-    sub [\LftStemTnLtr5 \LftStemTnLtr4 \LftStemTnLtr3 \LftStemTnLtr2 \LftStemTnLtr1 ]'lookup SingleSubstitutionlookup29  [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft12 \TnContLft13 \TnContLft14 \TnContLft15 \TnContLft21 \TnContLft23 
+	\TnContRt51 \TnContRt52 \TnContRt53 \TnContRt54 ] [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnLtr5 \TnLtr4 \TnLtr3 \TnLtr2 \TnLtr1 ]'lookup tnsr_sub  ;
+    sub [\LftStemTnLtr5 \LftStemTnLtr4 \LftStemTnLtr3 \LftStemTnLtr2 \LftStemTnLtr1 ]'lookup tnsl_sub  [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft12 \TnContLft13 \TnContLft14 \TnContLft15 \TnContLft21 \TnContLft23 
 	\TnContLft24 \TnContLft25 \TnContLft31 \TnContLft32 \TnContLft34 
 	\TnContLft35 \TnContLft41 \TnContLft42 \TnContLft43 \TnContLft45 
 	\TnContLft51 \TnContLft52 \TnContLft53 \TnContLft54 ] ;
-    sub [\LftStemTnLtr5 \LftStemTnLtr4 \LftStemTnLtr3 \LftStemTnLtr2 \LftStemTnLtr1 ]'lookup SingleSubstitutionlookup29  [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft12 \TnContLft13 \TnContLft14 \TnContLft15 \TnContLft21 \TnContLft23 
+    sub [\LftStemTnLtr5 \LftStemTnLtr4 \LftStemTnLtr3 \LftStemTnLtr2 \LftStemTnLtr1 ]'lookup tnsl_sub  [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft12 \TnContLft13 \TnContLft14 \TnContLft15 \TnContLft21 \TnContLft23 
 	\TnContLft24 \TnContLft25 \TnContLft31 \TnContLft32 \TnContLft34 
 	\TnContLft35 \TnContLft41 \TnContLft42 \TnContLft43 \TnContLft45 
 	\TnContLft51 \TnContLft52 \TnContLft53 \TnContLft54 ] ;
-    sub [\LftStemTnLtr5 \LftStemTnLtr4 \LftStemTnLtr3 \LftStemTnLtr2 \LftStemTnLtr1 ]'lookup SingleSubstitutionlookup29  [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft12 \TnContLft13 \TnContLft14 \TnContLft15 \TnContLft21 \TnContLft23 
+    sub [\LftStemTnLtr5 \LftStemTnLtr4 \LftStemTnLtr3 \LftStemTnLtr2 \LftStemTnLtr1 ]'lookup tnsl_sub  [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft12 \TnContLft13 \TnContLft14 \TnContLft15 \TnContLft21 \TnContLft23 
 	\TnContLft24 \TnContLft25 \TnContLft31 \TnContLft32 \TnContLft34 
 	\TnContLft35 \TnContLft41 \TnContLft42 \TnContLft43 \TnContLft45 
 	\TnContLft51 \TnContLft52 \TnContLft53 \TnContLft54 ] ;
-    sub [\LftStemTnLtr5 \LftStemTnLtr4 \LftStemTnLtr3 \LftStemTnLtr2 \LftStemTnLtr1 ]'lookup SingleSubstitutionlookup29  [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft12 \TnContLft13 \TnContLft14 \TnContLft15 \TnContLft21 \TnContLft23 
+    sub [\LftStemTnLtr5 \LftStemTnLtr4 \LftStemTnLtr3 \LftStemTnLtr2 \LftStemTnLtr1 ]'lookup tnsl_sub  [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft12 \TnContLft13 \TnContLft14 \TnContLft15 \TnContLft21 \TnContLft23 
 	\TnContLft24 \TnContLft25 \TnContLft31 \TnContLft32 \TnContLft34 
 	\TnContLft35 \TnContLft41 \TnContLft42 \TnContLft43 \TnContLft45 
 	\TnContLft51 \TnContLft52 \TnContLft53 \TnContLft54 ] ;
-    sub [\LftStemTnLtr5 \LftStemTnLtr4 \LftStemTnLtr3 \LftStemTnLtr2 \LftStemTnLtr1 ]'lookup SingleSubstitutionlookup29  [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft12 \TnContLft13 \TnContLft14 \TnContLft15 \TnContLft21 \TnContLft23 
+    sub [\LftStemTnLtr5 \LftStemTnLtr4 \LftStemTnLtr3 \LftStemTnLtr2 \LftStemTnLtr1 ]'lookup tnsl_sub  [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft12 \TnContLft13 \TnContLft14 \TnContLft15 \TnContLft21 \TnContLft23 
 	\TnContLft24 \TnContLft25 \TnContLft31 \TnContLft32 \TnContLft34 
 	\TnContLft35 \TnContLft41 \TnContLft42 \TnContLft43 \TnContLft45 
 	\TnContLft51 \TnContLft52 \TnContLft53 \TnContLft54 ] ;
-    sub [\LftStemTnLtr5 \LftStemTnLtr4 \LftStemTnLtr3 \LftStemTnLtr2 \LftStemTnLtr1 ]'lookup MultipleSubstitutionlookup28  [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ] ;
-    sub [\LftStemTnLtr5 \LftStemTnLtr4 \LftStemTnLtr3 \LftStemTnLtr2 \LftStemTnLtr1 ]'lookup SingleSubstitutionlookup29  [\TnContLft12 \TnContLft13 \TnContLft14 \TnContLft15 \TnContLft21 \TnContLft23 
+    sub [\LftStemTnLtr5 \LftStemTnLtr4 \LftStemTnLtr3 \LftStemTnLtr2 \LftStemTnLtr1 ]'lookup tnsl_dcmp  [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ] ;
+    sub [\LftStemTnLtr5 \LftStemTnLtr4 \LftStemTnLtr3 \LftStemTnLtr2 \LftStemTnLtr1 ]'lookup tnsl_sub  [\TnContLft12 \TnContLft13 \TnContLft14 \TnContLft15 \TnContLft21 \TnContLft23 
 	\TnContLft24 \TnContLft25 \TnContLft31 \TnContLft32 \TnContLft34 
 	\TnContLft35 \TnContLft41 \TnContLft42 \TnContLft43 \TnContLft45 
 	\TnContLft51 \TnContLft52 \TnContLft53 \TnContLft54 ] ;
-} ccmpGlyphCompositionDecompositionlookup25;
+} tne_ctx;
 
-lookup AlternateSubstitutionlookup30 {
+lookup bhk_sub {
   lookupflag 0;
     sub \LtnCapBHook from [\LtnCapBHook.TopBar ];
     sub \LtnSmBHook.sc from [\LtnSmBHook.TopBar.sc ];
-} AlternateSubstitutionlookup30;
+} bhk_sub;
 
-lookup AlternateSubstitutionlookup31 {
+lookup dhk_sub {
   lookupflag 0;
     sub \LtnCapDHook from [\LtnCapDHook.TopBar ];
     sub \LtnSmDHook.sc from [\LtnSmDHook.TopBar.sc ];
-} AlternateSubstitutionlookup31;
+} dhk_sub;
 
-lookup AlternateSubstitutionlookup32 {
+lookup ezhcurl_sub {
   lookupflag 0;
     sub \LtnSmEzhCurl from [\LtnSmEzhCurl.LrgBowl ];
-} AlternateSubstitutionlookup32;
+} ezhcurl_sub;
 
-lookup AlternateSubstitutionlookup33 {
+lookup ezh_sub {
   lookupflag 0;
     sub \LtnCapEzh from [\LtnCapEzh.RevSigmaStyle ];
     sub \CyCapAbkhasDze from [\CyCapAbkhasDze.RevSigmaStyle ];
     sub \LtnSmEzh.sc from [\LtnSmEzh.RevSigmaStyle.sc ];
     sub \CySmAbkhasDze.sc from [\CySmAbkhasDze.RevSigmaStyle.sc ];
-} AlternateSubstitutionlookup33;
+} ezh_sub;
 
-lookup AlternateSubstitutionlookup34 {
+lookup rams_sub {
   lookupflag 0;
     sub \LtnSmRamsHorn from [\LtnSmRamsHorn.LrgBowl \LtnSmRamsHorn.GammaStyle ];
-} AlternateSubstitutionlookup34;
+} rams_sub;
 
-lookup AlternateSubstitutionlookup35 {
+lookup hstrk_sub {
   lookupflag 0;
     sub \LtnCapHStrk from [\LtnCapHStrk.VertStrk ];
     sub \LtnSmHStrk.sc from [\LtnSmHStrk.VertStrk.sc ];
-} AlternateSubstitutionlookup35;
+} hstrk_sub;
 
-lookup AlternateSubstitutionlookup36 {
+lookup jstrk_sub {
   lookupflag 0;
     sub \LtnSmDotlessJStrkHook from [\LtnSmDotlessJStrkHook.DblSerif ];
-} AlternateSubstitutionlookup36;
+} jstrk_sub;
 
-lookup AlternateSubstitutionlookup37 {
+lookup engs_sub {
   lookupflag 0;
     sub \LtnCapEng from [\LtnCapEng.BaselineHook \LtnCapEng.UCStyle \LtnCapEng.Kom ];
     sub \LtnSmEng.sc from [\LtnSmEng.BaselineHook.sc \LtnSmEng.UCStyle.sc \LtnSmEng.Kom.sc ];
-} AlternateSubstitutionlookup37;
+} engs_sub;
 
-lookup AlternateSubstitutionlookup38 {
+lookup nhk_sub {
   lookupflag 0;
     sub \LtnCapNLftHook from [\LtnCapNLftHook.LCStyle ];
     sub \LtnSmNLftHook.sc from [\LtnSmNLftHook.LCStyle.sc ];
-} AlternateSubstitutionlookup38;
+} nhk_sub;
 
-lookup AlternateSubstitutionlookup39 {
+lookup opno_sub {
   lookupflag 0;
     sub \LtnSmOpnO from [\LtnSmOpnO.TopSerif ];
     sub \LtnSupSmOpnO from [\LtnSupSmOpnO.TopSerif ];
@@ -2104,62 +1427,62 @@ lookup AlternateSubstitutionlookup39 {
     sub \LtnCapOpnO from [\LtnCapOpnO.TopSerif ];
     sub \LtnSmCapOpnO from [\LtnSmCapOpnO.TopSerif ];
     sub \LtnSmOpnO.sc from [\LtnSmOpnO.TopSerif.sc ];
-} AlternateSubstitutionlookup39;
+} opno_sub;
 
-lookup AlternateSubstitutionlookup40 {
+lookup ou_sub {
   lookupflag 0;
     sub \LtnSmOu from [\LtnSmOu.OpenTop ];
     sub \LtnCapOu from [\LtnCapOu.OpenTop ];
     sub \ModCapOu from [\ModCapOu.OpenTop ];
     sub \LtnSmCapOu from [\LtnSmCapOu.OpenTop ];
     sub \LtnSmOu.sc from [\LtnSmOu.OpenTop.sc ];
-} AlternateSubstitutionlookup40;
+} ou_sub;
 
-lookup AlternateSubstitutionlookup41 {
+lookup phk_sub {
   lookupflag 0;
     sub \LtnSmPHook from [\LtnSmPHook.BowlHook ];
-} AlternateSubstitutionlookup41;
+} phk_sub;
 
-lookup AlternateSubstitutionlookup42 {
+lookup rtl_sub {
   lookupflag 0;
     sub \LtnCapRHookTail from [\LtnCapSmRHookTail ];
     sub \LtnSmRHookTail.sc from [\LtnSmCapSmRHookTail ];
-} AlternateSubstitutionlookup42;
+} rtl_sub;
 
-lookup AlternateSubstitutionlookup43 {
+lookup thk_sub {
   lookupflag 0;
     sub \LtnCapTHook from [\LtnCapTHook.RtHook ];
     sub \LtnSmTHook.sc from [\LtnSmTHook.RtHook.sc ];
-} AlternateSubstitutionlookup43;
+} thk_sub;
 
-lookup AlternateSubstitutionlookup44 {
+lookup vhk_sub {
   lookupflag 0;
     sub \LtnSmVHook from [\LtnSmVHook.StraightLft \LtnSmVHook.StraightLftHighHook ];
     sub \ModSmVHook from [\ModSmVHook.StraightLft \ModSmVHook.StraightLftHighHook ];
     sub \LtnCapVHook from [\LtnCapVHook.StraightLft \LtnCapVHook.StraightLftHighHook ];
     sub \LtnSmVHook.sc from [\LtnSmVHook.StraightLft.sc \LtnSmVHook.StraightLftHighHook.sc ];
-} AlternateSubstitutionlookup44;
+} vhk_sub;
 
-lookup AlternateSubstitutionlookup45 {
+lookup yhk_sub {
   lookupflag 0;
     sub \LtnCapYHook.RtHook from [\LtnCapYHook ];
     sub \LtnSmYHook.RtHook.sc from [\LtnSmYHook.sc ];
-} AlternateSubstitutionlookup45;
+} yhk_sub;
 
-lookup AlternateSubstitutionlookup46 {
+lookup apos_sub {
   lookupflag 0;
     sub \LtnCapSaltillo from [\LtnCapSaltillo.Lrg ];
     sub \LtnSmSaltillo from [\LtnSmSaltillo.Lrg ];
     sub \ModApos from [\ModApos.Lrg ];
     sub \LtnSmSaltillo.sc from [\LtnSmSaltillo.Lrg.sc ];
-} AlternateSubstitutionlookup46;
+} apos_sub;
 
-lookup AlternateSubstitutionlookup47 {
+lookup colon_sub {
   lookupflag 0;
     sub \ModLowColon from [\ModLowColon.Wide ];
-} AlternateSubstitutionlookup47;
+} colon_sub;
 
-lookup AlternateSubstitutionlookup48 {
+lookup ognk_sub {
   lookupflag 0;
     sub \Ogonek from [\Ogonek.RetroHook ];
     sub \LtnSmAOgonek from [\LtnSmAOgonek.RetroHook ];
@@ -2182,43 +1505,43 @@ lookup AlternateSubstitutionlookup48 {
     sub \LtnSmOOgonek.sc from [\LtnSmOOgonek.RetroHook.sc ];
     sub \LtnSmOOgonekMacron.sc from [\LtnSmOOgonekMacron.RetroHook.sc ];
     sub \LtnSmUOgonek.sc from [\LtnSmUOgonek.RetroHook.sc ];
-} AlternateSubstitutionlookup48;
+} ognk_sub;
 
-lookup AlternateSubstitutionlookup49 {
+lookup caron_sub {
   lookupflag 0;
     sub \LtnSmDCaron from [\LtnSmDCaron.Caron ];
     sub \LtnSmLCaron from [\LtnSmLCaron.Caron ];
     sub \LtnCapLCaron from [\LtnCapLCaron.Caron ];
     sub \LtnSmTCaron from [\LtnSmTCaron.Caron ];
     sub \LtnSmLCaron.sc from [\LtnSmLCaron.Caron.sc ];
-} AlternateSubstitutionlookup49;
+} caron_sub;
 
-lookup AlternateSubstitutionlookup50 {
+lookup mce_sub {
   lookupflag 0;
     sub \CySmE from [\CySmE.MongolStyle ];
     sub \CyCapE from [\CyCapE.MongolStyle ];
     sub \CySmE.sc from [\CySmE.MongolStyle.sc ];
-} AlternateSubstitutionlookup50;
+} mce_sub;
 
-lookup AlternateSubstitutionlookup51 {
+lookup shha_sub {
   lookupflag 0;
     sub \CySmShha from [\CySmShha.UCStyle ];
-} AlternateSubstitutionlookup51;
+} shha_sub;
 
-lookup AlternateSubstitutionlookup52 {
+lookup brvc_sub {
   lookupflag 0;
     sub \CombBreve from [\CombBreve.CyShortMrkAlt ];
-} AlternateSubstitutionlookup52;
+} brvc_sub;
 
-lookup AlternateSubstitutionlookup53 {
+lookup chnntc_sub {
   lookupflag 0;
     sub \ModVertLine from [\ModVertLine.ChinantecTn ];
     sub \ModAcuteAccent from [\ModAcuteAccent.ChinantecTn ];
     sub \ModGraveAccent from [\ModGraveAccent.ChinantecTn ];
     sub \ModMacron from [\ModChinantecTnMrkHorizBar ];
-} AlternateSubstitutionlookup53;
+} chnntc_sub;
 
-lookup AlternateSubstitutionlookup54 {
+lookup tn_sub {
   lookupflag 0;
     sub \TnLtr5 from [\SupFive ];
     sub \TnLtr4 from [\SupFour ];
@@ -2230,14 +1553,14 @@ lookup AlternateSubstitutionlookup54 {
     sub \LftStemTnLtr3 from [\SupThree ];
     sub \LftStemTnLtr2 from [\SupTwo ];
     sub \LftStemTnLtr1 from [\SupOne ];
-} AlternateSubstitutionlookup54;
+} tn_sub;
 
-lookup AlternateSubstitutionlookup55 {
+lookup set_sub {
   lookupflag 0;
     sub \EmptySet from [\EmptySet.SlashZero ];
-} AlternateSubstitutionlookup55;
+} set_sub;
 
-lookup ss01StyleSet1lookup56 {
+lookup lit_sub {
   lookupflag 0;
     sub \LtnSmA by \LtnSmA.SngStory ;
     sub \LtnSmG by \LtnSmG.SngBowl ;
@@ -2295,16 +1618,16 @@ lookup ss01StyleSet1lookup56 {
     sub \LtnSmGBarredBowl by \LtnSmGBarredSngBowl ;
     sub \LtnSmGStrk by \LtnSmGBarredSngBowl ;
     sub \LtnSmGDiagStrk by \LtnSmGDiagStrk.SngBowl ;
-} ss01StyleSet1lookup56;
+} lit_sub;
 
-lookup ss04StyleSet4lookup57 {
+lookup bbwl_sub {
   lookupflag 0;
     sub \LtnSmBBarredStem by \LtnSmBBarredBowl ;
     sub \LtnSmDBarredStem by \LtnSmDBarredBowl ;
     sub \LtnSmGStrk by \LtnSmGBarredBowl ;
-} ss04StyleSet4lookup57;
+} bbwl_sub;
 
-lookup ss05StyleSet5lookup58 {
+lookup sital_sub {
   lookupflag 0;
     sub \LtnSmA by \LtnSmA.2StorySItal ;
     sub \LtnSmF by \LtnSmF.SItal ;
@@ -2398,129 +1721,97 @@ lookup ss05StyleSet5lookup58 {
     sub \LtnSmZDotAbv by \LtnSmZDotAbv.SItal ;
     sub \LtnSmZLineBlw by \LtnSmZLineBlw.SItal ;
     sub \LtnSmZDotBlw by \LtnSmZDotBlw.SItal ;
-} ss05StyleSet5lookup58;
+} sital_sub;
 
-lookup ss06StyleSet6lookup59 {
+lookup inv_sub {
   lookupflag 0;
-    sub \Hyphen_Soft by \Hyphen_Soft.ShowInv ;
-    sub \CombGraphemeJoiner by \CombGraphemeJoiner.ShowInv ;
-    sub \FunctionApplication by \FunctionApplication.ShowInv ;
-    sub \InvisibleSeparator by \InvisibleSeparator.ShowInv ;
-    sub \InvisibleTimes by \InvisibleTimes.ShowInv ;
-    sub \LftToRtEmbedding by \LftToRtEmbedding.ShowInv ;
-    sub \LftToRtMrk by \LftToRtMrk.ShowInv ;
-    sub \LftToRtOverride by \LftToRtOverride.ShowInv ;
-    sub \PopDirFormatting by \PopDirFormatting.ShowInv ;
-    sub \RtToLftEmbedding by \RtToLftEmbedding.ShowInv ;
-    sub \RtToLftMrk by \RtToLftMrk.ShowInv ;
-    sub \RtToLftOverride by \RtToLftOverride.ShowInv ;
-    sub \VS1 by \VS1.ShowInv ;
-    sub \VS2 by \VS2.ShowInv ;
-    sub \VS3 by \VS3.ShowInv ;
-    sub \VS4 by \VS4.ShowInv ;
-    sub \VS5 by \VS5.ShowInv ;
-    sub \VS6 by \VS6.ShowInv ;
-    sub \VS7 by \VS7.ShowInv ;
-    sub \VS8 by \VS8.ShowInv ;
-    sub \VS9 by \VS9.ShowInv ;
-    sub \VS10 by \VS10.ShowInv ;
-    sub \VS11 by \VS11.ShowInv ;
-    sub \VS12 by \VS12.ShowInv ;
-    sub \VS13 by \VS13.ShowInv ;
-    sub \VS14 by \VS14.ShowInv ;
-    sub \VS15 by \VS15.ShowInv ;
-    sub \VS16 by \VS16.ShowInv ;
-    sub \WordJoiner by \WordJoiner.ShowInv ;
-    sub \ZeroWidthJoiner by \ZeroWidthJoiner.ShowInv ;
-    sub \ZeroWidthNoBreakSpace by \ZeroWidthNoBreakSpace.ShowInv ;
-    sub \ZeroWidthNonJoiner by \ZeroWidthNonJoiner.ShowInv ;
-    sub \ZeroWidthSpace by \ZeroWidthSpace.ShowInv ;
-} ss06StyleSet6lookup59;
+    sub @cno_ShowInv by @c_ShowInv;
+} inv_sub;
 
 feature ccmp {
 
  script DFLT;
      language dflt ;
-      lookup ccmpGlyphCompositionDecompositionlookup0;
-      lookup ccmpGlyphCompositionDecompositionlookup3;
-      lookup ccmpGlyphCompositionDecompositionlookup9;
-      lookup ccmpGlyphCompositionDecompositionlookup14;
-      lookup ccmpGlyphCompositionDecompositionlookup25;
+      lookup di_csub;
+      lookup c_sub;
+      lookup ss_ctx;
+      lookup tn_ctx;
+      lookup tne_ctx;
 
  script cyrl;
      language dflt ;
-      lookup ccmpGlyphCompositionDecompositionlookup0;
-      lookup ccmpGlyphCompositionDecompositionlookup3;
-      lookup ccmpGlyphCompositionDecompositionlookup9;
-      lookup ccmpGlyphCompositionDecompositionlookup14;
-      lookup ccmpGlyphCompositionDecompositionlookup25;
+      lookup di_csub;
+      lookup c_sub;
+      lookup ss_ctx;
+      lookup tn_ctx;
+      lookup tne_ctx;
      language SRB  exclude_dflt;
-      lookup ccmpGlyphCompositionDecompositionlookup0;
-      lookup ccmpGlyphCompositionDecompositionlookup3;
-      lookup ccmpGlyphCompositionDecompositionlookup9;
-      lookup ccmpGlyphCompositionDecompositionlookup14;
-      lookup ccmpGlyphCompositionDecompositionlookup25;
+      lookup di_csub;
+      lookup c_sub;
+      lookup ss_ctx;
+      lookup tn_ctx;
+      lookup tne_ctx;
 
  script latn;
      language dflt ;
-      lookup ccmpGlyphCompositionDecompositionlookup0;
-      lookup ccmpGlyphCompositionDecompositionlookup3;
-      lookup ccmpGlyphCompositionDecompositionlookup9;
-      lookup ccmpGlyphCompositionDecompositionlookup14;
-      lookup ccmpGlyphCompositionDecompositionlookup25;
+      lookup di_csub;
+      lookup c_sub;
+      lookup ss_ctx;
+      lookup tn_ctx;
+      lookup tne_ctx;
      language IPPH exclude_dflt;
-      lookup ccmpGlyphCompositionDecompositionlookup0;
-      lookup ccmpGlyphCompositionDecompositionlookup3;
-      lookup ccmpGlyphCompositionDecompositionlookup9;
-      lookup ccmpGlyphCompositionDecompositionlookup14;
-      lookup ccmpGlyphCompositionDecompositionlookup25;
+      lookup di_csub;
+      lookup c_sub;
+      lookup ss_ctx;
+      lookup tn_ctx;
+      lookup tne_ctx;
      language VIT  exclude_dflt;
-      lookup ccmpGlyphCompositionDecompositionlookup0;
-      lookup ccmpGlyphCompositionDecompositionlookup3;
-      lookup ccmpGlyphCompositionDecompositioninLatinlookup4;
-      lookup ccmpGlyphCompositionDecompositioninLatinlookup5;
-      lookup ccmpGlyphCompositionDecompositionlookup9;
-      lookup ccmpGlyphCompositionDecompositionlookup14;
-      lookup ccmpGlyphCompositionDecompositionlookup25;
+      lookup di_csub;
+      lookup c_sub;
+      lookup vd_sub;
+      lookup vc_sub;
+      lookup ss_ctx;
+      lookup tn_ctx;
+      lookup tne_ctx;
 } ccmp;
 
 feature cv75 {
 
  script DFLT;
      language dflt ;
-      lookup ccmpGlyphCompositionDecompositioninLatinlookup4;
-      lookup ccmpGlyphCompositionDecompositioninLatinlookup5;
+      lookup vd_sub;
+      lookup vc_sub;
 
  script cyrl;
      language dflt ;
-      lookup ccmpGlyphCompositionDecompositioninLatinlookup4;
-      lookup ccmpGlyphCompositionDecompositioninLatinlookup5;
+      lookup vd_sub;
+      lookup vc_sub;
      language SRB  exclude_dflt;
-      lookup ccmpGlyphCompositionDecompositioninLatinlookup4;
-      lookup ccmpGlyphCompositionDecompositioninLatinlookup5;
+      lookup vd_sub;
+      lookup vc_sub;
 
  script latn;
      language dflt ;
-      lookup ccmpGlyphCompositionDecompositioninLatinlookup4;
-      lookup ccmpGlyphCompositionDecompositioninLatinlookup5;
+      lookup vd_sub;
+      lookup vc_sub;
      language IPPH exclude_dflt;
-      lookup ccmpGlyphCompositionDecompositioninLatinlookup4;
-      lookup ccmpGlyphCompositionDecompositioninLatinlookup5;
+      lookup vd_sub;
+      lookup vc_sub;
      language VIT  exclude_dflt;
-      lookup ccmpGlyphCompositionDecompositioninLatinlookup4;
-      lookup ccmpGlyphCompositionDecompositioninLatinlookup5;
+      lookup vd_sub;
+      lookup vc_sub;
 } cv75;
 
 feature locl {
 
  script cyrl;
      language SRB  exclude_dflt;
-      lookup loclLocalizedFormsinCyrilliclookup6;
+      lookup srb_sub;
 } locl;
 
 feature aalt {
-      lookup aaltAccessAllAlternateslookup7;
-      lookup aaltAccessAllAlternateslookup8;
+      lookup ma_sub;
+      lookup sa_sub;
 
 } aalt;
 
@@ -2528,609 +1819,609 @@ feature smcp {
 
  script DFLT;
      language dflt ;
-      lookup smcpLowercasetoSmallCapitalslookup11;
+      lookup sc1_sub;
 
  script cyrl;
      language dflt ;
-      lookup smcpLowercasetoSmallCapitalslookup11;
+      lookup sc1_sub;
      language SRB  exclude_dflt;
-      lookup smcpLowercasetoSmallCapitalslookup11;
+      lookup sc1_sub;
 
  script latn;
      language dflt ;
-      lookup smcpLowercasetoSmallCapitalslookup11;
+      lookup sc1_sub;
      language IPPH exclude_dflt;
-      lookup smcpLowercasetoSmallCapitalslookup11;
+      lookup sc1_sub;
      language VIT  exclude_dflt;
-      lookup smcpLowercasetoSmallCapitalslookup11;
+      lookup sc1_sub;
 } smcp;
 
 feature c2sc {
 
  script DFLT;
      language dflt ;
-      lookup c2scCapitalstoSmallCapitalslookup12;
+      lookup sc2_sub;
 
  script cyrl;
      language dflt ;
-      lookup c2scCapitalstoSmallCapitalslookup12;
+      lookup sc2_sub;
      language SRB  exclude_dflt;
-      lookup c2scCapitalstoSmallCapitalslookup12;
+      lookup sc2_sub;
 
  script latn;
      language dflt ;
-      lookup c2scCapitalstoSmallCapitalslookup12;
+      lookup sc2_sub;
      language IPPH exclude_dflt;
-      lookup c2scCapitalstoSmallCapitalslookup12;
+      lookup sc2_sub;
      language VIT  exclude_dflt;
-      lookup c2scCapitalstoSmallCapitalslookup12;
+      lookup sc2_sub;
 } c2sc;
 
 feature liga {
 
  script DFLT;
      language dflt ;
-      lookup ligaStandardLigatureslookup13;
+      lookup f_sub;
 
  script cyrl;
      language dflt ;
-      lookup ligaStandardLigatureslookup13;
+      lookup f_sub;
      language SRB  exclude_dflt;
-      lookup ligaStandardLigatureslookup13;
+      lookup f_sub;
 
  script latn;
      language dflt ;
-      lookup ligaStandardLigatureslookup13;
+      lookup f_sub;
      language IPPH exclude_dflt;
-      lookup ligaStandardLigatureslookup13;
+      lookup f_sub;
      language VIT  exclude_dflt;
-      lookup ligaStandardLigatureslookup13;
+      lookup f_sub;
 } liga;
 
 feature cv13 {
 
  script DFLT;
      language dflt ;
-      lookup AlternateSubstitutionlookup30;
+      lookup bhk_sub;
 
  script cyrl;
      language dflt ;
-      lookup AlternateSubstitutionlookup30;
+      lookup bhk_sub;
      language SRB  exclude_dflt;
-      lookup AlternateSubstitutionlookup30;
+      lookup bhk_sub;
 
  script latn;
      language dflt ;
-      lookup AlternateSubstitutionlookup30;
+      lookup bhk_sub;
      language IPPH exclude_dflt;
-      lookup AlternateSubstitutionlookup30;
+      lookup bhk_sub;
      language VIT  exclude_dflt;
-      lookup AlternateSubstitutionlookup30;
+      lookup bhk_sub;
 } cv13;
 
 feature cv17 {
 
  script DFLT;
      language dflt ;
-      lookup AlternateSubstitutionlookup31;
+      lookup dhk_sub;
 
  script cyrl;
      language dflt ;
-      lookup AlternateSubstitutionlookup31;
+      lookup dhk_sub;
      language SRB  exclude_dflt;
-      lookup AlternateSubstitutionlookup31;
+      lookup dhk_sub;
 
  script latn;
      language dflt ;
-      lookup AlternateSubstitutionlookup31;
+      lookup dhk_sub;
      language IPPH exclude_dflt;
-      lookup AlternateSubstitutionlookup31;
+      lookup dhk_sub;
      language VIT  exclude_dflt;
-      lookup AlternateSubstitutionlookup31;
+      lookup dhk_sub;
 } cv17;
 
 feature cv19 {
 
  script DFLT;
      language dflt ;
-      lookup AlternateSubstitutionlookup32;
+      lookup ezhcurl_sub;
 
  script cyrl;
      language dflt ;
-      lookup AlternateSubstitutionlookup32;
+      lookup ezhcurl_sub;
      language SRB  exclude_dflt;
-      lookup AlternateSubstitutionlookup32;
+      lookup ezhcurl_sub;
 
  script latn;
      language dflt ;
-      lookup AlternateSubstitutionlookup32;
+      lookup ezhcurl_sub;
      language IPPH exclude_dflt;
-      lookup AlternateSubstitutionlookup32;
+      lookup ezhcurl_sub;
      language VIT  exclude_dflt;
-      lookup AlternateSubstitutionlookup32;
+      lookup ezhcurl_sub;
 } cv19;
 
 feature cv20 {
 
  script DFLT;
      language dflt ;
-      lookup AlternateSubstitutionlookup33;
+      lookup ezh_sub;
 
  script cyrl;
      language dflt ;
-      lookup AlternateSubstitutionlookup33;
+      lookup ezh_sub;
      language SRB  exclude_dflt;
-      lookup AlternateSubstitutionlookup33;
+      lookup ezh_sub;
 
  script latn;
      language dflt ;
-      lookup AlternateSubstitutionlookup33;
+      lookup ezh_sub;
      language IPPH exclude_dflt;
-      lookup AlternateSubstitutionlookup33;
+      lookup ezh_sub;
      language VIT  exclude_dflt;
-      lookup AlternateSubstitutionlookup33;
+      lookup ezh_sub;
 } cv20;
 
 feature cv25 {
 
  script DFLT;
      language dflt ;
-      lookup AlternateSubstitutionlookup34;
+      lookup rams_sub;
 
  script cyrl;
      language dflt ;
-      lookup AlternateSubstitutionlookup34;
+      lookup rams_sub;
      language SRB  exclude_dflt;
-      lookup AlternateSubstitutionlookup34;
+      lookup rams_sub;
 
  script latn;
      language dflt ;
-      lookup AlternateSubstitutionlookup34;
+      lookup rams_sub;
      language IPPH exclude_dflt;
-      lookup AlternateSubstitutionlookup34;
+      lookup rams_sub;
      language VIT  exclude_dflt;
-      lookup AlternateSubstitutionlookup34;
+      lookup rams_sub;
 } cv25;
 
 feature cv28 {
 
  script DFLT;
      language dflt ;
-      lookup AlternateSubstitutionlookup35;
+      lookup hstrk_sub;
 
  script cyrl;
      language dflt ;
-      lookup AlternateSubstitutionlookup35;
+      lookup hstrk_sub;
      language SRB  exclude_dflt;
-      lookup AlternateSubstitutionlookup35;
+      lookup hstrk_sub;
 
  script latn;
      language dflt ;
-      lookup AlternateSubstitutionlookup35;
+      lookup hstrk_sub;
      language IPPH exclude_dflt;
-      lookup AlternateSubstitutionlookup35;
+      lookup hstrk_sub;
      language VIT  exclude_dflt;
-      lookup AlternateSubstitutionlookup35;
+      lookup hstrk_sub;
 } cv28;
 
 feature cv37 {
 
  script DFLT;
      language dflt ;
-      lookup AlternateSubstitutionlookup36;
+      lookup jstrk_sub;
 
  script cyrl;
      language dflt ;
-      lookup AlternateSubstitutionlookup36;
+      lookup jstrk_sub;
      language SRB  exclude_dflt;
-      lookup AlternateSubstitutionlookup36;
+      lookup jstrk_sub;
 
  script latn;
      language dflt ;
-      lookup AlternateSubstitutionlookup36;
+      lookup jstrk_sub;
      language IPPH exclude_dflt;
-      lookup AlternateSubstitutionlookup36;
+      lookup jstrk_sub;
      language VIT  exclude_dflt;
-      lookup AlternateSubstitutionlookup36;
+      lookup jstrk_sub;
 } cv37;
 
 feature cv43 {
 
  script DFLT;
      language dflt ;
-      lookup AlternateSubstitutionlookup37;
+      lookup engs_sub;
 
  script cyrl;
      language dflt ;
-      lookup AlternateSubstitutionlookup37;
+      lookup engs_sub;
      language SRB  exclude_dflt;
-      lookup AlternateSubstitutionlookup37;
+      lookup engs_sub;
 
  script latn;
      language dflt ;
-      lookup AlternateSubstitutionlookup37;
+      lookup engs_sub;
      language IPPH exclude_dflt;
-      lookup AlternateSubstitutionlookup37;
+      lookup engs_sub;
      language VIT  exclude_dflt;
-      lookup AlternateSubstitutionlookup37;
+      lookup engs_sub;
 } cv43;
 
 feature cv44 {
 
  script DFLT;
      language dflt ;
-      lookup AlternateSubstitutionlookup38;
+      lookup nhk_sub;
 
  script cyrl;
      language dflt ;
-      lookup AlternateSubstitutionlookup38;
+      lookup nhk_sub;
      language SRB  exclude_dflt;
-      lookup AlternateSubstitutionlookup38;
+      lookup nhk_sub;
 
  script latn;
      language dflt ;
-      lookup AlternateSubstitutionlookup38;
+      lookup nhk_sub;
      language IPPH exclude_dflt;
-      lookup AlternateSubstitutionlookup38;
+      lookup nhk_sub;
      language VIT  exclude_dflt;
-      lookup AlternateSubstitutionlookup38;
+      lookup nhk_sub;
 } cv44;
 
 feature cv46 {
 
  script DFLT;
      language dflt ;
-      lookup AlternateSubstitutionlookup39;
+      lookup opno_sub;
 
  script cyrl;
      language dflt ;
-      lookup AlternateSubstitutionlookup39;
+      lookup opno_sub;
      language SRB  exclude_dflt;
-      lookup AlternateSubstitutionlookup39;
+      lookup opno_sub;
 
  script latn;
      language dflt ;
-      lookup AlternateSubstitutionlookup39;
+      lookup opno_sub;
      language IPPH exclude_dflt;
-      lookup AlternateSubstitutionlookup39;
+      lookup opno_sub;
      language VIT  exclude_dflt;
-      lookup AlternateSubstitutionlookup39;
+      lookup opno_sub;
 } cv46;
 
 feature cv47 {
 
  script DFLT;
      language dflt ;
-      lookup AlternateSubstitutionlookup40;
+      lookup ou_sub;
 
  script cyrl;
      language dflt ;
-      lookup AlternateSubstitutionlookup40;
+      lookup ou_sub;
      language SRB  exclude_dflt;
-      lookup AlternateSubstitutionlookup40;
+      lookup ou_sub;
 
  script latn;
      language dflt ;
-      lookup AlternateSubstitutionlookup40;
+      lookup ou_sub;
      language IPPH exclude_dflt;
-      lookup AlternateSubstitutionlookup40;
+      lookup ou_sub;
      language VIT  exclude_dflt;
-      lookup AlternateSubstitutionlookup40;
+      lookup ou_sub;
 } cv47;
 
 feature cv49 {
 
  script DFLT;
      language dflt ;
-      lookup AlternateSubstitutionlookup41;
+      lookup phk_sub;
 
  script cyrl;
      language dflt ;
-      lookup AlternateSubstitutionlookup41;
+      lookup phk_sub;
      language SRB  exclude_dflt;
-      lookup AlternateSubstitutionlookup41;
+      lookup phk_sub;
 
  script latn;
      language dflt ;
-      lookup AlternateSubstitutionlookup41;
+      lookup phk_sub;
      language IPPH exclude_dflt;
-      lookup AlternateSubstitutionlookup41;
+      lookup phk_sub;
      language VIT  exclude_dflt;
-      lookup AlternateSubstitutionlookup41;
+      lookup phk_sub;
 } cv49;
 
 feature cv55 {
 
  script DFLT;
      language dflt ;
-      lookup AlternateSubstitutionlookup42;
+      lookup rtl_sub;
 
  script cyrl;
      language dflt ;
-      lookup AlternateSubstitutionlookup42;
+      lookup rtl_sub;
      language SRB  exclude_dflt;
-      lookup AlternateSubstitutionlookup42;
+      lookup rtl_sub;
 
  script latn;
      language dflt ;
-      lookup AlternateSubstitutionlookup42;
+      lookup rtl_sub;
      language IPPH exclude_dflt;
-      lookup AlternateSubstitutionlookup42;
+      lookup rtl_sub;
      language VIT  exclude_dflt;
-      lookup AlternateSubstitutionlookup42;
+      lookup rtl_sub;
 } cv55;
 
 feature cv57 {
 
  script DFLT;
      language dflt ;
-      lookup AlternateSubstitutionlookup43;
+      lookup thk_sub;
 
  script cyrl;
      language dflt ;
-      lookup AlternateSubstitutionlookup43;
+      lookup thk_sub;
      language SRB  exclude_dflt;
-      lookup AlternateSubstitutionlookup43;
+      lookup thk_sub;
 
  script latn;
      language dflt ;
-      lookup AlternateSubstitutionlookup43;
+      lookup thk_sub;
      language IPPH exclude_dflt;
-      lookup AlternateSubstitutionlookup43;
+      lookup thk_sub;
      language VIT  exclude_dflt;
-      lookup AlternateSubstitutionlookup43;
+      lookup thk_sub;
 } cv57;
 
 feature cv62 {
 
  script DFLT;
      language dflt ;
-      lookup AlternateSubstitutionlookup44;
+      lookup vhk_sub;
 
  script cyrl;
      language dflt ;
-      lookup AlternateSubstitutionlookup44;
+      lookup vhk_sub;
      language SRB  exclude_dflt;
-      lookup AlternateSubstitutionlookup44;
+      lookup vhk_sub;
 
  script latn;
      language dflt ;
-      lookup AlternateSubstitutionlookup44;
+      lookup vhk_sub;
      language IPPH exclude_dflt;
-      lookup AlternateSubstitutionlookup44;
+      lookup vhk_sub;
      language VIT  exclude_dflt;
-      lookup AlternateSubstitutionlookup44;
+      lookup vhk_sub;
 } cv62;
 
 feature cv68 {
 
  script DFLT;
      language dflt ;
-      lookup AlternateSubstitutionlookup45;
+      lookup yhk_sub;
 
  script cyrl;
      language dflt ;
-      lookup AlternateSubstitutionlookup45;
+      lookup yhk_sub;
      language SRB  exclude_dflt;
-      lookup AlternateSubstitutionlookup45;
+      lookup yhk_sub;
 
  script latn;
      language dflt ;
-      lookup AlternateSubstitutionlookup45;
+      lookup yhk_sub;
      language IPPH exclude_dflt;
-      lookup AlternateSubstitutionlookup45;
+      lookup yhk_sub;
      language VIT  exclude_dflt;
-      lookup AlternateSubstitutionlookup45;
+      lookup yhk_sub;
 } cv68;
 
 feature cv70 {
 
  script DFLT;
      language dflt ;
-      lookup AlternateSubstitutionlookup46;
+      lookup apos_sub;
 
  script cyrl;
      language dflt ;
-      lookup AlternateSubstitutionlookup46;
+      lookup apos_sub;
      language SRB  exclude_dflt;
-      lookup AlternateSubstitutionlookup46;
+      lookup apos_sub;
 
  script latn;
      language dflt ;
-      lookup AlternateSubstitutionlookup46;
+      lookup apos_sub;
      language IPPH exclude_dflt;
-      lookup AlternateSubstitutionlookup46;
+      lookup apos_sub;
      language VIT  exclude_dflt;
-      lookup AlternateSubstitutionlookup46;
+      lookup apos_sub;
 } cv70;
 
 feature cv71 {
 
  script DFLT;
      language dflt ;
-      lookup AlternateSubstitutionlookup47;
+      lookup colon_sub;
 
  script cyrl;
      language dflt ;
-      lookup AlternateSubstitutionlookup47;
+      lookup colon_sub;
      language SRB  exclude_dflt;
-      lookup AlternateSubstitutionlookup47;
+      lookup colon_sub;
 
  script latn;
      language dflt ;
-      lookup AlternateSubstitutionlookup47;
+      lookup colon_sub;
      language IPPH exclude_dflt;
-      lookup AlternateSubstitutionlookup47;
+      lookup colon_sub;
      language VIT  exclude_dflt;
-      lookup AlternateSubstitutionlookup47;
+      lookup colon_sub;
 } cv71;
 
 feature cv76 {
 
  script DFLT;
      language dflt ;
-      lookup AlternateSubstitutionlookup48;
+      lookup ognk_sub;
 
  script cyrl;
      language dflt ;
-      lookup AlternateSubstitutionlookup48;
+      lookup ognk_sub;
      language SRB  exclude_dflt;
-      lookup AlternateSubstitutionlookup48;
+      lookup ognk_sub;
 
  script latn;
      language dflt ;
-      lookup AlternateSubstitutionlookup48;
+      lookup ognk_sub;
      language IPPH exclude_dflt;
-      lookup AlternateSubstitutionlookup48;
+      lookup ognk_sub;
      language VIT  exclude_dflt;
-      lookup AlternateSubstitutionlookup48;
+      lookup ognk_sub;
 } cv76;
 
 feature cv77 {
 
  script DFLT;
      language dflt ;
-      lookup AlternateSubstitutionlookup49;
+      lookup caron_sub;
 
  script cyrl;
      language dflt ;
-      lookup AlternateSubstitutionlookup49;
+      lookup caron_sub;
      language SRB  exclude_dflt;
-      lookup AlternateSubstitutionlookup49;
+      lookup caron_sub;
 
  script latn;
      language dflt ;
-      lookup AlternateSubstitutionlookup49;
+      lookup caron_sub;
      language IPPH exclude_dflt;
-      lookup AlternateSubstitutionlookup49;
+      lookup caron_sub;
      language VIT  exclude_dflt;
-      lookup AlternateSubstitutionlookup49;
+      lookup caron_sub;
 } cv77;
 
 feature cv80 {
 
  script DFLT;
      language dflt ;
-      lookup AlternateSubstitutionlookup50;
+      lookup mce_sub;
 
  script cyrl;
      language dflt ;
-      lookup AlternateSubstitutionlookup50;
+      lookup mce_sub;
      language SRB  exclude_dflt;
-      lookup AlternateSubstitutionlookup50;
+      lookup mce_sub;
 
  script latn;
      language dflt ;
-      lookup AlternateSubstitutionlookup50;
+      lookup mce_sub;
      language IPPH exclude_dflt;
-      lookup AlternateSubstitutionlookup50;
+      lookup mce_sub;
      language VIT  exclude_dflt;
-      lookup AlternateSubstitutionlookup50;
+      lookup mce_sub;
 } cv80;
 
 feature cv81 {
 
  script DFLT;
      language dflt ;
-      lookup AlternateSubstitutionlookup51;
+      lookup shha_sub;
 
  script cyrl;
      language dflt ;
-      lookup AlternateSubstitutionlookup51;
+      lookup shha_sub;
      language SRB  exclude_dflt;
-      lookup AlternateSubstitutionlookup51;
+      lookup shha_sub;
 
  script latn;
      language dflt ;
-      lookup AlternateSubstitutionlookup51;
+      lookup shha_sub;
      language IPPH exclude_dflt;
-      lookup AlternateSubstitutionlookup51;
+      lookup shha_sub;
      language VIT  exclude_dflt;
-      lookup AlternateSubstitutionlookup51;
+      lookup shha_sub;
 } cv81;
 
 feature cv82 {
 
  script DFLT;
      language dflt ;
-      lookup AlternateSubstitutionlookup52;
+      lookup brvc_sub;
 
  script cyrl;
      language dflt ;
-      lookup AlternateSubstitutionlookup52;
+      lookup brvc_sub;
      language SRB  exclude_dflt;
-      lookup AlternateSubstitutionlookup52;
+      lookup brvc_sub;
 
  script latn;
      language dflt ;
-      lookup AlternateSubstitutionlookup52;
+      lookup brvc_sub;
      language IPPH exclude_dflt;
-      lookup AlternateSubstitutionlookup52;
+      lookup brvc_sub;
      language VIT  exclude_dflt;
-      lookup AlternateSubstitutionlookup52;
+      lookup brvc_sub;
 } cv82;
 
 feature cv90 {
 
  script DFLT;
      language dflt ;
-      lookup AlternateSubstitutionlookup53;
+      lookup chnntc_sub;
 
  script cyrl;
      language dflt ;
-      lookup AlternateSubstitutionlookup53;
+      lookup chnntc_sub;
      language SRB  exclude_dflt;
-      lookup AlternateSubstitutionlookup53;
+      lookup chnntc_sub;
 
  script latn;
      language dflt ;
-      lookup AlternateSubstitutionlookup53;
+      lookup chnntc_sub;
      language IPPH exclude_dflt;
-      lookup AlternateSubstitutionlookup53;
+      lookup chnntc_sub;
      language VIT  exclude_dflt;
-      lookup AlternateSubstitutionlookup53;
+      lookup chnntc_sub;
 } cv90;
 
 feature cv91 {
 
  script DFLT;
      language dflt ;
-      lookup AlternateSubstitutionlookup54;
+      lookup tn_sub;
 
  script cyrl;
      language dflt ;
-      lookup AlternateSubstitutionlookup54;
+      lookup tn_sub;
      language SRB  exclude_dflt;
-      lookup AlternateSubstitutionlookup54;
+      lookup tn_sub;
 
  script latn;
      language dflt ;
-      lookup AlternateSubstitutionlookup54;
+      lookup tn_sub;
      language IPPH exclude_dflt;
-      lookup AlternateSubstitutionlookup54;
+      lookup tn_sub;
      language VIT  exclude_dflt;
-      lookup AlternateSubstitutionlookup54;
+      lookup tn_sub;
 } cv91;
 
 feature cv98 {
 
  script DFLT;
      language dflt ;
-      lookup AlternateSubstitutionlookup55;
+      lookup set_sub;
 
  script cyrl;
      language dflt ;
-      lookup AlternateSubstitutionlookup55;
+      lookup set_sub;
      language SRB  exclude_dflt;
-      lookup AlternateSubstitutionlookup55;
+      lookup set_sub;
 
  script latn;
      language dflt ;
-      lookup AlternateSubstitutionlookup55;
+      lookup set_sub;
      language IPPH exclude_dflt;
-      lookup AlternateSubstitutionlookup55;
+      lookup set_sub;
      language VIT  exclude_dflt;
-      lookup AlternateSubstitutionlookup55;
+      lookup set_sub;
 } cv98;
 
 feature ss01 {
@@ -3140,21 +2431,21 @@ feature ss01 {
 
  script DFLT;
      language dflt ;
-      lookup ss01StyleSet1lookup56;
+      lookup lit_sub;
 
  script cyrl;
      language dflt ;
-      lookup ss01StyleSet1lookup56;
+      lookup lit_sub;
      language SRB  exclude_dflt;
-      lookup ss01StyleSet1lookup56;
+      lookup lit_sub;
 
  script latn;
      language dflt ;
-      lookup ss01StyleSet1lookup56;
+      lookup lit_sub;
      language IPPH exclude_dflt;
-      lookup ss01StyleSet1lookup56;
+      lookup lit_sub;
      language VIT  exclude_dflt;
-      lookup ss01StyleSet1lookup56;
+      lookup lit_sub;
 } ss01;
 
 feature ss04 {
@@ -3164,21 +2455,21 @@ feature ss04 {
 
  script DFLT;
      language dflt ;
-      lookup ss04StyleSet4lookup57;
+      lookup bbwl_sub;
 
  script cyrl;
      language dflt ;
-      lookup ss04StyleSet4lookup57;
+      lookup bbwl_sub;
      language SRB  exclude_dflt;
-      lookup ss04StyleSet4lookup57;
+      lookup bbwl_sub;
 
  script latn;
      language dflt ;
-      lookup ss04StyleSet4lookup57;
+      lookup bbwl_sub;
      language IPPH exclude_dflt;
-      lookup ss04StyleSet4lookup57;
+      lookup bbwl_sub;
      language VIT  exclude_dflt;
-      lookup ss04StyleSet4lookup57;
+      lookup bbwl_sub;
 } ss04;
 
 feature ss05 {
@@ -3188,21 +2479,21 @@ feature ss05 {
 
  script DFLT;
      language dflt ;
-      lookup ss05StyleSet5lookup58;
+      lookup sital_sub;
 
  script cyrl;
      language dflt ;
-      lookup ss05StyleSet5lookup58;
+      lookup sital_sub;
      language SRB  exclude_dflt;
-      lookup ss05StyleSet5lookup58;
+      lookup sital_sub;
 
  script latn;
      language dflt ;
-      lookup ss05StyleSet5lookup58;
+      lookup sital_sub;
      language IPPH exclude_dflt;
-      lookup ss05StyleSet5lookup58;
+      lookup sital_sub;
      language VIT  exclude_dflt;
-      lookup ss05StyleSet5lookup58;
+      lookup sital_sub;
 } ss05;
 
 feature ss06 {
@@ -3212,20 +2503,20 @@ feature ss06 {
 
  script DFLT;
      language dflt ;
-      lookup ss06StyleSet6lookup59;
+      lookup inv_sub;
 
  script cyrl;
      language dflt ;
-      lookup ss06StyleSet6lookup59;
+      lookup inv_sub;
      language SRB  exclude_dflt;
-      lookup ss06StyleSet6lookup59;
+      lookup inv_sub;
 
  script latn;
      language dflt ;
-      lookup ss06StyleSet6lookup59;
+      lookup inv_sub;
      language IPPH exclude_dflt;
-      lookup ss06StyleSet6lookup59;
+      lookup inv_sub;
      language VIT  exclude_dflt;
-      lookup ss06StyleSet6lookup59;
+      lookup inv_sub;
 } ss06;
 

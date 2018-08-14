@@ -34,7 +34,7 @@ for style in ('-Regular','-Italic','-Bold','-BoldItalic') :
     fname = FILENAMEBASE + style
     source_fname = 'source/' + fname
     feabase = 'source/opentype/' + FILENAMEBASE
-    font(target = process(fname + '.ttf', name(FILENAMEBASE, lang='en-US', subfamily=(style[1:])),
+    font(target = process(fname + '.ttf', 
             cmd('psfchangettfglyphnames ${SRC} ${DEP} ${TGT}', [source_fname + '.ufo'])),
         source = source_fname + '.ufo',
         # version = VERSION,
