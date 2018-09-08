@@ -26,60 +26,76 @@ lookup di_csub {
     sub @cno_dotlss by @c_dotlss;
 } di_csub;
 
+@c_i_tilde_blw = [LtnSmITildeBlw LtnSmITildeBlw.SItal];
+@c_di_tilde_blw = [LtnSmI.Dotless LtnSmI.Dotless.SItal];
+@c_i_dot_blw = [LtnSmIDotBlw LtnSmIDotBlw.SItal];
+@c_di_dot_blw = [LtnSmI.Dotless LtnSmI.Dotless.SItal];
+
 lookup di_sub {
   lookupflag 0;
-    sub \LtnSmITildeBlw by \LtnSmI.Dotless \CombTildeBlw ;
-    sub \LtnSmITildeBlw.SItal by \LtnSmI.Dotless.SItal \CombTildeBlw ;
-    sub \LtnSmIDotBlw by \LtnSmI.Dotless \CombDotBlw ;
-    sub \LtnSmIDotBlw.SItal by \LtnSmI.Dotless.SItal \CombDotBlw ;
+	sub @c_i_tilde_blw by @c_di_tilde_blw \CombTildeBlw;
+#    sub \LtnSmITildeBlw by \LtnSmI.Dotless \CombTildeBlw ;
+#    sub \LtnSmITildeBlw.SItal by \LtnSmI.Dotless.SItal \CombTildeBlw ;
+	sub @c_i_dot_blw by @c_di_dot_blw \CombDotBlw;
+#    sub \LtnSmIDotBlw by \LtnSmI.Dotless \CombDotBlw ;
+#    sub \LtnSmIDotBlw.SItal by \LtnSmI.Dotless.SItal \CombDotBlw ;
 } di_sub;
+
+# TODO: generate these classes by script in classes.xml; the below are just incomplete placeholders
+@c_u_diacs = [\CombRevCommaAbv \CombAcute \CombDblAcute \CombGrave \CombDblGrave];
+@c_non_u_diacs = [\CombLtnSmRBlw \CombMinusSgnBlw \CombAcuteBlw \CombGraveBlw \CombCircumBlw];
+
+@cc0_match_0 = @cno_dotlss;
+@cc0_match_1 = @c_non_u_diacs;
+@cc0_match_2 = @c_u_diacs;
+@cc0_match_3 = [@c_i_tilde_blw @c_i_dot_blw];
 
 lookup di_ctx {
   lookupflag 0;
-    @cc0_match_0 = [\LtnSmI \LtnSmJ \LtnSmI.SItal \CySmByelorusUkrainI \LtnSubSmI \LtnSupSmI 
-	\LtnSmIOgonek \LtnSmIRetrHook \LtnSmIStrk \LtnSupSmIStrk \CySmJe 
-	\ModSmJ \LtnSmJStrk \LtnSmJCrossedTail \ModSmJCrossedTail \LtnSmI.sc ];
-    @cc0_match_1 = [\CombLtnSmRBlw \CombMinusSgnBlw \CombAcuteBlw \CombGraveBlw \CombCircumBlw 
-	\CombInvBreveBlw \CombBreveBlw \CombCaronBlw \CombTildeBlw 
-	\CombAlmostEqToBlw \CombAsteriskBlw \CombXBlw \CombInvDblArchBlw 
-	\CombSeagullBlw \CombMacronBlw \CombMacronBlw.Short \CombLowLine 
-	\CombDblLowLine \CombEqSgnBlw \CombDiaerBlw \CombDotBlw 
-	\CombRtDotAbv \CombCommaBlw \CombCommaAbvRt \CombHorn \CombRingBlw 
-	\CombDblRingBlw \CombLftHalfRingBlw \CombRtHalfRingBlw 
-	\CombVertLineBlw \CombDblVertLineBlw \CombPlusSgnBlw 
-	\CombDwnTackBlw \CombUpTackBlw \CombLftTackBlw \CombRtTackBlw 
-	\CombLftAngBlw \CombCedilla \CombOgonek \CombOgonek.Lrg 
-	\CombOgonek.RetroHook \CombSnakeBlw \CombBridgeBlw 
-	\CombInvBridgeBlw \CombSqrBlw \ModRhoticHook \CombUpArrwBlw 
-	\CombLftArrwBlw \CombLftHarpoonBarbDwnBlw \CombRtArrwBlw 
-	\CombRtHarpoonBarbDwnBlw \CombLftRtArrwBlw \CombLftArrwhdBlw 
-	\CombRtArrwhdBlw \CombRtArrwhdUpArrwhdBlw 
-	\CombRtArrwhdDwnArrwhdBlw \CombGraphemeJoiner \CombLtnSmRBlwDep 
-	\CombAlmostEqToBlwDep \CombSnakeBlwDep ];
-    @cc0_match_2 = [\CombLtnSmA \CombLtnSmA.SngStory \CombLtnSmC \CombLtnSmD \CombLtnSmE 
-	\CombLtnSmH \CombLtnSmI \CombLtnSmM \CombLtnSmO \CombLtnSmR 
-	\CombLtnSmT \CombLtnSmU \CombLtnSmV \CombLtnSmX \CombTrndCommaAbv 
-	\CombRevCommaAbv \CombAcute \CombDblAcute \CombGrave \CombDblGrave 
-	\CombCircum \CombCircumAcute.VN \CombCircumGrave.VN 
-	\CombCircumTilde.VN \CombCircumHook.VN \CombInvBreve 
-	\CombInvBreve.UU \CombInvBreve.UL \CombInvBreve.LL \CombFermata 
-	\CombDblInvBreve.UU \CombDblInvBreve.UL \CombDblInvBreve.LL 
-	\CombBreve \CombBreveAcute.VN \CombBreveGrave.VN \CombBreveTilde.VN 
-	\CombBreveHook.VN \CombCandrabindu \CombBreve.CyShortMrkAlt 
-	\CombBreve.CyShortMrkAlt.UCHt \CombBreve_Macron \CombCaron 
-	\CombAcute_Macron \CombMacron_Acute \CombMacron_Breve 
-	\CombGrave_Macron \CombMacron_Grave \CombAcute_Grave_Acute 
-	\CombGrave_Acute_Grave \CombTilde \CombNotTildeAbv 
-	\CombAlmostEqToAbv \CombHomotheticAbv \CombVertTilde \CombZigZagAbv 
-	\CombXAbv \CombMacron \CombMacron.Short \CombOverline 
-	\CombDblOverline \CombDiaer \CombDiaer.UU \CombDiaer.LL 
-	\CombDiaer.UL \CombDiaer.Sup \CombDotAbv \CombCommaAbv \CombRingAbv 
-	\CombLftHalfRingAbv \CombRtHalfRingAbv \CombHookAbv 
-	\CombVertLineAbv \CombDblVertLineAbv \CombBridgeAbv 
-	\CombLftArrwhdAbv \CombRtArrwhdAbv \CombAcute_MacronDep 
-	\CombMacron_AcuteDep \CombGrave_MacronDep \CombMacron_GraveDep 
-	\CombAcute_Grave_AcuteDep \CombGrave_Acute_GraveDep ];
-    @cc0_match_3 = [\LtnSmITildeBlw \LtnSmITildeBlw.SItal \LtnSmIDotBlw \LtnSmIDotBlw.SItal ];
+#    @cc0_match_0 = [\LtnSmI \LtnSmJ \LtnSmI.SItal \CySmByelorusUkrainI \LtnSubSmI \LtnSupSmI 
+#	\LtnSmIOgonek \LtnSmIRetrHook \LtnSmIStrk \LtnSupSmIStrk \CySmJe 
+#	\ModSmJ \LtnSmJStrk \LtnSmJCrossedTail \ModSmJCrossedTail \LtnSmI.sc ];
+#    @cc0_match_1 = [\CombLtnSmRBlw \CombMinusSgnBlw \CombAcuteBlw \CombGraveBlw \CombCircumBlw 
+#	\CombInvBreveBlw \CombBreveBlw \CombCaronBlw \CombTildeBlw 
+#	\CombAlmostEqToBlw \CombAsteriskBlw \CombXBlw \CombInvDblArchBlw 
+#	\CombSeagullBlw \CombMacronBlw \CombMacronBlw.Short \CombLowLine 
+#	\CombDblLowLine \CombEqSgnBlw \CombDiaerBlw \CombDotBlw 
+#	\CombRtDotAbv \CombCommaBlw \CombCommaAbvRt \CombHorn \CombRingBlw 
+#	\CombDblRingBlw \CombLftHalfRingBlw \CombRtHalfRingBlw 
+#	\CombVertLineBlw \CombDblVertLineBlw \CombPlusSgnBlw 
+#	\CombDwnTackBlw \CombUpTackBlw \CombLftTackBlw \CombRtTackBlw 
+#	\CombLftAngBlw \CombCedilla \CombOgonek \CombOgonek.Lrg 
+#	\CombOgonek.RetroHook \CombSnakeBlw \CombBridgeBlw 
+#	\CombInvBridgeBlw \CombSqrBlw \ModRhoticHook \CombUpArrwBlw 
+#	\CombLftArrwBlw \CombLftHarpoonBarbDwnBlw \CombRtArrwBlw 
+#	\CombRtHarpoonBarbDwnBlw \CombLftRtArrwBlw \CombLftArrwhdBlw 
+#	\CombRtArrwhdBlw \CombRtArrwhdUpArrwhdBlw 
+#	\CombRtArrwhdDwnArrwhdBlw \CombGraphemeJoiner \CombLtnSmRBlwDep 
+#	\CombAlmostEqToBlwDep \CombSnakeBlwDep ];
+#    @cc0_match_2 = [\CombLtnSmA \CombLtnSmA.SngStory \CombLtnSmC \CombLtnSmD \CombLtnSmE 
+#	\CombLtnSmH \CombLtnSmI \CombLtnSmM \CombLtnSmO \CombLtnSmR 
+#	\CombLtnSmT \CombLtnSmU \CombLtnSmV \CombLtnSmX \CombTrndCommaAbv 
+#	\CombRevCommaAbv \CombAcute \CombDblAcute \CombGrave \CombDblGrave 
+#	\CombCircum \CombCircumAcute.VN \CombCircumGrave.VN 
+#	\CombCircumTilde.VN \CombCircumHook.VN \CombInvBreve 
+#	\CombInvBreve.UU \CombInvBreve.UL \CombInvBreve.LL \CombFermata 
+#	\CombDblInvBreve.UU \CombDblInvBreve.UL \CombDblInvBreve.LL 
+#	\CombBreve \CombBreveAcute.VN \CombBreveGrave.VN \CombBreveTilde.VN 
+#	\CombBreveHook.VN \CombCandrabindu \CombBreve.CyShortMrkAlt 
+#	\CombBreve.CyShortMrkAlt.UCHt \CombBreve_Macron \CombCaron 
+#	\CombAcute_Macron \CombMacron_Acute \CombMacron_Breve 
+#	\CombGrave_Macron \CombMacron_Grave \CombAcute_Grave_Acute 
+#	\CombGrave_Acute_Grave \CombTilde \CombNotTildeAbv 
+#	\CombAlmostEqToAbv \CombHomotheticAbv \CombVertTilde \CombZigZagAbv 
+#	\CombXAbv \CombMacron \CombMacron.Short \CombOverline 
+#	\CombDblOverline \CombDiaer \CombDiaer.UU \CombDiaer.LL 
+#	\CombDiaer.UL \CombDiaer.Sup \CombDotAbv \CombCommaAbv \CombRingAbv 
+#	\CombLftHalfRingAbv \CombRtHalfRingAbv \CombHookAbv 
+#	\CombVertLineAbv \CombDblVertLineAbv \CombBridgeAbv 
+#	\CombLftArrwhdAbv \CombRtArrwhdAbv \CombAcute_MacronDep 
+#	\CombMacron_AcuteDep \CombGrave_MacronDep \CombMacron_GraveDep 
+#	\CombAcute_Grave_AcuteDep \CombGrave_Acute_GraveDep ];
+#    @cc0_match_3 = [\LtnSmITildeBlw \LtnSmITildeBlw.SItal \LtnSmIDotBlw \LtnSmIDotBlw.SItal ];
     sub @cc0_match_0'lookup di_csub  @cc0_match_1' @cc0_match_2' ;
     sub @cc0_match_0'lookup di_csub  @cc0_match_1' @cc0_match_1' @cc0_match_2' ;
     sub @cc0_match_0'lookup di_csub  @cc0_match_1' @cc0_match_1' @cc0_match_1' @cc0_match_2' ;
