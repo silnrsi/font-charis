@@ -6,6 +6,7 @@ __copyright__ = 'Copyright (c) 2018 SIL International  (http://www.sil.org)'
 __license__ = 'Released under the MIT License (http://opensource.org/licenses/MIT)'
 __author__ = 'Alan Ward'
 
+from collections import OrderedDict
 import re
 import silfont.ufo as ufo
 from silfont.core import execute
@@ -28,9 +29,9 @@ argspec = [
 class Font(object):
     def __init__(self):
         self.file_nm = ''
-        self.glyphs = {}
-        self.classes = {}
-        self.lookups = {}
+        self.glyphs = OrderedDict()
+        self.classes = OrderedDict()
+        self.lookups = OrderedDict()
 
     def read_font(self, ufo_nm):
         self.file_nm = ufo_nm
@@ -45,6 +46,7 @@ class Font(object):
                     glyph.add_anchor(a_attr['name'], int(float(a_attr['x'])), int(float(a_attr['y'])))
 
     def make_classes(self, class_spec_lst):
+        # TODO: create class containing glyphs that need .sup diacs (c_superscripts)
         for class_spec in class_spec_lst:
             class_nm = class_spec[0]
             c_nm, cno_nm = "c_" + class_nm, "cno_" + class_nm
@@ -61,13 +63,16 @@ class Font(object):
                 self.classes.setdefault(cno_nm, []).extend(cno_lst)
 
     def make_lookups(self):
+        # TODO: create single and multiple alternate lkups for aalt (sa_sub, ma_sub)
+        # TODO: create lkup for c2sc (sc2_sub)
+        # TODO (maybe): create lkup for NFD to NFC glyph substitution for glyphs w NFD spellings (c_sub)
         pass
 
     def write_fea(self, file_nm):
         with open(file_nm, "w") as o_f:
             for c in self.classes.keys():
                 glyph_str = " ".join(self.classes[c])
-                o_f.write("%s = [%s];\n" % (c, glyph_str))
+                o_f.write("@%s = [%s];\n" % (c, glyph_str))
 
 class Glyph(object):
     def __init__(self, name):
@@ -85,8 +90,11 @@ def doit(args) :
         font.make_lookups()
         if args.output:
             font.write_fea(args.output)
+        else:
+            # TODO: handle output is --output not specified
+            pass
     else:
-           args.logger.log('Only UFOs accepted as input', 'S')
+       args.logger.log('Only UFOs accepted as input', 'S')
 
 
 def cmd(): execute(None, doit, argspec)
