@@ -113,6 +113,7 @@ lookup di_ctx {
 
 # Replace decomposed glyphs with composed ones which are not constructed as composites
 #  so perhaps the components have been altered by scaling or positioning
+# Is it more efficient to substitute a composed glyph or position diacs?
 # TODO: Is this still needed?
 lookup c_sub {
   lookupflag 0;
@@ -213,6 +214,7 @@ lookup srb_sub {
     sub @cno_Serb by @c_Serb;
 } srb_sub;
 
+# TODO: how to generate this?
 lookup ma_sub {
   lookupflag 0;
     sub \LtnSmA from [\LtnSmA.2StorySItal \LtnSmA.SngStory ];
@@ -272,6 +274,7 @@ lookup ma_sub {
     sub \LtnSmVHook.sc from [\LtnSmVHook.StraightLft.sc \LtnSmVHook.StraightLftHighHook.sc ];
 } ma_sub;
 
+# TODO: how to generate this?
 lookup sa_sub {
   lookupflag 0;
 #    sub \Space by \Space.Lines ;
@@ -664,6 +667,9 @@ lookup sc1_sub {
 } sc1_sub;
 
 # Unicode properties were used to map from upper case char to lower case one
+# from makeot.pl: All glyphs that are encoded which have UCD properties and a UCD lower value
+# TODO: how to generate this?
+# Cap -> Sm.sc but are all Cap glyphs used
 lookup sc2_sub {
   lookupflag 0;
     sub \LtnCapA by \LtnSmA.sc ;
@@ -1463,29 +1469,31 @@ lookup colon_sub {
     sub \ModLowColon from [\ModLowColon.Wide ];
 } colon_sub;
 
+# TODO: will a 'by' lkup instead of 'from' lkup with only one alternate work in a CV?
 lookup ognk_sub {
   lookupflag 0;
-    sub \Ogonek from [\Ogonek.RetroHook ];
-    sub \LtnSmAOgonek from [\LtnSmAOgonek.RetroHook ];
-    sub \LtnSmAOgonek.SngStory from [\LtnSmAOgonek.SngStory.RetroHook ];
-    sub \LtnCapAOgonek from [\LtnCapAOgonek.RetroHook ];
-    sub \LtnSmEOgonek from [\LtnSmEOgonek.RetroHook ];
-    sub \LtnCapEOgonek from [\LtnCapEOgonek.RetroHook ];
-    sub \LtnSmIOgonek from [\LtnSmIOgonek.RetroHook ];
-    sub \LtnCapIOgonek from [\LtnCapIOgonek.RetroHook ];
-    sub \LtnSmOOgonek from [\LtnSmOOgonek.RetroHook ];
-    sub \LtnSmOOgonekMacron from [\LtnSmOOgonekMacron.RetroHook ];
-    sub \LtnCapOOgonek from [\LtnCapOOgonek.RetroHook ];
-    sub \LtnCapOOgonekMacron from [\LtnCapOOgonekMacron.RetroHook ];
-    sub \LtnSmUOgonek from [\LtnSmUOgonek.RetroHook ];
-    sub \LtnCapUOgonek from [\LtnCapUOgonek.RetroHook ];
-    sub \CombOgonek from [\CombOgonek.RetroHook ];
-    sub \LtnSmAOgonek.sc from [\LtnSmAOgonek.RetroHook.sc ];
-    sub \LtnSmEOgonek.sc from [\LtnSmEOgonek.RetroHook.sc ];
-    sub \LtnSmIOgonek.sc from [\LtnSmIOgonek.RetroHook.sc ];
-    sub \LtnSmOOgonek.sc from [\LtnSmOOgonek.RetroHook.sc ];
-    sub \LtnSmOOgonekMacron.sc from [\LtnSmOOgonekMacron.RetroHook.sc ];
-    sub \LtnSmUOgonek.sc from [\LtnSmUOgonek.RetroHook.sc ];
+    sub @cno_rtrhk by @c_rtrhk;
+#    sub \Ogonek from [\Ogonek.RetroHook ];
+#    sub \LtnSmAOgonek from [\LtnSmAOgonek.RetroHook ];
+#    sub \LtnSmAOgonek.SngStory from [\LtnSmAOgonek.SngStory.RetroHook ];
+#    sub \LtnCapAOgonek from [\LtnCapAOgonek.RetroHook ];
+#    sub \LtnSmEOgonek from [\LtnSmEOgonek.RetroHook ];
+#    sub \LtnCapEOgonek from [\LtnCapEOgonek.RetroHook ];
+#    sub \LtnSmIOgonek from [\LtnSmIOgonek.RetroHook ];
+#    sub \LtnCapIOgonek from [\LtnCapIOgonek.RetroHook ];
+#    sub \LtnSmOOgonek from [\LtnSmOOgonek.RetroHook ];
+#    sub \LtnSmOOgonekMacron from [\LtnSmOOgonekMacron.RetroHook ];
+#    sub \LtnCapOOgonek from [\LtnCapOOgonek.RetroHook ];
+#    sub \LtnCapOOgonekMacron from [\LtnCapOOgonekMacron.RetroHook ];
+#    sub \LtnSmUOgonek from [\LtnSmUOgonek.RetroHook ];
+#    sub \LtnCapUOgonek from [\LtnCapUOgonek.RetroHook ];
+#    sub \CombOgonek from [\CombOgonek.RetroHook ];
+#    sub \LtnSmAOgonek.sc from [\LtnSmAOgonek.RetroHook.sc ];
+#    sub \LtnSmEOgonek.sc from [\LtnSmEOgonek.RetroHook.sc ];
+#    sub \LtnSmIOgonek.sc from [\LtnSmIOgonek.RetroHook.sc ];
+#    sub \LtnSmOOgonek.sc from [\LtnSmOOgonek.RetroHook.sc ];
+#    sub \LtnSmOOgonekMacron.sc from [\LtnSmOOgonekMacron.RetroHook.sc ];
+#    sub \LtnSmUOgonek.sc from [\LtnSmUOgonek.RetroHook.sc ];
 } ognk_sub;
 
 lookup caron_sub {
