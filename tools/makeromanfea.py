@@ -32,8 +32,9 @@ class Font(object):
     def __init__(self):
         self.file_nm = ''
         self.glyphs = OrderedDict()
-        self.classes = OrderedDict()
-        self.variants = OrderedDict()
+        self.unicodes = OrderedDict()
+        self.g_classes = OrderedDict()
+        self.g_variants = OrderedDict()
 
     def read_font(self, ufo_nm):
         self.file_nm = ufo_nm
@@ -42,6 +43,9 @@ class Font(object):
             glyph = Glyph(g_name)
             self.glyphs[g_name] = glyph
             ufo_g = ufo_f.deflayer[g_name]
+            if 'unicode' in ufo_g._contents:
+                for usv in ufo_g._contents['unicode']:
+                    self.unicodes.setdefault(usv.hex, []).append(glyph)
             if 'anchor' in ufo_g._contents:
                 for anchor in ufo_g._contents['anchor']:
                     a_attr = anchor.element.attrib
@@ -61,13 +65,10 @@ class Font(object):
                             c_lst.append(g_nm)
                             cno_lst.append(gno_nm)
             if c_lst:
-                self.classes.setdefault(c_nm, []).extend(c_lst)
-                self.classes.setdefault(cno_nm, []).extend(cno_lst)
+                self.g_classes.setdefault(c_nm, []).extend(c_lst)
+                self.g_classes.setdefault(cno_nm, []).extend(cno_lst)
 
     def find_variants(self):
-        # TODO: create lkup for c2sc (sc2_sub)
-        # TODO (maybe): create lkup for NFD to NFC glyph substitution for glyphs w NFD spellings (c_sub)
-
         # create single and multiple alternate lkups for aalt (sa_sub, ma_sub)
         for g_nm in self.glyphs:
             suffix_lst = re.findall('(\..*?)(?=\.|$)', g_nm)
@@ -81,17 +82,26 @@ class Font(object):
                     continue
                 base = re.sub(suffix, '', g_nm)
                 if base in self.glyphs:
-                    self.variants.setdefault(base, []).append(g_nm)
+                    self.g_variants.setdefault(base, []).append(g_nm)
+
+    def find_upper_to_lower(self):
+        # TODO: create lkup for c2sc (sc2_sub)
+        pass
+
+
+    def find_NFC_to_NFD(self):
+        # TODO (maybe): create lkup for NFD to NFC glyph substitution for glyphs w NFD spellings (c_sub)
+        pass
 
     def write_fea(self, file_nm):
         with open(file_nm, "w") as o_f:
-            for c in self.classes:
-                glyph_str = " ".join(self.classes[c])
+            for c in self.g_classes:
+                glyph_str = " ".join(self.g_classes[c])
                 o_f.write("@%s = [%s];\n" % (c, glyph_str))
 
             single_alt_str_lst, multi_alt_str_lst = [], []
-            for base in self.variants:
-                variants = self.variants[base]
+            for base in self.g_variants:
+                variants = self.g_variants[base]
                 variants_str = ' '.join(variants)
                 alt_str_lst = single_alt_str_lst if len(variants) == 1 else multi_alt_str_lst
                 alt_str_lst.append('sub \\%s from [%s];' % (base, variants_str))
