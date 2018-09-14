@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python2
 'Make fea classes and lookups for Roman fonts'
 # TODO:
 # __url__ = 'http://github.com/silnrsi/pysilfont'
@@ -39,9 +39,9 @@ class Font(object):
         self.file_nm = ufo_nm
         ufo_f = ufo.Ufont(ufo_nm)
         for g_name in ufo_f.deflayer:
-            ufo_g = ufo_f.deflayer[g_name]
             glyph = Glyph(g_name)
             self.glyphs[g_name] = glyph
+            ufo_g = ufo_f.deflayer[g_name]
             if 'anchor' in ufo_g._contents:
                 for anchor in ufo_g._contents['anchor']:
                     a_attr = anchor.element.attrib
@@ -54,12 +54,12 @@ class Font(object):
             c_nm, cno_nm = "c_" + class_nm, "cno_" + class_nm
             c_lst, cno_lst = [], []
             for suffix in class_spec[1:]:
-                for g in self.glyphs:
-                    if re.search("\." + suffix, g):
-                        g_no = re.sub("\." + suffix, "", g)
-                        if g_no in self.glyphs:
-                            c_lst.append(g)
-                            cno_lst.append(g_no)
+                for g_nm in self.glyphs:
+                    if re.search("\." + suffix, g_nm):
+                        gno_nm = re.sub("\." + suffix, "", g_nm)
+                        if gno_nm in self.glyphs:
+                            c_lst.append(g_nm)
+                            cno_lst.append(gno_nm)
             if c_lst:
                 self.classes.setdefault(c_nm, []).extend(c_lst)
                 self.classes.setdefault(cno_nm, []).extend(cno_lst)
@@ -74,31 +74,27 @@ class Font(object):
             for suffix in suffix_lst:
                 if suffix in ('.notdef', '.null'):
                     continue
-                if re.match('\.(1|2|3|4|5|rstaff|rstaffno|lstaff|lstaffno)',suffix):
+                if re.match('\.(1|2|3|4|5|rstaff|rstaffno|lstaff|lstaffno)$',suffix):
                     continue
                 variation = suffix[1:]
                 if variation in non_variant_suffixes:
                     continue
                 base = re.sub(suffix, '', g_nm)
-                if not base in self.glyphs:
-                    continue
-                self.variants.setdefault(base, []).append(g_nm)
+                if base in self.glyphs:
+                    self.variants.setdefault(base, []).append(g_nm)
 
     def write_fea(self, file_nm):
         with open(file_nm, "w") as o_f:
             for c in self.classes:
                 glyph_str = " ".join(self.classes[c])
                 o_f.write("@%s = [%s];\n" % (c, glyph_str))
+
             single_alt_str_lst, multi_alt_str_lst = [], []
             for base in self.variants:
-                variants_str = ''
-                for variant in self.variants[base]:
-                    variants_str += '\\%s ' % variant
-                variants_str = variants_str[:-1]
-                if len(self.variants[base]) == 1:
-                    single_alt_str_lst.append('sub \\%s from [%s];' % (base, variants_str))
-                else:
-                    multi_alt_str_lst.append('sub \\%s from [%s];' % (base, variants_str))
+                variants = self.variants[base]
+                variants_str = ' '.join(variants)
+                alt_str_lst = single_alt_str_lst if len(variants) == 1 else multi_alt_str_lst
+                alt_str_lst.append('sub \\%s from [%s];' % (base, variants_str))
 
             o_f.write("lookup ma_sub {\n")
             o_f.write("  lookupflag 0;\n")
