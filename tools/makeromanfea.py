@@ -18,6 +18,8 @@ class_spec_lst = [('lit', 'SngStory', 'SngBowl'),
                   ('rtrhk', 'RetroHook'),
                   ]
 
+non_variant_suffixes = ('Dotless', 'VN', 'Sup', 'sc')
+
 argspec = [
     ('infile', {'help': 'Input UFO'}, {}),
     ('-o', '--output', {'help': 'Output fea file'}, {}),
@@ -31,7 +33,7 @@ class Font(object):
         self.file_nm = ''
         self.glyphs = OrderedDict()
         self.classes = OrderedDict()
-        self.lookups = OrderedDict()
+        self.variants = OrderedDict()
 
     def read_font(self, ufo_nm):
         self.file_nm = ufo_nm
@@ -62,17 +64,54 @@ class Font(object):
                 self.classes.setdefault(c_nm, []).extend(c_lst)
                 self.classes.setdefault(cno_nm, []).extend(cno_lst)
 
-    def make_lookups(self):
-        # TODO: create single and multiple alternate lkups for aalt (sa_sub, ma_sub)
+    def find_variants(self):
         # TODO: create lkup for c2sc (sc2_sub)
         # TODO (maybe): create lkup for NFD to NFC glyph substitution for glyphs w NFD spellings (c_sub)
-        pass
+
+        # create single and multiple alternate lkups for aalt (sa_sub, ma_sub)
+        for g_nm in self.glyphs:
+            suffix_lst = re.findall('(\..*?)(?=\.|$)', g_nm)
+            for suffix in suffix_lst:
+                if suffix in ('.notdef', '.null'):
+                    continue
+                if re.match('\.(1|2|3|4|5|rstaff|rstaffno|lstaff|lstaffno)',suffix):
+                    continue
+                variation = suffix[1:]
+                if variation in non_variant_suffixes:
+                    continue
+                base = re.sub(suffix, '', g_nm)
+                if not base in self.glyphs:
+                    continue
+                self.variants.setdefault(base, []).append(g_nm)
 
     def write_fea(self, file_nm):
         with open(file_nm, "w") as o_f:
-            for c in self.classes.keys():
+            for c in self.classes:
                 glyph_str = " ".join(self.classes[c])
                 o_f.write("@%s = [%s];\n" % (c, glyph_str))
+            single_alt_str_lst, multi_alt_str_lst = [], []
+            for base in self.variants:
+                variants_str = ''
+                for variant in self.variants[base]:
+                    variants_str += '\\%s ' % variant
+                variants_str = variants_str[:-1]
+                if len(self.variants[base]) == 1:
+                    single_alt_str_lst.append('sub \\%s from [%s];' % (base, variants_str))
+                else:
+                    multi_alt_str_lst.append('sub \\%s from [%s];' % (base, variants_str))
+
+            o_f.write("lookup ma_sub {\n")
+            o_f.write("  lookupflag 0;\n")
+            for s in multi_alt_str_lst:
+                o_f.write("    %s\n" % s)
+            o_f.write("} ma_sub;\n")
+
+            o_f.write("lookup sa_sub {\n")
+            o_f.write("  lookupflag 0;\n")
+            for s in single_alt_str_lst:
+                o_f.write("    %s\n" % s)
+            o_f.write("} sa_sub;\n")
+
 
 class Glyph(object):
     def __init__(self, name):
@@ -87,11 +126,11 @@ def doit(args) :
         font = Font()
         font.read_font(args.infile)
         font.make_classes(class_spec_lst)
-        font.make_lookups()
+        font.find_variants()
         if args.output:
             font.write_fea(args.output)
         else:
-            # TODO: handle output is --output not specified
+            # TODO: handle output if --output not specified
             pass
     else:
        args.logger.log('Only UFOs accepted as input', 'S')
