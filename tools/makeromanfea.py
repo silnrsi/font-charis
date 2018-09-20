@@ -1,6 +1,6 @@
 #!/usr/bin/python2
 'Make fea classes and lookups for Roman fonts'
-# TODO:
+
 # __url__ = 'http://github.com/silnrsi/pysilfont'
 __copyright__ = 'Copyright (c) 2018 SIL International  (http://www.sil.org)'
 __license__ = 'Released under the MIT License (http://opensource.org/licenses/MIT)'
@@ -53,10 +53,6 @@ class Font(object):
                     glyph.add_anchor(a_attr['name'], int(float(a_attr['x'])), int(float(a_attr['y'])))
 
     def make_classes(self, class_spec_lst):
-        # TODO: create class containing glyphs that need .sup diacs (c_superscripts)
-        #   match substrings in glyph names?
-        #   is there a Unicode prop that would specify these?
-
         # create multisuffix classes
         for class_spec in class_spec_lst:
             class_nm = class_spec[0]
@@ -73,25 +69,33 @@ class Font(object):
                 self.g_classes.setdefault(c_nm, []).extend(c_lst)
                 self.g_classes.setdefault(cno_nm, []).extend(cno_lst)
 
-            # create classes for c2sc (sc2_sub)
-            for uni_str in self.unicodes:
-                try:
-                    upper_unichr = unichr(int(uni_str, 16))
-                except(ValueError):
-                    continue #skip USVs larger than narrow Python build can handle
-                if upper_unichr.isupper() and upper_unichr.lower():
-                    lower_unichr = upper_unichr.lower()
-                    lower_str = hex(ord(lower_unichr))[2:].zfill(4)
-                    if lower_str in self.unicodes:
-                        lower_glyph_lst = self.unicodes[lower_str]
-                        assert(len(lower_glyph_lst) == 1) # no double encoded glyphs allowed
-                        lower_sc_name = lower_glyph_lst[0].name + '.sc'
-                        if lower_sc_name in self.glyphs:
-                            upper_glyph_lst = self.unicodes[uni_str]
-                            assert (len(upper_glyph_lst) == 1)
-                            upper_name = upper_glyph_lst[0].name
-                            self.g_classes.setdefault('cno_c2sc', []).append(upper_name)
-                            self.g_classes.setdefault('c_c2sc', []).append(lower_sc_name)
+        # create classes for c2sc (sc2_sub)
+        for uni_str in self.unicodes:
+            try:
+                upper_unichr = unichr(int(uni_str, 16))
+            except(ValueError):
+                continue #skip USVs larger than narrow Python build can handle
+            if upper_unichr.isupper() and upper_unichr.lower():
+                lower_unichr = upper_unichr.lower()
+                lower_str = hex(ord(lower_unichr))[2:].zfill(4)
+                if lower_str in self.unicodes:
+                    lower_glyph_lst = self.unicodes[lower_str]
+                    assert(len(lower_glyph_lst) == 1) # no double encoded glyphs allowed
+                    lower_sc_name = lower_glyph_lst[0].name + '.sc'
+                    if lower_sc_name in self.glyphs:
+                        upper_glyph_lst = self.unicodes[uni_str]
+                        assert (len(upper_glyph_lst) == 1)
+                        upper_name = upper_glyph_lst[0].name
+                        self.g_classes.setdefault('cno_c2sc', []).append(upper_name)
+                        self.g_classes.setdefault('c_c2sc', []).append(lower_sc_name)
+
+        # create class of glyphs that need .sup diacritics
+        #   match substrings in glyph names
+        #   is there a Unicode prop that would specify these?
+        for g_nm in self.glyphs:
+            if (re.search('\wSubSm\w',g_nm) or re.search('\wSupSm\w',g_nm)
+                    or re.search('^ModCap\w', g_nm) or re.search('^ModSm\w', g_nm)):
+                self.g_classes.setdefault('c_superscripts', []).append(g_nm)
 
     def find_variants(self):
         # create single and multiple alternate lkups for aalt (sa_sub, ma_sub)
@@ -111,10 +115,10 @@ class Font(object):
                     self.g_variants.setdefault(base, []).append(g_nm)
 
     def find_NFC_to_NFD(self):
-        # TODO (not): create lkup for NFD to NFC glyph substitution for glyphs w NFD spellings (c_sub)
+        # create lkup for NFD to NFC glyph substitution for glyphs w NFD spellings (c_sub)
         #   substitution is more efficient than positioning according to MH
         #   but a comment in makeot.pl says that gain may be offset by the larger GSUB table
-        #   2018-09-19: Roman font team decided to no longer do this substituion
+        # 2018-09-19: Roman font team decided to no longer do this substituion
         #   sub is likely faster but size is more important (downloading web fonts)
         pass
 
@@ -158,6 +162,7 @@ def doit(args) :
         font.read_font(args.infile)
         font.make_classes(class_spec_lst)
         font.find_variants()
+        font.find_NFC_to_NFD()
         if args.output:
             font.write_fea(args.output)
         else:
