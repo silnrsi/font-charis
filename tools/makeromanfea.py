@@ -43,16 +43,21 @@ class Font(object):
             glyph = Glyph(g_name)
             self.glyphs[g_name] = glyph
             ufo_g = ufo_f.deflayer[g_name]
-            if 'unicode' in ufo_g._contents:
-                for usv in ufo_g._contents['unicode']:
-                    self.unicodes.setdefault(usv.hex, []).append(glyph)
-            if 'anchor' in ufo_g._contents:
-                for anchor in ufo_g._contents['anchor']:
+            unicode_lst = ufo_g['unicode']
+            if unicode_lst:
+                # store primary encoding, allow for double encoding
+                self.unicodes.setdefault(unicode_lst[0].hex, []).append(glyph)
+            if 'anchor' in ufo_g:
+                for anchor in ufo_g['anchor']:
                     a_attr = anchor.element.attrib
                     glyph.add_anchor(a_attr['name'], int(float(a_attr['x'])), int(float(a_attr['y'])))
 
     def make_classes(self, class_spec_lst):
         # TODO: create class containing glyphs that need .sup diacs (c_superscripts)
+        #   match substrings in glyph names?
+        #   is there a Unicode prop that would specify these?
+
+        # create multisuffix classes
         for class_spec in class_spec_lst:
             class_nm = class_spec[0]
             c_nm, cno_nm = "c_" + class_nm, "cno_" + class_nm
@@ -68,6 +73,26 @@ class Font(object):
                 self.g_classes.setdefault(c_nm, []).extend(c_lst)
                 self.g_classes.setdefault(cno_nm, []).extend(cno_lst)
 
+            # create classes for c2sc (sc2_sub)
+            for uni_str in self.unicodes:
+                try:
+                    upper_unichr = unichr(int(uni_str, 16))
+                except(ValueError):
+                    continue #skip USVs larger than narrow Python build can handle
+                if upper_unichr.isupper() and upper_unichr.lower():
+                    lower_unichr = upper_unichr.lower()
+                    lower_str = hex(ord(lower_unichr))[2:].zfill(4)
+                    if lower_str in self.unicodes:
+                        lower_glyph_lst = self.unicodes[lower_str]
+                        assert(len(lower_glyph_lst) == 1) # no double encoded glyphs allowed
+                        lower_sc_name = lower_glyph_lst[0].name + '.sc'
+                        if lower_sc_name in self.glyphs:
+                            upper_glyph_lst = self.unicodes[uni_str]
+                            assert (len(upper_glyph_lst) == 1)
+                            upper_name = upper_glyph_lst[0].name
+                            self.g_classes.setdefault('cno_c2sc', []).append(upper_name)
+                            self.g_classes.setdefault('c_c2sc', []).append(lower_sc_name)
+
     def find_variants(self):
         # create single and multiple alternate lkups for aalt (sa_sub, ma_sub)
         for g_nm in self.glyphs:
@@ -76,6 +101,7 @@ class Font(object):
                 if suffix in ('.notdef', '.null'):
                     continue
                 if re.match('\.(1|2|3|4|5|rstaff|rstaffno|lstaff|lstaffno)$',suffix):
+                    # exclude tone-related glyphs
                     continue
                 variation = suffix[1:]
                 if variation in non_variant_suffixes:
@@ -84,13 +110,12 @@ class Font(object):
                 if base in self.glyphs:
                     self.g_variants.setdefault(base, []).append(g_nm)
 
-    def find_upper_to_lower(self):
-        # TODO: create lkup for c2sc (sc2_sub)
-        pass
-
-
     def find_NFC_to_NFD(self):
-        # TODO (maybe): create lkup for NFD to NFC glyph substitution for glyphs w NFD spellings (c_sub)
+        # TODO (not): create lkup for NFD to NFC glyph substitution for glyphs w NFD spellings (c_sub)
+        #   substitution is more efficient than positioning according to MH
+        #   but a comment in makeot.pl says that gain may be offset by the larger GSUB table
+        #   2018-09-19: Roman font team decided to no longer do this substituion
+        #   sub is likely faster but size is more important (downloading web fonts)
         pass
 
     def write_fea(self, file_nm):
@@ -104,7 +129,7 @@ class Font(object):
                 variants = self.g_variants[base]
                 variants_str = ' '.join(variants)
                 alt_str_lst = single_alt_str_lst if len(variants) == 1 else multi_alt_str_lst
-                alt_str_lst.append('sub \\%s from [%s];' % (base, variants_str))
+                alt_str_lst.append('sub %s from [%s];' % (base, variants_str))
 
             o_f.write("lookup ma_sub {\n")
             o_f.write("  lookupflag 0;\n")
