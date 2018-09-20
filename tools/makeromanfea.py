@@ -92,6 +92,7 @@ class Font(object):
         # create class of glyphs that need .sup diacritics
         #   match substrings in glyph names
         #   is there a Unicode prop that would specify these?
+        # TODO: does this include too many glyhs? compare to hard-coded list in makeot.pl
         for g_nm in self.glyphs:
             if (re.search('\wSubSm\w',g_nm) or re.search('\wSupSm\w',g_nm)
                     or re.search('^ModCap\w', g_nm) or re.search('^ModSm\w', g_nm)):
