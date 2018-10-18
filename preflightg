@@ -15,3 +15,9 @@ psfnormalize -p checkfix=fix source/CharisSIL-BoldItalic.ufo -l source/logs/norm
 
 # copy psnames and glyphorder and any other updates to all fonts
 psfsyncmasters source/CharisSILRoman.designspace source/CharisSILItalic.designspace -l source/logs/sync.log
+
+ # Fix problem with non-spacing marks due to glyphsLib bug
+psfremovegliflibkeys source/CharisSIL-Regular.ufo com.schriftgestaltung.Glyphs.originalWidth  -l source/logs/widthfixR.log
+psfremovegliflibkeys source/CharisSIL-Bold.ufo com.schriftgestaltung.Glyphs.originalWidth  -l source/logs/widthfixB.log
+psfremovegliflibkeys source/CharisSIL-Italic.ufo com.schriftgestaltung.Glyphs.originalWidth  -l source/logs/widthfixI.log
+psfremovegliflibkeys source/CharisSIL-BoldItalic.ufo com.schriftgestaltung.Glyphs.originalWidth  -l source/logs/widthfixBI.log
