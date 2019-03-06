@@ -1,100 +1,100 @@
 # GDEF Mark Attachment Classes
-@MarkClass1=[\CombLtnSmA \CombLtnSmA.SngStory \CombLtnSmC \CombLtnSmD 
-\CombLtnSmE \CombLtnSmH \CombLtnSmI \CombLtnSmM \CombLtnSmO \CombLtnSmR 
-\CombLtnSmT \CombLtnSmU \CombLtnSmV \CombLtnSmX \CombTrndCommaAbv 
-\CombRevCommaAbv \CombAcute \CombDblAcute \CombGrave \CombDblGrave \CombCircum 
-\CombCircumAcute.VN \CombCircumGrave.VN \CombCircumTilde.VN \CombCircumHook.VN 
-\CombInvBreve \CombInvBreve.UU \CombInvBreve.UL \CombInvBreve.LL \CombFermata 
-\CombDblInvBreve.UU \CombDblInvBreve.UL \CombDblInvBreve.LL \CombBreve 
-\CombBreveAcute.VN \CombBreveGrave.VN \CombBreveTilde.VN \CombBreveHook.VN 
-\CombCandrabindu \CombBreve.CyShortMrkAlt \CombBreve.CyShortMrkAlt.UCHt 
-\CombBreve_Macron \CombCaron \CombAcute_Macron \CombMacron_Acute 
-\CombMacron_Breve \CombGrave_Macron \CombMacron_Grave \CombAcute_Grave_Acute 
-\CombGrave_Acute_Grave \CombTilde \CombNotTildeAbv \CombAlmostEqToAbv 
-\CombHomotheticAbv \CombVertTilde \CombZigZagAbv \CombXAbv \CombMacron 
-\CombMacron.Short \CombOverline \CombDblOverline \CombDiaer \CombDiaer.UU 
-\CombDiaer.LL \CombDiaer.UL \CombDiaer.Sup \CombDotAbv \CombCommaAbv 
-\CombRingAbv \CombLftHalfRingAbv \CombRtHalfRingAbv \CombHookAbv 
-\CombVertLineAbv \CombDblVertLineAbv \CombBridgeAbv \CombLftArrwhdAbv 
-\CombRtArrwhdAbv \CombAcute_MacronDep \CombMacron_AcuteDep 
-\CombGrave_MacronDep \CombMacron_GraveDep \CombAcute_Grave_AcuteDep 
-\CombGrave_Acute_GraveDep ]; 
+@MarkClass1=[CombLtnSmA CombLtnSmA.SngStory CombLtnSmC CombLtnSmD 
+CombLtnSmE CombLtnSmH CombLtnSmI CombLtnSmM CombLtnSmO CombLtnSmR 
+CombLtnSmT CombLtnSmU CombLtnSmV CombLtnSmX CombTrndCommaAbv 
+CombRevCommaAbv CombAcute CombDblAcute CombGrave CombDblGrave CombCircum 
+CombCircumAcute.VN CombCircumGrave.VN CombCircumTilde.VN CombCircumHook.VN 
+CombInvBreve CombInvBreve.UU CombInvBreve.UL CombInvBreve.LL CombFermata 
+CombDblInvBreve.UU CombDblInvBreve.UL CombDblInvBreve.LL CombBreve 
+CombBreveAcute.VN CombBreveGrave.VN CombBreveTilde.VN CombBreveHook.VN 
+CombCandrabindu CombBreve.CyShortMrkAlt CombBreve.CyShortMrkAlt.UCHt 
+CombBreve_Macron CombCaron CombAcute_Macron CombMacron_Acute 
+CombMacron_Breve CombGrave_Macron CombMacron_Grave CombAcute_Grave_Acute 
+CombGrave_Acute_Grave CombTilde CombNotTildeAbv CombAlmostEqToAbv 
+CombHomotheticAbv CombVertTilde CombZigZagAbv CombXAbv CombMacron 
+CombMacron.Short CombOverline CombDblOverline CombDiaer CombDiaer.UU 
+CombDiaer.LL CombDiaer.UL CombDiaer.Sup CombDotAbv CombCommaAbv 
+CombRingAbv CombLftHalfRingAbv CombRtHalfRingAbv CombHookAbv 
+CombVertLineAbv CombDblVertLineAbv CombBridgeAbv CombLftArrwhdAbv 
+CombRtArrwhdAbv CombAcute_MacronDep CombMacron_AcuteDep 
+CombGrave_MacronDep CombMacron_GraveDep CombAcute_Grave_AcuteDep 
+CombGrave_Acute_GraveDep ]; 
 
 
 lookup di_csub {
   lookupflag 0;
-    sub \LtnSmI by \LtnSmI.Dotless ;
-    sub \LtnSmJ by \LtnSmJ.Dotless ;
-    sub \LtnSmI.SItal by \LtnSmI.Dotless.SItal ;
-    sub \CySmByelorusUkrainI by \CySmByelorusUkrainI.Dotless ;
-    sub \LtnSubSmI by \LtnSubSmI.Dotless ;
-    sub \LtnSupSmI by \LtnSupSmI.Dotless ;
-    sub \LtnSmIOgonek by \LtnSmIOgonek.Dotless ;
-    sub \LtnSmIRetrHook by \LtnSmIRetrHook.Dotless ;
-    sub \LtnSmIStrk by \LtnSmIStrk.Dotless ;
-    sub \LtnSupSmIStrk by \LtnSupSmIStrk.Dotless ;
-    sub \CySmJe by \CySmJe.Dotless ;
-    sub \ModSmJ by \ModSmJ.Dotless ;
-    sub \LtnSmJStrk by \LtnSmJStrk.Dotless ;
-    sub \LtnSmJCrossedTail by \LtnSmJCrossedTail.Dotless ;
-    sub \ModSmJCrossedTail by \ModSmJCrossedTail.Dotless ;
-    sub \LtnSmI.sc by \LtnSmI.Dotless.sc ;
+    sub LtnSmI by LtnSmI.Dotless ;
+    sub LtnSmJ by LtnSmJ.Dotless ;
+    sub LtnSmI.SItal by LtnSmI.Dotless.SItal ;
+    sub CySmByelorusUkrainI by CySmByelorusUkrainI.Dotless ;
+    sub LtnSubSmI by LtnSubSmI.Dotless ;
+    sub LtnSupSmI by LtnSupSmI.Dotless ;
+    sub LtnSmIOgonek by LtnSmIOgonek.Dotless ;
+    sub LtnSmIRetrHook by LtnSmIRetrHook.Dotless ;
+    sub LtnSmIStrk by LtnSmIStrk.Dotless ;
+    sub LtnSupSmIStrk by LtnSupSmIStrk.Dotless ;
+    sub CySmJe by CySmJe.Dotless ;
+    sub ModSmJ by ModSmJ.Dotless ;
+    sub LtnSmJStrk by LtnSmJStrk.Dotless ;
+    sub LtnSmJCrossedTail by LtnSmJCrossedTail.Dotless ;
+    sub ModSmJCrossedTail by ModSmJCrossedTail.Dotless ;
+    sub LtnSmI.sc by LtnSmI.Dotless.sc ;
 } di_csub;
 
 lookup di_sub {
   lookupflag 0;
-    sub \LtnSmITildeBlw by \LtnSmI.Dotless \CombTildeBlw ;
-    sub \LtnSmITildeBlw.SItal by \LtnSmI.Dotless.SItal \CombTildeBlw ;
-    sub \LtnSmIDotBlw by \LtnSmI.Dotless \CombDotBlw ;
-    sub \LtnSmIDotBlw.SItal by \LtnSmI.Dotless.SItal \CombDotBlw ;
+    sub LtnSmITildeBlw by LtnSmI.Dotless CombTildeBlw ;
+    sub LtnSmITildeBlw.SItal by LtnSmI.Dotless.SItal CombTildeBlw ;
+    sub LtnSmIDotBlw by LtnSmI.Dotless CombDotBlw ;
+    sub LtnSmIDotBlw.SItal by LtnSmI.Dotless.SItal CombDotBlw ;
 } di_sub;
 
 lookup di_ctx {
   lookupflag 0;
-    @cc0_match_0 = [\LtnSmI \LtnSmJ \LtnSmI.SItal \CySmByelorusUkrainI \LtnSubSmI \LtnSupSmI 
-	\LtnSmIOgonek \LtnSmIRetrHook \LtnSmIStrk \LtnSupSmIStrk \CySmJe 
-	\ModSmJ \LtnSmJStrk \LtnSmJCrossedTail \ModSmJCrossedTail \LtnSmI.sc ];
-    @cc0_match_1 = [\CombLtnSmRBlw \CombMinusSgnBlw \CombAcuteBlw \CombGraveBlw \CombCircumBlw 
-	\CombInvBreveBlw \CombBreveBlw \CombCaronBlw \CombTildeBlw 
-	\CombAlmostEqToBlw \CombAsteriskBlw \CombXBlw \CombInvDblArchBlw 
-	\CombSeagullBlw \CombMacronBlw \CombMacronBlw.Short \CombLowLine 
-	\CombDblLowLine \CombEqSgnBlw \CombDiaerBlw \CombDotBlw 
-	\CombRtDotAbv \CombCommaBlw \CombCommaAbvRt \CombHorn \CombRingBlw 
-	\CombDblRingBlw \CombLftHalfRingBlw \CombRtHalfRingBlw 
-	\CombVertLineBlw \CombDblVertLineBlw \CombPlusSgnBlw 
-	\CombDwnTackBlw \CombUpTackBlw \CombLftTackBlw \CombRtTackBlw 
-	\CombLftAngBlw \CombCedilla \CombOgonek \CombOgonek.Lrg 
-	\CombOgonek.RetroHook \CombSnakeBlw \CombBridgeBlw 
-	\CombInvBridgeBlw \CombSqrBlw \ModRhoticHook \CombUpArrwBlw 
-	\CombLftArrwBlw \CombLftHarpoonBarbDwnBlw \CombRtArrwBlw 
-	\CombRtHarpoonBarbDwnBlw \CombLftRtArrwBlw \CombLftArrwhdBlw 
-	\CombRtArrwhdBlw \CombRtArrwhdUpArrwhdBlw 
-	\CombRtArrwhdDwnArrwhdBlw \CombGraphemeJoiner \CombLtnSmRBlwDep 
-	\CombAlmostEqToBlwDep \CombSnakeBlwDep ];
-    @cc0_match_2 = [\CombLtnSmA \CombLtnSmA.SngStory \CombLtnSmC \CombLtnSmD \CombLtnSmE 
-	\CombLtnSmH \CombLtnSmI \CombLtnSmM \CombLtnSmO \CombLtnSmR 
-	\CombLtnSmT \CombLtnSmU \CombLtnSmV \CombLtnSmX \CombTrndCommaAbv 
-	\CombRevCommaAbv \CombAcute \CombDblAcute \CombGrave \CombDblGrave 
-	\CombCircum \CombCircumAcute.VN \CombCircumGrave.VN 
-	\CombCircumTilde.VN \CombCircumHook.VN \CombInvBreve 
-	\CombInvBreve.UU \CombInvBreve.UL \CombInvBreve.LL \CombFermata 
-	\CombDblInvBreve.UU \CombDblInvBreve.UL \CombDblInvBreve.LL 
-	\CombBreve \CombBreveAcute.VN \CombBreveGrave.VN \CombBreveTilde.VN 
-	\CombBreveHook.VN \CombCandrabindu \CombBreve.CyShortMrkAlt 
-	\CombBreve.CyShortMrkAlt.UCHt \CombBreve_Macron \CombCaron 
-	\CombAcute_Macron \CombMacron_Acute \CombMacron_Breve 
-	\CombGrave_Macron \CombMacron_Grave \CombAcute_Grave_Acute 
-	\CombGrave_Acute_Grave \CombTilde \CombNotTildeAbv 
-	\CombAlmostEqToAbv \CombHomotheticAbv \CombVertTilde \CombZigZagAbv 
-	\CombXAbv \CombMacron \CombMacron.Short \CombOverline 
-	\CombDblOverline \CombDiaer \CombDiaer.UU \CombDiaer.LL 
-	\CombDiaer.UL \CombDiaer.Sup \CombDotAbv \CombCommaAbv \CombRingAbv 
-	\CombLftHalfRingAbv \CombRtHalfRingAbv \CombHookAbv 
-	\CombVertLineAbv \CombDblVertLineAbv \CombBridgeAbv 
-	\CombLftArrwhdAbv \CombRtArrwhdAbv \CombAcute_MacronDep 
-	\CombMacron_AcuteDep \CombGrave_MacronDep \CombMacron_GraveDep 
-	\CombAcute_Grave_AcuteDep \CombGrave_Acute_GraveDep ];
-    @cc0_match_3 = [\LtnSmITildeBlw \LtnSmITildeBlw.SItal \LtnSmIDotBlw \LtnSmIDotBlw.SItal ];
+    @cc0_match_0 = [LtnSmI LtnSmJ LtnSmI.SItal CySmByelorusUkrainI LtnSubSmI LtnSupSmI 
+	LtnSmIOgonek LtnSmIRetrHook LtnSmIStrk LtnSupSmIStrk CySmJe 
+	ModSmJ LtnSmJStrk LtnSmJCrossedTail ModSmJCrossedTail LtnSmI.sc ];
+    @cc0_match_1 = [CombLtnSmRBlw CombMinusSgnBlw CombAcuteBlw CombGraveBlw CombCircumBlw 
+	CombInvBreveBlw CombBreveBlw CombCaronBlw CombTildeBlw 
+	CombAlmostEqToBlw CombAsteriskBlw CombXBlw CombInvDblArchBlw 
+	CombSeagullBlw CombMacronBlw CombMacronBlw.Short CombLowLine 
+	CombDblLowLine CombEqSgnBlw CombDiaerBlw CombDotBlw 
+	CombRtDotAbv CombCommaBlw CombCommaAbvRt CombHorn CombRingBlw 
+	CombDblRingBlw CombLftHalfRingBlw CombRtHalfRingBlw 
+	CombVertLineBlw CombDblVertLineBlw CombPlusSgnBlw 
+	CombDwnTackBlw CombUpTackBlw CombLftTackBlw CombRtTackBlw 
+	CombLftAngBlw CombCedilla CombOgonek CombOgonek.Lrg 
+	CombOgonek.RetroHook CombSnakeBlw CombBridgeBlw 
+	CombInvBridgeBlw CombSqrBlw ModRhoticHook CombUpArrwBlw 
+	CombLftArrwBlw CombLftHarpoonBarbDwnBlw CombRtArrwBlw 
+	CombRtHarpoonBarbDwnBlw CombLftRtArrwBlw CombLftArrwhdBlw 
+	CombRtArrwhdBlw CombRtArrwhdUpArrwhdBlw 
+	CombRtArrwhdDwnArrwhdBlw CombGraphemeJoiner CombLtnSmRBlwDep 
+	CombAlmostEqToBlwDep CombSnakeBlwDep ];
+    @cc0_match_2 = [CombLtnSmA CombLtnSmA.SngStory CombLtnSmC CombLtnSmD CombLtnSmE 
+	CombLtnSmH CombLtnSmI CombLtnSmM CombLtnSmO CombLtnSmR 
+	CombLtnSmT CombLtnSmU CombLtnSmV CombLtnSmX CombTrndCommaAbv 
+	CombRevCommaAbv CombAcute CombDblAcute CombGrave CombDblGrave 
+	CombCircum CombCircumAcute.VN CombCircumGrave.VN 
+	CombCircumTilde.VN CombCircumHook.VN CombInvBreve 
+	CombInvBreve.UU CombInvBreve.UL CombInvBreve.LL CombFermata 
+	CombDblInvBreve.UU CombDblInvBreve.UL CombDblInvBreve.LL 
+	CombBreve CombBreveAcute.VN CombBreveGrave.VN CombBreveTilde.VN 
+	CombBreveHook.VN CombCandrabindu CombBreve.CyShortMrkAlt 
+	CombBreve.CyShortMrkAlt.UCHt CombBreve_Macron CombCaron 
+	CombAcute_Macron CombMacron_Acute CombMacron_Breve 
+	CombGrave_Macron CombMacron_Grave CombAcute_Grave_Acute 
+	CombGrave_Acute_Grave CombTilde CombNotTildeAbv 
+	CombAlmostEqToAbv CombHomotheticAbv CombVertTilde CombZigZagAbv 
+	CombXAbv CombMacron CombMacron.Short CombOverline 
+	CombDblOverline CombDiaer CombDiaer.UU CombDiaer.LL 
+	CombDiaer.UL CombDiaer.Sup CombDotAbv CombCommaAbv CombRingAbv 
+	CombLftHalfRingAbv CombRtHalfRingAbv CombHookAbv 
+	CombVertLineAbv CombDblVertLineAbv CombBridgeAbv 
+	CombLftArrwhdAbv CombRtArrwhdAbv CombAcute_MacronDep 
+	CombMacron_AcuteDep CombGrave_MacronDep CombMacron_GraveDep 
+	CombAcute_Grave_AcuteDep CombGrave_Acute_GraveDep ];
+    @cc0_match_3 = [LtnSmITildeBlw LtnSmITildeBlw.SItal LtnSmIDotBlw LtnSmIDotBlw.SItal ];
     sub @cc0_match_0'lookup di_csub  @cc0_match_1' @cc0_match_2' ;
     sub @cc0_match_0'lookup di_csub  @cc0_match_1' @cc0_match_1' @cc0_match_2' ;
     sub @cc0_match_0'lookup di_csub  @cc0_match_1' @cc0_match_1' @cc0_match_1' @cc0_match_2' ;
@@ -109,165 +109,165 @@ lookup di_ctx {
 
 lookup c_sub {
   lookupflag 0;
-    sub \LtnCapC \CombCedilla  by \LtnCapCCedilla;
-    sub \LtnSmC \CombCedilla  by \LtnSmCCedilla;
-    sub \EqSgn \CombLngSolidusOverlay  by \NotEqTo;
-    sub \LtnSmA \CombOgonek  by \LtnSmAOgonek;
-    sub \LtnCapA \CombOgonek  by \LtnCapAOgonek;
-    sub \LtnSmCAcute \CombCedilla  by \LtnSmCCedillaAcute;
-    sub \LtnSmCCedilla \CombAcute  by \LtnSmCCedillaAcute;
-    sub \LtnSmC \CombCedilla \CombAcute  by \LtnSmCCedillaAcute;
-    sub \LtnSmC \CombAcute \CombCedilla  by \LtnSmCCedillaAcute;
-    sub \LtnCapCAcute \CombCedilla  by \LtnCapCCedillaAcute;
-    sub \LtnCapCCedilla \CombAcute  by \LtnCapCCedillaAcute;
-    sub \LtnCapC \CombAcute \CombCedilla  by \LtnCapCCedillaAcute;
-    sub \LtnCapC \CombCedilla \CombAcute  by \LtnCapCCedillaAcute;
-    sub \LtnSmD \CombCaron  by \LtnSmDCaron;
-    sub \LtnSmE \CombCedilla  by \LtnSmECedilla;
-    sub \LtnSmECedilla \CombBreve  by \LtnSmECedillaBreve;
-    sub \LtnSmEBreve \CombCedilla  by \LtnSmECedillaBreve;
-    sub \LtnSmE \CombBreve \CombCedilla  by \LtnSmECedillaBreve;
-    sub \LtnSmE \CombCedilla \CombBreve  by \LtnSmECedillaBreve;
-    sub \LtnSmE \CombOgonek  by \LtnSmEOgonek;
-    sub \LtnCapE \CombCedilla  by \LtnCapECedilla;
-    sub \LtnCapECedilla \CombBreve  by \LtnCapECedillaBreve;
-    sub \LtnCapEBreve \CombCedilla  by \LtnCapECedillaBreve;
-    sub \LtnCapE \CombBreve \CombCedilla  by \LtnCapECedillaBreve;
-    sub \LtnCapE \CombCedilla \CombBreve  by \LtnCapECedillaBreve;
-    sub \LtnCapE \CombOgonek  by \LtnCapEOgonek;
-    sub \ThereExists \CombLngSolidusOverlay  by \ThereDoesNotExist;
-    sub \LtnSmG \CombCedilla  by \LtnSmGCedilla;
-    sub \LtnCapG \CombCedilla  by \LtnCapGCedilla;
-    sub \LtnSmH \CombCircum  by \LtnSmHCircum;
-    sub \LtnSmH \CombCedilla  by \LtnSmHCedilla;
-    sub \LtnCapH \CombCedilla  by \LtnCapHCedilla;
-    sub \LtnSmI \CombOgonek  by \LtnSmIOgonek;
-    sub \LtnCapI \CombOgonek  by \LtnCapIOgonek;
-    sub \LtnSmK \CombCedilla  by \LtnSmKCedilla;
-    sub \LtnCapK \CombCedilla  by \LtnCapKCedilla;
-    sub \LtnSmL \CombCedilla  by \LtnSmLCedilla;
-    sub \LtnSmL \CombCaron  by \LtnSmLCaron;
-    sub \LtnCapL \CombCedilla  by \LtnCapLCedilla;
-    sub \LtnCapL \CombCaron  by \LtnCapLCaron;
-    sub \LtnSmN \CombCedilla  by \LtnSmNCedilla;
-    sub \LtnCapN \CombCedilla  by \LtnCapNCedilla;
-    sub \LtnSmO \CombOgonek  by \LtnSmOOgonek;
-    sub \LtnSmOOgonek \CombMacron  by \LtnSmOOgonekMacron;
-    sub \LtnSmOMacron \CombOgonek  by \LtnSmOOgonekMacron;
-    sub \LtnSmO \CombOgonek \CombMacron  by \LtnSmOOgonekMacron;
-    sub \LtnSmO \CombMacron \CombOgonek  by \LtnSmOOgonekMacron;
-    sub \LtnSmO \CombHorn  by \LtnSmOHorn;
-    sub \LtnCapO \CombOgonek  by \LtnCapOOgonek;
-    sub \LtnCapOOgonek \CombMacron  by \LtnCapOOgonekMacron;
-    sub \LtnCapOMacron \CombOgonek  by \LtnCapOOgonekMacron;
-    sub \LtnCapO \CombMacron \CombOgonek  by \LtnCapOOgonekMacron;
-    sub \LtnCapO \CombOgonek \CombMacron  by \LtnCapOOgonekMacron;
-    sub \LtnCapO \CombHorn  by \LtnCapOHorn;
-    sub \LtnSmR \CombCedilla  by \LtnSmRCedilla;
-    sub \LtnCapR \CombCedilla  by \LtnCapRCedilla;
-    sub \LtnSmS \CombCedilla  by \LtnSmSCedilla;
-    sub \LtnCapS \CombCedilla  by \LtnCapSCedilla;
-    sub \LtnSmT \CombCaron  by \LtnSmTCaron;
-    sub \LtnSmT \CombCedilla  by \LtnSmTCedilla;
-    sub \LtnCapT \CombCedilla  by \LtnCapTCedilla;
-    sub \LtnSmU \CombOgonek  by \LtnSmUOgonek;
-    sub \LtnSmU \CombHorn  by \LtnSmUHorn;
-    sub \LtnCapU \CombOgonek  by \LtnCapUOgonek;
-    sub \LtnCapU \CombHorn  by \LtnCapUHorn;
-    sub \ParallelTo \CombLngSolidusOverlay  by \NotParallelTo;
-    sub \IdenticalTo \CombLngSolidusOverlay  by \NotIdenticalTo;
-    sub \SubsetOf \CombLngSolidusOverlay  by \NotSubsetOf;
-    sub \SupersetOf \CombLngSolidusOverlay  by \NotSupersetOf;
-    sub \LftArrw \CombLngSolidusOverlay  by \LftArrwStrk;
-    sub \RtArrw \CombLngSolidusOverlay  by \RtArrwStrk;
+    sub LtnCapC CombCedilla  by LtnCapCCedilla;
+    sub LtnSmC CombCedilla  by LtnSmCCedilla;
+    sub EqSgn CombLngSolidusOverlay  by NotEqTo;
+    sub LtnSmA CombOgonek  by LtnSmAOgonek;
+    sub LtnCapA CombOgonek  by LtnCapAOgonek;
+    sub LtnSmCAcute CombCedilla  by LtnSmCCedillaAcute;
+    sub LtnSmCCedilla CombAcute  by LtnSmCCedillaAcute;
+    sub LtnSmC CombCedilla CombAcute  by LtnSmCCedillaAcute;
+    sub LtnSmC CombAcute CombCedilla  by LtnSmCCedillaAcute;
+    sub LtnCapCAcute CombCedilla  by LtnCapCCedillaAcute;
+    sub LtnCapCCedilla CombAcute  by LtnCapCCedillaAcute;
+    sub LtnCapC CombAcute CombCedilla  by LtnCapCCedillaAcute;
+    sub LtnCapC CombCedilla CombAcute  by LtnCapCCedillaAcute;
+    sub LtnSmD CombCaron  by LtnSmDCaron;
+    sub LtnSmE CombCedilla  by LtnSmECedilla;
+    sub LtnSmECedilla CombBreve  by LtnSmECedillaBreve;
+    sub LtnSmEBreve CombCedilla  by LtnSmECedillaBreve;
+    sub LtnSmE CombBreve CombCedilla  by LtnSmECedillaBreve;
+    sub LtnSmE CombCedilla CombBreve  by LtnSmECedillaBreve;
+    sub LtnSmE CombOgonek  by LtnSmEOgonek;
+    sub LtnCapE CombCedilla  by LtnCapECedilla;
+    sub LtnCapECedilla CombBreve  by LtnCapECedillaBreve;
+    sub LtnCapEBreve CombCedilla  by LtnCapECedillaBreve;
+    sub LtnCapE CombBreve CombCedilla  by LtnCapECedillaBreve;
+    sub LtnCapE CombCedilla CombBreve  by LtnCapECedillaBreve;
+    sub LtnCapE CombOgonek  by LtnCapEOgonek;
+    sub ThereExists CombLngSolidusOverlay  by ThereDoesNotExist;
+    sub LtnSmG CombCedilla  by LtnSmGCedilla;
+    sub LtnCapG CombCedilla  by LtnCapGCedilla;
+    sub LtnSmH CombCircum  by LtnSmHCircum;
+    sub LtnSmH CombCedilla  by LtnSmHCedilla;
+    sub LtnCapH CombCedilla  by LtnCapHCedilla;
+    sub LtnSmI CombOgonek  by LtnSmIOgonek;
+    sub LtnCapI CombOgonek  by LtnCapIOgonek;
+    sub LtnSmK CombCedilla  by LtnSmKCedilla;
+    sub LtnCapK CombCedilla  by LtnCapKCedilla;
+    sub LtnSmL CombCedilla  by LtnSmLCedilla;
+    sub LtnSmL CombCaron  by LtnSmLCaron;
+    sub LtnCapL CombCedilla  by LtnCapLCedilla;
+    sub LtnCapL CombCaron  by LtnCapLCaron;
+    sub LtnSmN CombCedilla  by LtnSmNCedilla;
+    sub LtnCapN CombCedilla  by LtnCapNCedilla;
+    sub LtnSmO CombOgonek  by LtnSmOOgonek;
+    sub LtnSmOOgonek CombMacron  by LtnSmOOgonekMacron;
+    sub LtnSmOMacron CombOgonek  by LtnSmOOgonekMacron;
+    sub LtnSmO CombOgonek CombMacron  by LtnSmOOgonekMacron;
+    sub LtnSmO CombMacron CombOgonek  by LtnSmOOgonekMacron;
+    sub LtnSmO CombHorn  by LtnSmOHorn;
+    sub LtnCapO CombOgonek  by LtnCapOOgonek;
+    sub LtnCapOOgonek CombMacron  by LtnCapOOgonekMacron;
+    sub LtnCapOMacron CombOgonek  by LtnCapOOgonekMacron;
+    sub LtnCapO CombMacron CombOgonek  by LtnCapOOgonekMacron;
+    sub LtnCapO CombOgonek CombMacron  by LtnCapOOgonekMacron;
+    sub LtnCapO CombHorn  by LtnCapOHorn;
+    sub LtnSmR CombCedilla  by LtnSmRCedilla;
+    sub LtnCapR CombCedilla  by LtnCapRCedilla;
+    sub LtnSmS CombCedilla  by LtnSmSCedilla;
+    sub LtnCapS CombCedilla  by LtnCapSCedilla;
+    sub LtnSmT CombCaron  by LtnSmTCaron;
+    sub LtnSmT CombCedilla  by LtnSmTCedilla;
+    sub LtnCapT CombCedilla  by LtnCapTCedilla;
+    sub LtnSmU CombOgonek  by LtnSmUOgonek;
+    sub LtnSmU CombHorn  by LtnSmUHorn;
+    sub LtnCapU CombOgonek  by LtnCapUOgonek;
+    sub LtnCapU CombHorn  by LtnCapUHorn;
+    sub ParallelTo CombLngSolidusOverlay  by NotParallelTo;
+    sub IdenticalTo CombLngSolidusOverlay  by NotIdenticalTo;
+    sub SubsetOf CombLngSolidusOverlay  by NotSubsetOf;
+    sub SupersetOf CombLngSolidusOverlay  by NotSupersetOf;
+    sub LftArrw CombLngSolidusOverlay  by LftArrwStrk;
+    sub RtArrw CombLngSolidusOverlay  by RtArrwStrk;
 } c_sub;
 
 lookup vd_sub {
   lookupflag MarkAttachmentType @MarkClass1;
-    sub \CombCircum \CombAcute  by \CombCircumAcute.VN;
-    sub \CombCircum \CombGrave  by \CombCircumGrave.VN;
-    sub \CombCircum \CombTilde  by \CombCircumTilde.VN;
-    sub \CombCircum \CombHookAbv  by \CombCircumHook.VN;
-    sub \CombBreve \CombAcute  by \CombBreveAcute.VN;
-    sub \CombBreve \CombGrave  by \CombBreveGrave.VN;
-    sub \CombBreve \CombTilde  by \CombBreveTilde.VN;
-    sub \CombBreve \CombHookAbv  by \CombBreveHook.VN;
+    sub CombCircum CombAcute  by CombCircumAcute.VN;
+    sub CombCircum CombGrave  by CombCircumGrave.VN;
+    sub CombCircum CombTilde  by CombCircumTilde.VN;
+    sub CombCircum CombHookAbv  by CombCircumHook.VN;
+    sub CombBreve CombAcute  by CombBreveAcute.VN;
+    sub CombBreve CombGrave  by CombBreveGrave.VN;
+    sub CombBreve CombTilde  by CombBreveTilde.VN;
+    sub CombBreve CombHookAbv  by CombBreveHook.VN;
 } vd_sub;
 
 lookup vc_sub {
   lookupflag 0;
-    sub \LtnSmACircumAcute by \LtnSmACircumAcute.VN ;
-    sub \LtnSmACircumAcute.2StorySItal by \LtnSmACircumAcute.2StorySItal.VN ;
-    sub \LtnSmACircumGrave by \LtnSmACircumGrave.VN ;
-    sub \LtnSmACircumGrave.2StorySItal by \LtnSmACircumGrave.2StorySItal.VN ;
-    sub \LtnSmACircumTilde by \LtnSmACircumTilde.VN ;
-    sub \LtnSmACircumTilde.2StorySItal by \LtnSmACircumTilde.2StorySItal.VN ;
-    sub \LtnSmACircumHookAbv by \LtnSmACircumHookAbv.VN ;
-    sub \LtnSmACircumHookAbv.2StorySItal by \LtnSmACircumHookAbv.2StorySItal.VN ;
-    sub \LtnSmABreveAcute by \LtnSmABreveAcute.VN ;
-    sub \LtnSmABreveGrave by \LtnSmABreveGrave.VN ;
-    sub \LtnSmABreveTilde by \LtnSmABreveTilde.VN ;
-    sub \LtnSmABreveHookAbv by \LtnSmABreveHookAbv.VN ;
-    sub \LtnSmACircumAcute.SngStory by \LtnSmACircumAcute.SngStory.VN ;
-    sub \LtnSmACircumGrave.SngStory by \LtnSmACircumGrave.SngStory.VN ;
-    sub \LtnSmACircumTilde.SngStory by \LtnSmACircumTilde.SngStory.VN ;
-    sub \LtnSmACircumHookAbv.SngStory by \LtnSmACircumHookAbv.SngStory.VN ;
-    sub \LtnSmABreveAcute.SngStory by \LtnSmABreveAcute.SngStory.VN ;
-    sub \LtnSmABreveGrave.SngStory by \LtnSmABreveGrave.SngStory.VN ;
-    sub \LtnSmABreveTilde.SngStory by \LtnSmABreveTilde.SngStory.VN ;
-    sub \LtnSmABreveHookAbv.SngStory by \LtnSmABreveHookAbv.SngStory.VN ;
-    sub \LtnSmABreveAcute.2StorySItal by \LtnSmABreveAcute.2StorySItal.VN ;
-    sub \LtnSmABreveGrave.2StorySItal by \LtnSmABreveGrave.2StorySItal.VN ;
-    sub \LtnSmABreveTilde.2StorySItal by \LtnSmABreveTilde.2StorySItal.VN ;
-    sub \LtnSmABreveHookAbv.2StorySItal by \LtnSmABreveHookAbv.2StorySItal.VN ;
-    sub \LtnCapACircumAcute by \LtnCapACircumAcute.VN ;
-    sub \LtnCapACircumGrave by \LtnCapACircumGrave.VN ;
-    sub \LtnCapACircumTilde by \LtnCapACircumTilde.VN ;
-    sub \LtnCapACircumHookAbv by \LtnCapACircumHookAbv.VN ;
-    sub \LtnCapABreveAcute by \LtnCapABreveAcute.VN ;
-    sub \LtnCapABreveGrave by \LtnCapABreveGrave.VN ;
-    sub \LtnCapABreveTilde by \LtnCapABreveTilde.VN ;
-    sub \LtnCapABreveHookAbv by \LtnCapABreveHookAbv.VN ;
-    sub \LtnSmECircumAcute by \LtnSmECircumAcute.VN ;
-    sub \LtnSmECircumGrave by \LtnSmECircumGrave.VN ;
-    sub \LtnSmECircumTilde by \LtnSmECircumTilde.VN ;
-    sub \LtnSmECircumHookAbv by \LtnSmECircumHookAbv.VN ;
-    sub \LtnCapECircumAcute by \LtnCapECircumAcute.VN ;
-    sub \LtnCapECircumGrave by \LtnCapECircumGrave.VN ;
-    sub \LtnCapECircumTilde by \LtnCapECircumTilde.VN ;
-    sub \LtnCapECircumHookAbv by \LtnCapECircumHookAbv.VN ;
-    sub \LtnSmOCircumAcute by \LtnSmOCircumAcute.VN ;
-    sub \LtnSmOCircumGrave by \LtnSmOCircumGrave.VN ;
-    sub \LtnSmOCircumTilde by \LtnSmOCircumTilde.VN ;
-    sub \LtnSmOCircumHookAbv by \LtnSmOCircumHookAbv.VN ;
-    sub \LtnCapOCircumAcute by \LtnCapOCircumAcute.VN ;
-    sub \LtnCapOCircumGrave by \LtnCapOCircumGrave.VN ;
-    sub \LtnCapOCircumTilde by \LtnCapOCircumTilde.VN ;
-    sub \LtnCapOCircumHookAbv by \LtnCapOCircumHookAbv.VN ;
-    sub \LtnSmACircumAcute.sc by \LtnSmACircumAcute.VN.sc ;
-    sub \LtnSmACircumGrave.sc by \LtnSmACircumGrave.VN.sc ;
-    sub \LtnSmACircumTilde.sc by \LtnSmACircumTilde.VN.sc ;
-    sub \LtnSmACircumHookAbv.sc by \LtnSmACircumHookAbv.VN.sc ;
-    sub \LtnSmABreveAcute.sc by \LtnSmABreveAcute.VN.sc ;
-    sub \LtnSmABreveGrave.sc by \LtnSmABreveGrave.VN.sc ;
-    sub \LtnSmABreveTilde.sc by \LtnSmABreveTilde.VN.sc ;
-    sub \LtnSmABreveHookAbv.sc by \LtnSmABreveHookAbv.VN.sc ;
-    sub \LtnSmACircumAcute.SngStory.sc by \LtnSmACircumAcute.SngStory.VN.sc ;
-    sub \LtnSmACircumGrave.SngStory.sc by \LtnSmACircumGrave.SngStory.VN.sc ;
-    sub \LtnSmACircumTilde.SngStory.sc by \LtnSmACircumTilde.SngStory.VN.sc ;
-    sub \LtnSmACircumHookAbv.SngStory.sc by \LtnSmACircumHookAbv.SngStory.VN.sc ;
-    sub \LtnSmABreveAcute.SngStory.sc by \LtnSmABreveAcute.SngStory.VN.sc ;
-    sub \LtnSmABreveGrave.SngStory.sc by \LtnSmABreveGrave.SngStory.VN.sc ;
-    sub \LtnSmABreveTilde.SngStory.sc by \LtnSmABreveTilde.SngStory.VN.sc ;
-    sub \LtnSmABreveHookAbv.SngStory.sc by \LtnSmABreveHookAbv.SngStory.VN.sc ;
-    sub \LtnSmECircumAcute.sc by \LtnSmECircumAcute.VN.sc ;
-    sub \LtnSmECircumGrave.sc by \LtnSmECircumGrave.VN.sc ;
-    sub \LtnSmECircumTilde.sc by \LtnSmECircumTilde.VN.sc ;
-    sub \LtnSmECircumHookAbv.sc by \LtnSmECircumHookAbv.VN.sc ;
-    sub \LtnSmOCircumAcute.sc by \LtnSmOCircumAcute.VN.sc ;
-    sub \LtnSmOCircumGrave.sc by \LtnSmOCircumGrave.VN.sc ;
-    sub \LtnSmOCircumTilde.sc by \LtnSmOCircumTilde.VN.sc ;
-    sub \LtnSmOCircumHookAbv.sc by \LtnSmOCircumHookAbv.VN.sc ;
+    sub LtnSmACircumAcute by LtnSmACircumAcute.VN ;
+    sub LtnSmACircumAcute.2StorySItal by LtnSmACircumAcute.2StorySItal.VN ;
+    sub LtnSmACircumGrave by LtnSmACircumGrave.VN ;
+    sub LtnSmACircumGrave.2StorySItal by LtnSmACircumGrave.2StorySItal.VN ;
+    sub LtnSmACircumTilde by LtnSmACircumTilde.VN ;
+    sub LtnSmACircumTilde.2StorySItal by LtnSmACircumTilde.2StorySItal.VN ;
+    sub LtnSmACircumHookAbv by LtnSmACircumHookAbv.VN ;
+    sub LtnSmACircumHookAbv.2StorySItal by LtnSmACircumHookAbv.2StorySItal.VN ;
+    sub LtnSmABreveAcute by LtnSmABreveAcute.VN ;
+    sub LtnSmABreveGrave by LtnSmABreveGrave.VN ;
+    sub LtnSmABreveTilde by LtnSmABreveTilde.VN ;
+    sub LtnSmABreveHookAbv by LtnSmABreveHookAbv.VN ;
+    sub LtnSmACircumAcute.SngStory by LtnSmACircumAcute.SngStory.VN ;
+    sub LtnSmACircumGrave.SngStory by LtnSmACircumGrave.SngStory.VN ;
+    sub LtnSmACircumTilde.SngStory by LtnSmACircumTilde.SngStory.VN ;
+    sub LtnSmACircumHookAbv.SngStory by LtnSmACircumHookAbv.SngStory.VN ;
+    sub LtnSmABreveAcute.SngStory by LtnSmABreveAcute.SngStory.VN ;
+    sub LtnSmABreveGrave.SngStory by LtnSmABreveGrave.SngStory.VN ;
+    sub LtnSmABreveTilde.SngStory by LtnSmABreveTilde.SngStory.VN ;
+    sub LtnSmABreveHookAbv.SngStory by LtnSmABreveHookAbv.SngStory.VN ;
+    sub LtnSmABreveAcute.2StorySItal by LtnSmABreveAcute.2StorySItal.VN ;
+    sub LtnSmABreveGrave.2StorySItal by LtnSmABreveGrave.2StorySItal.VN ;
+    sub LtnSmABreveTilde.2StorySItal by LtnSmABreveTilde.2StorySItal.VN ;
+    sub LtnSmABreveHookAbv.2StorySItal by LtnSmABreveHookAbv.2StorySItal.VN ;
+    sub LtnCapACircumAcute by LtnCapACircumAcute.VN ;
+    sub LtnCapACircumGrave by LtnCapACircumGrave.VN ;
+    sub LtnCapACircumTilde by LtnCapACircumTilde.VN ;
+    sub LtnCapACircumHookAbv by LtnCapACircumHookAbv.VN ;
+    sub LtnCapABreveAcute by LtnCapABreveAcute.VN ;
+    sub LtnCapABreveGrave by LtnCapABreveGrave.VN ;
+    sub LtnCapABreveTilde by LtnCapABreveTilde.VN ;
+    sub LtnCapABreveHookAbv by LtnCapABreveHookAbv.VN ;
+    sub LtnSmECircumAcute by LtnSmECircumAcute.VN ;
+    sub LtnSmECircumGrave by LtnSmECircumGrave.VN ;
+    sub LtnSmECircumTilde by LtnSmECircumTilde.VN ;
+    sub LtnSmECircumHookAbv by LtnSmECircumHookAbv.VN ;
+    sub LtnCapECircumAcute by LtnCapECircumAcute.VN ;
+    sub LtnCapECircumGrave by LtnCapECircumGrave.VN ;
+    sub LtnCapECircumTilde by LtnCapECircumTilde.VN ;
+    sub LtnCapECircumHookAbv by LtnCapECircumHookAbv.VN ;
+    sub LtnSmOCircumAcute by LtnSmOCircumAcute.VN ;
+    sub LtnSmOCircumGrave by LtnSmOCircumGrave.VN ;
+    sub LtnSmOCircumTilde by LtnSmOCircumTilde.VN ;
+    sub LtnSmOCircumHookAbv by LtnSmOCircumHookAbv.VN ;
+    sub LtnCapOCircumAcute by LtnCapOCircumAcute.VN ;
+    sub LtnCapOCircumGrave by LtnCapOCircumGrave.VN ;
+    sub LtnCapOCircumTilde by LtnCapOCircumTilde.VN ;
+    sub LtnCapOCircumHookAbv by LtnCapOCircumHookAbv.VN ;
+    sub LtnSmACircumAcute.sc by LtnSmACircumAcute.VN.sc ;
+    sub LtnSmACircumGrave.sc by LtnSmACircumGrave.VN.sc ;
+    sub LtnSmACircumTilde.sc by LtnSmACircumTilde.VN.sc ;
+    sub LtnSmACircumHookAbv.sc by LtnSmACircumHookAbv.VN.sc ;
+    sub LtnSmABreveAcute.sc by LtnSmABreveAcute.VN.sc ;
+    sub LtnSmABreveGrave.sc by LtnSmABreveGrave.VN.sc ;
+    sub LtnSmABreveTilde.sc by LtnSmABreveTilde.VN.sc ;
+    sub LtnSmABreveHookAbv.sc by LtnSmABreveHookAbv.VN.sc ;
+    sub LtnSmACircumAcute.SngStory.sc by LtnSmACircumAcute.SngStory.VN.sc ;
+    sub LtnSmACircumGrave.SngStory.sc by LtnSmACircumGrave.SngStory.VN.sc ;
+    sub LtnSmACircumTilde.SngStory.sc by LtnSmACircumTilde.SngStory.VN.sc ;
+    sub LtnSmACircumHookAbv.SngStory.sc by LtnSmACircumHookAbv.SngStory.VN.sc ;
+    sub LtnSmABreveAcute.SngStory.sc by LtnSmABreveAcute.SngStory.VN.sc ;
+    sub LtnSmABreveGrave.SngStory.sc by LtnSmABreveGrave.SngStory.VN.sc ;
+    sub LtnSmABreveTilde.SngStory.sc by LtnSmABreveTilde.SngStory.VN.sc ;
+    sub LtnSmABreveHookAbv.SngStory.sc by LtnSmABreveHookAbv.SngStory.VN.sc ;
+    sub LtnSmECircumAcute.sc by LtnSmECircumAcute.VN.sc ;
+    sub LtnSmECircumGrave.sc by LtnSmECircumGrave.VN.sc ;
+    sub LtnSmECircumTilde.sc by LtnSmECircumTilde.VN.sc ;
+    sub LtnSmECircumHookAbv.sc by LtnSmECircumHookAbv.VN.sc ;
+    sub LtnSmOCircumAcute.sc by LtnSmOCircumAcute.VN.sc ;
+    sub LtnSmOCircumGrave.sc by LtnSmOCircumGrave.VN.sc ;
+    sub LtnSmOCircumTilde.sc by LtnSmOCircumTilde.VN.sc ;
+    sub LtnSmOCircumHookAbv.sc by LtnSmOCircumHookAbv.VN.sc ;
 } vc_sub;
 
 lookup srb_sub {
@@ -277,327 +277,327 @@ lookup srb_sub {
 
 lookup ma_sub {
   lookupflag 0;
-    sub \LtnSmA from [\LtnSmA.2StorySItal \LtnSmA.SngStory ];
-    sub \LtnSmAAcute from [\LtnSmAAcute.SngStory \LtnSmAAcute.2StorySItal ];
-    sub \LtnSmAGrave from [\LtnSmAGrave.SngStory \LtnSmAGrave.2StorySItal ];
-    sub \LtnSmACircum from [\LtnSmACircum.SngStory \LtnSmACircum.2StorySItal ];
-    sub \LtnSmADiaer from [\LtnSmADiaer.SngStory \LtnSmADiaer.2StorySItal ];
-    sub \LtnSmATilde from [\LtnSmATilde.2StorySItal \LtnSmATilde.SngStory ];
-    sub \LtnSmARingAbv from [\LtnSmARingAbv.SngStory \LtnSmARingAbv.2StorySItal ];
-    sub \LtnSmADblGrave from [\LtnSmADblGrave.SngStory \LtnSmADblGrave.2StorySItal ];
-    sub \LtnSmACircumDotBlw from [\LtnSmACircumDotBlw.SngStory \LtnSmACircumDotBlw.2StorySItal ];
-    sub \LtnSmACircumAcute from [\LtnSmACircumAcute.2StorySItal \LtnSmACircumAcute.SngStory ];
-    sub \LtnSmACircumAcute.VN from [\LtnSmACircumAcute.2StorySItal.VN \LtnSmACircumAcute.SngStory.VN ];
-    sub \LtnSmACircumGrave from [\LtnSmACircumGrave.2StorySItal \LtnSmACircumGrave.SngStory ];
-    sub \LtnSmACircumGrave.VN from [\LtnSmACircumGrave.2StorySItal.VN \LtnSmACircumGrave.SngStory.VN ];
-    sub \LtnSmACircumTilde from [\LtnSmACircumTilde.2StorySItal \LtnSmACircumTilde.SngStory ];
-    sub \LtnSmACircumTilde.VN from [\LtnSmACircumTilde.2StorySItal.VN \LtnSmACircumTilde.SngStory.VN ];
-    sub \LtnSmACircumHookAbv from [\LtnSmACircumHookAbv.2StorySItal \LtnSmACircumHookAbv.SngStory ];
-    sub \LtnSmACircumHookAbv.VN from [\LtnSmACircumHookAbv.2StorySItal.VN \LtnSmACircumHookAbv.SngStory.VN ];
-    sub \LtnSmAInvBreve from [\LtnSmAInvBreve.SngStory \LtnSmAInvBreve.2StorySItal ];
-    sub \LtnSmABreve from [\LtnSmABreve.SngStory \LtnSmABreve.2StorySItal ];
-    sub \LtnSmABreveDotBlw from [\LtnSmABreveDotBlw.SngStory \LtnSmABreveDotBlw.2StorySItal ];
-    sub \LtnSmABreveAcute from [\LtnSmABreveAcute.SngStory \LtnSmABreveAcute.2StorySItal ];
-    sub \LtnSmABreveAcute.VN from [\LtnSmABreveAcute.2StorySItal.VN \LtnSmABreveAcute.SngStory.VN ];
-    sub \LtnSmABreveGrave from [\LtnSmABreveGrave.SngStory \LtnSmABreveGrave.2StorySItal ];
-    sub \LtnSmABreveGrave.VN from [\LtnSmABreveGrave.2StorySItal.VN \LtnSmABreveGrave.SngStory.VN ];
-    sub \LtnSmABreveTilde from [\LtnSmABreveTilde.SngStory \LtnSmABreveTilde.2StorySItal ];
-    sub \LtnSmABreveTilde.VN from [\LtnSmABreveTilde.2StorySItal.VN \LtnSmABreveTilde.SngStory.VN ];
-    sub \LtnSmABreveHookAbv from [\LtnSmABreveHookAbv.SngStory \LtnSmABreveHookAbv.2StorySItal ];
-    sub \LtnSmABreveHookAbv.VN from [\LtnSmABreveHookAbv.2StorySItal.VN \LtnSmABreveHookAbv.SngStory.VN ];
-    sub \LtnSmACaron from [\LtnSmACaron.SngStory \LtnSmACaron.2StorySItal ];
-    sub \LtnSmAMacron from [\LtnSmAMacron.SngStory \LtnSmAMacron.2StorySItal ];
-    sub \LtnSmADiaerMacron from [\LtnSmADiaerMacron.SngStory \LtnSmADiaerMacron.2StorySItal ];
-    sub \LtnSmADotAbv from [\LtnSmADotAbv.SngStory \LtnSmADotAbv.2StorySItal ];
-    sub \LtnSmADotAbvMacron from [\LtnSmADotAbvMacron.SngStory \LtnSmADotAbvMacron.2StorySItal ];
-    sub \LtnSmARingAbvAcute from [\LtnSmARingAbvAcute.SngStory \LtnSmARingAbvAcute.2StorySItal ];
-    sub \LtnSmARtHalfRing from [\LtnSmARtHalfRing.SngStory \LtnSmARtHalfRing.2StorySItal ];
-    sub \LtnSmAHookAbv from [\LtnSmAHookAbv.SngStory \LtnSmAHookAbv.2StorySItal ];
-    sub \LtnSmADotBlw from [\LtnSmADotBlw.2StorySItal \LtnSmADotBlw.SngStory ];
-    sub \LtnSmARingBlw from [\LtnSmARingBlw.SngStory \LtnSmARingBlw.2StorySItal ];
-    sub \LtnSmAOgonek from [\LtnSmAOgonek.RetroHook \LtnSmAOgonek.SngStory \LtnSmAOgonek.2StorySItal ];
-    sub \LtnSmAOgonek.RetroHook from [\LtnSmAOgonek.SngStory.RetroHook \LtnSmAOgonek.2StorySItal.RetroHook ];
-    sub \LtnSmAStrk from [\LtnSmAStrk.2StorySItal \LtnSmAStrk.SngStory ];
-    sub \LtnSmEng from [\LtnSmEng.BaselineHook \LtnSmEng.UCStyle \LtnSmEng.Kom ];
-    sub \LtnCapEng from [\LtnCapEng.UCStyle \LtnCapEng.BaselineHook \LtnCapEng.Kom ];
-    sub \LtnSmVHook from [\LtnSmVHook.StraightLft \LtnSmVHook.StraightLftHighHook ];
-    sub \ModSmVHook from [\ModSmVHook.StraightLft \ModSmVHook.StraightLftHighHook ];
-    sub \LtnCapVHook from [\LtnCapVHook.StraightLft \LtnCapVHook.StraightLftHighHook ];
-    sub \LtnSmRamsHorn from [\LtnSmRamsHorn.LrgBowl \LtnSmRamsHorn.GammaStyle ];
-    sub \CombInvBreve from [\CombInvBreve.UU \CombInvBreve.UL \CombInvBreve.LL ];
-    sub \CombDblInvBreve from [\CombDblInvBreve.UU \CombDblInvBreve.UL \CombDblInvBreve.LL ];
-    sub \CombDiaer from [\CombDiaer.UU \CombDiaer.LL \CombDiaer.UL ];
-    sub \CombOgonek from [\CombOgonek.Lrg \CombOgonek.RetroHook ];
-    sub \LtnSmAOgonek.sc from [\LtnSmAOgonek.RetroHook.sc \LtnSmAOgonek.SngStory.sc ];
-    sub \LtnSmGStrk.sc from [\LtnSmGBarredBowl.sc \LtnSmGStrk.SngBowl.sc ];
-    sub \LtnSmEng.sc from [\LtnSmEng.BaselineHook.sc \LtnSmEng.UCStyle.sc \LtnSmEng.Kom.sc ];
-    sub \LtnSmVHook.sc from [\LtnSmVHook.StraightLft.sc \LtnSmVHook.StraightLftHighHook.sc ];
+    sub LtnSmA from [LtnSmA.2StorySItal LtnSmA.SngStory ];
+    sub LtnSmAAcute from [LtnSmAAcute.SngStory LtnSmAAcute.2StorySItal ];
+    sub LtnSmAGrave from [LtnSmAGrave.SngStory LtnSmAGrave.2StorySItal ];
+    sub LtnSmACircum from [LtnSmACircum.SngStory LtnSmACircum.2StorySItal ];
+    sub LtnSmADiaer from [LtnSmADiaer.SngStory LtnSmADiaer.2StorySItal ];
+    sub LtnSmATilde from [LtnSmATilde.2StorySItal LtnSmATilde.SngStory ];
+    sub LtnSmARingAbv from [LtnSmARingAbv.SngStory LtnSmARingAbv.2StorySItal ];
+    sub LtnSmADblGrave from [LtnSmADblGrave.SngStory LtnSmADblGrave.2StorySItal ];
+    sub LtnSmACircumDotBlw from [LtnSmACircumDotBlw.SngStory LtnSmACircumDotBlw.2StorySItal ];
+    sub LtnSmACircumAcute from [LtnSmACircumAcute.2StorySItal LtnSmACircumAcute.SngStory ];
+    sub LtnSmACircumAcute.VN from [LtnSmACircumAcute.2StorySItal.VN LtnSmACircumAcute.SngStory.VN ];
+    sub LtnSmACircumGrave from [LtnSmACircumGrave.2StorySItal LtnSmACircumGrave.SngStory ];
+    sub LtnSmACircumGrave.VN from [LtnSmACircumGrave.2StorySItal.VN LtnSmACircumGrave.SngStory.VN ];
+    sub LtnSmACircumTilde from [LtnSmACircumTilde.2StorySItal LtnSmACircumTilde.SngStory ];
+    sub LtnSmACircumTilde.VN from [LtnSmACircumTilde.2StorySItal.VN LtnSmACircumTilde.SngStory.VN ];
+    sub LtnSmACircumHookAbv from [LtnSmACircumHookAbv.2StorySItal LtnSmACircumHookAbv.SngStory ];
+    sub LtnSmACircumHookAbv.VN from [LtnSmACircumHookAbv.2StorySItal.VN LtnSmACircumHookAbv.SngStory.VN ];
+    sub LtnSmAInvBreve from [LtnSmAInvBreve.SngStory LtnSmAInvBreve.2StorySItal ];
+    sub LtnSmABreve from [LtnSmABreve.SngStory LtnSmABreve.2StorySItal ];
+    sub LtnSmABreveDotBlw from [LtnSmABreveDotBlw.SngStory LtnSmABreveDotBlw.2StorySItal ];
+    sub LtnSmABreveAcute from [LtnSmABreveAcute.SngStory LtnSmABreveAcute.2StorySItal ];
+    sub LtnSmABreveAcute.VN from [LtnSmABreveAcute.2StorySItal.VN LtnSmABreveAcute.SngStory.VN ];
+    sub LtnSmABreveGrave from [LtnSmABreveGrave.SngStory LtnSmABreveGrave.2StorySItal ];
+    sub LtnSmABreveGrave.VN from [LtnSmABreveGrave.2StorySItal.VN LtnSmABreveGrave.SngStory.VN ];
+    sub LtnSmABreveTilde from [LtnSmABreveTilde.SngStory LtnSmABreveTilde.2StorySItal ];
+    sub LtnSmABreveTilde.VN from [LtnSmABreveTilde.2StorySItal.VN LtnSmABreveTilde.SngStory.VN ];
+    sub LtnSmABreveHookAbv from [LtnSmABreveHookAbv.SngStory LtnSmABreveHookAbv.2StorySItal ];
+    sub LtnSmABreveHookAbv.VN from [LtnSmABreveHookAbv.2StorySItal.VN LtnSmABreveHookAbv.SngStory.VN ];
+    sub LtnSmACaron from [LtnSmACaron.SngStory LtnSmACaron.2StorySItal ];
+    sub LtnSmAMacron from [LtnSmAMacron.SngStory LtnSmAMacron.2StorySItal ];
+    sub LtnSmADiaerMacron from [LtnSmADiaerMacron.SngStory LtnSmADiaerMacron.2StorySItal ];
+    sub LtnSmADotAbv from [LtnSmADotAbv.SngStory LtnSmADotAbv.2StorySItal ];
+    sub LtnSmADotAbvMacron from [LtnSmADotAbvMacron.SngStory LtnSmADotAbvMacron.2StorySItal ];
+    sub LtnSmARingAbvAcute from [LtnSmARingAbvAcute.SngStory LtnSmARingAbvAcute.2StorySItal ];
+    sub LtnSmARtHalfRing from [LtnSmARtHalfRing.SngStory LtnSmARtHalfRing.2StorySItal ];
+    sub LtnSmAHookAbv from [LtnSmAHookAbv.SngStory LtnSmAHookAbv.2StorySItal ];
+    sub LtnSmADotBlw from [LtnSmADotBlw.2StorySItal LtnSmADotBlw.SngStory ];
+    sub LtnSmARingBlw from [LtnSmARingBlw.SngStory LtnSmARingBlw.2StorySItal ];
+    sub LtnSmAOgonek from [LtnSmAOgonek.RetroHook LtnSmAOgonek.SngStory LtnSmAOgonek.2StorySItal ];
+    sub LtnSmAOgonek.RetroHook from [LtnSmAOgonek.SngStory.RetroHook LtnSmAOgonek.2StorySItal.RetroHook ];
+    sub LtnSmAStrk from [LtnSmAStrk.2StorySItal LtnSmAStrk.SngStory ];
+    sub LtnSmEng from [LtnSmEng.BaselineHook LtnSmEng.UCStyle LtnSmEng.Kom ];
+    sub LtnCapEng from [LtnCapEng.UCStyle LtnCapEng.BaselineHook LtnCapEng.Kom ];
+    sub LtnSmVHook from [LtnSmVHook.StraightLft LtnSmVHook.StraightLftHighHook ];
+    sub ModSmVHook from [ModSmVHook.StraightLft ModSmVHook.StraightLftHighHook ];
+    sub LtnCapVHook from [LtnCapVHook.StraightLft LtnCapVHook.StraightLftHighHook ];
+    sub LtnSmRamsHorn from [LtnSmRamsHorn.LrgBowl LtnSmRamsHorn.GammaStyle ];
+    sub CombInvBreve from [CombInvBreve.UU CombInvBreve.UL CombInvBreve.LL ];
+    sub CombDblInvBreve from [CombDblInvBreve.UU CombDblInvBreve.UL CombDblInvBreve.LL ];
+    sub CombDiaer from [CombDiaer.UU CombDiaer.LL CombDiaer.UL ];
+    sub CombOgonek from [CombOgonek.Lrg CombOgonek.RetroHook ];
+    sub LtnSmAOgonek.sc from [LtnSmAOgonek.RetroHook.sc LtnSmAOgonek.SngStory.sc ];
+    sub LtnSmGStrk.sc from [LtnSmGBarredBowl.sc LtnSmGStrk.SngBowl.sc ];
+    sub LtnSmEng.sc from [LtnSmEng.BaselineHook.sc LtnSmEng.UCStyle.sc LtnSmEng.Kom.sc ];
+    sub LtnSmVHook.sc from [LtnSmVHook.StraightLft.sc LtnSmVHook.StraightLftHighHook.sc ];
 } ma_sub;
 
 lookup sa_sub {
   lookupflag 0;
-#    sub \Space by \Space.Lines ;
-    sub \LtnSmF by \LtnSmF.SItal ;
-    sub \LtnSmG by \LtnSmG.SngBowl ;
-    sub \LtnSmI by \LtnSmI.SItal ;
-    sub \LtnSmL by \LtnSmL.SItal ;
-    sub \LtnSmV by \LtnSmV.SItal ;
-    sub \LtnSmZ by \LtnSmZ.SItal ;
-    sub \LtnSmIAcute by \LtnSmIAcute.SItal ;
-    sub \LtnSmIGrave by \LtnSmIGrave.SItal ;
-    sub \LtnSmICircum by \LtnSmICircum.SItal ;
-    sub \LtnSmIDiaer by \LtnSmIDiaer.SItal ;
-    sub \LtnSmAe by \LtnSmAe.2StorySItal ;
-    sub \LtnSmDotlessI by \LtnSmDotlessI.SItal ;
-    sub \Ogonek by \Ogonek.RetroHook ;
-    sub \LtnSubSmA by \LtnSubSmA.SngStory ;
-    sub \LtnSupSmA by \LtnSupSmA.SngStory ;
-    sub \CombLtnSmA by \CombLtnSmA.SngStory ;
-    sub \LtnSmTurnedA by \LtnSmTurnedA.2StorySItal ;
-    sub \LtnSmAOgonek.SngStory by \LtnSmAOgonek.SngStory.RetroHook ;
-    sub \LtnSmAOgonek.2StorySItal by \LtnSmAOgonek.2StorySItal.RetroHook ;
-    sub \LtnSmAeAcute by \LtnSmAeAcute.2StorySItal ;
-    sub \LtnSmAeMacron by \LtnSmAeMacron.2StorySItal ;
-    sub \LtnCapAOgonek by \LtnCapAOgonek.RetroHook ;
-    sub \LtnSmBBarredStem by \LtnSmBBarredBowl ;
-    sub \LtnSmBHook by \LtnSmBHook.TopBar ;
-    sub \CySmBe by \CySmBe.Serb ;
-    sub \LtnCapBHook by \LtnCapBHook.TopBar ;
-    sub \LtnSmOpnO by \LtnSmOpnO.TopSerif ;
-    sub \LtnSupSmOpnO by \LtnSupSmOpnO.TopSerif ;
-    sub \LtnSmOpnORetrHook by \LtnSmOpnORetrHook.TopSerif ;
-    sub \CySmE by \CySmE.MongolStyle ;
-    sub \LtnCapOpnO by \LtnCapOpnO.TopSerif ;
-    sub \LtnSmCapOpnO by \LtnSmCapOpnO.TopSerif ;
-    sub \CyCapE by \CyCapE.MongolStyle ;
-    sub \LtnSmDCaron by \LtnSmDCaron.Caron ;
-    sub \LtnSmDBarredStem by \LtnSmDBarredBowl ;
-    sub \LtnSmDHook by \LtnSmDHook.TopBar ;
-    sub \LtnCapDHook by \LtnCapDHook.TopBar ;
-    sub \LtnSmEOgonek by \LtnSmEOgonek.RetroHook ;
-    sub \LtnCapEOgonek by \LtnCapEOgonek.RetroHook ;
-    sub \LtnSmFDotAbv by \LtnSmFDotAbv.SItal ;
-    sub \LtnLigSmFSmI by \LtnLigSmFSmI.SItal ;
-    sub \LtnLigSmFSmL by \LtnLigSmFSmL.SItal ;
-    sub \LtnLigSmFSmFSmI by \LtnLigSmFSmFSmI.SItal ;
-    sub \LtnLigSmFSmFSmL by \LtnLigSmFSmFSmL.SItal ;
-    sub \LtnLigSmFSmF by \LtnLigSmFSmF.SItal ;
-    sub \CySmGhe by \CySmGhe.Serb ;
-    sub \CySmGheStrk by \CySmGheStrk.SItal ;
-    sub \CySmGheStrkDesc by \CySmGheStrkDesc.SItal ;
-    sub \CySmGheStrkHook by \CySmGheStrkHook.SItal ;
-    sub \LtnSupSmG by \LtnSupSmG.SngBowl ;
-    sub \LtnSmGAcute by \LtnSmGAcute.SngBowl ;
-    sub \LtnSmGCircum by \LtnSmGCircum.SngBowl ;
-    sub \LtnSmGBreve by \LtnSmGBreve.SngBowl ;
-    sub \LtnSmGCaron by \LtnSmGCaron.SngBowl ;
-    sub \LtnSmGMacron by \LtnSmGMacron.SngBowl ;
-    sub \LtnSmGDotAbv by \LtnSmGDotAbv.SngBowl ;
-    sub \LtnSmGCedilla by \LtnSmGCedilla.SngBowl ;
-    sub \LtnSmGBarredBowl by \LtnSmGBarredSngBowl ;
-    sub \LtnSmGStrk by \LtnSmGBarredBowl ;
-    sub \LtnSmGDiagStrk by \LtnSmGDiagStrk.SngBowl ;
-    sub \LtnSmHStrk by \LtnSmHStrk.VertStrk ;
-    sub \CySmShha by \CySmShha.UCStyle ;
-    sub \CySmPe by \CySmPe.Serb ;
-    sub \LtnCapHStrk by \LtnCapHStrk.VertStrk ;
-    sub \LtnSmIDblGrave by \LtnSmIDblGrave.SItal ;
-    sub \LtnSmIInvBreve by \LtnSmIInvBreve.SItal ;
-    sub \LtnSmIBreve by \LtnSmIBreve.SItal ;
-    sub \LtnSmICaron by \LtnSmICaron.SItal ;
-    sub \LtnSmITilde by \LtnSmITilde.SItal ;
-    sub \LtnSmIMacron by \LtnSmIMacron.SItal ;
-    sub \LtnSmIDiaerAcute by \LtnSmIDiaerAcute.SItal ;
-    sub \LtnSmIDotAbv by \LtnSmIDotAbv.SItal ;
-    sub \LtnSmIHookAbv by \LtnSmIHookAbv.SItal ;
-    sub \LtnSmITildeBlw by \LtnSmITildeBlw.SItal ;
-    sub \LtnSmIDotBlw by \LtnSmIDotBlw.SItal ;
-    sub \LtnSmIOgonek by \LtnSmIOgonek.RetroHook ;
-    sub \LtnSmI.Dotless by \LtnSmI.Dotless.SItal ;
-    sub \LtnCapIOgonek by \LtnCapIOgonek.RetroHook ;
-    sub \LtnSmDotlessJStrkHook by \LtnSmDotlessJStrkHook.DblSerif ;
-    sub \CySmDe by \CySmDe.Serb ;
-    sub \LtnSubSmL by \LtnSubSmL.SItal ;
-    sub \LtnSmLAcute by \LtnSmLAcute.SItal ;
-    sub \LtnSmLCircumBlw by \LtnSmLCircumBlw.SItal ;
-    sub \LtnSmLLineBlw by \LtnSmLLineBlw.SItal ;
-    sub \LtnSmLDotBlw by \LtnSmLDotBlw.SItal ;
-    sub \LtnSmLDotBlwMacron by \LtnSmLDotBlwMacron.SItal ;
-    sub \LtnSmLCaron by \LtnSmLCaron.Caron ;
-    sub \LtnSmLHighBar by \LtnSmLHighBar.SItal ;
-    sub \LtnCapLCaron by \LtnCapLCaron.Caron ;
-    sub \LtnSmNLftHook by \LtnSmNLftHook.LCStyle ;
-    sub \LtnCapNLftHook by \LtnCapNLftHook.LCStyle ;
-    sub \LtnSmOOgonek by \LtnSmOOgonek.RetroHook ;
-    sub \LtnSmOOgonekMacron by \LtnSmOOgonekMacron.RetroHook ;
-    sub \EmptySet by \EmptySet.SlashZero ;
-    sub \LtnSmOu by \LtnSmOu.OpenTop ;
-    sub \LtnCapOOgonek by \LtnCapOOgonek.RetroHook ;
-    sub \LtnCapOOgonekMacron by \LtnCapOOgonekMacron.RetroHook ;
-    sub \LtnCapOu by \LtnCapOu.OpenTop ;
-    sub \ModCapOu by \ModCapOu.OpenTop ;
-    sub \LtnSmCapOu by \LtnSmCapOu.OpenTop ;
-    sub \LtnSmPHook by \LtnSmPHook.BowlHook ;
-    sub \LtnSmRHookTail by \LtnSmRHookTail.LCStyle ;
-    sub \LtnCapRHookTail by \LtnCapSmRHookTail ;
-    sub \LtnSmTCaron by \LtnSmTCaron.Caron ;
-    sub \LtnSmTHook by \LtnSmTHook.RtHook ;
-    sub \CySmTe by \CySmTe.Serb ;
-    sub \LtnCapTHook by \LtnCapTHook.RtHook ;
-    sub \LtnSmUOgonek by \LtnSmUOgonek.RetroHook ;
-    sub \LtnCapUOgonek by \LtnCapUOgonek.RetroHook ;
-    sub \LtnSmVTilde by \LtnSmVTilde.SItal ;
-    sub \LtnSmVDotBlw by \LtnSmVDotBlw.SItal ;
-    sub \LtnSmVDiagStrk by \LtnSmVDiagStrk.SItal ;
-    sub \LtnSmYHook by \LtnSmYHook.RtHook ;
-    sub \LtnCapYHook by \LtnCapYHook.RtHook ;
-    sub \LtnSmZAcute by \LtnSmZAcute.SItal ;
-    sub \LtnSmZCircum by \LtnSmZCircum.SItal ;
-    sub \LtnSmZCaron by \LtnSmZCaron.SItal ;
-    sub \LtnSmZDotAbv by \LtnSmZDotAbv.SItal ;
-    sub \LtnSmZLineBlw by \LtnSmZLineBlw.SItal ;
-    sub \LtnSmZDotBlw by \LtnSmZDotBlw.SItal ;
-    sub \LtnSmEzh by \LtnSmEzh.RevSigmaStyle ;
-    sub \CySmAbkhasDze by \CySmAbkhasDze.RevSigmaStyle ;
-    sub \LtnSmEzhCurl by \LtnSmEzhCurl.LrgBowl ;
-    sub \LtnCapEzh by \LtnCapEzh.RevSigmaStyle ;
-    sub \CyCapAbkhasDze by \CyCapAbkhasDze.RevSigmaStyle ;
-    sub \LtnCapSaltillo by \LtnCapSaltillo.Lrg ;
-    sub \LtnSmSaltillo by \LtnSmSaltillo.Lrg ;
-    sub \ModLowColon by \ModLowColon.Wide ;
-    sub \ModApos by \ModApos.Lrg ;
-    sub \ModVertLine by \ModVertLine.ChinantecTn ;
-    sub \Hyphen_Soft by \Hyphen_Soft.ShowInv ;
-    sub \ModAcuteAccent by \ModAcuteAccent.ChinantecTn ;
-    sub \ModGraveAccent by \ModGraveAccent.ChinantecTn ;
-    sub \CombBreve by \CombBreve.CyShortMrkAlt ;
-    sub \CombBreve.CyShortMrkAlt by \CombBreve.CyShortMrkAlt.UCHt ;
-    sub \CombTildeOverlay by \CombTildeOverlay.Lrg ;
-    sub \CombMacronBlw by \CombMacronBlw.Short ;
-    sub \ModMacron by \ModChinantecTnMrkHorizBar ;
-    sub \CombMacron by \CombMacron.Short ;
-    sub \TnLtr5 by \TnLtr5no ;
-    sub \TnLtr4 by \TnLtr4no ;
-    sub \TnLtr3 by \TnLtr3no ;
-    sub \TnLtr2 by \TnLtr2no ;
-    sub \TnLtr1 by \TnLtr1no ;
-    sub \LftStemTnLtr5 by \LftStemTnLtr5no ;
-    sub \LftStemTnLtr4 by \LftStemTnLtr4no ;
-    sub \LftStemTnLtr3 by \LftStemTnLtr3no ;
-    sub \LftStemTnLtr2 by \LftStemTnLtr2no ;
-    sub \LftStemTnLtr1 by \LftStemTnLtr1no ;
-    sub \CombGraphemeJoiner by \CombGraphemeJoiner.ShowInv ;
-    sub \FunctionApplication by \FunctionApplication.ShowInv ;
-    sub \InvisibleSeparator by \InvisibleSeparator.ShowInv ;
-    sub \InvisibleTimes by \InvisibleTimes.ShowInv ;
-    sub \LftToRtEmbedding by \LftToRtEmbedding.ShowInv ;
-    sub \LftToRtMrk by \LftToRtMrk.ShowInv ;
-    sub \LftToRtOverride by \LftToRtOverride.ShowInv ;
-    sub \PopDirFormatting by \PopDirFormatting.ShowInv ;
-    sub \RtToLftEmbedding by \RtToLftEmbedding.ShowInv ;
-    sub \RtToLftMrk by \RtToLftMrk.ShowInv ;
-    sub \RtToLftOverride by \RtToLftOverride.ShowInv ;
-    sub \VS1 by \VS1.ShowInv ;
-    sub \VS2 by \VS2.ShowInv ;
-    sub \VS3 by \VS3.ShowInv ;
-    sub \VS4 by \VS4.ShowInv ;
-    sub \VS5 by \VS5.ShowInv ;
-    sub \VS6 by \VS6.ShowInv ;
-    sub \VS7 by \VS7.ShowInv ;
-    sub \VS8 by \VS8.ShowInv ;
-    sub \VS9 by \VS9.ShowInv ;
-    sub \VS10 by \VS10.ShowInv ;
-    sub \VS11 by \VS11.ShowInv ;
-    sub \VS12 by \VS12.ShowInv ;
-    sub \VS13 by \VS13.ShowInv ;
-    sub \VS14 by \VS14.ShowInv ;
-    sub \VS15 by \VS15.ShowInv ;
-    sub \VS16 by \VS16.ShowInv ;
-    sub \WordJoiner by \WordJoiner.ShowInv ;
-    sub \ZeroWidthJoiner by \ZeroWidthJoiner.ShowInv ;
-    sub \ZeroWidthNoBreakSpace by \ZeroWidthNoBreakSpace.ShowInv ;
-    sub \ZeroWidthNonJoiner by \ZeroWidthNonJoiner.ShowInv ;
-    sub \ZeroWidthSpace by \ZeroWidthSpace.ShowInv ;
-    sub \LtnSmA.sc by \LtnSmA.SngStory.sc ;
-    sub \LtnSmAAcute.sc by \LtnSmAAcute.SngStory.sc ;
-    sub \LtnSmAGrave.sc by \LtnSmAGrave.SngStory.sc ;
-    sub \LtnSmADblGrave.sc by \LtnSmADblGrave.SngStory.sc ;
-    sub \LtnSmACircum.sc by \LtnSmACircum.SngStory.sc ;
-    sub \LtnSmACircumDotBlw.sc by \LtnSmACircumDotBlw.SngStory.sc ;
-    sub \LtnSmACircumAcute.sc by \LtnSmACircumAcute.SngStory.sc ;
-    sub \LtnSmACircumAcute.VN.sc by \LtnSmACircumAcute.SngStory.VN.sc ;
-    sub \LtnSmACircumGrave.sc by \LtnSmACircumGrave.SngStory.sc ;
-    sub \LtnSmACircumGrave.VN.sc by \LtnSmACircumGrave.SngStory.VN.sc ;
-    sub \LtnSmACircumTilde.sc by \LtnSmACircumTilde.SngStory.sc ;
-    sub \LtnSmACircumTilde.VN.sc by \LtnSmACircumTilde.SngStory.VN.sc ;
-    sub \LtnSmACircumHookAbv.sc by \LtnSmACircumHookAbv.SngStory.sc ;
-    sub \LtnSmACircumHookAbv.VN.sc by \LtnSmACircumHookAbv.SngStory.VN.sc ;
-    sub \LtnSmABreve.sc by \LtnSmABreve.SngStory.sc ;
-    sub \LtnSmABreveDotBlw.sc by \LtnSmABreveDotBlw.SngStory.sc ;
-    sub \LtnSmABreveAcute.sc by \LtnSmABreveAcute.SngStory.sc ;
-    sub \LtnSmABreveAcute.VN.sc by \LtnSmABreveAcute.SngStory.VN.sc ;
-    sub \LtnSmABreveGrave.sc by \LtnSmABreveGrave.SngStory.sc ;
-    sub \LtnSmABreveGrave.VN.sc by \LtnSmABreveGrave.SngStory.VN.sc ;
-    sub \LtnSmABreveTilde.sc by \LtnSmABreveTilde.SngStory.sc ;
-    sub \LtnSmABreveTilde.VN.sc by \LtnSmABreveTilde.SngStory.VN.sc ;
-    sub \LtnSmABreveHookAbv.sc by \LtnSmABreveHookAbv.SngStory.sc ;
-    sub \LtnSmABreveHookAbv.VN.sc by \LtnSmABreveHookAbv.SngStory.VN.sc ;
-    sub \LtnSmACaron.sc by \LtnSmACaron.SngStory.sc ;
-    sub \LtnSmATilde.sc by \LtnSmATilde.SngStory.sc ;
-    sub \LtnSmAMacron.sc by \LtnSmAMacron.SngStory.sc ;
-    sub \LtnSmADiaer.sc by \LtnSmADiaer.SngStory.sc ;
-    sub \LtnSmADiaerMacron.sc by \LtnSmADiaerMacron.SngStory.sc ;
-    sub \LtnSmADotAbv.sc by \LtnSmADotAbv.SngStory.sc ;
-    sub \LtnSmADotAbvMacron.sc by \LtnSmADotAbvMacron.SngStory.sc ;
-    sub \LtnSmARingAbv.sc by \LtnSmARingAbv.SngStory.sc ;
-    sub \LtnSmARingAbvAcute.sc by \LtnSmARingAbvAcute.SngStory.sc ;
-    sub \LtnSmARtHalfRing.sc by \LtnSmARtHalfRing.SngStory.sc ;
-    sub \LtnSmAHookAbv.sc by \LtnSmAHookAbv.SngStory.sc ;
-    sub \LtnSmADotBlw.sc by \LtnSmADotBlw.SngStory.sc ;
-    sub \LtnSmARingBlw.sc by \LtnSmARingBlw.SngStory.sc ;
-    sub \LtnSmAOgonek.RetroHook.sc by \LtnSmAOgonek.SngStory.RetroHook.sc ;
-    sub \LtnSmAStrk.sc by \LtnSmAStrk.SngStory.sc ;
-    sub \LtnSmAInvBreve.sc by \LtnSmAInvBreve.SngStory.sc ;
-    sub \LtnSmAOgonek.SngStory.sc by \LtnSmAOgonek.SngStory.RetroHook.sc ;
-    sub \LtnSmBBarredStem.sc by \LtnSmBBarredBowl.sc ;
-    sub \LtnSmBHook.sc by \LtnSmBHook.TopBar.sc ;
-    sub \LtnSmOpnO.sc by \LtnSmOpnO.TopSerif.sc ;
-    sub \CySmE.sc by \CySmE.MongolStyle.sc ;
-    sub \LtnSmDCaron.sc by \LtnSmDCaron.Caron.sc ;
-    sub \LtnSmDBarredStem.sc by \LtnSmDBarredBowl.sc ;
-    sub \LtnSmDHook.sc by \LtnSmDHook.TopBar.sc ;
-    sub \LtnSmEOgonek.sc by \LtnSmEOgonek.RetroHook.sc ;
-    sub \LtnLigSmFSmI.sc by \LtnLigSmFSmI.SItal.sc ;
-    sub \LtnLigSmFSmL.sc by \LtnLigSmFSmL.SItal.sc ;
-    sub \LtnLigSmFSmFSmI.sc by \LtnLigSmFSmFSmI.SItal.sc ;
-    sub \LtnLigSmFSmFSmL.sc by \LtnLigSmFSmFSmL.SItal.sc ;
-    sub \LtnLigSmFSmF.sc by \LtnLigSmFSmF.SItal.sc ;
-    sub \LtnSmG.sc by \LtnSmG.SngBowl.sc ;
-    sub \LtnSmGAcute.sc by \LtnSmGAcute.SngBowl.sc ;
-    sub \LtnSmGCircum.sc by \LtnSmGCircum.SngBowl.sc ;
-    sub \LtnSmGBreve.sc by \LtnSmGBreve.SngBowl.sc ;
-    sub \LtnSmGCaron.sc by \LtnSmGCaron.SngBowl.sc ;
-    sub \LtnSmGMacron.sc by \LtnSmGMacron.SngBowl.sc ;
-    sub \LtnSmGDotAbv.sc by \LtnSmGDotAbv.SngBowl.sc ;
-    sub \LtnSmGCedilla.sc by \LtnSmGCedilla.SngBowl.sc ;
-    sub \LtnSmGBarredBowl.sc by \LtnSmGBarredSngBowl.sc ;
-    sub \LtnSmGDiagStrk.sc by \LtnSmGDiagStrk.SngBowl.sc ;
-    sub \LtnSmGStrk.SngBowl.sc by \LtnSmGBarredSngBowl.sc ;
-    sub \LtnSmHStrk.sc by \LtnSmHStrk.VertStrk.sc ;
-    sub \LtnSmIOgonek.sc by \LtnSmIOgonek.RetroHook.sc ;
-    sub \LtnSmLCaron.sc by \LtnSmLCaron.Caron.sc ;
-    sub \LtnSmNLftHook.sc by \LtnSmNLftHook.LCStyle.sc ;
-    sub \LtnSmOOgonek.sc by \LtnSmOOgonek.RetroHook.sc ;
-    sub \LtnSmOOgonekMacron.sc by \LtnSmOOgonekMacron.RetroHook.sc ;
-    sub \LtnSmOu.sc by \LtnSmOu.OpenTop.sc ;
-    sub \LtnSmRHookTail.sc by \LtnSmCapSmRHookTail ;
-    sub \LtnSmTCaron.sc by \LtnSmTCaron.Caron.sc ;
-    sub \LtnSmTHook.sc by \LtnSmTHook.RtHook.sc ;
-    sub \LtnSmUOgonek.sc by \LtnSmUOgonek.RetroHook.sc ;
-    sub \LtnSmYHook.sc by \LtnSmYHook.RtHook.sc ;
-    sub \LtnSmEzh.sc by \LtnSmEzh.RevSigmaStyle.sc ;
-    sub \CySmAbkhasDze.sc by \CySmAbkhasDze.RevSigmaStyle.sc ;
-    sub \LtnSmSaltillo.sc by \LtnSmSaltillo.Lrg.sc ;
+#    sub Space by Space.Lines ;
+    sub LtnSmF by LtnSmF.SItal ;
+    sub LtnSmG by LtnSmG.SngBowl ;
+    sub LtnSmI by LtnSmI.SItal ;
+    sub LtnSmL by LtnSmL.SItal ;
+    sub LtnSmV by LtnSmV.SItal ;
+    sub LtnSmZ by LtnSmZ.SItal ;
+    sub LtnSmIAcute by LtnSmIAcute.SItal ;
+    sub LtnSmIGrave by LtnSmIGrave.SItal ;
+    sub LtnSmICircum by LtnSmICircum.SItal ;
+    sub LtnSmIDiaer by LtnSmIDiaer.SItal ;
+    sub LtnSmAe by LtnSmAe.2StorySItal ;
+    sub LtnSmDotlessI by LtnSmDotlessI.SItal ;
+    sub Ogonek by Ogonek.RetroHook ;
+    sub LtnSubSmA by LtnSubSmA.SngStory ;
+    sub LtnSupSmA by LtnSupSmA.SngStory ;
+    sub CombLtnSmA by CombLtnSmA.SngStory ;
+    sub LtnSmTurnedA by LtnSmTurnedA.2StorySItal ;
+    sub LtnSmAOgonek.SngStory by LtnSmAOgonek.SngStory.RetroHook ;
+    sub LtnSmAOgonek.2StorySItal by LtnSmAOgonek.2StorySItal.RetroHook ;
+    sub LtnSmAeAcute by LtnSmAeAcute.2StorySItal ;
+    sub LtnSmAeMacron by LtnSmAeMacron.2StorySItal ;
+    sub LtnCapAOgonek by LtnCapAOgonek.RetroHook ;
+    sub LtnSmBBarredStem by LtnSmBBarredBowl ;
+    sub LtnSmBHook by LtnSmBHook.TopBar ;
+    sub CySmBe by CySmBe.Serb ;
+    sub LtnCapBHook by LtnCapBHook.TopBar ;
+    sub LtnSmOpnO by LtnSmOpnO.TopSerif ;
+    sub LtnSupSmOpnO by LtnSupSmOpnO.TopSerif ;
+    sub LtnSmOpnORetrHook by LtnSmOpnORetrHook.TopSerif ;
+    sub CySmE by CySmE.MongolStyle ;
+    sub LtnCapOpnO by LtnCapOpnO.TopSerif ;
+    sub LtnSmCapOpnO by LtnSmCapOpnO.TopSerif ;
+    sub CyCapE by CyCapE.MongolStyle ;
+    sub LtnSmDCaron by LtnSmDCaron.Caron ;
+    sub LtnSmDBarredStem by LtnSmDBarredBowl ;
+    sub LtnSmDHook by LtnSmDHook.TopBar ;
+    sub LtnCapDHook by LtnCapDHook.TopBar ;
+    sub LtnSmEOgonek by LtnSmEOgonek.RetroHook ;
+    sub LtnCapEOgonek by LtnCapEOgonek.RetroHook ;
+    sub LtnSmFDotAbv by LtnSmFDotAbv.SItal ;
+    sub LtnLigSmFSmI by LtnLigSmFSmI.SItal ;
+    sub LtnLigSmFSmL by LtnLigSmFSmL.SItal ;
+    sub LtnLigSmFSmFSmI by LtnLigSmFSmFSmI.SItal ;
+    sub LtnLigSmFSmFSmL by LtnLigSmFSmFSmL.SItal ;
+    sub LtnLigSmFSmF by LtnLigSmFSmF.SItal ;
+    sub CySmGhe by CySmGhe.Serb ;
+    sub CySmGheStrk by CySmGheStrk.SItal ;
+    sub CySmGheStrkDesc by CySmGheStrkDesc.SItal ;
+    sub CySmGheStrkHook by CySmGheStrkHook.SItal ;
+    sub LtnSupSmG by LtnSupSmG.SngBowl ;
+    sub LtnSmGAcute by LtnSmGAcute.SngBowl ;
+    sub LtnSmGCircum by LtnSmGCircum.SngBowl ;
+    sub LtnSmGBreve by LtnSmGBreve.SngBowl ;
+    sub LtnSmGCaron by LtnSmGCaron.SngBowl ;
+    sub LtnSmGMacron by LtnSmGMacron.SngBowl ;
+    sub LtnSmGDotAbv by LtnSmGDotAbv.SngBowl ;
+    sub LtnSmGCedilla by LtnSmGCedilla.SngBowl ;
+    sub LtnSmGBarredBowl by LtnSmGBarredSngBowl ;
+    sub LtnSmGStrk by LtnSmGBarredBowl ;
+    sub LtnSmGDiagStrk by LtnSmGDiagStrk.SngBowl ;
+    sub LtnSmHStrk by LtnSmHStrk.VertStrk ;
+    sub CySmShha by CySmShha.UCStyle ;
+    sub CySmPe by CySmPe.Serb ;
+    sub LtnCapHStrk by LtnCapHStrk.VertStrk ;
+    sub LtnSmIDblGrave by LtnSmIDblGrave.SItal ;
+    sub LtnSmIInvBreve by LtnSmIInvBreve.SItal ;
+    sub LtnSmIBreve by LtnSmIBreve.SItal ;
+    sub LtnSmICaron by LtnSmICaron.SItal ;
+    sub LtnSmITilde by LtnSmITilde.SItal ;
+    sub LtnSmIMacron by LtnSmIMacron.SItal ;
+    sub LtnSmIDiaerAcute by LtnSmIDiaerAcute.SItal ;
+    sub LtnSmIDotAbv by LtnSmIDotAbv.SItal ;
+    sub LtnSmIHookAbv by LtnSmIHookAbv.SItal ;
+    sub LtnSmITildeBlw by LtnSmITildeBlw.SItal ;
+    sub LtnSmIDotBlw by LtnSmIDotBlw.SItal ;
+    sub LtnSmIOgonek by LtnSmIOgonek.RetroHook ;
+    sub LtnSmI.Dotless by LtnSmI.Dotless.SItal ;
+    sub LtnCapIOgonek by LtnCapIOgonek.RetroHook ;
+    sub LtnSmDotlessJStrkHook by LtnSmDotlessJStrkHook.DblSerif ;
+    sub CySmDe by CySmDe.Serb ;
+    sub LtnSubSmL by LtnSubSmL.SItal ;
+    sub LtnSmLAcute by LtnSmLAcute.SItal ;
+    sub LtnSmLCircumBlw by LtnSmLCircumBlw.SItal ;
+    sub LtnSmLLineBlw by LtnSmLLineBlw.SItal ;
+    sub LtnSmLDotBlw by LtnSmLDotBlw.SItal ;
+    sub LtnSmLDotBlwMacron by LtnSmLDotBlwMacron.SItal ;
+    sub LtnSmLCaron by LtnSmLCaron.Caron ;
+    sub LtnSmLHighBar by LtnSmLHighBar.SItal ;
+    sub LtnCapLCaron by LtnCapLCaron.Caron ;
+    sub LtnSmNLftHook by LtnSmNLftHook.LCStyle ;
+    sub LtnCapNLftHook by LtnCapNLftHook.LCStyle ;
+    sub LtnSmOOgonek by LtnSmOOgonek.RetroHook ;
+    sub LtnSmOOgonekMacron by LtnSmOOgonekMacron.RetroHook ;
+    sub EmptySet by EmptySet.SlashZero ;
+    sub LtnSmOu by LtnSmOu.OpenTop ;
+    sub LtnCapOOgonek by LtnCapOOgonek.RetroHook ;
+    sub LtnCapOOgonekMacron by LtnCapOOgonekMacron.RetroHook ;
+    sub LtnCapOu by LtnCapOu.OpenTop ;
+    sub ModCapOu by ModCapOu.OpenTop ;
+    sub LtnSmCapOu by LtnSmCapOu.OpenTop ;
+    sub LtnSmPHook by LtnSmPHook.BowlHook ;
+    sub LtnSmRHookTail by LtnSmRHookTail.LCStyle ;
+    sub LtnCapRHookTail by LtnCapSmRHookTail ;
+    sub LtnSmTCaron by LtnSmTCaron.Caron ;
+    sub LtnSmTHook by LtnSmTHook.RtHook ;
+    sub CySmTe by CySmTe.Serb ;
+    sub LtnCapTHook by LtnCapTHook.RtHook ;
+    sub LtnSmUOgonek by LtnSmUOgonek.RetroHook ;
+    sub LtnCapUOgonek by LtnCapUOgonek.RetroHook ;
+    sub LtnSmVTilde by LtnSmVTilde.SItal ;
+    sub LtnSmVDotBlw by LtnSmVDotBlw.SItal ;
+    sub LtnSmVDiagStrk by LtnSmVDiagStrk.SItal ;
+    sub LtnSmYHook by LtnSmYHook.RtHook ;
+    sub LtnCapYHook by LtnCapYHook.RtHook ;
+    sub LtnSmZAcute by LtnSmZAcute.SItal ;
+    sub LtnSmZCircum by LtnSmZCircum.SItal ;
+    sub LtnSmZCaron by LtnSmZCaron.SItal ;
+    sub LtnSmZDotAbv by LtnSmZDotAbv.SItal ;
+    sub LtnSmZLineBlw by LtnSmZLineBlw.SItal ;
+    sub LtnSmZDotBlw by LtnSmZDotBlw.SItal ;
+    sub LtnSmEzh by LtnSmEzh.RevSigmaStyle ;
+    sub CySmAbkhasDze by CySmAbkhasDze.RevSigmaStyle ;
+    sub LtnSmEzhCurl by LtnSmEzhCurl.LrgBowl ;
+    sub LtnCapEzh by LtnCapEzh.RevSigmaStyle ;
+    sub CyCapAbkhasDze by CyCapAbkhasDze.RevSigmaStyle ;
+    sub LtnCapSaltillo by LtnCapSaltillo.Lrg ;
+    sub LtnSmSaltillo by LtnSmSaltillo.Lrg ;
+    sub ModLowColon by ModLowColon.Wide ;
+    sub ModApos by ModApos.Lrg ;
+    sub ModVertLine by ModVertLine.ChinantecTn ;
+    sub Hyphen_Soft by Hyphen_Soft.ShowInv ;
+    sub ModAcuteAccent by ModAcuteAccent.ChinantecTn ;
+    sub ModGraveAccent by ModGraveAccent.ChinantecTn ;
+    sub CombBreve by CombBreve.CyShortMrkAlt ;
+    sub CombBreve.CyShortMrkAlt by CombBreve.CyShortMrkAlt.UCHt ;
+    sub CombTildeOverlay by CombTildeOverlay.Lrg ;
+    sub CombMacronBlw by CombMacronBlw.Short ;
+    sub ModMacron by ModChinantecTnMrkHorizBar ;
+    sub CombMacron by CombMacron.Short ;
+    sub TnLtr5 by TnLtr5no ;
+    sub TnLtr4 by TnLtr4no ;
+    sub TnLtr3 by TnLtr3no ;
+    sub TnLtr2 by TnLtr2no ;
+    sub TnLtr1 by TnLtr1no ;
+    sub LftStemTnLtr5 by LftStemTnLtr5no ;
+    sub LftStemTnLtr4 by LftStemTnLtr4no ;
+    sub LftStemTnLtr3 by LftStemTnLtr3no ;
+    sub LftStemTnLtr2 by LftStemTnLtr2no ;
+    sub LftStemTnLtr1 by LftStemTnLtr1no ;
+    sub CombGraphemeJoiner by CombGraphemeJoiner.ShowInv ;
+    sub FunctionApplication by FunctionApplication.ShowInv ;
+    sub InvisibleSeparator by InvisibleSeparator.ShowInv ;
+    sub InvisibleTimes by InvisibleTimes.ShowInv ;
+    sub LftToRtEmbedding by LftToRtEmbedding.ShowInv ;
+    sub LftToRtMrk by LftToRtMrk.ShowInv ;
+    sub LftToRtOverride by LftToRtOverride.ShowInv ;
+    sub PopDirFormatting by PopDirFormatting.ShowInv ;
+    sub RtToLftEmbedding by RtToLftEmbedding.ShowInv ;
+    sub RtToLftMrk by RtToLftMrk.ShowInv ;
+    sub RtToLftOverride by RtToLftOverride.ShowInv ;
+    sub VS1 by VS1.ShowInv ;
+    sub VS2 by VS2.ShowInv ;
+    sub VS3 by VS3.ShowInv ;
+    sub VS4 by VS4.ShowInv ;
+    sub VS5 by VS5.ShowInv ;
+    sub VS6 by VS6.ShowInv ;
+    sub VS7 by VS7.ShowInv ;
+    sub VS8 by VS8.ShowInv ;
+    sub VS9 by VS9.ShowInv ;
+    sub VS10 by VS10.ShowInv ;
+    sub VS11 by VS11.ShowInv ;
+    sub VS12 by VS12.ShowInv ;
+    sub VS13 by VS13.ShowInv ;
+    sub VS14 by VS14.ShowInv ;
+    sub VS15 by VS15.ShowInv ;
+    sub VS16 by VS16.ShowInv ;
+    sub WordJoiner by WordJoiner.ShowInv ;
+    sub ZeroWidthJoiner by ZeroWidthJoiner.ShowInv ;
+    sub ZeroWidthNoBreakSpace by ZeroWidthNoBreakSpace.ShowInv ;
+    sub ZeroWidthNonJoiner by ZeroWidthNonJoiner.ShowInv ;
+    sub ZeroWidthSpace by ZeroWidthSpace.ShowInv ;
+    sub LtnSmA.sc by LtnSmA.SngStory.sc ;
+    sub LtnSmAAcute.sc by LtnSmAAcute.SngStory.sc ;
+    sub LtnSmAGrave.sc by LtnSmAGrave.SngStory.sc ;
+    sub LtnSmADblGrave.sc by LtnSmADblGrave.SngStory.sc ;
+    sub LtnSmACircum.sc by LtnSmACircum.SngStory.sc ;
+    sub LtnSmACircumDotBlw.sc by LtnSmACircumDotBlw.SngStory.sc ;
+    sub LtnSmACircumAcute.sc by LtnSmACircumAcute.SngStory.sc ;
+    sub LtnSmACircumAcute.VN.sc by LtnSmACircumAcute.SngStory.VN.sc ;
+    sub LtnSmACircumGrave.sc by LtnSmACircumGrave.SngStory.sc ;
+    sub LtnSmACircumGrave.VN.sc by LtnSmACircumGrave.SngStory.VN.sc ;
+    sub LtnSmACircumTilde.sc by LtnSmACircumTilde.SngStory.sc ;
+    sub LtnSmACircumTilde.VN.sc by LtnSmACircumTilde.SngStory.VN.sc ;
+    sub LtnSmACircumHookAbv.sc by LtnSmACircumHookAbv.SngStory.sc ;
+    sub LtnSmACircumHookAbv.VN.sc by LtnSmACircumHookAbv.SngStory.VN.sc ;
+    sub LtnSmABreve.sc by LtnSmABreve.SngStory.sc ;
+    sub LtnSmABreveDotBlw.sc by LtnSmABreveDotBlw.SngStory.sc ;
+    sub LtnSmABreveAcute.sc by LtnSmABreveAcute.SngStory.sc ;
+    sub LtnSmABreveAcute.VN.sc by LtnSmABreveAcute.SngStory.VN.sc ;
+    sub LtnSmABreveGrave.sc by LtnSmABreveGrave.SngStory.sc ;
+    sub LtnSmABreveGrave.VN.sc by LtnSmABreveGrave.SngStory.VN.sc ;
+    sub LtnSmABreveTilde.sc by LtnSmABreveTilde.SngStory.sc ;
+    sub LtnSmABreveTilde.VN.sc by LtnSmABreveTilde.SngStory.VN.sc ;
+    sub LtnSmABreveHookAbv.sc by LtnSmABreveHookAbv.SngStory.sc ;
+    sub LtnSmABreveHookAbv.VN.sc by LtnSmABreveHookAbv.SngStory.VN.sc ;
+    sub LtnSmACaron.sc by LtnSmACaron.SngStory.sc ;
+    sub LtnSmATilde.sc by LtnSmATilde.SngStory.sc ;
+    sub LtnSmAMacron.sc by LtnSmAMacron.SngStory.sc ;
+    sub LtnSmADiaer.sc by LtnSmADiaer.SngStory.sc ;
+    sub LtnSmADiaerMacron.sc by LtnSmADiaerMacron.SngStory.sc ;
+    sub LtnSmADotAbv.sc by LtnSmADotAbv.SngStory.sc ;
+    sub LtnSmADotAbvMacron.sc by LtnSmADotAbvMacron.SngStory.sc ;
+    sub LtnSmARingAbv.sc by LtnSmARingAbv.SngStory.sc ;
+    sub LtnSmARingAbvAcute.sc by LtnSmARingAbvAcute.SngStory.sc ;
+    sub LtnSmARtHalfRing.sc by LtnSmARtHalfRing.SngStory.sc ;
+    sub LtnSmAHookAbv.sc by LtnSmAHookAbv.SngStory.sc ;
+    sub LtnSmADotBlw.sc by LtnSmADotBlw.SngStory.sc ;
+    sub LtnSmARingBlw.sc by LtnSmARingBlw.SngStory.sc ;
+    sub LtnSmAOgonek.RetroHook.sc by LtnSmAOgonek.SngStory.RetroHook.sc ;
+    sub LtnSmAStrk.sc by LtnSmAStrk.SngStory.sc ;
+    sub LtnSmAInvBreve.sc by LtnSmAInvBreve.SngStory.sc ;
+    sub LtnSmAOgonek.SngStory.sc by LtnSmAOgonek.SngStory.RetroHook.sc ;
+    sub LtnSmBBarredStem.sc by LtnSmBBarredBowl.sc ;
+    sub LtnSmBHook.sc by LtnSmBHook.TopBar.sc ;
+    sub LtnSmOpnO.sc by LtnSmOpnO.TopSerif.sc ;
+    sub CySmE.sc by CySmE.MongolStyle.sc ;
+    sub LtnSmDCaron.sc by LtnSmDCaron.Caron.sc ;
+    sub LtnSmDBarredStem.sc by LtnSmDBarredBowl.sc ;
+    sub LtnSmDHook.sc by LtnSmDHook.TopBar.sc ;
+    sub LtnSmEOgonek.sc by LtnSmEOgonek.RetroHook.sc ;
+    sub LtnLigSmFSmI.sc by LtnLigSmFSmI.SItal.sc ;
+    sub LtnLigSmFSmL.sc by LtnLigSmFSmL.SItal.sc ;
+    sub LtnLigSmFSmFSmI.sc by LtnLigSmFSmFSmI.SItal.sc ;
+    sub LtnLigSmFSmFSmL.sc by LtnLigSmFSmFSmL.SItal.sc ;
+    sub LtnLigSmFSmF.sc by LtnLigSmFSmF.SItal.sc ;
+    sub LtnSmG.sc by LtnSmG.SngBowl.sc ;
+    sub LtnSmGAcute.sc by LtnSmGAcute.SngBowl.sc ;
+    sub LtnSmGCircum.sc by LtnSmGCircum.SngBowl.sc ;
+    sub LtnSmGBreve.sc by LtnSmGBreve.SngBowl.sc ;
+    sub LtnSmGCaron.sc by LtnSmGCaron.SngBowl.sc ;
+    sub LtnSmGMacron.sc by LtnSmGMacron.SngBowl.sc ;
+    sub LtnSmGDotAbv.sc by LtnSmGDotAbv.SngBowl.sc ;
+    sub LtnSmGCedilla.sc by LtnSmGCedilla.SngBowl.sc ;
+    sub LtnSmGBarredBowl.sc by LtnSmGBarredSngBowl.sc ;
+    sub LtnSmGDiagStrk.sc by LtnSmGDiagStrk.SngBowl.sc ;
+    sub LtnSmGStrk.SngBowl.sc by LtnSmGBarredSngBowl.sc ;
+    sub LtnSmHStrk.sc by LtnSmHStrk.VertStrk.sc ;
+    sub LtnSmIOgonek.sc by LtnSmIOgonek.RetroHook.sc ;
+    sub LtnSmLCaron.sc by LtnSmLCaron.Caron.sc ;
+    sub LtnSmNLftHook.sc by LtnSmNLftHook.LCStyle.sc ;
+    sub LtnSmOOgonek.sc by LtnSmOOgonek.RetroHook.sc ;
+    sub LtnSmOOgonekMacron.sc by LtnSmOOgonekMacron.RetroHook.sc ;
+    sub LtnSmOu.sc by LtnSmOu.OpenTop.sc ;
+    sub LtnSmRHookTail.sc by LtnSmCapSmRHookTail ;
+    sub LtnSmTCaron.sc by LtnSmTCaron.Caron.sc ;
+    sub LtnSmTHook.sc by LtnSmTHook.RtHook.sc ;
+    sub LtnSmUOgonek.sc by LtnSmUOgonek.RetroHook.sc ;
+    sub LtnSmYHook.sc by LtnSmYHook.RtHook.sc ;
+    sub LtnSmEzh.sc by LtnSmEzh.RevSigmaStyle.sc ;
+    sub CySmAbkhasDze.sc by CySmAbkhasDze.RevSigmaStyle.sc ;
+    sub LtnSmSaltillo.sc by LtnSmSaltillo.Lrg.sc ;
 } sa_sub;
 
 lookup ss_sub {
@@ -607,73 +607,73 @@ lookup ss_sub {
 
 lookup ss_ctx {
   lookupflag 0;
-    @cc9_match_0 = [\.notdef \LtnSubSmA \LtnSubSmA.SngStory \LtnSupSmA \LtnSupSmA.SngStory 
-	\LtnSupSmTurnedA \LtnSupSmAlpha \LtnSupSmTurnedAlpha \ModSmTrndAe 
-	\ModCapA \ModCapAe \LtnSupSmB \ModCapB \ModCapBarredB \GrSubSmBeta 
-	\ModSmBeta \ModSmC \LtnSupSmCCurl \LtnSupSmOpnO \LtnSupSmD 
-	\ModSmDelta \ModSmEth \ModCapD \LtnSubSmE \LtnSupSmE \LtnSubSmSchwa 
-	\LtnSupSmSchwa \LtnSupSmOpnE \LtnSupSmRevOpnE \ModSmTrndOpnE 
-	\ModCapE \ModCapRevE \LtnSupSmF \LtnSupSmG \LtnSupSmG.SngBowl 
-	\LtnSupSmScriptG \ModCapG \ModSmH \ModSmHHook \ModSmTurnedH \ModCapH 
-	\ModCyCapEn \LtnSubSmI \LtnSupSmI \LtnSupSmIStrk \LtnSubSmI.Dotless 
-	\LtnSupSmI.Dotless \LtnSupSmIStrk.Dotless \ModSmTrndI \ModSmIota 
-	\ModCapI \LtnSupSmCapI \ModSmCapIStrk \ModSmJ \ModSmJCrossedTail 
-	\ModSmJ.Dotless \LtnSupSmDotlessJStrk \ModSmJCrossedTail.Dotless 
-	\ModCapJ \LtnSupSmK \ModCapK \ModSmL \ModSmLPalHook 
-	\LtnSupSmLRetrHook \ModCapL \ModSmCapL \LtnSupSmM \ModSmMHook 
-	\LtnSupSmTurnedM \LtnSupSmTurnedMLngLeg \ModCapM \LtnSupSmN 
-	\LtnSupSmNLftHook \LtnSupSmEng \ModSmNRetrHook \ModCapN \ModSmCapN 
-	\ModCapRevN \LtnSubSmO \LtnSupSmO \LtnSupSmBarredO \ModSmTheta 
-	\ModSmBottomHalfO \ModSmTopHalfO \ModCapO \ModCapOu \LtnSupSmP 
-	\GrSubSmRho \ModSmPhi \GrSubSmPhi \ModSmGrPhi \ModCapP \LtnSubSmR 
-	\ModSmR \ModSmTrndR \ModSmTrndRHook \ModCapR \ModSmCapInvR \ModSmS 
-	\ModSmSHook \LtnSupSmEsh \LtnSupSmT \ModSmTPalHook \ModCapT 
-	\LtnSubSmU \LtnSupSmU \LtnSupSmUBar \ModSmSdwysU \ModSmVHook 
-	\LtnSupSmUpsilon \ModCapU \ModSmCapU \LtnSubSmV \LtnSupSmV 
-	\LtnSupSmTurnedV \ModSmGamma \GrSubSmGamma \ModSmGrGamma \ModSmW 
-	\ModCapW \LtnSubSmX \ModSmX \GrSubSmChi \ModSmChi \ModSmY \LtnSupSmZ 
-	\ModSmZRetrHook \LtnSupSmZCurl \LtnSupSmEzh \ModGlottalStop 
-	\ModRevGlottalStop \ModSmRevGlottalStop \ModSmAin ];
-    @cc9_match_1 = [\CombLtnSmRBlw \CombMinusSgnBlw \CombAcuteBlw \CombGraveBlw \CombCircumBlw 
-	\CombInvBreveBlw \CombBreveBlw \CombCaronBlw \CombTildeBlw 
-	\CombAlmostEqToBlw \CombAsteriskBlw \CombXBlw \CombInvDblArchBlw 
-	\CombSeagullBlw \CombMacronBlw \CombMacronBlw.Short \CombLowLine 
-	\CombDblLowLine \CombEqSgnBlw \CombDiaerBlw \CombDotBlw 
-	\CombRtDotAbv \CombCommaBlw \CombCommaAbvRt \CombHorn \CombRingBlw 
-	\CombDblRingBlw \CombLftHalfRingBlw \CombRtHalfRingBlw 
-	\CombVertLineBlw \CombDblVertLineBlw \CombPlusSgnBlw 
-	\CombDwnTackBlw \CombUpTackBlw \CombLftTackBlw \CombRtTackBlw 
-	\CombLftAngBlw \CombCedilla \CombOgonek \CombOgonek.Lrg 
-	\CombOgonek.RetroHook \CombSnakeBlw \CombBridgeBlw 
-	\CombInvBridgeBlw \CombSqrBlw \ModRhoticHook \CombUpArrwBlw 
-	\CombLftArrwBlw \CombLftHarpoonBarbDwnBlw \CombRtArrwBlw 
-	\CombRtHarpoonBarbDwnBlw \CombLftRtArrwBlw \CombLftArrwhdBlw 
-	\CombRtArrwhdBlw \CombRtArrwhdUpArrwhdBlw 
-	\CombRtArrwhdDwnArrwhdBlw \CombGraphemeJoiner \CombLtnSmRBlwDep 
-	\CombAlmostEqToBlwDep \CombSnakeBlwDep ];
-    @cc9_match_2 = [\CombLtnSmA \CombLtnSmA.SngStory \CombLtnSmC \CombLtnSmD \CombLtnSmE 
-	\CombLtnSmH \CombLtnSmI \CombLtnSmM \CombLtnSmO \CombLtnSmR 
-	\CombLtnSmT \CombLtnSmU \CombLtnSmV \CombLtnSmX \CombTrndCommaAbv 
-	\CombRevCommaAbv \CombAcute \CombDblAcute \CombGrave \CombDblGrave 
-	\CombCircum \CombCircumAcute.VN \CombCircumGrave.VN 
-	\CombCircumTilde.VN \CombCircumHook.VN \CombInvBreve 
-	\CombInvBreve.UU \CombInvBreve.UL \CombInvBreve.LL \CombFermata 
-	\CombDblInvBreve.UU \CombDblInvBreve.UL \CombDblInvBreve.LL 
-	\CombBreve \CombBreveAcute.VN \CombBreveGrave.VN \CombBreveTilde.VN 
-	\CombBreveHook.VN \CombCandrabindu \CombBreve.CyShortMrkAlt 
-	\CombBreve.CyShortMrkAlt.UCHt \CombBreve_Macron \CombCaron 
-	\CombAcute_Macron \CombMacron_Acute \CombMacron_Breve 
-	\CombGrave_Macron \CombMacron_Grave \CombAcute_Grave_Acute 
-	\CombGrave_Acute_Grave \CombTilde \CombNotTildeAbv 
-	\CombAlmostEqToAbv \CombHomotheticAbv \CombVertTilde \CombZigZagAbv 
-	\CombXAbv \CombMacron \CombMacron.Short \CombOverline 
-	\CombDblOverline \CombDiaer \CombDiaer.UU \CombDiaer.LL 
-	\CombDiaer.UL \CombDiaer.Sup \CombDotAbv \CombCommaAbv \CombRingAbv 
-	\CombLftHalfRingAbv \CombRtHalfRingAbv \CombHookAbv 
-	\CombVertLineAbv \CombDblVertLineAbv \CombBridgeAbv 
-	\CombLftArrwhdAbv \CombRtArrwhdAbv \CombAcute_MacronDep 
-	\CombMacron_AcuteDep \CombGrave_MacronDep \CombMacron_GraveDep 
-	\CombAcute_Grave_AcuteDep \CombGrave_Acute_GraveDep ];
+    @cc9_match_0 = [.notdef LtnSubSmA LtnSubSmA.SngStory LtnSupSmA LtnSupSmA.SngStory 
+	LtnSupSmTurnedA LtnSupSmAlpha LtnSupSmTurnedAlpha ModSmTrndAe 
+	ModCapA ModCapAe LtnSupSmB ModCapB ModCapBarredB GrSubSmBeta 
+	ModSmBeta ModSmC LtnSupSmCCurl LtnSupSmOpnO LtnSupSmD 
+	ModSmDelta ModSmEth ModCapD LtnSubSmE LtnSupSmE LtnSubSmSchwa 
+	LtnSupSmSchwa LtnSupSmOpnE LtnSupSmRevOpnE ModSmTrndOpnE 
+	ModCapE ModCapRevE LtnSupSmF LtnSupSmG LtnSupSmG.SngBowl 
+	LtnSupSmScriptG ModCapG ModSmH ModSmHHook ModSmTurnedH ModCapH 
+	ModCyCapEn LtnSubSmI LtnSupSmI LtnSupSmIStrk LtnSubSmI.Dotless 
+	LtnSupSmI.Dotless LtnSupSmIStrk.Dotless ModSmTrndI ModSmIota 
+	ModCapI LtnSupSmCapI ModSmCapIStrk ModSmJ ModSmJCrossedTail 
+	ModSmJ.Dotless LtnSupSmDotlessJStrk ModSmJCrossedTail.Dotless 
+	ModCapJ LtnSupSmK ModCapK ModSmL ModSmLPalHook 
+	LtnSupSmLRetrHook ModCapL ModSmCapL LtnSupSmM ModSmMHook 
+	LtnSupSmTurnedM LtnSupSmTurnedMLngLeg ModCapM LtnSupSmN 
+	LtnSupSmNLftHook LtnSupSmEng ModSmNRetrHook ModCapN ModSmCapN 
+	ModCapRevN LtnSubSmO LtnSupSmO LtnSupSmBarredO ModSmTheta 
+	ModSmBottomHalfO ModSmTopHalfO ModCapO ModCapOu LtnSupSmP 
+	GrSubSmRho ModSmPhi GrSubSmPhi ModSmGrPhi ModCapP LtnSubSmR 
+	ModSmR ModSmTrndR ModSmTrndRHook ModCapR ModSmCapInvR ModSmS 
+	ModSmSHook LtnSupSmEsh LtnSupSmT ModSmTPalHook ModCapT 
+	LtnSubSmU LtnSupSmU LtnSupSmUBar ModSmSdwysU ModSmVHook 
+	LtnSupSmUpsilon ModCapU ModSmCapU LtnSubSmV LtnSupSmV 
+	LtnSupSmTurnedV ModSmGamma GrSubSmGamma ModSmGrGamma ModSmW 
+	ModCapW LtnSubSmX ModSmX GrSubSmChi ModSmChi ModSmY LtnSupSmZ 
+	ModSmZRetrHook LtnSupSmZCurl LtnSupSmEzh ModGlottalStop 
+	ModRevGlottalStop ModSmRevGlottalStop ModSmAin ];
+    @cc9_match_1 = [CombLtnSmRBlw CombMinusSgnBlw CombAcuteBlw CombGraveBlw CombCircumBlw 
+	CombInvBreveBlw CombBreveBlw CombCaronBlw CombTildeBlw 
+	CombAlmostEqToBlw CombAsteriskBlw CombXBlw CombInvDblArchBlw 
+	CombSeagullBlw CombMacronBlw CombMacronBlw.Short CombLowLine 
+	CombDblLowLine CombEqSgnBlw CombDiaerBlw CombDotBlw 
+	CombRtDotAbv CombCommaBlw CombCommaAbvRt CombHorn CombRingBlw 
+	CombDblRingBlw CombLftHalfRingBlw CombRtHalfRingBlw 
+	CombVertLineBlw CombDblVertLineBlw CombPlusSgnBlw 
+	CombDwnTackBlw CombUpTackBlw CombLftTackBlw CombRtTackBlw 
+	CombLftAngBlw CombCedilla CombOgonek CombOgonek.Lrg 
+	CombOgonek.RetroHook CombSnakeBlw CombBridgeBlw 
+	CombInvBridgeBlw CombSqrBlw ModRhoticHook CombUpArrwBlw 
+	CombLftArrwBlw CombLftHarpoonBarbDwnBlw CombRtArrwBlw 
+	CombRtHarpoonBarbDwnBlw CombLftRtArrwBlw CombLftArrwhdBlw 
+	CombRtArrwhdBlw CombRtArrwhdUpArrwhdBlw 
+	CombRtArrwhdDwnArrwhdBlw CombGraphemeJoiner CombLtnSmRBlwDep 
+	CombAlmostEqToBlwDep CombSnakeBlwDep ];
+    @cc9_match_2 = [CombLtnSmA CombLtnSmA.SngStory CombLtnSmC CombLtnSmD CombLtnSmE 
+	CombLtnSmH CombLtnSmI CombLtnSmM CombLtnSmO CombLtnSmR 
+	CombLtnSmT CombLtnSmU CombLtnSmV CombLtnSmX CombTrndCommaAbv 
+	CombRevCommaAbv CombAcute CombDblAcute CombGrave CombDblGrave 
+	CombCircum CombCircumAcute.VN CombCircumGrave.VN 
+	CombCircumTilde.VN CombCircumHook.VN CombInvBreve 
+	CombInvBreve.UU CombInvBreve.UL CombInvBreve.LL CombFermata 
+	CombDblInvBreve.UU CombDblInvBreve.UL CombDblInvBreve.LL 
+	CombBreve CombBreveAcute.VN CombBreveGrave.VN CombBreveTilde.VN 
+	CombBreveHook.VN CombCandrabindu CombBreve.CyShortMrkAlt 
+	CombBreve.CyShortMrkAlt.UCHt CombBreve_Macron CombCaron 
+	CombAcute_Macron CombMacron_Acute CombMacron_Breve 
+	CombGrave_Macron CombMacron_Grave CombAcute_Grave_Acute 
+	CombGrave_Acute_Grave CombTilde CombNotTildeAbv 
+	CombAlmostEqToAbv CombHomotheticAbv CombVertTilde CombZigZagAbv 
+	CombXAbv CombMacron CombMacron.Short CombOverline 
+	CombDblOverline CombDiaer CombDiaer.UU CombDiaer.LL 
+	CombDiaer.UL CombDiaer.Sup CombDotAbv CombCommaAbv CombRingAbv 
+	CombLftHalfRingAbv CombRtHalfRingAbv CombHookAbv 
+	CombVertLineAbv CombDblVertLineAbv CombBridgeAbv 
+	CombLftArrwhdAbv CombRtArrwhdAbv CombAcute_MacronDep 
+	CombMacron_AcuteDep CombGrave_MacronDep CombMacron_GraveDep 
+	CombAcute_Grave_AcuteDep CombGrave_Acute_GraveDep ];
     sub @cc9_match_0' @cc9_match_1'lookup ss_sub  ;
     sub @cc9_match_0' @cc9_match_2'lookup ss_sub  ;
 } ss_ctx;
@@ -685,1042 +685,1042 @@ lookup sc1_sub {
 
 lookup sc2_sub {
   lookupflag 0;
-    sub \LtnCapA by \LtnSmA.sc ;
-    sub \LtnCapB by \LtnSmB.sc ;
-    sub \LtnCapC by \LtnSmC.sc ;
-    sub \LtnCapD by \LtnSmD.sc ;
-    sub \LtnCapE by \LtnSmE.sc ;
-    sub \LtnCapF by \LtnSmF.sc ;
-    sub \LtnCapG by \LtnSmG.sc ;
-    sub \LtnCapH by \LtnSmH.sc ;
-    sub \LtnCapI by \LtnSmI.sc ;
-    sub \LtnCapJ by \LtnSmJ.sc ;
-    sub \LtnCapK by \LtnSmK.sc ;
-    sub \LtnCapL by \LtnSmL.sc ;
-    sub \LtnCapM by \LtnSmM.sc ;
-    sub \LtnCapN by \LtnSmN.sc ;
-    sub \LtnCapO by \LtnSmO.sc ;
-    sub \LtnCapP by \LtnSmP.sc ;
-    sub \LtnCapQ by \LtnSmQ.sc ;
-    sub \LtnCapR by \LtnSmR.sc ;
-    sub \LtnCapS by \LtnSmS.sc ;
-    sub \LtnCapT by \LtnSmT.sc ;
-    sub \LtnCapU by \LtnSmU.sc ;
-    sub \LtnCapV by \LtnSmV.sc ;
-    sub \LtnCapW by \LtnSmW.sc ;
-    sub \LtnCapX by \LtnSmX.sc ;
-    sub \LtnCapY by \LtnSmY.sc ;
-    sub \LtnCapZ by \LtnSmZ.sc ;
-    sub \LtnCapADiaer by \LtnSmADiaer.sc ;
-    sub \LtnCapARingAbv by \LtnSmARingAbv.sc ;
-    sub \LtnCapCCedilla by \LtnSmCCedilla.sc ;
-    sub \LtnCapEAcute by \LtnSmEAcute.sc ;
-    sub \LtnCapNTilde by \LtnSmNTilde.sc ;
-    sub \LtnCapODiaer by \LtnSmODiaer.sc ;
-    sub \LtnCapUDiaer by \LtnSmUDiaer.sc ;
-    sub \LtnCapAe by \LtnSmAe.sc ;
-    sub \LtnCapOStrk by \LtnSmOStrk.sc ;
-    sub \LtnCapAGrave by \LtnSmAGrave.sc ;
-    sub \LtnCapATilde by \LtnSmATilde.sc ;
-    sub \LtnCapOTilde by \LtnSmOTilde.sc ;
-    sub \LtnCapLigOe by \LtnSmLigOe.sc ;
-    sub \LtnCapYDiaer by \LtnSmYDiaer.sc ;
-    sub \LtnCapACircum by \LtnSmACircum.sc ;
-    sub \LtnCapECircum by \LtnSmECircum.sc ;
-    sub \LtnCapAAcute by \LtnSmAAcute.sc ;
-    sub \LtnCapEDiaer by \LtnSmEDiaer.sc ;
-    sub \LtnCapEGrave by \LtnSmEGrave.sc ;
-    sub \LtnCapIAcute by \LtnSmIAcute.sc ;
-    sub \LtnCapICircum by \LtnSmICircum.sc ;
-    sub \LtnCapIDiaer by \LtnSmIDiaer.sc ;
-    sub \LtnCapIGrave by \LtnSmIGrave.sc ;
-    sub \LtnCapOAcute by \LtnSmOAcute.sc ;
-    sub \LtnCapOCircum by \LtnSmOCircum.sc ;
-    sub \LtnCapOGrave by \LtnSmOGrave.sc ;
-    sub \LtnCapUAcute by \LtnSmUAcute.sc ;
-    sub \LtnCapUCircum by \LtnSmUCircum.sc ;
-    sub \LtnCapUGrave by \LtnSmUGrave.sc ;
-    sub \CyCapA by \CySmA.sc ;
-    sub \LtnCapADblGrave by \LtnSmADblGrave.sc ;
-    sub \LtnCapACircumAcute by \LtnSmACircumAcute.sc ;
-    sub \LtnCapACircumGrave by \LtnSmACircumGrave.sc ;
-    sub \LtnCapACircumTilde by \LtnSmACircumTilde.sc ;
-    sub \LtnCapACircumHookAbv by \LtnSmACircumHookAbv.sc ;
-    sub \LtnCapACircumDotBlw by \LtnSmACircumDotBlw.sc ;
-    sub \LtnCapAInvBreve by \LtnSmAInvBreve.sc ;
-    sub \LtnCapABreve by \LtnSmABreve.sc ;
-    sub \LtnCapABreveAcute by \LtnSmABreveAcute.sc ;
-    sub \LtnCapABreveGrave by \LtnSmABreveGrave.sc ;
-    sub \LtnCapABreveTilde by \LtnSmABreveTilde.sc ;
-    sub \LtnCapABreveHookAbv by \LtnSmABreveHookAbv.sc ;
-    sub \LtnCapABreveDotBlw by \LtnSmABreveDotBlw.sc ;
-    sub \CyCapABreve by \CySmABreve.sc ;
-    sub \LtnCapACaron by \LtnSmACaron.sc ;
-    sub \LtnCapAMacron by \LtnSmAMacron.sc ;
-    sub \CyCapADiaer by \CySmADiaer.sc ;
-    sub \LtnCapADiaerMacron by \LtnSmADiaerMacron.sc ;
-    sub \LtnCapADotAbv by \LtnSmADotAbv.sc ;
-    sub \LtnCapADotAbvMacron by \LtnSmADotAbvMacron.sc ;
-    sub \LtnCapARingAbvAcute by \LtnSmARingAbvAcute.sc ;
-    sub \LtnCapAHookAbv by \LtnSmAHookAbv.sc ;
-    sub \LtnCapADotBlw by \LtnSmADotBlw.sc ;
-    sub \LtnCapARingBlw by \LtnSmARingBlw.sc ;
-    sub \LtnCapAOgonek by \LtnSmAOgonek.sc ;
-    sub \LtnCapAStrk by \LtnSmAStrk.sc ;
-    sub \LtnCapTurnedA by \LtnSmTurnedA.sc ;
-    sub \LtnCapAODigraph by \LtnSmAODigraph.sc ;
-    sub \LtnCapAADigraph by \LtnSmAADigraph.sc ;
-    sub \LtnCapAUDigraph by \LtnSmAUDigraph.sc ;
-    sub \LtnCapAVDigraph by \LtnSmAVDigraph.sc ;
-    sub \LtnCapAVDigraphStrk by \LtnSmAVDigraphStrk.sc ;
-    sub \LtnCapAYDigraph by \LtnSmAYDigraph.sc ;
-    sub \LtnCapSmAlpha by \LtnSmAlpha.sc ;
-    sub \LtnCapSmTurnedAlpha by \LtnSmTurnedAlpha.sc ;
-    sub \CyCapLigAIe by \CySmLigAIe.sc ;
-    sub \LtnCapAeAcute by \LtnSmAeAcute.sc ;
-    sub \LtnCapAeMacron by \LtnSmAeMacron.sc ;
-    sub \CyCapVe by \CySmVe.sc ;
-    sub \LtnCapBDotAbv by \LtnSmBDotAbv.sc ;
-    sub \LtnCapBLineBlw by \LtnSmBLineBlw.sc ;
-    sub \LtnCapBDotBlw by \LtnSmBDotBlw.sc ;
-    sub \LtnCapBBarredLowStem by \LtnSmBBarredStem.sc ;
-    sub \LtnCapBHook by \LtnSmBHook.sc ;
-    sub \LtnCapTnSix by \LtnSmTnSix.sc ;
-    sub \LtnCapBTopbar by \LtnSmBTopbar.sc ;
-    sub \CyCapBe by \CySmBe.sc ;
-    sub \CyCapSoftSgn by \CySmSoftSgn.sc ;
-    sub \CyCapSemisoftSgn by \CySmSemisoftSgn.sc ;
-    sub \CyCapHardSgn by \CySmHardSgn.sc ;
-    sub \CyCapYat by \CySmYat.sc ;
-    sub \CyCapYeru by \CySmYeru.sc ;
-    sub \CyCapYeruDiaer by \CySmYeruDiaer.sc ;
-    sub \LtnCapSharpS by \LtnSmSharpS.sc ;
-    sub \CyCapEs by \CySmEs.sc ;
-    sub \LtnCapCAcute by \LtnSmCAcute.sc ;
-    sub \LtnCapCCircum by \LtnSmCCircum.sc ;
-    sub \LtnCapCCaron by \LtnSmCCaron.sc ;
-    sub \LtnCapCDotAbv by \LtnSmCDotAbv.sc ;
-    sub \LtnCapCCedillaAcute by \LtnSmCCedillaAcute.sc ;
-    sub \CyCapEsDesc by \CySmEsDesc.sc ;
-    sub \LtnCapCBar by \LtnSmCBar.sc ;
-    sub \LtnCapCStrk by \LtnSmCStrk.sc ;
-    sub \LtnCapCHook by \LtnSmCHook.sc ;
-    sub \LtnCapOpnO by \LtnSmOpnO.sc ;
-    sub \LtnCapRevCMiddleDot by \LtnSmRevCMiddleDot.sc ;
-    sub \CyCapUkrainIe by \CySmUkrainIe.sc ;
-    sub \CyCapE by \CySmE.sc ;
-    sub \CyCapEDiaer by \CySmEDiaer.sc ;
-    sub \LtnCapDCaron by \LtnSmDCaron.sc ;
-    sub \LtnCapDDotAbv by \LtnSmDDotAbv.sc ;
-    sub \LtnCapDCircumBlw by \LtnSmDCircumBlw.sc ;
-    sub \LtnCapDLineBlw by \LtnSmDLineBlw.sc ;
-    sub \LtnCapDDotBlw by \LtnSmDDotBlw.sc ;
-    sub \LtnCapDCedilla by \LtnSmDCedilla.sc ;
-    sub \LtnCapEth by \LtnSmEth.sc ;
-    sub \LtnCapDStrk by \LtnSmDBarredStem.sc ;
-    sub \LtnCapAfricanD by \LtnSmDTail.sc ;
-    sub \LtnCapDHook by \LtnSmDHook.sc ;
-    sub \LtnCapDTopbar by \LtnSmDTopbar.sc ;
-    sub \LtnCapDSmZ by \LtnSmDz.sc ;
-    sub \LtnCapDSmZCaron by \LtnSmDzCaron.sc ;
-    sub \LtnCapDz by \LtnSmDz.sc ;
-    sub \LtnCapDzCaron by \LtnSmDzCaron.sc ;
-    sub \CyCapKomiDe by \CySmKomiDe.sc ;
-    sub \CyCapKomiDje by \CySmKomiDje.sc ;
-    sub \CyCapIe by \CySmIe.sc ;
-    sub \CyCapIeGrave by \CySmIeGrave.sc ;
-    sub \LtnCapEDblGrave by \LtnSmEDblGrave.sc ;
-    sub \LtnCapECircumAcute by \LtnSmECircumAcute.sc ;
-    sub \LtnCapECircumGrave by \LtnSmECircumGrave.sc ;
-    sub \LtnCapECircumTilde by \LtnSmECircumTilde.sc ;
-    sub \LtnCapECircumHookAbv by \LtnSmECircumHookAbv.sc ;
-    sub \LtnCapECircumDotBlw by \LtnSmECircumDotBlw.sc ;
-    sub \LtnCapEInvBreve by \LtnSmEInvBreve.sc ;
-    sub \LtnCapEBreve by \LtnSmEBreve.sc ;
-    sub \CyCapIeBreve by \CySmIeBreve.sc ;
-    sub \LtnCapECaron by \LtnSmECaron.sc ;
-    sub \LtnCapETilde by \LtnSmETilde.sc ;
-    sub \LtnCapEMacron by \LtnSmEMacron.sc ;
-    sub \LtnCapEMacronAcute by \LtnSmEMacronAcute.sc ;
-    sub \LtnCapEMacronGrave by \LtnSmEMacronGrave.sc ;
-    sub \CyCapIo by \CySmIo.sc ;
-    sub \LtnCapEDotAbv by \LtnSmEDotAbv.sc ;
-    sub \LtnCapEHookAbv by \LtnSmEHookAbv.sc ;
-    sub \LtnCapECircumBlw by \LtnSmECircumBlw.sc ;
-    sub \LtnCapETildeBlw by \LtnSmETildeBlw.sc ;
-    sub \LtnCapEDotBlw by \LtnSmEDotBlw.sc ;
-    sub \LtnCapECedilla by \LtnSmECedilla.sc ;
-    sub \LtnCapECedillaBreve by \LtnSmECedillaBreve.sc ;
-    sub \LtnCapEOgonek by \LtnSmEOgonek.sc ;
-    sub \LtnCapEStrk by \LtnSmEStrk.sc ;
-    sub \CyCapAbkhasChe by \CySmAbkhasChe.sc ;
-    sub \CyCapAbkhasCheDesc by \CySmAbkhasCheDesc.sc ;
-    sub \LtnCapRevE by \LtnSmRevE.sc ;
-    sub \LtnCapSchwa by \LtnSmSchwa.sc ;
-    sub \CyCapSchwa by \CySmSchwa.sc ;
-    sub \CyCapSchwaDiaer by \CySmSchwaDiaer.sc ;
-    sub \LtnCapOpnE by \LtnSmOpnE.sc ;
-    sub \CyCapRevZe by \CySmRevZe.sc ;
-    sub \CyCapZe by \CySmZe.sc ;
-    sub \CyCapZeDiaer by \CySmZeDiaer.sc ;
-    sub \CyCapZeDesc by \CySmZeDesc.sc ;
-    sub \CyCapKomiDzje by \CySmKomiDzje.sc ;
-    sub \CyCapKomiZje by \CySmKomiZje.sc ;
-    sub \LtnCapFDotAbv by \LtnSmFDotAbv.sc ;
-    sub \LtnCapFHook by \LtnSmFHook.sc ;
-    sub \CyCapGhe by \CySmGhe.sc ;
-    sub \CyCapGje by \CySmGje.sc ;
-    sub \CyCapGheUpturn by \CySmGheUpturn.sc ;
-    sub \CyCapGheDesc by \CySmGheDesc.sc ;
-    sub \CyCapGheStrk by \CySmGheStrk.sc ;
-    sub \CyCapGheStrkHook by \CySmGheStrkHook.sc ;
-    sub \LtnCapGAcute by \LtnSmGAcute.sc ;
-    sub \LtnCapGCircum by \LtnSmGCircum.sc ;
-    sub \LtnCapGBreve by \LtnSmGBreve.sc ;
-    sub \LtnCapGCaron by \LtnSmGCaron.sc ;
-    sub \LtnCapGMacron by \LtnSmGMacron.sc ;
-    sub \LtnCapGDotAbv by \LtnSmGDotAbv.sc ;
-    sub \LtnCapGCedilla by \LtnSmGCedilla.sc ;
-    sub \LtnCapGStrk by \LtnSmGStrk.sc ;
-    sub \LtnCapGDiagStrk by \LtnSmGDiagStrk.sc ;
-    sub \LtnCapGHook by \LtnSmGHook.sc ;
-    sub \LtnCapInsularG by \LtnSmInsularG.sc ;
-    sub \LtnCapTrndInsularG by \LtnSmTrndInsularG.sc ;
-    sub \CyCapKomiSje by \CySmKomiSje.sc ;
-    sub \CyCapEn by \CySmEn.sc ;
-    sub \LtnCapHCircum by \LtnSmHCircum.sc ;
-    sub \LtnCapHCaron by \LtnSmHCaron.sc ;
-    sub \LtnCapHDiaer by \LtnSmHDiaer.sc ;
-    sub \LtnCapHDotAbv by \LtnSmHDotAbv.sc ;
-    sub \LtnCapHBreveBlw by \LtnSmHBreveBlw.sc ;
-    sub \LtnCapHDotBlw by \LtnSmHDotBlw.sc ;
-    sub \LtnCapHCedilla by \LtnSmHCedilla.sc ;
-    sub \LtnCapHStrk by \LtnSmHStrk.sc ;
-    sub \LtnCapHHook by \LtnSmHHook.sc ;
-    sub \LtnCapHeng by \LtnSmHeng.sc ;
-    sub \LtnCapHDesc by \LtnSmHDesc.sc ;
-    sub \LtnCapHwair by \LtnSmHv.sc ;
-    sub \LtnCapHalfH by \LtnSmHalfH.sc ;
-    sub \LtnCapTurnedH by \LtnSmTurnedH.sc ;
-    sub \CyCapShha by \CySmShha.sc ;
-    sub \CyCapGheMiddleHook by \CySmGheMiddleHook.sc ;
-    sub \CyCapShhaDesc by \CySmShhaDesc.sc ;
-    sub \CyCapLigEnGhe by \CySmLigEnGhe.sc ;
-    sub \CyCapEnDesc by \CySmEnDesc.sc ;
-    sub \CyCapEnTail by \CySmEnTail.sc ;
-    sub \CyCapNje by \CySmNje.sc ;
-    sub \CyCapEnHook by \CySmEnHook.sc ;
-    sub \CyCapKomiNje by \CySmKomiNje.sc ;
-    sub \CyCapEnMiddleHook by \CySmEnMiddleHook.sc ;
-    sub \CyCapPe by \CySmPe.sc ;
-    sub \CyCapPeDesc by \CySmPeDesc.sc ;
-    sub \CyCapPeMiddleHook by \CySmPeMiddleHook.sc ;
-    sub \CyCapDzhe by \CySmDzhe.sc ;
-    sub \CyCapTse by \CySmTse.sc ;
-    sub \CyCapSha by \CySmSha.sc ;
-    sub \CyCapShcha by \CySmShcha.sc ;
-    sub \CyCapByelorusUkrainI by \CySmByelorusUkrainI.sc ;
-    sub \CyPalochka by \CyPalochka.sc ;
-    sub \LtnCapIDblGrave by \LtnSmIDblGrave.sc ;
-    sub \LtnCapIInvBreve by \LtnSmIInvBreve.sc ;
-    sub \LtnCapIBreve by \LtnSmIBreve.sc ;
-    sub \LtnCapICaron by \LtnSmICaron.sc ;
-    sub \LtnCapITilde by \LtnSmITilde.sc ;
-    sub \LtnCapIMacron by \LtnSmIMacron.sc ;
-    sub \CyCapYi by \CySmYi.sc ;
-    sub \LtnCapIDiaerAcute by \LtnSmIDiaerAcute.sc ;
-    sub \LtnCapIDotAbv by \LtnSmI.sc ;
-    sub \LtnCapIHookAbv by \LtnSmIHookAbv.sc ;
-    sub \LtnCapITildeBlw by \LtnSmITildeBlw.sc ;
-    sub \LtnCapIDotBlw by \LtnSmIDotBlw.sc ;
-    sub \LtnCapIOgonek by \LtnSmIOgonek.sc ;
-    sub \LtnCapIStrk by \LtnSmIStrk.sc ;
-    sub \LtnCapLigIj by \LtnSmLigIj.sc ;
-    sub \LtnCapIota by \LtnSmIota.sc ;
-    sub \CyCapYu by \CySmYu.sc ;
-    sub \CyCapJe by \CySmJe.sc ;
-    sub \LtnCapJCircum by \LtnSmJCircum.sc ;
-    sub \LtnCapJStrk by \LtnSmJStrk.sc ;
-    sub \LtnCapIs by \LtnSmIs.sc ;
-    sub \CyCapEl by \CySmEl.sc ;
-    sub \CyCapElTail by \CySmElTail.sc ;
-    sub \CyCapLje by \CySmLje.sc ;
-    sub \CyCapElHook by \CySmElHook.sc ;
-    sub \CyCapKomiLje by \CySmKomiLje.sc ;
-    sub \CyCapElMiddleHook by \CySmElMiddleHook.sc ;
-    sub \CyCapLha by \CySmLha.sc ;
-    sub \CyCapDe by \CySmDe.sc ;
-    sub \LtnCapKAcute by \LtnSmKAcute.sc ;
-    sub \LtnCapKCaron by \LtnSmKCaron.sc ;
-    sub \LtnCapKLineBlw by \LtnSmKLineBlw.sc ;
-    sub \LtnCapKDotBlw by \LtnSmKDotBlw.sc ;
-    sub \LtnCapKCedilla by \LtnSmKCedilla.sc ;
-    sub \LtnCapKStrk by \LtnSmKStrk.sc ;
-    sub \LtnCapKStrkRtDiagStrk by \LtnSmKStrkRtDiagStrk.sc ;
-    sub \LtnCapKRtDiagStrk by \LtnSmKRtDiagStrk.sc ;
-    sub \LtnCapKDiagStrk by \LtnSmKDiagStrk.sc ;
-    sub \LtnCapKHook by \LtnSmKHook.sc ;
-    sub \LtnCapKDesc by \LtnSmKDesc.sc ;
-    sub \CyCapKa by \CySmKa.sc ;
-    sub \CyCapKje by \CySmKje.sc ;
-    sub \CyCapKaDesc by \CySmKaDesc.sc ;
-    sub \CyCapBashkirKa by \CySmBashkirKa.sc ;
-    sub \CyCapKaStrk by \CySmKaStrk.sc ;
-    sub \CyCapKaVertStrk by \CySmKaVertStrk.sc ;
-    sub \CyCapKaHook by \CySmKaHook.sc ;
-    sub \CyCapAleutKa by \CySmAleutKa.sc ;
-    sub \CyCapZhe by \CySmZhe.sc ;
-    sub \CyCapZheBreve by \CySmZheBreve.sc ;
-    sub \CyCapZheDiaer by \CySmZheDiaer.sc ;
-    sub \CyCapZheDesc by \CySmZheDesc.sc ;
-    sub \LtnCapLAcute by \LtnSmLAcute.sc ;
-    sub \LtnCapLCircumBlw by \LtnSmLCircumBlw.sc ;
-    sub \LtnCapLLineBlw by \LtnSmLLineBlw.sc ;
-    sub \LtnCapLDotBlw by \LtnSmLDotBlw.sc ;
-    sub \LtnCapLDotBlwMacron by \LtnSmLDotBlwMacron.sc ;
-    sub \LtnCapLCedilla by \LtnSmLCedilla.sc ;
-    sub \LtnCapLMiddleDot by \LtnSmLMiddleDot.sc ;
-    sub \LtnCapLCaron by \LtnSmLCaron.sc ;
-    sub \LtnCapLBar by \LtnSmLBar.sc ;
-    sub \LtnCapLHighBar by \LtnSmLHighBar.sc ;
-    sub \LtnCapDblBarredL by \LtnSmDblBarredL.sc ;
-    sub \LtnCapLMiddleTilde by \LtnSmLMiddleTilde.sc ;
-    sub \LtnCapLStrk by \LtnSmLStrk.sc ;
-    sub \LtnCapLBrkn by \LtnSmLBrkn.sc ;
-    sub \LtnCapLTrnd by \LtnSmLTrnd.sc ;
-    sub \LtnCapLSmJ by \LtnSmLj.sc ;
-    sub \LtnCapLj by \LtnSmLj.sc ;
-    sub \LtnCapLLDigraph by \LtnSmLLDigraph.sc ;
-    sub \CyCapEm by \CySmEm.sc ;
-    sub \LtnCapMAcute by \LtnSmMAcute.sc ;
-    sub \LtnCapMDotAbv by \LtnSmMDotAbv.sc ;
-    sub \LtnCapMDotBlw by \LtnSmMDotBlw.sc ;
-    sub \LtnCapMHook by \LtnSmMHook.sc ;
-    sub \LtnCapTrndM by \LtnSmTurnedM.sc ;
-    sub \CyCapEmTail by \CySmEmTail.sc ;
-    sub \LtnCapNAcute by \LtnSmNAcute.sc ;
-    sub \LtnCapNGrave by \LtnSmNGrave.sc ;
-    sub \LtnCapNCaron by \LtnSmNCaron.sc ;
-    sub \LtnCapNDotAbv by \LtnSmNDotAbv.sc ;
-    sub \LtnCapNCircumBlw by \LtnSmNCircumBlw.sc ;
-    sub \LtnCapNLineBlw by \LtnSmNLineBlw.sc ;
-    sub \LtnCapNDotBlw by \LtnSmNDotBlw.sc ;
-    sub \LtnCapNCedilla by \LtnSmNCedilla.sc ;
-    sub \LtnCapNDiagStrk by \LtnSmNDiagStrk.sc ;
-    sub \LtnCapNLftHook by \LtnSmNLftHook.sc ;
-    sub \LtnCapNDesc by \LtnSmNDesc.sc ;
-    sub \LtnCapEng by \LtnSmEng.sc ;
-    sub \LtnCapNLngRtLeg by \LtnSmNLngRtLeg.sc ;
-    sub \LtnCapNSmJ by \LtnSmNj.sc ;
-    sub \LtnCapNj by \LtnSmNj.sc ;
-    sub \CyCapI by \CySmI.sc ;
-    sub \CyCapIGrave by \CySmIGrave.sc ;
-    sub \CyCapShortI by \CySmShortI.sc ;
-    sub \CyCapShortITail by \CySmShortITail.sc ;
-    sub \CyCapIDiaer by \CySmIDiaer.sc ;
-    sub \CyCapIMacron by \CySmIMacron.sc ;
-    sub \CyCapO by \CySmO.sc ;
-    sub \LtnCapODblAcute by \LtnSmODblAcute.sc ;
-    sub \LtnCapODblGrave by \LtnSmODblGrave.sc ;
-    sub \LtnCapOCircumAcute by \LtnSmOCircumAcute.sc ;
-    sub \LtnCapOCircumGrave by \LtnSmOCircumGrave.sc ;
-    sub \LtnCapOCircumTilde by \LtnSmOCircumTilde.sc ;
-    sub \LtnCapOCircumHookAbv by \LtnSmOCircumHookAbv.sc ;
-    sub \LtnCapOCircumDotBlw by \LtnSmOCircumDotBlw.sc ;
-    sub \LtnCapOInvBreve by \LtnSmOInvBreve.sc ;
-    sub \LtnCapOBreve by \LtnSmOBreve.sc ;
-    sub \LtnCapOCaron by \LtnSmOCaron.sc ;
-    sub \LtnCapOTildeAcute by \LtnSmOTildeAcute.sc ;
-    sub \LtnCapOTildeMacron by \LtnSmOTildeMacron.sc ;
-    sub \LtnCapOTildeDiaer by \LtnSmOTildeDiaer.sc ;
-    sub \LtnCapOMacron by \LtnSmOMacron.sc ;
-    sub \LtnCapOMacronAcute by \LtnSmOMacronAcute.sc ;
-    sub \LtnCapOMacronGrave by \LtnSmOMacronGrave.sc ;
-    sub \CyCapODiaer by \CySmODiaer.sc ;
-    sub \LtnCapODiaerMacron by \LtnSmODiaerMacron.sc ;
-    sub \LtnCapODotAbv by \LtnSmODotAbv.sc ;
-    sub \LtnCapODotAbvMacron by \LtnSmODotAbvMacron.sc ;
-    sub \LtnCapOHookAbv by \LtnSmOHookAbv.sc ;
-    sub \LtnCapODotBlw by \LtnSmODotBlw.sc ;
-    sub \LtnCapOOgonek by \LtnSmOOgonek.sc ;
-    sub \LtnCapOOgonekMacron by \LtnSmOOgonekMacron.sc ;
-    sub \LtnCapOMiddleTilde by \LtnSmOMiddleTilde.sc ;
-    sub \CyCapBarredO by \CySmBarredO.sc ;
-    sub \CyCapBarredODiaer by \CySmBarredODiaer.sc ;
-    sub \LtnCapOLngStrk by \LtnSmOLngStrk.sc ;
-    sub \CyCapFita by \CySmFita.sc ;
-    sub \LtnCapOStrkAcute by \LtnSmOStrkAcute.sc ;
-    sub \LtnCapOCurl by \LtnSmOCurl.sc ;
-    sub \LtnCapInsularD by \LtnSmInsularD.sc ;
-    sub \LtnCapOHorn by \LtnSmOHorn.sc ;
-    sub \LtnCapOHornAcute by \LtnSmOHornAcute.sc ;
-    sub \LtnCapOHornGrave by \LtnSmOHornGrave.sc ;
-    sub \LtnCapOHornTilde by \LtnSmOHornTilde.sc ;
-    sub \LtnCapOHornHookAbv by \LtnSmOHornHookAbv.sc ;
-    sub \LtnCapOHornDotBlw by \LtnSmOHornDotBlw.sc ;
-    sub \CyCapAbkhasHa by \CySmAbkhasHa.sc ;
-    sub \LtnCapOi by \LtnSmOi.sc ;
-    sub \LtnCapOODigraph by \LtnSmOODigraph.sc ;
-    sub \LtnCapOu by \LtnSmOu.sc ;
-    sub \CyCapEr by \CySmEr.sc ;
-    sub \LtnCapPAcute by \LtnSmPAcute.sc ;
-    sub \LtnCapPDotAbv by \LtnSmPDotAbv.sc ;
-    sub \LtnCapPStrk by \LtnSmPStrk.sc ;
-    sub \LtnCapPLowStrk by \LtnSmPLowStrk.sc ;
-    sub \CyCapErTick by \CySmErTick.sc ;
-    sub \LtnCapPHook by \LtnSmPHook.sc ;
-    sub \LtnCapPHighCurl by \LtnSmPHighCurl.sc ;
-    sub \LtnCapPLowCurl by \LtnSmPLowCurl.sc ;
-    sub \CyCapRha by \CySmRha.sc ;
-    sub \LtnCapThorn by \LtnSmThorn.sc ;
-    sub \LtnCapThornHighStrk by \LtnSmThornHighStrk.sc ;
-    sub \LtnCapThornLowStrk by \LtnSmThornLowStrk.sc ;
-    sub \LtnCapWynn by \LtnWynn.sc ;
-    sub \CyCapEf by \CySmEf.sc ;
-    sub \CyCapQa by \CySmQa.sc ;
-    sub \LtnCapSmQHookTail by \LtnSmQHookTail.sc ;
-    sub \LtnCapQStrk by \LtnSmQStrk.sc ;
-    sub \LtnCapQDiagStrk by \LtnSmQDiagStrk.sc ;
-    sub \LtnCapRAcute by \LtnSmRAcute.sc ;
-    sub \LtnCapRDblGrave by \LtnSmRDblGrave.sc ;
-    sub \LtnCapRInvBreve by \LtnSmRInvBreve.sc ;
-    sub \LtnCapRCaron by \LtnSmRCaron.sc ;
-    sub \LtnCapRDotAbv by \LtnSmRDotAbv.sc ;
-    sub \LtnCapRLineBlw by \LtnSmRLineBlw.sc ;
-    sub \LtnCapRDotBlw by \LtnSmRDotBlw.sc ;
-    sub \LtnCapRDotBlwMacron by \LtnSmRDotBlwMacron.sc ;
-    sub \LtnCapRCedilla by \LtnSmRCedilla.sc ;
-    sub \LtnCapRBarredStem by \LtnSmRBarredStem.sc ;
-    sub \LtnCapRDiagStrk by \LtnSmRDiagStrk.sc ;
-    sub \LtnCapRHookTail by \LtnSmRHookTail.sc ;
-    sub \LtnCapRRotunda by \LtnSmRRotunda.sc ;
-    sub \LtnCapRumRotunda by \LtnSmRumRotunda.sc ;
-    sub \LtnCapInsularR by \LtnSmInsularR.sc ;
-    sub \LtnCapInsularS by \LtnSmInsularS.sc ;
-    sub \LtnCapInsularF by \LtnSmInsularF.sc ;
-    sub \LtnYr by \LtnSmCapR.sc ;
-    sub \CyCapYa by \CySmYa.sc ;
-    sub \CyCapYae by \CySmYae.sc ;
-    sub \CyCapDze by \CySmDze.sc ;
-    sub \LtnCapSAcute by \LtnSmSAcute.sc ;
-    sub \LtnCapSAcuteDotAbv by \LtnSmSAcuteDotAbv.sc ;
-    sub \LtnCapSCircum by \LtnSmSCircum.sc ;
-    sub \LtnCapSCaron by \LtnSmSCaron.sc ;
-    sub \LtnCapSCaronDotAbv by \LtnSmSCaronDotAbv.sc ;
-    sub \LtnCapSDotAbv by \LtnSmSDotAbv.sc ;
-    sub \LtnCapSDotBlw by \LtnSmSDotBlw.sc ;
-    sub \LtnCapSDotBlwDotAbv by \LtnSmSDotBlwDotAbv.sc ;
-    sub \LtnCapSCommaBlw by \LtnSmSCommaBlw.sc ;
-    sub \LtnCapSCedilla by \LtnSmSCedilla.sc ;
-    sub \LtnCapSDiagStrk by \LtnSmSDiagStrk.sc ;
-    sub \LtnCapSSwashTail by \LtnSmSSwashTail.sc ;
-    sub \LtnCapTnTwo by \LtnSmTnTwo.sc ;
-    sub \CyCapTe by \CySmTe.sc ;
-    sub \LtnCapTCaron by \LtnSmTCaron.sc ;
-    sub \LtnCapTDotAbv by \LtnSmTDotAbv.sc ;
-    sub \LtnCapTCircumBlw by \LtnSmTCircumBlw.sc ;
-    sub \LtnCapTLineBlw by \LtnSmTLineBlw.sc ;
-    sub \LtnCapTDotBlw by \LtnSmTDotBlw.sc ;
-    sub \LtnCapTCommaBlw by \LtnSmTCommaBlw.sc ;
-    sub \LtnCapTCedilla by \LtnSmTCedilla.sc ;
-    sub \LtnCapTStrk by \LtnSmTStrk.sc ;
-    sub \LtnCapTDiagStrk by \LtnSmTDiagStrk.sc ;
-    sub \LtnCapTHook by \LtnSmTHook.sc ;
-    sub \LtnCapTRetrHook by \LtnSmTRetrHook.sc ;
-    sub \LtnCapTzDigraph by \LtnSmTzDigraph.sc ;
-    sub \LtnCapInsularT by \LtnSmInsularT.sc ;
-    sub \CyCapTeDesc by \CySmTeDesc.sc ;
-    sub \CyCapKomiTje by \CySmKomiTje.sc ;
-    sub \CyCapLigTeTse by \CySmLigTeTse.sc ;
-    sub \CyCapTshe by \CySmTshe.sc ;
-    sub \CyCapDje by \CySmDje.sc ;
-    sub \LtnCapUDblAcute by \LtnSmUDblAcute.sc ;
-    sub \LtnCapUDblGrave by \LtnSmUDblGrave.sc ;
-    sub \LtnCapUInvBreve by \LtnSmUInvBreve.sc ;
-    sub \LtnCapUBreve by \LtnSmUBreve.sc ;
-    sub \LtnCapUCaron by \LtnSmUCaron.sc ;
-    sub \LtnCapUTilde by \LtnSmUTilde.sc ;
-    sub \LtnCapUTildeAcute by \LtnSmUTildeAcute.sc ;
-    sub \LtnCapUMacron by \LtnSmUMacron.sc ;
-    sub \LtnCapUMacronDiaer by \LtnSmUMacronDiaer.sc ;
-    sub \LtnCapUDiaerAcute by \LtnSmUDiaerAcute.sc ;
-    sub \LtnCapUDiaerGrave by \LtnSmUDiaerGrave.sc ;
-    sub \LtnCapUDiaerCaron by \LtnSmUDiaerCaron.sc ;
-    sub \LtnCapUDiaerMacron by \LtnSmUDiaerMacron.sc ;
-    sub \LtnCapURingAbv by \LtnSmURingAbv.sc ;
-    sub \LtnCapUHookAbv by \LtnSmUHookAbv.sc ;
-    sub \LtnCapUCircumBlw by \LtnSmUCircumBlw.sc ;
-    sub \LtnCapUTildeBlw by \LtnSmUTildeBlw.sc ;
-    sub \LtnCapUDiaerBlw by \LtnSmUDiaerBlw.sc ;
-    sub \LtnCapUDotBlw by \LtnSmUDotBlw.sc ;
-    sub \LtnCapUOgonek by \LtnSmUOgonek.sc ;
-    sub \LtnCapUBar by \LtnSmUBar.sc ;
-    sub \LtnCapUHorn by \LtnSmUHorn.sc ;
-    sub \LtnCapUHornAcute by \LtnSmUHornAcute.sc ;
-    sub \LtnCapUHornGrave by \LtnSmUHornGrave.sc ;
-    sub \LtnCapUHornTilde by \LtnSmUHornTilde.sc ;
-    sub \LtnCapUHornHookAbv by \LtnSmUHornHookAbv.sc ;
-    sub \LtnCapUHornDotBlw by \LtnSmUHornDotBlw.sc ;
-    sub \LtnCapVHook by \LtnSmVHook.sc ;
-    sub \LtnCapVDiagStrk by \LtnSmVDiagStrk.sc ;
-    sub \LtnCapVYDigraph by \LtnSmVYDigraph.sc ;
-    sub \LtnCapVend by \LtnSmVend.sc ;
-    sub \LtnCapUpsilon by \LtnSmUpsilon.sc ;
-    sub \CyCapIzhitsa by \CySmIzhitsa.sc ;
-    sub \LtnCapVTilde by \LtnSmVTilde.sc ;
-    sub \LtnCapVDotBlw by \LtnSmVDotBlw.sc ;
-    sub \LtnCapTurnedV by \LtnSmTurnedV.sc ;
-    sub \LtnCapGamma by \LtnSmGamma.sc ;
-    sub \CyCapWe by \CySmWe.sc ;
-    sub \LtnCapWAcute by \LtnSmWAcute.sc ;
-    sub \LtnCapWGrave by \LtnSmWGrave.sc ;
-    sub \LtnCapWCircum by \LtnSmWCircum.sc ;
-    sub \LtnCapWDiaer by \LtnSmWDiaer.sc ;
-    sub \LtnCapWDotAbv by \LtnSmWDotAbv.sc ;
-    sub \LtnCapWDotBlw by \LtnSmWDotBlw.sc ;
-    sub \LtnCapWHook by \LtnSmWHook.sc ;
-    sub \CyCapHa by \CySmHa.sc ;
-    sub \LtnCapXDiaer by \LtnSmXDiaer.sc ;
-    sub \LtnCapXDotAbv by \LtnSmXDotAbv.sc ;
-    sub \CyCapHaStrk by \CySmHaStrk.sc ;
-    sub \CyCapHaHook by \CySmHaHook.sc ;
-    sub \CyCapHaDesc by \CySmHaDesc.sc ;
-    sub \CyCapStraightU by \CySmStraightU.sc ;
-    sub \LtnCapYAcute by \LtnSmYAcute.sc ;
-    sub \LtnCapYGrave by \LtnSmYGrave.sc ;
-    sub \LtnCapYCircum by \LtnSmYCircum.sc ;
-    sub \LtnCapYTilde by \LtnSmYTilde.sc ;
-    sub \LtnCapYMacron by \LtnSmYMacron.sc ;
-    sub \LtnCapYDotAbv by \LtnSmYDotAbv.sc ;
-    sub \LtnCapYHookAbv by \LtnSmYHookAbv.sc ;
-    sub \LtnCapYDotBlw by \LtnSmYDotBlw.sc ;
-    sub \LtnCapYStrk by \LtnSmYStrk.sc ;
-    sub \CyCapStraightUStrk by \CySmStraightUStrk.sc ;
-    sub \LtnCapYHook.RtHook by \LtnSmYHook.RtHook.sc ;
-    sub \LtnCapYLoop by \LtnSmYLoop.sc ;
-    sub \CyCapU by \CySmU.sc ;
-    sub \CyCapUDblAcute by \CySmUDblAcute.sc ;
-    sub \CyCapShortU by \CySmShortU.sc ;
-    sub \CyCapUMacron by \CySmUMacron.sc ;
-    sub \CyCapUDiaer by \CySmUDiaer.sc ;
-    sub \CyCapChe by \CySmChe.sc ;
-    sub \CyCapCheDiaer by \CySmCheDiaer.sc ;
-    sub \CyCapCheVertStrk by \CySmCheVertStrk.sc ;
-    sub \CyCapCheDesc by \CySmCheDesc.sc ;
-    sub \CyCapKhakasChe by \CySmKhakasChe.sc ;
-    sub \LtnCapZAcute by \LtnSmZAcute.sc ;
-    sub \LtnCapZCircum by \LtnSmZCircum.sc ;
-    sub \LtnCapZCaron by \LtnSmZCaron.sc ;
-    sub \LtnCapZDotAbv by \LtnSmZDotAbv.sc ;
-    sub \LtnCapZLineBlw by \LtnSmZLineBlw.sc ;
-    sub \LtnCapZDotBlw by \LtnSmZDotBlw.sc ;
-    sub \LtnCapZStrk by \LtnSmZStrk.sc ;
-    sub \LtnCapZHook by \LtnSmZHook.sc ;
-    sub \LtnCapZDesc by \LtnSmZDesc.sc ;
-    sub \LtnCapZSwashTail by \LtnSmZSwashTail.sc ;
-    sub \LtnCapVisigothicZ by \LtnSmVisigothicZ.sc ;
-    sub \LtnCapEsh by \LtnSmEsh.sc ;
-    sub \LtnCapEzh by \LtnSmEzh.sc ;
-    sub \CyCapAbkhasDze by \CySmAbkhasDze.sc ;
-    sub \LtnCapEzhCaron by \LtnSmEzhCaron.sc ;
-    sub \LtnCapEzhRev by \LtnSmEzhRev.sc ;
-    sub \LtnCapTresillo by \LtnSmTresillo.sc ;
-    sub \LtnCapYogh by \LtnSmYogh.sc ;
-    sub \LtnCapEt by \LtnSmEt.sc ;
-    sub \LtnCapGlottalStop by \LtnSmGlottalStop.sc ;
-    sub \LtnCapCuatrillo by \LtnSmCuatrillo.sc ;
-    sub \LtnCapCuatrilloComma by \LtnSmCuatrilloComma.sc ;
-    sub \LtnCapTnFive by \LtnSmTnFive.sc ;
-    sub \LtnCapOpenSix by \LtnSmOpenSix.sc ;
-    sub \LtnCapOpenNine by \LtnSmOpenNine.sc ;
-    sub \LtnCapSaltillo by \LtnSmSaltillo.sc ;
-    sub \LtnCapEgAin by \LtnSmEgAin.sc ;
-    sub \LtnCapEgAlef by \LtnSmEgAlef.sc ;
+    sub LtnCapA by LtnSmA.sc ;
+    sub LtnCapB by LtnSmB.sc ;
+    sub LtnCapC by LtnSmC.sc ;
+    sub LtnCapD by LtnSmD.sc ;
+    sub LtnCapE by LtnSmE.sc ;
+    sub LtnCapF by LtnSmF.sc ;
+    sub LtnCapG by LtnSmG.sc ;
+    sub LtnCapH by LtnSmH.sc ;
+    sub LtnCapI by LtnSmI.sc ;
+    sub LtnCapJ by LtnSmJ.sc ;
+    sub LtnCapK by LtnSmK.sc ;
+    sub LtnCapL by LtnSmL.sc ;
+    sub LtnCapM by LtnSmM.sc ;
+    sub LtnCapN by LtnSmN.sc ;
+    sub LtnCapO by LtnSmO.sc ;
+    sub LtnCapP by LtnSmP.sc ;
+    sub LtnCapQ by LtnSmQ.sc ;
+    sub LtnCapR by LtnSmR.sc ;
+    sub LtnCapS by LtnSmS.sc ;
+    sub LtnCapT by LtnSmT.sc ;
+    sub LtnCapU by LtnSmU.sc ;
+    sub LtnCapV by LtnSmV.sc ;
+    sub LtnCapW by LtnSmW.sc ;
+    sub LtnCapX by LtnSmX.sc ;
+    sub LtnCapY by LtnSmY.sc ;
+    sub LtnCapZ by LtnSmZ.sc ;
+    sub LtnCapADiaer by LtnSmADiaer.sc ;
+    sub LtnCapARingAbv by LtnSmARingAbv.sc ;
+    sub LtnCapCCedilla by LtnSmCCedilla.sc ;
+    sub LtnCapEAcute by LtnSmEAcute.sc ;
+    sub LtnCapNTilde by LtnSmNTilde.sc ;
+    sub LtnCapODiaer by LtnSmODiaer.sc ;
+    sub LtnCapUDiaer by LtnSmUDiaer.sc ;
+    sub LtnCapAe by LtnSmAe.sc ;
+    sub LtnCapOStrk by LtnSmOStrk.sc ;
+    sub LtnCapAGrave by LtnSmAGrave.sc ;
+    sub LtnCapATilde by LtnSmATilde.sc ;
+    sub LtnCapOTilde by LtnSmOTilde.sc ;
+    sub LtnCapLigOe by LtnSmLigOe.sc ;
+    sub LtnCapYDiaer by LtnSmYDiaer.sc ;
+    sub LtnCapACircum by LtnSmACircum.sc ;
+    sub LtnCapECircum by LtnSmECircum.sc ;
+    sub LtnCapAAcute by LtnSmAAcute.sc ;
+    sub LtnCapEDiaer by LtnSmEDiaer.sc ;
+    sub LtnCapEGrave by LtnSmEGrave.sc ;
+    sub LtnCapIAcute by LtnSmIAcute.sc ;
+    sub LtnCapICircum by LtnSmICircum.sc ;
+    sub LtnCapIDiaer by LtnSmIDiaer.sc ;
+    sub LtnCapIGrave by LtnSmIGrave.sc ;
+    sub LtnCapOAcute by LtnSmOAcute.sc ;
+    sub LtnCapOCircum by LtnSmOCircum.sc ;
+    sub LtnCapOGrave by LtnSmOGrave.sc ;
+    sub LtnCapUAcute by LtnSmUAcute.sc ;
+    sub LtnCapUCircum by LtnSmUCircum.sc ;
+    sub LtnCapUGrave by LtnSmUGrave.sc ;
+    sub CyCapA by CySmA.sc ;
+    sub LtnCapADblGrave by LtnSmADblGrave.sc ;
+    sub LtnCapACircumAcute by LtnSmACircumAcute.sc ;
+    sub LtnCapACircumGrave by LtnSmACircumGrave.sc ;
+    sub LtnCapACircumTilde by LtnSmACircumTilde.sc ;
+    sub LtnCapACircumHookAbv by LtnSmACircumHookAbv.sc ;
+    sub LtnCapACircumDotBlw by LtnSmACircumDotBlw.sc ;
+    sub LtnCapAInvBreve by LtnSmAInvBreve.sc ;
+    sub LtnCapABreve by LtnSmABreve.sc ;
+    sub LtnCapABreveAcute by LtnSmABreveAcute.sc ;
+    sub LtnCapABreveGrave by LtnSmABreveGrave.sc ;
+    sub LtnCapABreveTilde by LtnSmABreveTilde.sc ;
+    sub LtnCapABreveHookAbv by LtnSmABreveHookAbv.sc ;
+    sub LtnCapABreveDotBlw by LtnSmABreveDotBlw.sc ;
+    sub CyCapABreve by CySmABreve.sc ;
+    sub LtnCapACaron by LtnSmACaron.sc ;
+    sub LtnCapAMacron by LtnSmAMacron.sc ;
+    sub CyCapADiaer by CySmADiaer.sc ;
+    sub LtnCapADiaerMacron by LtnSmADiaerMacron.sc ;
+    sub LtnCapADotAbv by LtnSmADotAbv.sc ;
+    sub LtnCapADotAbvMacron by LtnSmADotAbvMacron.sc ;
+    sub LtnCapARingAbvAcute by LtnSmARingAbvAcute.sc ;
+    sub LtnCapAHookAbv by LtnSmAHookAbv.sc ;
+    sub LtnCapADotBlw by LtnSmADotBlw.sc ;
+    sub LtnCapARingBlw by LtnSmARingBlw.sc ;
+    sub LtnCapAOgonek by LtnSmAOgonek.sc ;
+    sub LtnCapAStrk by LtnSmAStrk.sc ;
+    sub LtnCapTurnedA by LtnSmTurnedA.sc ;
+    sub LtnCapAODigraph by LtnSmAODigraph.sc ;
+    sub LtnCapAADigraph by LtnSmAADigraph.sc ;
+    sub LtnCapAUDigraph by LtnSmAUDigraph.sc ;
+    sub LtnCapAVDigraph by LtnSmAVDigraph.sc ;
+    sub LtnCapAVDigraphStrk by LtnSmAVDigraphStrk.sc ;
+    sub LtnCapAYDigraph by LtnSmAYDigraph.sc ;
+    sub LtnCapSmAlpha by LtnSmAlpha.sc ;
+    sub LtnCapSmTurnedAlpha by LtnSmTurnedAlpha.sc ;
+    sub CyCapLigAIe by CySmLigAIe.sc ;
+    sub LtnCapAeAcute by LtnSmAeAcute.sc ;
+    sub LtnCapAeMacron by LtnSmAeMacron.sc ;
+    sub CyCapVe by CySmVe.sc ;
+    sub LtnCapBDotAbv by LtnSmBDotAbv.sc ;
+    sub LtnCapBLineBlw by LtnSmBLineBlw.sc ;
+    sub LtnCapBDotBlw by LtnSmBDotBlw.sc ;
+    sub LtnCapBBarredLowStem by LtnSmBBarredStem.sc ;
+    sub LtnCapBHook by LtnSmBHook.sc ;
+    sub LtnCapTnSix by LtnSmTnSix.sc ;
+    sub LtnCapBTopbar by LtnSmBTopbar.sc ;
+    sub CyCapBe by CySmBe.sc ;
+    sub CyCapSoftSgn by CySmSoftSgn.sc ;
+    sub CyCapSemisoftSgn by CySmSemisoftSgn.sc ;
+    sub CyCapHardSgn by CySmHardSgn.sc ;
+    sub CyCapYat by CySmYat.sc ;
+    sub CyCapYeru by CySmYeru.sc ;
+    sub CyCapYeruDiaer by CySmYeruDiaer.sc ;
+    sub LtnCapSharpS by LtnSmSharpS.sc ;
+    sub CyCapEs by CySmEs.sc ;
+    sub LtnCapCAcute by LtnSmCAcute.sc ;
+    sub LtnCapCCircum by LtnSmCCircum.sc ;
+    sub LtnCapCCaron by LtnSmCCaron.sc ;
+    sub LtnCapCDotAbv by LtnSmCDotAbv.sc ;
+    sub LtnCapCCedillaAcute by LtnSmCCedillaAcute.sc ;
+    sub CyCapEsDesc by CySmEsDesc.sc ;
+    sub LtnCapCBar by LtnSmCBar.sc ;
+    sub LtnCapCStrk by LtnSmCStrk.sc ;
+    sub LtnCapCHook by LtnSmCHook.sc ;
+    sub LtnCapOpnO by LtnSmOpnO.sc ;
+    sub LtnCapRevCMiddleDot by LtnSmRevCMiddleDot.sc ;
+    sub CyCapUkrainIe by CySmUkrainIe.sc ;
+    sub CyCapE by CySmE.sc ;
+    sub CyCapEDiaer by CySmEDiaer.sc ;
+    sub LtnCapDCaron by LtnSmDCaron.sc ;
+    sub LtnCapDDotAbv by LtnSmDDotAbv.sc ;
+    sub LtnCapDCircumBlw by LtnSmDCircumBlw.sc ;
+    sub LtnCapDLineBlw by LtnSmDLineBlw.sc ;
+    sub LtnCapDDotBlw by LtnSmDDotBlw.sc ;
+    sub LtnCapDCedilla by LtnSmDCedilla.sc ;
+    sub LtnCapEth by LtnSmEth.sc ;
+    sub LtnCapDStrk by LtnSmDBarredStem.sc ;
+    sub LtnCapAfricanD by LtnSmDTail.sc ;
+    sub LtnCapDHook by LtnSmDHook.sc ;
+    sub LtnCapDTopbar by LtnSmDTopbar.sc ;
+    sub LtnCapDSmZ by LtnSmDz.sc ;
+    sub LtnCapDSmZCaron by LtnSmDzCaron.sc ;
+    sub LtnCapDz by LtnSmDz.sc ;
+    sub LtnCapDzCaron by LtnSmDzCaron.sc ;
+    sub CyCapKomiDe by CySmKomiDe.sc ;
+    sub CyCapKomiDje by CySmKomiDje.sc ;
+    sub CyCapIe by CySmIe.sc ;
+    sub CyCapIeGrave by CySmIeGrave.sc ;
+    sub LtnCapEDblGrave by LtnSmEDblGrave.sc ;
+    sub LtnCapECircumAcute by LtnSmECircumAcute.sc ;
+    sub LtnCapECircumGrave by LtnSmECircumGrave.sc ;
+    sub LtnCapECircumTilde by LtnSmECircumTilde.sc ;
+    sub LtnCapECircumHookAbv by LtnSmECircumHookAbv.sc ;
+    sub LtnCapECircumDotBlw by LtnSmECircumDotBlw.sc ;
+    sub LtnCapEInvBreve by LtnSmEInvBreve.sc ;
+    sub LtnCapEBreve by LtnSmEBreve.sc ;
+    sub CyCapIeBreve by CySmIeBreve.sc ;
+    sub LtnCapECaron by LtnSmECaron.sc ;
+    sub LtnCapETilde by LtnSmETilde.sc ;
+    sub LtnCapEMacron by LtnSmEMacron.sc ;
+    sub LtnCapEMacronAcute by LtnSmEMacronAcute.sc ;
+    sub LtnCapEMacronGrave by LtnSmEMacronGrave.sc ;
+    sub CyCapIo by CySmIo.sc ;
+    sub LtnCapEDotAbv by LtnSmEDotAbv.sc ;
+    sub LtnCapEHookAbv by LtnSmEHookAbv.sc ;
+    sub LtnCapECircumBlw by LtnSmECircumBlw.sc ;
+    sub LtnCapETildeBlw by LtnSmETildeBlw.sc ;
+    sub LtnCapEDotBlw by LtnSmEDotBlw.sc ;
+    sub LtnCapECedilla by LtnSmECedilla.sc ;
+    sub LtnCapECedillaBreve by LtnSmECedillaBreve.sc ;
+    sub LtnCapEOgonek by LtnSmEOgonek.sc ;
+    sub LtnCapEStrk by LtnSmEStrk.sc ;
+    sub CyCapAbkhasChe by CySmAbkhasChe.sc ;
+    sub CyCapAbkhasCheDesc by CySmAbkhasCheDesc.sc ;
+    sub LtnCapRevE by LtnSmRevE.sc ;
+    sub LtnCapSchwa by LtnSmSchwa.sc ;
+    sub CyCapSchwa by CySmSchwa.sc ;
+    sub CyCapSchwaDiaer by CySmSchwaDiaer.sc ;
+    sub LtnCapOpnE by LtnSmOpnE.sc ;
+    sub CyCapRevZe by CySmRevZe.sc ;
+    sub CyCapZe by CySmZe.sc ;
+    sub CyCapZeDiaer by CySmZeDiaer.sc ;
+    sub CyCapZeDesc by CySmZeDesc.sc ;
+    sub CyCapKomiDzje by CySmKomiDzje.sc ;
+    sub CyCapKomiZje by CySmKomiZje.sc ;
+    sub LtnCapFDotAbv by LtnSmFDotAbv.sc ;
+    sub LtnCapFHook by LtnSmFHook.sc ;
+    sub CyCapGhe by CySmGhe.sc ;
+    sub CyCapGje by CySmGje.sc ;
+    sub CyCapGheUpturn by CySmGheUpturn.sc ;
+    sub CyCapGheDesc by CySmGheDesc.sc ;
+    sub CyCapGheStrk by CySmGheStrk.sc ;
+    sub CyCapGheStrkHook by CySmGheStrkHook.sc ;
+    sub LtnCapGAcute by LtnSmGAcute.sc ;
+    sub LtnCapGCircum by LtnSmGCircum.sc ;
+    sub LtnCapGBreve by LtnSmGBreve.sc ;
+    sub LtnCapGCaron by LtnSmGCaron.sc ;
+    sub LtnCapGMacron by LtnSmGMacron.sc ;
+    sub LtnCapGDotAbv by LtnSmGDotAbv.sc ;
+    sub LtnCapGCedilla by LtnSmGCedilla.sc ;
+    sub LtnCapGStrk by LtnSmGStrk.sc ;
+    sub LtnCapGDiagStrk by LtnSmGDiagStrk.sc ;
+    sub LtnCapGHook by LtnSmGHook.sc ;
+    sub LtnCapInsularG by LtnSmInsularG.sc ;
+    sub LtnCapTrndInsularG by LtnSmTrndInsularG.sc ;
+    sub CyCapKomiSje by CySmKomiSje.sc ;
+    sub CyCapEn by CySmEn.sc ;
+    sub LtnCapHCircum by LtnSmHCircum.sc ;
+    sub LtnCapHCaron by LtnSmHCaron.sc ;
+    sub LtnCapHDiaer by LtnSmHDiaer.sc ;
+    sub LtnCapHDotAbv by LtnSmHDotAbv.sc ;
+    sub LtnCapHBreveBlw by LtnSmHBreveBlw.sc ;
+    sub LtnCapHDotBlw by LtnSmHDotBlw.sc ;
+    sub LtnCapHCedilla by LtnSmHCedilla.sc ;
+    sub LtnCapHStrk by LtnSmHStrk.sc ;
+    sub LtnCapHHook by LtnSmHHook.sc ;
+    sub LtnCapHeng by LtnSmHeng.sc ;
+    sub LtnCapHDesc by LtnSmHDesc.sc ;
+    sub LtnCapHwair by LtnSmHv.sc ;
+    sub LtnCapHalfH by LtnSmHalfH.sc ;
+    sub LtnCapTurnedH by LtnSmTurnedH.sc ;
+    sub CyCapShha by CySmShha.sc ;
+    sub CyCapGheMiddleHook by CySmGheMiddleHook.sc ;
+    sub CyCapShhaDesc by CySmShhaDesc.sc ;
+    sub CyCapLigEnGhe by CySmLigEnGhe.sc ;
+    sub CyCapEnDesc by CySmEnDesc.sc ;
+    sub CyCapEnTail by CySmEnTail.sc ;
+    sub CyCapNje by CySmNje.sc ;
+    sub CyCapEnHook by CySmEnHook.sc ;
+    sub CyCapKomiNje by CySmKomiNje.sc ;
+    sub CyCapEnMiddleHook by CySmEnMiddleHook.sc ;
+    sub CyCapPe by CySmPe.sc ;
+    sub CyCapPeDesc by CySmPeDesc.sc ;
+    sub CyCapPeMiddleHook by CySmPeMiddleHook.sc ;
+    sub CyCapDzhe by CySmDzhe.sc ;
+    sub CyCapTse by CySmTse.sc ;
+    sub CyCapSha by CySmSha.sc ;
+    sub CyCapShcha by CySmShcha.sc ;
+    sub CyCapByelorusUkrainI by CySmByelorusUkrainI.sc ;
+    sub CyPalochka by CyPalochka.sc ;
+    sub LtnCapIDblGrave by LtnSmIDblGrave.sc ;
+    sub LtnCapIInvBreve by LtnSmIInvBreve.sc ;
+    sub LtnCapIBreve by LtnSmIBreve.sc ;
+    sub LtnCapICaron by LtnSmICaron.sc ;
+    sub LtnCapITilde by LtnSmITilde.sc ;
+    sub LtnCapIMacron by LtnSmIMacron.sc ;
+    sub CyCapYi by CySmYi.sc ;
+    sub LtnCapIDiaerAcute by LtnSmIDiaerAcute.sc ;
+    sub LtnCapIDotAbv by LtnSmI.sc ;
+    sub LtnCapIHookAbv by LtnSmIHookAbv.sc ;
+    sub LtnCapITildeBlw by LtnSmITildeBlw.sc ;
+    sub LtnCapIDotBlw by LtnSmIDotBlw.sc ;
+    sub LtnCapIOgonek by LtnSmIOgonek.sc ;
+    sub LtnCapIStrk by LtnSmIStrk.sc ;
+    sub LtnCapLigIj by LtnSmLigIj.sc ;
+    sub LtnCapIota by LtnSmIota.sc ;
+    sub CyCapYu by CySmYu.sc ;
+    sub CyCapJe by CySmJe.sc ;
+    sub LtnCapJCircum by LtnSmJCircum.sc ;
+    sub LtnCapJStrk by LtnSmJStrk.sc ;
+    sub LtnCapIs by LtnSmIs.sc ;
+    sub CyCapEl by CySmEl.sc ;
+    sub CyCapElTail by CySmElTail.sc ;
+    sub CyCapLje by CySmLje.sc ;
+    sub CyCapElHook by CySmElHook.sc ;
+    sub CyCapKomiLje by CySmKomiLje.sc ;
+    sub CyCapElMiddleHook by CySmElMiddleHook.sc ;
+    sub CyCapLha by CySmLha.sc ;
+    sub CyCapDe by CySmDe.sc ;
+    sub LtnCapKAcute by LtnSmKAcute.sc ;
+    sub LtnCapKCaron by LtnSmKCaron.sc ;
+    sub LtnCapKLineBlw by LtnSmKLineBlw.sc ;
+    sub LtnCapKDotBlw by LtnSmKDotBlw.sc ;
+    sub LtnCapKCedilla by LtnSmKCedilla.sc ;
+    sub LtnCapKStrk by LtnSmKStrk.sc ;
+    sub LtnCapKStrkRtDiagStrk by LtnSmKStrkRtDiagStrk.sc ;
+    sub LtnCapKRtDiagStrk by LtnSmKRtDiagStrk.sc ;
+    sub LtnCapKDiagStrk by LtnSmKDiagStrk.sc ;
+    sub LtnCapKHook by LtnSmKHook.sc ;
+    sub LtnCapKDesc by LtnSmKDesc.sc ;
+    sub CyCapKa by CySmKa.sc ;
+    sub CyCapKje by CySmKje.sc ;
+    sub CyCapKaDesc by CySmKaDesc.sc ;
+    sub CyCapBashkirKa by CySmBashkirKa.sc ;
+    sub CyCapKaStrk by CySmKaStrk.sc ;
+    sub CyCapKaVertStrk by CySmKaVertStrk.sc ;
+    sub CyCapKaHook by CySmKaHook.sc ;
+    sub CyCapAleutKa by CySmAleutKa.sc ;
+    sub CyCapZhe by CySmZhe.sc ;
+    sub CyCapZheBreve by CySmZheBreve.sc ;
+    sub CyCapZheDiaer by CySmZheDiaer.sc ;
+    sub CyCapZheDesc by CySmZheDesc.sc ;
+    sub LtnCapLAcute by LtnSmLAcute.sc ;
+    sub LtnCapLCircumBlw by LtnSmLCircumBlw.sc ;
+    sub LtnCapLLineBlw by LtnSmLLineBlw.sc ;
+    sub LtnCapLDotBlw by LtnSmLDotBlw.sc ;
+    sub LtnCapLDotBlwMacron by LtnSmLDotBlwMacron.sc ;
+    sub LtnCapLCedilla by LtnSmLCedilla.sc ;
+    sub LtnCapLMiddleDot by LtnSmLMiddleDot.sc ;
+    sub LtnCapLCaron by LtnSmLCaron.sc ;
+    sub LtnCapLBar by LtnSmLBar.sc ;
+    sub LtnCapLHighBar by LtnSmLHighBar.sc ;
+    sub LtnCapDblBarredL by LtnSmDblBarredL.sc ;
+    sub LtnCapLMiddleTilde by LtnSmLMiddleTilde.sc ;
+    sub LtnCapLStrk by LtnSmLStrk.sc ;
+    sub LtnCapLBrkn by LtnSmLBrkn.sc ;
+    sub LtnCapLTrnd by LtnSmLTrnd.sc ;
+    sub LtnCapLSmJ by LtnSmLj.sc ;
+    sub LtnCapLj by LtnSmLj.sc ;
+    sub LtnCapLLDigraph by LtnSmLLDigraph.sc ;
+    sub CyCapEm by CySmEm.sc ;
+    sub LtnCapMAcute by LtnSmMAcute.sc ;
+    sub LtnCapMDotAbv by LtnSmMDotAbv.sc ;
+    sub LtnCapMDotBlw by LtnSmMDotBlw.sc ;
+    sub LtnCapMHook by LtnSmMHook.sc ;
+    sub LtnCapTrndM by LtnSmTurnedM.sc ;
+    sub CyCapEmTail by CySmEmTail.sc ;
+    sub LtnCapNAcute by LtnSmNAcute.sc ;
+    sub LtnCapNGrave by LtnSmNGrave.sc ;
+    sub LtnCapNCaron by LtnSmNCaron.sc ;
+    sub LtnCapNDotAbv by LtnSmNDotAbv.sc ;
+    sub LtnCapNCircumBlw by LtnSmNCircumBlw.sc ;
+    sub LtnCapNLineBlw by LtnSmNLineBlw.sc ;
+    sub LtnCapNDotBlw by LtnSmNDotBlw.sc ;
+    sub LtnCapNCedilla by LtnSmNCedilla.sc ;
+    sub LtnCapNDiagStrk by LtnSmNDiagStrk.sc ;
+    sub LtnCapNLftHook by LtnSmNLftHook.sc ;
+    sub LtnCapNDesc by LtnSmNDesc.sc ;
+    sub LtnCapEng by LtnSmEng.sc ;
+    sub LtnCapNLngRtLeg by LtnSmNLngRtLeg.sc ;
+    sub LtnCapNSmJ by LtnSmNj.sc ;
+    sub LtnCapNj by LtnSmNj.sc ;
+    sub CyCapI by CySmI.sc ;
+    sub CyCapIGrave by CySmIGrave.sc ;
+    sub CyCapShortI by CySmShortI.sc ;
+    sub CyCapShortITail by CySmShortITail.sc ;
+    sub CyCapIDiaer by CySmIDiaer.sc ;
+    sub CyCapIMacron by CySmIMacron.sc ;
+    sub CyCapO by CySmO.sc ;
+    sub LtnCapODblAcute by LtnSmODblAcute.sc ;
+    sub LtnCapODblGrave by LtnSmODblGrave.sc ;
+    sub LtnCapOCircumAcute by LtnSmOCircumAcute.sc ;
+    sub LtnCapOCircumGrave by LtnSmOCircumGrave.sc ;
+    sub LtnCapOCircumTilde by LtnSmOCircumTilde.sc ;
+    sub LtnCapOCircumHookAbv by LtnSmOCircumHookAbv.sc ;
+    sub LtnCapOCircumDotBlw by LtnSmOCircumDotBlw.sc ;
+    sub LtnCapOInvBreve by LtnSmOInvBreve.sc ;
+    sub LtnCapOBreve by LtnSmOBreve.sc ;
+    sub LtnCapOCaron by LtnSmOCaron.sc ;
+    sub LtnCapOTildeAcute by LtnSmOTildeAcute.sc ;
+    sub LtnCapOTildeMacron by LtnSmOTildeMacron.sc ;
+    sub LtnCapOTildeDiaer by LtnSmOTildeDiaer.sc ;
+    sub LtnCapOMacron by LtnSmOMacron.sc ;
+    sub LtnCapOMacronAcute by LtnSmOMacronAcute.sc ;
+    sub LtnCapOMacronGrave by LtnSmOMacronGrave.sc ;
+    sub CyCapODiaer by CySmODiaer.sc ;
+    sub LtnCapODiaerMacron by LtnSmODiaerMacron.sc ;
+    sub LtnCapODotAbv by LtnSmODotAbv.sc ;
+    sub LtnCapODotAbvMacron by LtnSmODotAbvMacron.sc ;
+    sub LtnCapOHookAbv by LtnSmOHookAbv.sc ;
+    sub LtnCapODotBlw by LtnSmODotBlw.sc ;
+    sub LtnCapOOgonek by LtnSmOOgonek.sc ;
+    sub LtnCapOOgonekMacron by LtnSmOOgonekMacron.sc ;
+    sub LtnCapOMiddleTilde by LtnSmOMiddleTilde.sc ;
+    sub CyCapBarredO by CySmBarredO.sc ;
+    sub CyCapBarredODiaer by CySmBarredODiaer.sc ;
+    sub LtnCapOLngStrk by LtnSmOLngStrk.sc ;
+    sub CyCapFita by CySmFita.sc ;
+    sub LtnCapOStrkAcute by LtnSmOStrkAcute.sc ;
+    sub LtnCapOCurl by LtnSmOCurl.sc ;
+    sub LtnCapInsularD by LtnSmInsularD.sc ;
+    sub LtnCapOHorn by LtnSmOHorn.sc ;
+    sub LtnCapOHornAcute by LtnSmOHornAcute.sc ;
+    sub LtnCapOHornGrave by LtnSmOHornGrave.sc ;
+    sub LtnCapOHornTilde by LtnSmOHornTilde.sc ;
+    sub LtnCapOHornHookAbv by LtnSmOHornHookAbv.sc ;
+    sub LtnCapOHornDotBlw by LtnSmOHornDotBlw.sc ;
+    sub CyCapAbkhasHa by CySmAbkhasHa.sc ;
+    sub LtnCapOi by LtnSmOi.sc ;
+    sub LtnCapOODigraph by LtnSmOODigraph.sc ;
+    sub LtnCapOu by LtnSmOu.sc ;
+    sub CyCapEr by CySmEr.sc ;
+    sub LtnCapPAcute by LtnSmPAcute.sc ;
+    sub LtnCapPDotAbv by LtnSmPDotAbv.sc ;
+    sub LtnCapPStrk by LtnSmPStrk.sc ;
+    sub LtnCapPLowStrk by LtnSmPLowStrk.sc ;
+    sub CyCapErTick by CySmErTick.sc ;
+    sub LtnCapPHook by LtnSmPHook.sc ;
+    sub LtnCapPHighCurl by LtnSmPHighCurl.sc ;
+    sub LtnCapPLowCurl by LtnSmPLowCurl.sc ;
+    sub CyCapRha by CySmRha.sc ;
+    sub LtnCapThorn by LtnSmThorn.sc ;
+    sub LtnCapThornHighStrk by LtnSmThornHighStrk.sc ;
+    sub LtnCapThornLowStrk by LtnSmThornLowStrk.sc ;
+    sub LtnCapWynn by LtnWynn.sc ;
+    sub CyCapEf by CySmEf.sc ;
+    sub CyCapQa by CySmQa.sc ;
+    sub LtnCapSmQHookTail by LtnSmQHookTail.sc ;
+    sub LtnCapQStrk by LtnSmQStrk.sc ;
+    sub LtnCapQDiagStrk by LtnSmQDiagStrk.sc ;
+    sub LtnCapRAcute by LtnSmRAcute.sc ;
+    sub LtnCapRDblGrave by LtnSmRDblGrave.sc ;
+    sub LtnCapRInvBreve by LtnSmRInvBreve.sc ;
+    sub LtnCapRCaron by LtnSmRCaron.sc ;
+    sub LtnCapRDotAbv by LtnSmRDotAbv.sc ;
+    sub LtnCapRLineBlw by LtnSmRLineBlw.sc ;
+    sub LtnCapRDotBlw by LtnSmRDotBlw.sc ;
+    sub LtnCapRDotBlwMacron by LtnSmRDotBlwMacron.sc ;
+    sub LtnCapRCedilla by LtnSmRCedilla.sc ;
+    sub LtnCapRBarredStem by LtnSmRBarredStem.sc ;
+    sub LtnCapRDiagStrk by LtnSmRDiagStrk.sc ;
+    sub LtnCapRHookTail by LtnSmRHookTail.sc ;
+    sub LtnCapRRotunda by LtnSmRRotunda.sc ;
+    sub LtnCapRumRotunda by LtnSmRumRotunda.sc ;
+    sub LtnCapInsularR by LtnSmInsularR.sc ;
+    sub LtnCapInsularS by LtnSmInsularS.sc ;
+    sub LtnCapInsularF by LtnSmInsularF.sc ;
+    sub LtnYr by LtnSmCapR.sc ;
+    sub CyCapYa by CySmYa.sc ;
+    sub CyCapYae by CySmYae.sc ;
+    sub CyCapDze by CySmDze.sc ;
+    sub LtnCapSAcute by LtnSmSAcute.sc ;
+    sub LtnCapSAcuteDotAbv by LtnSmSAcuteDotAbv.sc ;
+    sub LtnCapSCircum by LtnSmSCircum.sc ;
+    sub LtnCapSCaron by LtnSmSCaron.sc ;
+    sub LtnCapSCaronDotAbv by LtnSmSCaronDotAbv.sc ;
+    sub LtnCapSDotAbv by LtnSmSDotAbv.sc ;
+    sub LtnCapSDotBlw by LtnSmSDotBlw.sc ;
+    sub LtnCapSDotBlwDotAbv by LtnSmSDotBlwDotAbv.sc ;
+    sub LtnCapSCommaBlw by LtnSmSCommaBlw.sc ;
+    sub LtnCapSCedilla by LtnSmSCedilla.sc ;
+    sub LtnCapSDiagStrk by LtnSmSDiagStrk.sc ;
+    sub LtnCapSSwashTail by LtnSmSSwashTail.sc ;
+    sub LtnCapTnTwo by LtnSmTnTwo.sc ;
+    sub CyCapTe by CySmTe.sc ;
+    sub LtnCapTCaron by LtnSmTCaron.sc ;
+    sub LtnCapTDotAbv by LtnSmTDotAbv.sc ;
+    sub LtnCapTCircumBlw by LtnSmTCircumBlw.sc ;
+    sub LtnCapTLineBlw by LtnSmTLineBlw.sc ;
+    sub LtnCapTDotBlw by LtnSmTDotBlw.sc ;
+    sub LtnCapTCommaBlw by LtnSmTCommaBlw.sc ;
+    sub LtnCapTCedilla by LtnSmTCedilla.sc ;
+    sub LtnCapTStrk by LtnSmTStrk.sc ;
+    sub LtnCapTDiagStrk by LtnSmTDiagStrk.sc ;
+    sub LtnCapTHook by LtnSmTHook.sc ;
+    sub LtnCapTRetrHook by LtnSmTRetrHook.sc ;
+    sub LtnCapTzDigraph by LtnSmTzDigraph.sc ;
+    sub LtnCapInsularT by LtnSmInsularT.sc ;
+    sub CyCapTeDesc by CySmTeDesc.sc ;
+    sub CyCapKomiTje by CySmKomiTje.sc ;
+    sub CyCapLigTeTse by CySmLigTeTse.sc ;
+    sub CyCapTshe by CySmTshe.sc ;
+    sub CyCapDje by CySmDje.sc ;
+    sub LtnCapUDblAcute by LtnSmUDblAcute.sc ;
+    sub LtnCapUDblGrave by LtnSmUDblGrave.sc ;
+    sub LtnCapUInvBreve by LtnSmUInvBreve.sc ;
+    sub LtnCapUBreve by LtnSmUBreve.sc ;
+    sub LtnCapUCaron by LtnSmUCaron.sc ;
+    sub LtnCapUTilde by LtnSmUTilde.sc ;
+    sub LtnCapUTildeAcute by LtnSmUTildeAcute.sc ;
+    sub LtnCapUMacron by LtnSmUMacron.sc ;
+    sub LtnCapUMacronDiaer by LtnSmUMacronDiaer.sc ;
+    sub LtnCapUDiaerAcute by LtnSmUDiaerAcute.sc ;
+    sub LtnCapUDiaerGrave by LtnSmUDiaerGrave.sc ;
+    sub LtnCapUDiaerCaron by LtnSmUDiaerCaron.sc ;
+    sub LtnCapUDiaerMacron by LtnSmUDiaerMacron.sc ;
+    sub LtnCapURingAbv by LtnSmURingAbv.sc ;
+    sub LtnCapUHookAbv by LtnSmUHookAbv.sc ;
+    sub LtnCapUCircumBlw by LtnSmUCircumBlw.sc ;
+    sub LtnCapUTildeBlw by LtnSmUTildeBlw.sc ;
+    sub LtnCapUDiaerBlw by LtnSmUDiaerBlw.sc ;
+    sub LtnCapUDotBlw by LtnSmUDotBlw.sc ;
+    sub LtnCapUOgonek by LtnSmUOgonek.sc ;
+    sub LtnCapUBar by LtnSmUBar.sc ;
+    sub LtnCapUHorn by LtnSmUHorn.sc ;
+    sub LtnCapUHornAcute by LtnSmUHornAcute.sc ;
+    sub LtnCapUHornGrave by LtnSmUHornGrave.sc ;
+    sub LtnCapUHornTilde by LtnSmUHornTilde.sc ;
+    sub LtnCapUHornHookAbv by LtnSmUHornHookAbv.sc ;
+    sub LtnCapUHornDotBlw by LtnSmUHornDotBlw.sc ;
+    sub LtnCapVHook by LtnSmVHook.sc ;
+    sub LtnCapVDiagStrk by LtnSmVDiagStrk.sc ;
+    sub LtnCapVYDigraph by LtnSmVYDigraph.sc ;
+    sub LtnCapVend by LtnSmVend.sc ;
+    sub LtnCapUpsilon by LtnSmUpsilon.sc ;
+    sub CyCapIzhitsa by CySmIzhitsa.sc ;
+    sub LtnCapVTilde by LtnSmVTilde.sc ;
+    sub LtnCapVDotBlw by LtnSmVDotBlw.sc ;
+    sub LtnCapTurnedV by LtnSmTurnedV.sc ;
+    sub LtnCapGamma by LtnSmGamma.sc ;
+    sub CyCapWe by CySmWe.sc ;
+    sub LtnCapWAcute by LtnSmWAcute.sc ;
+    sub LtnCapWGrave by LtnSmWGrave.sc ;
+    sub LtnCapWCircum by LtnSmWCircum.sc ;
+    sub LtnCapWDiaer by LtnSmWDiaer.sc ;
+    sub LtnCapWDotAbv by LtnSmWDotAbv.sc ;
+    sub LtnCapWDotBlw by LtnSmWDotBlw.sc ;
+    sub LtnCapWHook by LtnSmWHook.sc ;
+    sub CyCapHa by CySmHa.sc ;
+    sub LtnCapXDiaer by LtnSmXDiaer.sc ;
+    sub LtnCapXDotAbv by LtnSmXDotAbv.sc ;
+    sub CyCapHaStrk by CySmHaStrk.sc ;
+    sub CyCapHaHook by CySmHaHook.sc ;
+    sub CyCapHaDesc by CySmHaDesc.sc ;
+    sub CyCapStraightU by CySmStraightU.sc ;
+    sub LtnCapYAcute by LtnSmYAcute.sc ;
+    sub LtnCapYGrave by LtnSmYGrave.sc ;
+    sub LtnCapYCircum by LtnSmYCircum.sc ;
+    sub LtnCapYTilde by LtnSmYTilde.sc ;
+    sub LtnCapYMacron by LtnSmYMacron.sc ;
+    sub LtnCapYDotAbv by LtnSmYDotAbv.sc ;
+    sub LtnCapYHookAbv by LtnSmYHookAbv.sc ;
+    sub LtnCapYDotBlw by LtnSmYDotBlw.sc ;
+    sub LtnCapYStrk by LtnSmYStrk.sc ;
+    sub CyCapStraightUStrk by CySmStraightUStrk.sc ;
+    sub LtnCapYHook.RtHook by LtnSmYHook.RtHook.sc ;
+    sub LtnCapYLoop by LtnSmYLoop.sc ;
+    sub CyCapU by CySmU.sc ;
+    sub CyCapUDblAcute by CySmUDblAcute.sc ;
+    sub CyCapShortU by CySmShortU.sc ;
+    sub CyCapUMacron by CySmUMacron.sc ;
+    sub CyCapUDiaer by CySmUDiaer.sc ;
+    sub CyCapChe by CySmChe.sc ;
+    sub CyCapCheDiaer by CySmCheDiaer.sc ;
+    sub CyCapCheVertStrk by CySmCheVertStrk.sc ;
+    sub CyCapCheDesc by CySmCheDesc.sc ;
+    sub CyCapKhakasChe by CySmKhakasChe.sc ;
+    sub LtnCapZAcute by LtnSmZAcute.sc ;
+    sub LtnCapZCircum by LtnSmZCircum.sc ;
+    sub LtnCapZCaron by LtnSmZCaron.sc ;
+    sub LtnCapZDotAbv by LtnSmZDotAbv.sc ;
+    sub LtnCapZLineBlw by LtnSmZLineBlw.sc ;
+    sub LtnCapZDotBlw by LtnSmZDotBlw.sc ;
+    sub LtnCapZStrk by LtnSmZStrk.sc ;
+    sub LtnCapZHook by LtnSmZHook.sc ;
+    sub LtnCapZDesc by LtnSmZDesc.sc ;
+    sub LtnCapZSwashTail by LtnSmZSwashTail.sc ;
+    sub LtnCapVisigothicZ by LtnSmVisigothicZ.sc ;
+    sub LtnCapEsh by LtnSmEsh.sc ;
+    sub LtnCapEzh by LtnSmEzh.sc ;
+    sub CyCapAbkhasDze by CySmAbkhasDze.sc ;
+    sub LtnCapEzhCaron by LtnSmEzhCaron.sc ;
+    sub LtnCapEzhRev by LtnSmEzhRev.sc ;
+    sub LtnCapTresillo by LtnSmTresillo.sc ;
+    sub LtnCapYogh by LtnSmYogh.sc ;
+    sub LtnCapEt by LtnSmEt.sc ;
+    sub LtnCapGlottalStop by LtnSmGlottalStop.sc ;
+    sub LtnCapCuatrillo by LtnSmCuatrillo.sc ;
+    sub LtnCapCuatrilloComma by LtnSmCuatrilloComma.sc ;
+    sub LtnCapTnFive by LtnSmTnFive.sc ;
+    sub LtnCapOpenSix by LtnSmOpenSix.sc ;
+    sub LtnCapOpenNine by LtnSmOpenNine.sc ;
+    sub LtnCapSaltillo by LtnSmSaltillo.sc ;
+    sub LtnCapEgAin by LtnSmEgAin.sc ;
+    sub LtnCapEgAlef by LtnSmEgAlef.sc ;
 } sc2_sub;
 
 lookup f_sub {
   lookupflag 0;
-    sub \LtnSmF \LtnSmI  by \LtnLigSmFSmI;
-    sub \LtnSmF \LtnSmL  by \LtnLigSmFSmL;
-    sub \LtnSmF \LtnSmF \LtnSmI  by \LtnLigSmFSmFSmI;
-    sub \LtnSmF \LtnSmF \LtnSmL  by \LtnLigSmFSmFSmL;
-    sub \LtnSmF \LtnSmF  by \LtnLigSmFSmF;
+    sub LtnSmF LtnSmI  by LtnLigSmFSmI;
+    sub LtnSmF LtnSmL  by LtnLigSmFSmL;
+    sub LtnSmF LtnSmF LtnSmI  by LtnLigSmFSmFSmI;
+    sub LtnSmF LtnSmF LtnSmL  by LtnLigSmFSmFSmL;
+    sub LtnSmF LtnSmF  by LtnLigSmFSmF;
 } f_sub;
 
 lookup tn_ctx {
   lookupflag 0;
-    sub [\TnLtr5 \TnLtr4 \TnLtr3 \TnLtr2 \TnLtr1 ]' [\TnLtr1 ]  by [\TnContRt51 \TnContRt41 \TnContRt31 
-	\TnContRt21 \TnContRt11 ];
-    sub [\TnLtr5 \TnLtr4 \TnLtr3 \TnLtr2 \TnLtr1 ]' [\TnLtr2 ]  by [\TnContRt52 \TnContRt42 \TnContRt32 
-	\TnContRt22 \TnContRt12 ];
-    sub [\TnLtr5 \TnLtr4 \TnLtr3 \TnLtr2 \TnLtr1 ]' [\TnLtr3 ]  by [\TnContRt53 \TnContRt43 \TnContRt33 
-	\TnContRt23 \TnContRt13 ];
-    sub [\TnLtr5 \TnLtr4 \TnLtr3 \TnLtr2 \TnLtr1 ]' [\TnLtr4 ]  by [\TnContRt54 \TnContRt44 \TnContRt34 
-	\TnContRt24 \TnContRt14 ];
-    sub [\TnLtr5 \TnLtr4 \TnLtr3 \TnLtr2 \TnLtr1 ]' [\TnLtr5 ]  by [\TnContRt55 \TnContRt45 \TnContRt35 
-	\TnContRt25 \TnContRt15 ];
-    sub [\TnContLft11 \TnContLft21 \TnContLft31 \TnContLft41 \TnContLft51 
-	\LftStemTnLtr1 ] [\LftStemTnLtr5 \LftStemTnLtr4 \LftStemTnLtr3 \LftStemTnLtr2 \LftStemTnLtr1 ]'  by [\TnContLft15 \TnContLft14 \TnContLft13 
-	\TnContLft12 \TnContLft11 ];
-    sub [\TnContLft12 \TnContLft22 \TnContLft32 \TnContLft42 \TnContLft52 
-	\LftStemTnLtr2 ] [\LftStemTnLtr5 \LftStemTnLtr4 \LftStemTnLtr3 \LftStemTnLtr2 \LftStemTnLtr1 ]'  by [\TnContLft25 \TnContLft24 \TnContLft23 
-	\TnContLft22 \TnContLft21 ];
-    sub [\TnContLft13 \TnContLft23 \TnContLft33 \TnContLft43 \TnContLft53 
-	\LftStemTnLtr3 ] [\LftStemTnLtr5 \LftStemTnLtr4 \LftStemTnLtr3 \LftStemTnLtr2 \LftStemTnLtr1 ]'  by [\TnContLft35 \TnContLft34 \TnContLft33 
-	\TnContLft32 \TnContLft31 ];
-    sub [\TnContLft14 \TnContLft24 \TnContLft34 \TnContLft44 \TnContLft54 
-	\LftStemTnLtr4 ] [\LftStemTnLtr5 \LftStemTnLtr4 \LftStemTnLtr3 \LftStemTnLtr2 \LftStemTnLtr1 ]'  by [\TnContLft45 \TnContLft44 \TnContLft43 
-	\TnContLft42 \TnContLft41 ];
-    sub [\TnContLft15 \TnContLft25 \TnContLft35 \TnContLft45 \TnContLft55 
-	\LftStemTnLtr5 ] [\LftStemTnLtr5 \LftStemTnLtr4 \LftStemTnLtr3 \LftStemTnLtr2 \LftStemTnLtr1 ]'  by [\TnContLft55 \TnContLft54 \TnContLft53 
-	\TnContLft52 \TnContLft51 ];
+    sub [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]' [TnLtr1 ]  by [TnContRt51 TnContRt41 TnContRt31 
+	TnContRt21 TnContRt11 ];
+    sub [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]' [TnLtr2 ]  by [TnContRt52 TnContRt42 TnContRt32 
+	TnContRt22 TnContRt12 ];
+    sub [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]' [TnLtr3 ]  by [TnContRt53 TnContRt43 TnContRt33 
+	TnContRt23 TnContRt13 ];
+    sub [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]' [TnLtr4 ]  by [TnContRt54 TnContRt44 TnContRt34 
+	TnContRt24 TnContRt14 ];
+    sub [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]' [TnLtr5 ]  by [TnContRt55 TnContRt45 TnContRt35 
+	TnContRt25 TnContRt15 ];
+    sub [TnContLft11 TnContLft21 TnContLft31 TnContLft41 TnContLft51 
+	LftStemTnLtr1 ] [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]'  by [TnContLft15 TnContLft14 TnContLft13 
+	TnContLft12 TnContLft11 ];
+    sub [TnContLft12 TnContLft22 TnContLft32 TnContLft42 TnContLft52 
+	LftStemTnLtr2 ] [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]'  by [TnContLft25 TnContLft24 TnContLft23 
+	TnContLft22 TnContLft21 ];
+    sub [TnContLft13 TnContLft23 TnContLft33 TnContLft43 TnContLft53 
+	LftStemTnLtr3 ] [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]'  by [TnContLft35 TnContLft34 TnContLft33 
+	TnContLft32 TnContLft31 ];
+    sub [TnContLft14 TnContLft24 TnContLft34 TnContLft44 TnContLft54 
+	LftStemTnLtr4 ] [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]'  by [TnContLft45 TnContLft44 TnContLft43 
+	TnContLft42 TnContLft41 ];
+    sub [TnContLft15 TnContLft25 TnContLft35 TnContLft45 TnContLft55 
+	LftStemTnLtr5 ] [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]'  by [TnContLft55 TnContLft54 TnContLft53 
+	TnContLft52 TnContLft51 ];
 } tn_ctx;
 
 lookup tnsr_dcmp {
   lookupflag 0;
-    sub \TnLtr5 by \TnContRt55 \TnStaffRt5 ;
-    sub \TnLtr4 by \TnContRt44 \TnStaffRt4 ;
-    sub \TnLtr3 by \TnContRt33 \TnStaffRt3 ;
-    sub \TnLtr2 by \TnContRt22 \TnStaffRt2 ;
-    sub \TnLtr1 by \TnContRt11 \TnStaffRt1 ;
+    sub TnLtr5 by TnContRt55 TnStaffRt5 ;
+    sub TnLtr4 by TnContRt44 TnStaffRt4 ;
+    sub TnLtr3 by TnContRt33 TnStaffRt3 ;
+    sub TnLtr2 by TnContRt22 TnStaffRt2 ;
+    sub TnLtr1 by TnContRt11 TnStaffRt1 ;
 } tnsr_dcmp;
 
 lookup tnsr_sub {
   lookupflag 0;
-    sub \TnLtr5 by \TnStaffRt5 ;
-    sub \TnLtr4 by \TnStaffRt4 ;
-    sub \TnLtr3 by \TnStaffRt3 ;
-    sub \TnLtr2 by \TnStaffRt2 ;
-    sub \TnLtr1 by \TnStaffRt1 ;
+    sub TnLtr5 by TnStaffRt5 ;
+    sub TnLtr4 by TnStaffRt4 ;
+    sub TnLtr3 by TnStaffRt3 ;
+    sub TnLtr2 by TnStaffRt2 ;
+    sub TnLtr1 by TnStaffRt1 ;
 } tnsr_sub;
 
 lookup tnsl_sub {
   lookupflag 0;
-    sub \LftStemTnLtr5 by \TnStaffLft5 ;
-    sub \LftStemTnLtr4 by \TnStaffLft4 ;
-    sub \LftStemTnLtr3 by \TnStaffLft3 ;
-    sub \LftStemTnLtr2 by \TnStaffLft2 ;
-    sub \LftStemTnLtr1 by \TnStaffLft1 ;
+    sub LftStemTnLtr5 by TnStaffLft5 ;
+    sub LftStemTnLtr4 by TnStaffLft4 ;
+    sub LftStemTnLtr3 by TnStaffLft3 ;
+    sub LftStemTnLtr2 by TnStaffLft2 ;
+    sub LftStemTnLtr1 by TnStaffLft1 ;
 } tnsl_sub;
 
 lookup tnsl_dcmp {
   lookupflag 0;
-    sub \LftStemTnLtr5 by \TnStaffLft5 \TnContLft55 ;
-    sub \LftStemTnLtr4 by \TnStaffLft4 \TnContLft44 ;
-    sub \LftStemTnLtr3 by \TnStaffLft3 \TnContLft33 ;
-    sub \LftStemTnLtr2 by \TnStaffLft2 \TnContLft22 ;
-    sub \LftStemTnLtr1 by \TnStaffLft1 \TnContLft11 ;
+    sub LftStemTnLtr5 by TnStaffLft5 TnContLft55 ;
+    sub LftStemTnLtr4 by TnStaffLft4 TnContLft44 ;
+    sub LftStemTnLtr3 by TnStaffLft3 TnContLft33 ;
+    sub LftStemTnLtr2 by TnStaffLft2 TnContLft22 ;
+    sub LftStemTnLtr1 by TnStaffLft1 TnContLft11 ;
 } tnsl_dcmp;
 
 lookup tne_ctx {
   lookupflag 0;
-    sub [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ] [\TnLtr5 \TnLtr4 \TnLtr3 \TnLtr2 \TnLtr1 ]'lookup tnsr_dcmp  ;
-    sub [\TnContRt12 \TnContRt13 \TnContRt14 \TnContRt15 \TnContRt21 \TnContRt23 
-	\TnContRt24 \TnContRt25 \TnContRt31 \TnContRt32 \TnContRt34 
-	\TnContRt35 \TnContRt41 \TnContRt42 \TnContRt43 \TnContRt45 
-	\TnContRt51 \TnContRt52 \TnContRt53 \TnContRt54 ] [\TnLtr5 \TnLtr4 \TnLtr3 \TnLtr2 \TnLtr1 ]'lookup tnsr_sub  ;
-    sub [\TnContRt12 \TnContRt13 \TnContRt14 \TnContRt15 \TnContRt21 \TnContRt23 
-	\TnContRt24 \TnContRt25 \TnContRt31 \TnContRt32 \TnContRt34 
-	\TnContRt35 \TnContRt41 \TnContRt42 \TnContRt43 \TnContRt45 
-	\TnContRt51 \TnContRt52 \TnContRt53 \TnContRt54 ] [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnLtr5 \TnLtr4 \TnLtr3 \TnLtr2 \TnLtr1 ]'lookup tnsr_sub  ;
-    sub [\TnContRt12 \TnContRt13 \TnContRt14 \TnContRt15 \TnContRt21 \TnContRt23 
-	\TnContRt24 \TnContRt25 \TnContRt31 \TnContRt32 \TnContRt34 
-	\TnContRt35 \TnContRt41 \TnContRt42 \TnContRt43 \TnContRt45 
-	\TnContRt51 \TnContRt52 \TnContRt53 \TnContRt54 ] [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnLtr5 \TnLtr4 \TnLtr3 \TnLtr2 \TnLtr1 ]'lookup tnsr_sub  ;
-    sub [\TnContRt12 \TnContRt13 \TnContRt14 \TnContRt15 \TnContRt21 \TnContRt23 
-	\TnContRt24 \TnContRt25 \TnContRt31 \TnContRt32 \TnContRt34 
-	\TnContRt35 \TnContRt41 \TnContRt42 \TnContRt43 \TnContRt45 
-	\TnContRt51 \TnContRt52 \TnContRt53 \TnContRt54 ] [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnLtr5 \TnLtr4 \TnLtr3 \TnLtr2 \TnLtr1 ]'lookup tnsr_sub  ;
-    sub [\TnContRt12 \TnContRt13 \TnContRt14 \TnContRt15 \TnContRt21 \TnContRt23 
-	\TnContRt24 \TnContRt25 \TnContRt31 \TnContRt32 \TnContRt34 
-	\TnContRt35 \TnContRt41 \TnContRt42 \TnContRt43 \TnContRt45 
-	\TnContRt51 \TnContRt52 \TnContRt53 \TnContRt54 ] [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnLtr5 \TnLtr4 \TnLtr3 \TnLtr2 \TnLtr1 ]'lookup tnsr_sub  ;
-    sub [\TnContRt12 \TnContRt13 \TnContRt14 \TnContRt15 \TnContRt21 \TnContRt23 
-	\TnContRt24 \TnContRt25 \TnContRt31 \TnContRt32 \TnContRt34 
-	\TnContRt35 \TnContRt41 \TnContRt42 \TnContRt43 \TnContRt45 
-	\TnContRt51 \TnContRt52 \TnContRt53 \TnContRt54 ] [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnContRt11 \TnContRt22 \TnContRt33 \TnContRt44 \TnContRt55 ]' [\TnLtr5 \TnLtr4 \TnLtr3 \TnLtr2 \TnLtr1 ]'lookup tnsr_sub  ;
-    sub [\LftStemTnLtr5 \LftStemTnLtr4 \LftStemTnLtr3 \LftStemTnLtr2 \LftStemTnLtr1 ]'lookup tnsl_sub  [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft12 \TnContLft13 \TnContLft14 \TnContLft15 \TnContLft21 \TnContLft23 
-	\TnContLft24 \TnContLft25 \TnContLft31 \TnContLft32 \TnContLft34 
-	\TnContLft35 \TnContLft41 \TnContLft42 \TnContLft43 \TnContLft45 
-	\TnContLft51 \TnContLft52 \TnContLft53 \TnContLft54 ] ;
-    sub [\LftStemTnLtr5 \LftStemTnLtr4 \LftStemTnLtr3 \LftStemTnLtr2 \LftStemTnLtr1 ]'lookup tnsl_sub  [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft12 \TnContLft13 \TnContLft14 \TnContLft15 \TnContLft21 \TnContLft23 
-	\TnContLft24 \TnContLft25 \TnContLft31 \TnContLft32 \TnContLft34 
-	\TnContLft35 \TnContLft41 \TnContLft42 \TnContLft43 \TnContLft45 
-	\TnContLft51 \TnContLft52 \TnContLft53 \TnContLft54 ] ;
-    sub [\LftStemTnLtr5 \LftStemTnLtr4 \LftStemTnLtr3 \LftStemTnLtr2 \LftStemTnLtr1 ]'lookup tnsl_sub  [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft12 \TnContLft13 \TnContLft14 \TnContLft15 \TnContLft21 \TnContLft23 
-	\TnContLft24 \TnContLft25 \TnContLft31 \TnContLft32 \TnContLft34 
-	\TnContLft35 \TnContLft41 \TnContLft42 \TnContLft43 \TnContLft45 
-	\TnContLft51 \TnContLft52 \TnContLft53 \TnContLft54 ] ;
-    sub [\LftStemTnLtr5 \LftStemTnLtr4 \LftStemTnLtr3 \LftStemTnLtr2 \LftStemTnLtr1 ]'lookup tnsl_sub  [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft12 \TnContLft13 \TnContLft14 \TnContLft15 \TnContLft21 \TnContLft23 
-	\TnContLft24 \TnContLft25 \TnContLft31 \TnContLft32 \TnContLft34 
-	\TnContLft35 \TnContLft41 \TnContLft42 \TnContLft43 \TnContLft45 
-	\TnContLft51 \TnContLft52 \TnContLft53 \TnContLft54 ] ;
-    sub [\LftStemTnLtr5 \LftStemTnLtr4 \LftStemTnLtr3 \LftStemTnLtr2 \LftStemTnLtr1 ]'lookup tnsl_sub  [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ]' [\TnContLft12 \TnContLft13 \TnContLft14 \TnContLft15 \TnContLft21 \TnContLft23 
-	\TnContLft24 \TnContLft25 \TnContLft31 \TnContLft32 \TnContLft34 
-	\TnContLft35 \TnContLft41 \TnContLft42 \TnContLft43 \TnContLft45 
-	\TnContLft51 \TnContLft52 \TnContLft53 \TnContLft54 ] ;
-    sub [\LftStemTnLtr5 \LftStemTnLtr4 \LftStemTnLtr3 \LftStemTnLtr2 \LftStemTnLtr1 ]'lookup tnsl_dcmp  [\TnContLft11 \TnContLft22 \TnContLft33 \TnContLft44 \TnContLft55 ] ;
-    sub [\LftStemTnLtr5 \LftStemTnLtr4 \LftStemTnLtr3 \LftStemTnLtr2 \LftStemTnLtr1 ]'lookup tnsl_sub  [\TnContLft12 \TnContLft13 \TnContLft14 \TnContLft15 \TnContLft21 \TnContLft23 
-	\TnContLft24 \TnContLft25 \TnContLft31 \TnContLft32 \TnContLft34 
-	\TnContLft35 \TnContLft41 \TnContLft42 \TnContLft43 \TnContLft45 
-	\TnContLft51 \TnContLft52 \TnContLft53 \TnContLft54 ] ;
+    sub [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ] [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]'lookup tnsr_dcmp  ;
+    sub [TnContRt12 TnContRt13 TnContRt14 TnContRt15 TnContRt21 TnContRt23 
+	TnContRt24 TnContRt25 TnContRt31 TnContRt32 TnContRt34 
+	TnContRt35 TnContRt41 TnContRt42 TnContRt43 TnContRt45 
+	TnContRt51 TnContRt52 TnContRt53 TnContRt54 ] [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]'lookup tnsr_sub  ;
+    sub [TnContRt12 TnContRt13 TnContRt14 TnContRt15 TnContRt21 TnContRt23 
+	TnContRt24 TnContRt25 TnContRt31 TnContRt32 TnContRt34 
+	TnContRt35 TnContRt41 TnContRt42 TnContRt43 TnContRt45 
+	TnContRt51 TnContRt52 TnContRt53 TnContRt54 ] [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]'lookup tnsr_sub  ;
+    sub [TnContRt12 TnContRt13 TnContRt14 TnContRt15 TnContRt21 TnContRt23 
+	TnContRt24 TnContRt25 TnContRt31 TnContRt32 TnContRt34 
+	TnContRt35 TnContRt41 TnContRt42 TnContRt43 TnContRt45 
+	TnContRt51 TnContRt52 TnContRt53 TnContRt54 ] [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]'lookup tnsr_sub  ;
+    sub [TnContRt12 TnContRt13 TnContRt14 TnContRt15 TnContRt21 TnContRt23 
+	TnContRt24 TnContRt25 TnContRt31 TnContRt32 TnContRt34 
+	TnContRt35 TnContRt41 TnContRt42 TnContRt43 TnContRt45 
+	TnContRt51 TnContRt52 TnContRt53 TnContRt54 ] [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]'lookup tnsr_sub  ;
+    sub [TnContRt12 TnContRt13 TnContRt14 TnContRt15 TnContRt21 TnContRt23 
+	TnContRt24 TnContRt25 TnContRt31 TnContRt32 TnContRt34 
+	TnContRt35 TnContRt41 TnContRt42 TnContRt43 TnContRt45 
+	TnContRt51 TnContRt52 TnContRt53 TnContRt54 ] [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]'lookup tnsr_sub  ;
+    sub [TnContRt12 TnContRt13 TnContRt14 TnContRt15 TnContRt21 TnContRt23 
+	TnContRt24 TnContRt25 TnContRt31 TnContRt32 TnContRt34 
+	TnContRt35 TnContRt41 TnContRt42 TnContRt43 TnContRt45 
+	TnContRt51 TnContRt52 TnContRt53 TnContRt54 ] [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]'lookup tnsr_sub  ;
+    sub [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]'lookup tnsl_sub  [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft12 TnContLft13 TnContLft14 TnContLft15 TnContLft21 TnContLft23 
+	TnContLft24 TnContLft25 TnContLft31 TnContLft32 TnContLft34 
+	TnContLft35 TnContLft41 TnContLft42 TnContLft43 TnContLft45 
+	TnContLft51 TnContLft52 TnContLft53 TnContLft54 ] ;
+    sub [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]'lookup tnsl_sub  [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft12 TnContLft13 TnContLft14 TnContLft15 TnContLft21 TnContLft23 
+	TnContLft24 TnContLft25 TnContLft31 TnContLft32 TnContLft34 
+	TnContLft35 TnContLft41 TnContLft42 TnContLft43 TnContLft45 
+	TnContLft51 TnContLft52 TnContLft53 TnContLft54 ] ;
+    sub [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]'lookup tnsl_sub  [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft12 TnContLft13 TnContLft14 TnContLft15 TnContLft21 TnContLft23 
+	TnContLft24 TnContLft25 TnContLft31 TnContLft32 TnContLft34 
+	TnContLft35 TnContLft41 TnContLft42 TnContLft43 TnContLft45 
+	TnContLft51 TnContLft52 TnContLft53 TnContLft54 ] ;
+    sub [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]'lookup tnsl_sub  [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft12 TnContLft13 TnContLft14 TnContLft15 TnContLft21 TnContLft23 
+	TnContLft24 TnContLft25 TnContLft31 TnContLft32 TnContLft34 
+	TnContLft35 TnContLft41 TnContLft42 TnContLft43 TnContLft45 
+	TnContLft51 TnContLft52 TnContLft53 TnContLft54 ] ;
+    sub [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]'lookup tnsl_sub  [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft12 TnContLft13 TnContLft14 TnContLft15 TnContLft21 TnContLft23 
+	TnContLft24 TnContLft25 TnContLft31 TnContLft32 TnContLft34 
+	TnContLft35 TnContLft41 TnContLft42 TnContLft43 TnContLft45 
+	TnContLft51 TnContLft52 TnContLft53 TnContLft54 ] ;
+    sub [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]'lookup tnsl_dcmp  [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ] ;
+    sub [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]'lookup tnsl_sub  [TnContLft12 TnContLft13 TnContLft14 TnContLft15 TnContLft21 TnContLft23 
+	TnContLft24 TnContLft25 TnContLft31 TnContLft32 TnContLft34 
+	TnContLft35 TnContLft41 TnContLft42 TnContLft43 TnContLft45 
+	TnContLft51 TnContLft52 TnContLft53 TnContLft54 ] ;
 } tne_ctx;
 
 lookup bhk_sub {
   lookupflag 0;
-    sub \LtnCapBHook from [\LtnCapBHook.TopBar ];
-    sub \LtnSmBHook.sc from [\LtnSmBHook.TopBar.sc ];
+    sub LtnCapBHook from [LtnCapBHook.TopBar ];
+    sub LtnSmBHook.sc from [LtnSmBHook.TopBar.sc ];
 } bhk_sub;
 
 lookup dhk_sub {
   lookupflag 0;
-    sub \LtnCapDHook from [\LtnCapDHook.TopBar ];
-    sub \LtnSmDHook.sc from [\LtnSmDHook.TopBar.sc ];
+    sub LtnCapDHook from [LtnCapDHook.TopBar ];
+    sub LtnSmDHook.sc from [LtnSmDHook.TopBar.sc ];
 } dhk_sub;
 
 lookup ezhcurl_sub {
   lookupflag 0;
-    sub \LtnSmEzhCurl from [\LtnSmEzhCurl.LrgBowl ];
+    sub LtnSmEzhCurl from [LtnSmEzhCurl.LrgBowl ];
 } ezhcurl_sub;
 
 lookup ezh_sub {
   lookupflag 0;
-    sub \LtnCapEzh from [\LtnCapEzh.RevSigmaStyle ];
-    sub \CyCapAbkhasDze from [\CyCapAbkhasDze.RevSigmaStyle ];
-    sub \LtnSmEzh.sc from [\LtnSmEzh.RevSigmaStyle.sc ];
-    sub \CySmAbkhasDze.sc from [\CySmAbkhasDze.RevSigmaStyle.sc ];
+    sub LtnCapEzh from [LtnCapEzh.RevSigmaStyle ];
+    sub CyCapAbkhasDze from [CyCapAbkhasDze.RevSigmaStyle ];
+    sub LtnSmEzh.sc from [LtnSmEzh.RevSigmaStyle.sc ];
+    sub CySmAbkhasDze.sc from [CySmAbkhasDze.RevSigmaStyle.sc ];
 } ezh_sub;
 
 lookup rams_sub {
   lookupflag 0;
-    sub \LtnSmRamsHorn from [\LtnSmRamsHorn.LrgBowl \LtnSmRamsHorn.GammaStyle ];
+    sub LtnSmRamsHorn from [LtnSmRamsHorn.LrgBowl LtnSmRamsHorn.GammaStyle ];
 } rams_sub;
 
 lookup hstrk_sub {
   lookupflag 0;
-    sub \LtnCapHStrk from [\LtnCapHStrk.VertStrk ];
-    sub \LtnSmHStrk.sc from [\LtnSmHStrk.VertStrk.sc ];
+    sub LtnCapHStrk from [LtnCapHStrk.VertStrk ];
+    sub LtnSmHStrk.sc from [LtnSmHStrk.VertStrk.sc ];
 } hstrk_sub;
 
 lookup jstrk_sub {
   lookupflag 0;
-    sub \LtnSmDotlessJStrkHook from [\LtnSmDotlessJStrkHook.DblSerif ];
+    sub LtnSmDotlessJStrkHook from [LtnSmDotlessJStrkHook.DblSerif ];
 } jstrk_sub;
 
 lookup engs_sub {
   lookupflag 0;
-    sub \LtnCapEng from [\LtnCapEng.BaselineHook \LtnCapEng.UCStyle \LtnCapEng.Kom ];
-    sub \LtnSmEng.sc from [\LtnSmEng.BaselineHook.sc \LtnSmEng.UCStyle.sc \LtnSmEng.Kom.sc ];
+    sub LtnCapEng from [LtnCapEng.BaselineHook LtnCapEng.UCStyle LtnCapEng.Kom ];
+    sub LtnSmEng.sc from [LtnSmEng.BaselineHook.sc LtnSmEng.UCStyle.sc LtnSmEng.Kom.sc ];
 } engs_sub;
 
 lookup nhk_sub {
   lookupflag 0;
-    sub \LtnCapNLftHook from [\LtnCapNLftHook.LCStyle ];
-    sub \LtnSmNLftHook.sc from [\LtnSmNLftHook.LCStyle.sc ];
+    sub LtnCapNLftHook from [LtnCapNLftHook.LCStyle ];
+    sub LtnSmNLftHook.sc from [LtnSmNLftHook.LCStyle.sc ];
 } nhk_sub;
 
 lookup opno_sub {
   lookupflag 0;
-    sub \LtnSmOpnO from [\LtnSmOpnO.TopSerif ];
-    sub \LtnSupSmOpnO from [\LtnSupSmOpnO.TopSerif ];
-    sub \LtnSmOpnORetrHook from [\LtnSmOpnORetrHook.TopSerif ];
-    sub \LtnCapOpnO from [\LtnCapOpnO.TopSerif ];
-    sub \LtnSmCapOpnO from [\LtnSmCapOpnO.TopSerif ];
-    sub \LtnSmOpnO.sc from [\LtnSmOpnO.TopSerif.sc ];
+    sub LtnSmOpnO from [LtnSmOpnO.TopSerif ];
+    sub LtnSupSmOpnO from [LtnSupSmOpnO.TopSerif ];
+    sub LtnSmOpnORetrHook from [LtnSmOpnORetrHook.TopSerif ];
+    sub LtnCapOpnO from [LtnCapOpnO.TopSerif ];
+    sub LtnSmCapOpnO from [LtnSmCapOpnO.TopSerif ];
+    sub LtnSmOpnO.sc from [LtnSmOpnO.TopSerif.sc ];
 } opno_sub;
 
 lookup ou_sub {
   lookupflag 0;
-    sub \LtnSmOu from [\LtnSmOu.OpenTop ];
-    sub \LtnCapOu from [\LtnCapOu.OpenTop ];
-    sub \ModCapOu from [\ModCapOu.OpenTop ];
-    sub \LtnSmCapOu from [\LtnSmCapOu.OpenTop ];
-    sub \LtnSmOu.sc from [\LtnSmOu.OpenTop.sc ];
+    sub LtnSmOu from [LtnSmOu.OpenTop ];
+    sub LtnCapOu from [LtnCapOu.OpenTop ];
+    sub ModCapOu from [ModCapOu.OpenTop ];
+    sub LtnSmCapOu from [LtnSmCapOu.OpenTop ];
+    sub LtnSmOu.sc from [LtnSmOu.OpenTop.sc ];
 } ou_sub;
 
 lookup phk_sub {
   lookupflag 0;
-    sub \LtnSmPHook from [\LtnSmPHook.BowlHook ];
+    sub LtnSmPHook from [LtnSmPHook.BowlHook ];
 } phk_sub;
 
 lookup rtl_sub {
   lookupflag 0;
-    sub \LtnCapRHookTail from [\LtnCapSmRHookTail ];
-    sub \LtnSmRHookTail.sc from [\LtnSmCapSmRHookTail ];
+    sub LtnCapRHookTail from [LtnCapSmRHookTail ];
+    sub LtnSmRHookTail.sc from [LtnSmCapSmRHookTail ];
 } rtl_sub;
 
 lookup thk_sub {
   lookupflag 0;
-    sub \LtnCapTHook from [\LtnCapTHook.RtHook ];
-    sub \LtnSmTHook.sc from [\LtnSmTHook.RtHook.sc ];
+    sub LtnCapTHook from [LtnCapTHook.RtHook ];
+    sub LtnSmTHook.sc from [LtnSmTHook.RtHook.sc ];
 } thk_sub;
 
 lookup vhk_sub {
   lookupflag 0;
-    sub \LtnSmVHook from [\LtnSmVHook.StraightLft \LtnSmVHook.StraightLftHighHook ];
-    sub \ModSmVHook from [\ModSmVHook.StraightLft \ModSmVHook.StraightLftHighHook ];
-    sub \LtnCapVHook from [\LtnCapVHook.StraightLft \LtnCapVHook.StraightLftHighHook ];
-    sub \LtnSmVHook.sc from [\LtnSmVHook.StraightLft.sc \LtnSmVHook.StraightLftHighHook.sc ];
+    sub LtnSmVHook from [LtnSmVHook.StraightLft LtnSmVHook.StraightLftHighHook ];
+    sub ModSmVHook from [ModSmVHook.StraightLft ModSmVHook.StraightLftHighHook ];
+    sub LtnCapVHook from [LtnCapVHook.StraightLft LtnCapVHook.StraightLftHighHook ];
+    sub LtnSmVHook.sc from [LtnSmVHook.StraightLft.sc LtnSmVHook.StraightLftHighHook.sc ];
 } vhk_sub;
 
 lookup yhk_sub {
   lookupflag 0;
-    sub \LtnCapYHook.RtHook from [\LtnCapYHook ];
-    sub \LtnSmYHook.RtHook.sc from [\LtnSmYHook.sc ];
+    sub LtnCapYHook.RtHook from [LtnCapYHook ];
+    sub LtnSmYHook.RtHook.sc from [LtnSmYHook.sc ];
 } yhk_sub;
 
 lookup apos_sub {
   lookupflag 0;
-    sub \LtnCapSaltillo from [\LtnCapSaltillo.Lrg ];
-    sub \LtnSmSaltillo from [\LtnSmSaltillo.Lrg ];
-    sub \ModApos from [\ModApos.Lrg ];
-    sub \LtnSmSaltillo.sc from [\LtnSmSaltillo.Lrg.sc ];
+    sub LtnCapSaltillo from [LtnCapSaltillo.Lrg ];
+    sub LtnSmSaltillo from [LtnSmSaltillo.Lrg ];
+    sub ModApos from [ModApos.Lrg ];
+    sub LtnSmSaltillo.sc from [LtnSmSaltillo.Lrg.sc ];
 } apos_sub;
 
 lookup colon_sub {
   lookupflag 0;
-    sub \ModLowColon from [\ModLowColon.Wide ];
+    sub ModLowColon from [ModLowColon.Wide ];
 } colon_sub;
 
 lookup ognk_sub {
   lookupflag 0;
-    sub \Ogonek from [\Ogonek.RetroHook ];
-    sub \LtnSmAOgonek from [\LtnSmAOgonek.RetroHook ];
-    sub \LtnSmAOgonek.SngStory from [\LtnSmAOgonek.SngStory.RetroHook ];
-    sub \LtnCapAOgonek from [\LtnCapAOgonek.RetroHook ];
-    sub \LtnSmEOgonek from [\LtnSmEOgonek.RetroHook ];
-    sub \LtnCapEOgonek from [\LtnCapEOgonek.RetroHook ];
-    sub \LtnSmIOgonek from [\LtnSmIOgonek.RetroHook ];
-    sub \LtnCapIOgonek from [\LtnCapIOgonek.RetroHook ];
-    sub \LtnSmOOgonek from [\LtnSmOOgonek.RetroHook ];
-    sub \LtnSmOOgonekMacron from [\LtnSmOOgonekMacron.RetroHook ];
-    sub \LtnCapOOgonek from [\LtnCapOOgonek.RetroHook ];
-    sub \LtnCapOOgonekMacron from [\LtnCapOOgonekMacron.RetroHook ];
-    sub \LtnSmUOgonek from [\LtnSmUOgonek.RetroHook ];
-    sub \LtnCapUOgonek from [\LtnCapUOgonek.RetroHook ];
-    sub \CombOgonek from [\CombOgonek.RetroHook ];
-    sub \LtnSmAOgonek.sc from [\LtnSmAOgonek.RetroHook.sc ];
-    sub \LtnSmEOgonek.sc from [\LtnSmEOgonek.RetroHook.sc ];
-    sub \LtnSmIOgonek.sc from [\LtnSmIOgonek.RetroHook.sc ];
-    sub \LtnSmOOgonek.sc from [\LtnSmOOgonek.RetroHook.sc ];
-    sub \LtnSmOOgonekMacron.sc from [\LtnSmOOgonekMacron.RetroHook.sc ];
-    sub \LtnSmUOgonek.sc from [\LtnSmUOgonek.RetroHook.sc ];
+    sub Ogonek from [Ogonek.RetroHook ];
+    sub LtnSmAOgonek from [LtnSmAOgonek.RetroHook ];
+    sub LtnSmAOgonek.SngStory from [LtnSmAOgonek.SngStory.RetroHook ];
+    sub LtnCapAOgonek from [LtnCapAOgonek.RetroHook ];
+    sub LtnSmEOgonek from [LtnSmEOgonek.RetroHook ];
+    sub LtnCapEOgonek from [LtnCapEOgonek.RetroHook ];
+    sub LtnSmIOgonek from [LtnSmIOgonek.RetroHook ];
+    sub LtnCapIOgonek from [LtnCapIOgonek.RetroHook ];
+    sub LtnSmOOgonek from [LtnSmOOgonek.RetroHook ];
+    sub LtnSmOOgonekMacron from [LtnSmOOgonekMacron.RetroHook ];
+    sub LtnCapOOgonek from [LtnCapOOgonek.RetroHook ];
+    sub LtnCapOOgonekMacron from [LtnCapOOgonekMacron.RetroHook ];
+    sub LtnSmUOgonek from [LtnSmUOgonek.RetroHook ];
+    sub LtnCapUOgonek from [LtnCapUOgonek.RetroHook ];
+    sub CombOgonek from [CombOgonek.RetroHook ];
+    sub LtnSmAOgonek.sc from [LtnSmAOgonek.RetroHook.sc ];
+    sub LtnSmEOgonek.sc from [LtnSmEOgonek.RetroHook.sc ];
+    sub LtnSmIOgonek.sc from [LtnSmIOgonek.RetroHook.sc ];
+    sub LtnSmOOgonek.sc from [LtnSmOOgonek.RetroHook.sc ];
+    sub LtnSmOOgonekMacron.sc from [LtnSmOOgonekMacron.RetroHook.sc ];
+    sub LtnSmUOgonek.sc from [LtnSmUOgonek.RetroHook.sc ];
 } ognk_sub;
 
 lookup caron_sub {
   lookupflag 0;
-    sub \LtnSmDCaron from [\LtnSmDCaron.Caron ];
-    sub \LtnSmLCaron from [\LtnSmLCaron.Caron ];
-    sub \LtnCapLCaron from [\LtnCapLCaron.Caron ];
-    sub \LtnSmTCaron from [\LtnSmTCaron.Caron ];
-    sub \LtnSmLCaron.sc from [\LtnSmLCaron.Caron.sc ];
+    sub LtnSmDCaron from [LtnSmDCaron.Caron ];
+    sub LtnSmLCaron from [LtnSmLCaron.Caron ];
+    sub LtnCapLCaron from [LtnCapLCaron.Caron ];
+    sub LtnSmTCaron from [LtnSmTCaron.Caron ];
+    sub LtnSmLCaron.sc from [LtnSmLCaron.Caron.sc ];
 } caron_sub;
 
 lookup mce_sub {
   lookupflag 0;
-    sub \CySmE from [\CySmE.MongolStyle ];
-    sub \CyCapE from [\CyCapE.MongolStyle ];
-    sub \CySmE.sc from [\CySmE.MongolStyle.sc ];
+    sub CySmE from [CySmE.MongolStyle ];
+    sub CyCapE from [CyCapE.MongolStyle ];
+    sub CySmE.sc from [CySmE.MongolStyle.sc ];
 } mce_sub;
 
 lookup shha_sub {
   lookupflag 0;
-    sub \CySmShha from [\CySmShha.UCStyle ];
+    sub CySmShha from [CySmShha.UCStyle ];
 } shha_sub;
 
 lookup brvc_sub {
   lookupflag 0;
-    sub \CombBreve from [\CombBreve.CyShortMrkAlt ];
+    sub CombBreve from [CombBreve.CyShortMrkAlt ];
 } brvc_sub;
 
 lookup chnntc_sub {
   lookupflag 0;
-    sub \ModVertLine from [\ModVertLine.ChinantecTn ];
-    sub \ModAcuteAccent from [\ModAcuteAccent.ChinantecTn ];
-    sub \ModGraveAccent from [\ModGraveAccent.ChinantecTn ];
-    sub \ModMacron from [\ModChinantecTnMrkHorizBar ];
+    sub ModVertLine from [ModVertLine.ChinantecTn ];
+    sub ModAcuteAccent from [ModAcuteAccent.ChinantecTn ];
+    sub ModGraveAccent from [ModGraveAccent.ChinantecTn ];
+    sub ModMacron from [ModChinantecTnMrkHorizBar ];
 } chnntc_sub;
 
 lookup tn_sub {
   lookupflag 0;
-    sub \TnLtr5 from [\SupFive ];
-    sub \TnLtr4 from [\SupFour ];
-    sub \TnLtr3 from [\SupThree ];
-    sub \TnLtr2 from [\SupTwo ];
-    sub \TnLtr1 from [\SupOne ];
-    sub \LftStemTnLtr5 from [\SupFive ];
-    sub \LftStemTnLtr4 from [\SupFour ];
-    sub \LftStemTnLtr3 from [\SupThree ];
-    sub \LftStemTnLtr2 from [\SupTwo ];
-    sub \LftStemTnLtr1 from [\SupOne ];
+    sub TnLtr5 from [SupFive ];
+    sub TnLtr4 from [SupFour ];
+    sub TnLtr3 from [SupThree ];
+    sub TnLtr2 from [SupTwo ];
+    sub TnLtr1 from [SupOne ];
+    sub LftStemTnLtr5 from [SupFive ];
+    sub LftStemTnLtr4 from [SupFour ];
+    sub LftStemTnLtr3 from [SupThree ];
+    sub LftStemTnLtr2 from [SupTwo ];
+    sub LftStemTnLtr1 from [SupOne ];
 } tn_sub;
 
 lookup set_sub {
   lookupflag 0;
-    sub \EmptySet from [\EmptySet.SlashZero ];
+    sub EmptySet from [EmptySet.SlashZero ];
 } set_sub;
 
 lookup lit_sub {
   lookupflag 0;
-    sub \LtnSmA by \LtnSmA.SngStory ;
-    sub \LtnSmG by \LtnSmG.SngBowl ;
-    sub \LtnSmAAcute by \LtnSmAAcute.SngStory ;
-    sub \LtnSmAGrave by \LtnSmAGrave.SngStory ;
-    sub \LtnSmACircum by \LtnSmACircum.SngStory ;
-    sub \LtnSmADiaer by \LtnSmADiaer.SngStory ;
-    sub \LtnSmATilde by \LtnSmATilde.SngStory ;
-    sub \LtnSmARingAbv by \LtnSmARingAbv.SngStory ;
-    sub \LtnSubSmA by \LtnSubSmA.SngStory ;
-    sub \LtnSupSmA by \LtnSupSmA.SngStory ;
-    sub \CombLtnSmA by \CombLtnSmA.SngStory ;
-    sub \LtnSmADblGrave by \LtnSmADblGrave.SngStory ;
-    sub \LtnSmACircumDotBlw by \LtnSmACircumDotBlw.SngStory ;
-    sub \LtnSmACircumAcute by \LtnSmACircumAcute.SngStory ;
-    sub \LtnSmACircumAcute.VN by \LtnSmACircumAcute.SngStory.VN ;
-    sub \LtnSmACircumGrave by \LtnSmACircumGrave.SngStory ;
-    sub \LtnSmACircumGrave.VN by \LtnSmACircumGrave.SngStory.VN ;
-    sub \LtnSmACircumTilde by \LtnSmACircumTilde.SngStory ;
-    sub \LtnSmACircumTilde.VN by \LtnSmACircumTilde.SngStory.VN ;
-    sub \LtnSmACircumHookAbv by \LtnSmACircumHookAbv.SngStory ;
-    sub \LtnSmACircumHookAbv.VN by \LtnSmACircumHookAbv.SngStory.VN ;
-    sub \LtnSmAInvBreve by \LtnSmAInvBreve.SngStory ;
-    sub \LtnSmABreve by \LtnSmABreve.SngStory ;
-    sub \LtnSmABreveDotBlw by \LtnSmABreveDotBlw.SngStory ;
-    sub \LtnSmABreveAcute by \LtnSmABreveAcute.SngStory ;
-    sub \LtnSmABreveAcute.VN by \LtnSmABreveAcute.SngStory.VN ;
-    sub \LtnSmABreveGrave by \LtnSmABreveGrave.SngStory ;
-    sub \LtnSmABreveGrave.VN by \LtnSmABreveGrave.SngStory.VN ;
-    sub \LtnSmABreveTilde by \LtnSmABreveTilde.SngStory ;
-    sub \LtnSmABreveTilde.VN by \LtnSmABreveTilde.SngStory.VN ;
-    sub \LtnSmABreveHookAbv by \LtnSmABreveHookAbv.SngStory ;
-    sub \LtnSmABreveHookAbv.VN by \LtnSmABreveHookAbv.SngStory.VN ;
-    sub \LtnSmACaron by \LtnSmACaron.SngStory ;
-    sub \LtnSmAMacron by \LtnSmAMacron.SngStory ;
-    sub \LtnSmADiaerMacron by \LtnSmADiaerMacron.SngStory ;
-    sub \LtnSmADotAbv by \LtnSmADotAbv.SngStory ;
-    sub \LtnSmADotAbvMacron by \LtnSmADotAbvMacron.SngStory ;
-    sub \LtnSmARingAbvAcute by \LtnSmARingAbvAcute.SngStory ;
-    sub \LtnSmARtHalfRing by \LtnSmARtHalfRing.SngStory ;
-    sub \LtnSmAHookAbv by \LtnSmAHookAbv.SngStory ;
-    sub \LtnSmADotBlw by \LtnSmADotBlw.SngStory ;
-    sub \LtnSmARingBlw by \LtnSmARingBlw.SngStory ;
-    sub \LtnSmAOgonek by \LtnSmAOgonek.SngStory ;
-    sub \LtnSmAOgonek.RetroHook by \LtnSmAOgonek.SngStory.RetroHook ;
-    sub \LtnSmAStrk by \LtnSmAStrk.SngStory ;
-    sub \LtnSupSmG by \LtnSupSmG.SngBowl ;
-    sub \LtnSmGAcute by \LtnSmGAcute.SngBowl ;
-    sub \LtnSmGCircum by \LtnSmGCircum.SngBowl ;
-    sub \LtnSmGBreve by \LtnSmGBreve.SngBowl ;
-    sub \LtnSmGCaron by \LtnSmGCaron.SngBowl ;
-    sub \LtnSmGMacron by \LtnSmGMacron.SngBowl ;
-    sub \LtnSmGDotAbv by \LtnSmGDotAbv.SngBowl ;
-    sub \LtnSmGCedilla by \LtnSmGCedilla.SngBowl ;
-    sub \LtnSmGBarredBowl by \LtnSmGBarredSngBowl ;
-    sub \LtnSmGStrk by \LtnSmGBarredSngBowl ;
-    sub \LtnSmGDiagStrk by \LtnSmGDiagStrk.SngBowl ;
+    sub LtnSmA by LtnSmA.SngStory ;
+    sub LtnSmG by LtnSmG.SngBowl ;
+    sub LtnSmAAcute by LtnSmAAcute.SngStory ;
+    sub LtnSmAGrave by LtnSmAGrave.SngStory ;
+    sub LtnSmACircum by LtnSmACircum.SngStory ;
+    sub LtnSmADiaer by LtnSmADiaer.SngStory ;
+    sub LtnSmATilde by LtnSmATilde.SngStory ;
+    sub LtnSmARingAbv by LtnSmARingAbv.SngStory ;
+    sub LtnSubSmA by LtnSubSmA.SngStory ;
+    sub LtnSupSmA by LtnSupSmA.SngStory ;
+    sub CombLtnSmA by CombLtnSmA.SngStory ;
+    sub LtnSmADblGrave by LtnSmADblGrave.SngStory ;
+    sub LtnSmACircumDotBlw by LtnSmACircumDotBlw.SngStory ;
+    sub LtnSmACircumAcute by LtnSmACircumAcute.SngStory ;
+    sub LtnSmACircumAcute.VN by LtnSmACircumAcute.SngStory.VN ;
+    sub LtnSmACircumGrave by LtnSmACircumGrave.SngStory ;
+    sub LtnSmACircumGrave.VN by LtnSmACircumGrave.SngStory.VN ;
+    sub LtnSmACircumTilde by LtnSmACircumTilde.SngStory ;
+    sub LtnSmACircumTilde.VN by LtnSmACircumTilde.SngStory.VN ;
+    sub LtnSmACircumHookAbv by LtnSmACircumHookAbv.SngStory ;
+    sub LtnSmACircumHookAbv.VN by LtnSmACircumHookAbv.SngStory.VN ;
+    sub LtnSmAInvBreve by LtnSmAInvBreve.SngStory ;
+    sub LtnSmABreve by LtnSmABreve.SngStory ;
+    sub LtnSmABreveDotBlw by LtnSmABreveDotBlw.SngStory ;
+    sub LtnSmABreveAcute by LtnSmABreveAcute.SngStory ;
+    sub LtnSmABreveAcute.VN by LtnSmABreveAcute.SngStory.VN ;
+    sub LtnSmABreveGrave by LtnSmABreveGrave.SngStory ;
+    sub LtnSmABreveGrave.VN by LtnSmABreveGrave.SngStory.VN ;
+    sub LtnSmABreveTilde by LtnSmABreveTilde.SngStory ;
+    sub LtnSmABreveTilde.VN by LtnSmABreveTilde.SngStory.VN ;
+    sub LtnSmABreveHookAbv by LtnSmABreveHookAbv.SngStory ;
+    sub LtnSmABreveHookAbv.VN by LtnSmABreveHookAbv.SngStory.VN ;
+    sub LtnSmACaron by LtnSmACaron.SngStory ;
+    sub LtnSmAMacron by LtnSmAMacron.SngStory ;
+    sub LtnSmADiaerMacron by LtnSmADiaerMacron.SngStory ;
+    sub LtnSmADotAbv by LtnSmADotAbv.SngStory ;
+    sub LtnSmADotAbvMacron by LtnSmADotAbvMacron.SngStory ;
+    sub LtnSmARingAbvAcute by LtnSmARingAbvAcute.SngStory ;
+    sub LtnSmARtHalfRing by LtnSmARtHalfRing.SngStory ;
+    sub LtnSmAHookAbv by LtnSmAHookAbv.SngStory ;
+    sub LtnSmADotBlw by LtnSmADotBlw.SngStory ;
+    sub LtnSmARingBlw by LtnSmARingBlw.SngStory ;
+    sub LtnSmAOgonek by LtnSmAOgonek.SngStory ;
+    sub LtnSmAOgonek.RetroHook by LtnSmAOgonek.SngStory.RetroHook ;
+    sub LtnSmAStrk by LtnSmAStrk.SngStory ;
+    sub LtnSupSmG by LtnSupSmG.SngBowl ;
+    sub LtnSmGAcute by LtnSmGAcute.SngBowl ;
+    sub LtnSmGCircum by LtnSmGCircum.SngBowl ;
+    sub LtnSmGBreve by LtnSmGBreve.SngBowl ;
+    sub LtnSmGCaron by LtnSmGCaron.SngBowl ;
+    sub LtnSmGMacron by LtnSmGMacron.SngBowl ;
+    sub LtnSmGDotAbv by LtnSmGDotAbv.SngBowl ;
+    sub LtnSmGCedilla by LtnSmGCedilla.SngBowl ;
+    sub LtnSmGBarredBowl by LtnSmGBarredSngBowl ;
+    sub LtnSmGStrk by LtnSmGBarredSngBowl ;
+    sub LtnSmGDiagStrk by LtnSmGDiagStrk.SngBowl ;
 } lit_sub;
 
 lookup bbwl_sub {
   lookupflag 0;
-    sub \LtnSmBBarredStem by \LtnSmBBarredBowl ;
-    sub \LtnSmDBarredStem by \LtnSmDBarredBowl ;
-    sub \LtnSmGStrk by \LtnSmGBarredBowl ;
+    sub LtnSmBBarredStem by LtnSmBBarredBowl ;
+    sub LtnSmDBarredStem by LtnSmDBarredBowl ;
+    sub LtnSmGStrk by LtnSmGBarredBowl ;
 } bbwl_sub;
 
 lookup sital_sub {
   lookupflag 0;
-    sub \LtnSmA by \LtnSmA.2StorySItal ;
-    sub \LtnSmF by \LtnSmF.SItal ;
-    sub \LtnSmI by \LtnSmI.SItal ;
-    sub \LtnSmL by \LtnSmL.SItal ;
-    sub \LtnSmV by \LtnSmV.SItal ;
-    sub \LtnSmZ by \LtnSmZ.SItal ;
-    sub \LtnSmAAcute by \LtnSmAAcute.2StorySItal ;
-    sub \LtnSmAGrave by \LtnSmAGrave.2StorySItal ;
-    sub \LtnSmACircum by \LtnSmACircum.2StorySItal ;
-    sub \LtnSmADiaer by \LtnSmADiaer.2StorySItal ;
-    sub \LtnSmATilde by \LtnSmATilde.2StorySItal ;
-    sub \LtnSmARingAbv by \LtnSmARingAbv.2StorySItal ;
-    sub \LtnSmIAcute by \LtnSmIAcute.SItal ;
-    sub \LtnSmIGrave by \LtnSmIGrave.SItal ;
-    sub \LtnSmICircum by \LtnSmICircum.SItal ;
-    sub \LtnSmIDiaer by \LtnSmIDiaer.SItal ;
-    sub \LtnSmAe by \LtnSmAe.2StorySItal ;
-    sub \LtnSmDotlessI by \LtnSmDotlessI.SItal ;
-    sub \LtnSmADblGrave by \LtnSmADblGrave.2StorySItal ;
-    sub \LtnSmACircumDotBlw by \LtnSmACircumDotBlw.2StorySItal ;
-    sub \LtnSmACircumAcute by \LtnSmACircumAcute.2StorySItal ;
-    sub \LtnSmACircumAcute.VN by \LtnSmACircumAcute.2StorySItal.VN ;
-    sub \LtnSmACircumGrave by \LtnSmACircumGrave.2StorySItal ;
-    sub \LtnSmACircumGrave.VN by \LtnSmACircumGrave.2StorySItal.VN ;
-    sub \LtnSmACircumTilde by \LtnSmACircumTilde.2StorySItal ;
-    sub \LtnSmACircumTilde.VN by \LtnSmACircumTilde.2StorySItal.VN ;
-    sub \LtnSmACircumHookAbv by \LtnSmACircumHookAbv.2StorySItal ;
-    sub \LtnSmACircumHookAbv.VN by \LtnSmACircumHookAbv.2StorySItal.VN ;
-    sub \LtnSmAInvBreve by \LtnSmAInvBreve.2StorySItal ;
-    sub \LtnSmABreve by \LtnSmABreve.2StorySItal ;
-    sub \LtnSmABreveDotBlw by \LtnSmABreveDotBlw.2StorySItal ;
-    sub \LtnSmABreveAcute by \LtnSmABreveAcute.2StorySItal ;
-    sub \LtnSmABreveAcute.VN by \LtnSmABreveAcute.2StorySItal.VN ;
-    sub \LtnSmABreveGrave by \LtnSmABreveGrave.2StorySItal ;
-    sub \LtnSmABreveGrave.VN by \LtnSmABreveGrave.2StorySItal.VN ;
-    sub \LtnSmABreveTilde by \LtnSmABreveTilde.2StorySItal ;
-    sub \LtnSmABreveTilde.VN by \LtnSmABreveTilde.2StorySItal.VN ;
-    sub \LtnSmABreveHookAbv by \LtnSmABreveHookAbv.2StorySItal ;
-    sub \LtnSmABreveHookAbv.VN by \LtnSmABreveHookAbv.2StorySItal.VN ;
-    sub \LtnSmACaron by \LtnSmACaron.2StorySItal ;
-    sub \LtnSmAMacron by \LtnSmAMacron.2StorySItal ;
-    sub \LtnSmADiaerMacron by \LtnSmADiaerMacron.2StorySItal ;
-    sub \LtnSmADotAbv by \LtnSmADotAbv.2StorySItal ;
-    sub \LtnSmADotAbvMacron by \LtnSmADotAbvMacron.2StorySItal ;
-    sub \LtnSmARingAbvAcute by \LtnSmARingAbvAcute.2StorySItal ;
-    sub \LtnSmARtHalfRing by \LtnSmARtHalfRing.2StorySItal ;
-    sub \LtnSmAHookAbv by \LtnSmAHookAbv.2StorySItal ;
-    sub \LtnSmADotBlw by \LtnSmADotBlw.2StorySItal ;
-    sub \LtnSmARingBlw by \LtnSmARingBlw.2StorySItal ;
-    sub \LtnSmAOgonek by \LtnSmAOgonek.2StorySItal ;
-    sub \LtnSmAOgonek.RetroHook by \LtnSmAOgonek.2StorySItal.RetroHook ;
-    sub \LtnSmAStrk by \LtnSmAStrk.2StorySItal ;
-    sub \LtnSmTurnedA by \LtnSmTurnedA.2StorySItal ;
-    sub \LtnSmAeAcute by \LtnSmAeAcute.2StorySItal ;
-    sub \LtnSmAeMacron by \LtnSmAeMacron.2StorySItal ;
-    sub \LtnSmFDotAbv by \LtnSmFDotAbv.SItal ;
-    sub \LtnLigSmFSmI by \LtnLigSmFSmI.SItal ;
-    sub \LtnLigSmFSmL by \LtnLigSmFSmL.SItal ;
-    sub \LtnLigSmFSmFSmI by \LtnLigSmFSmFSmI.SItal ;
-    sub \LtnLigSmFSmFSmL by \LtnLigSmFSmFSmL.SItal ;
-    sub \LtnLigSmFSmF by \LtnLigSmFSmF.SItal ;
-    sub \CySmGheStrk by \CySmGheStrk.SItal ;
-    sub \CySmGheStrkDesc by \CySmGheStrkDesc.SItal ;
-    sub \CySmGheStrkHook by \CySmGheStrkHook.SItal ;
-    sub \LtnSmIDblGrave by \LtnSmIDblGrave.SItal ;
-    sub \LtnSmIInvBreve by \LtnSmIInvBreve.SItal ;
-    sub \LtnSmIBreve by \LtnSmIBreve.SItal ;
-    sub \LtnSmICaron by \LtnSmICaron.SItal ;
-    sub \LtnSmITilde by \LtnSmITilde.SItal ;
-    sub \LtnSmIMacron by \LtnSmIMacron.SItal ;
-    sub \LtnSmIDiaerAcute by \LtnSmIDiaerAcute.SItal ;
-    sub \LtnSmIDotAbv by \LtnSmIDotAbv.SItal ;
-    sub \LtnSmIHookAbv by \LtnSmIHookAbv.SItal ;
-    sub \LtnSmITildeBlw by \LtnSmITildeBlw.SItal ;
-    sub \LtnSmIDotBlw by \LtnSmIDotBlw.SItal ;
-    sub \LtnSmI.Dotless by \LtnSmI.Dotless.SItal ;
-    sub \LtnSubSmL by \LtnSubSmL.SItal ;
-    sub \LtnSmLAcute by \LtnSmLAcute.SItal ;
-    sub \LtnSmLCircumBlw by \LtnSmLCircumBlw.SItal ;
-    sub \LtnSmLLineBlw by \LtnSmLLineBlw.SItal ;
-    sub \LtnSmLDotBlw by \LtnSmLDotBlw.SItal ;
-    sub \LtnSmLDotBlwMacron by \LtnSmLDotBlwMacron.SItal ;
-    sub \LtnSmLHighBar by \LtnSmLHighBar.SItal ;
-    sub \LtnSmVTilde by \LtnSmVTilde.SItal ;
-    sub \LtnSmVDotBlw by \LtnSmVDotBlw.SItal ;
-    sub \LtnSmVDiagStrk by \LtnSmVDiagStrk.SItal ;
-    sub \LtnSmZAcute by \LtnSmZAcute.SItal ;
-    sub \LtnSmZCircum by \LtnSmZCircum.SItal ;
-    sub \LtnSmZCaron by \LtnSmZCaron.SItal ;
-    sub \LtnSmZDotAbv by \LtnSmZDotAbv.SItal ;
-    sub \LtnSmZLineBlw by \LtnSmZLineBlw.SItal ;
-    sub \LtnSmZDotBlw by \LtnSmZDotBlw.SItal ;
+    sub LtnSmA by LtnSmA.2StorySItal ;
+    sub LtnSmF by LtnSmF.SItal ;
+    sub LtnSmI by LtnSmI.SItal ;
+    sub LtnSmL by LtnSmL.SItal ;
+    sub LtnSmV by LtnSmV.SItal ;
+    sub LtnSmZ by LtnSmZ.SItal ;
+    sub LtnSmAAcute by LtnSmAAcute.2StorySItal ;
+    sub LtnSmAGrave by LtnSmAGrave.2StorySItal ;
+    sub LtnSmACircum by LtnSmACircum.2StorySItal ;
+    sub LtnSmADiaer by LtnSmADiaer.2StorySItal ;
+    sub LtnSmATilde by LtnSmATilde.2StorySItal ;
+    sub LtnSmARingAbv by LtnSmARingAbv.2StorySItal ;
+    sub LtnSmIAcute by LtnSmIAcute.SItal ;
+    sub LtnSmIGrave by LtnSmIGrave.SItal ;
+    sub LtnSmICircum by LtnSmICircum.SItal ;
+    sub LtnSmIDiaer by LtnSmIDiaer.SItal ;
+    sub LtnSmAe by LtnSmAe.2StorySItal ;
+    sub LtnSmDotlessI by LtnSmDotlessI.SItal ;
+    sub LtnSmADblGrave by LtnSmADblGrave.2StorySItal ;
+    sub LtnSmACircumDotBlw by LtnSmACircumDotBlw.2StorySItal ;
+    sub LtnSmACircumAcute by LtnSmACircumAcute.2StorySItal ;
+    sub LtnSmACircumAcute.VN by LtnSmACircumAcute.2StorySItal.VN ;
+    sub LtnSmACircumGrave by LtnSmACircumGrave.2StorySItal ;
+    sub LtnSmACircumGrave.VN by LtnSmACircumGrave.2StorySItal.VN ;
+    sub LtnSmACircumTilde by LtnSmACircumTilde.2StorySItal ;
+    sub LtnSmACircumTilde.VN by LtnSmACircumTilde.2StorySItal.VN ;
+    sub LtnSmACircumHookAbv by LtnSmACircumHookAbv.2StorySItal ;
+    sub LtnSmACircumHookAbv.VN by LtnSmACircumHookAbv.2StorySItal.VN ;
+    sub LtnSmAInvBreve by LtnSmAInvBreve.2StorySItal ;
+    sub LtnSmABreve by LtnSmABreve.2StorySItal ;
+    sub LtnSmABreveDotBlw by LtnSmABreveDotBlw.2StorySItal ;
+    sub LtnSmABreveAcute by LtnSmABreveAcute.2StorySItal ;
+    sub LtnSmABreveAcute.VN by LtnSmABreveAcute.2StorySItal.VN ;
+    sub LtnSmABreveGrave by LtnSmABreveGrave.2StorySItal ;
+    sub LtnSmABreveGrave.VN by LtnSmABreveGrave.2StorySItal.VN ;
+    sub LtnSmABreveTilde by LtnSmABreveTilde.2StorySItal ;
+    sub LtnSmABreveTilde.VN by LtnSmABreveTilde.2StorySItal.VN ;
+    sub LtnSmABreveHookAbv by LtnSmABreveHookAbv.2StorySItal ;
+    sub LtnSmABreveHookAbv.VN by LtnSmABreveHookAbv.2StorySItal.VN ;
+    sub LtnSmACaron by LtnSmACaron.2StorySItal ;
+    sub LtnSmAMacron by LtnSmAMacron.2StorySItal ;
+    sub LtnSmADiaerMacron by LtnSmADiaerMacron.2StorySItal ;
+    sub LtnSmADotAbv by LtnSmADotAbv.2StorySItal ;
+    sub LtnSmADotAbvMacron by LtnSmADotAbvMacron.2StorySItal ;
+    sub LtnSmARingAbvAcute by LtnSmARingAbvAcute.2StorySItal ;
+    sub LtnSmARtHalfRing by LtnSmARtHalfRing.2StorySItal ;
+    sub LtnSmAHookAbv by LtnSmAHookAbv.2StorySItal ;
+    sub LtnSmADotBlw by LtnSmADotBlw.2StorySItal ;
+    sub LtnSmARingBlw by LtnSmARingBlw.2StorySItal ;
+    sub LtnSmAOgonek by LtnSmAOgonek.2StorySItal ;
+    sub LtnSmAOgonek.RetroHook by LtnSmAOgonek.2StorySItal.RetroHook ;
+    sub LtnSmAStrk by LtnSmAStrk.2StorySItal ;
+    sub LtnSmTurnedA by LtnSmTurnedA.2StorySItal ;
+    sub LtnSmAeAcute by LtnSmAeAcute.2StorySItal ;
+    sub LtnSmAeMacron by LtnSmAeMacron.2StorySItal ;
+    sub LtnSmFDotAbv by LtnSmFDotAbv.SItal ;
+    sub LtnLigSmFSmI by LtnLigSmFSmI.SItal ;
+    sub LtnLigSmFSmL by LtnLigSmFSmL.SItal ;
+    sub LtnLigSmFSmFSmI by LtnLigSmFSmFSmI.SItal ;
+    sub LtnLigSmFSmFSmL by LtnLigSmFSmFSmL.SItal ;
+    sub LtnLigSmFSmF by LtnLigSmFSmF.SItal ;
+    sub CySmGheStrk by CySmGheStrk.SItal ;
+    sub CySmGheStrkDesc by CySmGheStrkDesc.SItal ;
+    sub CySmGheStrkHook by CySmGheStrkHook.SItal ;
+    sub LtnSmIDblGrave by LtnSmIDblGrave.SItal ;
+    sub LtnSmIInvBreve by LtnSmIInvBreve.SItal ;
+    sub LtnSmIBreve by LtnSmIBreve.SItal ;
+    sub LtnSmICaron by LtnSmICaron.SItal ;
+    sub LtnSmITilde by LtnSmITilde.SItal ;
+    sub LtnSmIMacron by LtnSmIMacron.SItal ;
+    sub LtnSmIDiaerAcute by LtnSmIDiaerAcute.SItal ;
+    sub LtnSmIDotAbv by LtnSmIDotAbv.SItal ;
+    sub LtnSmIHookAbv by LtnSmIHookAbv.SItal ;
+    sub LtnSmITildeBlw by LtnSmITildeBlw.SItal ;
+    sub LtnSmIDotBlw by LtnSmIDotBlw.SItal ;
+    sub LtnSmI.Dotless by LtnSmI.Dotless.SItal ;
+    sub LtnSubSmL by LtnSubSmL.SItal ;
+    sub LtnSmLAcute by LtnSmLAcute.SItal ;
+    sub LtnSmLCircumBlw by LtnSmLCircumBlw.SItal ;
+    sub LtnSmLLineBlw by LtnSmLLineBlw.SItal ;
+    sub LtnSmLDotBlw by LtnSmLDotBlw.SItal ;
+    sub LtnSmLDotBlwMacron by LtnSmLDotBlwMacron.SItal ;
+    sub LtnSmLHighBar by LtnSmLHighBar.SItal ;
+    sub LtnSmVTilde by LtnSmVTilde.SItal ;
+    sub LtnSmVDotBlw by LtnSmVDotBlw.SItal ;
+    sub LtnSmVDiagStrk by LtnSmVDiagStrk.SItal ;
+    sub LtnSmZAcute by LtnSmZAcute.SItal ;
+    sub LtnSmZCircum by LtnSmZCircum.SItal ;
+    sub LtnSmZCaron by LtnSmZCaron.SItal ;
+    sub LtnSmZDotAbv by LtnSmZDotAbv.SItal ;
+    sub LtnSmZLineBlw by LtnSmZLineBlw.SItal ;
+    sub LtnSmZDotBlw by LtnSmZDotBlw.SItal ;
 } sital_sub;
 
 lookup inv_sub {
