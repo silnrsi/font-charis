@@ -54,6 +54,8 @@ class Font(object):
 
     def make_classes(self, class_spec_lst):
         # create multisuffix classes
+		#  each class contains glyphs that have a suffix specified in a list for that class
+		#  some contained glyphs will have multiple suffixes
         for class_spec in class_spec_lst:
             class_nm = class_spec[0]
             c_nm, cno_nm = "c_" + class_nm, "cno_" + class_nm
@@ -75,7 +77,7 @@ class Font(object):
                 upper_unichr = unichr(int(uni_str, 16))
             except(ValueError):
                 continue #skip USVs larger than narrow Python build can handle
-            if upper_unichr.isupper() and upper_unichr.lower():
+            if upper_unichr.isupper() and upper_unichr.lower(): # TODO: Is this complete?
                 lower_unichr = upper_unichr.lower()
                 lower_str = hex(ord(lower_unichr))[2:].zfill(4)
                 if lower_str in self.unicodes:
@@ -100,6 +102,7 @@ class Font(object):
 
     def find_variants(self):
         # create single and multiple alternate lkups for aalt (sa_sub, ma_sub)
+		#  creates a mapping from a glyph to all glyphs with an additional suffix
         for g_nm in self.glyphs:
             suffix_lst = re.findall('(\..*?)(?=\.|$)', g_nm)
             for suffix in suffix_lst:
