@@ -22,11 +22,19 @@ non_variant_suffixes = ('Dotless', 'VN', 'Sup', 'sc')
 
 argspec = [
     ('infile', {'help': 'Input UFO'}, {}),
-    ('-o', '--output', {'help': 'Output fea file'}, {}),
+    ('-of', '--output_fea', {'help': 'Output fea file'}, {}),
+    ('-ox', '--output_xml', {'help': 'Output xml file'}, {}),
     ('--debug', {'help': 'Drop into pdb', 'action': 'store_true'}, {}),
     ('-l', '--log', {'help': 'Log file (default: *_makeromanfea.log)'},
         {'type': 'outfile', 'def': '_makeromanfea.log'}),
 ]
+
+classes_xml_hd = """<?xml version="1.0"?>
+<classes>
+"""
+
+classes_xml_ft = """</classes>
+"""
 
 class Font(object):
     def __init__(self):
@@ -151,6 +159,16 @@ class Font(object):
                 o_f.write("    %s\n" % s)
             o_f.write("} sa_sub;\n")
 
+    def write_classes(self, file_nm):
+        with open(file_nm, "w") as o_f:
+            o_f.write(classes_xml_hd)
+            for c, g in self.g_classes.items():
+                o_f.write('\t<class name="{}">\n'.format(c))
+                glyph_str_lst = [g[i:i + 4] for i in range(0, len(g), 4)]
+                for l in glyph_str_lst:
+                    o_f.write("\t\t{}\n".format(" ".join(l)))
+                o_f.write('\t</class>\n')
+            o_f.write(classes_xml_ft)
 
 class Glyph(object):
     def __init__(self, name):
@@ -166,11 +184,13 @@ def doit(args) :
         font.read_font(args.infile)
         font.make_classes(class_spec_lst)
         font.find_variants()
-        font.find_NFC_to_NFD()
-        if args.output:
-            font.write_fea(args.output)
-        else:
-            # TODO: handle output if --output not specified
+        #font.find_NFC_to_NFD()
+        if args.output_fea:
+            font.write_fea(args.output_fea)
+        if args.output_xml:
+            font.write_classes(args.output_xml)
+        if not args.output_fea and not args.output_xml:
+            # TODO: handle output if output not specified
             pass
     else:
        args.logger.log('Only UFOs accepted as input', 'S')
