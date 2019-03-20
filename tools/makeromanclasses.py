@@ -25,8 +25,8 @@ argspec = [
     ('-of', '--output_fea', {'help': 'Output fea file'}, {}),
     ('-ox', '--output_xml', {'help': 'Output xml file'}, {}),
     ('--debug', {'help': 'Drop into pdb', 'action': 'store_true'}, {}),
-    ('-l', '--log', {'help': 'Log file (default: *_makeromanfea.log)'},
-        {'type': 'outfile', 'def': '_makeromanfea.log'}),
+    ('-l', '--log', {'help': 'Log file (default: *_makeromanclasses.log)'},
+        {'type': 'outfile', 'def': '_makeromanclasses.log'}),
 ]
 
 classes_xml_hd = """<?xml version="1.0"?>
@@ -80,6 +80,7 @@ class Font(object):
                 self.g_classes.setdefault(cno_nm, []).extend(cno_lst)
 
         # create classes for c2sc (sc2_sub)
+        # TODO: remove first block of code below using isupper() and lower()
         for uni_str in self.unicodes:
             try:
                 upper_unichr = unichr(int(uni_str, 16))
@@ -96,8 +97,18 @@ class Font(object):
                         upper_glyph_lst = self.unicodes[uni_str]
                         assert (len(upper_glyph_lst) == 1)
                         upper_name = upper_glyph_lst[0].name
-                        self.g_classes.setdefault('cno_c2sc', []).append(upper_name)
-                        self.g_classes.setdefault('c_c2sc', []).append(lower_sc_name)
+                        self.g_classes.setdefault('cno_c2sc_1', []).append(upper_name)
+                        self.g_classes.setdefault('c_c2sc_str_1', []).append(lower_sc_name)
+
+        # this might miss some glyphs not named using the below convention
+        # like LtnYr & LtnSmCapR.sc and CyPalochka & CyPalochka.sc
+        #  which should be added to the fea manually
+        for g_nm in self.glyphs:
+            if (re.search('LtnCap|CyCap', g_nm)):
+                g_smcp_nm = re.sub('Cap', 'Sm', g_nm) + ".sc"
+                if (g_smcp_nm in self.glyphs):
+                    self.g_classes.setdefault('cno_c2sc', []).append((g_nm))
+                    self.g_classes.setdefault('c_c2sc', []).append((g_smcp_nm))
 
         # create class of glyphs that need .sup diacritics
         #   match substrings in glyph names
