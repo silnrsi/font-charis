@@ -18,6 +18,10 @@ class_spec_lst = [('lit', 'SngStory', 'SngBowl'),
                   ('rtrhk', 'RetroHook'),
                   ]
 
+glyph_class_additions = {'cno_c2sc' : ['LtnYr', 'CyPalochka'],
+                         'c_c2sc' : ['LtnSmCapR.sc', 'CyPalochka.sc'],
+                         }
+
 non_variant_suffixes = ('Dotless', 'VN', 'Sup', 'sc')
 
 argspec = [
@@ -35,6 +39,8 @@ classes_xml_hd = """<?xml version="1.0"?>
 
 classes_xml_ft = """</classes>
 """
+
+logger = None
 
 class Font(object):
     def __init__(self):
@@ -80,29 +86,32 @@ class Font(object):
                 self.g_classes.setdefault(cno_nm, []).extend(cno_lst)
 
         # create classes for c2sc (sc2_sub)
-        # TODO: remove first block of code below using isupper() and lower()
-        for uni_str in self.unicodes:
-            try:
-                upper_unichr = unichr(int(uni_str, 16))
-            except(ValueError):
-                continue #skip USVs larger than narrow Python build can handle
-            if upper_unichr.isupper() and upper_unichr.lower(): # TODO: Is this complete?
-                lower_unichr = upper_unichr.lower()
-                lower_str = hex(ord(lower_unichr))[2:].zfill(4)
-                if lower_str in self.unicodes:
-                    lower_glyph_lst = self.unicodes[lower_str]
-                    assert(len(lower_glyph_lst) == 1) # no double encoded glyphs allowed
-                    lower_sc_name = lower_glyph_lst[0].name + '.sc'
-                    if lower_sc_name in self.glyphs:
-                        upper_glyph_lst = self.unicodes[uni_str]
-                        assert (len(upper_glyph_lst) == 1)
-                        upper_name = upper_glyph_lst[0].name
-                        self.g_classes.setdefault('cno_c2sc_1', []).append(upper_name)
-                        self.g_classes.setdefault('c_c2sc_str_1', []).append(lower_sc_name)
+        # remove block of code below that uses isupper() and lower()
+        #  since it does not find all the relevant glyphs
+        if False:
+            for uni_str in self.unicodes:
+                try:
+                    upper_unichr = unichr(int(uni_str, 16))
+                except(ValueError):
+                    continue #skip USVs larger than narrow Python build can handle
+                if upper_unichr.isupper() and upper_unichr.lower(): # TODO: Is this complete?
+                    lower_unichr = upper_unichr.lower()
+                    lower_str = hex(ord(lower_unichr))[2:].zfill(4)
+                    if lower_str in self.unicodes:
+                        lower_glyph_lst = self.unicodes[lower_str]
+                        assert(len(lower_glyph_lst) == 1) # no double encoded glyphs allowed
+                        lower_sc_name = lower_glyph_lst[0].name + '.sc'
+                        if lower_sc_name in self.glyphs:
+                            upper_glyph_lst = self.unicodes[uni_str]
+                            assert (len(upper_glyph_lst) == 1)
+                            upper_name = upper_glyph_lst[0].name
+                            self.g_classes.setdefault('cno_c2sc_1', []).append(upper_name)
+                            self.g_classes.setdefault('c_c2sc_str_1', []).append(lower_sc_name)
 
+        # create classes for c2sc (sc2_sub)
         # this might miss some glyphs not named using the below convention
         # like LtnYr & LtnSmCapR.sc and CyPalochka & CyPalochka.sc
-        #  which should be added to the fea manually
+        #  which should be added using glyph_class_additions
         for g_nm in self.glyphs:
             if (re.search('LtnCap|CyCap', g_nm)):
                 g_smcp_nm = re.sub('Cap', 'Sm', g_nm) + ".sc"
@@ -119,9 +128,22 @@ class Font(object):
                     or re.search('^ModCap\w', g_nm) or re.search('^ModSm\w', g_nm)):
                 self.g_classes.setdefault('c_superscripts', []).append(g_nm)
 
+        # add irregular glyphs to classes not found by the above algorithms
+        for cls, g_lst in glyph_class_additions.items():
+            # for g in g_lst: assert(not g in self.g_classes[cls])
+            if not cls in self.g_classes:
+                logger.log("class %s from class additions missing" % cls, 'W')
+                self.g_classes.setdefault(cls, []).append(cls)
+            for g in g_lst:
+                if g in self.g_classes[cls]:
+                   logger.log("glyph %s from class additions already present" % g, 'W')
+                else:
+                    self.g_classes[cls].append(g)
+
     def find_variants(self):
         # create single and multiple alternate lkups for aalt (sa_sub, ma_sub)
 		#  creates a mapping from a glyph to all glyphs with an additional suffix
+        # only called if fea is being generated
         for g_nm in self.glyphs:
             suffix_lst = re.findall('(\..*?)(?=\.|$)', g_nm)
             for suffix in suffix_lst:
@@ -190,13 +212,15 @@ class Glyph(object):
         self.anchors[name] = (x, y)
 
 def doit(args) :
+    global logger
+    logger = args.logger
     if args.infile and args.infile.endswith('.ufo'):
         font = Font()
         font.read_font(args.infile)
         font.make_classes(class_spec_lst)
-        font.find_variants()
         #font.find_NFC_to_NFD()
         if args.output_fea:
+            font.find_variants()
             font.write_fea(args.output_fea)
         if args.output_xml:
             font.write_classes(args.output_xml)
@@ -205,7 +229,6 @@ def doit(args) :
             pass
     else:
        args.logger.log('Only UFOs accepted as input', 'S')
-
 
 def cmd(): execute(None, doit, argspec)
 if __name__ == '__main__': cmd()
