@@ -17,7 +17,6 @@ used for building, testing and releasing.
 """
 
 # packaging
-DESC_NAME = "CharisSIL"
 DEBPKG = 'fonts-sil-charis'
 
 fontfamily="CharisSIL"
@@ -27,11 +26,12 @@ for dspace in ('Roman', 'Italic'):
                 target = process('${DS:FILENAME_BASE}.ttf', 
                     cmd('psfchangettfglyphnames ${SRC} ${DEP} ${TGT}', ['${DS:FILE}'])),
                 ap = 'source/${DS:FILENAME_BASE}_ap.xml',
+                classes = feabase + '_classes.xml',
                 opentype = fea('source/${DS:FILENAME_BASE}.fea',
                     master = 'source/opentype/${DS:FILENAME_BASE}.fea',
                     make_params = "--omitaps 'C L11 L12 L13 L21 L22 L23 L31 L32 L33 " + \
                         "C11 C12 C13 C21 C22 C23 C31 C32 C33 U11 U12 U13 U21 U22 U23 U31 U32 U33'",
-#					The below fails because $DS:FAMILYNAME == "Charis SIL" != "CharisSIL" in file name
+#                    The below fails because $DS:FAMILYNAME == "Charis SIL" != "CharisSIL" in file name
 #                    depends = ('source/opentype/${DS:FAMILYNAME}_gsub.fea', 
 #                        'source/opentype/${DS:FILENAME_BASE}_gpos_lkups.fea', 
 #                        'source/opentype/${DS:FAMILYNAME}_gpos_feats.fea', 
