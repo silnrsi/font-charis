@@ -20,6 +20,8 @@ class_spec_lst = [('lit', 'SngStory', 'SngBowl'),
 
 glyph_class_additions = {'cno_c2sc' : ['LtnYr', 'CyPalochka'],
                          'c_c2sc' : ['LtnSmCapR.sc', 'CyPalochka.sc'],
+                         'cno_lit' : ['LtnSmGBarredBowl', 'LtnSmGStrk'],
+                         'c_lit' : ['LtnSmGBarredSngBowl','LtnSmGBarredSngBowl'],
                          }
 
 non_variant_suffixes = ('Dotless', 'VN', 'Sup', 'sc')
@@ -136,9 +138,8 @@ class Font(object):
                 self.g_classes.setdefault(cls, []).append(cls)
             for g in g_lst:
                 if g in self.g_classes[cls]:
-                   logger.log("glyph %s from class additions already present" % g, 'W')
-                else:
-                    self.g_classes[cls].append(g)
+                    logger.log("glyph %s from class additions already present" % g, 'W')
+                self.g_classes[cls].append(g)
 
     def find_variants(self):
         # create single and multiple alternate lkups for aalt (sa_sub, ma_sub)
