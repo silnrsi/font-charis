@@ -2,7 +2,7 @@
 'Make fea classes and lookups for Roman fonts'
 
 # __url__ = 'http://github.com/silnrsi/pysilfont'
-__copyright__ = 'Copyright (c) 2018 SIL International  (http://www.sil.org)'
+__copyright__ = 'Copyright (c) 2018-2019 SIL International  (http://www.sil.org)'
 __license__ = 'Released under the MIT License (http://opensource.org/licenses/MIT)'
 __author__ = 'Alan Ward'
 
@@ -18,10 +18,13 @@ class_spec_lst = [('lit', 'SngStory', 'SngBowl'),
                   ('rtrhk', 'RetroHook'),
                   ]
 
+super_sub_mod_regex = "\wSubSm\w|\wSupSm\w|^ModCap\w|^ModSm\w"
+
 glyph_class_additions = {'cno_c2sc' : ['LtnYr', 'CyPalochka'],
                          'c_c2sc' : ['LtnSmCapR.sc', 'CyPalochka.sc'],
                          'cno_lit' : ['LtnSmGBarredBowl', 'LtnSmGStrk'],
                          'c_lit' : ['LtnSmGBarredSngBowl','LtnSmGBarredSngBowl'],
+                         'c_superscripts' : ['ModGlottalStop', 'ModRevGlottalStop']
                          }
 
 non_variant_suffixes = ('Dotless', 'VN', 'Sup', 'sc')
@@ -126,8 +129,9 @@ class Font(object):
         #   is there a Unicode prop that would specify these?
         # TODO: does this include too many glyhs? compare to hard-coded list in makeot.pl
         for g_nm in self.glyphs:
-            if (re.search('\wSubSm\w',g_nm) or re.search('\wSupSm\w',g_nm)
-                    or re.search('^ModCap\w', g_nm) or re.search('^ModSm\w', g_nm)):
+            # if (re.search('\wSubSm\w',g_nm) or re.search('\wSupSm\w',g_nm)
+            #         or re.search('^ModCap\w', g_nm) or re.search('^ModSm\w', g_nm)):
+            if (re.search(super_sub_mod_regex, g_nm)):
                 self.g_classes.setdefault('c_superscripts', []).append(g_nm)
 
         # add irregular glyphs to classes not found by the above algorithms
