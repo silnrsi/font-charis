@@ -22,20 +22,21 @@ DEBPKG = 'fonts-sil-charis'
 fontfamily="CharisSIL"
 for dspace in ('Roman', 'Italic'):
 #for dspace in ('Roman',):
+#for dspace in ('Italic',):
     designspace('source/' + fontfamily + dspace + '.designspace',
                 target = process('${DS:FILENAME_BASE}.ttf', 
                     cmd('psfchangettfglyphnames ${SRC} ${DEP} ${TGT}', ['${DS:FILE}'])),
                 ap = 'source/${DS:FILENAME_BASE}_ap.xml',
-                classes = feabase + '_classes.xml',
+                classes = 'source/opentype/%s_classes.xml' % fontfamily, 
                 opentype = fea('source/${DS:FILENAME_BASE}.fea',
                     master = 'source/opentype/${DS:FILENAME_BASE}.fea',
                     make_params = "--omitaps 'C L11 L12 L13 L21 L22 L23 L31 L32 L33 " + \
                         "C11 C12 C13 C21 C22 C23 C31 C32 C33 U11 U12 U13 U21 U22 U23 U31 U32 U33'",
-#                    The below fails because $DS:FAMILYNAME == "Charis SIL" != "CharisSIL" in file name
-#                    depends = ('source/opentype/${DS:FAMILYNAME}_gsub.fea', 
-#                        'source/opentype/${DS:FILENAME_BASE}_gpos_lkups.fea', 
-#                        'source/opentype/${DS:FAMILYNAME}_gpos_feats.fea', 
-#                        'source/opentype/${DS:FAMILYNAME}_gdef.fea')
+#                   $DS:FAMILYNAME == "Charis SIL" != "CharisSIL" in file name
+                    depends = ('source/opentype/%s_gsub.fea' % fontfamily, 
+                        'source/opentype/${DS:FILENAME_BASE}_gpos_lkups.fea', 
+                        'source/opentype/%s_gpos_feats.fea' % fontfamily, 
+                        'source/opentype/%s_gdef.fea' % fontfamily)
                     ),
                 graphite = gdl('source/${DS:FILENAME_BASE}.gdl',
                     master = 'source/graphite/main.gdh', 
