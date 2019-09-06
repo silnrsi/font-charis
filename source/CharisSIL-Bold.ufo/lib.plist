@@ -3,7 +3,10 @@
 <plist version="1.0">
 <dict>
   <key>com.schriftgestaltung.Glyphs.fontUserData</key>
-  <dict/>
+  <dict>
+    <key>com.schriftgestaltung.Glyphs.groupsNotInFeature</key>
+    <array/>
+  </dict>
   <key>com.schriftgestaltung.appVersion</key>
   <string>1184</string>
   <key>com.schriftgestaltung.customParameter.GSFont.DisplayStrings</key>

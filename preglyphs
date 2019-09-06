@@ -1,0 +1,4 @@
+#!/bin/sh
+
+psfufo2glyphs source/CharisSILRoman.designspace source/CharisSILRoman.glyphs
+psfufo2glyphs source/CharisSILItalic.designspace source/CharisSILItalic.glyphs
