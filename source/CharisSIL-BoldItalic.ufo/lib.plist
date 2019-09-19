@@ -112,6 +112,8 @@
     </dict>
     <key>subscript</key>
     <dict>
+      <key>adjustMetrics</key>
+      <integer>0</integer>
       <key>scaleX</key>
       <real>0.65</real>
       <key>scaleY</key>
@@ -120,9 +122,13 @@
       <integer>-125</integer>
       <key>shiftY</key>
       <integer>-460</integer>
+      <key>skew</key>
+      <real>-0.01</real>
     </dict>
     <key>superscript</key>
     <dict>
+      <key>adjustMetrics</key>
+      <integer>0</integer>
       <key>scaleX</key>
       <real>0.65</real>
       <key>scaleY</key>
@@ -131,6 +137,8 @@
       <integer>115</integer>
       <key>shiftY</key>
       <integer>785</integer>
+      <key>skew</key>
+      <real>-0.01</real>
     </dict>
     <key>superscriptCaps</key>
     <dict>

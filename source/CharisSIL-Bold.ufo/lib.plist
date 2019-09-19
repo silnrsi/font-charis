@@ -110,23 +110,27 @@
     </dict>
     <key>subscript</key>
     <dict>
+      <key>adjustMetrics</key>
+      <integer>0</integer>
       <key>scaleX</key>
-      <real>0.65</real>
+      <real>0.64</real>
       <key>scaleY</key>
       <real>0.6</real>
       <key>shiftX</key>
-      <integer>0</integer>
+      <integer>2</integer>
       <key>shiftY</key>
       <integer>-460</integer>
     </dict>
     <key>superscript</key>
     <dict>
+      <key>adjustMetrics</key>
+      <integer>0</integer>
       <key>scaleX</key>
-      <real>0.65</real>
+      <real>0.64</real>
       <key>scaleY</key>
       <real>0.6</real>
       <key>shiftX</key>
-      <integer>0</integer>
+      <integer>2</integer>
       <key>shiftY</key>
       <integer>785</integer>
     </dict>
@@ -137,7 +141,7 @@
       <key>scaleY</key>
       <real>0.435</real>
       <key>shiftX</key>
-      <integer>8</integer>
+      <integer>10</integer>
       <key>shiftY</key>
       <integer>785</integer>
     </dict>
