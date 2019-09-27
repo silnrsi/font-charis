@@ -9,4 +9,10 @@
     <component base="LtnCapE"/>
     <component base="CombCircumHook.VN" xOffset="192" yOffset="400"/>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
 </glyph>

@@ -9,4 +9,10 @@
     <component base="LtnSmD"/>
     <component base="CombCaron" xOffset="1200" yOffset="440"/>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
 </glyph>

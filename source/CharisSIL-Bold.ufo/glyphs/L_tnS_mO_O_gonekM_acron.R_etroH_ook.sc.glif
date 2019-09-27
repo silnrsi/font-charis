@@ -11,4 +11,10 @@
     <component base="CombMacron" xOffset="1311" yOffset="138"/>
     <component base="Ogonek.RetroHook" xOffset="503" yOffset="26"/>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
 </glyph>

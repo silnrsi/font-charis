@@ -7,4 +7,10 @@
     <component base="LtnSmOHorn.sc"/>
     <component base="CombHookAbv" xOffset="1271" yOffset="138"/>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
 </glyph>
