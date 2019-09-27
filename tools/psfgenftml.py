@@ -35,9 +35,6 @@ class FTMLBuilder_LCG(FB.FTMLBuilder):
 
         # iterate over UFO to create FChar objs for encoded glyphs
         for gname in font.deflayer:
-            i = gname.find('.', 1)
-            basename = gname if i <= 0 else gname[:i]
-
             try:
                 uid = int(font.deflayer[gname]['unicode'][0].hex, 16)
                 if uid in self._charFromUID:
@@ -45,7 +42,7 @@ class FTMLBuilder_LCG(FB.FTMLBuilder):
                 else:
                     # Create character object for this USV
                     # TODO: test uid validity
-                    self.addChar(uid, basename)
+                    self.addChar(uid, gname)
             except: # exception will be thrown if glyph has no Unicode value
                 continue
 
@@ -105,9 +102,11 @@ class FTMLBuilder_LCG(FB.FTMLBuilder):
 
         # OK, process all records in glyph_data
         # FChars have been added for encoded glyphs in the font UFO
-        # TODO: possibly iterate over font instead of incsv ?
         for line in incsv:
             gname = line[nameCol].strip()
+            if gname not in font.deflayer:
+                # skip glyphs in glyph_data but not in UFO
+                continue
 
             # things to ignore:
             if namesToSkipRE.match(gname):
@@ -130,18 +129,16 @@ class FTMLBuilder_LCG(FB.FTMLBuilder):
                 continue
             psnamesSeen.add(psname)
 
-            # compute basename -- the glyph name without extensions:
-            i = gname.find('.', 1)
-            basename = gname if i <= 0 else gname[:i]
-
             # Find USV and FChar obj for gname from font (ufo object)
             try:
-                c = self._charFromBasename[basename]
+                # encoded glyphs
+                c = self._charFromBasename[gname]
                 uid = c.uid
+                # Examine APs to determine if this character takes marks
+                c.checkAPs(gname, font, self.apRE)
             except:
-                self._csvWarning("glyph %s in glyph_data has no matching encoded glyph in font; ignored" % (gname))
+                # unencoded glyphs
                 c = uid = None
-                continue
 
             # Process associated USVs
             # could be empty string, a single USV or space-separated list of USVs
@@ -151,31 +148,25 @@ class FTMLBuilder_LCG(FB.FTMLBuilder):
                 self._csvWarning("invalid associated USV '%s' (%s); ignored: " % (line[usvCol], e.message))
                 uidList = []
 
-            if uid:
-                # Handle encoded glyphs
-                # Examine APs to determine if this character takes marks:
-                c.checkAPs(gname, font, self.apRE)
-
-            if len(uidList) > 1:
-                # Handle ligatures
-                if basename in self._specialFromBasename:
-                    c = self.special(basename)
-                else:
-                    c = self.addSpecial(uidList, basename)
-            elif len(uidList) == 1:
+            assoc_uid = None
+            if len(uidList) == 1:
                 # Handle unencoded glyphs
                 assoc_uid = uidList[0]
-                if assoc_uid != uid:
-                    self._csvWarning('USV for base name (%04X) differs from associated USV (%04X) for glyph %s' %
-                                     (uid, assoc_uid, gname))
-                if assoc_uid in self.uids():
+                try:
                     c = self.char(assoc_uid)
                     c.checkAPs(gname, font, self.apRE)
-                else:
+                except:
                     self._csvWarning('associated USV %04X for glyph %s matches no encoded glyph' % (assoc_uid, gname))
                     c = None
+            elif len(uidList) > 1:
+                # Handle ligatures
+                # if gname in self._specialFromBasename:
+                try:
+                    c = self.special(gname)
+                except:
+                    c = self.addSpecial(uidList, gname)
             else:
-                pass # glyphs with no associated USV field
+                pass # glyphs with no associated USV field should be encoded ones
 
             if featCol is not None:
                 feat = line[featCol].strip()
@@ -185,7 +176,7 @@ class FTMLBuilder_LCG(FB.FTMLBuilder):
                         # if values supplied, collect default and maximum values for this feature:
                         val = line[valCol].strip()
                         value = int(val) if val else 0
-                        if len(uidList) == 0: # encoded glyph
+                        if uid: # encoded glyph
                             feature.default = value
                         feature.maxval = max(value, feature.maxval)
                     if c:
@@ -194,7 +185,7 @@ class FTMLBuilder_LCG(FB.FTMLBuilder):
                     else:
                         self._csvWarning('untestable feature "%s" : no known USV' % feat)
 
-            if bcp47Col is not None:
+            if bcp47Col is not None: # this field does not exist in LCG fonts
                 bcp47 = line[bcp47Col].strip()
                 if len(bcp47) > 0 and not(bcp47.startswith('#')):
                     if c is not None:
