@@ -6,8 +6,6 @@
   <anchor x="1166" y="8" name="O"/>
   <anchor x="512" y="1928" name="U"/>
   <outline>
-    <component base="LtnSmA.sc"/>
-    <component base="CombBreve" xOffset="1185" yOffset="138"/>
-    <component base="CombGrave" xOffset="1069" yOffset="428"/>
+    <component base="LtnSmABreveGrave.VN.sc"/>
   </outline>
 </glyph>
