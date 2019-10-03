@@ -37,7 +37,7 @@ class FTMLBuilder_LCG(FB.FTMLBuilder):
         for gname in font.deflayer:
             try:
                 uid = int(font.deflayer[gname]['unicode'][0].hex, 16)
-                if uid in self._charFromUID:
+                if uid in self.uids():
                     self.logger.log('USV %04X previously seen (repeated on glyph %s)' % (uid, gname), 'W')
                 else:
                     # Create character object for this USV
@@ -132,7 +132,7 @@ class FTMLBuilder_LCG(FB.FTMLBuilder):
             # Find USV and FChar obj for gname from font (ufo object)
             try:
                 # encoded glyphs
-                c = self._charFromBasename[gname]
+                c = self.char(gname)
                 uid = c.uid
                 # Examine APs to determine if this character takes marks
                 c.checkAPs(gname, font, self.apRE)
@@ -160,11 +160,17 @@ class FTMLBuilder_LCG(FB.FTMLBuilder):
                     c = None
             elif len(uidList) > 1:
                 # Handle ligatures
-                # if gname in self._specialFromBasename:
-                try:
-                    c = self.special(gname)
-                except:
-                    c = self.addSpecial(uidList, gname)
+                lig_encoding_ok = True
+                for uid in uidList:
+                    if uid not in self.uids():
+                        self._csvWarning('USV %04X for ligature glyph %s is not encoded in the font' % (uid, gname))
+                        lig_encoding_ok = False
+                        continue
+                if lig_encoding_ok:
+                    try:
+                        c = self.special(gname)
+                    except:
+                        c = self.addSpecial(uidList, gname)
             else:
                 pass # glyphs with no associated USV field should be encoded ones
 
@@ -231,8 +237,8 @@ def doit(args):
 
         # Add unencoded specials and ligatures -- i.e., things with a sequence of USVs in the glyph_data:
         ftml.startTestGroup('Specials & ligatures from glyph_data')
-        for basename in sorted(builder.specials()):
-            special = builder.special(basename)
+        for gname in sorted(builder.specials()):
+            special = builder.special(gname)
             # iterate over all permutations of feature settings that might affect this special
             for featlist in builder.permuteFeatures(uids = special.uids):
                 ftml.setFeatures(featlist)
@@ -283,10 +289,11 @@ def doit(args):
                     ftml.clearFeatures()
                 ftml.closeTest()
 
-        ftml.startTestGroup('Special cases') #TODO: adjust for Latin
-        builder.render((0x064A, 0x065E), ftml)   # Yeh + Fatha should keep dots
-        builder.render((0x064A, 0x0654), ftml)   # Yeh + Hamza should loose dots
-        ftml.closeTest()
+        # TODO: adjust for Latin
+        # ftml.startTestGroup('Special cases')
+        # builder.render((0x064A, 0x065E), ftml)   # Yeh + Fatha should keep dots
+        # builder.render((0x064A, 0x0654), ftml)   # Yeh + Hamza should loose dots
+        # ftml.closeTest()
 
     # Write the output ftml file
     ftml.writeFile(args.output)
