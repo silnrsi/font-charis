@@ -7,7 +7,6 @@ __author__ = 'Alan Ward'
 
 from silfont.core import execute
 import silfont.ftml_builder as FB
-from icu import UCharCategory as GC
 import re
 
 argspec = [
@@ -267,7 +266,7 @@ def doit(args):
             if uid < 32 or uid in (0xAA, 0xBA): continue #TODO: adjust for Latin
             c = builder.char(uid)
             # Always process Lo, but others only if that take marks:
-            if c.general == GC.OTHER_LETTER or c.isBase:
+            if c.general == 'Lo' or c.isBase:
                 for diac in repDiac:
                     for featlist in builder.permuteFeatures(uids = (uid,diac)):
                         ftml.setFeatures(featlist)
@@ -281,7 +280,7 @@ def doit(args):
             # ignore non-ABS marks
             if uid < 0x600 or uid in range(0xFE00, 0xFE10): continue #TODO: adjust for Latin
             c = builder.char(uid)
-            if c.general == GC.NON_SPACING_MARK:
+            if c.general == 'Mn':
                 for base in repBase:
                     for featlist in builder.permuteFeatures(uids = (uid,base)):
                         ftml.setFeatures(featlist)
