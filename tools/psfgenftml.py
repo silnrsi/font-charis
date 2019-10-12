@@ -221,14 +221,15 @@ def doit(args):
         for uid in sorted(builder.uids()):
             if uid < 32: continue
             c = builder.char(uid)
+            builder.render((uid,), ftml)
             # iterate over all permutations of feature settings that might affect this character:
             # TODO: This would take much space in the Latin fonts. Outputting variants could be an option?
             #   Is it better to output all chars affected by a feature(s) in one place?
-            for featlist in builder.permuteFeatures(uids = (uid,)):
-                ftml.setFeatures(featlist)
-                builder.render((uid,), ftml)
-                # Don't close test -- collect consecutive encoded chars in a single row
-            ftml.clearFeatures()
+            # for featlist in builder.permuteFeatures(uids = (uid,)):
+            #     ftml.setFeatures(featlist)
+            #     builder.render((uid,), ftml)
+            #     # Don't close test -- collect consecutive encoded chars in a single row
+            # ftml.clearFeatures()
             for langID in sorted(c.langs):
                 ftml.setLang(langID)
                 builder.render((uid,), ftml)
@@ -238,13 +239,14 @@ def doit(args):
         ftml.startTestGroup('Specials & ligatures from glyph_data')
         for gname in sorted(builder.specials()):
             special = builder.special(gname)
+            builder.render(special.uids, ftml)
             # iterate over all permutations of feature settings that might affect this special
-            for featlist in builder.permuteFeatures(uids = special.uids):
-                ftml.setFeatures(featlist)
-                builder.render(special.uids, ftml)
-                # close test so each special is on its own row:
-                ftml.closeTest()
-            ftml.clearFeatures()
+            # for featlist in builder.permuteFeatures(uids = special.uids):
+            #     ftml.setFeatures(featlist)
+            #     builder.render(special.uids, ftml)
+            #     # close test so each special is on its own row:
+            #     ftml.closeTest()
+            # ftml.clearFeatures()
             if len(special.langs):
                 for langID in sorted(special.langs):
                     ftml.setLang(langID)
