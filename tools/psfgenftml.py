@@ -254,6 +254,29 @@ def doit(args):
                     ftml.closeTest()
                 ftml.clearLang()
 
+    if test.lower().startswith("features"):
+        ftml.startTestGroup('Features from glyph_data')
+
+        # build map from features to the uids that are affected by a feature
+        # TODO: include all combinations of features
+        feats_to_uid = {}
+        for uid in builder.uids():
+            c = builder.char(uid)
+            for feat in c.feats:
+                try: feats_to_uid[feat].append(uid)
+                except: feats_to_uid[feat] = [uid]
+
+        # create tests for all uids affected by a feature, organized by features
+        # TODO: improve organization of tests
+        for feat in sorted(feats_to_uid.keys()):
+            # tvlist = builder.permuteFeatures(None, builder.features[feat].tvlist)
+            tvlist = builder.permuteFeatures(None, [feat])
+            for tv in tvlist:
+                ftml.setFeatures(tv)
+                for uid in sorted(feats_to_uid[feat]):
+                    builder.render([uid], ftml)
+        ftml.closeTest()
+
     if test.lower().startswith("diac"):
         # Diac attachment:
 
