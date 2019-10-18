@@ -8,6 +8,7 @@ __author__ = 'Alan Ward'
 from silfont.core import execute
 import silfont.ftml_builder as FB
 import re
+from itertools import combinations, chain
 
 argspec = [
     ('ifont',{'help': 'Input UFO'}, {'type': 'infont'}),
@@ -257,24 +258,35 @@ def doit(args):
     if test.lower().startswith("features"):
         ftml.startTestGroup('Features from glyph_data')
 
-        # build map from features to the uids that are affected by a feature
-        # TODO: include all combinations of features
+        # build map from features (and all combinations) to the uids that are affected by a feature
         feats_to_uid = {}
         for uid in builder.uids():
             c = builder.char(uid)
-            for feat in c.feats:
-                try: feats_to_uid[feat].append(uid)
-                except: feats_to_uid[feat] = [uid]
+            feat_combs = chain.from_iterable(combinations(c.feats, r) for r in range(len(c.feats) + 1))
+            for feats in feat_combs:
+                if not feats: continue
+                feats = sorted(feats)
+                feat_set = " ".join(feats)
+                try: feats_to_uid[feat_set].append(uid)
+                except KeyError: feats_to_uid[feat_set] = [uid]
 
         # create tests for all uids affected by a feature, organized by features
-        # TODO: improve organization of tests
-        for feat in sorted(feats_to_uid.keys()):
-            # tvlist = builder.permuteFeatures(None, builder.features[feat].tvlist)
-            tvlist = builder.permuteFeatures(None, [feat])
-            for tv in tvlist:
-                ftml.setFeatures(tv)
-                for uid in sorted(feats_to_uid[feat]):
-                    builder.render([uid], ftml)
+        feats_sort = {}
+        for feat_set in feats_to_uid.keys(): # sort based on number of features in combo
+            cnt = len(feat_set.split(" "))
+            try: feats_sort[cnt].append(feat_set)
+            except: feats_sort[cnt] = [feat_set]
+
+        for i in sorted(feats_sort.keys()):
+            feat_set_lst = sorted(feats_sort[i])
+            for feat_set in feat_set_lst:
+                feats = feat_set.split(" ")
+                if not isinstance(feats, list): feats = [feats] # convert single element to list
+                tvlist = builder.permuteFeatures(None, feats)
+                for tv in tvlist:
+                    ftml.setFeatures(tv)
+                    #for uid in sorted(feats_to_uid[feat_multi]):
+                    builder.render(sorted(feats_to_uid[feat_set]), ftml) # test this set of features with all uids
         ftml.closeTest()
 
     if test.lower().startswith("diac"):
