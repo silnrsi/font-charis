@@ -294,10 +294,12 @@ def doit(args):
                     tvlist = builder.features[feat].tvlist[1:] # all values of feats except default
                     tvlist_lst.append(tvlist) # build list of list of all value for each feat
                 p = product(*tvlist_lst) # find all combo of all values, MUST flatten the list of lists
+                ftml.clearFeatures()
                 if feat_set != "smcp": # render all uids without feat setting except for 'smcp'
-                    ftml.clearFeatures()
                     for uidlst in uidlst_lst:
                         builder.render(uidlst, ftml)
+                else:
+                        builder.render([ord(a) for a in u'lower case dropped'], ftml)
                 for tv_lst in p: # for one list of values out of all lists of values
                     ftml.setFeatures(tv_lst)
                     for uidlst in uidlst_lst:

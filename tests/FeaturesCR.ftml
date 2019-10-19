@@ -829,6 +829,27 @@ U+0442" stylename="serb_1">
     </test>
   </testgroup>
   <testgroup label="smcp">
+    <test label="U+006C
+U+006F
+U+0077
+U+0065
+U+0072
+U+0020
+U+0063
+U+0061
+U+0073
+U+0065
+U+0020
+U+0064
+U+0072
+U+006F
+U+0070
+U+0070
+U+0065
+U+0064">
+      <comment>LtnSmL LtnSmO LtnSmW LtnSmE LtnSmR Space LtnSmC LtnSmA LtnSmS LtnSmE Space LtnSmD LtnSmR LtnSmO LtnSmP LtnSmP LtnSmE LtnSmD</comment>
+      <string>lower case dropped</string>
+    </test>
     <test label="U+0061
 U+0062
 U+0063
