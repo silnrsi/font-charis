@@ -8,7 +8,7 @@ __author__ = 'Alan Ward'
 from silfont.core import execute
 import silfont.ftml_builder as FB
 import re
-from itertools import combinations, chain
+from itertools import combinations, chain, product
 
 argspec = [
     ('ifont',{'help': 'Input UFO'}, {'type': 'infont'}),
@@ -22,7 +22,6 @@ argspec = [
     ('--scale', {'help': '% to scale rendered text'}, {}),
     ('--ap', {'help': 'regular expression describing APs to examine', 'default': '.', 'action': 'store'}, {}),
     ('--xsl', {'help': 'XSL stylesheet to use'}, {}),
-
 ]
 
 class FTMLBuilder_LCG(FB.FTMLBuilder):
@@ -223,6 +222,7 @@ def doit(args):
             if uid < 32: continue
             c = builder.char(uid)
             builder.render((uid,), ftml)
+            # use Features test instead
             # iterate over all permutations of feature settings that might affect this character:
             #  This would take much space in the Latin fonts. Outputting variants could be an option?
             #   Is it better to output all chars affected by a feature(s) in one place?
@@ -241,6 +241,7 @@ def doit(args):
         for gname in sorted(builder.specials()):
             special = builder.special(gname)
             builder.render(special.uids, ftml)
+            # use Features test instead
             # iterate over all permutations of feature settings that might affect this special
             # for featlist in builder.permuteFeatures(uids = special.uids):
             #     ftml.setFeatures(featlist)
@@ -278,16 +279,30 @@ def doit(args):
             except: feats_sort[cnt] = [feat_set]
 
         for i in sorted(feats_sort.keys()):
-            feat_set_lst = sorted(feats_sort[i])
-            for feat_set in feat_set_lst:
-                feats = feat_set.split(" ")
-                if not isinstance(feats, list): feats = [feats] # convert single element to list
-                tvlist = builder.permuteFeatures(None, feats)
-                for tv in tvlist:
-                    ftml.setFeatures(tv)
-                    #for uid in sorted(feats_to_uid[feat_multi]):
-                    builder.render(sorted(feats_to_uid[feat_set]), ftml) # test this set of features with all uids
-        ftml.closeTest()
+            feat_set_lst = sorted(feats_sort[i]) # list of feat combos where number in combo is i
+            for feat_set in feat_set_lst: # one feat combo
+                ftml.startTestGroup(f'{feat_set}')
+                uid_lst = sorted(feats_to_uid[feat_set]) # list of uids to test against feat combo
+                i = 0
+                uidlst_lst = []
+                while i < len(uid_lst): # break uids into groups of 16
+                    uidlst_lst.append(uid_lst[i:i + 16])
+                    i += 16
+                feats = feat_set.split(" ") # separate feat combo into feats
+                tvlist_lst = []
+                for feat in feats:
+                    tvlist = builder.features[feat].tvlist[1:] # all values of feats except default
+                    tvlist_lst.append(tvlist) # build list of list of all value for each feat
+                p = product(*tvlist_lst) # find all combo of all values, MUST flatten the list of lists
+                if feat_set != "smcp": # render all uids without feat setting except for 'smcp'
+                    ftml.clearFeatures()
+                    for uidlst in uidlst_lst:
+                        builder.render(uidlst, ftml)
+                for tv_lst in p: # for one list of values out of all lists of values
+                    ftml.setFeatures(tv_lst)
+                    for uidlst in uidlst_lst:
+                        builder.render(uidlst, ftml)
+            ftml.closeTest()
 
     if test.lower().startswith("diac"):
         # Diac attachment:
@@ -298,8 +313,9 @@ def doit(args):
 
         ftml.startTestGroup('Representative diacritics on all bases that take diacritics')
         for uid in sorted(builder.uids()):
+            # adjust for Latin
             # ignore some I don't care about:
-            # if uid < 32 or uid in (0xAA, 0xBA): continue # adjust for Latin
+            # if uid < 32 or uid in (0xAA, 0xBA): continue
             if uid < 32: continue
             c = builder.char(uid)
             # Always process Lo, but others only if that take marks:
