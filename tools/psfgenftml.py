@@ -224,7 +224,7 @@ def doit(args):
             c = builder.char(uid)
             builder.render((uid,), ftml)
             # iterate over all permutations of feature settings that might affect this character:
-            # TODO: This would take much space in the Latin fonts. Outputting variants could be an option?
+            #  This would take much space in the Latin fonts. Outputting variants could be an option?
             #   Is it better to output all chars affected by a feature(s) in one place?
             # for featlist in builder.permuteFeatures(uids = (uid,)):
             #     ftml.setFeatures(featlist)
@@ -293,36 +293,39 @@ def doit(args):
         # Diac attachment:
 
         # Representative base and diac chars:
-        #TODO: change these to Latin USVs
-        repDiac = filter(lambda x: x in builder.uids(), (0x064E, 0x0650, 0x065E, 0x0670, 0x0616, 0x06E3, 0x08F0, 0x08F2))
-        repBase = filter(lambda x: x in builder.uids(), (0x0627, 0x0628, 0x062B, 0x0647, 0x064A, 0x77F, 0x08AC))
+        repDiac = [x for x in [0x0327, 0x0316, 0x0328, 0x0315, 0x0300] if x in builder.uids()]
+        repBase = [x for x in [0x0041, 0x0041, 0x0041, 0x0045, 0x0041] if x in builder.uids()]
 
         ftml.startTestGroup('Representative diacritics on all bases that take diacritics')
         for uid in sorted(builder.uids()):
             # ignore some I don't care about:
-            if uid < 32 or uid in (0xAA, 0xBA): continue #TODO: adjust for Latin
+            # if uid < 32 or uid in (0xAA, 0xBA): continue # adjust for Latin
+            if uid < 32: continue
             c = builder.char(uid)
             # Always process Lo, but others only if that take marks:
             if c.general == 'Lo' or c.isBase:
                 for diac in repDiac:
-                    for featlist in builder.permuteFeatures(uids = (uid,diac)):
-                        ftml.setFeatures(featlist)
-                        # Don't automatically separate connecting or mirrored forms into separate lines:
-                        builder.render((uid,diac), ftml, addBreaks = False)
-                    ftml.clearFeatures()
+                    builder.render((uid, diac), ftml, addBreaks = False)
+                    # for featlist in builder.permuteFeatures(uids = (uid,diac)):
+                    #     ftml.setFeatures(featlist)
+                    #     # Don't automatically separate connecting or mirrored forms into separate lines:
+                    #     builder.render((uid,diac), ftml, addBreaks = False)
+                    # ftml.clearFeatures()
                 ftml.closeTest()
 
         ftml.startTestGroup('All diacritics on representative bases')
         for uid in sorted(builder.uids()):
+            # adjust for Latin
             # ignore non-ABS marks
-            if uid < 0x600 or uid in range(0xFE00, 0xFE10): continue #TODO: adjust for Latin
+            # if uid < 0x600 or uid in range(0xFE00, 0xFE10): continue
             c = builder.char(uid)
             if c.general == 'Mn':
                 for base in repBase:
-                    for featlist in builder.permuteFeatures(uids = (uid,base)):
-                        ftml.setFeatures(featlist)
-                        builder.render((base,uid), ftml, keyUID = uid, addBreaks = False)
-                    ftml.clearFeatures()
+                    builder.render((base, uid), ftml, keyUID=uid, addBreaks=False)
+                    # for featlist in builder.permuteFeatures(uids = (uid,base)):
+                    #     ftml.setFeatures(featlist)
+                    #     builder.render((base,uid), ftml, keyUID = uid, addBreaks = False)
+                    # ftml.clearFeatures()
                 ftml.closeTest()
 
         # TODO: adjust for Latin
