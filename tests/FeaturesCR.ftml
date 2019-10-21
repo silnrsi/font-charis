@@ -24,8 +24,8 @@
       <style feats="'N_hk' 1, 'smcp' 1" name="N_hk_1_smcp_1"/>
       <style feats="'R_tl' 1" name="R_tl_1"/>
       <style feats="'R_tl' 1, 'smcp' 1" name="R_tl_1_smcp_1"/>
-      <style feats="'Y_hk' 1" name="Y_hk_1"/>
-      <style feats="'Y_hk' 1, 'smcp' 1" name="Y_hk_1_smcp_1"/>
+      <style feats="'Y_hk' 0" name="Y_hk_0"/>
+      <style feats="'Y_hk' 0, 'smcp' 1" name="Y_hk_0_smcp_1"/>
       <style feats="'apos' 1" name="apos_1"/>
       <style feats="'apos' 1, 'smcp' 1" name="apos_1_smcp_1"/>
       <style feats="'bowl' 1" name="bowl_1"/>
@@ -207,7 +207,7 @@ U+01B4">
       <string>\u0001B3\u0001B4</string>
     </test>
     <test label="U+01B3
-U+01B4" stylename="Y_hk_1">
+U+01B4" stylename="Y_hk_0">
       <comment>LtnCapYHook.RtHook LtnSmYHook.RtHook</comment>
       <string>\u0001B3\u0001B4</string>
     </test>
@@ -1734,7 +1734,7 @@ U+04E1" stylename="Ezhr_1_smcp_1">
       <comment>LtnSmYHook.RtHook</comment>
       <string>\u0001B4</string>
     </test>
-    <test label="U+01B4" stylename="Y_hk_1_smcp_1">
+    <test label="U+01B4" stylename="Y_hk_0_smcp_1">
       <comment>LtnSmYHook.RtHook</comment>
       <string>\u0001B4</string>
     </test>

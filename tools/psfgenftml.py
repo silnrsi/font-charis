@@ -181,8 +181,9 @@ class FTMLBuilder_LCG(FB.FTMLBuilder):
                         # if values supplied, collect default and maximum values for this feature:
                         val = line[valCol].strip()
                         value = int(val) if val else 0
-                        if uid: # encoded glyph
-                            feature.default = value
+                        # Latin fonts never specify an associated uid or feature on encoded glyphs
+                        # if uid: # encoded glyph
+                        #     feature.default = value
                         feature.maxval = max(value, feature.maxval)
                     if c:
                         # Record that this feature affects this character:
@@ -200,6 +201,11 @@ class FTMLBuilder_LCG(FB.FTMLBuilder):
                                 self.allLangs.add(tag)  # keep track of all possible lang-tags
                     else:
                         self._csvWarning('untestable langs: no known USV')
+
+        # set default values for features where the default is non-zero
+        if fontcode == 'A':
+            self.features['litr'].default = 1
+        self.features['Y_hk'].default = 1
 
         # We're finally done, but if allLangs is a set, let's order it (for lack of anything better) and make a list:
         if not self._langsComplete:
@@ -311,7 +317,7 @@ def doit(args):
 
         # Representative base and diac chars:
         repDiac = [x for x in [0x0327, 0x0316, 0x0328, 0x0315, 0x0300] if x in builder.uids()]
-        repBase = [x for x in [0x0041, 0x0041, 0x0041, 0x0045, 0x0041] if x in builder.uids()]
+        repBase = [x for x in [0x0041, 0x0045, 0x0061, 0x0065, 0x0069] if x in builder.uids()]
 
         ftml.startTestGroup('Representative diacritics on all bases that take diacritics')
         for uid in sorted(builder.uids()):
