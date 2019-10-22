@@ -317,7 +317,8 @@ def doit(args):
 
         # Representative base and diac chars:
         repDiac = [x for x in [0x0327, 0x0316, 0x0328, 0x0315, 0x0300] if x in builder.uids()]
-        repBase = [x for x in [0x0041, 0x0045, 0x0061, 0x0065, 0x0069] if x in builder.uids()]
+        # A E H O a e i o
+        repBase = [x for x in [0x0041, 0x0045, 0x0048, 0x004F, 0x0061, 0x0065, 0x0069, 0x006F ] if x in builder.uids()]
 
         ftml.startTestGroup('Representative diacritics on all bases that take diacritics')
         for uid in sorted(builder.uids()):
