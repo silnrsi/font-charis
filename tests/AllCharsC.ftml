@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="ftml_createListCols.xsl" type="text/xsl"?>
+<ftml version="1.0">
+  <head>
+    <fontscale>200</fontscale>
+    <fontsrc>url(../results/CharisSIL-Regular.ttf)</fontsrc>
+    <fontsrc>url(../results/CharisSIL-Italic.ttf)</fontsrc>
+    <fontsrc>url(../results/CharisSIL-Bold.ttf)</fontsrc>
+    <fontsrc>url(../results/CharisSIL-BoldItalic.ttf)</fontsrc>
+    <title>allchars</title>
+  </head>
+  <testgroup label="Rendering Check">
+    <test label="check">
+      <string>RenderingUnknown</string>
+    </test>
+  </testgroup>
+  <testgroup label="Encoded characters">
+    <test label="U+0020">
+      <comment>Space</comment>
+      <string>\u00F130 \u00F131 ! " # $ % &amp; ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ \ ] ^ _ ` a b c d e f g h i j k l m n o p q r s t u v w x y z { | } ~</string>
+    </test>
+    <test label="U+00A0">
+      <comment>NoBreakSpace</comment>
+      <string>\u00F130\u0000A0\u00F131 \u0000A1 \u0000A2 \u0000A3 \u0000A4 \u0000A5 \u0000A6 \u0000A7 \u0000A8 \u0000A9 \u0000AA \u0000AB \u0000AC \u0000AD \u0000AE \u0000AF \u0000B0 \u0000B1 \u0000B2 \u0000B3 \u0000B4 \u0000B5 \u0000B6 \u0000B7 \u0000B8 \u0000B9 \u0000BA \u0000BB \u0000BC \u0000BD \u0000BE \u0000BF \u0000C0 \u0000C1 \u0000C2 \u0000C3 \u0000C4 \u0000C5 \u0000C6 \u0000C7 \u0000C8 \u0000C9 \u0000CA \u0000CB \u0000CC \u0000CD \u0000CE \u0000CF \u0000D0 \u0000D1 \u0000D2 \u0000D3 \u0000D4 \u0000D5 \u0000D6 \u0000D7 \u0000D8 \u0000D9 \u0000DA \u0000DB \u0000DC \u0000DD \u0000DE \u0000DF \u0000E0 \u0000E1 \u0000E2 \u0000E3 \u0000E4 \u0000E5 \u0000E6 \u0000E7 \u0000E8 \u0000E9 \u0000EA \u0000EB \u0000EC \u0000ED \u0000EE \u0000EF \u0000F0 \u0000F1 \u0000F2 \u0000F3 \u0000F4 \u0000F5 \u0000F6 \u0000F7 \u0000F8 \u0000F9 \u0000FA \u0000FB \u0000FC \u0000FD \u0000FE \u0000FF \u000100 \u000101 \u000102 \u000103 \u000104 \u000105 \u000106 \u000107 \u000108 \u000109 \u00010A \u00010B \u00010C \u00010D \u00010E \u00010F \u000110 \u000111 \u000112 \u000113 \u000114 \u000115 \u000116 \u000117 \u000118 \u000119 \u00011A \u00011B \u00011C \u00011D \u00011E \u00011F \u000120 \u000121 \u000122 \u000123 \u000124 \u000125 \u000126 \u000127 \u000128 \u000129 \u00012A \u00012B \u00012C \u00012D \u00012E \u00012F \u000130 \u000131 \u000132 \u000133 \u000134 \u000135 \u000136 \u000137 \u000138 \u000139 \u00013A \u00013B \u00013C \u00013D \u00013E \u00013F \u000140 \u000141 \u000142 \u000143 \u000144 \u000145 \u000146 \u000147 \u000148</string>
+    </test>
+    <test label="U+014A">
+      <comment>LtnCapEng</comment>
+      <string>\u00014A \u00014B \u00014C \u00014D \u00014E \u00014F \u000150 \u000151 \u000152 \u000153 \u000154 \u000155 \u000156 \u000157 \u000158 \u000159 \u00015A \u00015B \u00015C \u00015D \u00015E \u00015F \u000160 \u000161 \u000162 \u000163 \u000164 \u000165 \u000166 \u000167 \u000168 \u000169 \u00016A \u00016B \u00016C \u00016D \u00016E \u00016F \u000170 \u000171 \u000172 \u000173 \u000174 \u000175 \u000176 \u000177 \u000178 \u000179 \u00017A \u00017B \u00017C \u00017D \u00017E \u00017F \u000180 \u000181 \u000182 \u000183 \u000184 \u000185 \u000186 \u000187 \u000188 \u000189 \u00018A \u00018B \u00018C \u00018D \u00018E \u00018F \u000190 \u000191 \u000192 \u000193 \u000194 \u000195 \u000196 \u000197 \u000198 \u000199 \u00019A \u00019B \u00019C \u00019D \u00019E \u00019F \u0001A0 \u0001A1 \u0001A2 \u0001A3 \u0001A4 \u0001A5 \u0001A6 \u0001A7 \u0001A8 \u0001A9 \u0001AA \u0001AB \u0001AC \u0001AD \u0001AE \u0001AF \u0001B0 \u0001B1 \u0001B2 \u0001B3 \u0001B4 \u0001B5 \u0001B6 \u0001B7 \u0001B8 \u0001B9 \u0001BA \u0001BB \u0001BC \u0001BD \u0001BE \u0001BF \u0001C0 \u0001C1 \u0001C2 \u0001C3 \u0001C4 \u0001C5 \u0001C6 \u0001C7 \u0001C8 \u0001C9 \u0001CA \u0001CB \u0001CC \u0001CD \u0001CE \u0001CF \u0001D0 \u0001D1 \u0001D2 \u0001D3 \u0001D4 \u0001D5 \u0001D6 \u0001D7 \u0001D8 \u0001D9 \u0001DA \u0001DB \u0001DC \u0001DD \u0001DE \u0001DF \u0001E0 \u0001E1 \u0001E2 \u0001E3 \u0001E4 \u0001E5 \u0001E6 \u0001E7 \u0001E8 \u0001E9 \u0001EA \u0001EB \u0001EC \u0001ED \u0001EE \u0001EF \u0001F0 \u0001F1 \u0001F2 \u0001F3 \u0001F4 \u0001F5 \u0001F6 \u0001F7 \u0001F8 \u0001F9 \u0001FA \u0001FB \u0001FC \u0001FD \u0001FE \u0001FF \u000200 \u000201 \u000202 \u000203 \u000204 \u000205 \u000206 \u000207 \u000208 \u000209 \u00020A \u00020B \u00020C \u00020D \u00020E \u00020F \u000210 \u000211 \u000212 \u000213 \u000214 \u000215 \u000216 \u000217 \u000218 \u000219 \u00021A \u00021B \u00021C \u00021D \u00021E \u00021F \u000220 \u000221 \u000222 \u000223 \u000224 \u000225 \u000226 \u000227 \u000228 \u000229 \u00022A \u00022B \u00022C \u00022D \u00022E \u00022F \u000230 \u000231 \u000232 \u000233 \u000234 \u000235 \u000236 \u000237 \u000238 \u000239 \u00023A \u00023B \u00023C \u00023D \u00023E \u00023F \u000240 \u000241 \u000242 \u000243 \u000244 \u000245 \u000246 \u000247 \u000248 \u000249 \u00024A \u00024B \u00024C \u00024D \u00024E \u00024F \u000250 \u000251 \u000252 \u000253 \u000254 \u000255 \u000256 \u000257 \u000258 \u000259 \u00025A \u00025B \u00025C \u00025D \u00025E \u00025F \u000260 \u000261 \u000262 \u000263 \u000264 \u000265 \u000266 \u000267 \u000268 \u000269 \u00026A \u00026B \u00026C \u00026D \u00026E \u00026F \u000270 \u000271 \u000272 \u000273 \u000274 \u000275 \u000276 \u000277 \u000278 \u000279 \u00027A \u00027B \u00027C \u00027D \u00027E \u00027F \u000280 \u000281 \u000282 \u000283 \u000284 \u000285 \u000286 \u000287 \u000288 \u000289 \u00028A \u00028B \u00028C \u00028D \u00028E \u00028F \u000290 \u000291 \u000292 \u000293 \u000294 \u000295 \u000296 \u000297 \u000298 \u000299 \u00029A \u00029B \u00029C \u00029D \u00029E \u00029F \u0002A0 \u0002A1 \u0002A2 \u0002A3 \u0002A4 \u0002A5 \u0002A6 \u0002A7 \u0002A8 \u0002A9 \u0002AA \u0002AB \u0002AC \u0002AD \u0002AE \u0002AF \u0002B0 \u0002B1 \u0002B2 \u0002B3 \u0002B4 \u0002B5 \u0002B6 \u0002B7 \u0002B8 \u0002B9 \u0002BA \u0002BB \u0002BC \u0002BD \u0002BE \u0002BF \u0002C0 \u0002C1 \u0002C2 \u0002C3 \u0002C4 \u0002C5 \u0002C6 \u0002C7 \u0002C8 \u0002C9 \u0002CA \u0002CB \u0002CC \u0002CD \u0002CE \u0002CF \u0002D0 \u0002D1 \u0002D2 \u0002D3 \u0002D4 \u0002D5 \u0002D6 \u0002D7 \u0002D8 \u0002D9 \u0002DA \u0002DB \u0002DC \u0002DD \u0002DE \u0002DF \u0002E0 \u0002E1 \u0002E2 \u0002E3 \u0002E4 \u0002E5 \u0002E6 \u0002E7 \u0002E8 \u0002E9 \u0002EA \u0002EB \u0002EC \u0002ED \u0002EE \u0002EF \u0002F0 \u0002F1 \u0002F2 \u0002F3 \u0002F4 \u0002F5 \u0002F6 \u0002F7 \u0002F8 \u0002F9 \u0002FA \u0002FB \u0002FC \u0002FD \u0002FE \u0002FF \u0025CC\u000300 \u0025CC\u000301 \u0025CC\u000302 \u0025CC\u000303 \u0025CC\u000304 \u0025CC\u000305 \u0025CC\u000306 \u0025CC\u000307 \u0025CC\u000308 \u0025CC\u000309 \u0025CC\u00030A \u0025CC\u00030B \u0025CC\u00030C \u0025CC\u00030D \u0025CC\u00030E \u0025CC\u00030F \u0025CC\u000310 \u0025CC\u000311 \u0025CC\u000312 \u0025CC\u000313 \u0025CC\u000314 \u0025CC\u000315 \u0025CC\u000316 \u0025CC\u000317 \u0025CC\u000318 \u0025CC\u000319 \u0025CC\u00031A \u0025CC\u00031B \u0025CC\u00031C \u0025CC\u00031D \u0025CC\u00031E \u0025CC\u00031F \u0025CC\u000320</string>
+    </test>
+    <test label="U+0323">
+      <comment>CombDotBlw</comment>
+      <string>\u0025CC\u000323 \u0025CC\u000324 \u0025CC\u000325 \u0025CC\u000326 \u0025CC\u000327 \u0025CC\u000328 \u0025CC\u000329 \u0025CC\u00032A \u0025CC\u00032B \u0025CC\u00032C \u0025CC\u00032D \u0025CC\u00032E \u0025CC\u00032F \u0025CC\u000330 \u0025CC\u000331 \u0025CC\u000332 \u0025CC\u000333 \u0025CC\u000334 \u0025CC\u000335 \u0025CC\u000336 \u0025CC\u000337 \u0025CC\u000338 \u0025CC\u000339 \u0025CC\u00033A \u0025CC\u00033B \u0025CC\u00033C \u0025CC\u00033D \u0025CC\u00033E \u0025CC\u00033F</string>
+    </test>
+    <test label="U+0346">
+      <comment>CombBridgeAbv</comment>
+      <string>\u0025CC\u000346 \u0025CC\u000347 \u0025CC\u000348 \u0025CC\u000349 \u0025CC\u00034A \u0025CC\u00034B \u0025CC\u00034C \u0025CC\u00034D \u0025CC\u00034E \u0025CC\u00034F \u0025CC\u000350 \u0025CC\u000351 \u0025CC\u000352 \u0025CC\u000353 \u0025CC\u000354 \u0025CC\u000355 \u0025CC\u000356 \u0025CC\u000357 \u0025CC\u000358 \u0025CC\u000359 \u0025CC\u00035A \u0025CC\u00035B \u0025CC\u00035C \u0025CC\u00035D \u0025CC\u00035E \u0025CC\u00035F \u0025CC\u000360 \u0025CC\u000361 \u0025CC\u000362 \u0025CC\u000363 \u0025CC\u000364 \u0025CC\u000365 \u0025CC\u000366 \u0025CC\u000367 \u0025CC\u000368 \u0025CC\u000369 \u0025CC\u00036A \u0025CC\u00036B \u0025CC\u00036C \u0025CC\u00036D \u0025CC\u00036E \u0025CC\u00036F</string>
+    </test>
+    <test label="U+0387">
+      <comment>GrAnoTeleia</comment>
+      <string>\u000387</string>
+    </test>
+    <test label="U+0393">
+      <comment>GrCapGamma</comment>
+      <string>\u000393 \u000394</string>
+    </test>
+    <test label="U+0398">
+      <comment>GrCapTheta</comment>
+      <string>\u000398</string>
+    </test>
+    <test label="U+039E">
+      <comment>GrCapXi</comment>
+      <string>\u00039E</string>
+    </test>
+    <test label="U+03A0">
+      <comment>GrCapPi</comment>
+      <string>\u0003A0</string>
+    </test>
+    <test label="U+03A8">
+      <comment>GrCapPsi</comment>
+      <string>\u0003A8 \u0003A9</string>
+    </test>
+    <test label="U+03B1">
+      <comment>GrSmAlpha</comment>
+      <string>\u0003B1 \u0003B2 \u0003B3 \u0003B4</string>
+    </test>
+    <test label="U+03B8">
+      <comment>GrSmTheta</comment>
+      <string>\u0003B8</string>
+    </test>
+    <test label="U+03BB">
+      <comment>GrSmLamda</comment>
+      <string>\u0003BB \u0003BC</string>
+    </test>
+    <test label="U+03C0">
+      <comment>GrSmPi</comment>
+      <string>\u0003C0 \u0003C1</string>
+    </test>
+    <test label="U+03C3">
+      <comment>GrSmSigma</comment>
+      <string>\u0003C3</string>
+    </test>
+    <test label="U+03C6">
+      <comment>GrSmPhi</comment>
+      <string>\u0003C6 \u0003C7</string>
+    </test>
+    <test label="U+03C9">
+      <comment>GrSmOmega</comment>
+      <string>\u0003C9</string>
+    </test>
+    <test label="U+03D1">
+      <comment>GrThetaSym</comment>
+      <string>\u0003D1</string>
+    </test>
+    <test label="U+03F4">
+      <comment>GrCapThetaSym</comment>
+      <string>\u0003F4</string>
+    </test>
+    <test label="U+0400">
+      <comment>CyCapIeGrave</comment>
+      <string>\u000400 \u000401 \u000402 \u000403 \u000404 \u000405 \u000406 \u000407 \u000408 \u000409 \u00040A \u00040B \u00040C \u00040D \u00040E \u00040F \u000410 \u000411 \u000412 \u000413 \u000414 \u000415 \u000416 \u000417 \u000418 \u000419 \u00041A \u00041B \u00041C \u00041D \u00041E \u00041F \u000420 \u000421 \u000422 \u000423 \u000424 \u000425 \u000426 \u000427 \u000428 \u000429 \u00042A \u00042B \u00042C \u00042D \u00042E \u00042F \u000430 \u000431 \u000432 \u000433 \u000434 \u000435 \u000436 \u000437 \u000438 \u000439 \u00043A \u00043B \u00043C \u00043D \u00043E \u00043F \u000440 \u000441 \u000442 \u000443 \u000444 \u000445 \u000446 \u000447 \u000448 \u000449 \u00044A \u00044B \u00044C \u00044D \u00044E \u00044F \u000450 \u000451 \u000452 \u000453 \u000454 \u000455 \u000456 \u000457 \u000458 \u000459 \u00045A \u00045B \u00045C \u00045D \u00045E \u00045F</string>
+    </test>
+    <test label="U+0462">
+      <comment>CyCapYat</comment>
+      <string>\u000462 \u000463</string>
+    </test>
+    <test label="U+0472">
+      <comment>CyCapFita</comment>
+      <string>\u000472 \u000473 \u000474 \u000475</string>
+    </test>
+    <test label="U+048A">
+      <comment>CyCapShortITail</comment>
+      <string>\u00048A \u00048B \u00048C \u00048D \u00048E \u00048F \u000490 \u000491 \u000492 \u000493 \u000494 \u000495 \u000496 \u000497 \u000498 \u000499 \u00049A \u00049B \u00049C \u00049D \u00049E \u00049F \u0004A0 \u0004A1 \u0004A2 \u0004A3 \u0004A4 \u0004A5 \u0004A6 \u0004A7 \u0004A8 \u0004A9 \u0004AA \u0004AB \u0004AC \u0004AD \u0004AE \u0004AF \u0004B0 \u0004B1 \u0004B2 \u0004B3 \u0004B4 \u0004B5 \u0004B6 \u0004B7 \u0004B8 \u0004B9 \u0004BA \u0004BB \u0004BC \u0004BD \u0004BE \u0004BF \u0004C0 \u0004C1 \u0004C2 \u0004C3 \u0004C4 \u0004C5 \u0004C6 \u0004C7 \u0004C8 \u0004C9 \u0004CA \u0004CB \u0004CC \u0004CD \u0004CE \u0004CF \u0004D0 \u0004D1 \u0004D2 \u0004D3 \u0004D4 \u0004D5 \u0004D6 \u0004D7 \u0004D8 \u0004D9 \u0004DA \u0004DB \u0004DC \u0004DD \u0004DE \u0004DF \u0004E0 \u0004E1 \u0004E2 \u0004E3 \u0004E4 \u0004E5 \u0004E6 \u0004E7 \u0004E8 \u0004E9 \u0004EA \u0004EB \u0004EC \u0004ED \u0004EE \u0004EF \u0004F0 \u0004F1 \u0004F2 \u0004F3 \u0004F4 \u0004F5 \u0004F6 \u0004F7 \u0004F8 \u0004F9 \u0004FA \u0004FB \u0004FC \u0004FD \u0004FE \u0004FF \u000500 \u000501 \u000502 \u000503 \u000504 \u000505 \u000506 \u000507 \u000508 \u000509 \u00050A \u00050B \u00050C \u00050D \u00050E \u00050F \u000510 \u000511 \u000512 \u000513 \u000514 \u000515 \u000516 \u000517 \u000518 \u000519 \u00051A \u00051B \u00051C \u00051D \u00051E \u00051F \u000520 \u000521 \u000522 \u000523 \u000524 \u000525 \u000526 \u000527 \u000528 \u000529 \u00052A \u00052B \u00052C \u00052D \u00052E \u00052F</string>
+    </test>
+    <test label="U+1AB0">
+      <comment>CombDoubledCircum</comment>
+      <string>\u0025CC\u001AB0 \u0025CC\u001AB1 \u0025CC\u001AB2 \u0025CC\u001AB3 \u0025CC\u001AB4 \u0025CC\u001AB5 \u0025CC\u001AB6 \u0025CC\u001AB7 \u0025CC\u001AB8 \u0025CC\u001AB9 \u0025CC\u001ABA</string>
+    </test>
+    <test label="U+1D00">
+      <comment>LtnSmCapA</comment>
+      <string>\u001D00 \u001D01 \u001D02 \u001D03 \u001D04 \u001D05 \u001D06 \u001D07 \u001D08 \u001D09 \u001D0A \u001D0B \u001D0C \u001D0D \u001D0E \u001D0F \u001D10 \u001D11 \u001D12 \u001D13 \u001D14 \u001D15 \u001D16 \u001D17 \u001D18 \u001D19 \u001D1A \u001D1B \u001D1C \u001D1D \u001D1E \u001D1F \u001D20 \u001D21 \u001D22 \u001D23 \u001D24 \u001D25 \u001D26 \u001D27 \u001D28 \u001D29 \u001D2A \u001D2B \u001D2C \u001D2D \u001D2E \u001D2F \u001D30 \u001D31 \u001D32 \u001D33 \u001D34 \u001D35 \u001D36 \u001D37 \u001D38 \u001D39 \u001D3A \u001D3B \u001D3C \u001D3D \u001D3E \u001D3F \u001D40 \u001D41 \u001D42 \u001D43 \u001D44 \u001D45 \u001D46 \u001D47 \u001D48 \u001D49 \u001D4A \u001D4B \u001D4C \u001D4D \u001D4E \u001D4F \u001D50 \u001D51 \u001D52 \u001D53 \u001D54 \u001D55 \u001D56 \u001D57 \u001D58 \u001D59 \u001D5A \u001D5B \u001D5C \u001D5D \u001D5E \u001D5F \u001D60 \u001D61 \u001D62 \u001D63 \u001D64 \u001D65 \u001D66 \u001D67 \u001D68 \u001D69 \u001D6A \u001D6B \u001D6C \u001D6D \u001D6E \u001D6F \u001D70 \u001D71 \u001D72 \u001D73 \u001D74 \u001D75 \u001D76 \u001D77 \u001D78 \u001D79 \u001D7A \u001D7B \u001D7C \u001D7D \u001D7E \u001D7F \u001D80 \u001D81 \u001D82 \u001D83 \u001D84 \u001D85 \u001D86 \u001D87 \u001D88 \u001D89 \u001D8A \u001D8B \u001D8C \u001D8D \u001D8E \u001D8F \u001D90 \u001D91 \u001D92 \u001D93 \u001D94 \u001D95 \u001D96 \u001D97 \u001D98 \u001D99 \u001D9A \u001D9B \u001D9C \u001D9D \u001D9E \u001D9F \u001DA0 \u001DA1 \u001DA2 \u001DA3 \u001DA4 \u001DA5 \u001DA6 \u001DA7 \u001DA8 \u001DA9 \u001DAA \u001DAB \u001DAC \u001DAD \u001DAE \u001DAF \u001DB0 \u001DB1 \u001DB2 \u001DB3 \u001DB4 \u001DB5 \u001DB6 \u001DB7 \u001DB8 \u001DB9 \u001DBA \u001DBB \u001DBC \u001DBD \u001DBE \u001DBF</string>
+    </test>
+    <test label="U+1DC2">
+      <comment>CombSnakeBlw</comment>
+      <string>\u0025CC\u001DC2</string>
+    </test>
+    <test label="U+1DC4">
+      <comment>CombMacron_Acute</comment>
+      <string>\u0025CC\u001DC4 \u0025CC\u001DC5 \u0025CC\u001DC6 \u0025CC\u001DC7 \u0025CC\u001DC8 \u0025CC\u001DC9 \u0025CC\u001DCA \u0025CC\u001DCB \u0025CC\u001DCC \u0025CC\u001DCD</string>
+    </test>
+    <test label="U+1DF5">
+      <comment>CombUpTackAbv</comment>
+      <string>\u0025CC\u001DF5</string>
+    </test>
+    <test label="U+1DFD">
+      <comment>CombAlmostEqToBlw</comment>
+      <string>\u0025CC\u001DFD \u0025CC\u001DFE \u0025CC\u001DFF \u001E00 \u001E01 \u001E02 \u001E03 \u001E04 \u001E05 \u001E06 \u001E07 \u001E08 \u001E09 \u001E0A \u001E0B \u001E0C \u001E0D \u001E0E \u001E0F \u001E10 \u001E11 \u001E12 \u001E13 \u001E14 \u001E15 \u001E16 \u001E17 \u001E18 \u001E19 \u001E1A \u001E1B \u001E1C \u001E1D \u001E1E \u001E1F \u001E20 \u001E21 \u001E22 \u001E23 \u001E24 \u001E25 \u001E26 \u001E27 \u001E28 \u001E29 \u001E2A \u001E2B \u001E2C \u001E2D \u001E2E \u001E2F \u001E30 \u001E31 \u001E32 \u001E33 \u001E34 \u001E35 \u001E36 \u001E37 \u001E38 \u001E39 \u001E3A \u001E3B \u001E3C \u001E3D \u001E3E \u001E3F \u001E40 \u001E41 \u001E42 \u001E43 \u001E44 \u001E45 \u001E46 \u001E47 \u001E48 \u001E49 \u001E4A \u001E4B \u001E4C \u001E4D \u001E4E \u001E4F \u001E50 \u001E51 \u001E52 \u001E53 \u001E54 \u001E55 \u001E56 \u001E57 \u001E58 \u001E59 \u001E5A \u001E5B \u001E5C \u001E5D \u001E5E \u001E5F \u001E60 \u001E61 \u001E62 \u001E63 \u001E64 \u001E65 \u001E66 \u001E67 \u001E68 \u001E69 \u001E6A \u001E6B \u001E6C \u001E6D \u001E6E \u001E6F \u001E70 \u001E71 \u001E72 \u001E73 \u001E74 \u001E75 \u001E76 \u001E77 \u001E78 \u001E79 \u001E7A \u001E7B \u001E7C \u001E7D \u001E7E \u001E7F \u001E80 \u001E81 \u001E82 \u001E83 \u001E84 \u001E85 \u001E86 \u001E87 \u001E88 \u001E89 \u001E8A \u001E8B \u001E8C \u001E8D \u001E8E \u001E8F \u001E90 \u001E91 \u001E92 \u001E93 \u001E94 \u001E95 \u001E96 \u001E97 \u001E98 \u001E99 \u001E9A \u001E9B \u001E9C \u001E9D \u001E9E \u001E9F \u001EA0 \u001EA1 \u001EA2 \u001EA3 \u001EA4 \u001EA5 \u001EA6 \u001EA7 \u001EA8 \u001EA9 \u001EAA \u001EAB \u001EAC \u001EAD \u001EAE \u001EAF \u001EB0 \u001EB1 \u001EB2 \u001EB3 \u001EB4 \u001EB5 \u001EB6 \u001EB7 \u001EB8 \u001EB9 \u001EBA \u001EBB \u001EBC \u001EBD \u001EBE \u001EBF \u001EC0 \u001EC1 \u001EC2 \u001EC3 \u001EC4 \u001EC5 \u001EC6 \u001EC7 \u001EC8 \u001EC9 \u001ECA \u001ECB \u001ECC \u001ECD \u001ECE \u001ECF \u001ED0 \u001ED1 \u001ED2 \u001ED3 \u001ED4 \u001ED5 \u001ED6 \u001ED7 \u001ED8 \u001ED9 \u001EDA \u001EDB \u001EDC \u001EDD \u001EDE \u001EDF \u001EE0 \u001EE1 \u001EE2 \u001EE3 \u001EE4 \u001EE5 \u001EE6 \u001EE7 \u001EE8 \u001EE9 \u001EEA \u001EEB \u001EEC \u001EED \u001EEE \u001EEF \u001EF0 \u001EF1 \u001EF2 \u001EF3 \u001EF4 \u001EF5 \u001EF6 \u001EF7 \u001EF8 \u001EF9 \u001EFA \u001EFB \u001EFC \u001EFD \u001EFE \u001EFF</string>
+    </test>
+    <test label="U+2000">
+      <comment>EnQuad</comment>
+      <string>\u00F130\u002000\u00F131 \u00F130\u002001\u00F131 \u00F130\u002002\u00F131 \u00F130\u002003\u00F131 \u00F130\u002004\u00F131 \u00F130\u002005\u00F131 \u00F130\u002006\u00F131 \u00F130\u002007\u00F131 \u00F130\u002008\u00F131 \u00F130\u002009\u00F131 \u00F130\u00200A\u00F131 \u00200B \u00200C \u00200D \u00200E \u00200F \u002010 \u002011 \u002012 \u002013 \u002014 \u002015 \u002016 \u002017 \u002018 \u002019 \u00201A \u00201B \u00201C \u00201D \u00201E \u00201F \u002020 \u002021 \u002022 \u002023 \u002024 \u002025 \u002026 \u002027 \u00F130\u002028\u00F131 \u00F130\u002029\u00F131 \u00202A \u00202B \u00202C \u00202D \u00202E \u00F130\u00202F\u00F131 \u002030</string>
+    </test>
+    <test label="U+2032">
+      <comment>Prime</comment>
+      <string>\u002032 \u002033 \u002034 \u002035 \u002036 \u002037 \u002038 \u002039 \u00203A \u00203B \u00203C</string>
+    </test>
+    <test label="U+203F">
+      <comment>CharTieBlw</comment>
+      <string>\u00203F \u002040 \u002041</string>
+    </test>
+    <test label="U+2044">
+      <comment>FracSlash</comment>
+      <string>\u002044</string>
+    </test>
+    <test label="U+2053">
+      <comment>SwingDash</comment>
+      <string>\u002053</string>
+    </test>
+    <test label="U+2057">
+      <comment>QuadruplePrime</comment>
+      <string>\u002057</string>
+    </test>
+    <test label="U+2060">
+      <comment>WordJoiner</comment>
+      <string>\u002060 \u002061 \u002062 \u002063</string>
+    </test>
+    <test label="U+206A">
+      <comment>InhibitSymmetricSwapping</comment>
+      <string>\u00206A \u00206B \u00206C \u00206D \u00206E \u00206F \u002070 \u002071</string>
+    </test>
+    <test label="U+2074">
+      <comment>SupFour</comment>
+      <string>\u002074 \u002075 \u002076 \u002077 \u002078 \u002079 \u00207A \u00207B \u00207C \u00207D \u00207E \u00207F \u002080 \u002081 \u002082 \u002083 \u002084 \u002085 \u002086 \u002087 \u002088 \u002089 \u00208A \u00208B \u00208C \u00208D \u00208E</string>
+    </test>
+    <test label="U+2090">
+      <comment>LtnSubSmA</comment>
+      <string>\u002090 \u002091 \u002092 \u002093 \u002094 \u002095 \u002096 \u002097 \u002098 \u002099 \u00209A \u00209B \u00209C</string>
+    </test>
+    <test label="U+20A0">
+      <comment>EuroCurrSgn</comment>
+      <string>\u0020A0 \u0020A1 \u0020A2 \u0020A3 \u0020A4 \u0020A5 \u0020A6 \u0020A7 \u0020A8 \u0020A9 \u0020AA \u0020AB \u0020AC \u0020AD \u0020AE \u0020AF \u0020B0 \u0020B1 \u0020B2 \u0020B3 \u0020B4 \u0020B5 \u0020B6 \u0020B7 \u0020B8 \u0020B9 \u0020BA \u0020BB \u0020BC \u0020BD \u0020BE \u0020BF</string>
+    </test>
+    <test label="U+20E5">
+      <comment>CombLngReverseSolidusOverlay</comment>
+      <string>\u0025CC\u0020E5</string>
+    </test>
+    <test label="U+20EC">
+      <comment>CombRtHarpoonBarbDwnBlw</comment>
+      <string>\u0025CC\u0020EC \u0025CC\u0020ED \u0025CC\u0020EE \u0025CC\u0020EF</string>
+    </test>
+    <test label="U+210C">
+      <comment>LtrBlackCapH</comment>
+      <string>\u00210C</string>
+    </test>
+    <test label="U+2113">
+      <comment>LtrScriptSmL</comment>
+      <string>\u002113</string>
+    </test>
+    <test label="U+2116">
+      <comment>NumeroSgn</comment>
+      <string>\u002116 \u002117</string>
+    </test>
+    <test label="U+211F">
+      <comment>R_Response</comment>
+      <string>\u00211F</string>
+    </test>
+    <test label="U+2122">
+      <comment>TradeMrkSgn</comment>
+      <string>\u002122 \u002123</string>
+    </test>
+    <test label="U+2126">
+      <comment>OhmSgn</comment>
+      <string>\u002126</string>
+    </test>
+    <test label="U+212D">
+      <comment>LtrBlackCapC</comment>
+      <string>\u00212D</string>
+    </test>
+    <test label="U+2135">
+      <comment>LtrAlef</comment>
+      <string>\u002135</string>
+    </test>
+    <test label="U+214F">
+      <comment>LtrSamShin</comment>
+      <string>\u00214F \u002150 \u002151 \u002152 \u002153 \u002154 \u002155 \u002156 \u002157 \u002158 \u002159 \u00215A \u00215B \u00215C \u00215D \u00215E \u00215F \u002160 \u002161 \u002162 \u002163 \u002164 \u002165 \u002166 \u002167 \u002168 \u002169 \u00216A \u00216B \u00216C \u00216D \u00216E \u00216F \u002170 \u002171 \u002172 \u002173 \u002174 \u002175 \u002176 \u002177 \u002178 \u002179 \u00217A \u00217B \u00217C \u00217D \u00217E \u00217F \u002180 \u002181 \u002182 \u002183 \u002184 \u002185 \u002186 \u002187 \u002188 \u002189</string>
+    </test>
+    <test label="U+2190">
+      <comment>LftArrw</comment>
+      <string>\u002190 \u002191 \u002192 \u002193 \u002194 \u002195 \u002196 \u002197 \u002198 \u002199 \u00219A \u00219B</string>
+    </test>
+    <test label="U+21A8">
+      <comment>UpDwnArrwWBase</comment>
+      <string>\u0021A8</string>
+    </test>
+    <test label="U+21D0">
+      <comment>LftDblArrw</comment>
+      <string>\u0021D0 \u0021D1 \u0021D2 \u0021D3 \u0021D4 \u0021D5</string>
+    </test>
+    <test label="U+2202">
+      <comment>PartialDiff</comment>
+      <string>\u002202 \u002203 \u002204 \u002205 \u002206</string>
+    </test>
+    <test label="U+220F">
+      <comment>NAryProduct</comment>
+      <string>\u00220F</string>
+    </test>
+    <test label="U+2211">
+      <comment>NArySummation</comment>
+      <string>\u002211 \u002212 \u002213</string>
+    </test>
+    <test label="U+2219">
+      <comment>BulletOperator</comment>
+      <string>\u002219 \u00221A</string>
+    </test>
+    <test label="U+221E">
+      <comment>Infinity</comment>
+      <string>\u00221E</string>
+    </test>
+    <test label="U+2225">
+      <comment>ParallelTo</comment>
+      <string>\u002225 \u002226</string>
+    </test>
+    <test label="U+222B">
+      <comment>Integral</comment>
+      <string>\u00222B</string>
+    </test>
+    <test label="U+2234">
+      <comment>Therefore</comment>
+      <string>\u002234 \u002235</string>
+    </test>
+    <test label="U+223C">
+      <comment>TildeOperator</comment>
+      <string>\u00223C</string>
+    </test>
+    <test label="U+2248">
+      <comment>AlmostEqTo</comment>
+      <string>\u002248</string>
+    </test>
+    <test label="U+225F">
+      <comment>QuestionedEqTo</comment>
+      <string>\u00225F \u002260 \u002261 \u002262</string>
+    </test>
+    <test label="U+2264">
+      <comment>LTOrEqTo</comment>
+      <string>\u002264 \u002265</string>
+    </test>
+    <test label="U+2282">
+      <comment>SubsetOf</comment>
+      <string>\u002282 \u002283 \u002284 \u002285 \u002286 \u002287</string>
+    </test>
+    <test label="U+2308">
+      <comment>SqrTxtBracHighLft</comment>
+      <string>\u002308 \u002309 \u00230A \u00230B</string>
+    </test>
+    <test label="U+231C">
+      <comment>SqrTxtBracHighLftShort</comment>
+      <string>\u00231C \u00231D \u00231E \u00231F</string>
+    </test>
+    <test label="U+2329">
+      <comment>LftPtngAngBrac</comment>
+      <string>\u002329 \u00232A</string>
+    </test>
+    <test label="U+239B">
+      <comment>LftTopParen</comment>
+      <string>\u00239B \u00239C \u00239D \u00239E \u00239F \u0023A0 \u0023A1 \u0023A2 \u0023A3 \u0023A4 \u0023A5 \u0023A6 \u0023A7 \u0023A8 \u0023A9 \u0023AA \u0023AB \u0023AC \u0023AD</string>
+    </test>
+    <test label="U+2423">
+      <comment>OpnBx</comment>
+      <string>\u002423</string>
+    </test>
+    <test label="U+25CA">
+      <comment>Lozenge</comment>
+      <string>\u0025CA</string>
+    </test>
+    <test label="U+25CC">
+      <comment>DottedCirc</comment>
+      <string>\u0025CC</string>
+    </test>
+    <test label="U+2640">
+      <comment>FemaleSgn</comment>
+      <string>\u002640</string>
+    </test>
+    <test label="U+2642">
+      <comment>MaleSgn</comment>
+      <string>\u002642</string>
+    </test>
+    <test label="U+266D">
+      <comment>MusicFlatSign</comment>
+      <string>\u00266D</string>
+    </test>
+    <test label="U+266F">
+      <comment>MusicSharpSign</comment>
+      <string>\u00266F</string>
+    </test>
+    <test label="U+2713">
+      <comment>CheckMrk</comment>
+      <string>\u002713</string>
+    </test>
+    <test label="U+274D">
+      <comment>ShadowedWhiteCirc</comment>
+      <string>\u00274D</string>
+    </test>
+    <test label="U+27E6">
+      <comment>MathLftWhiteSqrBrac</comment>
+      <string>\u0027E6 \u0027E7 \u0027E8 \u0027E9</string>
+    </test>
+    <test label="U+2C60">
+      <comment>LtnCapDblBarredL</comment>
+      <string>\u002C60 \u002C61 \u002C62 \u002C63 \u002C64 \u002C65 \u002C66 \u002C67 \u002C68 \u002C69 \u002C6A \u002C6B \u002C6C \u002C6D \u002C6E \u002C6F \u002C70 \u002C71 \u002C72 \u002C73 \u002C74 \u002C75 \u002C76 \u002C77 \u002C78 \u002C79 \u002C7A \u002C7B \u002C7C \u002C7D \u002C7E \u002C7F</string>
+    </test>
+    <test label="U+2C88">
+      <comment>CopCapEie</comment>
+      <string>\u002C88</string>
+    </test>
+    <test label="U+2E00">
+      <comment>SupplRtAngleSubMkr</comment>
+      <string>\u002E00 \u002E01 \u002E02 \u002E03 \u002E04 \u002E05 \u002E06 \u002E07 \u002E08 \u002E09 \u002E0A \u002E0B \u002E0C \u002E0D</string>
+    </test>
+    <test label="U+2E13">
+      <comment>SupplDottedObelos</comment>
+      <string>\u002E13 \u002E14</string>
+    </test>
+    <test label="U+2E17">
+      <comment>SupplDblDiagHyphen</comment>
+      <string>\u002E17</string>
+    </test>
+    <test label="U+2E22">
+      <comment>SupplTopLftHalfBrac</comment>
+      <string>\u002E22 \u002E23 \u002E24 \u002E25</string>
+    </test>
+    <test label="U+2E3A">
+      <comment>TwoEmDash</comment>
+      <string>\u002E3A \u002E3B</string>
+    </test>
+    <test label="U+A700">
+      <comment>ModTnYinPing</comment>
+      <string>\u00A700 \u00A701 \u00A702 \u00A703 \u00A704 \u00A705 \u00A706 \u00A707 \u00A708 \u00A709 \u00A70A \u00A70B \u00A70C \u00A70D \u00A70E \u00A70F \u00A710 \u00A711 \u00A712 \u00A713 \u00A714 \u00A715 \u00A716 \u00A717 \u00A718 \u00A719 \u00A71A \u00A71B \u00A71C \u00A71D \u00A71E \u00A71F \u00A720 \u00A721 \u00A722 \u00A723 \u00A724 \u00A725 \u00A726 \u00A727 \u00A728 \u00A729 \u00A72A \u00A72B \u00A72C \u00A72D \u00A72E \u00A72F \u00A730 \u00A731 \u00A732 \u00A733 \u00A734 \u00A735 \u00A736 \u00A737 \u00A738 \u00A739 \u00A73A \u00A73B \u00A73C \u00A73D \u00A73E \u00A73F \u00A740 \u00A741 \u00A742 \u00A743 \u00A744 \u00A745 \u00A746 \u00A747 \u00A748 \u00A749 \u00A74A \u00A74B \u00A74C \u00A74D \u00A74E \u00A74F \u00A750 \u00A751 \u00A752 \u00A753 \u00A754 \u00A755 \u00A756 \u00A757 \u00A758 \u00A759 \u00A75A \u00A75B \u00A75C \u00A75D \u00A75E \u00A75F \u00A760 \u00A761 \u00A762 \u00A763 \u00A764 \u00A765 \u00A766 \u00A767 \u00A768 \u00A769 \u00A76A \u00A76B \u00A76C \u00A76D \u00A76E \u00A76F \u00A770 \u00A771 \u00A772 \u00A773 \u00A774 \u00A775 \u00A776 \u00A777 \u00A778 \u00A779 \u00A77A \u00A77B \u00A77C \u00A77D \u00A77E \u00A77F \u00A780 \u00A781 \u00A782 \u00A783 \u00A784 \u00A785 \u00A786 \u00A787 \u00A788 \u00A789 \u00A78A \u00A78B \u00A78C \u00A78D \u00A78E \u00A78F \u00A790 \u00A791 \u00A792 \u00A793 \u00A794 \u00A795 \u00A796 \u00A797 \u00A798 \u00A799</string>
+    </test>
+    <test label="U+A7A0">
+      <comment>LtnCapGDiagStrk</comment>
+      <string>\u00A7A0 \u00A7A1 \u00A7A2 \u00A7A3 \u00A7A4 \u00A7A5 \u00A7A6 \u00A7A7 \u00A7A8 \u00A7A9 \u00A7AA \u00A7AB \u00A7AC \u00A7AD \u00A7AE \u00A7AF \u00A7B0 \u00A7B1 \u00A7B2 \u00A7B3 \u00A7B4 \u00A7B5 \u00A7B6 \u00A7B7 \u00A7B8 \u00A7B9</string>
+    </test>
+    <test label="U+A7F7">
+      <comment>LtnCapSdwysI</comment>
+      <string>\u00A7F7 \u00A7F8 \u00A7F9 \u00A7FA \u00A7FB \u00A7FC \u00A7FD \u00A7FE \u00A7FF</string>
+    </test>
+    <test label="U+A92E">
+      <comment>KayahLiSignCwi</comment>
+      <string>\u00A92E</string>
+    </test>
+    <test label="U+AB30">
+      <comment>LtnSmBarredAlpha</comment>
+      <string>\u00AB30</string>
+    </test>
+    <test label="U+AB53">
+      <comment>LtnSmChi</comment>
+      <string>\u00AB53</string>
+    </test>
+    <test label="U+AB5C">
+      <comment>ModSmHeng</comment>
+      <string>\u00AB5C</string>
+    </test>
+    <test label="U+AB5E">
+      <comment>ModSmLMiddleTilde</comment>
+      <string>\u00AB5E</string>
+    </test>
+    <test label="U+AB64">
+      <comment>LtnSmInvAlpha</comment>
+      <string>\u00AB64 \u00AB65</string>
+    </test>
+    <test label="U+F130">
+      <comment>FontBslnSideBrngMrkrLft</comment>
+      <string>\u00F130 \u00F131 \u00F132 \u00F133 \u00F134 \u00F135</string>
+    </test>
+    <test label="U+F170">
+      <comment>CombSnakeBlwDep</comment>
+      <string>\u00F170 \u00F171 \u00F172 \u00F173 \u00F174 \u00F175 \u00F176</string>
+    </test>
+    <test label="U+F178">
+      <comment>CombLtnSmRBlwDep</comment>
+      <string>\u00F178 \u00F179 \u00F17A \u00F17B</string>
+    </test>
+    <test label="U+F180">
+      <comment>LtnSupSmMDep</comment>
+      <string>\u00F180 \u00F181 \u00F182</string>
+    </test>
+    <test label="U+F18B">
+      <comment>LtnSupSmRevOpnEDep</comment>
+      <string>\u00F18B</string>
+    </test>
+    <test label="U+F195">
+      <comment>ModGraveAccentDep</comment>
+      <string>\u00F195 \u00F196 \u00F197 \u00F198 \u00F199 \u00F19A \u00F19B \u00F19C \u00F19D \u00F19E \u00F19F \u00F1A0 \u00F1A1 \u00F1A2 \u00F1A3 \u00F1A4 \u00F1A5 \u00F1A6 \u00F1A7 \u00F1A8 \u00F1A9 \u00F1AA \u00F1AB \u00F1AC \u00F1AD \u00F1AE \u00F1AF \u00F1B0 \u00F1B1 \u00F1B2 \u00F1B3 \u00F1B4 \u00F1B5 \u00F1B6 \u00F1B7 \u00F1B8 \u00F1B9 \u00F1BA \u00F1BB \u00F1BC \u00F1BD \u00F1BE \u00F1BF \u00F1C0 \u00F1C1 \u00F1C2 \u00F1C3 \u00F1C4 \u00F1C5 \u00F1C6 \u00F1C7 \u00F1C8 \u00F1C9 \u00F1CA \u00F1CB \u00F1CC \u00F1CD \u00F1CE</string>
+    </test>
+    <test label="U+F1D0">
+      <comment>LftStemTnLtr5Dep</comment>
+      <string>\u00F1D0 \u00F1D1 \u00F1D2 \u00F1D3 \u00F1D4 \u00F1D5 \u00F1D6 \u00F1D7 \u00F1D8 \u00F1D9 \u00F1DA \u00F1DB \u00F1DC \u00F1DD \u00F1DE \u00F1DF \u00F1E0 \u00F1E1 \u00F1E2 \u00F1E3 \u00F1E4 \u00F1E5 \u00F1E6 \u00F1E7 \u00F1E8 \u00F1E9 \u00F1EA</string>
+    </test>
+    <test label="U+F208">
+      <comment>LtnCapSmAlphaDep</comment>
+      <string>\u00F208 \u00F209 \u00F20A \u00F20B \u00F20C \u00F20D \u00F20E \u00F20F \u00F210 \u00F211 \u00F212 \u00F213 \u00F214 \u00F215 \u00F216 \u00F217 \u00F218 \u00F219 \u00F21A \u00F21B \u00F21C \u00F21D \u00F21E \u00F21F \u00F220 \u00F221 \u00F222 \u00F223 \u00F224 \u00F225 \u00F226 \u00F227 \u00F228 \u00F229 \u00F22A \u00F22B \u00F22C \u00F22D \u00F22E \u00F22F \u00F230 \u00F231 \u00F232 \u00F233 \u00F234 \u00F235 \u00F236 \u00F237 \u00F238 \u00F239 \u00F23A \u00F23B \u00F23C \u00F23D \u00F23E \u00F23F \u00F240 \u00F241 \u00F242 \u00F243 \u00F244 \u00F245 \u00F246 \u00F247 \u00F248 \u00F249 \u00F24A \u00F24B \u00F24C \u00F24D \u00F24E \u00F24F \u00F250 \u00F251 \u00F252 \u00F253 \u00F254 \u00F255 \u00F256 \u00F257 \u00F258 \u00F259 \u00F25A \u00F25B \u00F25C \u00F25D \u00F25E \u00F25F \u00F260 \u00F261 \u00F262 \u00F263 \u00F264 \u00F265 \u00F266 \u00F267 \u00F268 \u00F269 \u00F26A \u00F26B \u00F26C \u00F26D \u00F26E</string>
+    </test>
+    <test label="U+F320">
+      <comment>CyCapGheDescDep</comment>
+      <string>\u00F320 \u00F321 \u00F322 \u00F323 \u00F324 \u00F325 \u00F326 \u00F327 \u00F328 \u00F329 \u00F32A \u00F32B \u00F32C \u00F32D</string>
+    </test>
+    <test label="U+FB00">
+      <comment>LtnSmLigFf</comment>
+      <string>\u00FB00 \u00FB01 \u00FB02 \u00FB03 \u00FB04</string>
+    </test>
+    <test label="U+FE00">
+      <comment>VS1</comment>
+      <string>\u0025CC\u00FE00 \u0025CC\u00FE01 \u0025CC\u00FE02 \u0025CC\u00FE03 \u0025CC\u00FE04 \u0025CC\u00FE05 \u0025CC\u00FE06 \u0025CC\u00FE07 \u0025CC\u00FE08 \u0025CC\u00FE09 \u0025CC\u00FE0A \u0025CC\u00FE0B \u0025CC\u00FE0C \u0025CC\u00FE0D \u0025CC\u00FE0E \u0025CC\u00FE0F</string>
+    </test>
+    <test label="U+FE20">
+      <comment>CombDblInvBreveLft</comment>
+      <string>\u0025CC\u00FE20 \u0025CC\u00FE21 \u0025CC\u00FE22 \u0025CC\u00FE23</string>
+    </test>
+    <test label="U+FEFF">
+      <comment>ZeroWidthNoBreakSpace</comment>
+      <string>\u00FEFF</string>
+    </test>
+    <test label="U+FFF9">
+      <comment>IntlnrAnnotationAnchor</comment>
+      <string>\u00FFF9 \u00FFFA \u00FFFB \u00FFFC \u00FFFD</string>
+    </test>
+    <test label="U+1D40C">
+      <comment>MathBoldCapM</comment>
+      <string>\u01D40C</string>
+    </test>
+    <test label="U+1D504">
+      <comment>MathFrktCapA</comment>
+      <string>\u01D504 \u01D505</string>
+    </test>
+    <test label="U+1D50A">
+      <comment>MathFrktCapG</comment>
+      <string>\u01D50A</string>
+    </test>
+    <test label="U+1D50E">
+      <comment>MathFrktCapK</comment>
+      <string>\u01D50E \u01D50F \u01D510</string>
+    </test>
+    <test label="U+1D513">
+      <comment>MathFrktCapP</comment>
+      <string>\u01D513 \u01D514</string>
+    </test>
+    <test label="U+1D516">
+      <comment>MathFrktCapS</comment>
+      <string>\u01D516 \u01D517</string>
+    </test>
+    <test label="U+1D519">
+      <comment>MathFrktCapV</comment>
+      <string>\u01D519</string>
+    </test>
+  </testgroup>
+  <testgroup label="Specials &amp; ligatures from glyph_data">
+    <test label="U+0306
+U+0301">
+      <comment>CombBreve CombAcute</comment>
+      <string>\u0025CC\u000306\u000301 \u0025CC\u000306\u000300 \u0025CC\u000306\u000309 \u0025CC\u000306\u000303</string>
+    </test>
+    <test label="U+0302
+U+0301">
+      <comment>CombCircum CombAcute</comment>
+      <string>\u0025CC\u000302\u000301 \u0025CC\u000302\u000300 \u0025CC\u000302\u000309 \u0025CC\u000302\u000303</string>
+    </test>
+    <test label="U+0300
+U+0301">
+      <comment>CombGrave CombAcute</comment>
+      <string>\u0025CC\u000300\u000301</string>
+    </test>
+    <test label="U+0066
+U+0066">
+      <comment>LtnSmF LtnSmF</comment>
+      <string>ff ff ff ff ffi ffi ffi ffi ffl ffl ffl ffl fi fi fi fi fl fl fl fl</string>
+    </test>
+  </testgroup>
+</ftml>
