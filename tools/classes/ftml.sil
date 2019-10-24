@@ -1,0 +1,34 @@
+\begin[class=ftml]{document}
+%\include[src=examples/macros.sil]
+\script[src=packages/color]
+\script[src=packages/frametricks]
+\script[src=packages/linespacing]
+\set[parameter=linespacing.method,value=fixed]
+\set[parameter=linespacing.fixed.baselinedistance,value=1.2em]
+%\showframe[id=all]
+
+\define[command=supereject]{\vfill\penalty[penalty=-20000]}
+
+\define[command=ftml:title]{\begin[left=true,right=true]{ragged}
+\font[size=20pt,weight=700,family=Gentium Plus]{\process}
+\end{ragged}}
+
+\define[command=ftml:comment]{\begin[left=true,right=true]{ragged}
+\font[style=italic]{\process}
+\end{ragged}}
+
+\define[command=ftml:testgrouplabel]{
+\skip[height=12pt plus 0pt minus 0pt]
+\set[parameter=linespacing.method,value=fixed]
+\set[parameter=linespacing.fixed.baselinedistance,value=1.2em]
+\font[size=12pt,weight=700,family=Gentium Plus]{\process}
+}
+
+\define[command=ftml:testgroupcomment]{
+\skip[height=2pt plus 0pt minus 0pt]
+\set[parameter=linespacing.method,value=fixed]
+\set[parameter=linespacing.fixed.baselinedistance,value=1.2em]
+\font[size=10pt,weight=400,family=Gentium Plus,style=italic]{\process}
+\skip[height=2pt plus 0pt minus 0pt]
+}
+\end{document}

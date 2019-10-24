@@ -24,7 +24,16 @@ DEBPKG = 'fonts-sil-charis'
 getufoinfo('source/' + FAMILYNAME + '-Regular' + '.ufo')
 BUILDLABEL = "alpha"
 
-ftmlTest("tests/ftml.xsl", addfontindex = 1, fontmode = "collect")
+#ftmlTest("tests/ftml.xsl", addfontindex = 1, fontmode = "collect")
+import os
+silepath = os.path.abspath('../tools')
+testCommand("ftmle", cmd="SILE_PATH=../tools/classes sile -I ftml "
+                         "-e 'SILE.scratch.ftmlfontlist={\"${SRC[1].bldpath()}\"}' "
+                         "-e \"SILE.settings.set('harfbuzz.subshapers', "
+                                "('${shaper}' == 'gr' and 'graphite2' or 'ot'))\" "
+                         "-e 'SILE.scratch.ftmlfontsize=10' "
+                         "-o '${TGT}' '${SRC[0].bldpath()}'",
+            shell=1, supports=['.ftml'], ext='.pdf', shapers=1, extracmds=['sile'])
 
 fontfamily="CharisSIL"
 for dspace in ('Roman', 'Italic'):
