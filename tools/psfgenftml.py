@@ -17,7 +17,6 @@ argspec = [
     ('-i','--input',{'help': 'Glyph info csv file'}, {'type': 'incsv', 'def': 'glyph_data.csv'}),
     ('-f','--fontcode',{'help': 'letter to filter for glyph_data'},{}),
     ('-l','--log',{'help': 'Set log file name'}, {'type': 'outfile', 'def': '_ftml.log'}),
-    ('--rtl', {'help': 'enable right-to-left features', 'action': 'store_true'}, {}),
     ('-t', '--test', {'help': 'which test to build', 'default': None, 'action': 'store'}, {}),
     ('-s','--fontsrc',{'help': 'default font source', 'action': 'append'}, {}),
     ('--scale', {'help': '% to scale rendered text'}, {}),
@@ -213,7 +212,7 @@ class FTMLBuilder_LCG(FB.FTMLBuilder):
             self.allLangs = list(sorted(self.allLangs))
             self.allLangs = list(sorted(self.allLangs))
 
-    def render(self, uids, ftml, keyUID=0, addBreaks=True, rtl=None):
+    def render(self, uids, ftml, keyUID=0):
         """ general purpose (but not required) function to generate ftml for a character sequence """
         if len(uids) == 0:
             return
@@ -228,28 +227,9 @@ class FTMLBuilder_LCG(FB.FTMLBuilder):
         label = '\n'.join(['U+{0:04X}'.format(u) for u in uids])
         # Construct comment from glyph names:
         comment = ' '.join([self._charFromUID[u].basename for u in uids])
-        # see if uid list includes a mirrored char
-        hasMirrored = bool(len([x for x in uids if get_ucd(x, 'Bidi_M')]))
-        # Analyze first and last joining char
-        joiningChars = [x for x in uids if get_ucd(x, 'jt') != 'T']
-        # joiningChars = [x for x in uids if Char.getIntPropertyValue(x, UProperty.JOINING_TYPE) != TRANSPARENT]
-        if len(joiningChars):
-            # If first or last non-TRANSPARENT char is a joining char, then we need to emit examples with zwj
-            # Assumes any non-TRANSPARENT char that is bc != L must be a rtl character of some sort
-            uid = joiningChars[0]
-            zwjBefore = (get_ucd(uid, 'jt') == 'D'
-                         or (get_ucd(uid, 'bc') == 'L' and get_ucd(uid, 'jt') == 'L')
-                         or (get_ucd(uid, 'bc') != 'L' and get_ucd(uid, 'jt') == 'R'))
-            uid = joiningChars[-1]
-            zwjAfter = (get_ucd(uid, 'jt') == 'D'
-                        or (get_ucd(uid, 'bc') == 'L' and get_ucd(uid, 'jt') == 'R')
-                        or (get_ucd(uid, 'bc') != 'L' and get_ucd(uid, 'jt') == 'L'))
-        else:
-            zwjBefore = zwjAfter = False
         if get_ucd(startUID, 'gc') == 'Mn':
             # First char is a NSM... prefix a suitable base
             uids.insert(0, self.diacBase)
-            zwjBefore = False  # No longer any need to put zwj before
         elif get_ucd(startUID, 'WSpace'):
             # First char is whitespace -- prefix with baseline brackets:
             uids.insert(0, 0xF130)
@@ -258,32 +238,10 @@ class FTMLBuilder_LCG(FB.FTMLBuilder):
             # Last non-mark is whitespace -- append baseline brackets:
             uids.append(0xF131)
         s = ''.join([chr(uid) for uid in uids])
-        if zwjBefore or zwjAfter:
-            # Show contextual forms:
-            t = u'{0} '.format(s)
-            if zwjAfter:
-                t += u'{0}\u200D '.format(s)
-                if zwjBefore:
-                    t += u'\u200D{0}\u200D '.format(s)
-            if zwjBefore:
-                t += u'\u200D{0} '.format(s)
-            if zwjBefore and zwjAfter:
-                t += u'{0}{0}{0}'.format(s)
-            if addBreaks: ftml.closeTest()
-            ftml.addToTest(keyUID, t, label=label, comment=comment, rtl=rtl)
-            if addBreaks: ftml.closeTest()
-        elif hasMirrored and self.rtlEnable:
-            # Contains mirrored and rtl enabled:
-            if addBreaks: ftml.closeTest()
-            ftml.addToTest(keyUID, u'{0} LTR: \u202A{0}\u202C RTL: \u202B{0}\u202C'.format(s), label=label,
-                           comment=comment, rtl=rtl)
-            if addBreaks: ftml.closeTest()
-        # elif is LRE, RLE, PDF
-        # elif is LRI, RLI, FSI, PDI
-        elif uidLen > 1:
-            ftml.addToTest(keyUID, s, label=label, comment=comment, rtl=rtl)
+        if uidLen > 1:
+            ftml.addToTest(keyUID, s, label=label, comment=comment)
         else:
-            ftml.addToTest(keyUID, s, comment=comment, rtl=rtl)
+            ftml.addToTest(keyUID, s, comment=comment)
 
 def doit(args):
     logger = args.logger
@@ -403,7 +361,7 @@ def doit(args):
             # Always process Lo, but others only if that take marks:
             if c.general == 'Lo' or c.isBase:
                 for diac in repDiac:
-                    builder.render((uid, diac), ftml, addBreaks = False)
+                    builder.render((uid, diac), ftml)
                     # for featlist in builder.permuteFeatures(uids = (uid,diac)):
                     #     ftml.setFeatures(featlist)
                     #     # Don't automatically separate connecting or mirrored forms into separate lines:
@@ -419,7 +377,7 @@ def doit(args):
             c = builder.char(uid)
             if c.general == 'Mn':
                 for base in repBase:
-                    builder.render((base, uid), ftml, keyUID=uid, addBreaks=False)
+                    builder.render((base, uid), ftml, keyUID=uid)
                     # for featlist in builder.permuteFeatures(uids = (uid,base)):
                     #     ftml.setFeatures(featlist)
                     #     builder.render((base,uid), ftml, keyUID = uid, addBreaks = False)
