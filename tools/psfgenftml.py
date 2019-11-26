@@ -7,6 +7,7 @@ __author__ = 'Alan Ward'
 
 from silfont.core import execute
 import silfont.ftml_builder as FB
+from palaso.unicode.ucd import get_ucd
 import re
 from itertools import combinations, chain, product
 
@@ -212,6 +213,78 @@ class FTMLBuilder_LCG(FB.FTMLBuilder):
             self.allLangs = list(sorted(self.allLangs))
             self.allLangs = list(sorted(self.allLangs))
 
+    def render(self, uids, ftml, keyUID=0, addBreaks=True, rtl=None):
+        """ general purpose (but not required) function to generate ftml for a character sequence """
+        if len(uids) == 0:
+            return
+        # Make a copy so we don't affect caller
+        uids = list(uids)
+        # Remember first uid and original length for later
+        startUID = uids[0]
+        uidLen = len(uids)
+        # if keyUID wasn't supplied, use startUID
+        if keyUID == 0: keyUID = startUID
+        # Construct label from uids:
+        label = '\n'.join(['U+{0:04X}'.format(u) for u in uids])
+        # Construct comment from glyph names:
+        comment = ' '.join([self._charFromUID[u].basename for u in uids])
+        # see if uid list includes a mirrored char
+        hasMirrored = bool(len([x for x in uids if get_ucd(x, 'Bidi_M')]))
+        # Analyze first and last joining char
+        joiningChars = [x for x in uids if get_ucd(x, 'jt') != 'T']
+        # joiningChars = [x for x in uids if Char.getIntPropertyValue(x, UProperty.JOINING_TYPE) != TRANSPARENT]
+        if len(joiningChars):
+            # If first or last non-TRANSPARENT char is a joining char, then we need to emit examples with zwj
+            # Assumes any non-TRANSPARENT char that is bc != L must be a rtl character of some sort
+            uid = joiningChars[0]
+            zwjBefore = (get_ucd(uid, 'jt') == 'D'
+                         or (get_ucd(uid, 'bc') == 'L' and get_ucd(uid, 'jt') == 'L')
+                         or (get_ucd(uid, 'bc') != 'L' and get_ucd(uid, 'jt') == 'R'))
+            uid = joiningChars[-1]
+            zwjAfter = (get_ucd(uid, 'jt') == 'D'
+                        or (get_ucd(uid, 'bc') == 'L' and get_ucd(uid, 'jt') == 'R')
+                        or (get_ucd(uid, 'bc') != 'L' and get_ucd(uid, 'jt') == 'L'))
+        else:
+            zwjBefore = zwjAfter = False
+        if get_ucd(startUID, 'gc') == 'Mn':
+            # First char is a NSM... prefix a suitable base
+            uids.insert(0, self.diacBase)
+            zwjBefore = False  # No longer any need to put zwj before
+        elif get_ucd(startUID, 'WSpace'):
+            # First char is whitespace -- prefix with baseline brackets:
+            uids.insert(0, 0xF130)
+        lastNonMark = [x for x in uids if get_ucd(x, 'gc') != 'Mn'][-1]
+        if get_ucd(lastNonMark, 'WSpace'):
+            # Last non-mark is whitespace -- append baseline brackets:
+            uids.append(0xF131)
+        s = ''.join([chr(uid) for uid in uids])
+        if zwjBefore or zwjAfter:
+            # Show contextual forms:
+            t = u'{0} '.format(s)
+            if zwjAfter:
+                t += u'{0}\u200D '.format(s)
+                if zwjBefore:
+                    t += u'\u200D{0}\u200D '.format(s)
+            if zwjBefore:
+                t += u'\u200D{0} '.format(s)
+            if zwjBefore and zwjAfter:
+                t += u'{0}{0}{0}'.format(s)
+            if addBreaks: ftml.closeTest()
+            ftml.addToTest(keyUID, t, label=label, comment=comment, rtl=rtl)
+            if addBreaks: ftml.closeTest()
+        elif hasMirrored and self.rtlEnable:
+            # Contains mirrored and rtl enabled:
+            if addBreaks: ftml.closeTest()
+            ftml.addToTest(keyUID, u'{0} LTR: \u202A{0}\u202C RTL: \u202B{0}\u202C'.format(s), label=label,
+                           comment=comment, rtl=rtl)
+            if addBreaks: ftml.closeTest()
+        # elif is LRE, RLE, PDF
+        # elif is LRI, RLI, FSI, PDI
+        elif uidLen > 1:
+            ftml.addToTest(keyUID, s, label=label, comment=comment, rtl=rtl)
+        else:
+            ftml.addToTest(keyUID, s, comment=comment, rtl=rtl)
+
 def doit(args):
     logger = args.logger
 
@@ -310,7 +383,7 @@ def doit(args):
                     ftml.setFeatures(tv_lst)
                     for uidlst in uidlst_lst:
                         builder.render(uidlst, ftml)
-            ftml.closeTest()
+            ftml.closeTest() # TODO: probably not needed since ftml.startTestGroup should call closeTest
 
     if test.lower().startswith("diac"):
         # Diac attachment:
