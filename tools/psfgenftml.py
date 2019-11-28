@@ -302,6 +302,8 @@ def doit(args):
         for i in sorted(feats_sort.keys()):
             feat_set_lst = sorted(feats_sort[i]) # list of feat combos where number in combo is i
             for feat_set in feat_set_lst: # one feat combo
+                if feat_set == "smcp":
+                    continue # skip smcp test (but not interaction of smcp with other features); see "smcp" test
                 ftml.startTestGroup(f'{feat_set}')
                 uid_lst = sorted(feats_to_uid[feat_set]) # list of uids to test against feat combo
                 i = 0
@@ -314,18 +316,13 @@ def doit(args):
                 for feat in feats:
                     tvlist = builder.features[feat].tvlist[1:] # all values of feats except default
                     tvlist_lst.append(tvlist) # build list of list of all value for each feat
-                p = product(*tvlist_lst) # find all combo of all values, MUST flatten the list of lists
-                ftml.clearFeatures()
-                if feat_set != "smcp": # render all uids without feat setting except for 'smcp'
-                    for uidlst in uidlst_lst:
+                p_lst = list(product(*tvlist_lst)) # find all combo of all values, MUST flatten the list of lists
+                for uidlst in uidlst_lst:
+                    ftml.clearFeatures()
+                    builder.render(uidlst, ftml) # render all uids without feat setting
+                    for tv_lst in p_lst: # for one list of values out of all lists of values
+                        ftml.setFeatures(tv_lst)
                         builder.render(uidlst, ftml)
-                else:
-                        builder.render([ord(a) for a in u'lower case dropped'], ftml)
-                for tv_lst in p: # for one list of values out of all lists of values
-                    ftml.setFeatures(tv_lst)
-                    for uidlst in uidlst_lst:
-                        builder.render(uidlst, ftml)
-            ftml.closeTest() # TODO: probably not needed since ftml.startTestGroup should call closeTest
 
     if test.lower().startswith("diac"):
         # Diac attachment:
