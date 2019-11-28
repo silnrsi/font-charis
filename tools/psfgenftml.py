@@ -259,15 +259,7 @@ def doit(args):
             if uid < 32: continue
             c = builder.char(uid)
             builder.render((uid,), ftml)
-            # use Features test instead
-            # iterate over all permutations of feature settings that might affect this character:
-            #  This would take much space in the Latin fonts. Outputting variants could be an option?
-            #   Is it better to output all chars affected by a feature(s) in one place?
-            # for featlist in builder.permuteFeatures(uids = (uid,)):
-            #     ftml.setFeatures(featlist)
-            #     builder.render((uid,), ftml)
-            #     # Don't close test -- collect consecutive encoded chars in a single row
-            # ftml.clearFeatures()
+            ftml.closeTest()
             for langID in sorted(c.langs):
                 ftml.setLang(langID)
                 builder.render((uid,), ftml)
@@ -278,19 +270,11 @@ def doit(args):
         for gname in sorted(builder.specials()):
             special = builder.special(gname)
             builder.render(special.uids, ftml)
-            # use Features test instead
-            # iterate over all permutations of feature settings that might affect this special
-            # for featlist in builder.permuteFeatures(uids = special.uids):
-            #     ftml.setFeatures(featlist)
-            #     builder.render(special.uids, ftml)
-            #     # close test so each special is on its own row:
-            #     ftml.closeTest()
-            # ftml.clearFeatures()
+            ftml.closeTest()
             if len(special.langs):
                 for langID in sorted(special.langs):
                     ftml.setLang(langID)
                     builder.render(special.uids, ftml)
-                    ftml.closeTest()
                 ftml.clearLang()
 
     if test.lower().startswith("features"):
