@@ -212,7 +212,17 @@ class FTMLBuilder_LCG(FB.FTMLBuilder):
             self.allLangs = list(sorted(self.allLangs))
             self.allLangs = list(sorted(self.allLangs))
 
-    def render(self, uids, ftml, keyUID=0):
+    def matchMarkBase(self, c_mark, c_base):
+        """ test whether an _AP on c_mark matches an AP on c_base """
+        for apM in c_mark.aps:
+            if apM.startswith("_"):
+                ap = apM[1:]
+                for apB in c_base.aps:
+                    if apB == ap:
+                        return True
+        return False
+
+    def render(self, uids, ftml, keyUID=0, descSimple=False):
         """ general purpose (but not required) function to generate ftml for a character sequence """
         if len(uids) == 0:
             return
@@ -224,9 +234,15 @@ class FTMLBuilder_LCG(FB.FTMLBuilder):
         # if keyUID wasn't supplied, use startUID
         if keyUID == 0: keyUID = startUID
         # Construct label from uids:
-        label = '\n'.join(['U+{0:04X}'.format(u) for u in uids])
+        if not descSimple:
+            label = '\n'.join(['U+{0:04X}'.format(u) for u in uids])
+        else:
+            label = 'U+{0:04X}'.format(keyUID)
         # Construct comment from glyph names:
-        comment = ' '.join([self._charFromUID[u].basename for u in uids])
+        if not descSimple:
+            comment = ' '.join([self._charFromUID[u].basename for u in uids])
+        else:
+            comment = self._charFromUID[keyUID].basename
         if get_ucd(startUID, 'gc') == 'Mn':
             # First char is a NSM... prefix a suitable base
             uids.insert(0, self.diacBase)
@@ -342,7 +358,12 @@ def doit(args):
             # Always process Lo, but others only if that take marks:
             if c.general == 'Lo' or c.isBase:
                 for diac in repDiac:
-                    builder.render((uid, diac), ftml)
+                    c_mark = builder.char(diac)
+                    if builder.matchMarkBase(c_mark, c):
+                        builder.render((uid, diac), ftml, keyUID=uid, descSimple=True)
+                    else:
+                        # TODO: possibly output 'X' to mark place where mismatches occur
+                        pass
                     # for featlist in builder.permuteFeatures(uids = (uid,diac)):
                     #     ftml.setFeatures(featlist)
                     #     # Don't automatically separate connecting or mirrored forms into separate lines:
@@ -358,7 +379,11 @@ def doit(args):
             c = builder.char(uid)
             if c.general == 'Mn':
                 for base in repBase:
-                    builder.render((base, uid), ftml, keyUID=uid)
+                    c_base = builder.char(base)
+                    if builder.matchMarkBase(c, c_base):
+                        builder.render((base, uid), ftml, keyUID=uid, descSimple=True)
+                    else: # TODO: possibly output 'X' to mark place where mismatches occur
+                        pass
                     # for featlist in builder.permuteFeatures(uids = (uid,base)):
                     #     ftml.setFeatures(featlist)
                     #     builder.render((base,uid), ftml, keyUID = uid, addBreaks = False)
