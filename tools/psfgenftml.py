@@ -415,8 +415,17 @@ def doit(args):
             ftml.setFeatures(builder.features['smcp'].tvlist[1:])
             builder.render(base_diac_lst, ftml, descUIDs=base_lst)
             ftml.clearFeatures()
-            # TODO: render uppercase chars instead of lowercase as below
-            builder.render(base_diac_lst, ftml, descUIDs=base_lst)  # render all uids without feat setting
+
+            # add uppercase uids to test
+            # TODO: may need a better way to convert lower to upper
+            upper_base_diac_lst, upper_base_lst = [], []
+            for lower_uid in base_diac_lst:
+                try: upper_base_diac_lst.append(ord(chr(lower_uid).upper()))
+                except: upper_base_diac_lst.append(ord('X'))
+            for lower_uid in base_lst:
+                try: upper_base_lst.append(ord(chr(lower_uid).upper()))
+                except: upper_base_lst.append(ord('X'))
+            builder.render(upper_base_diac_lst, ftml, descUIDs=upper_base_lst)
 
     if test.lower().startswith("diac"):
         # Diac attachment:
