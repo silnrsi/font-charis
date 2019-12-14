@@ -352,17 +352,23 @@ def doit(args):
                 p_lst = list(product(*tvlist_lst)) # find all combo of all values, MUST flatten the list of lists
 
                 for uidlst in uidlst_lst:
-                    uid_diac_lst = []
+                    base_diac_lst = []
                     if not ap_type:
-                        uid_diac_lst = uidlst
+                        base_diac_lst = uidlst
                     else:
+                        try: ap_uid = ap_type_uid[ap_type]
+                        except KeyError: logger.log("Invalid AP type: %s" % ap_type, "S")
+                        base_lst = []
                         for uid in uidlst:
-                            uid_diac_lst.extend((uid, ap_type_uid[ap_type]))
+                            c_base, c_mark = builder.char(uid), builder.char(ap_uid)
+                            if builder.matchMarkBase(c_mark, c_base):
+                                base_lst.append(uid)
+                                base_diac_lst.extend((uid, ap_uid))
                     ftml.clearFeatures()
-                    builder.render(uid_diac_lst, ftml, descUIDs=uidlst) # render all uids without feat setting
+                    builder.render(base_diac_lst, ftml, descUIDs=base_lst) # render all uids without feat setting
                     for tv_lst in p_lst: # for one list of values out of all lists of values
                         ftml.setFeatures(tv_lst)
-                        builder.render(uid_diac_lst, ftml, descUIDs=uidlst)
+                        builder.render(base_diac_lst, ftml, descUIDs=base_lst)
 
     if test.lower().startswith("diac"):
         # Diac attachment:
