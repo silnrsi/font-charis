@@ -303,6 +303,8 @@ def doit(args):
                 ftml.clearLang()
 
     if test.lower().startswith("features"):
+        # support for adding a diac after each char that is being tested
+        # tests include: feature, feature_U, feature_L, feature_O, feature_H, feature_R
         ap_type = None
         ix = test.find("_")
         if ix != -1:
@@ -352,13 +354,12 @@ def doit(args):
                 p_lst = list(product(*tvlist_lst)) # find all combo of all values, MUST flatten the list of lists
 
                 for uidlst in uidlst_lst:
-                    base_diac_lst = []
+                    base_diac_lst, base_lst = [], []
                     if not ap_type:
-                        base_diac_lst = uidlst
+                        base_diac_lst, base_lst = uidlst, uidlst
                     else:
                         try: ap_uid = ap_type_uid[ap_type]
                         except KeyError: logger.log("Invalid AP type: %s" % ap_type, "S")
-                        base_lst = []
                         for uid in uidlst:
                             c_base, c_mark = builder.char(uid), builder.char(ap_uid)
                             if builder.matchMarkBase(c_mark, c_base):
@@ -369,6 +370,53 @@ def doit(args):
                     for tv_lst in p_lst: # for one list of values out of all lists of values
                         ftml.setFeatures(tv_lst)
                         builder.render(base_diac_lst, ftml, descUIDs=base_lst)
+
+    if test.lower().startswith("smcp"):
+        # Example of what report needs to show: LtnSmEgAlef LtnSmEgAlef.sc LtnCapEgAlef
+        pass
+        # support for adding a diac after each char that is being tested
+        # tests include: smcp, smcp_U, etc
+        ap_type = None
+        ix = test.find("_")
+        if ix != -1:
+            ap_type = test[ix + 1:]
+
+        ftml.startTestGroup('Small caps from glyph_data')
+
+        smcp_uid_lst = []
+        for uid in builder.uids():
+            c = builder.char(uid)
+            if 'smcp' in c.feats:
+                smcp_uid_lst.append(uid)
+        smcp_uid_lst.sort()
+
+        uidlst_lst = []
+        uidlst_ct = 16 if not ap_type else 8
+        i = 0
+        while i < len(smcp_uid_lst):  # break uids into groups
+            uidlst_lst.append(smcp_uid_lst[i:i + uidlst_ct])
+            i += uidlst_ct
+
+        for uidlst in uidlst_lst:
+            base_diac_lst, base_lst = [], []
+            if not ap_type:
+                base_diac_lst, base_lst = uidlst, uidlst
+            else:
+                try: ap_uid = ap_type_uid[ap_type]
+                except KeyError:
+                    logger.log("Invalid AP type: %s" % ap_type, "S")
+                for uid in uidlst:
+                    c_base, c_mark = builder.char(uid), builder.char(ap_uid)
+                    if builder.matchMarkBase(c_mark, c_base):
+                        base_lst.append(uid)
+                        base_diac_lst.extend((uid, ap_uid))
+            ftml.clearFeatures()
+            builder.render(base_diac_lst, ftml, descUIDs=base_lst)  # render all uids without feat setting
+            ftml.setFeatures(builder.features['smcp'].tvlist[1:])
+            builder.render(base_diac_lst, ftml, descUIDs=base_lst)
+            ftml.clearFeatures()
+            # TODO: render uppercase chars instead of lowercase as below
+            builder.render(base_diac_lst, ftml, descUIDs=base_lst)  # render all uids without feat setting
 
     if test.lower().startswith("diac"):
         # Diac attachment:
