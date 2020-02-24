@@ -18,7 +18,13 @@
 
 <!-- if $useCSSstyles is non-empty then emit and use CSS styles for font feature settings;
      otherwise font feature settings are output with the test strings  -->
-<xsl:variable name="useCSSstyles"></xsl:variable>	
+<xsl:variable name="useCSSstyles"></xsl:variable>
+
+<!-- get the fontsrc, either from a default set in the ftml or 
+       from a param passed to displayftml.html by ftml_index.html-->
+<!-- to use the ftml value, need to convert "url(<path>)" to "<path>"
+       so it matches what is passed to displayftml.html -->
+<xsl:param name="fontsrc" select="substring(/ftml/head/fontsrc, 5, string-length(/ftml/head/fontsrc) - 5)"></xsl:param>	
 
 <!-- 
 	Process the root node to construct the html page
@@ -53,7 +59,8 @@
 		</meta>
 		<style>
 	body, td { font-family: sans-serif; }
-	@font-face {font-family: TestFont; src: <xsl:value-of select="ftml/head/fontsrc"/>; }
+	<!-- @font-face {font-family: TestFont; src: <xsl:value-of select="ftml/head/fontsrc"/>; } -->
+	@font-face {font-family: TestFont; src: url(<xsl:value-of select="$fontsrc"/>); }
 	th { text-align: left; }
 	table,th,td { padding: 2px; border: 1px solid #111111; border-collapse: collapse; }
 	.string {font-family: TestFont; font-size: <xsl:value-of select="$font-scale"/>%; }
