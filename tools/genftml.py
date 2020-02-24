@@ -32,7 +32,7 @@ arg_lst = [
     "-t", "allchars",
     "-f", "C",
     "-i", "source/glyph_data.csv",
-    "-s", "results/CharisSIL-Regular.ttf",
+    "-s", "../results/CharisSIL-Regular.ttf",
     "--scale", "200",
     "-l", "tests/logs/allchars.log",
 ]
@@ -40,6 +40,7 @@ arg_lst = [
 # Templates for arguments to be passed to psfgenftml.py thru sys.argv
 # Paths are relative to the directory the script is ran from
 #  which is assumed to be the top of the font repo
+# Except for the -s arg, which is relative to where the generated ftml is opened from
 # Assumes the standard directory structure is present
 arg_template_lst = [
     "source/{ufo_regular}.ufo",
@@ -47,7 +48,7 @@ arg_template_lst = [
     "-t", "{test}",
     "-f", "{font_code}",
     "-i", "source/{glyph_data}.csv",
-    "-s", "results/{ufo_regular}.ttf",
+    "-s", "../results/{ufo_regular}.ttf",
     "--scale", "{scale}",
     "-l", "tests/logs/{test}.log",
 ]
