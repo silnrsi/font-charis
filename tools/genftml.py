@@ -2,10 +2,11 @@
 # Relies on "smith ftml" to generate html that will render the generated ftml for each style
 # Creates single and multi- font tests
 # The multi-font tests will be included in the ftml_index.html produced by "smith ftml"
-#  But they will not render correctly in that environment because the xsl in the ftml will be overridden
-# However they will work if direclty opened in a browser
+#  But they will not render correctly in that environment because the xsl specified in the ftml will be overridden
+# However they will work if directly opened in a browser
 # Differences in the directory structure for Gentium (compared to Charis) are handled
 #  as are the heavier (Book) weights
+# TODO: Add arg to generate only single or multi-font tests
 
 import sys, glob, os.path, re
 import psfgenftml
@@ -18,20 +19,21 @@ for a in AP_type_lst:
     test_lst.append("smcp_" + a)
 
 # find the file name without the extension of the Regular style ufo
+# TODO: ensure that Book Regular is not chosen ?
 for ufo_path in ("source/", "results/source/instances/"):
     regular_ufo_fn_lst = glob.glob(ufo_path + "*-Regular.ufo")
     if regular_ufo_fn_lst: break
 regular_ufo_base = os.path.splitext(os.path.basename(regular_ufo_fn_lst[0]))[0]
 assert(ufo_path and regular_ufo_base)
 
-# find list off all built ttfs for multi-font tests and sort
+# find list of all built ttfs for multi-font tests and sort
 ttf_results_fn_lst = glob.glob("results/*.ttf")
 ttf_fn_lst = [os.path.basename(f) for f in ttf_results_fn_lst]
 
 sort_style_lst = ["-Regular", "-Bold(?!Italic)", "-(?!Bold)Italic", "-BoldItalic"]
 # heavy_style = "Book" # not needed in current implementation
 
-# ensures Regular comes before Book Regular
+# sort() and reverse() ensure Regular comes before Book Regular
 ttf_fn_lst.sort()
 ttf_fn_lst.reverse()
 ttf_fn_sort_lst = []
@@ -53,7 +55,7 @@ arg_values_dict = {
 }
 
 # This arg_lst can be used for debugging
-#  but will be replaced by "instances" of arg_template_lst (below)
+#  but will be replaced by "instances" of template lists (below)
 arg_lst = [
     "source/CharisSIL-Regular.ufo",
     "tests/allchars.ftml",
