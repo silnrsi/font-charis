@@ -372,8 +372,9 @@ def doit(args):
                         builder.render(base_diac_lst, ftml, descUIDs=base_lst)
 
     if test.lower().startswith("smcp"):
+        # TODO: add test for "c2sc" ?
         # Example of what report needs to show: LtnSmEgAlef LtnSmEgAlef.sc LtnCapEgAlef
-        pass
+
         # support for adding a diac after each char that is being tested
         # tests include: smcp, smcp_U, etc
         ap_type = None
