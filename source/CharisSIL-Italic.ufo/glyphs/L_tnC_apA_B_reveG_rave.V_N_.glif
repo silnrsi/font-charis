@@ -7,8 +7,7 @@
   <anchor x="811" y="2190" name="U"/>
   <outline>
     <component base="LtnCapA"/>
-    <component base="CombBreve" xOffset="1222" yOffset="400"/>
-    <component base="CombGrave" xOffset="1150" yOffset="690"/>
+    <component base="CombBreveGrave.VN" xOffset="401" yOffset="400"/>
   </outline>
   <lib>
     <dict>
