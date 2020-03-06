@@ -13,7 +13,11 @@ psfsetpsnames -q -p checkfix=fix -i source/glyph_data.csv source/CharisSIL-Regul
 echo "-----Updating glyph orders in Regular..."
 psfsetglyphorder -q --header sort_final_cdg -i source/glyph_data.csv source/CharisSIL-Regular.ufo -p backup=False -x
 
-# add building of composites here
+echo "-----Rebuilding composites..."
+psfbuildcomp -i source/composites.txt -c -n source/CharisSIL-Regular.ufo -p backup=False -p loglevel=v
+psfbuildcomp -i source/composites.txt -c -n source/CharisSIL-Bold.ufo -p backup=False -p loglevel=v
+psfbuildcomp -i source/composites.txt -c -n source/CharisSIL-Italic.ufo -p backup=False  -p loglevel=v
+psfbuildcomp -i source/composites.txt -c -n source/CharisSIL-BoldItalic.ufo -p backup=False  -p loglevel=v
 
 echo "-----Syncing glyph orders, psnames, and other metadata to other UFOs..."
 psfsyncmasters -q source/CharisSILRoman.designspace source/CharisSILItalic.designspace
