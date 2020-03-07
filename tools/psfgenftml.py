@@ -265,6 +265,9 @@ def doit(args):
     test = args.test or "AllChars"  # Default to "AllChars"
     ftml = FB.FTML(test, logger, rendercheck = True, fontscale = args.scale, xslfn = args.xsl, fontsrc = args.fontsrc)
 
+    # Char to use in allframed test to surround other chars for checking spacing
+    frame_uid = 0x004E
+
     # Representative base and diac chars:
     repDiac = [x for x in [0x0327, 0x0316, 0x0328, 0x0315, 0x0300] if x in builder.uids()]
     ap_type_uid = {}
@@ -277,29 +280,50 @@ def doit(args):
     # A E H O a e i o
     repBase = [x for x in [0x0041, 0x0045, 0x0048, 0x004F, 0x0061, 0x0065, 0x0069, 0x006F] if x in builder.uids()]
 
-    if test.lower().startswith("allchars"):
+    if test.lower().startswith("allchars") or test.lower().startswith("allframed"):
         # all chars that should be in the font:
+        framed = test.lower().startswith("allframed")
+        uids = special_uids = None
+
         ftml.startTestGroup('Encoded characters')
         for uid in sorted(builder.uids()):
             if uid < 32: continue
             c = builder.char(uid)
-            builder.render((uid,), ftml)
+            if not framed:
+                builder.render((uid,), ftml)
+            else: # TODO: is there a cleaner way to create uids? (also see special_uids creation below)
+                uids = [frame_uid]
+                uids.extend((uid,)) # used extend() instead of append() to be parallel to special_uids
+                uids.append(frame_uid)
+                builder.render(uids, ftml, keyUID=uid, descUIDs=(uid,))
             ftml.closeTest()
             for langID in sorted(c.langs):
                 ftml.setLang(langID)
-                builder.render((uid,), ftml)
+                if not framed:
+                    builder.render((uid,), ftml)
+                else:
+                    builder.render(uids, ftml, keyUID=uid, descUIDs=(uid,))
             ftml.clearLang()
 
         # Add unencoded specials and ligatures -- i.e., things with a sequence of USVs in the glyph_data:
         ftml.startTestGroup('Specials & ligatures from glyph_data')
         for gname in sorted(builder.specials()):
             special = builder.special(gname)
-            builder.render(special.uids, ftml)
+            if not framed:
+                builder.render(special.uids, ftml)
+            else:
+                special_uids = [frame_uid]
+                special_uids.extend(special.uids)
+                special_uids.append(frame_uid)
+                builder.render(special_uids, ftml, keyUID=special.uids[0], descUIDs=(special.uids))
             ftml.closeTest()
             if len(special.langs):
                 for langID in sorted(special.langs):
                     ftml.setLang(langID)
-                    builder.render(special.uids, ftml)
+                    if not framed:
+                        builder.render(special.uids, ftml)
+                    else:
+                        builder.render(special_uids, ftml, keyUID=special.uids[0], descUIDs=(special.uids))
                 ftml.clearLang()
 
     if test.lower().startswith("features"):
@@ -372,11 +396,13 @@ def doit(args):
                         builder.render(base_diac_lst, ftml, descUIDs=base_lst)
 
     if test.lower().startswith("smcp"):
-        # TODO: add test for "c2sc" ?
+        # TODO: improve test for "c2sc" ?
         # Example of what report needs to show: LtnSmEgAlef LtnSmEgAlef.sc LtnCapEgAlef
+        #  could add "LtnCapEgAlef <with 'c2sc' feature applied>" but commented out below
 
-        # support for adding a diac after each char that is being tested
+        # support adding a diac after each char that is being tested
         # tests include: smcp, smcp_U, etc
+
         ap_type = None
         ix = test.find("_")
         if ix != -1:
@@ -427,6 +453,8 @@ def doit(args):
                 try: upper_base_lst.append(ord(chr(lower_uid).upper()))
                 except: upper_base_lst.append(ord('X'))
             builder.render(upper_base_diac_lst, ftml, descUIDs=upper_base_lst)
+            # ftml.setFeatures([("c2sc", "1")]) # TODO: kludgy way to add a 'c2sc' test
+            # builder.render(upper_base_diac_lst, ftml, descUIDs=upper_base_lst)
 
     if test.lower().startswith("diac"):
         # Diac attachment:

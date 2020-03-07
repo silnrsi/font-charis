@@ -12,7 +12,7 @@ import sys, glob, os.path, re
 import psfgenftml
 
 # tests to generate (see psfgenftml.py)
-test_lst = ["allchars", "diacs", "features", "smcp"]
+test_lst = ["allchars", "allframed", "diacs", "features", "smcp"]
 AP_type_lst = ["U", "L", "O", "H", "R"]
 for a in AP_type_lst:
     test_lst.append("features_" + a)
@@ -112,6 +112,8 @@ for test in test_lst:
     arg_lst = [arg.format(**arg_values_dict) for arg in arg_cols_template_lst]
     for fn in ttf_fn_sort_lst:
         arg_lst.extend(["-s", "../results/{}".format(fn)])
+    # TODO: kludgy way to add a Doulos column, assumes font-doulos repo is parallel to current repo
+    arg_lst.extend(["-s", "../../font-doulos/results/DoulosSIL-Regular.ttf"])
     sys.argv = [psfgenftml.__file__]
     sys.argv.extend(arg_lst)
     psfgenftml.cmd()
