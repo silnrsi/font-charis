@@ -7,7 +7,10 @@
     <fontsrc>url(../results/CharisSIL-Bold.ttf)</fontsrc>
     <fontsrc>url(../results/CharisSIL-Italic.ttf)</fontsrc>
     <fontsrc>url(../results/CharisSIL-BoldItalic.ttf)</fontsrc>
-    <fontsrc>url(../../font-doulos/results/DoulosSIL-Regular.ttf)</fontsrc>
+    <fontsrc>url(../tests/reference/CharisSIL-R.ttf)</fontsrc>
+    <fontsrc>url(../tests/reference/CharisSIL-I.ttf)</fontsrc>
+    <fontsrc>url(../tests/reference/DoulosSIL-Regular.ttf)</fontsrc>
+    <fontsrc>url(../tests/reference/DoulosSIL-R.ttf)</fontsrc>
     <title>diacs</title>
   </head>
   <testgroup label="Rendering Check">

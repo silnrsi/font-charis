@@ -204,8 +204,8 @@ class FTMLBuilder_LCG(FB.FTMLBuilder):
 
         # set default values for features where the default is non-zero
         if fontcode == 'A':
-            self.features['litr'].default = 1
-        self.features['Y_hk'].default = 1
+            self.features['ss01'].default = 1
+        self.features['cv68'].default = 1
 
         # We're finally done, but if allLangs is a set, let's order it (for lack of anything better) and make a list:
         if not self._langsComplete:
@@ -266,7 +266,7 @@ def doit(args):
     ftml = FB.FTML(test, logger, rendercheck = True, fontscale = args.scale, xslfn = args.xsl, fontsrc = args.fontsrc)
 
     # Char to use in allframed test to surround other chars for checking spacing
-    frame_uid = 0x004E
+    frame_uid = 0x006F
 
     # Representative base and diac chars:
     repDiac = [x for x in [0x0327, 0x0316, 0x0328, 0x0315, 0x0300] if x in builder.uids()]

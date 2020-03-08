@@ -112,8 +112,11 @@ for test in test_lst:
     arg_lst = [arg.format(**arg_values_dict) for arg in arg_cols_template_lst]
     for fn in ttf_fn_sort_lst:
         arg_lst.extend(["-s", "../results/{}".format(fn)])
-    # TODO: kludgy way to add a Doulos column, assumes font-doulos repo is parallel to current repo
-    arg_lst.extend(["-s", "../../font-doulos/results/DoulosSIL-Regular.ttf"])
+    # TODO: kludgy way to add columns for v5 and Doulos, assumes tests/reference folder
+    arg_lst.extend(["-s", "../tests/reference/CharisSIL-R.ttf"])
+    arg_lst.extend(["-s", "../tests/reference/CharisSIL-I.ttf"])
+    arg_lst.extend(["-s", "../tests/reference/DoulosSIL-Regular.ttf"])
+    arg_lst.extend(["-s", "../tests/reference/DoulosSIL-R.ttf"])
     sys.argv = [psfgenftml.__file__]
     sys.argv.extend(arg_lst)
     psfgenftml.cmd()
