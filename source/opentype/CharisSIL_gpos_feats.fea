@@ -15,7 +15,7 @@ lookup base_mark_O {
 
 lookup base_mark_H {
   lookupflag 0;
-    pos base @U mark @_U;
+    pos base @H mark @_H;
 } base_mark_H;
 
 lookup base_mark_R {
