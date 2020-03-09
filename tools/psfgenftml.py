@@ -153,7 +153,7 @@ class FTMLBuilder_LCG(FB.FTMLBuilder):
                 assoc_uid = uidList[0]
                 try:
                     c = self.char(assoc_uid)
-                    c.checkAPs(gname, font, self.apRE)
+                    # c.checkAPs(gname, font, self.apRE)
                 except:
                     self._csvWarning('associated USV %04X for glyph %s matches no encoded glyph' % (assoc_uid, gname))
                     c = None
@@ -269,6 +269,7 @@ def doit(args):
     frame_uid = 0x006F
 
     # Representative base and diac chars:
+    #  cedilla (H), vertical line below (L), ogonek (O), comma abov right (R), vertical line above (U)
     repDiac = [x for x in [0x0327, 0x0329, 0x0328, 0x0315, 0x030D] if x in builder.uids()]
     ap_type_uid = {}
     for diac_uid in repDiac:

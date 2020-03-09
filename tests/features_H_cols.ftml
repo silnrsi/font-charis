@@ -77,20 +77,17 @@
   <testgroup label="cv55"/>
   <testgroup label="cv57"/>
   <testgroup label="cv62">
-    <test label="U+01B2
-U+028B">
-      <comment>LtnCapVHook LtnSmVHook</comment>
-      <string>\u0001B2\u000327\u00028B\u000327</string>
+    <test label="U+028B">
+      <comment>LtnSmVHook</comment>
+      <string>\u00028B\u000327</string>
     </test>
-    <test label="U+01B2
-U+028B" stylename="cv62_1">
-      <comment>LtnCapVHook LtnSmVHook</comment>
-      <string>\u0001B2\u000327\u00028B\u000327</string>
+    <test label="U+028B" stylename="cv62_1">
+      <comment>LtnSmVHook</comment>
+      <string>\u00028B\u000327</string>
     </test>
-    <test label="U+01B2
-U+028B" stylename="cv62_2">
-      <comment>LtnCapVHook LtnSmVHook</comment>
-      <string>\u0001B2\u000327\u00028B\u000327</string>
+    <test label="U+028B" stylename="cv62_2">
+      <comment>LtnSmVHook</comment>
+      <string>\u00028B\u000327</string>
     </test>
   </testgroup>
   <testgroup label="cv68"/>
@@ -190,24 +187,20 @@ U+1ED7" stylename="cv75_1">
     <test label="U+0104
 U+0105
 U+0118
-U+0119
 U+012E
 U+012F
-U+0172
-U+0173">
-      <comment>LtnCapAOgonek LtnSmAOgonek LtnCapEOgonek LtnSmEOgonek LtnCapIOgonek LtnSmIOgonek LtnCapUOgonek LtnSmUOgonek</comment>
-      <string>\u000104\u000327\u000105\u000327\u000118\u000327\u000119\u000327\u00012E\u000327\u00012F\u000327\u000172\u000327\u000173\u000327</string>
+U+0172">
+      <comment>LtnCapAOgonek LtnSmAOgonek LtnCapEOgonek LtnCapIOgonek LtnSmIOgonek LtnCapUOgonek</comment>
+      <string>\u000104\u000327\u000105\u000327\u000118\u000327\u00012E\u000327\u00012F\u000327\u000172\u000327</string>
     </test>
     <test label="U+0104
 U+0105
 U+0118
-U+0119
 U+012E
 U+012F
-U+0172
-U+0173" stylename="cv76_1">
-      <comment>LtnCapAOgonek LtnSmAOgonek LtnCapEOgonek LtnSmEOgonek LtnCapIOgonek LtnSmIOgonek LtnCapUOgonek LtnSmUOgonek</comment>
-      <string>\u000104\u000327\u000105\u000327\u000118\u000327\u000119\u000327\u00012E\u000327\u00012F\u000327\u000172\u000327\u000173\u000327</string>
+U+0172" stylename="cv76_1">
+      <comment>LtnCapAOgonek LtnSmAOgonek LtnCapEOgonek LtnCapIOgonek LtnSmIOgonek LtnCapUOgonek</comment>
+      <string>\u000104\u000327\u000105\u000327\u000118\u000327\u00012E\u000327\u00012F\u000327\u000172\u000327</string>
     </test>
     <test label="U+01EA
 U+01EB
@@ -708,22 +701,18 @@ U+1EB5" stylename="cv75_1_ss05_1">
   </testgroup>
   <testgroup label="cv76 smcp">
     <test label="U+0105
-U+0119
 U+012F
-U+0173
 U+01EB
 U+01ED">
-      <comment>LtnSmAOgonek LtnSmEOgonek LtnSmIOgonek LtnSmUOgonek LtnSmOOgonek LtnSmOOgonekMacron</comment>
-      <string>\u000105\u000327\u000119\u000327\u00012F\u000327\u000173\u000327\u0001EB\u000327\u0001ED\u000327</string>
+      <comment>LtnSmAOgonek LtnSmIOgonek LtnSmOOgonek LtnSmOOgonekMacron</comment>
+      <string>\u000105\u000327\u00012F\u000327\u0001EB\u000327\u0001ED\u000327</string>
     </test>
     <test label="U+0105
-U+0119
 U+012F
-U+0173
 U+01EB
 U+01ED" stylename="cv76_1_smcp_1">
-      <comment>LtnSmAOgonek LtnSmEOgonek LtnSmIOgonek LtnSmUOgonek LtnSmOOgonek LtnSmOOgonekMacron</comment>
-      <string>\u000105\u000327\u000119\u000327\u00012F\u000327\u000173\u000327\u0001EB\u000327\u0001ED\u000327</string>
+      <comment>LtnSmAOgonek LtnSmIOgonek LtnSmOOgonek LtnSmOOgonekMacron</comment>
+      <string>\u000105\u000327\u00012F\u000327\u0001EB\u000327\u0001ED\u000327</string>
     </test>
   </testgroup>
   <testgroup label="cv76 ss01">
