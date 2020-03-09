@@ -269,7 +269,7 @@ def doit(args):
     frame_uid = 0x006F
 
     # Representative base and diac chars:
-    repDiac = [x for x in [0x0327, 0x0316, 0x0328, 0x0315, 0x0300] if x in builder.uids()]
+    repDiac = [x for x in [0x0327, 0x0329, 0x0328, 0x0315, 0x030D] if x in builder.uids()]
     ap_type_uid = {}
     for diac_uid in repDiac:
         c = builder.char(diac_uid)
