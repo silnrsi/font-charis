@@ -100,7 +100,7 @@
     <key>smallcaps</key>
     <dict>
       <key>adjustMetrics</key>
-      <integer>15</integer>
+      <integer>16</integer>
       <key>boldX</key>
       <integer>0</integer>
       <key>boldY</key>
@@ -109,6 +109,8 @@
       <real>0.903</real>
       <key>scaleY</key>
       <real>0.815</real>
+      <key>shiftX</key>
+      <integer>-9</integer>
     </dict>
     <key>subscript</key>
     <dict>
