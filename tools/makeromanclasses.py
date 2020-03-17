@@ -2,7 +2,7 @@
 'Make fea classes and lookups for Roman fonts'
 
 # __url__ = 'http://github.com/silnrsi/pysilfont'
-__copyright__ = 'Copyright (c) 2018-2019 SIL International  (http://www.sil.org)'
+__copyright__ = 'Copyright (c) 2018-2020 SIL International  (http://www.sil.org)'
 __license__ = 'Released under the MIT License (http://opensource.org/licenses/MIT)'
 __author__ = 'Alan Ward'
 
@@ -12,6 +12,8 @@ import silfont.ufo as ufo
 from silfont.core import execute
 
 class_spec_lst = [('lit', 'SngStory', 'SngBowl'),
+                  ('lita', 'SngStory'),
+                  ('litg', 'SngBowl'),
                   ('sital', 'SItal', '2StorySItal'),
                   ('viet', 'VN'),
                   ('dotlss', 'Dotless'),
@@ -24,6 +26,8 @@ glyph_class_additions = {'cno_c2sc' : ['LtnYr', 'CyPalochka'],
                          'c_c2sc' : ['LtnSmCapR.sc', 'CyPalochka.sc'],
                          'cno_lit' : ['LtnSmGBarredBowl', 'LtnSmGStrk'],
                          'c_lit' : ['LtnSmGBarredSngBowl','LtnSmGBarredSngBowl'],
+                         'cno_litg' : ['LtnSmGBarredBowl', 'LtnSmGStrk'],
+                         'c_litg' : ['LtnSmGBarredSngBowl','LtnSmGBarredSngBowl'],
                          'c_superscripts' : ['ModGlottalStop', 'ModRevGlottalStop']
                          }
 

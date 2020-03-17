@@ -406,6 +406,16 @@ lookup lit_sub {
     sub @cno_lit by @c_lit;
 } lit_sub;
 
+lookup lita_sub {
+  lookupflag 0;
+    sub @cno_lita by @c_lita;
+} lita_sub;
+
+lookup litg_sub {
+  lookupflag 0;
+    sub @cno_litg by @c_litg;
+} litg_sub;
+
 lookup bbwl_sub {
   lookupflag 0;
     sub LtnSmBBarredStem by LtnSmBBarredBowl ;
@@ -1169,6 +1179,54 @@ feature ss01 {
      language VIT  exclude_dflt;
       lookup lit_sub;
 } ss01;
+
+feature ss02 {
+  featureNames {
+    name 3 1 0x409 "Literacy a alternates";
+  };
+
+ script DFLT;
+     language dflt ;
+      lookup lita_sub;
+
+ script cyrl;
+     language dflt ;
+      lookup lita_sub;
+     language SRB  exclude_dflt;
+      lookup lita_sub;
+
+ script latn;
+     language dflt ;
+      lookup lita_sub;
+     language IPPH exclude_dflt;
+      lookup lita_sub;
+     language VIT  exclude_dflt;
+      lookup lita_sub;
+} ss02;
+
+feature ss03 {
+  featureNames {
+    name 3 1 0x409 "Literacy g alternates";
+  };
+
+ script DFLT;
+     language dflt ;
+      lookup litg_sub;
+
+ script cyrl;
+     language dflt ;
+      lookup litg_sub;
+     language SRB  exclude_dflt;
+      lookup litg_sub;
+
+ script latn;
+     language dflt ;
+      lookup litg_sub;
+     language IPPH exclude_dflt;
+      lookup litg_sub;
+     language VIT  exclude_dflt;
+      lookup litg_sub;
+} ss03;
 
 feature ss04 {
   featureNames {
