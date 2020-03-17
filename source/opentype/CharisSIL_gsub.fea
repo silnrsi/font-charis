@@ -487,7 +487,7 @@ feature ccmp {
       lookup ss_ctx;
       lookup tn_ctx;
       lookup tne_ctx;
-     language SRB  exclude_dflt;
+     language SRB  ;
       lookup di_ctx;
       lookup ss_ctx;
       lookup tn_ctx;
@@ -499,12 +499,12 @@ feature ccmp {
       lookup ss_ctx;
       lookup tn_ctx;
       lookup tne_ctx;
-     language IPPH exclude_dflt;
+     language IPPH ;
       lookup di_ctx;
       lookup ss_ctx;
       lookup tn_ctx;
       lookup tne_ctx;
-     language VIT  exclude_dflt;
+     language VIT  ;
       lookup di_ctx;
       lookup vd_sub;
       lookup vc_sub;
@@ -516,7 +516,7 @@ feature ccmp {
 feature locl {
 
  script cyrl;
-     language SRB  exclude_dflt;
+     language SRB  ;
       lookup srb_sub;
 } locl;
 
@@ -529,15 +529,15 @@ feature smcp {
  script cyrl;
      language dflt ;
       lookup sc1_sub;
-     language SRB  exclude_dflt;
+     language SRB  ;
       lookup sc1_sub;
 
  script latn;
      language dflt ;
       lookup sc1_sub;
-     language IPPH exclude_dflt;
+     language IPPH ;
       lookup sc1_sub;
-     language VIT  exclude_dflt;
+     language VIT  ;
       lookup sc1_sub;
 } smcp;
 
@@ -550,15 +550,15 @@ feature c2sc {
  script cyrl;
      language dflt ;
       lookup sc2_sub;
-     language SRB  exclude_dflt;
+     language SRB  ;
       lookup sc2_sub;
 
  script latn;
      language dflt ;
       lookup sc2_sub;
-     language IPPH exclude_dflt;
+     language IPPH ;
       lookup sc2_sub;
-     language VIT  exclude_dflt;
+     language VIT  ;
       lookup sc2_sub;
 } c2sc;
 
@@ -571,15 +571,15 @@ feature liga {
  script cyrl;
      language dflt ;
       lookup f_sub;
-     language SRB  exclude_dflt;
+     language SRB  ;
       lookup f_sub;
 
  script latn;
      language dflt ;
       lookup f_sub;
-     language IPPH exclude_dflt;
+     language IPPH ;
       lookup f_sub;
-     language VIT  exclude_dflt;
+     language VIT  ;
       lookup f_sub;
 } liga;
 
@@ -592,15 +592,15 @@ feature cv13 {
  script cyrl;
      language dflt ;
       lookup bhk_sub;
-     language SRB  exclude_dflt;
+     language SRB  ;
       lookup bhk_sub;
 
  script latn;
      language dflt ;
       lookup bhk_sub;
-     language IPPH exclude_dflt;
+     language IPPH ;
       lookup bhk_sub;
-     language VIT  exclude_dflt;
+     language VIT  ;
       lookup bhk_sub;
 } cv13;
 
@@ -613,15 +613,15 @@ feature cv17 {
  script cyrl;
      language dflt ;
       lookup dhk_sub;
-     language SRB  exclude_dflt;
+     language SRB  ;
       lookup dhk_sub;
 
  script latn;
      language dflt ;
       lookup dhk_sub;
-     language IPPH exclude_dflt;
+     language IPPH ;
       lookup dhk_sub;
-     language VIT  exclude_dflt;
+     language VIT  ;
       lookup dhk_sub;
 } cv17;
 
@@ -634,15 +634,15 @@ feature cv19 {
  script cyrl;
      language dflt ;
       lookup ezhcurl_sub;
-     language SRB  exclude_dflt;
+     language SRB  ;
       lookup ezhcurl_sub;
 
  script latn;
      language dflt ;
       lookup ezhcurl_sub;
-     language IPPH exclude_dflt;
+     language IPPH ;
       lookup ezhcurl_sub;
-     language VIT  exclude_dflt;
+     language VIT  ;
       lookup ezhcurl_sub;
 } cv19;
 
@@ -655,15 +655,15 @@ feature cv20 {
  script cyrl;
      language dflt ;
       lookup ezh_sub;
-     language SRB  exclude_dflt;
+     language SRB  ;
       lookup ezh_sub;
 
  script latn;
      language dflt ;
       lookup ezh_sub;
-     language IPPH exclude_dflt;
+     language IPPH ;
       lookup ezh_sub;
-     language VIT  exclude_dflt;
+     language VIT  ;
       lookup ezh_sub;
 } cv20;
 
@@ -676,15 +676,15 @@ feature cv25 {
  script cyrl;
      language dflt ;
       lookup rams_sub;
-     language SRB  exclude_dflt;
+     language SRB  ;
       lookup rams_sub;
 
  script latn;
      language dflt ;
       lookup rams_sub;
-     language IPPH exclude_dflt;
+     language IPPH ;
       lookup rams_sub;
-     language VIT  exclude_dflt;
+     language VIT  ;
       lookup rams_sub;
 } cv25;
 
@@ -697,15 +697,15 @@ feature cv28 {
  script cyrl;
      language dflt ;
       lookup hstrk_sub;
-     language SRB  exclude_dflt;
+     language SRB  ;
       lookup hstrk_sub;
 
  script latn;
      language dflt ;
       lookup hstrk_sub;
-     language IPPH exclude_dflt;
+     language IPPH ;
       lookup hstrk_sub;
-     language VIT  exclude_dflt;
+     language VIT  ;
       lookup hstrk_sub;
 } cv28;
 
@@ -718,15 +718,15 @@ feature cv37 {
  script cyrl;
      language dflt ;
       lookup jstrk_sub;
-     language SRB  exclude_dflt;
+     language SRB  ;
       lookup jstrk_sub;
 
  script latn;
      language dflt ;
       lookup jstrk_sub;
-     language IPPH exclude_dflt;
+     language IPPH ;
       lookup jstrk_sub;
-     language VIT  exclude_dflt;
+     language VIT  ;
       lookup jstrk_sub;
 } cv37;
 
@@ -739,15 +739,15 @@ feature cv43 {
  script cyrl;
      language dflt ;
       lookup engs_sub;
-     language SRB  exclude_dflt;
+     language SRB  ;
       lookup engs_sub;
 
  script latn;
      language dflt ;
       lookup engs_sub;
-     language IPPH exclude_dflt;
+     language IPPH ;
       lookup engs_sub;
-     language VIT  exclude_dflt;
+     language VIT  ;
       lookup engs_sub;
 } cv43;
 
@@ -760,15 +760,15 @@ feature cv44 {
  script cyrl;
      language dflt ;
       lookup nhk_sub;
-     language SRB  exclude_dflt;
+     language SRB  ;
       lookup nhk_sub;
 
  script latn;
      language dflt ;
       lookup nhk_sub;
-     language IPPH exclude_dflt;
+     language IPPH ;
       lookup nhk_sub;
-     language VIT  exclude_dflt;
+     language VIT  ;
       lookup nhk_sub;
 } cv44;
 
@@ -781,15 +781,15 @@ feature cv46 {
  script cyrl;
      language dflt ;
       lookup opno_sub;
-     language SRB  exclude_dflt;
+     language SRB  ;
       lookup opno_sub;
 
  script latn;
      language dflt ;
       lookup opno_sub;
-     language IPPH exclude_dflt;
+     language IPPH ;
       lookup opno_sub;
-     language VIT  exclude_dflt;
+     language VIT  ;
       lookup opno_sub;
 } cv46;
 
@@ -802,15 +802,15 @@ feature cv47 {
  script cyrl;
      language dflt ;
       lookup ou_sub;
-     language SRB  exclude_dflt;
+     language SRB  ;
       lookup ou_sub;
 
  script latn;
      language dflt ;
       lookup ou_sub;
-     language IPPH exclude_dflt;
+     language IPPH ;
       lookup ou_sub;
-     language VIT  exclude_dflt;
+     language VIT  ;
       lookup ou_sub;
 } cv47;
 
@@ -823,15 +823,15 @@ feature cv49 {
  script cyrl;
      language dflt ;
       lookup phk_sub;
-     language SRB  exclude_dflt;
+     language SRB  ;
       lookup phk_sub;
 
  script latn;
      language dflt ;
       lookup phk_sub;
-     language IPPH exclude_dflt;
+     language IPPH ;
       lookup phk_sub;
-     language VIT  exclude_dflt;
+     language VIT  ;
       lookup phk_sub;
 } cv49;
 
@@ -844,15 +844,15 @@ feature cv55 {
  script cyrl;
      language dflt ;
       lookup rtl_sub;
-     language SRB  exclude_dflt;
+     language SRB  ;
       lookup rtl_sub;
 
  script latn;
      language dflt ;
       lookup rtl_sub;
-     language IPPH exclude_dflt;
+     language IPPH ;
       lookup rtl_sub;
-     language VIT  exclude_dflt;
+     language VIT  ;
       lookup rtl_sub;
 } cv55;
 
@@ -865,15 +865,15 @@ feature cv57 {
  script cyrl;
      language dflt ;
       lookup thk_sub;
-     language SRB  exclude_dflt;
+     language SRB  ;
       lookup thk_sub;
 
  script latn;
      language dflt ;
       lookup thk_sub;
-     language IPPH exclude_dflt;
+     language IPPH ;
       lookup thk_sub;
-     language VIT  exclude_dflt;
+     language VIT  ;
       lookup thk_sub;
 } cv57;
 
@@ -886,15 +886,15 @@ feature cv62 {
  script cyrl;
      language dflt ;
       lookup vhk_sub;
-     language SRB  exclude_dflt;
+     language SRB  ;
       lookup vhk_sub;
 
  script latn;
      language dflt ;
       lookup vhk_sub;
-     language IPPH exclude_dflt;
+     language IPPH ;
       lookup vhk_sub;
-     language VIT  exclude_dflt;
+     language VIT  ;
       lookup vhk_sub;
 } cv62;
 
@@ -907,15 +907,15 @@ feature cv68 {
  script cyrl;
      language dflt ;
       lookup yhk_sub;
-     language SRB  exclude_dflt;
+     language SRB  ;
       lookup yhk_sub;
 
  script latn;
      language dflt ;
       lookup yhk_sub;
-     language IPPH exclude_dflt;
+     language IPPH ;
       lookup yhk_sub;
-     language VIT  exclude_dflt;
+     language VIT  ;
       lookup yhk_sub;
 } cv68;
 
@@ -928,15 +928,15 @@ feature cv70 {
  script cyrl;
      language dflt ;
       lookup apos_sub;
-     language SRB  exclude_dflt;
+     language SRB  ;
       lookup apos_sub;
 
  script latn;
      language dflt ;
       lookup apos_sub;
-     language IPPH exclude_dflt;
+     language IPPH ;
       lookup apos_sub;
-     language VIT  exclude_dflt;
+     language VIT  ;
       lookup apos_sub;
 } cv70;
 
@@ -949,15 +949,15 @@ feature cv71 {
  script cyrl;
      language dflt ;
       lookup colon_sub;
-     language SRB  exclude_dflt;
+     language SRB  ;
       lookup colon_sub;
 
  script latn;
      language dflt ;
       lookup colon_sub;
-     language IPPH exclude_dflt;
+     language IPPH ;
       lookup colon_sub;
-     language VIT  exclude_dflt;
+     language VIT  ;
       lookup colon_sub;
 } cv71;
 
@@ -972,7 +972,7 @@ feature cv75 {
      language dflt ;
       lookup vd_sub;
       lookup vc_sub;
-     language SRB  exclude_dflt;
+     language SRB  ;
       lookup vd_sub;
       lookup vc_sub;
 
@@ -980,10 +980,10 @@ feature cv75 {
      language dflt ;
       lookup vd_sub;
       lookup vc_sub;
-     language IPPH exclude_dflt;
+     language IPPH ;
       lookup vd_sub;
       lookup vc_sub;
-     language VIT  exclude_dflt;
+     language VIT  ;
       lookup vd_sub;
       lookup vc_sub;
 } cv75;
@@ -997,15 +997,15 @@ feature cv76 {
  script cyrl;
      language dflt ;
       lookup ognk_sub;
-     language SRB  exclude_dflt;
+     language SRB  ;
       lookup ognk_sub;
 
  script latn;
      language dflt ;
       lookup ognk_sub;
-     language IPPH exclude_dflt;
+     language IPPH ;
       lookup ognk_sub;
-     language VIT  exclude_dflt;
+     language VIT  ;
       lookup ognk_sub;
 } cv76;
 
@@ -1018,15 +1018,15 @@ feature cv77 {
  script cyrl;
      language dflt ;
       lookup caron_sub;
-     language SRB  exclude_dflt;
+     language SRB  ;
       lookup caron_sub;
 
  script latn;
      language dflt ;
       lookup caron_sub;
-     language IPPH exclude_dflt;
+     language IPPH ;
       lookup caron_sub;
-     language VIT  exclude_dflt;
+     language VIT  ;
       lookup caron_sub;
 } cv77;
 
@@ -1039,15 +1039,15 @@ feature cv80 {
  script cyrl;
      language dflt ;
       lookup mce_sub;
-     language SRB  exclude_dflt;
+     language SRB  ;
       lookup mce_sub;
 
  script latn;
      language dflt ;
       lookup mce_sub;
-     language IPPH exclude_dflt;
+     language IPPH ;
       lookup mce_sub;
-     language VIT  exclude_dflt;
+     language VIT  ;
       lookup mce_sub;
 } cv80;
 
@@ -1060,15 +1060,15 @@ feature cv81 {
  script cyrl;
      language dflt ;
       lookup shha_sub;
-     language SRB  exclude_dflt;
+     language SRB  ;
       lookup shha_sub;
 
  script latn;
      language dflt ;
       lookup shha_sub;
-     language IPPH exclude_dflt;
+     language IPPH ;
       lookup shha_sub;
-     language VIT  exclude_dflt;
+     language VIT  ;
       lookup shha_sub;
 } cv81;
 
@@ -1081,15 +1081,15 @@ feature cv82 {
  script cyrl;
      language dflt ;
       lookup brvc_sub;
-     language SRB  exclude_dflt;
+     language SRB  ;
       lookup brvc_sub;
 
  script latn;
      language dflt ;
       lookup brvc_sub;
-     language IPPH exclude_dflt;
+     language IPPH ;
       lookup brvc_sub;
-     language VIT  exclude_dflt;
+     language VIT  ;
       lookup brvc_sub;
 } cv82;
 
@@ -1102,15 +1102,15 @@ feature cv90 {
  script cyrl;
      language dflt ;
       lookup chnntc_sub;
-     language SRB  exclude_dflt;
+     language SRB  ;
       lookup chnntc_sub;
 
  script latn;
      language dflt ;
       lookup chnntc_sub;
-     language IPPH exclude_dflt;
+     language IPPH ;
       lookup chnntc_sub;
-     language VIT  exclude_dflt;
+     language VIT  ;
       lookup chnntc_sub;
 } cv90;
 
@@ -1123,15 +1123,15 @@ feature cv91 {
  script cyrl;
      language dflt ;
       lookup tn_sub;
-     language SRB  exclude_dflt;
+     language SRB  ;
       lookup tn_sub;
 
  script latn;
      language dflt ;
       lookup tn_sub;
-     language IPPH exclude_dflt;
+     language IPPH ;
       lookup tn_sub;
-     language VIT  exclude_dflt;
+     language VIT  ;
       lookup tn_sub;
 } cv91;
 
@@ -1144,15 +1144,15 @@ feature cv98 {
  script cyrl;
      language dflt ;
       lookup set_sub;
-     language SRB  exclude_dflt;
+     language SRB  ;
       lookup set_sub;
 
  script latn;
      language dflt ;
       lookup set_sub;
-     language IPPH exclude_dflt;
+     language IPPH ;
       lookup set_sub;
-     language VIT  exclude_dflt;
+     language VIT  ;
       lookup set_sub;
 } cv98;
 
@@ -1168,15 +1168,15 @@ feature ss01 {
  script cyrl;
      language dflt ;
       lookup lit_sub;
-     language SRB  exclude_dflt;
+     language SRB  ;
       lookup lit_sub;
 
  script latn;
      language dflt ;
       lookup lit_sub;
-     language IPPH exclude_dflt;
+     language IPPH ;
       lookup lit_sub;
-     language VIT  exclude_dflt;
+     language VIT  ;
       lookup lit_sub;
 } ss01;
 
@@ -1192,15 +1192,15 @@ feature ss02 {
  script cyrl;
      language dflt ;
       lookup lita_sub;
-     language SRB  exclude_dflt;
+     language SRB  ;
       lookup lita_sub;
 
  script latn;
      language dflt ;
       lookup lita_sub;
-     language IPPH exclude_dflt;
+     language IPPH ;
       lookup lita_sub;
-     language VIT  exclude_dflt;
+     language VIT  ;
       lookup lita_sub;
 } ss02;
 
@@ -1216,15 +1216,15 @@ feature ss03 {
  script cyrl;
      language dflt ;
       lookup litg_sub;
-     language SRB  exclude_dflt;
+     language SRB  ;
       lookup litg_sub;
 
  script latn;
      language dflt ;
       lookup litg_sub;
-     language IPPH exclude_dflt;
+     language IPPH ;
       lookup litg_sub;
-     language VIT  exclude_dflt;
+     language VIT  ;
       lookup litg_sub;
 } ss03;
 
@@ -1240,15 +1240,15 @@ feature ss04 {
  script cyrl;
      language dflt ;
       lookup bbwl_sub;
-     language SRB  exclude_dflt;
+     language SRB  ;
       lookup bbwl_sub;
 
  script latn;
      language dflt ;
       lookup bbwl_sub;
-     language IPPH exclude_dflt;
+     language IPPH ;
       lookup bbwl_sub;
-     language VIT  exclude_dflt;
+     language VIT  ;
       lookup bbwl_sub;
 } ss04;
 
@@ -1264,15 +1264,15 @@ feature ss05 {
  script cyrl;
      language dflt ;
       lookup sital_sub;
-     language SRB  exclude_dflt;
+     language SRB  ;
       lookup sital_sub;
 
  script latn;
      language dflt ;
       lookup sital_sub;
-     language IPPH exclude_dflt;
+     language IPPH ;
       lookup sital_sub;
-     language VIT  exclude_dflt;
+     language VIT  ;
       lookup sital_sub;
 } ss05;
 
@@ -1288,15 +1288,15 @@ feature ss06 {
  script cyrl;
      language dflt ;
       lookup inv_sub;
-     language SRB  exclude_dflt;
+     language SRB  ;
       lookup inv_sub;
 
  script latn;
      language dflt ;
       lookup inv_sub;
-     language IPPH exclude_dflt;
+     language IPPH ;
       lookup inv_sub;
-     language VIT  exclude_dflt;
+     language VIT  ;
       lookup inv_sub;
 } ss06;
 

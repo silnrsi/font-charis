@@ -45,7 +45,7 @@ feature mark {
       lookup base_mark_H;
       lookup base_mark_R;
 
-     language SRB  exclude_dflt;
+     language SRB  ;
       lookup markMarkPositioninglookup0;
       lookup base_mark_U;
       lookup base_mark_L;
@@ -63,7 +63,7 @@ feature mark {
       lookup base_mark_H;
       lookup base_mark_R;
 
-     language IPPH exclude_dflt;
+     language IPPH ;
       lookup markMarkPositioninglookup0;
       lookup base_mark_U;
       lookup base_mark_L;
@@ -71,7 +71,7 @@ feature mark {
       lookup base_mark_H;
       lookup base_mark_R;
 
-     language VIT  exclude_dflt;
+     language VIT  ;
       lookup markMarkPositioninglookup0;
       lookup base_mark_U;
       lookup base_mark_L;
@@ -85,8 +85,6 @@ feature mark {
 @cMarkFilter_U = [@U @_U];
 @cMarkFilter_L = [@L @_L];
 
-feature mkmk {
-
 lookup mark_mark_U {
   lookupflag UseMarkFilteringSet @cMarkFilter_U;
     pos mark @U_MarkBase mark @_U;
@@ -97,6 +95,8 @@ lookup mark_mark_L {
     pos mark @L_MarkBase mark @_L;
 } mark_mark_L;
 
+
+feature mkmk {
 
  script DFLT;
      language dflt ;
@@ -109,7 +109,7 @@ lookup mark_mark_L {
        lookup mark_mark_U;
        lookup mark_mark_L;
 
-       language SRB  exclude_dflt;
+       language SRB  ;
        lookup mark_mark_U;
        lookup mark_mark_L;
 
@@ -119,11 +119,11 @@ lookup mark_mark_L {
        lookup mark_mark_U;
        lookup mark_mark_L;
 
-     language IPPH exclude_dflt;
+     language IPPH ;
        lookup mark_mark_U;
        lookup mark_mark_L;
 
-     language VIT  exclude_dflt;
+     language VIT  ;
        lookup mark_mark_U;
        lookup mark_mark_L;
 
@@ -138,14 +138,14 @@ feature kern {
  script cyrl;
      language dflt ;
       lookup kernHorizontalKerninglookup4;
-     language SRB  exclude_dflt;
+     language SRB  ;
       lookup kernHorizontalKerninglookup4;
 
  script latn;
      language dflt ;
       lookup kernHorizontalKerninglookup4;
-     language IPPH exclude_dflt;
+     language IPPH ;
       lookup kernHorizontalKerninglookup4;
-     language VIT  exclude_dflt;
+     language VIT  ;
       lookup kernHorizontalKerninglookup4;
 } kern;
