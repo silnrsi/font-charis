@@ -428,11 +428,6 @@ lookup sital_sub {
     sub @cno_sital by @c_sital;
 } sital_sub;
 
-lookup inv_sub {
-  lookupflag 0;
-    sub @cno_ShowInv by @c_ShowInv;
-} inv_sub;
-
 feature aalt {
 #    feature ccmp; #exclude because of tone ligatures
     feature locl;
@@ -467,9 +462,10 @@ feature aalt {
     feature cv91;
     feature cv98;
     feature ss01;
+    feature ss02;
+    feature ss03;
     feature ss04;
     feature ss05;
-    feature ss06;
 } aalt;
 
 feature ccmp {
@@ -1275,28 +1271,4 @@ feature ss05 {
      language VIT  ;
       lookup sital_sub;
 } ss05;
-
-feature ss06 {
-  featureNames {
-    name 3 1 0x409 "Show invisible characters";
-  };
-
- script DFLT;
-     language dflt ;
-      lookup inv_sub;
-
- script cyrl;
-     language dflt ;
-      lookup inv_sub;
-     language SRB  ;
-      lookup inv_sub;
-
- script latn;
-     language dflt ;
-      lookup inv_sub;
-     language IPPH ;
-      lookup inv_sub;
-     language VIT  ;
-      lookup inv_sub;
-} ss06;
 
