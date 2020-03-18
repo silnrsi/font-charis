@@ -92,14 +92,15 @@ lookup ss_ctx {
 lookup sc1_sub {
   lookupflag 0;
     sub @cno_sc by @c_sc;
-	sub LtnSmRBar by LtnSmRBarredStem.sc;
-	sub CySmPalochka by CyPalochka.sc;
-	sub LtnSmTurnedE by LtnSmRevE.sc;
+    sub LtnSmRBar by LtnSmRBarredStem.sc;
+    sub CySmPalochka by CyPalochka.sc;
+    sub LtnSmTurnedE by LtnSmRevE.sc;
 } sc1_sub;
 
 lookup sc2_sub {
   lookupflag 0;
     sub @cno_c2sc by @c_c2sc;
+    sub CyPalochka by CyPalochka.sc;
 } sc2_sub;
 
 lookup f_sub {
