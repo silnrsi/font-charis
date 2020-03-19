@@ -79,7 +79,6 @@
       <style feats="'ss01' 1, 'ss05' 1" name="ss01_1_ss05_1"/>
       <style feats="'ss04' 1" name="ss04_1"/>
       <style feats="'ss05' 1" name="ss05_1"/>
-      <style feats="'ss06' 1" name="ss06_1"/>
     </styles>
     <title>features_L</title>
   </head>
@@ -865,16 +864,6 @@ U+A75F
 U+F327" stylename="ss05_1">
       <comment>LtnSmAStrk LtnSmLHighBar LtnSmVDiagStrk CySmGheStrkDesc</comment>
       <string>\u002C65\u000329\u00A749\u000329\u00A75F\u000329\u00F327\u000329</string>
-    </test>
-  </testgroup>
-  <testgroup label="ss06">
-    <test label="U+034F">
-      <comment>CombGraphemeJoiner</comment>
-      <string>\u0025CC\u00034F\u000329</string>
-    </test>
-    <test label="U+034F" stylename="ss06_1">
-      <comment>CombGraphemeJoiner</comment>
-      <string>\u0025CC\u00034F\u000329</string>
     </test>
   </testgroup>
   <testgroup label="cv13 smcp">

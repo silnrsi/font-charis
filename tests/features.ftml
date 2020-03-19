@@ -83,7 +83,6 @@
       <style feats="'ss01' 1, 'ss05' 1" name="ss01_1_ss05_1"/>
       <style feats="'ss04' 1" name="ss04_1"/>
       <style feats="'ss05' 1" name="ss05_1"/>
-      <style feats="'ss06' 1" name="ss06_1"/>
     </styles>
     <title>features</title>
   </head>
@@ -849,92 +848,6 @@ U+A75F
 U+F327" stylename="ss05_1">
       <comment>LtnSmABreveAcute LtnSmABreveGrave LtnSmABreveHookAbv LtnSmABreveTilde LtnSmABreveDotBlw LtnSmIHookAbv LtnSmIDotBlw LtnSubSmL LtnSmAStrk LtnSmLHighBar LtnSmVDiagStrk CySmGheStrkDesc</comment>
       <string>\u001EAF\u001EB1\u001EB3\u001EB5\u001EB7\u001EC9\u001ECB\u002097\u002C65\u00A749\u00A75F\u00F327</string>
-    </test>
-  </testgroup>
-  <testgroup label="ss06">
-    <test label="U+00AD
-U+034F
-U+200B
-U+200C
-U+200D
-U+200E
-U+200F
-U+202A
-U+202B
-U+202C
-U+202D
-U+202E
-U+2060
-U+2061
-U+2062
-U+2063">
-      <comment>Hyphen_Soft CombGraphemeJoiner ZeroWidthSpace ZeroWidthNonJoiner ZeroWidthJoiner LftToRtMrk RtToLftMrk LftToRtEmbedding RtToLftEmbedding PopDirFormatting LftToRtOverride RtToLftOverride WordJoiner FunctionApplication InvisibleTimes InvisibleSeparator</comment>
-      <string>\u0000AD\u00034F\u00200B\u00200C\u00200D\u00200E\u00200F\u00202A\u00202B\u00202C\u00202D\u00202E\u002060\u002061\u002062\u002063</string>
-    </test>
-    <test label="U+00AD
-U+034F
-U+200B
-U+200C
-U+200D
-U+200E
-U+200F
-U+202A
-U+202B
-U+202C
-U+202D
-U+202E
-U+2060
-U+2061
-U+2062
-U+2063" stylename="ss06_1">
-      <comment>Hyphen_Soft CombGraphemeJoiner ZeroWidthSpace ZeroWidthNonJoiner ZeroWidthJoiner LftToRtMrk RtToLftMrk LftToRtEmbedding RtToLftEmbedding PopDirFormatting LftToRtOverride RtToLftOverride WordJoiner FunctionApplication InvisibleTimes InvisibleSeparator</comment>
-      <string>\u0000AD\u00034F\u00200B\u00200C\u00200D\u00200E\u00200F\u00202A\u00202B\u00202C\u00202D\u00202E\u002060\u002061\u002062\u002063</string>
-    </test>
-    <test label="U+FE00
-U+FE01
-U+FE02
-U+FE03
-U+FE04
-U+FE05
-U+FE06
-U+FE07
-U+FE08
-U+FE09
-U+FE0A
-U+FE0B
-U+FE0C
-U+FE0D
-U+FE0E
-U+FE0F">
-      <comment>VS1 VS2 VS3 VS4 VS5 VS6 VS7 VS8 VS9 VS10 VS11 VS12 VS13 VS14 VS15 VS16</comment>
-      <string>\u0025CC\u00FE00\u00FE01\u00FE02\u00FE03\u00FE04\u00FE05\u00FE06\u00FE07\u00FE08\u00FE09\u00FE0A\u00FE0B\u00FE0C\u00FE0D\u00FE0E\u00FE0F</string>
-    </test>
-    <test label="U+FE00
-U+FE01
-U+FE02
-U+FE03
-U+FE04
-U+FE05
-U+FE06
-U+FE07
-U+FE08
-U+FE09
-U+FE0A
-U+FE0B
-U+FE0C
-U+FE0D
-U+FE0E
-U+FE0F" stylename="ss06_1">
-      <comment>VS1 VS2 VS3 VS4 VS5 VS6 VS7 VS8 VS9 VS10 VS11 VS12 VS13 VS14 VS15 VS16</comment>
-      <string>\u0025CC\u00FE00\u00FE01\u00FE02\u00FE03\u00FE04\u00FE05\u00FE06\u00FE07\u00FE08\u00FE09\u00FE0A\u00FE0B\u00FE0C\u00FE0D\u00FE0E\u00FE0F</string>
-    </test>
-    <test label="U+FEFF">
-      <comment>ZeroWidthNoBreakSpace</comment>
-      <string>\u00FEFF</string>
-    </test>
-    <test label="U+FEFF" stylename="ss06_1">
-      <comment>ZeroWidthNoBreakSpace</comment>
-      <string>\u00FEFF</string>
     </test>
   </testgroup>
   <testgroup label="cv13 smcp">
