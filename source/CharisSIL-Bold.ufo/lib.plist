@@ -8,9 +8,7 @@
     <array/>
   </dict>
   <key>com.schriftgestaltung.appVersion</key>
-  <string>1300</string>
-  <key>com.schriftgestaltung.customParameter.GSFont.DisplayStrings</key>
-  <string/>
+  <string>1306</string>
   <key>com.schriftgestaltung.customParameter.GSFont.disablesAutomaticAlignment</key>
   <true/>
   <key>com.schriftgestaltung.customParameter.GSFont.disablesLastChange</key>
@@ -2719,39 +2717,6 @@
     <string>ModTnYangPing</string>
     <string>ModTnYangQu</string>
     <string>ModTnYangRu</string>
-    <string>Hyphen_Soft.ShowInv</string>
-    <string>CombGraphemeJoiner.ShowInv</string>
-    <string>FunctionApplication.ShowInv</string>
-    <string>InvisibleSeparator.ShowInv</string>
-    <string>InvisibleTimes.ShowInv</string>
-    <string>LftToRtEmbedding.ShowInv</string>
-    <string>LftToRtMrk.ShowInv</string>
-    <string>LftToRtOverride.ShowInv</string>
-    <string>PopDirFormatting.ShowInv</string>
-    <string>RtToLftEmbedding.ShowInv</string>
-    <string>RtToLftMrk.ShowInv</string>
-    <string>RtToLftOverride.ShowInv</string>
-    <string>VS1.ShowInv</string>
-    <string>VS2.ShowInv</string>
-    <string>VS3.ShowInv</string>
-    <string>VS4.ShowInv</string>
-    <string>VS5.ShowInv</string>
-    <string>VS6.ShowInv</string>
-    <string>VS7.ShowInv</string>
-    <string>VS8.ShowInv</string>
-    <string>VS9.ShowInv</string>
-    <string>VS10.ShowInv</string>
-    <string>VS11.ShowInv</string>
-    <string>VS12.ShowInv</string>
-    <string>VS13.ShowInv</string>
-    <string>VS14.ShowInv</string>
-    <string>VS15.ShowInv</string>
-    <string>VS16.ShowInv</string>
-    <string>WordJoiner.ShowInv</string>
-    <string>ZeroWidthJoiner.ShowInv</string>
-    <string>ZeroWidthNoBreakSpace.ShowInv</string>
-    <string>ZeroWidthNonJoiner.ShowInv</string>
-    <string>ZeroWidthSpace.ShowInv</string>
     <string>CombGraphemeJoiner</string>
     <string>FunctionApplication</string>
     <string>InvisibleSeparator</string>
@@ -3943,8 +3908,6 @@
     <string>uni0352</string>
     <key>CombGraphemeJoiner</key>
     <string>uni034F</string>
-    <key>CombGraphemeJoiner.ShowInv</key>
-    <string>uni034F.ShowInv</string>
     <key>CombGrave</key>
     <string>gravecomb</string>
     <key>CombGraveBlw</key>
@@ -5205,8 +5168,6 @@
     <string>period</string>
     <key>FunctionApplication</key>
     <string>uni2061</string>
-    <key>FunctionApplication.ShowInv</key>
-    <string>uni2061.ShowInv</string>
     <key>GTOrEqTo</key>
     <string>greaterequal</string>
     <key>GTSgn</key>
@@ -5301,8 +5262,6 @@
     <string>hyphen</string>
     <key>Hyphen_Soft</key>
     <string>uni00AD</string>
-    <key>Hyphen_Soft.ShowInv</key>
-    <string>uni00AD.ShowInv</string>
     <key>HyphenationPt</key>
     <string>uni2027</string>
     <key>IdenticalTo</key>
@@ -5331,12 +5290,8 @@
     <string>questiondown</string>
     <key>InvisibleSeparator</key>
     <string>uni2063</string>
-    <key>InvisibleSeparator.ShowInv</key>
-    <string>uni2063.ShowInv</string>
     <key>InvisibleTimes</key>
     <string>uni2062</string>
-    <key>InvisibleTimes.ShowInv</key>
-    <string>uni2062.ShowInv</string>
     <key>KayahLiSignCwi</key>
     <string>uniA92E</string>
     <key>KipSgn</key>
@@ -5417,16 +5372,10 @@
     <string>uniA712.no</string>
     <key>LftToRtEmbedding</key>
     <string>uni202A</string>
-    <key>LftToRtEmbedding.ShowInv</key>
-    <string>uni202A.ShowInv</string>
     <key>LftToRtMrk</key>
     <string>uni200E</string>
-    <key>LftToRtMrk.ShowInv</key>
-    <string>uni200E.ShowInv</string>
     <key>LftToRtOverride</key>
     <string>uni202D</string>
-    <key>LftToRtOverride.ShowInv</key>
-    <string>uni202D.ShowInv</string>
     <key>LftTopCurlyBrac</key>
     <string>uni23A7</string>
     <key>LftTopParen</key>
@@ -10167,8 +10116,6 @@
     <string>plus</string>
     <key>PopDirFormatting</key>
     <string>uni202C</string>
-    <key>PopDirFormatting.ShowInv</key>
-    <string>uni202C.ShowInv</string>
     <key>PoundSgn</key>
     <string>sterling</string>
     <key>Prime</key>
@@ -10285,16 +10232,10 @@
     <string>bracketright</string>
     <key>RtToLftEmbedding</key>
     <string>uni202B</string>
-    <key>RtToLftEmbedding.ShowInv</key>
-    <string>uni202B.ShowInv</string>
     <key>RtToLftMrk</key>
     <string>uni200F</string>
-    <key>RtToLftMrk.ShowInv</key>
-    <string>uni200F.ShowInv</string>
     <key>RtToLftOverride</key>
     <string>uni202E</string>
-    <key>RtToLftOverride.ShowInv</key>
-    <string>uni202E.ShowInv</string>
     <key>RtTopCurlyBrac</key>
     <string>uni23AB</string>
     <key>RtTopParen</key>
@@ -10781,68 +10722,36 @@
     <string>uni21D5</string>
     <key>VS1</key>
     <string>uniFE00</string>
-    <key>VS1.ShowInv</key>
-    <string>uniFE00.ShowInv</string>
     <key>VS10</key>
     <string>uniFE09</string>
-    <key>VS10.ShowInv</key>
-    <string>uniFE09.ShowInv</string>
     <key>VS11</key>
     <string>uniFE0A</string>
-    <key>VS11.ShowInv</key>
-    <string>uniFE0A.ShowInv</string>
     <key>VS12</key>
     <string>uniFE0B</string>
-    <key>VS12.ShowInv</key>
-    <string>uniFE0B.ShowInv</string>
     <key>VS13</key>
     <string>uniFE0C</string>
-    <key>VS13.ShowInv</key>
-    <string>uniFE0C.ShowInv</string>
     <key>VS14</key>
     <string>uniFE0D</string>
-    <key>VS14.ShowInv</key>
-    <string>uniFE0D.ShowInv</string>
     <key>VS15</key>
     <string>uniFE0E</string>
-    <key>VS15.ShowInv</key>
-    <string>uniFE0E.ShowInv</string>
     <key>VS16</key>
     <string>uniFE0F</string>
-    <key>VS16.ShowInv</key>
-    <string>uniFE0F.ShowInv</string>
     <key>VS2</key>
     <string>uniFE01</string>
-    <key>VS2.ShowInv</key>
-    <string>uniFE01.ShowInv</string>
     <key>VS3</key>
     <string>uniFE02</string>
-    <key>VS3.ShowInv</key>
-    <string>uniFE02.ShowInv</string>
     <key>VS4</key>
     <string>uniFE03</string>
-    <key>VS4.ShowInv</key>
-    <string>uniFE03.ShowInv</string>
     <key>VS5</key>
     <string>uniFE04</string>
-    <key>VS5.ShowInv</key>
-    <string>uniFE04.ShowInv</string>
     <key>VS6</key>
     <string>uniFE05</string>
-    <key>VS6.ShowInv</key>
-    <string>uniFE05.ShowInv</string>
     <key>VS7</key>
     <string>uniFE06</string>
-    <key>VS7.ShowInv</key>
-    <string>uniFE06.ShowInv</string>
     <key>VS8</key>
     <string>uniFE07</string>
-    <key>VS8.ShowInv</key>
-    <string>uniFE07.ShowInv</string>
     <key>VS9</key>
     <string>uniFE08</string>
-    <key>VS9.ShowInv</key>
-    <string>uniFE08.ShowInv</string>
     <key>V_Versicle</key>
     <string>uni2123</string>
     <key>VertLine</key>
@@ -10889,26 +10798,16 @@
     <string>uni20A9</string>
     <key>WordJoiner</key>
     <string>uni2060</string>
-    <key>WordJoiner.ShowInv</key>
-    <string>uni2060.ShowInv</string>
     <key>YenSgn</key>
     <string>yen</string>
     <key>ZeroWidthJoiner</key>
     <string>uni200D</string>
-    <key>ZeroWidthJoiner.ShowInv</key>
-    <string>uni200D.ShowInv</string>
     <key>ZeroWidthNoBreakSpace</key>
     <string>uniFEFF</string>
-    <key>ZeroWidthNoBreakSpace.ShowInv</key>
-    <string>uniFEFF.ShowInv</string>
     <key>ZeroWidthNonJoiner</key>
     <string>uni200C</string>
-    <key>ZeroWidthNonJoiner.ShowInv</key>
-    <string>uni200C.ShowInv</string>
     <key>ZeroWidthSpace</key>
     <string>uni200B</string>
-    <key>ZeroWidthSpace.ShowInv</key>
-    <string>uni200B.ShowInv</string>
   </dict>
 </dict>
 </plist>
