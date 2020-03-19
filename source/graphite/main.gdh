@@ -801,10 +801,6 @@ else
 	cCyShortMrkAlt > cno_CyShortMrkAlt;
 endif;
 
-if (invis == 1)
-	cno_ShowInv > cShowInv;
-endif;
-
 
 // --- literacy and slant_italic features moved from here. ---
 
