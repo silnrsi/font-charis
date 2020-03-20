@@ -5,6 +5,11 @@ Charis SIL
 Thank you for your interest in the Charis SIL fonts.
 We hope you find them useful!
 
+*Please note that this release is an early beta and likely contains bugs
+that may cause problems. Please use it only for testing, not production.
+There may be significant changes prior to release. If you find problems
+please let us know.*
+
 Charis SIL provides glyphs for a wide range of Latin and Cyrillic characters.
 Please read the documentation on the website
 (http://scripts.sil.org/CharisSILfont) to see what ranges are supported. 
