@@ -361,6 +361,12 @@ lookup caron_sub {
     sub LtnSmLCaron.sc from [LtnSmLCaron.Caron.sc ];
 } caron_sub;
 
+# this may not be a valid CV since it uses a many-to-one sub
+lookup kayan_sub {
+  lookupflag 0;
+    sub CombGrave CombAcute by CombKayanGraveAcute;
+} kayan_sub;
+
 lookup mce_sub {
   lookupflag 0;
     sub CySmE from [CySmE.MongolStyle ];
@@ -1029,6 +1035,26 @@ feature cv77 {
      language VIT  ;
       lookup caron_sub;
 } cv77;
+
+# this may not be a valid CV since it uses a many-to-one sub
+feature cv79 {
+
+ script DFLT;
+     language dflt ;
+      lookup kayan_sub;
+
+ script cyrl;
+     language dflt ;
+      lookup kayan_sub;
+
+ script latn;
+     language dflt ;
+      lookup kayan_sub;
+     language IPPH ;
+      lookup kayan_sub;
+     language VIT  ;
+      lookup kayan_sub;
+} cv79;
 
 feature cv80 {
 
