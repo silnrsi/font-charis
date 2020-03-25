@@ -438,748 +438,225 @@ lookup sital_sub {
     sub @cno_sital by @c_sital;
 } sital_sub;
 
+
+languagesystem DFLT dflt;
+languagesystem cyrl dflt;
+languagesystem cyrl SRB;
+languagesystem latn dflt;
+languagesystem latn IPPH;
+languagesystem latn VIT;
+
 feature aalt {
-#    feature ccmp; #exclude because of tone ligatures
-    feature locl;
-    feature smcp;
-    feature c2sc;
-#    feature liga; #cannot include many-to-one substitutions
-    feature cv13;
-    feature cv17;
-    feature cv19;
-    feature cv20;
-    feature cv25;
-    feature cv28;
-    feature cv37;
-    feature cv43;
-    feature cv44;
-    feature cv46;
-    feature cv47;
-    feature cv49;
-    feature cv55;
-    feature cv57;
-    feature cv62;
-    feature cv68;
-    feature cv70;
-    feature cv71;
-    feature cv75;
-    feature cv76;
-    feature cv77;
-    feature cv80;
-    feature cv81;
-    feature cv82;
-    feature cv90;
-    feature cv91;
-    feature cv98;
-    feature ss01;
-    feature ss02;
-    feature ss03;
-    feature ss04;
-    feature ss05;
+#  feature ccmp; #exclude because of tone ligatures
+  feature locl;
+  feature smcp;
+  feature c2sc;
+#  feature liga; #cannot include many-to-one substitutions
+  feature cv13;
+  feature cv17;
+  feature cv19;
+  feature cv20;
+  feature cv25;
+  feature cv28;
+  feature cv37;
+  feature cv43;
+  feature cv44;
+  feature cv46;
+  feature cv47;
+  feature cv49;
+  feature cv55;
+  feature cv57;
+  feature cv62;
+  feature cv68;
+  feature cv70;
+  feature cv71;
+  feature cv75;
+  feature cv76;
+  feature cv77;
+  feature cv80;
+  feature cv81;
+  feature cv82;
+  feature cv90;
+  feature cv91;
+  feature cv98;
+  feature ss01;
+  feature ss02;
+  feature ss03;
+  feature ss04;
+  feature ss05;
 } aalt;
 
 feature ccmp {
+  lookup di_ctx;
+  lookup ss_ctx;
+  lookup tn_ctx;
+  lookup tne_ctx;
 
- script DFLT;
-     language dflt ;
-      lookup di_ctx;
-      lookup ss_ctx;
-      lookup tn_ctx;
-      lookup tne_ctx;
-
- script cyrl;
-     language dflt ;
-      lookup di_ctx;
-      lookup ss_ctx;
-      lookup tn_ctx;
-      lookup tne_ctx;
-     language SRB  ;
-      lookup di_ctx;
-      lookup ss_ctx;
-      lookup tn_ctx;
-      lookup tne_ctx;
-
- script latn;
-     language dflt ;
-      lookup di_ctx;
-      lookup ss_ctx;
-      lookup tn_ctx;
-      lookup tne_ctx;
-     language IPPH ;
-      lookup di_ctx;
-      lookup ss_ctx;
-      lookup tn_ctx;
-      lookup tne_ctx;
-     language VIT  ;
-      lookup di_ctx;
+  script latn;
+    language VIT  ;
       lookup vd_sub;
       lookup vc_sub;
-      lookup ss_ctx;
-      lookup tn_ctx;
-      lookup tne_ctx;
 } ccmp;
 
 feature locl {
-
- script cyrl;
-     language SRB  ;
+  script cyrl;
+    language SRB  exclude_dflt;
       lookup srb_sub;
 } locl;
 
 feature smcp {
-
- script DFLT;
-     language dflt ;
-      lookup sc1_sub;
-
- script cyrl;
-     language dflt ;
-      lookup sc1_sub;
-     language SRB  ;
-      lookup sc1_sub;
-
- script latn;
-     language dflt ;
-      lookup sc1_sub;
-     language IPPH ;
-      lookup sc1_sub;
-     language VIT  ;
-      lookup sc1_sub;
+  lookup sc1_sub;
 } smcp;
 
 feature c2sc {
-
- script DFLT;
-     language dflt ;
-      lookup sc2_sub;
-
- script cyrl;
-     language dflt ;
-      lookup sc2_sub;
-     language SRB  ;
-      lookup sc2_sub;
-
- script latn;
-     language dflt ;
-      lookup sc2_sub;
-     language IPPH ;
-      lookup sc2_sub;
-     language VIT  ;
-      lookup sc2_sub;
+  lookup sc2_sub;
 } c2sc;
 
 feature liga {
-
- script DFLT;
-     language dflt ;
-      lookup f_sub;
-
- script cyrl;
-     language dflt ;
-      lookup f_sub;
-     language SRB  ;
-      lookup f_sub;
-
- script latn;
-     language dflt ;
-      lookup f_sub;
-     language IPPH ;
-      lookup f_sub;
-     language VIT  ;
-      lookup f_sub;
+  lookup f_sub;
 } liga;
 
 feature cv13 {
 
- script DFLT;
-     language dflt ;
-      lookup bhk_sub;
+#cvParameters {
+#    FeatUILabelNameID {
+#     name 3 1 0x0409 "a";  # English US
+#     name 1 0 0 "b";  # Mac English
+#    };
+#    
+#    FeatUITooltipTextNameID {
+#     name 3 1 0x0409 "c";  # English US
+#     name 1 0 0 "d";  # Mac English
+#    };
+#    
+#    SampleTextNameID {
+#     name 3 1 0x0409 "e";  # English US
+#     name 1 0 0 "f";  # Mac English
+#    };
+#    
+#    ParamUILabelNameID {
+#     name 3 1 0x0409 "g";  # English US
+#     name 1 0 0 "h";  # Mac English
+#    };
+#    
+#    ParamUILabelNameID {
+#     name 3 1 0x0409 "i";  # English US
+#     name 1 0 0 "j";  # Mac English
+#    };
+#
+#};
 
- script cyrl;
-     language dflt ;
-      lookup bhk_sub;
-     language SRB  ;
-      lookup bhk_sub;
-
- script latn;
-     language dflt ;
-      lookup bhk_sub;
-     language IPPH ;
-      lookup bhk_sub;
-     language VIT  ;
-      lookup bhk_sub;
+  lookup bhk_sub;
 } cv13;
 
 feature cv17 {
-
- script DFLT;
-     language dflt ;
-      lookup dhk_sub;
-
- script cyrl;
-     language dflt ;
-      lookup dhk_sub;
-     language SRB  ;
-      lookup dhk_sub;
-
- script latn;
-     language dflt ;
-      lookup dhk_sub;
-     language IPPH ;
-      lookup dhk_sub;
-     language VIT  ;
-      lookup dhk_sub;
+  lookup dhk_sub;
 } cv17;
 
 feature cv19 {
-
- script DFLT;
-     language dflt ;
-      lookup ezhcurl_sub;
-
- script cyrl;
-     language dflt ;
-      lookup ezhcurl_sub;
-     language SRB  ;
-      lookup ezhcurl_sub;
-
- script latn;
-     language dflt ;
-      lookup ezhcurl_sub;
-     language IPPH ;
-      lookup ezhcurl_sub;
-     language VIT  ;
-      lookup ezhcurl_sub;
+  lookup ezhcurl_sub;
 } cv19;
 
 feature cv20 {
-
- script DFLT;
-     language dflt ;
-      lookup ezh_sub;
-
- script cyrl;
-     language dflt ;
-      lookup ezh_sub;
-     language SRB  ;
-      lookup ezh_sub;
-
- script latn;
-     language dflt ;
-      lookup ezh_sub;
-     language IPPH ;
-      lookup ezh_sub;
-     language VIT  ;
-      lookup ezh_sub;
+  lookup ezh_sub;
 } cv20;
 
 feature cv25 {
-
- script DFLT;
-     language dflt ;
-      lookup rams_sub;
-
- script cyrl;
-     language dflt ;
-      lookup rams_sub;
-     language SRB  ;
-      lookup rams_sub;
-
- script latn;
-     language dflt ;
-      lookup rams_sub;
-     language IPPH ;
-      lookup rams_sub;
-     language VIT  ;
-      lookup rams_sub;
+  lookup rams_sub;
 } cv25;
 
 feature cv28 {
-
- script DFLT;
-     language dflt ;
-      lookup hstrk_sub;
-
- script cyrl;
-     language dflt ;
-      lookup hstrk_sub;
-     language SRB  ;
-      lookup hstrk_sub;
-
- script latn;
-     language dflt ;
-      lookup hstrk_sub;
-     language IPPH ;
-      lookup hstrk_sub;
-     language VIT  ;
-      lookup hstrk_sub;
+  lookup hstrk_sub;
 } cv28;
 
 feature cv37 {
-
- script DFLT;
-     language dflt ;
-      lookup jstrk_sub;
-
- script cyrl;
-     language dflt ;
-      lookup jstrk_sub;
-     language SRB  ;
-      lookup jstrk_sub;
-
- script latn;
-     language dflt ;
-      lookup jstrk_sub;
-     language IPPH ;
-      lookup jstrk_sub;
-     language VIT  ;
-      lookup jstrk_sub;
+  lookup jstrk_sub;
 } cv37;
 
 feature cv43 {
-
- script DFLT;
-     language dflt ;
-      lookup engs_sub;
-
- script cyrl;
-     language dflt ;
-      lookup engs_sub;
-     language SRB  ;
-      lookup engs_sub;
-
- script latn;
-     language dflt ;
-      lookup engs_sub;
-     language IPPH ;
-      lookup engs_sub;
-     language VIT  ;
-      lookup engs_sub;
+  lookup engs_sub;
 } cv43;
 
 feature cv44 {
-
- script DFLT;
-     language dflt ;
-      lookup nhk_sub;
-
- script cyrl;
-     language dflt ;
-      lookup nhk_sub;
-     language SRB  ;
-      lookup nhk_sub;
-
- script latn;
-     language dflt ;
-      lookup nhk_sub;
-     language IPPH ;
-      lookup nhk_sub;
-     language VIT  ;
-      lookup nhk_sub;
+  lookup nhk_sub;
 } cv44;
 
 feature cv46 {
-
- script DFLT;
-     language dflt ;
-      lookup opno_sub;
-
- script cyrl;
-     language dflt ;
-      lookup opno_sub;
-     language SRB  ;
-      lookup opno_sub;
-
- script latn;
-     language dflt ;
-      lookup opno_sub;
-     language IPPH ;
-      lookup opno_sub;
-     language VIT  ;
-      lookup opno_sub;
+  lookup opno_sub;
 } cv46;
 
 feature cv47 {
-
- script DFLT;
-     language dflt ;
-      lookup ou_sub;
-
- script cyrl;
-     language dflt ;
-      lookup ou_sub;
-     language SRB  ;
-      lookup ou_sub;
-
- script latn;
-     language dflt ;
-      lookup ou_sub;
-     language IPPH ;
-      lookup ou_sub;
-     language VIT  ;
-      lookup ou_sub;
+  lookup ou_sub;
 } cv47;
 
 feature cv49 {
-
- script DFLT;
-     language dflt ;
-      lookup phk_sub;
-
- script cyrl;
-     language dflt ;
-      lookup phk_sub;
-     language SRB  ;
-      lookup phk_sub;
-
- script latn;
-     language dflt ;
-      lookup phk_sub;
-     language IPPH ;
-      lookup phk_sub;
-     language VIT  ;
-      lookup phk_sub;
+  lookup phk_sub;
 } cv49;
 
 feature cv55 {
-
- script DFLT;
-     language dflt ;
-      lookup rtl_sub;
-
- script cyrl;
-     language dflt ;
-      lookup rtl_sub;
-     language SRB  ;
-      lookup rtl_sub;
-
- script latn;
-     language dflt ;
-      lookup rtl_sub;
-     language IPPH ;
-      lookup rtl_sub;
-     language VIT  ;
-      lookup rtl_sub;
+  lookup rtl_sub;
 } cv55;
 
 feature cv57 {
-
- script DFLT;
-     language dflt ;
-      lookup thk_sub;
-
- script cyrl;
-     language dflt ;
-      lookup thk_sub;
-     language SRB  ;
-      lookup thk_sub;
-
- script latn;
-     language dflt ;
-      lookup thk_sub;
-     language IPPH ;
-      lookup thk_sub;
-     language VIT  ;
-      lookup thk_sub;
+  lookup thk_sub;
 } cv57;
 
 feature cv62 {
-
- script DFLT;
-     language dflt ;
-      lookup vhk_sub;
-
- script cyrl;
-     language dflt ;
-      lookup vhk_sub;
-     language SRB  ;
-      lookup vhk_sub;
-
- script latn;
-     language dflt ;
-      lookup vhk_sub;
-     language IPPH ;
-      lookup vhk_sub;
-     language VIT  ;
-      lookup vhk_sub;
+  lookup vhk_sub;
 } cv62;
 
 feature cv68 {
-
- script DFLT;
-     language dflt ;
-      lookup yhk_sub;
-
- script cyrl;
-     language dflt ;
-      lookup yhk_sub;
-     language SRB  ;
-      lookup yhk_sub;
-
- script latn;
-     language dflt ;
-      lookup yhk_sub;
-     language IPPH ;
-      lookup yhk_sub;
-     language VIT  ;
-      lookup yhk_sub;
+  lookup yhk_sub;
 } cv68;
 
 feature cv70 {
-
- script DFLT;
-     language dflt ;
-      lookup apos_sub;
-
- script cyrl;
-     language dflt ;
-      lookup apos_sub;
-     language SRB  ;
-      lookup apos_sub;
-
- script latn;
-     language dflt ;
-      lookup apos_sub;
-     language IPPH ;
-      lookup apos_sub;
-     language VIT  ;
-      lookup apos_sub;
+  lookup apos_sub;
 } cv70;
 
 feature cv71 {
-
- script DFLT;
-     language dflt ;
-      lookup colon_sub;
-
- script cyrl;
-     language dflt ;
-      lookup colon_sub;
-     language SRB  ;
-      lookup colon_sub;
-
- script latn;
-     language dflt ;
-      lookup colon_sub;
-     language IPPH ;
-      lookup colon_sub;
-     language VIT  ;
-      lookup colon_sub;
+  lookup colon_sub;
 } cv71;
 
 feature cv75 {
-
- script DFLT;
-     language dflt ;
-      lookup vd_sub;
-      lookup vc_sub;
-
- script cyrl;
-     language dflt ;
-      lookup vd_sub;
-      lookup vc_sub;
-     language SRB  ;
-      lookup vd_sub;
-      lookup vc_sub;
-
- script latn;
-     language dflt ;
-      lookup vd_sub;
-      lookup vc_sub;
-     language IPPH ;
-      lookup vd_sub;
-      lookup vc_sub;
-     language VIT  ;
-      lookup vd_sub;
-      lookup vc_sub;
+  lookup vd_sub;
+  lookup vc_sub;
 } cv75;
 
 feature cv76 {
-
- script DFLT;
-     language dflt ;
-      lookup ognk_sub;
-
- script cyrl;
-     language dflt ;
-      lookup ognk_sub;
-     language SRB  ;
-      lookup ognk_sub;
-
- script latn;
-     language dflt ;
-      lookup ognk_sub;
-     language IPPH ;
-      lookup ognk_sub;
-     language VIT  ;
-      lookup ognk_sub;
+  lookup ognk_sub;
 } cv76;
 
 feature cv77 {
-
- script DFLT;
-     language dflt ;
-      lookup caron_sub;
-
- script cyrl;
-     language dflt ;
-      lookup caron_sub;
-     language SRB  ;
-      lookup caron_sub;
-
- script latn;
-     language dflt ;
-      lookup caron_sub;
-     language IPPH ;
-      lookup caron_sub;
-     language VIT  ;
-      lookup caron_sub;
+  lookup caron_sub;
 } cv77;
 
 # this may not be a valid CV since it uses a many-to-one sub
 feature cv79 {
-
- script DFLT;
-     language dflt ;
-      lookup kayan_sub;
-
- script cyrl;
-     language dflt ;
-      lookup kayan_sub;
-
- script latn;
-     language dflt ;
-      lookup kayan_sub;
-     language IPPH ;
-      lookup kayan_sub;
-     language VIT  ;
-      lookup kayan_sub;
+  lookup kayan_sub;
 } cv79;
 
 feature cv80 {
-
- script DFLT;
-     language dflt ;
-      lookup mce_sub;
-
- script cyrl;
-     language dflt ;
-      lookup mce_sub;
-     language SRB  ;
-      lookup mce_sub;
-
- script latn;
-     language dflt ;
-      lookup mce_sub;
-     language IPPH ;
-      lookup mce_sub;
-     language VIT  ;
-      lookup mce_sub;
+  lookup mce_sub;
 } cv80;
 
 feature cv81 {
-
- script DFLT;
-     language dflt ;
-      lookup shha_sub;
-
- script cyrl;
-     language dflt ;
-      lookup shha_sub;
-     language SRB  ;
-      lookup shha_sub;
-
- script latn;
-     language dflt ;
-      lookup shha_sub;
-     language IPPH ;
-      lookup shha_sub;
-     language VIT  ;
-      lookup shha_sub;
+  lookup shha_sub;
 } cv81;
 
 feature cv82 {
-
- script DFLT;
-     language dflt ;
-      lookup brvc_sub;
-
- script cyrl;
-     language dflt ;
-      lookup brvc_sub;
-     language SRB  ;
-      lookup brvc_sub;
-
- script latn;
-     language dflt ;
-      lookup brvc_sub;
-     language IPPH ;
-      lookup brvc_sub;
-     language VIT  ;
-      lookup brvc_sub;
+  lookup brvc_sub;
 } cv82;
 
 feature cv90 {
-
- script DFLT;
-     language dflt ;
-      lookup chnntc_sub;
-
- script cyrl;
-     language dflt ;
-      lookup chnntc_sub;
-     language SRB  ;
-      lookup chnntc_sub;
-
- script latn;
-     language dflt ;
-      lookup chnntc_sub;
-     language IPPH ;
-      lookup chnntc_sub;
-     language VIT  ;
-      lookup chnntc_sub;
+  lookup chnntc_sub;
 } cv90;
 
 feature cv91 {
-
- script DFLT;
-     language dflt ;
-      lookup tn_sub;
-
- script cyrl;
-     language dflt ;
-      lookup tn_sub;
-     language SRB  ;
-      lookup tn_sub;
-
- script latn;
-     language dflt ;
-      lookup tn_sub;
-     language IPPH ;
-      lookup tn_sub;
-     language VIT  ;
-      lookup tn_sub;
+  lookup tn_sub;
 } cv91;
 
 feature cv98 {
-
- script DFLT;
-     language dflt ;
-      lookup set_sub;
-
- script cyrl;
-     language dflt ;
-      lookup set_sub;
-     language SRB  ;
-      lookup set_sub;
-
- script latn;
-     language dflt ;
-      lookup set_sub;
-     language IPPH ;
-      lookup set_sub;
-     language VIT  ;
-      lookup set_sub;
+  lookup set_sub;
 } cv98;
 
 feature ss01 {
@@ -1187,23 +664,7 @@ feature ss01 {
     name 3 1 0x409 "Literacy alternates";
   };
 
- script DFLT;
-     language dflt ;
-      lookup lit_sub;
-
- script cyrl;
-     language dflt ;
-      lookup lit_sub;
-     language SRB  ;
-      lookup lit_sub;
-
- script latn;
-     language dflt ;
-      lookup lit_sub;
-     language IPPH ;
-      lookup lit_sub;
-     language VIT  ;
-      lookup lit_sub;
+  lookup lit_sub;
 } ss01;
 
 feature ss02 {
@@ -1211,23 +672,7 @@ feature ss02 {
     name 3 1 0x409 "Literacy a alternates";
   };
 
- script DFLT;
-     language dflt ;
-      lookup lita_sub;
-
- script cyrl;
-     language dflt ;
-      lookup lita_sub;
-     language SRB  ;
-      lookup lita_sub;
-
- script latn;
-     language dflt ;
-      lookup lita_sub;
-     language IPPH ;
-      lookup lita_sub;
-     language VIT  ;
-      lookup lita_sub;
+  lookup lita_sub;
 } ss02;
 
 feature ss03 {
@@ -1235,23 +680,7 @@ feature ss03 {
     name 3 1 0x409 "Literacy g alternates";
   };
 
- script DFLT;
-     language dflt ;
-      lookup litg_sub;
-
- script cyrl;
-     language dflt ;
-      lookup litg_sub;
-     language SRB  ;
-      lookup litg_sub;
-
- script latn;
-     language dflt ;
-      lookup litg_sub;
-     language IPPH ;
-      lookup litg_sub;
-     language VIT  ;
-      lookup litg_sub;
+  lookup litg_sub;
 } ss03;
 
 feature ss04 {
@@ -1259,23 +688,7 @@ feature ss04 {
     name 3 1 0x409 "Barred-bowl forms";
   };
 
- script DFLT;
-     language dflt ;
-      lookup bbwl_sub;
-
- script cyrl;
-     language dflt ;
-      lookup bbwl_sub;
-     language SRB  ;
-      lookup bbwl_sub;
-
- script latn;
-     language dflt ;
-      lookup bbwl_sub;
-     language IPPH ;
-      lookup bbwl_sub;
-     language VIT  ;
-      lookup bbwl_sub;
+  lookup bbwl_sub;
 } ss04;
 
 feature ss05 {
@@ -1283,22 +696,6 @@ feature ss05 {
     name 3 1 0x409 "Slant italic specials";
   };
 
- script DFLT;
-     language dflt ;
-      lookup sital_sub;
-
- script cyrl;
-     language dflt ;
-      lookup sital_sub;
-     language SRB  ;
-      lookup sital_sub;
-
- script latn;
-     language dflt ;
-      lookup sital_sub;
-     language IPPH ;
-      lookup sital_sub;
-     language VIT  ;
-      lookup sital_sub;
+  lookup sital_sub;
 } ss05;
 

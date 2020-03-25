@@ -23,62 +23,21 @@ lookup base_mark_R {
     pos base @R mark @_R;
 } base_mark_R;
 
+# provided by _gsub.fea
+# languagesystem DFLT dflt;
+# languagesystem cyrl dflt;
+# languagesystem cyrl SRB;
+# languagesystem latn dflt;
+# languagesystem latn IPPH;
+# languagesystem latn VIT;
 
 feature mark {
-
- script DFLT;
-     language dflt ;
-      lookup markMarkPositioninglookup0;
-      lookup base_mark_U;
-      lookup base_mark_L;
-      lookup base_mark_O;
-      lookup base_mark_H;
-      lookup base_mark_R;
-
-      
- script cyrl;
-     language dflt ;
-      lookup markMarkPositioninglookup0;
-      lookup base_mark_U;
-      lookup base_mark_L;
-      lookup base_mark_O;
-      lookup base_mark_H;
-      lookup base_mark_R;
-
-     language SRB  ;
-      lookup markMarkPositioninglookup0;
-      lookup base_mark_U;
-      lookup base_mark_L;
-      lookup base_mark_O;
-      lookup base_mark_H;
-      lookup base_mark_R;
-
-
- script latn;
-     language dflt ;
-      lookup markMarkPositioninglookup0;
-      lookup base_mark_U;
-      lookup base_mark_L;
-      lookup base_mark_O;
-      lookup base_mark_H;
-      lookup base_mark_R;
-
-     language IPPH ;
-      lookup markMarkPositioninglookup0;
-      lookup base_mark_U;
-      lookup base_mark_L;
-      lookup base_mark_O;
-      lookup base_mark_H;
-      lookup base_mark_R;
-
-     language VIT  ;
-      lookup markMarkPositioninglookup0;
-      lookup base_mark_U;
-      lookup base_mark_L;
-      lookup base_mark_O;
-      lookup base_mark_H;
-      lookup base_mark_R;
-
+  lookup rdiac_adv;
+  lookup base_mark_U;
+  lookup base_mark_L;
+  lookup base_mark_O;
+  lookup base_mark_H;
+  lookup base_mark_R;
 } mark;
 
 
@@ -97,55 +56,10 @@ lookup mark_mark_L {
 
 
 feature mkmk {
-
- script DFLT;
-     language dflt ;
-       lookup mark_mark_U;
-       lookup mark_mark_L;
-
-
- script cyrl;
-     language dflt ;
-       lookup mark_mark_U;
-       lookup mark_mark_L;
-
-       language SRB  ;
-       lookup mark_mark_U;
-       lookup mark_mark_L;
-
-
- script latn;
-     language dflt ;
-       lookup mark_mark_U;
-       lookup mark_mark_L;
-
-     language IPPH ;
-       lookup mark_mark_U;
-       lookup mark_mark_L;
-
-     language VIT  ;
-       lookup mark_mark_U;
-       lookup mark_mark_L;
-
+  lookup mark_mark_U;
+  lookup mark_mark_L;
 } mkmk;
 
 feature kern {
-
- script DFLT;
-     language dflt ;
-      lookup kernHorizontalKerninglookup4;
-
- script cyrl;
-     language dflt ;
-      lookup kernHorizontalKerninglookup4;
-     language SRB  ;
-      lookup kernHorizontalKerninglookup4;
-
- script latn;
-     language dflt ;
-      lookup kernHorizontalKerninglookup4;
-     language IPPH ;
-      lookup kernHorizontalKerninglookup4;
-     language VIT  ;
-      lookup kernHorizontalKerninglookup4;
+  lookup tns_pos;
 } kern;
