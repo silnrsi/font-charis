@@ -437,7 +437,7 @@ LtnSmBDotAbv,uni1E03,1100.371,1100.371,,,,,
 LtnSmBLineBlw,uni1E07,1100.45,1100.45,,,,,
 LtnSmBDotBlw,uni1E05,1100.471,1100.471,,,,,
 LtnSmBPalHook,uni1D80,1100.65,1100.65,,,,,
-LtnSmBBarredBowl,uni0180.BarBowl,1100.71,1100.71,ss04,ss04,,0180,0180
+LtnSmBBarredStem.BarBowl,uni0180.BarBowl,1100.71,1100.71,ss04,ss04,,0180,0180
 LtnSmBBarredStem,uni0180,1100.72,1100.72,,,,,
 LtnSmBMiddleTilde,uni1D6C,1100.74,1100.74,,,,,
 LtnSmBHook,uni0253,1100.81,1100.81,,,,,
@@ -561,7 +561,7 @@ LtnSmDDotBlw,uni1E0D,1300.471,1300.471,,,,,
 LtnSmDCedilla,uni1E11,1300.473,1300.473,,,,,
 LtnSmDCaron,dcaron,1300.52,1300.52,,,,,
 LtnSmDPalHook,uni1D81,1300.65,1300.65,,,,,
-LtnSmDBarredBowl,dcroat.BarBowl,1300.71,1300.71,ss04,ss04,,0111,0111
+LtnSmDBarredStem.BarBowl,dcroat.BarBowl,1300.71,1300.71,ss04,ss04,,0111,0111
 LtnSmDBarredStem,dcroat,1300.72,1300.72,,,,,
 DongSgn,dong,1300.7245,1300.7245,,,,,
 LtnSmDMiddleTilde,uni1D6D,1300.74,1300.74,,,,,
@@ -801,8 +801,8 @@ LtnSmGCaron,gcaron,1600.334,1600.334,,ss01,,,01E7
 LtnSmGMacron,uni1E21,1600.35,1600.35,,ss01,,,1E21
 LtnSmGDotAbv,gdotaccent,1600.371,1600.371,,ss01,,,0121
 LtnSmGCedilla,gcommaaccent,1600.61,1600.61,,ss01,,,0123
-LtnSmGBarredBowl,uni01E5.BarBowl,1600.71,1600.71,ss04,ss04,,01E5,01E5
-LtnSmGStrk,uni01E5,1600.72,1600.72,,ss01,,,01E5
+LtnSmGStrk,uni01E5,1600.71,1600.71,,ss01,,,01E5
+LtnSmG.BarBowl,uni01E5.BarBowl,1600.72,1600.72,ss04,ss04,,01E5,01E5
 LtnSmGDiagStrk,uniA7A1,1600.75,1600.75,,ss01,,,A7A1
 LtnSmGDiagStrk.SngBowl,uniA7A1.SngBowl,1600.7514,1600.7514,ss01,,,A7A1,
 LtnSmG.SngBowl,g.SngBowl,1610.1,74,ss01,,,0067,
@@ -817,7 +817,7 @@ LtnSmGDotAbv.SngBowl,gdotaccent.SngBowl,1610.371,1610.371,ss01,,,0121,
 LtnSmGCedilla.SngBowl,gcommaaccent.SngBowl,1610.61,1610.61,ss01,,,0123,
 LtnSmScriptGPalHook,uni1D83,1610.65,1610.65,,,,,
 LtnSmGStrk.SngBowl,uni01E5.SngBowl,1610.71,1610.71,,ss01,,,01E5
-LtnSmGBarredSngBowl,uni01E5.BarBowl.SngBowl,1610.71,1610.71,ss01,,,01E5,
+LtnSmG.BarBowl.SngBowl,uni01E5.BarBowl.SngBowl,1610.72,1610.72,ss01,,,01E5,
 LtnSmGHook,uni0260,1610.81,1610.81,,,,,
 LtnSmTurnedG,uni1D77,1620.1,1620.1,,,,,
 LtnSmInsularG,uni1D79,1631.1,1631.1,,,,,
@@ -3588,7 +3588,7 @@ LtnSmB.sc,b.sc,41100.1,41100.1,smcp,smcp,,0062,0062
 LtnSmBDotAbv.sc,uni1E03.sc,41100.371,41100.371,smcp,smcp,,1E03,1E03
 LtnSmBLineBlw.sc,uni1E07.sc,41100.45,41100.45,smcp,smcp,,1E07,1E07
 LtnSmBDotBlw.sc,uni1E05.sc,41100.471,41100.471,smcp,smcp,,1E05,1E05
-LtnSmBBarredBowl.sc,uni0180.BarBowl.sc,41100.71,41100.71,smcp,smcp,,0180,0180
+LtnSmBBarredStem.BarBowl.sc,uni0180.BarBowl.sc,41100.71,41100.71,smcp,smcp,,0180,0180
 LtnSmBBarredStem.sc,uni0180.sc,41100.72,41100.72,smcp,smcp,,0180,0180
 LtnSmBHook.sc,uni0253.sc,41100.81,41100.81,smcp,smcp,,0253,0253
 LtnSmTnSix.sc,uni0185.sc,41100.83,41100.83,smcp,smcp,,0185,0185
@@ -3633,7 +3633,7 @@ LtnSmDLineBlw.sc,uni1E0F.sc,41300.45,41300.45,smcp,smcp,,1E0F,1E0F
 LtnSmDDotBlw.sc,uni1E0D.sc,41300.471,41300.471,smcp,smcp,,1E0D,1E0D
 LtnSmDCedilla.sc,uni1E11.sc,41300.473,41300.473,smcp,smcp,,1E11,1E11
 LtnSmDCaron.sc,dcaron.sc,41300.52,41300.52,smcp,smcp,,010F,010F
-LtnSmDBarredBowl.sc,dcroat.BarBowl.sc,41300.71,41300.71,smcp,smcp,,0111,0111
+LtnSmDBarredStem.BarBowl.sc,dcroat.BarBowl.sc,41300.71,41300.71,smcp,smcp,,0111,0111
 LtnSmDBarredStem.sc,dcroat.sc,41300.72,41300.72,smcp,smcp,,0111,0111
 LtnSmDHook.sc,uni0257.sc,41300.81,41300.81,smcp,smcp,,0257,0257
 LtnSmDHook.TopBar.sc,uni0257.TopBar.sc,41300.82,41300.82,smcp,smcp,,0257,0257
@@ -3724,7 +3724,7 @@ LtnSmGCaron.sc,gcaron.sc,41600.334,41600.334,smcp,smcp,,01E7,01E7
 LtnSmGMacron.sc,uni1E21.sc,41600.35,41600.35,smcp,smcp,,1E21,1E21
 LtnSmGDotAbv.sc,gdotaccent.sc,41600.371,41600.371,smcp,smcp,,0121,0121
 LtnSmGCedilla.sc,gcommaaccent.sc,41600.61,41600.61,smcp,smcp,,0123,0123
-LtnSmGBarredBowl.sc,uni01E5.BarBowl.sc,41600.71,41600.71,smcp,smcp,,01E5,01E5
+LtnSmG.BarBowl.sc,uni01E5.BarBowl.sc,41600.71,41600.71,smcp,smcp,,01E5,01E5
 LtnSmGStrk.sc,uni01E5.sc,41600.72,41600.72,smcp,smcp,,01E5,01E5
 LtnSmGDiagStrk.sc,uniA7A1.sc,41600.75,41600.75,smcp,smcp,,A7A1,A7A1
 LtnSmGDiagStrk.SngBowl.sc,uniA7A1.SngBowl.sc,41600.751,41600.751,smcp,smcp,,A7A1,A7A1
@@ -3737,7 +3737,7 @@ LtnSmGCaron.SngBowl.sc,gcaron.SngBowl.sc,41610.334,41610.334,smcp,smcp,,01E7,01E
 LtnSmGMacron.SngBowl.sc,uni1E21.SngBowl.sc,41610.35,41610.35,smcp,smcp,,1E21,1E21
 LtnSmGDotAbv.SngBowl.sc,gdotaccent.SngBowl.sc,41610.371,41610.371,smcp,smcp,,0121,0121
 LtnSmGCedilla.SngBowl.sc,gcommaaccent.SngBowl.sc,41610.61,41610.61,smcp,smcp,,0123,0123
-LtnSmGBarredSngBowl.sc,uni01E5.BarBowl.SngBowl.sc,41610.71,41610.71,smcp,smcp,,01E5,01E5
+LtnSmG.BarBowl.SngBowl.sc,uni01E5.BarBowl.SngBowl.sc,41610.71,41610.71,smcp,smcp,,01E5,01E5
 LtnSmGStrk.SngBowl.sc,uni01E5.SngBowl.sc,41610.711,41610.711,smcp,smcp,,01E5,01E5
 LtnSmGHook.sc,uni0260.sc,41610.81,41610.81,smcp,smcp,,0260,0260
 LtnSmInsularG.sc,uni1D79.sc,41631.1,41631.1,smcp,smcp,,1D79,1D79

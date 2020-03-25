@@ -591,7 +591,7 @@
     <string>LtnSmBLineBlw</string>
     <string>LtnSmBDotBlw</string>
     <string>LtnSmBPalHook</string>
-    <string>LtnSmBBarredBowl</string>
+    <string>LtnSmBBarredStem.BarBowl</string>
     <string>LtnSmBBarredStem</string>
     <string>LtnSmBMiddleTilde</string>
     <string>LtnSmBHook</string>
@@ -711,7 +711,7 @@
     <string>LtnSmDCedilla</string>
     <string>LtnSmDCaron</string>
     <string>LtnSmDPalHook</string>
-    <string>LtnSmDBarredBowl</string>
+    <string>LtnSmDBarredStem.BarBowl</string>
     <string>LtnSmDBarredStem</string>
     <string>DongSgn</string>
     <string>LtnSmDMiddleTilde</string>
@@ -941,8 +941,8 @@
     <string>LtnSmGMacron</string>
     <string>LtnSmGDotAbv</string>
     <string>LtnSmGCedilla</string>
-    <string>LtnSmGBarredBowl</string>
     <string>LtnSmGStrk</string>
+    <string>LtnSmG.BarBowl</string>
     <string>LtnSmGDiagStrk</string>
     <string>LtnSmGDiagStrk.SngBowl</string>
     <string>LtnSmG.SngBowl</string>
@@ -957,7 +957,7 @@
     <string>LtnSmGCedilla.SngBowl</string>
     <string>LtnSmScriptGPalHook</string>
     <string>LtnSmGStrk.SngBowl</string>
-    <string>LtnSmGBarredSngBowl</string>
+    <string>LtnSmG.BarBowl.SngBowl</string>
     <string>LtnSmGHook</string>
     <string>LtnSmTurnedG</string>
     <string>LtnSmInsularG</string>
@@ -2928,7 +2928,7 @@
     <string>LtnSmBDotAbv.sc</string>
     <string>LtnSmBLineBlw.sc</string>
     <string>LtnSmBDotBlw.sc</string>
-    <string>LtnSmBBarredBowl.sc</string>
+    <string>LtnSmBBarredStem.BarBowl.sc</string>
     <string>LtnSmBBarredStem.sc</string>
     <string>LtnSmBHook.sc</string>
     <string>LtnSmTnSix.sc</string>
@@ -2973,7 +2973,7 @@
     <string>LtnSmDDotBlw.sc</string>
     <string>LtnSmDCedilla.sc</string>
     <string>LtnSmDCaron.sc</string>
-    <string>LtnSmDBarredBowl.sc</string>
+    <string>LtnSmDBarredStem.BarBowl.sc</string>
     <string>LtnSmDBarredStem.sc</string>
     <string>LtnSmDHook.sc</string>
     <string>LtnSmDHook.TopBar.sc</string>
@@ -3063,7 +3063,7 @@
     <string>LtnSmGMacron.sc</string>
     <string>LtnSmGDotAbv.sc</string>
     <string>LtnSmGCedilla.sc</string>
-    <string>LtnSmGBarredBowl.sc</string>
+    <string>LtnSmG.BarBowl.sc</string>
     <string>LtnSmGStrk.sc</string>
     <string>LtnSmGDiagStrk.sc</string>
     <string>LtnSmGDiagStrk.SngBowl.sc</string>
@@ -3076,7 +3076,7 @@
     <string>LtnSmGMacron.SngBowl.sc</string>
     <string>LtnSmGDotAbv.SngBowl.sc</string>
     <string>LtnSmGCedilla.SngBowl.sc</string>
-    <string>LtnSmGBarredSngBowl.sc</string>
+    <string>LtnSmG.BarBowl.SngBowl.sc</string>
     <string>LtnSmGStrk.SngBowl.sc</string>
     <string>LtnSmGHook.sc</string>
     <string>LtnSmInsularG.sc</string>
@@ -7013,12 +7013,12 @@
     <string>b</string>
     <key>LtnSmB.sc</key>
     <string>b.sc</string>
-    <key>LtnSmBBarredBowl</key>
-    <string>uni0180.BarBowl</string>
-    <key>LtnSmBBarredBowl.sc</key>
-    <string>uni0180.BarBowl.sc</string>
     <key>LtnSmBBarredStem</key>
     <string>uni0180</string>
+    <key>LtnSmBBarredStem.BarBowl</key>
+    <string>uni0180.BarBowl</string>
+    <key>LtnSmBBarredStem.BarBowl.sc</key>
+    <string>uni0180.BarBowl.sc</string>
     <key>LtnSmBBarredStem.sc</key>
     <string>uni0180.sc</string>
     <key>LtnSmBDotAbv</key>
@@ -7249,12 +7249,12 @@
     <string>uni0238</string>
     <key>LtnSmDBDigraphDep</key>
     <string>uniF240</string>
-    <key>LtnSmDBarredBowl</key>
-    <string>dcroat.BarBowl</string>
-    <key>LtnSmDBarredBowl.sc</key>
-    <string>dcroat.BarBowl.sc</string>
     <key>LtnSmDBarredStem</key>
     <string>dcroat</string>
+    <key>LtnSmDBarredStem.BarBowl</key>
+    <string>dcroat.BarBowl</string>
+    <key>LtnSmDBarredStem.BarBowl.sc</key>
+    <string>dcroat.BarBowl.sc</string>
     <key>LtnSmDBarredStem.sc</key>
     <string>dcroat.sc</string>
     <key>LtnSmDCaron</key>
@@ -7595,6 +7595,14 @@
     <string>uni02A9</string>
     <key>LtnSmG</key>
     <string>g</string>
+    <key>LtnSmG.BarBowl</key>
+    <string>uni01E5.BarBowl</string>
+    <key>LtnSmG.BarBowl.SngBowl</key>
+    <string>uni01E5.BarBowl.SngBowl</string>
+    <key>LtnSmG.BarBowl.SngBowl.sc</key>
+    <string>uni01E5.BarBowl.SngBowl.sc</string>
+    <key>LtnSmG.BarBowl.sc</key>
+    <string>uni01E5.BarBowl.sc</string>
     <key>LtnSmG.SngBowl</key>
     <string>g.SngBowl</string>
     <key>LtnSmG.SngBowl.sc</key>
@@ -7609,14 +7617,6 @@
     <string>uni01F5.SngBowl.sc</string>
     <key>LtnSmGAcute.sc</key>
     <string>uni01F5.sc</string>
-    <key>LtnSmGBarredBowl</key>
-    <string>uni01E5.BarBowl</string>
-    <key>LtnSmGBarredBowl.sc</key>
-    <string>uni01E5.BarBowl.sc</string>
-    <key>LtnSmGBarredSngBowl</key>
-    <string>uni01E5.BarBowl.SngBowl</string>
-    <key>LtnSmGBarredSngBowl.sc</key>
-    <string>uni01E5.BarBowl.SngBowl.sc</string>
     <key>LtnSmGBreve</key>
     <string>gbreve</string>
     <key>LtnSmGBreve.SngBowl</key>

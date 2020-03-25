@@ -3306,12 +3306,12 @@
   <string>L_tnS_mB_.glif</string>
   <key>LtnSmB.sc</key>
   <string>L_tnS_mB_.sc.glif</string>
-  <key>LtnSmBBarredBowl</key>
-  <string>L_tnS_mB_B_arredB_owl.glif</string>
-  <key>LtnSmBBarredBowl.sc</key>
-  <string>L_tnS_mB_B_arredB_owl.sc.glif</string>
   <key>LtnSmBBarredStem</key>
   <string>L_tnS_mB_B_arredS_tem.glif</string>
+  <key>LtnSmBBarredStem.BarBowl</key>
+  <string>L_tnS_mB_B_arredS_tem.B_arB_owl.glif</string>
+  <key>LtnSmBBarredStem.BarBowl.sc</key>
+  <string>L_tnS_mB_B_arredS_tem.B_arB_owl.sc.glif</string>
   <key>LtnSmBBarredStem.sc</key>
   <string>L_tnS_mB_B_arredS_tem.sc.glif</string>
   <key>LtnSmBDotAbv</key>
@@ -3542,12 +3542,12 @@
   <string>L_tnS_mD_B_D_igraph.glif</string>
   <key>LtnSmDBDigraphDep</key>
   <string>L_tnS_mD_B_D_igraphD_ep.glif</string>
-  <key>LtnSmDBarredBowl</key>
-  <string>L_tnS_mD_B_arredB_owl.glif</string>
-  <key>LtnSmDBarredBowl.sc</key>
-  <string>L_tnS_mD_B_arredB_owl.sc.glif</string>
   <key>LtnSmDBarredStem</key>
   <string>L_tnS_mD_B_arredS_tem.glif</string>
+  <key>LtnSmDBarredStem.BarBowl</key>
+  <string>L_tnS_mD_B_arredS_tem.B_arB_owl.glif</string>
+  <key>LtnSmDBarredStem.BarBowl.sc</key>
+  <string>L_tnS_mD_B_arredS_tem.B_arB_owl.sc.glif</string>
   <key>LtnSmDBarredStem.sc</key>
   <string>L_tnS_mD_B_arredS_tem.sc.glif</string>
   <key>LtnSmDCaron</key>
@@ -3888,6 +3888,14 @@
   <string>L_tnS_mF_engD_igraph.glif</string>
   <key>LtnSmG</key>
   <string>L_tnS_mG_.glif</string>
+  <key>LtnSmG.BarBowl</key>
+  <string>L_tnS_mG_.B_arB_owl.glif</string>
+  <key>LtnSmG.BarBowl.SngBowl</key>
+  <string>L_tnS_mG_.B_arB_owl.S_ngB_owl.glif</string>
+  <key>LtnSmG.BarBowl.SngBowl.sc</key>
+  <string>L_tnS_mG_.B_arB_owl.S_ngB_owl.sc.glif</string>
+  <key>LtnSmG.BarBowl.sc</key>
+  <string>L_tnS_mG_.B_arB_owl.sc.glif</string>
   <key>LtnSmG.SngBowl</key>
   <string>L_tnS_mG_.S_ngB_owl.glif</string>
   <key>LtnSmG.SngBowl.sc</key>
@@ -3902,14 +3910,6 @@
   <string>L_tnS_mG_A_cute.S_ngB_owl.sc.glif</string>
   <key>LtnSmGAcute.sc</key>
   <string>L_tnS_mG_A_cute.sc.glif</string>
-  <key>LtnSmGBarredBowl</key>
-  <string>L_tnS_mG_B_arredB_owl.glif</string>
-  <key>LtnSmGBarredBowl.sc</key>
-  <string>L_tnS_mG_B_arredB_owl.sc.glif</string>
-  <key>LtnSmGBarredSngBowl</key>
-  <string>L_tnS_mG_B_arredS_ngB_owl.glif</string>
-  <key>LtnSmGBarredSngBowl.sc</key>
-  <string>L_tnS_mG_B_arredS_ngB_owl.sc.glif</string>
   <key>LtnSmGBreve</key>
   <string>L_tnS_mG_B_reve.glif</string>
   <key>LtnSmGBreve.SngBowl</key>
