@@ -4,6 +4,9 @@
 
 # output folders use smith defaults and don't need to be set here
 
+# set some default folders (most are already set by default)
+STANDARDS = 'tests/reference/v5'
+
 # set the version control system
 VCS = 'git'
 
