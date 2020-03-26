@@ -428,9 +428,12 @@ lookup litg_sub {
 
 lookup bbwl_sub {
   lookupflag 0;
-    sub LtnSmBBarredStem by LtnSmBBarredBowl ;
-    sub LtnSmDBarredStem by LtnSmDBarredBowl ;
-    sub LtnSmGStrk by LtnSmGBarredBowl ;
+    # sub @cno_BarBowl by @c_BarBowl; wrongly maps LtnSmG to LtnSmG.BarBowl
+    sub @cno_barbowl by @c_barbowl;
+    sub LtnSmGStrk by LtnSmG.BarBowl ;
+    sub LtnSmGStrk.SngBowl by LtnSmG.BarBowl.SngBowl;
+    sub LtnSmGStrk.sc by LtnSmG.BarBowl.sc;
+    sub LtnSmGStrk.SngBowl.sc by LtnSmG.BarBowl.SngBowl.sc;
 } bbwl_sub;
 
 lookup sital_sub {
@@ -518,33 +521,33 @@ feature liga {
 
 feature cv13 {
 
-#cvParameters {
-#    FeatUILabelNameID {
-#     name 3 1 0x0409 "a";  # English US
-#     name 1 0 0 "b";  # Mac English
-#    };
-#    
-#    FeatUITooltipTextNameID {
-#     name 3 1 0x0409 "c";  # English US
-#     name 1 0 0 "d";  # Mac English
-#    };
-#    
-#    SampleTextNameID {
-#     name 3 1 0x0409 "e";  # English US
-#     name 1 0 0 "f";  # Mac English
-#    };
-#    
-#    ParamUILabelNameID {
-#     name 3 1 0x0409 "g";  # English US
-#     name 1 0 0 "h";  # Mac English
-#    };
-#    
-#    ParamUILabelNameID {
-#     name 3 1 0x0409 "i";  # English US
-#     name 1 0 0 "j";  # Mac English
-#    };
-#
-#};
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "a";  # English US
+       name 1 0 0 "b";  # Mac English
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "c";  # English US
+       name 1 0 0 "d";  # Mac English
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "e";  # English US
+       name 1 0 0 "f";  # Mac English
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "g";  # English US
+       name 1 0 0 "h";  # Mac English
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "i";  # English US
+       name 1 0 0 "j";  # Mac English
+      };
+  
+  };
 
   lookup bhk_sub;
 } cv13;

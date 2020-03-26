@@ -14,6 +14,8 @@ from silfont.core import execute
 class_spec_lst = [('lit', 'SngStory', 'SngBowl'),
                   ('lita', 'SngStory'),
                   ('litg', 'SngBowl'),
+                  # psfmakefea BarBowl classes wrongly map LtnSmG to LtnSmG.BarBowl
+                  ('barbowl', 'BarBowl'),  
                   ('sital', 'SItal', '2StorySItal'),
                   ('viet', 'VN'),
                   ('dotlss', 'Dotless'),
@@ -24,13 +26,19 @@ super_sub_mod_regex = "\wSubSm\w|\wSupSm\w|^ModCap\w|^ModSm\w"
 
 glyph_class_additions = {'cno_c2sc' : ['LtnYr', 'CyPalochka'],
                          'c_c2sc' : ['LtnSmCapR.sc', 'CyPalochka.sc'],
-                         'cno_lit' : ['LtnSmGBarredBowl', 'LtnSmGStrk'],
-                         'c_lit' : ['LtnSmGBarredSngBowl','LtnSmGBarredSngBowl'],
-                         'cno_litg' : ['LtnSmGBarredBowl', 'LtnSmGStrk'],
-                         'c_litg' : ['LtnSmGBarredSngBowl','LtnSmGBarredSngBowl'],
-                         'c_superscripts' : ['ModGlottalStop', 'ModRevGlottalStop']
+                         # 'cno_lit' : ['LtnSmGBarredBowl', 'LtnSmGStrk'],
+                         # 'c_lit' : ['LtnSmGBarredSngBowl','LtnSmGBarredSngBowl'],
+                         # 'cno_litg' : ['LtnSmGBarredBowl', 'LtnSmGStrk'],
+                         # 'c_litg' : ['LtnSmGBarredSngBowl','LtnSmGBarredSngBowl'],
+                         'c_superscripts' : ['ModGlottalStop', 'ModRevGlottalStop'],
                          }
 
+glyph_class_deletions = {'c_barbowl' : ['LtnSmG.BarBowl', 'LtnSmG.BarBowl.sc', 
+                            'LtnSmG.BarBowl.SngBowl', 'LtnSmG.BarBowl.SngBowl.sc'],
+                         'cno_barbowl' : ['LtnSmG', 'LtnSmG.sc', 
+                            'LtnSmG.SngBowl', 'LtnSmG.SngBowl.sc'],
+                        }
+                        
 non_variant_suffixes = ('Dotless', 'VN', 'Sup', 'sc')
 
 argspec = [
@@ -39,7 +47,7 @@ argspec = [
     ('-ox', '--output_xml', {'help': 'Output xml file'}, {}),
     ('--debug', {'help': 'Drop into pdb', 'action': 'store_true'}, {}),
     ('-l', '--log', {'help': 'Log file (default: *_makeromanclasses.log)'},
-        {'type': 'outfile', 'def': '_makeromanclasses.log'}),
+    {'type': 'outfile', 'def': '_makeromanclasses.log'}),
 ]
 
 classes_xml_hd = """<?xml version="1.0"?>
@@ -77,8 +85,8 @@ class Font(object):
 
     def make_classes(self, class_spec_lst):
         # create multisuffix classes
-		#  each class contains glyphs that have a suffix specified in a list for that class
-		#  some contained glyphs will have multiple suffixes
+        #  each class contains glyphs that have a suffix specified in a list for that class
+        #  some contained glyphs will have multiple suffixes
         for class_spec in class_spec_lst:
             class_nm = class_spec[0]
             c_nm, cno_nm = "c_" + class_nm, "cno_" + class_nm
@@ -149,9 +157,19 @@ class Font(object):
                     logger.log("glyph %s from class additions already present" % g, 'W')
                 self.g_classes[cls].append(g)
 
+        # delete irregular glyphs from classes added by the above algorithms
+        for cls, g_lst in glyph_class_deletions.items():
+            if not cls in self.g_classes:
+                logger.log("class %s from class deletions missing" % cls, 'W')
+            for g in g_lst:
+                if g in self.g_classes[cls]:
+                    logger.log("glyph %s from class deletions not present" % g, 'W')
+                    l = self.g_classes[cls]
+                    del l[l.index(g)]
+
     def find_variants(self):
         # create single and multiple alternate lkups for aalt (sa_sub, ma_sub)
-		#  creates a mapping from a glyph to all glyphs with an additional suffix
+        #  creates a mapping from a glyph to all glyphs with an additional suffix
         # only called if fea is being generated
         for g_nm in self.glyphs:
             suffix_lst = re.findall('(\..*?)(?=\.|$)', g_nm)

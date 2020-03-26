@@ -141,9 +141,9 @@ table(glyph);
 
 // Temp additions by David Raymond
 
-cBarBowl = (g__ltn_sm_b_barred_bowl, g__ltn_sm_d_barred_bowl, g__ltn_sm_g_barred_bowl);
+// cBarBowl = (g__ltn_sm_b_barred_bowl, g__ltn_sm_d_barred_bowl, g__ltn_sm_g_barred_bowl);
 
-cno_BarBowl = (g__ltn_sm_b_barred_stem, g__ltn_sm_d_barred_stem, g__ltn_sm_g_strk);
+// cno_BarBowl = (g__ltn_sm_b_barred_stem, g__ltn_sm_d_barred_stem, g__ltn_sm_g_strk);
 
 
 
@@ -603,7 +603,7 @@ if (literacy == 1)
 	// g01e5_barBowl_sngBowl is conceptually equal to g01e5_sngBowl (since the forms are the same).
 	// Don't add this correspondence to the SngBowl forms to avoid confusing the reverse rules below;
 	// just use a separate rule:
-	g__ltn_sm_g_strk  >  g__ltn_sm_g_barred_sng_bowl;
+	// g__ltn_sm_g_strk  >  g__ltn_sm_g_bar_bowl_sng_bowl;
 
 	cno_SngStory > cSngStory;
 
@@ -808,12 +808,19 @@ endif;
 // The barred_bowl rule must happen *after* the literacy rule
 if (barred_bowl == 1)                   //  does contain g01E5, no such naming as uni01e5 or
                                         // uni anything. That is the Postscript Name from xml file.  jw 8/27/04
-	cno_BarBowl  >  cBarBowl;	// (does NOT include uni01E5 > uni01E5.BarBowl)
+//	cno_BarBowl  >  cBarBowl;	// (does NOT include uni01E5 > uni01E5.BarBowl)
 //	g01e5  >  g01e5_barBowl;		        yes it does jw.  commented 8/31
 //					see: cno_BarBowl = (g0180, g_dcroat, g01e5);
+	cno_barbowl > c_barbowl;
+	g__ltn_sm_g_strk > g__ltn_sm_g_bar_bowl;
+	g__ltn_sm_g_strk_sng_bowl > g__ltn_sm_g_bar_bowl_sng_bowl;
 else
-	cBarBowl  >  cno_BarBowl;	// (does NOT include uni01E5.BarBowl > uni01E5)
+//	cBarBowl  >  cno_BarBowl;	// (does NOT include uni01E5.BarBowl > uni01E5)
 //	g01e5_barBowl  >  g01e5;			yes it does jw
+	c_barbowl > cno_barbowl;
+	g__ltn_sm_g_bar_bowl > g__ltn_sm_g_strk;
+	g__ltn_sm_g_bar_bowl_sng_bowl > g__ltn_sm_g_strk_sng_bowl;
+
 endif;
 
 if (ltnjstroke == doubleSerif)

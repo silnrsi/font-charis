@@ -22,12 +22,12 @@
 		LtnSmARingAbv.SngStory.sc LtnSmARingAbvAcute.SngStory LtnSmARingAbvAcute.SngStory.sc LtnSmARingBlw.SngStory
 		LtnSmARingBlw.SngStory.sc LtnSmARtHalfRing.SngStory LtnSmARtHalfRing.SngStory.sc LtnSmAStrk.SngStory
 		LtnSmAStrk.SngStory.sc LtnSmATilde.SngStory LtnSmATilde.SngStory.sc LtnSubSmA.SngStory
-		LtnSupSmA.SngStory LtnSmG.SngBowl LtnSmG.SngBowl.sc LtnSmGAcute.SngBowl
-		LtnSmGAcute.SngBowl.sc LtnSmGBreve.SngBowl LtnSmGBreve.SngBowl.sc LtnSmGCaron.SngBowl
-		LtnSmGCaron.SngBowl.sc LtnSmGCedilla.SngBowl LtnSmGCedilla.SngBowl.sc LtnSmGCircum.SngBowl
-		LtnSmGCircum.SngBowl.sc LtnSmGDiagStrk.SngBowl LtnSmGDiagStrk.SngBowl.sc LtnSmGDotAbv.SngBowl
-		LtnSmGDotAbv.SngBowl.sc LtnSmGMacron.SngBowl LtnSmGMacron.SngBowl.sc LtnSmGStrk.SngBowl.sc
-		LtnSupSmG.SngBowl LtnSmGBarredSngBowl LtnSmGBarredSngBowl
+		LtnSupSmA.SngStory LtnSmG.BarBowl.SngBowl LtnSmG.BarBowl.SngBowl.sc LtnSmG.SngBowl
+		LtnSmG.SngBowl.sc LtnSmGAcute.SngBowl LtnSmGAcute.SngBowl.sc LtnSmGBreve.SngBowl
+		LtnSmGBreve.SngBowl.sc LtnSmGCaron.SngBowl LtnSmGCaron.SngBowl.sc LtnSmGCedilla.SngBowl
+		LtnSmGCedilla.SngBowl.sc LtnSmGCircum.SngBowl LtnSmGCircum.SngBowl.sc LtnSmGDiagStrk.SngBowl
+		LtnSmGDiagStrk.SngBowl.sc LtnSmGDotAbv.SngBowl LtnSmGDotAbv.SngBowl.sc LtnSmGMacron.SngBowl
+		LtnSmGMacron.SngBowl.sc LtnSmGStrk.SngBowl LtnSmGStrk.SngBowl.sc LtnSupSmG.SngBowl
 	</class>
 	<class name="cno_lit">
 		CombLtnSmA LtnSmA LtnSmA.sc LtnSmAAcute
@@ -51,12 +51,12 @@
 		LtnSmARingAbv.sc LtnSmARingAbvAcute LtnSmARingAbvAcute.sc LtnSmARingBlw
 		LtnSmARingBlw.sc LtnSmARtHalfRing LtnSmARtHalfRing.sc LtnSmAStrk
 		LtnSmAStrk.sc LtnSmATilde LtnSmATilde.sc LtnSubSmA
-		LtnSupSmA LtnSmG LtnSmG.sc LtnSmGAcute
-		LtnSmGAcute.sc LtnSmGBreve LtnSmGBreve.sc LtnSmGCaron
-		LtnSmGCaron.sc LtnSmGCedilla LtnSmGCedilla.sc LtnSmGCircum
-		LtnSmGCircum.sc LtnSmGDiagStrk LtnSmGDiagStrk.sc LtnSmGDotAbv
-		LtnSmGDotAbv.sc LtnSmGMacron LtnSmGMacron.sc LtnSmGStrk.sc
-		LtnSupSmG LtnSmGBarredBowl LtnSmGStrk
+		LtnSupSmA LtnSmG.BarBowl LtnSmG.BarBowl.sc LtnSmG
+		LtnSmG.sc LtnSmGAcute LtnSmGAcute.sc LtnSmGBreve
+		LtnSmGBreve.sc LtnSmGCaron LtnSmGCaron.sc LtnSmGCedilla
+		LtnSmGCedilla.sc LtnSmGCircum LtnSmGCircum.sc LtnSmGDiagStrk
+		LtnSmGDiagStrk.sc LtnSmGDotAbv LtnSmGDotAbv.sc LtnSmGMacron
+		LtnSmGMacron.sc LtnSmGStrk LtnSmGStrk.sc LtnSupSmG
 	</class>
 	<class name="c_lita">
 		CombLtnSmA.SngStory LtnSmA.SngStory LtnSmA.SngStory.sc LtnSmAAcute.SngStory
@@ -107,20 +107,26 @@
 		LtnSupSmA
 	</class>
 	<class name="c_litg">
-		LtnSmG.SngBowl LtnSmG.SngBowl.sc LtnSmGAcute.SngBowl LtnSmGAcute.SngBowl.sc
-		LtnSmGBreve.SngBowl LtnSmGBreve.SngBowl.sc LtnSmGCaron.SngBowl LtnSmGCaron.SngBowl.sc
-		LtnSmGCedilla.SngBowl LtnSmGCedilla.SngBowl.sc LtnSmGCircum.SngBowl LtnSmGCircum.SngBowl.sc
-		LtnSmGDiagStrk.SngBowl LtnSmGDiagStrk.SngBowl.sc LtnSmGDotAbv.SngBowl LtnSmGDotAbv.SngBowl.sc
-		LtnSmGMacron.SngBowl LtnSmGMacron.SngBowl.sc LtnSmGStrk.SngBowl.sc LtnSupSmG.SngBowl
-		LtnSmGBarredSngBowl LtnSmGBarredSngBowl
+		LtnSmG.BarBowl.SngBowl LtnSmG.BarBowl.SngBowl.sc LtnSmG.SngBowl LtnSmG.SngBowl.sc
+		LtnSmGAcute.SngBowl LtnSmGAcute.SngBowl.sc LtnSmGBreve.SngBowl LtnSmGBreve.SngBowl.sc
+		LtnSmGCaron.SngBowl LtnSmGCaron.SngBowl.sc LtnSmGCedilla.SngBowl LtnSmGCedilla.SngBowl.sc
+		LtnSmGCircum.SngBowl LtnSmGCircum.SngBowl.sc LtnSmGDiagStrk.SngBowl LtnSmGDiagStrk.SngBowl.sc
+		LtnSmGDotAbv.SngBowl LtnSmGDotAbv.SngBowl.sc LtnSmGMacron.SngBowl LtnSmGMacron.SngBowl.sc
+		LtnSmGStrk.SngBowl LtnSmGStrk.SngBowl.sc LtnSupSmG.SngBowl
 	</class>
 	<class name="cno_litg">
-		LtnSmG LtnSmG.sc LtnSmGAcute LtnSmGAcute.sc
-		LtnSmGBreve LtnSmGBreve.sc LtnSmGCaron LtnSmGCaron.sc
-		LtnSmGCedilla LtnSmGCedilla.sc LtnSmGCircum LtnSmGCircum.sc
-		LtnSmGDiagStrk LtnSmGDiagStrk.sc LtnSmGDotAbv LtnSmGDotAbv.sc
-		LtnSmGMacron LtnSmGMacron.sc LtnSmGStrk.sc LtnSupSmG
-		LtnSmGBarredBowl LtnSmGStrk
+		LtnSmG.BarBowl LtnSmG.BarBowl.sc LtnSmG LtnSmG.sc
+		LtnSmGAcute LtnSmGAcute.sc LtnSmGBreve LtnSmGBreve.sc
+		LtnSmGCaron LtnSmGCaron.sc LtnSmGCedilla LtnSmGCedilla.sc
+		LtnSmGCircum LtnSmGCircum.sc LtnSmGDiagStrk LtnSmGDiagStrk.sc
+		LtnSmGDotAbv LtnSmGDotAbv.sc LtnSmGMacron LtnSmGMacron.sc
+		LtnSmGStrk LtnSmGStrk.sc LtnSupSmG
+	</class>
+	<class name="c_barbowl">
+		LtnSmBBarredStem.BarBowl LtnSmBBarredStem.BarBowl.sc LtnSmDBarredStem.BarBowl LtnSmDBarredStem.BarBowl.sc
+	</class>
+	<class name="cno_barbowl">
+		LtnSmBBarredStem LtnSmBBarredStem.sc LtnSmDBarredStem LtnSmDBarredStem.sc
 	</class>
 	<class name="c_sital">
 		CySmGheStrk.SItal CySmGheStrkDesc.SItal CySmGheStrkHook.SItal LtnLigSmFSmF.SItal
