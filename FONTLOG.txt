@@ -140,7 +140,10 @@ ChangeLog
     U+AB5E MODIFIER LETTER SMALL L WITH MIDDLE TILDE
     U+F26E CAPITAL RAMS HORN (in SIL PUA)
 - Added two new features for controlling literacy forms of a and g separately
+    Literacy a alternates (ss02)
+    Literacy g alternates (ss03)
 - Added feature to support side-by-side rendering of U+0300 plus U+0301
+    Kayan diacritics (cv79)
 - Added support for clicks to small caps feature
 - Synchronized Graphite and OpenType feature tags
 - Improved miscellaneous anchor positions
