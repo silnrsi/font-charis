@@ -573,9 +573,9 @@ endif;
 endpass;  // sub - 1
 
 #if (ANDIKAfamily)
-if (smallcaps || (literacy == 0))
+if (smallcaps || (literacy == 0 && literacy__litr == 0))
 #else
-if (smallcaps || literacy )
+if (smallcaps || literacy || literacy__litr )
 #endif
 
 pass(2)
@@ -598,7 +598,7 @@ endif;
 
 // Note: literacy alternates take precedence over slant-italic feature (below).
 // So we can ignore slant-italics here.
-if (literacy == 1)
+if (literacy == 1 || literacy__litr == 1)
 	cno_SngBowl  > cSngBowl;		// (includes uni01E5.BarBowl > uni01E5.BarBowl.SngBowl)
 	// g01e5_barBowl_sngBowl is conceptually equal to g01e5_sngBowl (since the forms are the same).
 	// Don't add this correspondence to the SngBowl forms to avoid confusing the reverse rules below;
@@ -616,9 +616,9 @@ endif;
 endpass;  // sub - 2
 
 #if (ANDIKAfamily)
-endif; // pass constraint: if (small_caps || (literacy == 0))
+endif; // pass constraint: if (small_caps || (literacy == 0 && literacy__litr == 0))
 #else
-endif; // pass constraint: if (small_caps || literacy)
+endif; // pass constraint: if (small_caps || literacy || literacy__litr)
 #endif
 
 pass(3)  {MaxBackup = 15; MaxRuleLoop = 30}
@@ -632,7 +632,7 @@ pass(3)  {MaxBackup = 15; MaxRuleLoop = 30}
 // TODO: the code below will have to be extended somewhat to correctly handle the case where
 // the slant-italic glyphs are the default.
 
-if (slant_italic == 1)
+if (slant_italic == 1 || slant_italic__ital)
 	// ff, fi, fl ligatures
 	g__ltn_sm_f  cfLigC2  >  g__ltn_sm_f_s_ital cfLigC2_sItal   / _ _ cDia;  // don't create a ligature, a following diac stops ligature from forming
 	g__ltn_sm_f  cfLigC2  >  _ cfLig_sItal:(1 2) {component {f1.ref = @1; f2.ref = @2}};
@@ -662,7 +662,7 @@ g__comb_dbl_inv_breve_lft=d1  g__comb_dbl_inv_breve_rt=d2  >  g__comb_dbl_inv_br
 g__comb_dbl_tilde_lft=d1  g__comb_dbl_tilde_rt=d2  >  g__comb_dbl_tilde:(d1 d2) _  /  ^ _  cTakesUDia  DIASTR5(cDia)  _ ;
 
 // For Chinantec, make the standard Unicode characters look like the special PUA characters.
-if (chinantec_tone == 1)
+if (chinantec_tone == 1 || chinantec_tone__chtn == 1)
 	cno_ChinantecTn  >  cChinantecTn;
 else
 	cChinantecTn  >  cno_ChinantecTn;
@@ -681,10 +681,10 @@ cHornBase  g__comb_horn  >  cHornComposite$1:(b d)  _ {passKeySlot = true}  /  _
 /* jw comments
      2 stacked diacs go to side-by-side unless there is an intervening upper diac.
      pre-composed base + stacked diacs go to pre-composed base+side-by-side (cVN) */
-if (viet == 1)
+if (viet == 1 || viet__viet == 1)
 	// decompose the stacked form and replace the base 'a' with the literacy form,
 	// the diacritics with the Vietnamese form
-	_  c_aStack_noLit  >  g__ltn_sm_a_sng_story:2  c_diacComb_vN / _ _ {literacy == 1};
+	_  c_aStack_noLit  >  g__ltn_sm_a_sng_story:2  c_diacComb_vN / _ _ {literacy == 1 || literacy__litr == 1};
 
 	c0302_noVN  cDiac_noVN  >  c_0302_DiacVN$d:(b d)  _  / _=b DIASTR4(cnUDiaX) _=d;
 	c0306_noVN  cDiac_noVN  >  c_0306_DiacVN$d:(b d)  _  / _=b DIASTR4(cnUDiaX) _=d;
@@ -739,47 +739,47 @@ endif;
 	handle each glyph -- sigh.
 */
 
-if (eng == descender)
+if (eng == descender && eng__Engs == descender)        // && because it is the default
 	// for fonts with default = base, capital, or short:
 	c_eng_BaselineHook  >  c_eng_Descender;
 	c_eng_UCStyle       >  c_eng_Descender;
 	c_eng_Kom           >  c_eng_Descender;
 endif;
-if (eng == base)
+if (eng == base || eng__Engs == base)
 	// for fonts with default = descender, capital, or short:
 	c_eng_Descender   >  c_eng_BaselineHook;
 	c_eng_UCStyle     >  c_eng_BaselineHook;
 	c_eng_Kom         >  c_eng_BaselineHook;
 endif;
-if (eng == capital)
+if (eng == capital || eng__Engs == capital)
 	// for fonts with default = descender, base, or short:
 	c_eng_Descender    >  c_eng_UCStyle;
 	c_eng_BaselineHook >  c_eng_UCStyle;
 	c_eng_Kom          >  c_eng_UCStyle;
 endif;
-if (eng == short)
+if (eng == short || eng__Engs == short)
 	// for fonts with default = descender, capital, or base:
 	c_eng_Descender    >  c_eng_Kom;
 	c_eng_BaselineHook >  c_eng_Kom;
 	c_eng_UCStyle      >  c_eng_Kom;
 endif;
 
-if (ramshorn == small)
+if (ramshorn == small && ramshorn__ramh)
 	// for fonts with default = large or gamma
 	(g__ltn_sm_rams_horn_lrg_bowl  g__ltn_sm_rams_horn_gamma_style) > g__ltn_sm_rams_horn;
 endif;
-if (ramshorn == large)
+if (ramshorn == large || ramshorn__ramh)
 	// for fonts with default = small or gamma
 	(g__ltn_sm_rams_horn 	g__ltn_sm_rams_horn_gamma_style)	> g__ltn_sm_rams_horn_lrg_bowl;
 endif;
-if (ramshorn == gamma)
+if (ramshorn == gamma || ramshorn__ramh == gamma)
 	// for fonts with default = small or large
 	(g__ltn_sm_rams_horn  g__ltn_sm_rams_horn_lrg_bowl)		> g__ltn_sm_rams_horn_gamma_style;
 endif
 
 // supernum feature dealt with in pitches.gdh
 
-if (mongol_e == 1)
+if (mongol_e == 1 || mongol_e__mone == 1)
 	cno_MongolStyle > cMongolStyle;
 else
 	cMongolStyle >cno_MongolStyle;
@@ -795,7 +795,7 @@ endif;
 ****/
 #endif // !DOULOSfont
 
-if (short_breve == 1)
+if (short_breve == 1 || short_breve__sbrv)
 	cno_CyShortMrkAlt > cCyShortMrkAlt;
 else
 	cCyShortMrkAlt > cno_CyShortMrkAlt;
@@ -806,8 +806,8 @@ endif;
 
 
 // The barred_bowl rule must happen *after* the literacy rule
-if (barred_bowl == 1)                   //  does contain g01E5, no such naming as uni01e5 or
-                                        // uni anything. That is the Postscript Name from xml file.  jw 8/27/04
+if (barred_bowl == 1 || barred_bowl__bowl == 1)  //  does contain g01E5, no such naming as uni01e5 or
+                                                 // uni anything. That is the Postscript Name from xml file.  jw 8/27/04
 //	cno_BarBowl  >  cBarBowl;	// (does NOT include uni01E5 > uni01E5.BarBowl)
 //	g01e5  >  g01e5_barBowl;		        yes it does jw.  commented 8/31
 //					see: cno_BarBowl = (g0180, g_dcroat, g01e5);
@@ -820,71 +820,70 @@ else
 	c_barbowl > cno_barbowl;
 	g__ltn_sm_g_bar_bowl > g__ltn_sm_g_strk;
 	g__ltn_sm_g_bar_bowl_sng_bowl > g__ltn_sm_g_strk_sng_bowl;
-
 endif;
 
-if (ltnjstroke == doubleSerif)
+if (ltnjstroke == doubleSerif || ltnjstroke__Jstk == doubleSerif)
 	cno_DblSerif  >  cDblSerif;
 else
 	cDblSerif  >  cno_DblSerif;
 endif;
 
-if (open_o == topSerif)
+if (open_o == topSerif || open_o__opnO == topSerif)
 	cno_TopSerif  >  cTopSerif;
 else
 	cTopSerif  >  cno_TopSerif;
 endif;
 
-if (v_hook == curved)
+if (v_hook == curved && v_hook__v_hk == curved)  // && becaue it is the default
 	c_vhook_StraightLeft >  c_vhook_Curved;
 	c_vhook_HighHook     >  c_vhook_Curved;
 endif;
-if (v_hook == straightLeft)
+if (v_hook == straightLeft || v_hook__v_hk == straightLeft)
 	c_vhook_Curved    >  c_vhook_StraightLeft;
 	c_vhook_HighHook  >  c_vhook_StraightLeft;
 endif;
-if (v_hook == highHook)
+if (v_hook == highHook || v_hook__v_hk == highHook)
 	c_vhook_Curved       >  c_vhook_HighHook;
 	c_vhook_StraightLeft >  c_vhook_HighHook;
 endif;
 
-if (y_hook == 1)
+if (y_hook == 1 || y_hook__Y_hk == 1)
 	cno_RtHookYhook  >  cRtHookYhook;
 else
 	cRtHookYhook  >  cno_RtHookYhook;
 endif;
 
-if (n_hook == 1)
+if (n_hook == 1 || n_hook__N_hk == 1 )
 	cno_LCStyleNhook  >  cLCStyleNhook;
 else
 	cLCStyleNhook  >  cno_LCStyleNhook;
 endif;
 
-if (ezh_curl == 1)
+if (ezh_curl == 1 || ezh_curl__ezhc == 1)
 	g__ltn_sm_ezh_curl  >  g__ltn_sm_ezh_curl_lrg_bowl;
 else
 	g__ltn_sm_ezh_curl_lrg_bowl  >  g__ltn_sm_ezh_curl;
 endif;
 
-if (t_hook == 1)
+if (t_hook == 1 || t_hook__t_hk == 1)
 	cno_RtHookThook  >  cRtHookThook;
 else
 	cRtHookThook  >  cno_RtHookThook;
 endif;
 
-if (b_hook == 1)
+if (b_hook == 1 || b_hook__B_hk == 1)
 	cno_TopBarB  >  cTopBarB;
 else
 	cTopBarB  >  cno_TopBarB;
 endif;
 
-if (d_hook == 1)
+if (d_hook == 1 || d_hook__D_hk == 1)
 	cno_TopBarD  >  cTopBarD;
 else
 	cTopBarD  >  cno_TopBarD;
 endif;
 
-if (h_stroke == 1)
+if (h_stroke == 1 || h_stroke__Hstk == 1)
 	cno_VertStrk  >  cVertStrk;
 	////cno_BarStem  >  cBarStem;
 else
@@ -892,13 +891,13 @@ else
 	////cBarStem  >  cno_BarStem;
 endif;
 
-if (r_tail == 1)
+if (r_tail == 1 || r_tail__R_tl == 1)
 	cno_LCStyleRtail  >  cLCStyleRtail;
 else
 	cLCStyleRtail  >  cno_LCStyleRtail;
 endif;
 
-if (p_hook == 1)
+if (p_hook == 1 || p_hook__p_hk == 1)
 	cno_BowlHook  >  cBowlHook;
 else
 	cBowlHook  >  cno_BowlHook;
@@ -912,7 +911,7 @@ else
 endif;
 -------------------------- */
 
-if (ezh == 1)
+if (ezh == 1 || ezh__Ezhr == 1)
 	cno_RevSigmaStyle  >  cRevSigmaStyle;
 else
 	cRevSigmaStyle  >  cno_RevSigmaStyle;
@@ -920,13 +919,13 @@ endif;
 
 // ogonek processing must be in pass 2
 
-if (apostrophe == 1)
+if (apostrophe == 1 || apostrophe__apos == 1)
 	cno_Lrg  >  cLrg;
 else
 	cLrg  >  cno_Lrg;
 endif;
 
-if (modlowcolon == wide)
+if (modlowcolon == wide || modlowcolon__coln == wide)
   cno_Wide >  cWide;	// a789, was gf1e9
   //gf1e9  >  gf1e9_wide;
 else
@@ -934,7 +933,7 @@ else
   //gf1e9_wide  >  gf1e9;
 endif;
 
-if (caron == 0)
+if (caron == 0 && caron__carn == 0)  // && because it is the default
 	// European caron combinations (feature OFF)
 	//if (select_diac)
 	//	cno_CaronEuro  g030c  >  _  cCaronEuro$1:(1 2) {comp {base.ref = @1; caron.ref = @2}; passKeySlot=1};
@@ -942,18 +941,18 @@ if (caron == 0)
 		cno_CaronEuro  g__comb_caron  >  _  cCaronEuro$1:(1 2) {passKeySlot=1};
 	//endif;
 endif;
-if (caron == 1)
+if (caron == 1 || caron__carn == 1)
 	// Non-European caron but NFC: decompose and use standard caron
 	cCaronEuro  _  >  cno_CaronEuro:1  g__comb_caron:1;
 endif;
 
-if (ou == 1)
+if (ou == 1 || ou__opOU == 1)
 	cno_OpenTop  >  cOpenTop;
 else
 	cOpenTop  >  cno_OpenTop;
 endif;
 
-if (emptyset == 1)
+if (emptyset == 1 || emptyset__empt)
 	cno_SlashZero  >  cSlashZero;
 else
 	cSlashZero  >  cno_SlashZero;
@@ -967,13 +966,13 @@ else
 endif;
 --------------------------- */
 
-if (cyrillic_shha == 1)
+if (cyrillic_shha == 1 || cyrillic_shha__shha == 1)
 	cno_UCStyleCyrShha  >  cUCStyleCyrShha;
 else
 	cUCStyleCyrShha  >  cno_UCStyleCyrShha;
 endif;
 
-if (serbian == 1)
+if (serbian == 1 || serbian__locl == 1)
 	cno_Serb  >  cSerb;
 else
 	cSerb  >  cno_Serb;
@@ -981,13 +980,13 @@ endif;
 
 #if (FONT == GENTIUMfont)
 
-if (serif_beta == 1)
+if (serif_beta == 1 || serif_beta__beta == 1)
 	cno_Serif  >  cSerif;
 else
 	cSerif  >  cno_Serif;
 endif;
 
-if (greek_circ == 1)
+if (greek_circ == 1 || greek_circ__pcir == 1)
 	cno_Por  >  cPor;
 else
 	cPor  >  cno_Por;
@@ -998,43 +997,43 @@ endif;
 
 #if (ANDIKAfamily)
 
-if (zero == 1)
+if (zero == 1 || zero__dig0 == 1)
 	cno_Slash  >  cSlash;
 else
 	cSlash  >  cno_Slash;
 endif;
 
-if (one == 1)
+if (one == 1 || one__dig1 == 1)
 	cno_NoBase  >  cNoBase;
 else
 	cNoBase  >  cno_NoBase;
 endif;
 
-if (four == 1)
+if (four == 1 || four__dig4 == 1)
 	cno_Open  >  cOpen;
 else
 	cOpen  >  cno_Open;
 endif;
 
-if (six_nine == 1)
+if (six_nine == 1 || six_nine__dg69 == 1)
 	cno_Diag  > cDiag;
 else
 	cDiag  >  cno_Diag;
 endif;
 
-if (seven == 1)
+if (seven == 1 || seven__dig7 == 1)
 	cno_Bar  >  cBar;
 else
 	cBar  >  cno_Bar;
 endif;
 
-if (i_hook == 1)
+if (i_hook == 1 || i_hook__i_tl == 1)
 	cno_TailI  >  cTailI;
 else
 	cTailI  >  cno_TailI;
 endif;
 
-if (j_serif == 1)
+if (j_serif == 1 || j_serif__jser == 1)
 	cno_TopLftSerif  >  cTopLftSerif;
 else
 	cTopLftSerif  >  cno_TopLftSerif;
@@ -1042,20 +1041,20 @@ endif;
 
 // No-Tail-T, Tail-L - see below
 
-if (q_diagtail == 1)
+if (q_diagtail == 1 || q_diagtail__Qalt == 1)
 	cno_DiagTail  >  cDiagTail;
 else
 	cDiagTail  >  cno_DiagTail;
 endif;
 
-if (q_point == 1)
+if (q_point == 1 || q_point__q_tl)
 	cno_Point  >  cPoint;
 else
 	cPoint  >  cno_Point;
 endif;
 
 
-if (y_tail == 1)
+if (y_tail == 1 || y_tail__y_tl == 1)
 	cno_NoTailY  > cNoTailY;
 else
 	cNoTailY  >  cno_NoTailY;
@@ -1088,7 +1087,7 @@ cno_LP  >  cLP  / c_lowerWnonLPdiacs ^ _;	// eg, NFC e-breve+circumflex, w-ring+
 cno_LP  >  cLP  /  cTakesLPDiac  DIASTR4(cnUDiaX) ^ _ {lp_subclass == LP_DIACONLY} ;
 
 // Don't try to do low-profile stuff with small-caps.
-if (low_profile_diac && !smallcaps)
+if ((low_profile_diac || low_profile_diac__lopr) && !smallcaps)
 	cno_LP  >  cLP  / ^ _;	// back up to handle dotless stuff
 endif;
 
@@ -1099,13 +1098,13 @@ endif;
 
 // Andika features that interact with other features
 
-if (t_tail == 1)
+if (t_tail == 1 || t_tail__t_tl == 1)
 	cno_NoTailT  >  cNoTailT;
 else
 	cNoTailT  >  cno_NoTailT;
 endif;
 
-if (l_hook == 1)
+if (l_hook == 1 | l_hook__l_tl == 1)
 	cno_TailL  >  cTailL;
 else
 	cTailL  >  cno_TailL;
@@ -1124,7 +1123,7 @@ cSpecialDotted  _  cUDia=D  >  g__ltn_sm_i_dotless  cSpecialDottedDia$1:1  @D {p
 
 // Now that ogonek has been composed with its vowels, do retrohook style if wanted:
 
-if (ogonek == americanist)
+if (ogonek == americanist || ogonek__ogon == americanist)
 	cno_RetroHook > cRetroHook;
 else
 	cRetroHook > cno_RetroHook;

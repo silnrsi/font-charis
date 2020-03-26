@@ -89,7 +89,8 @@ smallcaps {
 }
 
 literacy {
-	id = "litr";
+	id = "ss01";
+	id.hidden = "litr";
 	name.1033 = string("Literacy alternates");
 #if (ANDIKAfamily)
 	boolWDefTrue
@@ -101,13 +102,15 @@ literacy {
 }
 
 slant_italic {
-  id = "ital";
+	id = "ss05";
+  id.hidden = "ital";
   name.1033 = string("Slant italic specials");
   bool
 }
 
 barred_bowl {
-	id = "bowl";
+	id = "ss04";
+	id.hidden = "bowl";
 	name.1033 = string("Barred-bowl forms");
 	default = false;
 	settings {
@@ -128,7 +131,8 @@ barred_bowl {
 
 
 supernum {
-	id = "tone";
+	id = "cv91";
+	id.hidden = "tone";
 	name.1033 = string("Tone numbers");
 	default = false;
 	settings {
@@ -144,12 +148,13 @@ supernum {
 }
 
 hide_tone_staff {
-	id = "tstv";
+	id = "cv92";
+	id.hidden = "tstv";
 	name.1033 = string("Hide tone contour staves");
 	bool
 }
 
-pitch9 {
+pitch9 {  // ???????????????????
 	id = "pit9";
 	name.1033 = string("9-level pitches");
 	default = 0;
@@ -178,7 +183,8 @@ pitch9 {
 ////separator2 { id=10002; name.1033 = string("-"); };
 
 viet {
-	id = "viet";
+	id = "cv75";
+	id.hidden = "viet";
 	name.1033 = string("Vietnamese-style diacritics");
 	default = false;
 	settings {
@@ -202,7 +208,8 @@ rom {
 -------------------------- */
 
 chinantec_tone {
-	id = "chtn";
+	id = "cv90";
+	id.hidden = "chtn";
 	name.1033 = string("Chinantec tones");
 	default = false;
 	settings {
@@ -224,7 +231,8 @@ bridging_diac {
 }
 
 serbian {
-	id = "serb";
+	id = "locl";
+	id.hidden = "serb";
 	name.1033 = string("Serbian-style alternates");
 	bool
 }
@@ -232,7 +240,8 @@ serbian {
 #if (FONT == GENTIUMfont)
 
 low_profile_diac {
-	id = "lopr";
+	id = "ss07";
+	id.hidden = "lopr";
 	name.1033 = string("Low-profile diacritics");
 	bool
 }
@@ -243,7 +252,8 @@ low_profile_diac {
 ////separator3 { id=10003; name.1033 = string("-"); };
 
 eng {
-	id = "Engs";
+	id = "cv43";
+	id.hidden = "Engs";
 	name.1033 = string("Uppercase Eng alternates");
 	default = descender;
 	settings {
@@ -267,7 +277,8 @@ eng {
 }
 
 ramshorn {
-	id = "ramh";
+	id = "cv25";
+	id.hidden = "ramh";
 	name.1033 = string("Rams horn alternates");
 	default = small;
 	settings {
@@ -287,7 +298,8 @@ ramshorn {
 }
 
 ogonek {
-	id = "ogon";
+	id = "cv76";
+	id.hidden = "ogon";
 	name.1033 = string("Ogonek alternate");
 	default = ipa;
 	settings {
@@ -305,7 +317,8 @@ ogonek {
 #if (FONT == GENTIUMfont)
 // cno_Serif > cSerif
 serif_beta {
-	id = "beta";
+	id = "cv14";
+	id.hidden = "beta";
 	name.1033 = string("Serif beta alternates");
 	default = false;
 	settings {
@@ -321,7 +334,8 @@ serif_beta {
 }
 
 greek_circ {
-	id = "pcir";
+	id = "cv78";
+	id.hidden = "pcir";
 	name.1033 = string("Porsonic circumflex");
 	default = false;
 	settings {
@@ -339,7 +353,8 @@ greek_circ {
 #endif // GENTIUMfont
 
 b_hook {
-	id = "B_hk";
+	id = "cv13";
+	id.hidden = "B_hk";
 	name.1033 = string("Capital B-hook alternate");
 	default = false;
 	settings {
@@ -355,7 +370,8 @@ b_hook {
 }
 
 d_hook {
-	id = "D_hk";
+	id = "cv17";
+	id.hidden = "D_hk";
 	name.1033 = string("Capital D-hook alternate");
 	default = false;
 	settings {
@@ -371,7 +387,8 @@ d_hook {
 }
 
 h_stroke {	// was called "Tat alternates"
-	id = "Hstk";
+	id = "cv28";
+	id.hidden = "Hstk";
 	name.1033 = string("Capital H-stroke alternate");
 	default = horizontal;
 	settings {
@@ -387,7 +404,8 @@ h_stroke {	// was called "Tat alternates"
 }
 
 ltnjstroke {
-	id = "Jstk";
+	id = "cv37";
+	id.hidden = "Jstk";
 	name.1033 = string("J-stroke hook alternate");
 	default = noSerif;
 	settings {
@@ -403,7 +421,8 @@ ltnjstroke {
 }
 
 n_hook {
-	id = "N_hk";
+	id = "cv44";
+	id.hidden = "N_hk";
 	name.1033 = string("Capital N-left-hook alternate");
 	default = ucStyle;
 	settings {
@@ -419,7 +438,8 @@ n_hook {
 }
 
 open_o {
-	id = "opnO";
+	id = "cv46";
+	id.hidden = "opnO";
 	name.1033 = string("Open-O alternate");
 	default = bottomSerif;
 	settings {
@@ -435,7 +455,8 @@ open_o {
 }
 
 p_hook {
-	id = "p_hk";
+	id = "cv49";
+	id.hidden = "p_hk";
 	name.1033 = string("Small p-hook alternate");
 	default = left_hook;
 	settings {
@@ -451,7 +472,8 @@ p_hook {
 }
 
 r_tail {
-	id = "R_tl";
+	id = "cv55";
+	id.hidden = "R_tl";
 	name.1033 = string("Capital R-tail alternate");
 	default = UCstyle;
 	settings {
@@ -467,7 +489,8 @@ r_tail {
 }
 
 t_hook {
-	id = "t_hk";
+	id = "cv57";
+	id.hidden = "t_hk";
 	name.1033 = string("Capital T-hook alternate");
 	default = left_hook;
 	settings {
@@ -483,7 +506,8 @@ t_hook {
 }
 
 v_hook {
-	id = "v_hk";
+	id = "cv62";
+	id.hidden = "v_hk";
 	name.1033 = string("V-hook alternates");
 	default = curved;
 	settings {
@@ -503,7 +527,8 @@ v_hook {
 }
 
 y_hook {
-	id = "Y_hk";
+	id = "cv68";
+	id.hidden = "Y_hk";
 	name.1033 = string("Capital Y-hook alternate");
 	default = right_hook;
 	settings {
@@ -519,7 +544,8 @@ y_hook {
 }
 
 ezh_curl {
-	id = "ezhc";
+	id = "cv19";
+	id.hidden = "ezhc";
 	name.1033 = string("Small ezh-curl alternate");
 	default = small;
 	settings {
@@ -535,7 +561,8 @@ ezh_curl {
 }
 
 ezh {
-	id = "Ezhr";
+	id = "cv20";
+	id.hidden = "Ezhr";
 	name.1033 = string("Capital Ezh alternates");
 	default = ipa;
 	settings {
@@ -551,7 +578,8 @@ ezh {
 }
 
 ou {
-	id = "opOU";
+	id = "cv47";
+	id.hidden = "opOU";
 	name.1033 = string("OU alternates");
 	default = closed;
 	settings {
@@ -570,7 +598,8 @@ ou {
 ////separator4 { id=10004; name.1033 = string("-"); };
 
 mongol_e {
-	id = "mone";
+	id = "cv80";
+	id.hidden = "mone";
 	name.1033 = string("Mongolian-style Cyrillic E");
 	default = false;
 	settings {
@@ -594,7 +623,8 @@ cyr_curs_ital {
 ------------------------------------------------------ */
 
 short_breve {
-	id = "sbrv";
+	id = "cv82";
+	id.hidden = "sbrv";
 	name.1033 = string("Combining breve Cyrillic form");
 	default = false;
 	settings {
@@ -610,7 +640,8 @@ short_breve {
 }
 
 cyrillic_shha {
-	id = "shha";
+	id = "cv81";
+	id.hidden = "shha";
 	name.1033 = string("Cyrillic shha alternate");
 	default = false;
 	settings {
@@ -629,7 +660,8 @@ cyrillic_shha {
 ////separator5 { id=10005; name.1033 = string("-"); };
 
 apostrophe {
-	id = "apos";
+	id = "cv70";
+	id.hidden = "apos";
 	name.1033 = string("Modifier apostrophe alternates");
 	default = small;
 	settings {
@@ -663,7 +695,8 @@ ltnglottalstop {
 --------------------------- */
 
 modlowcolon {
-	id = "coln";
+	id = "cv71";
+	id.hidden = "coln";
 	name.1033 = string("Modifier colon alternate");
 	default = tight;
 	settings {
@@ -679,7 +712,8 @@ modlowcolon {
 }
 
 caron {
-	id = "carn";
+	id ="cv77";
+	id.hidden = "carn";
 	name.1033 = string("Non-European caron alternates");
 	default = false;
 	settings {
@@ -696,7 +730,8 @@ caron {
 
 
 emptyset {
-	id = "empt";
+	id = "cv98";
+	id.hidden = "empt";
 	name.1033 = string("Empty set alternates");
 	default = circle;
 	settings {
@@ -717,7 +752,8 @@ emptyset {
 #if (ANDIKAfamily)
 
 zero {
-	id = "dig0";
+	id = "cv10";
+	id.hidden = "dig0";
 	name.1033 = string("Digit Zero with slash");
 	default = false;
 	settings {
@@ -733,7 +769,8 @@ zero {
 }
 
 one {
-	id = "dig1";
+	id = "cv01";
+	id.hidden = "dig1";
 	name.1033 = string("Digit One without base");
 	default = false;
 	settings {
@@ -749,7 +786,8 @@ one {
 }
 
 four {
-	id = "dig4";
+	id = "cv04";
+	id.hidden = "dig4";
 	name.1033 = string("Digit Four with open top");
 	default = false;
 	settings {
@@ -765,7 +803,8 @@ four {
 }
 
 six_nine {
-	id = "dg69";
+	id = "cv06";
+	id.hidden = "dg69";
 	name.1033 = string("Digit Six and Nine alternates");
 	default = false;
 	settings {
@@ -781,7 +820,8 @@ six_nine {
 }
 
 seven {
-	id = "dig7";
+	id = "cv07";
+	id.hidden = "dig7";
 	name.1033 = string("Digit Seven with bar");
 	default = false;
 	settings {
@@ -797,7 +837,8 @@ seven {
 }
 
 i_hook {
-	id = "i_tl";
+	id = "cv31";
+	id.hidden = "i_tl";
 	name.1033 = string("Small i-tail alternate");
 	default = false;
 	settings {
@@ -813,7 +854,8 @@ i_hook {
 }
 
 j_serif {
-	id = "jser";
+	id = "cv34";
+	id.hidden = "jser";
 	name.1033 = string("Small j-serif alternate");
 	default = false;
 	settings {
@@ -829,7 +871,8 @@ j_serif {
 }
 
 l_hook {
-	id = "l_tl";
+	id = "cv39";
+	id.hidden = "l_tl";
 	name.1033 = string("Small l-tail alternate");
 	default = false;
 	settings {
@@ -845,7 +888,8 @@ l_hook {
 }
 
 q_diagtail {
-	id = "Qalt";
+	id = "cv52";
+	id.hidden = "Qalt";
 	name.1033 = string("Capital Q alternate");
 	default = false;
 	settings {
@@ -861,7 +905,8 @@ q_diagtail {
 }
 
 q_point {
-	id = "q_tl";
+	id = "cv51";
+	id.hidden = "q_tl";
 	name.1033 = string("Small q-tail alternate");
 	default = false;
 	settings {
@@ -877,7 +922,8 @@ q_point {
 }
 
 t_tail {
-	id = "t_tl";
+	id = "cv56";
+	id.hidden = "t_tl";
 	name.1033 = string("Small t-tail alternate");
 	default = false;
 	settings {
@@ -893,7 +939,8 @@ t_tail {
 }
 
 y_tail {
-	id = "y_tl";
+	id = "cv67";
+	id.hidden = "y_tl";
 	name.1033 = string("Small y-tail alternate");
 	default = false;
 	settings {
@@ -945,7 +992,8 @@ dep_pua {
 --------------------------- */
 
 invis {
-	id = "invs";
+	id = "ss06";
+	id.hidden = "invs";
 	name.1033 = string("Show invisible characters");
 	bool
 }

@@ -223,7 +223,7 @@ pass(1) {MaxBackup = 15; MaxRuleLoop = 30}
 
 	// Right staff
 
-	if (supernum)
+	if (supernum || supernum__tone)
 	//  _ cPitch > g207B:3 cSupNum:3 / cSupNum _ _;	// include minus sign between digits
 	    cRightTone > cSupNum;
 	    cLeftTone  > cSupNum;
@@ -241,7 +241,7 @@ pass(1) {MaxBackup = 15; MaxRuleLoop = 30}
 	// need to be handled specially below (in pass 2).
 	#define SETSTATE {TLSTATE = ((@1.tone == @2.tone) && (@1.TLSTATE != TLSstop)) ? TLSchain : TLSstop}
 
-	if (!supernum && hide_tone_staff)
+	if (!supernum & !supernum__tone && hide_tone_staff)
 		// hidden staves
 		cRightTone1  cRightTone  >  cRightTone1Contour$2  cRightStaff_no$2  SETSTATE  /  _  ^  _;
 		cRightTone2  cRightTone  >  cRightTone2Contour$2  cRightStaff_no$2  SETSTATE  /  _  ^  _;
@@ -250,7 +250,7 @@ pass(1) {MaxBackup = 15; MaxRuleLoop = 30}
 		cRightTone5  cRightTone  >  cRightTone5Contour$2  cRightStaff_no$2  SETSTATE  /  _  ^  _;
 	endif;
 
-	if (!supernum && !hide_tone_staff)
+	if (!supernum & !supernum__tone && !hide_tone_staff)
 		cRightTone1  cRightTone  >  cRightTone1Contour$2  cRightStaff$2  SETSTATE  /  _  ^  _;
 		cRightTone2  cRightTone  >  cRightTone2Contour$2  cRightStaff$2  SETSTATE  /  _  ^  _;
 		cRightTone3  cRightTone  >  cRightTone3Contour$2  cRightStaff$2  SETSTATE  /  _  ^  _;
@@ -260,10 +260,10 @@ pass(1) {MaxBackup = 15; MaxRuleLoop = 30}
 
 	// Left staff
 
-	if (!supernum && hide_tone_staff)
+	if (!supernum & !supernum__tone && hide_tone_staff)
 		cLeftTone  >  cLeftStaff_no$1  / ^ _  cLeftTone;
 	endif;
-	if (!supernum && !hide_tone_staff)
+	if (!supernum & !supernum__tone && !hide_tone_staff)
 		cLeftTone  >  cLeftStaff$1  / ^ _  cLeftTone;
 	endif;
 
@@ -308,7 +308,7 @@ pass(3) {MaxBackup = 15; MaxRuleLoop = 30}
         /  _  _  cLeftContour {LTFLAG == LTback && TLSTATE == TLSchain};
 
     // Finally, handle any singleton glyphs with staves.
-    if (!supernum && hide_tone_staff)
+    if (!supernum & !supernum__tone && hide_tone_staff)
         cRightTone  >  cRightTone_no1;
         cLeftTone   >  cLeftTone_no1;
     endif;
