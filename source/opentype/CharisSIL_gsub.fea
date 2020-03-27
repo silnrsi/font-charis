@@ -523,142 +523,783 @@ feature cv13 {
 
   cvParameters {
       FeatUILabelNameID {
-       name 3 1 0x0409 "a";  # English US
-       name 1 0 0 "b";  # Mac English
+       name 3 1 0x0409 "Capital B-hook alternate";  # English US
+       name 1 0 0 "Capital B-hook alternate";  # Mac English
       };
       
       FeatUITooltipTextNameID {
-       name 3 1 0x0409 "c";  # English US
-       name 1 0 0 "d";  # Mac English
+       name 3 1 0x0409 "Cap B-hook alt";  # English US
+       name 1 0 0 "Cap B-hook alt";  # Mac English
       };
       
       SampleTextNameID {
-       name 3 1 0x0409 "e";  # English US
-       name 1 0 0 "f";  # Mac English
+       name 3 1 0x0409 "Ɓ";  # English US
+       name 1 0 0 "?";  # Mac English
       };
       
       ParamUILabelNameID {
-       name 3 1 0x0409 "g";  # English US
-       name 1 0 0 "h";  # Mac English
+       name 3 1 0x0409 "Lowercase style";  # English US
+       name 1 0 0 "Lowercase style";  # Mac English
       };
-      
-      ParamUILabelNameID {
-       name 3 1 0x0409 "i";  # English US
-       name 1 0 0 "j";  # Mac English
-      };
-  
   };
 
   lookup bhk_sub;
 } cv13;
 
 feature cv17 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Capital D-hook alternate";  # English US
+       name 1 0 0 "Capital D-hook alternate";  # Mac English
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Cap D-hook alt";  # English US
+       name 1 0 0 "Cap D-hook alt";  # Mac English
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "Ɗ";  # English US
+       name 1 0 0 "?";  # Mac English
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Lowercase style";  # English US
+       name 1 0 0 "Lowercase style";  # Mac English
+      };
+  };
+
   lookup dhk_sub;
 } cv17;
 
 feature cv19 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Small ezh-curl alternate";  # English US
+       name 1 0 0 "Small ezh-curl alternate";  # Mac English
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Sm ezh-curl alt";  # English US
+       name 1 0 0 "Sm ezh-curl alt";  # Mac English
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "ʓ";  # English US
+       name 1 0 0 "?";  # Mac English
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Large bowl";  # English US
+       name 1 0 0 "Large bowl";  # Mac English
+      };
+  };
+
   lookup ezhcurl_sub;
 } cv19;
 
 feature cv20 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Capital Ezh alternates";  # English US
+       name 1 0 0 "Capital Ezh alternates";  # Mac English
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Cap Ezh alts";  # English US
+       name 1 0 0 "Cap Ezh alts";  # Mac English
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "ƷӠ";  # English US
+       name 1 0 0 "?";  # Mac English
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Reversed sigma";  # English US
+       name 1 0 0 "Reversed sigma";  # Mac English
+      };
+  };
+
   lookup ezh_sub;
 } cv20;
 
 feature cv25 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Rams horn alternates";  # English US
+       name 1 0 0 "Rams horn alternates";  # Mac English
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Rams horn alts";  # English US
+       name 1 0 0 "Rams horn alts";  # Mac English
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "ɤ";  # English US
+       name 1 0 0 "?";  # Mac English
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Large Bowl";  # English US
+       name 1 0 0 "Large Bowl";  # Mac English
+      };
+
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Small gamma";  # English US
+       name 1 0 0 "Small gamma";  # Mac English
+      };
+  };
+
   lookup rams_sub;
 } cv25;
 
 feature cv28 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Capital H-stroke alternate";  # English US
+       name 1 0 0 "Capital H-stroke alternate";  # Mac English
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Cap H-stroke alt";  # English US
+       name 1 0 0 "Cap H-stroke alt";  # Mac English
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "Ħ";  # English US
+       name 1 0 0 "?";  # Mac English
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Vertical-stroke";  # English US
+       name 1 0 0 "Vertical-stroke";  # Mac English
+      };
+  };
+
   lookup hstrk_sub;
 } cv28;
 
 feature cv37 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "J-stroke hook alternate";  # English US
+       name 1 0 0 "J-stroke hook alternate";  # Mac English
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "J-strok alt";  # English US
+       name 1 0 0 "J-strok alt";  # Mac English
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "ʄ";  # English US
+       name 1 0 0 "?";  # Mac English
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Top serif";  # English US
+       name 1 0 0 "Top serif";  # Mac English
+      };
+  };
+
   lookup jstrk_sub;
 } cv37;
 
 feature cv43 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Uppercase Eng alternates";  # English US
+       name 1 0 0 "Uppercase Eng alternates";  # Mac English
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Uppercase Eng alts";  # English US
+       name 1 0 0 "Uppercase Eng alts";  # Mac English
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "Ŋ";  # English US
+       name 1 0 0 "?";  # Mac English
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Large eng with descender";  # English US
+       name 1 0 0 "Large eng with descender";  # Mac English
+      };
+
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Large eng on baseline";  # English US
+       name 1 0 0 "Large eng on baseline";  # Mac English
+      };
+
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Capital N with tail";  # English US
+       name 1 0 0 "Capital N with tail";  # Mac English
+      };
+
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Large eng with short stem";  # English US
+       name 1 0 0 "Large eng with short stem";  # Mac English
+      };
+  };
+
   lookup engs_sub;
 } cv43;
 
 feature cv44 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Capital N-left-hook alternate";  # English US
+       name 1 0 0 "Capital N-left-hook alternate";  # Mac English
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Cap N-left-hook alt";  # English US
+       name 1 0 0 "Cap N-left-hook alt";  # Mac English
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "Ɲ";  # English US
+       name 1 0 0 "?";  # Mac English
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Lowercase style";  # English US
+       name 1 0 0 "Lowercase style";  # Mac English
+      };
+  };
+
   lookup nhk_sub;
 } cv44;
 
 feature cv46 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Open-O alternates";  # English US
+       name 1 0 0 "Open-O alternates";  # Mac English
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Open-O alts";  # English US
+       name 1 0 0 "Open-O alts";  # Mac English
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "Ɔɔᴐᵓᶗ";  # English US
+       name 1 0 0 "?";  # Mac English
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Top serif";  # English US
+       name 1 0 0 "Top serif";  # Mac English
+      };
+  };
+
   lookup opno_sub;
 } cv46;
 
 feature cv47 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "OU alternates";  # English US
+       name 1 0 0 "OU alternates";  # Mac English
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "OU alts";  # English US
+       name 1 0 0 "OU alts";  # Mac English
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "Ȣȣᴕᴽ";  # English US
+       name 1 0 0 "?";  # Mac English
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Open";  # English US
+       name 1 0 0 "Open";  # Mac English
+      };
+  };
+
   lookup ou_sub;
 } cv47;
 
 feature cv49 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Small p-hook alternate";  # English US
+       name 1 0 0 "Small p-hook alternate";  # Mac English
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Sm p-hook alt";  # English US
+       name 1 0 0 "Sm p-hook alt";  # Mac English
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "ƥ";  # English US
+       name 1 0 0 "?";  # Mac English
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Right hook";  # English US
+       name 1 0 0 "Right hook";  # Mac English
+      };
+  };
+
   lookup phk_sub;
 } cv49;
 
 feature cv55 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Capital R-tail alternate";  # English US
+       name 1 0 0 "Capital R-tail alternate";  # Mac English
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Cap R-tail alt";  # English US
+       name 1 0 0 "Cap R-tail alt";  # Mac English
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "Ɽ";  # English US
+       name 1 0 0 "?";  # Mac English
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Lowercase style";  # English US
+       name 1 0 0 "Lowercase style";  # Mac English
+      };
+  };
+
   lookup rtl_sub;
 } cv55;
 
 feature cv57 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Capital T-hook alternate";  # English US
+       name 1 0 0 "Capital T-hook alternate";  # Mac English
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Cap T-hook alt";  # English US
+       name 1 0 0 "Cap T-hook alt";  # Mac English
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "Ƭ";  # English US
+       name 1 0 0 "?";  # Mac English
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Right Hook";  # English US
+       name 1 0 0 "Right Hook";  # Mac English
+      };
+  };
+
   lookup thk_sub;
 } cv57;
 
 feature cv62 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "V-hook alternates";  # English US
+       name 1 0 0 "V-hook alternates";  # Mac English
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "V-hook alts";  # English US
+       name 1 0 0 "V-hook alts";  # Mac English
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "Ʋʋᶹ";  # English US
+       name 1 0 0 "?";  # Mac English
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Straight with low hook";  # English US
+       name 1 0 0 "Straight with low hook";  # Mac English
+      };
+
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Straight with high hook";  # English US
+       name 1 0 0 "Straight with high hook";  # Mac English
+      };
+
+  };
+
   lookup vhk_sub;
 } cv62;
 
 feature cv68 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Capital Y-hook alternate";  # English US
+       name 1 0 0 "Capital Y-hook alternate";  # Mac English
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Cap Y-hook alt";  # English US
+       name 1 0 0 "Cap Y-hook alt";  # Mac English
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "ƴ";  # English US
+       name 1 0 0 "?";  # Mac English
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Left hook";  # English US
+       name 1 0 0 "Left hook";  # Mac English
+      };
+  };
+
   lookup yhk_sub;
 } cv68;
 
 feature cv70 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Modifier apostrophe alternates";  # English US
+       name 1 0 0 "Modifier apostrophe alternates";  # Mac English
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Mod apostrophe alt";  # English US
+       name 1 0 0 "Mod apostrophe alt";  # Mac English
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "ʼꞋꞌ";  # English US
+       name 1 0 0 "?";  # Mac English
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Large";  # English US
+       name 1 0 0 "Large";  # Mac English
+      };
+  };
+
   lookup apos_sub;
 } cv70;
 
 feature cv71 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Modifier colon alternate";  # English US
+       name 1 0 0 "Modifier colon alternate";  # Mac English
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Mod colon alt";  # English US
+       name 1 0 0 "Mod colon alt";  # Mac English
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "꞉";  # English US
+       name 1 0 0 "?";  # Mac English
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Expanded";  # English US
+       name 1 0 0 "Expanded";  # Mac English
+      };
+  };
+
   lookup colon_sub;
 } cv71;
 
 feature cv75 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Vietnamese-style diacritics";  # English US
+       name 1 0 0 "Vietnamese-style diacritics";  # Mac English
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Viet diacritics";  # English US
+       name 1 0 0 "Viet diacritics";  # Mac English
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "sample_text";  # English US TODO: add sample_text
+       name 1 0 0 "?";  # Mac English
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Vietnamese-style";  # English US
+       name 1 0 0 "Vietnamese-style";  # Mac English
+      };
+  };
+
   lookup vd_sub;
   lookup vc_sub;
 } cv75;
 
 feature cv76 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Ogonek alternate";  # English US
+       name 1 0 0 "Ogonek alternate";  # Mac English
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Ogonek alt";  # English US
+       name 1 0 0 "Ogonek alt";  # Mac English
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "ĄąĘęĮįǫǪŲų";  # English US
+       name 1 0 0 "?";  # Mac English
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Straight";  # English US
+       name 1 0 0 "Straight";  # Mac English
+      };
+  };
+
   lookup ognk_sub;
 } cv76;
 
 feature cv77 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Non-European caron alternates";  # English US
+       name 1 0 0 "Non-European caron alternates";  # Mac English
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Non-Eur caron alts";  # English US
+       name 1 0 0 "Non-Eur caron alts";  # Mac English
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "ďľĽť";  # English US
+       name 1 0 0 "?";  # Mac English
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Non-European style";  # English US
+       name 1 0 0 "Non-European style";  # Mac English
+      };
+  };
+
   lookup caron_sub;
 } cv77;
 
 # this may not be a valid CV since it uses a many-to-one sub
 feature cv79 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Kayan diacritics";  # English US
+       name 1 0 0 "Kayan diacritics";  # Mac English
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Kayan diacritics";  # English US
+       name 1 0 0 "Kayan diacritics";  # Mac English
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "sample_text";  # English US TODO: set sample_text
+       name 1 0 0 "?";  # Mac English
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Kayan style";  # English US
+       name 1 0 0 "Kayan style";  # Mac English
+      };
+  };
+
   lookup kayan_sub;
 } cv79;
 
 feature cv80 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Mongolian-style Cyrillic E";  # English US
+       name 1 0 0 "Mongolian-style Cyrillic E";  # Mac English
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Mongol-style Cyr E";  # English US
+       name 1 0 0 "Mongol-style Cyr E";  # Mac English
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "Ээ";  # English US
+       name 1 0 0 "?";  # Mac English
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Mongolian-style";  # English US
+       name 1 0 0 "Mongolian-style";  # Mac English
+      };
+  };
+
   lookup mce_sub;
 } cv80;
 
 feature cv81 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Cyrillic shha alternate";  # English US
+       name 1 0 0 "Cyrillic shha alternate";  # Mac English
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Cyr shha alt";  # English US
+       name 1 0 0 "Cyr shha alt";  # Mac English
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "һ";  # English US
+       name 1 0 0 "?";  # Mac English
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Uppercase style";  # English US
+       name 1 0 0 "Uppercase style";  # Mac English
+      };
+  };
+
   lookup shha_sub;
 } cv81;
 
 feature cv82 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Combining breve Cyrillic form";  # English US
+       name 1 0 0 "Combining breve Cyrillic form";  # Mac English
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Breve Cyr form";  # English US
+       name 1 0 0 "Breve Cyr form";  # Mac English
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "̆";  # English US
+       name 1 0 0 "?";  # Mac English
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Cyrillic-style";  # English US
+       name 1 0 0 "Cyrillic-style";  # Mac English
+      };
+  };
+
   lookup brvc_sub;
 } cv82;
 
 feature cv90 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Chinantec tones";  # English US
+       name 1 0 0 "Chinantec tones";  # Mac English
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Chinantec tones";  # English US
+       name 1 0 0 "Chinantec tones";  # Mac English
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "ˈˉˊˋ";  # English US
+       name 1 0 0 "?";  # Mac English
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Chinantec-style";  # English US
+       name 1 0 0 "Chinantec-style";  # Mac English
+      };
+  };
+
   lookup chnntc_sub;
 } cv90;
 
 feature cv91 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Tone numbers";  # English US
+       name 1 0 0 "Tone numbers";  # Mac English
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Tone numbers";  # English US
+       name 1 0 0 "Tone numbers";  # Mac English
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "˩˨˧˦˥꜖꜕꜔꜓꜒";  # English US
+       name 1 0 0 "?";  # Mac English
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Numbers";  # English US
+       name 1 0 0 "Numbers";  # Mac English
+      };
+  };
+
   lookup tn_sub;
 } cv91;
 
 feature cv98 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Empty set alternate";  # English US
+       name 1 0 0 "Empty set alternate";  # Mac English
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Empty set alt";  # English US
+       name 1 0 0 "Empty set alt";  # Mac English
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "∅";  # English US
+       name 1 0 0 "?";  # Mac English
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Zero";  # English US
+       name 1 0 0 "Zero";  # Mac English
+      };
+  };
+
   lookup set_sub;
 } cv98;
 
