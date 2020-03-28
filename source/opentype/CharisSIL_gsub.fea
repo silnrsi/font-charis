@@ -18,7 +18,7 @@ CombRingAbv CombLftHalfRingAbv CombRtHalfRingAbv CombHookAbv
 CombVertLineAbv CombDblVertLineAbv CombBridgeAbv CombLftArrwhdAbv 
 CombRtArrwhdAbv CombAcute_MacronDep CombMacron_AcuteDep 
 CombGrave_MacronDep CombMacron_GraveDep CombAcute_Grave_AcuteDep 
-CombGrave_Acute_GraveDep ]; 
+CombGrave_Acute_GraveDep CombKayanGraveAcute]; 
 
 
 lookup di_sub {
@@ -363,7 +363,7 @@ lookup caron_sub {
 
 # this may not be a valid CV since it uses a many-to-one sub
 lookup kayan_sub {
-  lookupflag 0;
+  lookupflag MarkAttachmentType @MarkClass1;
     sub CombGrave CombAcute by CombKayanGraveAcute;
 } kayan_sub;
 
