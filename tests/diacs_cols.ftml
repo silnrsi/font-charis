@@ -11,6 +11,10 @@
     <fontsrc>url(../tests/reference/CharisSIL-I.ttf)</fontsrc>
     <fontsrc>url(../tests/reference/DoulosSIL-Regular.ttf)</fontsrc>
     <fontsrc>url(../tests/reference/DoulosSIL-R.ttf)</fontsrc>
+    <styles>
+      <style feats="'cv75' 1" name="cv75_1"/>
+      <style feats="'cv79' 1" name="cv79_1"/>
+    </styles>
     <title>diacs</title>
   </head>
   <testgroup label="Rendering Check">
@@ -7640,6 +7644,28 @@
     <test label="U+20EF">
       <comment>CombRtArrwBlw</comment>
       <string>A\u0020EF E\u0020EF H\u0020EF O\u0020EF a\u0020EF e\u0020EF i\u0020EF o\u0020EF</string>
+    </test>
+  </testgroup>
+  <testgroup label="Special cases">
+    <test label="U+0300
+U+0301">
+      <comment>CombGrave CombAcute</comment>
+      <string>\u0025CC\u000300\u000301 a\u000300\u000301 o\u000300\u000301</string>
+    </test>
+    <test label="U+0300
+U+0301" stylename="cv79_1">
+      <comment>CombGrave CombAcute</comment>
+      <string>\u0025CC\u000300\u000301 a\u000300\u000301 o\u000300\u000301</string>
+    </test>
+    <test label="U+0302
+U+0301">
+      <comment>CombCircum CombAcute</comment>
+      <string>\u0025CC\u000302\u000301 a\u000302\u000301 o\u000302\u000301</string>
+    </test>
+    <test label="U+0302
+U+0301" stylename="cv75_1">
+      <comment>CombCircum CombAcute</comment>
+      <string>\u0025CC\u000302\u000301 a\u000302\u000301 o\u000302\u000301</string>
     </test>
   </testgroup>
 </ftml>

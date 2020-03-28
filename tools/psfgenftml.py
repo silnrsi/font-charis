@@ -207,6 +207,20 @@ class FTMLBuilder_LCG(FB.FTMLBuilder):
             self.features['ss01'].default = 1
         self.features['cv68'].default = 1
 
+        # add features that are not present in glyph_data.csv
+        # ss01 - lit; ss02 - lita; ss03 - litg
+        self.features.setdefault('ss02', FB.Feature('ss02'))
+        self.features.setdefault('ss03', FB.Feature('ss03'))
+        for uid in self.uids():
+            c = self.char(uid)
+            if "ss01" in c.feats:
+                if re.search("SmA", c.basename):
+                    c.feats.add("ss02")
+                elif re.search("SmG", c.basename):
+                    c.feats.add("ss03")
+                else:
+                    self.logger.log('Glyph with "ss01" found without "SmA" or "SmG"', "W")
+
         # We're finally done, but if allLangs is a set, let's order it (for lack of anything better) and make a list:
         if not self._langsComplete:
             self.allLangs = list(sorted(self.allLangs))
@@ -454,8 +468,8 @@ def doit(args):
                 try: upper_base_lst.append(ord(chr(lower_uid).upper()))
                 except: upper_base_lst.append(ord('X'))
             builder.render(upper_base_diac_lst, ftml, descUIDs=upper_base_lst)
-            # ftml.setFeatures([("c2sc", "1")]) # TODO: kludgy way to add a 'c2sc' test
-            # builder.render(upper_base_diac_lst, ftml, descUIDs=upper_base_lst)
+            ftml.setFeatures([("c2sc", "1")]) # TODO: kludgy way to add a 'c2sc' test
+            builder.render(upper_base_diac_lst, ftml, descUIDs=upper_base_lst)
 
     if test.lower().startswith("diac"):
         # Diac attachment:
@@ -501,11 +515,23 @@ def doit(args):
                     # ftml.clearFeatures()
                 ftml.closeTest()
 
-        # TODO: adjust for Latin
-        # ftml.startTestGroup('Special cases')
-        # builder.render((0x064A, 0x065E), ftml)   # Yeh + Fatha should keep dots
-        # builder.render((0x064A, 0x0654), ftml)   # Yeh + Hamza should loose dots
-        # ftml.closeTest()
+        ftml.startTestGroup('Special cases')
+        ftml.clearFeatures()
+        # comb_grave, comb_acute, space, a, comb_grave, comb_acute
+        builder.render((0x0300, 0x0301, 0x0020, 0x0061, 0x0300, 0x0301), ftml, descUIDs=(0x0300, 0x0301))
+        # o, comb_grave, comb_acute
+        builder.render((0x006F, 0x0300, 0x0301), ftml, keyUID=0x0300)
+        ftml.setFeatures([["cv79", "1"]])
+        builder.render((0x0300, 0x0301, 0x0020, 0x0061, 0x0300, 0x0301), ftml, descUIDs=(0x0300, 0x0301))
+        builder.render((0x006F, 0x0300, 0x0301), ftml, keyUID=0x0300)
+        ftml.clearFeatures()
+        # comb_circumflex, comb_acute, space, a, comb_circumflex, comb_acute
+        builder.render((0x0302, 0x0301, 0x0020, 0x0061, 0x0302, 0x0301), ftml, descUIDs=(0x0302, 0x0301))
+        # o, comb_circumflex, comb_acute
+        builder.render((0x006F, 0x0302, 0x0301), ftml, keyUID=0x0302)
+        ftml.setFeatures([["cv75", "1"]])
+        builder.render((0x0302, 0x0301, 0x0020, 0x0061, 0x0302, 0x0301), ftml, descUIDs=(0x0302, 0x0301))
+        builder.render((0x006F, 0x0302, 0x0301), ftml, keyUID=0x0302)
 
     # Write the output ftml file
     ftml.writeFile(args.output)
