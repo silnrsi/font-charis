@@ -33,8 +33,8 @@ lookup di_sub {
 
 lookup di_csub {
   lookupflag 0;
-	sub @c_i_tilde_blw by @c_di_tilde_blw CombTildeBlw;
-	sub @c_i_dot_blw by @c_di_dot_blw CombDotBlw;
+    sub @c_i_tilde_blw by @c_di_tilde_blw CombTildeBlw;
+    sub @c_i_dot_blw by @c_di_dot_blw CombDotBlw;
 } di_csub;
 
 # Use markClasses from psfmakefea since they can be used as glyph classes
@@ -86,7 +86,7 @@ lookup ss_sub {
 
 lookup ss_ctx {
   lookupflag 0;
-	sub @c_superscripts' @cno_Sup' lookup ss_sub;
+    sub @c_superscripts' @cno_Sup' lookup ss_sub;
 } ss_ctx;
 
 lookup sc1_sub {
@@ -115,30 +115,30 @@ lookup f_sub {
 lookup tn_ctx {
   lookupflag 0;
     sub [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]' [TnLtr1 ]  by [TnContRt51 TnContRt41 TnContRt31 
-	TnContRt21 TnContRt11 ];
+    TnContRt21 TnContRt11 ];
     sub [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]' [TnLtr2 ]  by [TnContRt52 TnContRt42 TnContRt32 
-	TnContRt22 TnContRt12 ];
+    TnContRt22 TnContRt12 ];
     sub [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]' [TnLtr3 ]  by [TnContRt53 TnContRt43 TnContRt33 
-	TnContRt23 TnContRt13 ];
+    TnContRt23 TnContRt13 ];
     sub [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]' [TnLtr4 ]  by [TnContRt54 TnContRt44 TnContRt34 
-	TnContRt24 TnContRt14 ];
+    TnContRt24 TnContRt14 ];
     sub [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]' [TnLtr5 ]  by [TnContRt55 TnContRt45 TnContRt35 
-	TnContRt25 TnContRt15 ];
+    TnContRt25 TnContRt15 ];
     sub [TnContLft11 TnContLft21 TnContLft31 TnContLft41 TnContLft51 
-	LftStemTnLtr1 ] [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]'  by [TnContLft15 TnContLft14 TnContLft13 
-	TnContLft12 TnContLft11 ];
+    LftStemTnLtr1 ] [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]'  by [TnContLft15 TnContLft14 TnContLft13 
+    TnContLft12 TnContLft11 ];
     sub [TnContLft12 TnContLft22 TnContLft32 TnContLft42 TnContLft52 
-	LftStemTnLtr2 ] [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]'  by [TnContLft25 TnContLft24 TnContLft23 
-	TnContLft22 TnContLft21 ];
+    LftStemTnLtr2 ] [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]'  by [TnContLft25 TnContLft24 TnContLft23 
+    TnContLft22 TnContLft21 ];
     sub [TnContLft13 TnContLft23 TnContLft33 TnContLft43 TnContLft53 
-	LftStemTnLtr3 ] [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]'  by [TnContLft35 TnContLft34 TnContLft33 
-	TnContLft32 TnContLft31 ];
+    LftStemTnLtr3 ] [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]'  by [TnContLft35 TnContLft34 TnContLft33 
+    TnContLft32 TnContLft31 ];
     sub [TnContLft14 TnContLft24 TnContLft34 TnContLft44 TnContLft54 
-	LftStemTnLtr4 ] [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]'  by [TnContLft45 TnContLft44 TnContLft43 
-	TnContLft42 TnContLft41 ];
+    LftStemTnLtr4 ] [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]'  by [TnContLft45 TnContLft44 TnContLft43 
+    TnContLft42 TnContLft41 ];
     sub [TnContLft15 TnContLft25 TnContLft35 TnContLft45 TnContLft55 
-	LftStemTnLtr5 ] [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]'  by [TnContLft55 TnContLft54 TnContLft53 
-	TnContLft52 TnContLft51 ];
+    LftStemTnLtr5 ] [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]'  by [TnContLft55 TnContLft54 TnContLft53 
+    TnContLft52 TnContLft51 ];
 } tn_ctx;
 
 lookup tnsr_dcmp {
@@ -181,54 +181,54 @@ lookup tne_ctx {
   lookupflag 0;
     sub [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ] [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]'lookup tnsr_dcmp  ;
     sub [TnContRt12 TnContRt13 TnContRt14 TnContRt15 TnContRt21 TnContRt23 
-	TnContRt24 TnContRt25 TnContRt31 TnContRt32 TnContRt34 
-	TnContRt35 TnContRt41 TnContRt42 TnContRt43 TnContRt45 
-	TnContRt51 TnContRt52 TnContRt53 TnContRt54 ] [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]'lookup tnsr_sub  ;
+    TnContRt24 TnContRt25 TnContRt31 TnContRt32 TnContRt34 
+    TnContRt35 TnContRt41 TnContRt42 TnContRt43 TnContRt45 
+    TnContRt51 TnContRt52 TnContRt53 TnContRt54 ] [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]'lookup tnsr_sub  ;
     sub [TnContRt12 TnContRt13 TnContRt14 TnContRt15 TnContRt21 TnContRt23 
-	TnContRt24 TnContRt25 TnContRt31 TnContRt32 TnContRt34 
-	TnContRt35 TnContRt41 TnContRt42 TnContRt43 TnContRt45 
-	TnContRt51 TnContRt52 TnContRt53 TnContRt54 ] [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]'lookup tnsr_sub  ;
+    TnContRt24 TnContRt25 TnContRt31 TnContRt32 TnContRt34 
+    TnContRt35 TnContRt41 TnContRt42 TnContRt43 TnContRt45 
+    TnContRt51 TnContRt52 TnContRt53 TnContRt54 ] [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]'lookup tnsr_sub  ;
     sub [TnContRt12 TnContRt13 TnContRt14 TnContRt15 TnContRt21 TnContRt23 
-	TnContRt24 TnContRt25 TnContRt31 TnContRt32 TnContRt34 
-	TnContRt35 TnContRt41 TnContRt42 TnContRt43 TnContRt45 
-	TnContRt51 TnContRt52 TnContRt53 TnContRt54 ] [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]'lookup tnsr_sub  ;
+    TnContRt24 TnContRt25 TnContRt31 TnContRt32 TnContRt34 
+    TnContRt35 TnContRt41 TnContRt42 TnContRt43 TnContRt45 
+    TnContRt51 TnContRt52 TnContRt53 TnContRt54 ] [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]'lookup tnsr_sub  ;
     sub [TnContRt12 TnContRt13 TnContRt14 TnContRt15 TnContRt21 TnContRt23 
-	TnContRt24 TnContRt25 TnContRt31 TnContRt32 TnContRt34 
-	TnContRt35 TnContRt41 TnContRt42 TnContRt43 TnContRt45 
-	TnContRt51 TnContRt52 TnContRt53 TnContRt54 ] [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]'lookup tnsr_sub  ;
+    TnContRt24 TnContRt25 TnContRt31 TnContRt32 TnContRt34 
+    TnContRt35 TnContRt41 TnContRt42 TnContRt43 TnContRt45 
+    TnContRt51 TnContRt52 TnContRt53 TnContRt54 ] [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]'lookup tnsr_sub  ;
     sub [TnContRt12 TnContRt13 TnContRt14 TnContRt15 TnContRt21 TnContRt23 
-	TnContRt24 TnContRt25 TnContRt31 TnContRt32 TnContRt34 
-	TnContRt35 TnContRt41 TnContRt42 TnContRt43 TnContRt45 
-	TnContRt51 TnContRt52 TnContRt53 TnContRt54 ] [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]'lookup tnsr_sub  ;
+    TnContRt24 TnContRt25 TnContRt31 TnContRt32 TnContRt34 
+    TnContRt35 TnContRt41 TnContRt42 TnContRt43 TnContRt45 
+    TnContRt51 TnContRt52 TnContRt53 TnContRt54 ] [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]'lookup tnsr_sub  ;
     sub [TnContRt12 TnContRt13 TnContRt14 TnContRt15 TnContRt21 TnContRt23 
-	TnContRt24 TnContRt25 TnContRt31 TnContRt32 TnContRt34 
-	TnContRt35 TnContRt41 TnContRt42 TnContRt43 TnContRt45 
-	TnContRt51 TnContRt52 TnContRt53 TnContRt54 ] [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]'lookup tnsr_sub  ;
+    TnContRt24 TnContRt25 TnContRt31 TnContRt32 TnContRt34 
+    TnContRt35 TnContRt41 TnContRt42 TnContRt43 TnContRt45 
+    TnContRt51 TnContRt52 TnContRt53 TnContRt54 ] [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]'lookup tnsr_sub  ;
     sub [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]'lookup tnsl_sub  [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft12 TnContLft13 TnContLft14 TnContLft15 TnContLft21 TnContLft23 
-	TnContLft24 TnContLft25 TnContLft31 TnContLft32 TnContLft34 
-	TnContLft35 TnContLft41 TnContLft42 TnContLft43 TnContLft45 
-	TnContLft51 TnContLft52 TnContLft53 TnContLft54 ] ;
+    TnContLft24 TnContLft25 TnContLft31 TnContLft32 TnContLft34 
+    TnContLft35 TnContLft41 TnContLft42 TnContLft43 TnContLft45 
+    TnContLft51 TnContLft52 TnContLft53 TnContLft54 ] ;
     sub [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]'lookup tnsl_sub  [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft12 TnContLft13 TnContLft14 TnContLft15 TnContLft21 TnContLft23 
-	TnContLft24 TnContLft25 TnContLft31 TnContLft32 TnContLft34 
-	TnContLft35 TnContLft41 TnContLft42 TnContLft43 TnContLft45 
-	TnContLft51 TnContLft52 TnContLft53 TnContLft54 ] ;
+    TnContLft24 TnContLft25 TnContLft31 TnContLft32 TnContLft34 
+    TnContLft35 TnContLft41 TnContLft42 TnContLft43 TnContLft45 
+    TnContLft51 TnContLft52 TnContLft53 TnContLft54 ] ;
     sub [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]'lookup tnsl_sub  [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft12 TnContLft13 TnContLft14 TnContLft15 TnContLft21 TnContLft23 
-	TnContLft24 TnContLft25 TnContLft31 TnContLft32 TnContLft34 
-	TnContLft35 TnContLft41 TnContLft42 TnContLft43 TnContLft45 
-	TnContLft51 TnContLft52 TnContLft53 TnContLft54 ] ;
+    TnContLft24 TnContLft25 TnContLft31 TnContLft32 TnContLft34 
+    TnContLft35 TnContLft41 TnContLft42 TnContLft43 TnContLft45 
+    TnContLft51 TnContLft52 TnContLft53 TnContLft54 ] ;
     sub [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]'lookup tnsl_sub  [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft12 TnContLft13 TnContLft14 TnContLft15 TnContLft21 TnContLft23 
-	TnContLft24 TnContLft25 TnContLft31 TnContLft32 TnContLft34 
-	TnContLft35 TnContLft41 TnContLft42 TnContLft43 TnContLft45 
-	TnContLft51 TnContLft52 TnContLft53 TnContLft54 ] ;
+    TnContLft24 TnContLft25 TnContLft31 TnContLft32 TnContLft34 
+    TnContLft35 TnContLft41 TnContLft42 TnContLft43 TnContLft45 
+    TnContLft51 TnContLft52 TnContLft53 TnContLft54 ] ;
     sub [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]'lookup tnsl_sub  [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft12 TnContLft13 TnContLft14 TnContLft15 TnContLft21 TnContLft23 
-	TnContLft24 TnContLft25 TnContLft31 TnContLft32 TnContLft34 
-	TnContLft35 TnContLft41 TnContLft42 TnContLft43 TnContLft45 
-	TnContLft51 TnContLft52 TnContLft53 TnContLft54 ] ;
+    TnContLft24 TnContLft25 TnContLft31 TnContLft32 TnContLft34 
+    TnContLft35 TnContLft41 TnContLft42 TnContLft43 TnContLft45 
+    TnContLft51 TnContLft52 TnContLft53 TnContLft54 ] ;
     sub [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]'lookup tnsl_dcmp  [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ] ;
     sub [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]'lookup tnsl_sub  [TnContLft12 TnContLft13 TnContLft14 TnContLft15 TnContLft21 TnContLft23 
-	TnContLft24 TnContLft25 TnContLft31 TnContLft32 TnContLft34 
-	TnContLft35 TnContLft41 TnContLft42 TnContLft43 TnContLft45 
-	TnContLft51 TnContLft52 TnContLft53 TnContLft54 ] ;
+    TnContLft24 TnContLft25 TnContLft31 TnContLft32 TnContLft34 
+    TnContLft35 TnContLft41 TnContLft42 TnContLft43 TnContLft45 
+    TnContLft51 TnContLft52 TnContLft53 TnContLft54 ] ;
 } tne_ctx;
 
 lookup bhk_sub {
@@ -361,7 +361,6 @@ lookup caron_sub {
     sub LtnSmLCaron.sc from [LtnSmLCaron.Caron.sc ];
 } caron_sub;
 
-# this may not be a valid CV since it uses a many-to-one sub
 lookup kayan_sub {
   lookupflag MarkAttachmentType @MarkClass1;
     sub CombGrave CombAcute by CombKayanGraveAcute;
