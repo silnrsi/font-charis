@@ -25,7 +25,7 @@ DEBPKG = 'fonts-sil-charis'
 
 # Get version and authorship information from Regular UFO; must be first function call:
 getufoinfo('source/' + FAMILYNAME + '-Regular' + '.ufo')
-BUILDLABEL = "alpha"
+BUILDLABEL = "beta"
 
 ftmlTest("tests/ftml.xsl", addfontindex = 1, fontmode = "collect")
 
