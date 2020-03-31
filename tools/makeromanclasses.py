@@ -151,6 +151,9 @@ class Font(object):
         for g_nm in self.glyphs:
             if (re.search('Ltn(Cap|Sm).Grave', g_nm)):
                 g_base_nm = re.sub('(.*)Grave(.*)', '\g<1>\g<2>', g_nm)
+                # TODO: generalize the below
+                if g_base_nm.find('LtnSmI') != -1 and g_base_nm.find('.sc') == -1 :
+                    g_base_nm = re.sub('LtnSmI', 'LtnSmI.Dotless', g_base_nm)
                 if (g_base_nm in self.glyphs):
                     self.g_classes.setdefault('c_grave_comp', []).append((g_nm))
                     self.g_classes.setdefault('c_grave_base', []).append((g_base_nm))
