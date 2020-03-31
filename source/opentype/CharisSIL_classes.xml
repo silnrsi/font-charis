@@ -609,4 +609,22 @@
 		ModSmY ModSmZRetrHook ModSmZRetrHookDep ModGlottalStop
 		ModRevGlottalStop
 	</class>
+	<class name="c_grave_comp">
+		LtnCapAGrave LtnCapEGrave LtnCapIGrave LtnCapNGrave
+		LtnCapOGrave LtnCapUGrave LtnCapWGrave LtnCapYGrave
+		LtnSmAGrave LtnSmAGrave.2StorySItal LtnSmAGrave.SngStory LtnSmAGrave.SngStory.sc
+		LtnSmAGrave.sc LtnSmEGrave LtnSmEGrave.sc LtnSmIGrave
+		LtnSmIGrave.SItal LtnSmIGrave.sc LtnSmNGrave LtnSmNGrave.sc
+		LtnSmOGrave LtnSmOGrave.sc LtnSmUGrave LtnSmUGrave.sc
+		LtnSmWGrave LtnSmWGrave.sc LtnSmYGrave LtnSmYGrave.sc
+	</class>
+	<class name="c_grave_base">
+		LtnCapA LtnCapE LtnCapI LtnCapN
+		LtnCapO LtnCapU LtnCapW LtnCapY
+		LtnSmA LtnSmA.2StorySItal LtnSmA.SngStory LtnSmA.SngStory.sc
+		LtnSmA.sc LtnSmE LtnSmE.sc LtnSmI
+		LtnSmI.SItal LtnSmI.sc LtnSmN LtnSmN.sc
+		LtnSmO LtnSmO.sc LtnSmU LtnSmU.sc
+		LtnSmW LtnSmW.sc LtnSmY LtnSmY.sc
+	</class>
 </classes>

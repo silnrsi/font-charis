@@ -1,4 +1,4 @@
-#!/usr/bin/python2
+#!/usr/bin/python3
 'Make fea classes and lookups for Roman fonts'
 
 # __url__ = 'http://github.com/silnrsi/pysilfont'
@@ -146,6 +146,15 @@ class Font(object):
             if (re.search(super_sub_mod_regex, g_nm)):
                 self.g_classes.setdefault('c_superscripts', []).append(g_nm)
 
+        # create classes of glyphs to support Kayan diacritics (grave+acute -> grave_acute)
+        #  need to decompose glyphs that contain to a grave
+        for g_nm in self.glyphs:
+            if (re.search('Ltn(Cap|Sm).Grave', g_nm)):
+                g_base_nm = re.sub('(.*)Grave(.*)', '\g<1>\g<2>', g_nm)
+                if (g_base_nm in self.glyphs):
+                    self.g_classes.setdefault('c_grave_comp', []).append((g_nm))
+                    self.g_classes.setdefault('c_grave_base', []).append((g_base_nm))
+        
         # add irregular glyphs to classes not found by the above algorithms
         for cls, g_lst in glyph_class_additions.items():
             # for g in g_lst: assert(not g in self.g_classes[cls])

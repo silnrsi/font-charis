@@ -361,6 +361,16 @@ lookup caron_sub {
     sub LtnSmLCaron.sc from [LtnSmLCaron.Caron.sc ];
 } caron_sub;
 
+lookup kayan_grave_sub {
+  lookupflag 0;
+    sub @c_grave_comp by @c_grave_base CombGrave;
+} kayan_grave_sub;
+
+lookup kayan_grave_ctx {
+  lookupflag 0;
+    sub @c_grave_comp'lookup kayan_grave_sub CombAcute;
+} kayan_grave_ctx;
+
 lookup kayan_sub {
   lookupflag MarkAttachmentType @MarkClass1;
     sub CombGrave CombAcute by CombKayanGraveAcute;
@@ -1137,6 +1147,7 @@ feature cv79 {
       };
   };
 
+  lookup kayan_grave_ctx;
   lookup kayan_sub;
 } cv79;
 
