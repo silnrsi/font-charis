@@ -64,7 +64,7 @@ arg_lst = [
     "-i", "source/glyph_data.csv",
     "-s", "../results/CharisSIL-Regular.ttf",
     "--scale", "200",
-    "--xsl", "ftml.xsl",
+    "--xsl", "../tools/ftml.xsl",
     "-l", "tests/logs/allchars.log",
 ]
 
@@ -81,7 +81,7 @@ arg_template_lst = [
     "-i", "source/{glyph_data}.csv",
     "-s", "../results/{ufo_regular}.ttf",
     "--scale", "{scale}",
-    "--xsl", "{xsl}.xsl",
+    "--xsl", "../tools/{xsl}.xsl",
     "-l", "tests/logs/{test}.log",
 ]
 
@@ -94,7 +94,7 @@ arg_cols_template_lst = [
     "-i", "source/{glyph_data}.csv",
 #    "-s", "../results/{ufo_regular}.ttf", # multiple "-s" args will be appended for multi-font tests
     "--scale", "{scale}",
-    "--xsl", "{xsl_cols}.xsl",
+    "--xsl", "../tools/{xsl_cols}.xsl",
     "-l", "tests/logs/{test}_cols.log",
 ]
 
@@ -113,10 +113,10 @@ for test in test_lst:
     for fn in ttf_fn_sort_lst:
         arg_lst.extend(["-s", "../results/{}".format(fn)])
     # TODO: kludgy way to add columns for v5 and Doulos, assumes tests/reference folder
-    arg_lst.extend(["-s", "../tests/reference/CharisSIL-R.ttf"])
-    arg_lst.extend(["-s", "../tests/reference/CharisSIL-I.ttf"])
-    arg_lst.extend(["-s", "../tests/reference/DoulosSIL-Regular.ttf"])
-    arg_lst.extend(["-s", "../tests/reference/DoulosSIL-R.ttf"])
+    arg_lst.extend(["-s", "../references/v5/CharisSIL-Regular.ttf"])
+    arg_lst.extend(["-s", "../references/v5/CharisSIL-Italic.ttf"])
+    arg_lst.extend(["-s", "../references/b1/DoulosSIL-Regular.ttf"])
+    arg_lst.extend(["-s", "../references/v5/DoulosSIL-Regular.ttf"])
     sys.argv = [psfgenftml.__file__]
     sys.argv.extend(arg_lst)
     psfgenftml.cmd()

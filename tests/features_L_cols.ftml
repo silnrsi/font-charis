@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="ftml_createListCols.xsl" type="text/xsl"?>
+<?xml-stylesheet href="../tools/ftml_createListCols.xsl" type="text/xsl"?>
 <ftml version="1.0">
   <head>
     <fontscale>200</fontscale>
@@ -7,10 +7,10 @@
     <fontsrc>url(../results/CharisSIL-Bold.ttf)</fontsrc>
     <fontsrc>url(../results/CharisSIL-Italic.ttf)</fontsrc>
     <fontsrc>url(../results/CharisSIL-BoldItalic.ttf)</fontsrc>
-    <fontsrc>url(../tests/reference/CharisSIL-R.ttf)</fontsrc>
-    <fontsrc>url(../tests/reference/CharisSIL-I.ttf)</fontsrc>
-    <fontsrc>url(../tests/reference/DoulosSIL-Regular.ttf)</fontsrc>
-    <fontsrc>url(../tests/reference/DoulosSIL-R.ttf)</fontsrc>
+    <fontsrc>url(../references/v5/CharisSIL-Regular.ttf)</fontsrc>
+    <fontsrc>url(../references/v5/CharisSIL-Italic.ttf)</fontsrc>
+    <fontsrc>url(../references/b1/DoulosSIL-Regular.ttf)</fontsrc>
+    <fontsrc>url(../references/v5/DoulosSIL-Regular.ttf)</fontsrc>
     <styles>
       <style feats="'cv13' 1" name="cv13_1"/>
       <style feats="'cv13' 1, 'smcp' 1" name="cv13_1_smcp_1"/>
@@ -121,7 +121,7 @@
     </styles>
     <title>features_L</title>
   </head>
-  <testgroup label="Rendering Check">
+  <testgroup background="#f0f0f0" label="Rendering Check">
     <test label="check">
       <string>RenderingUnknown</string>
     </test>
