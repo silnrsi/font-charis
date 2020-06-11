@@ -1,4 +1,4 @@
-#!/usr/bin/python2
+#!/usr/bin/python3
 # encoding: utf-8
 # this is a smith configuration file
 
@@ -24,11 +24,11 @@ used for building, testing and releasing.
 # packaging
 DEBPKG = 'fonts-sil-charis'
 
-# Get version and authorship information from Regular UFO; must be first function call:
+# Get VERSION and BUILDLABEL from Regular UFO; must be first function call:
 getufoinfo('source/' + FAMILYNAME + '-Regular' + '.ufo')
-BUILDLABEL = "beta"
+# BUILDLABEL = "beta" # overrides getufoinfo(), which is based on openTypeNameVersion
 
-ftmlTest("tools/ftml-smith.xsl")
+ftmlTest("tools/ftml.xsl")
 
 fontfamily="CharisSIL"
 for dspace in ('Roman', 'Italic'):
@@ -53,5 +53,6 @@ for dspace in ('Roman', 'Italic'):
                     master = 'source/graphite/main.gdh', 
                     params = '-e gdlerr-${DS:FILENAME_BASE}.txt',
                     ),
-                woff = woff()
+                woff = woff(),
+                version = VERSION
                 )
