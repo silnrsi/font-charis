@@ -2,10 +2,6 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:output method="html" encoding="utf-8"/>
 
-<!-- http://github.com/silnrsi/pysilfont -->
-<!-- Copyright (c) 2015 SIL International (http://www.sil.org) -->
-<!-- Released under the MIT License (http://opensource.org/licenses/MIT) -->
-
 <!-- set variables from head element -->
 <xsl:variable name="width-comment" select="/ftml/head/widths/@comment"/>
 <xsl:variable name="width-label" select="/ftml/head/widths/@label"/>
@@ -18,7 +14,14 @@
 
 <!-- if $useCSSstyles is non-empty then emit and use CSS styles for font feature settings;
      otherwise font feature settings are output with the test strings  -->
-<xsl:variable name="useCSSstyles"></xsl:variable>	
+<xsl:variable name="useCSSstyles"></xsl:variable>
+
+<!-- xsl:param name="fontsrc" select="ftml/head/fontsrc"/ -->
+<!-- get the fontsrc, either from a default set in the ftml or 
+       from a param passed to displayftml.html by ftml_index.html-->
+<!-- to use the ftml value, need to convert "url(<path>)" to "<path>"
+       so it matches what is passed to displayftml.html -->
+<xsl:param name="fontsrc" select="substring(/ftml/head/fontsrc, 5, string-length(/ftml/head/fontsrc) - 5)"></xsl:param>	
 
 <!-- 
 	Process the root node to construct the html page
@@ -53,7 +56,8 @@
 		</meta>
 		<style>
 	body, td { font-family: sans-serif; }
-	@font-face {font-family: TestFont; src: <xsl:value-of select="ftml/head/fontsrc"/>; }
+	<!-- @font-face {font-family: TestFont; src: <xsl:value-of select="ftml/head/fontsrc"/>; } -->
+	@font-face {font-family: TestFont; src: url(<xsl:value-of select="$fontsrc"/>); }
 	th { text-align: left; }
 	table,th,td { padding: 2px; border: 1px solid #111111; border-collapse: collapse; }
 	.string {font-family: TestFont; font-size: <xsl:value-of select="$font-scale"/>%; }
@@ -121,7 +125,7 @@
 <!-- 
 	Emit html lang and either css class or font-feature-settings for a test 
 -->
-<xsl:template match="style" mode="getLang">
+<xsl:template match="style" mode="getStyle">
 	<xsl:if test="@lang">
 		<xsl:attribute name="lang">
 			<xsl:value-of select="@lang"/>
@@ -160,8 +164,9 @@
 		<xsl:if test="@stylename">
 			<!-- emit features and lang attributes -->
 			<xsl:variable name="styleName" select="@stylename"/>
-			<xsl:apply-templates select="/ftml/head/styles/style[@name=$styleName]" mode="getLang"/>
+			<xsl:apply-templates select="/ftml/head/styles/style[@name=$styleName]" mode="getStyle"/>
 		</xsl:if>
+		<!-- add direction if needed -->
 		<xsl:if test="@rtl='True' ">
               <xsl:attribute name="dir">RTL</xsl:attribute>
 		</xsl:if>
@@ -176,12 +181,17 @@
 			</xsl:otherwise>
 		</xsl:choose>
 	</td>
+
+
+	<!-- if *any* test has a comment, emit the comment column -->
 	<xsl:if test="/ftml/testgroup/test/comment">
 		<td class="comment">
 			<!-- emit comment -->
 			<xsl:value-of select="comment"/>
 		</td>
 	</xsl:if>
+
+	<!-- similarly, if *any* test has a stylename, emit a column for it -->
 	<xsl:if test="/ftml/testgroup/test/@stylename">
 		<td class="stylename">
 			<!-- emit style name -->

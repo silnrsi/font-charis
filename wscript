@@ -5,7 +5,8 @@
 # output folders use smith defaults and don't need to be set here
 
 # set some default folders (most are already set by default)
-STANDARDS = 'tests/reference/v5'
+#STANDARDS = 'references/v5'
+STANDARDS = 'references/b1'
 
 # set the version control system
 VCS = 'git'
@@ -27,7 +28,7 @@ DEBPKG = 'fonts-sil-charis'
 getufoinfo('source/' + FAMILYNAME + '-Regular' + '.ufo')
 BUILDLABEL = "beta"
 
-ftmlTest("tests/ftml.xsl", addfontindex = 1, fontmode = "collect")
+ftmlTest("tools/ftml-smith.xsl")
 
 fontfamily="CharisSIL"
 for dspace in ('Roman', 'Italic'):

@@ -51,7 +51,8 @@ arg_values_dict = {
     "glyph_data": "glyph_data",
     "scale" : "200",
     "xsl" : "ftml",
-    "xsl_cols" : "ftml_createListCols"
+#    "xsl_cols" : "ftml_createListCols"
+    "xsl_cols": "ftml"
 }
 
 # This arg_lst can be used for debugging
@@ -88,14 +89,16 @@ arg_template_lst = [
 # for multi-font tests
 arg_cols_template_lst = [
     ufo_path + "{ufo_regular}.ufo",
-    "tests/{test}_cols.ftml",
+#    "tests/{test}_cols.ftml",
+    "tests/{test}.ftml",
     "-t", "{test}",
     "-f", "{font_code}",
     "-i", "source/{glyph_data}.csv",
 #    "-s", "../results/{ufo_regular}.ttf", # multiple "-s" args will be appended for multi-font tests
     "--scale", "{scale}",
     "--xsl", "../tools/{xsl_cols}.xsl",
-    "-l", "tests/logs/{test}_cols.log",
+#    "-l", "tests/logs/{test}_cols.log",
+    "-l", "tests/logs/{test}.log",
 ]
 
 # Call psfgenftml for each test
@@ -103,10 +106,10 @@ for test in test_lst:
     arg_values_dict["test"] = test
 
     # generate single font test
-    arg_lst = [arg.format(**arg_values_dict) for arg in arg_template_lst]
-    sys.argv = [psfgenftml.__file__]
-    sys.argv.extend(arg_lst)
-    psfgenftml.cmd()
+    # arg_lst = [arg.format(**arg_values_dict) for arg in arg_template_lst]
+    # sys.argv = [psfgenftml.__file__]
+    # sys.argv.extend(arg_lst)
+    # psfgenftml.cmd()
 
     # generate multi-font test
     arg_lst = [arg.format(**arg_values_dict) for arg in arg_cols_template_lst]
