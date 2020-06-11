@@ -28,7 +28,7 @@ DEBPKG = 'fonts-sil-charis'
 getufoinfo('source/' + FAMILYNAME + '-Regular' + '.ufo')
 # BUILDLABEL = "beta" # overrides getufoinfo(), which is based on openTypeNameVersion
 
-ftmlTest("tools/ftml.xsl")
+ftmlTest("tools/ftml-smith.xsl")
 
 fontfamily="CharisSIL"
 for dspace in ('Roman', 'Italic'):
