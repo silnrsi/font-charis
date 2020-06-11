@@ -1,12 +1,10 @@
 # Script to call psfgenftml.py multiple times -- once for each test
-# Relies on "smith ftml" to generate html that will render the generated ftml for each style
-# Creates single and multi- font tests
-# The multi-font tests will be included in the ftml_index.html produced by "smith ftml"
-#  But they will not render correctly in that environment because the xsl specified in the ftml will be overridden
-# However they will work if directly opened in a browser
+# Creates multi-font tests which can be directly opened in a browser
+# Tests work with "smith ftml" to render the test data using the chosen font
+# Tests work with "smith test" for comparing the rendered test data against a prior version of the font
+#
 # Differences in the directory structure for Gentium (compared to Charis) are handled
 #  as are the heavier (Book) weights
-# TODO: Add arg to generate only single or multi-font tests
 
 import sys, glob, os.path, re
 import psfgenftml
@@ -51,8 +49,6 @@ arg_values_dict = {
     "glyph_data": "glyph_data",
     "scale" : "200",
     "xsl" : "ftml",
-#    "xsl_cols" : "ftml_createListCols"
-    "xsl_cols": "ftml"
 }
 
 # This arg_lst can be used for debugging
@@ -69,47 +65,26 @@ arg_lst = [
     "-l", "tests/logs/allchars.log",
 ]
 
-# Templates for arguments to be passed to psfgenftml.py thru sys.argv
+# Template for arguments to be passed to psfgenftml.py thru sys.argv
 # Paths are relative to the directory the script is ran from
 #  which is assumed to be the top of the font repo
 # Except for the -s arg, which is relative to where the generated ftml is opened from
 # Assumes the standard directory structure is present
-arg_template_lst = [
-    ufo_path + "{ufo_regular}.ufo",
-    "tests/{test}.ftml",
-    "-t", "{test}",
-    "-f", "{font_code}",
-    "-i", "source/{glyph_data}.csv",
-    "-s", "../results/{ufo_regular}.ttf",
-    "--scale", "{scale}",
-    "--xsl", "../tools/{xsl}.xsl",
-    "-l", "tests/logs/{test}.log",
-]
-
-# for multi-font tests
 arg_cols_template_lst = [
     ufo_path + "{ufo_regular}.ufo",
-#    "tests/{test}_cols.ftml",
     "tests/{test}.ftml",
     "-t", "{test}",
     "-f", "{font_code}",
     "-i", "source/{glyph_data}.csv",
 #    "-s", "../results/{ufo_regular}.ttf", # multiple "-s" args will be appended for multi-font tests
     "--scale", "{scale}",
-    "--xsl", "../tools/{xsl_cols}.xsl",
-#    "-l", "tests/logs/{test}_cols.log",
+    "--xsl", "../tools/{xsl}.xsl",
     "-l", "tests/logs/{test}.log",
 ]
 
 # Call psfgenftml for each test
 for test in test_lst:
     arg_values_dict["test"] = test
-
-    # generate single font test
-    # arg_lst = [arg.format(**arg_values_dict) for arg in arg_template_lst]
-    # sys.argv = [psfgenftml.__file__]
-    # sys.argv.extend(arg_lst)
-    # psfgenftml.cmd()
 
     # generate multi-font test
     arg_lst = [arg.format(**arg_values_dict) for arg in arg_cols_template_lst]
