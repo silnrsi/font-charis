@@ -7,10 +7,10 @@
     <fontsrc>url(../results/CharisSIL-Bold.ttf)</fontsrc>
     <fontsrc>url(../results/CharisSIL-Italic.ttf)</fontsrc>
     <fontsrc>url(../results/CharisSIL-BoldItalic.ttf)</fontsrc>
-    <fontsrc>url(../references/v5/CharisSIL-Regular.ttf)</fontsrc>
-    <fontsrc>url(../references/v5/CharisSIL-Italic.ttf)</fontsrc>
-    <fontsrc>url(../references/b1/DoulosSIL-Regular.ttf)</fontsrc>
-    <fontsrc>url(../references/v5/DoulosSIL-Regular.ttf)</fontsrc>
+    <fontsrc label="CRv5">url(../references/v5/CharisSIL-Regular.ttf)</fontsrc>
+    <fontsrc label="CIv5">url(../references/v5/CharisSIL-Italic.ttf)</fontsrc>
+    <fontsrc label="DRb1">url(../references/b1/DoulosSIL-Regular.ttf)</fontsrc>
+    <fontsrc label="DRv5">url(../references/v5/DoulosSIL-Regular.ttf)</fontsrc>
     <styles>
       <style feats="'cv25' 1" name="cv25_1"/>
       <style feats="'cv25' 1, 'smcp' 1" name="cv25_1_smcp_1"/>
@@ -71,11 +71,6 @@
     </styles>
     <title>features_R</title>
   </head>
-  <testgroup background="#f0f0f0" label="Rendering Check">
-    <test label="check">
-      <string>RenderingUnknown</string>
-    </test>
-  </testgroup>
   <testgroup label="Features from glyph_data"/>
   <testgroup label="cv13"/>
   <testgroup label="cv17"/>

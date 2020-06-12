@@ -7,20 +7,15 @@
     <fontsrc>url(../results/CharisSIL-Bold.ttf)</fontsrc>
     <fontsrc>url(../results/CharisSIL-Italic.ttf)</fontsrc>
     <fontsrc>url(../results/CharisSIL-BoldItalic.ttf)</fontsrc>
-    <fontsrc>url(../references/v5/CharisSIL-Regular.ttf)</fontsrc>
-    <fontsrc>url(../references/v5/CharisSIL-Italic.ttf)</fontsrc>
-    <fontsrc>url(../references/b1/DoulosSIL-Regular.ttf)</fontsrc>
-    <fontsrc>url(../references/v5/DoulosSIL-Regular.ttf)</fontsrc>
+    <fontsrc label="CRv5">url(../references/v5/CharisSIL-Regular.ttf)</fontsrc>
+    <fontsrc label="CIv5">url(../references/v5/CharisSIL-Italic.ttf)</fontsrc>
+    <fontsrc label="DRb1">url(../references/b1/DoulosSIL-Regular.ttf)</fontsrc>
+    <fontsrc label="DRv5">url(../references/v5/DoulosSIL-Regular.ttf)</fontsrc>
     <styles>
       <style feats="'cv79' 1" name="cv79_1"/>
     </styles>
     <title>diacs</title>
   </head>
-  <testgroup background="#f0f0f0" label="Rendering Check">
-    <test label="check">
-      <string>RenderingUnknown</string>
-    </test>
-  </testgroup>
   <testgroup label="Representative diacritics on all bases that take diacritics">
     <test label="U+0020">
       <comment>Space</comment>

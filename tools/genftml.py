@@ -91,10 +91,10 @@ for test in test_lst:
     for fn in ttf_fn_sort_lst:
         arg_lst.extend(["-s", "../results/{}".format(fn)])
     # TODO: kludgy way to add columns for v5 and Doulos, assumes tests/reference folder
-    arg_lst.extend(["-s", "../references/v5/CharisSIL-Regular.ttf"])
-    arg_lst.extend(["-s", "../references/v5/CharisSIL-Italic.ttf"])
-    arg_lst.extend(["-s", "../references/b1/DoulosSIL-Regular.ttf"])
-    arg_lst.extend(["-s", "../references/v5/DoulosSIL-Regular.ttf"])
+    arg_lst.extend(["-s", "../references/v5/CharisSIL-Regular.ttf=CRv5"])
+    arg_lst.extend(["-s", "../references/v5/CharisSIL-Italic.ttf=CIv5"])
+    arg_lst.extend(["-s", "../references/b1/DoulosSIL-Regular.ttf=DRb1"])
+    arg_lst.extend(["-s", "../references/v5/DoulosSIL-Regular.ttf=DRv5"])
     sys.argv = [psfgenftml.__file__]
     sys.argv.extend(arg_lst)
     psfgenftml.cmd()

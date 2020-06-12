@@ -17,8 +17,8 @@ argspec = [
     ('-i','--input',{'help': 'Glyph info csv file'}, {'type': 'incsv', 'def': 'glyph_data.csv'}),
     ('-f','--fontcode',{'help': 'letter to filter for glyph_data'},{}),
     ('-l','--log',{'help': 'Set log file name'}, {'type': 'outfile', 'def': '_ftml.log'}),
-    ('-t', '--test', {'help': 'which test to build', 'default': None, 'action': 'store'}, {}),
-    ('-s','--fontsrc',{'help': 'default font source', 'action': 'append'}, {}),
+    ('-t','--test', {'help': 'which test to build', 'default': None, 'action': 'store'}, {}),
+    ('-s','--fontsrc', {'help': 'default font source optionally followed by "=label"', 'action': 'append'}, {}),
     ('--scale', {'help': '% to scale rendered text'}, {}),
     ('--ap', {'help': 'regular expression describing APs to examine', 'default': '.', 'action': 'store'}, {}),
     ('--xsl', {'help': 'XSL stylesheet to use'}, {}),
@@ -277,7 +277,20 @@ def doit(args):
 
     # Initialize FTML document:
     test = args.test or "AllChars"  # Default to "AllChars"
-    ftml = FB.FTML(test, logger, rendercheck = True, fontscale = args.scale, xslfn = args.xsl, fontsrc = args.fontsrc)
+
+    # split labels from fontsource parameter
+    fontsrc_lst, fontlabel_lst = [], []
+    for sl in args.fontsrc:
+        try:
+            s, l = sl.split('=', 1)
+            fontsrc_lst.append(s)
+            fontlabel_lst.append(l)
+        except ValueError:
+            fontsrc_lst.append(sl)
+            fontlabel_lst.append(None)
+
+    ftml = FB.FTML(test, logger, rendercheck = False, fontscale = args.scale, xslfn = args.xsl,
+                   fontsrc = fontsrc_lst, fontlabel = fontlabel_lst)
 
     # Char to use in allframed test to surround other chars for checking spacing
     frame_uid = 0x006F
