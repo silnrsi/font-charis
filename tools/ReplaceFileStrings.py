@@ -4,6 +4,10 @@
 #Add a filter to only apply changes to lines in the input file that match the filter
 # Added to reverse changes to the var_uid element in the MGI XML file - 20 Oct 2008
 
+__copyright__ = 'Copyright (c) 2019 SIL International  (http://www.sil.org)'
+__license__ = 'Released under the MIT License (http://opensource.org/licenses/MIT)'
+__author__ = 'Alan Ward'
+
 import re
 
 ifn = r"CharisSIL_gsub.fea"
