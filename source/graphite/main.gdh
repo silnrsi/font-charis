@@ -587,35 +587,18 @@ if (smallcaps)
 endif;
 
 
-// NB: Because 01E5 is affected by two features, barred_bowl and literacy,
-// these features take special organization of their rules. Specifically,
-// 01E5 should be displayed as:
-//	if Literacy Alternates then LtnSmGBarredSngBowl (uni01E5.BarBowl.SngBowl)
-//	else if Barred-Bowl Forms then LtnSmGBarredBowl (uni01E5.BarBowl)
-//	else LtnSmGStrk (uni01E5)
-// Note also that uni01E5 doesn't show up in any class.
-
-
 // Note: literacy alternates take precedence over slant-italic feature (below).
 // So we can ignore slant-italics here.
 if (literacy == 1 || literacy__litr == 1 || literacy_a)
-	// cno_SngStory > cSngStory;
-	cno_lita > c_lita;
+	cno_SngStory > cSngStory;
 else
-	// cSngStory > cno_SngStory;
-	c_lita > cno_lita;
+	cSngStory > cno_SngStory;
 endif;
 
 if (literacy == 1 || literacy__litr == 1 || literacy_g)
-	// cno_SngBowl  > cSngBowl;		// (includes uni01E5.BarBowl > uni01E5.BarBowl.SngBowl)
-	// g01e5_barBowl_sngBowl is conceptually equal to g01e5_sngBowl (since the forms are the same).
-	// Don't add this correspondence to the SngBowl forms to avoid confusing the reverse rules below;
-	// just use a separate rule:
-	// g__ltn_sm_g_strk  >  g__ltn_sm_g_bar_bowl_sng_bowl;
-	cno_litg > c_litg;
+	cno_SngBowl  > cSngBowl;
 else
-	// cSngBowl  > cno_SngBowl;		// (includes uni01E5.BarBowl.SngBowl > uni01E5.BarBowl)
-	c_litg > cno_litg;
+	cSngBowl  > cno_SngBowl;
 endif;
 
 
@@ -812,17 +795,11 @@ endif;
 
 
 // The barred_bowl rule must happen *after* the literacy rule
-if (barred_bowl == 1 || barred_bowl__bowl == 1)  //  does contain g01E5, no such naming as uni01e5 or
-                                                 // uni anything. That is the Postscript Name from xml file.  jw 8/27/04
-//	cno_BarBowl  >  cBarBowl;	// (does NOT include uni01E5 > uni01E5.BarBowl)
-//	g01e5  >  g01e5_barBowl;		        yes it does jw.  commented 8/31
-//					see: cno_BarBowl = (g0180, g_dcroat, g01e5);
+if (barred_bowl == 1 || barred_bowl__bowl == 1)
 	cno_barbowl > c_barbowl;
 	g__ltn_sm_g_strk > g__ltn_sm_g_bar_bowl;
 	g__ltn_sm_g_strk_sng_bowl > g__ltn_sm_g_bar_bowl_sng_bowl;
 else
-//	cBarBowl  >  cno_BarBowl;	// (does NOT include uni01E5.BarBowl > uni01E5)
-//	g01e5_barBowl  >  g01e5;			yes it does jw
 	c_barbowl > cno_barbowl;
 	g__ltn_sm_g_bar_bowl > g__ltn_sm_g_strk;
 	g__ltn_sm_g_bar_bowl_sng_bowl > g__ltn_sm_g_strk_sng_bowl;
