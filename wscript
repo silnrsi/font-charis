@@ -35,7 +35,7 @@ for dspace in ('Roman', 'Italic'):
                         'source/opentype/${DS:FILENAME_BASE}_gpos_lkups.fea', 
                         'source/opentype/${DS:FAMILYNAME_NOSPC}_gpos_feats.fea', 
                         'source/opentype/${DS:FAMILYNAME_NOSPC}_gdef.fea'),
-#                    to_ufo = 'True'
+                    to_ufo = 'True'
                     ),
                 graphite = gdl('source/${DS:FILENAME_BASE}.gdl',
                     master = 'source/graphite/main.gdh',

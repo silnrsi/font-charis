@@ -103,9 +103,9 @@ literacy {
 
 slant_italic {
 	id = "ss05";
-  id.hidden = "ital";
-  name.1033 = string("Slant italic specials");
-  bool
+	id.hidden = "ital";
+	name.1033 = string("Slant italic specials");
+	bool
 }
 
 barred_bowl {
@@ -568,12 +568,12 @@ ezh {
 	settings {
 		ipa {
 			value = 0;
-    	name.1033 = string("Normal");
-    }
-    rev_sigma {
-    	value = 1;
-    	name.1033 = string("Reversed sigma");
-    }
+			name.1033 = string("Normal");
+		}
+		rev_sigma {
+			value = 1;
+			name.1033 = string("Reversed sigma");
+		}
 	}
 }
 
@@ -991,12 +991,14 @@ dep_pua {
 }
 --------------------------- */
 
+/*----- obsolete feature -----
 invis {
 	id = "ss06";
 	id.hidden = "invs";
 	name.1033 = string("Show invisible characters");
 	bool
 }
+--------------------------- */
 
 /*----- obsolete feature -----
 select_diac {

@@ -745,34 +745,34 @@ if (eng == descender && eng__Engs == descender)        // && because it is the d
 	c_eng_UCStyle       >  c_eng_Descender;
 	c_eng_Kom           >  c_eng_Descender;
 endif;
-if (eng == base || eng__Engs == base)
+if (eng == base || (eng__Engs == base && eng__cv43 == descender))
 	// for fonts with default = descender, capital, or short:
 	c_eng_Descender   >  c_eng_BaselineHook;
 	c_eng_UCStyle     >  c_eng_BaselineHook;
 	c_eng_Kom         >  c_eng_BaselineHook;
 endif;
-if (eng == capital || eng__Engs == capital)
+if (eng == capital || (eng__Engs == capital && eng__cv43 == descender))
 	// for fonts with default = descender, base, or short:
 	c_eng_Descender    >  c_eng_UCStyle;
 	c_eng_BaselineHook >  c_eng_UCStyle;
 	c_eng_Kom          >  c_eng_UCStyle;
 endif;
-if (eng == short || eng__Engs == short)
+if (eng == short || (eng__Engs == short && eng__cv43 == descender))
 	// for fonts with default = descender, capital, or base:
 	c_eng_Descender    >  c_eng_Kom;
 	c_eng_BaselineHook >  c_eng_Kom;
 	c_eng_UCStyle      >  c_eng_Kom;
 endif;
 
-if (ramshorn == small && ramshorn__ramh)
+if (ramshorn == small && ramshorn__ramh == small)
 	// for fonts with default = large or gamma
 	(g__ltn_sm_rams_horn_lrg_bowl  g__ltn_sm_rams_horn_gamma_style) > g__ltn_sm_rams_horn;
 endif;
-if (ramshorn == large || ramshorn__ramh)
+if (ramshorn == large || (ramshorn__ramh == large && ramshorn__cv25 == small))
 	// for fonts with default = small or gamma
 	(g__ltn_sm_rams_horn 	g__ltn_sm_rams_horn_gamma_style)	> g__ltn_sm_rams_horn_lrg_bowl;
 endif;
-if (ramshorn == gamma || ramshorn__ramh == gamma)
+if (ramshorn == gamma || (ramshorn__ramh == gamma && ramshorn__cv25 == small))
 	// for fonts with default = small or large
 	(g__ltn_sm_rams_horn  g__ltn_sm_rams_horn_lrg_bowl)		> g__ltn_sm_rams_horn_gamma_style;
 endif
