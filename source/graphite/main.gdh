@@ -573,9 +573,9 @@ endif;
 endpass;  // sub - 1
 
 #if (ANDIKAfamily)
-if (smallcaps || (literacy == 0 && literacy__litr == 0))
+if (smallcaps || (literacy == 0 && literacy__litr == 0) || literacy_a == 0 || literacy_g == 0)
 #else
-if (smallcaps || literacy || literacy__litr )
+if (smallcaps || literacy || literacy__litr || literacy_a || literacy_g)
 #endif
 
 pass(2)
@@ -598,18 +598,24 @@ endif;
 
 // Note: literacy alternates take precedence over slant-italic feature (below).
 // So we can ignore slant-italics here.
-if (literacy == 1 || literacy__litr == 1)
-	cno_SngBowl  > cSngBowl;		// (includes uni01E5.BarBowl > uni01E5.BarBowl.SngBowl)
+if (literacy == 1 || literacy__litr == 1 || literacy_a)
+	// cno_SngStory > cSngStory;
+	cno_lita > c_lita;
+else
+	// cSngStory > cno_SngStory;
+	c_lita > cno_lita;
+endif;
+
+if (literacy == 1 || literacy__litr == 1 || literacy_g)
+	// cno_SngBowl  > cSngBowl;		// (includes uni01E5.BarBowl > uni01E5.BarBowl.SngBowl)
 	// g01e5_barBowl_sngBowl is conceptually equal to g01e5_sngBowl (since the forms are the same).
 	// Don't add this correspondence to the SngBowl forms to avoid confusing the reverse rules below;
 	// just use a separate rule:
 	// g__ltn_sm_g_strk  >  g__ltn_sm_g_bar_bowl_sng_bowl;
-
-	cno_SngStory > cSngStory;
-
+	cno_litg > c_litg;
 else
-	cSngBowl  > cno_SngBowl;		// (includes uni01E5.BarBowl.SngBowl > uni01E5.BarBowl)
-	cSngStory > cno_SngStory;
+	// cSngBowl  > cno_SngBowl;		// (includes uni01E5.BarBowl.SngBowl > uni01E5.BarBowl)
+	c_litg > cno_litg;
 endif;
 
 

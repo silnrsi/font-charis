@@ -101,6 +101,30 @@ literacy {
 	////boolWDefTrue
 }
 
+literacy_a {
+	id = "ss02";
+	name.1033 = string("Literacy a alternates");
+#if (ANDIKAfamily)
+	boolWDefTrue
+#else
+	bool // default is false
+#endif // !ANDIKAfamily
+	// to create the hacked literacy font, use this line instead:
+	////boolWDefTrue
+}
+
+literacy_g {
+	id = "ss03";
+	name.1033 = string("Literacy g alternates");
+#if (ANDIKAfamily)
+	boolWDefTrue
+#else
+	bool // default is false
+#endif // !ANDIKAfamily
+	// to create the hacked literacy font, use this line instead:
+	////boolWDefTrue
+}
+
 slant_italic {
 	id = "ss05";
 	id.hidden = "ital";
