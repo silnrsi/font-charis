@@ -16,6 +16,8 @@ getufoinfo('source/' + familyname + '-Regular' + '.ufo')
 
 ftmlTest('tools/ftml-smith.xsl')
 
+opts = preprocess_args({'opt': '--quick'})
+
 # APs to ignore when generating OT and GDL classes
 omitapps = '--omitaps "C L11 L12 L13 L21 L22 L23 L31 L32 L33 ' + \
                 'C11 C12 C13 C21 C22 C23 C31 C32 C33 U11 U12 U13 U21 U22 U23 U31 U32 U33"'
@@ -26,16 +28,18 @@ for dspace in ('Roman', 'Italic'):
     designspace('source/' + familyname + dspace + '.designspace',
                 target = process('${DS:FILENAME_BASE}.ttf', 
                     cmd('psfchangettfglyphnames ${SRC} ${DEP} ${TGT}', ['${DS:FILE}'])),
+                instances = ['Charis SIL Regular'] if '--quick' in opts else None,
                 ap = 'source/${DS:FILENAME_BASE}_ap.xml',
-                classes = 'source/opentype/${DS:FAMILYNAME_NOSPC}_classes.xml',
+#                classes = 'source/${DS:FAMILYNAME_NOSPC}_classes.xml', # fails for Gentium Book
+                classes = 'source/{}_classes.xml'.format(familyname),
                 opentype = fea('source/${DS:FILENAME_BASE}.fea',
                     master = 'source/opentype/${DS:FILENAME_BASE}.fea',
                     make_params = omitapps,
-                    depends = ('source/opentype/${DS:FAMILYNAME_NOSPC}_gsub.fea', 
-                        'source/opentype/${DS:FILENAME_BASE}_gpos_lkups.fea', 
-                        'source/opentype/${DS:FAMILYNAME_NOSPC}_gpos_feats.fea', 
-                        'source/opentype/${DS:FAMILYNAME_NOSPC}_gdef.fea'),
-                    to_ufo = 'True'
+                    depends = ('source/opentype/{}_gsub.fea'.format(familyname),
+                        'source/opentype/${DS:FILENAME_BASE}_gpos_lkups.fea',
+                        'source/opentype/{}_gpos_feats.fea'.format(familyname),
+                        'source/opentype/{}_gdef.fea'.format(familyname)),
+                    to_ufo = 'True' # copies to instance UFOs
                     ),
                 graphite = gdl('source/${DS:FILENAME_BASE}.gdl',
                     master = 'source/graphite/main.gdh',
