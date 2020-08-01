@@ -929,6 +929,14 @@ if (caron == 1 || caron__carn == 1)
 	cCaronEuro  _  >  cno_CaronEuro:1  g__comb_caron:1;
 endif;
 
+if (kayan_diacs == 1)
+	c_grave_comp _ > c_grave_base g__comb_grave:1 / _ ^ _ g__comb_acute;
+	g__comb_grave g__comb_acute > _ g__comb_kayan_grave_acute:(1 2);
+	// c_grave_comp g__comb_acute > c_grave_base g__comb_kayan_grave_acute; // fails
+else
+	c_grave_base g__comb_kayan_grave_acute > c_grave_comp g__comb_acute;
+endif;
+
 if (ou == 1 || ou__opOU == 1)
 	cno_OpenTop  >  cOpenTop;
 else

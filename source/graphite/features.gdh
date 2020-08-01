@@ -752,6 +752,21 @@ caron {
 	}
 }
 
+kayan_diacs {
+	id ="cv79";
+	name.1033 = string("Kayan-style diacritics");
+	default = false;
+	settings {
+		ffalse {
+			value = 0;
+			name.1033 = string("Non-Kayan style");
+		}
+		ftrue {
+			value = 1;
+			name.1033 = string("Kayan style");
+		}
+	}
+}
 
 emptyset {
 	id = "cv98";
