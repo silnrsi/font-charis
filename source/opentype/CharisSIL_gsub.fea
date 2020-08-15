@@ -439,7 +439,7 @@ lookup bbwl_sub {
   lookupflag 0;
     # sub @cno_BarBowl by @c_BarBowl; wrongly maps LtnSmG to LtnSmG.BarBowl
     sub @cno_barbowl by @c_barbowl;
-    sub LtnSmGStrk by LtnSmG.BarBowl ;
+    sub LtnSmGStrk by LtnSmG.BarBowl;
     sub LtnSmGStrk.SngBowl by LtnSmG.BarBowl.SngBowl;
     sub LtnSmGStrk.sc by LtnSmG.BarBowl.sc;
     sub LtnSmGStrk.SngBowl.sc by LtnSmG.BarBowl.SngBowl.sc;
@@ -740,11 +740,6 @@ feature cv43 {
        name 1 0 0 "?";  # Mac English
       };
       
-      ParamUILabelNameID {
-       name 3 1 0x0409 "Large eng with descender";  # English US
-       name 1 0 0 "Large eng with descender";  # Mac English
-      };
-
       ParamUILabelNameID {
        name 3 1 0x0409 "Large eng on baseline";  # English US
        name 1 0 0 "Large eng on baseline";  # Mac English
