@@ -525,7 +525,7 @@ def doit(args):
                     # ftml.clearFeatures()
                 ftml.closeTest()
 
-        ftml.startTestGroup('Special case - cv79')
+        ftml.startTestGroup('Special case - cv79 (NFD)')
         # cv79 - Kayan grave_acute
         kayan_diac_lst = [0x0300, 0x0301] # comb_grave, comb_acute
         kayan_base_lst = ['a', 'e', 'i', 'o', 'n', 'u', 'w', 'y', 'A', 'E', 'I', 'O', 'N', 'U', 'W', 'Y']
@@ -537,6 +537,24 @@ def doit(args):
             ftml.setFeatures([('cv79','1')])
             for base in base_lst:
                 builder.render([ord(base)] + kayan_diac_lst, ftml, keyUID=kayan_diac_lst[0], descUIDs=kayan_diac_lst)
+        ftml.closeTestGroup()
+
+        ftml.startTestGroup('Special case - cv79 (NFC)')
+        # cv79 - Kayan grave_acute
+        kayan_diac_lst = [0x0301] # comb_acute
+        kayan_base_lst = ['LtnSmAGrave', 'LtnSmEGrave', 'LtnSmIGrave', 'LtnSmOGrave', 'LtnSmNGrave', 'LtnSmUGrave',
+                          'LtnSmWGrave', 'LtnSmYGrave', 'LtnCapAGrave', 'LtnCapEGrave', 'LtnCapIGrave',
+                          'LtnCapOGrave', 'LtnCapNGrave', 'LtnCapUGrave', 'LtnCapWGrave', 'LtnCapYGrave']
+        baselst_lst = [kayan_base_lst[i:i+8] for i in range(0, len(kayan_base_lst), 8)]
+        for base_lst in baselst_lst:
+            ftml.clearFeatures()
+            for base in base_lst:
+                base_uid = builder.char(base).uid
+                builder.render([base_uid] + kayan_diac_lst, ftml, keyUID=kayan_diac_lst[0], descUIDs=kayan_diac_lst)
+            ftml.setFeatures([('cv79','1')])
+            for base in base_lst:
+                base_uid = builder.char(base).uid
+                builder.render([base_uid] + kayan_diac_lst, ftml, keyUID=kayan_diac_lst[0], descUIDs=kayan_diac_lst)
         ftml.closeTestGroup()
 
         # ftml.startTestGroup('Special case - cv75')

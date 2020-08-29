@@ -7640,7 +7640,7 @@
       <string>A\u0020EF E\u0020EF H\u0020EF O\u0020EF a\u0020EF e\u0020EF i\u0020EF o\u0020EF</string>
     </test>
   </testgroup>
-  <testgroup label="Special case - cv79">
+  <testgroup label="Special case - cv79 (NFD)">
     <test label="U+0300
 U+0301">
       <comment>CombGrave CombAcute</comment>
@@ -7660,6 +7660,24 @@ U+0301">
 U+0301" stylename="cv79_1">
       <comment>CombGrave CombAcute</comment>
       <string>A\u000300\u000301 E\u000300\u000301 I\u000300\u000301 O\u000300\u000301 N\u000300\u000301 U\u000300\u000301 W\u000300\u000301 Y\u000300\u000301</string>
+    </test>
+  </testgroup>
+  <testgroup label="Special case - cv79 (NFC)">
+    <test label="U+0301">
+      <comment>CombAcute</comment>
+      <string>\u0000E0\u000301 \u0000E8\u000301 \u0000EC\u000301 \u0000F2\u000301 \u0001F9\u000301 \u0000F9\u000301 \u001E81\u000301 \u001EF3\u000301</string>
+    </test>
+    <test label="U+0301" stylename="cv79_1">
+      <comment>CombAcute</comment>
+      <string>\u0000E0\u000301 \u0000E8\u000301 \u0000EC\u000301 \u0000F2\u000301 \u0001F9\u000301 \u0000F9\u000301 \u001E81\u000301 \u001EF3\u000301</string>
+    </test>
+    <test label="U+0301">
+      <comment>CombAcute</comment>
+      <string>\u0000C0\u000301 \u0000C8\u000301 \u0000CC\u000301 \u0000D2\u000301 \u0001F8\u000301 \u0000D9\u000301 \u001E80\u000301 \u001EF2\u000301</string>
+    </test>
+    <test label="U+0301" stylename="cv79_1">
+      <comment>CombAcute</comment>
+      <string>\u0000C0\u000301 \u0000C8\u000301 \u0000CC\u000301 \u0000D2\u000301 \u0001F8\u000301 \u0000D9\u000301 \u001E80\u000301 \u001EF2\u000301</string>
     </test>
   </testgroup>
 </ftml>
