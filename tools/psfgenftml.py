@@ -236,6 +236,16 @@ class FTMLBuilder_LCG(FB.FTMLBuilder):
                         return True
         return False
 
+    def render_lists(self, base_uid_lst, diac_uid_lst, ftml, feature_lst=None, keyUID=0, descUIDs=None):
+        baselst_lst = [base_uid_lst[i:i+8] for i in range(0, len(base_uid_lst), 8)]
+        for base_lst in baselst_lst:
+            ftml.clearFeatures()
+            for base in base_lst:
+                self.render([base] + diac_uid_lst, ftml, keyUID=keyUID, descUIDs=descUIDs)
+            ftml.setFeatures(feature_lst)
+            for base in base_lst:
+                self.render([base] + diac_uid_lst, ftml, keyUID=keyUID, descUIDs=descUIDs)
+
 #    def render(self, uids, ftml, keyUID=0, descSimple=False):
     def render(self, uids, ftml, keyUID=0, descUIDs=None):
         """ general purpose (but not required) function to generate ftml for a character sequence """
@@ -304,9 +314,6 @@ def doit(args):
         for ap in c.aps:
             if ap.startswith("_"):
                 ap_type_uid[ap[1:]] = diac_uid
-
-    # A E H O a e i o
-    repBase = [x for x in [0x0041, 0x0045, 0x0048, 0x004F, 0x0061, 0x0065, 0x0069, 0x006F] if x in builder.uids()]
 
     if test.lower().startswith("allchars") or test.lower().startswith("allframed"):
         # all chars that should be in the font:
@@ -485,6 +492,9 @@ def doit(args):
             builder.render(upper_base_diac_lst, ftml, descUIDs=upper_base_lst)
 
     if test.lower().startswith("diac"):
+        # A E H O a e i o
+        repBase = [x for x in [0x0041, 0x0045, 0x0048, 0x004F, 0x0061, 0x0065, 0x0069, 0x006F] if x in builder.uids()]
+
         # Diac attachment:
         ftml.startTestGroup('Representative diacritics on all bases that take diacritics')
         for uid in sorted(builder.uids()):
@@ -528,33 +538,19 @@ def doit(args):
         ftml.startTestGroup('Special case - cv79 (NFD)')
         # cv79 - Kayan grave_acute
         kayan_diac_lst = [0x0300, 0x0301] # comb_grave, comb_acute
-        kayan_base_lst = ['a', 'e', 'i', 'o', 'n', 'u', 'w', 'y', 'A', 'E', 'I', 'O', 'N', 'U', 'W', 'Y']
-        baselst_lst = [kayan_base_lst[i:i+8] for i in range(0, len(kayan_base_lst), 8)]
-        for base_lst in baselst_lst:
-            ftml.clearFeatures()
-            for base in base_lst:
-                builder.render([ord(base)] + kayan_diac_lst, ftml, keyUID=kayan_diac_lst[0], descUIDs=kayan_diac_lst)
-            ftml.setFeatures([('cv79','1')])
-            for base in base_lst:
-                builder.render([ord(base)] + kayan_diac_lst, ftml, keyUID=kayan_diac_lst[0], descUIDs=kayan_diac_lst)
+        kayan_base_char_lst = ['a', 'e', 'i', 'o', 'n', 'u', 'w', 'y', 'A', 'E', 'I', 'O', 'N', 'U', 'W', 'Y']
+        kayan_base_lst = [ord(x) for x in kayan_base_char_lst]
+        builder.render_lists(kayan_base_lst, kayan_diac_lst, ftml, [('cv79','1')], keyUID=kayan_diac_lst[0], descUIDs=kayan_diac_lst)
         ftml.closeTestGroup()
 
         ftml.startTestGroup('Special case - cv79 (NFC)')
         # cv79 - Kayan grave_acute
         kayan_diac_lst = [0x0301] # comb_acute
-        kayan_base_lst = ['LtnSmAGrave', 'LtnSmEGrave', 'LtnSmIGrave', 'LtnSmOGrave', 'LtnSmNGrave', 'LtnSmUGrave',
+        kayan_base_name_lst = ['LtnSmAGrave', 'LtnSmEGrave', 'LtnSmIGrave', 'LtnSmOGrave', 'LtnSmNGrave', 'LtnSmUGrave',
                           'LtnSmWGrave', 'LtnSmYGrave', 'LtnCapAGrave', 'LtnCapEGrave', 'LtnCapIGrave',
                           'LtnCapOGrave', 'LtnCapNGrave', 'LtnCapUGrave', 'LtnCapWGrave', 'LtnCapYGrave']
-        baselst_lst = [kayan_base_lst[i:i+8] for i in range(0, len(kayan_base_lst), 8)]
-        for base_lst in baselst_lst:
-            ftml.clearFeatures()
-            for base in base_lst:
-                base_uid = builder.char(base).uid
-                builder.render([base_uid] + kayan_diac_lst, ftml, keyUID=kayan_diac_lst[0], descUIDs=kayan_diac_lst)
-            ftml.setFeatures([('cv79','1')])
-            for base in base_lst:
-                base_uid = builder.char(base).uid
-                builder.render([base_uid] + kayan_diac_lst, ftml, keyUID=kayan_diac_lst[0], descUIDs=kayan_diac_lst)
+        kayan_base_lst = [builder.char(x).uid for x in kayan_base_name_lst]
+        builder.render_lists(kayan_base_lst, kayan_diac_lst, ftml, [('cv79','1')], keyUID=kayan_diac_lst[0], descUIDs=kayan_diac_lst)
         ftml.closeTestGroup()
 
         # ftml.startTestGroup('Special case - cv75')
