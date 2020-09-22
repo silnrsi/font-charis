@@ -175,9 +175,10 @@ class Font(object):
                 logger.log("class %s from class deletions missing" % cls, 'W')
             for g in g_lst:
                 if g in self.g_classes[cls]:
-                    logger.log("glyph %s from class deletions not present" % g, 'W')
                     l = self.g_classes[cls]
                     del l[l.index(g)]
+                else:
+                    logger.log("glyph %s from class deletions not present" % g, 'W')
 
     def find_variants(self):
         # create single and multiple alternate lkups for aalt (sa_sub, ma_sub)

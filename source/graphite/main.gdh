@@ -374,18 +374,6 @@ g__ltn_sm_l_caron_sc {comp {base = box(0,bb.bottom-50m, aw/2+70m, bb.top+50m);
 g__ltn_sm_t_caron {comp {base = box(0,bb.bottom-50m, bb.right-200m, bb.top-200m);
                 caron = box(bb.right-300m, bb.top-450m, bb.right+50m, bb.top+50m) }};
 
-// Classes for kayan-style diacritics
-//   created by sorting gdl generated from classes.xml by make_gdl into alphabetical order
-cgrave_base = (g__ltn_cap_a, g__ltn_cap_e, g__ltn_cap_i, g__ltn_cap_n, g__ltn_cap_o, g__ltn_cap_u, g__ltn_cap_w, g__ltn_cap_y, 
-	g__ltn_sm_a, g__ltn_sm_a_2_story_s_ital, g__ltn_sm_a_sc, g__ltn_sm_a_sng_story, g__ltn_sm_a_sng_story_sc, g__ltn_sm_e, g__ltn_sm_e_sc, g__ltn_sm_i_dotless, 
-	g__ltn_sm_i_dotless_s_ital, g__ltn_sm_i_sc, g__ltn_sm_n, g__ltn_sm_n_sc, g__ltn_sm_o, g__ltn_sm_o_sc, g__ltn_sm_u, g__ltn_sm_u_sc, 
-	g__ltn_sm_w, g__ltn_sm_w_sc, g__ltn_sm_y, g__ltn_sm_y_sc);
-	
-cgrave_comp = (g__ltn_cap_a_grave, g__ltn_cap_e_grave, g__ltn_cap_i_grave, g__ltn_cap_n_grave, g__ltn_cap_o_grave, g__ltn_cap_u_grave, g__ltn_cap_w_grave, g__ltn_cap_y_grave, 
-	g__ltn_sm_a_grave, g__ltn_sm_a_grave_2_story_s_ital, g__ltn_sm_a_grave_sc, g__ltn_sm_a_grave_sng_story, g__ltn_sm_a_grave_sng_story_sc, g__ltn_sm_e_grave, g__ltn_sm_e_grave_sc, g__ltn_sm_i_grave, 
-	g__ltn_sm_i_grave_s_ital, g__ltn_sm_i_grave_sc, g__ltn_sm_n_grave, g__ltn_sm_n_grave_sc, g__ltn_sm_o_grave, g__ltn_sm_o_grave_sc, g__ltn_sm_u_grave, g__ltn_sm_u_grave_sc, 
-	g__ltn_sm_w_grave, g__ltn_sm_w_grave_sc, g__ltn_sm_y_grave, g__ltn_sm_y_grave_sc);
-
 // Uppercase-eng variations
 // (The extra composite glyphs aren't really needed, they only happen to be in the font for AAT.)
 c_eng_Descender = (g__ltn_cap_eng, g__ltn_sm_eng_sc);                    // cno_BaselineHook = cno_Kom
@@ -941,12 +929,12 @@ if (caron == 1 || caron__carn == 1)
 endif;
 
 if (kayan_diacs == 1)
-	cgrave_comp _ > cgrave_base g__comb_grave:1 / _ ^ _ g__comb_acute;
+	c_grave_comp _ > c_grave_base g__comb_grave:1 / _ ^ _ g__comb_acute;
 	g__comb_grave g__comb_acute > _ g__comb_kayan_grave_acute:(1 2);
 	// c_grave_comp g__comb_acute > c_grave_base g__comb_kayan_grave_acute;
 else
 	g__comb_kayan_grave_acute _ > g__comb_grave g__comb_acute:1;
-	// cgrave_base g__comb_kayan_grave_acute > cgrave_comp g__comb_acute;
+	// c_grave_base g__comb_kayan_grave_acute > c_grave_comp g__comb_acute;
 endif;
 
 if (ou == 1 || ou__opOU == 1)

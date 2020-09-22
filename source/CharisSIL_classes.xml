@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <classes>
-	<class name="c_lit">
+	<class name="c_lit" fixed="0">
 		CombLtnSmA.SngStory LtnSmA.SngStory LtnSmA.SngStory.sc LtnSmAAcute.SngStory
 		LtnSmAAcute.SngStory.sc LtnSmABreve.SngStory LtnSmABreve.SngStory.sc LtnSmABreveAcute.SngStory
 		LtnSmABreveAcute.SngStory.VN LtnSmABreveAcute.SngStory.VN.sc LtnSmABreveAcute.SngStory.sc LtnSmABreveDotBlw.SngStory
@@ -29,7 +29,7 @@
 		LtnSmGDiagStrk.SngBowl.sc LtnSmGDotAbv.SngBowl LtnSmGDotAbv.SngBowl.sc LtnSmGMacron.SngBowl
 		LtnSmGMacron.SngBowl.sc LtnSmGStrk.SngBowl LtnSmGStrk.SngBowl.sc LtnSupSmG.SngBowl
 	</class>
-	<class name="cno_lit">
+	<class name="cno_lit" fixed="0">
 		CombLtnSmA LtnSmA LtnSmA.sc LtnSmAAcute
 		LtnSmAAcute.sc LtnSmABreve LtnSmABreve.sc LtnSmABreveAcute
 		LtnSmABreveAcute.VN LtnSmABreveAcute.VN.sc LtnSmABreveAcute.sc LtnSmABreveDotBlw
@@ -58,7 +58,7 @@
 		LtnSmGDiagStrk.sc LtnSmGDotAbv LtnSmGDotAbv.sc LtnSmGMacron
 		LtnSmGMacron.sc LtnSmGStrk LtnSmGStrk.sc LtnSupSmG
 	</class>
-	<class name="c_lita">
+	<class name="c_lita" fixed="0">
 		CombLtnSmA.SngStory LtnSmA.SngStory LtnSmA.SngStory.sc LtnSmAAcute.SngStory
 		LtnSmAAcute.SngStory.sc LtnSmABreve.SngStory LtnSmABreve.SngStory.sc LtnSmABreveAcute.SngStory
 		LtnSmABreveAcute.SngStory.VN LtnSmABreveAcute.SngStory.VN.sc LtnSmABreveAcute.SngStory.sc LtnSmABreveDotBlw.SngStory
@@ -82,7 +82,7 @@
 		LtnSmAStrk.SngStory.sc LtnSmATilde.SngStory LtnSmATilde.SngStory.sc LtnSubSmA.SngStory
 		LtnSupSmA.SngStory
 	</class>
-	<class name="cno_lita">
+	<class name="cno_lita" fixed="0">
 		CombLtnSmA LtnSmA LtnSmA.sc LtnSmAAcute
 		LtnSmAAcute.sc LtnSmABreve LtnSmABreve.sc LtnSmABreveAcute
 		LtnSmABreveAcute.VN LtnSmABreveAcute.VN.sc LtnSmABreveAcute.sc LtnSmABreveDotBlw
@@ -106,7 +106,7 @@
 		LtnSmAStrk.sc LtnSmATilde LtnSmATilde.sc LtnSubSmA
 		LtnSupSmA
 	</class>
-	<class name="c_litg">
+	<class name="c_litg" fixed="0">
 		LtnSmG.BarBowl.SngBowl LtnSmG.BarBowl.SngBowl.sc LtnSmG.SngBowl LtnSmG.SngBowl.sc
 		LtnSmGAcute.SngBowl LtnSmGAcute.SngBowl.sc LtnSmGBreve.SngBowl LtnSmGBreve.SngBowl.sc
 		LtnSmGCaron.SngBowl LtnSmGCaron.SngBowl.sc LtnSmGCedilla.SngBowl LtnSmGCedilla.SngBowl.sc
@@ -114,7 +114,7 @@
 		LtnSmGDotAbv.SngBowl LtnSmGDotAbv.SngBowl.sc LtnSmGMacron.SngBowl LtnSmGMacron.SngBowl.sc
 		LtnSmGStrk.SngBowl LtnSmGStrk.SngBowl.sc LtnSupSmG.SngBowl
 	</class>
-	<class name="cno_litg">
+	<class name="cno_litg" fixed="0">
 		LtnSmG.BarBowl LtnSmG.BarBowl.sc LtnSmG LtnSmG.sc
 		LtnSmGAcute LtnSmGAcute.sc LtnSmGBreve LtnSmGBreve.sc
 		LtnSmGCaron LtnSmGCaron.sc LtnSmGCedilla LtnSmGCedilla.sc
@@ -122,13 +122,13 @@
 		LtnSmGDotAbv LtnSmGDotAbv.sc LtnSmGMacron LtnSmGMacron.sc
 		LtnSmGStrk LtnSmGStrk.sc LtnSupSmG
 	</class>
-	<class name="c_barbowl">
+	<class name="c_barbowl" fixed="0">
 		LtnSmBBarredStem.BarBowl LtnSmBBarredStem.BarBowl.sc LtnSmDBarredStem.BarBowl LtnSmDBarredStem.BarBowl.sc
 	</class>
-	<class name="cno_barbowl">
+	<class name="cno_barbowl" fixed="0">
 		LtnSmBBarredStem LtnSmBBarredStem.sc LtnSmDBarredStem LtnSmDBarredStem.sc
 	</class>
-	<class name="c_sital">
+	<class name="c_sital" fixed="0">
 		CySmGheStrk.SItal CySmGheStrkDesc.SItal CySmGheStrkHook.SItal LtnLigSmFSmF.SItal
 		LtnLigSmFSmF.SItal.sc LtnLigSmFSmFSmI.SItal LtnLigSmFSmFSmI.SItal.sc LtnLigSmFSmFSmL.SItal
 		LtnLigSmFSmFSmL.SItal.sc LtnLigSmFSmI.SItal LtnLigSmFSmI.SItal.sc LtnLigSmFSmL.SItal
@@ -155,7 +155,7 @@
 		LtnSmATilde.2StorySItal LtnSmAe.2StorySItal LtnSmAeAcute.2StorySItal LtnSmAeMacron.2StorySItal
 		LtnSmTurnedA.2StorySItal
 	</class>
-	<class name="cno_sital">
+	<class name="cno_sital" fixed="0">
 		CySmGheStrk CySmGheStrkDesc CySmGheStrkHook LtnLigSmFSmF
 		LtnLigSmFSmF.sc LtnLigSmFSmFSmI LtnLigSmFSmFSmI.sc LtnLigSmFSmFSmL
 		LtnLigSmFSmFSmL.sc LtnLigSmFSmI LtnLigSmFSmI.sc LtnLigSmFSmL
@@ -182,7 +182,7 @@
 		LtnSmATilde LtnSmAe LtnSmAeAcute LtnSmAeMacron
 		LtnSmTurnedA
 	</class>
-	<class name="c_viet">
+	<class name="c_viet" fixed="0">
 		LtnCapABreveAcute.VN LtnCapABreveGrave.VN LtnCapABreveHookAbv.VN LtnCapABreveTilde.VN
 		LtnCapACircumAcute.VN LtnCapACircumGrave.VN LtnCapACircumHookAbv.VN LtnCapACircumTilde.VN
 		LtnCapECircumAcute.VN LtnCapECircumGrave.VN LtnCapECircumHookAbv.VN LtnCapECircumTilde.VN
@@ -202,7 +202,7 @@
 		LtnSmOCircumAcute.VN LtnSmOCircumAcute.VN.sc LtnSmOCircumGrave.VN LtnSmOCircumGrave.VN.sc
 		LtnSmOCircumHookAbv.VN LtnSmOCircumHookAbv.VN.sc LtnSmOCircumTilde.VN LtnSmOCircumTilde.VN.sc
 	</class>
-	<class name="cno_viet">
+	<class name="cno_viet" fixed="0">
 		LtnCapABreveAcute LtnCapABreveGrave LtnCapABreveHookAbv LtnCapABreveTilde
 		LtnCapACircumAcute LtnCapACircumGrave LtnCapACircumHookAbv LtnCapACircumTilde
 		LtnCapECircumAcute LtnCapECircumGrave LtnCapECircumHookAbv LtnCapECircumTilde
@@ -222,21 +222,21 @@
 		LtnSmOCircumAcute LtnSmOCircumAcute.sc LtnSmOCircumGrave LtnSmOCircumGrave.sc
 		LtnSmOCircumHookAbv LtnSmOCircumHookAbv.sc LtnSmOCircumTilde LtnSmOCircumTilde.sc
 	</class>
-	<class name="c_dotlss">
+	<class name="c_dotlss" fixed="0">
 		CySmByelorusUkrainI.Dotless CySmJe.Dotless LtnSmI.Dotless LtnSmI.Dotless.SItal
 		LtnSmI.Dotless.sc LtnSmIOgonek.Dotless LtnSmIRetrHook.Dotless LtnSmIStrk.Dotless
 		LtnSmJ.Dotless LtnSmJCrossedTail.Dotless LtnSmJStrk.Dotless LtnSubSmI.Dotless
 		LtnSubSmJ.Dotless LtnSupSmI.Dotless LtnSupSmIStrk.Dotless ModSmJ.Dotless
 		ModSmJCrossedTail.Dotless
 	</class>
-	<class name="cno_dotlss">
+	<class name="cno_dotlss" fixed="0">
 		CySmByelorusUkrainI CySmJe LtnSmI LtnSmI.SItal
 		LtnSmI.sc LtnSmIOgonek LtnSmIRetrHook LtnSmIStrk
 		LtnSmJ LtnSmJCrossedTail LtnSmJStrk LtnSubSmI
 		LtnSubSmJ LtnSupSmI LtnSupSmIStrk ModSmJ
 		ModSmJCrossedTail
 	</class>
-	<class name="c_rtrhk">
+	<class name="c_rtrhk" fixed="0">
 		CombOgonek.RetroHook LtnCapAOgonek.RetroHook LtnCapEOgonek.RetroHook LtnCapIOgonek.RetroHook
 		LtnCapOOgonek.RetroHook LtnCapOOgonekMacron.RetroHook LtnCapUOgonek.RetroHook LtnSmAOgonek.2StorySItal.RetroHook
 		LtnSmAOgonek.RetroHook LtnSmAOgonek.RetroHook.sc LtnSmAOgonek.SngStory.RetroHook LtnSmAOgonek.SngStory.RetroHook.sc
@@ -244,7 +244,7 @@
 		LtnSmOOgonek.RetroHook LtnSmOOgonek.RetroHook.sc LtnSmOOgonekMacron.RetroHook LtnSmOOgonekMacron.RetroHook.sc
 		LtnSmUOgonek.RetroHook LtnSmUOgonek.RetroHook.sc Ogonek.RetroHook
 	</class>
-	<class name="cno_rtrhk">
+	<class name="cno_rtrhk" fixed="0">
 		CombOgonek LtnCapAOgonek LtnCapEOgonek LtnCapIOgonek
 		LtnCapOOgonek LtnCapOOgonekMacron LtnCapUOgonek LtnSmAOgonek.2StorySItal
 		LtnSmAOgonek LtnSmAOgonek.sc LtnSmAOgonek.SngStory LtnSmAOgonek.SngStory.sc
@@ -252,7 +252,7 @@
 		LtnSmOOgonek LtnSmOOgonek.sc LtnSmOOgonekMacron LtnSmOOgonekMacron.sc
 		LtnSmUOgonek LtnSmUOgonek.sc Ogonek
 	</class>
-	<class name="cno_c2sc">
+	<class name="cno_c2sc" fixed="0">
 		CyCapA CyCapABreve CyCapADiaer CyCapAbkhasChe
 		CyCapAbkhasCheDesc CyCapAbkhasDze CyCapAbkhasDze.RevSigmaStyle CyCapAbkhasHa
 		CyCapAleutKa CyCapBarredO CyCapBarredODiaer CyCapBashkirKa
@@ -404,7 +404,7 @@
 		LtnCapZPalHook LtnCapZStrk LtnCapZSwashTail LtnYr
 		CyPalochka
 	</class>
-	<class name="c_c2sc">
+	<class name="c_c2sc" fixed="0">
 		CySmA.sc CySmABreve.sc CySmADiaer.sc CySmAbkhasChe.sc
 		CySmAbkhasCheDesc.sc CySmAbkhasDze.sc CySmAbkhasDze.RevSigmaStyle.sc CySmAbkhasHa.sc
 		CySmAleutKa.sc CySmBarredO.sc CySmBarredODiaer.sc CySmBashkirKa.sc
@@ -556,7 +556,7 @@
 		LtnSmZPalHook.sc LtnSmZStrk.sc LtnSmZSwashTail.sc LtnSmCapR.sc
 		CyPalochka.sc
 	</class>
-	<class name="c_superscripts">
+	<class name="c_superscripts" fixed="0">
 		GrSubSmBeta GrSubSmChi GrSubSmGamma GrSubSmPhi
 		GrSubSmRho LtnSubSmA LtnSubSmA.SngStory LtnSubSmE
 		LtnSubSmH LtnSubSmI LtnSubSmI.Dotless LtnSubSmJ
@@ -609,7 +609,7 @@
 		ModSmY ModSmZRetrHook ModSmZRetrHookDep ModGlottalStop
 		ModRevGlottalStop
 	</class>
-	<class name="c_grave_comp">
+	<class name="c_grave_comp" fixed="0">
 		LtnCapAGrave LtnCapEGrave LtnCapIGrave LtnCapNGrave
 		LtnCapOGrave LtnCapUGrave LtnCapWGrave LtnCapYGrave
 		LtnSmAGrave LtnSmAGrave.2StorySItal LtnSmAGrave.SngStory LtnSmAGrave.SngStory.sc
@@ -618,7 +618,7 @@
 		LtnSmOGrave LtnSmOGrave.sc LtnSmUGrave LtnSmUGrave.sc
 		LtnSmWGrave LtnSmWGrave.sc LtnSmYGrave LtnSmYGrave.sc
 	</class>
-	<class name="c_grave_base">
+	<class name="c_grave_base" fixed="0">
 		LtnCapA LtnCapE LtnCapI LtnCapN
 		LtnCapO LtnCapU LtnCapW LtnCapY
 		LtnSmA LtnSmA.2StorySItal LtnSmA.SngStory LtnSmA.SngStory.sc
