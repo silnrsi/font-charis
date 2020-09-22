@@ -133,11 +133,11 @@ class FTMLBuilder_LCG(FB.FTMLBuilder):
                 # encoded glyphs
                 c = self.char(gname)
                 uid = c.uid
-                # Examine APs to determine if this character takes marks
-                c.checkAPs(gname, font, self.apRE)
             except:
                 # unencoded glyphs
                 c = uid = None
+            # Examine APs to determine if this character takes marks
+            if c: c.checkGlyph(gname, font, self.apRE)
 
             # Process associated USVs
             # could be empty string, a single USV or space-separated list of USVs
@@ -153,10 +153,10 @@ class FTMLBuilder_LCG(FB.FTMLBuilder):
                 assoc_uid = uidList[0]
                 try:
                     c = self.char(assoc_uid)
-                    # c.checkAPs(gname, font, self.apRE)
                 except:
                     self._csvWarning('associated USV %04X for glyph %s matches no encoded glyph' % (assoc_uid, gname))
                     c = None
+                # if c: c.checkGlyph(gname, font, self.apRE)
             elif len(uidList) > 1:
                 # Handle ligatures
                 lig_encoding_ok = True
@@ -239,12 +239,20 @@ class FTMLBuilder_LCG(FB.FTMLBuilder):
     def render_lists(self, base_uid_lst, diac_uid_lst, ftml, feature_lst=None, keyUID=0, descUIDs=None):
         baselst_lst = [base_uid_lst[i:i+8] for i in range(0, len(base_uid_lst), 8)]
         for base_lst in baselst_lst:
+            descUIDs_lst = base_lst if descUIDs is None else descUIDs
+            ftml.closeTest()
             ftml.clearFeatures()
             for base in base_lst:
-                self.render([base] + diac_uid_lst, ftml, keyUID=keyUID, descUIDs=descUIDs)
-            ftml.setFeatures(feature_lst)
-            for base in base_lst:
-                self.render([base] + diac_uid_lst, ftml, keyUID=keyUID, descUIDs=descUIDs)
+                self.render([base] + diac_uid_lst, ftml, keyUID=keyUID, descUIDs=descUIDs_lst)
+            if feature_lst is None:
+                ftml.closeTest()
+                for base in base_lst:
+                    self.render([base], ftml, keyUID=keyUID, descUIDs=descUIDs_lst)
+            else:
+                ftml.closeTest()
+                ftml.setFeatures(feature_lst)
+                for base in base_lst:
+                    self.render([base] + diac_uid_lst, ftml, keyUID=keyUID, descUIDs=descUIDs_lst)
 
 #    def render(self, uids, ftml, keyUID=0, descSimple=False):
     def render(self, uids, ftml, keyUID=0, descUIDs=None):
@@ -540,7 +548,7 @@ def doit(args):
         kayan_diac_lst = [0x0300, 0x0301] # comb_grave, comb_acute
         kayan_base_char_lst = ['a', 'e', 'i', 'o', 'n', 'u', 'w', 'y', 'A', 'E', 'I', 'O', 'N', 'U', 'W', 'Y']
         kayan_base_lst = [ord(x) for x in kayan_base_char_lst]
-        builder.render_lists(kayan_base_lst, kayan_diac_lst, ftml, [('cv79','1')], keyUID=kayan_diac_lst[0], descUIDs=kayan_diac_lst)
+        builder.render_lists(kayan_base_lst, kayan_diac_lst, ftml, [('cv79','1')], keyUID=kayan_diac_lst[0])
         ftml.closeTestGroup()
 
         ftml.startTestGroup('Special case - cv79 (NFC)')
@@ -550,7 +558,19 @@ def doit(args):
                           'LtnSmWGrave', 'LtnSmYGrave', 'LtnCapAGrave', 'LtnCapEGrave', 'LtnCapIGrave',
                           'LtnCapOGrave', 'LtnCapNGrave', 'LtnCapUGrave', 'LtnCapWGrave', 'LtnCapYGrave']
         kayan_base_lst = [builder.char(x).uid for x in kayan_base_name_lst]
-        builder.render_lists(kayan_base_lst, kayan_diac_lst, ftml, [('cv79','1')], keyUID=kayan_diac_lst[0], descUIDs=kayan_diac_lst)
+        builder.render_lists(kayan_base_lst, kayan_diac_lst, ftml, [('cv79','1')], keyUID=kayan_diac_lst[0])
+        ftml.closeTestGroup()
+
+        ftml.startTestGroup('Dot removal')
+        diac_lst = [0x301] #comb_acute
+        base_name_lst = ['CySmByelorusUkrainI', 'CySmJe', 'LtnSmI', 'LtnSmI.SItal', 'LtnSmI.sc', 'LtnSmIOgonek',
+                    'LtnSmIRetrHook', 'LtnSmIStrk', 'LtnSmJ', 'LtnSmJCrossedTail', 'LtnSmJStrk',
+                    'LtnSubSmI', 'LtnSubSmJ', 'LtnSupSmI', 'LtnSupSmIStrk', 'ModSmJ', 'ModSmJCrossedTail']
+        base_lst = []
+        for x in base_name_lst:
+            try: base_lst.append(builder.char(x).uid)
+            except: pass
+        builder.render_lists(base_lst, diac_lst, ftml, keyUID=diac_lst[0])
         ftml.closeTestGroup()
 
         # ftml.startTestGroup('Special case - cv75')

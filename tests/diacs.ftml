@@ -7641,43 +7641,126 @@
     </test>
   </testgroup>
   <testgroup label="Special case - cv79 (NFD)">
-    <test label="U+0300
-U+0301">
-      <comment>CombGrave CombAcute</comment>
+    <test label="U+0061
+U+0065
+U+0069
+U+006F
+U+006E
+U+0075
+U+0077
+U+0079">
+      <comment>LtnSmA LtnSmE LtnSmI LtnSmO LtnSmN LtnSmU LtnSmW LtnSmY</comment>
       <string>a\u000300\u000301 e\u000300\u000301 i\u000300\u000301 o\u000300\u000301 n\u000300\u000301 u\u000300\u000301 w\u000300\u000301 y\u000300\u000301</string>
     </test>
-    <test label="U+0300
-U+0301" stylename="cv79_1">
-      <comment>CombGrave CombAcute</comment>
+    <test label="U+0061
+U+0065
+U+0069
+U+006F
+U+006E
+U+0075
+U+0077
+U+0079" stylename="cv79_1">
+      <comment>LtnSmA LtnSmE LtnSmI LtnSmO LtnSmN LtnSmU LtnSmW LtnSmY</comment>
       <string>a\u000300\u000301 e\u000300\u000301 i\u000300\u000301 o\u000300\u000301 n\u000300\u000301 u\u000300\u000301 w\u000300\u000301 y\u000300\u000301</string>
     </test>
-    <test label="U+0300
-U+0301">
-      <comment>CombGrave CombAcute</comment>
+    <test label="U+0041
+U+0045
+U+0049
+U+004F
+U+004E
+U+0055
+U+0057
+U+0059">
+      <comment>LtnCapA LtnCapE LtnCapI LtnCapO LtnCapN LtnCapU LtnCapW LtnCapY</comment>
       <string>A\u000300\u000301 E\u000300\u000301 I\u000300\u000301 O\u000300\u000301 N\u000300\u000301 U\u000300\u000301 W\u000300\u000301 Y\u000300\u000301</string>
     </test>
-    <test label="U+0300
-U+0301" stylename="cv79_1">
-      <comment>CombGrave CombAcute</comment>
+    <test label="U+0041
+U+0045
+U+0049
+U+004F
+U+004E
+U+0055
+U+0057
+U+0059" stylename="cv79_1">
+      <comment>LtnCapA LtnCapE LtnCapI LtnCapO LtnCapN LtnCapU LtnCapW LtnCapY</comment>
       <string>A\u000300\u000301 E\u000300\u000301 I\u000300\u000301 O\u000300\u000301 N\u000300\u000301 U\u000300\u000301 W\u000300\u000301 Y\u000300\u000301</string>
     </test>
   </testgroup>
   <testgroup label="Special case - cv79 (NFC)">
-    <test label="U+0301">
-      <comment>CombAcute</comment>
+    <test label="U+00E0
+U+00E8
+U+00EC
+U+00F2
+U+01F9
+U+00F9
+U+1E81
+U+1EF3">
+      <comment>LtnSmAGrave LtnSmEGrave LtnSmIGrave LtnSmOGrave LtnSmNGrave LtnSmUGrave LtnSmWGrave LtnSmYGrave</comment>
       <string>\u0000E0\u000301 \u0000E8\u000301 \u0000EC\u000301 \u0000F2\u000301 \u0001F9\u000301 \u0000F9\u000301 \u001E81\u000301 \u001EF3\u000301</string>
     </test>
-    <test label="U+0301" stylename="cv79_1">
-      <comment>CombAcute</comment>
+    <test label="U+00E0
+U+00E8
+U+00EC
+U+00F2
+U+01F9
+U+00F9
+U+1E81
+U+1EF3" stylename="cv79_1">
+      <comment>LtnSmAGrave LtnSmEGrave LtnSmIGrave LtnSmOGrave LtnSmNGrave LtnSmUGrave LtnSmWGrave LtnSmYGrave</comment>
       <string>\u0000E0\u000301 \u0000E8\u000301 \u0000EC\u000301 \u0000F2\u000301 \u0001F9\u000301 \u0000F9\u000301 \u001E81\u000301 \u001EF3\u000301</string>
     </test>
-    <test label="U+0301">
-      <comment>CombAcute</comment>
+    <test label="U+00C0
+U+00C8
+U+00CC
+U+00D2
+U+01F8
+U+00D9
+U+1E80
+U+1EF2">
+      <comment>LtnCapAGrave LtnCapEGrave LtnCapIGrave LtnCapOGrave LtnCapNGrave LtnCapUGrave LtnCapWGrave LtnCapYGrave</comment>
       <string>\u0000C0\u000301 \u0000C8\u000301 \u0000CC\u000301 \u0000D2\u000301 \u0001F8\u000301 \u0000D9\u000301 \u001E80\u000301 \u001EF2\u000301</string>
     </test>
-    <test label="U+0301" stylename="cv79_1">
-      <comment>CombAcute</comment>
+    <test label="U+00C0
+U+00C8
+U+00CC
+U+00D2
+U+01F8
+U+00D9
+U+1E80
+U+1EF2" stylename="cv79_1">
+      <comment>LtnCapAGrave LtnCapEGrave LtnCapIGrave LtnCapOGrave LtnCapNGrave LtnCapUGrave LtnCapWGrave LtnCapYGrave</comment>
       <string>\u0000C0\u000301 \u0000C8\u000301 \u0000CC\u000301 \u0000D2\u000301 \u0001F8\u000301 \u0000D9\u000301 \u001E80\u000301 \u001EF2\u000301</string>
+    </test>
+  </testgroup>
+  <testgroup label="Dot removal">
+    <test label="U+0456
+U+0458
+U+0069
+U+012F
+U+1D96
+U+0268
+U+006A
+U+029D">
+      <comment>CySmByelorusUkrainI CySmJe LtnSmI LtnSmIOgonek LtnSmIRetrHook LtnSmIStrk LtnSmJ LtnSmJCrossedTail</comment>
+      <string>\u000456\u000301 \u000458\u000301 i\u000301 \u00012F\u000301 \u001D96\u000301 \u000268\u000301 j\u000301 \u00029D\u000301</string>
+    </test>
+    <test label="U+0301">
+      <comment>CySmByelorusUkrainI CySmJe LtnSmI LtnSmIOgonek LtnSmIRetrHook LtnSmIStrk LtnSmJ LtnSmJCrossedTail</comment>
+      <string>\u000456 \u000458 i \u00012F \u001D96 \u000268 j \u00029D</string>
+    </test>
+    <test label="U+0249
+U+1D62
+U+2C7C
+U+2071
+U+1DA4
+U+02B2
+U+1DA8">
+      <comment>LtnSmJStrk LtnSubSmI LtnSubSmJ LtnSupSmI LtnSupSmIStrk ModSmJ ModSmJCrossedTail</comment>
+      <string>\u000249\u000301 \u001D62\u000301 \u002C7C\u000301 \u002071\u000301 \u001DA4\u000301 \u0002B2\u000301 \u001DA8\u000301</string>
+    </test>
+    <test label="U+0301">
+      <comment>LtnSmJStrk LtnSubSmI LtnSubSmJ LtnSupSmI LtnSupSmIStrk ModSmJ ModSmJCrossedTail</comment>
+      <string>\u000249 \u001D62 \u002C7C \u002071 \u001DA4 \u0002B2 \u001DA8</string>
     </test>
   </testgroup>
 </ftml>
