@@ -573,6 +573,52 @@ def doit(args):
         builder.render_lists(base_lst, diac_lst, ftml, keyUID=diac_lst[0])
         ftml.closeTestGroup()
 
+        ftml.startTestGroup('Superscript diacritics')
+        diac_lst = [0x308] #CombDiaer.Sup
+        base_name_lst = [
+            'GrSubSmBeta', 'GrSubSmChi', 'GrSubSmGamma', 'GrSubSmPhi', 'GrSubSmRho', 'LtnSubSmA',
+            'LtnSubSmA.SngStory', 'LtnSubSmE', 'LtnSubSmH', 'LtnSubSmI', 'LtnSubSmI.Dotless', 'LtnSubSmJ',
+            'LtnSubSmJ.Dotless', 'LtnSubSmK', 'LtnSubSmL', 'LtnSubSmL.SItal', 'LtnSubSmM', 'LtnSubSmN',
+            'LtnSubSmO', 'LtnSubSmP', 'LtnSubSmR', 'LtnSubSmS', 'LtnSubSmSchwa', 'LtnSubSmT', 'LtnSubSmU',
+            'LtnSubSmV', 'LtnSubSmX', 'LtnSupSmA', 'LtnSupSmA.SngStory', 'LtnSupSmAe', 'LtnSupSmAlpha',
+            'LtnSupSmB', 'LtnSupSmBarredO', 'LtnSupSmBarredODep', 'LtnSupSmCCurl', 'LtnSupSmCCurlDep',
+            'LtnSupSmCapI', 'LtnSupSmCapIDep', 'LtnSupSmCapOe', 'LtnSupSmCapY', 'LtnSupSmClosedRevOpnE',
+            'LtnSupSmD', 'LtnSupSmDotlessJStrk', 'LtnSupSmDotlessJStrkDep', 'LtnSupSmE', 'LtnSupSmEng',
+            'LtnSupSmEngDep', 'LtnSupSmEsh', 'LtnSupSmEshDep', 'LtnSupSmEzh', 'LtnSupSmEzhDep', 'LtnSupSmF',
+            'LtnSupSmFDep', 'LtnSupSmG', 'LtnSupSmG.SngBowl', 'LtnSupSmI', 'LtnSupSmI.Dotless', 'LtnSupSmIStrk',
+            'LtnSupSmIStrk.Dotless', 'LtnSupSmIStrkDep', 'LtnSupSmK', 'LtnSupSmLRetrHook',
+            'LtnSupSmLRetrHookDep', 'LtnSupSmM', 'LtnSupSmMDep', 'LtnSupSmN', 'LtnSupSmNLftHook',
+            'LtnSupSmNLftHookDep', 'LtnSupSmO', 'LtnSupSmOStrk', 'LtnSupSmOe', 'LtnSupSmOeDep', 'LtnSupSmOpnE',
+            'LtnSupSmOpnO', 'LtnSupSmOpnO.TopSerif', 'LtnSupSmP', 'LtnSupSmRamsHorn', 'LtnSupSmRevE',
+            'LtnSupSmRevOpnE', 'LtnSupSmRevOpnEDep', 'LtnSupSmSchwa', 'LtnSupSmScriptG', 'LtnSupSmScriptGDep',
+            'LtnSupSmT', 'LtnSupSmTurnedA', 'LtnSupSmTurnedAlpha', 'LtnSupSmTurnedAlphaDep', 'LtnSupSmTurnedM',
+            'LtnSupSmTurnedMLngLeg', 'LtnSupSmTurnedMLngLegDep', 'LtnSupSmTurnedV', 'LtnSupSmTurnedVDep',
+            'LtnSupSmU', 'LtnSupSmUBar', 'LtnSupSmUBarDep', 'LtnSupSmUpsilon', 'LtnSupSmUpsilonDep',
+            'LtnSupSmV', 'LtnSupSmZ', 'LtnSupSmZCurl', 'LtnSupSmZCurlDep', 'LtnSupSmZDep', 'ModCapA',
+            'ModCapAe', 'ModCapB', 'ModCapBarredB', 'ModCapD', 'ModCapE', 'ModCapG', 'ModCapH', 'ModCapHStrk',
+            'ModCapI', 'ModCapJ', 'ModCapK', 'ModCapL', 'ModCapM', 'ModCapN', 'ModCapO', 'ModCapOu',
+            'ModCapOu.OpenTop', 'ModCapP', 'ModCapR', 'ModCapRevE', 'ModCapRevN', 'ModCapT', 'ModCapU',
+            'ModCapV', 'ModCapW', 'ModSmAin', 'ModSmBeta', 'ModSmBottomHalfO', 'ModSmC', 'ModSmCDep',
+            'ModSmCapIStrk', 'ModSmCapIStrkDep', 'ModSmCapInvR', 'ModSmCapL', 'ModSmCapLDep', 'ModSmCapN',
+            'ModSmCapNDep', 'ModSmCapU', 'ModSmCapUBar', 'ModSmCapUDep', 'ModSmChi', 'ModSmDelta', 'ModSmEth',
+            'ModSmEthDep', 'ModSmGamma', 'ModSmGrGamma', 'ModSmGrPhi', 'ModSmH', 'ModSmHHook', 'ModSmHStrk',
+            'ModSmHeng', 'ModSmIota', 'ModSmIotaDep', 'ModSmJ', 'ModSmJ.Dotless', 'ModSmJCrossedTail',
+            'ModSmJCrossedTail.Dotless', 'ModSmJCrossedTailDep', 'ModSmL', 'ModSmLMiddleTilde', 'ModSmLPalHook',
+            'ModSmLPalHookDep', 'ModSmMHook', 'ModSmMHookDep', 'ModSmNRetrHook', 'ModSmNRetrHookDep',
+            'ModSmPhi', 'ModSmPhiDep', 'ModSmR', 'ModSmRevGlottalStop', 'ModSmS', 'ModSmSHook', 'ModSmSHookDep',
+            'ModSmSdwysU', 'ModSmTPalHook', 'ModSmTPalHookDep', 'ModSmTheta', 'ModSmThetaDep', 'ModSmTopHalfO',
+            'ModSmTrndAe', 'ModSmTrndI', 'ModSmTrndOpnE', 'ModSmTrndR', 'ModSmTrndRHook', 'ModSmTurnedH',
+            'ModSmTurnedHDep', 'ModSmTurnedY', 'ModSmVHook', 'ModSmVHook.StraightLft',
+            'ModSmVHook.StraightLftHighHook', 'ModSmVHookDep', 'ModSmW', 'ModSmX', 'ModSmY', 'ModSmZRetrHook',
+            'ModSmZRetrHookDep', 'ModGlottalStop', 'ModRevGlottalStop'
+        ]
+        base_lst = []
+        for x in base_name_lst:
+            try: base_lst.append(builder.char(x).uid)
+            except: pass
+        builder.render_lists(base_lst, diac_lst, ftml, keyUID=diac_lst[0])
+        ftml.closeTestGroup()
+
         # ftml.startTestGroup('Special case - cv75')
         # ftml.clearFeatures()
         # # comb_circumflex, comb_acute, space, a, comb_circumflex, comb_acute
