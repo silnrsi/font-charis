@@ -909,7 +909,6 @@ LtnSmECedilla.sc = LtnSmE.sc + CombCedilla@H
 LtnSmECedillaBreve.sc = LtnSmE.sc + CombCedilla@H + CombBreve@LtnSmE.sc:U
 LtnSmEOgonek.sc = LtnSmE.sc + CombOgonek@O
 LtnSmEOgonek.RetroHook.sc = LtnSmE.sc + CombOgonek.RetroHook@L
-CySmAbkhasCheDesc.sc = CySmAbkhasChe.sc + CombOgonek.Lrg@O
 CySmSchwa.sc = LtnSmSchwa.sc
 CySmSchwaDiaer.sc = LtnSmSchwa.sc + CombDiaer@U
 CySmZeDiaer.sc = CySmZe.sc + CombDiaer@U
