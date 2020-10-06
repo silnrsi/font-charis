@@ -221,6 +221,12 @@ class FTMLBuilder_LCG(FB.FTMLBuilder):
                 else:
                     self.logger.log('Glyph with "ss01" found without "SmA" or "SmG"', "W")
 
+        # cv91 - tone numbers
+        self.features.setdefault('cv91', FB.Feature('cv91'))
+        for nm in ('TnLtr1', 'TnLtr2', 'TnLtr3', 'TnLtr4', 'TnLtr5'):
+            c = self.char(nm)
+            c.feats.add('cv91')
+
         # We're finally done, but if allLangs is a set, let's order it (for lack of anything better) and make a list:
         if not self._langsComplete:
             self.allLangs = list(sorted(self.allLangs))
