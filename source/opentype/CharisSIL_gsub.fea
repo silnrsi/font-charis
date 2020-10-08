@@ -86,12 +86,13 @@ lookup ss_sub {
 
 lookup ss_ctx {
   lookupflag 0;
-    sub @c_superscripts' @cno_Sup' lookup ss_sub;
+    sub @c_superscripts @cno_Sup' lookup ss_sub;
 } ss_ctx;
 
 lookup sc1_sub {
   lookupflag 0;
-    sub @cno_sc by @c_sc;
+    # sub @cno_sc by @c_sc;
+    sub @cno_smcp by @c_smcp;
     sub LtnSmRBar by LtnSmRBarredStem.sc;
     sub CySmPalochka by CyPalochka.sc;
     sub LtnSmTurnedE by LtnSmRevE.sc;

@@ -11,12 +11,13 @@ import re
 import silfont.ufo as ufo
 from silfont.core import execute
 
-class_spec_lst = [('lit', 'SngStory', 'SngBowl'),
+class_spec_lst = [('smcp', 'sc'),
+                  ('lit', 'SngStory', 'SngBowl'),
                   ('lita', 'SngStory'),
                   ('litg', 'SngBowl'),
-                  # psfmakefea BarBowl classes wrongly map LtnSmG to LtnSmG.BarBowl
-                  ('barbowl', 'BarBowl'),  
                   ('sital', 'SItal', '2StorySItal'),
+                  # psfmakefea BarBowl classes wrongly map LtnSmG to LtnSmG.BarBowl
+                  ('barbowl', 'BarBowl'),
                   ('viet', 'VN'),
                   ('dotlss', 'Dotless'),
                   ('rtrhk', 'RetroHook'),
