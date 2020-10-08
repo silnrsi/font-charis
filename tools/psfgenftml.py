@@ -137,7 +137,7 @@ class FTMLBuilder_LCG(FB.FTMLBuilder):
                 # unencoded glyphs
                 c = uid = None
             # Examine APs to determine if this character takes marks
-            if c: c.checkGlyph(gname, font, self.apRE)
+            if c: self.checkGlyph(c, gname, font, self.apRE)
 
             # Process associated USVs
             # could be empty string, a single USV or space-separated list of USVs
@@ -156,7 +156,7 @@ class FTMLBuilder_LCG(FB.FTMLBuilder):
                 except:
                     self._csvWarning('associated USV %04X for glyph %s matches no encoded glyph' % (assoc_uid, gname))
                     c = None
-                # if c: c.checkGlyph(gname, font, self.apRE)
+                # if c: self.checkGlyph(c, gname, font, self.apRE)
             elif len(uidList) > 1:
                 # Handle ligatures
                 lig_encoding_ok = True
@@ -170,6 +170,7 @@ class FTMLBuilder_LCG(FB.FTMLBuilder):
                         c = self.special(gname)
                     except:
                         c = self.addSpecial(uidList, gname)
+                    self.checkGlyph(c, gname, font, self.apRE)
             else:
                 pass # glyphs with no associated USV field should be encoded ones
 
@@ -232,7 +233,32 @@ class FTMLBuilder_LCG(FB.FTMLBuilder):
             self.allLangs = list(sorted(self.allLangs))
             self.allLangs = list(sorted(self.allLangs))
 
-    def matchMarkBase(self, c_mark, c_base):
+    @staticmethod
+    def checkGlyph(char_special, gname, font, apRE):
+        # glean info from UFO if glyph is present
+        if gname in font.deflayer:
+            # TODO: either remove the below attribs from the ctor for FChar and keep this static method
+            #  or add them to FSpecial and move this static method there as an instance method
+            char_special.takesMarks = False
+            char_special.isMark = False
+            char_special.notInUFO = False
+            char_special.aps = set()
+
+            for a in font.deflayer[gname]['anchor'] :
+                name = a.element.get('name')
+                if apRE.match(name) is None:
+                    continue
+                char_special.aps.add(name)
+                if name.startswith("_") :
+                    char_special.isMark = True
+                else:
+                    char_special.takesMarks = True
+            char_special.isBase = char_special.takesMarks and not char_special.isMark
+        else:
+            char_special.notInUFO = True
+
+    @staticmethod
+    def matchMarkBase(c_mark, c_base):
         """ test whether an _AP on c_mark matches an AP on c_base """
         for apM in c_mark.aps:
             if apM.startswith("_"):
@@ -378,24 +404,37 @@ def doit(args):
     if test.lower().startswith("features"):
         # support for adding a diac after each char that is being tested
         # tests include: feature, feature_U, feature_L, feature_O, feature_H, feature_R
-        ap_type = None
+        ap_type, c_mark = None, None
         ix = test.find("_")
         if ix != -1:
             ap_type = test[ix + 1:]
+        if ap_type:
+            try: ap_uid = ap_type_uid[ap_type]
+            except KeyError: logger.log("Invalid AP type: %s" % ap_type, "S")
+            c_mark = builder.char(ap_uid)
 
         ftml.startTestGroup('Features from glyph_data')
 
         # build map from features (and all combinations) to the uids that are affected by a feature
         feats_to_uid = {}
-        for uid in builder.uids():
-            c = builder.char(uid)
-            feat_combs = chain.from_iterable(combinations(c.feats, r) for r in range(len(c.feats) + 1))
+        char_special_iter = chain([builder.char(uid) for uid in builder.uids()],
+              [builder.special(gname) for gname in builder.specials()])
+        for cs in char_special_iter:
+            feat_combs = chain.from_iterable(combinations(cs.feats, r) for r in range(len(cs.feats) + 1))
             for feats in feat_combs:
                 if not feats: continue
                 feats = sorted(feats)
                 feat_set = " ".join(feats)
-                try: feats_to_uid[feat_set].append(uid)
-                except KeyError: feats_to_uid[feat_set] = [uid]
+                if type(cs) is FB.FChar:
+                    feats_to_uid.setdefault(feat_set, []).append(cs.uid)
+                elif type(cs) is FB.FSpecial:
+                    # store ligatures as a list of uids and the glyph name
+                    #   store glyph name since no mapping from lig uids to glyph is kept in FSpecial
+                    lig = list(cs.uids)
+                    lig.append(cs.basename)
+                    feats_to_uid.setdefault(feat_set, []).append(lig)
+                else:
+                    pass
 
         # create tests for all uids affected by a feature, organized by features
         feats_sort = {} # sort based on number of features in combo
@@ -411,14 +450,6 @@ def doit(args):
                     continue # skip smcp test (but not interaction of smcp with other features); see "smcp" test
                 ftml.startTestGroup(f'{feat_set}')
 
-                uid_lst = sorted(feats_to_uid[feat_set]) # list of uids to test against feat combo
-                i = 0
-                uidlst_lst = []
-                uidlst_ct = 16 if not ap_type else 8
-                while i < len(uid_lst): # break uids into groups
-                    uidlst_lst.append(uid_lst[i:i + uidlst_ct])
-                    i += uidlst_ct
-
                 feats = feat_set.split(" ") # separate feat combo into feats
                 tvlist_lst = []
                 for feat in feats:
@@ -426,15 +457,25 @@ def doit(args):
                     tvlist_lst.append(tvlist) # build list of list of all value for each feat
                 p_lst = list(product(*tvlist_lst)) # find all combo of all values, MUST flatten the list of lists
 
-                for uidlst in uidlst_lst:
+                # list of uids to test against feat combo
+                uid_lst = sorted(feats_to_uid[feat_set], key=lambda x: x[0] if type(x) is list else x)
+                uid_char_lst = [u for u in uid_lst if type(u) is int]
+                uid_lig_lst = [u for u in uid_lst if type(u) is list]
+
+                # break uids into groups
+                uidlst_ct = 16 if not ap_type else 8
+
+                # generate ftml for all chars associated with the features
+                uidlst_lst = [uid_char_lst[i:i+uidlst_ct] for i in range(0, len(uid_char_lst), uidlst_ct)]
+                for uidlst in uidlst_lst: #uidlst contains uids to test
                     base_diac_lst, base_lst = [], []
                     if not ap_type:
+                        # features test (no '_<AP>')
                         base_diac_lst, base_lst = uidlst, uidlst
                     else:
-                        try: ap_uid = ap_type_uid[ap_type]
-                        except KeyError: logger.log("Invalid AP type: %s" % ap_type, "S")
+                        # features_U, features_L, etc. tests
                         for uid in uidlst:
-                            c_base, c_mark = builder.char(uid), builder.char(ap_uid)
+                            c_base = builder.char(uid)
                             if builder.matchMarkBase(c_mark, c_base):
                                 base_lst.append(uid)
                                 base_diac_lst.extend((uid, ap_uid))
@@ -443,6 +484,34 @@ def doit(args):
                     for tv_lst in p_lst: # for one list of values out of all lists of values
                         ftml.setFeatures(tv_lst)
                         builder.render(base_diac_lst, ftml, descUIDs=base_lst)
+
+                # generate ftml for all ligatures associated with the features
+                #   the ligature sequence is followed by a space
+                liglst_lst = [uid_lig_lst[i:i+uidlst_ct] for i in range(0, len(uid_lig_lst), uidlst_ct)]
+                for liglst in liglst_lst: # liglst contains lists of uids & name to tests
+                    lig_lst, lig_diac_lst = [], []
+                    for lig in liglst: # lig is alist of uids & name
+                        if not ap_type:
+                            # 'features test (no '_<AP>')
+                            lig_lst.extend(lig[0:-1])
+                            lig_lst.append(ord(' '))
+                            lig_diac_lst.extend(lig[0:-1])
+                            lig_diac_lst.append(ord(' '))
+                        else:
+                            # features_U, features_L, etc. tests
+                            c_base = builder.special(lig[-1])
+                            if builder.matchMarkBase(c_mark, c_base):
+                                lig_lst.extend(lig[0:-1])
+                                lig_lst.append(ord(' '))
+                                lig_diac_lst.extend(lig[0:-1])
+                                lig_diac_lst.append(ap_uid) # add AP based on type of features_<AP> test
+                                lig_diac_lst.append(ord(' '))
+                    lig_lst, lig_diac_lst = lig_lst[0:-1], lig_diac_lst[0:-1] # trim trailing spaces
+                    ftml.clearFeatures()
+                    builder.render(lig_diac_lst, ftml, descUIDs=lig_lst) # render all uids without feat setting
+                    for tv_lst in p_lst: # for one list of values out of all lists of values
+                        ftml.setFeatures(tv_lst)
+                        builder.render(lig_diac_lst, ftml, descUIDs=lig_lst)
 
     if test.lower().startswith("smcp"):
         # TODO: improve test for "c2sc" ?
