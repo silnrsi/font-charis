@@ -626,6 +626,7 @@ def doit(args):
 
         ftml.startTestGroup('Dot removal')
         diac_lst = [0x301] #comb_acute
+        # the below glyph list was copied from classes.xml and massaged into Python format
         base_name_lst = ['CySmByelorusUkrainI', 'CySmJe', 'LtnSmI', 'LtnSmI.SItal', 'LtnSmI.sc', 'LtnSmIOgonek',
                     'LtnSmIRetrHook', 'LtnSmIStrk', 'LtnSmJ', 'LtnSmJCrossedTail', 'LtnSmJStrk',
                     'LtnSubSmI', 'LtnSubSmJ', 'LtnSupSmI', 'LtnSupSmIStrk', 'ModSmJ', 'ModSmJCrossedTail']
@@ -634,10 +635,13 @@ def doit(args):
             try: base_lst.append(builder.char(x).uid)
             except: pass
         builder.render_lists(base_lst, diac_lst, ftml, keyUID=diac_lst[0])
+        builder.render_lists(base_lst, diac_lst, ftml, feature_lst=builder.features['smcp'].tvlist[1:], keyUID=diac_lst[0])
+        builder.render_lists(base_lst, diac_lst, ftml, feature_lst=builder.features['ss05'].tvlist[1:], keyUID=diac_lst[0])
         ftml.closeTestGroup()
 
         ftml.startTestGroup('Superscript diacritics')
         diac_lst = [0x308] #CombDiaer.Sup
+        # the below glyph list was copied from classes.xml and massaged into Python format
         base_name_lst = [
             'GrSubSmBeta', 'GrSubSmChi', 'GrSubSmGamma', 'GrSubSmPhi', 'GrSubSmRho', 'LtnSubSmA',
             'LtnSubSmA.SngStory', 'LtnSubSmE', 'LtnSubSmH', 'LtnSubSmI', 'LtnSubSmI.Dotless', 'LtnSubSmJ',
