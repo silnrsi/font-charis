@@ -1762,5 +1762,37 @@ U+A734" stylename="c2sc_1">
       <comment>LtnCapOODigraph</comment>
       <string>\u00A74E\u000327</string>
     </test>
+    <test label="U+0066
+U+0069
+U+0020
+U+0066
+U+006C
+U+0020
+U+0066
+U+0066
+U+0069
+U+0020
+U+0066
+U+0066
+U+006C">
+      <comment>LtnSmF LtnSmI Space LtnSmF LtnSmL Space LtnSmF LtnSmF LtnSmI Space LtnSmF LtnSmF LtnSmL</comment>
+      <string>fi\u000327 fl\u000327 ffi\u000327 ffl\u000327</string>
+    </test>
+    <test label="U+0066
+U+0069
+U+0020
+U+0066
+U+006C
+U+0020
+U+0066
+U+0066
+U+0069
+U+0020
+U+0066
+U+0066
+U+006C" stylename="smcp_1">
+      <comment>LtnSmF LtnSmI Space LtnSmF LtnSmL Space LtnSmF LtnSmF LtnSmI Space LtnSmF LtnSmF LtnSmL</comment>
+      <string>fi\u000327 fl\u000327 ffi\u000327 ffl\u000327</string>
+    </test>
   </testgroup>
 </ftml>

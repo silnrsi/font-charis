@@ -184,10 +184,12 @@ U+1ED7" stylename="cv75_1">
   </testgroup>
   <testgroup label="cv76"/>
   <testgroup label="cv77"/>
+  <testgroup label="cv79"/>
   <testgroup label="cv80"/>
   <testgroup label="cv81"/>
   <testgroup label="cv82"/>
   <testgroup label="cv90"/>
+  <testgroup label="cv91"/>
   <testgroup label="cv98"/>
   <testgroup label="locl"/>
   <testgroup label="ss01">
@@ -552,6 +554,24 @@ U+1ECB" stylename="ss05_1">
     <test label="U+2C65" stylename="ss05_1">
       <comment>LtnSmAStrk</comment>
       <string>\u002C65\u000328</string>
+    </test>
+    <test label="U+0066
+U+0069
+U+0020
+U+0066
+U+0066
+U+0069">
+      <comment>LtnSmF LtnSmI Space LtnSmF LtnSmF LtnSmI</comment>
+      <string>fi\u000328 ffi\u000328</string>
+    </test>
+    <test label="U+0066
+U+0069
+U+0020
+U+0066
+U+0066
+U+0069" stylename="ss05_1">
+      <comment>LtnSmF LtnSmI Space LtnSmF LtnSmF LtnSmI</comment>
+      <string>fi\u000328 ffi\u000328</string>
     </test>
   </testgroup>
   <testgroup label="cv13 smcp"/>
@@ -1067,6 +1087,24 @@ U+1ECB
 U+2C65" stylename="smcp_1_ss05_1">
       <comment>LtnSmABreveAcute LtnSmABreveGrave LtnSmABreveHookAbv LtnSmABreveTilde LtnSmABreveDotBlw LtnSmIHookAbv LtnSmIDotBlw LtnSmAStrk</comment>
       <string>\u001EAF\u000328\u001EB1\u000328\u001EB3\u000328\u001EB5\u000328\u001EB7\u000328\u001EC9\u000328\u001ECB\u000328\u002C65\u000328</string>
+    </test>
+    <test label="U+0066
+U+0069
+U+0020
+U+0066
+U+0066
+U+0069">
+      <comment>LtnSmF LtnSmI Space LtnSmF LtnSmF LtnSmI</comment>
+      <string>fi\u000328 ffi\u000328</string>
+    </test>
+    <test label="U+0066
+U+0069
+U+0020
+U+0066
+U+0066
+U+0069" stylename="smcp_1_ss05_1">
+      <comment>LtnSmF LtnSmI Space LtnSmF LtnSmF LtnSmI</comment>
+      <string>fi\u000328 ffi\u000328</string>
     </test>
   </testgroup>
   <testgroup label="ss01 ss02">

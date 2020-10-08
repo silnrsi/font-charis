@@ -3198,5 +3198,43 @@ U+A7B3" stylename="c2sc_1">
       <comment>CySmGheStrkDesc</comment>
       <string>\u00F327\u000329</string>
     </test>
+    <test label="U+0066
+U+0069
+U+0020
+U+0066
+U+006C
+U+0020
+U+0066
+U+0066
+U+0069
+U+0020
+U+0066
+U+0066
+U+006C
+U+0020
+U+0066
+U+0066">
+      <comment>LtnSmF LtnSmI Space LtnSmF LtnSmL Space LtnSmF LtnSmF LtnSmI Space LtnSmF LtnSmF LtnSmL Space LtnSmF LtnSmF</comment>
+      <string>fi\u000329 fl\u000329 ffi\u000329 ffl\u000329 ff\u000329</string>
+    </test>
+    <test label="U+0066
+U+0069
+U+0020
+U+0066
+U+006C
+U+0020
+U+0066
+U+0066
+U+0069
+U+0020
+U+0066
+U+0066
+U+006C
+U+0020
+U+0066
+U+0066" stylename="smcp_1">
+      <comment>LtnSmF LtnSmI Space LtnSmF LtnSmL Space LtnSmF LtnSmF LtnSmI Space LtnSmF LtnSmF LtnSmL Space LtnSmF LtnSmF</comment>
+      <string>fi\u000329 fl\u000329 ffi\u000329 ffl\u000329 ff\u000329</string>
+    </test>
   </testgroup>
 </ftml>

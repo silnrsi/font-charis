@@ -501,6 +501,7 @@ U+0165" stylename="cv77_1">
       <string>\u00010F\u000329\u00013D\u000329\u00013E\u000329\u000165\u000329</string>
     </test>
   </testgroup>
+  <testgroup label="cv79"/>
   <testgroup label="cv80">
     <test label="U+042D
 U+044D">
@@ -525,6 +526,7 @@ U+044D" stylename="cv80_1">
   </testgroup>
   <testgroup label="cv82"/>
   <testgroup label="cv90"/>
+  <testgroup label="cv91"/>
   <testgroup label="cv98"/>
   <testgroup label="locl">
     <test label="U+0431
@@ -1034,6 +1036,44 @@ U+A75F
 U+F327" stylename="ss05_1">
       <comment>LtnSmAStrk LtnSmLHighBar LtnSmVDiagStrk CySmGheStrkDesc</comment>
       <string>\u002C65\u000329\u00A749\u000329\u00A75F\u000329\u00F327\u000329</string>
+    </test>
+    <test label="U+0066
+U+0069
+U+0020
+U+0066
+U+006C
+U+0020
+U+0066
+U+0066
+U+0069
+U+0020
+U+0066
+U+0066
+U+006C
+U+0020
+U+0066
+U+0066">
+      <comment>LtnSmF LtnSmI Space LtnSmF LtnSmL Space LtnSmF LtnSmF LtnSmI Space LtnSmF LtnSmF LtnSmL Space LtnSmF LtnSmF</comment>
+      <string>fi\u000329 fl\u000329 ffi\u000329 ffl\u000329 ff\u000329</string>
+    </test>
+    <test label="U+0066
+U+0069
+U+0020
+U+0066
+U+006C
+U+0020
+U+0066
+U+0066
+U+0069
+U+0020
+U+0066
+U+0066
+U+006C
+U+0020
+U+0066
+U+0066" stylename="ss05_1">
+      <comment>LtnSmF LtnSmI Space LtnSmF LtnSmL Space LtnSmF LtnSmF LtnSmI Space LtnSmF LtnSmF LtnSmL Space LtnSmF LtnSmF</comment>
+      <string>fi\u000329 fl\u000329 ffi\u000329 ffl\u000329 ff\u000329</string>
     </test>
   </testgroup>
   <testgroup label="cv13 smcp">
@@ -1894,6 +1934,44 @@ U+A75F
 U+F327" stylename="smcp_1_ss05_1">
       <comment>LtnSmLHighBar LtnSmVDiagStrk CySmGheStrkDesc</comment>
       <string>\u00A749\u000329\u00A75F\u000329\u00F327\u000329</string>
+    </test>
+    <test label="U+0066
+U+0069
+U+0020
+U+0066
+U+006C
+U+0020
+U+0066
+U+0066
+U+0069
+U+0020
+U+0066
+U+0066
+U+006C
+U+0020
+U+0066
+U+0066">
+      <comment>LtnSmF LtnSmI Space LtnSmF LtnSmL Space LtnSmF LtnSmF LtnSmI Space LtnSmF LtnSmF LtnSmL Space LtnSmF LtnSmF</comment>
+      <string>fi\u000329 fl\u000329 ffi\u000329 ffl\u000329 ff\u000329</string>
+    </test>
+    <test label="U+0066
+U+0069
+U+0020
+U+0066
+U+006C
+U+0020
+U+0066
+U+0066
+U+0069
+U+0020
+U+0066
+U+0066
+U+006C
+U+0020
+U+0066
+U+0066" stylename="smcp_1_ss05_1">
+      <comment>LtnSmF LtnSmI Space LtnSmF LtnSmL Space LtnSmF LtnSmF LtnSmI Space LtnSmF LtnSmF LtnSmL Space LtnSmF LtnSmF</comment>
+      <string>fi\u000329 fl\u000329 ffi\u000329 ffl\u000329 ff\u000329</string>
     </test>
   </testgroup>
   <testgroup label="ss01 ss02">
