@@ -88,10 +88,11 @@ smallcaps {
 	bool
 }
 
-literacy {
-	id = "ss01";
-	id.hidden = "litr";
-	name.1033 = string("Literacy alternates");
+// keep litr feature in Graphite for backwards compatibility
+//   since ss01 will behave like the OT feature
+literacy_old {
+	id = "litr";
+	name.1033 = string("Literacy alternates legacy");
 #if (ANDIKAfamily)
 	boolWDefTrue
 #else
@@ -99,30 +100,33 @@ literacy {
 #endif // !ANDIKAfamily
 	// to create the hacked literacy font, use this line instead:
 	////boolWDefTrue
+}
+
+literacy {
+	id = "ss01";
+	// id.hidden = "litr";
+	name.1033 = string("Literacy alternates");
+	bool // default is false
 }
 
 literacy_a {
-	id = "ss02";
 	name.1033 = string("Literacy a alternates");
 #if (ANDIKAfamily)
-	boolWDefTrue
+	id = "ss13";
 #else
-	bool // default is false
+	id = "ss11";
 #endif // !ANDIKAfamily
-	// to create the hacked literacy font, use this line instead:
-	////boolWDefTrue
+	bool // default is false
 }
 
 literacy_g {
-	id = "ss03";
 	name.1033 = string("Literacy g alternates");
 #if (ANDIKAfamily)
-	boolWDefTrue
+	id = "ss14";
 #else
-	bool // default is false
+	id = "ss12";
 #endif // !ANDIKAfamily
-	// to create the hacked literacy font, use this line instead:
-	////boolWDefTrue
+	bool // default is false
 }
 
 slant_italic {
@@ -550,11 +554,29 @@ v_hook {
 	}
 }
 
+// keep Y_hk feature in Graphite for backwards compatibility
+//   since cv68 will behave like the OT feature
+
+y_hook_old {
+	id = "Y_hk";
+	name.1033 = string("Capital Y-hook alternate legacy");
+	default = right_hook;
+	settings {
+		left_hook {
+			value = 0;
+			name.1033 = string("Left hook");
+		}
+		right_hook {
+			value = 1;
+			name.1033 = string("Right hook");
+		}
+	}
+}
+
 y_hook {
 	id = "cv68";
-	id.hidden = "Y_hk";
 	name.1033 = string("Capital Y-hook alternate");
-	default = right_hook;
+	default = left_hook;
 	settings {
 		left_hook {
 			value = 0;

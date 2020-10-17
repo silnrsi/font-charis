@@ -493,10 +493,10 @@ feature aalt {
   feature cv91;
   feature cv98;
   feature ss01;
-  feature ss02;
-  feature ss03;
   feature ss04;
   feature ss05;
+  feature ss11; #non-Andika
+  feature ss12; #non-Andika
 } aalt;
 
 feature ccmp {
@@ -1317,21 +1317,21 @@ feature ss01 {
   lookup lit_sub;
 } ss01;
 
-feature ss02 {
+feature ss11 {
   featureNames {
     name 3 1 0x409 "Literacy a alternates";
   };
 
   lookup lita_sub;
-} ss02;
+} ss11;
 
-feature ss03 {
+feature ss12 {
   featureNames {
     name 3 1 0x409 "Literacy g alternates";
   };
 
   lookup litg_sub;
-} ss03;
+} ss12;
 
 feature ss04 {
   featureNames {

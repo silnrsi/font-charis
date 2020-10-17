@@ -204,21 +204,24 @@ class FTMLBuilder_LCG(FB.FTMLBuilder):
                         self._csvWarning('untestable langs: no known USV')
 
         # set default values for features where the default is non-zero
-        if fontcode == 'A':
-            self.features['ss01'].default = 1
-        self.features['cv68'].default = 1
+        # This doesn't happen now that Graphite features use the same identifiers as OpenType
+        # if whichfont == 'a':
+        #     self.features['ss01'].default = 1
+        # self.features['cv68'].default = 1
 
         # add features that are not present in glyph_data.csv
-        # ss01 - lit; ss02 - lita; ss03 - litg
-        self.features.setdefault('ss02', FB.Feature('ss02'))
-        self.features.setdefault('ss03', FB.Feature('ss03'))
+        # ss01 - lit
+        # ss11 (CDG), ss13 (A) - lita; ss12, ss14 - litg
+        lita, litg = ('ss11', 'ss12') if whichfont in 'cdg' else ('ss13', 'ss14')
+        self.features.setdefault(lita, FB.Feature(lita))
+        self.features.setdefault(litg, FB.Feature(litg))
         for uid in self.uids():
             c = self.char(uid)
-            if "ss01" in c.feats:
+            if "ss01" in c.feats: # ss01 specified in glyph_data
                 if re.search("SmA", c.basename):
-                    c.feats.add("ss02")
+                    c.feats.add(lita)
                 elif re.search("SmG", c.basename):
-                    c.feats.add("ss03")
+                    c.feats.add(litg)
                 else:
                     self.logger.log('Glyph with "ss01" found without "SmA" or "SmG"', "W")
 
@@ -617,10 +620,19 @@ def doit(args):
         ftml.startTestGroup('Special case - cv79 (NFC)')
         # cv79 - Kayan grave_acute
         kayan_diac_lst = [0x0301] # comb_acute
-        kayan_base_name_lst = ['LtnSmAGrave', 'LtnSmEGrave', 'LtnSmIGrave', 'LtnSmOGrave', 'LtnSmNGrave', 'LtnSmUGrave',
-                          'LtnSmWGrave', 'LtnSmYGrave', 'LtnCapAGrave', 'LtnCapEGrave', 'LtnCapIGrave',
-                          'LtnCapOGrave', 'LtnCapNGrave', 'LtnCapUGrave', 'LtnCapWGrave', 'LtnCapYGrave']
-        kayan_base_lst = [builder.char(x).uid for x in kayan_base_name_lst]
+        kayan_base_name_lst = ['LtnSmAGrave', 'LtnSmAGrave.SngStory', 'LtnSmEGrave', 'LtnSmIGrave', 'LtnSmOGrave',
+                            'LtnSmNGrave', 'LtnSmUGrave', 'LtnSmWGrave', 'LtnSmYGrave', 'LtnCapAGrave', 'LtnCapEGrave',
+                            'LtnCapIGrave', 'LtnCapOGrave', 'LtnCapNGrave', 'LtnCapUGrave', 'LtnCapWGrave',
+                            'LtnCapYGrave']
+        # try: kayan_base_lst = [builder.char(x).uid for x in kayan_base_name_lst]
+        # except KeyError as key_exc: logger.log('glyph missing: {}'.format(key_exc), 'W')
+        kayan_base_lst = []
+        for base in kayan_base_name_lst:
+            # TODO: fix this kludgy way of handling Andika's encoding of literacy glyphs
+            # LtnSmAGrave.SngStory will raise an exception in non-Andika fonts
+            #   LtnSmAGrave will do the same in Andika
+            try: kayan_base_lst.append(builder.char(base).uid)
+            except KeyError as key_exc: logger.log('glyph missing: {}'.format(key_exc), 'W')
         builder.render_lists(kayan_base_lst, kayan_diac_lst, ftml, [('cv79','1')], keyUID=kayan_diac_lst[0])
         ftml.closeTestGroup()
 
