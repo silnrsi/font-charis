@@ -27,12 +27,4 @@ psfbuildcomp -i source/composites.txt -c -n source/CharisSIL-BoldItalic.ufo -p b
 echo "-----Syncing glyph orders, psnames, and other metadata to other UFOs..."
 psfsyncmasters -q source/CharisSILRoman.designspace source/CharisSILItalic.designspace
 
-# Fix problem with non-spacing marks due to glyphsLib bug
-echo "-----Fixing width of non-spacing marks..."
-psfremovegliflibkeys -q source/CharisSIL-Regular.ufo com.schriftgestaltung.Glyphs.originalWidth      &
-psfremovegliflibkeys -q source/CharisSIL-Bold.ufo com.schriftgestaltung.Glyphs.originalWidth        &
-psfremovegliflibkeys -q source/CharisSIL-Italic.ufo com.schriftgestaltung.Glyphs.originalWidth      &
-psfremovegliflibkeys -q source/CharisSIL-BoldItalic.ufo com.schriftgestaltung.Glyphs.originalWidth  &
-wait
-
 echo "-----Preflight completed!"
