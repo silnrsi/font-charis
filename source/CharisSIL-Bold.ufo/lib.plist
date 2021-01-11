@@ -1056,7 +1056,7 @@
     <string>LtnCapHCedilla</string>
     <string>LtnCapHStrk</string>
     <string>LtnCapHStrk.VertStrk</string>
-    <string>ModCapHStrk</string>
+    <string>ModSmCapHDblStrk</string>
     <string>LtnCapHHook</string>
     <string>LtnCapHeng</string>
     <string>LtnCapHDesc</string>
@@ -9677,8 +9677,6 @@
     <string>uni1D33</string>
     <key>ModCapH</key>
     <string>uni1D34</string>
-    <key>ModCapHStrk</key>
-    <string>uniA7F8</string>
     <key>ModCapI</key>
     <string>uni1D35</string>
     <key>ModCapJ</key>
@@ -9865,6 +9863,8 @@
     <string>uni1D9C</string>
     <key>ModSmCDep</key>
     <string>uniF1B9</string>
+    <key>ModSmCapHDblStrk</key>
+    <string>uniA7F8</string>
     <key>ModSmCapIStrk</key>
     <string>uni1DA7</string>
     <key>ModSmCapIStrkDep</key>
