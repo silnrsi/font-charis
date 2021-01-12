@@ -878,7 +878,7 @@ g__cy_sm_shcha = glyphid(871) {US = point(822m, 1100m); LS = point(822m, -100m)}
 g__gr_sm_cap_pi = glyphid(872) {LS = point(601m, -100m); US = point(601m, 1100m)};
 g__cy_cap_en = glyphid(873) {US = point(761m, 1500m); LS = point(761m, -100m)};
 g__mod_cap_h = glyphid(874) {LS = point(499m, 725m); US = point(499m, 1650m)};
-g__mod_cy_cap_en = glyphid(875) {LS = point(499m, 725m); US = point(499m, 1650m)};
+g__mod_cy_sm_en = glyphid(875) {LS = point(499m, 725m); US = point(499m, 1650m)};
 g__ltn_sm_cap_h = glyphid(876) {LS = point(620m, -100m); US = point(620m, 1100m)};
 g__ltn_cap_h_circum = glyphid(877) {HS = point(320m, 0m); LS = point(761m, -100m); US = point(761m, 1900m)};
 g__ltn_cap_h_caron = glyphid(878) {US = point(761m, 1900m); LS = point(761m, -100m); HS = point(320m, 0m)};
@@ -889,7 +889,7 @@ g__ltn_cap_h_dot_blw = glyphid(882) {US = point(761m, 1500m); LS = point(761m, -
 g__ltn_cap_h_cedilla = glyphid(883) {LS = point(320m, -600m); US = point(761m, 1500m)};
 g__ltn_cap_h_strk = glyphid(884) {LS = point(761m, -100m); US = point(761m, 1500m)};
 g__ltn_cap_h_strk_vert_strk = glyphid(885) {LS = point(761m, -100m); US = point(761m, 1500m)};
-g__mod_cap_h_strk = glyphid(886) {US = point(500m, 1685m); LS = point(500m, 725m)};
+g__mod_sm_cap_h_dbl_strk = glyphid(886) {US = point(500m, 1685m); LS = point(500m, 725m)};
 g__ltn_cap_h_hook = glyphid(887) {LS = point(911m, -100m); US = point(911m, 1500m)};
 g__ltn_cap_heng = glyphid(888) {US = point(761m, 1500m); LS = point(761m, -500m)};
 g__ltn_cap_h_desc = glyphid(889) {LS = point(761m, -100m); US = point(761m, 1500m)};
@@ -4170,8 +4170,8 @@ cTakesLDia = (g__space, g__digit_zero, g__digit_one, g__digit_two, g__digit_thre
     g__cy_sm_shha, g__cy_sm_shha_u_c_style, g__cy_sm_ghe_middle_hook, g__cy_sm_shha_desc, g__cy_sm_en, g__cy_sm_lig_en_ghe, g__cy_sm_en_desc, g__cy_sm_en_tail,
     g__cy_sm_nje, g__cy_sm_en_hook, g__cy_sm_en_lft_hook, g__cy_sm_komi_nje, g__cy_sm_en_middle_hook, g__cy_sm_pe, g__cy_sm_pe_serb, g__cy_sm_pe_desc,
     g__cy_sm_pe_middle_hook, g__cy_sm_dzhe, g__cy_sm_tse, g__cy_sm_sha, g__cy_sm_shcha, g__gr_sm_cap_pi, g__cy_cap_en, g__mod_cap_h,
-    g__mod_cy_cap_en, g__ltn_sm_cap_h, g__ltn_cap_h_circum, g__ltn_cap_h_caron, g__ltn_cap_h_diaer, g__ltn_cap_h_dot_abv, g__ltn_cap_h_breve_blw, g__ltn_cap_h_dot_blw,
-    g__ltn_cap_h_cedilla, g__ltn_cap_h_strk, g__ltn_cap_h_strk_vert_strk, g__mod_cap_h_strk, g__ltn_cap_h_hook, g__ltn_cap_heng, g__ltn_cap_h_desc, g__ltn_cap_hwair,
+    g__mod_cy_sm_en, g__ltn_sm_cap_h, g__ltn_cap_h_circum, g__ltn_cap_h_caron, g__ltn_cap_h_diaer, g__ltn_cap_h_dot_abv, g__ltn_cap_h_breve_blw, g__ltn_cap_h_dot_blw,
+    g__ltn_cap_h_cedilla, g__ltn_cap_h_strk, g__ltn_cap_h_strk_vert_strk, g__mod_sm_cap_h_dbl_strk, g__ltn_cap_h_hook, g__ltn_cap_heng, g__ltn_cap_h_desc, g__ltn_cap_hwair,
     g__ltn_cap_half_h, g__cy_cap_en_lft_hook, g__ltn_cap_turned_h, g__cy_cap_shha, g__cy_cap_ghe_middle_hook, g__cy_cap_shha_desc, g__cy_cap_lig_en_ghe, g__cy_cap_en_desc,
     g__cy_cap_en_tail, g__cy_cap_nje, g__cy_cap_en_hook, g__cy_cap_komi_nje, g__cy_cap_en_middle_hook, g__cy_cap_pe, g__cy_cap_pe_desc, g__cy_cap_pe_middle_hook,
     g__cy_cap_dzhe, g__cy_cap_tse, g__cy_cap_sha, g__cy_cap_shcha, g__ltn_sm_i_s_ital, g__cy_sm_byelorus_ukrain_i, g__ltn_sub_sm_i, g__ltn_sup_sm_i,
@@ -5023,9 +5023,9 @@ cTakesUDia = (g__space, g__hyphen_minus, g__digit_zero, g__digit_one, g__digit_t
     g__ltn_sm_h_desc, g__ltn_sm_hv, g__ltn_sm_half_h, g__ltn_sm_turned_h, g__mod_sm_turned_h, g__ltn_sm_turned_h_fishhook, g__ltn_sm_turned_h_fishhook_tail, g__cy_sm_shha,
     g__cy_sm_shha_u_c_style, g__cy_sm_ghe_middle_hook, g__cy_sm_shha_desc, g__cy_sm_en, g__cy_sm_lig_en_ghe, g__cy_sm_en_desc, g__cy_sm_en_tail, g__cy_sm_nje,
     g__cy_sm_en_hook, g__cy_sm_en_lft_hook, g__cy_sm_komi_nje, g__cy_sm_en_middle_hook, g__cy_sm_pe, g__cy_sm_pe_serb, g__cy_sm_pe_desc, g__cy_sm_pe_middle_hook,
-    g__cy_sm_dzhe, g__cy_sm_tse, g__cy_sm_sha, g__cy_sm_shcha, g__gr_sm_cap_pi, g__cy_cap_en, g__mod_cap_h, g__mod_cy_cap_en,
+    g__cy_sm_dzhe, g__cy_sm_tse, g__cy_sm_sha, g__cy_sm_shcha, g__gr_sm_cap_pi, g__cy_cap_en, g__mod_cap_h, g__mod_cy_sm_en,
     g__ltn_sm_cap_h, g__ltn_cap_h_circum, g__ltn_cap_h_caron, g__ltn_cap_h_diaer, g__ltn_cap_h_dot_abv, g__ltn_cap_h_breve_blw, g__ltn_cap_h_dot_blw, g__ltn_cap_h_cedilla,
-    g__ltn_cap_h_strk, g__ltn_cap_h_strk_vert_strk, g__mod_cap_h_strk, g__ltn_cap_h_hook, g__ltn_cap_heng, g__ltn_cap_h_desc, g__ltn_cap_hwair, g__ltn_cap_half_h,
+    g__ltn_cap_h_strk, g__ltn_cap_h_strk_vert_strk, g__mod_sm_cap_h_dbl_strk, g__ltn_cap_h_hook, g__ltn_cap_heng, g__ltn_cap_h_desc, g__ltn_cap_hwair, g__ltn_cap_half_h,
     g__cy_cap_en_lft_hook, g__ltn_cap_turned_h, g__cy_cap_shha, g__cy_cap_ghe_middle_hook, g__cy_cap_shha_desc, g__cy_cap_lig_en_ghe, g__cy_cap_en_desc, g__cy_cap_en_tail,
     g__cy_cap_nje, g__cy_cap_en_hook, g__cy_cap_komi_nje, g__cy_cap_en_middle_hook, g__cy_cap_pe, g__cy_cap_pe_desc, g__cy_cap_pe_middle_hook, g__cy_cap_dzhe,
     g__cy_cap_tse, g__cy_cap_sha, g__cy_cap_shcha, g__ltn_sm_i_s_ital, g__cy_sm_byelorus_ukrain_i, g__sm_rom_num_one, g__ltn_sub_sm_i, g__ltn_sup_sm_i,
