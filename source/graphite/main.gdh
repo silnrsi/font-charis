@@ -259,7 +259,7 @@ cModSuper = (g__mod_sm_h  g__mod_sm_h_hook  g__mod_sm_j  g__mod_sm_r  g__mod_sm_
 		g__mod_sm_j_crossed_tail  g__ltn_sup_sm_l_retr_hook  g__mod_sm_l_pal_hook  g__mod_sm_cap_l  g__mod_sm_m_hook  g__ltn_sup_sm_turned_m_lng_leg  g__ltn_sup_sm_n_lft_hook  g__mod_sm_n_retr_hook
 		g__mod_sm_cap_n  g__ltn_sup_sm_barred_o  g__mod_sm_phi  g__mod_sm_s_hook  g__ltn_sup_sm_esh  g__mod_sm_t_pal_hook  g__ltn_sup_sm_u_bar  g__ltn_sup_sm_upsilon
 		g__mod_sm_cap_u  g__mod_sm_v_hook  g__ltn_sup_sm_turned_v  g__ltn_sup_sm_z  g__mod_sm_z_retr_hook  g__ltn_sup_sm_z_curl  g__ltn_sup_sm_ezh  g__mod_sm_theta  g__ltn_sup_sm_i  g__ltn_sup_sm_n
-		g__ltn_sup_sm_i_dotless  g__mod_sm_j_dotless  g__ltn_sup_sm_i_strk_dotless  g__mod_sm_j_crossed_tail_dotless);
+		g__ltn_sup_sm_i_dotless  g__mod_sm_j_dotless  g__ltn_sup_sm_i_strk_dotless  g__mod_sm_j_crossed_tail_dotless g__mod_sm_cap_h_dbl_strk);
 
 // Modifier subscripts that require smaller diacritics:
 cModSub = (g__ltn_sub_sm_i  g__ltn_sub_sm_r  g__ltn_sub_sm_u  g__ltn_sub_sm_v  g__gr_sub_sm_beta  g__gr_sub_sm_gamma  g__gr_sub_sm_rho  g__gr_sub_sm_phi  g__gr_sub_sm_chi
@@ -963,7 +963,6 @@ endif;
 
 #endif // GENTIUMfont
 
-
 #if (ANDIKAfamily)
 
 if (zero == 1 || zero__dig0 == 1)
@@ -1058,6 +1057,14 @@ cno_LP  >  cLP  /  cTakesLPDiac  DIASTR4(cnUDiaX) ^ _ {lp_subclass == LP_DIACONL
 // Don't try to do low-profile stuff with small-caps.
 if ((low_profile_diac || low_profile_diac__lopr) && !smallcaps)
 	cno_LP  >  cLP  / ^ _;	// back up to handle dotless stuff
+endif;
+
+// Gentium features that interact with other features
+
+if (iota_subscript == 1)
+	cno_ISub  >  cISub;
+else
+	cISub  >  cno_ISub;
 endif;
 
 #endif // GENTIUMfont
