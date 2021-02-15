@@ -80,6 +80,50 @@ ChangeLog
 (This should list both major and minor changes, most recent first.)
 
 28 Feb 2021 (SIL NRSI team) Charis SIL version 5.960 (beta2)
+*This is still a beta version - use with care and not for*
+*any critical or time-sensitive projects!*
+
+Changes since version 5.950 (beta1):
+
+- Removed DSIGs added in version 5.000. These have now been removed to
+reflect current best practice font development guidance. Adobe InDesign
+will complain that fonts cannot be found if a document last saved with
+version 5.000 is opened with version 5.960 or later installed. It will
+be necessary to find/replace the fonts in the document using the command
+in the Type menu. Please also look over the document carefully to note
+any places where changes in the fonts have affected letterforms or spacing.
+
+- Graphite support is improved. Please let us know of any features that
+are not working properly.
+
+- Width of typographic spaces have been made more consistent to reflect
+common publishing industry usage. Note that this may affect line and page
+lengths. Affected spaces:
+    U+2000 EN QUAD (made width consistent)
+    U+2001 EM QUAD (made width consistent)
+    U+2007 FIGURE SPACE (made wider to match numerals in all styles)
+    U+2009 THIN SPACE (made narrower)
+    U+202F NARROW NO-BREAK SPACE (made narrower)
+
+- Fixed some small capital correspondences
+
+- Fixes and improvements to various glyphs:
+    U+02E4 MODIFIER LETTER SMALL REVERSED GLOTTAL STOP (form)
+    U+1AB3 COMBINING DOWNWARDS ARROW (position fixes since beta 1)
+    U+1D15 LATIN LETTER SMALL CAPITAL OU (form)
+    U+1D77 LATIN SMALL LETTER TURNED G (position)
+    U+1D78 MODIFIER LETTER CYRILLIC EN (form)
+    U+A76A LATIN CAPITAL LETTER ET
+    U+A76B LATIN SMALL LETTER ET
+    U+A76C LATIN CAPITAL LETTER IS
+    U+A76D LATIN SMALL LETTER IS
+    U+A77F LATIN SMALL LETTER TURNED INSULAR G (position)
+    U+A7F8 MODIFIER LETTER CAPITAL H WITH STROKE (form)
+
+- Remaining known issues in this release
+    There is no support for TypeTuner
+    There are no regional subsets
+
 
 31 Mar 2020 (SIL NRSI team) Charis SIL version 5.950 (beta1)
 *This is an early beta version of the next major release.*
