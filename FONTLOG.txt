@@ -82,6 +82,8 @@ ChangeLog
 28 Feb 2021 (SIL NRSI team) Charis SIL version 5.960 (beta2)
 *This is still a beta version - use with care and not for*
 *any critical or time-sensitive projects!*
+*We have tried to address all reported issues from beta1 in this beta,*
+*however some fixes may still be in process.*
 
 Changes since version 5.950 (beta1):
 
@@ -107,6 +109,9 @@ lengths. Affected spaces:
 
 - Fixed some small capital correspondences
 
+- Improved miscellaneous anchor positions, including the position of diacritics
+below glyphs with macrons below (e.g. U+1E0F LATIN SMALL LETTER D WITH LINE BELOW)
+
 - Fixes and improvements to various glyphs:
     U+02E4 MODIFIER LETTER SMALL REVERSED GLOTTAL STOP (form)
     U+1AB3 COMBINING DOWNWARDS ARROW (position fixes since beta 1)
@@ -121,6 +126,7 @@ lengths. Affected spaces:
     U+A7F8 MODIFIER LETTER CAPITAL H WITH STROKE (form)
 
 - Remaining known issues in this release
+    Tone letters (U+02E5..02E9) and related features are not working properly
     There is no support for TypeTuner
     There are no regional subsets
 
