@@ -247,6 +247,8 @@ class FTMLBuilder_LCG(FB.FTMLBuilder):
             if feature_lst is None:
                 ftml.closeTest()
                 for base in base_lst:
+                    # since keyUID is set to same non-zero value each call, uids will be added to same test
+                    # since len(uids) == 1, label will be set based on keyUID
                     self.render([base], ftml, keyUID=keyUID, descUIDs=descUIDs_lst)
             else:
                 ftml.closeTest()
@@ -286,7 +288,7 @@ class FTMLBuilder_LCG(FB.FTMLBuilder):
         if uidLen > 1:
             ftml.addToTest(keyUID, s, label=label, comment=comment)
         else:
-            ftml.addToTest(keyUID, s, comment=comment)
+            ftml.addToTest(keyUID, s, comment=comment) # label will be set based on keyUID
 
 def doit(args):
     logger = args.logger
@@ -566,8 +568,10 @@ def doit(args):
             builder.render(lig_diac_lst, ftml, descUIDs=lig_lst)
 
     if test.lower().startswith("diac"):
-        # A E H O a e i o
-        repBase = [x for x in [0x0041, 0x0045, 0x0048, 0x004F, 0x0061, 0x0065, 0x0069, 0x006F] if x in builder.uids()]
+        # A E H O a e i o modifier-small-letter-o
+        repBase = [x for x in [0x0041, 0x0045, 0x0048, 0x004F,
+                               0x0061, 0x0065, 0x0069, 0x006F,
+                               0x1D52] if x in builder.uids()]
 
         # Diac attachment:
         ftml.startTestGroup('Representative diacritics on all bases that take diacritics')
