@@ -49,7 +49,10 @@ for dspace in ('Roman', 'Italic'):
 #                        'source/graphite/pitches.gdh', 
 #                        'source/graphite/stddef.gdh')
 #                    ),
-                woff = woff(),
+                woff = woff('web/${DS:FILENAME_BASE}.woff',
+                    metadata=f'../source/{familyname}-WOFF-metadata.xml',
+                    cmd='psfwoffit -m ${SRC[1]} --woff ${TGT} --woff2 ${TGT}2 ${SRC[0]}'
+                    ),
                 version = VERSION,
 #                pdf=fret(params = '-r -oi')
                 )
