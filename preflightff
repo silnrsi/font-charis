@@ -22,4 +22,7 @@ psfbuildcomp -i source/composites.txt -c -n source/CharisSIL-BoldItalic.ufo -p b
 echo "-----Syncing glyph orders, psnames, and other metadata to other UFOs..."
 psfsyncmasters -q source/CharisSILRoman.designspace source/CharisSILItalic.designspace
 
+echo "-----Updating woff metadata file..."
+psfmakewoffmetadata -q -n "CharisSIL" -i "org.sil.fonts" source/CharisSIL-Regular.ufo
+
 echo "-----Preflight completed!"
