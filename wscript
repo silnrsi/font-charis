@@ -29,7 +29,7 @@ for dspace in ('Roman', 'Italic'):
                 target = process('${DS:FILENAME_BASE}.ttf', 
                     cmd('psfchangettfglyphnames ${SRC} ${DEP} ${TGT}', ['${DS:FILE}'])),
                 instances = ['Charis SIL Regular'] if '--quick' in opts else None,
-                ap = 'source/${DS:FILENAME_BASE}_ap.xml',
+#                ap = 'source/${DS:FILENAME_BASE}_ap.xml',
 #                classes = 'source/${DS:FAMILYNAME_NOSPC}_classes.xml', # fails for Gentium Book
                 classes = 'source/{}_classes.xml'.format(familyname),
                 opentype = fea('source/${DS:FILENAME_BASE}.fea',
@@ -41,14 +41,14 @@ for dspace in ('Roman', 'Italic'):
                         'source/opentype/{}_gdef.fea'.format(familyname)),
                     to_ufo = 'True' # copies to instance UFOs
                     ),
-                graphite = gdl('source/${DS:FILENAME_BASE}.gdl',
-                    master = 'source/graphite/main.gdh',
-                    make_params = omitapps,
-                    params = '-e gdlerr-${DS:FILENAME_BASE}.txt',
-                    depends = ('source/graphite/features.gdh', 
-                        'source/graphite/pitches.gdh', 
-                        'source/graphite/stddef.gdh')
-                    ),
+#                graphite = gdl('source/${DS:FILENAME_BASE}.gdl',
+#                    master = 'source/graphite/main.gdh',
+#                    make_params = omitapps,
+#                    params = '-e gdlerr-${DS:FILENAME_BASE}.txt',
+#                    depends = ('source/graphite/features.gdh', 
+#                        'source/graphite/pitches.gdh', 
+#                        'source/graphite/stddef.gdh')
+#                    ),
                 woff = woff(),
                 version = VERSION,
 #                pdf=fret(params = '-r -oi')
