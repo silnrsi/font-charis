@@ -22,12 +22,17 @@ opts = preprocess_args({'opt': '--quick'})
 omitapps = '--omitaps "C L11 L12 L13 L21 L22 L23 L31 L32 L33 ' + \
                 'C11 C12 C13 C21 C22 C23 C31 C32 C33 U11 U12 U13 U21 U22 U23 U31 U32 U33"'
 
+cmds = []
+cmds.append(cmd('psfchangettfglyphnames ${SRC} ${DEP} ${TGT}', ['${DS:FILE}']))
+cmds.append(cmd('${TTFAUTOHINT} -n -W ${DEP} ${TGT}'))
+
 for dspace in ('Roman', 'Italic'):
 #for dspace in ('Roman',):
 #for dspace in ('Italic',):
     designspace('source/' + familyname + dspace + '.designspace',
-                target = process('${DS:FILENAME_BASE}.ttf', 
-                    cmd('psfchangettfglyphnames ${SRC} ${DEP} ${TGT}', ['${DS:FILE}'])),
+#                target = process('${DS:FILENAME_BASE}.ttf', 
+#                    cmd('psfchangettfglyphnames ${SRC} ${DEP} ${TGT}', ['${DS:FILE}'])),
+                target = process('${DS:FILENAME_BASE}.ttf', *cmds),
                 instances = ['Charis SIL Regular'] if '--quick' in opts else None,
 #                ap = 'source/${DS:FILENAME_BASE}_ap.xml',
 #                classes = 'source/${DS:FAMILYNAME_NOSPC}_classes.xml', # fails for Gentium Book
@@ -56,3 +61,6 @@ for dspace in ('Roman', 'Italic'):
                 version = VERSION,
 #                pdf=fret(params = '-r -oi')
                 )
+
+def configure(ctx):
+    ctx.find_program('ttfautohint')

@@ -127,6 +127,8 @@ below glyphs with macrons below (e.g. U+1E0F LATIN SMALL LETTER D WITH LINE BELO
     U+A77F LATIN SMALL LETTER TURNED INSULAR G (position)
     U+A7F8 MODIFIER LETTER CAPITAL H WITH STROKE (form)
 
+- Applied new hinting techniques to try to improve screen rendering on Windows
+
 - Remaining known issues in this release
     Tone letters (U+02E5..02E9) and related features are not working properly
     There is no support for TypeTuner
