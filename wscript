@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 # this is a smith configuration file
 
-# output folders use smith defaults and don't need to be set here
+# set the default output folders for release docs
+DOCDIR = ["documentation", "web"]
 
-# set some default folders (most are already set by default)
 #STANDARDS = 'references/v5'
 STANDARDS = 'references/b1'
 
