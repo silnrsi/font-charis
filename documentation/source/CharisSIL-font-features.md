@@ -3,7 +3,7 @@ title: Charis SIL Font Features
 fontversion: 5.960 beta2
 ---
 
-Charis SIL is an OpenType-enabled font that supports the Latin and Cyrillic scripts. It includes a number of optional features that may be useful or required for particular uses or languages. These OpenType features are primarily specified using four-letter tags (e.g. 'cv17'), although some applications may provide a direct way to control certain common features such as small caps. This document lists all the available features.
+Charis SIL is an OpenType-enabled font family that supports the Latin and Cyrillic scripts. It includes a number of optional features that may be useful or required for particular uses or languages. These OpenType features are primarily specified using four-letter tags (e.g. 'cv17'), although some applications may provide a direct way to control certain common features such as small caps. This document lists all the available features.
 
 To learn how to access these features for web pages or in individual apps, please see [Using Font Features](Using-font-features.html).
 
@@ -326,7 +326,7 @@ Cyrillic-style | <span class='charis-cv82-R normal'>anything with ◌̆ (Ә̆ә�
 
 #### Serbian Cyrillic alternates
 
-*These alternate forms mainly affect italic styles. Unlike other features this is activated by tagging the span of text as being in the Serbian language.*
+*These alternate forms mainly affect italic styles. Unlike other features this is activated by tagging the span of text as being in the Serbian language, not by turning on an OpenType feature.*
 
 <span class='affects'>Affects: U+0431 U+0433 U+0434 U+043F U+0442</span>
 

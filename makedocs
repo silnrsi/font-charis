@@ -1,0 +1,7 @@
+#!/bin/sh
+
+echo "-----Rebuilding documentation..."
+echo "     > CharisSIL-font-features.html"
+pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/CharisSIL-font-features.md -o documentation/CharisSIL-font-features.html
+
+echo "-----Completed!"

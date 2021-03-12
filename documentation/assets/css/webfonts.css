@@ -52,6 +52,3 @@ Copyright (c) 1997-2021 SIL International (http://www.sil.org/) with Reserved Fo
 .charis-cv90-R { font-family: CharisSIL-R; font-feature-settings: "cv90" 1; }
 .charis-cv91-R { font-family: CharisSIL-R; font-feature-settings: "cv91" 1; }
 .charis-cv70-R { font-family: CharisSIL-R; font-feature-settings: "cv70" 1; }
-
-/* Serbian needs something different */
-.charis-serb-I { font-family: CharisSIL-I; font-feature-settings: "locl" 0; }
