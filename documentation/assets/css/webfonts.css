@@ -1,0 +1,57 @@
+/*
+This file is from the Charis SIL project (https://software.sil.org/charis/).
+Copyright (c) 1997-2021 SIL International (http://www.sil.org/) with Reserved Font Names "Charis" and "SIL". This Font Software is licensed under the SIL Open Font License, Version 1.1 (http://scripts.sil.org/OFL).
+*/
+@font-face {
+    font-family: CharisSIL-R;
+    src: url("../../../web/CharisSIL-Regular.woff2") format("woff2");
+}
+@font-face {
+    font-family: CharisSIL-I;
+    src: url("../../../web/CharisSIL-Italic.woff2") format("woff2");
+}
+.charis-dflt-R { font-family: CharisSIL-R; }
+.charis-dflt-I { font-family: CharisSIL-I; }
+.charis-smcp-R { font-family: CharisSIL-R; font-feature-settings: "smcp" 1; }
+.charis-c2sc-R { font-family: CharisSIL-R; font-feature-settings: "c2sc" 1; }
+.charis-ss01-R { font-family: CharisSIL-R; font-feature-settings: "ss01" 1; }
+.charis-ss11-R { font-family: CharisSIL-R; font-feature-settings: "ss11" 1; }
+.charis-ss12-R { font-family: CharisSIL-R; font-feature-settings: "ss12" 1; }
+.charis-ss04-R { font-family: CharisSIL-R; font-feature-settings: "ss04" 1; }
+.charis-ss05-I { font-family: CharisSIL-I; font-feature-settings: "ss05" 1; }
+.charis-cv13-R { font-family: CharisSIL-R; font-feature-settings: "cv13" 1; }
+.charis-cv17-R { font-family: CharisSIL-R; font-feature-settings: "cv17" 1; }
+.charis-cv28-R { font-family: CharisSIL-R; font-feature-settings: "cv28" 1; }
+.charis-cv37-R { font-family: CharisSIL-R; font-feature-settings: "cv37" 1; }
+.charis-cv43-1-R { font-family: CharisSIL-R; font-feature-settings: "cv43" 1; }
+.charis-cv43-2-R { font-family: CharisSIL-R; font-feature-settings: "cv43" 2; }
+.charis-cv43-3-R { font-family: CharisSIL-R; font-feature-settings: "cv43" 3; }
+.charis-cv44-R { font-family: CharisSIL-R; font-feature-settings: "cv44" 1; }
+.charis-cv46-R { font-family: CharisSIL-R; font-feature-settings: "cv46" 1; }
+.charis-cv47-R { font-family: CharisSIL-R; font-feature-settings: "cv47" 1; }
+.charis-cv49-R { font-family: CharisSIL-R; font-feature-settings: "cv49" 1; }
+.charis-cv55-R { font-family: CharisSIL-R; font-feature-settings: "cv55" 1; }
+.charis-cv57-R { font-family: CharisSIL-R; font-feature-settings: "cv57" 1; }
+.charis-cv62-1-R { font-family: CharisSIL-R; font-feature-settings: "cv62" 1; }
+.charis-cv62-2-R { font-family: CharisSIL-R; font-feature-settings: "cv62" 2; }
+.charis-cv68-R { font-family: CharisSIL-R; font-feature-settings: "cv68" 1; }
+.charis-cv20-R { font-family: CharisSIL-R; font-feature-settings: "cv20" 1; }
+.charis-cv19-R { font-family: CharisSIL-R; font-feature-settings: "cv19" 1; }
+.charis-cv25-1-R { font-family: CharisSIL-R; font-feature-settings: "cv25" 1; }
+.charis-cv25-2-R { font-family: CharisSIL-R; font-feature-settings: "cv25" 2; }
+.charis-cv75-R { font-family: CharisSIL-R; font-feature-settings: "cv75" 1; }
+.charis-cv79-R { font-family: CharisSIL-R; font-feature-settings: "cv79" 1; }
+.charis-cv76-R { font-family: CharisSIL-R; font-feature-settings: "cv76" 1; }
+.charis-cv77-R { font-family: CharisSIL-R; font-feature-settings: "cv77" 1; }
+.charis-cv70-R { font-family: CharisSIL-R; font-feature-settings: "cv70" 1; }
+.charis-cv71-R { font-family: CharisSIL-R; font-feature-settings: "cv71" 1; }
+.charis-cv98-R { font-family: CharisSIL-R; font-feature-settings: "cv98" 1; }
+.charis-cv80-R { font-family: CharisSIL-R; font-feature-settings: "cv80" 1; }
+.charis-cv81-R { font-family: CharisSIL-R; font-feature-settings: "cv81" 1; }
+.charis-cv82-R { font-family: CharisSIL-R; font-feature-settings: "cv82" 1; }
+.charis-cv90-R { font-family: CharisSIL-R; font-feature-settings: "cv90" 1; }
+.charis-cv91-R { font-family: CharisSIL-R; font-feature-settings: "cv91" 1; }
+.charis-cv70-R { font-family: CharisSIL-R; font-feature-settings: "cv70" 1; }
+
+/* Serbian needs something different */
+.charis-serb-I { font-family: CharisSIL-I; font-feature-settings: "locl" 0; }

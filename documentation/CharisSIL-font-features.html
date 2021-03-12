@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>Charis SIL Font Features</title>
+    <meta name="author" content="SIL Writing Systems Technology">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="./assets/css/theme.css">
+    <link rel="stylesheet" href="./assets/css/webfonts.css">
+</head>
+<body>
+<div class="container">
+<article class="article">
+    <header>
+        <h1 class="title">Charis SIL Font Features</h1>
+    </header>
+    <p>Charis SIL is an OpenType-enabled font that supports the Latin and Cyrillic scripts. It includes a number of optional features that may be useful or required for particular uses or languages. These OpenType features are primarily specified using four-letter tags (e.g. 'cv17'), although some applications may provide a direct way to control certain common features such as small caps. This document lists all the available features.</p>
+    <p>To learn how to access these features for web pages or in individual apps, please see <a href="Using-font-features.html">Using Font Features</a>.</p>
+    <p>This page uses web fonts (WOFF2) to demonstrate font features and should display correctly in all modern browsers. For a more concise example of how to use Charis SIL as a web font see <a href="../web/CharisSIL-webfont-example.html">Charis SIL Webfont Example</a>. See <a href="http://scripts.sil.org/using_web_fonts#feat">Using SIL Fonts on Web Pages: OpenType and Graphite feature support</a> for more information.</p>
+    <p><em>If this document is not displaying correctly a PDF version is also provided.</em></p>
+    <h2 id="complete-feature-list">Complete feature list</h2>
+    <h3 id="stylistic-alternates">Stylistic alternates</h3>
+    <h4 id="small-caps-from-lowercase">Small caps from lowercase</h4>
+    <p><span class="affects">Affects: all lowercase letters with capital equivalents</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="charis-dflt-R normal">a ... z</span> (all letters with capital equivalents)</td>
+    <td><span class="code">smcp=0</span></td>
+    </tr>
+    <tr class="even">
+    <td>Small caps</td>
+    <td><span class="charis-smcp-R normal">a ... z</span> (all letters with capital equivalents)</td>
+    <td><span class="code">smcp=1</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="small-caps-from-capitals">Small caps from capitals</h4>
+    <p><span class="affects">Affects: all capitals</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="charis-dflt-R normal">A ... Z</span> (all capitals)</td>
+    <td><span class="code">c2sc=0</span></td>
+    </tr>
+    <tr class="even">
+    <td>Small caps</td>
+    <td><span class="charis-c2sc-R normal">A ... Z</span> (all capitals)</td>
+    <td><span class="code">c2sc=1</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="literacy-a-and-g">Literacy a and g</h4>
+    <p><span class="affects">Affects: U+0061 U+00E0 U+00E1 U+00E2 U+00E3 U+00E4 U+00E5 U+0101 U+0103 U+0105 U+01CE U+01DF U+01E1 U+01FB U+0201 U+0203 U+0227 U+1E01 U+1E9A U+1EA1 U+1EA3 U+1EA5 U+1EA7 U+1EA9 U+1EAB U+1EAD U+1EAF U+1EB1 U+1EB3 U+1EB5 U+1EB7 U+2C65 U+2090 U+1D43 U+0363 U+0067 U+011D U+011F U+0121 U+0123 U+01E7 U+01F5 U+01E5 U+1E21 U+A7A1 U+1D4D</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="charis-dflt-R normal">a à á â ã ä å ā ă ą ǎ ǟ ǡ ǻ ȁ ȃ ȧ ḁ ẚ ạ ả ấ ầ ẩ ẫ ậ ắ ằ ẳ ẵ ặ ⱥ ₐ ᵃ ◌ͣ g ĝ ğ ġ ģ ǧ ǵ ǥ ḡ ꞡ ᵍ </span></td>
+    <td><span class="code">ss01=0</span></td>
+    </tr>
+    <tr class="even">
+    <td>Single-story</td>
+    <td><span class="charis-ss01-R normal">a à á â ã ä å ā ă ą ǎ ǟ ǡ ǻ ȁ ȃ ȧ ḁ ẚ ạ ả ấ ầ ẩ ẫ ậ ắ ằ ẳ ẵ ặ ⱥ ₐ ᵃ ◌ͣ g ĝ ğ ġ ģ ǧ ǵ ǥ ḡ ꞡ ᵍ </span></td>
+    <td><span class="code">ss01=1</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="literacy-a-only">Literacy a (only)</h4>
+    <p><span class="affects">Affects: U+0061 U+00E0 U+00E1 U+00E2 U+00E3 U+00E4 U+00E5 U+0101 U+0103 U+0105 U+01CE U+01DF U+01E1 U+01FB U+0201 U+0203 U+0227 U+1E01 U+1E9A U+1EA1 U+1EA3 U+1EA5 U+1EA7 U+1EA9 U+1EAB U+1EAD U+1EAF U+1EB1 U+1EB3 U+1EB5 U+1EB7 U+2C65 U+2090 U+1D43 U+0363</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="charis-dflt-R normal">a à á â ã ä å ā ă ą ǎ ǟ ǡ ǻ ȁ ȃ ȧ ḁ ẚ ạ ả ấ ầ ẩ ẫ ậ ắ ằ ẳ ẵ ặ ⱥ ₐ ᵃ ◌ͣ </span></td>
+    <td><span class="code">ss11=0</span></td>
+    </tr>
+    <tr class="even">
+    <td>Single-story</td>
+    <td><span class="charis-ss11-R normal">a à á â ã ä å ā ă ą ǎ ǟ ǡ ǻ ȁ ȃ ȧ ḁ ẚ ạ ả ấ ầ ẩ ẫ ậ ắ ằ ẳ ẵ ặ ⱥ ₐ ᵃ ◌ͣ </span></td>
+    <td><span class="code">ss11=1</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="literacy-g-only">Literacy g (only)</h4>
+    <p><span class="affects">Affects: U+0067 U+011D U+011F U+0121 U+0123 U+01E7 U+01F5 U+01E5 U+1E21 U+A7A1 U+1D4D</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="charis-dflt-R normal">g ĝ ğ ġ ģ ǧ ǵ ǥ ḡ ꞡ ᵍ </span></td>
+    <td><span class="code">ss12=0</span></td>
+    </tr>
+    <tr class="even">
+    <td>Single-story</td>
+    <td><span class="charis-ss12-R normal">g ĝ ğ ġ ģ ǧ ǵ ǥ ḡ ꞡ ᵍ </span></td>
+    <td><span class="code">ss12=1</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="barred-bowl-forms">Barred-bowl forms</h4>
+    <p><span class="affects">Affects: U+0111 U+0180 U+01E5</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="charis-dflt-R normal">đ ƀ ǥ</span></td>
+    <td><span class="code">ss04=0</span></td>
+    </tr>
+    <tr class="even">
+    <td>Barred-bowl</td>
+    <td><span class="charis-ss04-R normal">đ ƀ ǥ</span></td>
+    <td><span class="code">ss04=1</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="slant-italic-specials">Slant italic specials</h4>
+    <p><span class="affects">Affects: U+0061 U+00E3 U+00E0 U+00E1 U+00E2 U+00E4 U+00E5 U+0101 U+0103 U+01CE U+01DF U+01E1 U+01FB U+0201 U+0203 U+0227 U+1E01 U+1E9A U+1EA3 U+1EA5 U+1EA7 U+1EA9 U+1EAB U+1EAD U+1EAF U+1EB1 U+1EB3 U+1EB5 U+1EA1 U+1EB7 U+2C65 U+0250 U+00E6 U+0066 U+1E1F U+0069 U+00EC U+00ED U+00EE U+00EF U+0129 U+012B U+012D U+012F U+01D0 U+0209 U+020B U+1E2D U+1E2F U+1EC9 U+1ECB U+0131 U+006C U+013A U+1E37 U+1E39 U+1E3B U+1E3D U+0076 U+1E7D U+1E7F U+007A U+017A U+017C U+017E U+1E91 U+1E93 U+1E95 U+0493 U+04FB U+F327 U+A749 U+A75F U+2097</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="charis-dflt-I normal">a ã à á â ä å ā ă ǎ ǟ ǡ ǻ ȁ ȃ ȧ ḁ ẚ ả ấ ầ ẩ ẫ ậ ắ ằ ẳ ẵ ạ ặ ⱥ ɐ æ f ḟ i ì í î ï ĩ ī ĭ į ǐ ȉ ȋ ḭ ḯ ỉ ị ı l ĺ ḷ ḹ ḻ ḽ ꝉ ₗ v ṽ ṿ ꝟ z ź ż ž ẑ ẓ ẕ ғ ӻ  fi ffi</span></td>
+    <td><span class="code">ss05=0</span></td>
+    </tr>
+    <tr class="even">
+    <td>Slanted</td>
+    <td><span class="charis-ss05-I normal">a ã à á â ä å ā ă ǎ ǟ ǡ ǻ ȁ ȃ ȧ ḁ ẚ ả ấ ầ ẩ ẫ ậ ắ ằ ẳ ẵ ạ ặ ⱥ ɐ æ f ḟ i ì í î ï ĩ ī ĭ į ǐ ȉ ȋ ḭ ḯ ỉ ị ı l ĺ ḷ ḹ ḻ ḽ ꝉ ₗ v ṽ ṿ ꝟ z ź ż ž ẑ ẓ ẕ ғ ӻ  fi ffi</span></td>
+    <td><span class="code">ss05=1</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h3 id="character-alternates">Character alternates</h3>
+    <h4 id="b-hook">B hook</h4>
+    <p><span class="affects">Affects: U+0181</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="charis-dflt-R normal">Ɓ</span></td>
+    <td><span class="code">cv13=0</span></td>
+    </tr>
+    <tr class="even">
+    <td>Lowercase-style</td>
+    <td><span class="charis-cv13-R normal">Ɓ</span></td>
+    <td><span class="code">cv13=1</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="d-hook">D hook</h4>
+    <p><span class="affects">Affects: U+018A</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="charis-dflt-R normal">Ɗ</span></td>
+    <td><span class="code">cv17=0</span></td>
+    </tr>
+    <tr class="even">
+    <td>Lowercase-style</td>
+    <td><span class="charis-cv17-R normal">Ɗ</span></td>
+    <td><span class="code">cv17=1</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="h-stroke">H stroke</h4>
+    <p><span class="affects">Affects: U+0126</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="charis-dflt-R normal">Ħ</span></td>
+    <td><span class="code">cv28=0</span></td>
+    </tr>
+    <tr class="even">
+    <td>Vertical stroke</td>
+    <td><span class="charis-cv28-R normal">Ħ</span></td>
+    <td><span class="code">cv28=1</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="j-stroke-hook">J stroke hook</h4>
+    <p><span class="affects">Affects: U+0284</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="charis-dflt-R normal">ʄ</span></td>
+    <td><span class="code">cv37=0</span></td>
+    </tr>
+    <tr class="even">
+    <td>Top serif</td>
+    <td><span class="charis-cv37-R normal">ʄ</span></td>
+    <td><span class="code">cv37=1</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="eng">Eng</h4>
+    <p><span class="affects">Affects: U+014A</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="charis-dflt-R normal">Ŋ</span></td>
+    <td><span class="code">cv43=0</span></td>
+    </tr>
+    <tr class="even">
+    <td>Lowercase style on baseline</td>
+    <td><span class="charis-cv43-1-R normal">Ŋ</span></td>
+    <td><span class="code">cv43=1</span></td>
+    </tr>
+    <tr class="odd">
+    <td>Uppercase style with descender</td>
+    <td><span class="charis-cv43-2-R normal">Ŋ</span></td>
+    <td><span class="code">cv43=2</span></td>
+    </tr>
+    <tr class="even">
+    <td>Alt. lowercase style on baseline</td>
+    <td><span class="charis-cv43-3-R normal">Ŋ</span></td>
+    <td><span class="code">cv43=3</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="n-left-hook">N left hook</h4>
+    <p><span class="affects">Affects: U+019D</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="charis-dflt-R normal">Ɲ</span></td>
+    <td><span class="code">cv44=0</span></td>
+    </tr>
+    <tr class="even">
+    <td>Lowercase-style</td>
+    <td><span class="charis-cv44-R normal">Ɲ</span></td>
+    <td><span class="code">cv44=1</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="open-o">Open-O</h4>
+    <p><span class="affects">Affects: U+0186 U+0254 U+1D10 U+1D53 U+1D97</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="charis-dflt-R normal">Ɔ ɔ ᴐ ᵓ ᶗ</span></td>
+    <td><span class="code">cv46=0</span></td>
+    </tr>
+    <tr class="even">
+    <td>Top serif</td>
+    <td><span class="charis-cv46-R normal">Ɔ ɔ ᴐ ᵓ ᶗ</span></td>
+    <td><span class="code">cv46=1</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="ou">OU</h4>
+    <p><span class="affects">Affects: U+0222 U+0223 U+1D3D U+1D15</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="charis-dflt-R normal">Ȣ ȣ ᴕ ᴽ</span></td>
+    <td><span class="code">cv47=0</span></td>
+    </tr>
+    <tr class="even">
+    <td>Open</td>
+    <td><span class="charis-cv47-R normal">Ȣ ȣ ᴕ ᴽ</span></td>
+    <td><span class="code">cv47=1</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="p-hook">p hook</h4>
+    <p><span class="affects">Affects: U+01A5</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="charis-dflt-R normal">ƥ</span></td>
+    <td><span class="code">cv49=0</span></td>
+    </tr>
+    <tr class="even">
+    <td>Right hook</td>
+    <td><span class="charis-cv49-R normal">ƥ</span></td>
+    <td><span class="code">cv49=1</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="r-tail">R tail</h4>
+    <p><span class="affects">Affects: U+2C64</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="charis-dflt-R normal">Ɽ</span></td>
+    <td><span class="code">cv55=0</span></td>
+    </tr>
+    <tr class="even">
+    <td>Lowercase-style</td>
+    <td><span class="charis-cv55-R normal">Ɽ</span></td>
+    <td><span class="code">cv55=1</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="t-hook">T hook</h4>
+    <p><span class="affects">Affects: U+01AC</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="charis-dflt-R normal">Ƭ</span></td>
+    <td><span class="code">cv57=0</span></td>
+    </tr>
+    <tr class="even">
+    <td>Right hook</td>
+    <td><span class="charis-cv57-R normal">Ƭ</span></td>
+    <td><span class="code">cv57=1</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="v-hook">V hook</h4>
+    <p><span class="affects">Affects: U+01B2 U+028B U+1DB9</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="charis-dflt-R normal">Ʋ ʋ ᶹ</span></td>
+    <td><span class="code">cv62=0</span></td>
+    </tr>
+    <tr class="even">
+    <td>Straight with low hook</td>
+    <td><span class="charis-cv62-1-R normal">Ʋ ʋ ᶹ</span></td>
+    <td><span class="code">cv62=1</span></td>
+    </tr>
+    <tr class="odd">
+    <td>Straight with high hook</td>
+    <td><span class="charis-cv62-2-R normal">Ʋ ʋ ᶹ</span></td>
+    <td><span class="code">cv62=2</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="y-hook">Y hook</h4>
+    <p><span class="affects">Affects: U+01B3</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="charis-dflt-R normal">Ƴ</span></td>
+    <td><span class="code">cv68=0</span></td>
+    </tr>
+    <tr class="even">
+    <td>Left hook</td>
+    <td><span class="charis-cv68-R normal">Ƴ</span></td>
+    <td><span class="code">cv68=1</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="ezh">Ezh</h4>
+    <p><span class="affects">Affects: U+01B7 U+04E0</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="charis-dflt-R normal">Ʒ Ӡ</span></td>
+    <td><span class="code">cv20=0</span></td>
+    </tr>
+    <tr class="even">
+    <td>Reversed sigma</td>
+    <td><span class="charis-cv20-R normal">Ʒ Ӡ</span></td>
+    <td><span class="code">cv20=1</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="ezh-curl">ezh curl</h4>
+    <p><span class="affects">Affects: U+0293</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="charis-dflt-R normal">ʓ</span></td>
+    <td><span class="code">cv19=0</span></td>
+    </tr>
+    <tr class="even">
+    <td>Large bowl</td>
+    <td><span class="charis-cv19-R normal">ʓ</span></td>
+    <td><span class="code">cv19=1</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="rams-horn">rams horn</h4>
+    <p><span class="affects">Affects: U+0264</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="charis-dflt-R normal">ɤ</span></td>
+    <td><span class="code">cv25=0</span></td>
+    </tr>
+    <tr class="even">
+    <td>Large bowl</td>
+    <td><span class="charis-cv25-1-R normal">ɤ</span></td>
+    <td><span class="code">cv25=1</span></td>
+    </tr>
+    <tr class="odd">
+    <td>Small gamma</td>
+    <td><span class="charis-cv25-2-R normal">ɤ</span></td>
+    <td><span class="code">cv25=2</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h3 id="diacritic-and-symbol-alternates">Diacritic and symbol alternates</h3>
+    <h4 id="vietnamese-style-diacritics">Vietnamese-style diacritics</h4>
+    <p><span class="affects">Affects: U+1EA4 U+1EA5 U+1EA6 U+1EA7 U+1EA8 U+1EA9 U+1EAA U+1EAB U+1EAE U+1EAF U+1EB0 U+1EB1 U+1EB2 U+1EB3 U+1EB4 U+1EB5 U+1EBE U+1EBF U+1EC0 U+1EC1 U+1EC2 U+1EC3 U+1EC4 U+1EC5 U+1ED0 U+1ED1 U+1ED2 U+1ED3 U+1ED4 U+1ED5 U+1ED6 U+1ED7</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="charis-dflt-R normal">Ấấ Ầầ Ẩẩ Ẫẫ Ắắ Ằằ Ẳẳ Ẵẵ Ếế Ềề Ểể Ễễ Ốố Ồồ Ổổ Ỗỗ</span></td>
+    <td><span class="code">cv75=0</span></td>
+    </tr>
+    <tr class="even">
+    <td>Vietnamese-style</td>
+    <td><span class="charis-cv75-R normal">Ấấ Ầầ Ẩẩ Ẫẫ Ắắ Ằằ Ẳẳ Ẵẵ Ếế Ềề Ểể Ễễ Ốố Ồồ Ổổ Ỗỗ</span></td>
+    <td><span class="code">cv75=1</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="kayan-diacritics">Kayan diacritics</h4>
+    <p><span class="affects">Affects: U+0300 U+0301</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="charis-dflt-R normal">◌̀́</span></td>
+    <td><span class="code">cv79=0</span></td>
+    </tr>
+    <tr class="even">
+    <td>Side by side</td>
+    <td><span class="charis-cv79-R normal">◌̀́</span></td>
+    <td><span class="code">cv79=1</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="ogonek">Ogonek</h4>
+    <p><span class="affects">Affects: U+0328 U+0104 U+0105 U+0118 U+0119 U+012E U+012F U+0172 U+0173 U+01EA U+01EB U+01EC U+01ED</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="charis-dflt-R normal">anything with ◌̨ (Ąą Ęę Įį Ųų Ǫǫ Ǭǭ)</span></td>
+    <td><span class="code">cv76=0</span></td>
+    </tr>
+    <tr class="even">
+    <td>Straight</td>
+    <td><span class="charis-cv76-R normal">anything with ◌̨ (Ąą Ęę Įį Ųų Ǫǫ Ǭǭ)</span></td>
+    <td><span class="code">cv76=1</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="caron">Caron</h4>
+    <p><span class="affects">Affects: U+010F U+013D U+013E U+0165</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="charis-dflt-R normal">ď Ľ ľ ť</span></td>
+    <td><span class="code">cv77=0</span></td>
+    </tr>
+    <tr class="even">
+    <td>Global-style</td>
+    <td><span class="charis-cv77-R normal">ď Ľ ľ ť</span></td>
+    <td><span class="code">cv77=1</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="modifier-apostrophe">Modifier apostrophe</h4>
+    <p><span class="affects">Affects: U+02BC U+A78B U+A78C</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="charis-dflt-R normal">ʼ Ꞌ ꞌ</span></td>
+    <td><span class="code">cv70=0</span></td>
+    </tr>
+    <tr class="even">
+    <td>Large</td>
+    <td><span class="charis-cv70-R normal">ʼ Ꞌ ꞌ</span></td>
+    <td><span class="code">cv70=1</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="modifier-colon">Modifier colon</h4>
+    <p><span class="affects">Affects: U+A789</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="charis-dflt-R normal">꞉</span></td>
+    <td><span class="code">cv71=0</span></td>
+    </tr>
+    <tr class="even">
+    <td>Expanded</td>
+    <td><span class="charis-cv71-R normal">꞉</span></td>
+    <td><span class="code">cv71=1</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="empty-set">Empty set</h4>
+    <p><span class="affects">Affects: U+2205</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="charis-dflt-R normal">∅</span></td>
+    <td><span class="code">cv98=0</span></td>
+    </tr>
+    <tr class="even">
+    <td>Zero-style</td>
+    <td><span class="charis-cv98-R normal">∅</span></td>
+    <td><span class="code">cv98=1</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h3 id="cyrillic-alternates">Cyrillic alternates</h3>
+    <p><em>There are also Cyrillic characters affected by the “Ezh” and “Small capitals” features. Some languages may also use the “Modifier apostrophe”.</em></p>
+    <h4 id="cyrillic-e">Cyrillic E</h4>
+    <p><span class="affects">Affects: U+042D U+044D</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="charis-dflt-R normal">Э э</span></td>
+    <td><span class="code">cv80=0</span></td>
+    </tr>
+    <tr class="even">
+    <td>Mongolian-style</td>
+    <td><span class="charis-cv80-R normal">Э э</span></td>
+    <td><span class="code">cv80=1</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="cyrillic-shha">Cyrillic shha</h4>
+    <p><span class="affects">Affects: U+04BB</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="charis-dflt-R normal">һ</span></td>
+    <td><span class="code">cv81=0</span></td>
+    </tr>
+    <tr class="even">
+    <td>Uppercase-style</td>
+    <td><span class="charis-cv81-R normal">һ</span></td>
+    <td><span class="code">cv81=1</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="cyrillic-breve">Cyrillic breve</h4>
+    <p><span class="affects">Affects: U+0306</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="charis-dflt-R normal">anything with ◌̆ (Ә̆ә̆)</span></td>
+    <td><span class="code">cv82=0</span></td>
+    </tr>
+    <tr class="even">
+    <td>Cyrillic-style</td>
+    <td><span class="charis-cv82-R normal">anything with ◌̆ (Ә̆ә̆)</span></td>
+    <td><span class="code">cv82=1</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="serbian-cyrillic-alternates">Serbian Cyrillic alternates</h4>
+    <p><em>These alternate forms mainly affect italic styles. Unlike other features this is activated by tagging the span of text as being in the Serbian language.</em></p>
+    <p><span class="affects">Affects: U+0431 U+0433 U+0434 U+043F U+0442</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="charis-dflt-I normal">б г д п т</span></td>
+    <td><span class="code"></span></td>
+    </tr>
+    <tr class="even">
+    <td>Serbian</td>
+    <td><span class="charis-dflt-I normal" lang="sr">б г д п т</span></td>
+    <td><span class="code">lang='sr'</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h3 id="tone-alternates">Tone alternates</h3>
+    <h4 id="chinantec-tones">Chinantec tones</h4>
+    <p><span class="affects">Affects: U+02CB U+02C8 U+02C9 U+02CA</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="charis-dflt-R normal">ˋ ˈ ˉ ˊ</span></td>
+    <td><span class="code">cv90=0</span></td>
+    </tr>
+    <tr class="even">
+    <td>Chinantec-style</td>
+    <td><span class="charis-cv90-R normal">ˋ ˈ ˉ ˊ</span></td>
+    <td><span class="code">cv90=1</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="tone-numbers">Tone numbers</h4>
+    <p><span class="affects">Affects: U+02E5 U+02E6 U+02E7 U+02E8 U+02E9 U+A712 U+A713 U+A714 U+A715 U+A716</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="charis-dflt-R normal">˥ ˦ ˧ ˨ ˩ ꜒ ꜓ ꜔ ꜕ ꜖</span></td>
+    <td><span class="code">cv91=0</span></td>
+    </tr>
+    <tr class="even">
+    <td>Numbers</td>
+    <td><span class="charis-cv91-R normal">˥ ˦ ˧ ˨ ˩ ꜒ ꜓ ꜔ ꜕ ꜖</span></td>
+    <td><span class="code">cv91=1</span></td>
+    </tr>
+    </tbody>
+    </table>
+    <!-- Not currently working
+    #### Hide tone contour staves
+
+    <span class='affects'>Affects: U+02E5 U+02E6 U+02E7 U+02E8 U+02E9 U+A712 U+A713 U+A714 U+A715 U+A716</span>
+
+    Feature | Sample                      | Feature setting
+    ------- | --------------------------- | -------
+    Standard | <span class='charis-dflt-R normal'>˥ ˦ ˧ ˨ ˩ ꜒ ꜓ ꜔ ꜕ ꜖ (˩˦˥˧˨ ꜖꜓꜒꜔꜕)</span> | <span class='code'>cv92=0</span>
+    Numbers  | <span class='charis-cv92-R normal'>˥ ˦ ˧ ˨ ˩ ꜒ ꜓ ꜔ ꜕ ꜖ (˩˦˥˧˨ ꜖꜓꜒꜔꜕)</span> | <span class='code'>cv92=1</span>
+    -->
+    <footer class="footer">
+        <p>This guide is from the <a href="Https://software.sil.org/charis/" title="" class="active">Charis SIL project</a> version 5.960 beta2 and is copyright © 1997-2021 SIL International.</p>
+    </footer>
+</article>
+</div>
+</body>
+</html>
