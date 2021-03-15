@@ -79,7 +79,7 @@
       ---------
       (This should list both major and minor changes, most recent first.)
       
-      28 Feb 2021 (SIL NRSI team) Charis SIL version 5.960 (beta2)
+      17 Mar 2021 (SIL NRSI team) Charis SIL version 5.960 (beta2)
       *This is still a beta version - use with care and not for*
       *any critical or time-sensitive projects!*
       *We have tried to address all reported issues from beta1 in this beta,*
@@ -126,6 +126,13 @@
       U+A76D LATIN SMALL LETTER IS
       U+A77F LATIN SMALL LETTER TURNED INSULAR G (position)
       U+A7F8 MODIFIER LETTER CAPITAL H WITH STROKE (form)
+      
+      - Applied new hinting techniques to try to improve screen rendering on Windows
+      
+      - Replaced font features documentation with updated version in a new format
+      (see documentation/CharisSIL-font-features.html)
+      
+      - Web fonts are provided in both WOFF and WOFF2 formats
       
       - Remaining known issues in this release
       Tone letters (U+02E5..02E9) and related features are not working properly
