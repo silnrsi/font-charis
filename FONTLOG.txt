@@ -132,6 +132,8 @@ below glyphs with macrons below (e.g. U+1E0F LATIN SMALL LETTER D WITH LINE BELO
 - Replaced font features documentation with updated version in a new format
     (see documentation/CharisSIL-font-features.html)
 
+- Web fonts are provided in both WOFF and WOFF2 formats
+
 - Remaining known issues in this release
     Tone letters (U+02E5..02E9) and related features are not working properly
     There is no support for TypeTuner
