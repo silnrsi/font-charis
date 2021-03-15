@@ -1,21 +1,16 @@
 /*
-CharisSIL-webfont-example.css
-Charis SIL v 4.108
-25 Aug 2011
-This file is part of Charis SIL font family (http://scripts.sil.org/CharisSILfont)
-and is Copyright (c) 1994-2011 SIL International (http://www.sil.org/),
-with Reserved Font Names "Charis" and "SIL". This Font Software is licensed
-under the SIL Open Font License, Version 1.1. You should have received a copy
-of the license along with this Font Software. If this is not the case, go to
-(http://scripts.sil.org/OFL) for all the details including a FAQ.
+This file is from the Charis SIL project (https://software.sil.org/charis/).
+Copyright (c) 1997-2021 SIL International (http://www.sil.org/) with Reserved
+Font Names "Charis" and "SIL". This Font Software is licensed under the SIL
+Open Font License, Version 1.1 (http://scripts.sil.org/OFL).
 */
 
-/* use Charis SIL - Regular in .woff format */
+/* use Charis SIL - Regular in .woff2 format */
 @font-face {
   font-family: CharisSILW;
   src: url(CharisSIL-Regular.woff2);
 }
-/* use Charis SIL - Italic in .woff format */
+/* use Charis SIL - Italic in .woff2 format */
 @font-face {
   font-family: CharisSILW;
   font-style: italic;

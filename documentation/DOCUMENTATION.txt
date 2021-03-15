@@ -2,17 +2,18 @@ DOCUMENTATION
 Charis SIL
 ========================
 
-*Please note that this documentation is currently outdated in this beta.*
-
 This file describes the documentation file included with the Charis SIL font
 family. This information should be distributed along with the Charis SIL 
 fonts and any derivative works.
 
 Primary documentation for the Charis SIL font family is on the Charis SIL
-website (http://scripts.sil.org/CharisSILfont).
+website (http://software.sil.org/charis), however the information there
+is for version 5 and will be updated when version 6 is released. Please see
+the [FONTLOG.txt](../FONTLOG.txt) for information on the changes since
+version 5.
 
-The CharisSIL-features.pdf file illustrates the use of OpenType and Graphite
-features.
-
-The CharisSIL-features.odt file illustrates the use of OpenType and 
-Graphite features (source file for the pdf).
+For information on using the OpenType features included in this font family
+see [CharisSIL-font-features.html](CharisSIL-font-features.html).
+For a concise example of how to use Charis SIL as a web font see
+[Charis SIL Webfont Example](../web/CharisSIL-webfont-example.html).
+See [Using SIL Fonts on Web Pages: OpenType and Graphite feature support](http://scripts.sil.org/using_web_fonts#feat) for more information.
