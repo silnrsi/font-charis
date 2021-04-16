@@ -1,6 +1,14 @@
 ---
 title: Charis SIL Font Features
 fontversion: 5.960 beta2
+header-includes:
+- |
+    ```{=latex}
+    %\rowcolors{2}{gray!10}{gray!25}
+    \catcode`\@=11
+    \def\LT@tabularcr{\relax\iffalse{\fi\ifnum0=`}\fi\def\crcr{\LT@crcr\noalign{\nobreak}}\let\cr\crcr\LT@t@bularcr}
+    \catcode`\@=12
+    ```
 ---
 
 Charis SIL is an OpenType-enabled font family that supports the Latin and Cyrillic scripts. It includes a number of optional features that may be useful or required for particular uses or languages. These OpenType features are primarily specified using four-letter tags (e.g. 'cv17'), although some applications may provide a direct way to control certain common features such as small caps. This document lists all the available features.
@@ -19,8 +27,8 @@ This page uses web fonts (WOFF2) to demonstrate font features and should display
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard   | <span class='charis-dflt-R normal'>a ... z</span> (all letters with capital equivalents) | <span class='code'>smcp=0</span>
-Small caps | <span class='charis-smcp-R normal'>a ... z</span> (all letters with capital equivalents) | <span class='code'>smcp=1</span>
+Standard   | <span feats="">a ... z</span> (all letters with capital equivalents) | `smcp=0`
+Small caps | <span feats="smcp">a ... z</span> (all letters with capital equivalents) | `smcp=1`
 
 #### Small caps from capitals
 
@@ -28,8 +36,8 @@ Small caps | <span class='charis-smcp-R normal'>a ... z</span> (all letters with
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard   | <span class='charis-dflt-R normal'>A ... Z</span> (all capitals) | <span class='code'>c2sc=0</span>
-Small caps | <span class='charis-c2sc-R normal'>A ... Z</span> (all capitals) | <span class='code'>c2sc=1</span>
+Standard   | <span feats="">A ... Z</span> (all capitals) | `c2sc=0`
+Small caps | <span feats="c2sc">A ... Z</span> (all capitals) | `c2sc=1`
 
 #### Literacy a and g
 
@@ -37,8 +45,8 @@ Small caps | <span class='charis-c2sc-R normal'>A ... Z</span> (all capitals) | 
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard     | <span class='charis-dflt-R normal'>a à á â ã ä å ā ă ą ǎ ǟ ǡ ǻ ȁ ȃ ȧ ḁ ẚ ạ ả ấ ầ ẩ ẫ ậ ắ ằ ẳ ẵ ặ ⱥ ₐ ᵃ ◌ͣ g ĝ ğ ġ ģ ǧ ǵ ǥ ḡ ꞡ ᵍ </span> | <span class='code'>ss01=0</span>
-Single-story | <span class='charis-ss01-R normal'>a à á â ã ä å ā ă ą ǎ ǟ ǡ ǻ ȁ ȃ ȧ ḁ ẚ ạ ả ấ ầ ẩ ẫ ậ ắ ằ ẳ ẵ ặ ⱥ ₐ ᵃ ◌ͣ g ĝ ğ ġ ģ ǧ ǵ ǥ ḡ ꞡ ᵍ </span> | <span class='code'>ss01=1</span>
+Standard     | <span feats="">a à á â ã ä å ā ă ą ǎ ǟ ǡ ǻ ȁ ȃ ȧ ḁ ẚ ạ ả ấ ầ ẩ ẫ ậ ắ ằ ẳ ẵ ặ ⱥ ₐ ᵃ ◌ͣ g ĝ ğ ġ ģ ǧ ǵ ǥ ḡ ꞡ ᵍ </span> | `ss01=0`
+Single-story | <span feats="ss01">a à á â ã ä å ā ă ą ǎ ǟ ǡ ǻ ȁ ȃ ȧ ḁ ẚ ạ ả ấ ầ ẩ ẫ ậ ắ ằ ẳ ẵ ặ ⱥ ₐ ᵃ ◌ͣ g ĝ ğ ġ ģ ǧ ǵ ǥ ḡ ꞡ ᵍ </span> | `ss01=1`
 
 #### Literacy a (only)
 
@@ -46,8 +54,8 @@ Single-story | <span class='charis-ss01-R normal'>a à á â ã ä å ā ă ą �
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard     | <span class='charis-dflt-R normal'>a à á â ã ä å ā ă ą ǎ ǟ ǡ ǻ ȁ ȃ ȧ ḁ ẚ ạ ả ấ ầ ẩ ẫ ậ ắ ằ ẳ ẵ ặ ⱥ ₐ ᵃ ◌ͣ </span> | <span class='code'>ss11=0</span>
-Single-story | <span class='charis-ss11-R normal'>a à á â ã ä å ā ă ą ǎ ǟ ǡ ǻ ȁ ȃ ȧ ḁ ẚ ạ ả ấ ầ ẩ ẫ ậ ắ ằ ẳ ẵ ặ ⱥ ₐ ᵃ ◌ͣ </span> | <span class='code'>ss11=1</span>
+Standard     | <span feats="">a à á â ã ä å ā ă ą ǎ ǟ ǡ ǻ ȁ ȃ ȧ ḁ ẚ ạ ả ấ ầ ẩ ẫ ậ ắ ằ ẳ ẵ ặ ⱥ ₐ ᵃ ◌ͣ </span> | `ss11=0`
+Single-story | <span feats="ss11">a à á â ã ä å ā ă ą ǎ ǟ ǡ ǻ ȁ ȃ ȧ ḁ ẚ ạ ả ấ ầ ẩ ẫ ậ ắ ằ ẳ ẵ ặ ⱥ ₐ ᵃ ◌ͣ </span> | `ss11=1`
 
 #### Literacy g (only)
 
@@ -55,8 +63,8 @@ Single-story | <span class='charis-ss11-R normal'>a à á â ã ä å ā ă ą �
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard     | <span class='charis-dflt-R normal'>g ĝ ğ ġ ģ ǧ ǵ ǥ ḡ ꞡ ᵍ </span> | <span class='code'>ss12=0</span>
-Single-story | <span class='charis-ss12-R normal'>g ĝ ğ ġ ģ ǧ ǵ ǥ ḡ ꞡ ᵍ </span> | <span class='code'>ss12=1</span>
+Standard     | <span feats="">g ĝ ğ ġ ģ ǧ ǵ ǥ ḡ ꞡ ᵍ </span> | `ss12=0`
+Single-story | <span feats="ss12">g ĝ ğ ġ ģ ǧ ǵ ǥ ḡ ꞡ ᵍ </span> | `ss12=1`
 
 #### Barred-bowl forms 
 
@@ -64,8 +72,8 @@ Single-story | <span class='charis-ss12-R normal'>g ĝ ğ ġ ģ ǧ ǵ ǥ ḡ ꞡ
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard    | <span class='charis-dflt-R normal'>đ ƀ ǥ</span> | <span class='code'>ss04=0</span>
-Barred-bowl | <span class='charis-ss04-R normal'>đ ƀ ǥ</span> | <span class='code'>ss04=1</span>
+Standard    | <span feats="">đ ƀ ǥ</span> | `ss04=0`
+Barred-bowl | <span feats="s04">đ ƀ ǥ</span> | `ss04=1`
 
 #### Slant italic specials
 
@@ -73,8 +81,8 @@ Barred-bowl | <span class='charis-ss04-R normal'>đ ƀ ǥ</span> | <span class='
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard | <span class='charis-dflt-I normal'>a ã à á â ä å ā ă ǎ ǟ ǡ ǻ ȁ ȃ ȧ ḁ ẚ ả ấ ầ ẩ ẫ ậ ắ ằ ẳ ẵ ạ ặ ⱥ ɐ æ f ḟ i ì í î ï ĩ ī ĭ į ǐ ȉ ȋ ḭ ḯ ỉ ị ı l ĺ ḷ ḹ ḻ ḽ ꝉ ₗ v ṽ ṿ ꝟ z ź ż ž ẑ ẓ ẕ ғ ӻ  fi ffi</span> | <span class='code'>ss05=0</span>
-Slanted  | <span class='charis-ss05-I normal'>a ã à á â ä å ā ă ǎ ǟ ǡ ǻ ȁ ȃ ȧ ḁ ẚ ả ấ ầ ẩ ẫ ậ ắ ằ ẳ ẵ ạ ặ ⱥ ɐ æ f ḟ i ì í î ï ĩ ī ĭ į ǐ ȉ ȋ ḭ ḯ ỉ ị ı l ĺ ḷ ḹ ḻ ḽ ꝉ ₗ v ṽ ṿ ꝟ z ź ż ž ẑ ẓ ẕ ғ ӻ  fi ffi</span> | <span class='code'>ss05=1</span>
+Standard | <span font="$fontitalic">a ã à á â ä å ā ă ǎ ǟ ǡ ǻ ȁ ȃ ȧ ḁ ẚ ả ấ ầ ẩ ẫ ậ ắ ằ ẳ ẵ ạ ặ ⱥ ɐ æ f ḟ i ì í î ï ĩ ī ĭ į ǐ ȉ ȋ ḭ ḯ ỉ ị ı l ĺ ḷ ḹ ḻ ḽ ꝉ ₗ v ṽ ṿ ꝟ z ź ż ž ẑ ẓ ẕ ғ ӻ  fi ffi</span> | `ss05=0`
+Slanted  | <span font="$fontitalic" feats="ss05">a ã à á â ä å ā ă ǎ ǟ ǡ ǻ ȁ ȃ ȧ ḁ ẚ ả ấ ầ ẩ ẫ ậ ắ ằ ẳ ẵ ạ ặ ⱥ ɐ æ f ḟ i ì í î ï ĩ ī ĭ į ǐ ȉ ȋ ḭ ḯ ỉ ị ı l ĺ ḷ ḹ ḻ ḽ ꝉ ₗ v ṽ ṿ ꝟ z ź ż ž ẑ ẓ ẕ ғ ӻ  fi ffi</span> | `ss05=1`
 
 ### Character alternates
 
@@ -84,8 +92,8 @@ Slanted  | <span class='charis-ss05-I normal'>a ã à á â ä å ā ă ǎ ǟ ǡ
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard        | <span class='charis-dflt-R normal'>Ɓ</span> | <span class='code'>cv13=0</span>
-Lowercase-style | <span class='charis-cv13-R normal'>Ɓ</span> | <span class='code'>cv13=1</span>
+Standard        | <span feats="">Ɓ</span> | `cv13=0`
+Lowercase-style | <span feats="cv13=1">Ɓ</span> | `cv13=1`
 
 #### D hook
 
@@ -93,8 +101,8 @@ Lowercase-style | <span class='charis-cv13-R normal'>Ɓ</span> | <span class='co
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard        | <span class='charis-dflt-R normal'>Ɗ</span> | <span class='code'>cv17=0</span>
-Lowercase-style | <span class='charis-cv17-R normal'>Ɗ</span> | <span class='code'>cv17=1</span>
+Standard        | <span feats="">Ɗ</span> | `cv17=0`
+Lowercase-style | <span feats="cv17=1">Ɗ</span> | `cv17=1`
 
 #### H stroke
 
@@ -102,8 +110,8 @@ Lowercase-style | <span class='charis-cv17-R normal'>Ɗ</span> | <span class='co
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard        | <span class='charis-dflt-R normal'>Ħ</span> | <span class='code'>cv28=0</span>
-Vertical stroke | <span class='charis-cv28-R normal'>Ħ</span> | <span class='code'>cv28=1</span>
+Standard        | <span feats="">Ħ</span> | `cv28=0`
+Vertical stroke | <span feats="cv28=1">Ħ</span> | `cv28=1`
 
 #### J stroke hook
 
@@ -111,8 +119,8 @@ Vertical stroke | <span class='charis-cv28-R normal'>Ħ</span> | <span class='co
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard  | <span class='charis-dflt-R normal'>ʄ</span> | <span class='code'>cv37=0</span>
-Top serif | <span class='charis-cv37-R normal'>ʄ</span> | <span class='code'>cv37=1</span>
+Standard  | <span feats="">ʄ</span> | `cv37=0`
+Top serif | <span feats="cv37=1">ʄ</span> | `cv37=1`
 
 #### Eng
 
@@ -120,10 +128,10 @@ Top serif | <span class='charis-cv37-R normal'>ʄ</span> | <span class='code'>cv
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard                          | <span class='charis-dflt-R normal'>Ŋ</span> | <span class='code'>cv43=0</span>
-Lowercase style on baseline       | <span class='charis-cv43-1-R normal'>Ŋ</span> | <span class='code'>cv43=1</span>
-Uppercase style with descender    | <span class='charis-cv43-2-R normal'>Ŋ</span> | <span class='code'>cv43=2</span>
-Alt. lowercase style on baseline  | <span class='charis-cv43-3-R normal'>Ŋ</span> | <span class='code'>cv43=3</span>
+Standard                          | <span feats="">Ŋ</span> | `cv43=0`
+Lowercase style on baseline       | <span feats="cv43=1">Ŋ</span> | `cv43=1`
+Uppercase style with descender    | <span feats="cv43=2">Ŋ</span> | `cv43=2`
+Alt. lowercase style on baseline  | <span feats="cv43=3">Ŋ</span> | `cv43=3`
 
 #### N left hook
 
@@ -131,8 +139,8 @@ Alt. lowercase style on baseline  | <span class='charis-cv43-3-R normal'>Ŋ</spa
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard        | <span class='charis-dflt-R normal'>Ɲ</span> | <span class='code'>cv44=0</span>
-Lowercase-style | <span class='charis-cv44-R normal'>Ɲ</span> | <span class='code'>cv44=1</span>
+Standard        | <span feats="">Ɲ</span> | `cv44=0`
+Lowercase-style | <span feats="cv44">Ɲ</span> | `cv44=1`
 
 #### Open-O
 
@@ -140,8 +148,8 @@ Lowercase-style | <span class='charis-cv44-R normal'>Ɲ</span> | <span class='co
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard  | <span class='charis-dflt-R normal'>Ɔ ɔ ᴐ ᵓ ᶗ</span> | <span class='code'>cv46=0</span>
-Top serif | <span class='charis-cv46-R normal'>Ɔ ɔ ᴐ ᵓ ᶗ</span> | <span class='code'>cv46=1</span>
+Standard  | <span feats="">Ɔ ɔ ᴐ ᵓ ᶗ</span> | `cv46=0`
+Top serif | <span feats="cv46">Ɔ ɔ ᴐ ᵓ ᶗ</span> | `cv46=1`
 
 #### OU
 
@@ -149,8 +157,8 @@ Top serif | <span class='charis-cv46-R normal'>Ɔ ɔ ᴐ ᵓ ᶗ</span> | <span 
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard | <span class='charis-dflt-R normal'>Ȣ ȣ ᴕ ᴽ</span> | <span class='code'>cv47=0</span>
-Open     | <span class='charis-cv47-R normal'>Ȣ ȣ ᴕ ᴽ</span> | <span class='code'>cv47=1</span>
+Standard | <span feats="">Ȣ ȣ ᴕ ᴽ</span> | `cv47=0`
+Open     | <span feats="cv47">Ȣ ȣ ᴕ ᴽ</span> | `cv47=1`
 
 #### p hook
 
@@ -158,8 +166,8 @@ Open     | <span class='charis-cv47-R normal'>Ȣ ȣ ᴕ ᴽ</span> | <span class
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard   | <span class='charis-dflt-R normal'>ƥ</span> | <span class='code'>cv49=0</span>
-Right hook | <span class='charis-cv49-R normal'>ƥ</span> | <span class='code'>cv49=1</span>
+Standard   | <span feats="">ƥ</span> | `cv49=0`
+Right hook | <span feats='cv49'>ƥ</span> | `cv49=1`
 
 ####  R tail
 
@@ -167,8 +175,8 @@ Right hook | <span class='charis-cv49-R normal'>ƥ</span> | <span class='code'>c
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard        | <span class='charis-dflt-R normal'>Ɽ</span> | <span class='code'>cv55=0</span>
-Lowercase-style | <span class='charis-cv55-R normal'>Ɽ</span> | <span class='code'>cv55=1</span>
+Standard        | <span feats="">Ɽ</span> | `cv55=0`
+Lowercase-style | <span feats='cv55'>Ɽ</span> | `cv55=1`
 
 #### T hook
 
@@ -176,8 +184,8 @@ Lowercase-style | <span class='charis-cv55-R normal'>Ɽ</span> | <span class='c
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard   | <span class='charis-dflt-R normal'>Ƭ</span> | <span class='code'>cv57=0</span>
-Right hook | <span class='charis-cv57-R normal'>Ƭ</span> | <span class='code'>cv57=1</span>
+Standard   | <span feats="">Ƭ</span> | `cv57=0`
+Right hook | <span feats='cv57'>Ƭ</span> | `cv57=1`
 
 #### V hook
 
@@ -185,9 +193,9 @@ Right hook | <span class='charis-cv57-R normal'>Ƭ</span> | <span class='code'>c
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard                | <span class='charis-dflt-R normal'>Ʋ ʋ ᶹ</span> | <span class='code'>cv62=0</span>
-Straight with low hook  | <span class='charis-cv62-1-R normal'>Ʋ ʋ ᶹ</span> | <span class='code'>cv62=1</span>
-Straight with high hook | <span class='charis-cv62-2-R normal'>Ʋ ʋ ᶹ</span> | <span class='code'>cv62=2</span>
+Standard                | <span feats="">Ʋ ʋ ᶹ</span> | `cv62=0`
+Straight with low hook  | <span feats='cv62'>Ʋ ʋ ᶹ</span> | `cv62=1`
+Straight with high hook | <span feats='cv62'>Ʋ ʋ ᶹ</span> | `cv62=2`
 
 #### Y hook
 
@@ -195,8 +203,8 @@ Straight with high hook | <span class='charis-cv62-2-R normal'>Ʋ ʋ ᶹ</span> 
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard  | <span class='charis-dflt-R normal'>Ƴ</span> | <span class='code'>cv68=0</span>
-Left hook | <span class='charis-cv68-R normal'>Ƴ</span> | <span class='code'>cv68=1</span>
+Standard  | <span feats="">Ƴ</span> | `cv68=0`
+Left hook | <span feats='cv68'>Ƴ</span> | `cv68=1`
 
 #### Ezh
 
@@ -204,8 +212,8 @@ Left hook | <span class='charis-cv68-R normal'>Ƴ</span> | <span class='code'>cv
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard       | <span class='charis-dflt-R normal'>Ʒ Ӡ</span> | <span class='code'>cv20=0</span>
-Reversed sigma | <span class='charis-cv20-R normal'>Ʒ Ӡ</span> | <span class='code'>cv20=1</span>
+Standard       | <span feats="">Ʒ Ӡ</span> | `cv20=0`
+Reversed sigma | <span feats='cv20'>Ʒ Ӡ</span> | `cv20=1`
 
 #### ezh curl
 
@@ -213,8 +221,8 @@ Reversed sigma | <span class='charis-cv20-R normal'>Ʒ Ӡ</span> | <span class='
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard   | <span class='charis-dflt-R normal'>ʓ</span> | <span class='code'>cv19=0</span>
-Large bowl | <span class='charis-cv19-R normal'>ʓ</span> | <span class='code'>cv19=1</span>
+Standard   | <span feats="">ʓ</span> | `cv19=0`
+Large bowl | <span feats='cv19'>ʓ</span> | `cv19=1`
 
 #### rams horn
 
@@ -222,9 +230,9 @@ Large bowl | <span class='charis-cv19-R normal'>ʓ</span> | <span class='code'>c
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard    | <span class='charis-dflt-R normal'>ɤ</span> | <span class='code'>cv25=0</span>
-Large bowl  | <span class='charis-cv25-1-R normal'>ɤ</span> | <span class='code'>cv25=1</span>
-Small gamma | <span class='charis-cv25-2-R normal'>ɤ</span> | <span class='code'>cv25=2</span>
+Standard    | <span feats="">ɤ</span> | `cv25=0`
+Large bowl  | <span feats='cv25'>ɤ</span> | `cv25=1`
+Small gamma | <span feats='cv25'>ɤ</span> | `cv25=2`
 
 ### Diacritic and symbol alternates
 
@@ -234,8 +242,8 @@ Small gamma | <span class='charis-cv25-2-R normal'>ɤ</span> | <span class='code
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard         | <span class='charis-dflt-R normal'>Ấấ Ầầ Ẩẩ Ẫẫ Ắắ Ằằ Ẳẳ Ẵẵ Ếế Ềề Ểể Ễễ Ốố Ồồ Ổổ Ỗỗ</span> | <span class='code'>cv75=0</span>
-Vietnamese-style | <span class='charis-cv75-R normal'>Ấấ Ầầ Ẩẩ Ẫẫ Ắắ Ằằ Ẳẳ Ẵẵ Ếế Ềề Ểể Ễễ Ốố Ồồ Ổổ Ỗỗ</span> | <span class='code'>cv75=1</span>
+Standard         | <span feats="">Ấấ Ầầ Ẩẩ Ẫẫ Ắắ Ằằ Ẳẳ Ẵẵ Ếế Ềề Ểể Ễễ Ốố Ồồ Ổổ Ỗỗ</span> | `cv75=0`
+Vietnamese-style | <span feats='cv75'>Ấấ Ầầ Ẩẩ Ẫẫ Ắắ Ằằ Ẳẳ Ẵẵ Ếế Ềề Ểể Ễễ Ốố Ồồ Ổổ Ỗỗ</span> | `cv75=1`
 
 #### Kayan diacritics
 
@@ -243,8 +251,8 @@ Vietnamese-style | <span class='charis-cv75-R normal'>Ấấ Ầầ Ẩẩ Ẫ�
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard     | <span class='charis-dflt-R normal'>◌̀́</span> | <span class='code'>cv79=0</span>
-Side by side | <span class='charis-cv79-R normal'>◌̀́</span> | <span class='code'>cv79=1</span>
+Standard     | <span feats="">◌̀́</span> | `cv79=0`
+Side by side | <span feats='cv79'>◌̀́</span> | `cv79=1`
 
 #### Ogonek
 
@@ -252,8 +260,8 @@ Side by side | <span class='charis-cv79-R normal'>◌̀́</span> | <span class='
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard | <span class='charis-dflt-R normal'>anything with ◌̨ (Ąą Ęę Įį Ųų Ǫǫ Ǭǭ)</span> | <span class='code'>cv76=0</span>
-Straight | <span class='charis-cv76-R normal'>anything with ◌̨ (Ąą Ęę Įį Ųų Ǫǫ Ǭǭ)</span> | <span class='code'>cv76=1</span>
+Standard | <span feats="">anything with ◌̨ (Ąą Ęę Įį Ųų Ǫǫ Ǭǭ)</span> | `cv76=0`
+Straight | <span feats='cv76'>anything with ◌̨ (Ąą Ęę Įį Ųų Ǫǫ Ǭǭ)</span> | `cv76=1`
 
 #### Caron
 
@@ -261,8 +269,8 @@ Straight | <span class='charis-cv76-R normal'>anything with ◌̨ (Ąą Ęę Į�
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard     | <span class='charis-dflt-R normal'>ď Ľ ľ ť</span> | <span class='code'>cv77=0</span>
-Global-style | <span class='charis-cv77-R normal'>ď Ľ ľ ť</span> | <span class='code'>cv77=1</span>
+Standard     | <span feats="">ď Ľ ľ ť</span> | `cv77=0`
+Global-style | <span feats='cv77'>ď Ľ ľ ť</span> | `cv77=1`
 
 #### Modifier apostrophe
 
@@ -270,8 +278,8 @@ Global-style | <span class='charis-cv77-R normal'>ď Ľ ľ ť</span> | <span cla
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard | <span class='charis-dflt-R normal'>ʼ Ꞌ ꞌ</span> | <span class='code'>cv70=0</span>
-Large    | <span class='charis-cv70-R normal'>ʼ Ꞌ ꞌ</span> | <span class='code'>cv70=1</span>
+Standard | <span feats="">ʼ Ꞌ ꞌ</span> | `cv70=0`
+Large    | <span feats='cv70'>ʼ Ꞌ ꞌ</span> | `cv70=1`
 
 #### Modifier colon
 
@@ -279,8 +287,8 @@ Large    | <span class='charis-cv70-R normal'>ʼ Ꞌ ꞌ</span> | <span class='c
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard | <span class='charis-dflt-R normal'>꞉</span> | <span class='code'>cv71=0</span>
-Expanded | <span class='charis-cv71-R normal'>꞉</span> | <span class='code'>cv71=1</span>
+Standard | <span feats="">꞉</span> | `cv71=0`
+Expanded | <span feats='cv71'>꞉</span> | `cv71=1`
 
 #### Empty set
 
@@ -288,8 +296,8 @@ Expanded | <span class='charis-cv71-R normal'>꞉</span> | <span class='code'>cv
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard   | <span class='charis-dflt-R normal'>∅</span> | <span class='code'>cv98=0</span>
-Zero-style | <span class='charis-cv98-R normal'>∅</span> | <span class='code'>cv98=1</span>
+Standard   | <span feats="">∅</span> | `cv98=0`
+Zero-style | <span feats='cv98'>∅</span> | `cv98=1`
 
 ### Cyrillic alternates
 
@@ -301,8 +309,8 @@ Zero-style | <span class='charis-cv98-R normal'>∅</span> | <span class='code'>
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard        | <span class='charis-dflt-R normal'>Э э</span> | <span class='code'>cv80=0</span>
-Mongolian-style | <span class='charis-cv80-R normal'>Э э</span> | <span class='code'>cv80=1</span>
+Standard        | <span feats="">Э э</span> | `cv80=0`
+Mongolian-style | <span feats='cv80'>Э э</span> | `cv80=1`
 
 #### Cyrillic shha
 
@@ -310,8 +318,8 @@ Mongolian-style | <span class='charis-cv80-R normal'>Э э</span> | <span class=
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard        | <span class='charis-dflt-R normal'>һ</span> | <span class='code'>cv81=0</span>
-Uppercase-style | <span class='charis-cv81-R normal'>һ</span> | <span class='code'>cv81=1</span>
+Standard        | <span feats="">һ</span> | `cv81=0`
+Uppercase-style | <span feats='cv81'>һ</span> | `cv81=1`
 
 #### Cyrillic breve
 
@@ -319,8 +327,8 @@ Uppercase-style | <span class='charis-cv81-R normal'>һ</span> | <span class='co
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard       | <span class='charis-dflt-R normal'>anything with ◌̆ (Ә̆ә̆)</span> | <span class='code'>cv82=0</span>
-Cyrillic-style | <span class='charis-cv82-R normal'>anything with ◌̆ (Ә̆ә̆)</span> | <span class='code'>cv82=1</span>
+Standard       | <span feats="">anything with ◌̆ (Ә̆ә̆)</span> | `cv82=0`
+Cyrillic-style | <span feats='cv82'>anything with ◌̆ (Ә̆ә̆)</span> | `cv82=1`
 
 #### Serbian Cyrillic alternates
 
@@ -330,8 +338,8 @@ Cyrillic-style | <span class='charis-cv82-R normal'>anything with ◌̆ (Ә̆ә�
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard | <span class='charis-dflt-I normal'>б г д п т</span> | <span class='code'></span>
-Serbian  | <span class='charis-dflt-I normal' lang='sr'>б г д п т</span> | <span class='code'>lang='sr'</span>
+Standard | <span font='$fontitalic'>б г д п т</span> | 
+Serbian  | <span font='$fontitalic' lang="sr">б г д п т</span> | `lang='sr'`
 
 ### Tone alternates
 
@@ -341,8 +349,8 @@ Serbian  | <span class='charis-dflt-I normal' lang='sr'>б г д п т</span> | 
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard        | <span class='charis-dflt-R normal'>ˋ ˈ ˉ ˊ</span> | <span class='code'>cv90=0</span>
-Chinantec-style | <span class='charis-cv90-R normal'>ˋ ˈ ˉ ˊ</span> | <span class='code'>cv90=1</span>
+Standard        | <span feats="">ˋ ˈ ˉ ˊ</span> | `cv90=0`
+Chinantec-style | <span feats='cv90'>ˋ ˈ ˉ ˊ</span> | `cv90=1`
 
 #### Tone numbers
 
@@ -350,8 +358,8 @@ Chinantec-style | <span class='charis-cv90-R normal'>ˋ ˈ ˉ ˊ</span> | <span 
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard | <span class='charis-dflt-R normal'>˥ ˦ ˧ ˨ ˩ ꜒ ꜓ ꜔ ꜕ ꜖</span> | <span class='code'>cv91=0</span>
-Numbers  | <span class='charis-cv91-R normal'>˥ ˦ ˧ ˨ ˩ ꜒ ꜓ ꜔ ꜕ ꜖</span> | <span class='code'>cv91=1</span>
+Standard | <span feats="">˥ ˦ ˧ ˨ ˩ ꜒ ꜓ ꜔ ꜕ ꜖</span> | `cv91=0`
+Numbers  | <span feats='cv91'>˥ ˦ ˧ ˨ ˩ ꜒ ꜓ ꜔ ꜕ ꜖</span> | `cv91=1`
 
 <!-- Not currently working
 #### Hide tone contour staves
@@ -360,6 +368,6 @@ Numbers  | <span class='charis-cv91-R normal'>˥ ˦ ˧ ˨ ˩ ꜒ ꜓ ꜔ ꜕ ꜖
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard | <span class='charis-dflt-R normal'>˥ ˦ ˧ ˨ ˩ ꜒ ꜓ ꜔ ꜕ ꜖ (˩˦˥˧˨ ꜖꜓꜒꜔꜕)</span> | <span class='code'>cv92=0</span>
-Numbers  | <span class='charis-cv92-R normal'>˥ ˦ ˧ ˨ ˩ ꜒ ꜓ ꜔ ꜕ ꜖ (˩˦˥˧˨ ꜖꜓꜒꜔꜕)</span> | <span class='code'>cv92=1</span>
+Standard | <span feats="">˥ ˦ ˧ ˨ ˩ ꜒ ꜓ ꜔ ꜕ ꜖ (˩˦˥˧˨ ꜖꜓꜒꜔꜕)</span> | `cv92=0`
+Numbers  | <span feats='cv92'>˥ ˦ ˧ ˨ ˩ ꜒ ꜓ ꜔ ꜕ ꜖ (˩˦˥˧˨ ꜖꜓꜒꜔꜕)</span> | `cv92=1`
 -->
