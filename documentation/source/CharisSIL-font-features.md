@@ -4,10 +4,7 @@ fontversion: 5.960 beta2
 header-includes:
 - |
     ```{=latex}
-    %\rowcolors{2}{gray!10}{gray!25}
-    \catcode`\@=11
-    \def\LT@tabularcr{\relax\iffalse{\fi\ifnum0=`}\fi\def\crcr{\LT@crcr\noalign{\nobreak}}\let\cr\crcr\LT@t@bularcr}
-    \catcode`\@=12
+    %\rowcolors{0}{gray!10}{gray!25}
     ```
 ---
 
@@ -43,10 +40,12 @@ Small caps | <span feats="c2sc">A ... Z</span> (all capitals) | `c2sc=1`
 
 <span class='affects'>Affects: U+0061 U+00E0 U+00E1 U+00E2 U+00E3 U+00E4 U+00E5 U+0101 U+0103 U+0105 U+01CE U+01DF U+01E1 U+01FB U+0201 U+0203 U+0227 U+1E01 U+1E9A U+1EA1 U+1EA3 U+1EA5 U+1EA7 U+1EA9 U+1EAB U+1EAD U+1EAF U+1EB1 U+1EB3 U+1EB5 U+1EB7 U+2C65 U+2090 U+1D43 U+0363 U+0067 U+011D U+011F U+0121 U+0123 U+01E7 U+01F5 U+01E5 U+1E21 U+A7A1 U+1D4D</span>
 
+:::: {nobreak="true"}
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
 Standard     | <span feats="">a à á â ã ä å ā ă ą ǎ ǟ ǡ ǻ ȁ ȃ ȧ ḁ ẚ ạ ả ấ ầ ẩ ẫ ậ ắ ằ ẳ ẵ ặ ⱥ ₐ ᵃ ◌ͣ g ĝ ğ ġ ģ ǧ ǵ ǥ ḡ ꞡ ᵍ </span> | `ss01=0`
 Single-story | <span feats="ss01">a à á â ã ä å ā ă ą ǎ ǟ ǡ ǻ ȁ ȃ ȧ ḁ ẚ ạ ả ấ ầ ẩ ẫ ậ ắ ằ ẳ ẵ ặ ⱥ ₐ ᵃ ◌ͣ g ĝ ğ ġ ģ ǧ ǵ ǥ ḡ ꞡ ᵍ </span> | `ss01=1`
+::::
 
 #### Literacy a (only)
 
