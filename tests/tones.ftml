@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="../tools/ftml.xsl" type="text/xsl"?>
+<ftml version="1.0">
+  <head>
+    <fontscale>200</fontscale>
+    <fontsrc label="CRv6">url(../results/CharisSIL-Regular.ttf)</fontsrc>
+    <fontsrc label="CBv6">url(../results/CharisSIL-Bold.ttf)</fontsrc>
+    <fontsrc label="CIv6">url(../results/CharisSIL-Italic.ttf)</fontsrc>
+    <fontsrc label="CBIv6">url(../results/CharisSIL-BoldItalic.ttf)</fontsrc>
+    <fontsrc label="CRv5">url(../references/v5/CharisSIL-Regular.ttf)</fontsrc>
+    <fontsrc label="CIv5">url(../references/v5/CharisSIL-Italic.ttf)</fontsrc>
+    <styles>
+      <style feats="'cv91' 1" name="cv91_1"/>
+    </styles>
+    <title>Tone Features</title>
+  </head>
+  <testgroup label="cv91">
+    <test label="U+02E5 U+0020 U+02E6 U+0020 U+02E7 U+0020 U+02E8 U+0020 U+02E9">
+      <string>\u0002E5\u000020\u0002E6\u000020\u0002E7\u000020\u0002E8\u000020\u0002E9</string>
+    </test>
+    <test label="U+02E5 U+0020 U+02E6 U+0020 U+02E7 U+0020 U+02E8 U+0020 U+02E9" stylename="cv91_1">
+      <string>\u0002E5\u000020\u0002E6\u000020\u0002E7\u000020\u0002E8\u000020\u0002E9</string>
+    </test>
+    <test label="U+02E5 U+02E6 U+02E7 U+02E8 U+02E9">
+      <string>\u0002E5\u0002E6\u0002E7\u0002E8\u0002E9</string>
+    </test>
+    <test label="U+02E5 U+02E6 U+02E7 U+02E8 U+02E9" stylename="cv91_1">
+      <string>\u0002E5\u0002E6\u0002E7\u0002E8\u0002E9</string>
+    </test>
+    <test label="U+A712 U+0020 U+A713 U+0020 U+A714 U+0020 U+A715 U+0020 U+A716">
+      <string>\u00A712\u000020\u00A713\u000020\u00A714\u000020\u00A715\u000020\u00A716</string>
+    </test>
+    <test label="U+A712 U+0020 U+A713 U+0020 U+A714 U+0020 U+A715 U+0020 U+A716" stylename="cv91_1">
+      <string>\u00A712\u000020\u00A713\u000020\u00A714\u000020\u00A715\u000020\u00A716</string>
+    </test>
+    <test label="U+A712 U+A713 U+A714 U+A715 U+A716">
+      <string>\u00A712\u00A713\u00A714\u00A715\u00A716</string>
+    </test>
+    <test label="U+A712 U+A713 U+A714 U+A715 U+A716" stylename="cv91_1">
+      <string>\u00A712\u00A713\u00A714\u00A715\u00A716</string>
+    </test>
+    <test label="U+A708 U+0020 U+A709 U+0020 U+A70A U+0020 U+A70B U+0020 U+A70C">
+      <string>\u00A708\u000020\u00A709\u000020\u00A70A\u000020\u00A70B\u000020\u00A70C</string>
+    </test>
+    <test label="U+A708 U+0020 U+A709 U+0020 U+A70A U+0020 U+A70B U+0020 U+A70C" stylename="cv91_1">
+      <string>\u00A708\u000020\u00A709\u000020\u00A70A\u000020\u00A70B\u000020\u00A70C</string>
+    </test>
+    <test label="U+A708 U+A709 U+A70A U+A70B U+A70C">
+      <string>\u00A708\u00A709\u00A70A\u00A70B\u00A70C</string>
+    </test>
+    <test label="U+A708 U+A709 U+A70A U+A70B U+A70C" stylename="cv91_1">
+      <string>\u00A708\u00A709\u00A70A\u00A70B\u00A70C</string>
+    </test>
+    <test label="U+A70D U+0020 U+A70E U+0020 U+A70F U+0020 U+A710 U+0020 U+A711">
+      <string>\u00A70D\u000020\u00A70E\u000020\u00A70F\u000020\u00A710\u000020\u00A711</string>
+    </test>
+    <test label="U+A70D U+0020 U+A70E U+0020 U+A70F U+0020 U+A710 U+0020 U+A711" stylename="cv91_1">
+      <string>\u00A70D\u000020\u00A70E\u000020\u00A70F\u000020\u00A710\u000020\u00A711</string>
+    </test>
+    <test label="U+A70D U+A70E U+A70F U+A710 U+A711">
+      <string>\u00A70D\u00A70E\u00A70F\u00A710\u00A711</string>
+    </test>
+    <test label="U+A70D U+A70E U+A70F U+A710 U+A711" stylename="cv91_1">
+      <string>\u00A70D\u00A70E\u00A70F\u00A710\u00A711</string>
+    </test>
+  </testgroup>
+</ftml>
