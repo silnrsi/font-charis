@@ -1,13 +1,13 @@
 ifinfo(styleName, "Regular") {
 ifinfo(familyName, "Charis") {
 
-lookup rdiac_adv {
-  lookupflag IgnoreBaseGlyphs;
-    pos CombRtDotAbv <0 0 279 0>;
-    pos CombCommaAbvRt <0 0 258 0>;
-    pos CombHorn <0 0 177 0>;
-    pos ModRhoticHook <0 0 317 0>;
-} rdiac_adv;
+# lookup rdiac_adv {
+#   lookupflag IgnoreBaseGlyphs;
+#     pos CombRtDotAbv <0 0 279 0>;
+#     pos CombCommaAbvRt <0 0 258 0>;
+#     pos CombHorn <0 0 177 0>;
+#     pos ModRhoticHook <0 0 317 0>;
+# } rdiac_adv;
 
 lookup tns_pos {
   lookupflag 0;
