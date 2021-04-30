@@ -982,7 +982,7 @@ CySmKje.sc = CySmKa.sc + CombAcute@U
 CySmZheBreve.sc = CySmZhe.sc + CombBreve.CyShortMrkAlt.UCHt@U
 CySmZheDiaer.sc = CySmZhe.sc + CombDiaer@U
 LtnSmLAcute.sc = LtnSmL.sc + CombAcute@U
-LtnSmLCaron.sc = LtnSmL.sc + CombCommaAbvRt@R
+LtnSmLCaron.sc = LtnSmL.sc + CombCommaAbvRt@R[with=R_]
 LtnSmLCaron.Caron.sc = LtnSmL.sc + CombCaron@U
 LtnSmLCircumBlw.sc = LtnSmL.sc + CombCircumBlw@L
 LtnSmLLineBlw.sc = LtnSmL.sc + CombMacronBlw@L
