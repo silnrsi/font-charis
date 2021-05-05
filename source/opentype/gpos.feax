@@ -83,6 +83,13 @@ feature mkmk {
 #  lookup mark_mark_R;
 } mkmk;
 
-feature kern {
+lookup tns_pos {
+  lookupflag IgnoreMarks;
+    pos cursive @TL_ @TL;
+} tns_pos;
+
+# feature kern {
+feature curs {
   lookup tns_pos;
-} kern;
+# } kern;
+} curs;
