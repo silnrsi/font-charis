@@ -114,123 +114,116 @@ lookup f_sub {
     sub LtnSmF LtnSmF  by LtnLigSmFSmF;
 } f_sub;
 
+# substitution of tone letters by contours
+#  for right staff clusters (TnLtr#), the last tone letter will be retained
+#  for left staff clusters (LftStemTnLtr#), the first tone letter will be retained.
 lookup tn_ctx {
   lookupflag 0;
-    sub [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]' [TnLtr1 ]  by [TnContRt51 TnContRt41 TnContRt31 
-    TnContRt21 TnContRt11 ];
-    sub [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]' [TnLtr2 ]  by [TnContRt52 TnContRt42 TnContRt32 
-    TnContRt22 TnContRt12 ];
-    sub [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]' [TnLtr3 ]  by [TnContRt53 TnContRt43 TnContRt33 
-    TnContRt23 TnContRt13 ];
-    sub [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]' [TnLtr4 ]  by [TnContRt54 TnContRt44 TnContRt34 
-    TnContRt24 TnContRt14 ];
-    sub [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]' [TnLtr5 ]  by [TnContRt55 TnContRt45 TnContRt35 
-    TnContRt25 TnContRt15 ];
-    sub [TnContLft11 TnContLft21 TnContLft31 TnContLft41 TnContLft51 
-    LftStemTnLtr1 ] [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]'  by [TnContLft15 TnContLft14 TnContLft13 
-    TnContLft12 TnContLft11 ];
-    sub [TnContLft12 TnContLft22 TnContLft32 TnContLft42 TnContLft52 
-    LftStemTnLtr2 ] [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]'  by [TnContLft25 TnContLft24 TnContLft23 
-    TnContLft22 TnContLft21 ];
-    sub [TnContLft13 TnContLft23 TnContLft33 TnContLft43 TnContLft53 
-    LftStemTnLtr3 ] [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]'  by [TnContLft35 TnContLft34 TnContLft33 
-    TnContLft32 TnContLft31 ];
-    sub [TnContLft14 TnContLft24 TnContLft34 TnContLft44 TnContLft54 
-    LftStemTnLtr4 ] [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]'  by [TnContLft45 TnContLft44 TnContLft43 
-    TnContLft42 TnContLft41 ];
-    sub [TnContLft15 TnContLft25 TnContLft35 TnContLft45 TnContLft55 
-    LftStemTnLtr5 ] [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]'  by [TnContLft55 TnContLft54 TnContLft53 
-    TnContLft52 TnContLft51 ];
+    sub [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]' [TnLtr1 ] by [TnContRt51 TnContRt41 TnContRt31 TnContRt21 TnContRt11 ];
+    sub [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]' [TnLtr2 ] by [TnContRt52 TnContRt42 TnContRt32 TnContRt22 TnContRt12 ];
+    sub [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]' [TnLtr3 ] by [TnContRt53 TnContRt43 TnContRt33 TnContRt23 TnContRt13 ];
+    sub [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]' [TnLtr4 ] by [TnContRt54 TnContRt44 TnContRt34 TnContRt24 TnContRt14 ];
+    sub [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]' [TnLtr5 ] by [TnContRt55 TnContRt45 TnContRt35 TnContRt25 TnContRt15 ];
+
+    sub [TnContLft11 TnContLft21 TnContLft31 TnContLft41 TnContLft51 LftStemTnLtr1 ] 
+      [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]' by 
+      [TnContLft15 TnContLft14 TnContLft13 TnContLft12 TnContLft11 ];
+    sub [TnContLft12 TnContLft22 TnContLft32 TnContLft42 TnContLft52 LftStemTnLtr2 ] 
+      [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]' by 
+      [TnContLft25 TnContLft24 TnContLft23 TnContLft22 TnContLft21 ];
+    sub [TnContLft13 TnContLft23 TnContLft33 TnContLft43 TnContLft53 LftStemTnLtr3 ] 
+      [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]' by 
+      [TnContLft35 TnContLft34 TnContLft33 TnContLft32 TnContLft31 ];
+    sub [TnContLft14 TnContLft24 TnContLft34 TnContLft44 TnContLft54 LftStemTnLtr4 ] 
+      [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]' by 
+      [TnContLft45 TnContLft44 TnContLft43 TnContLft42 TnContLft41 ];
+    sub [TnContLft15 TnContLft25 TnContLft35 TnContLft45 TnContLft55 LftStemTnLtr5 ] 
+      [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]' by 
+      [TnContLft55 TnContLft54 TnContLft53 TnContLft52 TnContLft51 ];
 } tn_ctx;
 
+# following lkups and classes are used in tne_ctx lkup
 lookup tnsr_dcmp {
   lookupflag 0;
-    sub TnLtr5 by TnContRt55 TnStaffRt5 ;
-    sub TnLtr4 by TnContRt44 TnStaffRt4 ;
-    sub TnLtr3 by TnContRt33 TnStaffRt3 ;
-    sub TnLtr2 by TnContRt22 TnStaffRt2 ;
-    sub TnLtr1 by TnContRt11 TnStaffRt1 ;
+    sub TnLtr5 by TnContRt55 TnStaffRt5;
+    sub TnLtr4 by TnContRt44 TnStaffRt4;
+    sub TnLtr3 by TnContRt33 TnStaffRt3;
+    sub TnLtr2 by TnContRt22 TnStaffRt2;
+    sub TnLtr1 by TnContRt11 TnStaffRt1;
 } tnsr_dcmp;
 
 lookup tnsr_sub {
   lookupflag 0;
-    sub TnLtr5 by TnStaffRt5 ;
-    sub TnLtr4 by TnStaffRt4 ;
-    sub TnLtr3 by TnStaffRt3 ;
-    sub TnLtr2 by TnStaffRt2 ;
-    sub TnLtr1 by TnStaffRt1 ;
+    sub TnLtr5 by TnStaffRt5;
+    sub TnLtr4 by TnStaffRt4;
+    sub TnLtr3 by TnStaffRt3;
+    sub TnLtr2 by TnStaffRt2;
+    sub TnLtr1 by TnStaffRt1;
 } tnsr_sub;
 
 lookup tnsl_sub {
   lookupflag 0;
-    sub LftStemTnLtr5 by TnStaffLft5 ;
-    sub LftStemTnLtr4 by TnStaffLft4 ;
-    sub LftStemTnLtr3 by TnStaffLft3 ;
-    sub LftStemTnLtr2 by TnStaffLft2 ;
-    sub LftStemTnLtr1 by TnStaffLft1 ;
+    sub LftStemTnLtr5 by TnStaffLft5;
+    sub LftStemTnLtr4 by TnStaffLft4;
+    sub LftStemTnLtr3 by TnStaffLft3;
+    sub LftStemTnLtr2 by TnStaffLft2;
+    sub LftStemTnLtr1 by TnStaffLft1;
 } tnsl_sub;
 
 lookup tnsl_dcmp {
   lookupflag 0;
-    sub LftStemTnLtr5 by TnStaffLft5 TnContLft55 ;
-    sub LftStemTnLtr4 by TnStaffLft4 TnContLft44 ;
-    sub LftStemTnLtr3 by TnStaffLft3 TnContLft33 ;
-    sub LftStemTnLtr2 by TnStaffLft2 TnContLft22 ;
-    sub LftStemTnLtr1 by TnStaffLft1 TnContLft11 ;
+    sub LftStemTnLtr5 by TnStaffLft5 TnContLft55;
+    sub LftStemTnLtr4 by TnStaffLft4 TnContLft44;
+    sub LftStemTnLtr3 by TnStaffLft3 TnContLft33;
+    sub LftStemTnLtr2 by TnStaffLft2 TnContLft22;
+    sub LftStemTnLtr1 by TnStaffLft1 TnContLft11;
 } tnsl_dcmp;
 
+@TnLtrs = [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ];
+
+@TnContFlat = [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ];
+
+@TnContSlant = [TnContRt12 TnContRt13 TnContRt14 TnContRt15 
+  TnContRt21 TnContRt23 TnContRt24 TnContRt25 
+  TnContRt31 TnContRt32 TnContRt34 TnContRt35 
+  TnContRt41 TnContRt42 TnContRt43 TnContRt45 
+  TnContRt51 TnContRt52 TnContRt53 TnContRt54 ];
+
+@LftStemTnLtrs = [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ];
+
+@TnContLftFlat = [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ];
+
+@TnContLftSlant = [TnContLft12 TnContLft13 TnContLft14 TnContLft15 
+  TnContLft21 TnContLft23 TnContLft24 TnContLft25 
+  TnContLft31 TnContLft32 TnContLft34 TnContLft35 
+  TnContLft41 TnContLft42 TnContLft43 TnContLft45 
+  TnContLft51 TnContLft52 TnContLft53 TnContLft54 ];
+
+# handle retained tone letter
+#  last glyph for right staff clusters and first glyph for left staff clusters
+#  replace by a staff unless preceeded (for right staff) or followed (for left staff) by identical level 
+#   with no other level at the other end of the cluster
+#  five intervening flat levels are supported (so six identical tone levels)
+# in the below, especially note where the lkup is applied and where the _dcmp lkup is used
+#  rules are matched in the order written below based on the input context then with look ahead or behind testing
+#  when a rule matches, procesing moves past the input context (@class')
 lookup tne_ctx {
   lookupflag 0;
-    sub [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ] [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]'lookup tnsr_dcmp  ;
-    sub [TnContRt12 TnContRt13 TnContRt14 TnContRt15 TnContRt21 TnContRt23 
-    TnContRt24 TnContRt25 TnContRt31 TnContRt32 TnContRt34 
-    TnContRt35 TnContRt41 TnContRt42 TnContRt43 TnContRt45 
-    TnContRt51 TnContRt52 TnContRt53 TnContRt54 ] [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]'lookup tnsr_sub  ;
-    sub [TnContRt12 TnContRt13 TnContRt14 TnContRt15 TnContRt21 TnContRt23 
-    TnContRt24 TnContRt25 TnContRt31 TnContRt32 TnContRt34 
-    TnContRt35 TnContRt41 TnContRt42 TnContRt43 TnContRt45 
-    TnContRt51 TnContRt52 TnContRt53 TnContRt54 ] [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]'lookup tnsr_sub  ;
-    sub [TnContRt12 TnContRt13 TnContRt14 TnContRt15 TnContRt21 TnContRt23 
-    TnContRt24 TnContRt25 TnContRt31 TnContRt32 TnContRt34 
-    TnContRt35 TnContRt41 TnContRt42 TnContRt43 TnContRt45 
-    TnContRt51 TnContRt52 TnContRt53 TnContRt54 ] [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]'lookup tnsr_sub  ;
-    sub [TnContRt12 TnContRt13 TnContRt14 TnContRt15 TnContRt21 TnContRt23 
-    TnContRt24 TnContRt25 TnContRt31 TnContRt32 TnContRt34 
-    TnContRt35 TnContRt41 TnContRt42 TnContRt43 TnContRt45 
-    TnContRt51 TnContRt52 TnContRt53 TnContRt54 ] [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]'lookup tnsr_sub  ;
-    sub [TnContRt12 TnContRt13 TnContRt14 TnContRt15 TnContRt21 TnContRt23 
-    TnContRt24 TnContRt25 TnContRt31 TnContRt32 TnContRt34 
-    TnContRt35 TnContRt41 TnContRt42 TnContRt43 TnContRt45 
-    TnContRt51 TnContRt52 TnContRt53 TnContRt54 ] [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]'lookup tnsr_sub  ;
-    sub [TnContRt12 TnContRt13 TnContRt14 TnContRt15 TnContRt21 TnContRt23 
-    TnContRt24 TnContRt25 TnContRt31 TnContRt32 TnContRt34 
-    TnContRt35 TnContRt41 TnContRt42 TnContRt43 TnContRt45 
-    TnContRt51 TnContRt52 TnContRt53 TnContRt54 ] [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ]' [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]'lookup tnsr_sub  ;
-    sub [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]'lookup tnsl_sub  [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft12 TnContLft13 TnContLft14 TnContLft15 TnContLft21 TnContLft23 
-    TnContLft24 TnContLft25 TnContLft31 TnContLft32 TnContLft34 
-    TnContLft35 TnContLft41 TnContLft42 TnContLft43 TnContLft45 
-    TnContLft51 TnContLft52 TnContLft53 TnContLft54 ] ;
-    sub [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]'lookup tnsl_sub  [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft12 TnContLft13 TnContLft14 TnContLft15 TnContLft21 TnContLft23 
-    TnContLft24 TnContLft25 TnContLft31 TnContLft32 TnContLft34 
-    TnContLft35 TnContLft41 TnContLft42 TnContLft43 TnContLft45 
-    TnContLft51 TnContLft52 TnContLft53 TnContLft54 ] ;
-    sub [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]'lookup tnsl_sub  [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft12 TnContLft13 TnContLft14 TnContLft15 TnContLft21 TnContLft23 
-    TnContLft24 TnContLft25 TnContLft31 TnContLft32 TnContLft34 
-    TnContLft35 TnContLft41 TnContLft42 TnContLft43 TnContLft45 
-    TnContLft51 TnContLft52 TnContLft53 TnContLft54 ] ;
-    sub [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]'lookup tnsl_sub  [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft12 TnContLft13 TnContLft14 TnContLft15 TnContLft21 TnContLft23 
-    TnContLft24 TnContLft25 TnContLft31 TnContLft32 TnContLft34 
-    TnContLft35 TnContLft41 TnContLft42 TnContLft43 TnContLft45 
-    TnContLft51 TnContLft52 TnContLft53 TnContLft54 ] ;
-    sub [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]'lookup tnsl_sub  [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ]' [TnContLft12 TnContLft13 TnContLft14 TnContLft15 TnContLft21 TnContLft23 
-    TnContLft24 TnContLft25 TnContLft31 TnContLft32 TnContLft34 
-    TnContLft35 TnContLft41 TnContLft42 TnContLft43 TnContLft45 
-    TnContLft51 TnContLft52 TnContLft53 TnContLft54 ] ;
-    sub [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]'lookup tnsl_dcmp  [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ] ;
-    sub [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]'lookup tnsl_sub  [TnContLft12 TnContLft13 TnContLft14 TnContLft15 TnContLft21 TnContLft23 
-    TnContLft24 TnContLft25 TnContLft31 TnContLft32 TnContLft34 
-    TnContLft35 TnContLft41 TnContLft42 TnContLft43 TnContLft45 
-    TnContLft51 TnContLft52 TnContLft53 TnContLft54 ] ;
+    sub @TnContSlant @TnContFlat' @TnLtrs'lookup tnsr_sub;
+    sub @TnContSlant @TnContFlat' @TnContFlat' @TnLtrs'lookup tnsr_sub;
+    sub @TnContSlant @TnContFlat' @TnContFlat' @TnContFlat' @TnLtrs'lookup tnsr_sub;
+    sub @TnContSlant @TnContFlat' @TnContFlat' @TnContFlat' @TnContFlat' @TnLtrs'lookup tnsr_sub;
+    sub @TnContSlant @TnContFlat' @TnContFlat' @TnContFlat' @TnContFlat' @TnContFlat' @TnLtrs'lookup tnsr_sub;
+    sub @TnContSlant @TnLtrs'lookup tnsr_sub; # short rules could be before longer rules
+    sub @TnContFlat @TnLtrs'lookup tnsr_dcmp; # because a matching slot is before the tone letter, so tone ltr is skipped
+
+    sub @LftStemTnLtrs'lookup tnsl_sub @TnContLftFlat' @TnContLftSlant;
+    sub @LftStemTnLtrs'lookup tnsl_sub @TnContLftFlat' @TnContLftFlat' @TnContLftSlant;
+    sub @LftStemTnLtrs'lookup tnsl_sub @TnContLftFlat' @TnContLftFlat' @TnContLftFlat' @TnContLftSlant;
+    sub @LftStemTnLtrs'lookup tnsl_sub @TnContLftFlat' @TnContLftFlat' @TnContLftFlat' @TnContLftFlat' @TnContLftSlant;
+    sub @LftStemTnLtrs'lookup tnsl_sub @TnContLftFlat' @TnContLftFlat' @TnContLftFlat' @TnContLftFlat' @TnContLftFlat' @TnContLftSlant;
+    sub @LftStemTnLtrs'lookup tnsl_sub @TnContLftSlant; # short rules must be after longer rules
+    sub @LftStemTnLtrs'lookup tnsl_dcmp @TnContLftFlat; # because the tone letter is before a matching slot
 } tne_ctx;
 
 lookup bhk_sub {
@@ -507,7 +500,7 @@ feature ccmp {
   lookup tne_ctx;
 
   script latn;
-    language VIT  ;
+    language VIT;
       lookup vd_sub;
       lookup vc_sub;
 } ccmp;
