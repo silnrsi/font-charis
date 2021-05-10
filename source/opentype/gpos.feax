@@ -88,11 +88,11 @@ lookup tns_pos {
     pos cursive @TL_ @TL;
 } tns_pos;
 
-# for MS Word 2016
-feature kern {
-  lookup tns_pos;
-} kern;
+# # for MS Word 2016
+# feature kern {
+#   lookup tns_pos;
+# } kern;
 
-feature curs {
-  lookup tns_pos;
-} curs;
+# feature curs {
+#   lookup tns_pos;
+# } curs;

@@ -114,33 +114,108 @@ lookup f_sub {
     sub LtnSmF LtnSmF  by LtnLigSmFSmF;
 } f_sub;
 
+def SeqGen(n) {
+    l = list()
+    for i in range(1, 6):
+        for j in range(1, 6):
+            ltr = n + str(i) + str(j)
+            l.append(ltr)
+    return l
+} SeqGen;
+
+do  let l = SeqGen('TnLtrSeg');
+    let s = ' '.join(l);
+    {
+    @TnLtrSeg = [$s];
+    }
+
+do  let l = SeqGen('TnContRt');
+    let s = ' '.join(l);
+    {
+    @TnContRt = [$s];
+    }
+
+do  let l = SeqGen('TnContLft');
+    let s = ' '.join(l);
+    {
+    @TnContLft = [$s];
+    }
+
+def NonTns() {
+    l = list()
+    for g in allglyphs():
+        if not re.search('.*Tn(Ltr|Cont|Staff).*', g):
+            l.append(g)
+    return l
+} NonTns;
+
+do  let l = NonTns();
+    let s = ' '.join(l);
+    {
+    @NonTn = [$s];
+    }
+
+@TnLtrs = [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ];
+@LftStemTnLtrs = [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ];
+
 # substitution of tone letters by contours
-#  for right staff clusters (TnLtr#), the last tone letter will be retained
-#  for left staff clusters (LftStemTnLtr#), the first tone letter will be retained.
 lookup tn_ctx {
   lookupflag 0;
-    sub [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]' [TnLtr1 ] by [TnContRt51 TnContRt41 TnContRt31 TnContRt21 TnContRt11 ];
-    sub [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]' [TnLtr2 ] by [TnContRt52 TnContRt42 TnContRt32 TnContRt22 TnContRt12 ];
-    sub [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]' [TnLtr3 ] by [TnContRt53 TnContRt43 TnContRt33 TnContRt23 TnContRt13 ];
-    sub [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]' [TnLtr4 ] by [TnContRt54 TnContRt44 TnContRt34 TnContRt24 TnContRt14 ];
-    sub [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ]' [TnLtr5 ] by [TnContRt55 TnContRt45 TnContRt35 TnContRt25 TnContRt15 ];
+    ignore sub @NonTn TnLtr5' TnLtr5' @NonTn;
+    ignore sub @NonTn TnLtr4' TnLtr4' @NonTn;
+    ignore sub @NonTn TnLtr3' TnLtr3' @NonTn;
+    ignore sub @NonTn TnLtr2' TnLtr2' @NonTn;
+    ignore sub @NonTn TnLtr1' TnLtr1' @NonTn;
+    
+    sub @TnLtrs' [TnLtr1 ] by [TnLtrSeg51 TnLtrSeg41 TnLtrSeg31 TnLtrSeg21 TnLtrSeg11 ];
+    sub @TnLtrs' [TnLtr2 ] by [TnLtrSeg52 TnLtrSeg42 TnLtrSeg32 TnLtrSeg22 TnLtrSeg12 ];
+    sub @TnLtrs' [TnLtr3 ] by [TnLtrSeg53 TnLtrSeg43 TnLtrSeg33 TnLtrSeg23 TnLtrSeg13 ];
+    sub @TnLtrs' [TnLtr4 ] by [TnLtrSeg54 TnLtrSeg44 TnLtrSeg34 TnLtrSeg24 TnLtrSeg14 ];
+    sub @TnLtrs' [TnLtr5 ] by [TnLtrSeg55 TnLtrSeg45 TnLtrSeg35 TnLtrSeg25 TnLtrSeg15 ];
+    sub @TnLtrSeg @TnLtrs' by [TnStaffRt5 TnStaffRt4 TnStaffRt3 TnStaffRt2 TnStaffRt1 ];
 
-    sub [TnContLft11 TnContLft21 TnContLft31 TnContLft41 TnContLft51 LftStemTnLtr1 ] 
-      [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]' by 
-      [TnContLft15 TnContLft14 TnContLft13 TnContLft12 TnContLft11 ];
-    sub [TnContLft12 TnContLft22 TnContLft32 TnContLft42 TnContLft52 LftStemTnLtr2 ] 
-      [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]' by 
-      [TnContLft25 TnContLft24 TnContLft23 TnContLft22 TnContLft21 ];
-    sub [TnContLft13 TnContLft23 TnContLft33 TnContLft43 TnContLft53 LftStemTnLtr3 ] 
-      [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]' by 
-      [TnContLft35 TnContLft34 TnContLft33 TnContLft32 TnContLft31 ];
-    sub [TnContLft14 TnContLft24 TnContLft34 TnContLft44 TnContLft54 LftStemTnLtr4 ] 
-      [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]' by 
-      [TnContLft45 TnContLft44 TnContLft43 TnContLft42 TnContLft41 ];
-    sub [TnContLft15 TnContLft25 TnContLft35 TnContLft45 TnContLft55 LftStemTnLtr5 ] 
-      [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ]' by 
-      [TnContLft55 TnContLft54 TnContLft53 TnContLft52 TnContLft51 ];
+    sub [TnStaffLft1 TnLtrSeg11 TnLtrSeg21 TnLtrSeg31 TnLtrSeg41 TnLtrSeg51 ] @LftStemTnLtrs' by 
+      [TnLtrSeg15 TnLtrSeg14 TnLtrSeg13 TnLtrSeg12 TnLtrSeg11 ];
+    sub [TnStaffLft2 TnLtrSeg12 TnLtrSeg22 TnLtrSeg32 TnLtrSeg42 TnLtrSeg52 ] @LftStemTnLtrs' by 
+      [TnLtrSeg25 TnLtrSeg24 TnLtrSeg23 TnLtrSeg22 TnLtrSeg21 ];
+    sub [TnStaffLft3 TnLtrSeg13 TnLtrSeg23 TnLtrSeg33 TnLtrSeg43 TnLtrSeg53 ] @LftStemTnLtrs' by 
+      [TnLtrSeg35 TnLtrSeg34 TnLtrSeg33 TnLtrSeg32 TnLtrSeg31 ];
+    sub [TnStaffLft4 TnLtrSeg14 TnLtrSeg24 TnLtrSeg34 TnLtrSeg44 TnLtrSeg54 ] @LftStemTnLtrs' by 
+      [TnLtrSeg45 TnLtrSeg44 TnLtrSeg43 TnLtrSeg42 TnLtrSeg41 ];
+    sub [TnStaffLft5 TnLtrSeg15 TnLtrSeg25 TnLtrSeg35 TnLtrSeg45 TnLtrSeg55 ] @LftStemTnLtrs' by 
+      [TnLtrSeg55 TnLtrSeg54 TnLtrSeg53 TnLtrSeg52 TnLtrSeg51 ];
+    sub @LftStemTnLtrs' @LftStemTnLtrs by 
+      [TnStaffLft5 TnStaffLft4 TnStaffLft3 TnStaffLft2 TnStaffLft1];
 } tn_ctx;
+
+lookup tner_sub {
+    sub @TnLtrSeg by @TnContRt;
+} tner_sub;
+
+lookup tnel_sub {
+    sub @TnLtrSeg by @TnContLft;
+} tnel_sub;
+
+@TnStaffRt = [TnStaffRt5 TnStaffRt4 TnStaffRt3 TnStaffRt2 TnStaffRt1 ];
+@TnStaffLft = [TnStaffLft5 TnStaffLft4 TnStaffLft3 TnStaffLft2 TnStaffLft1 ];
+
+# add spacing glyph to the end of a cluster opposite the staff
+#  supports six tone bars
+lookup tne_ctx {
+    sub @TnLtrSeg'lookup tner_sub @TnLtrSeg' @TnLtrSeg' @TnLtrSeg' @TnLtrSeg' @TnLtrSeg' @TnStaffRt'; 
+    sub @TnLtrSeg'lookup tner_sub @TnLtrSeg' @TnLtrSeg' @TnLtrSeg' @TnLtrSeg' @TnStaffRt'; 
+    sub @TnLtrSeg'lookup tner_sub @TnLtrSeg' @TnLtrSeg' @TnLtrSeg' @TnStaffRt';
+    sub @TnLtrSeg'lookup tner_sub @TnLtrSeg' @TnLtrSeg' @TnStaffRt';
+    sub @TnLtrSeg'lookup tner_sub @TnLtrSeg' @TnStaffRt';
+    sub @TnLtrSeg'lookup tner_sub @TnStaffRt';
+
+    sub @TnStaffLft' @TnLtrSeg' @TnLtrSeg' @TnLtrSeg' @TnLtrSeg' @TnLtrSeg' @TnLtrSeg'lookup tnel_sub;
+    sub @TnStaffLft' @TnLtrSeg' @TnLtrSeg' @TnLtrSeg' @TnLtrSeg' @TnLtrSeg'lookup tnel_sub;
+    sub @TnStaffLft' @TnLtrSeg' @TnLtrSeg' @TnLtrSeg' @TnLtrSeg'lookup tnel_sub;
+    sub @TnStaffLft' @TnLtrSeg' @TnLtrSeg' @TnLtrSeg'lookup tnel_sub;
+    sub @TnStaffLft' @TnLtrSeg' @TnLtrSeg'lookup tnel_sub;
+    sub @TnStaffLft' @TnLtrSeg'lookup tnel_sub;
+} tne_ctx;
 
 # following lkups and classes are used in tne_ctx lkup
 lookup tnsr_dcmp {
@@ -179,7 +254,7 @@ lookup tnsl_dcmp {
     sub LftStemTnLtr1 by TnStaffLft1 TnContLft11;
 } tnsl_dcmp;
 
-@TnLtrs = [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ];
+# @TnLtrs = [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ];
 
 @TnContFlat = [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ];
 
@@ -189,7 +264,7 @@ lookup tnsl_dcmp {
   TnContRt41 TnContRt42 TnContRt43 TnContRt45 
   TnContRt51 TnContRt52 TnContRt53 TnContRt54 ];
 
-@LftStemTnLtrs = [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ];
+# @LftStemTnLtrs = [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ];
 
 @TnContLftFlat = [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ];
 
@@ -207,7 +282,7 @@ lookup tnsl_dcmp {
 # in the below, especially note where the lkup is applied and where the _dcmp lkup is used
 #  rules are matched in the order written below based on the input context then with look ahead or behind testing
 #  when a rule matches, procesing moves past the input context (@class')
-lookup tne_ctx {
+lookup tne_ctx_sav {
   lookupflag 0;
     sub @TnContSlant @TnContFlat' @TnLtrs'lookup tnsr_sub;
     sub @TnContSlant @TnContFlat' @TnContFlat' @TnLtrs'lookup tnsr_sub;
@@ -224,7 +299,7 @@ lookup tne_ctx {
     sub @LftStemTnLtrs'lookup tnsl_sub @TnContLftFlat' @TnContLftFlat' @TnContLftFlat' @TnContLftFlat' @TnContLftFlat' @TnContLftSlant;
     sub @LftStemTnLtrs'lookup tnsl_sub @TnContLftSlant; # short rules must be after longer rules
     sub @LftStemTnLtrs'lookup tnsl_dcmp @TnContLftFlat; # because the tone letter is before a matching slot
-} tne_ctx;
+} tne_ctx_sav;
 
 lookup bhk_sub {
   lookupflag 0;
