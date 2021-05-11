@@ -18,27 +18,6 @@ lookup base_mark_H {
     pos base @H mark @_H;
 } base_mark_H;
 
-# lookup base_mark_R {
-#   lookupflag IgnoreLigatures;
-#     pos base @R mark @_R;
-# } base_mark_R;
-
-# @cMarkFilter_R = [@R_MarkBase @_R];
-
-# lookup mark_mark_R {
-#  lookupflag UseMarkFilteringSet @cMarkFilter_R;
-#    pos base @R_MarkBase mark @_R;
-# } mark_mark_R;
-
-# lookup rdiac_adv {
-# #  lookupflag IgnoreBaseGlyphs;
-#   lookupflag 0;  
-#     pos CombRtDotAbv <0 0 279 0>;
-#     pos CombCommaAbvRt <0 0 258 0>;
-#     pos CombHorn <0 0 177 0>;
-#     pos ModRhoticHook <0 0 317 0>; # 317 is adv wid
-# } rdiac_adv;
-
 lookup cursive_R {
   lookupflag IgnoreMarks;
     pos cursive @R_ @R;
@@ -57,9 +36,6 @@ feature mark {
   lookup base_mark_L;
   lookup base_mark_O;
   lookup base_mark_H;
-#  lookup base_mark_R;
-#  lookup mark_mark_R;
-#  lookup rdiac_adv;
   lookup cursive_R;
 } mark;
 
@@ -77,22 +53,11 @@ lookup mark_mark_L {
 } mark_mark_L;
 
 feature mkmk {
-#  lookup rdiac_adv;
   lookup mark_mark_U;
   lookup mark_mark_L;
-#  lookup mark_mark_R;
 } mkmk;
 
 lookup tns_pos {
   lookupflag IgnoreMarks;
     pos cursive @TL_ @TL;
 } tns_pos;
-
-# # for MS Word 2016
-# feature kern {
-#   lookup tns_pos;
-# } kern;
-
-# feature curs {
-#   lookup tns_pos;
-# } curs;

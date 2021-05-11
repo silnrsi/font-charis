@@ -114,6 +114,7 @@ lookup f_sub {
     sub LtnSmF LtnSmF  by LtnLigSmFSmF;
 } f_sub;
 
+# used to generate glyph classes
 def SeqGen(n) {
     l = list()
     for i in range(1, 6):
@@ -123,6 +124,7 @@ def SeqGen(n) {
     return l
 } SeqGen;
 
+# glyph classes used below
 do  let l = SeqGen('TnLtrSeg');
     let s = ' '.join(l);
     {
@@ -141,6 +143,7 @@ do  let l = SeqGen('TnContLft');
     @TnContLft = [$s];
     }
 
+# create a glyph class of all non-tone glyphs
 def NonTns() {
     l = list()
     for g in allglyphs():
@@ -158,21 +161,34 @@ do  let l = NonTns();
 @TnLtrs = [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ];
 @LftStemTnLtrs = [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ];
 
-# substitution of tone letters by contours
+# substitute contours for tone letters
+#  based on the level of the current tone and the following (or preceding) one
+# substitute a staff for the last (or first) tone letter
+# glyphs will connect in their default position
+# the glyph on the end of the sequence opposite the staff needs spacing added, see tne_ctx
+#  (staffs already have spacing)
 lookup tn_ctx {
   lookupflag 0;
+    # ignore two isolated tones of the same level next to each
+    #  unfortunately will not match if they are at a segment boundary
     ignore sub @NonTn TnLtr5' TnLtr5' @NonTn;
     ignore sub @NonTn TnLtr4' TnLtr4' @NonTn;
     ignore sub @NonTn TnLtr3' TnLtr3' @NonTn;
     ignore sub @NonTn TnLtr2' TnLtr2' @NonTn;
     ignore sub @NonTn TnLtr1' TnLtr1' @NonTn;
-    
+
     sub @TnLtrs' [TnLtr1 ] by [TnLtrSeg51 TnLtrSeg41 TnLtrSeg31 TnLtrSeg21 TnLtrSeg11 ];
     sub @TnLtrs' [TnLtr2 ] by [TnLtrSeg52 TnLtrSeg42 TnLtrSeg32 TnLtrSeg22 TnLtrSeg12 ];
     sub @TnLtrs' [TnLtr3 ] by [TnLtrSeg53 TnLtrSeg43 TnLtrSeg33 TnLtrSeg23 TnLtrSeg13 ];
     sub @TnLtrs' [TnLtr4 ] by [TnLtrSeg54 TnLtrSeg44 TnLtrSeg34 TnLtrSeg24 TnLtrSeg14 ];
     sub @TnLtrs' [TnLtr5 ] by [TnLtrSeg55 TnLtrSeg45 TnLtrSeg35 TnLtrSeg25 TnLtrSeg15 ];
     sub @TnLtrSeg @TnLtrs' by [TnStaffRt5 TnStaffRt4 TnStaffRt3 TnStaffRt2 TnStaffRt1 ];
+
+    ignore sub @NonTn LftStemTnLtr5' LftStemTnLtr5' @NonTn;
+    ignore sub @NonTn LftStemTnLtr4' LftStemTnLtr4' @NonTn;
+    ignore sub @NonTn LftStemTnLtr3' LftStemTnLtr3' @NonTn;
+    ignore sub @NonTn LftStemTnLtr2' LftStemTnLtr2' @NonTn;
+    ignore sub @NonTn LftStemTnLtr1' LftStemTnLtr1' @NonTn;
 
     sub [TnStaffLft1 TnLtrSeg11 TnLtrSeg21 TnLtrSeg31 TnLtrSeg41 TnLtrSeg51 ] @LftStemTnLtrs' by 
       [TnLtrSeg15 TnLtrSeg14 TnLtrSeg13 TnLtrSeg12 TnLtrSeg11 ];
@@ -188,10 +204,12 @@ lookup tn_ctx {
       [TnStaffLft5 TnStaffLft4 TnStaffLft3 TnStaffLft2 TnStaffLft1];
 } tn_ctx;
 
+# substitute a glyph with spacing for one without spacing in right stem clusters
 lookup tner_sub {
     sub @TnLtrSeg by @TnContRt;
 } tner_sub;
 
+# substitute a glyph with spacing for one without spacing in left stem clusters
 lookup tnel_sub {
     sub @TnLtrSeg by @TnContLft;
 } tnel_sub;
@@ -199,8 +217,8 @@ lookup tnel_sub {
 @TnStaffRt = [TnStaffRt5 TnStaffRt4 TnStaffRt3 TnStaffRt2 TnStaffRt1 ];
 @TnStaffLft = [TnStaffLft5 TnStaffLft4 TnStaffLft3 TnStaffLft2 TnStaffLft1 ];
 
-# add spacing glyph to the end of a cluster opposite the staff
-#  supports six tone bars
+# add a spacing glyph to the opposite end of a cluster from the staff
+#  supports up to six tone bars
 lookup tne_ctx {
     sub @TnLtrSeg'lookup tner_sub @TnLtrSeg' @TnLtrSeg' @TnLtrSeg' @TnLtrSeg' @TnLtrSeg' @TnStaffRt'; 
     sub @TnLtrSeg'lookup tner_sub @TnLtrSeg' @TnLtrSeg' @TnLtrSeg' @TnLtrSeg' @TnStaffRt'; 
@@ -216,90 +234,6 @@ lookup tne_ctx {
     sub @TnStaffLft' @TnLtrSeg' @TnLtrSeg'lookup tnel_sub;
     sub @TnStaffLft' @TnLtrSeg'lookup tnel_sub;
 } tne_ctx;
-
-# following lkups and classes are used in tne_ctx lkup
-lookup tnsr_dcmp {
-  lookupflag 0;
-    sub TnLtr5 by TnContRt55 TnStaffRt5;
-    sub TnLtr4 by TnContRt44 TnStaffRt4;
-    sub TnLtr3 by TnContRt33 TnStaffRt3;
-    sub TnLtr2 by TnContRt22 TnStaffRt2;
-    sub TnLtr1 by TnContRt11 TnStaffRt1;
-} tnsr_dcmp;
-
-lookup tnsr_sub {
-  lookupflag 0;
-    sub TnLtr5 by TnStaffRt5;
-    sub TnLtr4 by TnStaffRt4;
-    sub TnLtr3 by TnStaffRt3;
-    sub TnLtr2 by TnStaffRt2;
-    sub TnLtr1 by TnStaffRt1;
-} tnsr_sub;
-
-lookup tnsl_sub {
-  lookupflag 0;
-    sub LftStemTnLtr5 by TnStaffLft5;
-    sub LftStemTnLtr4 by TnStaffLft4;
-    sub LftStemTnLtr3 by TnStaffLft3;
-    sub LftStemTnLtr2 by TnStaffLft2;
-    sub LftStemTnLtr1 by TnStaffLft1;
-} tnsl_sub;
-
-lookup tnsl_dcmp {
-  lookupflag 0;
-    sub LftStemTnLtr5 by TnStaffLft5 TnContLft55;
-    sub LftStemTnLtr4 by TnStaffLft4 TnContLft44;
-    sub LftStemTnLtr3 by TnStaffLft3 TnContLft33;
-    sub LftStemTnLtr2 by TnStaffLft2 TnContLft22;
-    sub LftStemTnLtr1 by TnStaffLft1 TnContLft11;
-} tnsl_dcmp;
-
-# @TnLtrs = [TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1 ];
-
-@TnContFlat = [TnContRt11 TnContRt22 TnContRt33 TnContRt44 TnContRt55 ];
-
-@TnContSlant = [TnContRt12 TnContRt13 TnContRt14 TnContRt15 
-  TnContRt21 TnContRt23 TnContRt24 TnContRt25 
-  TnContRt31 TnContRt32 TnContRt34 TnContRt35 
-  TnContRt41 TnContRt42 TnContRt43 TnContRt45 
-  TnContRt51 TnContRt52 TnContRt53 TnContRt54 ];
-
-# @LftStemTnLtrs = [LftStemTnLtr5 LftStemTnLtr4 LftStemTnLtr3 LftStemTnLtr2 LftStemTnLtr1 ];
-
-@TnContLftFlat = [TnContLft11 TnContLft22 TnContLft33 TnContLft44 TnContLft55 ];
-
-@TnContLftSlant = [TnContLft12 TnContLft13 TnContLft14 TnContLft15 
-  TnContLft21 TnContLft23 TnContLft24 TnContLft25 
-  TnContLft31 TnContLft32 TnContLft34 TnContLft35 
-  TnContLft41 TnContLft42 TnContLft43 TnContLft45 
-  TnContLft51 TnContLft52 TnContLft53 TnContLft54 ];
-
-# handle retained tone letter
-#  last glyph for right staff clusters and first glyph for left staff clusters
-#  replace by a staff unless preceeded (for right staff) or followed (for left staff) by identical level 
-#   with no other level at the other end of the cluster
-#  five intervening flat levels are supported (so six identical tone levels)
-# in the below, especially note where the lkup is applied and where the _dcmp lkup is used
-#  rules are matched in the order written below based on the input context then with look ahead or behind testing
-#  when a rule matches, procesing moves past the input context (@class')
-lookup tne_ctx_sav {
-  lookupflag 0;
-    sub @TnContSlant @TnContFlat' @TnLtrs'lookup tnsr_sub;
-    sub @TnContSlant @TnContFlat' @TnContFlat' @TnLtrs'lookup tnsr_sub;
-    sub @TnContSlant @TnContFlat' @TnContFlat' @TnContFlat' @TnLtrs'lookup tnsr_sub;
-    sub @TnContSlant @TnContFlat' @TnContFlat' @TnContFlat' @TnContFlat' @TnLtrs'lookup tnsr_sub;
-    sub @TnContSlant @TnContFlat' @TnContFlat' @TnContFlat' @TnContFlat' @TnContFlat' @TnLtrs'lookup tnsr_sub;
-    sub @TnContSlant @TnLtrs'lookup tnsr_sub; # short rules could be before longer rules
-    sub @TnContFlat @TnLtrs'lookup tnsr_dcmp; # because a matching slot is before the tone letter, so tone ltr is skipped
-
-    sub @LftStemTnLtrs'lookup tnsl_sub @TnContLftFlat' @TnContLftSlant;
-    sub @LftStemTnLtrs'lookup tnsl_sub @TnContLftFlat' @TnContLftFlat' @TnContLftSlant;
-    sub @LftStemTnLtrs'lookup tnsl_sub @TnContLftFlat' @TnContLftFlat' @TnContLftFlat' @TnContLftSlant;
-    sub @LftStemTnLtrs'lookup tnsl_sub @TnContLftFlat' @TnContLftFlat' @TnContLftFlat' @TnContLftFlat' @TnContLftSlant;
-    sub @LftStemTnLtrs'lookup tnsl_sub @TnContLftFlat' @TnContLftFlat' @TnContLftFlat' @TnContLftFlat' @TnContLftFlat' @TnContLftSlant;
-    sub @LftStemTnLtrs'lookup tnsl_sub @TnContLftSlant; # short rules must be after longer rules
-    sub @LftStemTnLtrs'lookup tnsl_dcmp @TnContLftFlat; # because the tone letter is before a matching slot
-} tne_ctx_sav;
 
 lookup bhk_sub {
   lookupflag 0;
