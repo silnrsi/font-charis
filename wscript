@@ -41,7 +41,6 @@ for dspace in ('Roman', 'Italic'):
                     master = 'source/opentype/main.feax',
                     make_params = omitapps,
                     depends = ('source/opentype/gsub.feax',
-                        'source/opentype/gpos_lkups.feax',
                         'source/opentype/gpos.feax',
                         'source/opentype/gdef.feax'),
                     to_ufo = 'True' # copies to instance UFOs
