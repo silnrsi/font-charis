@@ -204,13 +204,16 @@ lookup tn_ctx {
       [TnStaffLft5 TnStaffLft4 TnStaffLft3 TnStaffLft2 TnStaffLft1];
 } tn_ctx;
 
+
 # substitute a glyph with spacing for one without spacing in right stem clusters
 lookup tner_sub {
+  lookupflag 0;
     sub @TnLtrSeg by @TnContRt;
 } tner_sub;
 
 # substitute a glyph with spacing for one without spacing in left stem clusters
 lookup tnel_sub {
+  lookupflag 0;
     sub @TnLtrSeg by @TnContLft;
 } tnel_sub;
 
@@ -220,6 +223,7 @@ lookup tnel_sub {
 # add a spacing glyph to the opposite end of a cluster from the staff
 #  supports up to six tone bars
 lookup tne_ctx {
+  lookupflag 0;
     sub @TnLtrSeg'lookup tner_sub @TnLtrSeg' @TnLtrSeg' @TnLtrSeg' @TnLtrSeg' @TnLtrSeg' @TnStaffRt'; 
     sub @TnLtrSeg'lookup tner_sub @TnLtrSeg' @TnLtrSeg' @TnLtrSeg' @TnLtrSeg' @TnStaffRt'; 
     sub @TnLtrSeg'lookup tner_sub @TnLtrSeg' @TnLtrSeg' @TnLtrSeg' @TnStaffRt';
@@ -234,6 +238,20 @@ lookup tne_ctx {
     sub @TnStaffLft' @TnLtrSeg' @TnLtrSeg'lookup tnel_sub;
     sub @TnStaffLft' @TnLtrSeg'lookup tnel_sub;
 } tne_ctx;
+
+@TnLtrsNo = [TnLtr5no TnLtr4no TnLtr3no TnLtr2no TnLtr1no ];
+@LftStemTnLtrsNo = [LftStemTnLtr5no LftStemTnLtr4no LftStemTnLtr3no LftStemTnLtr2no LftStemTnLtr1no ];
+
+@TnStaffRtNo = [TnStaffRt5no TnStaffRt4no TnStaffRt3no TnStaffRt2no TnStaffRt1no ];
+@TnStaffLftNo = [TnStaffLft5no TnStaffLft4no TnStaffLft3no TnStaffLft2no TnStaffLft1no ];
+
+lookup tnh_sub {
+  lookupflag 0;
+    sub @TnLtrs by @TnLtrsNo;
+    sub @LftStemTnLtrs by @LftStemTnLtrsNo;
+    sub @TnStaffRt by @TnStaffRtNo;
+    sub @TnStaffLft by @TnStaffLftNo;
+} tnh_sub;
 
 lookup bhk_sub {
   lookupflag 0;
@@ -494,6 +512,7 @@ feature aalt {
   feature cv82;
   feature cv90;
   feature cv91;
+  feature cv92;
   feature cv98;
   feature ss01;
   feature ss04;
@@ -1284,6 +1303,33 @@ feature cv91 {
 
   lookup tn_sub;
 } cv91;
+
+feature cv92 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Hide tone contour staves";  # English US
+       name 1 0 0 "Hide tone contour staves";  # Mac English
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Hide tone staves";  # English US
+       name 1 0 0 "Hide tone staves";  # Mac English
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "˩˨˧˦˥꜖꜕꜔꜓꜒";  # English US
+       name 1 0 0 "?";  # Mac English
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "True";  # English US
+       name 1 0 0 "True";  # Mac English
+      };
+  };
+
+  lookup tnh_sub;
+} cv92;
 
 feature cv98 {
 
