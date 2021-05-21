@@ -72,7 +72,7 @@ Single-story | <span feats="ss12">g ĝ ğ ġ ģ ǧ ǵ ǥ ḡ ꞡ ᵍ </span> | `
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
 Standard    | <span feats="">đ ƀ ǥ</span> | `ss04=0`
-Barred-bowl | <span feats="s04">đ ƀ ǥ</span> | `ss04=1`
+Barred-bowl | <span feats="ss04">đ ƀ ǥ</span> | `ss04=1`
 
 #### Slant italic specials
 
