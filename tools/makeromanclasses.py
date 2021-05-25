@@ -22,6 +22,7 @@ class_spec_lst = [('smcp', 'sc'),
                   ('dotlss', 'Dotless'),
                   ('rtrhk', 'RetroHook'),
                   ('iotasub', 'ISub'),
+                  ('bartp', 'BarTop'),
                   ]
 
 super_sub_mod_regex = "\wSubSm\w|\wSupSm\w|^ModCap\w|^ModSm\w"
