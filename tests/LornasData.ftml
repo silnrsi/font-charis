@@ -1,0 +1,2862 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="../tools/ftml.xsl" type="text/xsl"?>
+<ftml version="1.0">
+  <head>
+    <fontscale>200</fontscale>
+    <fontsrc>url(../results/CharisSIL-Regular.ttf)</fontsrc>
+    <fontsrc>url(../results/CharisSIL-Bold.ttf)</fontsrc>
+    <fontsrc>url(../results/CharisSIL-Italic.ttf)</fontsrc>
+    <fontsrc>url(../results/CharisSIL-BoldItalic.ttf)</fontsrc>
+    <fontsrc label="CRv5">url(../references/v5/CharisSIL-Regular.ttf)</fontsrc>
+    <fontsrc label="CIv5">url(../references/v5/CharisSIL-Italic.ttf)</fontsrc>
+    <fontsrc label="DRb1">url(../references/b1/DoulosSIL-Regular.ttf)</fontsrc>
+    <fontsrc label="DRv5">url(../references/v5/DoulosSIL-Regular.ttf)</fontsrc>
+    <title>LornasData</title>
+  </head>
+  <testgroup label="Common base diacritic combos">
+    <test label="U+0061 U+0301">
+      <comment>NRG:izercr (Izere), UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000061\u000301</string>
+    </test>
+    <test label="U+0041 U+0301">
+      <comment>SUB:krsdr (Gbaya), UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000041\u000301</string>
+    </test>
+    <test label="U+0061 U+0301 U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u000061\u000301\u000327</string>
+    </test>
+    <test label="U+0041 U+0301 U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u000041\u000301\u000327</string>
+    </test>
+    <test label="U+0061 U+0301 U+031C">
+      <comment>NAB:utedour2 (Ute)</comment>
+      <string>\u000061\u000301\u00031C</string>
+    </test>
+    <test label="U+0061 U+0301 U+0323">
+      <comment>UTB:bandodr (Bantu Dot Under), SUB:avudr (Avokaya)</comment>
+      <string>\u000061\u000301\u000323</string>
+    </test>
+    <test label="U+0041 U+0301 U+0323">
+      <comment>UTB:bandodr (Bantu Dot Under), SUB:avudr (Avokaya)</comment>
+      <string>\u000041\u000301\u000323</string>
+    </test>
+    <test label="U+0041 U+0301 U+0331">
+      <comment>UTB:banundr (Bantu Bar Under), SEB:silsen2, SEB:dkalwdr, SUB:murdr (Murle), MXB:lo329595 (Zapatec)</comment>
+      <string>\u000041\u000301\u000331</string>
+    </test>
+    <test label="U+0061 U+0301 U+0331">
+      <comment>SUB:murdr (Murle), SEB:silsen2, MXB:lo329595 (Zapatec), UTB:banundr (Bantu Bar Under)</comment>
+      <string>\u000061\u000301\u000331</string>
+    </test>
+    <test label="U+0061 U+0301 U+0328">
+      <comment>NAB:beaver (Beaver)</comment>
+      <string>\u000061\u000301\u000328</string>
+    </test>
+    <test label="U+0041 U+0301 U+0328">
+      <comment>NAB:beaver (Beaver)</comment>
+      <string>\u000041\u000301\u000328</string>
+    </test>
+    <test label="U+0041 U+0300">
+      <comment>NIB:nigedr (LanguesNiger), UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000041\u000300</string>
+    </test>
+    <test label="U+0061 U+0300">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000061\u000300</string>
+    </test>
+    <test label="U+0061 U+0300 U+0328">
+      <comment>NAB:Do236564 (Dogrib)</comment>
+      <string>\u000061\u000300\u000328</string>
+    </test>
+    <test label="U+0041 U+0300 U+0328">
+      <comment>NAB:Do236564 (Dogrib)</comment>
+      <string>\u000041\u000300\u000328</string>
+    </test>
+    <test label="U+0061 U+0300 U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u000061\u000300\u000327</string>
+    </test>
+    <test label="U+0041 U+0300 U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u000041\u000300\u000327</string>
+    </test>
+    <test label="U+0061 U+0300 U+0323">
+      <comment>UTB:bandodr (Bantu Dot Under)</comment>
+      <string>\u000061\u000300\u000323</string>
+    </test>
+    <test label="U+0041 U+0300 U+0323">
+      <comment>UTB:bandodr (Bantu Dot Under)</comment>
+      <string>\u000041\u000300\u000323</string>
+    </test>
+    <test label="U+0061 U+0300 U+0331">
+      <comment>UTB:banundr (Bantu Bar Under)</comment>
+      <string>\u000061\u000300\u000331</string>
+    </test>
+    <test label="U+0041 U+0300 U+0331">
+      <comment>UTB:banundr (Bantu Bar Under)</comment>
+      <string>\u000041\u000300\u000331</string>
+    </test>
+    <test label="U+0041 U+0302">
+      <comment>SUB:krsdr (Gbaya), UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000041\u000302</string>
+    </test>
+    <test label="U+0061 U+0302">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000061\u000302</string>
+    </test>
+    <test label="U+0061 U+0302 U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u000061\u000302\u000327</string>
+    </test>
+    <test label="U+0041 U+0302 U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u000041\u000302\u000327</string>
+    </test>
+    <test label="U+0061 U+0302 U+0323">
+      <comment>UTB:bandodr (Bantu Dot Under), SUB:avudr (Avokaya)</comment>
+      <string>\u000061\u000302\u000323</string>
+    </test>
+    <test label="U+0041 U+0302 U+0323">
+      <comment>UTB:bandodr (Bantu Dot Under), SUB:avudr (Avokaya)</comment>
+      <string>\u000041\u000302\u000323</string>
+    </test>
+    <test label="U+0061 U+0302 U+0331">
+      <comment>UTB:banundr (Bantu Bar Under), SUB:murdr (Murle)</comment>
+      <string>\u000061\u000302\u000331</string>
+    </test>
+    <test label="U+0041 U+0302 U+0331">
+      <comment>UTB:banundr (Bantu Bar Under), SUB:murdr (Murle)</comment>
+      <string>\u000041\u000302\u000331</string>
+    </test>
+    <test label="U+0061 U+0308">
+      <comment>ECG: ECGd</comment>
+      <string>\u000061\u000308</string>
+    </test>
+    <test label="U+0041 U+0308">
+      <comment>ECG: ECGd, SUB:krsdr (Gbaya)</comment>
+      <string>\u000041\u000308</string>
+    </test>
+    <test label="U+0061 U+0308 U+0301">
+      <comment>ECG: ECGd, SUB:bvidr (Viri)</comment>
+      <string>\u000061\u000308\u000301</string>
+    </test>
+    <test label="U+0041 U+0308 U+0301">
+      <comment>ECG: ECGd, SUB:bvidr (Viri)</comment>
+      <string>\u000041\u000308\u000301</string>
+    </test>
+    <test label="U+0061 U+0308 U+0300">
+      <comment>ECG: ECGd</comment>
+      <string>\u000061\u000308\u000300</string>
+    </test>
+    <test label="U+0041 U+0308 U+0300">
+      <comment>ECG: ECGd</comment>
+      <string>\u000041\u000308\u000300</string>
+    </test>
+    <test label="U+0061 U+0308 U+0302">
+      <comment>SUB:mgddr (Moru)</comment>
+      <string>\u000061\u000308\u000302</string>
+    </test>
+    <test label="U+0041 U+0308 U+0302">
+      <comment>SUB:mgddr (Moru)</comment>
+      <string>\u000041\u000308\u000302</string>
+    </test>
+    <test label="U+0061 U+0308 U+030C">
+      <comment>ECG: ECGd</comment>
+      <string>\u000061\u000308\u00030C</string>
+    </test>
+    <test label="U+0041 U+0308 U+030C">
+      <comment>ECG: ECGd</comment>
+      <string>\u000041\u000308\u00030C</string>
+    </test>
+    <test label="U+0061 U+0308 U+0303">
+      <comment>SUB:bvidr (Viri)</comment>
+      <string>\u000061\u000308\u000303</string>
+    </test>
+    <test label="U+0041 U+0308 U+0303">
+      <comment>SUB:bvidr (Viri)</comment>
+      <string>\u000041\u000308\u000303</string>
+    </test>
+    <test label="U+0061 U+0308 U+0331">
+      <comment>SUB:nusdr (Nuer), MXB:chnchzdr</comment>
+      <string>\u000061\u000308\u000331</string>
+    </test>
+    <test label="U+0041 U+0308 U+0331">
+      <comment>SUB:nusdr (Nuer), MXB:chnchzdr</comment>
+      <string>\u000041\u000308\u000331</string>
+    </test>
+    <test label="U+0061 U+030C">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000061\u00030C</string>
+    </test>
+    <test label="U+0041 U+030C">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000041\u00030C</string>
+    </test>
+    <test label="U+0061 U+030C U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u000061\u00030C\u000327</string>
+    </test>
+    <test label="U+0041 U+030C U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u000041\u00030C\u000327</string>
+    </test>
+    <test label="U+0061 U+030C U+0323">
+      <comment>UTB:bandodr (Bantu Dot Under)</comment>
+      <string>\u000061\u00030C\u000323</string>
+    </test>
+    <test label="U+0041 U+030C U+0323">
+      <comment>UTB:bandodr (Bantu Dot Under)</comment>
+      <string>\u000041\u00030C\u000323</string>
+    </test>
+    <test label="U+0061 U+030C U+0331">
+      <comment>UTB:banundr (Bantu Bar Under)</comment>
+      <string>\u000061\u00030C\u000331</string>
+    </test>
+    <test label="U+0041 U+030C U+0331">
+      <comment>UTB:banundr (Bantu Bar Under)</comment>
+      <string>\u000041\u00030C\u000331</string>
+    </test>
+    <test label="U+0041 U+0306">
+      <comment>NIB:tama000 (Tamajaq), SUB:krsdr (Gbaya)</comment>
+      <string>\u000041\u000306</string>
+    </test>
+    <test label="U+0061 U+0306">
+      <comment>SUB:krsdr (Gbaya)</comment>
+      <string>\u000061\u000306</string>
+    </test>
+    <test label="U+0041 U+0304">
+      <comment>PLB:phiandr</comment>
+      <string>\u000041\u000304</string>
+    </test>
+    <test label="U+0061 U+0304">
+      <comment>PNB:pngcr, MXB:mtt</comment>
+      <string>\u000061\u000304</string>
+    </test>
+    <test label="U+0041 U+0304 U+0301">
+      <comment>NIB:alphdr0 (LanguesNiger)</comment>
+      <string>\u000041\u000304\u000301</string>
+    </test>
+    <test label="U+0041 U+0304 U+0302">
+      <comment>NIB:alphdr0 (LanguesNiger)</comment>
+      <string>\u000041\u000304\u000302</string>
+    </test>
+    <test label="U+0061 U+0304 U+0302">
+      <comment>NIB:nigedr (LanguesNiger)</comment>
+      <string>\u000061\u000304\u000302</string>
+    </test>
+    <test label="U+0061 U+0303">
+      <comment>PNB:pngcr</comment>
+      <string>\u000061\u000303</string>
+    </test>
+    <test label="U+0041 U+0303">
+      <comment>SUB:avudr (Avokaya), SUB:krsdr (Gbaya)</comment>
+      <string>\u000041\u000303</string>
+    </test>
+    <test label="U+0061 U+0303 U+0301">
+      <comment>SUB:diddr (Didinga)</comment>
+      <string>\u000061\u000303\u000301</string>
+    </test>
+    <test label="U+0041 U+0303 U+0301">
+      <comment>SUB:diddr (Didinga)</comment>
+      <string>\u000041\u000303\u000301</string>
+    </test>
+    <test label="U+0061 U+0303 U+0300">
+      <comment>NIB:nigedr (LanguesNiger)</comment>
+      <string>\u000061\u000303\u000300</string>
+    </test>
+    <test label="U+0061 U+0303 U+0300">
+      <comment>SUB:diddr (Didinga), NIB:niger2</comment>
+      <string>\u000061\u000303\u000300</string>
+    </test>
+    <test label="U+0041 U+0303 U+0300">
+      <comment>SUB:diddr (Didinga)</comment>
+      <string>\u000041\u000303\u000300</string>
+    </test>
+    <test label="U+0061 U+0303 U+0302">
+      <comment>SUB:diddr (Didinga)</comment>
+      <string>\u000061\u000303\u000302</string>
+    </test>
+    <test label="U+0041 U+0303 U+0302">
+      <comment>SUB:diddr (Didinga)</comment>
+      <string>\u000041\u000303\u000302</string>
+    </test>
+    <test label="U+0061 U+0303 U+0323">
+      <comment>SUB:avudr (Avokaya)</comment>
+      <string>\u000061\u000303\u000323</string>
+    </test>
+    <test label="U+0041 U+0303 U+0323">
+      <comment>SUB:avudr (Avokaya)</comment>
+      <string>\u000041\u000303\u000323</string>
+    </test>
+    <test label="U+0041 U+0328">
+      <comment>NAB:Do236564 (Dogrib)</comment>
+      <string>\u000041\u000328</string>
+    </test>
+    <test label="U+0061 U+0328">
+      <comment>NAB:Do236564 (Dogrib)</comment>
+      <string>\u000061\u000328</string>
+    </test>
+    <test label="U+0041 U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u000041\u000327</string>
+    </test>
+    <test label="U+0061 U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u000061\u000327</string>
+    </test>
+    <test label="U+0041 U+031C">
+      <comment>NAB:utedour2 (Ute)</comment>
+      <string>\u000041\u00031C</string>
+    </test>
+    <test label="U+0061 U+031C">
+      <comment>NAB:utedour2 (Ute)</comment>
+      <string>\u000061\u00031C</string>
+    </test>
+    <test label="U+0041 U+0323">
+      <comment>SUB:avudr (Avokaya)</comment>
+      <string>\u000041\u000323</string>
+    </test>
+    <test label="U+0061 U+0323">
+      <comment>SUB:avudr (Avokaya)</comment>
+      <string>\u000061\u000323</string>
+    </test>
+    <test label="U+0041 U+0330">
+      <comment>BFB:93li000</comment>
+      <string>\u000041\u000330</string>
+    </test>
+    <test label="U+0061 U+0330">
+      <comment>BFB:93li000</comment>
+      <string>\u000061\u000330</string>
+    </test>
+    <test label="U+0061 U+0331">
+      <comment>SUB:murdr (Murle), MXB:mtt, BFB:93li000, SEB:silsen2, SUB:nusdr (Nuer), MXB:chnchzdr, MXB:mix</comment>
+      <string>\u000061\u000331</string>
+    </test>
+    <test label="U+0041 U+0331">
+      <comment>SUB:murdr (Murle), SUB:nusdr (Nuer), UTB:banundr (Bantu Bar Under), SEB:dkalwdr, SEB:silsen2 , MXB:chnchzdr</comment>
+      <string>\u000041\u000331</string>
+    </test>
+    <test label="U+0251 U+0301">
+      <comment>UTB:Banbacr (Bantu Bar Over), NIB:fhp</comment>
+      <string>\u000251\u000301</string>
+    </test>
+    <test label="U+0251 U+0301 U+0331">
+      <comment>SEB:dkalwdr</comment>
+      <string>\u000251\u000301\u000331</string>
+    </test>
+    <test label="U+0251 U+0300">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000251\u000300</string>
+    </test>
+    <test label="U+0251 U+0302">
+      <comment>NIB:fhp, PLB:phiandr</comment>
+      <string>\u000251\u000302</string>
+    </test>
+    <test label="U+0251 U+0308">
+      <comment>NIB:alphdr0 (LanguesNiger), NIB:fhp</comment>
+      <string>\u000251\u000308</string>
+    </test>
+    <test label="U+0251 U+030C">
+      <comment>UTB:banipdr (Bantu IPA)</comment>
+      <string>\u000251\u00030C</string>
+    </test>
+    <test label="U+0251 U+0306">
+      <comment>NIB:alphdr0 (LanguesNiger), NIB:tt204lit (Tamajaq)</comment>
+      <string>\u000251\u000306</string>
+    </test>
+    <test label="U+0251 U+0304">
+      <comment>NRG:ma98sr0</comment>
+      <string>\u000251\u000304</string>
+    </test>
+    <test label="U+0251 U+0304 U+0302">
+      <comment>NIB:alphdr0 (LanguesNiger)</comment>
+      <string>\u000251\u000304\u000302</string>
+    </test>
+    <test label="U+0251 U+0303">
+      <comment>NIB:alphdr0 (LanguesNiger)</comment>
+      <string>\u000251\u000303</string>
+    </test>
+    <test label="U+0251 U+0303">
+      <comment>NIB:fhp</comment>
+      <string>\u000251\u000303</string>
+    </test>
+    <test label="U+0251 U+0303 U+0300">
+      <comment>NIB:alphdr0 (LanguesNiger)</comment>
+      <string>\u000251\u000303\u000300</string>
+    </test>
+    <test label="U+0251 U+030A">
+      <comment>SEB:sen2alph</comment>
+      <string>\u000251\u00030A</string>
+    </test>
+    <test label="U+0251 U+0331">
+      <comment>SEB:dkalwdr, SEB:sen2alph</comment>
+      <string>\u000251\u000331</string>
+    </test>
+    <test label="U+00E6 U+0301">
+      <comment>MXB:mtt</comment>
+      <string>\u0000E6\u000301</string>
+    </test>
+    <test label="U+00E6 U+0330">
+      <comment>BFB:93li000</comment>
+      <string>\u0000E6\u000330</string>
+    </test>
+    <test label="U+0062 U+0303">
+      <comment>VAG:aavancr</comment>
+      <string>\u000062\u000303</string>
+    </test>
+    <test label="U+0042 U+0303">
+      <comment>VAG:aavancr</comment>
+      <string>\u000042\u000303</string>
+    </test>
+    <test label="U+0042 U+0323">
+      <comment>NIB:tama000 (Tamajaq)</comment>
+      <string>\u000042\u000323</string>
+    </test>
+    <test label="U+0062 U+0323">
+      <comment>NIB:tama000 (Tamajaq)</comment>
+      <string>\u000062\u000323</string>
+    </test>
+    <test label="U+0063 U+0307">
+      <comment>NAB:lakotdr (Lakota)</comment>
+      <string>\u000063\u000307</string>
+    </test>
+    <test label="U+0043 U+0307">
+      <comment>NAB:lakotdr (Lakota)</comment>
+      <string>\u000043\u000307</string>
+    </test>
+    <test label="U+0043 U+030C">
+      <comment>MSEAG:vgdr (Vietnamese)</comment>
+      <string>\u000043\u00030C</string>
+    </test>
+    <test label="U+0063 U+0304">
+      <comment>NAB:lakotdr (Lakota)</comment>
+      <string>\u000063\u000304</string>
+    </test>
+    <test label="U+0043 U+0304">
+      <comment>NAB:lakotdr (Lakota)</comment>
+      <string>\u000043\u000304</string>
+    </test>
+    <test label="U+0043 U+0327">
+      <comment>ECG: ECGd</comment>
+      <string>\u000043\u000327</string>
+    </test>
+    <test label="U+0063 U+0327">
+      <comment>ECG: ECGd</comment>
+      <string>\u000063\u000327</string>
+    </test>
+    <test label="U+0063 U+0331">
+      <comment>SUB:ududr (Uduk), MXB:lo329595 (Zapatec)</comment>
+      <string>\u000063\u000331</string>
+    </test>
+    <test label="U+0043 U+0331">
+      <comment>SUB:ududr (Uduk), MXB:lo329595 (Zapatec)</comment>
+      <string>\u000043\u000331</string>
+    </test>
+    <test label="U+010D U+0323">
+      <comment>MXB:mtt</comment>
+      <string>\u00010D\u000323</string>
+    </test>
+    <test label="U+0254 U+0301">
+      <comment>ECG: ECGd, UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000254\u000301</string>
+    </test>
+    <test label="U+0254 U+0300">
+      <comment>ECG: ECGd, NRG:yoru000 (Yoruba), UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000254\u000300</string>
+    </test>
+    <test label="U+0254 U+0302">
+      <comment>CAG:betkedr (Mono), UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000254\u000302</string>
+    </test>
+    <test label="U+0254 U+0308">
+      <comment>SUB:dindr (Dinka)</comment>
+      <string>\u000254\u000308</string>
+    </test>
+    <test label="U+0254 U+0308 U+0301">
+      <comment>SUB:dindr (Dinka)</comment>
+      <string>\u000254\u000308\u000301</string>
+    </test>
+    <test label="U+0254 U+0308 U+0300">
+      <comment>SUB:dindr (Dinka)</comment>
+      <string>\u000254\u000308\u000300</string>
+    </test>
+    <test label="U+0254 U+0308 U+0331">
+      <comment>SUB:nusdr (Nuer)</comment>
+      <string>\u000254\u000308\u000331</string>
+    </test>
+    <test label="U+0254 U+030C">
+      <comment>ECG: ECGd, UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000254\u00030C</string>
+    </test>
+    <test label="U+0254 U+0304">
+      <comment>NRG:ma98sr0</comment>
+      <string>\u000254\u000304</string>
+    </test>
+    <test label="U+0254 U+0303">
+      <comment>GHG:gh428838</comment>
+      <string>\u000254\u000303</string>
+    </test>
+    <test label="U+0254 U+0303 U+0300">
+      <comment>NIB:so245911 (Songhai)</comment>
+      <string>\u000254\u000303\u000300</string>
+    </test>
+    <test label="U+0254 U+0330">
+      <comment>BFB:93li000</comment>
+      <string>\u000254\u000330</string>
+    </test>
+    <test label="U+0254 U+0331">
+      <comment>SUB:nusdr (Nuer)</comment>
+      <string>\u000254\u000331</string>
+    </test>
+    <test label="U+0254 U+1DC6">
+      <comment>BFB:sentimes</comment>
+      <string>\u000254\u001DC6</string>
+    </test>
+    <test label="U+0254 U+1DC7">
+      <comment>BFB:sentimes</comment>
+      <string>\u000254\u001DC7</string>
+    </test>
+    <test label="U+0186 U+0301">
+      <comment>ECG: ECGd, UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000186\u000301</string>
+    </test>
+    <test label="U+0186 U+0300">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000186\u000300</string>
+    </test>
+    <test label="U+0186 U+0302">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000186\u000302</string>
+    </test>
+    <test label="U+0186 U+0308">
+      <comment>SUB:dindr (Dinka)</comment>
+      <string>\u000186\u000308</string>
+    </test>
+    <test label="U+0186 U+0308 U+0301">
+      <comment>SUB:dindr (Dinka)</comment>
+      <string>\u000186\u000308\u000301</string>
+    </test>
+    <test label="U+0186 U+0308 U+0300">
+      <comment>SUB:dindr (Dinka)</comment>
+      <string>\u000186\u000308\u000300</string>
+    </test>
+    <test label="U+0186 U+0308 U+0331">
+      <comment>SUB:nusdr (Nuer)</comment>
+      <string>\u000186\u000308\u000331</string>
+    </test>
+    <test label="U+0186 U+030C">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000186\u00030C</string>
+    </test>
+    <test label="U+0186 U+0303">
+      <comment>BFB:bfromr</comment>
+      <string>\u000186\u000303</string>
+    </test>
+    <test label="U+0186 U+0330">
+      <comment>BFB:93li000</comment>
+      <string>\u000186\u000330</string>
+    </test>
+    <test label="U+0186 U+0331">
+      <comment>SUB:nusdr (Nuer)</comment>
+      <string>\u000186\u000331</string>
+    </test>
+    <test label="U+0064 U+0323">
+      <comment>SUB:krsdr (Gbaya), SUB:mfzdr (Mabaan)</comment>
+      <string>\u000064\u000323</string>
+    </test>
+    <test label="U+0044 U+0323">
+      <comment>SUB:mfzdr (Mabaan)</comment>
+      <string>\u000044\u000323</string>
+    </test>
+    <test label="U+0064 U+0331">
+      <comment>SUB:murdr (Murle), MXB:lo329595 (Zapatec)</comment>
+      <string>\u000064\u000331</string>
+    </test>
+    <test label="U+0044 U+0331">
+      <comment>SUB:murdr (Murle), MXB:lo329595 (Zapatec)</comment>
+      <string>\u000044\u000331</string>
+    </test>
+    <test label="U+00F0 U+0323">
+      <comment>ERG:ramnclq (Arabic)</comment>
+      <string>\u0000F0\u000323</string>
+    </test>
+    <test label="U+0065 U+0301">
+      <comment>NRG:izercr (Izere), UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000065\u000301</string>
+    </test>
+    <test label="U+0045 U+0301">
+      <comment>SUB:krsdr (Gbaya), UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000045\u000301</string>
+    </test>
+    <test label="U+0065 U+0301 U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u000065\u000301\u000327</string>
+    </test>
+    <test label="U+0045 U+0301 U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u000045\u000301\u000327</string>
+    </test>
+    <test label="U+0065 U+0301 U+0323">
+      <comment>SUB:avudr (Avokaya), NRG:yoru000 (Yoruba)</comment>
+      <string>\u000065\u000301\u000323</string>
+    </test>
+    <test label="U+0045 U+0301 U+0323">
+      <comment>UTB:bandodr (Bantu Dot Under), SUB:avudr (Avokaya), NRG:yoru000 (Yoruba)</comment>
+      <string>\u000045\u000301\u000323</string>
+    </test>
+    <test label="U+0065 U+0301 U+0331">
+      <comment>UTB:banundr (Bantu Bar Under), SUB:murdr (Murle), MXB:lo329595 (Zapatec)</comment>
+      <string>\u000065\u000301\u000331</string>
+    </test>
+    <test label="U+0045 U+0301 U+0331">
+      <comment>UTB:banundr (Bantu Bar Under), SUB:murdr (Murle), MXB:lo329595 (Zapatec)</comment>
+      <string>\u000045\u000301\u000331</string>
+    </test>
+    <test label="U+0065 U+0301 U+0328">
+      <comment>NAB:beaver (Beaver)</comment>
+      <string>\u000065\u000301\u000328</string>
+    </test>
+    <test label="U+0045 U+0301 U+0328">
+      <comment>NAB:beaver (Beaver)</comment>
+      <string>\u000045\u000301\u000328</string>
+    </test>
+    <test label="U+0065 U+0300">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000065\u000300</string>
+    </test>
+    <test label="U+0045 U+0300">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000045\u000300</string>
+    </test>
+    <test label="U+0065 U+0300 U+0328">
+      <comment>NAB:Do236564 (Dogrib)</comment>
+      <string>\u000065\u000300\u000328</string>
+    </test>
+    <test label="U+0045 U+0300 U+0328">
+      <comment>NAB:Do236564 (Dogrib)</comment>
+      <string>\u000045\u000300\u000328</string>
+    </test>
+    <test label="U+0065 U+0300 U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u000065\u000300\u000327</string>
+    </test>
+    <test label="U+0045 U+0300 U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u000045\u000300\u000327</string>
+    </test>
+    <test label="U+0065 U+0300 U+0323">
+      <comment>UTB:bandodr (Bantu Dot Under), NRG:yoru000 (Yoruba)</comment>
+      <string>\u000065\u000300\u000323</string>
+    </test>
+    <test label="U+0045 U+0300 U+0323">
+      <comment>UTB:bandodr (Bantu Dot Under), NRG:yoru000 (Yoruba)</comment>
+      <string>\u000045\u000300\u000323</string>
+    </test>
+    <test label="U+0065 U+0300 U+0331">
+      <comment>UTB:banundr (Bantu Bar Under)</comment>
+      <string>\u000065\u000300\u000331</string>
+    </test>
+    <test label="U+0045 U+0300 U+0331">
+      <comment>UTB:banundr (Bantu Bar Under)</comment>
+      <string>\u000045\u000300\u000331</string>
+    </test>
+    <test label="U+0045 U+0302">
+      <comment>SUB:krsdr (Gbaya), UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000045\u000302</string>
+    </test>
+    <test label="U+0065 U+0302">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000065\u000302</string>
+    </test>
+    <test label="U+0065 U+0304 U+0302">
+      <comment>NIB:alphdr0 (LanguesNiger)</comment>
+      <string>\u000065\u000304\u000302</string>
+    </test>
+    <test label="U+0045 U+0304 U+0302">
+      <comment>NIB:alphdr0 (LanguesNiger)</comment>
+      <string>\u000045\u000304\u000302</string>
+    </test>
+    <test label="U+0065 U+0302 U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u000065\u000302\u000327</string>
+    </test>
+    <test label="U+0045 U+0302 U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u000045\u000302\u000327</string>
+    </test>
+    <test label="U+0065 U+0302 U+0323">
+      <comment>UTB:bandodr (Bantu Dot Under), SUB:avudr (Avokaya)</comment>
+      <string>\u000065\u000302\u000323</string>
+    </test>
+    <test label="U+0045 U+0302 U+0323">
+      <comment>UTB:bandodr (Bantu Dot Under), SUB:avudr (Avokaya)</comment>
+      <string>\u000045\u000302\u000323</string>
+    </test>
+    <test label="U+0065 U+0302 U+0331">
+      <comment>UTB:banundr (Bantu Bar Under), SUB:murdr (Murle)</comment>
+      <string>\u000065\u000302\u000331</string>
+    </test>
+    <test label="U+0045 U+0302 U+0331">
+      <comment>UTB:banundr (Bantu Bar Under), SUB:murdr (Murle)</comment>
+      <string>\u000045\u000302\u000331</string>
+    </test>
+    <test label="U+0065 U+0308">
+      <comment>SUB:dindr (Dinka)</comment>
+      <string>\u000065\u000308</string>
+    </test>
+    <test label="U+0045 U+0308">
+      <comment>SUB:dindr (Dinka), SUB:krsdr (Gbaya)</comment>
+      <string>\u000045\u000308</string>
+    </test>
+    <test label="U+0065 U+0308 U+0301 U+0331">
+      <comment>MXB:lo329595 (Zapatec)</comment>
+      <string>\u000065\u000308\u000301\u000331</string>
+    </test>
+    <test label="U+0045 U+0308 U+0301 U+0331">
+      <comment>MXB:lo329595 (Zapatec)</comment>
+      <string>\u000045\u000308\u000301\u000331</string>
+    </test>
+    <test label="U+0065 U+0308 U+0301">
+      <comment>SUB:bvidr (Viri)</comment>
+      <string>\u000065\u000308\u000301</string>
+    </test>
+    <test label="U+0045 U+0308 U+0301">
+      <comment>SUB:bvidr (Viri)</comment>
+      <string>\u000045\u000308\u000301</string>
+    </test>
+    <test label="U+0045 U+0308 U+0300">
+      <comment>SUB:dindr (Dinka)</comment>
+      <string>\u000045\u000308\u000300</string>
+    </test>
+    <test label="U+0065 U+0308 U+0300">
+      <comment>SUB:mgddr (Moru)</comment>
+      <string>\u000065\u000308\u000300</string>
+    </test>
+    <test label="U+0065 U+0308 U+0302">
+      <comment>SUB:mgddr (Moru)</comment>
+      <string>\u000065\u000308\u000302</string>
+    </test>
+    <test label="U+0045 U+0308 U+0302">
+      <comment>SUB:mgddr (Moru)</comment>
+      <string>\u000045\u000308\u000302</string>
+    </test>
+    <test label="U+0065 U+0308 U+0303">
+      <comment>SUB:bvidr (Viri)</comment>
+      <string>\u000065\u000308\u000303</string>
+    </test>
+    <test label="U+0045 U+0308 U+0303">
+      <comment>SUB:bvidr (Viri)</comment>
+      <string>\u000045\u000308\u000303</string>
+    </test>
+    <test label="U+0045 U+0308 U+0331">
+      <comment>MXB:chnchzdr, SUB:nusdr (Nuer), MXB:lo329595 (Zapatec)</comment>
+      <string>\u000045\u000308\u000331</string>
+    </test>
+    <test label="U+0065 U+0308 U+0331">
+      <comment>SUB:nusdr (Nuer), MXB:chnchzdr</comment>
+      <string>\u000065\u000308\u000331</string>
+    </test>
+    <test label="U+0065 U+030C">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000065\u00030C</string>
+    </test>
+    <test label="U+0045 U+030C">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000045\u00030C</string>
+    </test>
+    <test label="U+0065 U+030C U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u000065\u00030C\u000327</string>
+    </test>
+    <test label="U+0065 U+030C U+0323">
+      <comment>UTB:bandodr (Bantu Dot Under)</comment>
+      <string>\u000065\u00030C\u000323</string>
+    </test>
+    <test label="U+0065 U+030C U+0331">
+      <comment>UTB:banundr (Bantu Bar Under)</comment>
+      <string>\u000065\u00030C\u000331</string>
+    </test>
+    <test label="U+0065 U+0306">
+      <comment>SUB:krsdr (Gbaya)</comment>
+      <string>\u000065\u000306</string>
+    </test>
+    <test label="U+0045 U+0306">
+      <comment>SUB:krsdr (Gbaya)</comment>
+      <string>\u000045\u000306</string>
+    </test>
+    <test label="U+0045 U+0304">
+      <comment>PLB:phiandr</comment>
+      <string>\u000045\u000304</string>
+    </test>
+    <test label="U+0065 U+0304">
+      <comment>PNB:pngcr, MXB:mtt</comment>
+      <string>\u000065\u000304</string>
+    </test>
+    <test label="U+0065 U+0304 U+0302">
+      <comment>NIB:niger2</comment>
+      <string>\u000065\u000304\u000302</string>
+    </test>
+    <test label="U+0065 U+0303">
+      <comment>SUB:avudr (Avokaya)</comment>
+      <string>\u000065\u000303</string>
+    </test>
+    <test label="U+0045 U+0303">
+      <comment>SUB:avudr (Avokaya), SUB:krsdr (Gbaya)</comment>
+      <string>\u000045\u000303</string>
+    </test>
+    <test label="U+0065 U+0303 U+0301">
+      <comment>SUB:diddr (Didinga)</comment>
+      <string>\u000065\u000303\u000301</string>
+    </test>
+    <test label="U+0045 U+0303 U+0301">
+      <comment>SUB:diddr (Didinga)</comment>
+      <string>\u000045\u000303\u000301</string>
+    </test>
+    <test label="U+0065 U+0303 U+0300">
+      <comment>NIB:alphdr0 (LanguesNiger), SUB:diddr (Didinga)</comment>
+      <string>\u000065\u000303\u000300</string>
+    </test>
+    <test label="U+0045 U+0303 U+0300">
+      <comment>SUB:diddr (Didinga)</comment>
+      <string>\u000045\u000303\u000300</string>
+    </test>
+    <test label="U+0065 U+0303 U+0302">
+      <comment>SUB:diddr (Didinga)</comment>
+      <string>\u000065\u000303\u000302</string>
+    </test>
+    <test label="U+0045 U+0303 U+0302">
+      <comment>SUB:diddr (Didinga)</comment>
+      <string>\u000045\u000303\u000302</string>
+    </test>
+    <test label="U+0065 U+0303 U+0323">
+      <comment>SUB:avudr (Avokaya)</comment>
+      <string>\u000065\u000303\u000323</string>
+    </test>
+    <test label="U+0045 U+0303 U+0323">
+      <comment>SUB:avudr (Avokaya)</comment>
+      <string>\u000045\u000303\u000323</string>
+    </test>
+    <test label="U+0045 U+0328">
+      <comment>NAB:Do236564 (Dogrib)</comment>
+      <string>\u000045\u000328</string>
+    </test>
+    <test label="U+0065 U+0328">
+      <comment>NAB:Do236564 (Dogrib)</comment>
+      <string>\u000065\u000328</string>
+    </test>
+    <test label="U+0045 U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u000045\u000327</string>
+    </test>
+    <test label="U+0065 U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u000065\u000327</string>
+    </test>
+    <test label="U+0045 U+0323">
+      <comment>SUB:avudr (Avokaya)</comment>
+      <string>\u000045\u000323</string>
+    </test>
+    <test label="U+0065 U+0323">
+      <comment>SUB:avudr (Avokaya)</comment>
+      <string>\u000065\u000323</string>
+    </test>
+    <test label="U+0045 U+0330">
+      <comment>BFB:93li000</comment>
+      <string>\u000045\u000330</string>
+    </test>
+    <test label="U+0065 U+0330">
+      <comment>BFB:93li000</comment>
+      <string>\u000065\u000330</string>
+    </test>
+    <test label="U+0065 U+0331">
+      <comment>SUB:texdr (Tennet), SUB:nusdr (Nuer), MXB:chnchzdr, MXB:mtt, MXB:mix</comment>
+      <string>\u000065\u000331</string>
+    </test>
+    <test label="U+0045 U+0331">
+      <comment>SUB:nusdr (Nuer), SUB:texdr (Tennet), UTB:banundr (Bantu Bar Under), MXB:chnchzdr</comment>
+      <string>\u000045\u000331</string>
+    </test>
+    <test label="U+0045 U+0328">
+      <comment>NAB:beaver (Beaver)</comment>
+      <string>\u000045\u000328</string>
+    </test>
+    <test label="U+0065 U+0328">
+      <comment>NAB:beaver (Beaver)</comment>
+      <string>\u000065\u000328</string>
+    </test>
+    <test label="U+0065 U+1DC6">
+      <comment>BFB:sentimes</comment>
+      <string>\u000065\u001DC6</string>
+    </test>
+    <test label="U+0065 U+1DC7">
+      <comment>BFB:sentimes</comment>
+      <string>\u000065\u001DC7</string>
+    </test>
+    <test label="U+0190 U+0301">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000190\u000301</string>
+    </test>
+    <test label="U+025B U+0301">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u00025B\u000301</string>
+    </test>
+    <test label="U+0190 U+0300">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000190\u000300</string>
+    </test>
+    <test label="U+025B U+0300">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u00025B\u000300</string>
+    </test>
+    <test label="U+0190 U+0302">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000190\u000302</string>
+    </test>
+    <test label="U+025B U+0302">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u00025B\u000302</string>
+    </test>
+    <test label="U+0190 U+0308">
+      <comment>SUB:dindr (Dinka)</comment>
+      <string>\u000190\u000308</string>
+    </test>
+    <test label="U+025B U+0308">
+      <comment>SUB:dindr (Dinka)</comment>
+      <string>\u00025B\u000308</string>
+    </test>
+    <test label="U+025B U+0308 U+0301">
+      <comment>SUB:dindr (Dinka)</comment>
+      <string>\u00025B\u000308\u000301</string>
+    </test>
+    <test label="U+0190 U+0308 U+0301">
+      <comment>SUB:dindr (Dinka)</comment>
+      <string>\u000190\u000308\u000301</string>
+    </test>
+    <test label="U+0190 U+0308 U+0300">
+      <comment>SUB:dindr (Dinka)</comment>
+      <string>\u000190\u000308\u000300</string>
+    </test>
+    <test label="U+025B U+0308 U+0300">
+      <comment>SUB:dindr (Dinka)</comment>
+      <string>\u00025B\u000308\u000300</string>
+    </test>
+    <test label="U+0190 U+0308 U+0331">
+      <comment>SUB:nusdr (Nuer)</comment>
+      <string>\u000190\u000308\u000331</string>
+    </test>
+    <test label="U+025B U+0308 U+0331">
+      <comment>SUB:nusdr (Nuer)</comment>
+      <string>\u00025B\u000308\u000331</string>
+    </test>
+    <test label="U+025B U+030C">
+      <comment>UTB:Banbacr (Bantu Bar Over), ECG: ECGd</comment>
+      <string>\u00025B\u00030C</string>
+    </test>
+    <test label="U+025B U+0304">
+      <comment>NRG:ma98sr0</comment>
+      <string>\u00025B\u000304</string>
+    </test>
+    <test label="U+025B U+0303">
+      <comment>NIB:alphdr0 (LanguesNiger)</comment>
+      <string>\u00025B\u000303</string>
+    </test>
+    <test label="U+0190 U+0303">
+      <comment>GHG:gh428838</comment>
+      <string>\u000190\u000303</string>
+    </test>
+    <test label="U+0190 U+0330">
+      <comment>BFB:93li000</comment>
+      <string>\u000190\u000330</string>
+    </test>
+    <test label="U+025B U+0330">
+      <comment>BFB:93li000</comment>
+      <string>\u00025B\u000330</string>
+    </test>
+    <test label="U+0190 U+0331">
+      <comment>SUB:nusdr (Nuer)</comment>
+      <string>\u000190\u000331</string>
+    </test>
+    <test label="U+025B U+0331">
+      <comment>SUB:nusdr (Nuer)</comment>
+      <string>\u00025B\u000331</string>
+    </test>
+    <test label="U+025B U+1DC6">
+      <comment>BFB:sentimes</comment>
+      <string>\u00025B\u001DC6</string>
+    </test>
+    <test label="U+025B U+1DC7">
+      <comment>BFB:sentimes</comment>
+      <string>\u00025B\u001DC7</string>
+    </test>
+    <test label="U+018E U+0301">
+      <comment>SUB:mv_dr (Many Vowels)</comment>
+      <string>\u00018E\u000301</string>
+    </test>
+    <test label="U+01DD U+0301">
+      <comment>SUB:mv_dr (Many Vowels)</comment>
+      <string>\u0001DD\u000301</string>
+    </test>
+    <test label="U+018E U+0300">
+      <comment>SUB:mv_dr (Many Vowels)</comment>
+      <string>\u00018E\u000300</string>
+    </test>
+    <test label="U+01DD U+0300">
+      <comment>SUB:mv_dr (Many Vowels)</comment>
+      <string>\u0001DD\u000300</string>
+    </test>
+    <test label="U+01DD U+0302">
+      <comment>NRG:ma98sr0</comment>
+      <string>\u0001DD\u000302</string>
+    </test>
+    <test label="U+018E U+0308">
+      <comment>SUB:mv_dr (Many Vowels)</comment>
+      <string>\u00018E\u000308</string>
+    </test>
+    <test label="U+01DD U+0308">
+      <comment>SUB:mv_dr (Many Vowels)</comment>
+      <string>\u0001DD\u000308</string>
+    </test>
+    <test label="U+01DD U+030C">
+      <comment>NRG:ma98sr0</comment>
+      <string>\u0001DD\u00030C</string>
+    </test>
+    <test label="U+01DD U+0304">
+      <comment>NRG:ma98sr0</comment>
+      <string>\u0001DD\u000304</string>
+    </test>
+    <test label="U+01DD U+0303">
+      <comment>BFB:bfromr</comment>
+      <string>\u0001DD\u000303</string>
+    </test>
+    <test label="U+018E U+0303">
+      <comment>BFB:bfromr</comment>
+      <string>\u00018E\u000303</string>
+    </test>
+    <test label="U+018E U+0330">
+      <comment>BFB:93li000</comment>
+      <string>\u00018E\u000330</string>
+    </test>
+    <test label="U+01DD U+0330">
+      <comment>BFB:93li000</comment>
+      <string>\u0001DD\u000330</string>
+    </test>
+    <test label="U+0066 U+0303">
+      <comment>VAG:aavancr</comment>
+      <string>\u000066\u000303</string>
+    </test>
+    <test label="U+0046 U+0303">
+      <comment>VAG:aavancr</comment>
+      <string>\u000046\u000303</string>
+    </test>
+    <test label="U+0066 U+0323">
+      <comment>NIB:tama000 (Tamajaq)</comment>
+      <string>\u000066\u000323</string>
+    </test>
+    <test label="U+0046 U+0323">
+      <comment>NIB:tama000 (Tamajaq)</comment>
+      <string>\u000046\u000323</string>
+    </test>
+    <test label="U+0067 U+0307">
+      <comment>NAB:lakotdr (Lakota)</comment>
+      <string>\u000067\u000307</string>
+    </test>
+    <test label="U+0047 U+0307">
+      <comment>NAB:lakotdr (Lakota)</comment>
+      <string>\u000047\u000307</string>
+    </test>
+    <test label="U+0067 U+0308">
+      <comment>MXB:lo329595 (Zapatec)</comment>
+      <string>\u000067\u000308</string>
+    </test>
+    <test label="U+0047 U+0308">
+      <comment>MXB:lo329595 (Zapatec)</comment>
+      <string>\u000047\u000308</string>
+    </test>
+    <test label="U+0067 U+0304">
+      <comment>PNB:pngcr</comment>
+      <string>\u000067\u000304</string>
+    </test>
+    <test label="U+0047 U+0304">
+      <comment>PNB:pngcr</comment>
+      <string>\u000047\u000304</string>
+    </test>
+    <test label="U+0047 U+0323">
+      <comment>NIB:tama000 (Tamajaq)</comment>
+      <string>\u000047\u000323</string>
+    </test>
+    <test label="U+0067 U+0323">
+      <comment>NIB:tama000 (Tamajaq)</comment>
+      <string>\u000067\u000323</string>
+    </test>
+    <test label="U+0047 U+0331">
+      <comment>PLB:phiandr</comment>
+      <string>\u000047\u000331</string>
+    </test>
+    <test label="U+0067 U+0331">
+      <comment>PLB:phiandr</comment>
+      <string>\u000067\u000331</string>
+    </test>
+    <test label="U+0068 U+0307">
+      <comment>NAB:lakotdr (Lakota), NRG:angancr (Angas)</comment>
+      <string>\u000068\u000307</string>
+    </test>
+    <test label="U+0048 U+0307">
+      <comment>NAB:lakotdr (Lakota), NRG:angancr (Angas)</comment>
+      <string>\u000048\u000307</string>
+    </test>
+    <test label="U+0068 U+0331">
+      <comment>SUB:ududr (Uduk)</comment>
+      <string>\u000068\u000331</string>
+    </test>
+    <test label="U+0048 U+0331">
+      <comment>SUB:ududr (Uduk)</comment>
+      <string>\u000048\u000331</string>
+    </test>
+    <test label="U+0069 U+0301">
+      <comment>NRG:izercr (Izere), SUB:diddr (Didinga), UTB:Banbacr (Bantu Bar Over), VAG:aavancr</comment>
+      <string>\u000069\u000301</string>
+    </test>
+    <test label="U+0049 U+0301">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000049\u000301</string>
+    </test>
+    <test label="U+0069 U+0304 U+0301">
+      <comment>NIB:alphdr0 (LanguesNiger)</comment>
+      <string>\u000069\u000304\u000301</string>
+    </test>
+    <test label="U+0049 U+0304 U+0301">
+      <comment>NIB:alphdr0 (LanguesNiger)</comment>
+      <string>\u000049\u000304\u000301</string>
+    </test>
+    <test label="U+0049 U+0301 U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u000049\u000301\u000327</string>
+    </test>
+    <test label="U+0069 U+0301 U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u000069\u000301\u000327</string>
+    </test>
+    <test label="U+0069 U+0301 U+031C">
+      <comment>NAB:utedour2 (Ute)</comment>
+      <string>\u000069\u000301\u00031C</string>
+    </test>
+    <test label="U+0069 U+0301 U+0323">
+      <comment>SUB:avudr (Avokaya), SUB:bdhdr (Baka)</comment>
+      <string>\u000069\u000301\u000323</string>
+    </test>
+    <test label="U+0049 U+0301 U+0323">
+      <comment>SUB:bdhdr (Baka), UTB:bandodr (Bantu Dot Under), SUB:avudr (Avokaya)</comment>
+      <string>\u000049\u000301\u000323</string>
+    </test>
+    <test label="U+0049 U+0301 U+0331">
+      <comment>SUB:murdr (Murle), UTB:banundr (Bantu Bar Under), MXB:lo329595 (Zapatec)</comment>
+      <string>\u000049\u000301\u000331</string>
+    </test>
+    <test label="U+0069 U+0301 U+0331">
+      <comment>SUB:murdr (Murle), UTB:banundr (Bantu Bar Under), MXB:lo329595 (Zapatec)</comment>
+      <string>\u000069\u000301\u000331</string>
+    </test>
+    <test label="U+0069 U+0300">
+      <comment>SUB:diddr (Didinga), UTB:Banbacr (Bantu Bar Over), VAG:aavancr</comment>
+      <string>\u000069\u000300</string>
+    </test>
+    <test label="U+0049 U+0300">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000049\u000300</string>
+    </test>
+    <test label="U+0069 U+0303 U+0300">
+      <comment>NIB:alphdr0 (LanguesNiger)</comment>
+      <string>\u000069\u000303\u000300</string>
+    </test>
+    <test label="U+0069 U+0300 U+0328">
+      <comment>NAB:Do236564 (Dogrib)</comment>
+      <string>\u000069\u000300\u000328</string>
+    </test>
+    <test label="U+0049 U+0300 U+0328">
+      <comment>NAB:Do236564 (Dogrib)</comment>
+      <string>\u000049\u000300\u000328</string>
+    </test>
+    <test label="U+0069 U+0300 U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u000069\u000300\u000327</string>
+    </test>
+    <test label="U+0049 U+0300 U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u000049\u000300\u000327</string>
+    </test>
+    <test label="U+0069 U+0300 U+0323">
+      <comment>UTB:bandodr (Bantu Dot Under), SUB:bdhdr (Baka)</comment>
+      <string>\u000069\u000300\u000323</string>
+    </test>
+    <test label="U+0049 U+0300 U+0323">
+      <comment>UTB:bandodr (Bantu Dot Under)</comment>
+      <string>\u000049\u000300\u000323</string>
+    </test>
+    <test label="U+0069 U+0300 U+0331">
+      <comment>UTB:banundr (Bantu Bar Under)</comment>
+      <string>\u000069\u000300\u000331</string>
+    </test>
+    <test label="U+0049 U+0300 U+0331">
+      <comment>UTB:banundr (Bantu Bar Under)</comment>
+      <string>\u000049\u000300\u000331</string>
+    </test>
+    <test label="U+0069 U+0302">
+      <comment>GHG:gh428838, SUB:diddr (Didinga), UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000069\u000302</string>
+    </test>
+    <test label="U+0049 U+0302">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000049\u000302</string>
+    </test>
+    <test label="U+0069 U+0304 U+0302">
+      <comment>NIB:alphdr0 (LanguesNiger)</comment>
+      <string>\u000069\u000304\u000302</string>
+    </test>
+    <test label="U+0049 U+0304 U+0302">
+      <comment>NIB:alphdr0 (LanguesNiger)</comment>
+      <string>\u000049\u000304\u000302</string>
+    </test>
+    <test label="U+0049 U+0302 U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u000049\u000302\u000327</string>
+    </test>
+    <test label="U+0069 U+0302 U+0323">
+      <comment>SUB:avudr (Avokaya)</comment>
+      <string>\u000069\u000302\u000323</string>
+    </test>
+    <test label="U+0049 U+0302 U+0323">
+      <comment>UTB:bandodr (Bantu Dot Under), SUB:avudr (Avokaya)</comment>
+      <string>\u000049\u000302\u000323</string>
+    </test>
+    <test label="U+0069 U+0302 U+0331">
+      <comment>UTB:banundr (Bantu Bar Under), SUB:murdr (Murle)</comment>
+      <string>\u000069\u000302\u000331</string>
+    </test>
+    <test label="U+0049 U+0302 U+0331">
+      <comment>UTB:banundr (Bantu Bar Under), SUB:murdr (Murle)</comment>
+      <string>\u000049\u000302\u000331</string>
+    </test>
+    <test label="U+0049 U+0308">
+      <comment>PNB:pngcr</comment>
+      <string>\u000049\u000308</string>
+    </test>
+    <test label="U+0069 U+0308">
+      <comment>SUB:dindr (Dinka), SUB:krsdr (Gbaya), VAG:aavancr</comment>
+      <string>\u000069\u000308</string>
+    </test>
+    <test label="U+0069 U+0308 U+0301">
+      <comment>SUB:bvidr (Viri)</comment>
+      <string>\u000069\u000308\u000301</string>
+    </test>
+    <test label="U+0049 U+0308 U+0301">
+      <comment>SUB:bvidr (Viri)</comment>
+      <string>\u000049\u000308\u000301</string>
+    </test>
+    <test label="U+0069 U+0308 U+0300">
+      <comment>SUB:dindr (Dinka)</comment>
+      <string>\u000069\u000308\u000300</string>
+    </test>
+    <test label="U+0049 U+0308 U+0300">
+      <comment>SUB:mgddr (Moru)</comment>
+      <string>\u000049\u000308\u000300</string>
+    </test>
+    <test label="U+0069 U+0308 U+0302">
+      <comment>SUB:mgddr (Moru)</comment>
+      <string>\u000069\u000308\u000302</string>
+    </test>
+    <test label="U+0049 U+0308 U+0302">
+      <comment>SUB:mgddr (Moru)</comment>
+      <string>\u000049\u000308\u000302</string>
+    </test>
+    <test label="U+0069 U+0308 U+0303">
+      <comment>SUB:bvidr (Viri)</comment>
+      <string>\u000069\u000308\u000303</string>
+    </test>
+    <test label="U+0049 U+0308 U+0303">
+      <comment>SUB:bvidr (Viri)</comment>
+      <string>\u000049\u000308\u000303</string>
+    </test>
+    <test label="U+0069 U+0308 U+0331">
+      <comment>SUB:nusdr (Nuer)</comment>
+      <string>\u000069\u000308\u000331</string>
+    </test>
+    <test label="U+0049 U+0308 U+0331">
+      <comment>SUB:nusdr (Nuer)</comment>
+      <string>\u000049\u000308\u000331</string>
+    </test>
+    <test label="U+0069 U+030C">
+      <comment>CAG:betkedr (Mono), UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000069\u00030C</string>
+    </test>
+    <test label="U+0049 U+030C">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000049\u00030C</string>
+    </test>
+    <test label="U+0049 U+030C U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u000049\u00030C\u000327</string>
+    </test>
+    <test label="U+0069 U+030C U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u000069\u00030C\u000327</string>
+    </test>
+    <test label="U+0069 U+030C U+0323">
+      <comment>UTB:bandodr (Bantu Dot Under)</comment>
+      <string>\u000069\u00030C\u000323</string>
+    </test>
+    <test label="U+0069 U+030C U+0331">
+      <comment>UTB:banundr (Bantu Bar Under)</comment>
+      <string>\u000069\u00030C\u000331</string>
+    </test>
+    <test label="U+0049 U+0306">
+      <comment>NIB:tama000 (Tamajaq), SUB:krsdr (Gbaya)</comment>
+      <string>\u000049\u000306</string>
+    </test>
+    <test label="U+0069 U+0306">
+      <comment>NIB:tama000 (Tamajaq), SUB:krsdr (Gbaya)</comment>
+      <string>\u000069\u000306</string>
+    </test>
+    <test label="U+0049 U+0304">
+      <comment>PNB:pngcr, CAG:betkedr (Mono)</comment>
+      <string>\u000049\u000304</string>
+    </test>
+    <test label="U+0069 U+0304">
+      <comment>PNB:pngcr, VAG:aavancr</comment>
+      <string>\u000069\u000304</string>
+    </test>
+    <test label="U+0049 U+0304 U+0300">
+      <comment>NIB:alphdr0 (LanguesNiger)</comment>
+      <string>\u000049\u000304\u000300</string>
+    </test>
+    <test label="U+0069 U+0304 U+0302">
+      <comment>NIB:niger2</comment>
+      <string>\u000069\u000304\u000302</string>
+    </test>
+    <test label="U+0069 U+0303">
+      <comment>BFB:bfromr</comment>
+      <string>\u000069\u000303</string>
+    </test>
+    <test label="U+0069 U+0303">
+      <comment>GHG:gh428838</comment>
+      <string>\u000069\u000303</string>
+    </test>
+    <test label="U+0069 U+0303">
+      <comment>PNB:pngcr, SUB:diddr (Didinga)</comment>
+      <string>\u000069\u000303</string>
+    </test>
+    <test label="U+0049 U+0303">
+      <comment>PNB:pngcr, SUB:zandr (Zande)</comment>
+      <string>\u000049\u000303</string>
+    </test>
+    <test label="U+0069 U+0303 U+0301">
+      <comment>SUB:diddr (Didinga), PEB:ticdr (Ticuna)</comment>
+      <string>\u000069\u000303\u000301</string>
+    </test>
+    <test label="U+0049 U+0303 U+0301">
+      <comment>SUB:diddr (Didinga)</comment>
+      <string>\u000049\u000303\u000301</string>
+    </test>
+    <test label="U+0049 U+0303 U+0300">
+      <comment>SUB:diddr (Didinga)</comment>
+      <string>\u000049\u000303\u000300</string>
+    </test>
+    <test label="U+0069 U+0303 U+0300">
+      <comment>SUB:diddr (Didinga)</comment>
+      <string>\u000069\u000303\u000300</string>
+    </test>
+    <test label="U+0049 U+0303 U+0302">
+      <comment>SUB:diddr (Didinga)</comment>
+      <string>\u000049\u000303\u000302</string>
+    </test>
+    <test label="U+0069 U+0303 U+0302">
+      <comment>SUB:diddr (Didinga)</comment>
+      <string>\u000069\u000303\u000302</string>
+    </test>
+    <test label="U+0069 U+0303 U+0323">
+      <comment>SUB:avudr (Avokaya)</comment>
+      <string>\u000069\u000303\u000323</string>
+    </test>
+    <test label="U+0069 U+0303 U+0323">
+      <comment>SUB:bdhdr (Baka)</comment>
+      <string>\u000069\u000303\u000323</string>
+    </test>
+    <test label="U+0049 U+0303 U+0323">
+      <comment>SUB:avudr (Avokaya)</comment>
+      <string>\u000049\u000303\u000323</string>
+    </test>
+    <test label="U+0049 U+0328">
+      <comment>NAB:Do236564 (Dogrib)</comment>
+      <string>\u000049\u000328</string>
+    </test>
+    <test label="U+0069 U+0328">
+      <comment>NAB:Do236564 (Dogrib)</comment>
+      <string>\u000069\u000328</string>
+    </test>
+    <test label="U+0049 U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u000049\u000327</string>
+    </test>
+    <test label="U+0069 U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u000069\u000327</string>
+    </test>
+    <test label="U+0069 U+031C">
+      <comment>NAB:utedour2 (Ute)</comment>
+      <string>\u000069\u00031C</string>
+    </test>
+    <test label="U+0069 U+031C U+0331">
+      <comment>NAB:utedour2 (Ute)</comment>
+      <string>\u000069\u00031C\u000331</string>
+    </test>
+    <test label="U+0049 U+0323">
+      <comment>SUB:bdhdr (Baka)</comment>
+      <string>\u000049\u000323</string>
+    </test>
+    <test label="U+0069 U+0323">
+      <comment>SUB:bdhdr (Baka)</comment>
+      <string>\u000069\u000323</string>
+    </test>
+    <test label="U+0049 U+0330">
+      <comment>BFB:93li000</comment>
+      <string>\u000049\u000330</string>
+    </test>
+    <test label="U+0069 U+0330">
+      <comment>BFB:93li000</comment>
+      <string>\u000069\u000330</string>
+    </test>
+    <test label="U+0049 U+0331">
+      <comment>SUB:nusdr (Nuer), MXB:chnchzdr, MXB:mix, NAB:ch518670 (Choctaw), SUB:murdr (Murle)</comment>
+      <string>\u000049\u000331</string>
+    </test>
+    <test label="U+0069 U+0331">
+      <comment>SUB:nusdr (Nuer), MXB:chnchzdr, MXB:mix, SUB:murdr (Murle), UTB:banundr (Bantu Bar Under)</comment>
+      <string>\u000069\u000331</string>
+    </test>
+    <test label="U+0069 U+1DC6">
+      <comment>BFB:sentimes</comment>
+      <string>\u000069\u001DC6</string>
+    </test>
+    <test label="U+0069 U+1DC7">
+      <comment>BFB:sentimes</comment>
+      <string>\u000069\u001DC7</string>
+    </test>
+    <test label="U+0268 U+0301">
+      <comment>UTB:Banbacr (Bantu Bar Over), MXB:mix</comment>
+      <string>\u000268\u000301</string>
+    </test>
+    <test label="U+0197 U+0301">
+      <comment>UTB:Banbacr (Bantu Bar Over), MXB:mix</comment>
+      <string>\u000197\u000301</string>
+    </test>
+    <test label="U+0268 U+0300">
+      <comment>UTB:Banbacr (Bantu Bar Over), MXB:mix</comment>
+      <string>\u000268\u000300</string>
+    </test>
+    <test label="U+0197 U+0300">
+      <comment>UTB:Banbacr (Bantu Bar Over), MXB:mix</comment>
+      <string>\u000197\u000300</string>
+    </test>
+    <test label="U+0268 U+0302">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000268\u000302</string>
+    </test>
+    <test label="U+0197 U+0302">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000197\u000302</string>
+    </test>
+    <test label="U+0268 U+0308">
+      <comment>SUB:mv_dr (Many Vowels), MXB:mi299733 (Mixtec), MXB:mix</comment>
+      <string>\u000268\u000308</string>
+    </test>
+    <test label="U+0197 U+0308">
+      <comment>SUB:mv_dr (Many Vowels), MXB:mix</comment>
+      <string>\u000197\u000308</string>
+    </test>
+    <test label="U+0197 U+030C">
+      <comment>MXB:mi299733 (Mixtec), ECG: ECGd</comment>
+      <string>\u000197\u00030C</string>
+    </test>
+    <test label="U+0268 U+030C">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000268\u00030C</string>
+    </test>
+    <test label="U+0268 U+0304">
+      <comment>MXB:mi299733 (Mixtec)</comment>
+      <string>\u000268\u000304</string>
+    </test>
+    <test label="U+0197 U+0304">
+      <comment>MXB:mix</comment>
+      <string>\u000197\u000304</string>
+    </test>
+    <test label="U+0268 U+0303">
+      <comment>MXB:mtt</comment>
+      <string>\u000268\u000303</string>
+    </test>
+    <test label="U+0268 U+0330">
+      <comment>BFB:93li000</comment>
+      <string>\u000268\u000330</string>
+    </test>
+    <test label="U+0197 U+0330">
+      <comment>BFB:93li000</comment>
+      <string>\u000197\u000330</string>
+    </test>
+    <test label="U+0197 U+0331">
+      <comment>MXB:mi299733 (Mixtec), MXB:chnchzdr, MXB:mix</comment>
+      <string>\u000197\u000331</string>
+    </test>
+    <test label="U+0268 U+0331">
+      <comment>MXB:mix, MXB:mtt</comment>
+      <string>\u000268\u000331</string>
+    </test>
+    <test label="U+0269 U+0301">
+      <comment>UTB:banipdr (Bantu IPA)</comment>
+      <string>\u000269\u000301</string>
+    </test>
+    <test label="U+0196 U+0301">
+      <comment>UTB:banipdr (Bantu IPA)</comment>
+      <string>\u000196\u000301</string>
+    </test>
+    <test label="U+0269 U+0300">
+      <comment>UTB:banipdr (Bantu IPA)</comment>
+      <string>\u000269\u000300</string>
+    </test>
+    <test label="U+0196 U+0300">
+      <comment>UTB:banipdr (Bantu IPA)</comment>
+      <string>\u000196\u000300</string>
+    </test>
+    <test label="U+0269 U+0302">
+      <comment>UTB:banipdr (Bantu IPA)</comment>
+      <string>\u000269\u000302</string>
+    </test>
+    <test label="U+0196 U+0302">
+      <comment>UTB:banipdr (Bantu IPA)</comment>
+      <string>\u000196\u000302</string>
+    </test>
+    <test label="U+0269 U+030C">
+      <comment>UTB:banipdr (Bantu IPA)</comment>
+      <string>\u000269\u00030C</string>
+    </test>
+    <test label="U+0269 U+0303">
+      <comment>GHG:gh428838</comment>
+      <string>\u000269\u000303</string>
+    </test>
+    <test label="U+0196 U+0303">
+      <comment>GHG:gh428838</comment>
+      <string>\u000196\u000303</string>
+    </test>
+    <test label="U+0269 U+0330">
+      <comment>BFB:93li000</comment>
+      <string>\u000269\u000330</string>
+    </test>
+    <test label="U+0196 U+0330">
+      <comment>BFB:93li000</comment>
+      <string>\u000196\u000330</string>
+    </test>
+    <test label="U+0269 U+1DC6">
+      <comment>BFB:sentimes</comment>
+      <string>\u000269\u001DC6</string>
+    </test>
+    <test label="U+0269 U+1DC7">
+      <comment>BFB:sentimes</comment>
+      <string>\u000269\u001DC7</string>
+    </test>
+    <test label="U+006A U+0303">
+      <comment>BFB:93li000</comment>
+      <string>\u00006A\u000303</string>
+    </test>
+    <test label="U+006A U+0323">
+      <comment>NIB:tama000 (Tamajaq)</comment>
+      <string>\u00006A\u000323</string>
+    </test>
+    <test label="U+004A U+0323">
+      <comment>NIB:tama000 (Tamajaq)</comment>
+      <string>\u00004A\u000323</string>
+    </test>
+    <test label="U+006B U+0307">
+      <comment>NAB:lakotdr (Lakota)</comment>
+      <string>\u00006B\u000307</string>
+    </test>
+    <test label="U+004B U+0307">
+      <comment>NAB:lakotdr (Lakota)</comment>
+      <string>\u00004B\u000307</string>
+    </test>
+    <test label="U+004B U+0304">
+      <comment>NAB:lakotdr (Lakota)</comment>
+      <string>\u00004B\u000304</string>
+    </test>
+    <test label="U+006B U+0304">
+      <comment>NAB:lakotdr (Lakota)</comment>
+      <string>\u00006B\u000304</string>
+    </test>
+    <test label="U+004B U+0323">
+      <comment>NIB:tama000 (Tamajaq)</comment>
+      <string>\u00004B\u000323</string>
+    </test>
+    <test label="U+006B U+0323">
+      <comment>NIB:tama000 (Tamajaq)</comment>
+      <string>\u00006B\u000323</string>
+    </test>
+    <test label="U+006B U+0331">
+      <comment>SUB:ududr (Uduk)</comment>
+      <string>\u00006B\u000331</string>
+    </test>
+    <test label="U+004B U+0331">
+      <comment>SUB:ududr (Uduk)</comment>
+      <string>\u00004B\u000331</string>
+    </test>
+    <test label="U+004C U+0323">
+      <comment>NIB:tama000 (Tamajaq), SUB:krsdr (Gbaya)</comment>
+      <string>\u00004C\u000323</string>
+    </test>
+    <test label="U+006C U+0323">
+      <comment>NIB:tama000 (Tamajaq), SUB:krsdr (Gbaya)</comment>
+      <string>\u00006C\u000323</string>
+    </test>
+    <test label="U+004C U+0325">
+      <comment>SEB:dkalwdr</comment>
+      <string>\u00004C\u000325</string>
+    </test>
+    <test label="U+006C U+0325">
+      <comment>SEB:dkalwdr, SEB:sen2alph</comment>
+      <string>\u00006C\u000325</string>
+    </test>
+    <test label="U+006C U+0331">
+      <comment>PLB:phiandr, MXB:lo329595 (Zapatec)</comment>
+      <string>\u00006C\u000331</string>
+    </test>
+    <test label="U+004C U+0331">
+      <comment>PLB:phiandr, MXB:lo329595 (Zapatec)</comment>
+      <string>\u00004C\u000331</string>
+    </test>
+    <test label="U+004D U+0301">
+      <comment>NRG:yoru000 (Yoruba)</comment>
+      <string>\u00004D\u000301</string>
+    </test>
+    <test label="U+006D U+0301">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u00006D\u000301</string>
+    </test>
+    <test label="U+006D U+0300">
+      <comment>NRG:yoru000 (Yoruba)</comment>
+      <string>\u00006D\u000300</string>
+    </test>
+    <test label="U+004D U+0300">
+      <comment>NRG:yoru000 (Yoruba)</comment>
+      <string>\u00004D\u000300</string>
+    </test>
+    <test label="U+006D U+0302">
+      <comment>SUB:bdhdr (Baka)</comment>
+      <string>\u00006D\u000302</string>
+    </test>
+    <test label="U+006D U+0304">
+      <comment>NRG:ma98sr0</comment>
+      <string>\u00006D\u000304</string>
+    </test>
+    <test label="U+004D U+0304">
+      <comment>VAG:aavancr</comment>
+      <string>\u00004D\u000304</string>
+    </test>
+    <test label="U+006D U+0303">
+      <comment>VAG:aavancr</comment>
+      <string>\u00006D\u000303</string>
+    </test>
+    <test label="U+004D U+0303">
+      <comment>VAG:aavancr</comment>
+      <string>\u00004D\u000303</string>
+    </test>
+    <test label="U+004D U+0323">
+      <comment>NIB:tama000 (Tamajaq)</comment>
+      <string>\u00004D\u000323</string>
+    </test>
+    <test label="U+006D U+0323">
+      <comment>NIB:tama000 (Tamajaq)</comment>
+      <string>\u00006D\u000323</string>
+    </test>
+    <test label="U+004D U+0331">
+      <comment>MXB:lo329595 (Zapatec)</comment>
+      <string>\u00004D\u000331</string>
+    </test>
+    <test label="U+006D U+0331">
+      <comment>MXB:lo329595 (Zapatec)</comment>
+      <string>\u00006D\u000331</string>
+    </test>
+    <test label="U+004E U+0301">
+      <comment>NRG:yoru000 (Yoruba)</comment>
+      <string>\u00004E\u000301</string>
+    </test>
+    <test label="U+006E U+0301">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u00006E\u000301</string>
+    </test>
+    <test label="U+006E U+0300">
+      <comment>NRG:yoru000 (Yoruba)</comment>
+      <string>\u00006E\u000300</string>
+    </test>
+    <test label="U+004E U+0300">
+      <comment>NRG:yoru000 (Yoruba)</comment>
+      <string>\u00004E\u000300</string>
+    </test>
+    <test label="U+006E U+0302">
+      <comment>SUB:bdhdr (Baka)</comment>
+      <string>\u00006E\u000302</string>
+    </test>
+    <test label="U+004E U+0304">
+      <comment>VAG:aavancr</comment>
+      <string>\u00004E\u000304</string>
+    </test>
+    <test label="U+004E U+0303">
+      <comment>VAG:aavancr</comment>
+      <string>\u00004E\u000303</string>
+    </test>
+    <test label="U+004E U+0323">
+      <comment>SUB:bdhdr (Baka), NRG:angancr (Angas)</comment>
+      <string>\u00004E\u000323</string>
+    </test>
+    <test label="U+006E U+0323">
+      <comment>SUB:bdhdr (Baka)</comment>
+      <string>\u00006E\u000323</string>
+    </test>
+    <test label="U+004E U+0331">
+      <comment>MXB:lo329595 (Zapatec)</comment>
+      <string>\u00004E\u000331</string>
+    </test>
+    <test label="U+006E U+0331">
+      <comment>MXB:lo329595 (Zapatec)</comment>
+      <string>\u00006E\u000331</string>
+    </test>
+    <test label="U+0272 U+0301">
+      <comment>BFB:sentimes</comment>
+      <string>\u000272\u000301</string>
+    </test>
+    <test label="U+0272 U+0304">
+      <comment>BFB:sentimes</comment>
+      <string>\u000272\u000304</string>
+    </test>
+    <test label="U+014A U+0301">
+      <comment>GHG:gh428838, NRG:yoru000 (Yoruba), SUB:krsdr (Gbaya)</comment>
+      <string>\u00014A\u000301</string>
+    </test>
+    <test label="U+014B U+0301">
+      <comment>SUB:krsdr (Gbaya)</comment>
+      <string>\u00014B\u000301</string>
+    </test>
+    <test label="U+014A U+0300">
+      <comment>GHG:gh428838, NRG:yoru000 (Yoruba)</comment>
+      <string>\u00014A\u000300</string>
+    </test>
+    <test label="U+014B U+0300">
+      <comment>NRG:yoru000 (Yoruba)</comment>
+      <string>\u00014B\u000300</string>
+    </test>
+    <test label="U+014A U+0302">
+      <comment>SUB:krsdr (Gbaya)</comment>
+      <string>\u00014A\u000302</string>
+    </test>
+    <test label="U+014B U+0302">
+      <comment>SUB:krsdr (Gbaya)</comment>
+      <string>\u00014B\u000302</string>
+    </test>
+    <test label="U+014B U+0303">
+      <comment>SUB:krsdr (Gbaya)</comment>
+      <string>\u00014B\u000303</string>
+    </test>
+    <test label="U+014A U+0303">
+      <comment>SUB:krsdr (Gbaya)</comment>
+      <string>\u00014A\u000303</string>
+    </test>
+    <test label="U+014A U+0323">
+      <comment>NIB:tama000 (Tamajaq)</comment>
+      <string>\u00014A\u000323</string>
+    </test>
+    <test label="U+014B U+0323">
+      <comment>NIB:tama000 (Tamajaq)</comment>
+      <string>\u00014B\u000323</string>
+    </test>
+    <test label="U+006F U+0301">
+      <comment>NRG:izercr (Izere)</comment>
+      <string>\u00006F\u000301</string>
+    </test>
+    <test label="U+004F U+0301">
+      <comment>SUB:krsdr (Gbaya)</comment>
+      <string>\u00004F\u000301</string>
+    </test>
+    <test label="U+006F U+0301">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u00006F\u000301</string>
+    </test>
+    <test label="U+004F U+0301">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u00004F\u000301</string>
+    </test>
+    <test label="U+006F U+0304 U+0301">
+      <comment>NIB:alphdr0 (LanguesNiger)</comment>
+      <string>\u00006F\u000304\u000301</string>
+    </test>
+    <test label="U+004F U+0304 U+0301">
+      <comment>NIB:alphdr0 (LanguesNiger)</comment>
+      <string>\u00004F\u000304\u000301</string>
+    </test>
+    <test label="U+004F U+0301 U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u00004F\u000301\u000327</string>
+    </test>
+    <test label="U+006F U+0301 U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u00006F\u000301\u000327</string>
+    </test>
+    <test label="U+006F U+0301 U+031C">
+      <comment>NAB:utedour2 (Ute)</comment>
+      <string>\u00006F\u000301\u00031C</string>
+    </test>
+    <test label="U+004F U+0301 U+0323">
+      <comment>NRG:yoru000 (Yoruba), UTB:bandodr (Bantu Dot Under), SUB:avudr (Avokaya)</comment>
+      <string>\u00004F\u000301\u000323</string>
+    </test>
+    <test label="U+006F U+0301 U+0323">
+      <comment>NRG:yoru000 (Yoruba), SUB:avudr (Avokaya)</comment>
+      <string>\u00006F\u000301\u000323</string>
+    </test>
+    <test label="U+006F U+0301 U+0331">
+      <comment>UTB:banundr (Bantu Bar Under), MXB:lo329595 (Zapatec), SUB:murdr (Murle)</comment>
+      <string>\u00006F\u000301\u000331</string>
+    </test>
+    <test label="U+004F U+0301 U+0331">
+      <comment>UTB:banundr (Bantu Bar Under), MXB:lo329595 (Zapatec), SUB:murdr (Murle)</comment>
+      <string>\u00004F\u000301\u000331</string>
+    </test>
+    <test label="U+004F U+0301 U+0328">
+      <comment>NAB:beaver (Beaver)</comment>
+      <string>\u00004F\u000301\u000328</string>
+    </test>
+    <test label="U+006F U+0301 U+0328">
+      <comment>NAB:beaver (Beaver)</comment>
+      <string>\u00006F\u000301\u000328</string>
+    </test>
+    <test label="U+006F U+0300">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u00006F\u000300</string>
+    </test>
+    <test label="U+004F U+0300">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u00004F\u000300</string>
+    </test>
+    <test label="U+004F U+0304 U+0300">
+      <comment>NIB:alphdr0 (LanguesNiger)</comment>
+      <string>\u00004F\u000304\u000300</string>
+    </test>
+    <test label="U+006F U+0303 U+0300">
+      <comment>NIB:alphdr0 (LanguesNiger)</comment>
+      <string>\u00006F\u000303\u000300</string>
+    </test>
+    <test label="U+006F U+0300 U+0328">
+      <comment>NAB:Do236564 (Dogrib)</comment>
+      <string>\u00006F\u000300\u000328</string>
+    </test>
+    <test label="U+004F U+0300 U+0328">
+      <comment>NAB:Do236564 (Dogrib)</comment>
+      <string>\u00004F\u000300\u000328</string>
+    </test>
+    <test label="U+006F U+0300 U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u00006F\u000300\u000327</string>
+    </test>
+    <test label="U+004F U+0300 U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u00004F\u000300\u000327</string>
+    </test>
+    <test label="U+006F U+0300 U+0323">
+      <comment>NRG:yoru000 (Yoruba), UTB:bandodr (Bantu Dot Under)</comment>
+      <string>\u00006F\u000300\u000323</string>
+    </test>
+    <test label="U+004F U+0300 U+0323">
+      <comment>NRG:yoru000 (Yoruba), UTB:bandodr (Bantu Dot Under)</comment>
+      <string>\u00004F\u000300\u000323</string>
+    </test>
+    <test label="U+006F U+0300 U+0331">
+      <comment>UTB:banundr (Bantu Bar Under)</comment>
+      <string>\u00006F\u000300\u000331</string>
+    </test>
+    <test label="U+004F U+0300 U+0331">
+      <comment>UTB:banundr (Bantu Bar Under)</comment>
+      <string>\u00004F\u000300\u000331</string>
+    </test>
+    <test label="U+004F U+0302">
+      <comment>SUB:krsdr (Gbaya), UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u00004F\u000302</string>
+    </test>
+    <test label="U+006F U+0302">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u00006F\u000302</string>
+    </test>
+    <test label="U+006F U+0304 U+0302">
+      <comment>NIB:alphdr0 (LanguesNiger)</comment>
+      <string>\u00006F\u000304\u000302</string>
+    </test>
+    <test label="U+006F U+0302 U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u00006F\u000302\u000327</string>
+    </test>
+    <test label="U+004F U+0302 U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u00004F\u000302\u000327</string>
+    </test>
+    <test label="U+004F U+0302 U+0323">
+      <comment>SUB:avudr (Avokaya)</comment>
+      <string>\u00004F\u000302\u000323</string>
+    </test>
+    <test label="U+006F U+0302 U+0323">
+      <comment>UTB:bandodr (Bantu Dot Under)</comment>
+      <string>\u00006F\u000302\u000323</string>
+    </test>
+    <test label="U+006F U+0302 U+0331">
+      <comment>UTB:banundr (Bantu Bar Under), SUB:murdr (Murle)</comment>
+      <string>\u00006F\u000302\u000331</string>
+    </test>
+    <test label="U+004F U+0302 U+0331">
+      <comment>UTB:banundr (Bantu Bar Under), SUB:murdr (Murle)</comment>
+      <string>\u00004F\u000302\u000331</string>
+    </test>
+    <test label="U+006F U+0308">
+      <comment>SUB:dindr (Dinka), SUB:krsdr (Gbaya)</comment>
+      <string>\u00006F\u000308</string>
+    </test>
+    <test label="U+004F U+0308">
+      <comment>SUB:dindr (Dinka)</comment>
+      <string>\u00004F\u000308</string>
+    </test>
+    <test label="U+006F U+0308 U+0301">
+      <comment>SUB:bvidr (Viri)</comment>
+      <string>\u00006F\u000308\u000301</string>
+    </test>
+    <test label="U+004F U+0308 U+0301">
+      <comment>SUB:bvidr (Viri)</comment>
+      <string>\u00004F\u000308\u000301</string>
+    </test>
+    <test label="U+006F U+0308 U+0300">
+      <comment>SUB:dindr (Dinka)</comment>
+      <string>\u00006F\u000308\u000300</string>
+    </test>
+    <test label="U+004F U+0308 U+0300">
+      <comment>SUB:dindr (Dinka)</comment>
+      <string>\u00004F\u000308\u000300</string>
+    </test>
+    <test label="U+004F U+0308 U+0302">
+      <comment>SUB:mgddr (Moru)</comment>
+      <string>\u00004F\u000308\u000302</string>
+    </test>
+    <test label="U+006F U+0308 U+0303">
+      <comment>SUB:bvidr (Viri)</comment>
+      <string>\u00006F\u000308\u000303</string>
+    </test>
+    <test label="U+004F U+0308 U+0303">
+      <comment>SUB:bvidr (Viri)</comment>
+      <string>\u00004F\u000308\u000303</string>
+    </test>
+    <test label="U+006F U+0308 U+0331">
+      <comment>SUB:nusdr (Nuer)</comment>
+      <string>\u00006F\u000308\u000331</string>
+    </test>
+    <test label="U+004F U+0308 U+0331">
+      <comment>SUB:nusdr (Nuer)</comment>
+      <string>\u00004F\u000308\u000331</string>
+    </test>
+    <test label="U+006F U+030C">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u00006F\u00030C</string>
+    </test>
+    <test label="U+004F U+030C">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u00004F\u00030C</string>
+    </test>
+    <test label="U+006F U+030C U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u00006F\u00030C\u000327</string>
+    </test>
+    <test label="U+004F U+030C U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u00004F\u00030C\u000327</string>
+    </test>
+    <test label="U+006F U+030C U+0323">
+      <comment>UTB:bandodr (Bantu Dot Under)</comment>
+      <string>\u00006F\u00030C\u000323</string>
+    </test>
+    <test label="U+004F U+030C U+0323">
+      <comment>UTB:bandodr (Bantu Dot Under)</comment>
+      <string>\u00004F\u00030C\u000323</string>
+    </test>
+    <test label="U+006F U+030C U+0331">
+      <comment>UTB:banundr (Bantu Bar Under)</comment>
+      <string>\u00006F\u00030C\u000331</string>
+    </test>
+    <test label="U+004F U+030C U+0331">
+      <comment>UTB:banundr (Bantu Bar Under)</comment>
+      <string>\u00004F\u00030C\u000331</string>
+    </test>
+    <test label="U+004F U+0306">
+      <comment>NIB:tama000 (Tamajaq)</comment>
+      <string>\u00004F\u000306</string>
+    </test>
+    <test label="U+006F U+0306">
+      <comment>SUB:krsdr (Gbaya)</comment>
+      <string>\u00006F\u000306</string>
+    </test>
+    <test label="U+004F U+0306">
+      <comment>SUB:krsdr (Gbaya)</comment>
+      <string>\u00004F\u000306</string>
+    </test>
+    <test label="U+004F U+0304">
+      <comment>PLB:phiandr</comment>
+      <string>\u00004F\u000304</string>
+    </test>
+    <test label="U+006F U+0304">
+      <comment>PNB:pngcr</comment>
+      <string>\u00006F\u000304</string>
+    </test>
+    <test label="U+006F U+0304">
+      <comment>MXB:mtt</comment>
+      <string>\u00006F\u000304</string>
+    </test>
+    <test label="U+004F U+0304 U+0300">
+      <comment>NIB:alphdr0 (LanguesNiger)</comment>
+      <string>\u00004F\u000304\u000300</string>
+    </test>
+    <test label="U+006F U+0303">
+      <comment>SUB:avudr (Avokaya)</comment>
+      <string>\u00006F\u000303</string>
+    </test>
+    <test label="U+004F U+0303">
+      <comment>SUB:avudr (Avokaya)</comment>
+      <string>\u00004F\u000303</string>
+    </test>
+    <test label="U+004F U+0303">
+      <comment>SUB:krsdr (Gbaya)</comment>
+      <string>\u00004F\u000303</string>
+    </test>
+    <test label="U+006F U+0303 U+0301">
+      <comment>SUB:diddr (Didinga)</comment>
+      <string>\u00006F\u000303\u000301</string>
+    </test>
+    <test label="U+004F U+0303 U+0301">
+      <comment>SUB:diddr (Didinga)</comment>
+      <string>\u00004F\u000303\u000301</string>
+    </test>
+    <test label="U+006F U+0303 U+0300">
+      <comment>NIB:niger2, SUB:diddr (Didinga)</comment>
+      <string>\u00006F\u000303\u000300</string>
+    </test>
+    <test label="U+004F U+0303 U+0300">
+      <comment>SUB:diddr (Didinga)</comment>
+      <string>\u00004F\u000303\u000300</string>
+    </test>
+    <test label="U+004F U+0303 U+0302">
+      <comment>SUB:diddr (Didinga)</comment>
+      <string>\u00004F\u000303\u000302</string>
+    </test>
+    <test label="U+006F U+0303 U+0323">
+      <comment>SUB:avudr (Avokaya)</comment>
+      <string>\u00006F\u000303\u000323</string>
+    </test>
+    <test label="U+004F U+0303 U+0323">
+      <comment>SUB:avudr (Avokaya)</comment>
+      <string>\u00004F\u000303\u000323</string>
+    </test>
+    <test label="U+004F U+0328">
+      <comment>NAB:Do236564 (Dogrib)</comment>
+      <string>\u00004F\u000328</string>
+    </test>
+    <test label="U+006F U+0328">
+      <comment>NAB:Do236564 (Dogrib)</comment>
+      <string>\u00006F\u000328</string>
+    </test>
+    <test label="U+004F U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u00004F\u000327</string>
+    </test>
+    <test label="U+006F U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u00006F\u000327</string>
+    </test>
+    <test label="U+004F U+031C">
+      <comment>NAB:utedour2 (Ute)</comment>
+      <string>\u00004F\u00031C</string>
+    </test>
+    <test label="U+006F U+031C">
+      <comment>NAB:utedour2 (Ute)</comment>
+      <string>\u00006F\u00031C</string>
+    </test>
+    <test label="U+004F U+031C U+0331">
+      <comment>NAB:utedour2 (Ute)</comment>
+      <string>\u00004F\u00031C\u000331</string>
+    </test>
+    <test label="U+004F U+0323">
+      <comment>SUB:avudr (Avokaya)</comment>
+      <string>\u00004F\u000323</string>
+    </test>
+    <test label="U+006F U+0323">
+      <comment>SUB:avudr (Avokaya)</comment>
+      <string>\u00006F\u000323</string>
+    </test>
+    <test label="U+004F U+0330">
+      <comment>BFB:93li000</comment>
+      <string>\u00004F\u000330</string>
+    </test>
+    <test label="U+006F U+0330">
+      <comment>BFB:93li000</comment>
+      <string>\u00006F\u000330</string>
+    </test>
+    <test label="U+006F U+0331">
+      <comment>NAB:ch518670 (Choctaw), MXB:chnchzdr, MXB:mtt, SUB:nusdr (Nuer), SUB:texdr (Tennet), MXB:mix</comment>
+      <string>\u00006F\u000331</string>
+    </test>
+    <test label="U+004F U+0331">
+      <comment>MXB:chnchzdr, SUB:nusdr (Nuer), SUB:texdr (Tennet), UTB:banundr (Bantu Bar Under)</comment>
+      <string>\u00004F\u000331</string>
+    </test>
+    <test label="U+004F U+0328">
+      <comment>NAB:beaver (Beaver)</comment>
+      <string>\u00004F\u000328</string>
+    </test>
+    <test label="U+006F U+0328">
+      <comment>NAB:beaver (Beaver)</comment>
+      <string>\u00006F\u000328</string>
+    </test>
+    <test label="U+006F U+1DC6">
+      <comment>BFB:sentimes</comment>
+      <string>\u00006F\u001DC6</string>
+    </test>
+    <test label="U+006F U+1DC7">
+      <comment>BFB:sentimes</comment>
+      <string>\u00006F\u001DC7</string>
+    </test>
+    <test label="U+0275 U+0301">
+      <comment>ECG: ECGd</comment>
+      <string>\u000275\u000301</string>
+    </test>
+    <test label="U+00F8 U+0301">
+      <comment>SUB:dildr (Deleny)</comment>
+      <string>\u0000F8\u000301</string>
+    </test>
+    <test label="U+00D8 U+0301">
+      <comment>SUB:dildr (Deleny)</comment>
+      <string>\u0000D8\u000301</string>
+    </test>
+    <test label="U+00F8 U+0331">
+      <comment>MXB:chnchzdr</comment>
+      <string>\u0000F8\u000331</string>
+    </test>
+    <test label="U+00D8 U+0331">
+      <comment>MXB:chnchzdr</comment>
+      <string>\u0000D8\u000331</string>
+    </test>
+    <test label="U+0153 U+0301">
+      <comment>CAG:betkedr (Mono)</comment>
+      <string>\u000153\u000301</string>
+    </test>
+    <test label="U+0153 U+0300">
+      <comment>CAG:betkedr (Mono)</comment>
+      <string>\u000153\u000300</string>
+    </test>
+    <test label="U+0153 U+0302">
+      <comment>CAG:betkedr (Mono)</comment>
+      <string>\u000153\u000302</string>
+    </test>
+    <test label="U+0153 U+030C">
+      <comment>CAG:betkedr (Mono)</comment>
+      <string>\u000153\u00030C</string>
+    </test>
+    <test label="U+0070 U+0307">
+      <comment>NAB:lakotdr (Lakota)</comment>
+      <string>\u000070\u000307</string>
+    </test>
+    <test label="U+0050 U+0307">
+      <comment>NAB:lakotdr (Lakota)</comment>
+      <string>\u000050\u000307</string>
+    </test>
+    <test label="U+0070 U+0304">
+      <comment>NAB:lakotdr (Lakota)</comment>
+      <string>\u000070\u000304</string>
+    </test>
+    <test label="U+0050 U+0304">
+      <comment>NAB:lakotdr (Lakota)</comment>
+      <string>\u000050\u000304</string>
+    </test>
+    <test label="U+0070 U+0303">
+      <comment>VAG:aavancr</comment>
+      <string>\u000070\u000303</string>
+    </test>
+    <test label="U+0050 U+0303">
+      <comment>VAG:aavancr</comment>
+      <string>\u000050\u000303</string>
+    </test>
+    <test label="U+0050 U+0331">
+      <comment>SUB:ududr (Uduk)</comment>
+      <string>\u000050\u000331</string>
+    </test>
+    <test label="U+0072 U+030C">
+      <comment>MXB:mtt</comment>
+      <string>\u000072\u00030C</string>
+    </test>
+    <test label="U+0072 U+0303">
+      <comment>VAG:aavancr</comment>
+      <string>\u000072\u000303</string>
+    </test>
+    <test label="U+0052 U+0303">
+      <comment>VAG:aavancr</comment>
+      <string>\u000052\u000303</string>
+    </test>
+    <test label="U+0052 U+0323">
+      <comment>NIB:tama000 (Tamajaq), SUB:bdhdr (Baka), SUB:diddr (Didinga)</comment>
+      <string>\u000052\u000323</string>
+    </test>
+    <test label="U+0072 U+0323">
+      <comment>NIB:tama000 (Tamajaq), SUB:bdhdr (Baka), SUB:diddr (Didinga)</comment>
+      <string>\u000072\u000323</string>
+    </test>
+    <test label="U+0072 U+0325">
+      <comment>NIB:alphdr0 (LanguesNiger)</comment>
+      <string>\u000072\u000325</string>
+    </test>
+    <test label="U+0052 U+0331">
+      <comment>PLB:phiandr, MXB:lo329595 (Zapatec)</comment>
+      <string>\u000052\u000331</string>
+    </test>
+    <test label="U+0072 U+0331">
+      <comment>PLB:phiandr, MXB:lo329595 (Zapatec)</comment>
+      <string>\u000072\u000331</string>
+    </test>
+    <test label="U+0073 U+0307">
+      <comment>NAB:lakotdr (Lakota)</comment>
+      <string>\u000073\u000307</string>
+    </test>
+    <test label="U+0053 U+0307">
+      <comment>NAB:lakotdr (Lakota)</comment>
+      <string>\u000053\u000307</string>
+    </test>
+    <test label="U+0073 U+030C">
+      <comment>NIB:alphdr0 (LanguesNiger)</comment>
+      <string>\u000073\u00030C</string>
+    </test>
+    <test label="U+0053 U+030C">
+      <comment>NIB:alphdr0 (LanguesNiger)</comment>
+      <string>\u000053\u00030C</string>
+    </test>
+    <test label="U+0073 U+030C U+0323">
+      <comment>MXB:mtt</comment>
+      <string>\u000073\u00030C\u000323</string>
+    </test>
+    <test label="U+0053 U+0327">
+      <comment>SEB:dkalwdr</comment>
+      <string>\u000053\u000327</string>
+    </test>
+    <test label="U+0073 U+0327">
+      <comment>SEB:dkalwdr</comment>
+      <string>\u000073\u000327</string>
+    </test>
+    <test label="U+0053 U+0323">
+      <comment>NRG:yoru000 (Yoruba)</comment>
+      <string>\u000053\u000323</string>
+    </test>
+    <test label="U+0073 U+0323">
+      <comment>NRG:yoru000 (Yoruba), SUB:krsdr (Gbaya)</comment>
+      <string>\u000073\u000323</string>
+    </test>
+    <test label="U+0054 U+0307">
+      <comment>NAB:lakotdr (Lakota)</comment>
+      <string>\u000054\u000307</string>
+    </test>
+    <test label="U+0074 U+0307">
+      <comment>NAB:lakotdr (Lakota)</comment>
+      <string>\u000074\u000307</string>
+    </test>
+    <test label="U+0054 U+0304">
+      <comment>NAB:lakotdr (Lakota)</comment>
+      <string>\u000054\u000304</string>
+    </test>
+    <test label="U+0074 U+0304">
+      <comment>NAB:lakotdr (Lakota)</comment>
+      <string>\u000074\u000304</string>
+    </test>
+    <test label="U+0054 U+0327">
+      <comment>SEB:dkalwdr</comment>
+      <string>\u000054\u000327</string>
+    </test>
+    <test label="U+0074 U+0327">
+      <comment>SEB:dkalwdr</comment>
+      <string>\u000074\u000327</string>
+    </test>
+    <test label="U+0074 U+0323">
+      <comment>NIB:tama000 (Tamajaq), SUB:mfzdr (Mabaan)</comment>
+      <string>\u000074\u000323</string>
+    </test>
+    <test label="U+0054 U+0323">
+      <comment>SUB:mfzdr (Mabaan)</comment>
+      <string>\u000054\u000323</string>
+    </test>
+    <test label="U+0074 U+0331">
+      <comment>SUB:murdr (Murle), SUB:ududr (Uduk), MXB:lo329595 (Zapatec)</comment>
+      <string>\u000074\u000331</string>
+    </test>
+    <test label="U+0054 U+0331">
+      <comment>SUB:murdr (Murle), SUB:ududr (Uduk), MXB:lo329595 (Zapatec)</comment>
+      <string>\u000054\u000331</string>
+    </test>
+    <test label="U+0075 U+0301">
+      <comment>NRG:izercr (Izere), UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000075\u000301</string>
+    </test>
+    <test label="U+0055 U+0301">
+      <comment>SUB:krsdr (Gbaya), UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000055\u000301</string>
+    </test>
+    <test label="U+0055 U+0304 U+0301">
+      <comment>NIB:alphdr0 (LanguesNiger)</comment>
+      <string>\u000055\u000304\u000301</string>
+    </test>
+    <test label="U+0055 U+0301 U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u000055\u000301\u000327</string>
+    </test>
+    <test label="U+0075 U+0301 U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u000075\u000301\u000327</string>
+    </test>
+    <test label="U+0075 U+0301 U+031C">
+      <comment>NAB:utedour2 (Ute)</comment>
+      <string>\u000075\u000301\u00031C</string>
+    </test>
+    <test label="U+0075 U+0301 U+0323">
+      <comment>SUB:avudr (Avokaya), SUB:bdhdr (Baka)</comment>
+      <string>\u000075\u000301\u000323</string>
+    </test>
+    <test label="U+0055 U+0301 U+0323">
+      <comment>SUB:avudr (Avokaya), SUB:bdhdr (Baka), UTB:bandodr (Bantu Dot Under)</comment>
+      <string>\u000055\u000301\u000323</string>
+    </test>
+    <test label="U+0055 U+0301 U+0331">
+      <comment>SUB:murdr (Murle), UTB:banundr (Bantu Bar Under), MXB:lo329595 (Zapatec)</comment>
+      <string>\u000055\u000301\u000331</string>
+    </test>
+    <test label="U+0075 U+0301 U+0331">
+      <comment>SUB:murdr (Murle), MXB:lo329595 (Zapatec), UTB:banundr (Bantu Bar Under)</comment>
+      <string>\u000075\u000301\u000331</string>
+    </test>
+    <test label="U+0075 U+0300">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000075\u000300</string>
+    </test>
+    <test label="U+0055 U+0300">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000055\u000300</string>
+    </test>
+    <test label="U+0075 U+0300 U+0303">
+      <comment>NIB:alphdr0 (LanguesNiger)</comment>
+      <string>\u000075\u000300\u000303</string>
+    </test>
+    <test label="U+0075 U+0300 U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u000075\u000300\u000327</string>
+    </test>
+    <test label="U+0055 U+0300 U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u000055\u000300\u000327</string>
+    </test>
+    <test label="U+0075 U+0300 U+0323">
+      <comment>UTB:bandodr (Bantu Dot Under)</comment>
+      <string>\u000075\u000300\u000323</string>
+    </test>
+    <test label="U+0055 U+0300 U+0323">
+      <comment>UTB:bandodr (Bantu Dot Under)</comment>
+      <string>\u000055\u000300\u000323</string>
+    </test>
+    <test label="U+0075 U+0300 U+0331">
+      <comment>UTB:banundr (Bantu Bar Under)</comment>
+      <string>\u000075\u000300\u000331</string>
+    </test>
+    <test label="U+0055 U+0300 U+0331">
+      <comment>UTB:banundr (Bantu Bar Under)</comment>
+      <string>\u000055\u000300\u000331</string>
+    </test>
+    <test label="U+0055 U+0302">
+      <comment>UTB:Banbacr (Bantu Bar Over), SUB:krsdr (Gbaya)</comment>
+      <string>\u000055\u000302</string>
+    </test>
+    <test label="U+0075 U+0302">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000075\u000302</string>
+    </test>
+    <test label="U+0075 U+0304 U+0302">
+      <comment>NIB:alphdr0 (LanguesNiger)</comment>
+      <string>\u000075\u000304\u000302</string>
+    </test>
+    <test label="U+0055 U+0304 U+0302">
+      <comment>NIB:alphdr0 (LanguesNiger)</comment>
+      <string>\u000055\u000304\u000302</string>
+    </test>
+    <test label="U+0075 U+0302 U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u000075\u000302\u000327</string>
+    </test>
+    <test label="U+0055 U+0302 U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u000055\u000302\u000327</string>
+    </test>
+    <test label="U+0075 U+0302 U+0323">
+      <comment>UTB:bandodr (Bantu Dot Under), SUB:avudr (Avokaya)</comment>
+      <string>\u000075\u000302\u000323</string>
+    </test>
+    <test label="U+0055 U+0302 U+0323">
+      <comment>UTB:bandodr (Bantu Dot Under)</comment>
+      <string>\u000055\u000302\u000323</string>
+    </test>
+    <test label="U+0075 U+0302 U+0331">
+      <comment>UTB:banundr (Bantu Bar Under), SUB:murdr (Murle)</comment>
+      <string>\u000075\u000302\u000331</string>
+    </test>
+    <test label="U+0055 U+0302 U+0331">
+      <comment>UTB:banundr (Bantu Bar Under), SUB:murdr (Murle)</comment>
+      <string>\u000055\u000302\u000331</string>
+    </test>
+    <test label="U+0075 U+0308">
+      <comment>SUB:dindr (Dinka)</comment>
+      <string>\u000075\u000308</string>
+    </test>
+    <test label="U+0055 U+0308">
+      <comment>SUB:dindr (Dinka), SUB:krsdr (Gbaya)</comment>
+      <string>\u000055\u000308</string>
+    </test>
+    <test label="U+0075 U+0308 U+0301 U+0331">
+      <comment>MXB:lo329595 (Zapatec)</comment>
+      <string>\u000075\u000308\u000301\u000331</string>
+    </test>
+    <test label="U+0055 U+0308 U+0301 U+0331">
+      <comment>MXB:lo329595 (Zapatec)</comment>
+      <string>\u000055\u000308\u000301\u000331</string>
+    </test>
+    <test label="U+0075 U+0308 U+0301">
+      <comment>SUB:bvidr (Viri)</comment>
+      <string>\u000075\u000308\u000301</string>
+    </test>
+    <test label="U+0055 U+0308 U+0301">
+      <comment>SUB:bvidr (Viri)</comment>
+      <string>\u000055\u000308\u000301</string>
+    </test>
+    <test label="U+0075 U+0308 U+0300">
+      <comment>SUB:dindr (Dinka)</comment>
+      <string>\u000075\u000308\u000300</string>
+    </test>
+    <test label="U+0055 U+0308 U+0300">
+      <comment>SUB:dindr (Dinka)</comment>
+      <string>\u000055\u000308\u000300</string>
+    </test>
+    <test label="U+0075 U+0308 U+0302">
+      <comment>SUB:mgddr (Moru)</comment>
+      <string>\u000075\u000308\u000302</string>
+    </test>
+    <test label="U+0075 U+0308 U+0303 U+0301">
+      <comment>PEB:ticdr (Ticuna)</comment>
+      <string>\u000075\u000308\u000303\u000301</string>
+    </test>
+    <test label="U+0055 U+0308 U+0303 U+0301">
+      <comment>PEB:ticdr (Ticuna)</comment>
+      <string>\u000055\u000308\u000303\u000301</string>
+    </test>
+    <test label="U+0075 U+0308 U+0303">
+      <comment>SUB:bvidr (Viri)</comment>
+      <string>\u000075\u000308\u000303</string>
+    </test>
+    <test label="U+0075 U+0308 U+0303">
+      <comment>PEB:ticdr (Ticuna)</comment>
+      <string>\u000075\u000308\u000303</string>
+    </test>
+    <test label="U+0055 U+0308 U+0303">
+      <comment>SUB:bvidr (Viri)</comment>
+      <string>\u000055\u000308\u000303</string>
+    </test>
+    <test label="U+0075 U+0308 U+0331">
+      <comment>MXB:lo329595 (Zapatec), SUB:nusdr (Nuer)</comment>
+      <string>\u000075\u000308\u000331</string>
+    </test>
+    <test label="U+0055 U+0308 U+0331">
+      <comment>MXB:lo329595 (Zapatec), SUB:nusdr (Nuer)</comment>
+      <string>\u000055\u000308\u000331</string>
+    </test>
+    <test label="U+0075 U+030C">
+      <comment>UTB:Banbacr (Bantu Bar Over), CAG:betkedr (Mono)</comment>
+      <string>\u000075\u00030C</string>
+    </test>
+    <test label="U+0055 U+030C">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000055\u00030C</string>
+    </test>
+    <test label="U+0075 U+030C U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u000075\u00030C\u000327</string>
+    </test>
+    <test label="U+0055 U+030C U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u000055\u00030C\u000327</string>
+    </test>
+    <test label="U+0075 U+030C U+0323">
+      <comment>UTB:bandodr (Bantu Dot Under)</comment>
+      <string>\u000075\u00030C\u000323</string>
+    </test>
+    <test label="U+0055 U+030C U+0323">
+      <comment>UTB:bandodr (Bantu Dot Under)</comment>
+      <string>\u000055\u00030C\u000323</string>
+    </test>
+    <test label="U+0075 U+030C U+0331">
+      <comment>UTB:banundr (Bantu Bar Under)</comment>
+      <string>\u000075\u00030C\u000331</string>
+    </test>
+    <test label="U+0055 U+030C U+0331">
+      <comment>UTB:banundr (Bantu Bar Under)</comment>
+      <string>\u000055\u00030C\u000331</string>
+    </test>
+    <test label="U+0075 U+0306">
+      <comment>SUB:krsdr (Gbaya)</comment>
+      <string>\u000075\u000306</string>
+    </test>
+    <test label="U+0055 U+0306">
+      <comment>SUB:krsdr (Gbaya)</comment>
+      <string>\u000055\u000306</string>
+    </test>
+    <test label="U+0075 U+0304">
+      <comment>PNB:pngcr, MXB:mtt</comment>
+      <string>\u000075\u000304</string>
+    </test>
+    <test label="U+0055 U+0304">
+      <comment>SUB:hebdr (Heiban)</comment>
+      <string>\u000055\u000304</string>
+    </test>
+    <test label="U+0055 U+0304 U+0300">
+      <comment>NIB:alphdr0 (LanguesNiger)</comment>
+      <string>\u000055\u000304\u000300</string>
+    </test>
+    <test label="U+0075 U+0303">
+      <comment>SUB:avudr (Avokaya)</comment>
+      <string>\u000075\u000303</string>
+    </test>
+    <test label="U+0055 U+0303">
+      <comment>SUB:avudr (Avokaya), NIB:alphdr0 (LanguesNiger), SUB:krsdr (Gbaya)</comment>
+      <string>\u000055\u000303</string>
+    </test>
+    <test label="U+0075 U+0303 U+0301">
+      <comment>SUB:diddr (Didinga)</comment>
+      <string>\u000075\u000303\u000301</string>
+    </test>
+    <test label="U+0055 U+0303 U+0301">
+      <comment>SUB:diddr (Didinga)</comment>
+      <string>\u000055\u000303\u000301</string>
+    </test>
+    <test label="U+0075 U+0303 U+0300">
+      <comment>SUB:diddr (Didinga)</comment>
+      <string>\u000075\u000303\u000300</string>
+    </test>
+    <test label="U+0055 U+0303 U+0300">
+      <comment>SUB:diddr (Didinga)</comment>
+      <string>\u000055\u000303\u000300</string>
+    </test>
+    <test label="U+0075 U+0303 U+0302">
+      <comment>SUB:diddr (Didinga)</comment>
+      <string>\u000075\u000303\u000302</string>
+    </test>
+    <test label="U+0075 U+0303 U+0323">
+      <comment>SUB:avudr (Avokaya)</comment>
+      <string>\u000075\u000303\u000323</string>
+    </test>
+    <test label="U+0055 U+0303 U+0323">
+      <comment>SUB:avudr (Avokaya)</comment>
+      <string>\u000055\u000303\u000323</string>
+    </test>
+    <test label="U+0055 U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u000055\u000327</string>
+    </test>
+    <test label="U+0075 U+0327">
+      <comment>NAB:gwdoulo3 (Gwichn)</comment>
+      <string>\u000075\u000327</string>
+    </test>
+    <test label="U+0055 U+031C">
+      <comment>NAB:utedour2 (Ute)</comment>
+      <string>\u000055\u00031C</string>
+    </test>
+    <test label="U+0075 U+031C">
+      <comment>NAB:utedour2 (Ute)</comment>
+      <string>\u000075\u00031C</string>
+    </test>
+    <test label="U+0075 U+031C U+0331">
+      <comment>NAB:utedour2 (Ute)</comment>
+      <string>\u000075\u00031C\u000331</string>
+    </test>
+    <test label="U+0055 U+0323">
+      <comment>SUB:bdhdr (Baka)</comment>
+      <string>\u000055\u000323</string>
+    </test>
+    <test label="U+0075 U+0323">
+      <comment>SUB:bdhdr (Baka)</comment>
+      <string>\u000075\u000323</string>
+    </test>
+    <test label="U+0055 U+0330">
+      <comment>BFB:93li000</comment>
+      <string>\u000055\u000330</string>
+    </test>
+    <test label="U+0075 U+0330">
+      <comment>BFB:93li000</comment>
+      <string>\u000075\u000330</string>
+    </test>
+    <test label="U+0075 U+0331">
+      <comment>MXB:chnchzdr, SUB:murdr (Murle), SUB:nusdr (Nuer), MXB:mix, MXB:mtt</comment>
+      <string>\u000075\u000331</string>
+    </test>
+    <test label="U+0055 U+0331">
+      <comment>MXB:chnchzdr, SUB:murdr (Murle), SUB:nusdr (Nuer), UTB:banundr (Bantu Bar Under)</comment>
+      <string>\u000055\u000331</string>
+    </test>
+    <test label="U+0289 U+0301">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000289\u000301</string>
+    </test>
+    <test label="U+0289 U+0300">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000289\u000300</string>
+    </test>
+    <test label="U+0289 U+0302">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000289\u000302</string>
+    </test>
+    <test label="U+0289 U+0308">
+      <comment>SUB:mv_dr (Many Vowels)</comment>
+      <string>\u000289\u000308</string>
+    </test>
+    <test label="U+0289 U+030C">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000289\u00030C</string>
+    </test>
+    <test label="U+0289 U+0331">
+      <comment>MXB:chnchzdr</comment>
+      <string>\u000289\u000331</string>
+    </test>
+    <test label="U+01B1 U+0301">
+      <comment>UTB:banipdr (Bantu IPA)</comment>
+      <string>\u0001B1\u000301</string>
+    </test>
+    <test label="U+028A U+0301">
+      <comment>UTB:banipdr (Bantu IPA)</comment>
+      <string>\u00028A\u000301</string>
+    </test>
+    <test label="U+01B1 U+0300">
+      <comment>UTB:banipdr (Bantu IPA)</comment>
+      <string>\u0001B1\u000300</string>
+    </test>
+    <test label="U+028A U+0300">
+      <comment>UTB:banipdr (Bantu IPA)</comment>
+      <string>\u00028A\u000300</string>
+    </test>
+    <test label="U+01B1 U+0302">
+      <comment>UTB:banipdr (Bantu IPA)</comment>
+      <string>\u0001B1\u000302</string>
+    </test>
+    <test label="U+028A U+0302">
+      <comment>UTB:banipdr (Bantu IPA)</comment>
+      <string>\u00028A\u000302</string>
+    </test>
+    <test label="U+01B1 U+030C">
+      <comment>UTB:banipdr (Bantu IPA)</comment>
+      <string>\u0001B1\u00030C</string>
+    </test>
+    <test label="U+028A U+030C">
+      <comment>UTB:banipdr (Bantu IPA)</comment>
+      <string>\u00028A\u00030C</string>
+    </test>
+    <test label="U+0076 U+0303">
+      <comment>VAG:aavancr</comment>
+      <string>\u000076\u000303</string>
+    </test>
+    <test label="U+0056 U+0303">
+      <comment>VAG:aavancr</comment>
+      <string>\u000056\u000303</string>
+    </test>
+    <test label="U+0056 U+0323">
+      <comment>SUB:bdhdr (Baka)</comment>
+      <string>\u000056\u000323</string>
+    </test>
+    <test label="U+0076 U+0323">
+      <comment>SUB:bdhdr (Baka)</comment>
+      <string>\u000076\u000323</string>
+    </test>
+    <test label="U+028B U+0301">
+      <comment>GHG:gh428838</comment>
+      <string>\u00028B\u000301</string>
+    </test>
+    <test label="U+01B2 U+0301">
+      <comment>GHG:gh428838</comment>
+      <string>\u0001B2\u000301</string>
+    </test>
+    <test label="U+028B U+0300">
+      <comment>GHG:gh428838</comment>
+      <string>\u00028B\u000300</string>
+    </test>
+    <test label="U+01B2 U+0300">
+      <comment>GHG:gh428838</comment>
+      <string>\u0001B2\u000300</string>
+    </test>
+    <test label="U+028B U+0302">
+      <comment>GHG:gh428838</comment>
+      <string>\u00028B\u000302</string>
+    </test>
+    <test label="U+01B2 U+0302">
+      <comment>GHG:gh428838</comment>
+      <string>\u0001B2\u000302</string>
+    </test>
+    <test label="U+028B U+0303">
+      <comment>GHG:gh428838</comment>
+      <string>\u00028B\u000303</string>
+    </test>
+    <test label="U+01B2 U+0303">
+      <comment>GHG:gh428838</comment>
+      <string>\u0001B2\u000303</string>
+    </test>
+    <test label="U+028B U+0330">
+      <comment>BFB:93li000</comment>
+      <string>\u00028B\u000330</string>
+    </test>
+    <test label="U+01B2 U+0330">
+      <comment>BFB:93li000</comment>
+      <string>\u0001B2\u000330</string>
+    </test>
+    <test label="U+0077 U+0308">
+      <comment>CAB:cmanu</comment>
+      <string>\u000077\u000308</string>
+    </test>
+    <test label="U+0057 U+0323">
+      <comment>NIB:tama000 (Tamajaq)</comment>
+      <string>\u000057\u000323</string>
+    </test>
+    <test label="U+0077 U+0323">
+      <comment>NIB:tama000 (Tamajaq)</comment>
+      <string>\u000077\u000323</string>
+    </test>
+    <test label="U+0077 U+0330">
+      <comment>BFB:93li000</comment>
+      <string>\u000077\u000330</string>
+    </test>
+    <test label="U+0077 U+0331">
+      <comment>BFB:93li000</comment>
+      <string>\u000077\u000331</string>
+    </test>
+    <test label="U+0057 U+0331">
+      <comment>PLB:phiandr</comment>
+      <string>\u000057\u000331</string>
+    </test>
+    <test label="U+0077 U+0331">
+      <comment>PLB:phiandr</comment>
+      <string>\u000077\u000331</string>
+    </test>
+    <test label="U+0078 U+0331">
+      <comment>MXB:lo329595 (Zapatec)</comment>
+      <string>\u000078\u000331</string>
+    </test>
+    <test label="U+0058 U+0331">
+      <comment>MXB:lo329595 (Zapatec)</comment>
+      <string>\u000058\u000331</string>
+    </test>
+    <test label="U+0059 U+0323">
+      <comment>NIB:tama000 (Tamajaq)</comment>
+      <string>\u000059\u000323</string>
+    </test>
+    <test label="U+0079 U+0323">
+      <comment>NIB:tama000 (Tamajaq), NIB:tt204lit (Tamajaq)</comment>
+      <string>\u000079\u000323</string>
+    </test>
+    <test label="U+005A U+0301">
+      <comment>SUB:tirdr (Tira)</comment>
+      <string>\u00005A\u000301</string>
+    </test>
+    <test label="U+007A U+030C">
+      <comment>NAB: NABudr (NAB Unicode)</comment>
+      <string>\u00007A\u00030C</string>
+    </test>
+    <test label="U+005A U+030C">
+      <comment>NAB: NABudr (NAB Unicode)</comment>
+      <string>\u00005A\u00030C</string>
+    </test>
+    <test label="U+007A U+030C U+0323">
+      <comment>MXB:mtt</comment>
+      <string>\u00007A\u00030C\u000323</string>
+    </test>
+    <test label="U+007A U+0306">
+      <comment>NIB:tama000 (Tamajaq)</comment>
+      <string>\u00007A\u000306</string>
+    </test>
+    <test label="U+005A U+0306">
+      <comment>NIB:tama000 (Tamajaq)</comment>
+      <string>\u00005A\u000306</string>
+    </test>
+    <test label="U+007A U+0306 U+0323">
+      <comment>NIB:tama000 (Tamajaq)</comment>
+      <string>\u00007A\u000306\u000323</string>
+    </test>
+    <test label="U+005A U+0306 U+0323">
+      <comment>NIB:tama000 (Tamajaq)</comment>
+      <string>\u00005A\u000306\u000323</string>
+    </test>
+    <test label="U+007A U+0303">
+      <comment>MXB:lo329595 (Zapatec)</comment>
+      <string>\u00007A\u000303</string>
+    </test>
+    <test label="U+005A U+0303">
+      <comment>MXB:lo329595 (Zapatec)</comment>
+      <string>\u00005A\u000303</string>
+    </test>
+    <test label="U+005A U+0323">
+      <comment>NRG:angancr (Angas)</comment>
+      <string>\u00005A\u000323</string>
+    </test>
+    <test label="U+007A U+0323">
+      <comment>NRG:angancr (Angas), SUB:krsdr (Gbaya)</comment>
+      <string>\u00007A\u000323</string>
+    </test>
+    <test label="U+2C6D U+0301">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u002C6D\u000301</string>
+    </test>
+    <test label="U+2C6D U+0300">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u002C6D\u000300</string>
+    </test>
+    <test label="U+2C6D U+0302">
+      <comment>UTB:banipdr (Bantu IPA)</comment>
+      <string>\u002C6D\u000302</string>
+    </test>
+    <test label="U+2C6D U+030C">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u002C6D\u00030C</string>
+    </test>
+    <test label="U+0244 U+0301">
+      <comment>UTB:Banbacr (Bantu Bar Over), SUB:mv_dr (Many Vowels)</comment>
+      <string>\u000244\u000301</string>
+    </test>
+    <test label="U+0244 U+0300">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000244\u000300</string>
+    </test>
+    <test label="U+0244 U+0302">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000244\u000302</string>
+    </test>
+    <test label="U+0244 U+0308">
+      <comment>SUB:mv_dr (Many Vowels)</comment>
+      <string>\u000244\u000308</string>
+    </test>
+    <test label="U+0244 U+030C">
+      <comment>UTB:Banbacr (Bantu Bar Over)</comment>
+      <string>\u000244\u00030C</string>
+    </test>
+    <test label="U+0244 U+0331">
+      <comment>MXB:chnchzdr</comment>
+      <string>\u000244\u000331</string>
+    </test>
+  </testgroup>
+</ftml>
