@@ -7,7 +7,7 @@ fontversion: 6.000
 
 This project is intended to provide a free and open font family for all current languages and writing systems that use Latin and Cyrillic scripts. It supports almost the complete range of Unicode characters for these scripts, including a comprehensive range of diacritics and a large set of symbols useful for linguistics and literacy work. Smart font routines automatically adjust the position of diacritics to support and optimize arbitrary base+diacritic combinations. 
 
-For more information on the visual characteristics of the font family see [Design](design).
+For more information on the visual characteristics of the font family see [Design][design].
 
 For a comparison between this and other SIL fonts, see [Comparison of Latin, Greek, and Cyrillic fonts](https://software.sil.org/lcgfonts/support/comparison/).
 
@@ -49,4 +49,7 @@ Our Vision: We long to see people flourishing in community using the languages t
 
 Our Mission: Inspired by God’s love, we advocate, build capacity, and work with local communities to apply language expertise that advances meaningful development, education, and engagement with Scripture.
 
-[SIL Language Technology](https://software.sil.org/) supports these activities by developing [software](https://software.sil.org/products/), [fonts](https://software.sil.org/fonts/), and [keyboard technologies](https://keyman.com/).
+[SIL Language Technology][langtech] supports these activities by developing [software](https://software.sil.org/products/), [fonts](https://software.sil.org/fonts/), and [keyboard technologies](https://keyman.com/).
+
+[design]: design.html
+[langtech]: https://software.sil.org/

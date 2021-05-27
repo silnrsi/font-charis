@@ -1,7 +1,24 @@
 #!/bin/sh
 
 echo "-----Rebuilding documentation..."
-echo "     > CharisSIL-font-features.html"
-pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/CharisSIL-font-features.md -o documentation/CharisSIL-font-features.html
+echo "     > index.html"
+pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/index.md -o documentation/index.html
+echo "     > about.html"
+pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/about.md -o documentation/about.html
+echo "     > resources.html"
+pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/resources.md -o documentation/resources.html
+echo "     > developer.html"
+pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/developer.md -o documentation/developer.html
+
+# Comment out next sections before generating docs for release
+echo "     > markdowntest.html"
+pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/markdowntest.md -o documentation/markdowntest.html --lua-filter=documentation/source/pandocfilters/links-to-html.lua
+
+echo "     > markdowntestpdf.html > markdowntest.pdf"
+pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/markdowntest.md -o documentation/source/pdftemp/markdowntestpdf.html --lua-filter=documentation/source/pandocfilters/links-to-pdf.lua
+weasyprint documentation/source/pdftemp/markdowntestpdf.html documentation/pdf/markdowntest.pdf
+
+echo "     > markdowntestps.md"
+python3 documentation/source/makepsmd.py documentation/source/markdowntest.md documentation/source/productsite/markdowntestps.md
 
 echo "-----Completed!"

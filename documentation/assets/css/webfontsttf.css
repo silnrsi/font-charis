@@ -6,19 +6,19 @@ Open Font License, Version 1.1 (http://scripts.sil.org/OFL).
 */
 @font-face {
     font-family: CharisSIL-R;
-    src: url("../../../web/CharisSIL-Regular.woff2") format("woff2");
+    src: url("../../../results/CharisSIL-Regular.ttf") format("truetype");
 }
 @font-face {
     font-family: CharisSIL-I;
-    src: url("../../../web/CharisSIL-Italic.woff2") format("woff2");
+    src: url("../../../results/CharisSIL-Italic.ttf") format("truetype");
 }
 @font-face {
     font-family: CharisSIL-B;
-    src: url("../../../web/CharisSIL-Bold.woff2") format("woff2");
+    src: url("../../../results/CharisSIL-Bold.ttf") format("truetype");
 }
 @font-face {
     font-family: CharisSIL-BI;
-    src: url("../../../web/CharisSIL-BoldItalic.woff2") format("woff2");
+    src: url("../../../results/CharisSIL-BoldItalic.ttf") format("truetype");
 }
 
 .charis-R { font-family: CharisSIL-R; }
