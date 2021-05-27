@@ -83,7 +83,7 @@ Here is an example of a footnote[^1] that will appear at the very bottom[^anytex
 
 ## Images
 
-Images should be specified in markdown syntax with the local path used as the link. The class needs to be defined in {}, usually {.fullsize}. Then the actual path to the image in the product site image library needs to be placed in a comment using a special syntax. If you want a caption it needs to be placed in a separate html *figcaption* element. Example:
+Images should be specified in markdown syntax with the local path used as the link. The class is required and needs to be defined in {}, usually {.fullsize}. Then the actual path to the image in the product site image library needs to be placed in a comment using a special syntax. If you want a caption it needs to be placed in a separate html *figcaption* element. Example:
 
 <img class='fullsize' alt='Charis SIL Sample - Precomposed Latin Diacritics' src='http://software.sil.org/charis/wp-content/uploads/sites/14/2015/12/CharisSILTypePage.png' />
 [caption]<em>This is the caption</em>[/caption]

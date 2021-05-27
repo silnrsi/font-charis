@@ -12,10 +12,10 @@ pandoc -s -f markdown-smart --template documentation/source/template.html docume
 
 # Comment out next sections before generating docs for release
 echo "     > markdowntest.html"
-pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/markdowntest.md -o documentation/markdowntest.html --lua-filter=documentation/source/pandocfilters/links-to-html.lua
+pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/markdowntest.md -o documentation/markdowntest.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
 
 echo "     > markdowntestpdf.html > markdowntest.pdf"
-pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/markdowntest.md -o documentation/source/pdftemp/markdowntestpdf.html --lua-filter=documentation/source/pandocfilters/links-to-pdf.lua
+pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/markdowntest.md -o documentation/source/pdftemp/markdowntestpdf.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
 weasyprint documentation/source/pdftemp/markdowntestpdf.html documentation/pdf/markdowntest.pdf
 
 echo "     > markdowntestps.md"

@@ -8,3 +8,8 @@ function Image(el)
   el.src = string.gsub(el.src, "(.+)", "../../%0")
   return el
 end
+
+function CodeBlock(el)
+  el.text = string.gsub(el.text, "(.+)", "    %0")
+  return el
+end
