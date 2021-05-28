@@ -7,7 +7,7 @@ fontversion: 6.000
 
 This project is intended to provide a free and open font family for all current languages and writing systems that use Latin and Cyrillic scripts. It supports almost the complete range of Unicode characters for these scripts, including a comprehensive range of diacritics and a large set of symbols useful for linguistics and literacy work. Smart font routines automatically adjust the position of diacritics to support and optimize arbitrary base+diacritic combinations. 
 
-For more information on the visual characteristics of the font family see [Design][design].
+For more information on the visual characteristics of the font family see [Design](design.md).
 
 For a comparison between this and other SIL fonts, see [Comparison of Latin, Greek, and Cyrillic fonts](https://software.sil.org/lcgfonts/support/comparison/).
 
@@ -21,13 +21,13 @@ The highest priorities for future additions and enhancements are mainly driven b
 - Requests from language communities using the fonts
 - Needs of the linguistic and academic community
 
-Although some expert typographic features are supported (e.g. small caps), these are a lesser priority.
+Although some expert typographic features are supported (e.g. small caps), those are a lesser priority.
 
-Please send us your requests and bug reports using the [form on the font website](https://software.sil.org/charis/about/contact/). If you are interested in helping us make the fonts better see the [Developer](developer) page.
+Please send us your requests and bug reports using the [form on the font website](https://software.sil.org/charis/about/contact/). If you are interested in helping us make the fonts better see the [Developer](developer.md) page.
 
 ## Announcement list
 
-If you wish to receive announcements about updates to any of our SIL fonts, please subscribe to our [SIL Font News Google Group](https://groups.google.com/a/groups.sil.org/forum/#!forum/sil-font-news). This is only an announcement list with messages approximately once a month. It does not allow any discussion.
+If you wish to receive announcements about updates to any of our SIL fonts, please subscribe to our [SIL Font News Google Group](https://groups.google.com/a/groups.sil.org/forum/#!forum/sil-font-news). This is an announcement-only list with messages approximately once a month. It does not allow any discussion.
 
 You can subscribe using either of the two following options.
 
@@ -49,7 +49,4 @@ Our Vision: We long to see people flourishing in community using the languages t
 
 Our Mission: Inspired by God’s love, we advocate, build capacity, and work with local communities to apply language expertise that advances meaningful development, education, and engagement with Scripture.
 
-[SIL Language Technology][langtech] supports these activities by developing [software](https://software.sil.org/products/), [fonts](https://software.sil.org/fonts/), and [keyboard technologies](https://keyman.com/).
-
-[design]: design.html
-[langtech]: https://software.sil.org/
+[SIL Language Technology](https://software.sil.org/) supports these activities by developing [software](https://software.sil.org/products/), [fonts](https://software.sil.org/fonts/), and [keyboard technologies](https://keyman.com/).

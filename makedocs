@@ -1,14 +1,29 @@
 #!/bin/sh
 
+# To generate PDFs that are somewhat OK you will need to have the Roboto and Roboto mono font families installed on your system
+# https://fonts.google.com/specimen/Roboto
+# https://fonts.google.com/specimen/Roboto+Mono
+
 echo "-----Rebuilding documentation..."
+echo "     > HTML"
 echo "     > index.html"
-pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/index.md -o documentation/index.html
+pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/index.md -o documentation/index.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
 echo "     > about.html"
-pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/about.md -o documentation/about.html
+pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/about.md -o documentation/about.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
 echo "     > resources.html"
-pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/resources.md -o documentation/resources.html
+pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/resources.md -o documentation/resources.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
 echo "     > developer.html"
-pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/developer.md -o documentation/developer.html
+pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/developer.md -o documentation/developer.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
+echo "     > support.html"
+pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/support.md -o documentation/support.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
+
+
+
+
+
+
+
+
 
 # Comment out next sections before generating docs for release
 echo "     > markdowntest.html"
