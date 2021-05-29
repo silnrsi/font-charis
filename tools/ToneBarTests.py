@@ -1,25 +1,12 @@
 #!/usr/bin/python3
 
-from silfont.core import execute
+from silfont.core import loggerobj
 import silfont.ftml_builder
 
 tone_bars = [0x02E5, 0x02E6, 0x02E7, 0x02E8, 0x02E9]
 leftstem_tone_bars = [0xA712, 0xA713, 0xA714, 0xA715, 0xA716]
 dotted_tone_bars = [0xA708, 0xA709, 0xA70A, 0xA70B, 0xA70C]
 dotted_leftstem_tone_bars = [0xA70D, 0xA70E, 0xA70F, 0xA710, 0xA711]
-
-argspec = [
-    # ('ifont',{'help': 'Input UFO'}, {'type': 'infont'}),
-    # ('output',{'help': 'Output file ftml in XML format', 'nargs': '?'}, {'type': 'outfile', 'def': '_out.ftml'}),
-    # ('-i','--input',{'help': 'Glyph info csv file'}, {'type': 'incsv', 'def': 'glyph_data.csv'}),
-    # ('-f','--fontcode',{'help': 'letter to filter for glyph_data'},{}),
-    ('-l','--log',{'help': 'Set log file name'}, {'type': 'outfile', 'def': 'ToneBarsTests.log'}),
-    # ('-t','--test', {'help': 'which test to build', 'default': None, 'action': 'store'}, {}),
-    # ('-s','--fontsrc', {'help': 'default font source optionally followed by "=label"', 'action': 'append'}, {}),
-    # ('--scale', {'help': '% to scale rendered text'}, {}),
-    # ('--ap', {'help': 'regular expression describing APs to examine', 'default': '.', 'action': 'store'}, {}),
-    # ('--xsl', {'help': 'XSL stylesheet to use'}, {}),
-]
 
 def generate_test_group(ftml, name, uid_lst):
     ftml.startTestGroup(name)
@@ -59,10 +46,11 @@ def generate_test_group(ftml, name, uid_lst):
 
     ftml.closeTestGroup()
 
-def doit(args):
+def main():
     # def __init__(self, title, logger, comment=None, fontsrc=None, fontlabel=None, fontscale=None,
     #              widths=None, rendercheck=True, xslfn=None, defaultrtl=False):
-    ftml = silfont.ftml_builder.FTML("Tone Bar tests", args.logger, fontsrc="../results/CharisSIL-Regular.ttf",
+    logger = loggerobj()
+    ftml = silfont.ftml_builder.FTML("Tone Bar tests", logger, fontsrc="../results/CharisSIL-Regular.ttf",
                                      fontscale=200, rendercheck=False, xslfn="../tools/ftml.xsl")
 
     generate_test_group(ftml, "Tone Bars", tone_bars)
@@ -84,5 +72,4 @@ def doit(args):
     ftml.writeFile(f)
     f.close()
 
-def cmd() : execute("UFO",doit,argspec)
-if __name__ == "__main__": cmd()
+if __name__ == "__main__": main()
