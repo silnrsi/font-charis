@@ -236,6 +236,20 @@ class FTMLBuilder_LCG(FB.FTMLBuilder):
             self.allLangs = list(sorted(self.allLangs))
             self.allLangs = list(sorted(self.allLangs))
 
+    # this does NOT override the base class static method
+    #  but since my code only uses instances of FTMLBuilder_LCG, this method will be used
+    @staticmethod
+    def matchMarkBase(c_mark, c_base):
+        """ test whether an _AP on c_mark matches an AP on c_base """
+        for apM in c_mark.aps:
+            if apM == "R_": apM = "_R"
+            if apM.startswith("_"):
+                ap = apM[1:]
+                for apB in c_base.aps:
+                    if apB == ap:
+                        return True
+        return False
+
     def render_lists(self, base_uid_lst, diac_uid_lst, ftml, feature_lst=None, keyUID=0, descUIDs=None):
         baselst_lst = [base_uid_lst[i:i+8] for i in range(0, len(base_uid_lst), 8)]
         for base_lst in baselst_lst:
@@ -273,7 +287,13 @@ class FTMLBuilder_LCG(FB.FTMLBuilder):
             descUIDs = uids
         label = '\n'.join(['U+{0:04X}'.format(u) for u in descUIDs])
         # Construct comment from glyph names:
-        comment = ' '.join([self._charFromUID[u].basename for u in descUIDs])
+        # comment = ' '.join([self._charFromUID[u].basename for u in descUIDs])
+        comment = ""
+        for u in descUIDs: # handle case where no char associated with usv
+            try: name = self._charFromUID[u].basename
+            except: name = 'U+{0:04X}'.format(u)
+            comment += name + " "
+        comment = comment[:-1] # remove extra space at end
         if get_ucd(startUID, 'gc') == 'Mn':
             # First char is a NSM... prefix a suitable base
             uids.insert(0, self.diacBase)
@@ -315,13 +335,14 @@ def doit(args):
     # Char to use in allframed test to surround other chars for checking spacing
     frame_uid = 0x006F
 
-    # Representative base and diac chars:
+    # Representative diac chars:
     #  cedilla (H), vertical line below (L), ogonek (O), comma abov right (R), vertical line above (U)
     repDiac = [x for x in [0x0327, 0x0329, 0x0328, 0x0315, 0x030D] if x in builder.uids()]
     ap_type_uid = {}
     for diac_uid in repDiac:
         c = builder.char(diac_uid)
         for ap in c.aps:
+            if ap == "R_": ap = "_R"
             if ap.startswith("_"):
                 ap_type_uid[ap[1:]] = diac_uid
 
@@ -496,7 +517,7 @@ def doit(args):
             except KeyError: logger.log("Invalid AP type: %s" % ap_type, "S")
             c_mark = builder.char(ap_uid)
 
-        ftml.startTestGroup('Small caps from glyph_data')
+        ftml.startTestGroup('Small caps from glyph_data (and extras)')
 
         char_special_iter = chain([builder.char(uid) for uid in builder.uids()],
               [builder.special(gname) for gname in builder.specials()])
@@ -507,6 +528,14 @@ def doit(args):
                 if type(cs) is FB.FSpecial: smcp_uid_lst.append(cs.uids)
 
         smcp_uid_lst.sort(key=lambda x: x[0] if type(x) is list else x)
+
+        # append special cases not specified in glyph_data.csv
+        #  no known cases but leave capability (originally done for LtnSmBarredO)
+        extra_glyphs_w_smcp = []
+        for g in extra_glyphs_w_smcp:
+            try: smcp_uid_lst.append(builder.char(g).uid)
+            except: pass
+
         smcp_char_lst = [u for u in smcp_uid_lst if type(u) is int]
         smcp_lig_lst = [u for u in smcp_uid_lst if type(u) is list]
 
