@@ -2371,6 +2371,10 @@
       <comment>Ogonek</comment>
       <string>\u0002DB\u000329</string>
     </test>
+    <test label="U+02DE">
+      <comment>ModRhoticHook</comment>
+      <string>\u0002DE\u000315</string>
+    </test>
     <test label="U+02E0">
       <comment>ModSmGamma</comment>
       <string>\u0002E0\u000329 \u0002E0\u00030D</string>
@@ -2402,6 +2406,10 @@
     <test label="U+02F5">
       <comment>ModMiddleDblGraveAccent</comment>
       <string>\u0002F5\u00030D</string>
+    </test>
+    <test label="U+0358">
+      <comment>CombRtDotAbv</comment>
+      <string>\u0025CC\u000358\u00030D</string>
     </test>
     <test label="U+035C">
       <comment>CombDblBreveBlw</comment>
@@ -3749,11 +3757,11 @@
     </test>
     <test label="U+1D2C">
       <comment>ModCapA</comment>
-      <string>\u001D2C\u000329 \u001D2C\u00030D</string>
+      <string>\u001D2C\u000329 \u001D2C\u000328 \u001D2C\u000315 \u001D2C\u00030D</string>
     </test>
     <test label="U+1D2D">
       <comment>ModCapAe</comment>
-      <string>\u001D2D\u000329 \u001D2D\u00030D</string>
+      <string>\u001D2D\u000329 \u001D2D\u000315 \u001D2D\u00030D</string>
     </test>
     <test label="U+1D2E">
       <comment>ModCapB</comment>
@@ -3769,11 +3777,11 @@
     </test>
     <test label="U+1D31">
       <comment>ModCapE</comment>
-      <string>\u001D31\u000329 \u001D31\u00030D</string>
+      <string>\u001D31\u000329 \u001D31\u000328 \u001D31\u000315 \u001D31\u00030D</string>
     </test>
     <test label="U+1D32">
       <comment>ModCapRevE</comment>
-      <string>\u001D32\u000329 \u001D32\u00030D</string>
+      <string>\u001D32\u000329 \u001D32\u000315 \u001D32\u00030D</string>
     </test>
     <test label="U+1D33">
       <comment>ModCapG</comment>
@@ -3785,7 +3793,7 @@
     </test>
     <test label="U+1D35">
       <comment>ModCapI</comment>
-      <string>\u001D35\u000329 \u001D35\u00030D</string>
+      <string>\u001D35\u000329 \u001D35\u000328 \u001D35\u000315 \u001D35\u00030D</string>
     </test>
     <test label="U+1D36">
       <comment>ModCapJ</comment>
@@ -3813,7 +3821,7 @@
     </test>
     <test label="U+1D3C">
       <comment>ModCapO</comment>
-      <string>\u001D3C\u000329 \u001D3C\u00030D</string>
+      <string>\u001D3C\u000329 \u001D3C\u000328 \u001D3C\u000315 \u001D3C\u00030D</string>
     </test>
     <test label="U+1D3D">
       <comment>ModCapOu</comment>
@@ -3833,7 +3841,7 @@
     </test>
     <test label="U+1D41">
       <comment>ModCapU</comment>
-      <string>\u001D41\u000329 \u001D41\u00030D</string>
+      <string>\u001D41\u000329 \u001D41\u000328 \u001D41\u000315 \u001D41\u00030D</string>
     </test>
     <test label="U+1D42">
       <comment>ModCapW</comment>
@@ -3841,19 +3849,19 @@
     </test>
     <test label="U+1D43">
       <comment>LtnSupSmA</comment>
-      <string>\u001D43\u000329 \u001D43\u00030D</string>
+      <string>\u001D43\u000329 \u001D43\u000328 \u001D43\u000315 \u001D43\u00030D</string>
     </test>
     <test label="U+1D44">
       <comment>LtnSupSmTurnedA</comment>
-      <string>\u001D44\u000329 \u001D44\u00030D</string>
+      <string>\u001D44\u000329 \u001D44\u000328 \u001D44\u000315 \u001D44\u00030D</string>
     </test>
     <test label="U+1D45">
       <comment>LtnSupSmAlpha</comment>
-      <string>\u001D45\u000329 \u001D45\u00030D</string>
+      <string>\u001D45\u000329 \u001D45\u000328 \u001D45\u000315 \u001D45\u00030D</string>
     </test>
     <test label="U+1D46">
       <comment>ModSmTrndAe</comment>
-      <string>\u001D46\u000329 \u001D46\u00030D</string>
+      <string>\u001D46\u000329 \u001D46\u000315 \u001D46\u00030D</string>
     </test>
     <test label="U+1D47">
       <comment>LtnSupSmB</comment>
@@ -3865,19 +3873,19 @@
     </test>
     <test label="U+1D49">
       <comment>LtnSupSmE</comment>
-      <string>\u001D49\u000329 \u001D49\u00030D</string>
+      <string>\u001D49\u000329 \u001D49\u000328 \u001D49\u000315 \u001D49\u00030D</string>
     </test>
     <test label="U+1D4A">
       <comment>LtnSupSmSchwa</comment>
-      <string>\u001D4A\u000329 \u001D4A\u00030D</string>
+      <string>\u001D4A\u000329 \u001D4A\u000328 \u001D4A\u000315 \u001D4A\u00030D</string>
     </test>
     <test label="U+1D4B">
       <comment>LtnSupSmOpnE</comment>
-      <string>\u001D4B\u000329 \u001D4B\u00030D</string>
+      <string>\u001D4B\u000329 \u001D4B\u000328 \u001D4B\u000315 \u001D4B\u00030D</string>
     </test>
     <test label="U+1D4C">
       <comment>ModSmTrndOpnE</comment>
-      <string>\u001D4C\u000329 \u001D4C\u00030D</string>
+      <string>\u001D4C\u000329 \u001D4C\u000328 \u001D4C\u000315 \u001D4C\u00030D</string>
     </test>
     <test label="U+1D4D">
       <comment>LtnSupSmG</comment>
@@ -3885,7 +3893,7 @@
     </test>
     <test label="U+1D4E">
       <comment>ModSmTrndI</comment>
-      <string>\u001D4E\u000329 \u001D4E\u00030D</string>
+      <string>\u001D4E\u000329 \u001D4E\u000315 \u001D4E\u00030D</string>
     </test>
     <test label="U+1D4F">
       <comment>LtnSupSmK</comment>
@@ -3901,7 +3909,7 @@
     </test>
     <test label="U+1D52">
       <comment>LtnSupSmO</comment>
-      <string>\u001D52\u000329 \u001D52\u00030D</string>
+      <string>\u001D52\u000329 \u001D52\u000328 \u001D52\u000315 \u001D52\u00030D</string>
     </test>
     <test label="U+1D53">
       <comment>LtnSupSmOpnO</comment>
@@ -3925,7 +3933,7 @@
     </test>
     <test label="U+1D58">
       <comment>LtnSupSmU</comment>
-      <string>\u001D58\u000329 \u001D58\u00030D</string>
+      <string>\u001D58\u000329 \u001D58\u000328 \u001D58\u000315 \u001D58\u00030D</string>
     </test>
     <test label="U+1D59">
       <comment>ModSmSdwysU</comment>
@@ -4193,11 +4201,11 @@
     </test>
     <test label="U+1D9B">
       <comment>LtnSupSmTurnedAlpha</comment>
-      <string>\u001D9B\u000329 \u001D9B\u00030D</string>
+      <string>\u001D9B\u000329 \u001D9B\u000328 \u001D9B\u000315 \u001D9B\u00030D</string>
     </test>
     <test label="U+1D9C">
       <comment>ModSmC</comment>
-      <string>\u001D9C\u000329 \u001D9C\u00030D</string>
+      <string>\u001D9C\u000327 \u001D9C\u000329 \u001D9C\u00030D</string>
     </test>
     <test label="U+1D9D">
       <comment>LtnSupSmCCurl</comment>
@@ -4209,7 +4217,7 @@
     </test>
     <test label="U+1D9F">
       <comment>LtnSupSmRevOpnE</comment>
-      <string>\u001D9F\u000329 \u001D9F\u00030D</string>
+      <string>\u001D9F\u000329 \u001D9F\u000328 \u001D9F\u000315 \u001D9F\u00030D</string>
     </test>
     <test label="U+1DA0">
       <comment>LtnSupSmF</comment>
@@ -4229,19 +4237,19 @@
     </test>
     <test label="U+1DA4">
       <comment>LtnSupSmIStrk</comment>
-      <string>\u001DA4\u000329 \u001DA4\u00030D</string>
+      <string>\u001DA4\u000329 \u001DA4\u000328 \u001DA4\u000315 \u001DA4\u00030D</string>
     </test>
     <test label="U+1DA5">
       <comment>ModSmIota</comment>
-      <string>\u001DA5\u000329 \u001DA5\u00030D</string>
+      <string>\u001DA5\u000329 \u001DA5\u000328 \u001DA5\u000315 \u001DA5\u00030D</string>
     </test>
     <test label="U+1DA6">
       <comment>LtnSupSmCapI</comment>
-      <string>\u001DA6\u000329 \u001DA6\u00030D</string>
+      <string>\u001DA6\u000329 \u001DA6\u000328 \u001DA6\u000315 \u001DA6\u00030D</string>
     </test>
     <test label="U+1DA7">
       <comment>ModSmCapIStrk</comment>
-      <string>\u001DA7\u000329 \u001DA7\u00030D</string>
+      <string>\u001DA7\u000329 \u001DA7\u000328 \u001DA7\u000315 \u001DA7\u00030D</string>
     </test>
     <test label="U+1DA8">
       <comment>ModSmJCrossedTail</comment>
@@ -4281,7 +4289,7 @@
     </test>
     <test label="U+1DB1">
       <comment>LtnSupSmBarredO</comment>
-      <string>\u001DB1\u000329 \u001DB1\u00030D</string>
+      <string>\u001DB1\u000329 \u001DB1\u000328 \u001DB1\u000315 \u001DB1\u00030D</string>
     </test>
     <test label="U+1DB2">
       <comment>ModSmPhi</comment>
@@ -4301,15 +4309,15 @@
     </test>
     <test label="U+1DB6">
       <comment>LtnSupSmUBar</comment>
-      <string>\u001DB6\u000329 \u001DB6\u00030D</string>
+      <string>\u001DB6\u000329 \u001DB6\u000328 \u001DB6\u000315 \u001DB6\u00030D</string>
     </test>
     <test label="U+1DB7">
       <comment>LtnSupSmUpsilon</comment>
-      <string>\u001DB7\u000329 \u001DB7\u00030D</string>
+      <string>\u001DB7\u000329 \u001DB7\u000328 \u001DB7\u000315 \u001DB7\u00030D</string>
     </test>
     <test label="U+1DB8">
       <comment>ModSmCapU</comment>
-      <string>\u001DB8\u000329 \u001DB8\u00030D</string>
+      <string>\u001DB8\u000329 \u001DB8\u000328 \u001DB8\u000315 \u001DB8\u00030D</string>
     </test>
     <test label="U+1DB9">
       <comment>ModSmVHook</comment>
@@ -5423,13 +5431,17 @@
       <comment>NarrowNoBreakSpace</comment>
       <string>\u00F130\u00202F\u000327\u00F131 \u00F130\u00202F\u000329\u00F131 \u00F130\u00202F\u000328\u00F131 \u00F130\u00202F\u000315\u00F131 \u00F130\u00202F\u00030D\u00F131</string>
     </test>
+    <test label="U+203C">
+      <comment>DblExclamationMrk</comment>
+      <string>\u00203C\u000329 \u00203C\u00030D</string>
+    </test>
     <test label="U+2070">
       <comment>SupZero</comment>
       <string>\u002070\u000329 \u002070\u00030D</string>
     </test>
     <test label="U+2071">
       <comment>LtnSupSmI</comment>
-      <string>\u002071\u000329 \u002071\u000315 \u002071\u00030D</string>
+      <string>\u002071\u000329 \u002071\u000328 \u002071\u000315 \u002071\u00030D</string>
     </test>
     <test label="U+2074">
       <comment>SupFour</comment>
@@ -6125,7 +6137,7 @@
     </test>
     <test label="U+A771">
       <comment>LtnSmDum</comment>
-      <string>\u00A771\u000329 \u00A771\u000315 \u00A771\u00030D</string>
+      <string>\u00A771\u000329 \u00A771\u00030D</string>
     </test>
     <test label="U+A772">
       <comment>LtnSmLum</comment>
@@ -6385,7 +6397,7 @@
     </test>
     <test label="U+A7F9">
       <comment>LtnSupSmOe</comment>
-      <string>\u00A7F9\u000329 \u00A7F9\u00030D</string>
+      <string>\u00A7F9\u000329 \u00A7F9\u000328 \u00A7F9\u000315 \u00A7F9\u00030D</string>
     </test>
     <test label="U+A7FA">
       <comment>LtnSmCapTrndM</comment>
@@ -6429,11 +6441,7 @@
     </test>
     <test label="U+AB64">
       <comment>LtnSmInvAlpha</comment>
-      <string>\u00AB64\u000329 \u00AB64\u000315 \u00AB64\u00030D</string>
-    </test>
-    <test label="U+AB65">
-      <comment>GrSmCapOmega</comment>
-      <string>\u00AB65\u000329 \u00AB65\u00030D</string>
+      <string>\u00AB64\u000329 \u00AB64\u00030D</string>
     </test>
     <test label="U+F176">
       <comment>CombDblBreveBlwDep</comment>
@@ -6473,7 +6481,7 @@
     </test>
     <test label="U+F1A1">
       <comment>LtnSupSmAe</comment>
-      <string>\u00F1A1\u000329 \u00F1A1\u00030D</string>
+      <string>\u00F1A1\u000329 \u00F1A1\u000328 \u00F1A1\u000315 \u00F1A1\u00030D</string>
     </test>
     <test label="U+F1A2">
       <comment>LtnSupSmCCurlDep</comment>
@@ -6481,11 +6489,11 @@
     </test>
     <test label="U+F1A3">
       <comment>LtnSupSmRevE</comment>
-      <string>\u00F1A3\u000329 \u00F1A3\u00030D</string>
+      <string>\u00F1A3\u000329 \u00F1A3\u000328 \u00F1A3\u000315 \u00F1A3\u00030D</string>
     </test>
     <test label="U+F1A4">
       <comment>LtnSupSmClosedRevOpnE</comment>
-      <string>\u00F1A4\u000329 \u00F1A4\u00030D</string>
+      <string>\u00F1A4\u000329 \u00F1A4\u000328 \u00F1A4\u000315 \u00F1A4\u00030D</string>
     </test>
     <test label="U+F1A5">
       <comment>LtnSupSmFDep</comment>
@@ -6513,7 +6521,7 @@
     </test>
     <test label="U+F1AB">
       <comment>LtnSupSmOStrk</comment>
-      <string>\u00F1AB\u000329 \u00F1AB\u00030D</string>
+      <string>\u00F1AB\u000329 \u00F1AB\u000328 \u00F1AB\u000315 \u00F1AB\u00030D</string>
     </test>
     <test label="U+F1AC">
       <comment>LtnSupSmBarredODep</comment>
@@ -6525,7 +6533,7 @@
     </test>
     <test label="U+F1AE">
       <comment>LtnSupSmCapOe</comment>
-      <string>\u00F1AE\u000329 \u00F1AE\u00030D</string>
+      <string>\u00F1AE\u000329 \u00F1AE\u000328 \u00F1AE\u000315 \u00F1AE\u00030D</string>
     </test>
     <test label="U+F1AF">
       <comment>LtnSupSmEshDep</comment>
@@ -6649,7 +6657,7 @@
     </test>
     <test label="U+F1CD">
       <comment>ModSmCapUBar</comment>
-      <string>\u00F1CD\u000329 \u00F1CD\u00030D</string>
+      <string>\u00F1CD\u000329 \u00F1CD\u000328 \u00F1CD\u000315 \u00F1CD\u00030D</string>
     </test>
     <test label="U+F1CE">
       <comment>ModSmTurnedY</comment>
@@ -7247,7 +7255,7 @@
     </test>
     <test label="U+0315">
       <comment>CombCommaAbvRt</comment>
-      <string>E\u000315 O\u000315 a\u000315 e\u000315 i\u000315 o\u000315</string>
+      <string>E\u000315 O\u000315 a\u000315 e\u000315 i\u000315 o\u000315 \u001D52\u000315</string>
     </test>
     <test label="U+0316">
       <comment>CombGraveBlw</comment>
@@ -7267,7 +7275,7 @@
     </test>
     <test label="U+031B">
       <comment>CombHorn</comment>
-      <string>E\u00031B O\u00031B a\u00031B e\u00031B i\u00031B o\u00031B</string>
+      <string>E\u00031B O\u00031B a\u00031B e\u00031B i\u00031B o\u00031B \u001D52\u00031B</string>
     </test>
     <test label="U+031C">
       <comment>CombLftHalfRingBlw</comment>
@@ -7311,7 +7319,7 @@
     </test>
     <test label="U+0328">
       <comment>CombOgonek</comment>
-      <string>A\u000328 E\u000328 O\u000328 a\u000328 e\u000328 i\u000328 o\u000328</string>
+      <string>A\u000328 E\u000328 O\u000328 a\u000328 e\u000328 i\u000328 o\u000328 \u001D52\u000328</string>
     </test>
     <test label="U+0329">
       <comment>CombVertLineBlw</comment>
@@ -7459,7 +7467,7 @@
     </test>
     <test label="U+0358">
       <comment>CombRtDotAbv</comment>
-      <string>E\u000358 O\u000358 a\u000358 e\u000358 i\u000358 o\u000358</string>
+      <string>E\u000358 O\u000358 a\u000358 e\u000358 i\u000358 o\u000358 \u001D52\u000358</string>
     </test>
     <test label="U+0359">
       <comment>CombAsteriskBlw</comment>

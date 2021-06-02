@@ -17,7 +17,7 @@
     </styles>
     <title>smcp</title>
   </head>
-  <testgroup label="Small caps from glyph_data">
+  <testgroup label="Small caps from glyph_data (and extras)">
     <test label="U+0061
 U+0062
 U+0063
@@ -1881,7 +1881,7 @@ U+1E1B" stylename="smcp_1">
       <string>\u001D7D\u001D8E\u001E01\u001E03\u001E05\u001E07\u001E09\u001E0B\u001E0D\u001E0F\u001E11\u001E13\u001E15\u001E17\u001E19\u001E1B</string>
     </test>
     <test label="U+2C63
-U+1D8E
+U+A7C6
 U+1E00
 U+1E02
 U+1E04
@@ -1896,11 +1896,11 @@ U+1E14
 U+1E16
 U+1E18
 U+1E1A">
-      <comment>LtnCapPStrk LtnSmZPalHook LtnCapARingBlw LtnCapBDotAbv LtnCapBDotBlw LtnCapBLineBlw LtnCapCCedillaAcute LtnCapDDotAbv LtnCapDDotBlw LtnCapDLineBlw LtnCapDCedilla LtnCapDCircumBlw LtnCapEMacronGrave LtnCapEMacronAcute LtnCapECircumBlw LtnCapETildeBlw</comment>
-      <string>\u002C63\u001D8E\u001E00\u001E02\u001E04\u001E06\u001E08\u001E0A\u001E0C\u001E0E\u001E10\u001E12\u001E14\u001E16\u001E18\u001E1A</string>
+      <comment>LtnCapPStrk U+A7C6 LtnCapARingBlw LtnCapBDotAbv LtnCapBDotBlw LtnCapBLineBlw LtnCapCCedillaAcute LtnCapDDotAbv LtnCapDDotBlw LtnCapDLineBlw LtnCapDCedilla LtnCapDCircumBlw LtnCapEMacronGrave LtnCapEMacronAcute LtnCapECircumBlw LtnCapETildeBlw</comment>
+      <string>\u002C63\u00A7C6\u001E00\u001E02\u001E04\u001E06\u001E08\u001E0A\u001E0C\u001E0E\u001E10\u001E12\u001E14\u001E16\u001E18\u001E1A</string>
     </test>
     <test label="U+2C63
-U+1D8E
+U+A7C6
 U+1E00
 U+1E02
 U+1E04
@@ -1915,8 +1915,8 @@ U+1E14
 U+1E16
 U+1E18
 U+1E1A" stylename="c2sc_1">
-      <comment>LtnCapPStrk LtnSmZPalHook LtnCapARingBlw LtnCapBDotAbv LtnCapBDotBlw LtnCapBLineBlw LtnCapCCedillaAcute LtnCapDDotAbv LtnCapDDotBlw LtnCapDLineBlw LtnCapDCedilla LtnCapDCircumBlw LtnCapEMacronGrave LtnCapEMacronAcute LtnCapECircumBlw LtnCapETildeBlw</comment>
-      <string>\u002C63\u001D8E\u001E00\u001E02\u001E04\u001E06\u001E08\u001E0A\u001E0C\u001E0E\u001E10\u001E12\u001E14\u001E16\u001E18\u001E1A</string>
+      <comment>LtnCapPStrk U+A7C6 LtnCapARingBlw LtnCapBDotAbv LtnCapBDotBlw LtnCapBLineBlw LtnCapCCedillaAcute LtnCapDDotAbv LtnCapDDotBlw LtnCapDLineBlw LtnCapDCedilla LtnCapDCircumBlw LtnCapEMacronGrave LtnCapEMacronAcute LtnCapECircumBlw LtnCapETildeBlw</comment>
+      <string>\u002C63\u00A7C6\u001E00\u001E02\u001E04\u001E06\u001E08\u001E0A\u001E0C\u001E0E\u001E10\u001E12\u001E14\u001E16\u001E18\u001E1A</string>
     </test>
     <test label="U+1E1D
 U+1E1F
@@ -2730,10 +2730,10 @@ U+A7A6
 U+A7A8
 U+A7B4
 U+A7B6
-U+A7B9
+U+A7B8
 U+A7B3">
-      <comment>LtnCapInsularS LtnCapInsularT LtnCapSaltillo LtnCapNDesc LtnCapCBar LtnCapBLftMidHook LtnCapFHookStrk LtnCapGDiagStrk LtnCapKDiagStrk LtnCapNDiagStrk LtnCapRDiagStrk LtnCapSDiagStrk LtnCapBeta LtnCapOmega LtnSmUStrk LtnCapChi</comment>
-      <string>\u00A784\u00A786\u00A78B\u00A790\u00A792\u00A796\u00A798\u00A7A0\u00A7A2\u00A7A4\u00A7A6\u00A7A8\u00A7B4\u00A7B6\u00A7B9\u00A7B3</string>
+      <comment>LtnCapInsularS LtnCapInsularT LtnCapSaltillo LtnCapNDesc LtnCapCBar LtnCapBLftMidHook LtnCapFHookStrk LtnCapGDiagStrk LtnCapKDiagStrk LtnCapNDiagStrk LtnCapRDiagStrk LtnCapSDiagStrk LtnCapBeta LtnCapOmega LtnCapUStrk LtnCapChi</comment>
+      <string>\u00A784\u00A786\u00A78B\u00A790\u00A792\u00A796\u00A798\u00A7A0\u00A7A2\u00A7A4\u00A7A6\u00A7A8\u00A7B4\u00A7B6\u00A7B8\u00A7B3</string>
     </test>
     <test label="U+A784
 U+A786
@@ -2749,10 +2749,10 @@ U+A7A6
 U+A7A8
 U+A7B4
 U+A7B6
-U+A7B9
+U+A7B8
 U+A7B3" stylename="c2sc_1">
-      <comment>LtnCapInsularS LtnCapInsularT LtnCapSaltillo LtnCapNDesc LtnCapCBar LtnCapBLftMidHook LtnCapFHookStrk LtnCapGDiagStrk LtnCapKDiagStrk LtnCapNDiagStrk LtnCapRDiagStrk LtnCapSDiagStrk LtnCapBeta LtnCapOmega LtnSmUStrk LtnCapChi</comment>
-      <string>\u00A784\u00A786\u00A78B\u00A790\u00A792\u00A796\u00A798\u00A7A0\u00A7A2\u00A7A4\u00A7A6\u00A7A8\u00A7B4\u00A7B6\u00A7B9\u00A7B3</string>
+      <comment>LtnCapInsularS LtnCapInsularT LtnCapSaltillo LtnCapNDesc LtnCapCBar LtnCapBLftMidHook LtnCapFHookStrk LtnCapGDiagStrk LtnCapKDiagStrk LtnCapNDiagStrk LtnCapRDiagStrk LtnCapSDiagStrk LtnCapBeta LtnCapOmega LtnCapUStrk LtnCapChi</comment>
+      <string>\u00A784\u00A786\u00A78B\u00A790\u00A792\u00A796\u00A798\u00A7A0\u00A7A2\u00A7A4\u00A7A6\u00A7A8\u00A7B4\u00A7B6\u00A7B8\u00A7B3</string>
     </test>
     <test label="U+F327">
       <comment>CySmGheStrkDesc</comment>

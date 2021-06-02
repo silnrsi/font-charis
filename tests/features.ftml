@@ -163,17 +163,19 @@ U+0257" stylename="cv17_1">
     </test>
   </testgroup>
   <testgroup label="cv20">
-    <test label="U+0292
+    <test label="U+01B7
+U+0292
 U+04E0
 U+04E1">
-      <comment>LtnSmEzh CyCapAbkhasDze CySmAbkhasDze</comment>
-      <string>\u000292\u0004E0\u0004E1</string>
+      <comment>LtnCapEzh LtnSmEzh CyCapAbkhasDze CySmAbkhasDze</comment>
+      <string>\u0001B7\u000292\u0004E0\u0004E1</string>
     </test>
-    <test label="U+0292
+    <test label="U+01B7
+U+0292
 U+04E0
 U+04E1" stylename="cv20_1">
-      <comment>LtnSmEzh CyCapAbkhasDze CySmAbkhasDze</comment>
-      <string>\u000292\u0004E0\u0004E1</string>
+      <comment>LtnCapEzh LtnSmEzh CyCapAbkhasDze CySmAbkhasDze</comment>
+      <string>\u0001B7\u000292\u0004E0\u0004E1</string>
     </test>
   </testgroup>
   <testgroup label="cv25">
