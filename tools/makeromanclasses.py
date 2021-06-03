@@ -27,8 +27,8 @@ class_spec_lst = [('smcp', 'sc'),
 
 super_sub_mod_regex = "\wSubSm\w|\wSupSm\w|^ModCap\w|^ModSm\w"
 
-glyph_class_additions = {'cno_c2sc' : ['LtnYr', 'CyPalochka'],
-                         'c_c2sc' : ['LtnSmCapR.sc', 'CyPalochka.sc'],
+glyph_class_additions = {# 'cno_c2sc' : ['LtnYr', 'CyPalochka'],
+                         # 'c_c2sc' : ['LtnSmCapR.sc', 'CyPalochka.sc'],
                          # 'cno_lit' : ['LtnSmGBarredBowl', 'LtnSmGStrk'],
                          # 'c_lit' : ['LtnSmGBarredSngBowl','LtnSmGBarredSngBowl'],
                          # 'cno_litg' : ['LtnSmGBarredBowl', 'LtnSmGStrk'],

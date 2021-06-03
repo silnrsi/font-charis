@@ -102,6 +102,7 @@ lookup sc1_sub {
 lookup sc2_sub {
   lookupflag 0;
     sub @cno_c2sc by @c_c2sc;
+    sub LtnYr by LtnSmCapR.sc;
     sub CyPalochka by CyPalochka.sc;
 } sc2_sub;
 
