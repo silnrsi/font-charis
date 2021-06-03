@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 'generate ftml tests from glyph_data.csv and UFO'
 __url__ = 'http://github.com/silnrsi/pysilfont'
-__copyright__ = 'Copyright (c) 2019 SIL International  (http://www.sil.org)'
+__copyright__ = 'Copyright (c) 2021 SIL International  (http://www.sil.org)'
 __license__ = 'Released under the MIT License (http://opensource.org/licenses/MIT)'
 __author__ = 'Alan Ward'
 
@@ -22,6 +22,7 @@ argspec = [
     ('--scale', {'help': '% to scale rendered text'}, {}),
     ('--ap', {'help': 'regular expression describing APs to examine', 'default': '.', 'action': 'store'}, {}),
     ('--xsl', {'help': 'XSL stylesheet to use'}, {}),
+    ('--classes', {'help': 'classes.xml file used to generate some tests', 'default': None, 'action': 'store'}, {}),
 ]
 
 class FTMLBuilder_LCG(FB.FTMLBuilder):
@@ -310,6 +311,33 @@ class FTMLBuilder_LCG(FB.FTMLBuilder):
         else:
             ftml.addToTest(keyUID, s, comment=comment) # label will be set based on keyUID
 
+# read list of glyph names from classes.xml file
+def get_class_xml(xml_fn, class_nm):
+    from xml import sax
+    class sax_handler(sax.ContentHandler):
+        def __init__(self):
+            self.b_capture = False
+            self.glyphs_str = ""
+
+        def startElement(self, name, attrs):
+            if name == "class" and attrs['name'] == class_nm:
+                self.b_capture = True
+
+        def characters(self, content):
+            if self.b_capture:
+                self.glyphs_str += content
+
+        def endElement(self, name):
+            if name == "class":
+                self.b_capture = False
+
+    handler = sax_handler()
+    sax_parser = sax.make_parser()
+    sax_parser.setContentHandler(handler)
+    sax_parser.parse(xml_fn)
+    glyphs_lst = handler.glyphs_str.split()
+    return glyphs_lst
+
 def doit(args):
     logger = args.logger
 
@@ -501,12 +529,11 @@ def doit(args):
                         builder.render(lig_diac_lst, ftml, descUIDs=lig_lst)
 
     if test.lower().startswith("smcp"):
-        # TODO: improve test for "c2sc" ?
         # Example of what report needs to show: LtnSmEgAlef LtnSmEgAlef.sc LtnCapEgAlef
         #  could add "LtnCapEgAlef <with 'c2sc' feature applied>" but commented out below
-
         # support adding a diac after each char that is being tested
-        # tests include: smcp, smcp_U, etc
+        #  tests include: smcp, smcp_U, etc
+        # add test for c2sc based on content of classes.xml
 
         ap_type = None
         ix = test.find("_")
@@ -568,8 +595,8 @@ def doit(args):
                 try: upper_base_lst.append(ord(chr(lower_uid).upper()))
                 except: upper_base_lst.append(ord('X'))
             builder.render(upper_base_diac_lst, ftml, descUIDs=upper_base_lst)
-            ftml.setFeatures([("c2sc", "1")]) # TODO: kludgy way to add a 'c2sc' test
-            builder.render(upper_base_diac_lst, ftml, descUIDs=upper_base_lst)
+            # ftml.setFeatures([("c2sc", "1")]) # TODO: kludgy way to add a 'c2sc' test
+            # builder.render(upper_base_diac_lst, ftml, descUIDs=upper_base_lst)
 
         liglst_lst = [smcp_lig_lst[i:i + uidlst_ct] for i in range(0, len(smcp_lig_lst), uidlst_ct)]
         for liglst in liglst_lst:  # liglst contains lists of uids & name to tests
@@ -595,6 +622,29 @@ def doit(args):
             builder.render(lig_diac_lst, ftml, descUIDs=lig_lst)  # render all uids without feat setting
             ftml.setFeatures(builder.features['smcp'].tvlist[1:])
             builder.render(lig_diac_lst, ftml, descUIDs=lig_lst)
+
+        ftml.startTestGroup('c2sc from classes.xml')
+        glyph_lst = get_class_xml(args.classes, "cno_c2sc") if args.classes else []
+        c2sc_char_lst = []
+        for g in glyph_lst:
+            try: c2sc_char_lst.append(builder.char(g).uid)
+            except KeyError as key_exc: logger.log('glyph missing: {}'.format(key_exc), 'W')
+        c2sc_char_lst.sort()
+        uidlst_lst = [c2sc_char_lst[i:i+uidlst_ct] for i in range(0, len(c2sc_char_lst), uidlst_ct)]
+        for uidlst in uidlst_lst:
+            base_diac_lst, base_lst = [], []
+            if not ap_type:
+                base_diac_lst, base_lst = uidlst, uidlst
+            else:
+                for uid in uidlst:
+                    c_base = builder.char(uid)
+                    if builder.matchMarkBase(c_mark, c_base):
+                        base_lst.append(uid)
+                        base_diac_lst.extend((uid, ap_uid))
+            ftml.clearFeatures()
+            builder.render(base_diac_lst, ftml, descUIDs=base_lst)  # render all uids without feat setting
+            ftml.setFeatures([('c2sc', '1')])
+            builder.render(base_diac_lst, ftml, descUIDs=base_lst)
 
     if test.lower().startswith("diac"):
         # A E H O a e i o modifier-small-letter-o

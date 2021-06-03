@@ -47,6 +47,7 @@ arg_values_dict = {
     "ufo_regular" : regular_ufo_base,
     "font_code" : regular_ufo_base[0],
     "glyph_data": "glyph_data",
+    "classes": "classes.xml",
     "scale" : "200",
     "xsl" : "ftml",
 }
@@ -59,6 +60,7 @@ arg_lst = [
     "-t", "allchars",
     "-f", "C",
     "-i", "source/glyph_data.csv",
+    "--classes", "source/classes.xml"
     "-s", "../results/CharisSIL-Regular.ttf",
     "--scale", "200",
     "--xsl", "../tools/ftml.xsl",
@@ -76,6 +78,7 @@ arg_cols_template_lst = [
     "-t", "{test}",
     "-f", "{font_code}",
     "-i", "source/{glyph_data}.csv",
+    "--classes", "source/{classes}",
 #    "-s", "../results/{ufo_regular}.ttf", # multiple "-s" args will be appended for multi-font tests
     "--scale", "{scale}",
     "--xsl", "../tools/{xsl}.xsl",
