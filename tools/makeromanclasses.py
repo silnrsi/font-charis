@@ -146,8 +146,9 @@ class Font(object):
         for g_nm in self.glyphs:
             # if (re.search('\wSubSm\w',g_nm) or re.search('\wSupSm\w',g_nm)
             #         or re.search('^ModCap\w', g_nm) or re.search('^ModSm\w', g_nm)):
-            if (re.search(super_sub_mod_regex, g_nm)):
-                self.g_classes.setdefault('c_superscripts', []).append(g_nm)
+            if re.search(super_sub_mod_regex, g_nm):
+                if not re.search('Dep$', g_nm): # discard glyphs for deprecated chars
+                    self.g_classes.setdefault('c_superscripts', []).append(g_nm)
 
         # create classes of glyphs to support Kayan diacritics (grave+acute -> grave_acute)
         #  need to decompose glyphs that contain to a grave
