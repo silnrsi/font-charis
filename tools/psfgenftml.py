@@ -623,13 +623,15 @@ def doit(args):
             ftml.setFeatures(builder.features['smcp'].tvlist[1:])
             builder.render(lig_diac_lst, ftml, descUIDs=lig_lst)
 
+        # add c2sc test
         ftml.startTestGroup('c2sc from classes.xml')
         glyph_lst = get_class_xml(args.classes, "cno_c2sc") if args.classes else []
         c2sc_char_lst = []
-        for g in glyph_lst:
+        for g in glyph_lst: # handle unencoded glyphs
             try: c2sc_char_lst.append(builder.char(g).uid)
             except KeyError as key_exc: logger.log('glyph missing: {}'.format(key_exc), 'W')
         c2sc_char_lst.sort()
+
         uidlst_lst = [c2sc_char_lst[i:i+uidlst_ct] for i in range(0, len(c2sc_char_lst), uidlst_ct)]
         for uidlst in uidlst_lst:
             base_diac_lst, base_lst = [], []
@@ -721,10 +723,7 @@ def doit(args):
 
         ftml.startTestGroup('Dot removal')
         diac_lst = [0x301] #comb_acute
-        # the below glyph list was copied from classes.xml and massaged into Python format
-        base_name_lst = ['CySmByelorusUkrainI', 'CySmJe', 'LtnSmI', 'LtnSmI.SItal', 'LtnSmI.sc', 'LtnSmIOgonek',
-                    'LtnSmIRetrHook', 'LtnSmIStrk', 'LtnSmJ', 'LtnSmJCrossedTail', 'LtnSmJStrk',
-                    'LtnSubSmI', 'LtnSubSmJ', 'LtnSupSmI', 'LtnSupSmIStrk', 'ModSmJ', 'ModSmJCrossedTail']
+        base_name_lst = get_class_xml(args.classes, "cno_dotlss")
         base_lst = []
         for x in base_name_lst:
             try: base_lst.append(builder.char(x).uid)
@@ -736,44 +735,7 @@ def doit(args):
 
         ftml.startTestGroup('Superscript diacritics')
         diac_lst = [0x308] #CombDiaer.Sup
-        # the below glyph list was copied from classes.xml and massaged into Python format
-        base_name_lst = [
-            'GrSubSmBeta', 'GrSubSmChi', 'GrSubSmGamma', 'GrSubSmPhi', 'GrSubSmRho', 'LtnSubSmA',
-            'LtnSubSmA.SngStory', 'LtnSubSmE', 'LtnSubSmH', 'LtnSubSmI', 'LtnSubSmI.Dotless', 'LtnSubSmJ',
-            'LtnSubSmJ.Dotless', 'LtnSubSmK', 'LtnSubSmL', 'LtnSubSmL.SItal', 'LtnSubSmM', 'LtnSubSmN',
-            'LtnSubSmO', 'LtnSubSmP', 'LtnSubSmR', 'LtnSubSmS', 'LtnSubSmSchwa', 'LtnSubSmT', 'LtnSubSmU',
-            'LtnSubSmV', 'LtnSubSmX', 'LtnSupSmA', 'LtnSupSmA.SngStory', 'LtnSupSmAe', 'LtnSupSmAlpha',
-            'LtnSupSmB', 'LtnSupSmBarredO', 'LtnSupSmBarredODep', 'LtnSupSmCCurl', 'LtnSupSmCCurlDep',
-            'LtnSupSmCapI', 'LtnSupSmCapIDep', 'LtnSupSmCapOe', 'LtnSupSmCapY', 'LtnSupSmClosedRevOpnE',
-            'LtnSupSmD', 'LtnSupSmDotlessJStrk', 'LtnSupSmDotlessJStrkDep', 'LtnSupSmE', 'LtnSupSmEng',
-            'LtnSupSmEngDep', 'LtnSupSmEsh', 'LtnSupSmEshDep', 'LtnSupSmEzh', 'LtnSupSmEzhDep', 'LtnSupSmF',
-            'LtnSupSmFDep', 'LtnSupSmG', 'LtnSupSmG.SngBowl', 'LtnSupSmI', 'LtnSupSmI.Dotless', 'LtnSupSmIStrk',
-            'LtnSupSmIStrk.Dotless', 'LtnSupSmIStrkDep', 'LtnSupSmK', 'LtnSupSmLRetrHook',
-            'LtnSupSmLRetrHookDep', 'LtnSupSmM', 'LtnSupSmMDep', 'LtnSupSmN', 'LtnSupSmNLftHook',
-            'LtnSupSmNLftHookDep', 'LtnSupSmO', 'LtnSupSmOStrk', 'LtnSupSmOe', 'LtnSupSmOeDep', 'LtnSupSmOpnE',
-            'LtnSupSmOpnO', 'LtnSupSmOpnO.TopSerif', 'LtnSupSmP', 'LtnSupSmRamsHorn', 'LtnSupSmRevE',
-            'LtnSupSmRevOpnE', 'LtnSupSmRevOpnEDep', 'LtnSupSmSchwa', 'LtnSupSmScriptG', 'LtnSupSmScriptGDep',
-            'LtnSupSmT', 'LtnSupSmTurnedA', 'LtnSupSmTurnedAlpha', 'LtnSupSmTurnedAlphaDep', 'LtnSupSmTurnedM',
-            'LtnSupSmTurnedMLngLeg', 'LtnSupSmTurnedMLngLegDep', 'LtnSupSmTurnedV', 'LtnSupSmTurnedVDep',
-            'LtnSupSmU', 'LtnSupSmUBar', 'LtnSupSmUBarDep', 'LtnSupSmUpsilon', 'LtnSupSmUpsilonDep',
-            'LtnSupSmV', 'LtnSupSmZ', 'LtnSupSmZCurl', 'LtnSupSmZCurlDep', 'LtnSupSmZDep', 'ModCapA',
-            'ModCapAe', 'ModCapB', 'ModCapBarredB', 'ModCapD', 'ModCapE', 'ModCapG', 'ModCapH', 'ModCapHStrk',
-            'ModCapI', 'ModCapJ', 'ModCapK', 'ModCapL', 'ModCapM', 'ModCapN', 'ModCapO', 'ModCapOu',
-            'ModCapOu.OpenTop', 'ModCapP', 'ModCapR', 'ModCapRevE', 'ModCapRevN', 'ModCapT', 'ModCapU',
-            'ModCapV', 'ModCapW', 'ModSmAin', 'ModSmBeta', 'ModSmBottomHalfO', 'ModSmC', 'ModSmCDep',
-            'ModSmCapIStrk', 'ModSmCapIStrkDep', 'ModSmCapInvR', 'ModSmCapL', 'ModSmCapLDep', 'ModSmCapN',
-            'ModSmCapNDep', 'ModSmCapU', 'ModSmCapUBar', 'ModSmCapUDep', 'ModSmChi', 'ModSmDelta', 'ModSmEth',
-            'ModSmEthDep', 'ModSmGamma', 'ModSmGrGamma', 'ModSmGrPhi', 'ModSmH', 'ModSmHHook', 'ModSmHStrk',
-            'ModSmHeng', 'ModSmIota', 'ModSmIotaDep', 'ModSmJ', 'ModSmJ.Dotless', 'ModSmJCrossedTail',
-            'ModSmJCrossedTail.Dotless', 'ModSmJCrossedTailDep', 'ModSmL', 'ModSmLMiddleTilde', 'ModSmLPalHook',
-            'ModSmLPalHookDep', 'ModSmMHook', 'ModSmMHookDep', 'ModSmNRetrHook', 'ModSmNRetrHookDep',
-            'ModSmPhi', 'ModSmPhiDep', 'ModSmR', 'ModSmRevGlottalStop', 'ModSmS', 'ModSmSHook', 'ModSmSHookDep',
-            'ModSmSdwysU', 'ModSmTPalHook', 'ModSmTPalHookDep', 'ModSmTheta', 'ModSmThetaDep', 'ModSmTopHalfO',
-            'ModSmTrndAe', 'ModSmTrndI', 'ModSmTrndOpnE', 'ModSmTrndR', 'ModSmTrndRHook', 'ModSmTurnedH',
-            'ModSmTurnedHDep', 'ModSmTurnedY', 'ModSmVHook', 'ModSmVHook.StraightLft',
-            'ModSmVHook.StraightLftHighHook', 'ModSmVHookDep', 'ModSmW', 'ModSmX', 'ModSmY', 'ModSmZRetrHook',
-            'ModSmZRetrHookDep', 'ModGlottalStop', 'ModRevGlottalStop'
-        ]
+        base_name_lst = get_class_xml(args.classes, "c_superscripts")
         base_lst = []
         for x in base_name_lst:
             try: base_lst.append(builder.char(x).uid)
