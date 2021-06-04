@@ -35,14 +35,15 @@ lookup di_csub {
   lookupflag 0;
     sub @c_i_tilde_blw by @c_di_tilde_blw CombTildeBlw;
     sub @c_i_dot_blw by @c_di_dot_blw CombDotBlw;
+    sub LtnSmIOgonek by LtnSmI.Dotless CombOgonek;
+    # sub LtnSmIRetrHook by LtnSmI.Dotless CombOgonek.RetroHook; # wrong kind of RetrHook
 } di_csub;
 
 # Use markClasses from psfmakefea since they can be used as glyph classes
 @c_u_diacs = @_U;
-# @c_non_u_diacs = [@_L @_O @_H @_R];
 @c_non_u_diacs = [@_L @_O @_H @R_];
 
-@c_i_diac_blw = [@c_i_tilde_blw @c_i_dot_blw];
+@c_i_diac_blw = [@c_i_tilde_blw @c_i_dot_blw LtnSmIOgonek];
 
 lookup di_ctx {
   lookupflag 0;

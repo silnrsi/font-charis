@@ -723,19 +723,24 @@ def doit(args):
 
         ftml.startTestGroup('Dot removal')
         diac_lst = [0x301] #comb_acute
-        base_name_lst = get_class_xml(args.classes, "cno_dotlss")
+        base_name_lst = get_class_xml(args.classes, 'cno_dotlss')
+        # some glyphs have special dot removal handling so they works with other features, so add them to test
+        base_name_lst.extend(['LtnSmIDotBlw', 'LtnSmITildeBlw', 'LtnSmIOgonek'])
         base_lst = []
         for x in base_name_lst:
             try: base_lst.append(builder.char(x).uid)
             except: pass
         builder.render_lists(base_lst, diac_lst, ftml, keyUID=diac_lst[0])
-        builder.render_lists(base_lst, diac_lst, ftml, feature_lst=builder.features['smcp'].tvlist[1:], keyUID=diac_lst[0])
-        builder.render_lists(base_lst, diac_lst, ftml, feature_lst=builder.features['ss05'].tvlist[1:], keyUID=diac_lst[0])
+
+        smcp_base_lst = [uid for uid in base_lst if 'smcp' in builder.char(uid).feats]
+        builder.render_lists(smcp_base_lst, diac_lst, ftml, feature_lst=builder.features['smcp'].tvlist[1:], keyUID=diac_lst[0])
+        sital_base_lst = [uid for uid in base_lst if 'ss05' in builder.char(uid).feats]
+        builder.render_lists(sital_base_lst, diac_lst, ftml, feature_lst=builder.features['ss05'].tvlist[1:], keyUID=diac_lst[0])
         ftml.closeTestGroup()
 
         ftml.startTestGroup('Superscript diacritics')
         diac_lst = [0x308] #CombDiaer.Sup
-        base_name_lst = get_class_xml(args.classes, "c_superscripts")
+        base_name_lst = get_class_xml(args.classes, 'c_superscripts')
         base_lst = []
         for x in base_name_lst:
             try: base_lst.append(builder.char(x).uid)

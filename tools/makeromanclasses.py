@@ -40,6 +40,8 @@ glyph_class_deletions = {'c_barbowl' : ['LtnSmG.BarBowl', 'LtnSmG.BarBowl.sc',
                             'LtnSmG.BarBowl.SngBowl', 'LtnSmG.BarBowl.SngBowl.sc'],
                          'cno_barbowl' : ['LtnSmG', 'LtnSmG.sc', 
                             'LtnSmG.SngBowl', 'LtnSmG.SngBowl.sc'],
+                         'c_dotlss' : ['LtnSmIOgonek.Dotless'],
+                         'cno_dotlss' : ['LtnSmIOgonek'],
                         }
                         
 non_variant_suffixes = ('Dotless', 'VN', 'Sup', 'sc')
