@@ -107,39 +107,36 @@ class Font(object):
                 self.g_classes.setdefault(c_nm, []).extend(c_lst)
                 self.g_classes.setdefault(cno_nm, []).extend(cno_lst)
 
-        # create classes for c2sc (sc2_sub)
-        # remove block of code below that uses isupper() and lower()
-        #  since it does not find all the relevant glyphs
-        if False:
-            for uni_str in self.unicodes:
-                try:
-                    upper_unichr = unichr(int(uni_str, 16))
-                except(ValueError):
-                    continue #skip USVs larger than narrow Python build can handle
-                if upper_unichr.isupper() and upper_unichr.lower(): # TODO: Is this complete?
-                    lower_unichr = upper_unichr.lower()
-                    lower_str = hex(ord(lower_unichr))[2:].zfill(4)
-                    if lower_str in self.unicodes:
-                        lower_glyph_lst = self.unicodes[lower_str]
-                        assert(len(lower_glyph_lst) == 1) # no double encoded glyphs allowed
-                        lower_sc_name = lower_glyph_lst[0].name + '.sc'
-                        if lower_sc_name in self.glyphs:
-                            upper_glyph_lst = self.unicodes[uni_str]
-                            assert (len(upper_glyph_lst) == 1)
-                            upper_name = upper_glyph_lst[0].name
-                            self.g_classes.setdefault('cno_c2sc_1', []).append(upper_name)
-                            self.g_classes.setdefault('c_c2sc_str_1', []).append(lower_sc_name)
+        # create classes for c2sc
+        for uni_str in self.unicodes:
+            upper_unichr = chr(int(uni_str, 16))
+            if upper_unichr.isupper() and upper_unichr.lower(): # TODO: Is this complete?
+                lower_unichr = upper_unichr.lower()
+                if len(lower_unichr) > 1: continue
+                # lower_str = hex(ord(lower_unichr))[2:].zfill(4)
+                lower_str = "{0:04X}".format(ord(lower_unichr))
+                if lower_str in self.unicodes:
+                    lower_glyph_lst = self.unicodes[lower_str]
+                    assert(len(lower_glyph_lst) == 1) # no double encoded glyphs allowed
+                    lower_sc_name = lower_glyph_lst[0].name + '.sc'
+                    if lower_sc_name in self.glyphs:
+                        upper_glyph_lst = self.unicodes[uni_str]
+                        assert (len(upper_glyph_lst) == 1)
+                        upper_name = upper_glyph_lst[0].name
+                        self.g_classes.setdefault('cno_c2sc', []).append(upper_name)
+                        self.g_classes.setdefault('c_c2sc', []).append(lower_sc_name)
 
-        # create classes for c2sc (sc2_sub)
+        # create classes for c2sc
         # this might miss some glyphs not named using the below convention
         # like LtnYr & LtnSmCapR.sc and CyPalochka & CyPalochka.sc
         #  which should be added using glyph_class_additions
-        for g_nm in self.glyphs:
-            if (re.search('LtnCap|CyCap', g_nm)):
-                g_smcp_nm = re.sub('Cap', 'Sm', g_nm) + ".sc"
-                if (g_smcp_nm in self.glyphs):
-                    self.g_classes.setdefault('cno_c2sc', []).append((g_nm))
-                    self.g_classes.setdefault('c_c2sc', []).append((g_smcp_nm))
+        if False:
+            for g_nm in self.glyphs:
+                if (re.search('LtnCap|CyCap', g_nm)):
+                    g_smcp_nm = re.sub('Cap', 'Sm', g_nm) + ".sc"
+                    if (g_smcp_nm in self.glyphs):
+                        self.g_classes.setdefault('cno_c2sc', []).append((g_nm))
+                        self.g_classes.setdefault('c_c2sc', []).append((g_smcp_nm))
 
         # create class of glyphs that need .sup diacritics
         #   match substrings in glyph names
