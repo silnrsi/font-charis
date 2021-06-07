@@ -7742,6 +7742,24 @@ U+1EF2" stylename="cv79_1">
       <string>\u0000C0\u000301 \u0000C8\u000301 \u0000CC\u000301 \u0000D2\u000301 \u0001F8\u000301 \u0000D9\u000301 \u001E80\u000301 \u001EF2\u000301</string>
     </test>
   </testgroup>
+  <testgroup label="Rhotic hook attachment">
+    <test label="U+02DE">
+      <comment>ModRhoticHook</comment>
+      <string>I\u0002DE I\u0002DE\u0002DE O\u0002DE O\u0002DE\u0002DE</string>
+    </test>
+    <test label="U+0315">
+      <comment>CombCommaAbvRt</comment>
+      <string>I\u000315 I\u000315\u000315 O\u000315 O\u000315\u000315</string>
+    </test>
+    <test label="U+0358">
+      <comment>CombRtDotAbv</comment>
+      <string>I\u000358 I\u000358\u000358 O\u000358 O\u000358\u000358</string>
+    </test>
+    <test label="U+031B">
+      <comment>CombHorn</comment>
+      <string>I\u00031B I\u00031B\u00031B O\u00031B O\u00031B\u00031B</string>
+    </test>
+  </testgroup>
   <testgroup label="Dot removal">
     <test label="U+0456
 U+0458

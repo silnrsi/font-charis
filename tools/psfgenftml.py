@@ -721,6 +721,22 @@ def doit(args):
         builder.render_lists(kayan_base_lst, kayan_diac_lst, ftml, [('cv79','1')], keyUID=kayan_diac_lst[0])
         ftml.closeTestGroup()
 
+        ftml.startTestGroup('Rhotic hook attachment')
+        # rhotic_hk_diac_lst = [0x02DE] # rhotic hook
+        rhotic_hk_diac_name_lst = ['ModRhoticHook', 'CombCommaAbvRt', 'CombRtDotAbv', 'CombHorn', ]
+        rhotic_hk_diac_lst = [builder.char(x).uid for x in rhotic_hk_diac_name_lst]
+        rhotic_hook_base_name_lst = ['LtnCapI', 'LtnCapO']
+        rhotic_hk_base_lst = []
+        for base in rhotic_hook_base_name_lst:
+            try: rhotic_hk_base_lst.append(builder.char(base).uid)
+            except KeyError as key_exc: logger.log('glyph missing: {}'.format(key_exc), 'W')
+        for d in rhotic_hk_diac_lst:
+            for b in rhotic_hk_base_lst:
+                s = chr(b) + chr(d) + ' '
+                s += chr(b) + chr(d) + chr(d)
+                ftml.addToTest(d, s, comment=builder.char(d).basename)
+        ftml.closeTestGroup()
+
         ftml.startTestGroup('Dot removal')
         diac_lst = [0x301] #comb_acute
         base_name_lst = get_class_xml(args.classes, 'cno_dotlss')
