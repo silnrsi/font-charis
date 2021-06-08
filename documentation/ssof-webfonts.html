@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>SIL Fonts - Using SIL Fonts on Web Pages</title>
+    <meta name="author" content="SIL Writing Systems Technology">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="./assets/css/theme.css">
+    <link rel="stylesheet" href="./assets/css/webfonts.css">
+</head>
+<body>
+<div class="container">
+<article class="article">
+    <header>
+        <h1 class="title">SIL Fonts - Using SIL Fonts on Web Pages</h1>
+    </header>
+    <p>SIL fonts can be successfully used on web pages. There are many strategies available, and some tricks to making them work well. A basic assumption is that the page text is encoded as Unicode UTF-8 text.</p>
+    <h2 id="primary-method-server-hosted-woff-fonts">Primary method: Server-hosted WOFF fonts</h2>
+    <p>Our font packages include special versions of our fonts in WOFF or WOFF2 format. WOFF (Web Open Font Format) and WOFF2 are font ‘wrapping’ technologies that have become the standard for web fonts and are supported by all modern browsers. They compress the font data to be more efficient (and faster) than referring to hosted TrueType or OpenType fonts.</p>
+    <p>For example, to use the Gentium Plus Regular and Italic WOFF2 fonts, copy them to your server and refer to them in your CSS:</p>
+    <pre><code>    @font-face {
+      font-family: GentiumPlus;
+      src: url(http://site/fonts/GentiumPlus-Regular.woff2);
+    }
+    @font-face {
+      font-family: GentiumPlus;
+      font-style: italic;
+      src: url(http://site/fonts/GentiumPlus-Italic.woff2);
+    }</code></pre>
+    <p>Change <code>//site/fonts/</code> to your domain and the path to where you have stored the font.</p>
+    <p>Then define your font styles to refer to the font by defined name:</p>
+    <pre><code>    p { font-family: GentiumPlus, serif; }</code></pre>
+    <p>More information on the WOFF/WOFF2 formats is available from the <a href="https://www.w3.org/TR/WOFF2/">W3C</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/WOFF">Mozilla</a> websites.</p>
+    <h2 id="alternate-methods">Alternate methods</h2>
+    <h3 id="server-hosted-ttf">Server-hosted TTF</h3>
+    <p>You can also use standard TTF versions of the fonts rather than WOFF, however since they are larger they will take longer to load.</p>
+    <h3 id="local-fonts">Local fonts</h3>
+    <p>It remains possible to have your CSS refer to locally-installed versions of SIL fonts and avoid the extra delay of loading fonts frow the web server. <em>However you must be sure that every user has the font installed on their local system. This is a dangerous assumption! There is also no way to check that the viewer has the latest version installed.</em></p>
+    <pre><code>    p { font-family: &quot;Gentium Plus&quot;, serif; }</code></pre>
+    <h3 id="google-fonts">Google Fonts</h3>
+    <p>If the SIL font you need is available on the <a href="https://fonts.google.com/">Google Fonts</a> service then it is an excellent, high-performance source for the font. For example, you can load the whole <a href="https://fonts.google.com/specimen/Andika+New+Basic?query=andika+New+Basic">Andika New Basic</a> family with this line in the <code>&lt;head&gt;</code> of your html file:</p>
+    <pre><code>    &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot;&gt;
+    &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;</code></pre>
+    <p>Then refer to it in your CSS as:</p>
+    <pre><code>    p { font-family: &#39;Andika New Basic&#39;, sans-serif; }</code></pre>
+    <p><strong>Warning:</strong> The Google Fonts versions look the same as the originals but have been streamlined and optimized. They may support fewer characters and character behaviors and so may not support some languages properly. The best way to determine support is to test it with language text yourself. If it works well then use it!</p>
+    <p>One helpful tip: If you want support for extended Latin characters you need to be sure to include <code>'&amp;subset=latin,latin-ext'</code> in the link. Otherwise the font will only support basic Latin usage. Extended Cyrillic requires a similar specification.</p>
+    <h3 id="older-formats-and-technologies">Older formats and technologies</h3>
+    <p>There are older web fonts technologies, such as <a href="https://en.wikipedia.org/wiki/Embedded_OpenType">EOT (Embedded OpenType)</a>. Each of these modifies the font in some way, and so according to the <a href="https://scripts.sil.org/ofl">SIL Open Font License (OFL)</a> the font name must be changed. You are allowed to use these technologies to deliver fonts to web pages, but you must change the font names and follow all other OFL rules. We do not offer any support for these technologies.</p>
+    <h2 id="accessing-opentype-and-graphite-features">Accessing OpenType and Graphite features</h2>
+    <p>Modern browsers support activation of OpenType features through CSS properties for both local and externally loaded fonts.</p>
+    <p>It is possible to make use of OpenType and/or Graphite font features in an HTML page by specifying them with CSS. To do this you must know the ID of the feature of interest in the font and the value you wish to use. This information is usually included in the font documentation.</p>
+    <p>In this example we will use the Scheherazade font.</p>
+    <p>To declare the font, the CSS syntax is:</p>
+    <pre><code>    @font-face {
+        font-family: Scheherazade-Regular;
+        src: url(&quot;http://site/fonts/Scheherazade-Regular.woff&quot;) format(&quot;woff&quot;);
+    }</code></pre>
+    <p>To declare the feature, the syntax is:</p>
+    <pre><code>    .sch-cv12-R {
+        font-family: Scheherazade-Regular; 
+        font-feature-settings: &quot;cv12&quot; 1; 
+    }</code></pre>
+    <p>To use the feature, the syntax is:</p>
+    <pre><code>    class=&#39;sch-cv12-R&#39;</code></pre>
+    <p>It is also possible to use other features, such as selection of language features. In the following example, the default Scheherazade font is selected (as you have defined it) and the Urdu (ur) language is selected. Any alternate features defined in Urdu will be displayed.</p>
+    <pre><code>    class=&#39;sch-dflt-R&#39; lang=&#39;ur&#39;</code></pre>
+    <p>More complete documentation of feature settings in CSS can be found on the <a href="https://dev.w3.org/csswg/css3-fonts/#propdef-font-feature-settings">W3C Site</a>.</p>
+    <p>For more information about turning on Graphite features, see <a href="https://scripts.sil.org/cms/scripts/page.php?site_id=projects&amp;item_id=graphite_firefox">Using Graphite in Mozilla Firefox</a>.</p>
+    <footer class="footer">
+        <p>This guide is from the <a href="https://software.sil.org/charis/" title="" class="active">Charis SIL project</a> version 6.000 and is copyright © 1997-2021 SIL International.</p>
+    </footer>
+</article>
+</div>
+</body>
+</html>

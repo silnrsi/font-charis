@@ -1,3 +1,8 @@
+---
+title: Charis SIL - Version History
+fontversion: 6.000
+---
+
 # Detailed Version History
 
 For a more concise log of versions see the [FONTLOG](FONTLOG.txt).

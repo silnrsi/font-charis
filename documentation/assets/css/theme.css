@@ -125,6 +125,10 @@ code {
     font-size: 0.9rem;
 }
 
+td code {
+    background-color: transparent;
+}
+
 blockquote {
     display: block;
     margin-block-start: 1em;
@@ -133,7 +137,6 @@ blockquote {
     margin-inline-end: 40px;
     padding-left: 30px;
     border-left: 10px solid #edf2f5;
-    font-size: 1.2rem;
 }
 
 img {

@@ -23,11 +23,11 @@ The highest priorities for future additions and enhancements are mainly driven b
 
 Although some expert typographic features are supported (e.g. small caps), those are a lesser priority.
 
-Please send us your requests and bug reports using the [form on the font website](https://software.sil.org/charis/about/contact/). If you are interested in helping us make the fonts better see the [Developer](developer.md) page.
+Please send us your requests using the [form on the font website](https://software.sil.org/charis/about/contact/). If you are interested in helping us make the fonts better see the [Developer](developer.md) page.
 
 ## Announcement list
 
-If you wish to receive announcements about updates to any of our SIL fonts, please subscribe to our [SIL Font News Google Group](https://groups.google.com/a/groups.sil.org/forum/#!forum/sil-font-news). This is an announcement-only list with messages approximately once a month. It does not allow any discussion.
+If you wish to receive announcements about updates to any of our SIL fonts, please subscribe to our [SIL Font News Announcement List](https://groups.google.com/a/groups.sil.org/forum/#!forum/sil-font-news). This is an announcement-only list with messages approximately once a month. It does not allow any discussion.
 
 You can subscribe using either of the two following options.
 
@@ -43,7 +43,7 @@ These fonts are provided at no cost, however they are expensive to produce and m
 
 [SIL International](http://www.sil.org/) is a global, faith-based nonprofit that works with local communities around the world to develop language solutions that expand possibilities for a better life. 
 
-We are involved in approximately 1,350 active language projects in 104 countries. These projects impact more than 1.1 billion people within 1,600 local communities. SIL’s work brings together more than 4,300 staff from 89 countries who work alongside thousands more local  partners and community volunteers worldwide. Our services are available without regard to religious belief, political ideology, gender, race or ethnic background.
+We are involved in approximately 1,350 active language projects in 104 countries. These projects impact more than 1.1 billion people within 1,600 local communities. SIL’s work brings together more than 4,300 staff from 89 countries who work alongside thousands more local partners and community volunteers worldwide. Our services are available without regard to religious belief, political ideology, gender, race or ethnic background.
 
 Our Vision: We long to see people flourishing in community using the languages they value most. 
 

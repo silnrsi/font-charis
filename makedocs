@@ -10,16 +10,47 @@ echo "     > index.html"
 pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/index.md -o documentation/index.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
 echo "     > about.html"
 pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/about.md -o documentation/about.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
+echo "     > design.html"
+pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/design.md -o documentation/design.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
+echo "     > charset.html"
+pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/charset.md -o documentation/charset.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
 echo "     > resources.html"
 pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/resources.md -o documentation/resources.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
 echo "     > developer.html"
 pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/developer.md -o documentation/developer.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
 echo "     > support.html"
 pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/support.md -o documentation/support.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
+echo "     > features.html"
+pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/features.md -o documentation/features.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
+echo "     > versions.html"
+pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/versions.md -o documentation/versions.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
+
+
+
+echo "     > ssof-index-temp.html"
+pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/ssof-index-temp.md -o documentation/ssof-index-temp.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
+echo "     > ssof-developer.html"
+pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/ssof-developer.md -o documentation/ssof-developer.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
+echo "     > ssof-faq.html"
+pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/ssof-faq.md -o documentation/ssof-faq.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
+echo "     > ssof-features.html"
+pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/ssof-features.md -o documentation/ssof-features.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
+echo "     > ssof-installation.html"
+pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/ssof-installation.md -o documentation/ssof-installation.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
+echo "     > ssof-support.html"
+pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/ssof-support.md -o documentation/ssof-support.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
+echo "     > ssof-webfonts.html"
+pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/ssof-webfonts.md -o documentation/ssof-webfonts.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
+echo "     > ssof-sil-font-news.html"
+pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/ssof-sil-font-news.md -o documentation/ssof-sil-font-news.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
 
 
 
 
+echo "     > PDF"
+echo "     > features.html > features.pdf"
+pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/features.md -o documentation/source/pdftemp/features.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
+weasyprint documentation/source/pdftemp/features.html documentation/pdf/features.pdf
 
 
 

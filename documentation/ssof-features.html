@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>SIL Fonts - Using Font Features</title>
+    <meta name="author" content="SIL Writing Systems Technology">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="./assets/css/theme.css">
+    <link rel="stylesheet" href="./assets/css/webfonts.css">
+</head>
+<body>
+<div class="container">
+<article class="article">
+    <header>
+        <h1 class="title">SIL Fonts - Using Font Features</h1>
+    </header>
+    <h2 id="yet-to-be-drafted---info-here-is-from-old-faq">YET TO BE DRAFTED - INFO HERE IS FROM OLD FAQ</h2>
+    <h2 id="technical">Technical</h2>
+    <h4 id="how-do-i-use-a-feature-for-example-i-see-there-are-four-eng-u014a-ŋ-variants.-how-do-i-choose-which-variant-displays"><a name="features"></a> <em>How do I use a feature? For example, I see there are four <em>Eng</em> (U+014A Ŋ) variants. How do I choose which variant displays?</em></h4>
+    <p>The answer depends on the application in question:</p>
+    <ul>
+    <li><p><strong>Graphite-enabled apps:</strong> Assuming they support features, then you can select the desired Eng variant from the <strong>Format / Font / Feature</strong> menu (or however the interface is arranged).</p></li>
+    <li><p><strong>LibreOffice with Graphite:</strong> In LibreOffice the font features can be turned on by choosing the font (ie Charis SIL), followed by a colon, followed by the feature ID, and then followed by the feature setting. So, for example, if the Uppercase eng alternate “Capital N with tail” is desired, the font selection would be “Charis SIL:Engs=2”. If you wish to apply two (or more) features, you can separate them with an “&amp;”. Thus, “Charis SIL:Engs=2&amp;smcp=1” would apply “Capital N with tail” plus the “Small capitals” feature.</p></li>
+    <li><p><strong>InDesign and similar Adobe apps:</strong> Select an Eng in your text and then use the glyph palette (select <strong>Type / Glyphs / Access All Alternates</strong>) to pick an alternate. (The available features will depend on the font selected.)</p></li>
+    <li><p><strong>Word and other Uniscribe-based apps:</strong> Sorry, but at this time there is no mechanism to select features or alternate glyphs.</p></li>
+    <li><p><strong>With the XeTeX typesetting system:</strong> Include “feature=setting” pairs in the font specification within the source document or stylesheet; e.g., <code>fontbodytext="Doulos SIL/GR:Uppercase Eng alternates=Large eng on baseline" at 12pt</code>. The syntax for this can be derived from the Font Features document for the specific font you are using.</p></li>
+    </ul>
+    <p>So, anticipating your (or someone’s) next question: What do I do if I’m using Word or other Uniscribe-based apps?</p>
+    <ul>
+    <li><p>In the long run, we hope that future versions of the Windows OS and application software will provide an architecture and user interface that supports some form of user-selectable font feature mechanism. We’ll see.</p></li>
+    <li><p>In the meantime, the only alternative is to create derivative fonts that have the desired behaviors (e.g., alternate glyphs) “turned on” by default. So one could imagine a font such as “Doulos SIL Eng4” that is just like Doulos SIL except it renders Eng using the 4th alternate. We have created a tool called <a href="https://scripts.sil.org/ttw/fonts2go.cgi">TypeTuner Web</a> which you can use to create derivative fonts.</p></li>
+    </ul>
+    <h4 id="how-do-i-use-the-small-caps-feature"><em>How do I use the Small Caps feature?</em></h4>
+    <p>The Small Caps feature is an OpenType and a Graphite feature that can be turned on within the font. How to use it will vary from one application to the next.</p>
+    <ul>
+    <li><p><strong>Adobe InDesign</strong> will use the OpenType Small Caps feature. Select your text, then select the character palette, then click on the little down arrow wedge in the top right corner and select <strong>Opentype / All Small Caps.</strong></p></li>
+    <li><p><strong>FieldWorks applications</strong> - small capitals can be selected by selecting <strong>Format / Font / Font Features / Small Caps.</strong></p></li>
+    <li><p><strong><a href="https://www.libreoffice.org">LibreOffice</a></strong> can use small capitals by selecting the text, choosing the font name (eg "Charis SIL") and then after the font name, type in ":smcp=1". Thus, your font entry would be "Charis SIL:smcp=1" If you want to use more than one feature, you can type a "&amp;" in between. Thus, "Charis SIL:smcp=1&amp;Engs=1" would give you an alternate eng plus small capitals.</p></li>
+    <li><p><strong><a href="https://scripts.sil.org/xetex">XeTeX</a></strong> can use the Small capitals feature. When you define the font you can just add "+smcp=1" afterward. So, you might have "Doulos SIL: +smcp=1." If you use XeLaTeX you can use the <code><sup>textsc</sup>{small caps text goes here^}</code> command where everything within <code>^textsc</code> becomes small caps.</p></li>
+    <li><p><strong>Other apps</strong> - Microsoft Word and Publisher do not use the OpenType or Graphite Small Caps feature. They make small caps on-the-fly. Other applications, such as RenderX, require the use of a separate font for the small capitals. For both these situations, if you want to use the true small capitals, then you will need to create a separate font with TypeTuner Web. We have created a tool called <a href="https://scripts.sil.org/ttw/fonts2go.cgi">TypeTuner Web</a> which you can use to create derivative fonts. Just select the font, choose "Select features" and change the Small Caps setting to "True" and download and install the font. That will give you a small capitals font and you would apply that font when you need it.</p></li>
+    </ul>
+    <footer class="footer">
+        <p>This guide is from the <a href="https://software.sil.org/charis/" title="" class="active">Charis SIL project</a> version 6.000 and is copyright © 1997-2021 SIL International.</p>
+    </footer>
+</article>
+</div>
+</body>
+</html>

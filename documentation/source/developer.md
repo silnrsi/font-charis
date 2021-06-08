@@ -5,31 +5,40 @@ fontversion: 6.000
 
 ## Welcome font developers!
 
-We welcome other developers who wish to get involved in supporting and enhancing this software or who wish to modify the fonts.
+We welcome other developers who wish to get involved in supporting and enhancing these fonts or who want to modify them.
 
-Permissions Granted by the OFL
-SIL’s Latin, Cyrillic and Greek fonts are licensed according to the terms of the SIL Open Font License. For specific information on permissions granted by the OFL, such as freedom to make your own versions or the freedom to bundle, see the OFL FAQ.
+## Permissions granted by the OFL
 
-Source Code
-The source code for the latest version is available in the “developer” package on the Download page for each font.
+SIL’s fonts are licensed according to the terms of the [SIL Open Font License](https://scripts.sil.org/OFL). The OFL allows the fonts to be used, studied, modified and redistributed freely as long as they are not sold by themselves. For details see the OFL.txt and OFL-FAQ.txt files in the package.
 
-Future Development
-In the future, the source will be in a GitHub project and will contain information on how to set up your development environment. We are in the process of converting the design files from a FontLab (VFB) format into a Unified Font Object (UFO) format. We also intend to use GitHub’s issue tracking mechanisms.
+## Building the fonts from source code
 
-Copyright attribution
-If you submit something for inclusion in the main fonts, we will ask you to affirm that it is your original work, and ask you to assign the copyright of your work to SIL International. This is to ensure that future releases can be made under improved versions of the OFL without needing to track you down for further permission. This follows the same principle used by the Free Software Foundation (FSF). Keep in mind that we are a not-for-profit organization committed to free/libre and open source software, and that any contributions incorporated in the fonts will always be available under the OFL or a similar license.
+The full source code for our Latin, Greek, and Cyrillic fonts is available on Github:
 
-Quality
-Because we want to be able to guarantee a high level of quality for our fonts, we will review submissions carefully. Please don’t be discouraged if we do not include a submission for this reason, or ask you to make specific revisions.
+- [Charis SIL Github repository](https://github.com/silnrsi/font-charis)
+- [Doulos SIL Github repository](https://github.com/silnrsi/font-doulos)
+- [Gentium Plus Github repository](https://github.com/silnrsi/font-gentium)
+- [Andika Github repository](https://github.com/silnrsi/font-andika)
 
-Note to Contributors
-Contributions that would be welcomed now (some more than others):
+Font sources are in the [UFO3](http://unifiedfontobject.org/versions/ufo3/) format with font family structures defined using [designspace](https://github.com/fonttools/fonttools/tree/master/Doc/source/designspaceLib). OpenType source code is stored in the [.fea](https://github.com/adobe-type-tools/afdko/blob/develop/docs/OpenTypeFeatureFileSpecification.md) format in the UFO (features.fea) but is maintained in a separate file using the more efficient and powerful [.feax](https://github.com/silnrsi/pysilfont/blob/master/docs/feaextensions.md) format.
 
-Old style figures
-Coptic
-Historic/Archaic Cyrillic
-Mathematical glyphs
-OpenType code and glyphs for on-the-fly fraction creation
-Additional scripts (Armenian, etc.?), and any needed OT/Graphite code
-Contact
-If you would like to contact the development team, please use the Contact Form.
+The fonts are built using a completely free and open source workflow using industry-standard tools ([fontools](https://github.com/fonttools/fonttools)), a package of custom python scripts ([pysilfont](https://github.com/silnrsi/pysilfont)), and a build and packaging system ([Smith](https://github.com/silnrsi/smith)). The whole system is available in a preconfigured virtual machine using VirtualBox and Vagrant.
+
+Full instructions for setting up the tools and building SIL fonts is available on a dedicated web site: [SIL Font Development Notes](https://silnrsi.github.io/silfontdev/).
+
+## Contributing to the project
+
+We warmly welcome contributions to the fonts, such as new glyphs, enhanced smart font code, or bug fixes. The [brief overview of contributing changes](https://silnrsi.github.io/silfontdev/en-US/Contributing_Changes.html) is a good place to begin. The next step is to contact us by responding to an existing issue or creating an issue in the Github repository and expressing your interest. We can then work together to plan and integrate your contributions.
+
+Here are a few examples of contributions that would be welcomed (some more than others):
+
+- Old style figures
+- Coptic (Gentium)
+- Historic/Archaic Cyrillic
+- Mathematical glyphs
+- OpenType code and glyphs for on-the-fly fraction creation
+- Additional scripts (Armenian, etc.), and any needed OpenType code
+
+Because we want to be able to guarantee a high level of quality for our fonts, we will review submissions carefully. Contributions will need to cover all the weights and styles of the family and in some cases all four font projects. Please don’t be discouraged if we do not include a submission due to quality or incompleteness, or if we ask you to make specific revisions. 
+
+To enable us to accept contributions in a way that honors your contribution and respects your copyright while preserving long-term flexibility for open source licensing, you would also need to agree to the **SIL International Contributor License Agreement for Font Software (v1.0)** prior to sending us your contribution. To read more about this requirement and find out how to submit the required form, please visit the [CLA information page](https://software.sil.org/fontcla).

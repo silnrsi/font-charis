@@ -16,7 +16,8 @@ This documentation is a set of HTML pages that can be viewed in any modern web b
 - [Font features](features.md) — Using smart font features
 - [Support](support.md) — How to get additional support
 - [Developer information](developer.md) — How to modify and build the fonts
-- [Version History](versions.md)
+- [Versions](versions.md) - Sources for alternate versions
+- [Version history](history.md) - Complete version history
 
 Additional information is also provided in other project files: [README.txt](../README.txt), [OFL.txt](../OFL.txt), [OFL-FAQ.txt](../OFL-FAQ.txt), and [FONTLOG.txt](../FONTLOG.txt).
 

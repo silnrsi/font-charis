@@ -126,11 +126,14 @@ code {
     font-size: 0.9rem;
 }
 
+td code {
+    background-color: transparent;
+}
+
 blockquote {
     display: block;
     padding-left: 30px;
     border-left: 10px solid #edf2f5;
-    font-size: 1.2rem;
 }
 
 img {

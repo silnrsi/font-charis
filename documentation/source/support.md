@@ -13,10 +13,11 @@ Before requesting technical support, please **carefully read all the documentati
 
 For person-to-person support visit the [SIL Language Software Community](https://community.software.sil.org/c/silfonts), where font developers and users can help each other. These support discussions can also help others in the future.
 
-## Reporting bugs
+## Reporting bugs and feature requests
 
-If you have a bug to report please create an issue in the [Github Charis SIL project](https://github.com/silnrsi/font-charis/issues) or contact us directly.
+If you have a bug to report or a suggestion for how we could improve the fonts please create an issue in the [Github Charis SIL project](https://github.com/silnrsi/font-charis/issues) or contact us directly.
 
 ## Contact form
 
-If the documentation and community fail to answer your question, or you have a bug report, feature suggestion, or need help using the software, please contact us using [the form on the Charis SIL web site](https://software.sil.org/charis/about/contact/).
+If the documentation and community fail to answer your question or need further help using the fonts, please contact us using [the form on the Charis SIL web site](https://software.sil.org/charis/about/contact/).
+
