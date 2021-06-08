@@ -94,7 +94,6 @@
       <style feats="'cv81' 1, 'smcp' 1" name="cv81_1_smcp_1"/>
       <style feats="'cv82' 1" name="cv82_1"/>
       <style feats="'cv90' 1" name="cv90_1"/>
-      <style feats="'cv91' 1" name="cv91_1"/>
       <style feats="'cv98' 1" name="cv98_1"/>
       <style feats="'locl' 1" name="locl_1"/>
       <style feats="'locl' 1, 'smcp' 1" name="locl_1_smcp_1"/>
@@ -612,24 +611,6 @@ U+02CA
 U+02CB" stylename="cv90_1">
       <comment>ModVertLine ModMacron ModAcuteAccent ModGraveAccent</comment>
       <string>\u0002C8\u0002C9\u0002CA\u0002CB</string>
-    </test>
-  </testgroup>
-  <testgroup label="cv91">
-    <test label="U+02E5
-U+02E6
-U+02E7
-U+02E8
-U+02E9">
-      <comment>TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1</comment>
-      <string>\u0002E5\u0002E6\u0002E7\u0002E8\u0002E9</string>
-    </test>
-    <test label="U+02E5
-U+02E6
-U+02E7
-U+02E8
-U+02E9" stylename="cv91_1">
-      <comment>TnLtr5 TnLtr4 TnLtr3 TnLtr2 TnLtr1</comment>
-      <string>\u0002E5\u0002E6\u0002E7\u0002E8\u0002E9</string>
     </test>
   </testgroup>
   <testgroup label="cv98">
