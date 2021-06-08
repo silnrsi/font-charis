@@ -1,5 +1,5 @@
 ---
-title: Charis SIL - Versions and Changes
+title: Charis SIL - Character Set Support
 fontversion: 6.000
 ---
 

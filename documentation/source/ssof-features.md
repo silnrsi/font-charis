@@ -3,7 +3,31 @@ title: SIL Fonts - Using Font Features
 fontversion: 6.000
 ---
 
-## YET TO BE DRAFTED - INFO HERE IS FROM OLD FAQ
+## YET TO BE DRAFTED - INFO AT BOTTOM IS FROM OLD FAQ
+
+## Characters and Features
+
+(explanation of the difference and what features do)
+
+(explanation of feature tags and what they do)
+
+(note about OpenType vs Graphite features)
+
+## Accessing OpenType features in applications
+
+(note about separate doc for web pages)
+
+
+
+
+
+## Accessing Graphite features in applications
+
+
+
+
+
+---
 
 ## Technical
 

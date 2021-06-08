@@ -24,6 +24,10 @@ echo "     > features.html"
 pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/features.md -o documentation/features.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
 echo "     > versions.html"
 pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/versions.md -o documentation/versions.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
+echo "     > faq.html"
+pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/faq.md -o documentation/faq.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
+echo "     > history.html"
+pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/history.md -o documentation/history.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
 
 
 
