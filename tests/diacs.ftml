@@ -7650,7 +7650,7 @@
       <string>A\u0020EF E\u0020EF H\u0020EF O\u0020EF a\u0020EF e\u0020EF i\u0020EF o\u0020EF \u001D52\u0020EF</string>
     </test>
   </testgroup>
-  <testgroup label="Special case - cv79 (NFD)">
+  <testgroup label="cv79 (NFD)">
     <test label="U+0061
 U+0065
 U+0069
@@ -7696,7 +7696,7 @@ U+0059" stylename="cv79_1">
       <string>A\u000300\u000301 E\u000300\u000301 I\u000300\u000301 O\u000300\u000301 N\u000300\u000301 U\u000300\u000301 W\u000300\u000301 Y\u000300\u000301</string>
     </test>
   </testgroup>
-  <testgroup label="Special case - cv79 (NFC)">
+  <testgroup label="cv79 (NFC)">
     <test label="U+00E0
 U+00E8
 U+00EC

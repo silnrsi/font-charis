@@ -148,7 +148,6 @@ class FTMLBuilder_LCG(FB.FTMLBuilder):
                 self._csvWarning("invalid associated USV '%s' (%s); ignored: " % (line[usvCol], e.message))
                 uidList = []
 
-            assoc_uid = None
             if len(uidList) == 1:
                 # Handle unencoded glyphs
                 assoc_uid = uidList[0]
@@ -178,6 +177,8 @@ class FTMLBuilder_LCG(FB.FTMLBuilder):
             if featCol is not None:
                 feat = line[featCol].strip()
                 if feat:
+                    if feat == 'locl': # locl cannot be tested like other user-selectable features
+                        continue
                     feature = self.features.setdefault(feat, FB.Feature(feat)) #TODO: using FB.Feature is messy
                     if valCol:
                         # if values supplied, collect default and maximum values for this feature:
@@ -234,7 +235,6 @@ class FTMLBuilder_LCG(FB.FTMLBuilder):
 
         # We're finally done, but if allLangs is a set, let's order it (for lack of anything better) and make a list:
         if not self._langsComplete:
-            self.allLangs = list(sorted(self.allLangs))
             self.allLangs = list(sorted(self.allLangs))
 
     # this does NOT override the base class static method
@@ -528,6 +528,26 @@ def doit(args):
                         ftml.setFeatures(tv_lst)
                         builder.render(lig_diac_lst, ftml, descUIDs=lig_lst)
 
+        # add 'locl' test which provides Serbian alternates
+        # TODO: read uids with locl feat from glyph_data.csv
+        # TODO: test interactions of locl w other feats (only smcp currently)
+        # serb_alt_name_lst = ['CySmBe.Serb', 'CySmGhe.Serb', 'CySmPe.Serb', 'CySmDe.Serb']
+        serb_alt_name_lst = ['CySmBe', 'CySmGhe', 'CySmPe', 'CySmDe']
+        serb_alt_lst = [builder.char(x).uid for x in serb_alt_name_lst]
+        serb_alt_diac_lst = []
+        [serb_alt_diac_lst.extend([x, 0x030D]) for x in serb_alt_lst]
+        ftml.startTestGroup('locl - Serbian')
+        # builder.render(serb_alt_lst, ftml)
+        builder.render(serb_alt_diac_lst, ftml, descUIDs=serb_alt_lst)
+        # Serbian  'SRB '  cnr, srp - from OT spec
+        ftml.setLang('cnr')
+        # builder.render(serb_alt_lst, ftml)
+        builder.render(serb_alt_diac_lst, ftml, descUIDs=serb_alt_lst)
+        ftml.setLang('sr')  # use two letter BCP47 lang code
+        # builder.render(serb_alt_lst, ftml)
+        builder.render(serb_alt_diac_lst, ftml, descUIDs=serb_alt_lst)
+        ftml.closeTestGroup()
+
     if test.lower().startswith("smcp"):
         # Example of what report needs to show: LtnSmEgAlef LtnSmEgAlef.sc LtnCapEgAlef
         #  could add "LtnCapEgAlef <with 'c2sc' feature applied>" but commented out below
@@ -694,7 +714,7 @@ def doit(args):
                     # ftml.clearFeatures()
                 ftml.closeTest()
 
-        ftml.startTestGroup('Special case - cv79 (NFD)')
+        ftml.startTestGroup('cv79 (NFD)')
         # cv79 - Kayan grave_acute
         kayan_diac_lst = [0x0300, 0x0301] # comb_grave, comb_acute
         kayan_base_char_lst = ['a', 'e', 'i', 'o', 'n', 'u', 'w', 'y', 'A', 'E', 'I', 'O', 'N', 'U', 'W', 'Y']
@@ -702,7 +722,7 @@ def doit(args):
         builder.render_lists(kayan_base_lst, kayan_diac_lst, ftml, [('cv79','1')], keyUID=kayan_diac_lst[0])
         ftml.closeTestGroup()
 
-        ftml.startTestGroup('Special case - cv79 (NFC)')
+        ftml.startTestGroup('cv79 (NFC)')
         # cv79 - Kayan grave_acute
         kayan_diac_lst = [0x0301] # comb_acute
         kayan_base_name_lst = ['LtnSmAGrave', 'LtnSmAGrave.SngStory', 'LtnSmEGrave', 'LtnSmIGrave', 'LtnSmOGrave',
