@@ -3,65 +3,107 @@ title: SIL Fonts - Using Font Features
 fontversion: 6.000
 ---
 
-## YET TO BE DRAFTED - INFO AT BOTTOM IS FROM OLD FAQ
+## Characters and Font Features
 
-## Characters and Features
+Each Unicode character supported by our fonts is typically represented by a single glyph, although that glyph may change depending on what other characters are in the sequence nearby, or may even be combined with other glyphs. There are, however, situations in which a different style or appearance of a glyph is preferred. For example:
 
-(explanation of the difference and what features do)
+- a different typographic style (e.g. small caps)
+- text in a particular language (e.g. Serbian)
+- a special use (e.g. literacy teaching)
+- ornamental purposes (e.g. certain ligatures)
 
-(explanation of feature tags and what they do)
+These alternate glyphs can be controlled through the use of **font features**. These are user-selectable features applied to text, and often activated in applications through a font properties menu item, dialog, or style definition. They depend on either [OpenType](https://en.wikipedia.org/wiki/OpenType) or [Graphite](https://graphite.sil.org) technology. A font may include features for either technology—or both.
 
-(note about OpenType vs Graphite features)
+Features may be activated through:
 
-## Accessing OpenType features in applications
+- a special UI setting (**Properties / OpenType / All Small Caps**)
+- by using a feature’s four-letter ID or tag (`'scmp'`, `'ss05'`, `'cv01'` )
+- by referring to the feature and setting by name (Uppercase Eng alternates=Large eng on baseline)
 
-(note about separate doc for web pages)
+## Application support
 
+There is no standard method used by all applications. Every application tends to have a unique way to control features. Applications also differ in which types of features they support. For example, Adobe InDesign supports *stylistic set* features (`ss##`) but offers no easy way to control *character variant* features (`cv##`).
 
+The following sections describe how to activate particular features in individual applications and describe any limits on supported features. **Examples of some features are given, but for details of which fonts support which features see the individual font project documentation.**
 
+### Web browsers
 
+See separate page about [Using SIL Fonts on Web Pages](https://software.sil.org/fonts/webfonts).
 
-## Accessing Graphite features in applications
+### Adobe InDesign (and similar Adobe apps)
 
+Select the text and apply the feature as follows, either using the **OpenType** button (**Properties** palette, **Character** section) or the **OpenType** submenu of the **Character** palette. Some of these settings can also be applied in style definitions.
 
+Alternate glyphs for individual characters can also be chosen by selecting the character and choosing the alternate from the set of choices that appear under the character.
 
+- **Common features:** *Small caps:* **OpenType**, **All Small Caps**.
 
+- **Stylistic sets:** **OpenType**, **Stylistic Sets**, then choose the feature by name.
 
----
+- **Character variants:** Not supported.
 
-## Technical
+- **Language-specific alternates:** Set the language using the drop-down menu in **Properties** palette, **Character** section. If the language you want is not in that list there may be ways to add support to InDesign, although we have not thoroughly tested them. See this [Adobe blog post and the important updates](https://blog.typekit.com/2011/11/04/how-to-enable-more-languages-in-indesign-cs5-5/).
 
-#### <a name="features"></a> _How do I use a feature? For example, I see there are four <em>Eng</em> (U+014A Ŋ) variants. How do I choose which variant displays?_
+- **Graphite features:** Not supported.
 
-The answer depends on the application in question:
+### LibreOffice
 
-* **Graphite-enabled apps:** Assuming they support features, then you can select the desired Eng variant from the **Format / Font / Feature** menu (or however the interface is arranged).
+Font features have good support in LibreOffice:
 
-* **LibreOffice with Graphite:** In LibreOffice the font features can be turned on by choosing the font (ie Charis SIL), followed by a colon, followed by the feature ID, and then followed by the feature setting. So, for example, if the Uppercase eng alternate “Capital N with tail” is desired, the font selection would be “Charis SIL:Engs=2”. If you wish to apply two (or more) features, you can separate them with an “&amp;”. Thus, “Charis SIL:Engs=2&amp;smcp=1” would apply “Capital N with tail” plus the “Small capitals” feature. 
+- **Language-specific alternates:** Set the language in **Format / Character / Font**. For more information and alternatives see [(LO Help) Selecting the Document Language](https://help.libreoffice.org/latest/en-GB/text/shared/guide/language_select.html?DbPAR=SHARED#bm_id3083278).
 
-* **InDesign and similar Adobe apps:** Select an Eng in your text and then use the glyph palette (select **Type / Glyphs / Access All Alternates**) to pick an alternate. (The available features will depend on the font selected.)
+- **Graphite features:** Supported in the UI, including multi-valued features. *Note that if a font supports both OpenType and Graphite, LibreOffice will default to using the Graphite features.*
 
-* **Word and other Uniscribe-based apps:** Sorry, but at this time there is no mechanism to select features or alternate glyphs. 
+There are two ways to activate stylistic sets and character variants, and the type and level of support has slight differences.
 
-* **With the XeTeX typesetting system:** Include “feature=setting” pairs in the font specification within the source document or stylesheet; e.g., <code>fontbodytext="Doulos SIL/GR:Uppercase Eng alternates=Large eng on
-baseline" at 12pt</code>. The syntax for this can be derived from the Font Features document for the specific font you are using.
+#### Using the LibreOffice UI
 
-So, anticipating your (or someone’s) next question: What do I do if I’m using Word or other Uniscribe-based apps?
+To activate one or more features select the text, go to **Format / Character / Font**, choose the **Features** button, then choose one or more features. These can also be applied when defining a style. *Note, however, that there is no way to control multi-valued OpenType features through the UI. It needs to be set using the font description (see below). This limitation does not apply to Graphite features.*
 
-* In the long run, we hope that future versions of the Windows OS and application software will provide an architecture and user interface that supports some form of user-selectable font feature mechanism. We’ll see.
+- **Common features:** Listed with a descriptive name, such as “Lowercase to Small Capitals”. *Warning: using **Format / Character / Font Effects / Case / Small capitals** will not use the proper OpenType or Graphite small caps feature!* 
 
-* In the meantime, the only alternative is to create derivative fonts that have the desired behaviors (e.g., alternate glyphs) “turned on” by default. So one could imagine a font such as “Doulos SIL Eng4” that is just like Doulos SIL except it renders Eng using the 4th alternate. We have created a tool called <a href="https://scripts.sil.org/ttw/fonts2go.cgi">TypeTuner Web</a> which you can use to create derivative fonts.
+- **Stylistic sets:** Listed as “Stylistic Set” and the feature ID number, as in “Stylistic Set 01”.
 
-#### _How do I use the Small Caps feature?_
+- **Character variants:** Listed as “Character Variant” and the feature ID number, as in “Character Variant 05”.
 
-The Small Caps feature is an OpenType and a Graphite feature that can be turned on within the font. How to use it will vary from one application to the next.
+#### Editing the LibreOffice font description
 
-* **Adobe InDesign** will use the OpenType Small Caps feature. Select your text, then select the character palette, then click on the little down arrow wedge in the top right corner and select **Opentype / All Small Caps.**
+Features can also be turned on by selecting the text, choosing the font, then adding the specific feature settings at the end of the font name in the font selection box using the feature ID, as in: *fontname:feature=setting*
 
-* **FieldWorks applications** - small capitals can be selected by selecting **Format / Font / Font Features / Small Caps.**
+For example, using the Charis SIL font, the Uppercase Eng alternate “Capital N with tail” would be specified as `Charis SIL:Engs=2`. If you wish to apply two (or more) features, you can separate them with `&amp;`. Thus, `Charis SIL:Engs=2&amp;smcp=1` would apply “Capital N with tail” plus the “Small capitals” feature. 
 
-* **[LibreOffice](https://www.libreoffice.org)** can use small capitals by selecting the text, choosing the font name (eg "Charis SIL") and then after the font name, type in ":smcp=1". Thus, your font entry would be "Charis SIL:smcp=1" If you want to use more than one feature, you can type a "&amp;" in between. Thus, "Charis SIL:smcp=1&amp;Engs=1" would give you an alternate eng plus small capitals.
+- **Common features, stylistic sets, character variants:** Use the feature ID, as in `'smcp'`, `'ss01'`, or `'cv05'`.
 
-* **[XeTeX](https://scripts.sil.org/xetex)** can use the Small capitals feature. When you define the font you can just add "+smcp=1" afterward. So, you might have "Doulos SIL: +smcp=1." If you use XeLaTeX you can use the <code>^textsc^{small caps text goes here^}</code> command where everything within <code>^textsc</code> becomes small caps.
+### Microsoft Word
 
-* **Other apps** - Microsoft Word and Publisher do not use the OpenType or Graphite Small Caps feature. They make small caps on-the-fly. Other applications, such as RenderX, require the use of a separate font for the small capitals. For both these situations, if you want to use the true small capitals, then you will need to create a separate font with TypeTuner Web. We have created a tool called [TypeTuner Web](https://scripts.sil.org/ttw/fonts2go.cgi) which you can use to create derivative fonts. Just select the font, choose "Select features" and change the Small Caps setting to "True" and download and install the font. That will give you a small capitals font and you would apply that font when you need it. 
+Support for font features is very limited in Microsoft Word. 
+
+- **Common features:** *Small caps:* Not supported. *Warning: using **Format / Font / Effects / Small caps** will not use the proper OpenType or Graphite feature!* 
+
+- **Stylistic sets:** Select the text and choose **Format / Font / Advanced / Stylistic sets**. Only one set can be specified, and only by number.
+
+- **Character variants:** Not supported.
+
+- **Language-specific alternates:** Select the text and choose **Tools / Language** then set the language. If the preferred language is not listed it may be possible to add some additional languages. See [Microsoft support](https://support.microsoft.com/en-us/office/add-an-editing-or-authoring-language-or-set-language-preferences-in-office-663d9d94-ca99-4a0d-973e-7c4a6b8a827d).
+
+- **Graphite features:** Not supported.
+
+## XeTeX
+
+Font features can be set in XeTeX font specifications in the source document or stylesheet.
+
+- **Common features:** *Small caps:* If using XeLaTeX you can use `^textsc^{small caps text goes here^}` in document text. Otherwise use `+smcp` in the font specification, as in `"Doulos SIL:+smcp"`.
+
+- **Stylistic sets, character variants:** Add `feature=setting` to the font specification using the feature ID, as in `"Charis SIL:cv43=2"`. Multiple features can be added, separated by `;`, as in `"Charis SIL:cv43=2;ss01=1"`.
+
+- **Language-specific alternates:** Add `language=code` to the font specification as in `"Charis SIL:language=VIT"` This can be added to other features settings, as in `"Charis SIL:ss01=1;language=VIT"`. For OpenType the language should be specified using the [OpenType Language System Tag](https://docs.microsoft.com/en-us/typography/opentype/spec/languagetags). For Graphite use the ( NEED SOURCE FOR APPROPRIATE LANGTAG HERE ).
+
+- **Graphite features:** Add `feature=setting` to the font specification. For Graphite features it is also possible to specify the feature and setting by name, as in `"Doulos SIL/GR:Uppercase Eng alternates=Large eng on
+baseline"`. To force use of Graphite features it may be necessary to add `/GR` to the font name.
+
+## If your application does not support font features
+
+The only way to control features in applications that support neither OpenType nor Graphite is to create derivative fonts that have the desired behaviors (e.g. alternate glyphs) activated by default. For example, you could have a font called “Gentium Plus UCEng” that is just like Gentium Plus except it normally renders the Eng using the uppercase form. We have created a tool called [TypeTuner Web](https://scripts.sil.org/ttw/fonts2go.cgi) which you can use to create derivative fonts like this based on many of our fonts.
+
+Another good use of [TypeTuner Web](https://scripts.sil.org/ttw/fonts2go.cgi) is to create a small capitals font for use in applications that do not support OpenType small caps (such as Microsoft Word). On TypeTuner Web select the font, choose “Select features”, change the Small Caps setting to “True”, then download and install the font. That will give you a special small capitals font for use in all applications.
+ 

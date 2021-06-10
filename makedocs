@@ -49,9 +49,13 @@ echo "     > ssof-sil-font-news.html"
 pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/ssof-sil-font-news.md -o documentation/ssof-sil-font-news.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
 
 
-
-
 echo "     > PDF"
+echo "     > ssof-features.html > ssof-features.pdf"
+pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/ssof-features.md -o documentation/source/pdftemp/ssof-features.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
+weasyprint documentation/source/pdftemp/ssof-features.html documentation/pdf/ssof-features.pdf
+
+
+
 echo "     > features.html > features.pdf"
 pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/features.md -o documentation/source/pdftemp/features.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
 weasyprint documentation/source/pdftemp/features.html documentation/pdf/features.pdf
