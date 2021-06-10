@@ -15,6 +15,7 @@
       <style feats="'cv79' 1" name="cv79_1"/>
       <style feats="'smcp' 1" name="smcp_1"/>
       <style feats="'ss05' 1" name="ss05_1"/>
+      <style lang="vi" name="vi"/>
     </styles>
     <title>diacs</title>
   </head>
@@ -8125,6 +8126,314 @@ U+02C1">
     <test label="U+0308">
       <comment>ModSmY ModSmZRetrHook ModGlottalStop ModRevGlottalStop</comment>
       <string>\u0002B8 \u001DBC \u0002C0 \u0002C1</string>
+    </test>
+  </testgroup>
+  <testgroup label="Vietnamese (NFC)">
+    <test label="U+1EAE
+U+1EB0
+U+1EB2
+U+1EB4
+U+1EA4
+U+1EA6
+U+1EA8
+U+1EAA">
+      <comment>LtnCapABreveAcute LtnCapABreveGrave LtnCapABreveHookAbv LtnCapABreveTilde LtnCapACircumAcute LtnCapACircumGrave LtnCapACircumHookAbv LtnCapACircumTilde</comment>
+      <string>\u001EAE\u001EB0\u001EB2\u001EB4\u001EA4\u001EA6\u001EA8\u001EAA</string>
+    </test>
+    <test label="U+1EAE
+U+1EB0
+U+1EB2
+U+1EB4
+U+1EA4
+U+1EA6
+U+1EA8
+U+1EAA" stylename="vi">
+      <comment>LtnCapABreveAcute LtnCapABreveGrave LtnCapABreveHookAbv LtnCapABreveTilde LtnCapACircumAcute LtnCapACircumGrave LtnCapACircumHookAbv LtnCapACircumTilde</comment>
+      <string>\u001EAE\u001EB0\u001EB2\u001EB4\u001EA4\u001EA6\u001EA8\u001EAA</string>
+    </test>
+    <test label="U+1EBE
+U+1EC0
+U+1EC2
+U+1EC4
+U+1ED0
+U+1ED2
+U+1ED4
+U+1ED6">
+      <comment>LtnCapECircumAcute LtnCapECircumGrave LtnCapECircumHookAbv LtnCapECircumTilde LtnCapOCircumAcute LtnCapOCircumGrave LtnCapOCircumHookAbv LtnCapOCircumTilde</comment>
+      <string>\u001EBE\u001EC0\u001EC2\u001EC4\u001ED0\u001ED2\u001ED4\u001ED6</string>
+    </test>
+    <test label="U+1EBE
+U+1EC0
+U+1EC2
+U+1EC4
+U+1ED0
+U+1ED2
+U+1ED4
+U+1ED6" stylename="vi">
+      <comment>LtnCapECircumAcute LtnCapECircumGrave LtnCapECircumHookAbv LtnCapECircumTilde LtnCapOCircumAcute LtnCapOCircumGrave LtnCapOCircumHookAbv LtnCapOCircumTilde</comment>
+      <string>\u001EBE\u001EC0\u001EC2\u001EC4\u001ED0\u001ED2\u001ED4\u001ED6</string>
+    </test>
+    <test label="U+1EAF
+U+1EB1
+U+1EB3
+U+1EB5
+U+1EA5
+U+1EA7
+U+1EA9
+U+1EAB">
+      <comment>LtnSmABreveAcute LtnSmABreveGrave LtnSmABreveHookAbv LtnSmABreveTilde LtnSmACircumAcute LtnSmACircumGrave LtnSmACircumHookAbv LtnSmACircumTilde</comment>
+      <string>\u001EAF\u001EB1\u001EB3\u001EB5\u001EA5\u001EA7\u001EA9\u001EAB</string>
+    </test>
+    <test label="U+1EAF
+U+1EB1
+U+1EB3
+U+1EB5
+U+1EA5
+U+1EA7
+U+1EA9
+U+1EAB" stylename="vi">
+      <comment>LtnSmABreveAcute LtnSmABreveGrave LtnSmABreveHookAbv LtnSmABreveTilde LtnSmACircumAcute LtnSmACircumGrave LtnSmACircumHookAbv LtnSmACircumTilde</comment>
+      <string>\u001EAF\u001EB1\u001EB3\u001EB5\u001EA5\u001EA7\u001EA9\u001EAB</string>
+    </test>
+    <test label="U+1EBF
+U+1EC1
+U+1EC3
+U+1EC5
+U+1ED1
+U+1ED3
+U+1ED5
+U+1ED7">
+      <comment>LtnSmECircumAcute LtnSmECircumGrave LtnSmECircumHookAbv LtnSmECircumTilde LtnSmOCircumAcute LtnSmOCircumGrave LtnSmOCircumHookAbv LtnSmOCircumTilde</comment>
+      <string>\u001EBF\u001EC1\u001EC3\u001EC5\u001ED1\u001ED3\u001ED5\u001ED7</string>
+    </test>
+    <test label="U+1EBF
+U+1EC1
+U+1EC3
+U+1EC5
+U+1ED1
+U+1ED3
+U+1ED5
+U+1ED7" stylename="vi">
+      <comment>LtnSmECircumAcute LtnSmECircumGrave LtnSmECircumHookAbv LtnSmECircumTilde LtnSmOCircumAcute LtnSmOCircumGrave LtnSmOCircumHookAbv LtnSmOCircumTilde</comment>
+      <string>\u001EBF\u001EC1\u001EC3\u001EC5\u001ED1\u001ED3\u001ED5\u001ED7</string>
+    </test>
+  </testgroup>
+  <testgroup label="Vietnamese (NFD)">
+    <test label="U+0061
+U+0302
+U+0301
+U+0061
+U+0302
+U+0300
+U+0061
+U+0302
+U+0309
+U+0061
+U+0302
+U+0303
+U+0061
+U+0306
+U+0301
+U+0061
+U+0306
+U+0300
+U+0061
+U+0306
+U+0309
+U+0061
+U+0306
+U+0303">
+      <comment>LtnSmA CombCircum CombAcute LtnSmA CombCircum CombGrave LtnSmA CombCircum CombHookAbv LtnSmA CombCircum CombTilde LtnSmA CombBreve CombAcute LtnSmA CombBreve CombGrave LtnSmA CombBreve CombHookAbv LtnSmA CombBreve CombTilde</comment>
+      <string>a\u000302\u000301a\u000302\u000300a\u000302\u000309a\u000302\u000303a\u000306\u000301a\u000306\u000300a\u000306\u000309a\u000306\u000303</string>
+    </test>
+    <test label="U+0061
+U+0302
+U+0301
+U+0061
+U+0302
+U+0300
+U+0061
+U+0302
+U+0309
+U+0061
+U+0302
+U+0303
+U+0061
+U+0306
+U+0301
+U+0061
+U+0306
+U+0300
+U+0061
+U+0306
+U+0309
+U+0061
+U+0306
+U+0303" stylename="vi">
+      <comment>LtnSmA CombCircum CombAcute LtnSmA CombCircum CombGrave LtnSmA CombCircum CombHookAbv LtnSmA CombCircum CombTilde LtnSmA CombBreve CombAcute LtnSmA CombBreve CombGrave LtnSmA CombBreve CombHookAbv LtnSmA CombBreve CombTilde</comment>
+      <string>a\u000302\u000301a\u000302\u000300a\u000302\u000309a\u000302\u000303a\u000306\u000301a\u000306\u000300a\u000306\u000309a\u000306\u000303</string>
+    </test>
+    <test label="U+0041
+U+0302
+U+0301
+U+0041
+U+0302
+U+0300
+U+0041
+U+0302
+U+0309
+U+0041
+U+0302
+U+0303
+U+0041
+U+0306
+U+0301
+U+0041
+U+0306
+U+0300
+U+0041
+U+0306
+U+0309
+U+0041
+U+0306
+U+0303">
+      <comment>LtnCapA CombCircum CombAcute LtnCapA CombCircum CombGrave LtnCapA CombCircum CombHookAbv LtnCapA CombCircum CombTilde LtnCapA CombBreve CombAcute LtnCapA CombBreve CombGrave LtnCapA CombBreve CombHookAbv LtnCapA CombBreve CombTilde</comment>
+      <string>A\u000302\u000301A\u000302\u000300A\u000302\u000309A\u000302\u000303A\u000306\u000301A\u000306\u000300A\u000306\u000309A\u000306\u000303</string>
+    </test>
+    <test label="U+0041
+U+0302
+U+0301
+U+0041
+U+0302
+U+0300
+U+0041
+U+0302
+U+0309
+U+0041
+U+0302
+U+0303
+U+0041
+U+0306
+U+0301
+U+0041
+U+0306
+U+0300
+U+0041
+U+0306
+U+0309
+U+0041
+U+0306
+U+0303" stylename="vi">
+      <comment>LtnCapA CombCircum CombAcute LtnCapA CombCircum CombGrave LtnCapA CombCircum CombHookAbv LtnCapA CombCircum CombTilde LtnCapA CombBreve CombAcute LtnCapA CombBreve CombGrave LtnCapA CombBreve CombHookAbv LtnCapA CombBreve CombTilde</comment>
+      <string>A\u000302\u000301A\u000302\u000300A\u000302\u000309A\u000302\u000303A\u000306\u000301A\u000306\u000300A\u000306\u000309A\u000306\u000303</string>
+    </test>
+    <test label="U+0065
+U+0302
+U+0301
+U+0065
+U+0302
+U+0300
+U+0065
+U+0302
+U+0309
+U+0065
+U+0302
+U+0303
+U+0045
+U+0302
+U+0301
+U+0045
+U+0302
+U+0300
+U+0045
+U+0302
+U+0309
+U+0045
+U+0302
+U+0303">
+      <comment>LtnSmE CombCircum CombAcute LtnSmE CombCircum CombGrave LtnSmE CombCircum CombHookAbv LtnSmE CombCircum CombTilde LtnCapE CombCircum CombAcute LtnCapE CombCircum CombGrave LtnCapE CombCircum CombHookAbv LtnCapE CombCircum CombTilde</comment>
+      <string>e\u000302\u000301e\u000302\u000300e\u000302\u000309e\u000302\u000303E\u000302\u000301E\u000302\u000300E\u000302\u000309E\u000302\u000303</string>
+    </test>
+    <test label="U+0065
+U+0302
+U+0301
+U+0065
+U+0302
+U+0300
+U+0065
+U+0302
+U+0309
+U+0065
+U+0302
+U+0303
+U+0045
+U+0302
+U+0301
+U+0045
+U+0302
+U+0300
+U+0045
+U+0302
+U+0309
+U+0045
+U+0302
+U+0303" stylename="vi">
+      <comment>LtnSmE CombCircum CombAcute LtnSmE CombCircum CombGrave LtnSmE CombCircum CombHookAbv LtnSmE CombCircum CombTilde LtnCapE CombCircum CombAcute LtnCapE CombCircum CombGrave LtnCapE CombCircum CombHookAbv LtnCapE CombCircum CombTilde</comment>
+      <string>e\u000302\u000301e\u000302\u000300e\u000302\u000309e\u000302\u000303E\u000302\u000301E\u000302\u000300E\u000302\u000309E\u000302\u000303</string>
+    </test>
+    <test label="U+006F
+U+0302
+U+0301
+U+006F
+U+0302
+U+0300
+U+006F
+U+0302
+U+0309
+U+006F
+U+0302
+U+0303
+U+004F
+U+0302
+U+0301
+U+004F
+U+0302
+U+0300
+U+004F
+U+0302
+U+0309
+U+004F
+U+0302
+U+0303">
+      <comment>LtnSmO CombCircum CombAcute LtnSmO CombCircum CombGrave LtnSmO CombCircum CombHookAbv LtnSmO CombCircum CombTilde LtnCapO CombCircum CombAcute LtnCapO CombCircum CombGrave LtnCapO CombCircum CombHookAbv LtnCapO CombCircum CombTilde</comment>
+      <string>o\u000302\u000301o\u000302\u000300o\u000302\u000309o\u000302\u000303O\u000302\u000301O\u000302\u000300O\u000302\u000309O\u000302\u000303</string>
+    </test>
+    <test label="U+006F
+U+0302
+U+0301
+U+006F
+U+0302
+U+0300
+U+006F
+U+0302
+U+0309
+U+006F
+U+0302
+U+0303
+U+004F
+U+0302
+U+0301
+U+004F
+U+0302
+U+0300
+U+004F
+U+0302
+U+0309
+U+004F
+U+0302
+U+0303" stylename="vi">
+      <comment>LtnSmO CombCircum CombAcute LtnSmO CombCircum CombGrave LtnSmO CombCircum CombHookAbv LtnSmO CombCircum CombTilde LtnCapO CombCircum CombAcute LtnCapO CombCircum CombGrave LtnCapO CombCircum CombHookAbv LtnCapO CombCircum CombTilde</comment>
+      <string>o\u000302\u000301o\u000302\u000300o\u000302\u000309o\u000302\u000303O\u000302\u000301O\u000302\u000300O\u000302\u000309O\u000302\u000303</string>
     </test>
   </testgroup>
 </ftml>

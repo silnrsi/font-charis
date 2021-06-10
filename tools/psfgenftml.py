@@ -784,6 +784,51 @@ def doit(args):
         builder.render_lists(base_lst, diac_lst, ftml, keyUID=diac_lst[0])
         ftml.closeTestGroup()
 
+        ftml.startTestGroup('Vietnamese (NFC)')
+        base_name_lst = get_class_xml(args.classes, 'cno_viet')
+        base_uid_lst = []
+        for x in base_name_lst:
+            try: base_uid_lst.append(builder.char(x).uid)
+            except: pass
+        baselst_lst = [base_uid_lst[i:i + 8] for i in range(0, len(base_uid_lst), 8)]
+        for base_lst in baselst_lst:
+            ftml.clearLang()
+            builder.render(base_lst, ftml)
+            ftml.setLang('vi')
+            builder.render(base_lst, ftml)
+        ftml.closeTestGroup()
+
+        ftml.startTestGroup('Vietnamese (NFD)')
+
+        viet_diac1_name_lst = ['CombCircum', 'CombBreve']
+        viet_diac2_name_lst = ['CombAcute', 'CombGrave', 'CombHookAbv', 'CombTilde']
+        viet_diac1_lst = [builder.char(x).uid for x in viet_diac1_name_lst]
+        viet_diac2_lst = [builder.char(x).uid for x in viet_diac2_name_lst]
+        uid_lst = []
+        for i in [0x61, 0x41]: # lower a, upper A
+            for j in viet_diac1_lst:
+                for k in viet_diac2_lst:
+                    uid_lst += [i, j, k]
+            ftml.clearLang()
+            builder.render(uid_lst, ftml)
+            ftml.setLang('vi')
+            builder.render(uid_lst, ftml)
+            uid_lst = []
+
+        uid_lst = []
+        for i in [0x65, 0x45, 0x6F, 0x4F]: # lower e, upper E, lower o, upper O
+            for j in viet_diac1_lst[0:1]: # just test w circumflex
+                for k in viet_diac2_lst:
+                    uid_lst += [i, j, k]
+        uidlst_lst = [uid_lst[i:i + 8*3] for i in range(0, len(uid_lst), 8*3)]
+        for uid_lst in uidlst_lst:
+            ftml.clearLang()
+            builder.render(uid_lst, ftml)
+            ftml.setLang('vi')
+            builder.render(uid_lst, ftml)
+
+        ftml.closeTestGroup()
+
         # ftml.startTestGroup('Special case - cv75')
         # ftml.clearFeatures()
         # # comb_circumflex, comb_acute, space, a, comb_circumflex, comb_acute
