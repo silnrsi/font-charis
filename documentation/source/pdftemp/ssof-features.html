@@ -26,8 +26,9 @@
     <p>Features may be activated through:</p>
     <ul>
     <li>a special UI setting (<strong>Properties / OpenType / All Small Caps</strong>)</li>
-    <li>by using a feature’s four-letter ID or tag (<code>'scmp'</code>, <code>'ss05'</code>, <code>'cv01'</code> )</li>
+    <li>by using a feature’s four-letter ID or tag (<code>'smcp'</code>, <code>'ss05'</code>, <code>'cv01'</code> )</li>
     <li>by referring to the feature and setting by name (Uppercase Eng alternates=Large eng on baseline)</li>
+    <li>by selecting a language (Serbian)</li>
     </ul>
     <h2 id="application-support">Application support</h2>
     <p>There is no standard method used by all applications. Every application tends to have a unique way to control features. Applications also differ in which types of features they support. For example, Adobe InDesign supports <em>stylistic set</em> features (<code>ss##</code>) but offers no easy way to control <em>character variant</em> features (<code>cv##</code>).</p>
@@ -40,15 +41,14 @@
     <ul>
     <li><p><strong>Common features:</strong> <em>Small caps:</em> <strong>OpenType</strong>, <strong>All Small Caps</strong>.</p></li>
     <li><p><strong>Stylistic sets:</strong> <strong>OpenType</strong>, <strong>Stylistic Sets</strong>, then choose the feature by name.</p></li>
-    <li><p><strong>Character variants:</strong> Not supported.</p></li>
+    <li><p><strong>Character variants:</strong> Not supported. However it may work to activate the feature via javascript. See <a href="../../pdf/https://github.com/samiartur/Character-Variant-Java-Script-for-Indesign">this Github project</a> for examples of scripts that can be placed in the InDesign scripts folder. One is a dialog prompt to enter the cv value you want. The other is a custom script that turns a cv feature on and then off like a switch when you run it (double-click).</p></li>
     <li><p><strong>Language-specific alternates:</strong> Set the language using the drop-down menu in <strong>Properties</strong> palette, <strong>Character</strong> section. If the language you want is not in that list there may be ways to add support to InDesign, although we have not thoroughly tested them. See this <a href="../../pdf/https://blog.typekit.com/2011/11/04/how-to-enable-more-languages-in-indesign-cs5-5/">Adobe blog post and the important updates</a>.</p></li>
     <li><p><strong>Graphite features:</strong> Not supported.</p></li>
     </ul>
     <h3 id="libreoffice">LibreOffice</h3>
-    <p>Font features have good support in LibreOffice:</p>
+    <p>Both OpenType and Graphite font features have good support in LibreOffice. <em>Note that if a font supports both OpenType and Graphite, LibreOffice will default to using the Graphite features.</em></p>
     <ul>
-    <li><p><strong>Language-specific alternates:</strong> Set the language in <strong>Format / Character / Font</strong>. For more information and alternatives see <a href="../../pdf/https://help.libreoffice.org/latest/en-GB/text/shared/guide/language_select.html?DbPAR=SHARED#bm_id3083278">(LO Help) Selecting the Document Language</a>.</p></li>
-    <li><p><strong>Graphite features:</strong> Supported in the UI, including multi-valued features. <em>Note that if a font supports both OpenType and Graphite, LibreOffice will default to using the Graphite features.</em></p></li>
+    <li><strong>Language-specific alternates:</strong> Set the language in <strong>Format / Character / Font</strong>. For more information and alternatives see <a href="../../pdf/https://help.libreoffice.org/latest/en-GB/text/shared/guide/language_select.html?DbPAR=SHARED#bm_id3083278">(LO Help) Selecting the Document Language</a>.</li>
     </ul>
     <p>There are two ways to activate stylistic sets and character variants, and the type and level of support has slight differences.</p>
     <h4 id="using-the-libreoffice-ui">Using the LibreOffice UI</h4>
@@ -60,12 +60,12 @@
     </ul>
     <h4 id="editing-the-libreoffice-font-description">Editing the LibreOffice font description</h4>
     <p>Features can also be turned on by selecting the text, choosing the font, then adding the specific feature settings at the end of the font name in the font selection box using the feature ID, as in: <em>fontname:feature=setting</em></p>
-    <p>For example, using the Charis SIL font, the Uppercase Eng alternate “Capital N with tail” would be specified as <code>Charis SIL:Engs=2</code>. If you wish to apply two (or more) features, you can separate them with <code>&amp;amp;</code>. Thus, <code>Charis SIL:Engs=2&amp;amp;smcp=1</code> would apply “Capital N with tail” plus the “Small capitals” feature.</p>
+    <p>For example, using the Charis SIL font, the Uppercase Eng alternate “Capital N with tail” would be specified as <code>Charis SIL:cv43=2</code>. If you wish to apply two (or more) features, you can separate them with <code>&amp;amp;</code>. Thus, <code>Charis SIL:cv43=2&amp;amp;smcp=1</code> would apply “Capital N with tail” plus the “Small capitals” feature.</p>
     <ul>
     <li><strong>Common features, stylistic sets, character variants:</strong> Use the feature ID, as in <code>'smcp'</code>, <code>'ss01'</code>, or <code>'cv05'</code>.</li>
     </ul>
     <h3 id="microsoft-word">Microsoft Word</h3>
-    <p>Support for font features is very limited in Microsoft Word.</p>
+    <p>Support for font features is very limited in Microsoft Word. Even some OpenType behavior that is automatically activated in other apps requires special settings in Word. For example, to enable conjuncts or ligatures go to <strong>Format / Font / Advanced / OpenType features</strong> and change <em>None</em> to one of the other settings. It may also be necessary to choose <strong>Use Contextual Alternates</strong>.</p>
     <ul>
     <li><p><strong>Common features:</strong> <em>Small caps:</em> Not supported. <em>Warning: using <strong>Format / Font / Effects / Small caps</strong> will not use the proper OpenType or Graphite feature!</em></p></li>
     <li><p><strong>Stylistic sets:</strong> Select the text and choose <strong>Format / Font / Advanced / Stylistic sets</strong>. Only one set can be specified, and only by number.</p></li>
@@ -73,13 +73,13 @@
     <li><p><strong>Language-specific alternates:</strong> Select the text and choose <strong>Tools / Language</strong> then set the language. If the preferred language is not listed it may be possible to add some additional languages. See <a href="../../pdf/https://support.microsoft.com/en-us/office/add-an-editing-or-authoring-language-or-set-language-preferences-in-office-663d9d94-ca99-4a0d-973e-7c4a6b8a827d">Microsoft support</a>.</p></li>
     <li><p><strong>Graphite features:</strong> Not supported.</p></li>
     </ul>
-    <h2 id="xetex">XeTeX</h2>
-    <p>Font features can be set in XeTeX font specifications in the source document or stylesheet.</p>
+    <h3 id="xetex">XeTeX</h3>
+    <p>Font features can be set in XeTeX font specifications in the source document or stylesheet. For non-Latin scripts, add a script code to the font name, such as <code>"Scheherazade New:script=arab"</code>. OpenType features may not render properly if the script is not specified Language-specific alternates can also be used: "Scheherazade New:script=arab:language=SND".</p>
     <ul>
     <li><p><strong>Common features:</strong> <em>Small caps:</em> If using XeLaTeX you can use <code>^textsc^{small caps text goes here^}</code> in document text. Otherwise use <code>+smcp</code> in the font specification, as in <code>"Doulos SIL:+smcp"</code>.</p></li>
-    <li><p><strong>Stylistic sets, character variants:</strong> Add <code>feature=setting</code> to the font specification using the feature ID, as in <code>"Charis SIL:cv43=2"</code>. Multiple features can be added, separated by <code>;</code>, as in <code>"Charis SIL:cv43=2;ss01=1"</code>.</p></li>
-    <li><p><strong>Language-specific alternates:</strong> Add <code>language=code</code> to the font specification as in <code>"Charis SIL:language=VIT"</code> This can be added to other features settings, as in <code>"Charis SIL:ss01=1;language=VIT"</code>. For OpenType the language should be specified using the <a href="../../pdf/https://docs.microsoft.com/en-us/typography/opentype/spec/languagetags">OpenType Language System Tag</a>. For Graphite use the ( NEED SOURCE FOR APPROPRIATE LANGTAG HERE ).</p></li>
-    <li><p><strong>Graphite features:</strong> Add <code>feature=setting</code> to the font specification. For Graphite features it is also possible to specify the feature and setting by name, as in <code>"Doulos SIL/GR:Uppercase Eng alternates=Large eng on baseline"</code>. To force use of Graphite features it may be necessary to add <code>/GR</code> to the font name.</p></li>
+    <li><p><strong>Stylistic sets, character variants:</strong> Add <code>feature=setting</code> to the font specification using the feature ID, as in <code>"Charis SIL:+cv43=2"</code>. Multiple features can be added, separated by <code>;</code>, as in <code>"Charis SIL:+cv43=2;+ss01=1"</code>.</p></li>
+    <li><p><strong>Language-specific alternates:</strong> Add <code>language=code</code> to the font specification as in <code>"Scheherazade New:script=arab:language=SND"</code> This can be added to other feature settings, as in <code>"Charis SIL:+ss01=1;language=VIT"</code>. For OpenType the language should be specified using the <a href="../../pdf/https://docs.microsoft.com/en-us/typography/opentype/spec/languagetags">OpenType Language System Tag</a>. For Graphite specify the language using the ( NEED SOURCE FOR APPROPRIATE LANGTAG HERE ).</p></li>
+    <li><p><strong>Graphite features:</strong> Add <code>feature=setting</code> to the font specification. For Graphite features it is also possible to specify the feature and setting by name, as in <code>"NEED NON-LATIN EXAMPLE"</code>. To force use of Graphite features it may be necessary to add <code>/GR</code> to the font name.</p></li>
     </ul>
     <h2 id="if-your-application-does-not-support-font-features">If your application does not support font features</h2>
     <p>The only way to control features in applications that support neither OpenType nor Graphite is to create derivative fonts that have the desired behaviors (e.g. alternate glyphs) activated by default. For example, you could have a font called “Gentium Plus UCEng” that is just like Gentium Plus except it normally renders the Eng using the uppercase form. We have created a tool called <a href="../../pdf/https://scripts.sil.org/ttw/fonts2go.cgi">TypeTuner Web</a> which you can use to create derivative fonts like this based on many of our fonts.</p>
