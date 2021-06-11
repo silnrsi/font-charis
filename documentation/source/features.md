@@ -5,7 +5,7 @@ fontversion: 6.000
 
 Charis SIL is an OpenType-enabled font family that supports the Latin and Cyrillic scripts. It includes a number of optional features that may be useful or required for particular uses or languages. This document lists all the available features.
 
-These OpenType features are primarily specified using four-letter tags (e.g. 'cv17'), although some applications may provide a direct way to control certain common features such as small caps. For more information on how to access OpenType features in specific environments and applications, see [Using OpenType Features](http://software.sil.org/fonts/features).
+These OpenType features are primarily specified using four-letter tags (e.g. 'cv17'), although some applications may provide a direct way to control certain common features such as small caps. For more information on how to access OpenType features in specific environments and applications, see [Using Font Features](http://software.sil.org/fonts/features).
 
 *Please note that Graphite support has been removed in the current release, but continues to be available in the version 5 fonts. See our [Previous Versions archive](http://software.sil.org/charis/download/previous-versions).*
 

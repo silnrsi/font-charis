@@ -68,7 +68,7 @@ One helpful tip: If you want support for extended Latin characters you need to b
 
 ### Older formats and technologies
 
-There are older web fonts technologies, such as [EOT (Embedded OpenType)](https://en.wikipedia.org/wiki/Embedded_OpenType). Each of these modifies the font in some way, and so according to the [SIL Open Font License (OFL)](https://scripts.sil.org/ofl) the font name must be changed. You are allowed to use these technologies to deliver fonts to web pages, but you must change the font names and follow all other OFL rules. We do not offer any support for these technologies.
+There are older web font technologies, such as [EOT (Embedded OpenType)](https://en.wikipedia.org/wiki/Embedded_OpenType). Each of these modifies the font in some way, and so according to the [SIL Open Font License (OFL)](https://scripts.sil.org/ofl) the font name must be changed. You are allowed to use these technologies to deliver fonts to web pages, but you must change the font names and follow all other OFL rules. We do not offer any support for these technologies.
 
 ## Accessing OpenType and Graphite features
 

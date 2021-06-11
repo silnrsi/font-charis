@@ -23,7 +23,7 @@ These fonts will work normally like any other fonts in most applications. If the
 
 These fonts also include extensive OpenType features for small caps, literacy forms, character alernates and language-specific preferences. For information on the specific features available in these fonts see [Font features](features.md). 
 
-If special font features are to be activated the application will need to provide a way to turn on the feature or choose the feature setting. Details of current application support, and specific techniques for activating features, are on the [Accessing OpenType features](http://software.sil.org/fonts/features) help page.
+If special font features are to be activated the application will need to provide a way to turn on the feature or choose the feature setting. Details of current application support, and specific techniques for activating features, are on the [Using Font Features](http://software.sil.org/fonts/features) help page.
 
 Although the current fonts support only OpenType, previous versions provided support for Graphite and AAT (Apple Advanced Typography) technologies. Graphite was supported through version 5 and AAT was supported up to version 4. These older versions remain available from our [Previous Versions archive](http://software.sil.org/charis/download/previous-versions).
 

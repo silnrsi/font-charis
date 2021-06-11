@@ -9,7 +9,7 @@ Charis SIL is optimized for readability in long printed documents. It is highly 
 <!-- PRODUCT SITE IMAGE SRC http://software.sil.org/charis/wp-content/uploads/sites/14/2015/12/CharisSILTypePage.png -->
 <figcaption>Charis SIL Sample - Precomposed Latin Diacritics</figcaption>
 
-Type samples showing an inventory of some of the unusual glyphs and features are available in a PDF sample: [Charis SIL Type Sample](/https://software.sil.org/wp-content/uploads/sites/14/2015/12/CharisSILTypeSample.pdf). For a complete list of characters included in Charis SIL, see [Character Set Support](charset.md).
+Type samples showing an inventory of some of the unusual glyphs and features are available in a PDF sample: [Charis SIL Type Sample](https://software.sil.org/wp-content/uploads/sites/14/2015/12/CharisSILTypeSample.pdf). For a complete list of characters included in Charis SIL, see [Character Set Support](charset.md).
 
 ### Note regarding Charter
 

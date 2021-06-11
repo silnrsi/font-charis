@@ -60,7 +60,7 @@ Mathematical Alphanumeric Symbols|U+1D40C, U+1D504..U+1D505, U+1D50A, U+1D50E..U
 
 ## Private-use (PUA) characters
 
-There are a number of private-use characters that are supported in this font. These conform to [SIL International’s corporate registry](link:http://scripts.sil.org/PUA_home) for usage of the Unicode private-use areas. Characters which are not yet in Unicode are shown below. 
+There are a number of private-use characters that are supported in this font. These conform to [SIL International’s corporate registry](http://scripts.sil.org/PUA_home) for usage of the Unicode private-use areas. Characters which are not yet in Unicode are shown below. 
 
 ### Specials
 

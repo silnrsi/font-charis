@@ -88,7 +88,7 @@ Support for font features is very limited in Microsoft Word.
 
 - **Graphite features:** Not supported.
 
-## XeTeX
+### XeTeX
 
 Font features can be set in XeTeX font specifications in the source document or stylesheet.
 
