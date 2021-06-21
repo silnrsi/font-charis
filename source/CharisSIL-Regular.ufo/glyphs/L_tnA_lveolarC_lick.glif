@@ -5,6 +5,7 @@
   <anchor x="426" y="-500" name="L"/>
   <anchor x="426" y="1570" name="U"/>
   <outline>
+    <component base="LtnDentalClick" xOffset="200"/>
     <contour>
       <point x="50" y="619" type="line"/>
       <point x="803" y="619" type="line"/>
@@ -17,6 +18,5 @@
       <point x="803" y="447" type="line"/>
       <point x="50" y="447" type="line"/>
     </contour>
-    <component base="LtnDentalClick" xOffset="200"/>
   </outline>
 </glyph>

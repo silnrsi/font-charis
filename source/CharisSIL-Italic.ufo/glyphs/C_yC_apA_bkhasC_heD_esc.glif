@@ -5,6 +5,7 @@
   <anchor x="758" y="-500" name="L"/>
   <anchor x="1159" y="1497" name="U"/>
   <outline>
+    <component base="CyCapAbkhasChe"/>
     <contour>
       <point x="593" y="98" type="line"/>
       <point x="647" y="40" type="line"/>
@@ -17,6 +18,5 @@
       <point x="1127" y="40" type="curve"/>
       <point x="1177" y="98" type="line"/>
     </contour>
-    <component base="CyCapAbkhasChe"/>
   </outline>
 </glyph>

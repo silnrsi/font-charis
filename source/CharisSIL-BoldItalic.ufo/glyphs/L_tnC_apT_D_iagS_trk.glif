@@ -6,12 +6,12 @@
   <anchor x="524" y="-100" name="L"/>
   <anchor x="812" y="1500" name="U"/>
   <outline>
+    <component base="LtnCapT"/>
     <contour>
       <point x="43" y="-90" type="line"/>
       <point x="191" y="-197" type="line"/>
       <point x="1293" y="1460" type="line"/>
       <point x="1129" y="1563" type="line"/>
     </contour>
-    <component base="LtnCapT"/>
   </outline>
 </glyph>

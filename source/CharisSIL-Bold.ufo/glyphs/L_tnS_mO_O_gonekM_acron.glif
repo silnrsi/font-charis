@@ -7,6 +7,8 @@
   <anchor x="1196" y="1000" name="R"/>
   <anchor x="599" y="1470" name="U"/>
   <outline>
+    <component base="LtnSmO"/>
+    <component base="CombMacron" xOffset="1197"/>
     <contour>
       <point x="962" y="-362" type="curve"/>
       <point x="898" y="-256" type="line"/>
@@ -29,7 +31,5 @@
       <point x="829" y="-426"/>
       <point x="962" y="-362"/>
     </contour>
-    <component base="LtnSmO"/>
-    <component base="CombMacron" xOffset="1197"/>
   </outline>
 </glyph>

@@ -5,6 +5,8 @@
   <anchor x="769" y="-100" name="L"/>
   <anchor x="769" y="1907" name="U"/>
   <outline>
+    <component base="CyCapI"/>
+    <component base="CombBreve.CyShortMrkAlt.UCHt" xOffset="1537"/>
     <contour>
       <point x="1295" y="104" type="line"/>
       <point x="1295" y="0" type="line"/>
@@ -17,7 +19,5 @@
       <point x="1475" y="0" type="curve"/>
       <point x="1475" y="104" type="line"/>
     </contour>
-    <component base="CyCapI"/>
-    <component base="CombBreve.CyShortMrkAlt.UCHt" xOffset="1537"/>
   </outline>
 </glyph>

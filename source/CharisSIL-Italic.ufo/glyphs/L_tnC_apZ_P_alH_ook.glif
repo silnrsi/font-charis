@@ -5,6 +5,7 @@
   <anchor x="390" y="-500" name="L"/>
   <anchor x="754" y="1500" name="U"/>
   <outline>
+    <component base="LtnCapZ"/>
     <contour>
       <point x="981" y="44" type="line"/>
       <point x="877" y="44" type="line"/>
@@ -23,6 +24,5 @@
       <point x="901" y="-385"/>
       <point x="929" y="-229" type="curve"/>
     </contour>
-    <component base="LtnCapZ"/>
   </outline>
 </glyph>

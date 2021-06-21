@@ -4,6 +4,7 @@
   <anchor x="233" y="-500" name="L"/>
   <anchor x="553" y="1100" name="U"/>
   <outline>
+    <component base="LtnSmOpnO.TopSerif" xOffset="-1"/>
     <contour>
       <point x="407" y="-334" type="curve" smooth="yes"/>
       <point x="407" y="-242"/>
@@ -28,6 +29,5 @@
       <point x="292" y="-467"/>
       <point x="407" y="-412"/>
     </contour>
-    <component base="LtnSmOpnO.TopSerif" xOffset="-1"/>
   </outline>
 </glyph>

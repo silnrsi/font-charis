@@ -5,6 +5,7 @@
   <anchor x="331" y="-539" name="L"/>
   <anchor x="659" y="1100" name="U"/>
   <outline>
+    <component base="LtnSmG.SngBowl" xOffset="-40"/>
     <contour>
       <point x="1374" y="235" type="line"/>
       <point x="758" y="235" type="line"/>
@@ -25,6 +26,5 @@
       <point x="1290" y="-205"/>
       <point x="1318" y="-49" type="curve"/>
     </contour>
-    <component base="LtnSmG.SngBowl" xOffset="-40"/>
   </outline>
 </glyph>

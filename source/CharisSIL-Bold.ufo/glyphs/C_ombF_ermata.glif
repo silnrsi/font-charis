@@ -4,6 +4,7 @@
   <anchor x="-598" y="1616" name="U"/>
   <anchor x="-598" y="1100" name="_U"/>
   <outline>
+    <component base="DotAbv" xOffset="-738" yOffset="-84"/>
     <contour>
       <point x="-277" y="1320" type="line"/>
       <point x="-277" y="1504"/>
@@ -20,6 +21,5 @@
       <point x="-412" y="1443"/>
       <point x="-386" y="1320" type="curve"/>
     </contour>
-    <component base="DotAbv" xOffset="-738" yOffset="-84"/>
   </outline>
 </glyph>
