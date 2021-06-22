@@ -3,15 +3,15 @@
 <ftml version="1.0">
   <head>
     <fontscale>200</fontscale>
-    <fontsrc>url(../results/CharisSIL-Regular.ttf)</fontsrc>
-    <fontsrc>url(../results/CharisSIL-Bold.ttf)</fontsrc>
-    <fontsrc>url(../results/CharisSIL-Italic.ttf)</fontsrc>
-    <fontsrc>url(../results/CharisSIL-BoldItalic.ttf)</fontsrc>
+    <fontsrc label="CR">url(../results/CharisSIL-Regular.ttf)</fontsrc>
+    <fontsrc label="CB">url(../results/CharisSIL-Bold.ttf)</fontsrc>
+    <fontsrc label="CI">url(../results/CharisSIL-Italic.ttf)</fontsrc>
+    <fontsrc label="CBI">url(../results/CharisSIL-BoldItalic.ttf)</fontsrc>
     <fontsrc label="CRv5">url(../references/v5/CharisSIL-Regular.ttf)</fontsrc>
     <fontsrc label="CIv5">url(../references/v5/CharisSIL-Italic.ttf)</fontsrc>
     <fontsrc label="DRb1">url(../references/b1/DoulosSIL-Regular.ttf)</fontsrc>
     <fontsrc label="DRv5">url(../references/v5/DoulosSIL-Regular.ttf)</fontsrc>
-    <title>LornasData</title>
+    <title>Language Combos</title>
   </head>
   <testgroup label="Common base diacritic combos">
     <test label="U+0061 U+0301">
