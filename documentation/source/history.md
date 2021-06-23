@@ -3,7 +3,7 @@ title: Charis SIL - Version History
 fontversion: 6.000
 ---
 
-### 15 Jun 2021 (SIL WSTech Team) Charis SIL version 6.000
+### 25 Jun 2021 (SIL WSTech Team) Charis SIL version 6.000
 
 ***Note that this is a major upgrade that may cause document reflow as some glyphs widths have changed and some features have been removed.***
 
@@ -102,7 +102,7 @@ lengths. Affected spaces:
 
 - Fixed miscellaneous distorted glyphs
 
-- Improved miscellaneous anchor positions, including the position of diacritics
+- Improved miscellaneous anchor positions, including the position of diacritics 
 below glyphs with macrons below (e.g. U+1E0F LATIN SMALL LETTER D WITH LINE BELOW)
 
 - Fixes and improvements to various glyphs:

@@ -73,7 +73,7 @@ C1 Controls and Latin-1 Supplement|U+00A0..U+00FF
 
 External links always specify the full URL ([Keyman](https://keyman.com), [SIL Language Technology](https://software.sil.org)). Relative links should point to the relevant markdown file ([This project’s About page](about)).
 
-Links to external  files are a bit odd and require changing the extension in the source to `.rawmd` rather than ``. This prevents the extension changing to `.html`.
+Links to external  files are a bit odd and require changing the extension in the source to `.md` rather than ``. This prevents the extension changing to `.html`.
 
 Links can be specified inline, with the full link in the text, or using named references ([This project’s About page][about]).
 

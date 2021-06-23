@@ -1,100 +1,21 @@
-FONTLOG
-Charis SIL
-==========
-
-This file provides detailed information on the Charis SIL family of fonts.
-This information should be distributed along with the Charis SIL fonts and
-any derivative works.
-
-## About this project
-
-This project is intended to provide a free and open font family for all
-current languages and writing systems that use Latin and Cyrillic scripts.
-It supports almost the complete range of Unicode characters for these scripts,
-including a comprehensive range of diacritics and a large set of symbols
-useful for linguistics and literacy work. Smart font routines automatically
-adjust the position of diacritics to support and optimize arbitrary
-base+diacritic combinations.
-
-Charis SIL is optimized for readability in long printed documents. It is
-highly readable and holds up well in less-than-ideal reproduction environments
-due to its simple and robust design with strong serifs and clear features.
-
-## Note regarding Charter
-
-This Charis SIL font is essentially the same design as the SIL Charis font
-first released by SIL in 1997. The design of the basic character set of Charis 
-IL is similar (but not identical) to Bitstream Charter, designed by Matthew
-Carter. The following notice accompanied the Charter fonts: 
-
-> © Copyright 1989-1992, Bitstream Inc., Cambridge, MA. 
->
-> You are hereby granted permission under all Bitstream propriety rights to
-> use, copy, modify, sublicense, sell, and redistribute the 4 Bitstream
-> Charter® Type 1 outline fonts and the 4 Courier Type 1 outline fonts for
-> any purpose and without restriction; provided, that this notice is left
-> intact on all copies of such fonts and that Bitstream's trademark is
-> acknowledged as shown below on all unmodified copies of the 4 Charter Type
-> 1 fonts. 
->
-> BITSTREAM CHARTER is a registered trademark of Bitstream Inc.
-
-SIL International is the creator of the Charis SIL fonts, and is the owner
-of all proprietary rights therein.
-
-## A Note Regarding the Open Font License and TypeTuner
-
-The OFL prohibits the use of Reserved Font Names "Charis" and "SIL" in
-the name of any font that is derived from the Original Version of Charis
-SIL. However, SIL International (the Copyright Holder) grants through
-this separate written agreement the right to use the Reserved Font Names
-in any Modified Version of this font created by using TypeTuner as long
-as the feature information contained in the Original Version is used, 
-unmodified, as the source for TypeTuner feature information, and 
-"Charis SIL" is not the resulting font family name.
-
-TypeTuner-produced fonts created in this manner are still bound by the
-terms of the OFL. Specifically, the use of Reserved Font Names is
-prohibited when making derivatives of a TypeTuner-produced font. Anyone
-making a derivative of a TypeTuner font will need to find a different
-name. For example a TypeTuner-produced font may be named 
-"Charis SIL Literacy SomeFarAwayPlace" but a derivative of that font made 
-with other tools would not be allowed to use the "Charis" and "SIL" 
-Reserved Font Names and would have to be named something like "Grace Foo".
-
-## ChangeLog
-(This should list both major and minor changes, most recent first.)
 
 ### 25 Jun 2021 (SIL WSTech Team) Charis SIL version 6.000
 
-***Note that this is a major upgrade that may cause document reflow as
-some glyphs widths have changed and some features have been removed.***
+***Note that this is a major upgrade that may cause document reflow as some glyphs widths have changed and some features have been removed.***
 
 #### Removed
 
-- **Removed DSIGs added in version 5.000.** These have now been removed
-to reflect current best practice font development guidance. Adobe InDesign
-will complain that fonts cannot be found if a document last saved with
-version 5.000 is opened with version 5.960 or later installed. It will be
-necessary to find/replace the fonts in the document using the command in
-the Type menu. Please also look over the document carefully to note any
-places where changes in the fonts have affected letterforms or spacing.
+- **Removed DSIGs added in version 5.000.** These have now been removed to reflect current best practice font development guidance. Adobe InDesign will complain that fonts cannot be found if a document last saved with version 5.000 is opened with version 5.960 or later installed. It will be necessary to find/replace the fonts in the document using the command in the Type menu. Please also look over the document carefully to note any places where changes in the fonts have affected letterforms or spacing.
 
-- **Graphite has been removed.** Application and OS support for OpenType
-has greatly improved, so the need for Graphite in this font family is
-greatly reduced. *If this affects you, and you find that OpenType does 
-not provide sufficient support for your needs, please contact us right
-away.*  
+- **Graphite has been removed.** Application and OS support for OpenType has greatly improved, so the need for Graphite in this font family is greatly reduced. *If this affects you, and you find that OpenType does not provide sufficient support for your needs, please contact us right away.*  
 
 - Removed the "Show Invisibles" feature.
 
-- Removed support for nine-level pitch contours. These will be replaced
-by a standalone pitch contours font in the future.
+- Removed support for nine-level pitch contours. These will be replaced by a standalone pitch contours font in the future.
 
 #### Added
 
-Characters added to support Unicode versions 7.0-13.0, including feature
-support (e.g. small caps) where appropriate:
+Characters added to support Unicode versions 7.0-13.0, including feature support (e.g. small caps) where appropriate:
 
 - U+03D1 GREEK THETA SYMBOL
 - U+03F4 GREEK CAPITAL THETA SYMBOL
@@ -367,35 +288,3 @@ below glyphs with macrons below (e.g. U+1E0F LATIN SMALL LETTER D WITH LINE BELO
 ### 31 Jan 2006 (SIL NRSI team)  Charis SIL version 4.0.02 (Version 4.002)
 - First version released under the SIL Open Font License
 
-## Information for developers and contributors
-
-We welcome other developers who wish to get involved in supporting and
-enhancing these fonts or who want to modify them.
-
-SIL’s fonts are licensed according to the terms of the SIL Open Font License
-(https://scripts.sil.org/OFL). The OFL allows the fonts to be used, studied,
-modified and redistributed freely as long as they are not sold by themselves.
-For details see the OFL.txt and OFL-FAQ.txt files in the package.
-
-Full sources are included in this package. For information on the source
-formats or how the fonts are built see documentation/developer.html.
-
-## Acknowledgements
-
-(Here is where contributors can be acknowledged. If you make modifications
-be sure to add your name (N), email (E), web-address (W) and description
-(D). This list is sorted by last name in alphabetical order.)
-
-N: Walt Agee, Jon Coblentz, Sharon Correll, Lorna Evans, Victor Gaultney,
-Bob Hallissy, Martin Hosken, Jonathan Kew, Miriam Martin, Annie Olsen,
-Alan Ward
-E: https://software.sil.org/charis/about/contact/
-W: https://software.sil.org/charis/
-D: SIL designers and font engineers
-
-The Charis SIL project is maintained by SIL International, a global,
-faith-based nonprofit that works with local communities around the world
-to develop language solutions that expand possibilities for a better life.
-
-For more information or support please visit:
-https://software.sil.org/charis/

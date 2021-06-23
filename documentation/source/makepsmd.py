@@ -55,6 +55,9 @@ def doit(args):
     # replace local links with site references
     temptext = temptext.replace(".md","")
 
+    # replace links to external markdown files
+    temptext = temptext.replace(".rawmd",".md")
+
     outfile.write(temptext)
 
     return
