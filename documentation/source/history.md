@@ -83,6 +83,7 @@ Characters added to support Unicode versions 7.0-13.0, including feature support
 - Feature to support side-by-side rendering of U+0300 plus U+0301
     - Kayan diacritics (cv79)
 
+- Tone letter features (cv91 & cv92) now supported through OpenType
 
 #### Fixes
 
@@ -98,12 +99,17 @@ lengths. Affected spaces:
 
 - Fixed some small capital correspondences, including added support for clicks
 
+- Fixed problems with spacing of tone letters
+
 - Fixed missing or distorted Vietnamese composite glyphs
 
 - Fixed miscellaneous distorted glyphs
 
 - Improved miscellaneous anchor positions, including the position of diacritics 
 below glyphs with macrons below (e.g. U+1E0F LATIN SMALL LETTER D WITH LINE BELOW)
+
+- Improved position of diacritics for superscripts and modifier letters
+(including cedilla, ogonek, rhotic hook)
 
 - Fixes and improvements to various glyphs:
     - U+0037 DIGIT SEVEN (spacing)

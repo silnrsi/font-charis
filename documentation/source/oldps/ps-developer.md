@@ -1,1 +1,0 @@
-We welcome other developers who wish to get involved in supporting and enhancing this software. Please see [Latin, Cyrillic, and Greek Fonts -- Developer](http://software.sil.org/lcgfonts/developer/) for further information on how you can be involved.
