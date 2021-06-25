@@ -742,10 +742,10 @@ def doit(args):
         ftml.closeTestGroup()
 
         ftml.startTestGroup('Rhotic hook attachment')
-        # rhotic_hk_diac_lst = [0x02DE] # rhotic hook
-        rhotic_hk_diac_name_lst = ['ModRhoticHook', 'CombCommaAbvRt', 'CombRtDotAbv', 'CombHorn', ]
+        # rhotic_hk_diac_name_lst = ['ModRhoticHook', 'CombCommaAbvRt', 'CombRtDotAbv', 'CombHorn', ]
+        rhotic_hk_diac_name_lst = ['ModRhoticHook']
         rhotic_hk_diac_lst = [builder.char(x).uid for x in rhotic_hk_diac_name_lst]
-        rhotic_hook_base_name_lst = ['LtnCapI', 'LtnCapO']
+        rhotic_hook_base_name_lst = ['LtnSmI', 'LtnSmO']
         rhotic_hk_base_lst = []
         for base in rhotic_hook_base_name_lst:
             try: rhotic_hk_base_lst.append(builder.char(base).uid)
