@@ -9,7 +9,7 @@
 
 - **Graphite has been removed.** Application and OS support for OpenType has greatly improved, so the need for Graphite in this font family is greatly reduced. *If this affects you, and you find that OpenType does not provide sufficient support for your needs, please contact us right away.*  
 
-- Removed the "Show Invisibles" feature.
+- Removed the *Show Invisibles* feature.
 
 - Removed support for nine-level pitch contours. These will be replaced by a standalone pitch contours font in the future.
 
@@ -83,9 +83,7 @@ Characters added to support Unicode versions 7.0-13.0, including feature support
 
 #### Fixes
 
-- Width of typographic spaces have been made more consistent to reflect
-common publishing industry usage. Note that this may affect line and page
-lengths. Affected spaces:
+- Width of typographic spaces have been made more consistent to reflect common publishing industry usage. Note that this may affect line and page lengths. Affected spaces:
 
     - U+2000 EN QUAD (made width consistent)
     - U+2001 EM QUAD (made width consistent)
@@ -101,11 +99,9 @@ lengths. Affected spaces:
 
 - Fixed miscellaneous distorted glyphs
 
-- Improved miscellaneous anchor positions, including the position of diacritics 
-below glyphs with macrons below (e.g. U+1E0F LATIN SMALL LETTER D WITH LINE BELOW)
+- Improved miscellaneous anchor positions, including the position of diacritics below glyphs with macrons below (e.g. U+1E0F LATIN SMALL LETTER D WITH LINE BELOW)
 
-- Improved position of diacritics for superscripts and modifier letters
-(including cedilla, ogonek, rhotic hook)
+- Improved position of diacritics for superscripts and modifier letters (including cedilla, ogonek, rhotic hook)
 
 - Fixes and improvements to various glyphs:
     - U+0037 DIGIT SEVEN (spacing)
