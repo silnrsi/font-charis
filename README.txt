@@ -6,7 +6,11 @@ This project is intended to provide a free and open font family for all current 
 
 To download the fonts visit the [Charis SIL downloads page](https://software.sil.org/charis/download/) or the [Github releases page](https://github.com/silnrsi/font-charis/releases).
 
-For more information on using and developing the fonts see the [full project documentation](documentation/index.html).
+For more information on using and developing the fonts see the full project documentation. This is available in three forms:
+
+- *local HTML* - Download the release or source package and open the file `documentation/index.html` in a browser
+- *local PDF* - Download the release or source package and open the file `documentation/pdf/index.pdf`
+- *Web site* - Visit the [Charis SIL web site](https://software.sil.org/charis) 
 
 For a complete list of changes in this version see the [FONTLOG.txt](FONTLOG.txt).
 
