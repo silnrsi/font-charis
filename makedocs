@@ -69,8 +69,6 @@ weasyprint documentation/source/pdftemp/versions.html documentation/pdf/versions
 
 echo "     >>> PRODUCT SITE MARKDOWN (documentation/source/productsite/)"
 
-echo "     > index.md"
-python3 documentation/source/makepsmd.py documentation/source/index.md documentation/source/productsite/index.md -q
 echo "     > about.md"
 python3 documentation/source/makepsmd.py documentation/source/about.md documentation/source/productsite/about.md -q
 echo "     > charset.md"
@@ -89,7 +87,6 @@ echo "     > resources.md"
 python3 documentation/source/makepsmd.py documentation/source/resources.md documentation/source/productsite/resources.md -q
 echo "     > support.md"
 python3 documentation/source/makepsmd.py documentation/source/support.md documentation/source/productsite/support.md -q
-echo "     > versions.md"
-python3 documentation/source/makepsmd.py documentation/source/versions.md documentation/source/productsite/versions.md -q
+echo "     Markdown source for other pages is in separate repo"
 
 echo "-----Completed!"
