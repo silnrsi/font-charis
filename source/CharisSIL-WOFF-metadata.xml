@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata version="1.0">
-  <uniqueid id="org.sil.fonts.CharisSIL.6.000" />
+  <uniqueid id="org.sil.fonts.CharisSIL.6.001" />
   <vendor name="SIL International" url="http://www.sil.org/" />
   <credits>
     <credit
@@ -69,6 +69,11 @@
       
       (This should list both major and minor changes, most recent first.)
       
+      ### 2 July 2021 (SIL WSTech Team) Charis SIL version 6.001
+      
+      - Reverted font Postscript name to that used in v5 and earlier to avoid
+      problems with unrecognized fonts when opening older documents.
+
       ### 29 Jun 2021 (SIL WSTech Team) Charis SIL version 6.000
       
       ***Note that this is a major upgrade that may cause document reflow as
