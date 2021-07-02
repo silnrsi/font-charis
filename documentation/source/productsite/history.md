@@ -1,4 +1,8 @@
 
+### 2 July 2021 (SIL WSTech Team) Charis SIL version 6.001
+
+- Reverted font Postscript name to that used in v5 and earlier to avoid problems with unrecognized fonts when opening older documents.
+
 ### 29 Jun 2021 (SIL WSTech Team) Charis SIL version 6.000
 
 ***Note that this is a major upgrade that may cause document reflow as some glyphs widths have changed and some features have been removed.***

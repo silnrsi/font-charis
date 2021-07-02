@@ -1,6 +1,6 @@
 ---
 title: Charis SIL - Character Set Support
-fontversion: 6.000
+fontversion: 6.001
 ---
 
 This font supports over 2,300 characters from [The Unicode Standard](https://unicode.org/) as well as a number of [Private Use Area (PUA)](https://scripts.sil.org/SILPUAassignments) characters. In total, over 3,500 glyphs are included, supporting stylistic alternates for a number of characters as well as a large number of ligated sequences (e.g., contour tone letters used in phonetic transcription of tonal languages). 
