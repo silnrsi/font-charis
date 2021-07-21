@@ -531,20 +531,16 @@ def doit(args):
         # add 'locl' test which provides Serbian alternates
         # TODO: read uids with locl feat from glyph_data.csv
         # TODO: test interactions of locl w other feats (only smcp currently)
-        # serb_alt_name_lst = ['CySmBe.Serb', 'CySmGhe.Serb', 'CySmPe.Serb', 'CySmDe.Serb']
-        serb_alt_name_lst = ['CySmBe', 'CySmGhe', 'CySmPe', 'CySmDe']
+        serb_alt_name_lst = ['CySmBe', 'CySmGhe', 'CySmPe', 'CySmDe', 'CySmTe']
         serb_alt_lst = [builder.char(x).uid for x in serb_alt_name_lst]
         serb_alt_diac_lst = []
         [serb_alt_diac_lst.extend([x, 0x030D]) for x in serb_alt_lst]
         ftml.startTestGroup('locl - Serbian')
-        # builder.render(serb_alt_lst, ftml)
         builder.render(serb_alt_diac_lst, ftml, descUIDs=serb_alt_lst)
         # Serbian  'SRB '  cnr, srp - from OT spec
         ftml.setLang('cnr')
-        # builder.render(serb_alt_lst, ftml)
         builder.render(serb_alt_diac_lst, ftml, descUIDs=serb_alt_lst)
         ftml.setLang('sr')  # use two letter BCP47 lang code
-        # builder.render(serb_alt_lst, ftml)
         builder.render(serb_alt_diac_lst, ftml, descUIDs=serb_alt_lst)
         ftml.closeTestGroup()
 
@@ -742,10 +738,10 @@ def doit(args):
         ftml.closeTestGroup()
 
         ftml.startTestGroup('Rhotic hook attachment')
-        # rhotic_hk_diac_lst = [0x02DE] # rhotic hook
-        rhotic_hk_diac_name_lst = ['ModRhoticHook', 'CombCommaAbvRt', 'CombRtDotAbv', 'CombHorn', ]
+        # rhotic_hk_diac_name_lst = ['ModRhoticHook', 'CombCommaAbvRt', 'CombRtDotAbv', 'CombHorn', ]
+        rhotic_hk_diac_name_lst = ['ModRhoticHook']
         rhotic_hk_diac_lst = [builder.char(x).uid for x in rhotic_hk_diac_name_lst]
-        rhotic_hook_base_name_lst = ['LtnCapI', 'LtnCapO']
+        rhotic_hook_base_name_lst = ['LtnSmI', 'LtnSmO']
         rhotic_hk_base_lst = []
         for base in rhotic_hook_base_name_lst:
             try: rhotic_hk_base_lst.append(builder.char(base).uid)

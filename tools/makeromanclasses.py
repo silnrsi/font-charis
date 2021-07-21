@@ -21,6 +21,7 @@ class_spec_lst = [('smcp', 'sc'),
                   ('viet', 'VN'),
                   ('dotlss', 'Dotless'),
                   ('rtrhk', 'RetroHook'),
+                  ('caron', 'Caron'),
                   ('iotasub', 'ISub'),
                   ('bartp', 'BarTop'),
                   ]
@@ -135,8 +136,8 @@ class Font(object):
                 if (re.search('LtnCap|CyCap', g_nm)):
                     g_smcp_nm = re.sub('Cap', 'Sm', g_nm) + ".sc"
                     if (g_smcp_nm in self.glyphs):
-                        self.g_classes.setdefault('cno_c2sc', []).append((g_nm))
-                        self.g_classes.setdefault('c_c2sc', []).append((g_smcp_nm))
+                        self.g_classes.setdefault('cno_c2sc', []).append(g_nm)
+                        self.g_classes.setdefault('c_c2sc', []).append(g_smcp_nm)
 
         # create class of glyphs that need .sup diacritics
         #   match substrings in glyph names
@@ -158,8 +159,8 @@ class Font(object):
                 if g_base_nm.find('LtnSmI') != -1 and g_base_nm.find('.sc') == -1 :
                     g_base_nm = re.sub('LtnSmI', 'LtnSmI.Dotless', g_base_nm)
                 if (g_base_nm in self.glyphs):
-                    self.g_classes.setdefault('c_grave_comp', []).append((g_nm))
-                    self.g_classes.setdefault('c_grave_base', []).append((g_base_nm))
+                    self.g_classes.setdefault('c_grave_comp', []).append(g_nm)
+                    self.g_classes.setdefault('c_grave_base', []).append(g_base_nm)
         
         # add irregular glyphs to classes not found by the above algorithms
         for cls, g_lst in glyph_class_additions.items():
