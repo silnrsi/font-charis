@@ -482,11 +482,7 @@ lookup ognk_sub {
 
 lookup caron_sub {
   lookupflag 0;
-    sub LtnSmDCaron from [LtnSmDCaron.Caron ];
-    sub LtnSmLCaron from [LtnSmLCaron.Caron ];
-    sub LtnCapLCaron from [LtnCapLCaron.Caron ];
-    sub LtnSmTCaron from [LtnSmTCaron.Caron ];
-    sub LtnSmLCaron.sc from [LtnSmLCaron.Caron.sc ];
+    sub @cno_caron by @c_caron;
 } caron_sub;
 
 lookup kayan_grave_sub {
