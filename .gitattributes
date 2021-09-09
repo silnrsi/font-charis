@@ -23,12 +23,15 @@
 *.cfg text eol=lf
 *.css text eol=lf
 *.fea text eol=lf
+*.feax text eol=lf
 *.ftml text eol=lf
 *.gdl text eol=lf
 *.gdh text eol=lf
 *.html text eol=lf
 *.htxt text eol=lf
+*.json text eol=lf
 *.md text eol=lf
+*.py text eol=lf
 *.sil text eol=lf
 *.srctext text eol=lf
 *.tex text eol=lf
@@ -39,7 +42,12 @@
 *.xsl text eol=lf
 *.xml text eol=lf
 
+# Declare text files that will stay in LF (i.e. not expected to be used on Windows)
+makedocs text eol=lf
 preflight text eol=lf
+preflightg text eol=lf
+preflightff text eol=lf
+preglyphs text eol=lf
 wscript text eol=lf
 
 # Declare text files that will stay in LF (i.e. not expected to be used on Windows)
