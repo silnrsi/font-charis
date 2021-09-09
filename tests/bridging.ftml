@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="../tools/ftml.xsl" type="text/xsl"?>
+<ftml version="1.0">
+  <head>
+    <fontscale>200</fontscale>
+    <fontsrc label="CRv6">url(../results/CharisSIL-Regular.ttf)</fontsrc>
+    <fontsrc label="CBv6">url(../results/CharisSIL-Bold.ttf)</fontsrc>
+    <fontsrc label="CIv6">url(../results/CharisSIL-Italic.ttf)</fontsrc>
+    <fontsrc label="CBIv6">url(../results/CharisSIL-BoldItalic.ttf)</fontsrc>
+    <fontsrc label="CRv5">url(../references/v5/CharisSIL-Regular.ttf)</fontsrc>
+    <fontsrc label="CIv5">url(../references/v5/CharisSIL-Italic.ttf)</fontsrc>
+    <fontsrc label="DRb1">url(../references/b1/DoulosSIL-Regular.ttf)</fontsrc>
+    <fontsrc label="DRv5">url(../references/v5/DoulosSIL-Regular.ttf)</fontsrc>
+    <title>Bridging diacritics</title>
+  </head>
+  <testgroup label="Experimental combos (only the first and last are expected to fully center)">
+    <test label="U+0361 U+034F U+0308 (bridge+CGJ+diac)">
+      <string>\u000061\u000361\u00034F\u000308\u000075 \u000062\u000361\u00034F\u000308\u000064</string>
+    </test>
+    <test label="U+0361 U+0308 (bridge+diac)">
+      <string>\u000061\u000361\u000308\u000075 \u000062\u000361\u000308\u000064</string>
+    </test>
+    <test label="U+2060 U+0308 (WJ+diac)">
+      <string>\u000061\u002060\u000308\u000075 \u000062\u002060\u000308\u000064</string>
+    </test>
+    <test label="U+200A U+0361 U+0308 (hairspace+bridge+diac)">
+      <string>\u000061\u00200A\u000361\u000308\u000075 \u000062\u00200A\u000361\u000308\u000064</string>
+    </test>
+  </testgroup>
+  <testgroup label="Normal">
+    <test label="U+0360">
+      <string>\u000061\u000360\u000075 \u000067\u000360\u000062</string>
+    </test>
+    <test label="U+0361">
+      <string>\u000061\u000361\u000075 \u000067\u000361\u000062</string>
+    </test>
+    <test label="U+0362">
+      <string>\u000061\u000362\u000075 \u000067\u000362\u000062</string>
+    </test>
+    <test label="U+035C">
+      <string>\u000061\u00035C\u000075 \u000067\u00035C\u000062</string>
+    </test>
+    <test label="U+035D">
+      <string>\u000061\u00035D\u000075 \u000067\u00035D\u000062</string>
+    </test>
+    <test label="U+035E">
+      <string>\u000061\u00035E\u000075 \u000067\u00035E\u000062</string>
+    </test>
+    <test label="U+035F">
+      <string>\u000061\u00035F\u000075 \u000067\u00035F\u000062</string>
+    </test>
+    <test label="U+1DCD">
+      <string>\u000061\u001DCD\u000075 \u000067\u001DCD\u000062</string>
+    </test>
+    <test label="U+1DFC (new)">
+      <string>\u000061\u001DFC\u000075 \u000067\u001DFC\u000062</string>
+    </test>
+    <test label="U+F17A">
+      <string>\u000061\u00F17A\u000075 \u000067\u00F17A\u000062</string>
+    </test>
+  </testgroup>
+  <testgroup label="With CGJ and attached diacritic above">
+    <test label="U+0360 U+034F U+0308">
+      <string>\u000061\u000360\u00034F\u000308\u000075 \u000067\u000360\u00034F\u000308\u000062</string>
+    </test>
+    <test label="U+0361 U+034F U+0308">
+      <string>\u000061\u000361\u00034F\u000308\u000075 \u000067\u000361\u00034F\u000308\u000062</string>
+    </test>
+    <test label="U+0362 U+034F U+0308">
+      <string>\u000061\u000362\u00034F\u000308\u000075 \u000067\u000362\u00034F\u000308\u000062</string>
+    </test>
+    <test label="U+035C U+034F U+0308">
+      <string>\u000061\u00035C\u00034F\u000308\u000075 \u000067\u00035C\u00034F\u000308\u000062</string>
+    </test>
+    <test label="U+035D U+034F U+0308">
+      <string>\u000061\u00035D\u00034F\u000308\u000075 \u000067\u00035D\u00034F\u000308\u000062</string>
+    </test>
+    <test label="U+035E U+034F U+0308">
+      <string>\u000061\u00035E\u00034F\u000308\u000075 \u000067\u00035E\u00034F\u000308\u000062</string>
+    </test>
+    <test label="U+035F U+034F U+0308">
+      <string>\u000061\u00035F\u00034F\u000308\u000075 \u000067\u00035F\u00034F\u000308\u000062</string>
+    </test>
+    <test label="U+1DCD U+034F U+0308">
+      <string>\u000061\u001DCD\u00034F\u000308\u000075 \u000067\u001DCD\u00034F\u000308\u000062</string>
+    </test>
+    <test label="U+1DFC U+034F U+0308">
+      <string>\u000061\u001DFC\u00034F\u000308\u000075 \u000067\u001DFC\u00034F\u000308\u000062</string>
+    </test>
+    <test label="U+F17A U+034F U+0308">
+      <string>\u000061\u00F17A\u00034F\u000308\u000075 \u000067\u00F17A\u00034F\u000308\u000062</string>
+    </test>
+  </testgroup>
+  <testgroup label="With CGJ and attached diacritic below">
+    <test label="U+0360 U+034F U+0323">
+      <string>\u000061\u000360\u00034F\u000323\u000075 \u000067\u000360\u00034F\u000323\u000062</string>
+    </test>
+    <test label="U+0361 U+034F U+0323">
+      <string>\u000061\u000361\u00034F\u000323\u000075 \u000067\u000361\u00034F\u000323\u000062</string>
+    </test>
+    <test label="U+0362 U+034F U+0323">
+      <string>\u000061\u000362\u00034F\u000323\u000075 \u000067\u000362\u00034F\u000323\u000062</string>
+    </test>
+    <test label="U+035C U+034F U+0323">
+      <string>\u000061\u00035C\u00034F\u000323\u000075 \u000067\u00035C\u00034F\u000323\u000062</string>
+    </test>
+    <test label="U+035D U+034F U+0323">
+      <string>\u000061\u00035D\u00034F\u000323\u000075 \u000067\u00035D\u00034F\u000323\u000062</string>
+    </test>
+    <test label="U+035E U+034F U+0323">
+      <string>\u000061\u00035E\u00034F\u000323\u000075 \u000067\u00035E\u00034F\u000323\u000062</string>
+    </test>
+    <test label="U+035F U+034F U+0323">
+      <string>\u000061\u00035F\u00034F\u000323\u000075 \u000067\u00035F\u00034F\u000323\u000062</string>
+    </test>
+    <test label="U+1DCD U+034F U+0323">
+      <string>\u000061\u001DCD\u00034F\u000323\u000075 \u000067\u001DCD\u00034F\u000323\u000062</string>
+    </test>
+    <test label="U+1DFC U+034F U+0323">
+      <string>\u000061\u001DFC\u00034F\u000323\u000075 \u000067\u001DFC\u00034F\u000323\u000062</string>
+    </test>
+    <test label="U+F17A U+034F U+0323">
+      <string>\u000061\u00F17A\u00034F\u000323\u000075 \u000067\u00F17A\u00034F\u000323\u000062</string>
+    </test>
+  </testgroup>
+</ftml>
