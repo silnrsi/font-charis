@@ -1,0 +1,1584 @@
+%YAML 1.1
+--- # Draft feature info
+
+- tag: c2sc
+  fonts: CDGA
+  version_added: 6
+  tt_tag: C2SC
+  tt_name: Small caps from capitals
+  tt_value: Standard (capital forms)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard
+      tt_setting_name: Standard (capital forms)
+      tt_setting_tag: F
+    - setting_value: 1
+      setting_doc_desc: Small caps
+      tt_setting_name: Small caps
+      tt_setting_tag: T
+  doc_group: style
+  doc_order: 102
+  doc_name: Small caps from capitals
+  doc_affects: all capitals
+  doc_sample: 
+  doc_sample_addl: (all capitals)
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv01
+  fonts: A
+  version_added: 5
+  cv_label: One
+  cv_tooltip: Alternate form of numeral one without base
+  cv_sample: 
+  tt_tag: Dig1
+  tt_name: One
+  tt_value: Standard (with base)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (with base)
+      tt_setting_name: Standard (with base)
+      tt_setting_tag: F
+    - setting_value: 1
+      setting_ui_label: No base serif
+      setting_doc_desc: No base serif
+      tt_setting_name: No base serif
+      tt_setting_tag: T
+  doc_group: num
+  doc_order: 801
+  doc_name: One
+  doc_affects: U+0031 U+00B9 U+2081
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv04
+  fonts: A
+  version_added: 5
+  cv_label: Four
+  cv_tooltip: Alternate form of numeral four with open top
+  cv_sample: 
+  tt_tag: Dig4
+  tt_name: Four
+  tt_value: Standard (closed top)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (closed top)
+      tt_setting_name: Standard (closed top)
+      tt_setting_tag: Clsd
+    - setting_value: 1
+      setting_ui_label: Open top
+      setting_doc_desc: Open top
+      tt_setting_name: Open top
+      tt_setting_tag: Opn
+  doc_group: num
+  doc_order: 804
+  doc_name: Four
+  doc_affects: U+0034 U+2074 U+2084
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv06
+  fonts: A
+  version_added: 5
+  cv_label: Six and Nine
+  cv_tooltip: Alternate forms of numerals six and nine with diagonal stems
+  cv_sample: 
+  tt_tag: Dig69
+  tt_name: Six and Nine
+  tt_value: Standard (curved stems)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (curved stems)
+      tt_setting_name: Standard (curved stems)
+      tt_setting_tag: F
+    - setting_value: 1
+      setting_ui_label: Diagonal stems
+      setting_doc_desc: Diagonal stems
+      tt_setting_name: Diagonal stems
+      tt_setting_tag: T
+  doc_group: num
+  doc_order: 806
+  doc_name: Six and Nine
+  doc_affects: U+0036 U+0039 U+2076 U+2079 U+2086 U+2089
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv07
+  fonts: A
+  version_added: 5
+  cv_label: Seven
+  cv_tooltip: Alternate form of numeral seven with bar
+  cv_sample: 
+  tt_tag: Dig7
+  tt_name: Seven
+  tt_value: Standard (no bar)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (no bar)
+      tt_setting_name: Standard (no bar)
+      tt_setting_tag: F
+    - setting_value: 1
+      setting_ui_label: Barred
+      setting_doc_desc: Barred
+      tt_setting_name: Barred
+      tt_setting_tag: T
+  doc_group: num
+  doc_order: 807
+  doc_name: Seven
+  doc_affects: U+0037 U+2077 U+2087
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv10
+  fonts: A
+  version_added: 5
+  cv_label: Zero
+  cv_tooltip: Alternate form of numeral zero with slash
+  cv_sample: 
+  tt_tag: Dig0
+  tt_name: Zero
+  tt_value: Standard (no slash)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (no slash)
+      tt_setting_name: Standard (no slash)
+      tt_setting_tag: F
+    - setting_value: 1
+      setting_ui_label: Slashed
+      setting_doc_desc: Slashed
+      tt_setting_name: Slashed
+      tt_setting_tag: T
+  doc_group: num
+  doc_order: 800
+  doc_name: Zero
+  doc_affects: U+0030 U+2070 U+2080
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv13
+  fonts: CDGA
+  version_added: 5
+  cv_label: Capital B hook
+  cv_tooltip: Alternate form of Capital B hook with single bowl and right hook
+  cv_sample: 
+  tt_tag: LrgBHk
+  tt_name: Capital B hook
+  tt_value: Standard (double bowl)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (double bowl)
+      tt_setting_name: Standard (double bowl)
+      tt_setting_tag: Uc
+    - setting_value: 1
+      setting_ui_label: Single bowl
+      setting_doc_desc: Single bowl
+      tt_setting_name: Single bowl
+      tt_setting_tag: Lc
+  doc_group: chars
+  doc_order: 201
+  doc_name: Capital B hook
+  doc_affects: U+0181
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv14
+  fonts: G
+  version_added: 5
+  cv_label: Lowercase beta
+  cv_tooltip: Alternate form of lowercase beta with serif on bottom
+  cv_sample: 
+  tt_tag: BetaSerif
+  tt_name: Lowercase beta
+  tt_value: Standard (no serif)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (no serif)
+      tt_setting_name: Standard (no serif)
+      tt_setting_tag: F
+    - setting_value: 1
+      setting_ui_label: With serif
+      setting_doc_desc: With serif
+      tt_setting_name: With serif
+      tt_setting_tag: T
+  doc_group: grk
+  doc_order: 521
+  doc_name: Lowercase beta
+  doc_affects: U+03B2 U+1D66 U+1D5D
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv17
+  fonts: CDGA
+  version_added: 5
+  cv_label: Capital D hook
+  cv_tooltip: Alternate form of Capital D hook with half bowl and right hook
+  cv_sample: 
+  tt_tag: LgDHk
+  tt_name: Capital D hook
+  tt_value: Standard (full bowl)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (full bowl)
+      tt_setting_name: Standard (full bowl)
+      tt_setting_tag: Uc
+    - setting_value: 1
+      setting_ui_label: Half bowl
+      setting_doc_desc: Half bowl
+      tt_setting_name: Half bowl
+      tt_setting_tag: Lc
+  doc_group: chars
+  doc_order: 202
+  doc_name: Capital D hook
+  doc_affects: U+018A
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv19
+  fonts: CDGA
+  version_added: 5
+  cv_label: Lowercase ezh curl
+  cv_tooltip: Alternate form of lowercase ezh curl with large bowl
+  cv_sample: 
+  tt_tag: SmEzhCrl
+  tt_name: Lowercase ezh curl
+  tt_value: Standard (small bowl)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (small bowl)
+      tt_setting_name: Standard (small bowl)
+      tt_setting_tag: Sm
+    - setting_value: 1
+      setting_ui_label: Large bowl
+      setting_doc_desc: Large bowl
+      tt_setting_name: Large bowl
+      tt_setting_tag: Lrg
+  doc_group: chars
+  doc_order: 223
+  doc_name: Lowercase ezh curl
+  doc_affects: U+0293
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv20
+  fonts: CDGA
+  version_added: 5
+  cv_label: Capital Ezh
+  cv_tooltip: Alternate form of capital Ezh that resembles a reversed Sigma
+  cv_sample: 
+  tt_tag: LgEzh
+  tt_name: Capital Ezh
+  tt_value: Standard
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard
+      tt_setting_name: Standard
+      tt_setting_tag: Nrml
+    - setting_value: 1
+      setting_ui_label: Reversed sigma
+      setting_doc_desc: Reversed sigma
+      tt_setting_name: Reversed sigma
+      tt_setting_tag: RvSgma
+  doc_group: chars
+  doc_order: 222
+  doc_name: Capital Ezh
+  doc_affects: U+01B7 U+04E0
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv25
+  fonts: CDGA
+  version_added: 5
+  cv_label: Lowercase rams horn
+  cv_tooltip: Alternate forms of lowercase rams horm
+  cv_sample: 
+  tt_tag: RmHrn
+  tt_name: Lowercase rams horn
+  tt_value: Standard (small bowl)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (small bowl)
+      tt_setting_name: Standard (small bowl)
+      tt_setting_tag: Sm
+    - setting_value: 1
+      setting_ui_label: Large bowl
+      setting_doc_desc: Large bowl
+      tt_setting_name: Large bowl
+      tt_setting_tag: Lrg
+    - setting_value: 2
+      setting_ui_label: Small gamma
+      setting_doc_desc: Small gamma
+      tt_setting_name: Small gamma
+      tt_setting_tag: Gma
+  setting_value3: 
+  doc_group: chars
+  doc_order: 224
+  doc_name: Lowercase rams horn
+  doc_affects: U+0264
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv28
+  fonts: CDGA
+  version_added: 5
+  cv_label: Capital H stroke
+  cv_tooltip: Alternate form of capital H stroke with vertical stroke
+  cv_sample: 
+  tt_tag: LgHStrk
+  tt_name: Capital H stroke
+  tt_value: Standard (horiz stroke)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (horiz stroke)
+      tt_setting_name: Standard (horiz stroke)
+      tt_setting_tag: F
+    - setting_value: 1
+      setting_ui_label: Vertical stroke
+      setting_doc_desc: Vertical stroke
+      tt_setting_name: Vertical stroke
+      tt_setting_tag: Vrt
+  doc_group: chars
+  doc_order: 203
+  doc_name: Capital H stroke
+  doc_affects: U+0126
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv31
+  fonts: A
+  version_added: 5
+  cv_label: Lowercase i
+  cv_tooltip: Alternate form of lowercase i with curved tail
+  cv_sample: 
+  tt_tag: SmITail
+  tt_name: Lowercase i
+  tt_value: Standard (no tail)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (no tail)
+      tt_setting_name: Standard (no tail)
+      tt_setting_tag: Strt
+    - setting_value: 1
+      setting_ui_label: Curved tail
+      setting_doc_desc: Curved tail
+      tt_setting_name: Curved tail
+      tt_setting_tag: CrvTl
+  doc_group: chars
+  doc_order: 204
+  doc_name: Lowercase i
+  doc_affects: U+0069 U+00EC U+00ED U+00EE U+00EF U+0129 U+012B U+012D U+012F U+0131 U+01D0 U+0209 U+020B U+0365 U+1D62 U+1DA4 U+1E2C U+1E2D U+1E2F U+1EC9 U+1ECB U+2071
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv34
+  fonts: A
+  version_added: 5
+  cv_label: Lowercase j
+  cv_tooltip: Alternate form of lowercase j with top serif
+  cv_sample: 
+  tt_tag: SmJSerif
+  tt_name: Lowercase j
+  tt_value: Standard (no top serif)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (no top serif)
+      tt_setting_name: Standard (no top serif)
+      tt_setting_tag: NoSrf
+    - setting_value: 1
+      setting_ui_label: Top serif
+      setting_doc_desc: Top serif
+      tt_setting_name: Top serif
+      tt_setting_tag: TopSrf
+  doc_group: chars
+  doc_order: 206
+  doc_name: Lowercase j
+  doc_affects: U+006A U+0135 U+01F0 U+0237 U+0249 U+025F U+029d U+02B2 U+1DA1 U+1DA8 U+2C7C
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv35
+  fonts: A
+  version_added: 6
+  cv_label: Capital J
+  cv_tooltip: Alternate form of capital J with bar across top
+  cv_sample: 
+  tt_tag: LgJBar
+  tt_name: Capital J
+  tt_value: Standard (no top bar)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (no top bar)
+      tt_setting_name: Standard (no top bar)
+      tt_setting_tag: NoBar
+    - setting_value: 1
+      setting_ui_label: Top bar
+      setting_doc_desc: Top bar
+      tt_setting_name: Top bar
+      tt_setting_tag: TopBar
+  doc_group: chars
+  doc_order: 205
+  doc_name: Capital J
+  doc_affects: U+004A U+006A U+0134 U+0135 U+0248 U+0249 U+029D U+1D0A U+1D36 U+A7B2
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv37
+  fonts: CDGA
+  version_added: 5
+  cv_label: Lowercase J stroke hook
+  cv_tooltip: Alternate form of lowercase j stroke hook with top serif
+  cv_sample: 
+  tt_tag: JStrk
+  tt_name: Lowercase J stroke hook
+  tt_value: Standard (no top serif)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (no top serif)
+      tt_setting_name: Standard (no top serif)
+      tt_setting_tag: NoSrf
+    - setting_value: 1
+      setting_ui_label: Top serif
+      setting_doc_desc: Top serif
+      tt_setting_name: Top serif
+      tt_setting_tag: TopSrf
+  doc_group: chars
+  doc_order: 207
+  doc_name: Lowercase J stroke hook
+  doc_affects: U+0284
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv39
+  fonts: A
+  version_added: 5
+  cv_label: Lowercase l
+  cv_tooltip: Alternate form of lowercase l with curved tail
+  cv_sample: 
+  tt_tag: SmLTail
+  tt_name: Lowercase l
+  tt_value: Standard (no tail)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (no tail)
+      tt_setting_name: Standard (no tail)
+      tt_setting_tag: Strt
+    - setting_value: 1
+      setting_ui_label: Curved tail
+      setting_doc_desc: Curved tail
+      tt_setting_name: Curved tail
+      tt_setting_tag: CrvTl
+  doc_group: chars
+  doc_order: 208
+  doc_name: Lowercase l
+  doc_affects: U+006C U+013A U+013C U+013E U+0140 U+0142 U+019A U+026B U+026C U+02E1 U+1D85 U+1DAA U+1E37 U+1E39 U+1E3B U+1E3D U+2C61 U+A749 U+2097
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv43
+  fonts: CDGA
+  version_added: 5
+  cv_label: Capital Eng
+  cv_tooltip: Alternate forms of capital Eng
+  cv_sample: 
+  tt_tag: Eng
+  tt_name: Capital Eng
+  tt_value: Standard (lowercase form)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (lowercase form)
+      tt_setting_name: Standard (lowercase form)
+      tt_setting_tag: LgDsc
+    - setting_value: 1
+      setting_ui_label: Lowercase no descender
+      setting_doc_desc: Lowercase no descender
+      tt_setting_name: Lowercase no descender
+      tt_setting_tag: LgBsln
+    - setting_value: 2
+      setting_ui_label: Capital form
+      setting_doc_desc: Capital form
+      tt_setting_name: Capital form
+      tt_setting_tag: CapN
+    - setting_value: 3
+      setting_ui_label: Lowercase short stem
+      setting_doc_desc: Lowercase short stem
+      tt_setting_name: Lowercase short stem
+      tt_setting_tag: LgShrtStm
+  doc_group: chars
+  doc_order: 209
+  doc_name: Capital Eng
+  doc_affects: U+014A
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv44
+  fonts: CDGA
+  version_added: 5
+  cv_label: Capital N left hook
+  cv_tooltip: Alternate form of capital N left hook with lowercase form
+  cv_sample: 
+  tt_tag: LgNLftHk
+  tt_name: Capital N left hook
+  tt_value: Standard (capital form)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (capital form)
+      tt_setting_name: Standard (capital form)
+      tt_setting_tag: Uc
+    - setting_value: 1
+      setting_ui_label: Lowercase form
+      setting_doc_desc: Lowercase form
+      tt_setting_name: Lowercase form
+      tt_setting_tag: Lc
+  doc_group: chars
+  doc_order: 210
+  doc_name: Capital N left hook
+  doc_affects: U+019D
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv46
+  fonts: CDGA
+  version_added: 5
+  cv_label: Open O
+  cv_tooltip: Alternate form of open o with serif at the top
+  cv_sample: 
+  tt_tag: OpnO
+  tt_name: Open O
+  tt_value: Standard (bottom serif)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (bottom serif)
+      tt_setting_name: Standard (bottom serif)
+      tt_setting_tag: BtmSrf
+    - setting_value: 1
+      setting_ui_label: Top serif
+      setting_doc_desc: Top serif
+      tt_setting_name: Top serif
+      tt_setting_tag: TopSrf
+  doc_group: chars
+  doc_order: 211
+  doc_name: Open O
+  doc_affects: U+0186 U+0254 U+1D10 U+1D53 U+1D97
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv47
+  fonts: CDGA
+  version_added: 5
+  cv_label: OU
+  cv_tooltip: Alternate form of ou with open top
+  cv_sample: 
+  tt_tag: Ou
+  tt_name: OU
+  tt_value: Standard (closed top)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (closed top)
+      tt_setting_name: Standard (closed top)
+      tt_setting_tag: Clsd
+    - setting_value: 1
+      setting_ui_label: Open top
+      setting_doc_desc: Open top
+      tt_setting_name: Open top
+      tt_setting_tag: Opn
+  doc_group: chars
+  doc_order: 212
+  doc_name: OU
+  doc_affects: U+0222 U+0223 U+1D3D U+1D15
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv49
+  fonts: CDGA
+  version_added: 5
+  cv_label: Lowercase p hook
+  cv_tooltip: Alternate form of lowercae p hook with hook on right
+  cv_sample: 
+  tt_tag: SmPHk
+  tt_name: Lowercase p hook
+  tt_value: Standard (left hook)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (left hook)
+      tt_setting_name: Standard (left hook)
+      tt_setting_tag: LftHk
+    - setting_value: 1
+      setting_ui_label: Right hook
+      setting_doc_desc: Right hook
+      tt_setting_name: Right hook
+      tt_setting_tag: RtHk
+  doc_group: chars
+  doc_order: 213
+  doc_name: Lowercase p hook
+  doc_affects: U+01A5
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv51
+  fonts: A
+  version_added: 5
+  cv_label: Lowercase q
+  cv_tooltip: Alternate form of lowercase q with pointed descender
+  cv_sample: 
+  tt_tag: SmQTail
+  tt_name: Lowercase q
+  tt_value: Standard (not pointed)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (not pointed)
+      tt_setting_name: Standard (not pointed)
+      tt_setting_tag: Strt
+    - setting_value: 1
+      setting_ui_label: Pointed
+      setting_doc_desc: Pointed
+      tt_setting_name: Pointed
+      tt_setting_tag: T
+  doc_group: chars
+  doc_order: 215
+  doc_name: Lowercase q
+  doc_affects: U+0071 U+A757 U+A759 U+02A0
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv52
+  fonts: A
+  version_added: 5
+  cv_label: Capital Q
+  cv_tooltip: Alternate form of capital Q with crossing tail
+  cv_sample: 
+  tt_tag: CapQ
+  tt_name: Capital Q
+  tt_value: Standard (outside tail)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (outside tail)
+      tt_setting_name: Standard (outside tail)
+      tt_setting_tag: F
+    - setting_value: 1
+      setting_ui_label: Crossing tail
+      setting_doc_desc: Crossing tail
+      tt_setting_name: Crossing tail
+      tt_setting_tag: T
+  doc_group: chars
+  doc_order: 214
+  doc_name: Capital Q
+  doc_affects: U+0051 U+A756 U+A758
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv55
+  fonts: CDGA
+  version_added: 5
+  cv_label: Capital R tail
+  cv_tooltip: Alternate form of capital R tail with lowercase form
+  cv_sample: 
+  tt_tag: LgRTl
+  tt_name: Capital R tail
+  tt_value: Standard (capital form)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (capital form)
+      tt_setting_name: Standard (capital form)
+      tt_setting_tag: Uc
+    - setting_value: 1
+      setting_ui_label: Lowercase form
+      setting_doc_desc: Lowercase form
+      tt_setting_name: Lowercase form
+      tt_setting_tag: Lc
+  doc_group: chars
+  doc_order: 216
+  doc_name: Capital R tail
+  doc_affects: U+2C64
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv56
+  fonts: A
+  version_added: 5
+  cv_label: Lowercase t
+  cv_tooltip: Alternate form of lowercase t with no tail
+  cv_sample: 
+  tt_tag: SmTTail
+  tt_name: Lowercase t
+  tt_value: Standard (curved tail)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (curved tail)
+      tt_setting_name: Standard (curved tail)
+      tt_setting_tag: CrvTl
+    - setting_value: 1
+      setting_ui_label: No tail
+      setting_doc_desc: No tail
+      tt_setting_name: No tail
+      tt_setting_tag: Strt
+  doc_group: chars
+  doc_order: 217
+  doc_name: Lowercase t
+  doc_affects: U+0074 U+0163 U+0165 U+0167 U+01AB U+01AD U+021B U+0287 U+02A6 U+02A7 U+02A8 U+036D U+1D57 U+1D75 U+1D7A U+1DB5 U+1E6B U+1E6D U+1E6F U+1E71 U+1E97 U+209C U+2C66 U+A729
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv57
+  fonts: CDGA
+  version_added: 5
+  cv_label: Capital T hook
+  cv_tooltip: Alternate form of capital T hook with hook on right
+  cv_sample: 
+  tt_tag: LgTHk
+  tt_name: Capital T hook
+  tt_value: Standard (left hook)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (left hook)
+      tt_setting_name: Standard (left hook)
+      tt_setting_tag: LftHk
+    - setting_value: 1
+      setting_ui_label: Right Hook
+      setting_doc_desc: Right hook
+      tt_setting_name: Right hook
+      tt_setting_tag: RtHk
+  doc_group: chars
+  doc_order: 218
+  doc_name: Capital T hook
+  doc_affects: U+01AC
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv62
+  fonts: CDGA
+  version_added: 5
+  cv_label: V hook
+  cv_tooltip: Alternate forms of V hook
+  cv_sample: 
+  tt_tag: VHk
+  tt_name: V hook
+  tt_value: Standard (curved)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (curved)
+      tt_setting_name: Standard (curved)
+      tt_setting_tag: Crvd
+    - setting_value: 1
+      setting_ui_label: Straight with low hook
+      setting_doc_desc: Straight with low hook
+      tt_setting_name: Straight with low hook
+      tt_setting_tag: StrtLftLowHk
+    - setting_value: 2
+      setting_ui_label: Straight with high hook
+      setting_doc_desc: Straight with high hook
+      tt_setting_name: Straight with high hook
+      tt_setting_tag: StrtLftHk
+  setting_value3: 
+  doc_group: chars
+  doc_order: 219
+  doc_name: V hook
+  doc_affects: U+01B2 U+028B U+1DB9
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv67
+  fonts: A
+  version_added: 5
+  cv_label: Lowercase y
+  cv_tooltip: Alternate form of lowercase y with straight tail
+  cv_sample: 
+  tt_tag: SmYTail
+  tt_name: Lowercase y
+  tt_value: Standard (curved tail)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (curved tail)
+      tt_setting_name: Standard (curved tail)
+      tt_setting_tag: CrvTl
+    - setting_value: 1
+      setting_ui_label: Straight tail
+      setting_doc_desc: Straight tail
+      tt_setting_name: Straight tail
+      tt_setting_tag: Strt
+  doc_group: chars
+  doc_order: 221
+  doc_name: Lowercase y
+  doc_affects: U+0079 U+024F U+02B8 U+00FD U+1EF3 U+0177 U+1E99 U+00FF U+1EF9 U+1E8F U+0233 U+1EF7 U+1EF5 U+01B4 U+028E U+F1CE U+F267
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv68
+  fonts: CDGA
+  version_added: 5
+  cv_label: Capital Y hook
+  cv_tooltip: Alternate form of capital Y hook with hook on left
+  cv_sample: 
+  tt_tag: LgYHk
+  tt_name: Capital Y hook
+  tt_value: Standard (right hook)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (right hook)
+      tt_setting_name: Standard (right hook)
+      tt_setting_tag: RtHk
+    - setting_value: 1
+      setting_ui_label: Left hook
+      setting_doc_desc: Left hook
+      tt_setting_name: Left hook
+      tt_setting_tag: LftHk
+  doc_group: chars
+  doc_order: 220
+  doc_name: Capital Y hook
+  doc_affects: U+01B3
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv70
+  fonts: CDGA
+  version_added: 5
+  cv_label: Modifier apostrophe
+  cv_tooltip: Alternate larger form of modifier apostrophe
+  cv_sample: 
+  tt_tag: ModAp
+  tt_name: Modifier apostrophe
+  tt_value: Standard (small)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (small)
+      tt_setting_name: Standard (small)
+      tt_setting_tag: Sm
+    - setting_value: 1
+      setting_ui_label: Large
+      setting_doc_desc: Large
+      tt_setting_name: Large
+      tt_setting_tag: Lg
+  doc_group: diacsym
+  doc_order: 311
+  doc_name: Modifier apostrophe
+  doc_affects: U+02BC U+A78B U+A78C
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv71
+  fonts: CDGA
+  version_added: 5
+  cv_label: Modifier colon
+  cv_tooltip: Alternate expanded form of modifier colon 
+  cv_sample: 
+  tt_tag: ModCol
+  tt_name: Modifier colon
+  tt_value: Standard (tight)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (tight)
+      tt_setting_name: Standard (tight)
+      tt_setting_tag: Tght
+    - setting_value: 1
+      setting_ui_label: Expanded
+      setting_doc_desc: Expanded
+      tt_setting_name: Expanded
+      tt_setting_tag: Wd
+  doc_group: diacsym
+  doc_order: 312
+  doc_name: Modifier colon
+  doc_affects: U+A789
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv75
+  fonts: CDGA
+  version_added: 5
+  cv_label: Vietnamese diacritics
+  cv_tooltip: Alternate Vietnamese forms of certain circumflex and breve diacritic combinations
+  cv_sample: 
+  tt_tag: VIEdiacs
+  tt_name: Vietnamese diacritics
+  tt_value: Standard (stacked)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (stacked)
+      tt_setting_name: Standard (stacked)
+      tt_setting_tag: F
+    - setting_value: 1
+      setting_ui_label: Vietnamese style
+      setting_doc_desc: Vietnamese style
+      tt_setting_name: Vietnamese style
+      tt_setting_tag: T
+  doc_group: diacsym
+  doc_order: 302
+  doc_name: Vietnamese diacritics
+  doc_affects: U+1EA4 U+1EA5 U+1EA6 U+1EA7 U+1EA8 U+1EA9 U+1EAA U+1EAB U+1EAE U+1EAF U+1EB0 U+1EB1 U+1EB2 U+1EB3 U+1EB4 U+1EB5 U+1EBE U+1EBF U+1EC0 U+1EC1 U+1EC2 U+1EC3 U+1EC4 U+1EC5 U+1ED0 U+1ED1 U+1ED2 U+1ED3 U+1ED4 U+1ED5 U+1ED6 U+1ED7
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv76
+  fonts: CDGA
+  version_added: 5
+  cv_label: Ogonek
+  cv_tooltip: Alternate straight form of ogonek
+  cv_sample: 
+  tt_tag: Ognk
+  tt_name: Ogonek
+  tt_value: Standard (curved)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (curved)
+      tt_setting_name: Standard (curved)
+      tt_setting_tag: Crvd
+    - setting_value: 1
+      setting_ui_label: Straight
+      setting_doc_desc: Straight
+      tt_setting_name: Straight
+      tt_setting_tag: Strt
+  doc_group: diacsym
+  doc_order: 304
+  doc_name: Ogonek
+  doc_affects: U+0328 U+0104 U+0105 U+0118 U+0119 U+012E U+012F U+0172 U+0173 U+01EA U+01EB U+01EC U+01ED
+  doc_sample: 
+  doc_sample_addl: (anything with ◌̨)
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv77
+  fonts: CDGA
+  version_added: 5
+  cv_label: Caron
+  cv_tooltip: Alternate global style form of caron 
+  cv_sample: 
+  tt_tag: Caron
+  tt_name: Caron
+  tt_value: Standard (European)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (European)
+      tt_setting_name: Standard (European)
+      tt_setting_tag: F
+    - setting_value: 1
+      setting_ui_label: Global style
+      setting_doc_desc: Global style
+      tt_setting_name: Global style
+      tt_setting_tag: T
+  doc_group: diacsym
+  doc_order: 305
+  doc_name: Caron
+  doc_affects: U+010F U+013D U+013E U+0165
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv78
+  fonts: G
+  version_added: 5
+  cv_label: Greek circumflex
+  cv_tooltip: Alternate Porsonic form of Greek circumflex
+  cv_sample: 
+  tt_tag: PorCirc
+  tt_name: Greek circumflex
+  tt_value: Standard (tilde form)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (tilde form)
+      tt_setting_name: Standard (tilde form)
+      tt_setting_tag: F
+    - setting_value: 1
+      setting_ui_label: Porsonic form
+      setting_doc_desc: Porsonic form
+      tt_setting_name: Porsonic form
+      tt_setting_tag: Por
+  doc_group: grk
+  doc_order: 501
+  doc_name: Greek circumflex
+  doc_affects: U+0342 U+1F06 U+1F07 U+1F0E U+1F0F U+1F26 U+1F27 U+1F2E U+1F2F U+1F36 U+1F37 U+1F3E U+1F3F U+1F56 U+1F57 U+1F5F U+1F66 U+1F67 U+1F6E U+1F6F U+1F86 U+1F87 U+1F8E U+1F8F U+1F96 U+1F97 U+1F9E U+1F9F U+1FA6 U+1FA7 U+1FAE U+1FAF U+1FB6 U+1FB7 U+1FC0 U+1FC1 U+1FC6 U+1FC7 U+1FCF U+1FD6 U+1FD7 U+1FDF U+1FE6 U+1FE7 U+1FF6 U+1FF7
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv79
+  fonts: CDGA
+  version_added: 6
+  cv_label: Kayan diacritics
+  cv_tooltip: Alternate side by side alignment of grave and acute for Kayan 
+  cv_sample: 
+  tt_tag: Kayan
+  tt_name: Kayan diacritics
+  tt_value: Standard (stacked)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (stacked)
+      tt_setting_name: Standard (stacked)
+      tt_setting_tag: Stk
+    - setting_value: 1
+      setting_ui_label: Side by side
+      setting_doc_desc: Side by side
+      tt_setting_name: Side by side
+      tt_setting_tag: Side
+  doc_group: diacsym
+  doc_order: 303
+  doc_name: Kayan diacritics
+  doc_affects: U+0300 U+0301
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv80
+  fonts: CDGA
+  version_added: 5
+  cv_label: Cyrillic E
+  cv_tooltip: Alternate Mongolian style forms of Cyrillic E 
+  cv_sample: 
+  tt_tag: CyrE
+  tt_name: Cyrillic E
+  tt_value: Standard
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard
+      tt_setting_name: Standard
+      tt_setting_tag: F
+    - setting_value: 1
+      setting_ui_label: Mongolian style
+      setting_doc_desc: Mongolian style
+      tt_setting_name: Mongolian style
+      tt_setting_tag: T
+  doc_group: cyr
+  doc_order: 401
+  doc_name: Cyrillic E
+  doc_affects: U+042D U+044D
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv81
+  fonts: CDGA
+  version_added: 5
+  cv_label: Cyrillic lowercase shha
+  cv_tooltip: Alternate form of Cyrillic lowercase shha based on capital form
+  cv_sample: 
+  tt_tag: CyShha
+  tt_name: Cyrillic lowercase shha
+  tt_value: Standard
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard
+      tt_setting_name: Standard
+      tt_setting_tag: F
+    - setting_value: 1
+      setting_ui_label: Capital form
+      setting_doc_desc: Capital form
+      tt_setting_name: Capital form
+      tt_setting_tag: Uc
+  doc_group: cyr
+  doc_order: 402
+  doc_name: Cyrillic lowercase shha
+  doc_affects: U+04BB
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv82
+  fonts: CDGA
+  version_added: 5
+  cv_label: Cyrillic breve
+  cv_tooltip: Alternate Cyrillic form of breve
+  cv_sample: 
+  tt_tag: CmbBrvCyr
+  tt_name: Cyrillic breve
+  tt_value: Standard (Latin form)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (Latin form)
+      tt_setting_name: Standard (Latin form)
+      tt_setting_tag: F
+    - setting_value: 1
+      setting_ui_label: Cyrillic form
+      setting_doc_desc: Cyrillic form
+      tt_setting_name: Cyrillic form
+      tt_setting_tag: T
+  doc_group: cyr
+  doc_order: 411
+  doc_name: Cyrillic breve
+  doc_affects: U+0306
+  doc_sample: 
+  doc_sample_addl: (anything with ◌̆)
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv83
+  fonts: G
+  version_added: 6
+  cv_label: Greek iota adscript
+  cv_tooltip: Alternate subscript form of Greek iota adscript (ypogegrammeni)
+  cv_sample: 
+  tt_tag: IotaAd
+  tt_name: Greek iota adscript
+  tt_value: Standard (adscript)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (adscript)
+      tt_setting_name: Standard (adscript)
+      tt_setting_tag: Ad
+    - setting_value: 1
+      setting_ui_label: Subscript
+      setting_doc_desc: Subscript
+      tt_setting_name: Subscript
+      tt_setting_tag: Sub
+  doc_group: grk
+  doc_order: 511
+  doc_name: Greek iota adscript
+  doc_affects: U+1F88 U+1F89 U+1F8A U+1F8B U+1F8C U+1F8D U+1F8E U+1F8F U+1F98 U+1F99 U+1F9A U+1F9B U+1F9C U+1F9D U+1F9E U+1F9F U+1FA8 U+1FA9 U+1FAA U+1FAB U+1FAC U+1FAD U+1FAE U+1FAF U+1FBC U+1FCC U+1FFC
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv90
+  fonts: CDGA
+  version_added: 5
+  cv_label: Chinantec tones
+  cv_tooltip: Alternate Chinantec style forms of tone marks
+  cv_sample: 
+  tt_tag: CHZtn
+  tt_name: Chinantec tones
+  tt_value: Standard
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard
+      tt_setting_name: Standard
+      tt_setting_tag: F
+    - setting_value: 1
+      setting_ui_label: Chinantec style
+      setting_doc_desc: Chinantec style
+      tt_setting_name: Chinantec style
+      tt_setting_tag: T
+  doc_group: tone
+  doc_order: 701
+  doc_name: Chinantec tones
+  doc_affects: U+02CB U+02C8 U+02C9 U+02CA
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv91
+  fonts: CDGA
+  version_added: 5
+  cv_label: Tone letters
+  cv_tooltip: Alternate numeral forms of tone letters
+  cv_sample: 
+  tt_tag: TnNmbr
+  tt_name: Tone letters
+  tt_value: Standard (bars)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (bars)
+      tt_setting_name: Standard (bars)
+      tt_setting_tag: F
+    - setting_value: 1
+      setting_ui_label: Numerals
+      setting_doc_desc: Numerals
+      tt_setting_name: Numerals
+      tt_setting_tag: T
+  doc_group: tone
+  doc_order: 711
+  doc_name: Tone letters
+  doc_affects: U+02E5 U+02E6 U+02E7 U+02E8 U+02E9 U+A712 U+A713 U+A714 U+A715 U+A716
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv92
+  fonts: CDGA
+  version_added: 5
+  cv_label: Tone contour staves
+  cv_tooltip: Alternate form of tone letters without contour staves
+  cv_sample: 
+  tt_tag: TnStvsHd
+  tt_name: Tone contour staves
+  tt_value: Standard (visible)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (visible)
+      tt_setting_name: Standard (visible)
+      tt_setting_tag: F
+    - setting_value: 1
+      setting_ui_label: Hidden
+      setting_doc_desc: Hidden
+      tt_setting_name: Hidden
+      tt_setting_tag: T
+  doc_group: tone
+  doc_order: 721
+  doc_name: Tone contour staves
+  doc_affects: U+02E5 U+02E6 U+02E7 U+02E8 U+02E9 U+A712 U+A713 U+A714 U+A715 U+A716
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv98
+  fonts: CDGA
+  version_added: 5
+  cv_label: Empty set
+  cv_tooltip: Alternate form of empty set based on zero
+  cv_sample: 
+  tt_tag: EmpSet
+  tt_name: Empty set
+  tt_value: Standard (circular form)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (circular form)
+      tt_setting_name: Standard (circular form)
+      tt_setting_tag: Crcl
+    - setting_value: 1
+      setting_ui_label: Zero form
+      setting_doc_desc: Zero form
+      tt_setting_name: Zero form
+      tt_setting_tag: Zro
+  doc_group: diacsym
+  doc_order: 351
+  doc_name: Empty set
+  doc_affects: U+2205
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: locl
+  fonts: CDGA
+  version_added: 5
+  locl_script: cyrl
+  locl_language: SRB
+  locl_css: sr
+  tt_tag: Serb
+  tt_name: Cyrillic Serbian letters
+  tt_value: Standard
+  setting_value0: 
+      setting_doc_desc: Standard
+      tt_setting_name: Standard
+      tt_setting_tag: F
+  setting_value1: 
+      setting_doc_desc: Serbian forms
+      tt_setting_name: Serbian forms
+      tt_setting_tag: T
+  doc_group: cyr
+  doc_order: 471
+  doc_name: Cyrillic Serbian letters
+  doc_affects: U+0431 U+0433 U+0434 U+043F U+0442
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: smcp
+  fonts: CDGA
+  version_added: 5
+  tt_tag: SmCp
+  tt_name: Small caps from lowercase
+  tt_value: Standard (lowercase forms)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard
+      tt_setting_name: Standard (lowercase forms)
+      tt_setting_tag: F
+    - setting_value: 1
+      setting_doc_desc: Small caps
+      tt_setting_name: Small caps
+      tt_setting_tag: T
+  doc_group: style
+  doc_order: 101
+  doc_name: Small caps from lowercase
+  doc_affects: all lowercase letters with capital equivalents
+  doc_sample: 
+  doc_sample_addl: (all letters with capital equivalents)
+  ftml_comment: 
+  ftml_string: 
+
+- tag: ss01
+  fonts: CDG
+  version_added: 5
+  ss_name: Single-story a and g
+  tt_tag: Lit
+  tt_name: Single-story a and g
+  tt_value: Standard (double-story)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard
+      tt_setting_name: Standard (double-story)
+      tt_setting_tag: F
+    - setting_value: 1
+      setting_doc_desc: Single-story
+      tt_setting_name: Single-story
+      tt_setting_tag: T
+  doc_group: style
+  doc_order: 111
+  doc_name: Single-story a and g
+  doc_affects: U+0061 U+00E0 U+00E1 U+00E2 U+00E3 U+00E4 U+00E5 U+0101 U+0103 U+0105 U+01CE U+01DF U+01E1 U+01FB U+0201 U+0203 U+0227 U+1E01 U+1E9A U+1EA1 U+1EA3 U+1EA5 U+1EA7 U+1EA9 U+1EAB U+1EAD U+1EAF U+1EB1 U+1EB3 U+1EB5 U+1EB7 U+2C65 U+2090 U+1D43 U+0363 U+0067 U+011D U+011F U+0121 U+0123 U+01E7 U+01F5 U+01E5 U+1E21 U+A7A1 U+1D4D
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: ss01
+  fonts: A
+  version_added: 5
+  ss_name: Double-story a and g
+  tt_tag: Lit
+  tt_name: Double-story a and g
+  tt_value: Standard (single-story)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard
+      tt_setting_name: Standard (single-story)
+      tt_setting_tag: F
+    - setting_value: 1
+      setting_doc_desc: Double-story
+      tt_setting_name: Double-story
+      tt_setting_tag: T
+  doc_group: style
+  doc_order: 111
+  doc_name: Double-story a and g
+  doc_affects: U+0061 U+00E0 U+00E1 U+00E2 U+00E3 U+00E4 U+00E5 U+0101 U+0103 U+0105 U+01CE U+01DF U+01E1 U+01FB U+0201 U+0203 U+0227 U+1E01 U+1E9A U+1EA1 U+1EA3 U+1EA5 U+1EA7 U+1EA9 U+1EAB U+1EAD U+1EAF U+1EB1 U+1EB3 U+1EB5 U+1EB7 U+2C65 U+2090 U+1D43 U+0363 U+0067 U+011D U+011F U+0121 U+0123 U+01E7 U+01F5 U+01E5 U+1E21 U+A7A1 U+1D4D
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: ss04
+  fonts: CDGA
+  version_added: 5
+  ss_name: Barred-bowl forms
+  tt_tag: BarBwl
+  tt_name: Barred-bowl forms
+  tt_value: Standard
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard
+      tt_setting_name: Standard
+      tt_setting_tag: F
+    - setting_value: 1
+      setting_doc_desc: Barred bowls
+      tt_setting_name: Barred bowls
+      tt_setting_tag: T
+  doc_group: style
+  doc_order: 141
+  doc_name: Barred-bowl forms
+  doc_affects: U+0111 U+0180 U+01E5
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: ss05
+  fonts: CDGA
+  version_added: 5
+  ss_name: Slanted italic specials
+  tt_tag: SlntItlc
+  tt_name: Slanted italic specials
+  tt_value: Standard
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard
+      tt_setting_name: Standard
+      tt_setting_tag: F
+    - setting_value: 1
+      setting_doc_desc: Slanted
+      tt_setting_name: Slanted
+      tt_setting_tag: T
+  doc_group: style
+  doc_order: 151
+  doc_name: Slanted italic specials
+  doc_affects: U+0061 U+00E3 U+00E0 U+00E1 U+00E2 U+00E4 U+00E5 U+0101 U+0103 U+01CE U+01DF U+01E1 U+01FB U+0201 U+0203 U+0227 U+1E01 U+1E9A U+1EA3 U+1EA5 U+1EA7 U+1EA9 U+1EAB U+1EAD U+1EAF U+1EB1 U+1EB3 U+1EB5 U+1EA1 U+1EB7 U+2C65 U+0250 U+00E6 U+0066 U+1E1F U+0069 U+00EC U+00ED U+00EE U+00EF U+0129 U+012B U+012D U+012F U+01D0 U+0209 U+020B U+1E2D U+1E2F U+1EC9 U+1ECB U+0131 U+006C U+013A U+1E37 U+1E39 U+1E3B U+1E3D U+0076 U+1E7D U+1E7F U+007A U+017A U+017C U+017E U+1E91 U+1E93 U+1E95 U+0493 U+04FB U+F327 U+A749 U+A75F U+2097
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: ss07
+  fonts: G
+  version_added: 5
+  tt_tag: LpDiacs
+  tt_name: Low-profile diacritics
+  tt_value: 
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard
+      tt_setting_name: False
+      tt_setting_tag: F
+    - setting_value: 1
+      setting_doc_desc: Low-profile
+      tt_setting_name: True
+      tt_setting_tag: T
+  doc_group: diacsym
+  doc_order: 301
+  doc_name: Low-profile diacritics
+  doc_affects: U+0300 U+0301 U+0302 U+0303 U+0304 U+0307 U+0308 U+030C
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: ss11
+  fonts: CDG
+  version_added: 6
+  ss_name: Single-story a
+  tt_tag: SSA
+  tt_name: Single-story a
+  tt_value: Standard (double-story)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard
+      tt_setting_name: Standard (double-story)
+      tt_setting_tag: F
+    - setting_value: 1
+      setting_doc_desc: Single-story
+      tt_setting_name: Single-story
+      tt_setting_tag: T
+  doc_group: style
+  doc_order: 121
+  doc_name: Single-story a
+  doc_affects: U+0061 U+00E0 U+00E1 U+00E2 U+00E3 U+00E4 U+00E5 U+0101 U+0103 U+0105 U+01CE U+01DF U+01E1 U+01FB U+0201 U+0203 U+0227 U+1E01 U+1E9A U+1EA1 U+1EA3 U+1EA5 U+1EA7 U+1EA9 U+1EAB U+1EAD U+1EAF U+1EB1 U+1EB3 U+1EB5 U+1EB7 U+2C65 U+2090 U+1D43 U+0363
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: ss12
+  fonts: CDG
+  version_added: 6
+  ss_name: Single-story g
+  tt_tag: SSG
+  tt_name: Single-story g
+  tt_value: Standard (double-story)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard
+      tt_setting_name: Standard (double-story)
+      tt_setting_tag: F
+    - setting_value: 1
+      setting_doc_desc: Single-story
+      tt_setting_name: Single-story
+      tt_setting_tag: T
+  doc_group: style
+  doc_order: 122
+  doc_name: Single-story g
+  doc_affects: U+0067 U+011D U+011F U+0121 U+0123 U+01E7 U+01F5 U+01E5 U+1E21 U+A7A1 U+1D4D
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: ss13
+  fonts: A
+  version_added: 6
+  ss_name: Double-story a
+  tt_tag: DSA
+  tt_name: Double-story a
+  tt_value: Standard (single-story)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard
+      tt_setting_name: Standard (single-story)
+      tt_setting_tag: F
+    - setting_value: 1
+      setting_doc_desc: Double-story
+      tt_setting_name: Double-story
+      tt_setting_tag: T
+  doc_group: style
+  doc_order: 123
+  doc_name: Double-story a
+  doc_affects: U+0061 U+00E0 U+00E1 U+00E2 U+00E3 U+00E4 U+00E5 U+0101 U+0103 U+0105 U+01CE U+01DF U+01E1 U+01FB U+0201 U+0203 U+0227 U+1E01 U+1E9A U+1EA1 U+1EA3 U+1EA5 U+1EA7 U+1EA9 U+1EAB U+1EAD U+1EAF U+1EB1 U+1EB3 U+1EB5 U+1EB7 U+2C65 U+2090 U+1D43 U+0363
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: ss14
+  fonts: A
+  version_added: 6
+  ss_name: Double-story g
+  tt_tag: DSG
+  tt_name: Double-story g
+  tt_value: Standard (single-story)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard
+      tt_setting_name: Standard (single-story)
+      tt_setting_tag: F
+    - setting_value: 1
+      setting_doc_desc: Double-story
+      tt_setting_name: Double-story
+      tt_setting_tag: T
+  doc_group: style
+  doc_order: 124
+  doc_name: Double-story g
+  doc_affects: U+0067 U+011D U+011F U+0121 U+0123 U+01E7 U+01F5 U+01E5 U+1E21 U+A7A1 U+1D4D
+  doc_sample: 
+  doc_sample_addl: 
+  ftml_comment: 
+  ftml_string: 
+
+...
