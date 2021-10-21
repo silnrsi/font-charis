@@ -1005,23 +1005,6 @@ sub Special_glyphs_handle($\%\%\%\%)
 	}
 }
 
-sub Dblenc_get($\%)
-#parse the DblEnc.txt file which indicates deprecated PUA chars and their official USVs
-{
-	my ($dblenc_fn, $dblenc_usv) = @_;
-	
-	open FH, "<$dblenc_fn" or die("Could not open $dblenc_fn for reading\n");
-	while (<FH>)
-	{
-		chomp;
-		my @fields = split(/,/, $_);
-		if (scalar @fields != 3) {die("file $dblenc_fn has corrupt line: $_\n");}
-		my ($primary_usv, $deprecated_usv) = map {substr($_, 2)} ($fields[2], $fields[1]);
-		$dblenc_usv->{$primary_usv} = $deprecated_usv;
-	}
-	close FH;
-}
-
 sub Featsets_add_default($\@\%)
 #add a default featset to the featsets array
 #based on the name of the base glyph and the current featsets
@@ -1585,7 +1568,7 @@ sub Usage_print()
 	print <<END;
 RFComposer ver $version (c) SIL International 2007-2021.
 usage: 
-	RFComposer <switches> <font.ttf> <gsi.xml> <dblenc.txt> [<gsi_supp_fn.xml>]
+	RFComposer <switches> <font.ttf> <gsi.xml> <gsi_supp_fn.xml>
 	switches:
 		-a - adjust processing for Andika
 		-g - output no OpenType cmds (Graphite only)
@@ -1605,7 +1588,7 @@ sub cmd_line_exec() #for UltraEdit function list
 {}
 
 my (%feats, %usv_feat_to_ps_name, %featset_to_usvs, %dblenc_usv);
-my ($font_fn, $gsi_fn, $dblenc_fn, $gsi_supp_fn, $feat_all_fn, $feat_all_fh);
+my ($font_fn, $gsi_fn, $gsi_supp_fn, $feat_all_fn, $feat_all_fh);
 
 getopts($opt_str); #sets $opt?'s & removes the switch from @ARGV
 
@@ -1656,9 +1639,7 @@ if ($opt_l)
 }
 
 if (scalar @ARGV == 3)
-	{($font_fn, $gsi_fn, $dblenc_fn) = ($ARGV[0], $ARGV[1], $ARGV[2]); $gsi_supp_fn = undef;}
-elsif (scalar @ARGV == 4)
-	{($font_fn, $gsi_fn, $dblenc_fn, $gsi_supp_fn) = ($ARGV[0], $ARGV[1], $ARGV[2], $ARGV[3]);}
+	{($font_fn, $gsi_fn, $gsi_supp_fn) = ($ARGV[0], $ARGV[1], $ARGV[3]);}
 else
 	{Usage_print;}
 
@@ -1708,8 +1689,6 @@ if ($opt_z)
 	}
 	exit;
 }
-
-Dblenc_get($dblenc_fn, %dblenc_usv);
 
 if ($opt_d)
 {
