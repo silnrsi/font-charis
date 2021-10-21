@@ -14,7 +14,8 @@ use Getopt::Std;
 
 #### global variables & constants ####
 
-my $version = "1.7";
+my $version = "1.8";
+#1.8 - read feature info from GSUB table instead of Graphite Feat table
 #1.7 - add feature reduction rules. add special processing for Andika (because of "backwards" literacy feature
 #1.6 - handle four char Graphite feature tags in MGI and corresponding large integers in font
 #1.5 - add mechanism to handle glyphs with a suffix but no corresponding feature setting (eg LtnCapYHook.RtHook)
@@ -204,32 +205,32 @@ my %nm_to_tag = (
 #*** Be careful to not discard tags needed by fonts other than the one being worked on
 # "Show deprecated PUA" data retained for now to handle old MGI data
 my %featset_to_suffix = (
-	'BarBwl-T' => '\.BarBowl', 
-	'Caron-T' => '\.Caron', 
-	'CyShha-Uc' => '\.UCStyle', 
-	'CyrE-T' => '\.MongolStyle', 
+	'BarBwl-T' => '\.BarBowl',
+	'Caron-T' => '\.Caron',
+	'CyShha-Uc' => '\.UCStyle',
+	'CyrE-T' => '\.MongolStyle',
 	'Lit-T' => '(\.SngBowl|\.SngStory)',
-	'Lit-F' => '^[a-zA-Z0-9]+(\.|$)(?!SngBowl|SngStory)', 
-	'ModAp-Lg' => '\.Lrg', 
-	'Ognk-Strt' => '\.RetroHook', 
-	'OpnO-TopSrf' => '\.TopSerif', 
-	'Ou-Opn' => '\.OpenTop', 
-	'RONdiacs-T' => '\.CommaStyle', 
-	'SlntItlc-T' => '(\.SItal|\.2StorySItal)', 
+	'Lit-F' => '^[a-zA-Z0-9]+(\.|$)(?!SngBowl|SngStory)',
+	'ModAp-Lg' => '\.Lrg',
+	'Ognk-Strt' => '\.RetroHook',
+	'OpnO-TopSrf' => '\.TopSerif',
+	'Ou-Opn' => '\.OpenTop',
+	'RONdiacs-T' => '\.CommaStyle',
+	'SlntItlc-T' => '(\.SItal|\.2StorySItal)',
 #	'SmCp-T' => '\.SC',
 	'SmCp-T' => '\.sc',
 	'SmPHk-RtHk' => '\.BowlHook', 
-	'VHk-Crvd' => '(uni01B2|uni028B)(?!\.StraightLftHighHook|\.StraightLft)',  
-	'VHk-StrtLftLowHk' => '\.StraightLft', 
-	'VHk-StrtLftHk' => '\.StraightLftHighHook', 
+	'VHk-Crvd' => '(uni01B2|uni028B)(?!\.StraightLftHighHook|\.StraightLft)',
+	'VHk-StrtLftLowHk' => '\.StraightLft',
+	'VHk-StrtLftHk' => '\.StraightLftHighHook',
 	'VIEdiacs-T' => '\.VN',
-	'DepPUA-41' => '\.Dep41', 
-	'DepPUA-50' => '\.Dep50', 
-	'DepPUA-51' => '\.Dep51', 
+	'DepPUA-41' => '\.Dep41',
+	'DepPUA-50' => '\.Dep50',
+	'DepPUA-51' => '\.Dep51',
 	'BrdgDiacs-T' => '(\.UU|\.UL|\.LL)',
-	'Eng-LgDsc' => '[eE]ng(?!\.UCStyle|\.BaselineHook|\.Kom)', 
-	'Eng-LgBsln' => '\.BaselineHook', 
-	'Eng-CapN' => '\.UCStyle', 
+	'Eng-LgDsc' => '[eE]ng(?!\.UCStyle|\.BaselineHook|\.Kom)',
+	'Eng-LgBsln' => '\.BaselineHook',
+	'Eng-CapN' => '\.UCStyle',
 	'Eng-LgShrtStm' => '\.Kom',
 	'LgEzh-RvSgma' => '\.RevSigmaStyle',
 	'LgHStrk-Vrt' => '\.VertStrk',
@@ -246,12 +247,12 @@ my %featset_to_suffix = (
 	'SmITail-CrvTl' => '\.TailI',
 	'SmJSerif-TopSrf' => '\.TopLftSerif',
 	'SmLTail-CrvTl' => '\.TailL',
-	'CapQ-T' => '\.DiagTail',  
-	'SmQTail-T' => '\.Point', 
-	'SmTTail-Strt' => '\.NoTailT', 
-	'SmYTail-Strt' => '\.NoTailY', 
-	'LgDHk-Lc' => '\.TopBar', 
-	'PorCirc-PorStyle' => '\.Por', 
+	'CapQ-T' => '\.DiagTail',
+	'SmQTail-T' => '\.Point',
+	'SmTTail-Strt' => '\.NoTailT',
+	'SmYTail-Strt' => '\.NoTailY',
+	'LgDHk-Lc' => '\.TopBar',
+	'PorCirc-PorStyle' => '\.Por',
 );
 
 #map one set of feature settings to a simpler set
@@ -264,56 +265,56 @@ my %featset_to_suffix = (
 # Chinantec tones negates low profile diacritics
 # small caps negate the lower case tail variants
 my %reduced_featsets = (
-    'CapQ-T SmQTail-T' => 'SmQTail-T', # lower case glyph not affected by Capital Q alternate
-    'Caron-T SmCp-T' => 'SmCp-T', 
-    'CHZtn-T LpDiacs-T' => 'CHZtn-T',
-    'CyShha-Uc SmCp-T' => 'SmCp-T', 
-    'LgTHk-RtHk SmTTail-Strt' => 'SmTTail-Strt', # lower case glyph not affected by Capital T-hook alternate
-    'LgYHk-LftHk SmYTail-Strt' => 'SmYTail-Strt', # lower case glyph not affected by Capital Y-hook alternate
-    'Lit-T SlntItlc-T' => 'Lit-T', 
-    'Lit-T SmCp-T' => 'SmCp-T', 
-    'LpDiacs-T SmCp-T' => 'SmCp-T',
-    'LrgBHk-Lc SmCp-T' => 'SmCp-T', 
-    'Serb-T SmCp-T' => 'SmCp-T', 
-    'SlntItlc-T SmCp-T' => 'SmCp-T', 
-    'SlntItlc-T SmITail-CrvTl' => 'SmITail-CrvTl', # for Andika Reg, which lacks some SlantItalic glyphs
-    'SlntItlc-T SmLTail-CrvTl' => 'SmLTail-CrvTl', # for Andika Reg, which lacks some SlantItalic glyphs
-    'SmCp-T SmITail-CrvTl' => 'SmCp-T',  
-    'SmCp-T SmJSerif-TopSrf' => 'SmCp-T',  
-    'SmCp-T SmLTail-CrvTl' => 'SmCp-T',
-    'SmCp-T SmPHk-RtHk' => 'SmCp-T', 
-    'SmCp-T SmQTail-T' => 'SmCp-T',  
-    'SmCp-T SmTTail-Strt' => 'SmCp-T',  
-    'SmCp-T SmYTail-Strt' => 'SmCp-T',
-    'CapQ-T SmCp-T SmQTail-T' => 'CapQ-T SmCp-T',
-    'Caron-T SmCp-T SmLTail-CrvTl' => 'Caron-T SmCp-T', 
-    'Caron-T SmCp-T SmTTail-Strt' => 'Caron-T SmCp-T', 
-    'LgTHk-RtHk SmCp-T SmTTail-Strt' => 'LgTHk-RtHk SmCp-T', 
-    'LgYHk-LftHk SmCp-T SmYTail-Strt' => 'LgYHk-LftHk SmCp-T', 
-    'Lit-T LpDiacs-T SlntItlc-T' => 'Lit-T LpDiacs-T', 
-    'Lit-T LpDiacs-T SmCp-T' => 'LpDiacs-T SmCp-T', #above
+	'CapQ-T SmQTail-T' => 'SmQTail-T', # lower case glyph not affected by Capital Q alternate
+	'Caron-T SmCp-T' => 'SmCp-T', 
+	'CHZtn-T LpDiacs-T' => 'CHZtn-T',
+	'CyShha-Uc SmCp-T' => 'SmCp-T', 
+	'LgTHk-RtHk SmTTail-Strt' => 'SmTTail-Strt', # lower case glyph not affected by Capital T-hook alternate
+	'LgYHk-LftHk SmYTail-Strt' => 'SmYTail-Strt', # lower case glyph not affected by Capital Y-hook alternate
+	'Lit-T SlntItlc-T' => 'Lit-T', 
+	'Lit-T SmCp-T' => 'SmCp-T', 
+	'LpDiacs-T SmCp-T' => 'SmCp-T',
+	'LrgBHk-Lc SmCp-T' => 'SmCp-T', 
+	'Serb-T SmCp-T' => 'SmCp-T', 
+	'SlntItlc-T SmCp-T' => 'SmCp-T', 
+	'SlntItlc-T SmITail-CrvTl' => 'SmITail-CrvTl', # for Andika Reg, which lacks some SlantItalic glyphs
+	'SlntItlc-T SmLTail-CrvTl' => 'SmLTail-CrvTl', # for Andika Reg, which lacks some SlantItalic glyphs
+	'SmCp-T SmITail-CrvTl' => 'SmCp-T',  
+	'SmCp-T SmJSerif-TopSrf' => 'SmCp-T',  
+	'SmCp-T SmLTail-CrvTl' => 'SmCp-T',
+	'SmCp-T SmPHk-RtHk' => 'SmCp-T', 
+	'SmCp-T SmQTail-T' => 'SmCp-T',  
+	'SmCp-T SmTTail-Strt' => 'SmCp-T',  
+	'SmCp-T SmYTail-Strt' => 'SmCp-T',
+	'CapQ-T SmCp-T SmQTail-T' => 'CapQ-T SmCp-T',
+	'Caron-T SmCp-T SmLTail-CrvTl' => 'Caron-T SmCp-T', 
+	'Caron-T SmCp-T SmTTail-Strt' => 'Caron-T SmCp-T', 
+	'LgTHk-RtHk SmCp-T SmTTail-Strt' => 'LgTHk-RtHk SmCp-T', 
+	'LgYHk-LftHk SmCp-T SmYTail-Strt' => 'LgYHk-LftHk SmCp-T', 
+	'Lit-T LpDiacs-T SlntItlc-T' => 'Lit-T LpDiacs-T', 
+	'Lit-T LpDiacs-T SmCp-T' => 'LpDiacs-T SmCp-T', #above
 	'Lit-T Ognk-Strt SlntItlc-T' => 'Lit-T Ognk-Strt', #new
 	'Lit-T Ognk-Strt SmCp-T' => 'Ognk-Strt SmCp-T', 
-    'Lit-T SlntItlc-T SmCp-T'=> 'SmCp-T', 
-    'Lit-T SlntItlc-T VIEdiacs-T' => 'Lit-T VIEdiacs-T', 
-    'Lit-T SmCp-T VIEdiacs-T' => 'SmCp-T VIEdiacs-T', 
-    'LpDiacs-T Ognk-Strt SmCp-T' => 'Ognk-Strt SmCp-T', 
-    'LpDiacs-T SlntItlc-T SmCp-T' => 'LpDiacs-T SmCp-T', #above
-    'LpDiacs-T SmCp-T VIEdiacs-T' => 'SmCp-T VIEdiacs-T', 
+	'Lit-T SlntItlc-T SmCp-T'=> 'SmCp-T', 
+	'Lit-T SlntItlc-T VIEdiacs-T' => 'Lit-T VIEdiacs-T', 
+	'Lit-T SmCp-T VIEdiacs-T' => 'SmCp-T VIEdiacs-T', 
+	'LpDiacs-T Ognk-Strt SmCp-T' => 'Ognk-Strt SmCp-T', 
+	'LpDiacs-T SlntItlc-T SmCp-T' => 'LpDiacs-T SmCp-T', #above
+	'LpDiacs-T SmCp-T VIEdiacs-T' => 'SmCp-T VIEdiacs-T', 
 	'Ognk-Strt SlntItlc-T SmCp-T' => 'Ognk-Strt SmCp-T', #new
-    'Ognk-Strt SmCp-T SmITail-CrvTl' => 'Ognk-Strt SmCp-T', 
-    'RONdiacs-T SmCp-T SmTTail-Strt' => 'RONdiacs-T SmCp-T',
-    'SlntItlc-T SmCp-T VIEdiacs-T' => 'SmCp-T VIEdiacs-T', 
-    'SlntItlc-T SmCp-T SmITail-CrvTl' => 'SmCp-T SmITail-CrvTl', #above
-    'SlntItlc-T SmCp-T SmLTail-CrvTl' => 'SmCp-T SmLTail-CrvTl', #above
-    #below line not needed with code to convert Lit-T to Lit-F for Andika processing
-    #'Lit-F SlntItlc-T SmCp-T VIEdiacs-T' => 'SmCp-T VIEdiacs-T', #Lit-F is non-default value for Andika
-    'Lit-T LpDiacs-T SlntItlc-T SmCp-T' => 'LpDiacs-T SmCp-T', #above
+	'Ognk-Strt SmCp-T SmITail-CrvTl' => 'Ognk-Strt SmCp-T', 
+	'RONdiacs-T SmCp-T SmTTail-Strt' => 'RONdiacs-T SmCp-T',
+	'SlntItlc-T SmCp-T VIEdiacs-T' => 'SmCp-T VIEdiacs-T', 
+	'SlntItlc-T SmCp-T SmITail-CrvTl' => 'SmCp-T SmITail-CrvTl', #above
+	'SlntItlc-T SmCp-T SmLTail-CrvTl' => 'SmCp-T SmLTail-CrvTl', #above
+	#below line not needed with code to convert Lit-T to Lit-F for Andika processing
+	#'Lit-F SlntItlc-T SmCp-T VIEdiacs-T' => 'SmCp-T VIEdiacs-T', #Lit-F is non-default value for Andika
+	'Lit-T LpDiacs-T SlntItlc-T SmCp-T' => 'LpDiacs-T SmCp-T', #above
 	'Lit-T LpDiacs-T SlntItlc-T VIEdiacs-T' => 'Lit-T LpDiacs-T VIEdiacs-T', 
-    'Lit-T LpDiacs-T SmCp-T VIEdiacs-T' => 'LpDiacs-T SmCp-T VIEdiacs-T', #above
-    'Lit-T SlntItlc-T SmCp-T VIEdiacs-T' => 'SmCp-T VIEdiacs-T', 
-    'LpDiacs-T SlntItlc-T SmCp-T VIEdiacs-T' => 'LpDiacs-T SmCp-T VIEdiacs-T', #above
-    'Lit-T LpDiacs-T SlntItlc-T SmCp-T VIEdiacs-T' => 'LpDiacs-T SmCp-T VIEdiacs-T', #above
+	'Lit-T LpDiacs-T SmCp-T VIEdiacs-T' => 'LpDiacs-T SmCp-T VIEdiacs-T', #above
+	'Lit-T SlntItlc-T SmCp-T VIEdiacs-T' => 'SmCp-T VIEdiacs-T', 
+	'LpDiacs-T SlntItlc-T SmCp-T VIEdiacs-T' => 'LpDiacs-T SmCp-T VIEdiacs-T', #above
+	'Lit-T LpDiacs-T SlntItlc-T SmCp-T VIEdiacs-T' => 'LpDiacs-T SmCp-T VIEdiacs-T', #above
 	'Lit-T Ognk-Strt SlntItlc-T SmCp-T' => 'Lit-T Ognk-Strt SmCp-T', #new, above
 );
 
@@ -397,12 +398,12 @@ sub Andika_adjust()
 			my $new_value = $reduced_featsets{$key};
 			$new_value =~ s/(.*?)(Lit-T)(.*?)/$1Lit-F$3/;
 			
-            #removing Lit-F from Andika implies a glyph with no literacy setting is wanted
-            # which means one with Lit-T (since that's the default), so don't remove Lit-F
-            #RFComposer sort of worked without this previously because
-            # literacy suffixes are regarded as extras when searching candidate glyphs for a given USV
-            # which avoids applying Lit-T as the default
-            # (ie the candidate selection algo acted as if Lit-F was present)
+			#removing Lit-F from Andika implies a glyph with no literacy setting is wanted
+			# which means one with Lit-T (since that's the default), so don't remove Lit-F
+			#RFComposer sort of worked without this previously because
+			# literacy suffixes are regarded as extras when searching candidate glyphs for a given USV
+			# which avoids applying Lit-T as the default
+			# (ie the candidate selection algo acted as if Lit-F was present)
 			if ($new_key =~ /Lit-F/ and not $new_value =~ /Lit-F/)
 			{
 				my @new_value_lst = split(/ /, $new_value);
@@ -415,7 +416,7 @@ sub Andika_adjust()
 			{
 				$reduced_featsets{$new_key} = $new_value;
 			}
-	    }
+		}
 	
 		#implicitly apply Lit-T when 'a' and 'g' (and related chars) are being processed
 		#add data from %glyph_to_featset_andika to %glyph_to_featset
@@ -480,6 +481,7 @@ sub Tag_lookup($\%)
 }
 
 sub Feats_get($\%\%)
+# obsolete since Graphite no longer in LCG fonts
 #create the %feats structure based on the Feat table in the font
 # 2012-10-26 AW: store four char GDL feature tags in %feats structure
 #   instead of actual id from font
@@ -540,6 +542,98 @@ sub Feats_get($\%\%)
 				print "  setting: $set_id tag: $tag name: $name\n";
 			}
 		}
+	}
+}
+
+sub Name_get($$)
+#returns the name for a given name id
+#copied from typetuner
+{	
+	my ($font, $name_id) = @_;
+	
+	my ($name_tbl, $name);
+	$name_tbl = $font->{'name'}->read;
+	$name = $name_tbl->find_name($name_id);
+	if (not $name)
+		{die("could not find name in font for id: $name_id\n")};
+	
+	return $name;
+}
+
+sub OT_Feats_get($\%)
+#create the %feats structure based on the GSUB table in the font
+{
+	my ($font_fn, $feats,) = @_;
+	my ($font, $GSUB_tbl);
+
+	$font = Font::TTF::Font->open($font_fn) or die "Can't open font";
+	$GSUB_tbl = $font->{'GSUB'}->read;
+	#$GrFeat_tbl->print;
+
+	my ($ot_tag, $ot_parms, $nm_id, $nm_str, $tag, $num_named_parms);
+	foreach $ot_tag (@{$GSUB_tbl->{'FEATURES'}{'FEAT_TAGS'}})
+	{
+		if (not $ot_tag =~ /^(cv|ss)/) {next;}
+		# feature could be CV or SS; only CVs have UI strings for parms
+		$nm_id = $GSUB_tbl->{'FEATURES'}{$ot_tag}{'PARMS'}{'UINameID'}; #name tbl id
+		$nm_str = Name_get($font, $nm_id);
+		$feats->{$ot_tag}{'name'} = $nm_str;
+		$tag = Tag_lookup($nm_str, %nm_to_tag); # $tag is a TypeTuner tag
+
+		$feats->{$ot_tag}{'tag'} = $tag;
+		$feats->{$ot_tag}{'default'} = 0; # TODO: default for OT is always 0 ?
+		if (not defined($feats->{' ids'}))
+			{$feats->{' ids'} = [];}
+		push(@{$feats->{' ids'}}, $ot_tag);
+
+		$ot_parms = $GSUB_tbl->{'FEATURES'}{$ot_tag}{'PARMS'};
+		$num_named_parms = defined($ot_parms->{'NumNamedParms'}) ? $ot_parms->{'NumNamedParms'} : 0;
+
+		$feats->{$ot_tag}{'settings'}{0}{'name'} = 'Default';
+		$feats->{$ot_tag}{'settings'}{0}{'tag'} = 'Dflt';
+		if (not defined($feats->{$ot_tag}{'settings'}{' ids'}))
+			{$feats->{$ot_tag}{'settings'}{' ids'} = [];}
+		push(@{$feats->{$ot_tag}{'settings'}{' ids'}}, 0);
+
+		if ($num_named_parms == 0)
+		{ # SS feature
+			$feats->{$ot_tag}{'settings'}{1}{'name'} = 'True';
+			$feats->{$ot_tag}{'settings'}{1}{'tag'} = Tag_lookup('True', %nm_to_tag);
+			if (not defined($feats->{$ot_tag}{'settings'}{' ids'}))
+				{$feats->{$ot_tag}{'settings'}{' ids'} = [];}
+			push(@{$feats->{$ot_tag}{'settings'}{' ids'}}, 1);
+		}
+
+		for (my $i = 0; $i < $num_named_parms ; $i++)
+		{
+			$nm_id = $ot_parms->{'FirstNamedParmID'} + $i;
+			$nm_str = Name_get($font, $nm_id);
+			$tag = Tag_lookup($nm_str, %nm_to_tag);
+
+			$feats->{$ot_tag}{'settings'}{$i+1}{'name'} = $nm_str;
+			$feats->{$ot_tag}{'settings'}{$i+1}{'tag'} = $tag;
+			push(@{$feats->{$ot_tag}{'settings'}{' ids'}}, $i+1);
+		}
+	}
+	
+	$font->release;
+	
+	if ($opt_d)
+	{
+		foreach my $feat_id (@{$feats->{' ids'}})
+		{
+			my $feat_t = $feats->{$feat_id};
+			my ($tag, $name, $default) = ($feat_t->{'tag'}, $feat_t->{'name'}, 
+										  $feat_t->{'default'});
+			print "feature: $feat_id tag: $tag name: $name default: $default\n";
+			foreach my $set_id (@{$feats->{$feat_id}{'settings'}{' ids'}})
+			{
+				my $set_t = $feat_t->{'settings'}{$set_id};
+				($tag, $name) = ($set_t->{'tag'}, $set_t->{'name'});
+				print "  setting: $set_id tag: $tag name: $name\n";
+			}
+		}
+	exit;
 	}
 }
 
@@ -1382,7 +1476,7 @@ sub sort_tests($$)
 sub Feats_to_ids($$\%)
 #obtain feature & setting ids based on tags
 {
-	my  ($feat_tag, $set_tag, $feats) = @_;
+	my ($feat_tag, $set_tag, $feats) = @_;
 	
 	foreach my $fid (@{$feats->{' ids'}})
 	{
@@ -1434,10 +1528,10 @@ sub Interactions_output($\%\%\%\%)
 	print $feat_all_fh "\t</interactions>\n";
 }
 
-sub Aliases_output($\%)
+sub Aliases_output($)
 #output the <aliases> elements
 {
-	my ($feat_all_fh, $gdl_tag_to_feat_id) = @_;
+	my ($feat_all_fh) = @_;
 
 	print $feat_all_fh "\t<aliases>\n";
 
@@ -1450,14 +1544,6 @@ sub Aliases_output($\%)
 		<alias name="viet_decomp" value="4"/>
 		<alias name="viet_precomp" value="5"/>
 END
-
-	#output aliases to map four char GDL feat tags to integers actually in the font
-	my ($gdl_tag);
-	foreach $gdl_tag (sort keys %{$gdl_tag_to_feat_id})
-	{
-		my ($feat_id) = $gdl_tag_to_feat_id->{$gdl_tag};
-		print $feat_all_fh "\t\t<alias name=\"$gdl_tag\" value=\"$feat_id\"/>\n";
-	}
 
 	print $feat_all_fh "\t</aliases>\n";
 }
@@ -1507,7 +1593,7 @@ usage:
 		-d - debug output
 		-t - output a file that needs no editing 
 			(for testing TypeTuner)
-			
+
 	output is to feat_all_composer.xml
 END
 	exit();
@@ -1518,7 +1604,7 @@ END
 sub cmd_line_exec() #for UltraEdit function list
 {}
 
-my (%feats, %usv_feat_to_ps_name, %featset_to_usvs, %dblenc_usv, %gdl_tag_to_feat_id);
+my (%feats, %usv_feat_to_ps_name, %featset_to_usvs, %dblenc_usv);
 my ($font_fn, $gsi_fn, $dblenc_fn, $gsi_supp_fn, $feat_all_fn, $feat_all_fh);
 
 getopts($opt_str); #sets $opt?'s & removes the switch from @ARGV
@@ -1529,7 +1615,7 @@ if ($opt_l)
 {
 	my ($font_fn) = ($ARGV[0]);
 
-	Feats_get($font_fn, %feats, %gdl_tag_to_feat_id);
+	OT_Feats_get($font_fn, %feats);
 	
 	open FILE, ">$featset_list_fn";
 	print FILE 'my %nm_to_tag = (';
@@ -1577,7 +1663,8 @@ else
 	{Usage_print;}
 
 Andika_adjust();
-Feats_get($font_fn, %feats, %gdl_tag_to_feat_id);
+# Feats_get($font_fn, %feats, %gdl_tag_to_feat_id); # obsolete since Graphite no longer in LCG fonts
+OT_Feats_get($font_fn, %feats);
 Gsi_xml_parse($gsi_fn, %feats, %usv_feat_to_ps_name, %featset_to_usvs);
 Special_glyphs_handle($gsi_supp_fn, %feats, %usv_feat_to_ps_name, %featset_to_usvs, %glyph_to_featset_andika);
 
@@ -1601,7 +1688,7 @@ if ($opt_z)
 #			if ($feat eq 'unk')
 			{
 #				print "$usv,$feat";
-#				my $first = 1;      
+#				my $first = 1;
 				foreach my $nm (@{$usv_feat_to_ps_name{$usv}{$feat}})
 				{
 #					print ",$nm";
@@ -1642,7 +1729,7 @@ Features_output($feat_all_fh, %feats, %featset_to_usvs, %usv_feat_to_ps_name, %d
 Interactions_output($feat_all_fh, %featset_to_usvs, %usv_feat_to_ps_name, %feats, %dblenc_usv);
 unless ($opt_g)
 {
-	Aliases_output($feat_all_fh, %gdl_tag_to_feat_id);
+	Aliases_output($feat_all_fh);
 }
 Old_names_output($feat_all_fh);
 
@@ -1665,42 +1752,42 @@ print FH <<"EOS";
 
 <Languages>
   <LgWritingSystem id="xrfx" language="rfx - Roman" type="OTHER">
-    <Name24>
-      <AUni ws="en">Roman</AUni>
-    </Name24>
-    <RightToLeft24><Boolean val="false"/></RightToLeft24>
-    <DefaultSerif24><Uni>Times New Roman</Uni></DefaultSerif24>
-    <DefaultSansSerif24><Uni>Arial</Uni></DefaultSansSerif24>
-    <DefaultBodyFont24><Uni>Times New Roman</Uni></DefaultBodyFont24>
-    <DefaultMonospace24><Uni>Courier</Uni></DefaultMonospace24>
-    <ICULocale24><Uni>xrfx</Uni></ICULocale24>
-    <KeyboardType24><Uni>standard</Uni></KeyboardType24>
-    <Collations24>
-      <LgCollation>
-        <Name30>
-          <AUni ws="en">DefaultCollation</AUni>
-        </Name30>
-        <WinLCID30><Integer val="1078"/></WinLCID30>
-        <WinCollation30><Uni>Latin1_General_CI_AI</Uni></WinCollation30>
-      </LgCollation>
-    </Collations24>
+	<Name24>
+	  <AUni ws="en">Roman</AUni>
+	</Name24>
+	<RightToLeft24><Boolean val="false"/></RightToLeft24>
+	<DefaultSerif24><Uni>Times New Roman</Uni></DefaultSerif24>
+	<DefaultSansSerif24><Uni>Arial</Uni></DefaultSansSerif24>
+	<DefaultBodyFont24><Uni>Times New Roman</Uni></DefaultBodyFont24>
+	<DefaultMonospace24><Uni>Courier</Uni></DefaultMonospace24>
+	<ICULocale24><Uni>xrfx</Uni></ICULocale24>
+	<KeyboardType24><Uni>standard</Uni></KeyboardType24>
+	<Collations24>
+	  <LgCollation>
+		<Name30>
+		  <AUni ws="en">DefaultCollation</AUni>
+		</Name30>
+		<WinLCID30><Integer val="1078"/></WinLCID30>
+		<WinCollation30><Uni>Latin1_General_CI_AI</Uni></WinCollation30>
+	  </LgCollation>
+	</Collations24>
   </LgWritingSystem>
 </Languages>
 
 <Styles>
   <StStyle>
-    <Name17><Uni>Normal</Uni></Name17>
-    <Type17><Integer val="0"/></Type17>
-    <BasedOn17><Uni></Uni></BasedOn17>
-    <Next17><Uni>Normal</Uni></Next17>
-    <Rules17>
-      <Prop italic="off" bold="off" superscript="off" underline="none" fontsize="10000" fontsizeUnit="mpt" offset="0" offsetUnit="mpt" forecolor="black" backcolor="white" undercolor="black" align="leading" firstIndent="0" leadingIndent="0" trailingIndent="0" spaceBefore="0" spaceAfter="0" lineHeight="10000" lineHeightUnit="mpt" rightToLeft="0" borderTop="0" borderBottom="0" borderLeading="0" borderTrailing="0" borderColor="black" bulNumScheme="0" bulNumStartAt="1" fontFamily="&lt;default serif&gt;">
-        <BulNumFontInfo backcolor="white" bold="off" fontsize="10000mpt" forecolor="black" italic="off" offset="0mpt" superscript="off" undercolor="black" underline="none" fontFamily="Times New Roman"/>
-        <WsStyles9999>
-          <WsProp ws="xrfx" fontFamily="$font_nm" fontsize="20000" fontsizeUnit="mpt" />
-        </WsStyles9999>
-      </Prop>
-    </Rules17>
+	<Name17><Uni>Normal</Uni></Name17>
+	<Type17><Integer val="0"/></Type17>
+	<BasedOn17><Uni></Uni></BasedOn17>
+	<Next17><Uni>Normal</Uni></Next17>
+	<Rules17>
+	  <Prop italic="off" bold="off" superscript="off" underline="none" fontsize="10000" fontsizeUnit="mpt" offset="0" offsetUnit="mpt" forecolor="black" backcolor="white" undercolor="black" align="leading" firstIndent="0" leadingIndent="0" trailingIndent="0" spaceBefore="0" spaceAfter="0" lineHeight="10000" lineHeightUnit="mpt" rightToLeft="0" borderTop="0" borderBottom="0" borderLeading="0" borderTrailing="0" borderColor="black" bulNumScheme="0" bulNumStartAt="1" fontFamily="&lt;default serif&gt;">
+		<BulNumFontInfo backcolor="white" bold="off" fontsize="10000mpt" forecolor="black" italic="off" offset="0mpt" superscript="off" undercolor="black" underline="none" fontFamily="Times New Roman"/>
+		<WsStyles9999>
+		  <WsProp ws="xrfx" fontFamily="$font_nm" fontsize="20000" fontsizeUnit="mpt" />
+		</WsStyles9999>
+	  </Prop>
+	</Rules17>
   </StStyle>
 </Styles>
 
@@ -1726,17 +1813,17 @@ sub WP_test_output($$@)
 	
 	print FH <<"EOS";  #FH is global
   <StTxtPara>
-    <StyleRules15>
-      <Prop namedStyle="Normal"/>
-    </StyleRules15>
-    <Contents16>
-      <Str>
-        <Run>$featsets [</Run>
-        <Run ws="xrfx" forecolor="blue">$usvs_str</Run>
-        <Run>]: </Run>
-        <Run ws="xrfx" fontVariations="$featsets_str">$usvs_str</Run>
-      </Str>
-    </Contents16>
+	<StyleRules15>
+	  <Prop namedStyle="Normal"/>
+	</StyleRules15>
+	<Contents16>
+	  <Str>
+		<Run>$featsets [</Run>
+		<Run ws="xrfx" forecolor="blue">$usvs_str</Run>
+		<Run>]: </Run>
+		<Run ws="xrfx" fontVariations="$featsets_str">$usvs_str</Run>
+	  </Str>
+	</Contents16>
   </StTxtPara>
 EOS
 }
@@ -1782,7 +1869,7 @@ foreach my $featsets (sort sort_tests keys %featset_to_usvs)
 	}
 	WP_test_output($featsets, $featsets_str, @usv_str);
 }
-		
+
 print FH <<"EOS";
 </Body>
 
