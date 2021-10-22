@@ -14,17 +14,28 @@ This file doesn't contain composite definitions.-->
    <glyph active="1" contour="T1" sort="2370.852" name="LtnCapEng">
       <ps_name value="Eng"/>
       <var_uid>U+014A</var_uid>
-      <feature category="Engs" value="0"/>
+      <feature category="cv43" value="0"/>
    </glyph>
    <glyph active="1" contour="T1" sort="2300.85" name="LtnSmEng">
       <ps_name value="eng"/>
       <var_uid>U+014B</var_uid>
-      <feature category="Engs" value="0"/>
+      <feature category="cv43" value="0"/>
    </glyph>
  <!-- default for v-hook alternates -->
    <glyph active="1" contour="T1" sort="3030.1" name="LtnSmVHook">
       <ps_name value="uni028B"/>
       <var_uid>U+028B</var_uid>
-      <feature category="v_hk" value="0"/>
+      <feature category="cv62" value="0"/>
    </glyph>
+	<glyph active="1" contour="T1" sort="3150.83" name="LtnCapVHook">
+		<ps_name value="uni01B2.StraightLft"/>
+		<var_uid>U+01B2</var_uid>
+		<feature category="cv62" value="0"/>
+	</glyph>
+ <!-- default for rams horn alternates -->
+	<glyph active="1" contour="T1" sort="3131.1" name="LtnSmRamsHorn">
+		<ps_name value="uni0264"/>
+        <var_uid>U+0264</var_uid>
+		<feature category="cv25" value="0"/>
+	</glyph>
 </font>
