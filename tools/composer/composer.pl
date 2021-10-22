@@ -31,6 +31,7 @@ my $version = "1.8";
 #   The features & settings will indicate what font version the feat_all.xml file goes with.
 my $xml_version = "1.0";
 
+# NO LONGER SUPPORT: g, w; q is set on by default
 #$opt_a - andika processing
 #$opt_d - debug output
 #$opt_g - output only graphite cmds
@@ -105,6 +106,8 @@ my %nm_to_tag = (
 	'Ogonek alternate' => 'Ognk',
 	'Curved' => 'Crv',
 	'Straight' => 'Strt',
+	'No tail' => 'Strt', #new
+	'Straight tail' => 'Strt', #new
 	'Capital B-hook alternate' => 'LrgBHk',
 	'Capital H-stroke alternate' => 'LgHStrk',
 	'Horizontal-stroke' => 'Hrz',
@@ -136,6 +139,7 @@ my %nm_to_tag = (
 	'OU alternates' => 'Ou',
 	'Closed' => 'Clsd',
 	'Open' => 'Opn',
+	'Open top' => 'Opn', #new
 	'Mongolian-style Cyrillic E' => 'CyrE',
 	'Mongolian-style' => 'T',
 	'Modifier apostrophe alternates' => 'ModAp',
@@ -156,10 +160,12 @@ my %nm_to_tag = (
 	'Zero' => 'Zro',
 	'Small Caps' => 'SmCp',
 	'Low-profile diacritics' => 'LpDiacs',
-	'Serbian-style alternates' => 'Serb', 
-	'Serif beta alternates' => 'BetaSerif',  
+	'Serbian-style alternates' => 'Serb',
+	'Serif beta alternates' => 'BetaSerif',
+	'Lowercase beta' => 'BetaSerif', #new
 	'No serif' => 'F',
 	'Serif' => 'T',
+	'With serif' => 'T', #new
 	'Show deprecated PUA' => 'DepPUA',
 	'None' => 'none',
 	'Through Unicode 4.0' => '40',
@@ -170,33 +176,53 @@ my %nm_to_tag = (
 	'Digit Zero with slash' => 'Dig0',
 	'No slash' => 'F',
 	'Slash' => 'T',
+	'Slashed' => 'T', #new
 	'Digit One without base' => 'Dig1',
+	'One' => 'Dig1', #new
 	'Base' => 'F',
 	'No base' => 'T',
+	'No base serif' => 'T', #new
 	'Digit Four with open top' => 'Dig4',
+	'Four' => 'Dig4', #new
 	'Digit Six and Nine alternates' => 'Dig69',
+	'Six and Nine' => 'Dig69', #new
 	'Curved stem' => 'F',
 	'Diagonal stem' => 'T',
+	'Diagonal stems' => 'T', #new
 	'Digit Seven with bar' => 'Dig7',
+	'Seven' => 'Dig7', #new
 	'No bar' => 'F',
 	'Bar' => 'T',
+	'Barred' => 'T', #new
 	'Small i-tail alternate' => 'SmITail',
+	'Lowercase i' => 'SmITail', #new
 	'Curved tail' => 'CrvTl',
 	'Capital J alternate' => 'CapJ',
+	'Capital J' => 'CapJ', #new
 	'No top bar' => 'F',
 	'Top bar' => 'T',
 	'Small j-serif alternate' => 'SmJSerif',
+	'Lowercase j' => 'SmJSerif', #new
 	'Small l-tail alternate' => 'SmLTail',
+	'Lowercase l' => 'SmLTail', #new
 	'Capital Q alternate' => 'CapQ',
+	'Capital Q' => 'CapQ', #new
 	'Tail' => 'F',
 	'Tail across' => 'T',
+	'Crossing tail' => 'T', #new
 	'Small q-tail alternate' => 'SmQTail',
+	'Lowercase q' => 'SmQTail', #new
 	'Point' => 'T',
+	'Pointed' => 'T', #new
 	'Small t-tail alternate' => 'SmTTail',
+	'Lowercase t' => 'SmTTail', #new
 	'Small y-tail alternate' => 'SmYTail',
+	'Lowercase y' => 'SmYTail', #new
 	'Capital D-hook alternate' => 'LgDHk',
 	'Porsonic circumflex' => 'PorCirc', 
+	'Greek circumflex' => 'PorCirc', #new
 	'Porsonic-style' => 'Por',
+	'Porsonic form' => 'Por', #new
 	'Diacritic selection' => 'DiacSlct',
 	'Line spacing' => 'LnSpc',
 	'Loose' => 'Ls',
@@ -255,6 +281,7 @@ my %featset_to_suffix = (
 	'BetaSerif-T' => '\.Serif',
 	'SmITail-CrvTl' => '\.TailI',
 	'SmJSerif-TopSrf' => '\.TopLftSerif',
+	'CapJ-T' => '.\BarTop',
 	'SmLTail-CrvTl' => '\.TailL',
 	'CapQ-T' => '\.DiagTail',
 	'SmQTail-T' => '\.Point',
@@ -1595,8 +1622,6 @@ usage:
 	RFComposer <switches> <font.ttf> <gsi.xml> <gsi_supp_fn.xml>
 	switches:
 		-a - adjust processing for Andika
-		-g - output no OpenType cmds (Graphite only)
-		-q - output no Graphite cmds (OpenType only)
 		-d - debug output
 		-t - output a file that needs no editing 
 			(for testing TypeTuner)
@@ -1615,6 +1640,9 @@ my (%feats, %usv_feat_to_ps_name, %featset_to_usvs, %dblenc_usv);
 my ($font_fn, $gsi_fn, $gsi_supp_fn, $feat_all_fn, $feat_all_fh);
 
 getopts($opt_str); #sets $opt?'s & removes the switch from @ARGV
+$opt_q = 1; # force -q on by default
+$opt_g = 0; # froce -g off by default
+$opt_w = ''; # forc -w off by default (also, no font name for WorldPad test)
 
 #build a file containing a hash of feature & setting names to tags
 # to paste into this program for specifying tags
