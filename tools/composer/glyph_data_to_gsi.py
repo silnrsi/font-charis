@@ -1,12 +1,15 @@
+# Copyright (c) 2007-2021 SIL International  (http://www.sil.org)
+# Released under the MIT License (http://opensource.org/licenses/MIT)
+
 import csv, sys
 
 glyph_data_csv_fn = "glyph_data.csv"
 
 andika_f = 0
 if not andika_f:
-    gsi_fn = "glyph_data_gsi_cdg.xml"
+    gsi_fn = "gsi_glyph_data_cdg.xml"
 else:
-    gsi_fn = "glyph_data_gsi_a.xml"
+    gsi_fn = "gsi_glyph_data_a.xml"
 
 csv_cols = ["glyph_name", "ps_name", "sort_final_cdg", "sort_final_a", "assoc_feat_cdg", "assoc_feat_a", "assoc_feat_val", "assoc_uids_cdg", "assoc_uids_a"]
 
@@ -26,6 +29,9 @@ gsi_xml_tmplt_start = '''
 gsi_xml_tmplt_var_uid = '''
 		<var_uid>{var_uid}</var_uid>'''
 
+gsi_xml_tmplt_lig_uid = '''
+		<lig_uid>{lig_uid}</lig_uid>'''
+
 gsi_xml_tmplt_feat_cat = '''
 		<feature category="{category}"/>'''
 
@@ -34,6 +40,22 @@ gsi_xml_tmplt_feat_cat_val = '''
 
 gsi_xml_tmplt_end = '''
 	</glyph>'''
+
+gsi_xml_tmplt_1 = '''
+	<glyph active="1" contour="T1" sort="{sort}" name="{name}">
+		<ps_name value="{ps_name}"/>
+		<var_uid>{var_uid}</var_uid>
+		<feature category="{category}"/>
+	</glyph>
+'''
+
+gsi_xml_tmplt_2 = '''
+	<glyph active="1" contour="T1" sort="{sort}" name="{name}">
+		<ps_name value="{ps_name}"/>
+		<var_uid>{var_uid}</var_uid>
+		<feature category="{category}" value="{value}"/>
+	</glyph>
+'''
 
 gsi_xml = open(gsi_fn, "w")
 glyph_data_csv = open(glyph_data_csv_fn, newline='')
@@ -45,7 +67,6 @@ sort_final = "sort_final_cdg" if not andika_f else "sort_final_a"
 assoc_uids = "assoc_uids_cdg" if not andika_f else "assoc_uids_a"
 assoc_feat = "assoc_feat_cdg" if not andika_f else "assoc_feat_a"
 
-ct = 0
 glyph_data_reader = csv.reader(glyph_data_csv)
 row = next(glyph_data_reader)
 if (row != csv_cols):
@@ -54,6 +75,7 @@ if (row != csv_cols):
 
 gsi_xml.write(gsi_xml_start)
 
+ct = 0
 for row in glyph_data_reader:
     ct += 1
     glyph_data_dict = {"sort" : row[csv_cols.index(sort_final)], 
@@ -65,9 +87,13 @@ for row in glyph_data_reader:
     if row[csv_cols.index(assoc_uids)]:
         var_uid_str = row[csv_cols.index(assoc_uids)] # can be space delimited list
         var_uid = "U+" + " U+".join(var_uid_str.strip().split())
-        glyph_data_dict["var_uid"] = var_uid
-        gsi_xml.write(gsi_xml_tmplt_var_uid.format(**glyph_data_dict))
-        
+        if not " " in var_uid_str:
+            glyph_data_dict["var_uid"] = var_uid
+            gsi_xml.write(gsi_xml_tmplt_var_uid.format(**glyph_data_dict))
+        else:
+            glyph_data_dict["lig_uid"] = var_uid        
+            gsi_xml.write(gsi_xml_tmplt_lig_uid.format(**glyph_data_dict))
+            
     if row[csv_cols.index(assoc_feat)]:
         glyph_data_dict["category"] = row[csv_cols.index(assoc_feat)]
 
