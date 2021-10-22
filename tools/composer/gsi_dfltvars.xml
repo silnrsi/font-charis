@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE font SYSTEM "gsi.dtd">
+<!-- 
+This file specifies the feature value for the default glyph in a set of glyphs
+  that were created for a multi-valued feature.
+The GSI doesn't contain this data because the default glyph is encoded
+  so it cannot have a <var_uid> element and may not have a <feature> element.
+This data is needed so RFComposer will detect an interaction between the default setting
+  and other feature settings (ie small caps).
+This file doesn't contain composite definitions.-->
+<font>
+ <!-- default for eng alternates -->
+   <!-- this glyph is needed so the WPFeatures test will show the default Eng -->
+   <glyph active="1" contour="T1" sort="2370.852" name="LtnCapEng">
+      <ps_name value="Eng"/>
+      <var_uid>U+014A</var_uid>
+      <feature category="cv43" value="0"/>
+   </glyph>
+   <glyph active="1" contour="T1" sort="2300.85" name="LtnSmEng">
+      <ps_name value="eng"/>
+      <var_uid>U+014B</var_uid>
+      <feature category="cv43" value="0"/>
+   </glyph>
+ <!-- default for v-hook alternates -->
+   <glyph active="1" contour="T1" sort="3030.1" name="LtnSmVHook">
+      <ps_name value="uni028B"/>
+      <var_uid>U+028B</var_uid>
+      <feature category="cv62" value="0"/>
+   </glyph>
+	<glyph active="1" contour="T1" sort="3150.83" name="LtnCapVHook">
+		<ps_name value="uni01B2.StraightLft"/>
+		<var_uid>U+01B2</var_uid>
+		<feature category="cv62" value="0"/>
+	</glyph>
+ <!-- default for rams horn alternates -->
+	<glyph active="1" contour="T1" sort="3131.1" name="LtnSmRamsHorn">
+		<ps_name value="uni0264"/>
+        <var_uid>U+0264</var_uid>
+		<feature category="cv25" value="0"/>
+	</glyph>
+</font>
