@@ -15,7 +15,7 @@ use Getopt::Std;
 #### global variables & constants ####
 
 my $version = "1.8";
-#1.8 - read feature info from GSUB table instead of Graphite Feat table
+#1.8 - read feature info from GSUB table instead of Graphite Feat table (not all code was updated)
 #1.7 - add feature reduction rules. add special processing for Andika (because of "backwards" literacy feature
 #1.6 - handle four char Graphite feature tags in MGI and corresponding large integers in font
 #1.5 - add mechanism to handle glyphs with a suffix but no corresponding feature setting (eg LtnCapYHook.RtHook)
@@ -100,6 +100,7 @@ my %nm_to_tag = (
 	'Rams horn alternates' => 'RmHrn',
 	'Small bowl' => 'Sm',
 	'Large bowl' => 'Lrg',
+	'Large Bowl' => 'Lrg', #new
 	'Small gamma' => 'Gma',
 	'Ogonek alternate' => 'Ognk',
 	'Curved' => 'Crv',
@@ -115,10 +116,12 @@ my %nm_to_tag = (
 	'Uppercase style' => 'Uc',
 	'Lowercase style' => 'Lc',
 	'Open-O alternate' => 'OpnO',
+	'Open-O alternates' => 'OpnO', #new
 	'Bottom serif' => 'BtmSrf',
 	'Small p-hook alternate' => 'SmPHk',
 	'Left hook' => 'LftHk',
 	'Right hook' => 'RtHk',
+	'Right Hook' => 'RtHk', #new
 	'Capital R-tail alternate' => 'LgRTl',
 	'Capital T-hook alternate' => 'LgTHk',
 	'V-hook alternates' => 'VHk',
@@ -148,6 +151,7 @@ my %nm_to_tag = (
 	'Cyrillic-style' => 'T',
 	'Cyrillic shha alternate' => 'CyShha',
 	'Empty set alternates' => 'EmpSet',
+	'Empty set alternate' => 'EmpSet', #new
 	'Circle' => 'Crcl',
 	'Zero' => 'Zro',
 	'Small Caps' => 'SmCp',
@@ -221,6 +225,7 @@ my %featset_to_suffix = (
 	'SmCp-T' => '\.sc',
 	'SmPHk-RtHk' => '\.BowlHook', 
 	'VHk-Crvd' => '(uni01B2|uni028B)(?!\.StraightLftHighHook|\.StraightLft)',
+	'VHk-Dflt' => '(uni01B2|uni028B)(?!\.StraightLftHighHook|\.StraightLft)', #new
 	'VHk-StrtLftLowHk' => '\.StraightLft',
 	'VHk-StrtLftHk' => '\.StraightLftHighHook',
 	'VIEdiacs-T' => '\.VN',
@@ -229,9 +234,13 @@ my %featset_to_suffix = (
 	'DepPUA-51' => '\.Dep51',
 	'BrdgDiacs-T' => '(\.UU|\.UL|\.LL)',
 	'Eng-LgDsc' => '[eE]ng(?!\.UCStyle|\.BaselineHook|\.Kom)',
+	'Eng-Dflt' => '[eE]ng(?!\.UCStyle|\.BaselineHook|\.Kom)', #new
 	'Eng-LgBsln' => '\.BaselineHook',
 	'Eng-CapN' => '\.UCStyle',
 	'Eng-LgShrtStm' => '\.Kom',
+	'RmHrn-Dflt' => 'uni0264(?!\.GammaStyle|\.LrgBowl)',
+	'RmHrn-Gma' => '\.GammaStyle',
+	'RmHrn-Lrg' => '\.LrgBowl',
 	'LgEzh-RvSgma' => '\.RevSigmaStyle',
 	'LgHStrk-Vrt' => '\.VertStrk',
 	'LgNLftHk-Lc' => '\.LCStyle',
@@ -275,6 +284,8 @@ my %reduced_featsets = (
 	'Lit-T SmCp-T' => 'SmCp-T', 
 	'LpDiacs-T SmCp-T' => 'SmCp-T',
 	'LrgBHk-Lc SmCp-T' => 'SmCp-T', 
+	'RmHrn-Gma SmCp-T' => 'SmCp-T',
+	'RmHrn-Lrg SmCp-T' => 'SmCp-T',
 	'Serb-T SmCp-T' => 'SmCp-T', 
 	'SlntItlc-T SmCp-T' => 'SmCp-T', 
 	'SlntItlc-T SmITail-CrvTl' => 'SmITail-CrvTl', # for Andika Reg, which lacks some SlantItalic glyphs
@@ -475,7 +486,7 @@ sub Tag_lookup($\%)
 	}
 	else
 	{
-		print "*** new name found so generating a tag - name:$name\n";
+		print "*** no name found so generating a tag - name:$name\n";
 		return Tag_get($name, 2); #always get two-letter tags
 	}
 }
@@ -574,12 +585,12 @@ sub OT_Feats_get($\%)
 	foreach $ot_tag (@{$GSUB_tbl->{'FEATURES'}{'FEAT_TAGS'}})
 	{
 		if (not $ot_tag =~ /^(cv|ss)/) {next;}
+		if ($ot_tag =~ /(cv91|cv92|cv79)/) {next;} #exclude Tone numbers, Hide tone contour staves, Kayan diacritics
 		# feature could be CV or SS; only CVs have UI strings for parms
 		$nm_id = $GSUB_tbl->{'FEATURES'}{$ot_tag}{'PARMS'}{'UINameID'}; #name tbl id
 		$nm_str = Name_get($font, $nm_id);
 		$feats->{$ot_tag}{'name'} = $nm_str;
 		$tag = Tag_lookup($nm_str, %nm_to_tag); # $tag is a TypeTuner tag
-
 		$feats->{$ot_tag}{'tag'} = $tag;
 		$feats->{$ot_tag}{'default'} = 0; # TODO: default for OT is always 0 ?
 		if (not defined($feats->{' ids'}))
@@ -615,9 +626,21 @@ sub OT_Feats_get($\%)
 			push(@{$feats->{$ot_tag}{'settings'}{' ids'}}, $i+1);
 		}
 	}
-	
+
 	$font->release;
-	
+
+	# add smcp feature which does not have GSUB info like CV and SS feats
+	#  it's much like a SS feat
+	push(@{$feats->{' ids'}}, 'smcp');
+	$feats->{'smcp'}{'name'} = 'Small Caps';
+	$feats->{'smcp'}{'tag'} = Tag_lookup('Small Caps', %nm_to_tag);
+	$feats->{'smcp'}{'default'} = 0;
+	$feats->{'smcp'}{'settings'}{' ids'} = [0, 1];
+	$feats->{'smcp'}{'settings'}{0}{'name'} = 'Default';
+	$feats->{'smcp'}{'settings'}{0}{'tag'} = 'Dflt';
+	$feats->{'smcp'}{'settings'}{1}{'name'} = 'True';
+	$feats->{'smcp'}{'settings'}{1}{'tag'} = Tag_lookup('True', %nm_to_tag);
+
 	if ($opt_d)
 	{
 		foreach my $feat_id (@{$feats->{' ids'}})
@@ -633,7 +656,6 @@ sub OT_Feats_get($\%)
 				print "  setting: $set_id tag: $tag name: $name\n";
 			}
 		}
-	exit;
 	}
 }
 
@@ -866,7 +888,7 @@ sub Gsi_xml_parse($\%\%\%)
 			
 			my $feat = $attrs{'category'};
 			if (not defined($feats->{$feat}))
-				{if ($opt_d) {print "feature in GSI missing from font Feat table: $feat\n";} return;}
+				{if ($opt_d) {print "feature in GSI missing from feature info in ttf: $feat\n";} return;}
 			my $set;
 			if (defined ($attrs{'value'}))
 				{$set = $attrs{'value'};}
@@ -1267,46 +1289,46 @@ sub Features_output($\%\%\%\%)
 	### deal with old features that have been eliminated
 	### by outputing the same <feature> structure that was generated before
 	### but with null cmds
-	if (not defined $feats->{'dpua'})
-	{ #be careful of tabs in section below for proper output
-		print $fh <<END
-	<feature name="Romanian-style diacritics" value="False" tag="RONdiacs">
-		<!-- this feature has been removed from the font -->
-		<!-- this feature element is needed for compatibility with old Settings -->
-		<value name="False" tag="F">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="True" tag="T">
-			<cmd name="null" args="null"/>
-		</value>
-	</feature>
-END
-	}
+	# if (not defined $feats->{'dpua'})
+	# { #be careful of tabs in section below for proper output
+		# print $fh <<END
+	# <feature name="Romanian-style diacritics" value="False" tag="RONdiacs">
+		# <!-- this feature has been removed from the font -->
+		# <!-- this feature element is needed for compatibility with old Settings -->
+		# <value name="False" tag="F">
+			# <cmd name="null" args="null"/>
+		# </value>
+		# <value name="True" tag="T">
+			# <cmd name="null" args="null"/>
+		# </value>
+	# </feature>
+# END
+	# }
 
-	if (not defined $feats->{'dpua'})
-	{ #be careful of tabs in section below for proper output
-		print $fh <<END
-	<feature name="Show deprecated PUA" value="None" tag="DepPUA">
-		<!-- this feature has been removed from the font -->
-		<!-- this feature element is needed for compatibility with old Settings -->
-		<value name="None" tag="none">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="Through Unicode 4.0" tag="40">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="Through Unicode 4.1" tag="41">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="Through Unicode 5.0" tag="50">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="Through Unicode 5.1" tag="51">
-			<cmd name="null" args="null"/>
-		</value>
-	</feature>
-END
-	}
+	# if (not defined $feats->{'dpua'})
+	# { #be careful of tabs in section below for proper output
+		# print $fh <<END
+	# <feature name="Show deprecated PUA" value="None" tag="DepPUA">
+		# <!-- this feature has been removed from the font -->
+		# <!-- this feature element is needed for compatibility with old Settings -->
+		# <value name="None" tag="none">
+			# <cmd name="null" args="null"/>
+		# </value>
+		# <value name="Through Unicode 4.0" tag="40">
+			# <cmd name="null" args="null"/>
+		# </value>
+		# <value name="Through Unicode 4.1" tag="41">
+			# <cmd name="null" args="null"/>
+		# </value>
+		# <value name="Through Unicode 5.0" tag="50">
+			# <cmd name="null" args="null"/>
+		# </value>
+		# <value name="Through Unicode 5.1" tag="51">
+			# <cmd name="null" args="null"/>
+		# </value>
+	# </feature>
+# END
+	# }
 	
 	### output line spacing feature
 	unless ($opt_g)
@@ -1519,11 +1541,12 @@ sub Aliases_output($)
 	print $feat_all_fh "\t<aliases>\n";
 
 	#<alias name="IPA" value="IPA "/> move up from below so not output to file
+	#<alias name="IPA" value="IPPH"/>
+	#<alias name="VIT" value="VIT "/>
+	#<alias name="ccmp_vietnamese" value="ccmp _0"/>
+
 	print $feat_all_fh <<END;
-		<alias name="IPA" value="IPPH"/>
-		<alias name="VIT" value="VIT "/>
 		<alias name="ccmp_latin" value="ccmp"/>
-		<alias name="ccmp_vietnamese" value="ccmp _0"/>
 		<alias name="viet_decomp" value="4"/>
 		<alias name="viet_precomp" value="5"/>
 END
@@ -1532,6 +1555,7 @@ END
 }
 
 sub Old_names_output($)
+# NO LONGER CALLED
 #output the mappings from old feature & value names to current tags
 #when revised feature values (created for OT char variants) were added
 # map the old feature value strings to the new tags (which are the same as old tags)
@@ -1599,11 +1623,11 @@ if ($opt_l)
 	my ($font_fn) = ($ARGV[0]);
 
 	OT_Feats_get($font_fn, %feats);
-	
+
 	open FILE, ">$featset_list_fn";
 	print FILE 'my %nm_to_tag = (';
 	print FILE "\n";
-	
+
 	my %tags;
 	foreach my $feat_id (@{$feats{' ids'}})
 	{
@@ -1639,7 +1663,7 @@ if ($opt_l)
 }
 
 if (scalar @ARGV == 3)
-	{($font_fn, $gsi_fn, $gsi_supp_fn) = ($ARGV[0], $ARGV[1], $ARGV[3]);}
+	{($font_fn, $gsi_fn, $gsi_supp_fn) = ($ARGV[0], $ARGV[1], $ARGV[2]);}
 else
 	{Usage_print;}
 
@@ -1710,7 +1734,7 @@ unless ($opt_g)
 {
 	Aliases_output($feat_all_fh);
 }
-Old_names_output($feat_all_fh);
+# Old_names_output($feat_all_fh);
 
 print $feat_all_fh "</all_features>\n";
 close $feat_all_fn;
@@ -1819,7 +1843,7 @@ push(@bridging_diacritics_test, @bridging_breve_test);
 #WP_test_output('bridging diacs', '1052=1', @bridging_diacritics_test);
 my ($brig_feat_id) = Font::TTF::GrFeat->tag_to_num('brig');
 WP_test_output('bridging diacs', "$brig_feat_id=1", @bridging_diacritics_test);
-	
+
 foreach my $featsets (sort sort_tests keys %featset_to_usvs)
 {
 	#TODO: should we process only feature interactions of interest? do all of them for now
@@ -1839,9 +1863,9 @@ foreach my $featsets (sort sort_tests keys %featset_to_usvs)
 		$featsets_str .= "$feat_id=$set_id,";
 	}
 	$featsets_str = substr($featsets_str, 0, -1); #remove final ','
-	
+
 	my @usv_str = sort @{$featset_to_usvs{$featsets}};
-	
+
 	if ($featsets eq 'CmbBrvCyr-T')
 	{
 		foreach (@usv_str) {$_ = '25CC ' . $_};
