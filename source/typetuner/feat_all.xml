@@ -1,12 +1,472 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE all_features SYSTEM "feat_all.dtd">
 <all_features version="1.0">
-	<feature name="Small Caps" value="False" tag="SmCp">
-		<value name="False" tag="F">
+	<feature name="Capital B hook" value="Default" tag="LrgBHk">
+		<value name="Default" tag="Dflt">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Single bowl" tag="Lc">
+			<cmd name="encode" args="0253 uni0253.TopBar"/>
+			<cmd name="encode" args="0181 uni0181.TopBar"/>
+		</value>
+	</feature>
+	<feature name="Capital D hook" value="Default" tag="LgDHk">
+		<value name="Default" tag="Dflt">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Half bowl" tag="Lc">
+			<cmd name="encode" args="0257 uni0257.TopBar"/>
+			<cmd name="encode" args="018A uni018A.TopBar"/>
+		</value>
+	</feature>
+	<feature name="Lowercase ezh curl" value="Default" tag="SmEzhCrl">
+		<value name="Default" tag="Dflt">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Large bowl" tag="Lrg">
+			<cmd name="encode" args="0293 uni0293.LrgBowl"/>
+		</value>
+	</feature>
+	<feature name="Capital Ezh" value="Default" tag="LgEzh">
+		<value name="Default" tag="Dflt">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Reversed sigma" tag="RvSgma">
+			<cmd name="encode" args="01B7 uni01B7.RevSigmaStyle"/>
+			<cmd name="encode" args="04E0 uni04E0.RevSigmaStyle"/>
+			<cmd name="encode" args="0292 uni0292.RevSigmaStyle"/>
+			<cmd name="encode" args="04E1 uni04E1.RevSigmaStyle"/>
+		</value>
+	</feature>
+	<feature name="Lowercase rams horn" value="Default" tag="RmHrn">
+		<value name="Default" tag="Dflt">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Large bowl" tag="Lrg">
+			<cmd name="encode" args="0264 uni0264.LrgBowl"/>
+		</value>
+		<value name="Small gamma" tag="Gma">
+			<cmd name="encode" args="0264 uni0264.GammaStyle"/>
+		</value>
+	</feature>
+	<feature name="Capital H stroke" value="Default" tag="LgHStrk">
+		<value name="Default" tag="Dflt">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Vertical stroke" tag="Vrt">
+			<cmd name="encode" args="0127 hbar.VertStrk"/>
+			<cmd name="encode" args="0126 Hbar.VertStrk"/>
+		</value>
+	</feature>
+	<feature name="Lowercase J stroke hook" value="Default" tag="JStrk">
+		<value name="Default" tag="Dflt">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Top serif" tag="TopSrf">
+			<cmd name="encode" args="0284 uni0284.DblSerif"/>
+		</value>
+	</feature>
+	<feature name="Capital Eng" value="Default" tag="Eng">
+		<value name="Default" tag="Dflt">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Lowercase no descender" tag="LgBsln">
+			<cmd name="encode" args="014B eng.BaselineHook"/>
+			<cmd name="encode" args="014A Eng.BaselineHook"/>
+		</value>
+		<value name="Capital form" tag="Uc">
+			<cmd name="encode" args="014B eng.UCStyle"/>
+			<cmd name="encode" args="014A Eng.UCStyle"/>
+		</value>
+		<value name="Lowercase short stem" tag="LgShrtStm">
+			<cmd name="encode" args="014B eng.Kom"/>
+			<cmd name="encode" args="014A Eng.Kom"/>
+		</value>
+	</feature>
+	<feature name="Capital N left hook" value="Default" tag="LgNLftHk">
+		<value name="Default" tag="Dflt">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Lowercase form" tag="Lc">
+			<cmd name="encode" args="0272 uni0272.LCStyle"/>
+			<cmd name="encode" args="019D uni019D.LCStyle"/>
+		</value>
+	</feature>
+	<feature name="Open O" value="Default" tag="OpnO">
+		<value name="Default" tag="Dflt">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Top serif" tag="TopSrf">
+			<cmd name="encode" args="0254 uni0254.TopSerif"/>
+			<cmd name="encode" args="1D53 uni1D53.TopSerif"/>
+			<cmd name="encode" args="1D97 uni1D97.TopSerif"/>
+			<cmd name="encode" args="0186 uni0186.TopSerif"/>
+			<cmd name="encode" args="1D10 uni1D10.TopSerif"/>
+		</value>
+	</feature>
+	<feature name="OU" value="Default" tag="Ou">
+		<value name="Default" tag="Dflt">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Open top" tag="Opn">
+			<cmd name="encode" args="0223 uni0223.OpenTop"/>
+			<cmd name="encode" args="0222 uni0222.OpenTop"/>
+			<cmd name="encode" args="1D3D uni1D3D.OpenTop"/>
+			<cmd name="encode" args="1D15 uni1D15.OpenTop"/>
+		</value>
+	</feature>
+	<feature name="Lowercase p hook" value="Default" tag="SmPHk">
+		<value name="Default" tag="Dflt">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Right hook" tag="RtHk">
+			<cmd name="encode" args="01A5 uni01A5.BowlHook"/>
+		</value>
+	</feature>
+	<feature name="Capital R tail" value="Default" tag="LgRTl">
+		<value name="Default" tag="Dflt">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Lowercase form" tag="Lc">
+			<cmd name="encode" args="027D uni027D.LCStyle"/>
+			<cmd name="encode" args="2C64 uni2C64.LCStyle"/>
+		</value>
+	</feature>
+	<feature name="Capital T hook" value="Default" tag="LgTHk">
+		<value name="Default" tag="Dflt">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Right hook" tag="RtHk">
+			<cmd name="encode" args="01AD uni01AD.RtHook"/>
+			<cmd name="encode" args="01AC uni01AC.RtHook"/>
+		</value>
+	</feature>
+	<feature name="V hook" value="Default" tag="VHk">
+		<value name="Default" tag="Dflt">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Straight with low hook" tag="StrtLftLowHk">
+			<cmd name="encode" args="1DB9 uni1DB9.StraightLft"/>
+			<cmd name="encode" args="028B uni028B.StraightLft"/>
+			<cmd name="encode" args="01B2 uni01B2.StraightLft"/>
+		</value>
+		<value name="Straight with high hook" tag="StrtLftHk">
+			<cmd name="encode" args="1DB9 uni1DB9.StraightLftHighHook"/>
+			<cmd name="encode" args="028B uni028B.StraightLftHighHook"/>
+			<cmd name="encode" args="01B2 uni01B2.StraightLftHighHook"/>
+		</value>
+	</feature>
+	<feature name="Capital Y hook" value="Default" tag="LgYHk">
+		<value name="Default" tag="Dflt">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Left hook" tag="LftHk">
+			<cmd name="encode" args="01B4 uni01B4"/>
+			<cmd name="encode" args="01B3 uni01B3"/>
+		</value>
+	</feature>
+	<feature name="Modifier apostrophe" value="Default" tag="ModAp">
+		<value name="Default" tag="Dflt">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Large" tag="Lg">
+			<cmd name="encode" args="A78B uniA78B.Lrg"/>
+			<cmd name="encode" args="A78C uniA78C.Lrg"/>
+			<cmd name="encode" args="02BC uni02BC.Lrg"/>
+		</value>
+	</feature>
+	<feature name="Modifier colon" value="Default" tag="ModCol">
+		<value name="Default" tag="Dflt">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Expanded" tag="Wd">
+			<cmd name="encode" args="A789 uniA789.Wide"/>
+		</value>
+	</feature>
+	<feature name="Vietnamese diacritics" value="Default" tag="VIEdiacs">
+		<value name="Default" tag="Dflt">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Vietnamese style" tag="T">
+			<cmd name="lookup_add" args="GSUB {ccmp_DFLT_dflt} {vd_sub}"/>
+			<cmd name="lookup_add" args="GSUB {ccmp_DFLT_dflt} {vc_sub}"/>
+			<cmd name="encode" args="1EA5 uni1EA5.VN"/>
+			<cmd name="encode" args="1EA7 uni1EA7.VN"/>
+			<cmd name="encode" args="1EAB uni1EAB.VN"/>
+			<cmd name="encode" args="1EA9 uni1EA9.VN"/>
+			<cmd name="encode" args="1EAF uni1EAF.VN"/>
+			<cmd name="encode" args="1EB1 uni1EB1.VN"/>
+			<cmd name="encode" args="1EB5 uni1EB5.VN"/>
+			<cmd name="encode" args="1EB3 uni1EB3.VN"/>
+			<cmd name="encode" args="1EA4 uni1EA4.VN"/>
+			<cmd name="encode" args="1EA6 uni1EA6.VN"/>
+			<cmd name="encode" args="1EAA uni1EAA.VN"/>
+			<cmd name="encode" args="1EA8 uni1EA8.VN"/>
+			<cmd name="encode" args="1EAE uni1EAE.VN"/>
+			<cmd name="encode" args="1EB0 uni1EB0.VN"/>
+			<cmd name="encode" args="1EB4 uni1EB4.VN"/>
+			<cmd name="encode" args="1EB2 uni1EB2.VN"/>
+			<cmd name="encode" args="1EBF uni1EBF.VN"/>
+			<cmd name="encode" args="1EC1 uni1EC1.VN"/>
+			<cmd name="encode" args="1EC5 uni1EC5.VN"/>
+			<cmd name="encode" args="1EC3 uni1EC3.VN"/>
+			<cmd name="encode" args="1EBE uni1EBE.VN"/>
+			<cmd name="encode" args="1EC0 uni1EC0.VN"/>
+			<cmd name="encode" args="1EC4 uni1EC4.VN"/>
+			<cmd name="encode" args="1EC2 uni1EC2.VN"/>
+			<cmd name="encode" args="1ED1 uni1ED1.VN"/>
+			<cmd name="encode" args="1ED3 uni1ED3.VN"/>
+			<cmd name="encode" args="1ED7 uni1ED7.VN"/>
+			<cmd name="encode" args="1ED5 uni1ED5.VN"/>
+			<cmd name="encode" args="1ED0 uni1ED0.VN"/>
+			<cmd name="encode" args="1ED2 uni1ED2.VN"/>
+			<cmd name="encode" args="1ED6 uni1ED6.VN"/>
+			<cmd name="encode" args="1ED4 uni1ED4.VN"/>
+		</value>
+	</feature>
+	<feature name="Ogonek" value="Default" tag="Ognk">
+		<value name="Default" tag="Dflt">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Straight" tag="Strt">
+			<cmd name="encode" args="0105 aogonek.RetroHook"/>
+			<cmd name="encode" args="0104 Aogonek.RetroHook"/>
+			<cmd name="encode" args="0119 eogonek.RetroHook"/>
+			<cmd name="encode" args="0118 Eogonek.RetroHook"/>
+			<cmd name="encode" args="012F iogonek.RetroHook"/>
+			<cmd name="encode" args="012E Iogonek.RetroHook"/>
+			<cmd name="encode" args="01EB uni01EB.RetroHook"/>
+			<cmd name="encode" args="01ED uni01ED.RetroHook"/>
+			<cmd name="encode" args="01EA uni01EA.RetroHook"/>
+			<cmd name="encode" args="01EC uni01EC.RetroHook"/>
+			<cmd name="encode" args="0173 uogonek.RetroHook"/>
+			<cmd name="encode" args="0172 Uogonek.RetroHook"/>
+			<cmd name="encode" args="0328 uni0328.RetroHook"/>
+			<cmd name="encode" args="02DB ogonek.RetroHook"/>
+		</value>
+	</feature>
+	<feature name="Caron" value="Default" tag="Caron">
+		<value name="Default" tag="Dflt">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Global style" tag="T">
+			<cmd name="encode" args="010F dcaron.Caron"/>
+			<cmd name="encode" args="013E lcaron.Caron"/>
+			<cmd name="encode" args="013D Lcaron.Caron"/>
+			<cmd name="encode" args="0165 tcaron.Caron"/>
+		</value>
+	</feature>
+	<feature name="Cyrillic E" value="Default" tag="CyrE">
+		<value name="Default" tag="Dflt">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Mongolian style" tag="T">
+			<cmd name="encode" args="044D uni044D.MongolStyle"/>
+			<cmd name="encode" args="042D uni042D.MongolStyle"/>
+		</value>
+	</feature>
+	<feature name="Cyrillic lowercase shha" value="Default" tag="CyShha">
+		<value name="Default" tag="Dflt">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Capital form" tag="Uc">
+			<cmd name="encode" args="04BB uni04BB.UCStyle"/>
+		</value>
+	</feature>
+	<feature name="Cyrillic breve" value="Default" tag="CmbBrvCyr">
+		<value name="Default" tag="Dflt">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Cyrillic form" tag="T">
+			<cmd name="encode" args="0306 uni0306.CyShortMrkAlt"/>
+		</value>
+	</feature>
+	<feature name="Chinantec tones" value="Default" tag="CHZtn">
+		<value name="Default" tag="Dflt">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Chinantec style" tag="T">
+			<cmd name="encode" args="02CB uni02CB.ChinantecTn"/>
+			<cmd name="encode" args="02C8 uni02C8.ChinantecTn"/>
+			<cmd name="encode" args="02CA uni02CA.ChinantecTn"/>
+			<cmd name="encode" args="02C9 uni02C9.ChinantecTn"/>
+		</value>
+	</feature>
+	<feature name="Empty set" value="Default" tag="EmpSet">
+		<value name="Default" tag="Dflt">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Zero form" tag="Zro">
+			<cmd name="encode" args="2205 emptyset.SlashZero"/>
+		</value>
+	</feature>
+	<feature name="Single-story a and g" value="Default" tag="SI">
+		<value name="Default" tag="Dflt">
 			<cmd name="null" args="null"/>
 		</value>
 		<value name="True" tag="T">
-			<cmd name="gr_feat" args="{smcp} 1"/>
+			<cmd name="encode" args="2090 uni2090.SngStory"/>
+			<cmd name="encode" args="1D43 uni1D43.SngStory"/>
+			<cmd name="encode" args="0363 uni0363.SngStory"/>
+			<cmd name="encode" args="0061 a.SngStory"/>
+			<cmd name="encode" args="00E1 aacute.SngStory"/>
+			<cmd name="encode" args="00E0 agrave.SngStory"/>
+			<cmd name="encode" args="0201 uni0201.SngStory"/>
+			<cmd name="encode" args="00E2 acircumflex.SngStory"/>
+			<cmd name="encode" args="1EAD uni1EAD.SngStory"/>
+			<cmd name="encode" args="1EA5 uni1EA5.SngStory"/>
+			<cmd name="encode" args="1EA7 uni1EA7.SngStory"/>
+			<cmd name="encode" args="1EAB uni1EAB.SngStory"/>
+			<cmd name="encode" args="1EA9 uni1EA9.SngStory"/>
+			<cmd name="encode" args="0203 uni0203.SngStory"/>
+			<cmd name="encode" args="0103 abreve.SngStory"/>
+			<cmd name="encode" args="1EB7 uni1EB7.SngStory"/>
+			<cmd name="encode" args="1EAF uni1EAF.SngStory"/>
+			<cmd name="encode" args="1EB1 uni1EB1.SngStory"/>
+			<cmd name="encode" args="1EB5 uni1EB5.SngStory"/>
+			<cmd name="encode" args="1EB3 uni1EB3.SngStory"/>
+			<cmd name="encode" args="01CE uni01CE.SngStory"/>
+			<cmd name="encode" args="00E3 atilde.SngStory"/>
+			<cmd name="encode" args="0101 amacron.SngStory"/>
+			<cmd name="encode" args="00E4 adieresis.SngStory"/>
+			<cmd name="encode" args="01DF uni01DF.SngStory"/>
+			<cmd name="encode" args="0227 uni0227.SngStory"/>
+			<cmd name="encode" args="01E1 uni01E1.SngStory"/>
+			<cmd name="encode" args="00E5 aring.SngStory"/>
+			<cmd name="encode" args="01FB aringacute.SngStory"/>
+			<cmd name="encode" args="1E9A uni1E9A.SngStory"/>
+			<cmd name="encode" args="1EA3 uni1EA3.SngStory"/>
+			<cmd name="encode" args="1EA1 uni1EA1.SngStory"/>
+			<cmd name="encode" args="1E01 uni1E01.SngStory"/>
+			<cmd name="encode" args="0105 aogonek.SngStory"/>
+			<cmd name="encode" args="2C65 uni2C65.SngStory"/>
+			<cmd name="encode" args="1D4D uni1D4D.SngBowl"/>
+			<cmd name="encode" args="A7A1 uniA7A1.SngBowl"/>
+			<cmd name="encode" args="0067 g.SngBowl"/>
+			<cmd name="encode" args="01F5 uni01F5.SngBowl"/>
+			<cmd name="encode" args="011D gcircumflex.SngBowl"/>
+			<cmd name="encode" args="011F gbreve.SngBowl"/>
+			<cmd name="encode" args="01E7 gcaron.SngBowl"/>
+			<cmd name="encode" args="1E21 uni1E21.SngBowl"/>
+			<cmd name="encode" args="0121 gdotaccent.SngBowl"/>
+			<cmd name="encode" args="0123 gcommaaccent.SngBowl"/>
+			<cmd name="encode" args="01E5 uni01E5.SngBowl"/>
+		</value>
+	</feature>
+	<feature name="Barred-bowl forms" value="Default" tag="BarBwl">
+		<value name="Default" tag="Dflt">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="True" tag="T">
+			<cmd name="encode" args="0180 uni0180.BarBowl"/>
+			<cmd name="encode" args="0111 dcroat.BarBowl"/>
+			<cmd name="encode" args="01E5 uni01E5.BarBowl"/>
+		</value>
+	</feature>
+	<feature name="Slanted italic specials" value="Default" tag="SL">
+		<value name="Default" tag="Dflt">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="True" tag="T">
+			<cmd name="encode" args="0061 a.2StorySItal"/>
+			<cmd name="encode" args="1EA5 uni1EA5.2StorySItal"/>
+			<cmd name="encode" args="1EA7 uni1EA7.2StorySItal"/>
+			<cmd name="encode" args="1EAB uni1EAB.2StorySItal"/>
+			<cmd name="encode" args="1EA9 uni1EA9.2StorySItal"/>
+			<cmd name="encode" args="00E3 atilde.2StorySItal"/>
+			<cmd name="encode" args="1EA1 uni1EA1.2StorySItal"/>
+			<cmd name="encode" args="0250 uni0250.2StorySItal"/>
+			<cmd name="encode" args="2C65 uni2C65.2StorySItal"/>
+			<cmd name="encode" args="00E1 aacute.2StorySItal"/>
+			<cmd name="encode" args="00E0 agrave.2StorySItal"/>
+			<cmd name="encode" args="0201 uni0201.2StorySItal"/>
+			<cmd name="encode" args="00E2 acircumflex.2StorySItal"/>
+			<cmd name="encode" args="1EAD uni1EAD.2StorySItal"/>
+			<cmd name="encode" args="0203 uni0203.2StorySItal"/>
+			<cmd name="encode" args="0103 abreve.2StorySItal"/>
+			<cmd name="encode" args="1EB7 uni1EB7.2StorySItal"/>
+			<cmd name="encode" args="1EAF uni1EAF.2StorySItal"/>
+			<cmd name="encode" args="1EB1 uni1EB1.2StorySItal"/>
+			<cmd name="encode" args="1EB5 uni1EB5.2StorySItal"/>
+			<cmd name="encode" args="1EB3 uni1EB3.2StorySItal"/>
+			<cmd name="encode" args="01CE uni01CE.2StorySItal"/>
+			<cmd name="encode" args="0101 amacron.2StorySItal"/>
+			<cmd name="encode" args="00E4 adieresis.2StorySItal"/>
+			<cmd name="encode" args="01DF uni01DF.2StorySItal"/>
+			<cmd name="encode" args="0227 uni0227.2StorySItal"/>
+			<cmd name="encode" args="01E1 uni01E1.2StorySItal"/>
+			<cmd name="encode" args="00E5 aring.2StorySItal"/>
+			<cmd name="encode" args="01FB aringacute.2StorySItal"/>
+			<cmd name="encode" args="1E9A uni1E9A.2StorySItal"/>
+			<cmd name="encode" args="1EA3 uni1EA3.2StorySItal"/>
+			<cmd name="encode" args="1E01 uni1E01.2StorySItal"/>
+			<cmd name="encode" args="0105 aogonek.2StorySItal"/>
+			<cmd name="encode" args="00E6 ae.2StorySItal"/>
+			<cmd name="encode" args="01FD aeacute.2StorySItal"/>
+			<cmd name="encode" args="01E3 uni01E3.2StorySItal"/>
+			<cmd name="encode" args="0066 f.SItal"/>
+			<cmd name="encode" args="1E1F uni1E1F.SItal"/>
+			<cmd name="encode" args="0493 uni0493.SItal"/>
+			<cmd name="encode" args="F327 uniF327.SItal"/>
+			<cmd name="encode" args="04FB uni04FB.SItal"/>
+			<cmd name="encode" args="0069 i.SItal"/>
+			<cmd name="encode" args="00ED iacute.SItal"/>
+			<cmd name="encode" args="00EC igrave.SItal"/>
+			<cmd name="encode" args="0209 uni0209.SItal"/>
+			<cmd name="encode" args="00EE icircumflex.SItal"/>
+			<cmd name="encode" args="020B uni020B.SItal"/>
+			<cmd name="encode" args="012D ibreve.SItal"/>
+			<cmd name="encode" args="01D0 uni01D0.SItal"/>
+			<cmd name="encode" args="0129 itilde.SItal"/>
+			<cmd name="encode" args="012B imacron.SItal"/>
+			<cmd name="encode" args="00EF idieresis.SItal"/>
+			<cmd name="encode" args="1E2F uni1E2F.SItal"/>
+			<cmd name="encode" args="1EC9 uni1EC9.SItal"/>
+			<cmd name="encode" args="1E2D uni1E2D.SItal"/>
+			<cmd name="encode" args="1ECB uni1ECB.SItal"/>
+			<cmd name="encode" args="0131 dotlessi.SItal"/>
+			<cmd name="encode" args="006C l.SItal"/>
+			<cmd name="encode" args="2097 uni2097.SItal"/>
+			<cmd name="encode" args="013A lacute.SItal"/>
+			<cmd name="encode" args="1E3D uni1E3D.SItal"/>
+			<cmd name="encode" args="1E3B uni1E3B.SItal"/>
+			<cmd name="encode" args="1E37 uni1E37.SItal"/>
+			<cmd name="encode" args="1E39 uni1E39.SItal"/>
+			<cmd name="encode" args="A749 uniA749.SItal"/>
+			<cmd name="encode" args="0076 v.SItal"/>
+			<cmd name="encode" args="1E7D uni1E7D.SItal"/>
+			<cmd name="encode" args="1E7F uni1E7F.SItal"/>
+			<cmd name="encode" args="A75F uniA75F.SItal"/>
+			<cmd name="encode" args="007A z.SItal"/>
+			<cmd name="encode" args="017A zacute.SItal"/>
+			<cmd name="encode" args="1E91 uni1E91.SItal"/>
+			<cmd name="encode" args="017E zcaron.SItal"/>
+			<cmd name="encode" args="017C zdotaccent.SItal"/>
+			<cmd name="encode" args="1E95 uni1E95.SItal"/>
+			<cmd name="encode" args="1E93 uni1E93.SItal"/>
+		</value>
+	</feature>
+	<feature name="Single-story a" value="Default" tag="SJ">
+		<value name="Default" tag="Dflt">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="True" tag="T">
+			<cmd name="null" args="null"/>
+		</value>
+	</feature>
+	<feature name="Single-story g" value="Default" tag="SK">
+		<value name="Default" tag="Dflt">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="True" tag="T">
+			<cmd name="null" args="null"/>
+		</value>
+	</feature>
+	<feature name="Small Caps" value="Default" tag="SmCp">
+		<value name="Default" tag="Dflt">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="True" tag="T">
 			<cmd name="encode" args="0061 a.sc"/>
 			<cmd name="encode" args="0430 uni0430.sc"/>
 			<cmd name="encode" args="00E1 aacute.sc"/>
@@ -72,6 +532,7 @@
 			<cmd name="encode" args="0463 uni0463.sc"/>
 			<cmd name="encode" args="044B uni044B.sc"/>
 			<cmd name="encode" args="0432 uni0432.sc"/>
+			<cmd name="encode" args="A7B5 uniA7B5.sc"/>
 			<cmd name="encode" args="0063 c.sc"/>
 			<cmd name="encode" args="0441 uni0441.sc"/>
 			<cmd name="encode" args="0107 cacute.sc"/>
@@ -238,10 +699,12 @@
 			<cmd name="encode" args="0269 uni0269.sc"/>
 			<cmd name="encode" args="044E uni044E.sc"/>
 			<cmd name="encode" args="04CF uni04CF.sc"/>
+			<cmd name="encode" args="026A uni026A.sc"/>
 			<cmd name="encode" args="006A j.sc"/>
 			<cmd name="encode" args="0458 uni0458.sc"/>
 			<cmd name="encode" args="0135 jcircumflex.sc"/>
 			<cmd name="encode" args="0249 uni0249.sc"/>
+			<cmd name="encode" args="029D uni029D.sc"/>
 			<cmd name="encode" args="A76D uniA76D.sc"/>
 			<cmd name="encode" args="043B uni043B.sc"/>
 			<cmd name="encode" args="052F uni052F.sc"/>
@@ -363,6 +826,7 @@
 			<cmd name="encode" args="04E9 uni04E9.sc"/>
 			<cmd name="encode" args="04EB uni04EB.sc"/>
 			<cmd name="encode" args="A74B uniA74B.sc"/>
+			<cmd name="encode" args="03D1 uni03F4.sc"/>
 			<cmd name="encode" args="0275 uni0275.sc"/>
 			<cmd name="encode" args="0473 uni0473.sc"/>
 			<cmd name="encode" args="00F8 oslash.sc"/>
@@ -380,6 +844,7 @@
 			<cmd name="encode" args="01A3 uni01A3.sc"/>
 			<cmd name="encode" args="A74F uniA74F.sc"/>
 			<cmd name="encode" args="0223 uni0223.sc"/>
+			<cmd name="encode" args="0298 uni0298.sc"/>
 			<cmd name="encode" args="0070 p.sc"/>
 			<cmd name="encode" args="0440 uni0440.sc"/>
 			<cmd name="encode" args="1E55 uni1E55.sc"/>
@@ -483,6 +948,7 @@
 			<cmd name="encode" args="1EE5 uni1EE5.sc"/>
 			<cmd name="encode" args="0173 uogonek.sc"/>
 			<cmd name="encode" args="0289 uni0289.sc"/>
+			<cmd name="encode" args="A7B9 uniA7B9.sc"/>
 			<cmd name="encode" args="01B0 uhorn.sc"/>
 			<cmd name="encode" args="1EE9 uni1EE9.sc"/>
 			<cmd name="encode" args="1EEB uni1EEB.sc"/>
@@ -498,6 +964,7 @@
 			<cmd name="encode" args="A761 uniA761.sc"/>
 			<cmd name="encode" args="A769 uniA769.sc"/>
 			<cmd name="encode" args="028C uni028C.sc"/>
+			<cmd name="encode" args="0264 uni0264.sc"/>
 			<cmd name="encode" args="0263 uni0263.sc"/>
 			<cmd name="encode" args="0475 uni0475.sc"/>
 			<cmd name="encode" args="0077 w.sc"/>
@@ -509,6 +976,7 @@
 			<cmd name="encode" args="1E87 uni1E87.sc"/>
 			<cmd name="encode" args="1E89 uni1E89.sc"/>
 			<cmd name="encode" args="2C73 uni2C73.sc"/>
+			<cmd name="encode" args="A7B7 uniA7B7.sc"/>
 			<cmd name="encode" args="0078 x.sc"/>
 			<cmd name="encode" args="0445 uni0445.sc"/>
 			<cmd name="encode" args="1E8D uni1E8D.sc"/>
@@ -516,6 +984,7 @@
 			<cmd name="encode" args="04FF uni04FF.sc"/>
 			<cmd name="encode" args="04FD uni04FD.sc"/>
 			<cmd name="encode" args="04B3 uni04B3.sc"/>
+			<cmd name="encode" args="AB53 uniAB53.sc"/>
 			<cmd name="encode" args="0079 y.sc"/>
 			<cmd name="encode" args="0443 uni0443.sc"/>
 			<cmd name="encode" args="00FD yacute.sc"/>
@@ -568,20 +1037,154 @@
 			<cmd name="encode" args="01BD uni01BD.sc"/>
 			<cmd name="encode" args="1EFD uni1EFD.sc"/>
 			<cmd name="encode" args="A76F uniA76F.sc"/>
+			<cmd name="encode" args="01C3 uni01C3.sc"/>
 			<cmd name="encode" args="A78C uniA78C.sc"/>
+			<cmd name="encode" args="01C0 uni01C0.sc"/>
+			<cmd name="encode" args="01C1 uni01C1.sc"/>
+			<cmd name="encode" args="01C2 uni01C2.sc"/>
 			<cmd name="encode" args="A725 uniA725.sc"/>
 			<cmd name="encode" args="A723 uniA723.sc"/>
 		</value>
 	</feature>
-	<feature name="Literacy alternates" value="False" tag="Lit">
-		<value name="False" tag="F">
-			<cmd name="null" args="null"/>
+	<feature name="Line spacing" value="Normal" tag="LnSpc">
+		<!-- Charis -->
+		<value name="Normal" tag="Nrml">
+			<cmd name="null" args="2450 900"/>
 		</value>
-		<value name="True" tag="T">
-			<cmd name="gr_feat" args="{litr} 1"/>
-			<cmd name="encode" args="2090 uni2090.SngStory"/>
-			<cmd name="encode" args="1D43 uni1D43.SngStory"/>
-			<cmd name="encode" args="0363 uni0363.SngStory"/>
+		<value name="Tight" tag="Tght">
+			<cmd name="line_gap" args="1950 500"/>
+		</value>
+		<value name="Loose" tag="Ls">
+			<cmd name="line_gap" args="2900 1200"/>
+		</value>
+		<value name="Imported" tag="Im">
+			<cmd name="line_metrics_scaled" args="null"/>
+		</value>
+	</feature>
+	<interactions>
+		<test select="BarBwl-T SI-T">
+			<cmd name="encode" args="01E5 uni01E5.BarBowl"/>
+		</test>
+		<test select="BarBwl-T SmCp-T">
+			<cmd name="encode" args="0180 uni0180.BarBowl.sc"/>
+			<cmd name="encode" args="0111 dcroat.BarBowl.sc"/>
+			<cmd name="encode" args="01E5 uni01E5.BarBowl.sc"/>
+		</test>
+		<test select="Caron-T SmCp-T">
+			<cmd name="encode" args="010F dcaron.Caron.sc"/>
+			<cmd name="encode" args="013E lcaron.Caron.sc"/>
+			<cmd name="encode" args="0165 tcaron.Caron.sc"/>
+		</test>
+		<test select="CyShha-Uc SmCp-T">
+			<cmd name="encode" args="04BB uni04BB.sc"/>
+		</test>
+		<test select="CyrE-T SmCp-T">
+			<cmd name="encode" args="044D uni044D.MongolStyle.sc"/>
+		</test>
+		<test select="Eng-Dflt SmCp-T">
+			<cmd name="encode" args="014B eng.sc"/>
+		</test>
+		<test select="Eng-LgBsln SmCp-T">
+			<cmd name="encode" args="014B eng.BaselineHook.sc"/>
+		</test>
+		<test select="Eng-LgShrtStm SmCp-T">
+			<cmd name="encode" args="014B eng.Kom.sc"/>
+		</test>
+		<test select="Eng-Uc SmCp-T">
+			<cmd name="encode" args="014B eng.UCStyle.sc"/>
+		</test>
+		<test select="LgDHk-Lc SmCp-T">
+			<cmd name="encode" args="0257 uni0257.TopBar.sc"/>
+		</test>
+		<test select="LgEzh-RvSgma SmCp-T">
+			<cmd name="encode" args="0292 uni0292.RevSigmaStyle.sc"/>
+			<cmd name="encode" args="04E1 uni04E1.RevSigmaStyle.sc"/>
+		</test>
+		<test select="LgHStrk-Vrt SmCp-T">
+			<cmd name="encode" args="0127 hbar.VertStrk.sc"/>
+		</test>
+		<test select="LgNLftHk-Lc SmCp-T">
+			<cmd name="encode" args="0272 uni0272.LCStyle.sc"/>
+		</test>
+		<test select="LgRTl-Lc SmCp-T">
+			<cmd name="encode" args="027D uni027D.LCStyle.sc"/>
+		</test>
+		<test select="LgTHk-RtHk SmCp-T">
+			<cmd name="encode" args="01AD uni01AD.RtHook.sc"/>
+		</test>
+		<test select="LgYHk-LftHk SmCp-T">
+			<cmd name="encode" args="01B4 uni01B4.sc"/>
+		</test>
+		<test select="LrgBHk-Lc SmCp-T">
+			<cmd name="encode" args="0253 uni0253.TopBar.sc"/>
+		</test>
+		<test select="ModAp-Lg SmCp-T">
+			<cmd name="encode" args="A78C uniA78C.Lrg.sc"/>
+		</test>
+		<test select="Ognk-Strt SI-T">
+			<cmd name="encode" args="0105 aogonek.RetroHook"/>
+		</test>
+		<test select="Ognk-Strt SL-T">
+			<cmd name="encode" args="0105 aogonek.RetroHook"/>
+		</test>
+		<test select="Ognk-Strt SmCp-T">
+			<cmd name="encode" args="0105 aogonek.RetroHook.sc"/>
+			<cmd name="encode" args="0119 eogonek.RetroHook.sc"/>
+			<cmd name="encode" args="012F iogonek.RetroHook.sc"/>
+			<cmd name="encode" args="01EB uni01EB.RetroHook.sc"/>
+			<cmd name="encode" args="01ED uni01ED.RetroHook.sc"/>
+			<cmd name="encode" args="0173 uogonek.RetroHook.sc"/>
+		</test>
+		<test select="OpnO-TopSrf SmCp-T">
+			<cmd name="encode" args="0254 uni0254.TopSerif.sc"/>
+		</test>
+		<test select="Ou-Opn SmCp-T">
+			<cmd name="encode" args="0223 uni0223.OpenTop.sc"/>
+		</test>
+		<test select="RmHrn-Dflt SmCp-T">
+			<cmd name="encode" args="0264 uni0264.sc"/>
+		</test>
+		<test select="RmHrn-Gma SmCp-T">
+			<cmd name="encode" args="0264 uni0264.sc"/>
+		</test>
+		<test select="RmHrn-Lrg SmCp-T">
+			<cmd name="encode" args="0264 uni0264.sc"/>
+		</test>
+		<test select="SI-T SL-T">
+			<cmd name="encode" args="0061 a.SngStory"/>
+			<cmd name="encode" args="1EA5 uni1EA5.SngStory"/>
+			<cmd name="encode" args="1EA7 uni1EA7.SngStory"/>
+			<cmd name="encode" args="1EAB uni1EAB.SngStory"/>
+			<cmd name="encode" args="1EA9 uni1EA9.SngStory"/>
+			<cmd name="encode" args="00E3 atilde.SngStory"/>
+			<cmd name="encode" args="1EA1 uni1EA1.SngStory"/>
+			<cmd name="encode" args="2C65 uni2C65.SngStory"/>
+			<cmd name="encode" args="00E1 aacute.SngStory"/>
+			<cmd name="encode" args="00E0 agrave.SngStory"/>
+			<cmd name="encode" args="0201 uni0201.SngStory"/>
+			<cmd name="encode" args="00E2 acircumflex.SngStory"/>
+			<cmd name="encode" args="1EAD uni1EAD.SngStory"/>
+			<cmd name="encode" args="0203 uni0203.SngStory"/>
+			<cmd name="encode" args="0103 abreve.SngStory"/>
+			<cmd name="encode" args="1EB7 uni1EB7.SngStory"/>
+			<cmd name="encode" args="1EAF uni1EAF.SngStory"/>
+			<cmd name="encode" args="1EB1 uni1EB1.SngStory"/>
+			<cmd name="encode" args="1EB5 uni1EB5.SngStory"/>
+			<cmd name="encode" args="1EB3 uni1EB3.SngStory"/>
+			<cmd name="encode" args="01CE uni01CE.SngStory"/>
+			<cmd name="encode" args="0101 amacron.SngStory"/>
+			<cmd name="encode" args="00E4 adieresis.SngStory"/>
+			<cmd name="encode" args="01DF uni01DF.SngStory"/>
+			<cmd name="encode" args="0227 uni0227.SngStory"/>
+			<cmd name="encode" args="01E1 uni01E1.SngStory"/>
+			<cmd name="encode" args="00E5 aring.SngStory"/>
+			<cmd name="encode" args="01FB aringacute.SngStory"/>
+			<cmd name="encode" args="1E9A uni1E9A.SngStory"/>
+			<cmd name="encode" args="1EA3 uni1EA3.SngStory"/>
+			<cmd name="encode" args="1E01 uni1E01.SngStory"/>
+			<cmd name="encode" args="0105 aogonek.SngStory"/>
+		</test>
+		<test select="SI-T SmCp-T">
 			<cmd name="encode" args="0061 a.SngStory"/>
 			<cmd name="encode" args="00E1 aacute.SngStory"/>
 			<cmd name="encode" args="00E0 agrave.SngStory"/>
@@ -592,7 +1195,6 @@
 			<cmd name="encode" args="1EA7 uni1EA7.SngStory"/>
 			<cmd name="encode" args="1EAB uni1EAB.SngStory"/>
 			<cmd name="encode" args="1EA9 uni1EA9.SngStory"/>
-			<cmd name="encode" args="0203 uni0203.SngStory"/>
 			<cmd name="encode" args="0103 abreve.SngStory"/>
 			<cmd name="encode" args="1EB7 uni1EB7.SngStory"/>
 			<cmd name="encode" args="1EAF uni1EAF.SngStory"/>
@@ -614,8 +1216,7 @@
 			<cmd name="encode" args="1E01 uni1E01.SngStory"/>
 			<cmd name="encode" args="0105 aogonek.SngStory"/>
 			<cmd name="encode" args="2C65 uni2C65.SngStory"/>
-			<cmd name="encode" args="1D4D uni1D4D.SngBowl"/>
-			<cmd name="encode" args="A7A1 uniA7A1.SngBowl"/>
+			<cmd name="encode" args="0203 uni0203.SngStory"/>
 			<cmd name="encode" args="0067 g.SngBowl"/>
 			<cmd name="encode" args="01F5 uni01F5.SngBowl"/>
 			<cmd name="encode" args="011D gcircumflex.SngBowl"/>
@@ -624,30 +1225,30 @@
 			<cmd name="encode" args="1E21 uni1E21.SngBowl"/>
 			<cmd name="encode" args="0121 gdotaccent.SngBowl"/>
 			<cmd name="encode" args="0123 gcommaaccent.SngBowl"/>
-			<cmd name="encode" args="01E5 uni01E5.BarBowl.SngBowl"/>
-		</value>
-	</feature>
-	<feature name="Slant italic specials" value="False" tag="SlntItlc">
-		<value name="False" tag="F">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="True" tag="T">
-			<cmd name="gr_feat" args="{ital} 1"/>
+			<cmd name="encode" args="01E5 uni01E5.SngBowl"/>
+			<cmd name="encode" args="A7A1 uniA7A1.SngBowl"/>
+		</test>
+		<test select="SI-T VIEdiacs-T">
+			<cmd name="encode" args="1EA5 uni1EA5.SngStory"/>
+			<cmd name="encode" args="1EA7 uni1EA7.SngStory"/>
+			<cmd name="encode" args="1EAB uni1EAB.SngStory"/>
+			<cmd name="encode" args="1EA9 uni1EA9.SngStory"/>
+			<cmd name="encode" args="1EAF uni1EAF.SngStory"/>
+			<cmd name="encode" args="1EB1 uni1EB1.SngStory"/>
+			<cmd name="encode" args="1EB5 uni1EB5.SngStory"/>
+			<cmd name="encode" args="1EB3 uni1EB3.SngStory"/>
+		</test>
+		<test select="SL-T SmCp-T">
 			<cmd name="encode" args="0061 a.2StorySItal"/>
-			<cmd name="encode" args="1EA5 uni1EA5.2StorySItal"/>
-			<cmd name="encode" args="1EA7 uni1EA7.2StorySItal"/>
-			<cmd name="encode" args="1EAB uni1EAB.2StorySItal"/>
-			<cmd name="encode" args="1EA9 uni1EA9.2StorySItal"/>
-			<cmd name="encode" args="00E3 atilde.2StorySItal"/>
-			<cmd name="encode" args="1EA1 uni1EA1.2StorySItal"/>
-			<cmd name="encode" args="0250 uni0250.2StorySItal"/>
-			<cmd name="encode" args="2C65 uni2C65.2StorySItal"/>
 			<cmd name="encode" args="00E1 aacute.2StorySItal"/>
 			<cmd name="encode" args="00E0 agrave.2StorySItal"/>
 			<cmd name="encode" args="0201 uni0201.2StorySItal"/>
 			<cmd name="encode" args="00E2 acircumflex.2StorySItal"/>
 			<cmd name="encode" args="1EAD uni1EAD.2StorySItal"/>
-			<cmd name="encode" args="0203 uni0203.2StorySItal"/>
+			<cmd name="encode" args="1EA5 uni1EA5.2StorySItal"/>
+			<cmd name="encode" args="1EA7 uni1EA7.2StorySItal"/>
+			<cmd name="encode" args="1EAB uni1EAB.2StorySItal"/>
+			<cmd name="encode" args="1EA9 uni1EA9.2StorySItal"/>
 			<cmd name="encode" args="0103 abreve.2StorySItal"/>
 			<cmd name="encode" args="1EB7 uni1EB7.2StorySItal"/>
 			<cmd name="encode" args="1EAF uni1EAF.2StorySItal"/>
@@ -655,6 +1256,7 @@
 			<cmd name="encode" args="1EB5 uni1EB5.2StorySItal"/>
 			<cmd name="encode" args="1EB3 uni1EB3.2StorySItal"/>
 			<cmd name="encode" args="01CE uni01CE.2StorySItal"/>
+			<cmd name="encode" args="00E3 atilde.2StorySItal"/>
 			<cmd name="encode" args="0101 amacron.2StorySItal"/>
 			<cmd name="encode" args="00E4 adieresis.2StorySItal"/>
 			<cmd name="encode" args="01DF uni01DF.2StorySItal"/>
@@ -664,8 +1266,12 @@
 			<cmd name="encode" args="01FB aringacute.2StorySItal"/>
 			<cmd name="encode" args="1E9A uni1E9A.2StorySItal"/>
 			<cmd name="encode" args="1EA3 uni1EA3.2StorySItal"/>
+			<cmd name="encode" args="1EA1 uni1EA1.2StorySItal"/>
 			<cmd name="encode" args="1E01 uni1E01.2StorySItal"/>
 			<cmd name="encode" args="0105 aogonek.2StorySItal"/>
+			<cmd name="encode" args="2C65 uni2C65.2StorySItal"/>
+			<cmd name="encode" args="0250 uni0250.2StorySItal"/>
+			<cmd name="encode" args="0203 uni0203.2StorySItal"/>
 			<cmd name="encode" args="00E6 ae.2StorySItal"/>
 			<cmd name="encode" args="01FD aeacute.2StorySItal"/>
 			<cmd name="encode" args="01E3 uni01E3.2StorySItal"/>
@@ -691,7 +1297,6 @@
 			<cmd name="encode" args="1ECB uni1ECB.SItal"/>
 			<cmd name="encode" args="0131 dotlessi.SItal"/>
 			<cmd name="encode" args="006C l.SItal"/>
-			<cmd name="encode" args="2097 uni2097.SItal"/>
 			<cmd name="encode" args="013A lacute.SItal"/>
 			<cmd name="encode" args="1E3D uni1E3D.SItal"/>
 			<cmd name="encode" args="1E3B uni1E3B.SItal"/>
@@ -709,751 +1314,21 @@
 			<cmd name="encode" args="017C zdotaccent.SItal"/>
 			<cmd name="encode" args="1E95 uni1E95.SItal"/>
 			<cmd name="encode" args="1E93 uni1E93.SItal"/>
-		</value>
-	</feature>
-	<feature name="Barred-bowl forms" value="False" tag="BarBwl">
-		<value name="False" tag="F">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="Barred-bowl" tag="T">
-			<cmd name="gr_feat" args="{bowl} 1"/>
-			<cmd name="encode" args="0180 uni0180.BarBowl"/>
-			<cmd name="encode" args="0111 dcroat.BarBowl"/>
-			<cmd name="encode" args="01E5 uni01E5.BarBowl"/>
-		</value>
-	</feature>
-	<feature name="Tone numbers" value="Bars" tag="TnNmbr">
-		<value name="Bars" tag="F">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="Numbers" tag="T">
-			<cmd name="gr_feat" args="{tone} 1"/>
-		</value>
-	</feature>
-	<feature name="Hide tone contour staves" value="False" tag="TnStvsHd">
-		<value name="False" tag="F">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="True" tag="T">
-			<cmd name="gr_feat" args="{tstv} 1"/>
-		</value>
-	</feature>
-	<feature name="9-level pitches" value="No tramlines" tag="NineLvl">
-		<value name="No tramlines" tag="Lgt">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="Tramlines" tag="TrmLn">
-			<cmd name="gr_feat" args="{pit9} 1"/>
-		</value>
-		<value name="Non-ligated with no tramlines" tag="NoLgt">
-			<cmd name="gr_feat" args="{pit9} 2"/>
-		</value>
-		<value name="Non-ligated with tramlines" tag="TrmLnNoLgt">
-			<cmd name="gr_feat" args="{pit9} 3"/>
-		</value>
-	</feature>
-	<feature name="Vietnamese-style diacritics" value="False" tag="VIEdiacs">
-		<value name="False" tag="F">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="Vietnamese-style" tag="T">
-			<cmd name="gr_feat" args="{viet} 1"/>
-			<cmd name="lookup_add" args="GSUB {ccmp_latin} {viet_decomp}"/>
-			<cmd name="lookup_add" args="GSUB {ccmp_latin} {viet_precomp}"/>
-			<cmd name="encode" args="1EA5 uni1EA5.VN"/>
-			<cmd name="encode" args="1EA7 uni1EA7.VN"/>
-			<cmd name="encode" args="1EAB uni1EAB.VN"/>
-			<cmd name="encode" args="1EA9 uni1EA9.VN"/>
-			<cmd name="encode" args="1EAF uni1EAF.VN"/>
-			<cmd name="encode" args="1EB1 uni1EB1.VN"/>
-			<cmd name="encode" args="1EB5 uni1EB5.VN"/>
-			<cmd name="encode" args="1EB3 uni1EB3.VN"/>
-			<cmd name="encode" args="1EA4 uni1EA4.VN"/>
-			<cmd name="encode" args="1EA6 uni1EA6.VN"/>
-			<cmd name="encode" args="1EAA uni1EAA.VN"/>
-			<cmd name="encode" args="1EA8 uni1EA8.VN"/>
-			<cmd name="encode" args="1EAE uni1EAE.VN"/>
-			<cmd name="encode" args="1EB0 uni1EB0.VN"/>
-			<cmd name="encode" args="1EB4 uni1EB4.VN"/>
-			<cmd name="encode" args="1EB2 uni1EB2.VN"/>
-			<cmd name="encode" args="1EBF uni1EBF.VN"/>
-			<cmd name="encode" args="1EC1 uni1EC1.VN"/>
-			<cmd name="encode" args="1EC5 uni1EC5.VN"/>
-			<cmd name="encode" args="1EC3 uni1EC3.VN"/>
-			<cmd name="encode" args="1EBE uni1EBE.VN"/>
-			<cmd name="encode" args="1EC0 uni1EC0.VN"/>
-			<cmd name="encode" args="1EC4 uni1EC4.VN"/>
-			<cmd name="encode" args="1EC2 uni1EC2.VN"/>
-			<cmd name="encode" args="1ED1 uni1ED1.VN"/>
-			<cmd name="encode" args="1ED3 uni1ED3.VN"/>
-			<cmd name="encode" args="1ED7 uni1ED7.VN"/>
-			<cmd name="encode" args="1ED5 uni1ED5.VN"/>
-			<cmd name="encode" args="1ED0 uni1ED0.VN"/>
-			<cmd name="encode" args="1ED2 uni1ED2.VN"/>
-			<cmd name="encode" args="1ED6 uni1ED6.VN"/>
-			<cmd name="encode" args="1ED4 uni1ED4.VN"/>
-		</value>
-	</feature>
-	<feature name="Chinantec tones" value="False" tag="CHZtn">
-		<value name="False" tag="F">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="Chinantec-style" tag="T">
-			<cmd name="gr_feat" args="{chtn} 1"/>
-			<cmd name="encode" args="02CB uni02CB.ChinantecTn"/>
-			<cmd name="encode" args="02C8 uni02C8.ChinantecTn"/>
-			<cmd name="encode" args="02CA uni02CA.ChinantecTn"/>
-			<cmd name="encode" args="02C9 uni02C9.ChinantecTn"/>
-		</value>
-	</feature>
-	<feature name="Bridging diacritics" value="False" tag="BrdgDiacs">
-		<value name="False" tag="F">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="True" tag="T">
-			<cmd name="gr_feat" args="{brig} 1"/>
-		</value>
-	</feature>
-	<feature name="Serbian-style alternates" value="False" tag="Serb">
-		<value name="False" tag="F">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="True" tag="T">
-			<cmd name="gr_feat" args="{serb} 1"/>
-			<cmd name="encode" args="0431 uni0431.Serb"/>
-			<cmd name="encode" args="0433 uni0433.Serb"/>
-			<cmd name="encode" args="043F uni043F.Serb"/>
-			<cmd name="encode" args="0434 uni0434.Serb"/>
-			<cmd name="encode" args="0442 uni0442.Serb"/>
-		</value>
-	</feature>
-	<feature name="Uppercase Eng alternates" value="Large eng with descender" tag="Eng">
-		<value name="Large eng with descender" tag="LgDsc">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="Large eng on baseline" tag="LgBsln">
-			<cmd name="gr_feat" args="{Engs} 1"/>
-			<cmd name="encode" args="014B eng.BaselineHook"/>
-			<cmd name="encode" args="014A Eng.BaselineHook"/>
-		</value>
-		<value name="Capital N with tail" tag="CapN">
-			<cmd name="gr_feat" args="{Engs} 2"/>
-			<cmd name="encode" args="014B eng.UCStyle"/>
-			<cmd name="encode" args="014A Eng.UCStyle"/>
-		</value>
-		<value name="Large eng with short stem" tag="LgShrtStm">
-			<cmd name="gr_feat" args="{Engs} 3"/>
-			<cmd name="encode" args="014B eng.Kom"/>
-			<cmd name="encode" args="014A Eng.Kom"/>
-		</value>
-	</feature>
-	<feature name="Rams horn alternates" value="Small bowl" tag="RmHrn">
-		<value name="Small bowl" tag="Sm">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="Large bowl" tag="Lrg">
-			<cmd name="gr_feat" args="{ramh} 1"/>
-			<cmd name="encode" args="0264 uni0264.LrgBowl"/>
-		</value>
-		<value name="Small gamma" tag="Gma">
-			<cmd name="gr_feat" args="{ramh} 2"/>
-			<cmd name="encode" args="0264 uni0264.GammaStyle"/>
-		</value>
-	</feature>
-	<feature name="Ogonek alternate" value="Curved" tag="Ognk">
-		<value name="Curved" tag="Crvd">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="Straight" tag="Strt">
-			<cmd name="gr_feat" args="{ogon} 1"/>
-			<cmd name="encode" args="0105 aogonek.RetroHook"/>
-			<cmd name="encode" args="0104 Aogonek.RetroHook"/>
-			<cmd name="encode" args="0119 eogonek.RetroHook"/>
-			<cmd name="encode" args="0118 Eogonek.RetroHook"/>
-			<cmd name="encode" args="012F iogonek.RetroHook"/>
-			<cmd name="encode" args="012E Iogonek.RetroHook"/>
-			<cmd name="encode" args="01EB uni01EB.RetroHook"/>
-			<cmd name="encode" args="01ED uni01ED.RetroHook"/>
-			<cmd name="encode" args="01EA uni01EA.RetroHook"/>
-			<cmd name="encode" args="01EC uni01EC.RetroHook"/>
-			<cmd name="encode" args="0173 uogonek.RetroHook"/>
-			<cmd name="encode" args="0172 Uogonek.RetroHook"/>
-			<cmd name="encode" args="0328 uni0328.RetroHook"/>
-			<cmd name="encode" args="02DB ogonek.RetroHook"/>
-		</value>
-	</feature>
-	<feature name="Capital B-hook alternate" value="Uppercase style" tag="LrgBHk">
-		<value name="Uppercase style" tag="Uc">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="Lowercase style" tag="Lc">
-			<cmd name="gr_feat" args="{B_hk} 1"/>
-			<cmd name="encode" args="0253 uni0253.TopBar"/>
-			<cmd name="encode" args="0181 uni0181.TopBar"/>
-		</value>
-	</feature>
-	<feature name="Capital D-hook alternate" value="Uppercase style" tag="LgDHk">
-		<value name="Uppercase style" tag="Uc">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="Lowercase style" tag="Lc">
-			<cmd name="gr_feat" args="{D_hk} 1"/>
-			<cmd name="encode" args="0257 uni0257.TopBar"/>
-			<cmd name="encode" args="018A uni018A.TopBar"/>
-		</value>
-	</feature>
-	<feature name="Capital H-stroke alternate" value="False" tag="LgHStrk">
-		<value name="False" tag="F">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="Vertical-stroke" tag="Vrt">
-			<cmd name="gr_feat" args="{Hstk} 1"/>
-			<cmd name="encode" args="0127 hbar.VertStrk"/>
-			<cmd name="encode" args="0126 Hbar.VertStrk"/>
-		</value>
-	</feature>
-	<feature name="J-stroke hook alternate" value="No top serif" tag="JStrk">
-		<value name="No top serif" tag="NoSrf">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="Top serif" tag="TopSrf">
-			<cmd name="gr_feat" args="{Jstk} 1"/>
-			<cmd name="encode" args="0284 uni0284.DblSerif"/>
-		</value>
-	</feature>
-	<feature name="Capital N-left-hook alternate" value="Uppercase style" tag="LgNLftHk">
-		<value name="Uppercase style" tag="Uc">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="Lowercase style" tag="Lc">
-			<cmd name="gr_feat" args="{N_hk} 1"/>
-			<cmd name="encode" args="0272 uni0272.LCStyle"/>
-			<cmd name="encode" args="019D uni019D.LCStyle"/>
-		</value>
-	</feature>
-	<feature name="Open-O alternate" value="Bottom serif" tag="OpnO">
-		<value name="Bottom serif" tag="BtmSrf">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="Top serif" tag="TopSrf">
-			<cmd name="gr_feat" args="{opnO} 1"/>
-			<cmd name="encode" args="0254 uni0254.TopSerif"/>
-			<cmd name="encode" args="1D53 uni1D53.TopSerif"/>
-			<cmd name="encode" args="1D97 uni1D97.TopSerif"/>
-			<cmd name="encode" args="0186 uni0186.TopSerif"/>
-			<cmd name="encode" args="1D10 uni1D10.TopSerif"/>
-		</value>
-	</feature>
-	<feature name="Small p-hook alternate" value="Left hook" tag="SmPHk">
-		<value name="Left hook" tag="LftHk">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="Right hook" tag="RtHk">
-			<cmd name="gr_feat" args="{p_hk} 1"/>
-			<cmd name="encode" args="01A5 uni01A5.BowlHook"/>
-		</value>
-	</feature>
-	<feature name="Capital R-tail alternate" value="Uppercase style" tag="LgRTl">
-		<value name="Uppercase style" tag="Uc">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="Lowercase style" tag="Lc">
-			<cmd name="gr_feat" args="{R_tl} 1"/>
-			<cmd name="encode" args="027D uni027D.LCStyle"/>
-			<cmd name="encode" args="2C64 uni2C64.LCStyle"/>
-		</value>
-	</feature>
-	<feature name="Capital T-hook alternate" value="Left hook" tag="LgTHk">
-		<value name="Left hook" tag="LftHk">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="Right hook" tag="RtHk">
-			<cmd name="gr_feat" args="{t_hk} 1"/>
-			<cmd name="encode" args="01AD uni01AD.RtHook"/>
-			<cmd name="encode" args="01AC uni01AC.RtHook"/>
-		</value>
-	</feature>
-	<feature name="V-hook alternates" value="Curved" tag="VHk">
-		<value name="Curved" tag="Crvd">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="Straight with low hook" tag="StrtLftLowHk">
-			<cmd name="gr_feat" args="{v_hk} 1"/>
-			<cmd name="encode" args="1DB9 uni1DB9.StraightLft"/>
-			<cmd name="encode" args="028B uni028B.StraightLft"/>
-			<cmd name="encode" args="01B2 uni01B2.StraightLft"/>
-		</value>
-		<value name="Straight with high hook" tag="StrtLftHk">
-			<cmd name="gr_feat" args="{v_hk} 2"/>
-			<cmd name="encode" args="1DB9 uni1DB9.StraightLftHighHook"/>
-			<cmd name="encode" args="028B uni028B.StraightLftHighHook"/>
-			<cmd name="encode" args="01B2 uni01B2.StraightLftHighHook"/>
-		</value>
-	</feature>
-	<feature name="Capital Y-hook alternate" value="Right hook" tag="LgYHk">
-		<value name="Left hook" tag="LftHk">
-			<cmd name="gr_feat" args="{Y_hk} 0"/>
-			<cmd name="encode" args="01B4 uni01B4"/>
-			<cmd name="encode" args="01B3 uni01B3"/>
-		</value>
-		<value name="Right hook" tag="RtHk">
-			<cmd name="null" args="null"/>
-		</value>
-	</feature>
-	<feature name="Small ezh-curl alternate" value="Small bowl" tag="SmEzhCrl">
-		<value name="Small bowl" tag="Sm">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="Large bowl" tag="Lrg">
-			<cmd name="gr_feat" args="{ezhc} 1"/>
-			<cmd name="encode" args="0293 uni0293.LrgBowl"/>
-		</value>
-	</feature>
-	<feature name="Capital Ezh alternates" value="Normal" tag="LgEzh">
-		<value name="Normal" tag="Nrml">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="Reversed sigma" tag="RvSgma">
-			<cmd name="gr_feat" args="{Ezhr} 1"/>
-			<cmd name="encode" args="04E0 uni04E0.RevSigmaStyle"/>
-			<cmd name="encode" args="0292 uni0292.RevSigmaStyle"/>
-			<cmd name="encode" args="04E1 uni04E1.RevSigmaStyle"/>
-			<cmd name="encode" args="01B7 uni01B7.RevSigmaStyle"/>
-		</value>
-	</feature>
-	<feature name="OU alternates" value="Closed" tag="Ou">
-		<value name="Closed" tag="Clsd">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="Open" tag="Opn">
-			<cmd name="gr_feat" args="{opOU} 1"/>
-			<cmd name="encode" args="0223 uni0223.OpenTop"/>
-			<cmd name="encode" args="0222 uni0222.OpenTop"/>
-			<cmd name="encode" args="1D3D uni1D3D.OpenTop"/>
-			<cmd name="encode" args="1D15 uni1D15.OpenTop"/>
-		</value>
-	</feature>
-	<feature name="Mongolian-style Cyrillic E" value="False" tag="CyrE">
-		<value name="False" tag="F">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="Mongolian-style" tag="T">
-			<cmd name="gr_feat" args="{mone} 1"/>
-			<cmd name="encode" args="044D uni044D.MongolStyle"/>
-			<cmd name="encode" args="042D uni042D.MongolStyle"/>
-		</value>
-	</feature>
-	<feature name="Combining breve Cyrillic form" value="False" tag="CmbBrvCyr">
-		<value name="False" tag="F">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="Cyrillic-style" tag="T">
-			<cmd name="gr_feat" args="{sbrv} 1"/>
-			<cmd name="encode" args="0306 uni0306.CyShortMrkAlt"/>
-		</value>
-	</feature>
-	<feature name="Cyrillic shha alternate" value="False" tag="CyShha">
-		<value name="False" tag="F">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="Uppercase style" tag="Uc">
-			<cmd name="gr_feat" args="{shha} 1"/>
-			<cmd name="encode" args="04BB uni04BB.UCStyle"/>
-		</value>
-	</feature>
-	<feature name="Modifier apostrophe alternates" value="Small" tag="ModAp">
-		<value name="Small" tag="Sm">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="Large" tag="Lg">
-			<cmd name="gr_feat" args="{apos} 1"/>
-			<cmd name="encode" args="A78B uniA78B.Lrg"/>
-			<cmd name="encode" args="A78C uniA78C.Lrg"/>
-			<cmd name="encode" args="02BC uni02BC.Lrg"/>
-		</value>
-	</feature>
-	<feature name="Modifier colon alternate" value="Tight" tag="ModCol">
-		<value name="Tight" tag="Tght">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="Expanded" tag="Wd">
-			<cmd name="gr_feat" args="{coln} 1"/>
-			<cmd name="encode" args="A789 uniA789.Wide"/>
-		</value>
-	</feature>
-	<feature name="Non-European caron alternates" value="European style" tag="Caron">
-		<value name="European style" tag="F">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="Non-European style" tag="T">
-			<cmd name="gr_feat" args="{carn} 1"/>
-			<cmd name="encode" args="010F dcaron.Caron"/>
-			<cmd name="encode" args="013E lcaron.Caron"/>
-			<cmd name="encode" args="013D Lcaron.Caron"/>
-			<cmd name="encode" args="0165 tcaron.Caron"/>
-		</value>
-	</feature>
-	<feature name="Empty set alternates" value="Circle" tag="EmpSet">
-		<value name="Circle" tag="Crcl">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="Zero" tag="Zro">
-			<cmd name="gr_feat" args="{empt} 1"/>
-			<cmd name="encode" args="2205 emptyset.SlashZero"/>
-		</value>
-	</feature>
-	<feature name="Show invisible characters" value="False" tag="ShwInv">
-		<value name="False" tag="F">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="True" tag="T">
-			<cmd name="gr_feat" args="{invs} 1"/>
-			<cmd name="encode" args="00AD uni00AD.ShowInv"/>
-			<cmd name="encode" args="034F uni034F.ShowInv"/>
-			<cmd name="encode" args="2061 uni2061.ShowInv"/>
-			<cmd name="encode" args="2063 uni2063.ShowInv"/>
-			<cmd name="encode" args="2062 uni2062.ShowInv"/>
-			<cmd name="encode" args="202A uni202A.ShowInv"/>
-			<cmd name="encode" args="200E uni200E.ShowInv"/>
-			<cmd name="encode" args="202D uni202D.ShowInv"/>
-			<cmd name="encode" args="202C uni202C.ShowInv"/>
-			<cmd name="encode" args="202B uni202B.ShowInv"/>
-			<cmd name="encode" args="200F uni200F.ShowInv"/>
-			<cmd name="encode" args="202E uni202E.ShowInv"/>
-			<cmd name="encode" args="FE00 uniFE00.ShowInv"/>
-			<cmd name="encode" args="FE01 uniFE01.ShowInv"/>
-			<cmd name="encode" args="FE02 uniFE02.ShowInv"/>
-			<cmd name="encode" args="FE03 uniFE03.ShowInv"/>
-			<cmd name="encode" args="FE04 uniFE04.ShowInv"/>
-			<cmd name="encode" args="FE05 uniFE05.ShowInv"/>
-			<cmd name="encode" args="FE06 uniFE06.ShowInv"/>
-			<cmd name="encode" args="FE07 uniFE07.ShowInv"/>
-			<cmd name="encode" args="FE08 uniFE08.ShowInv"/>
-			<cmd name="encode" args="FE09 uniFE09.ShowInv"/>
-			<cmd name="encode" args="FE0A uniFE0A.ShowInv"/>
-			<cmd name="encode" args="FE0B uniFE0B.ShowInv"/>
-			<cmd name="encode" args="FE0C uniFE0C.ShowInv"/>
-			<cmd name="encode" args="FE0D uniFE0D.ShowInv"/>
-			<cmd name="encode" args="FE0E uniFE0E.ShowInv"/>
-			<cmd name="encode" args="FE0F uniFE0F.ShowInv"/>
-			<cmd name="encode" args="2060 uni2060.ShowInv"/>
-			<cmd name="encode" args="200D uni200D.ShowInv"/>
-			<cmd name="encode" args="FEFF uniFEFF.ShowInv"/>
-			<cmd name="encode" args="200C uni200C.ShowInv"/>
-			<cmd name="encode" args="200B uni200B.ShowInv"/>
-		</value>
-	</feature>
-	<feature name="Romanian-style diacritics" value="False" tag="RONdiacs">
-		<!-- this feature has been removed from the font -->
-		<!-- this feature element is needed for compatibility with old Settings -->
-		<value name="False" tag="F">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="True" tag="T">
-			<cmd name="null" args="null"/>
-		</value>
-	</feature>
-	<feature name="Show deprecated PUA" value="None" tag="DepPUA">
-		<!-- this feature has been removed from the font -->
-		<!-- this feature element is needed for compatibility with old Settings -->
-		<value name="None" tag="none">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="Through Unicode 4.0" tag="40">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="Through Unicode 4.1" tag="41">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="Through Unicode 5.0" tag="50">
-			<cmd name="null" args="null"/>
-		</value>
-		<value name="Through Unicode 5.1" tag="51">
-			<cmd name="null" args="null"/>
-		</value>
-	</feature>
-	<feature name="Line spacing" value="Normal" tag="LnSpc">
-		<!-- Charis -->
-		<value name="Normal" tag="Nrml">
-			<cmd name="null" args="2450 900"/>
-		</value>
-		<value name="Tight" tag="Tght">
-			<cmd name="line_gap" args="1950 500"/>
-		</value>
-		<value name="Loose" tag="Ls">
-			<cmd name="line_gap" args="2900 1200"/>
-		</value>
-		<!-- edit note: do _not_ delete the Imported value -->
-		<value name="Imported" tag="Im">
-			<cmd name="line_metrics_scaled" args="null"/>
-		</value>
-	</feature>
-	<interactions>
-		<test select="BarBwl-T Lit-T">
-			<cmd name="encode" args="01E5 uni01E5.BarBowl.SngBowl"/>
 		</test>
-		<test select="BarBwl-T SmCp-T">
-			<cmd name="encode" args="0180 uni0180.BarBowl.sc"/>
-			<cmd name="encode" args="0111 dcroat.BarBowl.sc"/>
-			<cmd name="encode" args="01E5 uni01E5.BarBowl.sc"/>
-		</test>
-		<test select="Caron-T SmCp-T">
-			<cmd name="encode" args="010F dcaron.Caron.sc"/>
-			<cmd name="encode" args="013E lcaron.Caron.sc"/>
-			<cmd name="encode" args="0165 tcaron.Caron.sc"/>
-		</test>
-		<test select="CyShha-Uc SmCp-T">
-			<cmd name="encode" args="04BB uni04BB.sc"/>
-		</test>
-		<test select="CyrE-T SmCp-T">
-			<cmd name="encode" args="044D uni044D.MongolStyle.sc"/>
-		</test>
-		<test select="Eng-CapN SmCp-T">
-			<cmd name="encode" args="014B eng.UCStyle.sc"/>
-		</test>
-		<test select="Eng-LgBsln SmCp-T">
-			<cmd name="encode" args="014B eng.BaselineHook.sc"/>
-		</test>
-		<test select="Eng-LgDsc SmCp-T">
-			<cmd name="encode" args="014B eng.sc"/>
-		</test>
-		<test select="Eng-LgShrtStm SmCp-T">
-			<cmd name="encode" args="014B eng.Kom.sc"/>
-		</test>
-		<test select="LgDHk-Lc SmCp-T">
-			<cmd name="encode" args="0257 uni0257.TopBar.sc"/>
-		</test>
-		<test select="LgEzh-RvSgma SmCp-T">
-			<cmd name="encode" args="0292 uni0292.RevSigmaStyle.sc"/>
-			<cmd name="encode" args="04E1 uni04E1.RevSigmaStyle.sc"/>
-		</test>
-		<test select="LgHStrk-Vrt SmCp-T">
-			<cmd name="encode" args="0127 hbar.VertStrk.sc"/>
-		</test>
-		<test select="LgNLftHk-Lc SmCp-T">
-			<cmd name="encode" args="0272 uni0272.LCStyle.sc"/>
-		</test>
-		<test select="LgRTl-Lc SmCp-T">
-			<cmd name="encode" args="027D uni027D.LCStyle.sc"/>
-		</test>
-		<test select="LgTHk-RtHk SmCp-T">
-			<cmd name="encode" args="01AD uni01AD.RtHook.sc"/>
-		</test>
-		<test select="LgYHk-LftHk SmCp-T">
-			<cmd name="encode" args="01B4 uni01B4.sc"/>
-		</test>
-		<test select="Lit-T Ognk-Strt">
-			<cmd name="encode" args="0105 aogonek.SngStory.RetroHook"/>
-		</test>
-		<test select="Lit-T SlntItlc-T">
-			<cmd name="encode" args="0061 a.SngStory"/>
-			<cmd name="encode" args="1EA5 uni1EA5.SngStory"/>
-			<cmd name="encode" args="1EA7 uni1EA7.SngStory"/>
-			<cmd name="encode" args="1EAB uni1EAB.SngStory"/>
-			<cmd name="encode" args="1EA9 uni1EA9.SngStory"/>
-			<cmd name="encode" args="00E3 atilde.SngStory"/>
-			<cmd name="encode" args="1EA1 uni1EA1.SngStory"/>
-			<cmd name="encode" args="2C65 uni2C65.SngStory"/>
-			<cmd name="encode" args="00E1 aacute.SngStory"/>
-			<cmd name="encode" args="00E0 agrave.SngStory"/>
-			<cmd name="encode" args="0201 uni0201.SngStory"/>
-			<cmd name="encode" args="00E2 acircumflex.SngStory"/>
-			<cmd name="encode" args="1EAD uni1EAD.SngStory"/>
-			<cmd name="encode" args="0203 uni0203.SngStory"/>
-			<cmd name="encode" args="0103 abreve.SngStory"/>
-			<cmd name="encode" args="1EB7 uni1EB7.SngStory"/>
-			<cmd name="encode" args="1EAF uni1EAF.SngStory"/>
-			<cmd name="encode" args="1EB1 uni1EB1.SngStory"/>
-			<cmd name="encode" args="1EB5 uni1EB5.SngStory"/>
-			<cmd name="encode" args="1EB3 uni1EB3.SngStory"/>
-			<cmd name="encode" args="01CE uni01CE.SngStory"/>
-			<cmd name="encode" args="0101 amacron.SngStory"/>
-			<cmd name="encode" args="00E4 adieresis.SngStory"/>
-			<cmd name="encode" args="01DF uni01DF.SngStory"/>
-			<cmd name="encode" args="0227 uni0227.SngStory"/>
-			<cmd name="encode" args="01E1 uni01E1.SngStory"/>
-			<cmd name="encode" args="00E5 aring.SngStory"/>
-			<cmd name="encode" args="01FB aringacute.SngStory"/>
-			<cmd name="encode" args="1E9A uni1E9A.SngStory"/>
-			<cmd name="encode" args="1EA3 uni1EA3.SngStory"/>
-			<cmd name="encode" args="1E01 uni1E01.SngStory"/>
-			<cmd name="encode" args="0105 aogonek.SngStory"/>
-		</test>
-		<test select="Lit-T SmCp-T">
-			<cmd name="encode" args="0061 a.SngStory.sc"/>
-			<cmd name="encode" args="00E1 aacute.SngStory.sc"/>
-			<cmd name="encode" args="00E0 agrave.SngStory.sc"/>
-			<cmd name="encode" args="0201 uni0201.SngStory.sc"/>
-			<cmd name="encode" args="00E2 acircumflex.SngStory.sc"/>
-			<cmd name="encode" args="1EAD uni1EAD.SngStory.sc"/>
-			<cmd name="encode" args="1EA5 uni1EA5.SngStory.sc"/>
-			<cmd name="encode" args="1EA7 uni1EA7.SngStory.sc"/>
-			<cmd name="encode" args="1EAB uni1EAB.SngStory.sc"/>
-			<cmd name="encode" args="1EA9 uni1EA9.SngStory.sc"/>
-			<cmd name="encode" args="0103 abreve.SngStory.sc"/>
-			<cmd name="encode" args="1EB7 uni1EB7.SngStory.sc"/>
-			<cmd name="encode" args="1EAF uni1EAF.SngStory.sc"/>
-			<cmd name="encode" args="1EB1 uni1EB1.SngStory.sc"/>
-			<cmd name="encode" args="1EB5 uni1EB5.SngStory.sc"/>
-			<cmd name="encode" args="1EB3 uni1EB3.SngStory.sc"/>
-			<cmd name="encode" args="01CE uni01CE.SngStory.sc"/>
-			<cmd name="encode" args="00E3 atilde.SngStory.sc"/>
-			<cmd name="encode" args="0101 amacron.SngStory.sc"/>
-			<cmd name="encode" args="00E4 adieresis.SngStory.sc"/>
-			<cmd name="encode" args="01DF uni01DF.SngStory.sc"/>
-			<cmd name="encode" args="0227 uni0227.SngStory.sc"/>
-			<cmd name="encode" args="01E1 uni01E1.SngStory.sc"/>
-			<cmd name="encode" args="00E5 aring.SngStory.sc"/>
-			<cmd name="encode" args="01FB aringacute.SngStory.sc"/>
-			<cmd name="encode" args="1E9A uni1E9A.SngStory.sc"/>
-			<cmd name="encode" args="1EA3 uni1EA3.SngStory.sc"/>
-			<cmd name="encode" args="1EA1 uni1EA1.SngStory.sc"/>
-			<cmd name="encode" args="1E01 uni1E01.SngStory.sc"/>
-			<cmd name="encode" args="0105 aogonek.SngStory.sc"/>
-			<cmd name="encode" args="2C65 uni2C65.SngStory.sc"/>
-			<cmd name="encode" args="0203 uni0203.SngStory.sc"/>
-			<cmd name="encode" args="0067 g.SngBowl.sc"/>
-			<cmd name="encode" args="01F5 uni01F5.SngBowl.sc"/>
-			<cmd name="encode" args="011D gcircumflex.SngBowl.sc"/>
-			<cmd name="encode" args="011F gbreve.SngBowl.sc"/>
-			<cmd name="encode" args="01E7 gcaron.SngBowl.sc"/>
-			<cmd name="encode" args="1E21 uni1E21.SngBowl.sc"/>
-			<cmd name="encode" args="0121 gdotaccent.SngBowl.sc"/>
-			<cmd name="encode" args="0123 gcommaaccent.SngBowl.sc"/>
-			<cmd name="encode" args="01E5 uni01E5.SngBowl.sc"/>
-			<cmd name="encode" args="A7A1 uniA7A1.SngBowl.sc"/>
-		</test>
-		<test select="Lit-T VIEdiacs-T">
-			<cmd name="encode" args="1EA5 uni1EA5.SngStory.VN"/>
-			<cmd name="encode" args="1EA7 uni1EA7.SngStory.VN"/>
-			<cmd name="encode" args="1EAB uni1EAB.SngStory.VN"/>
-			<cmd name="encode" args="1EA9 uni1EA9.SngStory.VN"/>
-			<cmd name="encode" args="1EAF uni1EAF.SngStory.VN"/>
-			<cmd name="encode" args="1EB1 uni1EB1.SngStory.VN"/>
-			<cmd name="encode" args="1EB5 uni1EB5.SngStory.VN"/>
-			<cmd name="encode" args="1EB3 uni1EB3.SngStory.VN"/>
-		</test>
-		<test select="LrgBHk-Lc SmCp-T">
-			<cmd name="encode" args="0253 uni0253.TopBar.sc"/>
-		</test>
-		<test select="ModAp-Lg SmCp-T">
-			<cmd name="encode" args="A78C uniA78C.Lrg.sc"/>
-		</test>
-		<test select="Ognk-Strt SlntItlc-T">
-			<cmd name="encode" args="0105 aogonek.2StorySItal.RetroHook"/>
-		</test>
-		<test select="Ognk-Strt SmCp-T">
-			<cmd name="encode" args="0105 aogonek.RetroHook.sc"/>
-			<cmd name="encode" args="0119 eogonek.RetroHook.sc"/>
-			<cmd name="encode" args="012F iogonek.RetroHook.sc"/>
-			<cmd name="encode" args="01EB uni01EB.RetroHook.sc"/>
-			<cmd name="encode" args="01ED uni01ED.RetroHook.sc"/>
-			<cmd name="encode" args="0173 uogonek.RetroHook.sc"/>
-		</test>
-		<test select="OpnO-TopSrf SmCp-T">
-			<cmd name="encode" args="0254 uni0254.TopSerif.sc"/>
-		</test>
-		<test select="Ou-Opn SmCp-T">
-			<cmd name="encode" args="0223 uni0223.OpenTop.sc"/>
-		</test>
-		<test select="Serb-T SmCp-T">
-			<cmd name="encode" args="0431 uni0431.sc"/>
-			<cmd name="encode" args="0433 uni0433.sc"/>
-			<cmd name="encode" args="043F uni043F.sc"/>
-			<cmd name="encode" args="0434 uni0434.sc"/>
-			<cmd name="encode" args="0442 uni0442.sc"/>
-		</test>
-		<test select="SlntItlc-T SmCp-T">
-			<cmd name="encode" args="0061 a.sc"/>
-			<cmd name="encode" args="00E1 aacute.sc"/>
-			<cmd name="encode" args="00E0 agrave.sc"/>
-			<cmd name="encode" args="0201 uni0201.sc"/>
-			<cmd name="encode" args="00E2 acircumflex.sc"/>
-			<cmd name="encode" args="1EAD uni1EAD.sc"/>
-			<cmd name="encode" args="1EA5 uni1EA5.sc"/>
-			<cmd name="encode" args="1EA7 uni1EA7.sc"/>
-			<cmd name="encode" args="1EAB uni1EAB.sc"/>
-			<cmd name="encode" args="1EA9 uni1EA9.sc"/>
-			<cmd name="encode" args="0103 abreve.sc"/>
-			<cmd name="encode" args="1EB7 uni1EB7.sc"/>
-			<cmd name="encode" args="1EAF uni1EAF.sc"/>
-			<cmd name="encode" args="1EB1 uni1EB1.sc"/>
-			<cmd name="encode" args="1EB5 uni1EB5.sc"/>
-			<cmd name="encode" args="1EB3 uni1EB3.sc"/>
-			<cmd name="encode" args="01CE uni01CE.sc"/>
-			<cmd name="encode" args="00E3 atilde.sc"/>
-			<cmd name="encode" args="0101 amacron.sc"/>
-			<cmd name="encode" args="00E4 adieresis.sc"/>
-			<cmd name="encode" args="01DF uni01DF.sc"/>
-			<cmd name="encode" args="0227 uni0227.sc"/>
-			<cmd name="encode" args="01E1 uni01E1.sc"/>
-			<cmd name="encode" args="00E5 aring.sc"/>
-			<cmd name="encode" args="01FB aringacute.sc"/>
-			<cmd name="encode" args="1E9A uni1E9A.sc"/>
-			<cmd name="encode" args="1EA3 uni1EA3.sc"/>
-			<cmd name="encode" args="1EA1 uni1EA1.sc"/>
-			<cmd name="encode" args="1E01 uni1E01.sc"/>
-			<cmd name="encode" args="0105 aogonek.sc"/>
-			<cmd name="encode" args="2C65 uni2C65.sc"/>
-			<cmd name="encode" args="0250 uni0250.sc"/>
-			<cmd name="encode" args="0203 uni0203.sc"/>
-			<cmd name="encode" args="00E6 ae.sc"/>
-			<cmd name="encode" args="01FD aeacute.sc"/>
-			<cmd name="encode" args="01E3 uni01E3.sc"/>
-			<cmd name="encode" args="0066 f.sc"/>
-			<cmd name="encode" args="1E1F uni1E1F.sc"/>
-			<cmd name="encode" args="0493 uni0493.sc"/>
-			<cmd name="encode" args="F327 uniF327.sc"/>
-			<cmd name="encode" args="04FB uni04FB.sc"/>
-			<cmd name="encode" args="0069 i.sc"/>
-			<cmd name="encode" args="00ED iacute.sc"/>
-			<cmd name="encode" args="00EC igrave.sc"/>
-			<cmd name="encode" args="0209 uni0209.sc"/>
-			<cmd name="encode" args="00EE icircumflex.sc"/>
-			<cmd name="encode" args="020B uni020B.sc"/>
-			<cmd name="encode" args="012D ibreve.sc"/>
-			<cmd name="encode" args="01D0 uni01D0.sc"/>
-			<cmd name="encode" args="0129 itilde.sc"/>
-			<cmd name="encode" args="012B imacron.sc"/>
-			<cmd name="encode" args="00EF idieresis.sc"/>
-			<cmd name="encode" args="1E2F uni1E2F.sc"/>
-			<cmd name="encode" args="1EC9 uni1EC9.sc"/>
-			<cmd name="encode" args="1E2D uni1E2D.sc"/>
-			<cmd name="encode" args="1ECB uni1ECB.sc"/>
-			<cmd name="encode" args="0131 dotlessi.sc"/>
-			<cmd name="encode" args="006C l.sc"/>
-			<cmd name="encode" args="013A lacute.sc"/>
-			<cmd name="encode" args="1E3D uni1E3D.sc"/>
-			<cmd name="encode" args="1E3B uni1E3B.sc"/>
-			<cmd name="encode" args="1E37 uni1E37.sc"/>
-			<cmd name="encode" args="1E39 uni1E39.sc"/>
-			<cmd name="encode" args="A749 uniA749.sc"/>
-			<cmd name="encode" args="0076 v.sc"/>
-			<cmd name="encode" args="1E7D uni1E7D.sc"/>
-			<cmd name="encode" args="1E7F uni1E7F.sc"/>
-			<cmd name="encode" args="A75F uniA75F.sc"/>
-			<cmd name="encode" args="007A z.sc"/>
-			<cmd name="encode" args="017A zacute.sc"/>
-			<cmd name="encode" args="1E91 uni1E91.sc"/>
-			<cmd name="encode" args="017E zcaron.sc"/>
-			<cmd name="encode" args="017C zdotaccent.sc"/>
-			<cmd name="encode" args="1E95 uni1E95.sc"/>
-			<cmd name="encode" args="1E93 uni1E93.sc"/>
-		</test>
-		<test select="SlntItlc-T VIEdiacs-T">
-			<cmd name="encode" args="1EA5 uni1EA5.2StorySItal.VN"/>
-			<cmd name="encode" args="1EA7 uni1EA7.2StorySItal.VN"/>
-			<cmd name="encode" args="1EAB uni1EAB.2StorySItal.VN"/>
-			<cmd name="encode" args="1EA9 uni1EA9.2StorySItal.VN"/>
-			<cmd name="encode" args="1EAF uni1EAF.2StorySItal.VN"/>
-			<cmd name="encode" args="1EB1 uni1EB1.2StorySItal.VN"/>
-			<cmd name="encode" args="1EB5 uni1EB5.2StorySItal.VN"/>
-			<cmd name="encode" args="1EB3 uni1EB3.2StorySItal.VN"/>
+		<test select="SL-T VIEdiacs-T">
+			<cmd name="encode" args="1EA5 uni1EA5.2StorySItal"/>
+			<cmd name="encode" args="1EA7 uni1EA7.2StorySItal"/>
+			<cmd name="encode" args="1EAB uni1EAB.2StorySItal"/>
+			<cmd name="encode" args="1EA9 uni1EA9.2StorySItal"/>
+			<cmd name="encode" args="1EAF uni1EAF.2StorySItal"/>
+			<cmd name="encode" args="1EB1 uni1EB1.2StorySItal"/>
+			<cmd name="encode" args="1EB5 uni1EB5.2StorySItal"/>
+			<cmd name="encode" args="1EB3 uni1EB3.2StorySItal"/>
 		</test>
 		<test select="SmCp-T SmPHk-RtHk">
 			<cmd name="encode" args="01A5 uni01A5.sc"/>
 		</test>
-		<test select="SmCp-T VHk-Crvd">
+		<test select="SmCp-T VHk-Dflt">
 			<cmd name="encode" args="028B uni028B.sc"/>
 		</test>
 		<test select="SmCp-T VHk-StrtLftHk">
@@ -1480,159 +1355,95 @@
 			<cmd name="encode" args="1ED7 uni1ED7.VN.sc"/>
 			<cmd name="encode" args="1ED5 uni1ED5.VN.sc"/>
 		</test>
-		<test select="BarBwl-T Lit-T SmCp-T">
-			<cmd name="encode" args="01E5 uni01E5.BarBowl.SngBowl.sc"/>
+		<test select="BarBwl-T SI-T SmCp-T">
+			<cmd name="encode" args="01E5 uni01E5.BarBowl"/>
 		</test>
-		<test select="Lit-T Ognk-Strt SlntItlc-T">
-			<cmd name="encode" args="0105 aogonek.SngStory.RetroHook"/>
+		<test select="Ognk-Strt SI-T SL-T">
+			<cmd name="encode" args="0105 aogonek.RetroHook"/>
 		</test>
-		<test select="Lit-T Ognk-Strt SmCp-T">
-			<cmd name="encode" args="0105 aogonek.SngStory.RetroHook.sc"/>
+		<test select="Ognk-Strt SI-T SmCp-T">
+			<cmd name="encode" args="0105 aogonek.RetroHook"/>
 		</test>
-		<test select="Lit-T SlntItlc-T SmCp-T">
-			<cmd name="encode" args="0061 a.sc"/>
-			<cmd name="encode" args="00E1 aacute.sc"/>
-			<cmd name="encode" args="00E0 agrave.sc"/>
-			<cmd name="encode" args="0201 uni0201.sc"/>
-			<cmd name="encode" args="00E2 acircumflex.sc"/>
-			<cmd name="encode" args="1EAD uni1EAD.sc"/>
-			<cmd name="encode" args="1EA5 uni1EA5.sc"/>
-			<cmd name="encode" args="1EA7 uni1EA7.sc"/>
-			<cmd name="encode" args="1EAB uni1EAB.sc"/>
-			<cmd name="encode" args="1EA9 uni1EA9.sc"/>
-			<cmd name="encode" args="0103 abreve.sc"/>
-			<cmd name="encode" args="1EB7 uni1EB7.sc"/>
-			<cmd name="encode" args="1EAF uni1EAF.sc"/>
-			<cmd name="encode" args="1EB1 uni1EB1.sc"/>
-			<cmd name="encode" args="1EB5 uni1EB5.sc"/>
-			<cmd name="encode" args="1EB3 uni1EB3.sc"/>
-			<cmd name="encode" args="01CE uni01CE.sc"/>
-			<cmd name="encode" args="00E3 atilde.sc"/>
-			<cmd name="encode" args="0101 amacron.sc"/>
-			<cmd name="encode" args="00E4 adieresis.sc"/>
-			<cmd name="encode" args="01DF uni01DF.sc"/>
-			<cmd name="encode" args="0227 uni0227.sc"/>
-			<cmd name="encode" args="01E1 uni01E1.sc"/>
-			<cmd name="encode" args="00E5 aring.sc"/>
-			<cmd name="encode" args="01FB aringacute.sc"/>
-			<cmd name="encode" args="1E9A uni1E9A.sc"/>
-			<cmd name="encode" args="1EA3 uni1EA3.sc"/>
-			<cmd name="encode" args="1EA1 uni1EA1.sc"/>
-			<cmd name="encode" args="1E01 uni1E01.sc"/>
-			<cmd name="encode" args="0105 aogonek.sc"/>
-			<cmd name="encode" args="2C65 uni2C65.sc"/>
-			<cmd name="encode" args="0203 uni0203.sc"/>
+		<test select="Ognk-Strt SL-T SmCp-T">
+			<cmd name="encode" args="0105 aogonek.RetroHook"/>
 		</test>
-		<test select="Lit-T SlntItlc-T VIEdiacs-T">
-			<cmd name="encode" args="1EA5 uni1EA5.SngStory.VN"/>
-			<cmd name="encode" args="1EA7 uni1EA7.SngStory.VN"/>
-			<cmd name="encode" args="1EAB uni1EAB.SngStory.VN"/>
-			<cmd name="encode" args="1EA9 uni1EA9.SngStory.VN"/>
-			<cmd name="encode" args="1EAF uni1EAF.SngStory.VN"/>
-			<cmd name="encode" args="1EB1 uni1EB1.SngStory.VN"/>
-			<cmd name="encode" args="1EB5 uni1EB5.SngStory.VN"/>
-			<cmd name="encode" args="1EB3 uni1EB3.SngStory.VN"/>
+		<test select="SI-T SL-T SmCp-T">
+			<cmd name="encode" args="0061 a.SngStory"/>
+			<cmd name="encode" args="00E1 aacute.SngStory"/>
+			<cmd name="encode" args="00E0 agrave.SngStory"/>
+			<cmd name="encode" args="0201 uni0201.SngStory"/>
+			<cmd name="encode" args="00E2 acircumflex.SngStory"/>
+			<cmd name="encode" args="1EAD uni1EAD.SngStory"/>
+			<cmd name="encode" args="1EA5 uni1EA5.SngStory"/>
+			<cmd name="encode" args="1EA7 uni1EA7.SngStory"/>
+			<cmd name="encode" args="1EAB uni1EAB.SngStory"/>
+			<cmd name="encode" args="1EA9 uni1EA9.SngStory"/>
+			<cmd name="encode" args="0103 abreve.SngStory"/>
+			<cmd name="encode" args="1EB7 uni1EB7.SngStory"/>
+			<cmd name="encode" args="1EAF uni1EAF.SngStory"/>
+			<cmd name="encode" args="1EB1 uni1EB1.SngStory"/>
+			<cmd name="encode" args="1EB5 uni1EB5.SngStory"/>
+			<cmd name="encode" args="1EB3 uni1EB3.SngStory"/>
+			<cmd name="encode" args="01CE uni01CE.SngStory"/>
+			<cmd name="encode" args="00E3 atilde.SngStory"/>
+			<cmd name="encode" args="0101 amacron.SngStory"/>
+			<cmd name="encode" args="00E4 adieresis.SngStory"/>
+			<cmd name="encode" args="01DF uni01DF.SngStory"/>
+			<cmd name="encode" args="0227 uni0227.SngStory"/>
+			<cmd name="encode" args="01E1 uni01E1.SngStory"/>
+			<cmd name="encode" args="00E5 aring.SngStory"/>
+			<cmd name="encode" args="01FB aringacute.SngStory"/>
+			<cmd name="encode" args="1E9A uni1E9A.SngStory"/>
+			<cmd name="encode" args="1EA3 uni1EA3.SngStory"/>
+			<cmd name="encode" args="1EA1 uni1EA1.SngStory"/>
+			<cmd name="encode" args="1E01 uni1E01.SngStory"/>
+			<cmd name="encode" args="0105 aogonek.SngStory"/>
+			<cmd name="encode" args="2C65 uni2C65.SngStory"/>
+			<cmd name="encode" args="0203 uni0203.SngStory"/>
 		</test>
-		<test select="Lit-T SmCp-T VIEdiacs-T">
-			<cmd name="encode" args="1EA5 uni1EA5.SngStory.VN.sc"/>
-			<cmd name="encode" args="1EA7 uni1EA7.SngStory.VN.sc"/>
-			<cmd name="encode" args="1EAB uni1EAB.SngStory.VN.sc"/>
-			<cmd name="encode" args="1EA9 uni1EA9.SngStory.VN.sc"/>
-			<cmd name="encode" args="1EAF uni1EAF.SngStory.VN.sc"/>
-			<cmd name="encode" args="1EB1 uni1EB1.SngStory.VN.sc"/>
-			<cmd name="encode" args="1EB5 uni1EB5.SngStory.VN.sc"/>
-			<cmd name="encode" args="1EB3 uni1EB3.SngStory.VN.sc"/>
+		<test select="SI-T SL-T VIEdiacs-T">
+			<cmd name="encode" args="1EA5 uni1EA5.SngStory"/>
+			<cmd name="encode" args="1EA7 uni1EA7.SngStory"/>
+			<cmd name="encode" args="1EAB uni1EAB.SngStory"/>
+			<cmd name="encode" args="1EA9 uni1EA9.SngStory"/>
+			<cmd name="encode" args="1EAF uni1EAF.SngStory"/>
+			<cmd name="encode" args="1EB1 uni1EB1.SngStory"/>
+			<cmd name="encode" args="1EB5 uni1EB5.SngStory"/>
+			<cmd name="encode" args="1EB3 uni1EB3.SngStory"/>
 		</test>
-		<test select="Ognk-Strt SlntItlc-T SmCp-T">
-			<cmd name="encode" args="0105 aogonek.RetroHook.sc"/>
+		<test select="SI-T SmCp-T VIEdiacs-T">
+			<cmd name="encode" args="1EA5 uni1EA5.SngStory"/>
+			<cmd name="encode" args="1EA7 uni1EA7.SngStory"/>
+			<cmd name="encode" args="1EAB uni1EAB.SngStory"/>
+			<cmd name="encode" args="1EA9 uni1EA9.SngStory"/>
+			<cmd name="encode" args="1EAF uni1EAF.SngStory"/>
+			<cmd name="encode" args="1EB1 uni1EB1.SngStory"/>
+			<cmd name="encode" args="1EB5 uni1EB5.SngStory"/>
+			<cmd name="encode" args="1EB3 uni1EB3.SngStory"/>
 		</test>
-		<test select="SlntItlc-T SmCp-T VIEdiacs-T">
-			<cmd name="encode" args="1EA5 uni1EA5.VN.sc"/>
-			<cmd name="encode" args="1EA7 uni1EA7.VN.sc"/>
-			<cmd name="encode" args="1EAB uni1EAB.VN.sc"/>
-			<cmd name="encode" args="1EA9 uni1EA9.VN.sc"/>
-			<cmd name="encode" args="1EAF uni1EAF.VN.sc"/>
-			<cmd name="encode" args="1EB1 uni1EB1.VN.sc"/>
-			<cmd name="encode" args="1EB5 uni1EB5.VN.sc"/>
-			<cmd name="encode" args="1EB3 uni1EB3.VN.sc"/>
+		<test select="SL-T SmCp-T VIEdiacs-T">
+			<cmd name="encode" args="1EA5 uni1EA5.2StorySItal"/>
+			<cmd name="encode" args="1EA7 uni1EA7.2StorySItal"/>
+			<cmd name="encode" args="1EAB uni1EAB.2StorySItal"/>
+			<cmd name="encode" args="1EA9 uni1EA9.2StorySItal"/>
+			<cmd name="encode" args="1EAF uni1EAF.2StorySItal"/>
+			<cmd name="encode" args="1EB1 uni1EB1.2StorySItal"/>
+			<cmd name="encode" args="1EB5 uni1EB5.2StorySItal"/>
+			<cmd name="encode" args="1EB3 uni1EB3.2StorySItal"/>
 		</test>
-		<test select="Lit-T Ognk-Strt SlntItlc-T SmCp-T">
-			<cmd name="encode" args="0105 aogonek.SngStory.RetroHook.sc"/>
+		<test select="Ognk-Strt SI-T SL-T SmCp-T">
+			<cmd name="encode" args="0105 aogonek.RetroHook"/>
 		</test>
-		<test select="Lit-T SlntItlc-T SmCp-T VIEdiacs-T">
-			<cmd name="encode" args="1EA5 uni1EA5.VN.sc"/>
-			<cmd name="encode" args="1EA7 uni1EA7.VN.sc"/>
-			<cmd name="encode" args="1EAB uni1EAB.VN.sc"/>
-			<cmd name="encode" args="1EA9 uni1EA9.VN.sc"/>
-			<cmd name="encode" args="1EAF uni1EAF.VN.sc"/>
-			<cmd name="encode" args="1EB1 uni1EB1.VN.sc"/>
-			<cmd name="encode" args="1EB5 uni1EB5.VN.sc"/>
-			<cmd name="encode" args="1EB3 uni1EB3.VN.sc"/>
+		<test select="SI-T SL-T SmCp-T VIEdiacs-T">
+			<cmd name="encode" args="1EA5 uni1EA5.SngStory"/>
+			<cmd name="encode" args="1EA7 uni1EA7.SngStory"/>
+			<cmd name="encode" args="1EAB uni1EAB.SngStory"/>
+			<cmd name="encode" args="1EA9 uni1EA9.SngStory"/>
+			<cmd name="encode" args="1EAF uni1EAF.SngStory"/>
+			<cmd name="encode" args="1EB1 uni1EB1.SngStory"/>
+			<cmd name="encode" args="1EB5 uni1EB5.SngStory"/>
+			<cmd name="encode" args="1EB3 uni1EB3.SngStory"/>
 		</test>
 	</interactions>
-	<aliases>
-		<alias name="IPA" value="IPPH"/>
-		<alias name="VIT" value="VIT "/>
-		<alias name="ccmp_latin" value="ccmp"/>
-		<alias name="ccmp_vietnamese" value="ccmp _0"/>
-		<alias name="viet_decomp" value="4"/>
-		<alias name="viet_precomp" value="5"/>
-		<alias name="B_hk" value="1113548907"/>
-		<alias name="D_hk" value="1147103339"/>
-		<alias name="Engs" value="1164863347"/>
-		<alias name="Ezhr" value="1165650034"/>
-		<alias name="Hstk" value="1215525995"/>
-		<alias name="Jstk" value="1249080427"/>
-		<alias name="N_hk" value="1314875499"/>
-		<alias name="R_tl" value="1381987436"/>
-		<alias name="Y_hk" value="1499424875"/>
-		<alias name="apos" value="1634758515"/>
-		<alias name="bowl" value="1651472236"/>
-		<alias name="brig" value="1651665255"/>
-		<alias name="carn" value="1667330670"/>
-		<alias name="chtn" value="1667789934"/>
-		<alias name="coln" value="1668246638"/>
-		<alias name="empt" value="1701671028"/>
-		<alias name="ezhc" value="1702520931"/>
-		<alias name="invs" value="1768846963"/>
-		<alias name="ital" value="1769234796"/>
-		<alias name="litr" value="1818850418"/>
-		<alias name="mone" value="1836019301"/>
-		<alias name="ogon" value="1869049710"/>
-		<alias name="opOU" value="1869631317"/>
-		<alias name="opnO" value="1869639247"/>
-		<alias name="p_hk" value="1885300843"/>
-		<alias name="pit9" value="1885959225"/>
-		<alias name="ramh" value="1918987624"/>
-		<alias name="sbrv" value="1935831670"/>
-		<alias name="serb" value="1936028258"/>
-		<alias name="shha" value="1936222305"/>
-		<alias name="smcp" value="1936548720"/>
-		<alias name="t_hk" value="1952409707"/>
-		<alias name="tone" value="1953459813"/>
-		<alias name="tstv" value="1953723510"/>
-		<alias name="v_hk" value="1985964139"/>
-		<alias name="viet" value="1986618740"/>
-	</aliases>
-	<old_names>
-		<old_feature name="J stroke hook alternate" tag="JStrk"/>
-		<old_feature name="Small v-hook alternate" tag="VHk"/>
-		<old_value feature="Small v-hook alternate" name="Straight" tag="StrtLftLowHk"/>
-		<old_feature name="Cyrillic E alternates" tag="CyrE"/>
-		<old_value feature="Capital H-stroke alternate" name="Horizontal stroke" tag="Hrz"/>
-		<old_value feature="Capital H-stroke alternate" name="Vertical stroke" tag="Vrt"/>
-		<old_value feature="Cyrillic shha alternate" name="True" tag="Uc"/>
-		<old_value feature="9-level pitches" name="Ligated" tag="Lgt"/>
-		<old_value feature="9-level pitches" name="Show tramlines" tag="TrmLn"/>
-		<old_value feature="9-level pitches" name="Non-ligated" tag="NoLgt"/>
-		<old_value feature="9-level pitches" name="Show tramlines, non-ligated" tag="TrmLnNoLgt"/>
-		<old_value feature="J-stroke hook alternate" name="No serif" tag="NoSrf"/>
-		<old_value feature="V-hook alternates" name="Straight left" tag="StrtLftLowHk"/>
-		<old_value feature="V-hook alternates" name="Straight left high hook" tag="StrtLftHk"/>
-		<old_value feature="Modifier colon alternate" name="Wide" tag="Wd"/>
-		<old_value feature="Capital B-hook alternate" name="F" tag="Uc"/>
-		<old_value feature="Capital B-hook alternate" name="T" tag="Lc"/>
-		<old_value feature="Capital D-hook alternate" name="F" tag="Uc"/>
-		<old_value feature="Capital D-hook alternate" name="T" tag="Lc"/>
-	</old_names>
+	<aliases/>
 </all_features>

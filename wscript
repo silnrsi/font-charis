@@ -43,6 +43,7 @@ for dspace in ('Roman', 'Italic'):
                     depends = ('source/opentype/gsub.feax',
                         'source/opentype/gpos.feax',
                         'source/opentype/gdef.feax'),
+                    mapfile = 'source/${DS:FILENAME_BASE}.map',
                     to_ufo = 'True' # copies to instance UFOs
                     ),
 #                graphite = gdl('source/${DS:FILENAME_BASE}.gdl',
@@ -53,6 +54,7 @@ for dspace in ('Roman', 'Italic'):
 #                        'source/graphite/pitches.gdh', 
 #                        'source/graphite/stddef.gdh')
 #                    ),
+                typetuner = typetuner('source/typetuner/feat_all.xml'),
                 woff = woff('web/${DS:FILENAME_BASE}.woff',
                     metadata=f'../source/{familyname}-WOFF-metadata.xml'),
                 version = VERSION,
