@@ -34,14 +34,15 @@ my $xml_version = "1.0";
 # NO LONGER SUPPORT: g, w; q is set on by default
 #$opt_a - andika processing
 #$opt_d - debug output
+#$opt_f - font family name
 #$opt_g - output only graphite cmds
 #$opt_q - output no graphite cmds
 #$opt_t - output <interaction> encode cmds w/o choices for PS name for testing TypeTuner
 #$opt_l - list features and settings to a file to help create %nm_to_tag map
 #$opt_w - generate a WorldPad file for testing Graphite features TODO: make this a different program
 #$opt_z - hook for ad hoc subroutine to analyze parsed glyph data, does NOT produce an output file
-our($opt_a, $opt_d, $opt_g, $opt_q, $opt_t, $opt_l, $opt_w, $opt_z); #set by &getopts:
-my $opt_str = 'adgqtlw:z';
+our($opt_a, $opt_d, $opt_f, $opt_g, $opt_q, $opt_t, $opt_l, $opt_w, $opt_z, $family_nm); #set by &getopts:
+my $opt_str = 'adf:gqtlw:z';
 my $featset_list_fn = 'featset_list.txt';
 
 my $feat_all_base_fn = 'feat_all_composer.xml';
@@ -467,11 +468,12 @@ my %glyph_to_featset_andika = (
 	'uniA7A1' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['A7A1', 'SngBowl'])}, 
 );
 
+#bookmark
 #adjust data structures for Andika processing
 #necessary because Andika has the literacy feature on by default
 sub Andika_adjust()
 {
-	if ($opt_a)
+	if ($family_nm eq 'andika' or $opt_a)
 	{
 		#change Lit-T to Lit-F in %reduced_featsets for Andika
 		# since Lit-T is the default, "setting" the literacy feature means applying Lit-F
@@ -645,6 +647,7 @@ sub Name_get($$)
 	return $name;
 }
 
+#bookmark
 sub OT_Feats_get($\%)
 #create the %feats structure based on the GSUB table in the font
 {
@@ -878,6 +881,7 @@ sub Featset_combos_get($@)
 #	return @feats_combo;
 #}
 
+#bookmark
 sub Gsi_xml_parse($\%\%\%)
 #parse the GSI xml file to create the structures describing
 # mapping to PS name for given USV and feature setting and
@@ -1052,6 +1056,7 @@ sub Gsi_xml_parse($\%\%\%)
 	$xml_parser->parsefile($gsi_fn) or die "Can't read $gsi_fn";
 }
 
+#bookmark
 sub Special_glyphs_handle($\%\%\%\%)
 #add variant glyph info which isn't indicated in the GSI data to various hashes 
 # this allows the glyph to offered as a choice in the cmd elements
@@ -1084,7 +1089,7 @@ sub Special_glyphs_handle($\%\%\%\%)
 		
 	#add encoding info for literacy glyphs encoded in Andika
 	# which therefore have no encoding or feature info in the GSI
-	if ($opt_a)
+	if ($family_nm eq 'andika' or $opt_a)
 	{	
 		foreach my $glyph_base_name (keys %glyph_to_featset_andika)
 		{
@@ -1230,6 +1235,7 @@ sub PSName_select(\@$)
 	return $choices;
 }
 
+#bookmark
 sub Features_output($\%\%\%\%)
 #output the <feature>s elements
 #all value elements contain at least a gr_feat cmd or a cmd="null" (if a default)
@@ -1406,7 +1412,8 @@ sub Features_output($\%\%\%\%)
 	# </feature>
 # END
 	# }
-	
+
+#bookmark
 	### output line spacing feature
 	unless ($opt_g)
 	{
@@ -1417,9 +1424,11 @@ sub Features_output($\%\%\%\%)
 		my $imported_tag = Tag_lookup('Imported', %nm_to_tag);
 		if (not $opt_t)
 		{ #be careful of tabs in section below for proper output
-			print $fh <<END
+			print $fh <<END;
 	<feature name="Line spacing" value="Normal" tag="$line_gap_tag">
-		<!-- edit the below lines to provide the correct line metrics -->
+END
+			if ($family_nm eq 'doulos') {
+			print $fh <<END
 		<!-- Doulos -->
 		<value name="Normal" tag="$normal_tag">
 			<cmd name="null" args="2324 810"/>
@@ -1430,6 +1439,9 @@ sub Features_output($\%\%\%\%)
 		<value name="Loose" tag="$loose_tag">
 			<cmd name="line_gap" args="2800 1100"/>
 		</value>
+END
+			} elsif ($family_nm eq 'charis') {
+			print $fh <<END
 		<!-- Charis -->
 		<value name="Normal" tag="$normal_tag">
 			<cmd name="null" args="2450 900"/>
@@ -1440,6 +1452,9 @@ sub Features_output($\%\%\%\%)
 		<value name="Loose" tag="$loose_tag">
 			<cmd name="line_gap" args="2900 1200"/>
 		</value>
+END
+			} elsif ($family_nm eq 'gentium') {
+			print $fh <<END
 		<!-- Gentium -->
 		<value name="Normal" tag="$normal_tag">
 			<cmd name="null" args="2050 900"/>
@@ -1450,6 +1465,9 @@ sub Features_output($\%\%\%\%)
 		<value name="Loose" tag="$loose_tag">
 			<cmd name="line_gap" args="2450 1200"/>
 		</value>
+END
+			} elsif ($family_nm eq 'andika') {
+			print $fh <<END
 		<!-- Andika -->
 		<value name="Normal" tag="$normal_tag">
 			<cmd name="null" args="2500 800"/>
@@ -1460,7 +1478,9 @@ sub Features_output($\%\%\%\%)
 		<value name="Loose" tag="$loose_tag">
 			<cmd name="line_gap" args="2900 1100"/>
 		</value>
-		<!-- edit note: do _not_ delete the Imported value -->
+END
+			}
+		print $fh <<END
 		<value name="Imported" tag="$imported_tag">
 			<cmd name="line_metrics_scaled" args="null"/>
 		</value>
@@ -1490,6 +1510,7 @@ END
 	}
 }
 
+#bookmark
 sub Test_output($$\%\%\%)
 #output the <cmd> elements inside of a <test> element 
 # for one set of feature interactions
@@ -1576,6 +1597,7 @@ sub Feats_to_ids($$\%)
 	die("Ids for feature and setting couldn't be found: $feat_tag $set_tag\n");
 }
 
+#bookmark
 sub Interactions_output($\%\%\%\%)
 #output the <interactions> elements
 {
@@ -1632,6 +1654,7 @@ END
 	print $feat_all_fh "\t</aliases>\n";
 }
 
+#bookmark
 sub Feax_Aliases_output($)
 #output the <aliases/> element used by psftuneraliases
 # that element will be replaced with <alias> elements created from the lookup map emitted by psfbuildfea
@@ -1679,9 +1702,9 @@ sub Usage_print()
 	print <<END;
 RFComposer ver $version (c) SIL International 2007-2021.
 usage: 
-	RFComposer <switches> <font.ttf> <gsi.xml> <gsi_supp_fn.xml>
+	composer -f <family name> [<switches>] <font.ttf> <gsi.xml> <gsi_supp_fn.xml>
 	switches:
-		-a - adjust processing for Andika
+		-f - font family name [charis, doulos, gentium, andika]
 		-d - debug output
 		-t - output a file that needs no editing 
 			(for testing TypeTuner)
@@ -1692,7 +1715,7 @@ END
 };
 
 #### main processing ####
-
+#bookmark
 sub cmd_line_exec() #for UltraEdit function list
 {}
 
@@ -1703,6 +1726,9 @@ getopts($opt_str); #sets $opt?'s & removes the switch from @ARGV
 $opt_q = 1; # force -q on by default
 $opt_g = 0; # force -g off by default
 $opt_w = ''; # force -w off by default (also, no font name for WorldPad test)
+if (defined($opt_f)) {$family_nm = lc $opt_f;} else {$family_nm = 'none';}
+if (not scalar grep(/$family_nm/, qw(charis doulos andika gentium)))
+	{Usage_print;}
 
 #build a file containing a hash of feature & setting names to tags
 # to paste into this program for specifying tags
@@ -1755,6 +1781,7 @@ if (scalar @ARGV == 3)
 else
 	{Usage_print;}
 
+#bookmark
 Andika_adjust();
 # Feats_get($font_fn, %feats, %gdl_tag_to_feat_id); # obsolete since Graphite no longer in LCG fonts
 OT_Feats_get($font_fn, %feats);
@@ -1816,6 +1843,7 @@ print $feat_all_fh "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 print $feat_all_fh "<!DOCTYPE all_features SYSTEM \"feat_all.dtd\">\n";
 print $feat_all_fh "<all_features version=\"$xml_version\">\n";
 
+#bookmark
 Features_output($feat_all_fh, %feats, %featset_to_usvs, %usv_feat_to_ps_name, %dblenc_usv);
 Interactions_output($feat_all_fh, %featset_to_usvs, %usv_feat_to_ps_name, %feats, %dblenc_usv);
 unless ($opt_g)
