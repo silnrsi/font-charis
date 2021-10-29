@@ -97,6 +97,7 @@ my %nm_to_tag = (
 	'Barred-bowl' => 'T',
 	'Literacy alternates' => 'Lit',
 	'Slant italic specials' => 'SlntItlc',
+	'Slanted italic specials' => 'SlntItlc', #new
 	'Uppercase Eng alternates' => 'Eng',
 	'Capital Eng' => 'Eng', #new
 	'Large eng with descender' => 'LgDsc',
@@ -262,6 +263,8 @@ my %nm_to_tag = (
 	'Greek circumflex' => 'PorCirc', #new
 	'Porsonic-style' => 'Por',
 	'Porsonic form' => 'Por', #new
+	'Greek iota adscript' => 'IotaAd', #new
+	'Subscript' => 'Sub', #new
 	'Diacritic selection' => 'DiacSlct',
 	'Line spacing' => 'LnSpc',
 	'Loose' => 'Ls',
@@ -329,6 +332,8 @@ my %featset_to_suffix = (
 	'SmYTail-Strt' => '\.NoTailY',
 	'LgDHk-Lc' => '\.TopBar',
 	'PorCirc-PorStyle' => '\.Por',
+	'PorCirc-Por' => '\.Por', #new
+	'IotaAd-Sub' => '\.ISub',
 );
 
 #map one set of feature settings to a simpler set
@@ -394,6 +399,8 @@ my %reduced_featsets = (
 	'LpDiacs-T SlntItlc-T SmCp-T VIEdiacs-T' => 'LpDiacs-T SmCp-T VIEdiacs-T', #above
 	'Lit-T LpDiacs-T SlntItlc-T SmCp-T VIEdiacs-T' => 'LpDiacs-T SmCp-T VIEdiacs-T', #above
 	'Lit-T Ognk-Strt SlntItlc-T SmCp-T' => 'Lit-T Ognk-Strt SmCp-T', #new, above
+	'CapJ-T SmJSerif-TopSrf' => 'SmJSerif-TopSrf', #new, Andika
+	'CapJ-T SmCp-T SmJSerif-TopSrf' => 'CapJ-T SmCp-T', #new, Andika
 );
 
 #specify glyph variants which have a suffix but no corresponding non-default feature setting
@@ -1694,8 +1701,8 @@ my ($font_fn, $gsi_fn, $gsi_supp_fn, $feat_all_fn, $feat_all_fh);
 
 getopts($opt_str); #sets $opt?'s & removes the switch from @ARGV
 $opt_q = 1; # force -q on by default
-$opt_g = 0; # froce -g off by default
-$opt_w = ''; # forc -w off by default (also, no font name for WorldPad test)
+$opt_g = 0; # force -g off by default
+$opt_w = ''; # force -w off by default (also, no font name for WorldPad test)
 
 #build a file containing a hash of feature & setting names to tags
 # to paste into this program for specifying tags
