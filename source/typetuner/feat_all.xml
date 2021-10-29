@@ -363,7 +363,7 @@
 			<cmd name="encode" args="01E5 uni01E5.BarBowl"/>
 		</value>
 	</feature>
-	<feature name="Slanted italic specials" value="Default" tag="SL">
+	<feature name="Slanted italic specials" value="Default" tag="SlntItlc">
 		<value name="Default" tag="Dflt">
 			<cmd name="null" args="null"/>
 		</value>
@@ -1124,8 +1124,8 @@
 		<test select="Ognk-Strt SI-T">
 			<cmd name="encode" args="0105 aogonek.RetroHook"/>
 		</test>
-		<test select="Ognk-Strt SL-T">
-			<cmd name="encode" args="0105 aogonek.RetroHook"/>
+		<test select="Ognk-Strt SlntItlc-T">
+			<cmd name="encode" args="0105 aogonek.2StorySItal.RetroHook"/>
 		</test>
 		<test select="Ognk-Strt SmCp-T">
 			<cmd name="encode" args="0105 aogonek.RetroHook.sc"/>
@@ -1150,7 +1150,7 @@
 		<test select="RmHrn-Lrg SmCp-T">
 			<cmd name="encode" args="0264 uni0264.sc"/>
 		</test>
-		<test select="SI-T SL-T">
+		<test select="SI-T SlntItlc-T">
 			<cmd name="encode" args="0061 a.SngStory"/>
 			<cmd name="encode" args="1EA5 uni1EA5.SngStory"/>
 			<cmd name="encode" args="1EA7 uni1EA7.SngStory"/>
@@ -1238,92 +1238,92 @@
 			<cmd name="encode" args="1EB5 uni1EB5.SngStory"/>
 			<cmd name="encode" args="1EB3 uni1EB3.SngStory"/>
 		</test>
-		<test select="SL-T SmCp-T">
-			<cmd name="encode" args="0061 a.2StorySItal"/>
-			<cmd name="encode" args="00E1 aacute.2StorySItal"/>
-			<cmd name="encode" args="00E0 agrave.2StorySItal"/>
-			<cmd name="encode" args="0201 uni0201.2StorySItal"/>
-			<cmd name="encode" args="00E2 acircumflex.2StorySItal"/>
-			<cmd name="encode" args="1EAD uni1EAD.2StorySItal"/>
-			<cmd name="encode" args="1EA5 uni1EA5.2StorySItal"/>
-			<cmd name="encode" args="1EA7 uni1EA7.2StorySItal"/>
-			<cmd name="encode" args="1EAB uni1EAB.2StorySItal"/>
-			<cmd name="encode" args="1EA9 uni1EA9.2StorySItal"/>
-			<cmd name="encode" args="0103 abreve.2StorySItal"/>
-			<cmd name="encode" args="1EB7 uni1EB7.2StorySItal"/>
-			<cmd name="encode" args="1EAF uni1EAF.2StorySItal"/>
-			<cmd name="encode" args="1EB1 uni1EB1.2StorySItal"/>
-			<cmd name="encode" args="1EB5 uni1EB5.2StorySItal"/>
-			<cmd name="encode" args="1EB3 uni1EB3.2StorySItal"/>
-			<cmd name="encode" args="01CE uni01CE.2StorySItal"/>
-			<cmd name="encode" args="00E3 atilde.2StorySItal"/>
-			<cmd name="encode" args="0101 amacron.2StorySItal"/>
-			<cmd name="encode" args="00E4 adieresis.2StorySItal"/>
-			<cmd name="encode" args="01DF uni01DF.2StorySItal"/>
-			<cmd name="encode" args="0227 uni0227.2StorySItal"/>
-			<cmd name="encode" args="01E1 uni01E1.2StorySItal"/>
-			<cmd name="encode" args="00E5 aring.2StorySItal"/>
-			<cmd name="encode" args="01FB aringacute.2StorySItal"/>
-			<cmd name="encode" args="1E9A uni1E9A.2StorySItal"/>
-			<cmd name="encode" args="1EA3 uni1EA3.2StorySItal"/>
-			<cmd name="encode" args="1EA1 uni1EA1.2StorySItal"/>
-			<cmd name="encode" args="1E01 uni1E01.2StorySItal"/>
-			<cmd name="encode" args="0105 aogonek.2StorySItal"/>
-			<cmd name="encode" args="2C65 uni2C65.2StorySItal"/>
-			<cmd name="encode" args="0250 uni0250.2StorySItal"/>
-			<cmd name="encode" args="0203 uni0203.2StorySItal"/>
-			<cmd name="encode" args="00E6 ae.2StorySItal"/>
-			<cmd name="encode" args="01FD aeacute.2StorySItal"/>
-			<cmd name="encode" args="01E3 uni01E3.2StorySItal"/>
-			<cmd name="encode" args="0066 f.SItal"/>
-			<cmd name="encode" args="1E1F uni1E1F.SItal"/>
-			<cmd name="encode" args="0493 uni0493.SItal"/>
-			<cmd name="encode" args="F327 uniF327.SItal"/>
-			<cmd name="encode" args="04FB uni04FB.SItal"/>
-			<cmd name="encode" args="0069 i.SItal"/>
-			<cmd name="encode" args="00ED iacute.SItal"/>
-			<cmd name="encode" args="00EC igrave.SItal"/>
-			<cmd name="encode" args="0209 uni0209.SItal"/>
-			<cmd name="encode" args="00EE icircumflex.SItal"/>
-			<cmd name="encode" args="020B uni020B.SItal"/>
-			<cmd name="encode" args="012D ibreve.SItal"/>
-			<cmd name="encode" args="01D0 uni01D0.SItal"/>
-			<cmd name="encode" args="0129 itilde.SItal"/>
-			<cmd name="encode" args="012B imacron.SItal"/>
-			<cmd name="encode" args="00EF idieresis.SItal"/>
-			<cmd name="encode" args="1E2F uni1E2F.SItal"/>
-			<cmd name="encode" args="1EC9 uni1EC9.SItal"/>
-			<cmd name="encode" args="1E2D uni1E2D.SItal"/>
-			<cmd name="encode" args="1ECB uni1ECB.SItal"/>
-			<cmd name="encode" args="0131 dotlessi.SItal"/>
-			<cmd name="encode" args="006C l.SItal"/>
-			<cmd name="encode" args="013A lacute.SItal"/>
-			<cmd name="encode" args="1E3D uni1E3D.SItal"/>
-			<cmd name="encode" args="1E3B uni1E3B.SItal"/>
-			<cmd name="encode" args="1E37 uni1E37.SItal"/>
-			<cmd name="encode" args="1E39 uni1E39.SItal"/>
-			<cmd name="encode" args="A749 uniA749.SItal"/>
-			<cmd name="encode" args="0076 v.SItal"/>
-			<cmd name="encode" args="1E7D uni1E7D.SItal"/>
-			<cmd name="encode" args="1E7F uni1E7F.SItal"/>
-			<cmd name="encode" args="A75F uniA75F.SItal"/>
-			<cmd name="encode" args="007A z.SItal"/>
-			<cmd name="encode" args="017A zacute.SItal"/>
-			<cmd name="encode" args="1E91 uni1E91.SItal"/>
-			<cmd name="encode" args="017E zcaron.SItal"/>
-			<cmd name="encode" args="017C zdotaccent.SItal"/>
-			<cmd name="encode" args="1E95 uni1E95.SItal"/>
-			<cmd name="encode" args="1E93 uni1E93.SItal"/>
+		<test select="SlntItlc-T SmCp-T">
+			<cmd name="encode" args="0061 a.sc"/>
+			<cmd name="encode" args="00E1 aacute.sc"/>
+			<cmd name="encode" args="00E0 agrave.sc"/>
+			<cmd name="encode" args="0201 uni0201.sc"/>
+			<cmd name="encode" args="00E2 acircumflex.sc"/>
+			<cmd name="encode" args="1EAD uni1EAD.sc"/>
+			<cmd name="encode" args="1EA5 uni1EA5.sc"/>
+			<cmd name="encode" args="1EA7 uni1EA7.sc"/>
+			<cmd name="encode" args="1EAB uni1EAB.sc"/>
+			<cmd name="encode" args="1EA9 uni1EA9.sc"/>
+			<cmd name="encode" args="0103 abreve.sc"/>
+			<cmd name="encode" args="1EB7 uni1EB7.sc"/>
+			<cmd name="encode" args="1EAF uni1EAF.sc"/>
+			<cmd name="encode" args="1EB1 uni1EB1.sc"/>
+			<cmd name="encode" args="1EB5 uni1EB5.sc"/>
+			<cmd name="encode" args="1EB3 uni1EB3.sc"/>
+			<cmd name="encode" args="01CE uni01CE.sc"/>
+			<cmd name="encode" args="00E3 atilde.sc"/>
+			<cmd name="encode" args="0101 amacron.sc"/>
+			<cmd name="encode" args="00E4 adieresis.sc"/>
+			<cmd name="encode" args="01DF uni01DF.sc"/>
+			<cmd name="encode" args="0227 uni0227.sc"/>
+			<cmd name="encode" args="01E1 uni01E1.sc"/>
+			<cmd name="encode" args="00E5 aring.sc"/>
+			<cmd name="encode" args="01FB aringacute.sc"/>
+			<cmd name="encode" args="1E9A uni1E9A.sc"/>
+			<cmd name="encode" args="1EA3 uni1EA3.sc"/>
+			<cmd name="encode" args="1EA1 uni1EA1.sc"/>
+			<cmd name="encode" args="1E01 uni1E01.sc"/>
+			<cmd name="encode" args="0105 aogonek.sc"/>
+			<cmd name="encode" args="2C65 uni2C65.sc"/>
+			<cmd name="encode" args="0250 uni0250.sc"/>
+			<cmd name="encode" args="0203 uni0203.sc"/>
+			<cmd name="encode" args="00E6 ae.sc"/>
+			<cmd name="encode" args="01FD aeacute.sc"/>
+			<cmd name="encode" args="01E3 uni01E3.sc"/>
+			<cmd name="encode" args="0066 f.sc"/>
+			<cmd name="encode" args="1E1F uni1E1F.sc"/>
+			<cmd name="encode" args="0493 uni0493.sc"/>
+			<cmd name="encode" args="F327 uniF327.sc"/>
+			<cmd name="encode" args="04FB uni04FB.sc"/>
+			<cmd name="encode" args="0069 i.sc"/>
+			<cmd name="encode" args="00ED iacute.sc"/>
+			<cmd name="encode" args="00EC igrave.sc"/>
+			<cmd name="encode" args="0209 uni0209.sc"/>
+			<cmd name="encode" args="00EE icircumflex.sc"/>
+			<cmd name="encode" args="020B uni020B.sc"/>
+			<cmd name="encode" args="012D ibreve.sc"/>
+			<cmd name="encode" args="01D0 uni01D0.sc"/>
+			<cmd name="encode" args="0129 itilde.sc"/>
+			<cmd name="encode" args="012B imacron.sc"/>
+			<cmd name="encode" args="00EF idieresis.sc"/>
+			<cmd name="encode" args="1E2F uni1E2F.sc"/>
+			<cmd name="encode" args="1EC9 uni1EC9.sc"/>
+			<cmd name="encode" args="1E2D uni1E2D.sc"/>
+			<cmd name="encode" args="1ECB uni1ECB.sc"/>
+			<cmd name="encode" args="0131 dotlessi.sc"/>
+			<cmd name="encode" args="006C l.sc"/>
+			<cmd name="encode" args="013A lacute.sc"/>
+			<cmd name="encode" args="1E3D uni1E3D.sc"/>
+			<cmd name="encode" args="1E3B uni1E3B.sc"/>
+			<cmd name="encode" args="1E37 uni1E37.sc"/>
+			<cmd name="encode" args="1E39 uni1E39.sc"/>
+			<cmd name="encode" args="A749 uniA749.sc"/>
+			<cmd name="encode" args="0076 v.sc"/>
+			<cmd name="encode" args="1E7D uni1E7D.sc"/>
+			<cmd name="encode" args="1E7F uni1E7F.sc"/>
+			<cmd name="encode" args="A75F uniA75F.sc"/>
+			<cmd name="encode" args="007A z.sc"/>
+			<cmd name="encode" args="017A zacute.sc"/>
+			<cmd name="encode" args="1E91 uni1E91.sc"/>
+			<cmd name="encode" args="017E zcaron.sc"/>
+			<cmd name="encode" args="017C zdotaccent.sc"/>
+			<cmd name="encode" args="1E95 uni1E95.sc"/>
+			<cmd name="encode" args="1E93 uni1E93.sc"/>
 		</test>
-		<test select="SL-T VIEdiacs-T">
-			<cmd name="encode" args="1EA5 uni1EA5.2StorySItal"/>
-			<cmd name="encode" args="1EA7 uni1EA7.2StorySItal"/>
-			<cmd name="encode" args="1EAB uni1EAB.2StorySItal"/>
-			<cmd name="encode" args="1EA9 uni1EA9.2StorySItal"/>
-			<cmd name="encode" args="1EAF uni1EAF.2StorySItal"/>
-			<cmd name="encode" args="1EB1 uni1EB1.2StorySItal"/>
-			<cmd name="encode" args="1EB5 uni1EB5.2StorySItal"/>
-			<cmd name="encode" args="1EB3 uni1EB3.2StorySItal"/>
+		<test select="SlntItlc-T VIEdiacs-T">
+			<cmd name="encode" args="1EA5 uni1EA5.2StorySItal.VN"/>
+			<cmd name="encode" args="1EA7 uni1EA7.2StorySItal.VN"/>
+			<cmd name="encode" args="1EAB uni1EAB.2StorySItal.VN"/>
+			<cmd name="encode" args="1EA9 uni1EA9.2StorySItal.VN"/>
+			<cmd name="encode" args="1EAF uni1EAF.2StorySItal.VN"/>
+			<cmd name="encode" args="1EB1 uni1EB1.2StorySItal.VN"/>
+			<cmd name="encode" args="1EB5 uni1EB5.2StorySItal.VN"/>
+			<cmd name="encode" args="1EB3 uni1EB3.2StorySItal.VN"/>
 		</test>
 		<test select="SmCp-T SmPHk-RtHk">
 			<cmd name="encode" args="01A5 uni01A5.sc"/>
@@ -1358,16 +1358,16 @@
 		<test select="BarBwl-T SI-T SmCp-T">
 			<cmd name="encode" args="01E5 uni01E5.BarBowl"/>
 		</test>
-		<test select="Ognk-Strt SI-T SL-T">
+		<test select="Ognk-Strt SI-T SlntItlc-T">
 			<cmd name="encode" args="0105 aogonek.RetroHook"/>
 		</test>
 		<test select="Ognk-Strt SI-T SmCp-T">
 			<cmd name="encode" args="0105 aogonek.RetroHook"/>
 		</test>
-		<test select="Ognk-Strt SL-T SmCp-T">
-			<cmd name="encode" args="0105 aogonek.RetroHook"/>
+		<test select="Ognk-Strt SlntItlc-T SmCp-T">
+			<cmd name="encode" args="0105 aogonek.RetroHook.sc"/>
 		</test>
-		<test select="SI-T SL-T SmCp-T">
+		<test select="SI-T SlntItlc-T SmCp-T">
 			<cmd name="encode" args="0061 a.SngStory"/>
 			<cmd name="encode" args="00E1 aacute.SngStory"/>
 			<cmd name="encode" args="00E0 agrave.SngStory"/>
@@ -1401,7 +1401,7 @@
 			<cmd name="encode" args="2C65 uni2C65.SngStory"/>
 			<cmd name="encode" args="0203 uni0203.SngStory"/>
 		</test>
-		<test select="SI-T SL-T VIEdiacs-T">
+		<test select="SI-T SlntItlc-T VIEdiacs-T">
 			<cmd name="encode" args="1EA5 uni1EA5.SngStory"/>
 			<cmd name="encode" args="1EA7 uni1EA7.SngStory"/>
 			<cmd name="encode" args="1EAB uni1EAB.SngStory"/>
@@ -1421,20 +1421,20 @@
 			<cmd name="encode" args="1EB5 uni1EB5.SngStory"/>
 			<cmd name="encode" args="1EB3 uni1EB3.SngStory"/>
 		</test>
-		<test select="SL-T SmCp-T VIEdiacs-T">
-			<cmd name="encode" args="1EA5 uni1EA5.2StorySItal"/>
-			<cmd name="encode" args="1EA7 uni1EA7.2StorySItal"/>
-			<cmd name="encode" args="1EAB uni1EAB.2StorySItal"/>
-			<cmd name="encode" args="1EA9 uni1EA9.2StorySItal"/>
-			<cmd name="encode" args="1EAF uni1EAF.2StorySItal"/>
-			<cmd name="encode" args="1EB1 uni1EB1.2StorySItal"/>
-			<cmd name="encode" args="1EB5 uni1EB5.2StorySItal"/>
-			<cmd name="encode" args="1EB3 uni1EB3.2StorySItal"/>
+		<test select="SlntItlc-T SmCp-T VIEdiacs-T">
+			<cmd name="encode" args="1EA5 uni1EA5.VN.sc"/>
+			<cmd name="encode" args="1EA7 uni1EA7.VN.sc"/>
+			<cmd name="encode" args="1EAB uni1EAB.VN.sc"/>
+			<cmd name="encode" args="1EA9 uni1EA9.VN.sc"/>
+			<cmd name="encode" args="1EAF uni1EAF.VN.sc"/>
+			<cmd name="encode" args="1EB1 uni1EB1.VN.sc"/>
+			<cmd name="encode" args="1EB5 uni1EB5.VN.sc"/>
+			<cmd name="encode" args="1EB3 uni1EB3.VN.sc"/>
 		</test>
-		<test select="Ognk-Strt SI-T SL-T SmCp-T">
+		<test select="Ognk-Strt SI-T SlntItlc-T SmCp-T">
 			<cmd name="encode" args="0105 aogonek.RetroHook"/>
 		</test>
-		<test select="SI-T SL-T SmCp-T VIEdiacs-T">
+		<test select="SI-T SlntItlc-T SmCp-T VIEdiacs-T">
 			<cmd name="encode" args="1EA5 uni1EA5.SngStory"/>
 			<cmd name="encode" args="1EA7 uni1EA7.SngStory"/>
 			<cmd name="encode" args="1EAB uni1EAB.SngStory"/>
