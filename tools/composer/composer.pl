@@ -369,7 +369,7 @@ my %reduced_featsets = (
 	'SSA-T SlntItlc-T' => 'SSA-T', #new
 	'SSA-T SmCp-T' => 'SmCp-T',
 	'LpDiacs-T SmCp-T' => 'SmCp-T',
-	'LrgBHk-Lc SmCp-T' => 'SmCp-T', 
+	#'LrgBHk-Lc SmCp-T' => 'SmCp-T', #this seems like an error
 	'RmHrn-Gma SmCp-T' => 'SmCp-T',
 	'RmHrn-Lrg SmCp-T' => 'SmCp-T',
 	'Serb-T SmCp-T' => 'SmCp-T', 
@@ -1249,8 +1249,18 @@ sub PSName_select(\@$)
 {
 	my ($featsets, $choices) = @_;
 	
+	#do one level of feature reduction to eliminate redundant literacy feats (e.g. Lit-T SSA-T)
+	# the rest of the code assumes each featset is matching a unique suffix
+	my $featsets_old = join(' ', @$featsets);
+	if (defined $reduced_featsets{$featsets_old})
+	{
+		my $featsets_new = $reduced_featsets{$featsets_old} ;
+		my @featsets_new = split(/\s/, $featsets_new);
+		$featsets = \@featsets_new;
+	}
+
 	my @suffixes = Suffixes_get(@$featsets);
-	
+
 	foreach my $choice (split(/\s/, $choices))
 	{
 		if (Suffixes_match_name(@suffixes, $choice))
@@ -1258,7 +1268,7 @@ sub PSName_select(\@$)
 	}
 	
 	#if no choice was found, reduce feature settings to simpler form and search again
-	my $featsets_old = join(' ', @$featsets);
+	$featsets_old = join(' ', @$featsets);
 	if (defined $reduced_featsets{$featsets_old})
 	{
 		my $featsets_new = $reduced_featsets{$featsets_old} ;
