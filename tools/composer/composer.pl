@@ -454,52 +454,52 @@ my %glyph_to_featset = (
 # no check is made against the actual data
 # below uni01E5.BarBowl.SngBowl is the literacy form for uni01E5 (uni01E5.SngBowl doesn't exist)
 my %glyph_to_featset_andika = (
-	'a' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['0061', 'SngStory'])}, 
-	'aacute' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['00E1', 'SngStory'])}, 
-	'abreve' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['0103', 'SngStory'])}, 
-	'acircumflex' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['00E2', 'SngStory'])}, 
-	'adieresis' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['00E4', 'SngStory'])}, 
-	'agrave' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['00E0', 'SngStory'])}, 
-	'amacron' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['0101', 'SngStory'])}, 
-	'aogonek' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['0105', 'SngStory'])}, 
-	'aring' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['00E5', 'SngStory'])}, 
-	'aringacute' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['01FB', 'SngStory'])}, 
-	'atilde' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['00E3', 'SngStory'])}, 
-	'g' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['0067', 'SngBowl'])}, 
-	'gbreve' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['011F', 'SngBowl'])}, 
-	'gcaron' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['01E7', 'SngBowl'])}, 
-	'gcircumflex' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['011D', 'SngBowl'])}, 
-	'gcommaaccent' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['0123', 'SngBowl'])}, 
-	'gdotaccent' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['0121', 'SngBowl'])}, 
-	'uni01CE' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['01CE', 'SngStory'])}, 
-	'uni01DF' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['01DF', 'SngStory'])}, 
-	'uni01E1' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['01E1', 'SngStory'])}, 
-	'uni01E5' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['01E5', 'BarBowl.SngBowl'])}, 
-	'uni01F5' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['01F5', 'SngBowl'])}, 
-	'uni0201' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['0201', 'SngStory'])}, 
-	'uni0203' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['0203', 'SngStory'])}, 
-	'uni0227' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['0227', 'SngStory'])}, 
-	'uni0363' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['0363', 'SngStory'])}, 	
-	'uni1D43' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['1D43', 'SngStory'])}, 
-	'uni1D4D' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['1D4D', 'SngBowl'])}, 
-	'uni1E01' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['1E01', 'SngStory'])}, 
-	'uni1E21' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['1E21', 'SngBowl'])}, 
-	'uni1E9A' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['1E9A', 'SngStory'])}, 
-	'uni1EA1' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['1EA1', 'SngStory'])}, 
-	'uni1EA3' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['1EA3', 'SngStory'])}, 
-	'uni1EA5' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['1EA5', 'SngStory'])}, 
-	'uni1EA7' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['1EA7', 'SngStory'])}, 
-	'uni1EA9' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['1EA9', 'SngStory'])}, 
-	'uni1EAB' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['1EAB', 'SngStory'])}, 
-	'uni1EAD' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['1EAD', 'SngStory'])}, 
-	'uni1EAF' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['1EAF', 'SngStory'])}, 
-	'uni1EB1' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['1EB1', 'SngStory'])}, 
-	'uni1EB3' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['1EB3', 'SngStory'])}, 
-	'uni1EB5' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['1EB5', 'SngStory'])}, 
-	'uni1EB7' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['1EB7', 'SngStory'])}, 
-	'uni2090' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['2090', 'SngStory'])}, 
-	'uni2C65' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['2C65', 'SngStory'])}, 
-	'uniA7A1' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F')], 'lit' => ['A7A1', 'SngBowl'])}, 
+	'a' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['0061', 'SngStory'])}, 
+	'aacute' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['00E1', 'SngStory'])}, 
+	'abreve' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['0103', 'SngStory'])}, 
+	'acircumflex' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['00E2', 'SngStory'])}, 
+	'adieresis' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['00E4', 'SngStory'])}, 
+	'agrave' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['00E0', 'SngStory'])}, 
+	'amacron' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['0101', 'SngStory'])}, 
+	'aogonek' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['0105', 'SngStory'])}, 
+	'aring' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['00E5', 'SngStory'])}, 
+	'aringacute' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['01FB', 'SngStory'])}, 
+	'atilde' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['00E3', 'SngStory'])}, 
+	'g' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['0067', 'SngBowl'])}, 
+	'gbreve' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['011F', 'SngBowl'])}, 
+	'gcaron' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['01E7', 'SngBowl'])}, 
+	'gcircumflex' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['011D', 'SngBowl'])}, 
+	'gcommaaccent' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['0123', 'SngBowl'])}, 
+	'gdotaccent' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['0121', 'SngBowl'])}, 
+	'uni01CE' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['01CE', 'SngStory'])}, 
+	'uni01DF' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['01DF', 'SngStory'])}, 
+	'uni01E1' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['01E1', 'SngStory'])}, 
+	'uni01E5' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['01E5', 'BarBowl.SngBowl'])}, 
+	'uni01F5' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['01F5', 'SngBowl'])}, 
+	'uni0201' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['0201', 'SngStory'])}, 
+	'uni0203' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['0203', 'SngStory'])}, 
+	'uni0227' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['0227', 'SngStory'])}, 
+	'uni0363' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['0363', 'SngStory'])}, 	
+	'uni1D43' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['1D43', 'SngStory'])}, 
+	'uni1D4D' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['1D4D', 'SngBowl'])}, 
+	'uni1E01' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['1E01', 'SngStory'])}, 
+	'uni1E21' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['1E21', 'SngBowl'])}, 
+	'uni1E9A' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['1E9A', 'SngStory'])}, 
+	'uni1EA1' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['1EA1', 'SngStory'])}, 
+	'uni1EA3' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['1EA3', 'SngStory'])}, 
+	'uni1EA5' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['1EA5', 'SngStory'])}, 
+	'uni1EA7' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['1EA7', 'SngStory'])}, 
+	'uni1EA9' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['1EA9', 'SngStory'])}, 
+	'uni1EAB' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['1EAB', 'SngStory'])}, 
+	'uni1EAD' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['1EAD', 'SngStory'])}, 
+	'uni1EAF' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['1EAF', 'SngStory'])}, 
+	'uni1EB1' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['1EB1', 'SngStory'])}, 
+	'uni1EB3' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['1EB3', 'SngStory'])}, 
+	'uni1EB5' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['1EB5', 'SngStory'])}, 
+	'uni1EB7' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['1EB7', 'SngStory'])}, 
+	'uni2090' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['2090', 'SngStory'])}, 
+	'uni2C65' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['2C65', 'SngStory'])}, 
+	'uniA7A1' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['A7A1', 'SngBowl'])}, 
 );
 
 #bookmark
@@ -514,24 +514,33 @@ sub Andika_adjust()
 		#retain the Lit-T reduction rules to handle the Lit-T added to literacy glyphs
 		foreach my $key (keys %reduced_featsets)
 		{
+			if (not $key =~ /(Lit-T|SSA-T|SSG-T)/) {next;}
+
 			my $new_key = $key;
+			$new_key =~ s/(.*?)(SSA-T)(.*?)/$1DSA-T$3/;
+			$new_key =~ s/(.*?)(SSG-T)(.*?)/$1DSG-T$3/;
 			$new_key =~ s/(.*?)(Lit-T)(.*?)/$1Lit-F$3/;
-			my $new_value = $reduced_featsets{$key};
-			$new_value =~ s/(.*?)(Lit-T)(.*?)/$1Lit-F$3/;
+			$new_key = join(' ', sort(split(/ /, $new_key)));
 			
+			my $new_value = $reduced_featsets{$key};
+			$new_value =~ s/(.*?)(SSA-T)(.*?)/$1DSA-T$3/;
+			$new_value =~ s/(.*?)(SSG-T)(.*?)/$1DSG-T$3/;
+			$new_value =~ s/(.*?)(Lit-T)(.*?)/$1Lit-F$3/;
+			$new_value = join(' ', sort(split(/ /, $new_value)));
+
 			#removing Lit-F from Andika implies a glyph with no literacy setting is wanted
 			# which means one with Lit-T (since that's the default), so don't remove Lit-F
 			#RFComposer sort of worked without this previously because
 			# literacy suffixes are regarded as extras when searching candidate glyphs for a given USV
 			# which avoids applying Lit-T as the default
 			# (ie the candidate selection algo acted as if Lit-F was present)
-			if ($new_key =~ /Lit-F/ and not $new_value =~ /Lit-F/)
-			{
-				my @new_value_lst = split(/ /, $new_value);
-				push(@new_value_lst, 'Lit-F');
-				@new_value_lst = sort @new_value_lst;
-				$new_value = join(' ', @new_value_lst);
-			}
+			# if ($new_key =~ /Lit-F/ and not $new_value =~ /Lit-F/)
+			# {
+				# my @new_value_lst = split(/ /, $new_value);
+				# push(@new_value_lst, 'Lit-F');
+				# @new_value_lst = sort @new_value_lst;
+				# $new_value = join(' ', @new_value_lst);
+			# }
 			
 			if ($new_key ne $key and $new_key ne $new_value)
 			{
@@ -697,20 +706,22 @@ sub OT_Feats_get($\%)
 	{
 		if (not $ot_tag =~ /^(cv|ss)/) {next;}
 		if ($ot_tag =~ /(cv91|cv92|cv79)/) {next;} #exclude Tone numbers, Hide tone contour staves, Kayan diacritics
+		
 		# feature could be CV or SS; only CVs have UI strings for parms
 		$nm_id = $GSUB_tbl->{'FEATURES'}{$ot_tag}{'PARMS'}{'UINameID'}; #name tbl id
 		$nm_str = Name_get($font, $nm_id);
 		$feats->{$ot_tag}{'name'} = $nm_str;
 		$tag = Tag_lookup($nm_str, %nm_to_tag); # $tag is a TypeTuner tag
 		$feats->{$ot_tag}{'tag'} = $tag;
-		$feats->{$ot_tag}{'default'} = 0; # TODO: default for OT is always 0 ?
 		if (not defined($feats->{' ids'}))
 			{$feats->{' ids'} = [];}
 		push(@{$feats->{' ids'}}, $ot_tag);
+		#$feats->{$ot_tag}{'default'} will be set below
 
 		$ot_parms = $GSUB_tbl->{'FEATURES'}{$ot_tag}{'PARMS'};
 		$num_named_parms = defined($ot_parms->{'NumNamedParms'}) ? $ot_parms->{'NumNamedParms'} : 0;
 
+		#fea does not specify any info for features that aren't applied
 		$feats->{$ot_tag}{'settings'}{0}{'name'} = 'Default';
 		$feats->{$ot_tag}{'settings'}{0}{'tag'} = 'Dflt';
 		if (not defined($feats->{$ot_tag}{'settings'}{' ids'}))
@@ -736,6 +747,14 @@ sub OT_Feats_get($\%)
 			$feats->{$ot_tag}{'settings'}{$i+1}{'tag'} = $tag;
 			push(@{$feats->{$ot_tag}{'settings'}{' ids'}}, $i+1);
 		}
+
+		$feats->{$ot_tag}{'default'} = 0; #default for OT is usually 0
+		if (($family_nm eq 'andika' or $opt_a) and $ot_tag =~ /ss01/)
+		{ #except for literacy feature in Andika
+			$feats->{$ot_tag}{'default'} = 1;
+			$feats->{$ot_tag}{'settings'}{0}{'name'} = 'False';
+			$feats->{$ot_tag}{'settings'}{0}{'tag'} = 'F';
+		} 
 	}
 
 	$font->release;
@@ -1251,7 +1270,10 @@ sub PSName_select(\@$)
 	
 	#do one level of feature reduction to eliminate redundant literacy feats (e.g. Lit-T SSA-T)
 	# the rest of the code assumes each featset is matching a unique suffix
-	my $featsets_old = join(' ', @$featsets);
+	# other glyphs should not be adversely affected if the reduction truly remove feats that have no visual impact
+	my $featsets_old;
+
+	$featsets_old = join(' ', @$featsets);
 	if (defined $reduced_featsets{$featsets_old})
 	{
 		my $featsets_new = $reduced_featsets{$featsets_old} ;

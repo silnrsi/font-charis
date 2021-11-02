@@ -87,9 +87,9 @@ for row_file in glyph_data_reader:
             elif re.search("\.SngBowl", glyph_nm):
                 row_file[csv_cols.index(assoc_feat)] = "ss12"
         else:
-            if re.search("\.SngStory", glyph_nm):
+            if re.search("SmA", glyph_nm):
                 row_file[csv_cols.index(assoc_feat)] = "ss13"
-            elif re.search("\.SngBowl", glyph_nm):
+            elif re.search("SmG", glyph_nm):
                 row_file[csv_cols.index(assoc_feat)] = "ss14"
         rows_temp.append(row_file)
     for row in rows_temp:
