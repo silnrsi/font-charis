@@ -73,6 +73,7 @@ my $romanian_style_diacs_feat = 'romn';
 # so had to also modify featset_to_suffix and reduced_featsets for different value tags
 #add Capital J alternate for Andika Basics (will eventually be in all fonts)
 # map values to T and F to be like other char variants
+#bookmark
 my %nm_to_tag = (
 	'False' => 'F',
 	'True' => 'T',
@@ -204,6 +205,8 @@ my %nm_to_tag = (
 	'Zero' => 'Zro',
 	'Zero form' => 'Zro', #new
 	'Small Caps' => 'SmCp',
+	'Small caps from lowercase' => 'SmCp', #new
+	'Small caps' => 'T', #new
 	'Low-profile diacritics' => 'LpDiacs',
 	'Serbian-style alternates' => 'Serb',
 	'Serif beta alternates' => 'BetaSerif',
@@ -762,13 +765,13 @@ sub OT_Feats_get($\%)
 	# add smcp feature which does not have GSUB info like CV and SS feats
 	#  it's much like a SS feat
 	push(@{$feats->{' ids'}}, 'smcp');
-	$feats->{'smcp'}{'name'} = 'Small Caps';
-	$feats->{'smcp'}{'tag'} = Tag_lookup('Small Caps', %nm_to_tag);
+	$feats->{'smcp'}{'name'} = 'Small caps from lowercase';
+	$feats->{'smcp'}{'tag'} = Tag_lookup('Small caps from lowercase', %nm_to_tag);
 	$feats->{'smcp'}{'default'} = 0;
 	$feats->{'smcp'}{'settings'}{' ids'} = [0, 1];
 	$feats->{'smcp'}{'settings'}{0}{'name'} = 'Default';
 	$feats->{'smcp'}{'settings'}{0}{'tag'} = 'Dflt';
-	$feats->{'smcp'}{'settings'}{1}{'name'} = 'True';
+	$feats->{'smcp'}{'settings'}{1}{'name'} = 'Small caps';
 	$feats->{'smcp'}{'settings'}{1}{'tag'} = Tag_lookup('True', %nm_to_tag);
 
 	if ($opt_d)
@@ -1017,6 +1020,7 @@ sub Gsi_xml_parse($\%\%\%)
 				}
 			}
 			
+			#bookmark
 			my $feat = $attrs{'category'};
 			if (not defined($feats->{$feat}))
 				{if ($opt_d) {print "feature in GSI missing from feature info in ttf: $feat\n";} return;}
@@ -1159,6 +1163,7 @@ sub Special_glyphs_handle($\%\%\%\%)
 	}
 }
 
+#bookmark
 sub Featsets_add_default($\@\%)
 #add a default featset to the featsets array
 #based on the name of the base glyph and the current featsets
@@ -1260,6 +1265,7 @@ sub Suffixes_match_name(\@$)
 #forward declare this since it's a recursive subroutine to avoid a warning
 sub PSName_select(\@$);
 
+#bookmark
 sub PSName_select(\@$)
 #choose the first name in a space delimited string that matches the feature settings
 #if no name is found, try simplifying the feature settings according to the %reduced_featsets hash
