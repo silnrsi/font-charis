@@ -506,11 +506,11 @@
 			<cmd name="encode" args="01E5 uni01E5.SngBowl"/>
 		</value>
 	</feature>
-	<feature name="Small Caps" value="Default" tag="SmCp">
+	<feature name="Small caps from lowercase" value="Default" tag="SmCp">
 		<value name="Default" tag="Dflt">
 			<cmd name="null" args="null"/>
 		</value>
-		<value name="True" tag="T">
+		<value name="Small caps" tag="T">
 			<cmd name="encode" args="0061 a.sc"/>
 			<cmd name="encode" args="0430 uni0430.sc"/>
 			<cmd name="encode" args="00E1 aacute.sc"/>

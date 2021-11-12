@@ -1,0 +1,2 @@
+# run from the tools/ directory
+psfftml2TThtml -o ../results/TThtml --ftml ../tests/features.ftml --xsl ftml.xsl ../results/CharisSIL-Regular.ttf ../source/typetuner/feature_map.csv
