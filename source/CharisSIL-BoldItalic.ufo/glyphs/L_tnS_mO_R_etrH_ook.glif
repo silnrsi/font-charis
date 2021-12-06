@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmORetrHook" format="2">
+  <advance width="1133"/>
+  <unicode hex="1DF1B"/>
+  <anchor x="466" y="0" name="H"/>
+  <anchor x="446" y="-100" name="L"/>
+  <anchor x="693" y="0" name="O"/>
+  <anchor x="1133" y="1000" name="R"/>
+  <anchor x="690" y="1100" name="U"/>
+  <outline>
+    <component base="LtnSmO"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0.67,0.91,1</string>
+    </dict>
+  </lib>
+</glyph>

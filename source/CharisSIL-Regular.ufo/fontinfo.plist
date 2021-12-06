@@ -13,7 +13,7 @@
   <key>familyName</key>
   <string>Charis SIL</string>
   <key>openTypeHeadCreated</key>
-  <string>2021/07/02 19:07:32</string>
+  <string>2021/12/06 11:45:11</string>
   <key>openTypeHheaAscender</key>
   <integer>2450</integer>
   <key>openTypeHheaDescender</key>
@@ -106,6 +106,10 @@ THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
     <integer>2</integer>
     <integer>0</integer>
     <integer>4</integer>
+  </array>
+  <key>openTypeOS2Selection</key>
+  <array>
+    <integer>7</integer>
   </array>
   <key>openTypeOS2StrikeoutPosition</key>
   <integer>500</integer>

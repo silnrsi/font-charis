@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnInvGlottalStopCurl" format="2">
+  <advance width="983"/>
+  <unicode hex="1DF0E"/>
+  <anchor x="491" y="-100" name="L"/>
+  <anchor x="491" y="1540" name="U"/>
+  <outline>
+    <component base="LtnInvGlottalStop"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0.67,0.91,1</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmCapTurnedG" format="2">
+  <advance width="1075"/>
+  <unicode hex="1DF02"/>
+  <anchor x="465" y="-100" name="L"/>
+  <anchor x="1075" y="1000" name="R"/>
+  <anchor x="709" y="1100" name="U"/>
+  <outline>
+    <component base="LtnSmCapG"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0.67,0.91,1</string>
+    </dict>
+  </lib>
+</glyph>

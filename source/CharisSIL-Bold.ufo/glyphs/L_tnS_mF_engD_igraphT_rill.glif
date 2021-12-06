@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmFengDigraphTrill" format="2">
+  <advance width="1940"/>
+  <unicode hex="1DF00"/>
+  <anchor x="909" y="-500" name="L"/>
+  <anchor x="943" y="1540" name="U"/>
+  <outline>
+    <component base="LtnSmFengDigraph"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0.67,0.91,1</string>
+    </dict>
+  </lib>
+</glyph>

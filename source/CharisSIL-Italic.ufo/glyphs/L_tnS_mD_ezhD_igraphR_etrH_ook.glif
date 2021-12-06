@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmDezhDigraphRetrHook" format="2">
+  <advance width="1587"/>
+  <unicode hex="1DF19"/>
+  <anchor x="242" y="-100" name="L"/>
+  <anchor x="1017" y="1580" name="U"/>
+  <outline>
+    <component base="LtnSmDezhDigraph"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0.67,0.91,1</string>
+    </dict>
+  </lib>
+</glyph>

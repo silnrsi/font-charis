@@ -422,6 +422,8 @@
   <string>C_omma.S_ophia.glif</string>
   <key>CopCapEie</key>
   <string>C_opC_apE_ie.glif</string>
+  <key>CopyleftSgn</key>
+  <string>C_opyleftS_gn.glif</string>
   <key>CopyrightSgn</key>
   <string>C_opyrightS_gn.glif</string>
   <key>CruzeiroSgn</key>
@@ -1580,6 +1582,8 @@
   <string>I_nhibitS_ymmetricS_wapping.glif</string>
   <key>Integral</key>
   <string>I_ntegral.glif</string>
+  <key>Interrobang</key>
+  <string>I_nterrobang.glif</string>
   <key>IntlnrAnnotationAnchor</key>
   <string>I_ntlnrA_nnotationA_nchor.glif</string>
   <key>IntlnrAnnotationSeparator</key>
@@ -1856,6 +1860,8 @@
   <string>L_tnC_apC_D_otA_bv.glif</string>
   <key>LtnCapCHook</key>
   <string>L_tnC_apC_H_ook.glif</string>
+  <key>LtnCapCPalHook</key>
+  <string>L_tnC_apC_P_alH_ook.glif</string>
   <key>LtnCapCStrk</key>
   <string>L_tnC_apC_S_trk.glif</string>
   <key>LtnCapChi</key>
@@ -2490,6 +2496,8 @@
   <string>L_tnC_apS_D_otB_lw.glif</string>
   <key>LtnCapSDotBlwDotAbv</key>
   <string>L_tnC_apS_D_otB_lwD_otA_bv.glif</string>
+  <key>LtnCapSHook</key>
+  <string>L_tnC_apS_H_ook.glif</string>
   <key>LtnCapSSwashTail</key>
   <string>L_tnC_apS_S_washT_ail.glif</string>
   <key>LtnCapSaltillo</key>
@@ -2778,6 +2786,8 @@
   <string>L_tnG_lottalS_topS_trk.glif</string>
   <key>LtnInvGlottalStop</key>
   <string>L_tnI_nvG_lottalS_top.glif</string>
+  <key>LtnInvGlottalStopCurl</key>
+  <string>L_tnI_nvG_lottalS_topC_url.glif</string>
   <key>LtnInvGlottalStopStrk</key>
   <string>L_tnI_nvG_lottalS_topS_trk.glif</string>
   <key>LtnLateralClick</key>
@@ -2828,6 +2838,8 @@
   <string>L_tnR_etrC_lick.glif</string>
   <key>LtnRetrClick.sc</key>
   <string>L_tnR_etrC_lick.sc.glif</string>
+  <key>LtnRetroflexClickRetrHook</key>
+  <string>L_tnR_etroflexC_lickR_etrH_ook.glif</string>
   <key>LtnRevEshLoop</key>
   <string>L_tnR_evE_shL_oop.glif</string>
   <key>LtnRevGlottalStop</key>
@@ -3404,6 +3416,8 @@
   <string>L_tnS_mC_P_alH_ook.glif</string>
   <key>LtnSmCPalHookDep</key>
   <string>L_tnS_mC_P_alH_ookD_ep.glif</string>
+  <key>LtnSmCRetrHook</key>
+  <string>L_tnS_mC_R_etrH_ook.glif</string>
   <key>LtnSmCStrk</key>
   <string>L_tnS_mC_S_trk.glif</string>
   <key>LtnSmCStrk.sc</key>
@@ -3500,6 +3514,10 @@
   <string>L_tnS_mC_apT_rndR_.glif</string>
   <key>LtnSmCapTurnedE</key>
   <string>L_tnS_mC_apT_urnedE_.glif</string>
+  <key>LtnSmCapTurnedG</key>
+  <string>L_tnS_mC_apT_urnedG_.glif</string>
+  <key>LtnSmCapTurnedK</key>
+  <string>L_tnS_mC_apT_urnedK_.glif</string>
   <key>LtnSmCapU</key>
   <string>L_tnS_mC_apU_.glif</string>
   <key>LtnSmCapUBar</key>
@@ -3618,6 +3636,10 @@
   <string>L_tnS_mD_elta.glif</string>
   <key>LtnSmDezhDigraph</key>
   <string>L_tnS_mD_ezhD_igraph.glif</string>
+  <key>LtnSmDezhDigraphPalHook</key>
+  <string>L_tnS_mD_ezhD_igraphP_alH_ook.glif</string>
+  <key>LtnSmDezhDigraphRetrHook</key>
+  <string>L_tnS_mD_ezhD_igraphR_etrH_ook.glif</string>
   <key>LtnSmDotlessI</key>
   <string>L_tnS_mD_otlessI_.glif</string>
   <key>LtnSmDotlessI.SItal</key>
@@ -3806,12 +3828,18 @@
   <string>L_tnS_mE_ng.U_C_S_tyle.sc.glif</string>
   <key>LtnSmEng.sc</key>
   <string>L_tnS_mE_ng.sc.glif</string>
+  <key>LtnSmEngPalHook</key>
+  <string>L_tnS_mE_ngP_alH_ook.glif</string>
   <key>LtnSmEsh</key>
   <string>L_tnS_mE_sh.glif</string>
   <key>LtnSmEsh.sc</key>
   <string>L_tnS_mE_sh.sc.glif</string>
   <key>LtnSmEshCurl</key>
   <string>L_tnS_mE_shC_url.glif</string>
+  <key>LtnSmEshCurlDblBar</key>
+  <string>L_tnS_mE_shC_urlD_blB_ar.glif</string>
+  <key>LtnSmEshDblBar</key>
+  <string>L_tnS_mE_shD_blB_ar.glif</string>
   <key>LtnSmEshHook</key>
   <string>L_tnS_mE_shH_ook.glif</string>
   <key>LtnSmEshHookDep</key>
@@ -3886,6 +3914,8 @@
   <string>L_tnS_mF_P_alH_ookD_ep.glif</string>
   <key>LtnSmFengDigraph</key>
   <string>L_tnS_mF_engD_igraph.glif</string>
+  <key>LtnSmFengDigraphTrill</key>
+  <string>L_tnS_mF_engD_igraphT_rill.glif</string>
   <key>LtnSmG</key>
   <string>L_tnS_mG_.glif</string>
   <key>LtnSmG.BarBowl</key>
@@ -4170,6 +4200,8 @@
   <string>L_tnS_mI_S_trk.D_otless.glif</string>
   <key>LtnSmIStrk.sc</key>
   <string>L_tnS_mI_S_trk.sc.glif</string>
+  <key>LtnSmIStrkRetrHook</key>
+  <string>L_tnS_mI_S_trkR_etrH_ook.glif</string>
   <key>LtnSmITilde</key>
   <string>L_tnS_mI_T_ilde.glif</string>
   <key>LtnSmITilde.SItal</key>
@@ -4322,6 +4354,8 @@
   <string>L_tnS_mL_B_elt.glif</string>
   <key>LtnSmLBelt.sc</key>
   <string>L_tnS_mL_B_elt.sc.glif</string>
+  <key>LtnSmLBeltPalHook</key>
+  <string>L_tnS_mL_B_eltP_alH_ook.glif</string>
   <key>LtnSmLBrkn</key>
   <string>L_tnS_mL_B_rkn.glif</string>
   <key>LtnSmLBrkn.sc</key>
@@ -4358,6 +4392,8 @@
   <string>L_tnS_mL_D_otB_lwM_acron.S_I_tal.glif</string>
   <key>LtnSmLDotBlwMacron.sc</key>
   <string>L_tnS_mL_D_otB_lwM_acron.sc.glif</string>
+  <key>LtnSmLFishhook</key>
+  <string>L_tnS_mL_F_ishhook.glif</string>
   <key>LtnSmLHighBar</key>
   <string>L_tnS_mL_H_ighB_ar.glif</string>
   <key>LtnSmLHighBar.SItal</key>
@@ -4408,6 +4444,8 @@
   <string>L_tnS_mL_ambdaS_trk.glif</string>
   <key>LtnSmLezh</key>
   <string>L_tnS_mL_ezh.glif</string>
+  <key>LtnSmLezhRetrHook</key>
+  <string>L_tnS_mL_ezhR_etrH_ook.glif</string>
   <key>LtnSmLigFf</key>
   <string>L_tnS_mL_igF_f.glif</string>
   <key>LtnSmLigFfi</key>
@@ -4710,6 +4748,8 @@
   <string>L_tnS_mO_O_gonekM_acron.R_etroH_ook.sc.glif</string>
   <key>LtnSmOOgonekMacron.sc</key>
   <string>L_tnS_mO_O_gonekM_acron.sc.glif</string>
+  <key>LtnSmORetrHook</key>
+  <string>L_tnS_mO_R_etrH_ook.glif</string>
   <key>LtnSmORingInside</key>
   <string>L_tnS_mO_R_ingI_nside.glif</string>
   <key>LtnSmOStrk</key>
@@ -4900,6 +4940,8 @@
   <string>L_tnS_mR_F_ishhookM_iddleT_ilde.glif</string>
   <key>LtnSmRFishhookMiddleTildeDep</key>
   <string>L_tnS_mR_F_ishhookM_iddleT_ildeD_ep.glif</string>
+  <key>LtnSmRFishhookPalHook</key>
+  <string>L_tnS_mR_F_ishhookP_alH_ook.glif</string>
   <key>LtnSmRHookTail</key>
   <string>L_tnS_mR_H_ookT_ail.glif</string>
   <key>LtnSmRHookTail.LCStyle</key>
@@ -4946,6 +4988,10 @@
   <string>L_tnS_mR_evE_.glif</string>
   <key>LtnSmRevE.sc</key>
   <string>L_tnS_mR_evE_.sc.glif</string>
+  <key>LtnSmRevEng</key>
+  <string>L_tnS_mR_evE_ng.glif</string>
+  <key>LtnSmRevK</key>
+  <string>L_tnS_mR_evK_.glif</string>
   <key>LtnSmRevOpnE</key>
   <string>L_tnS_mR_evO_pnE_.glif</string>
   <key>LtnSmRevOpnE.sc</key>
@@ -4958,6 +5004,8 @@
   <string>L_tnS_mR_evO_pnE_R_etrH_ookD_ep.glif</string>
   <key>LtnSmRevRFishhook</key>
   <string>L_tnS_mR_evR_F_ishhook.glif</string>
+  <key>LtnSmRevScriptG</key>
+  <string>L_tnS_mR_evS_criptG_.glif</string>
   <key>LtnSmRum</key>
   <string>L_tnS_mR_um.glif</string>
   <key>LtnSmRumRotunda</key>
@@ -4996,6 +5044,8 @@
   <string>L_tnS_mS_C_ommaB_lw.glif</string>
   <key>LtnSmSCommaBlw.sc</key>
   <string>L_tnS_mS_C_ommaB_lw.sc.glif</string>
+  <key>LtnSmSCurl</key>
+  <string>L_tnS_mS_C_url.glif</string>
   <key>LtnSmSDiagStrk</key>
   <string>L_tnS_mS_D_iagS_trk.glif</string>
   <key>LtnSmSDiagStrk.sc</key>
@@ -5124,6 +5174,8 @@
   <string>L_tnS_mT_H_ook.R_tH_ook.sc.glif</string>
   <key>LtnSmTHook.sc</key>
   <string>L_tnS_mT_H_ook.sc.glif</string>
+  <key>LtnSmTHookRetrHook</key>
+  <string>L_tnS_mT_H_ookR_etrH_ook.glif</string>
   <key>LtnSmTLineBlw</key>
   <string>L_tnS_mT_L_ineB_lw.glif</string>
   <key>LtnSmTLineBlw.sc</key>
@@ -5146,6 +5198,10 @@
   <string>L_tnS_mT_cD_igraphC_url.glif</string>
   <key>LtnSmTeshDigraph</key>
   <string>L_tnS_mT_eshD_igraph.glif</string>
+  <key>LtnSmTeshPalHook</key>
+  <string>L_tnS_mT_eshP_alH_ook.glif</string>
+  <key>LtnSmTeshRetrHook</key>
+  <string>L_tnS_mT_eshR_etrH_ook.glif</string>
   <key>LtnSmThorn</key>
   <string>L_tnS_mT_horn.glif</string>
   <key>LtnSmThorn.sc</key>
@@ -5238,10 +5294,14 @@
   <string>L_tnS_mT_urnedR_L_ngL_eg.glif</string>
   <key>LtnSmTurnedRLngLegHook</key>
   <string>L_tnS_mT_urnedR_L_ngL_egH_ook.glif</string>
+  <key>LtnSmTurnedRPalHook</key>
+  <string>L_tnS_mT_urnedR_P_alH_ook.glif</string>
   <key>LtnSmTurnedT</key>
   <string>L_tnS_mT_urnedT_.glif</string>
   <key>LtnSmTurnedT.sc</key>
   <string>L_tnS_mT_urnedT_.sc.glif</string>
+  <key>LtnSmTurnedTCurl</key>
+  <string>L_tnS_mT_urnedT_C_url.glif</string>
   <key>LtnSmTurnedV</key>
   <string>L_tnS_mT_urnedV_.glif</string>
   <key>LtnSmTurnedV.sc</key>
@@ -5664,6 +5724,8 @@
   <string>L_tnS_mZ_S_washT_ailD_ep.glif</string>
   <key>LtnStretchedC</key>
   <string>L_tnS_tretchedC_.glif</string>
+  <key>LtnStretchedCCurl</key>
+  <string>L_tnS_tretchedC_C_url.glif</string>
   <key>LtnSubSmA</key>
   <string>L_tnS_ubS_mA_.glif</string>
   <key>LtnSubSmA.SngStory</key>
@@ -6398,6 +6460,8 @@
   <string>O_neD_otL_eader.glif</string>
   <key>OpnBx</key>
   <string>O_pnB_x.glif</string>
+  <key>Overline</key>
+  <string>O_verline.glif</string>
   <key>ParagraphSeparator</key>
   <string>P_aragraphS_eparator.glif</string>
   <key>ParallelTo</key>
@@ -6406,6 +6470,8 @@
   <string>P_artialD_iff.glif</string>
   <key>PerMilleSgn</key>
   <string>P_erM_illeS_gn.glif</string>
+  <key>PerTenThousandSgn</key>
+  <string>P_erT_enT_housandS_gn.glif</string>
   <key>PercentSgn</key>
   <string>P_ercentS_gn.glif</string>
   <key>PesetaSgn</key>
@@ -6608,6 +6674,8 @@
   <string>S_mT_ilde.glif</string>
   <key>Solidus</key>
   <string>S_olidus.glif</string>
+  <key>SomSgn</key>
+  <string>S_omS_gn.glif</string>
   <key>Space</key>
   <string>S_pace.glif</string>
   <key>SpesmiloSgn</key>
@@ -6764,6 +6832,8 @@
   <string>T_ilde.glif</string>
   <key>TildeOperator</key>
   <string>T_ildeO_perator.glif</string>
+  <key>TironianSignEt</key>
+  <string>T_ironianS_ignE_t.glif</string>
   <key>TnContLft11</key>
   <string>T_nC_ontL_ft11.glif</string>
   <key>TnContLft12</key>
@@ -7010,6 +7080,10 @@
   <string>T_ugrikS_gn.glif</string>
   <key>TurkishLiraSgn</key>
   <string>T_urkishL_iraS_gn.glif</string>
+  <key>TurnedDigitThree</key>
+  <string>T_urnedD_igitT_hree.glif</string>
+  <key>TurnedDigitTwo</key>
+  <string>T_urnedD_igitT_wo.glif</string>
   <key>TwoDotLeader</key>
   <string>T_woD_otL_eader.glif</string>
   <key>TwoEmDash</key>
@@ -7098,6 +7172,8 @@
   <string>V_ulgF_racT_woT_hirds.glif</string>
   <key>VulgFracZeroThirds</key>
   <string>V_ulgF_racZ_eroT_hirds.glif</string>
+  <key>WigglyVerticalLine</key>
+  <string>W_igglyV_erticalL_ine.glif</string>
   <key>WonSgn</key>
   <string>W_onS_gn.glif</string>
   <key>WordJoiner</key>
