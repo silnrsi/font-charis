@@ -8,27 +8,14 @@
     <array/>
   </dict>
   <key>com.schriftgestaltung.appVersion</key>
-  <string>3089</string>
-  <key>com.schriftgestaltung.customParameter.GSFont.Axis Mappings</key>
-  <dict>
-    <key>XXXX</key>
-    <dict>
-      <key>0</key>
-      <integer>0</integer>
-    </dict>
-    <key>wdth</key>
-    <dict>
-      <key>100</key>
-      <integer>100</integer>
-    </dict>
-    <key>wght</key>
-    <dict>
-      <key>400</key>
-      <integer>400</integer>
-      <key>700</key>
-      <integer>700</integer>
-    </dict>
-  </dict>
+  <string>3106</string>
+  <key>com.schriftgestaltung.customParameter.GSFont.DisplayStrings</key>
+  <array>
+    <string>/LtnSmFengDigraphTrill/LtnSmG.SngBowl/LtnSmRevScriptG o/LtnSmCapTurnedG/LtnSmRevK/LtnSmRevEng/LtnSmTRetrHook/LtnSmTHook/LtnSmTHookRetrHook f/LtnSmCapTurnedK/LtnSmLFishhook/LtnSmEsh/LtnSmDblBarredL/LtnSmEshDblBar</string>
+    <string>/LtnSmEshCurlDblBar/LtnSmTurnedTCurl/LtnInvGlottalStopCurl/LtnSmSCurl/LtnStretchedCCurl</string>
+    <string>/LtnSmEzhPalHook/LtnSmDezhDigraphPalHook/Space/LtnSmLPalHook/LtnSmLBelt/LtnSmLBeltPalHook/Space/LtnSmScriptGPalHook/LtnSmEngPalHook/Space/LtnSmRPalHook/LtnSmTurnedR/LtnSmTurnedRPalHook/LtnSmRFishhook/LtnSmRFishhookPalHook/Space/LtnSmTeshDigraph/LtnSmEshPalHook/LtnSmTeshPalHook</string>
+    <string>/LtnSmDezhDigraph/LtnSmDezhDigraphRetrHook/LtnSmLezhRetrHook/LtnSmLRetrHook/LtnRetroflexClickRetrHook/LtnSmIStrk/LtnSmIStrkRetrHook/LtnSmRevOpnERetrHook/LtnSmORetrHook/LtnSmTeshDigraph/LtnSmTeshRetrHook/LtnSmCRetrHook/LtnSmERetrHook</string>
+  </array>
   <key>com.schriftgestaltung.customParameter.GSFont.disablesAutomaticAlignment</key>
   <true/>
   <key>com.schriftgestaltung.customParameter.GSFont.disablesLastChange</key>
