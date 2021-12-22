@@ -8,9 +8,16 @@
     <array/>
   </dict>
   <key>com.schriftgestaltung.appVersion</key>
-  <string>3089</string>
+  <string>3106</string>
   <key>com.schriftgestaltung.customName</key>
   <string>Italic</string>
+  <key>com.schriftgestaltung.customParameter.GSFont.DisplayStrings</key>
+  <array>
+    <string>/LtnSmFengDigraph/LtnSmFengDigraphTrill/LtnSmG.SngBowl/LtnSmRevScriptG o/LtnSmCapTurnedG k/LtnSmRevK/LtnSmEng/LtnSmRevEng/LtnSmTRetrHook/LtnSmTHook/LtnSmTHookRetrHook/LtnSmCapK/LtnSmCapTurnedK/LtnSmDblBarredL/Space/LtnSmEshDblBar</string>
+    <string>/LtnSmEshCurl/Space/LtnSmEshCurlDblBar/Space/LtnSmTurnedT/Space/LtnSmTurnedTCurl/LtnSmEzhCurl o/LtnInvGlottalStop/LtnInvGlottalStopCurl/LtnSmSCurl/LtnStretchedCCurl/LtnSmCCurl</string>
+    <string>/LtnSmEzhPalHook/LtnSmDezhDigraphPalHook/Space/LtnSmLPalHook/LtnSmLBelt/LtnSmLBeltPalHook/Space/LtnSmScriptGPalHook/LtnSmEngPalHook/Space/LtnSmRPalHook/LtnSmTurnedR/LtnSmTurnedRPalHook/LtnSmRFishhook/LtnSmRFishhookPalHook/Space/LtnSmTeshDigraph/LtnSmEshPalHook/LtnSmTeshPalHook</string>
+    <string>/LtnSmDezhDigraph/LtnSmDezhDigraphRetrHook/LtnSmLezhRetrHook/LtnSmLRetrHook/LtnRetroflexClickRetrHook/LtnSmIStrk/LtnSmIStrkRetrHook/LtnSmRevOpnERetrHook/LtnSmORetrHook/LtnSmTeshDigraph/LtnSmTeshRetrHook/LtnSmCRetrHook/LtnSmERetrHook</string>
+  </array>
   <key>com.schriftgestaltung.customParameter.GSFont.disablesAutomaticAlignment</key>
   <true/>
   <key>com.schriftgestaltung.customParameter.GSFont.disablesLastChange</key>

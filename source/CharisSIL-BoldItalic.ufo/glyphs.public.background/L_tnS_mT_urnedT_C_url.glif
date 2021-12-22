@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmTurnedTCurl" format="2">
+  <outline>
+    <contour>
+      <point x="184" y="-47" type="move"/>
+      <point x="148" y="-25"/>
+      <point x="102" y="-16"/>
+      <point x="57" y="-16" type="curve" smooth="yes"/>
+      <point x="-133" y="-16"/>
+      <point x="-228" y="-140"/>
+      <point x="-228" y="-275" type="curve" smooth="yes"/>
+      <point x="-228" y="-391"/>
+      <point x="-113" y="-469"/>
+      <point x="9" y="-469" type="curve" smooth="yes"/>
+      <point x="133" y="-469"/>
+      <point x="239" y="-432"/>
+      <point x="315" y="-356" type="curve"/>
+      <point x="335" y="-389"/>
+      <point x="356" y="-430"/>
+      <point x="376" y="-479" type="curve"/>
+      <point x="522" y="-426" type="line"/>
+      <point x="487" y="-340"/>
+      <point x="468" y="-307"/>
+      <point x="417" y="-231" type="curve"/>
+      <point x="453" y="-150"/>
+      <point x="462" y="-16"/>
+      <point x="467" y="63" type="curve" smooth="yes"/>
+    </contour>
+    <contour>
+      <point x="167" y="-174" type="curve"/>
+      <point x="163" y="-264"/>
+      <point x="122" y="-352"/>
+      <point x="44" y="-352" type="curve" smooth="yes"/>
+      <point x="-11" y="-352"/>
+      <point x="-37" y="-306"/>
+      <point x="-37" y="-253" type="curve" smooth="yes"/>
+      <point x="-37" y="-189"/>
+      <point x="8" y="-133"/>
+      <point x="69" y="-133" type="curve" smooth="yes"/>
+      <point x="108" y="-133"/>
+      <point x="136" y="-147"/>
+    </contour>
+  </outline>
+</glyph>
