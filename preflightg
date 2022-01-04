@@ -1,8 +1,8 @@
 #!/bin/sh
 
 echo "-----Updating UFOs from Glyphs file..."
-psfglyphs2ufo --nofea source/CharisSILRoman.glyphs source   &
-psfglyphs2ufo --nofea source/CharisSILItalic.glyphs source  &
+psfglyphs2ufo --preservefea source/CharisSILRoman.glyphs source   &
+psfglyphs2ufo --preservefea source/CharisSILItalic.glyphs source  &
 wait
 
 echo "-----Normalizing Regular UFO..."
