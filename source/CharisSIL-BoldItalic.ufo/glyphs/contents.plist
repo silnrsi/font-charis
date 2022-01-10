@@ -2776,6 +2776,8 @@
   <string>L_tnC_apZ_L_ineB_lw.glif</string>
   <key>LtnCapZPalHook</key>
   <string>L_tnC_apZ_P_alH_ook.glif</string>
+  <key>LtnCapZPalHookDep</key>
+  <string>L_tnC_apZ_P_alH_ookD_ep.glif</string>
   <key>LtnCapZStrk</key>
   <string>L_tnC_apZ_S_trk.glif</string>
   <key>LtnCapZSwashTail</key>
@@ -3474,6 +3476,8 @@
   <string>L_tnS_mC_apL_.glif</string>
   <key>LtnSmCapLBelt</key>
   <string>L_tnS_mC_apL_B_elt.glif</string>
+  <key>LtnSmCapLBeltDep</key>
+  <string>L_tnS_mC_apL_B_eltD_ep.glif</string>
   <key>LtnSmCapLStrk</key>
   <string>L_tnS_mC_apL_S_trk.glif</string>
   <key>LtnSmCapM</key>
@@ -3882,6 +3886,8 @@
   <string>L_tnS_mE_zhH_ookD_ep.glif</string>
   <key>LtnSmEzhPalHook</key>
   <string>L_tnS_mE_zhP_alH_ook.glif</string>
+  <key>LtnSmEzhPalHookDep</key>
+  <string>L_tnS_mE_zhP_alH_ookD_ep.glif</string>
   <key>LtnSmEzhRev</key>
   <string>L_tnS_mE_zhR_ev.glif</string>
   <key>LtnSmEzhRev.sc</key>
@@ -5308,6 +5314,8 @@
   <string>L_tnS_mT_urnedR_L_ngL_eg.glif</string>
   <key>LtnSmTurnedRLngLegHook</key>
   <string>L_tnS_mT_urnedR_L_ngL_egH_ook.glif</string>
+  <key>LtnSmTurnedRLngLegHookDep</key>
+  <string>L_tnS_mT_urnedR_L_ngL_egH_ookD_ep.glif</string>
   <key>LtnSmTurnedRPalHook</key>
   <string>L_tnS_mT_urnedR_P_alH_ook.glif</string>
   <key>LtnSmTurnedT</key>
@@ -5326,6 +5334,8 @@
   <string>L_tnS_mT_urnedY_.glif</string>
   <key>LtnSmTurnedYBelt</key>
   <string>L_tnS_mT_urnedY_B_elt.glif</string>
+  <key>LtnSmTurnedYBeltDep</key>
+  <string>L_tnS_mT_urnedY_B_eltD_ep.glif</string>
   <key>LtnSmTzDigraph</key>
   <string>L_tnS_mT_zD_igraph.glif</string>
   <key>LtnSmTzDigraph.sc</key>
@@ -5790,6 +5800,8 @@
   <string>L_tnS_upS_mA_.S_ngS_tory.glif</string>
   <key>LtnSupSmAe</key>
   <string>L_tnS_upS_mA_e.glif</string>
+  <key>LtnSupSmAeDep</key>
+  <string>L_tnS_upS_mA_eD_ep.glif</string>
   <key>LtnSupSmAlpha</key>
   <string>L_tnS_upS_mA_lpha.glif</string>
   <key>LtnSupSmB</key>
@@ -5808,10 +5820,16 @@
   <string>L_tnS_upS_mC_apI_D_ep.glif</string>
   <key>LtnSupSmCapOe</key>
   <string>L_tnS_upS_mC_apO_e.glif</string>
+  <key>LtnSupSmCapOeDep</key>
+  <string>L_tnS_upS_mC_apO_eD_ep.glif</string>
   <key>LtnSupSmCapY</key>
   <string>L_tnS_upS_mC_apY_.glif</string>
+  <key>LtnSupSmCapYDep</key>
+  <string>L_tnS_upS_mC_apY_D_ep.glif</string>
   <key>LtnSupSmClosedRevOpnE</key>
   <string>L_tnS_upS_mC_losedR_evO_pnE_.glif</string>
+  <key>LtnSupSmClosedRevOpnEDep</key>
+  <string>L_tnS_upS_mC_losedR_evO_pnE_D_ep.glif</string>
   <key>LtnSupSmD</key>
   <string>L_tnS_upS_mD_.glif</string>
   <key>LtnSupSmDotlessJStrk</key>
@@ -5870,6 +5888,8 @@
   <string>L_tnS_upS_mO_.glif</string>
   <key>LtnSupSmOStrk</key>
   <string>L_tnS_upS_mO_S_trk.glif</string>
+  <key>LtnSupSmOStrkDep</key>
+  <string>L_tnS_upS_mO_S_trkD_ep.glif</string>
   <key>LtnSupSmOe</key>
   <string>L_tnS_upS_mO_e.glif</string>
   <key>LtnSupSmOeDep</key>
@@ -5884,8 +5904,12 @@
   <string>L_tnS_upS_mP_.glif</string>
   <key>LtnSupSmRamsHorn</key>
   <string>L_tnS_upS_mR_amsH_orn.glif</string>
+  <key>LtnSupSmRamsHornDep</key>
+  <string>L_tnS_upS_mR_amsH_ornD_ep.glif</string>
   <key>LtnSupSmRevE</key>
   <string>L_tnS_upS_mR_evE_.glif</string>
+  <key>LtnSupSmRevEDep</key>
+  <string>L_tnS_upS_mR_evE_D_ep.glif</string>
   <key>LtnSupSmRevOpnE</key>
   <string>L_tnS_upS_mR_evO_pnE_.glif</string>
   <key>LtnSupSmRevOpnEDep</key>
@@ -6264,6 +6288,8 @@
   <string>M_odS_mH_H_ook.glif</string>
   <key>ModSmHStrk</key>
   <string>M_odS_mH_S_trk.glif</string>
+  <key>ModSmHStrkDep</key>
+  <string>M_odS_mH_S_trkD_ep.glif</string>
   <key>ModSmHeng</key>
   <string>M_odS_mH_eng.glif</string>
   <key>ModSmIota</key>
@@ -6338,6 +6364,8 @@
   <string>M_odS_mT_urnedH_D_ep.glif</string>
   <key>ModSmTurnedY</key>
   <string>M_odS_mT_urnedY_.glif</string>
+  <key>ModSmTurnedYDep</key>
+  <string>M_odS_mT_urnedY_D_ep.glif</string>
   <key>ModSmVHook</key>
   <string>M_odS_mV_H_ook.glif</string>
   <key>ModSmVHook.StraightLft</key>

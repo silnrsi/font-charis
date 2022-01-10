@@ -3559,6 +3559,7 @@
     <string>LtnSmARetrHookDep</string>
     <string>LtnSmAlphaRetrHookDep</string>
     <string>LtnSupSmTurnedAlphaDep</string>
+    <string>LtnSupSmAeDep</string>
     <string>LtnSmAtDep</string>
     <string>LtnCapAtDep</string>
     <string>LtnCapSmAlphaDep</string>
@@ -3579,9 +3580,11 @@
     <string>LtnSmERetrHookDep</string>
     <string>LtnSmEStrkDep</string>
     <string>LtnSmSchwaRetrHookDep</string>
+    <string>LtnSupSmRevEDep</string>
     <string>LtnSmOpnERetrHookDep</string>
     <string>LtnSupSmRevOpnEDep</string>
     <string>LtnSmRevOpnERetrHookDep</string>
+    <string>LtnSupSmClosedRevOpnEDep</string>
     <string>CySmRevZeDep</string>
     <string>LtnCapEStrkDep</string>
     <string>CyCapRevZeDep</string>
@@ -3592,6 +3595,7 @@
     <string>CyCapGheDescDep</string>
     <string>LtnSupSmScriptGDep</string>
     <string>LtnSmScriptGPalHookDep</string>
+    <string>ModSmHStrkDep</string>
     <string>LtnSmHengDep</string>
     <string>LtnSmHDescDep</string>
     <string>ModSmTurnedHDep</string>
@@ -3622,6 +3626,7 @@
     <string>LtnSupSmLRetrHookDep</string>
     <string>LtnSmLRetrHookBeltDep</string>
     <string>ModSmCapLDep</string>
+    <string>LtnSmCapLBeltDep</string>
     <string>LtnCapLBarDep</string>
     <string>LtnCapDblBarredLDep</string>
     <string>LtnCapLMiddleTildeDep</string>
@@ -3639,7 +3644,9 @@
     <string>ModSmCapNDep</string>
     <string>LtnSupSmBarredODep</string>
     <string>ModSmThetaDep</string>
+    <string>LtnSupSmOStrkDep</string>
     <string>LtnSupSmOeDep</string>
+    <string>LtnSupSmCapOeDep</string>
     <string>LtnSmPPalHookDep</string>
     <string>LtnSmPStrkDep</string>
     <string>LtnSmPMiddleTildeDep</string>
@@ -3652,6 +3659,7 @@
     <string>LtnSmRPalHookDep</string>
     <string>LtnSmRBarDep</string>
     <string>LtnSmRMiddleTildeDep</string>
+    <string>LtnSmTurnedRLngLegHookDep</string>
     <string>LtnSmRFishhookMiddleTildeDep</string>
     <string>LtnCapRBarredStemDep</string>
     <string>LtnCapRHookTailDep</string>
@@ -3676,6 +3684,7 @@
     <string>LtnSmVRtHookDep</string>
     <string>LtnSmVCurlDep</string>
     <string>LtnSupSmTurnedVDep</string>
+    <string>LtnSupSmRamsHornDep</string>
     <string>LtnCapTurnedVDep</string>
     <string>LtnSmWHookDep</string>
     <string>LtnCapWHookDep</string>
@@ -3685,6 +3694,9 @@
     <string>CyCapHaStrkDep</string>
     <string>CyCapHaHookDep</string>
     <string>LtnSmYStrkDep</string>
+    <string>ModSmTurnedYDep</string>
+    <string>LtnSmTurnedYBeltDep</string>
+    <string>LtnSupSmCapYDep</string>
     <string>LtnCapYStrkDep</string>
     <string>LtnSupSmZDep</string>
     <string>ModSmZRetrHookDep</string>
@@ -3693,10 +3705,12 @@
     <string>LtnSupSmZCurlDep</string>
     <string>LtnSmZDescDep</string>
     <string>LtnSmZSwashTailDep</string>
+    <string>LtnCapZPalHookDep</string>
     <string>LtnCapZDescDep</string>
     <string>LtnCapEzhDep.RevSigmaStyle</string>
     <string>LtnSupSmEzhDep</string>
     <string>LtnSmEzhHookDep</string>
+    <string>LtnSmEzhPalHookDep</string>
     <string>LtnSmTresilloDep</string>
     <string>LtnSmCuatrilloDep</string>
     <string>ModGlottalStopDep</string>
@@ -6524,6 +6538,8 @@
     <key>LtnCapZLineBlw</key>
     <string>uni1E94</string>
     <key>LtnCapZPalHook</key>
+    <string>uniA7C6</string>
+    <key>LtnCapZPalHookDep</key>
     <string>uniF234</string>
     <key>LtnCapZStrk</key>
     <string>uni01B5</string>
@@ -7222,6 +7238,8 @@
     <key>LtnSmCapL</key>
     <string>uni029F</string>
     <key>LtnSmCapLBelt</key>
+    <string>u1DF04</string>
+    <key>LtnSmCapLBeltDep</key>
     <string>uniF268</string>
     <key>LtnSmCapLStrk</key>
     <string>uni1D0C</string>
@@ -7630,6 +7648,8 @@
     <key>LtnSmEzhHookDep</key>
     <string>uniF21C</string>
     <key>LtnSmEzhPalHook</key>
+    <string>u1DF18</string>
+    <key>LtnSmEzhPalHookDep</key>
     <string>uniF235</string>
     <key>LtnSmEzhRev</key>
     <string>uni01B9</string>
@@ -9056,6 +9076,8 @@
     <key>LtnSmTurnedRLngLeg</key>
     <string>uni027A</string>
     <key>LtnSmTurnedRLngLegHook</key>
+    <string>u1DF08</string>
+    <key>LtnSmTurnedRLngLegHookDep</key>
     <string>uniF269</string>
     <key>LtnSmTurnedRPalHook</key>
     <string>u1DF15</string>
@@ -9074,6 +9096,8 @@
     <key>LtnSmTurnedY</key>
     <string>uni028E</string>
     <key>LtnSmTurnedYBelt</key>
+    <string>u1DF06</string>
+    <key>LtnSmTurnedYBeltDep</key>
     <string>uniF267</string>
     <key>LtnSmTzDigraph</key>
     <string>uniA729</string>
@@ -9538,6 +9562,8 @@
     <key>LtnSupSmA.SngStory</key>
     <string>uni1D43.SngStory</string>
     <key>LtnSupSmAe</key>
+    <string>u10783</string>
+    <key>LtnSupSmAeDep</key>
     <string>uniF1A1</string>
     <key>LtnSupSmAlpha</key>
     <string>uni1D45</string>
@@ -9556,10 +9582,16 @@
     <key>LtnSupSmCapIDep</key>
     <string>uniF1A8</string>
     <key>LtnSupSmCapOe</key>
+    <string>u107A3</string>
+    <key>LtnSupSmCapOeDep</key>
     <string>uniF1AE</string>
     <key>LtnSupSmCapY</key>
+    <string>u107B2</string>
+    <key>LtnSupSmCapYDep</key>
     <string>uniF1B4</string>
     <key>LtnSupSmClosedRevOpnE</key>
+    <string>u1078F</string>
+    <key>LtnSupSmClosedRevOpnEDep</key>
     <string>uniF1A4</string>
     <key>LtnSupSmD</key>
     <string>uni1D48</string>
@@ -9618,6 +9650,8 @@
     <key>LtnSupSmO</key>
     <string>uni1D52</string>
     <key>LtnSupSmOStrk</key>
+    <string>u107A2</string>
+    <key>LtnSupSmOStrkDep</key>
     <string>uniF1AB</string>
     <key>LtnSupSmOe</key>
     <string>uniA7F9</string>
@@ -9632,8 +9666,12 @@
     <key>LtnSupSmP</key>
     <string>uni1D56</string>
     <key>LtnSupSmRamsHorn</key>
+    <string>u10791</string>
+    <key>LtnSupSmRamsHornDep</key>
     <string>uniF1B5</string>
     <key>LtnSupSmRevE</key>
+    <string>u1088E</string>
+    <key>LtnSupSmRevEDep</key>
     <string>uniF1A3</string>
     <key>LtnSupSmRevOpnE</key>
     <string>uni1D9F</string>
@@ -10012,6 +10050,8 @@
     <key>ModSmHHook</key>
     <string>uni02B1</string>
     <key>ModSmHStrk</key>
+    <string>u10795</string>
+    <key>ModSmHStrkDep</key>
     <string>uniF1BC</string>
     <key>ModSmHeng</key>
     <string>uniAB5C</string>
@@ -10086,6 +10126,8 @@
     <key>ModSmTurnedHDep</key>
     <string>uniF1BB</string>
     <key>ModSmTurnedY</key>
+    <string>u107A0</string>
+    <key>ModSmTurnedYDep</key>
     <string>uniF1CE</string>
     <key>ModSmVHook</key>
     <string>uni1DB9</string>
