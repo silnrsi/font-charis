@@ -513,7 +513,7 @@
       setting_ui_label: Capital form
       setting_doc_desc: Capital form
       tt_setting_name: Capital form
-      tt_setting_tag: CapN
+      tt_setting_tag: Uc
     - setting_value: 3
       setting_ui_label: Lowercase short stem
       setting_doc_desc: Lowercase short stem
@@ -1156,6 +1156,33 @@
   ftml_comment: 
   ftml_string: 
 
+- tag: cv84
+  fonts: CDGA
+  version_added: 6.1
+  cv_label: Cyr Serbian Macedonian
+  cv_tooltip: Alternate forms for Serbian and Macedonian
+  cv_sample: 
+  tt_tag: SerbMac
+  tt_name: Cyr Serbian Macedonian
+  tt_value: Standard
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard
+      tt_setting_name: Standard
+      tt_setting_tag: F
+    - setting_value: 1
+      setting_ui_label: Serbian Macedonian forms
+      setting_doc_desc: Serbian Macedonian forms
+      tt_setting_name: Serbian Macedonian forms
+      tt_setting_tag: SrMk
+  doc_group: cyr
+  doc_order: 473
+  doc_name: Cyrillic Serbian and Macedonian forms
+  doc_affects: U+0431 U+0433 U+0434 U+043F U+0442
+  doc_sample: 
+  ftml_comment: 
+  ftml_string: 
+
 - tag: cv90
   fonts: CDGA
   version_added: 5
@@ -1266,6 +1293,31 @@
 
 - tag: locl
   fonts: CDGA
+  version_added: 6.1
+  locl_script: cyrl
+  locl_language: MKD
+  locl_css: mk
+  tt_tag: Mace
+  tt_name: Cyrillic Macedonian letters
+  tt_value: Standard
+  setting_value0: 
+      setting_doc_desc: Standard
+      tt_setting_name: Standard
+      tt_setting_tag: F
+  setting_value1: 
+      setting_doc_desc: Macedonian forms
+      tt_setting_name: Macedonian forms
+      tt_setting_tag: T
+  doc_group: cyr
+  doc_order: 471
+  doc_name: Cyrillic Macedonian letters
+  doc_affects: U+0431 U+0433 U+0434 U+043F U+0442
+  doc_sample: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: locl
+  fonts: CDGA
   version_added: 5
   locl_script: cyrl
   locl_language: SRB
@@ -1282,7 +1334,7 @@
       tt_setting_name: Serbian forms
       tt_setting_tag: T
   doc_group: cyr
-  doc_order: 471
+  doc_order: 472
   doc_name: Cyrillic Serbian letters
   doc_affects: U+0431 U+0433 U+0434 U+043F U+0442
   doc_sample: 
@@ -1414,7 +1466,7 @@
   version_added: 5
   tt_tag: LpDiacs
   tt_name: Low-profile diacritics
-  tt_value: 
+  tt_value: Standard
   settings:
     - setting_value: 0
       setting_doc_desc: Standard
