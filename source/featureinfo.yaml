@@ -1471,11 +1471,11 @@
   settings:
     - setting_value: 0
       setting_doc_desc: Standard
-      tt_setting_name: False
+      tt_setting_name: Standard
       tt_setting_tag: F
     - setting_value: 1
       setting_doc_desc: Low-profile
-      tt_setting_name: True
+      tt_setting_name: Low-profile
       tt_setting_tag: T
   doc_group: diacsym
   doc_order: 301
