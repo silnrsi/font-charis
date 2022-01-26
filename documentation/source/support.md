@@ -1,6 +1,6 @@
 ---
 title: Charis SIL - Support
-fontversion: 6.001
+fontversion: 6.100
 ---
 
 ## Support options

@@ -1,6 +1,6 @@
 ---
 title: Charis SIL - Resources
-fontversion: 6.001
+fontversion: 6.100
 ---
 
 ## Requirements
@@ -26,6 +26,10 @@ These fonts also include extensive OpenType features for small caps, literacy fo
 If special font features are to be activated the application will need to provide a way to turn on the feature or choose the feature setting. Details of current application support, and specific techniques for activating features, are on the [Using Font Features](http://software.sil.org/fonts/features) help page.
 
 Although the current fonts support only OpenType, previous versions provided support for Graphite and AAT (Apple Advanced Typography) technologies. Graphite was supported through version 5 and AAT was supported up to version 4. These older versions remain available from our [Previous Versions archive](http://software.sil.org/charis/download/previous-versions).
+
+## TypeTuner
+
+The [TypeTuner Web](https://scripts.sil.org/ttw/fonts2go.cgi) service allows you to choose smart font features and download a font with those features preset. This enables them to work in many applications that do not fully support OpenType.
 
 ## Web fonts
 
