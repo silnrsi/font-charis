@@ -76,11 +76,6 @@ lookup vc_sub {
     sub @cno_viet by @c_viet;
 } vc_sub;
 
-lookup srb_sub {
-  lookupflag 0;
-    sub @cno_Serb by @c_Serb;
-} srb_sub;
-
 lookup ss_sub {
   lookupflag 0;
     sub @cno_Sup by @c_Sup;
@@ -114,6 +109,12 @@ lookup f_sub {
     sub LtnSmF LtnSmF LtnSmL  by LtnLigSmFSmFSmL;
     sub LtnSmF LtnSmF  by LtnLigSmFSmF;
 } f_sub;
+
+# must come after lkups used by smcp (and c2sc ?)
+lookup srb_sub {
+  lookupflag 0;
+    sub @cno_Serb by @c_Serb;
+} srb_sub;
 
 # used to generate glyph classes
 def SeqGen(n) {
@@ -564,6 +565,7 @@ lookup sital_sub {
 languagesystem DFLT dflt;
 languagesystem cyrl dflt;
 languagesystem cyrl SRB;
+languagesystem cyrl MKD;
 languagesystem latn dflt;
 languagesystem latn IPPH;
 languagesystem latn VIT;
@@ -598,6 +600,7 @@ feature aalt {
   feature cv80;
   feature cv81;
   feature cv82;
+  feature cv84;
   feature cv90;
   feature cv91;
   feature cv92;
@@ -623,9 +626,17 @@ feature ccmp {
 
 feature locl {
   script cyrl;
-    language SRB  exclude_dflt;
+    language SRB  exclude_dflt; #Serbian
+      lookup srb_sub;
+    language MKD  exclude_dflt; #Macedonian
       lookup srb_sub;
 } locl;
+
+# feature locl {
+#   script cyrl;
+#     language MKD  exclude_dflt; #Macedonian
+#       lookup srb_sub;
+# } locl;
 
 feature smcp {
   lookup sc1_sub;
@@ -1233,6 +1244,29 @@ feature cv82 {
 
   lookup brvc_sub;
 } cv82;
+
+feature cv84 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Cyr Serbian Macedonian";  # English US
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Alternate forms for Serbian and Macedonian";  # English US
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "sample_text";  # English US TODO: set sample_text
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Serbian Macedonian forms";  # English US
+      };
+  };
+
+  lookup srb_sub;
+} cv84;
 
 feature cv90 {
 

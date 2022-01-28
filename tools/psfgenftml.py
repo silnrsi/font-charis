@@ -528,19 +528,23 @@ def doit(args):
                         ftml.setFeatures(tv_lst)
                         builder.render(lig_diac_lst, ftml, descUIDs=lig_lst)
 
-        # add 'locl' test which provides Serbian alternates
-        # TODO: read uids with locl feat from glyph_data.csv
+        # add 'locl' test which provides Serbian and Macedonian alternates
+        #  both languages use identical variants except Macedonian support an acute over one char (not tested)
+        # TODO: read uids with locl feat from glyph_data.csv [changed to cv84]
         # TODO: test interactions of locl w other feats (only smcp currently)
         serb_alt_name_lst = ['CySmBe', 'CySmGhe', 'CySmPe', 'CySmDe', 'CySmTe']
         serb_alt_lst = [builder.char(x).uid for x in serb_alt_name_lst]
         serb_alt_diac_lst = []
         [serb_alt_diac_lst.extend([x, 0x030D]) for x in serb_alt_lst]
-        ftml.startTestGroup('locl - Serbian')
+        ftml.startTestGroup('locl - Serbian/Macedonian')
         builder.render(serb_alt_diac_lst, ftml, descUIDs=serb_alt_lst)
         # Serbian  'SRB '  cnr, srp - from OT spec
+        # Macedonian  'MKD'  mkd
         ftml.setLang('cnr')
         builder.render(serb_alt_diac_lst, ftml, descUIDs=serb_alt_lst)
         ftml.setLang('sr')  # use two letter BCP47 lang code
+        builder.render(serb_alt_diac_lst, ftml, descUIDs=serb_alt_lst)
+        ftml.setLang('mk')  # use two letter BCP47 lang code
         builder.render(serb_alt_diac_lst, ftml, descUIDs=serb_alt_lst)
         ftml.closeTestGroup()
 

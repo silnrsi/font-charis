@@ -55,6 +55,7 @@
       <style feats="'cv77' 1, 'smcp' 1" name="cv77_1_smcp_1"/>
       <style feats="'cv81' 1" name="cv81_1"/>
       <style feats="'cv81' 1, 'smcp' 1" name="cv81_1_smcp_1"/>
+      <style lang="mk" name="mk"/>
       <style feats="'smcp' 1, 'ss01' 1" name="smcp_1_ss01_1"/>
       <style feats="'smcp' 1, 'ss01' 1, 'ss05' 1" name="smcp_1_ss01_1_ss05_1"/>
       <style feats="'smcp' 1, 'ss01' 1, 'ss05' 1, 'ss11' 1" name="smcp_1_ss01_1_ss05_1_ss11_1"/>
@@ -271,6 +272,7 @@ U+0165" stylename="cv77_1">
     </test>
   </testgroup>
   <testgroup label="cv82"/>
+  <testgroup label="cv84"/>
   <testgroup label="cv90"/>
   <testgroup label="cv98"/>
   <testgroup label="ss01">
@@ -976,6 +978,7 @@ U+0165" stylename="cv77_1_smcp_1">
       <string>\u0004BB\u000327</string>
     </test>
   </testgroup>
+  <testgroup label="cv84 smcp"/>
   <testgroup label="smcp ss01">
     <test label="U+0061
 U+0067
@@ -2607,7 +2610,7 @@ U+1EB5" stylename="cv75_1_smcp_1_ss01_1_ss05_1_ss11_1">
       <string>\u000105\u000327</string>
     </test>
   </testgroup>
-  <testgroup label="locl - Serbian">
+  <testgroup label="locl - Serbian/Macedonian">
     <test label="U+0431
 U+0433
 U+043F
@@ -2629,6 +2632,14 @@ U+0433
 U+043F
 U+0434
 U+0442" stylename="sr">
+      <comment>CySmBe CySmGhe CySmPe CySmDe CySmTe</comment>
+      <string>\u000431\u00030D\u000433\u00030D\u00043F\u00030D\u000434\u00030D\u000442\u00030D</string>
+    </test>
+    <test label="U+0431
+U+0433
+U+043F
+U+0434
+U+0442" stylename="mk">
       <comment>CySmBe CySmGhe CySmPe CySmDe CySmTe</comment>
       <string>\u000431\u00030D\u000433\u00030D\u00043F\u00030D\u000434\u00030D\u000442\u00030D</string>
     </test>

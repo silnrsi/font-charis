@@ -6494,6 +6494,10 @@
       <comment>PerMilleSgn</comment>
       <string>o\u002030o</string>
     </test>
+    <test label="U+2031">
+      <comment>PerTenThousandSgn</comment>
+      <string>o\u002031o</string>
+    </test>
     <test label="U+2032">
       <comment>Prime</comment>
       <string>o\u002032o</string>
@@ -6538,6 +6542,14 @@
       <comment>DblExclamationMrk</comment>
       <string>o\u00203Co</string>
     </test>
+    <test label="U+203D">
+      <comment>Interrobang</comment>
+      <string>o\u00203Do</string>
+    </test>
+    <test label="U+203E">
+      <comment>Overline</comment>
+      <string>o\u00203Eo</string>
+    </test>
     <test label="U+203F">
       <comment>CharTieBlw</comment>
       <string>o\u00203Fo</string>
@@ -6553,6 +6565,10 @@
     <test label="U+2044">
       <comment>FracSlash</comment>
       <string>o\u002044o</string>
+    </test>
+    <test label="U+204A">
+      <comment>TironianSignEt</comment>
+      <string>o\u00204Ao</string>
     </test>
     <test label="U+2053">
       <comment>SwingDash</comment>
@@ -6898,6 +6914,10 @@
       <comment>BitcoinSgn</comment>
       <string>o\u0020BFo</string>
     </test>
+    <test label="U+20C0">
+      <comment>SomSgn</comment>
+      <string>o\u0020C0o</string>
+    </test>
     <test label="U+20E5">
       <comment>CombLngReverseSolidusOverlay</comment>
       <string>o\u0020E5o</string>
@@ -7193,6 +7213,14 @@
     <test label="U+2189">
       <comment>VulgFracZeroThirds</comment>
       <string>o\u002189o</string>
+    </test>
+    <test label="U+218A">
+      <comment>TurnedDigitTwo</comment>
+      <string>o\u00218Ao</string>
+    </test>
+    <test label="U+218B">
+      <comment>TurnedDigitThree</comment>
+      <string>o\u00218Bo</string>
     </test>
     <test label="U+2190">
       <comment>LftArrw</comment>
@@ -7785,6 +7813,10 @@
     <test label="U+2E3B">
       <comment>ThreeEmDash</comment>
       <string>o\u002E3Bo</string>
+    </test>
+    <test label="U+2E3E">
+      <comment>WigglyVerticalLine</comment>
+      <string>o\u002E3Eo</string>
     </test>
     <test label="U+A700">
       <comment>ModTnYinPing</comment>
@@ -8506,6 +8538,18 @@
       <comment>LtnSmUStrk</comment>
       <string>o\u00A7B9o</string>
     </test>
+    <test label="U+A7C4">
+      <comment>LtnCapCPalHook</comment>
+      <string>o\u00A7C4o</string>
+    </test>
+    <test label="U+A7C5">
+      <comment>LtnCapSHook</comment>
+      <string>o\u00A7C5o</string>
+    </test>
+    <test label="U+A7C6">
+      <comment>LtnCapZPalHook</comment>
+      <string>o\u00A7C6o</string>
+    </test>
     <test label="U+A7F7">
       <comment>LtnCapSdwysI</comment>
       <string>o\u00A7F7o</string>
@@ -8703,7 +8747,7 @@
       <string>o\u00F1A0o</string>
     </test>
     <test label="U+F1A1">
-      <comment>LtnSupSmAe</comment>
+      <comment>LtnSupSmAeDep</comment>
       <string>o\u00F1A1o</string>
     </test>
     <test label="U+F1A2">
@@ -8711,11 +8755,11 @@
       <string>o\u00F1A2o</string>
     </test>
     <test label="U+F1A3">
-      <comment>LtnSupSmRevE</comment>
+      <comment>LtnSupSmRevEDep</comment>
       <string>o\u00F1A3o</string>
     </test>
     <test label="U+F1A4">
-      <comment>LtnSupSmClosedRevOpnE</comment>
+      <comment>LtnSupSmClosedRevOpnEDep</comment>
       <string>o\u00F1A4o</string>
     </test>
     <test label="U+F1A5">
@@ -8743,7 +8787,7 @@
       <string>o\u00F1AAo</string>
     </test>
     <test label="U+F1AB">
-      <comment>LtnSupSmOStrk</comment>
+      <comment>LtnSupSmOStrkDep</comment>
       <string>o\u00F1ABo</string>
     </test>
     <test label="U+F1AC">
@@ -8755,7 +8799,7 @@
       <string>o\u00F1ADo</string>
     </test>
     <test label="U+F1AE">
-      <comment>LtnSupSmCapOe</comment>
+      <comment>LtnSupSmCapOeDep</comment>
       <string>o\u00F1AEo</string>
     </test>
     <test label="U+F1AF">
@@ -8779,11 +8823,11 @@
       <string>o\u00F1B3o</string>
     </test>
     <test label="U+F1B4">
-      <comment>LtnSupSmCapY</comment>
+      <comment>LtnSupSmCapYDep</comment>
       <string>o\u00F1B4o</string>
     </test>
     <test label="U+F1B5">
-      <comment>LtnSupSmRamsHorn</comment>
+      <comment>LtnSupSmRamsHornDep</comment>
       <string>o\u00F1B5o</string>
     </test>
     <test label="U+F1B6">
@@ -8811,7 +8855,7 @@
       <string>o\u00F1BBo</string>
     </test>
     <test label="U+F1BC">
-      <comment>ModSmHStrk</comment>
+      <comment>ModSmHStrkDep</comment>
       <string>o\u00F1BCo</string>
     </test>
     <test label="U+F1BD">
@@ -8883,7 +8927,7 @@
       <string>o\u00F1CDo</string>
     </test>
     <test label="U+F1CE">
-      <comment>ModSmTurnedY</comment>
+      <comment>ModSmTurnedYDep</comment>
       <string>o\u00F1CEo</string>
     </test>
     <test label="U+F1D0">
@@ -9171,11 +9215,11 @@
       <string>o\u00F233o</string>
     </test>
     <test label="U+F234">
-      <comment>LtnCapZPalHook</comment>
+      <comment>LtnCapZPalHookDep</comment>
       <string>o\u00F234o</string>
     </test>
     <test label="U+F235">
-      <comment>LtnSmEzhPalHook</comment>
+      <comment>LtnSmEzhPalHookDep</comment>
       <string>o\u00F235o</string>
     </test>
     <test label="U+F236">
@@ -9375,15 +9419,15 @@
       <string>o\u00F266o</string>
     </test>
     <test label="U+F267">
-      <comment>LtnSmTurnedYBelt</comment>
+      <comment>LtnSmTurnedYBeltDep</comment>
       <string>o\u00F267o</string>
     </test>
     <test label="U+F268">
-      <comment>LtnSmCapLBelt</comment>
+      <comment>LtnSmCapLBeltDep</comment>
       <string>o\u00F268o</string>
     </test>
     <test label="U+F269">
-      <comment>LtnSmTurnedRLngLegHook</comment>
+      <comment>LtnSmTurnedRLngLegHookDep</comment>
       <string>o\u00F269o</string>
     </test>
     <test label="U+F26A">
@@ -9586,6 +9630,42 @@
       <comment>ReplChar</comment>
       <string>o\u00FFFDo</string>
     </test>
+    <test label="U+10783">
+      <comment>LtnSupSmAe</comment>
+      <string>o\u010783o</string>
+    </test>
+    <test label="U+1078F">
+      <comment>LtnSupSmClosedRevOpnE</comment>
+      <string>o\u01078Fo</string>
+    </test>
+    <test label="U+10791">
+      <comment>LtnSupSmRamsHorn</comment>
+      <string>o\u010791o</string>
+    </test>
+    <test label="U+10795">
+      <comment>ModSmHStrk</comment>
+      <string>o\u010795o</string>
+    </test>
+    <test label="U+107A0">
+      <comment>ModSmTurnedY</comment>
+      <string>o\u0107A0o</string>
+    </test>
+    <test label="U+107A2">
+      <comment>LtnSupSmOStrk</comment>
+      <string>o\u0107A2o</string>
+    </test>
+    <test label="U+107A3">
+      <comment>LtnSupSmCapOe</comment>
+      <string>o\u0107A3o</string>
+    </test>
+    <test label="U+107B2">
+      <comment>LtnSupSmCapY</comment>
+      <string>o\u0107B2o</string>
+    </test>
+    <test label="U+1088E">
+      <comment>LtnSupSmRevE</comment>
+      <string>o\u01088Eo</string>
+    </test>
     <test label="U+1D40C">
       <comment>MathBoldCapM</comment>
       <string>o\u01D40Co</string>
@@ -9633,6 +9713,134 @@
     <test label="U+1D519">
       <comment>MathFrktCapV</comment>
       <string>o\u01D519o</string>
+    </test>
+    <test label="U+1DF00">
+      <comment>LtnSmFengDigraphTrill</comment>
+      <string>o\u01DF00o</string>
+    </test>
+    <test label="U+1DF01">
+      <comment>LtnSmRevScriptG</comment>
+      <string>o\u01DF01o</string>
+    </test>
+    <test label="U+1DF02">
+      <comment>LtnSmCapTurnedG</comment>
+      <string>o\u01DF02o</string>
+    </test>
+    <test label="U+1DF03">
+      <comment>LtnSmRevK</comment>
+      <string>o\u01DF03o</string>
+    </test>
+    <test label="U+1DF04">
+      <comment>LtnSmCapLBelt</comment>
+      <string>o\u01DF04o</string>
+    </test>
+    <test label="U+1DF05">
+      <comment>LtnSmLezhRetrHook</comment>
+      <string>o\u01DF05o</string>
+    </test>
+    <test label="U+1DF06">
+      <comment>LtnSmTurnedYBelt</comment>
+      <string>o\u01DF06o</string>
+    </test>
+    <test label="U+1DF07">
+      <comment>LtnSmRevEng</comment>
+      <string>o\u01DF07o</string>
+    </test>
+    <test label="U+1DF08">
+      <comment>LtnSmTurnedRLngLegHook</comment>
+      <string>o\u01DF08o</string>
+    </test>
+    <test label="U+1DF09">
+      <comment>LtnSmTHookRetrHook</comment>
+      <string>o\u01DF09o</string>
+    </test>
+    <test label="U+1DF0A">
+      <comment>LtnRetroflexClickRetrHook</comment>
+      <string>o\u01DF0Ao</string>
+    </test>
+    <test label="U+1DF0B">
+      <comment>LtnSmEshDblBar</comment>
+      <string>o\u01DF0Bo</string>
+    </test>
+    <test label="U+1DF0C">
+      <comment>LtnSmEshCurlDblBar</comment>
+      <string>o\u01DF0Co</string>
+    </test>
+    <test label="U+1DF0D">
+      <comment>LtnSmTurnedTCurl</comment>
+      <string>o\u01DF0Do</string>
+    </test>
+    <test label="U+1DF0E">
+      <comment>LtnInvGlottalStopCurl</comment>
+      <string>o\u01DF0Eo</string>
+    </test>
+    <test label="U+1DF0F">
+      <comment>LtnStretchedCCurl</comment>
+      <string>o\u01DF0Fo</string>
+    </test>
+    <test label="U+1DF10">
+      <comment>LtnSmCapTurnedK</comment>
+      <string>o\u01DF10o</string>
+    </test>
+    <test label="U+1DF11">
+      <comment>LtnSmLFishhook</comment>
+      <string>o\u01DF11o</string>
+    </test>
+    <test label="U+1DF12">
+      <comment>LtnSmDezhDigraphPalHook</comment>
+      <string>o\u01DF12o</string>
+    </test>
+    <test label="U+1DF13">
+      <comment>LtnSmLBeltPalHook</comment>
+      <string>o\u01DF13o</string>
+    </test>
+    <test label="U+1DF14">
+      <comment>LtnSmEngPalHook</comment>
+      <string>o\u01DF14o</string>
+    </test>
+    <test label="U+1DF15">
+      <comment>LtnSmTurnedRPalHook</comment>
+      <string>o\u01DF15o</string>
+    </test>
+    <test label="U+1DF16">
+      <comment>LtnSmRFishhookPalHook</comment>
+      <string>o\u01DF16o</string>
+    </test>
+    <test label="U+1DF17">
+      <comment>LtnSmTeshPalHook</comment>
+      <string>o\u01DF17o</string>
+    </test>
+    <test label="U+1DF18">
+      <comment>LtnSmEzhPalHook</comment>
+      <string>o\u01DF18o</string>
+    </test>
+    <test label="U+1DF19">
+      <comment>LtnSmDezhDigraphRetrHook</comment>
+      <string>o\u01DF19o</string>
+    </test>
+    <test label="U+1DF1A">
+      <comment>LtnSmIStrkRetrHook</comment>
+      <string>o\u01DF1Ao</string>
+    </test>
+    <test label="U+1DF1B">
+      <comment>LtnSmORetrHook</comment>
+      <string>o\u01DF1Bo</string>
+    </test>
+    <test label="U+1DF1C">
+      <comment>LtnSmTeshRetrHook</comment>
+      <string>o\u01DF1Co</string>
+    </test>
+    <test label="U+1DF1D">
+      <comment>LtnSmCRetrHook</comment>
+      <string>o\u01DF1Do</string>
+    </test>
+    <test label="U+1DF1E">
+      <comment>LtnSmSCurl</comment>
+      <string>o\u01DF1Eo</string>
+    </test>
+    <test label="U+1F12F">
+      <comment>CopyleftSgn</comment>
+      <string>o\u01F12Fo</string>
     </test>
   </testgroup>
   <testgroup label="Specials &amp; ligatures from glyph_data">
