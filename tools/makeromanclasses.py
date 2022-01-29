@@ -24,6 +24,7 @@ class_spec_lst = [('smcp', 'sc'),
                   ('caron', 'Caron'),
                   ('iotasub', 'ISub'),
                   ('bartp', 'BarTop'),
+                  ('lowprof', 'LP', 'VNLP')
                   ]
 
 super_sub_mod_regex = "\wSubSm\w|\wSupSm\w|^ModCap\w|^ModSm\w|^ModCy\w"
@@ -161,6 +162,26 @@ class Font(object):
                 if (g_base_nm in self.glyphs):
                     self.g_classes.setdefault('c_grave_comp', []).append(g_nm)
                     self.g_classes.setdefault('c_grave_base', []).append(g_base_nm)
+
+        # create classes of glyphs containing combining diacs w low profile variants
+        for g_nm in self.glyphs:
+            if (re.search('Comb.*\.(LP|VNLP)', g_nm)):
+                g_no_nm = g_nm[:-3] if g_nm.find('VNLP') == -1 else g_nm[:-2]
+                self.g_classes.setdefault('c_lprof_diac', []).append(g_nm)
+                self.g_classes.setdefault('cno_lprof_diac', []).append(g_no_nm)
+
+        # create class used to test for glyphs that need low profile diacritics by default
+        # Latin upper case with U AP; variants can be ignored because LP diacs handled early in processing
+        for uni_str in self.unicodes:
+            unichr = chr(int(uni_str, 16))
+            if unichr.isupper():
+                glyph_lst = self.unicodes[uni_str]
+                assert(len(glyph_lst) == 1)
+                g_nm = glyph_lst[0].name
+                if g_nm.startswith('Ltn') or g_nm.startswith('Rom'):
+                    for a in glyph_lst[0].anchors:
+                        if a == 'U':
+                            self.g_classes.setdefault('c_takes_lp_diac', []).append(g_nm)
         
         # add irregular glyphs to classes not found by the above algorithms
         for cls, g_lst in glyph_class_additions.items():
