@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="../tools/ftml.xsl" type="text/xsl"?>
+<ftml version="1.0">
+  <head>
+    <fontscale>200</fontscale>
+    <fontsrc label="CRv6">url(../results/CharisSIL-Regular.ttf)</fontsrc>
+    <fontsrc label="CBv6">url(../results/CharisSIL-Bold.ttf)</fontsrc>
+    <fontsrc label="CIv6">url(../results/CharisSIL-Italic.ttf)</fontsrc>
+    <fontsrc label="CBIv6">url(../results/CharisSIL-BoldItalic.ttf)</fontsrc>
+    <fontsrc label="CRv5">url(../references/v5/CharisSIL-Regular.ttf)</fontsrc>
+    <fontsrc label="CIv5">url(../references/v5/CharisSIL-Italic.ttf)</fontsrc>
+    <fontsrc label="DRb1">url(../references/b1/DoulosSIL-Regular.ttf)</fontsrc>
+    <fontsrc label="DRv5">url(../references/v5/DoulosSIL-Regular.ttf)</fontsrc>
+    <styles>
+      <style feats="'cv79' 1" name="cv79_1"/>
+      <style feats="'cv84' 1" name="cv84_1"/>
+    </styles>
+    <title>Misc</title>
+  </head>
+  <testgroup label="Kayan grave acute">
+    <test label="U+006F U+0300 U+0301" stylename="cv79_1">
+      <string>\u00006F\u000300\u000301</string>
+    </test>
+  </testgroup>
+  <testgroup label="Arrow">
+    <test label="U+006F U+1DC4 U+1AB3">
+      <string>\u00006F\u001DC4\u001AB3</string>
+    </test>
+    <test label="U+006F U+1DC5 U+1AB3">
+      <string>\u00006F\u001DC5\u001AB3</string>
+    </test>
+    <test label="U+006F U+1DC6 U+1AB3">
+      <string>\u00006F\u001DC6\u001AB3</string>
+    </test>
+    <test label="U+006F U+1DC7 U+1AB3">
+      <string>\u00006F\u001DC7\u001AB3</string>
+    </test>
+    <test label="U+006F U+1DC8 U+1AB3">
+      <string>\u00006F\u001DC8\u001AB3</string>
+    </test>
+    <test label="U+006F U+1DC9 U+1AB3">
+      <string>\u00006F\u001DC9\u001AB3</string>
+    </test>
+  </testgroup>
+  <testgroup label="Rhotic hook">
+    <test label="U+006F U+02DE U+02DE">
+      <string>\u00006F\u0002DE\u0002DE</string>
+    </test>
+  </testgroup>
+  <testgroup label="Tone">
+    <test label="U+203C U+0300">
+      <string>\u00203C\u000300</string>
+    </test>
+  </testgroup>
+  <testgroup label="Diacs on modifiers">
+    <test label="U+0063 U+1D9C U+006F U+1D52 with U+0327">
+      <string>\u000063\u000327\u001d9C\u000327\u00006F\u000327\u001d52\u000327</string>
+    </test>
+    <test label="U+0063 U+1D9C U+006F U+1D52 with U+0328">
+      <string>\u000063\u000328\u001d9C\u000328\u00006F\u000328\u001d52\u000328</string>
+    </test>
+    <test label="U+0063 U+1D9C U+006F U+1D52 with U+02DE">
+      <string>\u000063\u0002DE\u001d9C\u0002DE\u00006F\u0002DE\u001d52\u0002DE</string>
+    </test>
+  </testgroup>
+  <testgroup label="Macedonian">
+    <test label="U+0431 U+0433 U+0434 U+043F U+0442 - U+0433 with acute" stylename="cv84_1">
+      <string>\u000431\u000433\u000434\u00043F\u000442\u000433\u000301</string>
+    </test>
+  </testgroup>
+</ftml>

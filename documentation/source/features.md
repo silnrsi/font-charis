@@ -341,23 +341,23 @@ Serbian  | <span class='charis-I normal' lang='sr'>б г д п т</span> | `lang
 
 *These alternate forms mainly affect italic styles. Unlike other features this is activated by tagging the span of text as being in the Macedonian language, not by turning on an OpenType feature.*
 
-<span class='affects'>Affects: U+0431 U+0433 U+0434 U+043F U+0442</span>
+<span class='affects'>Affects: U+0431 U+0433 U+0434 U+043F U+0442 and U+0433 with U+0301</span>
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard   | <span class='charis-I normal'>б г д п т</span> | 
-Macedonian | <span class='charis-I normal' lang='mk'>б г д п т</span> | `lang='mk'`
+Standard   | <span class='charis-I normal'>б г д п т ѓ</span> | 
+Macedonian | <span class='charis-I normal' lang='mk'>б г д п т ѓ</span> | `lang='mk'`
 
 #### Serbian and Macedonian Cyrillic alternates
 
 *This feature provides an alternate way to activate the Serbian and Macedonian forms in applications that do not support language-specific features.*
 
-<span class='affects'>Affects: U+0431 U+0433 U+0434 U+043F U+0442</span>
+<span class='affects'>Affects: U+0431 U+0433 U+0434 U+043F U+0442 and U+0433 with U+0301</span>
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard                 | <span class='charis-I normal'>б г д п т</span> | `cv84=0`
-Serbian Macedonian forms | <span class='charis-I normal' style='font-feature-settings: "cv84" 1'>б г д п т</span> | `cv84=1`
+Standard                 | <span class='charis-I normal'>б г д п т ѓ</span> | `cv84=0`
+Serbian Macedonian forms | <span class='charis-I normal' style='font-feature-settings: "cv84" 1'>б г д п т ѓ</span> | `cv84=1`
 
 ### Tone alternates
 
