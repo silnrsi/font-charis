@@ -330,18 +330,18 @@ Cyrillic-style | <span class='charis-R normal' style='font-feature-settings: "cv
 
 *These alternate forms mainly affect italic styles. Unlike other features this is activated by tagging the span of text as being in the Serbian language, not by turning on an OpenType feature.*
 
-<span class='affects'>Affects: U+0431 U+0433 U+0434 U+043F U+0442</span>
+<span class='affects'>Affects: U+0431 U+0433 U+0434 U+043F U+0442 U+0453</span>
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard | <span class='charis-I normal'>б г д п т</span> | 
-Serbian  | <span class='charis-I normal' lang='sr'>б г д п т</span> | `lang='sr'`
+Standard | <span class='charis-I normal'>б г д п т ѓ</span> | 
+Serbian  | <span class='charis-I normal' lang='sr'>б г д п т ѓ</span> | `lang='sr'`
 
 #### Macedonian Cyrillic alternates
 
 *These alternate forms mainly affect italic styles. Unlike other features this is activated by tagging the span of text as being in the Macedonian language, not by turning on an OpenType feature.*
 
-<span class='affects'>Affects: U+0431 U+0433 U+0434 U+043F U+0442 and U+0433 with U+0301</span>
+<span class='affects'>Affects: U+0431 U+0433 U+0434 U+043F U+0442 U+0453</span>
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
@@ -352,7 +352,7 @@ Macedonian | <span class='charis-I normal' lang='mk'>б г д п т ѓ</span> | 
 
 *This feature provides an alternate way to activate the Serbian and Macedonian forms in applications that do not support language-specific features.*
 
-<span class='affects'>Affects: U+0431 U+0433 U+0434 U+043F U+0442 and U+0433 with U+0301</span>
+<span class='affects'>Affects: U+0431 U+0433 U+0434 U+043F U+0442 U+0453</span>
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------

@@ -71,6 +71,8 @@ This is a maintenance release primarily focused on making the v6 fonts available
 
 - The small caps feature (smcp) now supports more characters
 
+- The spacing of Serbian italic alternates has been improved
+
 #### Changed encoding
 
 - The following characters were in the SIL PUA but have now been given Unicode assignments. The SIL PUA characters are now deprecated:
