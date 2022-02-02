@@ -16,14 +16,6 @@ This is a maintenance release primarily focused on making the v6 fonts available
 - Serbian and Macedonian alternates are also available through a new OpenType feature (cv84) for applications that do not support language-specific `locl` features
 
 - Characters have been added to support Unicode versions up to 14.0.0 (more to be added in future releases):
-    - U+2031 PER TEN THOUSAND SIGN
-    - U+20C0 SOM SIGN
-    - U+203D INTERROBANG
-    - U+203E OVERLINE
-    - U+204A TIRONIAN SIGN ET
-    - U+218A TURNED DIGIT TWO
-    - U+218B TURNED DIGIT THREE
-    - U+2E3E WIGGLY VERTICAL LINE
     - U+A7C4 LATIN CAPITAL LETTER C WITH PALATAL HOOK
     - U+A7C5 LATIN CAPITAL LETTER S WITH HOOK
     - U+1DF00 LATIN SMALL LETTER FENG DIGRAPH WITH TRILL
@@ -53,7 +45,6 @@ This is a maintenance release primarily focused on making the v6 fonts available
     - U+1DF1C LATIN SMALL LETTER TESH DIGRAPH WITH RETROFLEX HOOK
     - U+1DF1D LATIN SMALL LETTER C WITH RETROFLEX HOOK
     - U+1DF1E LATIN SMALL LETTER S WITH CURL
-    - U+1F12F COPYLEFT SYMBOL
     
 #### Improved
 
