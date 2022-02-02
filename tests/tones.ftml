@@ -3,12 +3,14 @@
 <ftml version="1.0">
   <head>
     <fontscale>200</fontscale>
-    <fontsrc label="CRv6">url(../results/CharisSIL-Regular.ttf)</fontsrc>
-    <fontsrc label="CBv6">url(../results/CharisSIL-Bold.ttf)</fontsrc>
-    <fontsrc label="CIv6">url(../results/CharisSIL-Italic.ttf)</fontsrc>
-    <fontsrc label="CBIv6">url(../results/CharisSIL-BoldItalic.ttf)</fontsrc>
-    <fontsrc label="CRv5">url(../references/v5/CharisSIL-Regular.ttf)</fontsrc>
-    <fontsrc label="CIv5">url(../references/v5/CharisSIL-Italic.ttf)</fontsrc>
+    <fontsrc label="CR">url(../results/CharisSIL-Regular.ttf)</fontsrc>
+    <fontsrc label="CB">url(../results/CharisSIL-Bold.ttf)</fontsrc>
+    <fontsrc label="CI">url(../results/CharisSIL-Italic.ttf)</fontsrc>
+    <fontsrc label="CBI">url(../results/CharisSIL-BoldItalic.ttf)</fontsrc>
+    <fontsrc label="CR6">url(../references/v6001/CharisSIL-Regular.ttf)</fontsrc>
+    <fontsrc label="CB6">url(../references/v6001/CharisSIL-Bold.ttf)</fontsrc>
+    <fontsrc label="CI6">url(../references/v6001/CharisSIL-Italic.ttf)</fontsrc>
+    <fontsrc label="CBI6">url(../references/v6001/CharisSIL-BoldItalic.ttf)</fontsrc>
     <styles>
       <style feats="'cv91' 1" name="cv91_1"/>
     </styles>
