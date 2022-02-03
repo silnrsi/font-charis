@@ -532,7 +532,7 @@ def doit(args):
         #  both languages use identical variants except Macedonian support an acute over one char (not tested)
         # TODO: read uids with locl feat from glyph_data.csv [changed to cv84]
         # TODO: test interactions of locl w other feats (only smcp currently)
-        serb_alt_name_lst = ['CySmBe', 'CySmGhe', 'CySmPe', 'CySmDe', 'CySmTe']
+        serb_alt_name_lst = ['CySmBe', 'CySmGhe', 'CySmPe', 'CySmDe', 'CySmTe', 'CySmGje']
         serb_alt_lst = [builder.char(x).uid for x in serb_alt_name_lst]
         serb_alt_diac_lst = []
         [serb_alt_diac_lst.extend([x, 0x030D]) for x in serb_alt_lst]

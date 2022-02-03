@@ -5436,10 +5436,6 @@
       <comment>DblExclamationMrk</comment>
       <string>\u00203C\u000329 \u00203C\u00030D</string>
     </test>
-    <test label="U+204A">
-      <comment>TironianSignEt</comment>
-      <string>\u00204A\u000329 \u00204A\u00030D</string>
-    </test>
     <test label="U+2070">
       <comment>SupZero</comment>
       <string>\u002070\u000329 \u002070\u00030D</string>
@@ -5691,14 +5687,6 @@
     <test label="U+2188">
       <comment>RomNumOneHundredThousand</comment>
       <string>\u002188\u00030D</string>
-    </test>
-    <test label="U+218A">
-      <comment>TurnedDigitTwo</comment>
-      <string>\u00218A\u000329 \u00218A\u00030D</string>
-    </test>
-    <test label="U+218B">
-      <comment>TurnedDigitThree</comment>
-      <string>\u00218B\u000329 \u00218B\u00030D</string>
     </test>
     <test label="U+2211">
       <comment>NArySummation</comment>

@@ -632,12 +632,6 @@ feature locl {
       lookup srb_sub;
 } locl;
 
-# feature locl {
-#   script cyrl;
-#     language MKD  exclude_dflt; #Macedonian
-#       lookup srb_sub;
-# } locl;
-
 feature smcp {
   lookup sc1_sub;
 } smcp;

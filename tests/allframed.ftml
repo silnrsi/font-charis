@@ -6494,10 +6494,6 @@
       <comment>PerMilleSgn</comment>
       <string>o\u002030o</string>
     </test>
-    <test label="U+2031">
-      <comment>PerTenThousandSgn</comment>
-      <string>o\u002031o</string>
-    </test>
     <test label="U+2032">
       <comment>Prime</comment>
       <string>o\u002032o</string>
@@ -6542,14 +6538,6 @@
       <comment>DblExclamationMrk</comment>
       <string>o\u00203Co</string>
     </test>
-    <test label="U+203D">
-      <comment>Interrobang</comment>
-      <string>o\u00203Do</string>
-    </test>
-    <test label="U+203E">
-      <comment>Overline</comment>
-      <string>o\u00203Eo</string>
-    </test>
     <test label="U+203F">
       <comment>CharTieBlw</comment>
       <string>o\u00203Fo</string>
@@ -6565,10 +6553,6 @@
     <test label="U+2044">
       <comment>FracSlash</comment>
       <string>o\u002044o</string>
-    </test>
-    <test label="U+204A">
-      <comment>TironianSignEt</comment>
-      <string>o\u00204Ao</string>
     </test>
     <test label="U+2053">
       <comment>SwingDash</comment>
@@ -6914,10 +6898,6 @@
       <comment>BitcoinSgn</comment>
       <string>o\u0020BFo</string>
     </test>
-    <test label="U+20C0">
-      <comment>SomSgn</comment>
-      <string>o\u0020C0o</string>
-    </test>
     <test label="U+20E5">
       <comment>CombLngReverseSolidusOverlay</comment>
       <string>o\u0020E5o</string>
@@ -7213,14 +7193,6 @@
     <test label="U+2189">
       <comment>VulgFracZeroThirds</comment>
       <string>o\u002189o</string>
-    </test>
-    <test label="U+218A">
-      <comment>TurnedDigitTwo</comment>
-      <string>o\u00218Ao</string>
-    </test>
-    <test label="U+218B">
-      <comment>TurnedDigitThree</comment>
-      <string>o\u00218Bo</string>
     </test>
     <test label="U+2190">
       <comment>LftArrw</comment>
@@ -7813,10 +7785,6 @@
     <test label="U+2E3B">
       <comment>ThreeEmDash</comment>
       <string>o\u002E3Bo</string>
-    </test>
-    <test label="U+2E3E">
-      <comment>WigglyVerticalLine</comment>
-      <string>o\u002E3Eo</string>
     </test>
     <test label="U+A700">
       <comment>ModTnYinPing</comment>
@@ -9837,10 +9805,6 @@
     <test label="U+1DF1E">
       <comment>LtnSmSCurl</comment>
       <string>o\u01DF1Eo</string>
-    </test>
-    <test label="U+1F12F">
-      <comment>CopyleftSgn</comment>
-      <string>o\u01F12Fo</string>
     </test>
   </testgroup>
   <testgroup label="Specials &amp; ligatures from glyph_data">

@@ -605,17 +605,19 @@ U+044D" stylename="cv80_1">
 U+0433
 U+0434
 U+043F
-U+0442">
-      <comment>CySmBe CySmGhe CySmDe CySmPe CySmTe</comment>
-      <string>\u000431\u000433\u000434\u00043F\u000442</string>
+U+0442
+U+0453">
+      <comment>CySmBe CySmGhe CySmDe CySmPe CySmTe CySmGje</comment>
+      <string>\u000431\u000433\u000434\u00043F\u000442\u000453</string>
     </test>
     <test label="U+0431
 U+0433
 U+0434
 U+043F
-U+0442" stylename="cv84_1">
-      <comment>CySmBe CySmGhe CySmDe CySmPe CySmTe</comment>
-      <string>\u000431\u000433\u000434\u00043F\u000442</string>
+U+0442
+U+0453" stylename="cv84_1">
+      <comment>CySmBe CySmGhe CySmDe CySmPe CySmTe CySmGje</comment>
+      <string>\u000431\u000433\u000434\u00043F\u000442\u000453</string>
     </test>
   </testgroup>
   <testgroup label="cv90">
@@ -1481,17 +1483,19 @@ U+0165" stylename="cv77_1_smcp_1">
 U+0433
 U+0434
 U+043F
-U+0442">
-      <comment>CySmBe CySmGhe CySmDe CySmPe CySmTe</comment>
-      <string>\u000431\u000433\u000434\u00043F\u000442</string>
+U+0442
+U+0453">
+      <comment>CySmBe CySmGhe CySmDe CySmPe CySmTe CySmGje</comment>
+      <string>\u000431\u000433\u000434\u00043F\u000442\u000453</string>
     </test>
     <test label="U+0431
 U+0433
 U+0434
 U+043F
-U+0442" stylename="cv84_1_smcp_1">
-      <comment>CySmBe CySmGhe CySmDe CySmPe CySmTe</comment>
-      <string>\u000431\u000433\u000434\u00043F\u000442</string>
+U+0442
+U+0453" stylename="cv84_1_smcp_1">
+      <comment>CySmBe CySmGhe CySmDe CySmPe CySmTe CySmGje</comment>
+      <string>\u000431\u000433\u000434\u00043F\u000442\u000453</string>
     </test>
   </testgroup>
   <testgroup label="smcp ss01">
@@ -3071,33 +3075,37 @@ U+1EB5" stylename="cv75_1_smcp_1_ss01_1_ss05_1_ss11_1">
 U+0433
 U+043F
 U+0434
-U+0442">
-      <comment>CySmBe CySmGhe CySmPe CySmDe CySmTe</comment>
-      <string>\u000431\u00030D\u000433\u00030D\u00043F\u00030D\u000434\u00030D\u000442\u00030D</string>
+U+0442
+U+0453">
+      <comment>CySmBe CySmGhe CySmPe CySmDe CySmTe CySmGje</comment>
+      <string>\u000431\u00030D\u000433\u00030D\u00043F\u00030D\u000434\u00030D\u000442\u00030D\u000453\u00030D</string>
     </test>
     <test label="U+0431
 U+0433
 U+043F
 U+0434
-U+0442" stylename="cnr">
-      <comment>CySmBe CySmGhe CySmPe CySmDe CySmTe</comment>
-      <string>\u000431\u00030D\u000433\u00030D\u00043F\u00030D\u000434\u00030D\u000442\u00030D</string>
+U+0442
+U+0453" stylename="cnr">
+      <comment>CySmBe CySmGhe CySmPe CySmDe CySmTe CySmGje</comment>
+      <string>\u000431\u00030D\u000433\u00030D\u00043F\u00030D\u000434\u00030D\u000442\u00030D\u000453\u00030D</string>
     </test>
     <test label="U+0431
 U+0433
 U+043F
 U+0434
-U+0442" stylename="sr">
-      <comment>CySmBe CySmGhe CySmPe CySmDe CySmTe</comment>
-      <string>\u000431\u00030D\u000433\u00030D\u00043F\u00030D\u000434\u00030D\u000442\u00030D</string>
+U+0442
+U+0453" stylename="sr">
+      <comment>CySmBe CySmGhe CySmPe CySmDe CySmTe CySmGje</comment>
+      <string>\u000431\u00030D\u000433\u00030D\u00043F\u00030D\u000434\u00030D\u000442\u00030D\u000453\u00030D</string>
     </test>
     <test label="U+0431
 U+0433
 U+043F
 U+0434
-U+0442" stylename="mk">
-      <comment>CySmBe CySmGhe CySmPe CySmDe CySmTe</comment>
-      <string>\u000431\u00030D\u000433\u00030D\u00043F\u00030D\u000434\u00030D\u000442\u00030D</string>
+U+0442
+U+0453" stylename="mk">
+      <comment>CySmBe CySmGhe CySmPe CySmDe CySmTe CySmGje</comment>
+      <string>\u000431\u00030D\u000433\u00030D\u00043F\u00030D\u000434\u00030D\u000442\u00030D\u000453\u00030D</string>
     </test>
   </testgroup>
 </ftml>
