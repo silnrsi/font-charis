@@ -821,7 +821,7 @@
     </table>
     <h4 id="serbian-cyrillic-alternates">Serbian Cyrillic alternates</h4>
     <p><em>These alternate forms mainly affect italic styles. Unlike other features this is activated by tagging the span of text as being in the Serbian language, not by turning on an OpenType feature.</em></p>
-    <p><span class="affects">Affects: U+0431 U+0433 U+0434 U+043F U+0442</span></p>
+    <p><span class="affects">Affects: U+0431 U+0433 U+0434 U+043F U+0442 U+0453</span></p>
     <table>
     <thead>
     <tr class="header">
@@ -833,13 +833,61 @@
     <tbody>
     <tr class="odd">
     <td>Standard</td>
-    <td><span class="charis-I normal">б г д п т</span></td>
+    <td><span class="charis-I normal">б г д п т ѓ</span></td>
     <td></td>
     </tr>
     <tr class="even">
     <td>Serbian</td>
-    <td><span class="charis-I normal" lang="sr">б г д п т</span></td>
+    <td><span class="charis-I normal" lang="sr">б г д п т ѓ</span></td>
     <td><code>lang='sr'</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="macedonian-cyrillic-alternates">Macedonian Cyrillic alternates</h4>
+    <p><em>These alternate forms mainly affect italic styles. Unlike other features this is activated by tagging the span of text as being in the Macedonian language, not by turning on an OpenType feature.</em></p>
+    <p><span class="affects">Affects: U+0431 U+0433 U+0434 U+043F U+0442 U+0453</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="charis-I normal">б г д п т ѓ</span></td>
+    <td></td>
+    </tr>
+    <tr class="even">
+    <td>Macedonian</td>
+    <td><span class="charis-I normal" lang="mk">б г д п т ѓ</span></td>
+    <td><code>lang='mk'</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="serbian-and-macedonian-cyrillic-alternates">Serbian and Macedonian Cyrillic alternates</h4>
+    <p><em>This feature provides an alternate way to activate the Serbian and Macedonian forms in applications that do not support language-specific features.</em></p>
+    <p><span class="affects">Affects: U+0431 U+0433 U+0434 U+043F U+0442 U+0453</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="charis-I normal">б г д п т ѓ</span></td>
+    <td><code>cv84=0</code></td>
+    </tr>
+    <tr class="even">
+    <td>Serbian Macedonian forms</td>
+    <td><span class="charis-I normal" style="font-feature-settings: &quot;cv84&quot; 1">б г д п т ѓ</span></td>
+    <td><code>cv84=1</code></td>
     </tr>
     </tbody>
     </table>
@@ -917,7 +965,7 @@
     [font id='charis' face='CharisSIL-Regular' italic='CharisSIL-Italic' bold='CharisSIL-Bold' bolditalic='CharisSIL-BoldItalic' size='150%']
     -->
     <footer class="footer">
-        <p>This guide is from the <a href="https://software.sil.org/charis/" title="" class="active">Charis SIL project</a> version 6.001 and is copyright © 1997-2021 SIL International.</p>
+        <p>This guide is from the <a href="https://software.sil.org/charis/" title="" class="active">Charis SIL project</a> version 6.100 and is copyright © 1997-2022 SIL International.</p>
     </footer>
 </article>
 </div>
