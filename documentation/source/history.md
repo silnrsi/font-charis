@@ -3,7 +3,7 @@ title: Charis SIL - Version History
 fontversion: 6.100
 ---
 
-### 1 Feb 2022 (SIL WSTech Team) Charis SIL version 6.100
+### 4 Feb 2022 (SIL WSTech Team) Charis SIL version 6.100
 
 This is a maintenance release primarily focused on making the v6 fonts available on *TypeTuner Web*.
 
