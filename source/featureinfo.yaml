@@ -139,7 +139,7 @@
   cv_label: Zero
   cv_tooltip: Alternate form of numeral zero with slash
   cv_sample: 
-  tt_tag: Dig0
+  tt_tag: Zro
   tt_name: Zero
   tt_value: Standard (no slash)
   settings:
@@ -415,7 +415,7 @@
   cv_label: Capital J
   cv_tooltip: Alternate form of capital J with bar across top
   cv_sample: 
-  tt_tag: LgJBar
+  tt_tag: CapJ
   tt_name: Capital J
   tt_value: Standard (no top bar)
   settings:
@@ -427,7 +427,7 @@
       setting_ui_label: Top bar
       setting_doc_desc: Top bar
       tt_setting_name: Top bar
-      tt_setting_tag: TopBar
+      tt_setting_tag: T
   doc_group: chars
   doc_order: 205
   doc_name: Capital J
@@ -1392,18 +1392,18 @@
 - tag: ss01
   fonts: A
   version_added: 5
-  ss_name: Double-story a and g
+  ss_name: Single-story a and g
   tt_tag: Lit
-  tt_name: Double-story a and g
-  tt_value: Standard (single-story)
+  tt_name: Single-story a and g
+  tt_value: Standard (single story)
   settings:
     - setting_value: 0
-      setting_doc_desc: Standard
-      tt_setting_name: Standard (single-story)
+      setting_doc_desc: Double story
+      tt_setting_name: Double story
       tt_setting_tag: F
     - setting_value: 1
-      setting_doc_desc: Double-story
-      tt_setting_name: Double-story
+      setting_doc_desc: Standard
+      tt_setting_name: Standard (single story)
       tt_setting_tag: T
   doc_group: style
   doc_order: 111
