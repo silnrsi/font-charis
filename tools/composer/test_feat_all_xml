@@ -1,6 +1,6 @@
 # assumes the feat_all.xml file has been built by composer
 #  and that build_feat_all_xml has been ran
 
-typetuner -t createset feat_all_composer.xml feat_set_test.xml
-psftuneraliases -m CharisSIL-Regular.map -f CharisSIL-Regular.ttf feat_all_composer.xml feat_all_composer_aliases.xml
-typetuner -d applyset_xml feat_all_composer_aliases.xml feat_set_test.xml CharisSIL-Regular.ttf > typetuner_dbg.log
+typetuner -t createset feat_all_composer_yaml.xml feat_set_test.xml
+psftuneraliases -m CharisSIL-Regular.map -f CharisSIL-Regular.ttf feat_all_composer_yaml.xml feat_all_composer_yaml_aliases.xml
+typetuner -d applyset_xml feat_all_composer_yaml_aliases.xml feat_set_test.xml CharisSIL-Regular.ttf > typetuner_dbg.log

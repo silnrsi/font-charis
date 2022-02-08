@@ -20,8 +20,9 @@ if feat_map_in_fn:
 feat_info_f = open(feat_info_fn, "r")
 
 # for feat_info yaml processing
+# tags that are substrings of other tags must come later since the list is used in simplistic search
 fields = ["ss_name", "cv_label", "setting_value", 
-"tt_name", "tt_value", "tt_setting_name", "tt_setting_tag", "tt_tag", "tag"]
+"tt_name", "tt_value", "tt_setting_name", "tt_setting_tag", "tt_tag", "tag"] 
 record_start = "^-\s*tag:"
 
 # find the value after a colon in a line of yaml
@@ -41,6 +42,8 @@ for line in feat_info_lines:
     if re.search(record_start, line):
         skip_record = False
         if feature:
+            if not feature["tt_value"] in feature["tt_setting_name"]:
+                print(f"**for feature {feature[tag]} tt_value {feature[tt_value]} does not match any tt_setting_name")
             feat_info[feature["tt_tag"]] = feature
         feature = {}
     if skip_record:
@@ -53,10 +56,15 @@ for line in feat_info_lines:
             else:
                 feature.setdefault(field, []).append(value)
             break
+# store last record if needed
+if feature:
+    if not feature["tt_value"] in feature["tt_setting_name"]:
+        print(f"**for feature {feature[tag]} tt_value {feature[tt_value]} does not match any tt_setting_name")
+    feat_info[feature["tt_tag"]] = feature
 
 for feat in feat_info:
     # for each record in the feature info yaml, modify the typetuner features xml file
-    print(f"feat: {feat}")
+    # print(f"feat: {feat}")
     feature_lst = feat_all_root.findall(f"./feature[@tag='{feat}']")
     if len(feature_lst) == 0:
         print(f"** no <feature> matches tt_tag {feat} used by feature info tag {feat_info[feat]['tag']}")
@@ -76,7 +84,8 @@ for feat in feat_info:
         # el[i].set("tag", feat_info[feat].tt_setting_tag[i])
         feat_all_tag = el[i].attrib["tag"]
         feat_info_tag = feat_info[feat]["tt_setting_tag"][i]
-        if feat_all_tag != "Dflt" and feat_all_tag != feat_info_tag:
+        # if feat_all_tag != "Dflt" and feat_all_tag != feat_info_tag:
+        if feat_all_tag != feat_info_tag:
             print(f"for feature {feat}: value tag {feat_all_tag} does not match feature info {feat_info_tag}")
         i += 1
 
@@ -89,8 +98,12 @@ for feat in feat_info:
         if map_tag == f'"{tag}"':
             new_line = f'"{tag}"'
             new_line += f',"{feat_info[feat]["tt_name"]}"'
-            for set_nm in feat_info[feat]["tt_setting_name"]:
-                new_line += f',"{set_nm}"'
+            if font != "A" or tag != "ss01":
+                for set_nm in feat_info[feat]["tt_setting_name"]:
+                    new_line += f',"{set_nm}"'
+            else: #if font == "A" and tag == "ss01":
+                for set_nm in feat_info[feat]["tt_setting_name"][::-1]: # reverse the list
+                    new_line += f',"{set_nm}"'
             feat_map_lines[ix] = new_line + "\n"
             break
 

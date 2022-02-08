@@ -102,6 +102,7 @@ my %nm_to_tag = (
 	'Single-story a and g' => 'Lit', #new
 	'Single-story a' => 'SSA', #new
 	'Single-story g' => 'SSG', #new
+	'Double-story a and g' => 'Lit', #new (for Andika, ss01 UI string changed from "Single-story a and g")
 	'Double-story a' => 'DSA', #new
 	'Double-story g' => 'DSG', #new
 	'Slant italic specials' => 'SlntItlc',

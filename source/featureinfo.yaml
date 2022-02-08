@@ -11,7 +11,7 @@
     - setting_value: 0
       setting_doc_desc: Standard
       tt_setting_name: Standard (capital forms)
-      tt_setting_tag: F
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_doc_desc: Small caps
       tt_setting_name: Small caps
@@ -38,7 +38,7 @@
     - setting_value: 0
       setting_doc_desc: Standard (with base)
       tt_setting_name: Standard (with base)
-      tt_setting_tag: F
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: No base serif
       setting_doc_desc: No base serif
@@ -65,7 +65,7 @@
     - setting_value: 0
       setting_doc_desc: Standard (closed top)
       tt_setting_name: Standard (closed top)
-      tt_setting_tag: Clsd
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Open top
       setting_doc_desc: Open top
@@ -92,7 +92,7 @@
     - setting_value: 0
       setting_doc_desc: Standard (curved stems)
       tt_setting_name: Standard (curved stems)
-      tt_setting_tag: F
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Diagonal stems
       setting_doc_desc: Diagonal stems
@@ -119,7 +119,7 @@
     - setting_value: 0
       setting_doc_desc: Standard (no bar)
       tt_setting_name: Standard (no bar)
-      tt_setting_tag: F
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Barred
       setting_doc_desc: Barred
@@ -146,7 +146,7 @@
     - setting_value: 0
       setting_doc_desc: Standard (no slash)
       tt_setting_name: Standard (no slash)
-      tt_setting_tag: F
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Slashed
       setting_doc_desc: Slashed
@@ -173,7 +173,7 @@
     - setting_value: 0
       setting_doc_desc: Standard (double bowl)
       tt_setting_name: Standard (double bowl)
-      tt_setting_tag: Uc
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Single bowl
       setting_doc_desc: Single bowl
@@ -200,7 +200,7 @@
     - setting_value: 0
       setting_doc_desc: Standard (no serif)
       tt_setting_name: Standard (no serif)
-      tt_setting_tag: F
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: With serif
       setting_doc_desc: With serif
@@ -227,7 +227,7 @@
     - setting_value: 0
       setting_doc_desc: Standard (full bowl)
       tt_setting_name: Standard (full bowl)
-      tt_setting_tag: Uc
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Half bowl
       setting_doc_desc: Half bowl
@@ -254,7 +254,7 @@
     - setting_value: 0
       setting_doc_desc: Standard (small bowl)
       tt_setting_name: Standard (small bowl)
-      tt_setting_tag: Sm
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Large bowl
       setting_doc_desc: Large bowl
@@ -281,7 +281,7 @@
     - setting_value: 0
       setting_doc_desc: Standard
       tt_setting_name: Standard
-      tt_setting_tag: Nrml
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Reversed sigma
       setting_doc_desc: Reversed sigma
@@ -308,7 +308,7 @@
     - setting_value: 0
       setting_doc_desc: Standard (small bowl)
       tt_setting_name: Standard (small bowl)
-      tt_setting_tag: Sm
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Large bowl
       setting_doc_desc: Large bowl
@@ -341,7 +341,7 @@
     - setting_value: 0
       setting_doc_desc: Standard (horiz stroke)
       tt_setting_name: Standard (horiz stroke)
-      tt_setting_tag: F
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Vertical stroke
       setting_doc_desc: Vertical stroke
@@ -368,7 +368,7 @@
     - setting_value: 0
       setting_doc_desc: Standard (no tail)
       tt_setting_name: Standard (no tail)
-      tt_setting_tag: Strt
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Curved tail
       setting_doc_desc: Curved tail
@@ -395,7 +395,7 @@
     - setting_value: 0
       setting_doc_desc: Standard (no top serif)
       tt_setting_name: Standard (no top serif)
-      tt_setting_tag: NoSrf
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Top serif
       setting_doc_desc: Top serif
@@ -422,7 +422,7 @@
     - setting_value: 0
       setting_doc_desc: Standard (no top bar)
       tt_setting_name: Standard (no top bar)
-      tt_setting_tag: NoBar
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Top bar
       setting_doc_desc: Top bar
@@ -449,7 +449,7 @@
     - setting_value: 0
       setting_doc_desc: Standard (no top serif)
       tt_setting_name: Standard (no top serif)
-      tt_setting_tag: NoSrf
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Top serif
       setting_doc_desc: Top serif
@@ -476,7 +476,7 @@
     - setting_value: 0
       setting_doc_desc: Standard (no tail)
       tt_setting_name: Standard (no tail)
-      tt_setting_tag: Strt
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Curved tail
       setting_doc_desc: Curved tail
@@ -503,7 +503,7 @@
     - setting_value: 0
       setting_doc_desc: Standard (lowercase form)
       tt_setting_name: Standard (lowercase form)
-      tt_setting_tag: LgDsc
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Lowercase no descender
       setting_doc_desc: Lowercase no descender
@@ -540,7 +540,7 @@
     - setting_value: 0
       setting_doc_desc: Standard (capital form)
       tt_setting_name: Standard (capital form)
-      tt_setting_tag: Uc
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Lowercase form
       setting_doc_desc: Lowercase form
@@ -567,7 +567,7 @@
     - setting_value: 0
       setting_doc_desc: Standard (bottom serif)
       tt_setting_name: Standard (bottom serif)
-      tt_setting_tag: BtmSrf
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Top serif
       setting_doc_desc: Top serif
@@ -594,7 +594,7 @@
     - setting_value: 0
       setting_doc_desc: Standard (closed top)
       tt_setting_name: Standard (closed top)
-      tt_setting_tag: Clsd
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Open top
       setting_doc_desc: Open top
@@ -621,7 +621,7 @@
     - setting_value: 0
       setting_doc_desc: Standard (left hook)
       tt_setting_name: Standard (left hook)
-      tt_setting_tag: LftHk
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Right hook
       setting_doc_desc: Right hook
@@ -648,7 +648,7 @@
     - setting_value: 0
       setting_doc_desc: Standard (not pointed)
       tt_setting_name: Standard (not pointed)
-      tt_setting_tag: Strt
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Pointed
       setting_doc_desc: Pointed
@@ -675,7 +675,7 @@
     - setting_value: 0
       setting_doc_desc: Standard (outside tail)
       tt_setting_name: Standard (outside tail)
-      tt_setting_tag: F
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Crossing tail
       setting_doc_desc: Crossing tail
@@ -702,7 +702,7 @@
     - setting_value: 0
       setting_doc_desc: Standard (capital form)
       tt_setting_name: Standard (capital form)
-      tt_setting_tag: Uc
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Lowercase form
       setting_doc_desc: Lowercase form
@@ -729,7 +729,7 @@
     - setting_value: 0
       setting_doc_desc: Standard (curved tail)
       tt_setting_name: Standard (curved tail)
-      tt_setting_tag: CrvTl
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: No tail
       setting_doc_desc: No tail
@@ -756,7 +756,7 @@
     - setting_value: 0
       setting_doc_desc: Standard (left hook)
       tt_setting_name: Standard (left hook)
-      tt_setting_tag: LftHk
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Right Hook
       setting_doc_desc: Right hook
@@ -783,7 +783,7 @@
     - setting_value: 0
       setting_doc_desc: Standard (curved)
       tt_setting_name: Standard (curved)
-      tt_setting_tag: Crvd
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Straight with low hook
       setting_doc_desc: Straight with low hook
@@ -816,7 +816,7 @@
     - setting_value: 0
       setting_doc_desc: Standard (curved tail)
       tt_setting_name: Standard (curved tail)
-      tt_setting_tag: CrvTl
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Straight tail
       setting_doc_desc: Straight tail
@@ -843,7 +843,7 @@
     - setting_value: 0
       setting_doc_desc: Standard (right hook)
       tt_setting_name: Standard (right hook)
-      tt_setting_tag: RtHk
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Left hook
       setting_doc_desc: Left hook
@@ -870,7 +870,7 @@
     - setting_value: 0
       setting_doc_desc: Standard (small)
       tt_setting_name: Standard (small)
-      tt_setting_tag: Sm
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Large
       setting_doc_desc: Large
@@ -897,7 +897,7 @@
     - setting_value: 0
       setting_doc_desc: Standard (tight)
       tt_setting_name: Standard (tight)
-      tt_setting_tag: Tght
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Expanded
       setting_doc_desc: Expanded
@@ -924,7 +924,7 @@
     - setting_value: 0
       setting_doc_desc: Standard (stacked)
       tt_setting_name: Standard (stacked)
-      tt_setting_tag: F
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Vietnamese style
       setting_doc_desc: Vietnamese style
@@ -951,7 +951,7 @@
     - setting_value: 0
       setting_doc_desc: Standard (curved)
       tt_setting_name: Standard (curved)
-      tt_setting_tag: Crvd
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Straight
       setting_doc_desc: Straight
@@ -979,7 +979,7 @@
     - setting_value: 0
       setting_doc_desc: Standard (European)
       tt_setting_name: Standard (European)
-      tt_setting_tag: F
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Global style
       setting_doc_desc: Global style
@@ -1006,7 +1006,7 @@
     - setting_value: 0
       setting_doc_desc: Standard (tilde form)
       tt_setting_name: Standard (tilde form)
-      tt_setting_tag: F
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Porsonic form
       setting_doc_desc: Porsonic form
@@ -1033,7 +1033,7 @@
     - setting_value: 0
       setting_doc_desc: Standard (stacked)
       tt_setting_name: Standard (stacked)
-      tt_setting_tag: Stk
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Side by side
       setting_doc_desc: Side by side
@@ -1060,7 +1060,7 @@
     - setting_value: 0
       setting_doc_desc: Standard
       tt_setting_name: Standard
-      tt_setting_tag: F
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Mongolian style
       setting_doc_desc: Mongolian style
@@ -1087,7 +1087,7 @@
     - setting_value: 0
       setting_doc_desc: Standard
       tt_setting_name: Standard
-      tt_setting_tag: F
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Capital form
       setting_doc_desc: Capital form
@@ -1114,7 +1114,7 @@
     - setting_value: 0
       setting_doc_desc: Standard (Latin form)
       tt_setting_name: Standard (Latin form)
-      tt_setting_tag: F
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Cyrillic form
       setting_doc_desc: Cyrillic form
@@ -1142,7 +1142,7 @@
     - setting_value: 0
       setting_doc_desc: Standard (adscript)
       tt_setting_name: Standard (adscript)
-      tt_setting_tag: Ad
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Subscript
       setting_doc_desc: Subscript
@@ -1169,7 +1169,7 @@
     - setting_value: 0
       setting_doc_desc: Standard
       tt_setting_name: Standard
-      tt_setting_tag: F
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Serbian Macedonian forms
       setting_doc_desc: Serbian Macedonian forms
@@ -1196,7 +1196,7 @@
     - setting_value: 0
       setting_doc_desc: Standard
       tt_setting_name: Standard
-      tt_setting_tag: F
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Chinantec style
       setting_doc_desc: Chinantec style
@@ -1223,7 +1223,7 @@
     - setting_value: 0
       setting_doc_desc: Standard (bars)
       tt_setting_name: Standard (bars)
-      tt_setting_tag: F
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Numerals
       setting_doc_desc: Numerals
@@ -1250,7 +1250,7 @@
     - setting_value: 0
       setting_doc_desc: Standard (visible)
       tt_setting_name: Standard (visible)
-      tt_setting_tag: F
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Hidden
       setting_doc_desc: Hidden
@@ -1277,7 +1277,7 @@
     - setting_value: 0
       setting_doc_desc: Standard (circular form)
       tt_setting_name: Standard (circular form)
-      tt_setting_tag: Crcl
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Zero form
       setting_doc_desc: Zero form
@@ -1351,7 +1351,7 @@
     - setting_value: 0
       setting_doc_desc: Standard
       tt_setting_name: Standard (lowercase forms)
-      tt_setting_tag: F
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_doc_desc: Small caps
       tt_setting_name: Small caps
@@ -1376,7 +1376,7 @@
     - setting_value: 0
       setting_doc_desc: Standard
       tt_setting_name: Standard (double-story)
-      tt_setting_tag: F
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_doc_desc: Single-story
       tt_setting_name: Single-story
@@ -1392,17 +1392,17 @@
 - tag: ss01
   fonts: A
   version_added: 5
-  ss_name: Single-story a and g
+  ss_name: Double-story a and g
   tt_tag: Lit
   tt_name: Single-story a and g
   tt_value: Standard (single story)
   settings:
     - setting_value: 0
-      setting_doc_desc: Double story
+      setting_doc_desc: Standard
       tt_setting_name: Double story
       tt_setting_tag: F
     - setting_value: 1
-      setting_doc_desc: Standard
+      setting_doc_desc: Double story
       tt_setting_name: Standard (single story)
       tt_setting_tag: T
   doc_group: style
@@ -1424,7 +1424,7 @@
     - setting_value: 0
       setting_doc_desc: Standard
       tt_setting_name: Standard
-      tt_setting_tag: F
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_doc_desc: Barred bowls
       tt_setting_name: Barred bowls
@@ -1448,7 +1448,7 @@
     - setting_value: 0
       setting_doc_desc: Standard
       tt_setting_name: Standard
-      tt_setting_tag: F
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_doc_desc: Slanted
       tt_setting_name: Slanted
@@ -1472,7 +1472,7 @@
     - setting_value: 0
       setting_doc_desc: Standard
       tt_setting_name: Standard
-      tt_setting_tag: F
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_doc_desc: Low-profile
       tt_setting_name: Low-profile
@@ -1496,7 +1496,7 @@
     - setting_value: 0
       setting_doc_desc: Standard
       tt_setting_name: Standard (double-story)
-      tt_setting_tag: F
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_doc_desc: Single-story
       tt_setting_name: Single-story
@@ -1520,7 +1520,7 @@
     - setting_value: 0
       setting_doc_desc: Standard
       tt_setting_name: Standard (double-story)
-      tt_setting_tag: F
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_doc_desc: Single-story
       tt_setting_name: Single-story
@@ -1544,7 +1544,7 @@
     - setting_value: 0
       setting_doc_desc: Standard
       tt_setting_name: Standard (single-story)
-      tt_setting_tag: F
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_doc_desc: Double-story
       tt_setting_name: Double-story
@@ -1568,7 +1568,7 @@
     - setting_value: 0
       setting_doc_desc: Standard
       tt_setting_name: Standard (single-story)
-      tt_setting_tag: F
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_doc_desc: Double-story
       tt_setting_name: Double-story

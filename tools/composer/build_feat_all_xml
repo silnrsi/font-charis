@@ -1,9 +1,11 @@
-# assumes the ttf has been build with updated fea and classes
+# assumes the ttf has been built with updated fea and classes
 #  smith build --quick
 
 cp ../../source/glyph_data.csv .
+cp ../../source/featureinfo.yaml .
 cp ../../results/CharisSIL-Regular.ttf .
 cp ../../results/source/CharisSIL-Regular.map .
 
 python3 glyph_data_to_gsi.py
 perl composer.pl -f charis -d -m feature_map.csv CharisSIL-Regular.ttf gsi_glyph_data_cdg.xml gsi_dfltvars.xml > composer_dbg.log
+python3 updateTTfeatnames.py  > updateTTfeatnames.log
