@@ -4,18 +4,11 @@
 - tag: c2sc
   fonts: CDGA
   version_added: 6
-  tt_tag: C2SC
-  tt_name: Small caps from capitals
-  tt_value: Standard (capital forms)
   settings:
     - setting_value: 0
       setting_doc_desc: Standard
-      tt_setting_name: Standard (capital forms)
-      tt_setting_tag: Dflt
     - setting_value: 1
       setting_doc_desc: Small caps
-      tt_setting_name: Small caps
-      tt_setting_tag: T
   doc_group: style
   doc_order: 102
   doc_name: Small caps from capitals
@@ -1026,19 +1019,12 @@
   cv_label: Kayan diacritics
   cv_tooltip: Alternate side by side alignment of grave and acute for Kayan
   cv_sample: 
-  tt_tag: Kayan
-  tt_name: Kayan diacritics
-  tt_value: Standard (stacked)
   settings:
     - setting_value: 0
       setting_doc_desc: Standard (stacked)
-      tt_setting_name: Standard (stacked)
-      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Side by side
       setting_doc_desc: Side by side
-      tt_setting_name: Side by side
-      tt_setting_tag: Side
   doc_group: diacsym
   doc_order: 303
   doc_name: Kayan diacritics
@@ -1216,19 +1202,12 @@
   cv_label: Tone letters
   cv_tooltip: Alternate numeral forms of tone letters
   cv_sample: 
-  tt_tag: TnNmbr
-  tt_name: Tone letters
-  tt_value: Standard (bars)
   settings:
     - setting_value: 0
       setting_doc_desc: Standard (bars)
-      tt_setting_name: Standard (bars)
-      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Numerals
       setting_doc_desc: Numerals
-      tt_setting_name: Numerals
-      tt_setting_tag: T
   doc_group: tone
   doc_order: 711
   doc_name: Tone letters
@@ -1243,19 +1222,12 @@
   cv_label: Tone contour staves
   cv_tooltip: Alternate form of tone letters without contour staves
   cv_sample: 
-  tt_tag: TnStvsHd
-  tt_name: Tone contour staves
-  tt_value: Standard (visible)
   settings:
     - setting_value: 0
       setting_doc_desc: Standard (visible)
-      tt_setting_name: Standard (visible)
-      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Hidden
       setting_doc_desc: Hidden
-      tt_setting_name: Hidden
-      tt_setting_tag: T
   doc_group: tone
   doc_order: 721
   doc_name: Tone contour staves
@@ -1297,17 +1269,10 @@
   locl_script: cyrl
   locl_language: MKD
   locl_css: mk
-  tt_tag: Mace
-  tt_name: Cyrillic Macedonian letters
-  tt_value: Standard
   setting_value0: 
       setting_doc_desc: Standard
-      tt_setting_name: Standard
-      tt_setting_tag: F
   setting_value1: 
       setting_doc_desc: Macedonian forms
-      tt_setting_name: Macedonian forms
-      tt_setting_tag: T
   doc_group: cyr
   doc_order: 471
   doc_name: Cyrillic Macedonian letters
@@ -1322,17 +1287,10 @@
   locl_script: cyrl
   locl_language: SRB
   locl_css: sr
-  tt_tag: Serb
-  tt_name: Cyrillic Serbian letters
-  tt_value: Standard
   setting_value0: 
       setting_doc_desc: Standard
-      tt_setting_name: Standard
-      tt_setting_tag: F
   setting_value1: 
       setting_doc_desc: Serbian forms
-      tt_setting_name: Serbian forms
-      tt_setting_tag: T
   doc_group: cyr
   doc_order: 472
   doc_name: Cyrillic Serbian letters
@@ -1402,7 +1360,7 @@
       tt_setting_name: Double story
       tt_setting_tag: F
     - setting_value: 1
-      setting_doc_desc: Double story
+      setting_doc_desc: Double-story
       tt_setting_name: Standard (single story)
       tt_setting_tag: T
   doc_group: style
