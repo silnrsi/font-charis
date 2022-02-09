@@ -41,10 +41,12 @@ for line in feat_info_lines:
         continue
     if re.search(record_start, line):
         skip_record = False
-        if feature:
+        if feature and "tt_value" in feature.keys(): # do not store records the have no tt_* fields
             if not feature["tt_value"] in feature["tt_setting_name"]:
                 print(f"**for feature {feature[tag]} tt_value {feature[tt_value]} does not match any tt_setting_name")
             feat_info[feature["tt_tag"]] = feature
+        elif feature:
+            print(f"feature {feature['tag']} in feature info has no tt_value field")
         feature = {}
     if skip_record:
         continue
@@ -64,7 +66,7 @@ if feature:
 
 for feat in feat_info:
     # for each record in the feature info yaml, modify the typetuner features xml file
-    # print(f"feat: {feat}")
+    print(f"feat: {feat}")
     feature_lst = feat_all_root.findall(f"./feature[@tag='{feat}']")
     if len(feature_lst) == 0:
         print(f"** no <feature> matches tt_tag {feat} used by feature info tag {feat_info[feat]['tag']}")

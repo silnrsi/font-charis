@@ -1,0 +1,16 @@
+# should be ran from tools/
+./make_classes
+cd ..
+rm -r results.tmp
+mv results results.tmp
+smith configure
+smith build --quick
+cd tools/composer
+./build_feat_all_xml
+./test_feat_all_xml
+./copy_feat_all_xml
+cd ../..
+rm -r results
+mv results.tmp results
+python3 tools/genftml.py
+cd tools/
