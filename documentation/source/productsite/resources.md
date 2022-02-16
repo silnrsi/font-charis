@@ -23,6 +23,10 @@ If special font features are to be activated the application will need to provid
 
 Although the current fonts support only OpenType, previous versions provided support for Graphite and AAT (Apple Advanced Typography) technologies. Graphite was supported through version 5 and AAT was supported up to version 4. These older versions remain available from our [Previous Versions archive](http://software.sil.org/charis/download/previous-versions).
 
+## TypeTuner
+
+The [TypeTuner Web](https://scripts.sil.org/ttw/fonts2go.cgi) service allows you to choose smart font features and download a font with those features preset. This enables them to work in many applications that do not fully support OpenType.
+
 ## Web fonts
 
 Web font versions of these fonts (in WOFF and WOFF2 formats) are available in the `web` folder. These can be copied to a web server and used as fonts on web pages. A very basic HTML/CSS demo page is also included. For more information on the options and techniques available for using these fonts on web pages see [Using SIL Fonts on Web Pages](http://software.sil.org/fonts/webfonts).
