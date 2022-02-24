@@ -422,6 +422,8 @@
   <string>C_omma.S_ophia.glif</string>
   <key>CopCapEie</key>
   <string>C_opC_apE_ie.glif</string>
+  <key>CopyleftSgn</key>
+  <string>C_opyleftS_gn.glif</string>
   <key>CopyrightSgn</key>
   <string>C_opyrightS_gn.glif</string>
   <key>CruzeiroSgn</key>
@@ -1586,6 +1588,8 @@
   <string>I_nhibitS_ymmetricS_wapping.glif</string>
   <key>Integral</key>
   <string>I_ntegral.glif</string>
+  <key>Interrobang</key>
+  <string>I_nterrobang.glif</string>
   <key>IntlnrAnnotationAnchor</key>
   <string>I_ntlnrA_nnotationA_nchor.glif</string>
   <key>IntlnrAnnotationSeparator</key>
@@ -1704,6 +1708,8 @@
   <string>L_tnA_in.glif</string>
   <key>LtnAlveolarClick</key>
   <string>L_tnA_lveolarC_lick.glif</string>
+  <key>LtnAlveolarClick.bascl</key>
+  <string>L_tnA_lveolarC_lick.bascl.glif</string>
   <key>LtnAlveolarClick.sc</key>
   <string>L_tnA_lveolarC_lick.sc.glif</string>
   <key>LtnBidentalPercussive</key>
@@ -2782,6 +2788,8 @@
   <string>L_tnC_apZ_S_washT_ail.glif</string>
   <key>LtnDentalClick</key>
   <string>L_tnD_entalC_lick.glif</string>
+  <key>LtnDentalClick.bascl</key>
+  <string>L_tnD_entalC_lick.bascl.glif</string>
   <key>LtnDentalClick.sc</key>
   <string>L_tnD_entalC_lick.sc.glif</string>
   <key>LtnGlottalStop</key>
@@ -2796,6 +2804,8 @@
   <string>L_tnI_nvG_lottalS_topS_trk.glif</string>
   <key>LtnLateralClick</key>
   <string>L_tnL_ateralC_lick.glif</string>
+  <key>LtnLateralClick.bascl</key>
+  <string>L_tnL_ateralC_lick.bascl.glif</string>
   <key>LtnLateralClick.sc</key>
   <string>L_tnL_ateralC_lick.sc.glif</string>
   <key>LtnLigSmFSmF</key>
@@ -2840,6 +2850,8 @@
   <string>L_tnL_igS_mF_S_mL_.sc.glif</string>
   <key>LtnRetrClick</key>
   <string>L_tnR_etrC_lick.glif</string>
+  <key>LtnRetrClick.bascl</key>
+  <string>L_tnR_etrC_lick.bascl.glif</string>
   <key>LtnRetrClick.sc</key>
   <string>L_tnR_etrC_lick.sc.glif</string>
   <key>LtnRetroflexClickRetrHook</key>
@@ -6504,6 +6516,8 @@
   <string>O_neD_otL_eader.glif</string>
   <key>OpnBx</key>
   <string>O_pnB_x.glif</string>
+  <key>Overline</key>
+  <string>O_verline.glif</string>
   <key>ParagraphSeparator</key>
   <string>P_aragraphS_eparator.glif</string>
   <key>ParallelTo</key>
@@ -6512,6 +6526,8 @@
   <string>P_artialD_iff.glif</string>
   <key>PerMilleSgn</key>
   <string>P_erM_illeS_gn.glif</string>
+  <key>PerTenThousandSgn</key>
+  <string>P_erT_enT_housandS_gn.glif</string>
   <key>PercentSgn</key>
   <string>P_ercentS_gn.glif</string>
   <key>PesetaSgn</key>
@@ -6714,6 +6730,8 @@
   <string>S_mT_ilde.glif</string>
   <key>Solidus</key>
   <string>S_olidus.glif</string>
+  <key>SomSgn</key>
+  <string>S_omS_gn.glif</string>
   <key>Space</key>
   <string>S_pace.glif</string>
   <key>SpesmiloSgn</key>
@@ -6870,6 +6888,8 @@
   <string>T_ilde.glif</string>
   <key>TildeOperator</key>
   <string>T_ildeO_perator.glif</string>
+  <key>TironianSignEt</key>
+  <string>T_ironianS_ignE_t.glif</string>
   <key>TnContLft11</key>
   <string>T_nC_ontL_ft11.glif</string>
   <key>TnContLft12</key>
@@ -7112,10 +7132,18 @@
   <string>T_riangularB_ullet.glif</string>
   <key>TriplePrime</key>
   <string>T_ripleP_rime.glif</string>
+  <key>TripleVertBar</key>
+  <string>T_ripleV_ertB_ar.glif</string>
+  <key>TripleVertBar.bascl</key>
+  <string>T_ripleV_ertB_ar.bascl.glif</string>
   <key>TugrikSgn</key>
   <string>T_ugrikS_gn.glif</string>
   <key>TurkishLiraSgn</key>
   <string>T_urkishL_iraS_gn.glif</string>
+  <key>TurnedDigitThree</key>
+  <string>T_urnedD_igitT_hree.glif</string>
+  <key>TurnedDigitTwo</key>
+  <string>T_urnedD_igitT_wo.glif</string>
   <key>TwoDotLeader</key>
   <string>T_woD_otL_eader.glif</string>
   <key>TwoEmDash</key>
@@ -7204,6 +7232,8 @@
   <string>V_ulgF_racT_woT_hirds.glif</string>
   <key>VulgFracZeroThirds</key>
   <string>V_ulgF_racZ_eroT_hirds.glif</string>
+  <key>WigglyVerticalLine</key>
+  <string>W_igglyV_erticalL_ine.glif</string>
   <key>WonSgn</key>
   <string>W_onS_gn.glif</string>
   <key>WordJoiner</key>

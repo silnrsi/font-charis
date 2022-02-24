@@ -2175,6 +2175,7 @@
     <string>NordicMarkSgn</string>
     <string>ManatSgn</string>
     <string>LariSgn</string>
+    <string>SomSgn</string>
     <string>SubZero</string>
     <string>SupZero</string>
     <string>SubOne</string>
@@ -2182,9 +2183,11 @@
     <string>SubTwo</string>
     <string>SupTwo</string>
     <string>LtnTwoStrk</string>
+    <string>TurnedDigitTwo</string>
     <string>VulgFracZeroThirds</string>
     <string>SubThree</string>
     <string>SupThree</string>
+    <string>TurnedDigitThree</string>
     <string>SubFour</string>
     <string>SupFour</string>
     <string>LtnCapCuatrillo</string>
@@ -2227,7 +2230,10 @@
     <string>VulgFracFiveSixths</string>
     <string>VulgFracFiveEighths</string>
     <string>VulgFracSevenEighths</string>
+    <string>PerTenThousandSgn</string>
+    <string>Interrobang</string>
     <string>LtnRetrClick</string>
+    <string>LtnRetrClick.bascl</string>
     <string>LtnRetroflexClickRetrHook</string>
     <string>ModRaisedExclamationMrk</string>
     <string>ModLowInvExclamationMrk</string>
@@ -2294,12 +2300,18 @@
     <string>RtTopCurlyBrac</string>
     <string>RtMidCurlyBrac</string>
     <string>RtBtmCurlyBrac</string>
+    <string>WigglyVerticalLine</string>
     <string>LtnDentalClick</string>
+    <string>LtnDentalClick.bascl</string>
     <string>LtnLateralClick</string>
+    <string>LtnLateralClick.bascl</string>
     <string>LtnAlveolarClick</string>
+    <string>LtnAlveolarClick.bascl</string>
     <string>DblVertLine</string>
     <string>ParallelTo</string>
     <string>NotParallelTo</string>
+    <string>TripleVertBar</string>
+    <string>TripleVertBar.bascl</string>
     <string>Therefore</string>
     <string>Because</string>
     <string>RefMrk</string>
@@ -2452,6 +2464,7 @@
     <string>CombDblMacron</string>
     <string>CombLowLine</string>
     <string>CombOverline</string>
+    <string>Overline</string>
     <string>DblLowLine</string>
     <string>CombDblLowLine</string>
     <string>CombEqSgnBlw</string>
@@ -2683,6 +2696,7 @@
     <string>LftStemTnLtr3</string>
     <string>LftStemTnLtr2</string>
     <string>LftStemTnLtr1</string>
+    <string>CopyleftSgn</string>
     <string>ShadowedWhiteCirc</string>
     <string>TriangularBullet</string>
     <string>DwnArrw</string>
@@ -2736,6 +2750,7 @@
     <string>MathRtAngBrac</string>
     <string>CombRtArrwhdUpArrwhdBlw</string>
     <string>CombRtArrwhdDwnArrwhdBlw</string>
+    <string>TironianSignEt</string>
     <string>FemaleSgn</string>
     <string>MaleSgn</string>
     <string>MusicFlatSign</string>
@@ -4174,6 +4189,8 @@
     <string>compComma</string>
     <key>CopCapEie</key>
     <string>uni2C88</string>
+    <key>CopyleftSgn</key>
+    <string>u1F12F</string>
     <key>CopyrightSgn</key>
     <string>copyright</string>
     <key>CruzeiroSgn</key>
@@ -5338,6 +5355,8 @@
     <string>uni206A</string>
     <key>Integral</key>
     <string>integral</string>
+    <key>Interrobang</key>
+    <string>uni203D</string>
     <key>IntlnrAnnotationAnchor</key>
     <string>uniFFF9</string>
     <key>IntlnrAnnotationSeparator</key>
@@ -5456,6 +5475,8 @@
     <string>uni1D25</string>
     <key>LtnAlveolarClick</key>
     <string>uni01C2</string>
+    <key>LtnAlveolarClick.bascl</key>
+    <string>uni01C2.bascl</string>
     <key>LtnAlveolarClick.sc</key>
     <string>uni01C2.sc</string>
     <key>LtnBidentalPercussive</key>
@@ -6534,6 +6555,8 @@
     <string>uni2C7F</string>
     <key>LtnDentalClick</key>
     <string>uni01C0</string>
+    <key>LtnDentalClick.bascl</key>
+    <string>uni01C0.bascl</string>
     <key>LtnDentalClick.sc</key>
     <string>uni01C0.sc</string>
     <key>LtnGlottalStop</key>
@@ -6548,6 +6571,8 @@
     <string>uni01BE</string>
     <key>LtnLateralClick</key>
     <string>uni01C1</string>
+    <key>LtnLateralClick.bascl</key>
+    <string>uni01C1.bascl</string>
     <key>LtnLateralClick.sc</key>
     <string>uni01C1.sc</string>
     <key>LtnLigSmFSmF</key>
@@ -6592,6 +6617,8 @@
     <string>f_l.sc</string>
     <key>LtnRetrClick</key>
     <string>uni01C3</string>
+    <key>LtnRetrClick.bascl</key>
+    <string>uni01C3.bascl</string>
     <key>LtnRetrClick.sc</key>
     <string>uni01C3.sc</string>
     <key>LtnRetroflexClickRetrHook</key>
@@ -10256,6 +10283,8 @@
     <string>onedotenleader</string>
     <key>OpnBx</key>
     <string>uni2423</string>
+    <key>Overline</key>
+    <string>uni203E</string>
     <key>ParagraphSeparator</key>
     <string>uni2029</string>
     <key>ParallelTo</key>
@@ -10264,6 +10293,8 @@
     <string>partialdiff</string>
     <key>PerMilleSgn</key>
     <string>perthousand</string>
+    <key>PerTenThousandSgn</key>
+    <string>uni2031</string>
     <key>PercentSgn</key>
     <string>percent</string>
     <key>PesetaSgn</key>
@@ -10466,6 +10497,8 @@
     <string>tilde</string>
     <key>Solidus</key>
     <string>slash</string>
+    <key>SomSgn</key>
+    <string>uni20C0</string>
     <key>Space</key>
     <string>space</string>
     <key>SpesmiloSgn</key>
@@ -10622,6 +10655,8 @@
     <string>asciitilde</string>
     <key>TildeOperator</key>
     <string>similar</string>
+    <key>TironianSignEt</key>
+    <string>uni204A</string>
     <key>TnContLft11</key>
     <string>uniA716.1</string>
     <key>TnContLft12</key>
@@ -10864,10 +10899,18 @@
     <string>uni2023</string>
     <key>TriplePrime</key>
     <string>uni2034</string>
+    <key>TripleVertBar</key>
+    <string>uni2980</string>
+    <key>TripleVertBar.bascl</key>
+    <string>uni2980.bascl</string>
     <key>TugrikSgn</key>
     <string>uni20AE</string>
     <key>TurkishLiraSgn</key>
     <string>uni20BA</string>
+    <key>TurnedDigitThree</key>
+    <string>uni218B</string>
+    <key>TurnedDigitTwo</key>
+    <string>uni218A</string>
     <key>TwoDotLeader</key>
     <string>twodotenleader</string>
     <key>TwoEmDash</key>
@@ -10956,6 +10999,8 @@
     <string>twothirds</string>
     <key>VulgFracZeroThirds</key>
     <string>uni2189</string>
+    <key>WigglyVerticalLine</key>
+    <string>uni2E3E</string>
     <key>WonSgn</key>
     <string>uni20A9</string>
     <key>WordJoiner</key>
