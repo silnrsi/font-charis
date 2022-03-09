@@ -449,12 +449,15 @@ LtnSmBTopbar,uni0183,1100.85,1100.85,,,,,
 CySmBe,uni0431,1110.1,1110.1,,,,,
 CySmBe.Serb,uni0431.Serb,1110.15,1110.15,cv84,cv84,,0431,0431
 CySmSoftSgn,uni044C,1120.1,1120.1,,,,,
+CySmSoftSgn.Bulg,uni044C.Bulg,1120.11,1120.11,cv85,cv85,,044C,044C
 CySmSemisoftSgn,uni048D,1120.2,1120.2,,,,,
 CySmHardSgn,uni044A,1120.3,1120.3,,,,,
+CySmHardSgn.Bulg,uni044A.Bulg,1120.31,1120.31,cv85,cv85,,044A,044A
 CySmYat,uni0463,1120.4,1120.4,,,,,
 CySmYeru,uni044B,1120.5,1120.5,,,,,
 CySmYeruDiaer,uni04F9,1120.6,1120.6,,,,,
 CySmVe,uni0432,1120.7,1120.7,,,,,
+CySmVe.Bulg,uni0432.Bulg,1121.1,1121.1,cv85,cv85,,0432,0432
 CyCapVe,uni0412,1150.15,1150.15,,,,,
 GrCapBeta,Beta,1150.16,1150.16,,,,,
 ModCapB,uni1D2E,1150.23,1150.23,,,,,
@@ -686,6 +689,7 @@ CySmZeDiaer,uni04DF,1440.36,1440.36,,,,,
 CySmZeDesc,uni0499,1440.65,1440.65,,,,,
 CySmKomiDzje,uni0507,1441.1,1441.1,,,,,
 CySmKomiZje,uni0505,1442.1,1442.1,,,,,
+CySmZe.Bulg,uni0437.Bulg,1443.1,1443.1,cv85,cv85,,0437,0437
 CyCapIe,uni0415,1450.15,1450.15,,,,,
 GrCapEpsilon,Epsilon,1450.16,1450.16,,,,,
 ModCapE,uni1D31,1450.23,1450.23,,,,,
@@ -815,6 +819,7 @@ LtnSmGDiagStrk.SngBowl,uniA7A1.SngBowl,1600.7514,1600.7514,ss01,,,A7A1,
 LtnSmG.SngBowl,g.SngBowl,1610.1,74,ss01,,,0067,
 LtnSmScriptG,uni0261,1610.11,1610.11,,,,,
 LtnSupSmScriptG,uni1DA2,1610.22,1610.22,,,,,
+CySmDe.Bulg,uni0434.Bulg,1610.3,1610.3,cv85,cv85,,0434,0434
 LtnSmGAcute.SngBowl,uni01F5.SngBowl,1610.311,1610.311,ss01,,,01F5,
 LtnSmGCircum.SngBowl,gcircumflex.SngBowl,1610.32,1610.32,ss01,,,011D,
 LtnSmGBreve.SngBowl,gbreve.SngBowl,1610.332,1610.332,ss01,,,011F,
@@ -893,6 +898,7 @@ CySmEnHook,uni04C8,1725.6,1725.6,,,,,
 CySmEnLftHook,uni0529,1725.65,1725.65,,,,,
 CySmKomiNje,uni050B,1725.7,1725.7,,,,,
 CySmEnMiddleHook,uni0523,1725.8,1725.8,,,,,
+CySmEn.Bulg,uni043D.Bulg,1726.1,1726.1,cv85,cv85,,043D,043D
 CySmPe,uni043F,1730.1,1730.1,,,,,
 CySmPe.Serb,uni043F.Serb,1730.15,1730.15,cv84,cv84,,043F,043F
 CySmPeDesc,uni0525,1730.189,1730.189,,,,,
@@ -1072,6 +1078,7 @@ CySmElMiddleHook,uni0521,1930.55,1930.55,,,,,
 CySmDe,uni0434,1930.6,1930.6,,,,,
 CySmDe.Serb,uni0434.Serb,1930.65,1930.65,cv84,cv84,,0434,0434
 CySmDeZheLig,uni052B,1930.7,1930.7,,,,,
+CySmEl.Bulg,uni043B.Bulg,1931.1,1931.1,cv85,cv85,,043B,043B
 CySmLha,uni0515,1940.1,1940.1,,,,,
 CyCapJe,uni0408,1950.15,1950.15,,,,,
 ModCapJ,uni1D36,1950.23,1950.23,,,,,
@@ -1088,9 +1095,11 @@ CyCapLje,uni0409,1960.4,1960.4,,,,,
 CyCapElHook,uni0512,1960.5,1960.5,,,,,
 CyCapKomiLje,uni0508,1960.6,1960.6,,,,,
 CyCapElMiddleHook,uni0520,1960.7,1960.7,,,,,
+CyCapEl.Bulg,uni041B.Bulg,1961.1,1961.1,cv85,cv85,,041B,041B
 CyCapLha,uni0514,1970.1,1970.1,,,,,
 CyCapDe,uni0414,1990.1,1990.1,,,,,
 CyCapDeZheLig,uni052A,1990.7,1990.7,,,,,
+CyCapDe.Bulg,uni0414.Bulg,1991.1,1991.1,cv85,cv85,,0414,0414
 LtnSubSmK,uni2096,2000.21,2000.21,,,,,
 LtnSupSmK,uni1D4F,2000.22,2000.22,,,,,
 LtnSmKAcute,uni1E31,2000.311,2000.311,,,,,
@@ -1107,6 +1116,8 @@ LtnSmKHook,uni0199,2000.81,2000.81,,,,,
 LtnSmKDesc,uni2C6A,2000.93,2000.93,,,,,
 LtnSmTurnedK,uni029E,2010.1,2010.1,,,,,
 LtnSmRevK,u1DF03,2011.1,2011.1,,,,,
+CySmKa.Bulg,uni043A.Bulg,2012.1,2012.1,cv85,cv85,,043A,043A
+CySmZhe.Bulg,uni0436.Bulg,2020.1,2020.1,cv85,cv85,,0436,0436
 LtnSmKra,kgreenlandic,2030.1,2030.1,,,,,
 CySmKa,uni043A,2030.15,2030.15,,,,,
 CySmKje,uni045C,2030.2,2030.2,,,,,
@@ -1145,10 +1156,12 @@ CyCapKaStrk,uni049E,2080.5,2080.5,,,,,
 CyCapKaVertStrk,uni049C,2080.6,2080.6,,,,,
 CyCapKaHook,uni04C3,2080.7,2080.7,,,,,
 CyCapAleutKa,uni051E,2080.8,2080.8,,,,,
+CyCapKa.Bulg,uni041A.Bulg,2081.1,2081.1,cv85,cv85,,041A,041A
 CyCapZhe,uni0416,2090.1,2090.1,,,,,
 CyCapZheBreve,uni04C1,2090.2,2090.2,,,,,
 CyCapZheDiaer,uni04DC,2090.3,2090.3,,,,,
 CyCapZheDesc,uni0496,2090.4,2090.4,,,,,
+CyCapZhe.Bulg,uni0416.Bulg,2091.1,2091.1,cv85,cv85,,0416,0416
 LtnSmL.SItal,l.SItal,2100.11,2100.11,ss05,ss05,,006C,006C
 SmRomNumFifty,uni217C,2100.19,2100.19,,,,,
 LtnSubSmL,uni2097,2100.21,2100.21,,,,,
@@ -1194,6 +1207,7 @@ TurkishLiraSgn,uni20BA,2113.11,2113.11,,,,,
 LtnSmLZDigraph,uni02AB,2114.1,2114.1,,,,,
 LtnSmLezh,uni026E,2115.1,2115.1,,,,,
 LtnSmLezhRetrHook,u1DF05,2115.64,2115.64,,,,,
+CySmYu.Bulg,uni044E.Bulg,2120.1,2120.1,cv85,cv85,,044E,044E
 LtrScriptSmL,uni2113,2130.1,2130.1,,,,,
 GermanPennySgn,uni20B0,2135.1,2135.1,,,,,
 LiraSgn,lira,2142.1,2142.1,,,,,
@@ -1237,8 +1251,11 @@ MillSgn,uni20A5,2200.75,2200.75,,,,,
 LtnSmMum,uniA773,2200.751,2200.751,,,,,
 LtnSmMHook,uni0271,2200.85,2200.85,,,,,
 ModSmMHook,uni1DAC,2200.8523,2200.8523,,,,,
+CySmTe.Bulg,uni0442.Bulg,2201.1,2201.1,cv85,cv85,,0442,0442
 LtnSmTurnedM,uni026F,2210.1,2210.1,,,,,
 LtnSupSmTurnedM,uni1D5A,2210.22,2210.22,,,,,
+CySmSha.Bulg,uni0448.Bulg,2211.1,2211.1,cv85,cv85,,0448,0448
+CySmShcha.Bulg,uni0449.Bulg,2212.1,2212.1,cv85,cv85,,0449,0449
 LtnSmTurnedMLngLeg,uni0270,2215.1,2215.1,,,,,
 LtnSupSmTurnedMLngLeg,uni1DAD,2215.22,2215.22,,,,,
 LtnSmSdwysTrndM,uni1D1F,2220.1,2220.1,,,,,
@@ -1291,6 +1308,7 @@ LtnSmNCurl,uni0235,2300.911,2300.911,,,,,
 LtnSmNDesc,uniA791,2300.93,2300.93,,,,,
 LtnSmNLngRtLeg,uni019E,2300.95,2300.95,,,,,
 LtnSmNj,uni01CC,2320.1,2320.1,,,,,
+CySmPe.Bulg,uni043F.Bulg,2321.1,2321.1,cv85,cv85,,043F,043F
 GrSmEta,eta,2330.1,2330.1,,,,,
 CySmI,uni0438,2340.1,2340.1,,,,,
 CySmIGrave,uni045D,2340.2,2340.2,,,,,
@@ -1330,6 +1348,9 @@ CyCapShortI,uni0419,2390.3,2390.3,,,,,
 CyCapShortITail,uni048A,2390.4,2390.4,,,,,
 CyCapIDiaer,uni04E4,2390.5,2390.5,,,,,
 CyCapIMacron,uni04E2,2390.6,2390.6,,,,,
+CyCapI.Bulg,uni0418.Bulg,2391.1,2391.1,cv85,cv85,,0418,0418
+CyCapIGrave.Bulg,uni040D.Bulg,2391.2,2391.2,cv85,cv85,,040D,040D
+CyCapShortI.Bulg,uni0419.Bulg,2391.3,2391.3,cv85,cv85,,0419,0419
 CySmO,uni043E,2400.15,2400.15,,,,,
 GrSmOmicron,omicron,2400.16,2400.16,,,,,
 LtnSubSmO,uni2092,2400.21,2400.21,,,,,
@@ -1490,6 +1511,7 @@ GrSubSmRho,uni1D68,2530.21,2530.21,,,,,
 LtnSmPhi,uni0278,2540.1,2540.1,,,,,
 ModSmPhi,uni1DB2,2540.23,2540.23,,,,,
 CySmEf,uni0444,2545.1,2545.1,,,,,
+CySmEf.Bulg,uni0444.Bulg,2546.1,2546.1,cv85,cv85,,0444,0444
 GrSmPhi,phi,2547.1,2547.1,,,,,
 GrSubSmPhi,uni1D69,2547.21,2547.21,,,,,
 ModSmGrPhi,uni1D60,2547.23,2547.23,,,,,
@@ -1520,6 +1542,7 @@ MathFrktCapP,u1D513,2580.1,2580.1,,,,,
 LtnCapRevP,uniA7FC,2585.1,2585.1,,,,,
 GrCapPhi,Phi,2590.1,2590.1,,,,,
 CyCapEf,uni0424,2590.16,2590.16,,,,,
+CyCapEf.Bulg,uni0424.Bulg,2591.1,2591.1,cv85,cv85,,0424,0424
 CySmQa,uni051B,2600.15,2600.15,,,,,
 LtnSmQStrk,uniA757,2600.72,2600.72,,,,,
 LtnSmQDiagStrk,uniA759,2600.75,2600.75,,,,,
@@ -1626,6 +1649,7 @@ LtnSmSDiagStrk,uniA7A9,2800.75,2800.75,,,,,
 LtnSmSCurl,u1DF1E,2800.91,2800.91,,,,,
 LtnSmSSwashTail,uni023F,2800.93,2800.93,,,,,
 LtnSmTnTwo,uni01A8,2820.1,2820.1,,,,,
+CySmGhe.Bulg,uni0433.Bulg,2825.1,2825.1,cv85,cv85,,0433,0433
 GrSmFinSigma,sigma1,2830.1,2830.1,,,,,
 LtnSmEsh,uni0283,2840.1,2840.1,,,,,
 LtnSupSmEsh,uni1DB4,2840.22,2840.22,,,,,
@@ -1755,6 +1779,10 @@ LtnSmUHornGrave,uni1EEB,3010.313,3010.313,,,,,
 LtnSmUHornTilde,uni1EEF,3010.34,3010.34,,,,,
 LtnSmUHornHookAbv,uni1EED,3010.38,3010.38,,,,,
 LtnSmUHornDotBlw,uni1EF1,3010.471,3010.471,,,,,
+CySmI.Bulg,uni0438.Bulg,3011.1,3011.1,cv85,cv85,,0438,0438
+CySmIGrave.Bulg,uni045D.Bulg,3011.2,3011.2,cv85,cv85,,045D,045D
+CySmShortI.Bulg,uni0439.Bulg,3011.3,3011.3,cv85,cv85,,0439,0439
+CySmTse.Bulg,uni0446.Bulg,3012.1,3012.1,cv85,cv85,,0446,0446
 LtnSmUe,uni1D6B,3020.1,3020.1,,,,,
 LtnSmSdwysU,uni1D1D,3025.1,3025.1,,,,,
 ModSmSdwysU,uni1D59,3025.23,3025.23,,,,,
@@ -1944,6 +1972,7 @@ CySmCheVertStrk,uni04B9,3440.3,3440.3,,,,,
 CySmCheDesc,uni04B7,3440.4,3440.4,,,,,
 CySmKhakasChe,uni04CC,3440.5,3440.5,,,,,
 CySmDeCheLig,uni052D,3440.6,3440.6,,,,,
+CySmChe.Bulg,uni0447.Bulg,3441.1,3441.1,cv85,cv85,,0447,0447
 GrSmPsi,psi,3445.1,3445.1,,,,,
 CyCapStraightU,uni04AE,3450.15,3450.15,,,,,
 GrCapUpsilon,Upsilon,3450.16,3450.16,,,,,
@@ -3815,6 +3844,7 @@ LtnSmGDiagStrk.sc,uniA7A1.sc,41600.75,41600.75,smcp,smcp,,A7A1,A7A1
 LtnSmGDiagStrk.SngBowl.sc,uniA7A1.SngBowl.sc,41600.751,41600.751,smcp,smcp,,A7A1,A7A1
 LtnSmG.SngBowl.sc,g.SngBowl.sc,41610.1,41610.1,smcp,smcp,,0067,0067
 LtnSmScriptG.sc,uni0261.sc,41610.11,41610.11,smcp,smcp,,0261,0261
+CySmDe.Bulg.sc,uni0434.Bulg.sc,41610.3,41610.3,smcp,smcp,,0434,0434
 LtnSmGAcute.SngBowl.sc,uni01F5.SngBowl.sc,41610.311,41610.311,smcp,smcp,,01F5,01F5
 LtnSmGCircum.SngBowl.sc,gcircumflex.SngBowl.sc,41610.32,41610.32,smcp,smcp,,011D,011D
 LtnSmGBreve.SngBowl.sc,gbreve.SngBowl.sc,41610.332,41610.332,smcp,smcp,,011F,011F
@@ -3920,6 +3950,7 @@ CySmElTail.sc,uni04C6.sc,41930.89,41930.89,smcp,smcp,,04C6,04C6
 CySmLha.sc,uni0515.sc,41930.9,41930.9,smcp,smcp,,0515,0515
 CySmDe.sc,uni0434.sc,41940.1,41940.1,smcp,smcp,,0434,0434
 CySmDeZheLig.sc,uni052B.sc,41940.7,41940.7,smcp,smcp,,052B,052B
+CySmEl.Bulg.sc,uni043B.Bulg.sc,41961.1,41961.1,smcp,smcp,,043D,043D
 LtnSmK.sc,k.sc,42000.1,42000.1,smcp,smcp,,006B,006B
 LtnSmKAcute.sc,uni1E31.sc,42000.311,42000.311,smcp,smcp,,1E31,1E31
 LtnSmKCaron.sc,uni01E9.sc,42000.334,42000.334,smcp,smcp,,01E9,01E9
@@ -3945,6 +3976,8 @@ CySmZhe.sc,uni0436.sc,42040.1,42040.1,smcp,smcp,,0436,0436
 CySmZheBreve.sc,uni04C2.sc,42040.2,42040.2,smcp,smcp,,04C2,04C2
 CySmZheDiaer.sc,uni04DD.sc,42040.3,42040.3,smcp,smcp,,04DD,04DD
 CySmZheDesc.sc,uni0497.sc,42040.4,42040.4,smcp,smcp,,0497,0497
+CySmKa.Bulg.sc,uni043A.Bulg.sc,42081.1,42081.1,smcp,smcp,,043A,043A
+CySmZhe.Bulg.sc,uni0436.Bulg.sc,42091.1,42091.1,smcp,smcp,,0436,0436
 LtnSmL.sc,l.sc,42100.1,42100.1,smcp,smcp,,006C,006C
 LtnSmLAcute.sc,lacute.sc,42100.311,42100.311,smcp,smcp,,013A,013A
 LtnSmLCaron.sc,lcaron.sc,42100.334,42100.334,smcp,smcp,,013E,013E
@@ -4001,6 +4034,9 @@ CySmIMacron.sc,uni04E3.sc,42340.35,42340.35,smcp,smcp,,04E3,04E3
 CySmIDiaer.sc,uni04E5.sc,42340.36,42340.36,smcp,smcp,,04E5,04E5
 CySmShortITail.sc,uni048B.sc,42340.4,42340.4,smcp,smcp,,048B,048B
 LtnCapNSmJ.sc,uni01CB.sc,42380.1,42380.1,smcp,smcp,,01CB,01CB
+CySmI.Bulg.sc,uni0438.Bulg.sc,42391.1,42391.1,smcp,smcp,,0438,0438
+CySmIGrave.Bulg.sc,uni045D.Bulg.sc,42391.2,42391.2,smcp,smcp,,045D,045D
+CySmShortI.Bulg.sc,uni0439.Bulg.sc,42391.3,42391.3,smcp,smcp,,0439,0439
 LtnSmO.sc,o.sc,42400,42400,smcp,smcp,,006F,006F
 CySmO.sc,uni043E.sc,42400.15,42400.15,smcp,smcp,,043E,043E
 LtnSmOAcute.sc,oacute.sc,42400.311,42400.311,smcp,smcp,,00F3,00F3
@@ -4077,6 +4113,7 @@ LtnSmPLowCurl.sc,uniA753.sc,42500.911,42500.911,smcp,smcp,,A753,A753
 CySmRha.sc,uni0517.sc,42510.1,42510.1,smcp,smcp,,0517,0517
 LtnWynn.sc,uni01BF.sc,42525.1,42525.1,smcp,smcp,,01BF,01BF
 CySmEf.sc,uni0444.sc,42545.1,42545.1,smcp,smcp,,0444,0444
+CySmEf.Bulg.sc,uni0424.Bulg.sc,42591.1,42591.1,smcp,smcp,,0424,0424
 LtnSmQ.sc,q.sc,42600.1,42600.1,smcp,smcp,,0071,0071
 CySmQa.sc,uni051B.sc,42600.15,42600.15,smcp,smcp,,051B,051B
 LtnSmQStrk.sc,uniA757.sc,42600.72,42600.72,smcp,smcp,,A757,A757

@@ -1169,6 +1169,33 @@
   ftml_comment: 
   ftml_string: 
 
+- tag: cv85
+  fonts: CDGA
+  version_added: 6.2
+  cv_label: Cyr Bulgarian
+  cv_tooltip: Alternate forms for Bulgarian
+  cv_sample: 
+  tt_tag: Bulg
+  tt_name: Cyr Bulgarian
+  tt_value: Standard
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard
+      tt_setting_name: Standard
+      tt_setting_tag: Dflt
+    - setting_value: 1
+      setting_ui_label: Bulgarian forms
+      setting_doc_desc: Bulgarian forms
+      tt_setting_name: Bulgarian forms
+      tt_setting_tag: Bulg
+  doc_group: cyr
+  doc_order: 475
+  doc_name: Cyrillic Bulgarian forms
+  doc_affects: U+040D U+0414 U+0416 U+0418 U+0419 U+041A U+041B U+0424 U+0432 U+0433 U+0434 U+0436 U+0437 U+0438 U+0439 U+043A U+043B U+043D U+043F U+0442 U+0444 U+0446 U+0447 U+0448 U+0449 U+044A U+044C U+044E U+045D
+  doc_sample: 
+  ftml_comment: 
+  ftml_string: 
+
 - tag: cv90
   fonts: CDGA
   version_added: 5
@@ -1259,6 +1286,24 @@
   doc_order: 351
   doc_name: Empty set
   doc_affects: U+2205
+  doc_sample: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: locl
+  fonts: CDGA
+  version_added: 6.2
+  locl_script: cyrl
+  locl_language: BGR
+  locl_css: bg
+  setting_value0: 
+      setting_doc_desc: Standard
+  setting_value1: 
+      setting_doc_desc: Bulgarian forms
+  doc_group: cyr
+  doc_order: 474
+  doc_name: Cyrillic Bulgarian letters
+  doc_affects: U+040D U+0414 U+0416 U+0418 U+0419 U+041A U+041B U+0424 U+0432 U+0433 U+0434 U+0436 U+0437 U+0438 U+0439 U+043A U+043B U+043D U+043F U+0442 U+0444 U+0446 U+0447 U+0448 U+0449 U+044A U+044C U+044E U+045D
   doc_sample: 
   ftml_comment: 
   ftml_string: 
