@@ -470,6 +470,8 @@
   <string>C_yC_apC_heV_ertS_trk.glif</string>
   <key>CyCapDe</key>
   <string>C_yC_apD_e.glif</string>
+  <key>CyCapDe.Bulg</key>
+  <string>C_yC_apD_e.B_ulg.glif</string>
   <key>CyCapDeCheLig</key>
   <string>C_yC_apD_eC_heL_ig.glif</string>
   <key>CyCapDeZheLig</key>
@@ -488,8 +490,12 @@
   <string>C_yC_apE_D_iaer.glif</string>
   <key>CyCapEf</key>
   <string>C_yC_apE_f.glif</string>
+  <key>CyCapEf.Bulg</key>
+  <string>C_yC_apE_f.B_ulg.glif</string>
   <key>CyCapEl</key>
   <string>C_yC_apE_l.glif</string>
+  <key>CyCapEl.Bulg</key>
+  <string>C_yC_apE_l.B_ulg.glif</string>
   <key>CyCapElDesc</key>
   <string>C_yC_apE_lD_esc.glif</string>
   <key>CyCapElHook</key>
@@ -560,10 +566,14 @@
   <string>C_yC_apH_ardS_gn.glif</string>
   <key>CyCapI</key>
   <string>C_yC_apI_.glif</string>
+  <key>CyCapI.Bulg</key>
+  <string>C_yC_apI_.B_ulg.glif</string>
   <key>CyCapIDiaer</key>
   <string>C_yC_apI_D_iaer.glif</string>
   <key>CyCapIGrave</key>
   <string>C_yC_apI_G_rave.glif</string>
+  <key>CyCapIGrave.Bulg</key>
+  <string>C_yC_apI_G_rave.B_ulg.glif</string>
   <key>CyCapIMacron</key>
   <string>C_yC_apI_M_acron.glif</string>
   <key>CyCapIe</key>
@@ -580,6 +590,8 @@
   <string>C_yC_apJ_e.glif</string>
   <key>CyCapKa</key>
   <string>C_yC_apK_a.glif</string>
+  <key>CyCapKa.Bulg</key>
+  <string>C_yC_apK_a.B_ulg.glif</string>
   <key>CyCapKaDesc</key>
   <string>C_yC_apK_aD_esc.glif</string>
   <key>CyCapKaHook</key>
@@ -656,6 +668,8 @@
   <string>C_yC_apS_hhaD_escD_ep.glif</string>
   <key>CyCapShortI</key>
   <string>C_yC_apS_hortI_.glif</string>
+  <key>CyCapShortI.Bulg</key>
+  <string>C_yC_apS_hortI_.B_ulg.glif</string>
   <key>CyCapShortITail</key>
   <string>C_yC_apS_hortI_T_ail.glif</string>
   <key>CyCapShortU</key>
@@ -710,6 +724,8 @@
   <string>C_yC_apZ_eD_iaer.glif</string>
   <key>CyCapZhe</key>
   <string>C_yC_apZ_he.glif</string>
+  <key>CyCapZhe.Bulg</key>
+  <string>C_yC_apZ_he.B_ulg.glif</string>
   <key>CyCapZheBreve</key>
   <string>C_yC_apZ_heB_reve.glif</string>
   <key>CyCapZheDesc</key>
@@ -786,6 +802,8 @@
   <string>C_yS_mC_apE_l.glif</string>
   <key>CySmChe</key>
   <string>C_yS_mC_he.glif</string>
+  <key>CySmChe.Bulg</key>
+  <string>C_yS_mC_he.B_ulg.glif</string>
   <key>CySmChe.sc</key>
   <string>C_yS_mC_he.sc.glif</string>
   <key>CySmCheDesc</key>
@@ -802,6 +820,10 @@
   <string>C_yS_mC_heV_ertS_trk.sc.glif</string>
   <key>CySmDe</key>
   <string>C_yS_mD_e.glif</string>
+  <key>CySmDe.Bulg</key>
+  <string>C_yS_mD_e.B_ulg.glif</string>
+  <key>CySmDe.Bulg.sc</key>
+  <string>C_yS_mD_e.B_ulg.sc.glif</string>
   <key>CySmDe.Serb</key>
   <string>C_yS_mD_e.S_erb.glif</string>
   <key>CySmDe.sc</key>
@@ -840,10 +862,18 @@
   <string>C_yS_mE_D_iaer.sc.glif</string>
   <key>CySmEf</key>
   <string>C_yS_mE_f.glif</string>
+  <key>CySmEf.Bulg</key>
+  <string>C_yS_mE_f.B_ulg.glif</string>
+  <key>CySmEf.Bulg.sc</key>
+  <string>C_yS_mE_f.B_ulg.sc.glif</string>
   <key>CySmEf.sc</key>
   <string>C_yS_mE_f.sc.glif</string>
   <key>CySmEl</key>
   <string>C_yS_mE_l.glif</string>
+  <key>CySmEl.Bulg</key>
+  <string>C_yS_mE_l.B_ulg.glif</string>
+  <key>CySmEl.Bulg.sc</key>
+  <string>C_yS_mE_l.B_ulg.sc.glif</string>
   <key>CySmEl.sc</key>
   <string>C_yS_mE_l.sc.glif</string>
   <key>CySmElDesc</key>
@@ -874,6 +904,8 @@
   <string>C_yS_mE_mT_ail.sc.glif</string>
   <key>CySmEn</key>
   <string>C_yS_mE_n.glif</string>
+  <key>CySmEn.Bulg</key>
+  <string>C_yS_mE_n.B_ulg.glif</string>
   <key>CySmEn.sc</key>
   <string>C_yS_mE_n.sc.glif</string>
   <key>CySmEnDesc</key>
@@ -918,6 +950,8 @@
   <string>C_yS_mF_ita.sc.glif</string>
   <key>CySmGhe</key>
   <string>C_yS_mG_he.glif</string>
+  <key>CySmGhe.Bulg</key>
+  <string>C_yS_mG_he.B_ulg.glif</string>
   <key>CySmGhe.Serb</key>
   <string>C_yS_mG_he.S_erb.glif</string>
   <key>CySmGhe.sc</key>
@@ -982,10 +1016,16 @@
   <string>C_yS_mH_aS_trkD_ep.glif</string>
   <key>CySmHardSgn</key>
   <string>C_yS_mH_ardS_gn.glif</string>
+  <key>CySmHardSgn.Bulg</key>
+  <string>C_yS_mH_ardS_gn.B_ulg.glif</string>
   <key>CySmHardSgn.sc</key>
   <string>C_yS_mH_ardS_gn.sc.glif</string>
   <key>CySmI</key>
   <string>C_yS_mI_.glif</string>
+  <key>CySmI.Bulg</key>
+  <string>C_yS_mI_.B_ulg.glif</string>
+  <key>CySmI.Bulg.sc</key>
+  <string>C_yS_mI_.B_ulg.sc.glif</string>
   <key>CySmI.sc</key>
   <string>C_yS_mI_.sc.glif</string>
   <key>CySmIDiaer</key>
@@ -994,6 +1034,10 @@
   <string>C_yS_mI_D_iaer.sc.glif</string>
   <key>CySmIGrave</key>
   <string>C_yS_mI_G_rave.glif</string>
+  <key>CySmIGrave.Bulg</key>
+  <string>C_yS_mI_G_rave.B_ulg.glif</string>
+  <key>CySmIGrave.Bulg.sc</key>
+  <string>C_yS_mI_G_rave.B_ulg.sc.glif</string>
   <key>CySmIGrave.sc</key>
   <string>C_yS_mI_G_rave.sc.glif</string>
   <key>CySmIMacron</key>
@@ -1030,6 +1074,10 @@
   <string>C_yS_mJ_e.sc.glif</string>
   <key>CySmKa</key>
   <string>C_yS_mK_a.glif</string>
+  <key>CySmKa.Bulg</key>
+  <string>C_yS_mK_a.B_ulg.glif</string>
+  <key>CySmKa.Bulg.sc</key>
+  <string>C_yS_mK_a.B_ulg.sc.glif</string>
   <key>CySmKa.sc</key>
   <string>C_yS_mK_a.sc.glif</string>
   <key>CySmKaDesc</key>
@@ -1124,6 +1172,8 @@
   <string>C_yS_mP_alochka.glif</string>
   <key>CySmPe</key>
   <string>C_yS_mP_e.glif</string>
+  <key>CySmPe.Bulg</key>
+  <string>C_yS_mP_e.B_ulg.glif</string>
   <key>CySmPe.Serb</key>
   <string>C_yS_mP_e.S_erb.glif</string>
   <key>CySmPe.sc</key>
@@ -1164,10 +1214,14 @@
   <string>C_yS_mS_emisoftS_gn.sc.glif</string>
   <key>CySmSha</key>
   <string>C_yS_mS_ha.glif</string>
+  <key>CySmSha.Bulg</key>
+  <string>C_yS_mS_ha.B_ulg.glif</string>
   <key>CySmSha.sc</key>
   <string>C_yS_mS_ha.sc.glif</string>
   <key>CySmShcha</key>
   <string>C_yS_mS_hcha.glif</string>
+  <key>CySmShcha.Bulg</key>
+  <string>C_yS_mS_hcha.B_ulg.glif</string>
   <key>CySmShcha.sc</key>
   <string>C_yS_mS_hcha.sc.glif</string>
   <key>CySmShha</key>
@@ -1184,6 +1238,10 @@
   <string>C_yS_mS_hhaD_escD_ep.glif</string>
   <key>CySmShortI</key>
   <string>C_yS_mS_hortI_.glif</string>
+  <key>CySmShortI.Bulg</key>
+  <string>C_yS_mS_hortI_.B_ulg.glif</string>
+  <key>CySmShortI.Bulg.sc</key>
+  <string>C_yS_mS_hortI_.B_ulg.sc.glif</string>
   <key>CySmShortI.sc</key>
   <string>C_yS_mS_hortI_.sc.glif</string>
   <key>CySmShortITail</key>
@@ -1196,6 +1254,8 @@
   <string>C_yS_mS_hortU_.sc.glif</string>
   <key>CySmSoftSgn</key>
   <string>C_yS_mS_oftS_gn.glif</string>
+  <key>CySmSoftSgn.Bulg</key>
+  <string>C_yS_mS_oftS_gn.B_ulg.glif</string>
   <key>CySmSoftSgn.sc</key>
   <string>C_yS_mS_oftS_gn.sc.glif</string>
   <key>CySmStraightU</key>
@@ -1208,6 +1268,8 @@
   <string>C_yS_mS_traightU_S_trk.sc.glif</string>
   <key>CySmTe</key>
   <string>C_yS_mT_e.glif</string>
+  <key>CySmTe.Bulg</key>
+  <string>C_yS_mT_e.B_ulg.glif</string>
   <key>CySmTe.Serb</key>
   <string>C_yS_mT_e.S_erb.glif</string>
   <key>CySmTe.sc</key>
@@ -1218,6 +1280,8 @@
   <string>C_yS_mT_eD_esc.sc.glif</string>
   <key>CySmTse</key>
   <string>C_yS_mT_se.glif</string>
+  <key>CySmTse.Bulg</key>
+  <string>C_yS_mT_se.B_ulg.glif</string>
   <key>CySmTse.sc</key>
   <string>C_yS_mT_se.sc.glif</string>
   <key>CySmTshe</key>
@@ -1246,6 +1310,8 @@
   <string>C_yS_mU_krainI_e.sc.glif</string>
   <key>CySmVe</key>
   <string>C_yS_mV_e.glif</string>
+  <key>CySmVe.Bulg</key>
+  <string>C_yS_mV_e.B_ulg.glif</string>
   <key>CySmVe.sc</key>
   <string>C_yS_mV_e.sc.glif</string>
   <key>CySmWe</key>
@@ -1278,10 +1344,14 @@
   <string>C_yS_mY_i.sc.glif</string>
   <key>CySmYu</key>
   <string>C_yS_mY_u.glif</string>
+  <key>CySmYu.Bulg</key>
+  <string>C_yS_mY_u.B_ulg.glif</string>
   <key>CySmYu.sc</key>
   <string>C_yS_mY_u.sc.glif</string>
   <key>CySmZe</key>
   <string>C_yS_mZ_e.glif</string>
+  <key>CySmZe.Bulg</key>
+  <string>C_yS_mZ_e.B_ulg.glif</string>
   <key>CySmZe.sc</key>
   <string>C_yS_mZ_e.sc.glif</string>
   <key>CySmZeDesc</key>
@@ -1294,6 +1364,10 @@
   <string>C_yS_mZ_eD_iaer.sc.glif</string>
   <key>CySmZhe</key>
   <string>C_yS_mZ_he.glif</string>
+  <key>CySmZhe.Bulg</key>
+  <string>C_yS_mZ_he.B_ulg.glif</string>
+  <key>CySmZhe.Bulg.sc</key>
+  <string>C_yS_mZ_he.B_ulg.sc.glif</string>
   <key>CySmZhe.sc</key>
   <string>C_yS_mZ_he.sc.glif</string>
   <key>CySmZheBreve</key>
