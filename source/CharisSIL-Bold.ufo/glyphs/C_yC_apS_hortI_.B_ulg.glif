@@ -4,7 +4,13 @@
   <anchor x="769" y="-100" name="L"/>
   <anchor x="769" y="1935" name="U"/>
   <outline>
-    <component base="CyCapI"/>
+    <component base="CyCapI.Bulg"/>
     <component base="CombBreve.CyShortMrkAlt.UCHt" xOffset="1537"/>
   </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
 </glyph>
