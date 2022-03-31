@@ -57,7 +57,23 @@ feature mkmk {
   lookup mark_mark_L;
 } mkmk;
 
-lookup tns_pos {
-  lookupflag IgnoreMarks;
-    pos cursive @TL_ @TL;
-} tns_pos;
+# Gentium
+do let f = info("familyName");
+   if f.find("Gentium") != -1; {
+lookup kernpairs {
+    kernpairs;
+} kernpairs;
+}
+
+# lookup tns_pos { # not needed by tone glyphs currently being used
+#   lookupflag IgnoreMarks;
+#     pos cursive @TL_ @TL;
+# } tns_pos;
+
+do let f = info("familyName");
+   if f.find("Gentium") != -1; {
+feature kern {
+  # lookup tns_pos;
+  lookup kernpairs;
+} kern;
+}
