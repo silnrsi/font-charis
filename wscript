@@ -4,8 +4,7 @@
 # set the default output folders for release docs
 DOCDIR = ["documentation", "web"]
 
-#STANDARDS = 'references/v5'
-STANDARDS = 'references/b1'
+STANDARDS = 'references/v6101'
 
 APPNAME = 'CharisSIL'
 familyname = APPNAME

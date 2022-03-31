@@ -360,6 +360,48 @@ lookup tnh_sub {
     sub @TnStaffLft by @TnStaffLftNo;
 } tnh_sub;
 
+# Andika
+do let f = info("familyName");
+   if f.find("Andika") != -1; {
+lookup one_sub {
+  lookupflag 0;
+    sub DigitOne from [DigitOne.NoBase ];
+    sub SubOne from [SubOne.NoBase ];
+    sub SupOne from [SupOne.NoBase ];
+} one_sub;
+
+lookup four_sub {
+  lookupflag 0;
+    sub DigitFour from [DigitFour.Open ];
+    sub SubFour from [SubFour.Open ];
+    sub SupFour from [SupFour.Open ];
+} four_sub;
+
+lookup six_sub {
+  lookupflag 0;
+    sub DigitSix from [DigitSix.Diag ];
+    sub DigitNine from [DigitNine.Diag ];
+    sub SubSix from [SubSix.Diag ];
+    sub SupSix from [SupSix.Diag ];
+    sub SubNine from [SubNine.Diag ];
+    sub SupNine from [SupNine.Diag ];
+} six_sub;
+
+lookup seven_sub {
+  lookupflag 0;
+    sub DigitSeven from [DigitSeven.Bar ];
+    sub SubSeven from [SubSeven.Bar ];
+    sub SupSeven from [SupSeven.Bar ];
+} seven_sub;
+
+lookup zero_sub {
+  lookupflag 0;
+    sub DigitZero from [DigitZero.Slash ];
+    sub SubZero from [SubZero.Slash ];
+    sub SupZero from [SupZero.Slash ];
+} zero_sub;
+}
+
 lookup bhk_sub {
   lookupflag 0;
     sub LtnCapBHook from [LtnCapBHook.TopBar ];
@@ -396,10 +438,51 @@ lookup hstrk_sub {
     sub LtnSmHStrk.sc from [LtnSmHStrk.VertStrk.sc ];
 } hstrk_sub;
 
+# Andika
+do let f = info("familyName");
+   if f.find("Andika") != -1; {
+lookup itl_sub {
+  lookupflag 0;
+    sub @cno_TailI by @c_TailI;
+} itl_sub;
+
+lookup jsrf_sub {
+  lookupflag 0;
+    sub LtnSmJ from [LtnSmJ.TopLftSerif ];
+    sub LtnSubSmJ from [LtnSubSmJ.TopLftSerif ];
+    sub ModSmJ from [ModSmJ.TopLftSerif ];
+    sub LtnSmJCircum from [LtnSmJCircum.TopLftSerif ];
+    sub LtnSmJCaron from [LtnSmJCaron.TopLftSerif ];
+    sub LtnSmJStrk from [LtnSmJStrk.TopLftSerif ];
+    sub LtnSmJCrossedTail from [LtnSmJCrossedTail.TopLftSerif ];
+    sub ModSmJCrossedTail from [ModSmJCrossedTail.TopLftSerif ];
+    sub LtnSmDotlessJ from [LtnSmDotlessJ.TopLftSerif ];
+    sub ModSmJ.Dotless from [ModSmJ.Dotless.TopLftSerif ];
+    sub LtnSmDotlessJStrk from [LtnSmDotlessJStrk.TopLftSerif ];
+    sub LtnSupSmDotlessJStrk from [LtnSupSmDotlessJStrk.TopLftSerif ];
+    sub LtnSmJCrossedTail.Dotless from [LtnSmJCrossedTail.Dotless.TopLftSerif ];
+    sub ModSmJCrossedTail.Dotless from [ModSmJCrossedTail.Dotless.TopLftSerif ];
+} jsrf_sub;
+
+lookup j_sub {
+  lookupflag 0;
+    sub @cno_bartp by @c_bartp;
+} j_sub;
+}
+
 lookup jstrk_sub {
   lookupflag 0;
     sub LtnSmDotlessJStrkHook from [LtnSmDotlessJStrkHook.DblSerif ];
 } jstrk_sub;
+
+# Andika
+do let f = info("familyName");
+   if f.find("Andika") != -1; {
+lookup ltl_sub {
+  lookupflag 0;
+    sub @cno_TailL by @c_TailL;
+} ltl_sub;
+}
 
 lookup engs_sub {
   lookupflag 0;
@@ -437,11 +520,43 @@ lookup phk_sub {
     sub LtnSmPHook from [LtnSmPHook.BowlHook ];
 } phk_sub;
 
+# Andika
+do let f = info("familyName");
+   if f.find("Andika") != -1; {
+lookup qtl_sub {
+  lookupflag 0;
+    sub LtnSmQ from [LtnSmQ.Point ];
+    sub LtnSmQStrk from [LtnSmQStrk.Point ];
+    sub LtnSmQDiagStrk from [LtnSmQDiagStrk.Point ];
+    sub LtnSmQHook from [LtnSmQHook.Point ];
+} qtl_sub;
+
+lookup q_sub {
+  lookupflag 0;
+    sub LtnCapQ from [LtnCapQ.DiagTail ];
+    sub LtnCapQStrk from [LtnCapQStrk.DiagTail ];
+    sub LtnCapQDiagStrk from [LtnCapQDiagStrk.DiagTail ];
+    sub LtnSmCapQ from [LtnSmCapQ.DiagTail ] ;
+    sub LtnSmQ.sc from [LtnSmQ.DiagTail.sc ];
+    sub LtnSmQStrk.sc from [LtnSmQStrk.DiagTail.sc ];
+    sub LtnSmQDiagStrk.sc from [LtnSmQDiagStrk.DiagTail.sc ];
+} q_sub;
+}
+
 lookup rtl_sub {
   lookupflag 0;
     sub LtnCapRHookTail from [LtnCapSmRHookTail ];
     sub LtnSmRHookTail.sc from [LtnSmCapSmRHookTail ];
 } rtl_sub;
+
+# Andika
+do let f = info("familyName");
+   if f.find("Andika") != -1; {
+lookup ttl_sub {
+  lookupflag 0;
+    sub @cno_NoTailT by @c_NoTailT;
+} ttl_sub;
+}
 
 lookup thk_sub {
   lookupflag 0;
@@ -456,6 +571,15 @@ lookup vhk_sub {
     sub LtnCapVHook from [LtnCapVHook.StraightLft LtnCapVHook.StraightLftHighHook ];
     sub LtnSmVHook.sc from [LtnSmVHook.StraightLft.sc LtnSmVHook.StraightLftHighHook.sc ];
 } vhk_sub;
+
+# Andika
+do let f = info("familyName");
+   if f.find("Andika") != -1; {
+lookup ytl_sub {
+  lookupflag 0;
+    sub @cno_NoTailY by @c_NoTailY;
+} ytl_sub;
+}
 
 lookup yhk_sub {
   lookupflag 0;
@@ -531,6 +655,9 @@ lookup set_sub {
     sub EmptySet from [EmptySet.SlashZero ];
 } set_sub;
 
+# non-Andika
+do let f = info("familyName");
+   if f.find("Andika") == -1; {
 lookup lit_sub {
   lookupflag 0;
     sub @cno_lit by @c_lit;
@@ -545,6 +672,26 @@ lookup litg_sub {
   lookupflag 0;
     sub @cno_litg by @c_litg;
 } litg_sub;
+}
+
+# Andika
+do let f = info("familyName");
+   if f.find("Andika") != -1; {
+lookup lit_sub {
+  lookupflag 0;
+    sub @c_lit by @cno_lit;
+} lit_sub;
+
+lookup lita_sub {
+  lookupflag 0;
+    sub @c_lita by @cno_lita;
+} lita_sub;
+
+lookup litg_sub {
+  lookupflag 0;
+    sub @c_litg by @cno_litg;
+} litg_sub;
+}
 
 lookup bbwl_sub {
   lookupflag 0;
@@ -561,6 +708,44 @@ lookup sital_sub {
     sub @cno_sital by @c_sital;
 } sital_sub;
 
+# Gentium
+do let f = info("familyName");
+   if f.find("Gentium") != -1; {
+lookup srfb_sub {
+  lookupflag 0;
+    sub GrSmBeta from [GrSmBeta.Serif ];
+    sub GrSubSmBeta from [GrSubSmBeta.Serif ];
+    sub ModSmBeta from [ModSmBeta.Serif ];
+} srfb_sub;
+
+lookup pcx_sub {
+  lookupflag 0;
+    sub @cno_Por by @c_Por;
+} pcx_sub;
+
+lookup iota_sub {
+  lookupflag 0;
+    sub @cno_iotasub by @c_iotasub;
+} iota_sub;
+
+lookup lpdiac_sub {
+  lookupflag 0;
+    sub @cno_lprof_diac by @c_lprof_diac;
+} lpdiac_sub;
+
+lookup lpdiac_ctx { # use in ccmp, for NFD text
+  lookupflag UseMarkFilteringSet @cno_lprof_diac;
+    sub @c_takes_lp_diac' @cno_lprof_diac'lookup lpdiac_sub @cno_lprof_diac'lookup lpdiac_sub 
+      @cno_lprof_diac'lookup lpdiac_sub;
+    sub @c_takes_lp_diac' @cno_lprof_diac'lookup lpdiac_sub @cno_lprof_diac'lookup lpdiac_sub;
+    sub @c_takes_lp_diac' @cno_lprof_diac'lookup lpdiac_sub;
+} lpdiac_ctx;
+
+lookup lp_sub {
+  lookupflag 0;
+    sub @cno_lowprof by @c_lowprof;
+} lp_sub;
+}
 
 languagesystem DFLT dflt;
 languagesystem cyrl dflt;
@@ -569,6 +754,9 @@ languagesystem cyrl MKD;
 languagesystem latn dflt;
 languagesystem latn IPPH;
 languagesystem latn VIT;
+ifinfo(familyName, "Gentium") {
+languagesystem grek dflt; # Gentium
+}
 
 feature aalt {
 #  feature ccmp; #exclude because of tone ligatures
@@ -576,21 +764,43 @@ feature aalt {
   feature smcp;
   feature c2sc;
 #  feature liga; #cannot include many-to-one substitutions
+ifinfo(familyName, "Andika") {
+  feature cv01; #Andika
+  feature cv04; #Andika
+  feature cv06; #Andika
+  feature cv07; #Andika
+  feature cv10; #Andika
+}
   feature cv13;
   feature cv17;
   feature cv19;
   feature cv20;
   feature cv25;
   feature cv28;
+ifinfo(familyName, "Andika") {
+  feature cv31; #Andika
+  feature cv34; #Andika
+  feature cv35; #Andika
+}
   feature cv37;
+ifinfo(familyName, "Andika") {
+  feature cv39; #Andika
+}
   feature cv43;
   feature cv44;
   feature cv46;
   feature cv47;
   feature cv49;
+ifinfo(familyName, "Andika") {
+  feature cv51; #Andika
+  feature cv52; #Andika
+}
   feature cv55;
   feature cv57;
   feature cv62;
+ifinfo(familyName, "Andika") {
+  feature cv67; #Andika
+}
   feature cv68;
   feature cv70;
   feature cv71;
@@ -605,16 +815,34 @@ feature aalt {
   feature cv91;
   feature cv92;
   feature cv98;
+ifinfo(familyName, "Gentium") {
+  feature cv14; #Gentium
+  feature cv78; #Gentium
+  feature cv83; #Gentium
+}
   feature ss01;
   feature ss04;
   feature ss05;
+ifinfo(familyName, "Gentium") {
+  feature ss07; #Gentium
+}
+ifinfo(familyName, "Charis|Doulos|Gentium") {
   feature ss11; #non-Andika
   feature ss12; #non-Andika
+}
+ifinfo(familyName, "Andika") {
+  feature ss13; #Andika
+  feature ss14; #Andika
+}
 } aalt;
 
 feature ccmp {
   lookup di_ctx;
   lookup ss_ctx;
+do let f = info("familyName");
+   if f.find("Gentium") != -1; {
+  lookup lpdiac_ctx; #Gentium
+}
   lookup tn_ctx;
   lookup tne_ctx;
 
@@ -643,6 +871,125 @@ feature c2sc {
 feature liga {
   lookup f_sub;
 } liga;
+
+# Andika
+do let f = info("familyName");
+   if f.find("Andika") != -1; {
+feature cv01 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "One";  # English US
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Alternate form of numeral one without base";  # English US
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "1₁¹";  # English US
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "No base serif";  # English US
+      };
+  };
+
+  lookup one_sub;
+} cv01;
+
+feature cv04 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Four";  # English US
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Alternate form of numeral four with open top";  # English US
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "4₄⁴";  # English US
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Open top";  # English US
+      };
+  };
+
+  lookup four_sub;
+} cv04;
+
+feature cv06 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Six and Nine";  # English US
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Alternate forms of numerals six and nine with diagonal stems";  # English US
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "6₆⁹9₉⁹";  # English US
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Diagonal stems";  # English US
+      };
+  };
+
+  lookup six_sub;
+} cv06;
+
+feature cv07 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Seven";  # English US
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Alternate form of numeral seven with bar";  # English US
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "7₇⁷";  # English US
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Barred";  # English US
+      };
+  };
+
+  lookup seven_sub;
+} cv07;
+
+feature cv10 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Zero";  # English US
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Alternate form of numeral zero with slash";  # English US
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "0⁰₀";  # English US
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Slashed";  # English US
+      };
+  };
+
+  lookup zero_sub;
+} cv10;
+}
 
 feature cv13 {
 
@@ -786,6 +1133,79 @@ feature cv28 {
   lookup hstrk_sub;
 } cv28;
 
+# Andika
+do let f = info("familyName");
+   if f.find("Andika") != -1; {
+feature cv31 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Lowercase i";  # English US
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Alternate form of lowercase i with curved tail";  # English US
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "iìíîï";  # English US
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Curved tail";  # English US
+      };
+  };
+
+  lookup itl_sub;
+} cv31;
+
+feature cv34 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Lowercase j";  # English US
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Alternate form of lowercase j with top serif";  # English US
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "jĵǰȷɉɟʝʲᶡᶨⱼ";  # English US
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Top serif";  # English US
+      };
+  };
+
+  lookup jsrf_sub;
+} cv34;
+
+feature cv35 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Capital J";  # English US
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Alternate form of capital J with bar across top";  # English US
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "JĴɈᴊᴶꞲ";  # English US
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Top bar";  # English US
+      };
+  };
+
+  lookup j_sub;
+} cv35;
+}
+
 feature cv37 {
 
   cvParameters {
@@ -808,6 +1228,33 @@ feature cv37 {
 
   lookup jstrk_sub;
 } cv37;
+
+# Andika
+do let f = info("familyName");
+   if f.find("Andika") != -1; {
+feature cv39 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Lowercase l";  # English US
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Alternate form of lowercase l with curved tail";  # English US
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "lĺļľŀłƚ";  # English US
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Curved tail";  # English US
+      };
+  };
+
+  lookup ltl_sub;
+} cv39;
+}
 
 feature cv43 {
 
@@ -932,6 +1379,56 @@ feature cv49 {
   lookup phk_sub;
 } cv49;
 
+# Andika
+do let f = info("familyName");
+   if f.find("Andika") != -1; {
+feature cv51 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Lowercase q";  # English US
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Alternate form of lowercase q with pointed descender";  # English US
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "qʠꝗꝙ";  # English US
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Pointed";  # English US
+      };
+  };
+
+  lookup qtl_sub;
+} cv51;
+
+feature cv52 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Capital Q";  # English US
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Alternate form of capital Q with crossing tail";  # English US
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "QꝖꝘ";  # English US
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Crossing tail";  # English US
+      };
+  };
+
+  lookup q_sub;
+} cv52;
+}
+
 feature cv55 {
 
   cvParameters {
@@ -954,6 +1451,33 @@ feature cv55 {
 
   lookup rtl_sub;
 } cv55;
+
+# Andika
+do let f = info("familyName");
+   if f.find("Andika") != -1; {
+feature cv56 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Lowercase t";  # English US
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Alternate form of lowercase t with no tail";  # English US
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "tţťŧƫƭ";  # English US
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "No tail";  # English US
+      };
+  };
+
+  lookup ttl_sub;
+} cv56;
+}
 
 feature cv57 {
 
@@ -1005,6 +1529,33 @@ feature cv62 {
 
   lookup vhk_sub;
 } cv62;
+
+# Andika
+do let f = info("familyName");
+   if f.find("Andika") != -1; {
+feature cv67 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Lowercase y";  # English US
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Alternate form of lowercase y with straight tail";  # English US
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "yýÿŷƴ";  # English US
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Straight tail";  # English US
+      };
+  };
+
+  lookup ytl_sub;
+} cv67;
+}
 
 feature cv68 {
 
@@ -1355,6 +1906,82 @@ feature cv98 {
   lookup set_sub;
 } cv98;
 
+# Gentium
+do let f = info("familyName");
+   if f.find("Gentium") != -1; {
+feature cv14 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Lowercase beta";  # English US
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Alternate form of lowercase beta with serif on bottom";  # English US
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "βᵦᵝ";  # English US
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "With serif";  # English US
+      };
+  };
+
+  lookup srfb_sub;
+} cv14;
+
+feature cv78 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Greek circumflex";  # English US
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Alternate Porsonic form of Greek circumflex";  # English US
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "͂ἆἇἎἏἦἧἮἯἶἷἾἿὖὗὟὦὧὮὯᾆᾇᾎᾏᾖᾗᾞᾟᾦᾧᾮᾯᾶᾷ῀῁ῆῇ῏ῖῗ῟ῦῧῶῷ";  # English US
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Porsonic form";  # English US
+      };
+  };
+
+  lookup pcx_sub;
+} cv78;
+
+feature cv83 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Greek iota adscript";  # English US
+      };
+
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Alternate subscript form of Greek iota adscript (ypogegrammeni)";  # English US
+      };
+
+      SampleTextNameID {
+       name 3 1 0x0409 "sample_text";  # English US TODO: set sample_text
+      };
+
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Subscript";  # English US
+      };
+  };
+
+  lookup iota_sub;
+} cv83;
+}
+
+# non-Andika
+do let f = info("familyName");
+   if f.find("Andika") == -1; {
 feature ss01 {
   featureNames {
     name 3 1 0x409 "Single-story a and g";
@@ -1378,6 +2005,35 @@ feature ss12 {
 
   lookup litg_sub;
 } ss12;
+}
+
+# Andika
+do let f = info("familyName");
+   if f.find("Andika") != -1; {
+feature ss01 {
+  featureNames {
+    name 3 1 0x409 "Double-story a and g";
+  };
+
+  lookup lit_sub;
+} ss01;
+
+feature ss13 {
+  featureNames {
+    name 3 1 0x409 "Double-story a";
+  };
+
+  lookup lita_sub;
+} ss13;
+
+feature ss14 {
+  featureNames {
+    name 3 1 0x409 "Double-story g";
+  };
+
+  lookup litg_sub;
+} ss14;
+}
 
 feature ss04 {
   featureNames {
@@ -1395,3 +2051,14 @@ feature ss05 {
   lookup sital_sub;
 } ss05;
 
+# Gentium
+do let f = info("familyName");
+   if f.find("Gentium") != -1; {
+feature ss07 {
+  featureNames {
+    name 3 1 0x409 "Low-profile diacritics";
+  };
+
+  lookup lp_sub;
+} ss07;
+}
