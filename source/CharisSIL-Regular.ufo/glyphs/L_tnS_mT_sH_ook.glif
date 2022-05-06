@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmTsHook" format="2">
+  <advance width="1321"/>
+  <unicode hex="AB67"/>
+  <anchor x="652" y="-100" name="L"/>
+  <anchor x="686" y="1363" name="U"/>
+  <outline>
+    <component base="LtnSmTsDigraph"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.99,0.62,0.11,1</string>
+    </dict>
+  </lib>
+</glyph>

@@ -276,6 +276,7 @@ LtnSmADotAbvMacron,uni01E1,1000.37135,1000.37135,,ss01,,,01E1
 LtnSmARingAbvAcute,aringacute,1000.373331,1000.373331,,ss01,,,01FB
 LtnSmARtHalfRing,uni1E9A,1000.374,1000.374,,ss01,,,1E9A
 LtnSmAHookAbv,uni1EA3,1000.38,1000.38,,ss01,,,1EA3
+LtnSmAEgAlef,uniA7BB,1000.39,1000.39,,ss01,,,A7BB
 LtnSmADotBlw,uni1EA1,1000.471,1000.471,,ss01,,,1EA1
 LtnSmARingBlw,uni1E01,1000.473,1000.473,,ss01,,,1E01
 LtnSmAOgonek,aogonek,1000.62,1000.62,,ss01,,,0105
@@ -332,6 +333,7 @@ LtnSmARingAbv.SngStory,aring.SngStory,1010.14373,1010.14373,ss01,,,00E5,
 LtnSmARingAbvAcute.SngStory,aringacute.SngStory,1010.143733,1010.143733,ss01,,,01FB,
 LtnSmARtHalfRing.SngStory,uni1E9A.SngStory,1010.14374,1010.14374,ss01,,,1E9A,
 LtnSmAHookAbv.SngStory,uni1EA3.SngStory,1010.1438,1010.1438,ss01,,,1EA3,
+LtnSmAEgAlef.SngStory,uniA7BB.SngStory,1010.1439,1010.1439,ss01,,,A7BB,
 LtnSmADotBlw.SngStory,uni1EA1.SngStory,1010.14471,1010.14471,ss01,,,1EA1,
 LtnSmARingBlw.SngStory,uni1E01.SngStory,1010.14473,1010.14473,ss01,,,1E01,
 LtnSmAOgonek.SngStory,aogonek.SngStory,1010.1462,1010.1462,ss01,,,0105,
@@ -411,6 +413,7 @@ LtnCapADotAbv,uni0226,1050.371,1050.371,,,,,
 LtnCapADotAbvMacron,uni01E0,1050.37135,1050.37135,,,,,
 LtnCapARingAbvAcute,Aringacute,1050.373311,1050.373311,,,,,
 LtnCapAHookAbv,uni1EA2,1050.38,1050.38,,,,,
+LtnCapAEgAlef,uniA7BA,1050.39,1050.39,,,,,
 LtnCapADotBlw,uni1EA0,1050.471,1050.471,,,,,
 LtnCapARingBlw,uni1E00,1050.473,1050.473,,,,,
 LtnCapAOgonek,Aogonek,1050.62,1050.62,,,,,
@@ -579,6 +582,7 @@ LtnSmDBDigraph,uni0238,1310.1,1310.1,,,,,
 LtnSmDz,uni01F3,1311.1,1311.1,,,,,
 LtnSmDzCaron,uni01C6,1311.334,1311.334,,,,,
 LtnSmDzDigraph,uni02A3,1312.1,1312.1,,,,,
+LtnSmDzRetrHook,uniAB66,1312.64,1312.64,,,,,
 LtnSmDzDigraphCurl,uni02A5,1312.91,1312.91,,,,,
 LtnSmDezhDigraph,uni02A4,1314.1,1314.1,,,,,
 LtnSmDezhDigraphRetrHook,u1DF19,1314.64,1314.64,,,,,
@@ -829,6 +833,7 @@ LtnSmGHook,uni0260,1610.81,1610.81,,,,,
 LtnSmRevScriptG,u1DF01,1611.1,1611.1,,,,,
 LtnSmTurnedG,uni1D77,1620.1,1620.1,,,,,
 LtnSmInsularG,uni1D79,1631.1,1631.1,,,,,
+CombLtnSmInsularG,uni1ACC,1631.24,1631.24,,,,,
 LtnSmTrndInsularG,uniA77F,1632.1,1632.1,,,,,
 CySmKomiSje,uni050D,1640.1,1640.1,,,,,
 ModCapG,uni1D33,1650.23,1650.23,,,,,
@@ -972,6 +977,7 @@ LtnSmIDotAbv,idotaccent,1800.371,1800.371,,,,0069,0069
 LtnSmIDotAbv.SItal,idotaccent.SItal,1800.37111,1800.37111,ss05,ss05,,0069,0069
 LtnSmIHookAbv,uni1EC9,1800.38,1800.38,,,,,
 LtnSmIHookAbv.SItal,uni1EC9.SItal,1800.3811,1800.3811,ss05,ss05,,1EC9,1EC9
+LtnSmIEgAlef,uniA7BD,1800.39,1800.39,,,,,
 LtnSmITildeBlw,uni1E2D,1800.44,1800.44,,,,,
 LtnSmITildeBlw.SItal,uni1E2D.SItal,1800.4411,1800.4411,ss05,ss05,,1E2D,1E2D
 LtnSmIDotBlw,uni1ECB,1800.471,1800.471,,,,,
@@ -1023,6 +1029,7 @@ CyCapYi,uni0407,1850.3615,1850.3615,,,,,
 LtnCapIDiaerAcute,uni1E2E,1850.36311,1850.36311,,,,,
 LtnCapIDotAbv,Idotaccent,1850.371,1850.371,,,,,
 LtnCapIHookAbv,uni1EC8,1850.38,1850.38,,,,,
+LtnCapIEgAlef,uniA7BC,1850.39,1850.39,,,,,
 LtnCapITildeBlw,uni1E2C,1850.44,1850.44,,,,,
 LtnCapIDotBlw,uni1ECA,1850.471,1850.471,,,,,
 LtnCapIOgonek,Iogonek,1850.62,1850.62,,,,,
@@ -1556,11 +1563,13 @@ LtnSmRLngLeg,uni027C,2700.95,2700.95,,,,,
 LtnSmRRotunda,uniA75B,2701.1,2701.1,,,,,
 LtnSmRumRotunda,uniA75D,2702.1,2702.1,,,,,
 LtnSmInsularR,uniA783,2703.1,2703.1,,,,,
+CombLtnSmInsularR,uni1ACD,2703.24,2703.24,,,,,
 LtnSmInsularS,uniA785,2704.1,2704.1,,,,,
 LtnSmInsularF,uniA77C,2705.1,2705.1,,,,,
 LtnSmTurnedR,uni0279,2710.1,2710.1,,,,,
 ModSmTrndR,uni02B4,2710.23,2710.23,,,,,
 LtnSmTurnedRPalHook,u1DF15,2710.65,2710.65,,,,,
+LtnSmTurnedRMiddleTilde,uniAB68,2710.74,2710.74,,,,,
 LtnSmTurnedRHook,uni027B,2710.86,2710.86,,,,,
 ModSmTrndRHook,uni02B5,2710.8623,2710.8623,,,,,
 LtnSmTurnedRLngLegHook,u1DF08,2710.8695,2710.8695,,,,,
@@ -1681,11 +1690,13 @@ LtnSmTum,uniA777,2901.1,2901.1,,,,,
 LtnSmTHStrk,uni1D7A,2905.1,2905.1,,,,,
 LtnSmTcDigraphCurl,uni02A8,2910.1,2910.1,,,,,
 LtnSmTsDigraph,uni02A6,2911.1,2911.1,,,,,
+LtnSmTsHook,uniAB67,2911.64,2911.64,,,,,
 LtnSmTeshDigraph,uni02A7,2912.1,2912.1,,,,,
 LtnSmTeshRetrHook,u1DF1C,2912.64,2912.64,,,,,
 LtnSmTeshPalHook,u1DF17,2912.65,2912.65,,,,,
 LtnSmTzDigraph,uniA729,2913.1,2913.1,,,,,
 LtnSmInsularT,uniA787,2914.1,2914.1,,,,,
+CombLtnSmInsularT,uni1ACE,2914.24,2914.24,,,,,
 LtnSmTurnedT,uni0287,2920.1,2920.1,,,,,
 LtnSmTurnedTCurl,u1DF0D,2920.91,2920.91,,,,,
 GrSmTau,tau,2930.1,2930.1,,,,,
@@ -1739,6 +1750,7 @@ LtnSmUDiaerCaron,uni01DA,3000.36334,3000.36334,,,,,
 LtnSmUDiaerMacron,uni01D6,3000.3635,3000.3635,,,,,
 LtnSmURingAbv,uring,3000.373,3000.373,,,,,
 LtnSmUHookAbv,uni1EE7,3000.38,3000.38,,,,,
+LtnSmUEgAlef,uniA7BF,3000.39,3000.39,,,,,
 LtnSmUCircumBlw,uni1E77,3000.42,3000.42,,,,,
 LtnSmUTildeBlw,uni1E75,3000.44,3000.44,,,,,
 LtnSmUDiaerBlw,uni1E73,3000.46,3000.46,,,,,
@@ -1786,6 +1798,7 @@ LtnCapUDiaerCaron,uni01D9,3050.36334,3050.36334,,,,,
 LtnCapUDiaerMacron,uni01D5,3050.3635,3050.3635,,,,,
 LtnCapURingAbv,Uring,3050.373,3050.373,,,,,
 LtnCapUHookAbv,uni1EE6,3050.38,3050.38,,,,,
+LtnCapUEgAlef,uniA7BE,3050.39,3050.39,,,,,
 LtnCapUCircumBlw,uni1E76,3050.42,3050.42,,,,,
 LtnCapUTildeBlw,uni1E74,3050.44,3050.44,,,,,
 LtnCapUDiaerBlw,uni1E72,3050.46,3050.46,,,,,
@@ -1858,6 +1871,7 @@ MathFrktCapV,u1D519,3180.1,3180.1,,,,,
 LtnCapRamsHorn,uniF26E,3185.1,3185.1,,,,,
 LtnCapGamma,uni0194,3190.1,3190.1,,,,,
 CySmWe,uni051D,3200.15,3200.15,,,,,
+CombLtnSmWBlw,uni1ABF,3200.2,3200.2,,,,,
 ModSmW,uni02B7,3200.23,3200.23,,,,,
 LtnSmWAcute,wacute,3200.311,3200.311,,,,,
 LtnSmWGrave,wgrave,3200.313,3200.313,,,,,
@@ -1869,6 +1883,8 @@ LtnSmWDotBlw,uni1E89,3200.471,3200.471,,,,,
 LtnSmWHook,uni2C73,3200.81,3200.81,,,,,
 LtnBilabialPercussive,uni02AC,3210.1,3210.1,,,,,
 LtnSmTurnedW,uni028D,3220.1,3220.1,,,,,
+CombLtnSmTurnedWBlw,uni1AC0,3220.2,3220.2,,,,,
+CombLtnSmTurnedW,uniAB69,3220.24,3220.24,,,,,
 LtnSmOmega,uniA7B7,3230.1,3230.1,,,,,
 GrSmOmega,omega,3240.1,3240.1,,,,,
 LtnSmClosedOmega,uni0277,3243.1,3243.1,,,,,
@@ -1927,6 +1943,8 @@ LtnSmYDotAbv,uni1E8F,3400.371,3400.371,,,,,
 LtnSmYRingAbv,uni1E99,3400.373,3400.373,,,,,
 LtnSmYHookAbv,uni1EF7,3400.38,3400.38,,,,,
 LtnSmYDotBlw,uni1EF5,3400.471,3400.471,,,,,
+LtnSmYOgonek,y_ogonek,3400.62,3400.62,,,,0079 0328,0079 0328
+LtnSmYOgonek.RetroHook,y_ogonek.RetroHook,3400.63,3400.63,cv76,cv76,,0079 0328,0079 0328
 LtnSmYStrk,uni024F,3400.71,3400.71,,,,,
 LtnSmYHook.RtHook,uni01B4.RtHook,3400.87,3400.87,,,,,
 LtnSmYHook,uni01B4,3400.88,3400.88,cv68,cv68,,01B4,01B4
@@ -2152,10 +2170,18 @@ GrAnoTeleia,anoteleia,5390.1,5390.1,,,,,
 HyphenationPt,uni2027,5390.2,5390.2,,,,,
 BulletOperator,uni2219,5390.4,5390.4,,,,,
 LtnSinolDot,uniA78F,5391.1,5391.1,,,,,
+CombLftParenBlw,uni1AC3,5400.2,5400.2,,,,,
 SubLftParen,uni208D,5400.21,5400.21,,,,,
 SupLftParen,uni207D,5400.22,5400.22,,,,,
+CombLftParenAbv,uni1AC1,5400.24,5400.24,,,,,
+CombRtParenBlw,uni1AC4,5405.2,5405.2,,,,,
 SubRtParen,uni208E,5405.21,5405.21,,,,,
 SupRtParen,uni207E,5405.22,5405.22,,,,,
+CombRtParenAbv,uni1AC2,5405.24,5405.24,,,,,
+CombParensBlw,uni1ABD,5410.2,5410.2,,,,,
+CombParensAbv,uni1ABB,5410.24,5410.24,,,,,
+CombDblParensAbv,uni1ABC,5411.24,5411.24,,,,,
+CombSqBracketsAbv,uni1AC5,5415.24,5415.24,,,,,
 MathLftWhiteSqrBrac,uni27E6,5417.1,5417.1,,,,,
 MathRtWhiteSqrBrac,uni27E7,5418.1,5418.1,,,,,
 SqrTxtBracHighLft,uni2308,5450.1,5450.1,,,,,
@@ -2233,6 +2259,7 @@ SupMinus,uni207B,5695.4,5695.4,,,,,
 CombMinusSgnBlw,uni0320,5695.5,5695.5,,,,,
 CombShortStrkOverlay,uni0335,5696.1,5696.1,,,,,
 CombLngStrkOverlay,uni0336,5696.2,5696.2,,,,,
+CombNumSgn,uni1AC6,5698.24,5698.24,,,,,
 SupplRtAngleSubMkr,uni2E00,5700.1,5700.1,,,,,
 SupplRtAngleSubMkrDot,uni2E01,5701.1,5701.1,,,,,
 SupplLftSubBrac,uni2E02,5710.1,5710.1,,,,,
@@ -2258,6 +2285,7 @@ DblPrime,second,6020.1,6020.1,,,,,
 ModDblPrime,uni02BA,6020.2,6020.2,,,,,
 ModMiddleDblAcuteAccent,uni02F6,6030.1,6030.1,,,,,
 CombDblAcute,uni030B,6030.3,6030.3,,,,,
+CombTripleAcute,uni1ACB,6035.1,6035.1,,,,,
 TriplePrime,uni2034,6040.1,6040.1,,,,,
 QuadruplePrime,uni2057,6045.1,6045.1,,,,,
 ModLowGraveAccent,uni02CE,6050.1,6050.1,,,,,
@@ -2286,6 +2314,7 @@ CombInvBreve.UL,uni0311.UL,6120.32,6120.32,,,,0311,0311
 CombInvBreve.LL,uni0311.LL,6120.33,6120.33,,,,0311,0311
 CombFermata,uni0352,6128.1,6128.1,,,,,
 CharTieAbv,uni2040,6130.1,6130.1,,,,,
+CombDblInvBreveBlw,uni1DFC,6134.1,6134.1,,,,,
 CombDblInvBreve,uni0361,6135.1,6135.1,,,,,
 CombDblInvBreve.UU,uni0361.UU,6135.11,6135.11,,,,0361,0361
 CombDblInvBreve.UL,uni0361.UL,6135.12,6135.12,,,,0361,0361
@@ -2342,6 +2371,7 @@ CombXAbv,uni033D,6300.3,6300.3,,,,,
 MultSgn,multiply,6305.1,6305.1,,,,,
 CombXXBlw,uni1AB5,6308.2,6308.2,,,,,
 CombInvDblArchBlw,uni032B,6310.2,6310.2,,,,,
+CombInvDblArchAbv,uni1AC7,6310.24,6310.24,,,,,
 CombSeagullBlw,uni033C,6315.1,6315.1,,,,,
 ModLowMacron,uni02CD,6320.12,6320.12,,,,,
 CombMacronBlw,uni0331,6320.14,6320.14,,,,,
@@ -2407,14 +2437,19 @@ SubPlusSgn,uni208A,6520.2,6520.2,,,,,
 CombPlusSgnBlw,uni031F,6520.3,6520.3,,,,,
 ModPlusSgn,uni02D6,6520.4,6520.4,,,,,
 SupPlusSgn,uni207A,6520.5,6520.5,,,,,
+CombPlusSgnAbv,uni1AC8,6520.6,6520.6,,,,,
+CombDblPlusSgnBlw,uni1ACA,6525.2,6525.2,,,,,
+CombDblPlusSgnAbv,uni1AC9,6525.24,6525.24,,,,,
 CombDwnTackBlw,uni031E,6530.1,6530.1,,,,,
 ModDwnTack,uni02D5,6530.2,6530.2,,,,,
 CombUpTackBlw,uni031D,6531.1,6531.1,,,,,
 ModUpTack,uni02D4,6531.2,6531.2,,,,,
 CombUpTackAbv,uni1DF5,6531.24,6531.24,,,,,
 CombLftTackBlw,uni0318,6532.1,6532.1,,,,,
+ModLftTack,uniAB6A,6532.23,6532.23,,,,,
 CombRtTackBlw,uni0319,6533.1,6533.1,,,,,
 ModYangDepartingToneMrk,uni02EB,6533.2,6533.2,,,,,
+ModRtTack,uniAB6B,6533.23,6533.23,,,,,
 ModYinDepartingTnMrk,uni02EA,6534.1,6534.1,,,,,
 CombLftAngBlw,uni0349,6540.1,6540.1,,,,,
 CombLftAngAbv,uni031A,6540.2,6540.2,,,,,
@@ -2432,10 +2467,12 @@ ModOpnShelf,uni02FE,6660.1,6660.1,,,,,
 ModShelf,uni02FD,6665.1,6665.1,,,,,
 LtnBidentalPercussive,uni02AD,6690.1,6690.1,,,,,
 CombCedilla,uni0327,6700.2,6700.2,,,,,
+CombPalHook,uni0321,6710.1,6710.1,,,,,
 CombOgonek,uni0328,6720.2,6720.2,,,,,
 CombOgonek.Lrg,uni0328.Lrg,6720.3,6720.3,,,,,
 CombOgonek.RetroHook,uni0328.RetroHook,6730.3,6730.3,cv76,cv76,,0328,0328
 Ogonek.RetroHook,ogonek.RetroHook,6730.4,6730.4,cv76,cv76,,02DB,02DB
+CombRetrHook,uni0322,6735.1,6735.1,,,,,
 CombOpnMrkBlw,uni1AB7,6740.2,6740.2,,,,,
 CombDblOpnMrkBlw,uni1AB8,6745.2,6745.2,,,,,
 GrYpo,uni037A,6750.1,6750.1,,,,,
@@ -3528,6 +3565,7 @@ LtnSmTHook.NoTailT,uni01AD.NoTailT,32901.81,32901.81,,cv56,,,01AD
 LtnSmTHStrk.NoTailT,uni1D7A.NoTailT,32906.1,32906.1,,cv56,,,1D7A
 LtnSmTcDigraphCurl.NoTailT,uni02A8.NoTailT,32910.11,32910.11,,cv56,,,02A8
 LtnSmTsDigraph.NoTailT,uni02A6.NoTailT,32911.11,32911.11,,cv56,,,02A6
+LtnSmTsHook.NoTailT,uniAB67.NoTailT,32911.64,32911.64,,cv56,,,AB67
 LtnSmTeshDigraph.NoTailT,uni02A7.NoTailT,32912.11,32912.11,,cv56,,,02A7
 LtnSmTeshRetrHook.NoTailT,u1DF1C.NoTailT,32912.64,32912.64,,cv56,,,1DF1C
 LtnSmTeshPalHook.NoTailT,u1DF17.NoTailT,32912.65,32912.65,,cv56,,,1DF17
@@ -3608,6 +3646,7 @@ LtnSmARingAbv.sc,aring.sc,41000.373,41000.373,smcp,smcp,,00E5,00E5
 LtnSmARingAbvAcute.sc,aringacute.sc,41000.37333,41000.37333,smcp,smcp,,01FB,01FB
 LtnSmARtHalfRing.sc,uni1E9A.sc,41000.374,41000.374,smcp,smcp,,1E9A,1E9A
 LtnSmAHookAbv.sc,uni1EA3.sc,41000.38,41000.38,smcp,smcp,,1EA3,1EA3
+LtnSmAEgAlef.sc,uniA7BB.sc,41000.39,41000.39,smcp,smcp,,A7BB,A7BB
 LtnSmADotBlw.sc,uni1EA1.sc,41000.471,41000.471,smcp,smcp,,1EA1,1EA1
 LtnSmARingBlw.sc,uni1E01.sc,41000.473,41000.473,smcp,smcp,,1E01,1E01
 LtnSmAOgonek.sc,aogonek.sc,41000.62,41000.62,smcp,smcp,,0105,0105
@@ -3659,6 +3698,7 @@ LtnSmARingAbv.SngStory.sc,aring.SngStory.sc,41010.373,41010.373,smcp,smcp,,00E5,
 LtnSmARingAbvAcute.SngStory.sc,aringacute.SngStory.sc,41010.37333,41010.37333,smcp,smcp,,01FB,01FB
 LtnSmARtHalfRing.SngStory.sc,uni1E9A.SngStory.sc,41010.374,41010.374,smcp,smcp,,1E9A,1E9A
 LtnSmAHookAbv.SngStory.sc,uni1EA3.SngStory.sc,41010.38,41010.38,smcp,smcp,,1EA3,1EA3
+LtnSmAEgAlef.SngStory.sc,uniA7BB.SngStory.sc,41010.39,41010.39,smcp,smcp,,A7BB,A7BB
 LtnSmADotBlw.SngStory.sc,uni1EA1.SngStory.sc,41010.47114,41010.47114,smcp,smcp,,1EA1,1EA1
 LtnSmARingBlw.SngStory.sc,uni1E01.SngStory.sc,41010.473,41010.473,smcp,smcp,,1E01,1E01
 LtnSmAOgonek.SngStory.sc,aogonek.SngStory.sc,41010.62,41010.62,smcp,smcp,,0105,0105
@@ -3882,6 +3922,7 @@ CySmYi.sc,uni0457.sc,41800.3615,41800.3615,smcp,smcp,,0457,0457
 LtnSmIDiaerAcute.sc,uni1E2F.sc,41800.36311,41800.36311,smcp,smcp,,1E2F,1E2F
 LtnSmIDotAbv.sc,idotaccent.sc,41800.371,41800.371,smcp,smcp,,0069,0069
 LtnSmIHookAbv.sc,uni1EC9.sc,41800.39,41800.39,smcp,smcp,,1EC9,1EC9
+LtnSmIEgAlef.sc,uniA7BD.sc,41800.39,41800.39,smcp,smcp,,A7BD,A7BD
 LtnSmITildeBlw.sc,uni1E2D.sc,41800.44,41800.44,smcp,smcp,,1E2D,1E2D
 LtnSmIDotBlw.sc,uni1ECB.sc,41800.471,41800.471,smcp,smcp,,1ECB,1ECB
 LtnSmIDotBlw.Dotless.sc,uni1ECB.Dotless.sc,41800.472,41800.472,,,,1ECB,1ECB
@@ -4167,6 +4208,7 @@ LtnSmUDiaerCaron.sc,uni01DA.sc,43000.36334,43000.36334,smcp,smcp,,01DA,01DA
 LtnSmUDiaerMacron.sc,uni01D6.sc,43000.3635,43000.3635,smcp,smcp,,01D6,01D6
 LtnSmURingAbv.sc,uring.sc,43000.373,43000.373,smcp,smcp,,016F,016F
 LtnSmUHookAbv.sc,uni1EE7.sc,43000.38,43000.38,smcp,smcp,,1EE7,1EE7
+LtnSmUEgAlef.sc,uniA7BF.sc,43000.39,43000.39,smcp,smcp,,A7BF,A7BF
 LtnSmUCircumBlw.sc,uni1E77.sc,43000.42,43000.42,smcp,smcp,,1E77,1E77
 LtnSmUTildeBlw.sc,uni1E75.sc,43000.44,43000.44,smcp,smcp,,1E75,1E75
 LtnSmUDiaerBlw.sc,uni1E73.sc,43000.46,43000.46,smcp,smcp,,1E73,1E73

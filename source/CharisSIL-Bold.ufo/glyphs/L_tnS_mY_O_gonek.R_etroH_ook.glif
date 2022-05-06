@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmYOgonek.RetroHook" format="2">
+  <advance width="1159"/>
+  <anchor x="580" y="-500" name="L"/>
+  <anchor x="1159" y="1000" name="R"/>
+  <anchor x="600" y="1100" name="U"/>
+  <outline>
+    <component base="LtnSmYLoop"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.99,0.62,0.11,1</string>
+    </dict>
+  </lib>
+</glyph>
