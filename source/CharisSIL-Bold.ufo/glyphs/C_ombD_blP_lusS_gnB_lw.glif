@@ -1,10 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="CombDblPlusSgnBlw" format="2">
   <unicode hex="1ACA"/>
-  <anchor x="-598" y="-500" name="L"/>
-  <anchor x="-598" y="-100" name="_L"/>
+  <anchor x="-533" y="-500" name="L"/>
+  <anchor x="-533" y="-100" name="_L"/>
   <outline>
-    <component base="CombPlusSgnBlw"/>
+    <contour>
+      <point x="-481" y="-268" type="line"/>
+      <point x="-481" y="-381" type="line"/>
+      <point x="-348" y="-381" type="line"/>
+      <point x="-348" y="-524" type="line"/>
+      <point x="-235" y="-524" type="line"/>
+      <point x="-235" y="-381" type="line"/>
+      <point x="-102" y="-381" type="line"/>
+      <point x="-102" y="-268" type="line"/>
+      <point x="-235" y="-268" type="line"/>
+      <point x="-235" y="-125" type="line"/>
+      <point x="-348" y="-125" type="line"/>
+      <point x="-348" y="-268" type="line"/>
+    </contour>
+    <contour>
+      <point x="-962" y="-268" type="line"/>
+      <point x="-962" y="-381" type="line"/>
+      <point x="-829" y="-381" type="line"/>
+      <point x="-829" y="-524" type="line"/>
+      <point x="-716" y="-524" type="line"/>
+      <point x="-716" y="-381" type="line"/>
+      <point x="-583" y="-381" type="line"/>
+      <point x="-583" y="-268" type="line"/>
+      <point x="-716" y="-268" type="line"/>
+      <point x="-716" y="-125" type="line"/>
+      <point x="-829" y="-125" type="line"/>
+      <point x="-829" y="-268" type="line"/>
+    </contour>
   </outline>
   <lib>
     <dict>
