@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="LtnSmYOgonek.RetroHook" format="2">
   <advance width="1112"/>
-  <anchor x="304" y="-500" name="L"/>
+  <anchor x="224" y="-720" name="L"/>
   <anchor x="1112" y="1000" name="R"/>
   <anchor x="666" y="1100" name="U"/>
   <outline>
     <component base="LtnSmYLoop"/>
+    <component base="CombOgonek.RetroHook" xOffset="443" yOffset="-285"/>
   </outline>
   <lib>
     <dict>
