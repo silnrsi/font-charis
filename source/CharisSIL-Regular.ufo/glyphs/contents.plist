@@ -6,6 +6,10 @@
   <string>_notdef.glif</string>
   <key>.null</key>
   <string>_null.glif</string>
+  <key>ACWBottomArrw</key>
+  <string>A_C_W_B_ottomA_rrw.glif</string>
+  <key>ACWTopArrw</key>
+  <string>A_C_W_T_opA_rrw.glif</string>
   <key>ActivateArbFormShaping</key>
   <string>A_ctivateA_rbF_ormS_haping.glif</string>
   <key>ActivateSymmetricSwapping</key>
@@ -24,6 +28,12 @@
   <string>A_tS_gn.glif</string>
   <key>AustralSign</key>
   <string>A_ustralS_ign.glif</string>
+  <key>BallotBox</key>
+  <string>B_allotB_ox.glif</string>
+  <key>BallotMrk</key>
+  <string>B_allotM_rk.glif</string>
+  <key>BallotMrkBox</key>
+  <string>B_allotM_rkB_ox.glif</string>
   <key>Because</key>
   <string>B_ecause.glif</string>
   <key>BitcoinSgn</key>
@@ -38,6 +48,10 @@
   <string>B_ullet.glif</string>
   <key>BulletOperator</key>
   <string>B_ulletO_perator.glif</string>
+  <key>CWBottomArrw</key>
+  <string>C_W_B_ottomA_rrw.glif</string>
+  <key>CWTopArrw</key>
+  <string>C_W_T_opA_rrw.glif</string>
   <key>Caret</key>
   <string>C_aret.glif</string>
   <key>CaretInsPt</key>
@@ -56,6 +70,8 @@
   <string>C_harT_ieB_lw.glif</string>
   <key>CheckMrk</key>
   <string>C_heckM_rk.glif</string>
+  <key>CheckMrkBox</key>
+  <string>C_heckM_rkB_ox.glif</string>
   <key>CircumAccent</key>
   <string>C_ircumA_ccent.glif</string>
   <key>Colon</key>
@@ -1434,6 +1450,8 @@
   <string>D_rachmaS_gn.glif</string>
   <key>DwnArrw</key>
   <string>D_wnA_rrw.glif</string>
+  <key>DwnArrwhd</key>
+  <string>D_wnA_rrwhd.glif</string>
   <key>DwnDblArrw</key>
   <string>D_wnD_blA_rrw.glif</string>
   <key>EmDash</key>
@@ -1460,6 +1478,12 @@
   <string>E_uroS_gn.glif</string>
   <key>ExclamationMrk</key>
   <string>E_xclamationM_rk.glif</string>
+  <key>FaceFrown</key>
+  <string>F_aceF_rown.glif</string>
+  <key>FaceNeutral</key>
+  <string>F_aceN_eutral.glif</string>
+  <key>FaceSmile</key>
+  <string>F_aceS_mile.glif</string>
   <key>FemOrdIndicator</key>
   <string>F_emO_rdI_ndicator.glif</string>
   <key>FemaleSgn</key>
@@ -6068,6 +6092,8 @@
   <string>M_athR_tA_ngB_rac.glif</string>
   <key>MathRtWhiteSqrBrac</key>
   <string>M_athR_tW_hiteS_qrB_rac.glif</string>
+  <key>MeasuredAngle</key>
+  <string>M_easuredA_ngle.glif</string>
   <key>MicroSgn</key>
   <string>M_icroS_gn.glif</string>
   <key>MiddleDot</key>
@@ -6526,8 +6552,12 @@
   <string>N_ordicM_arkS_gn.glif</string>
   <key>NotEqTo</key>
   <string>N_otE_qT_o.glif</string>
+  <key>NotGTSgn</key>
+  <string>N_otG_T_S_gn.glif</string>
   <key>NotIdenticalTo</key>
   <string>N_otI_denticalT_o.glif</string>
+  <key>NotLTSgn</key>
+  <string>N_otL_T_S_gn.glif</string>
   <key>NotParallelTo</key>
   <string>N_otP_arallelT_o.glif</string>
   <key>NotSgn</key>
@@ -6566,6 +6596,8 @@
   <string>P_erT_enT_housandS_gn.glif</string>
   <key>PercentSgn</key>
   <string>P_ercentS_gn.glif</string>
+  <key>Perpendicular</key>
+  <string>P_erpendicular.glif</string>
   <key>PesetaSgn</key>
   <string>P_esetaS_gn.glif</string>
   <key>PesoSgn</key>
@@ -7186,6 +7218,8 @@
   <string>T_woE_mD_ash.glif</string>
   <key>UpArrw</key>
   <string>U_pA_rrw.glif</string>
+  <key>UpArrwhd</key>
+  <string>U_pA_rrwhd.glif</string>
   <key>UpDblArrw</key>
   <string>U_pD_blA_rrw.glif</string>
   <key>UpDwnArrw</key>

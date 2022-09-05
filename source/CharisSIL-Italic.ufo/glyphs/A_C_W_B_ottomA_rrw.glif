@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ACWBottomArrw" format="2">
+  <advance width="1660"/>
+  <unicode hex="21BA"/>
+  <outline>
+    <contour>
+      <point x="703" y="-30" type="curve" smooth="yes"/>
+      <point x="1077" y="-30"/>
+      <point x="1333" y="248"/>
+      <point x="1333" y="634" type="curve" smooth="yes"/>
+      <point x="1333" y="741"/>
+      <point x="1319" y="865"/>
+      <point x="1243" y="1006" type="curve"/>
+      <point x="1150" y="959" type="line"/>
+      <point x="1216" y="832"/>
+      <point x="1228" y="727"/>
+      <point x="1228" y="633" type="curve" smooth="yes"/>
+      <point x="1228" y="300"/>
+      <point x="1013" y="76"/>
+      <point x="703" y="76" type="curve" smooth="yes"/>
+      <point x="400" y="76"/>
+      <point x="205" y="297"/>
+      <point x="205" y="626" type="curve" smooth="yes"/>
+      <point x="205" y="663"/>
+      <point x="208" y="699"/>
+      <point x="215" y="735" type="curve"/>
+      <point x="114" y="760" type="line"/>
+      <point x="105" y="714"/>
+      <point x="100" y="667"/>
+      <point x="100" y="618" type="curve" smooth="yes"/>
+      <point x="100" y="242"/>
+      <point x="340" y="-30"/>
+    </contour>
+    <contour>
+      <point x="1033" y="591" type="line"/>
+      <point x="1184" y="945" type="line"/>
+      <point x="1226" y="962" type="line"/>
+      <point x="1573" y="800" type="line"/>
+      <point x="1620" y="897" type="line"/>
+      <point x="1145" y="1114" type="line"/>
+      <point x="935" y="636" type="line"/>
+    </contour>
+  </outline>
+</glyph>

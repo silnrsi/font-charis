@@ -2325,6 +2325,7 @@
     <string>ParallelTo</string>
     <string>NotParallelTo</string>
     <string>TripleVertBar</string>
+    <string>Perpendicular</string>
     <string>TripleVertBar.bascl</string>
     <string>Therefore</string>
     <string>Because</string>
@@ -2340,6 +2341,7 @@
     <string>BrokenBar</string>
     <string>ModLowVertLine</string>
     <string>ModVertLine</string>
+    <string>MeasuredAngle</string>
     <string>CombShortSolidusOverlay</string>
     <string>CombLngSolidusOverlay</string>
     <string>CombLngReverseSolidusOverlay</string>
@@ -2717,6 +2719,9 @@
     <string>LftStemTnLtr2</string>
     <string>LftStemTnLtr1</string>
     <string>CopyleftSgn</string>
+    <string>FaceFrown</string>
+    <string>FaceNeutral</string>
+    <string>FaceSmile</string>
     <string>ShadowedWhiteCirc</string>
     <string>TriangularBullet</string>
     <string>DwnArrw</string>
@@ -2752,8 +2757,18 @@
     <string>SWArrw</string>
     <string>SupplDownwardsAncora</string>
     <string>CheckMrk</string>
+    <string>CheckMrkBox</string>
+    <string>BallotBox</string>
+    <string>BallotMrk</string>
+    <string>BallotMrkBox</string>
+    <string>ACWBottomArrw</string>
+    <string>ACWTopArrw</string>
+    <string>CWBottomArrw</string>
+    <string>CWTopArrw</string>
+    <string>DwnArrwhd</string>
     <string>ModDwnArrwhd</string>
     <string>ModLowDwnArrwhd</string>
+    <string>UpArrwhd</string>
     <string>ModUpArrwhd</string>
     <string>ModLowUpArrwhd</string>
     <string>ModLftArrwhd</string>
@@ -2771,6 +2786,8 @@
     <string>CombRtArrwhdUpArrwhdBlw</string>
     <string>CombRtArrwhdDwnArrwhdBlw</string>
     <string>TironianSignEt</string>
+    <string>NotGTSgn</string>
+    <string>NotLTSgn</string>
     <string>FemaleSgn</string>
     <string>MaleSgn</string>
     <string>MusicFlatSign</string>
@@ -3793,6 +3810,10 @@
   </array>
   <key>public.postscriptNames</key>
   <dict>
+    <key>ACWBottomArrw</key>
+    <string>uni21BA</string>
+    <key>ACWTopArrw</key>
+    <string>uni21B6</string>
     <key>ActivateArbFormShaping</key>
     <string>uni206D</string>
     <key>ActivateSymmetricSwapping</key>
@@ -3811,6 +3832,12 @@
     <string>at</string>
     <key>AustralSign</key>
     <string>uni20B3</string>
+    <key>BallotBox</key>
+    <string>uni2610</string>
+    <key>BallotMrk</key>
+    <string>uni2717</string>
+    <key>BallotMrkBox</key>
+    <string>uni2612</string>
     <key>Because</key>
     <string>uni2235</string>
     <key>BitcoinSgn</key>
@@ -3825,6 +3852,10 @@
     <string>bullet</string>
     <key>BulletOperator</key>
     <string>uni2219</string>
+    <key>CWBottomArrw</key>
+    <string>uni21BB</string>
+    <key>CWTopArrw</key>
+    <string>uni21B7</string>
     <key>Caret</key>
     <string>uni2038</string>
     <key>CaretInsPt</key>
@@ -3843,6 +3874,8 @@
     <string>uni203F</string>
     <key>CheckMrk</key>
     <string>uni2713</string>
+    <key>CheckMrkBox</key>
+    <string>uni2611</string>
     <key>CircumAccent</key>
     <string>asciicircum</string>
     <key>Colon</key>
@@ -5221,6 +5254,8 @@
     <string>uni20AF</string>
     <key>DwnArrw</key>
     <string>arrowdown</string>
+    <key>DwnArrwhd</key>
+    <string>uni2228</string>
     <key>DwnDblArrw</key>
     <string>arrowdbldown</string>
     <key>EmDash</key>
@@ -5247,6 +5282,12 @@
     <string>Euro</string>
     <key>ExclamationMrk</key>
     <string>exclam</string>
+    <key>FaceFrown</key>
+    <string>uni2639</string>
+    <key>FaceNeutral</key>
+    <string>uni1F610</string>
+    <key>FaceSmile</key>
+    <string>uni263A</string>
     <key>FemOrdIndicator</key>
     <string>ordfeminine</string>
     <key>FemaleSgn</key>
@@ -9855,6 +9896,8 @@
     <string>uni27E9</string>
     <key>MathRtWhiteSqrBrac</key>
     <string>uni27E7</string>
+    <key>MeasuredAngle</key>
+    <string>uni2221</string>
     <key>MicroSgn</key>
     <string>mu</string>
     <key>MiddleDot</key>
@@ -10313,8 +10356,12 @@
     <string>uni20BB</string>
     <key>NotEqTo</key>
     <string>notequal</string>
+    <key>NotGTSgn</key>
+    <string>uni226F</string>
     <key>NotIdenticalTo</key>
     <string>uni2262</string>
+    <key>NotLTSgn</key>
+    <string>uni226E</string>
     <key>NotParallelTo</key>
     <string>uni2226</string>
     <key>NotSgn</key>
@@ -10353,6 +10400,8 @@
     <string>uni2031</string>
     <key>PercentSgn</key>
     <string>percent</string>
+    <key>Perpendicular</key>
+    <string>uni27C2</string>
     <key>PesetaSgn</key>
     <string>peseta</string>
     <key>PesoSgn</key>
@@ -10973,6 +11022,8 @@
     <string>uni2E3A</string>
     <key>UpArrw</key>
     <string>arrowup</string>
+    <key>UpArrwhd</key>
+    <string>uni2227</string>
     <key>UpDblArrw</key>
     <string>arrowdblup</string>
     <key>UpDwnArrw</key>
