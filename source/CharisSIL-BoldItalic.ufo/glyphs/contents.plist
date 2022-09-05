@@ -182,6 +182,8 @@
   <string>C_ombD_blO_pnM_rkB_lw.glif</string>
   <key>CombDblOverline</key>
   <string>C_ombD_blO_verline.glif</string>
+  <key>CombDblParensAbv</key>
+  <string>C_ombD_blP_arensA_bv.glif</string>
   <key>CombDblPlusSgnAbv</key>
   <string>C_ombD_blP_lusS_gnA_bv.glif</string>
   <key>CombDblPlusSgnBlw</key>
@@ -282,6 +284,10 @@
   <string>C_ombL_ftH_alfR_ingB_lw.glif</string>
   <key>CombLftHarpoonBarbDwnBlw</key>
   <string>C_ombL_ftH_arpoonB_arbD_wnB_lw.glif</string>
+  <key>CombLftParenAbv</key>
+  <string>C_ombL_ftP_arenA_bv.glif</string>
+  <key>CombLftParenBlw</key>
+  <string>C_ombL_ftP_arenB_lw.glif</string>
   <key>CombLftRtArrwBlw</key>
   <string>C_ombL_ftR_tA_rrwB_lw.glif</string>
   <key>CombLftTackBlw</key>
@@ -362,6 +368,10 @@
   <string>C_ombO_verline.glif</string>
   <key>CombPalHook</key>
   <string>C_ombP_alH_ook.glif</string>
+  <key>CombParensAbv</key>
+  <string>C_ombP_arensA_bv.glif</string>
+  <key>CombParensBlw</key>
+  <string>C_ombP_arensB_lw.glif</string>
   <key>CombPlusSgnBlw</key>
   <string>C_ombP_lusS_gnB_lw.glif</string>
   <key>CombRetrHook</key>
@@ -390,6 +400,10 @@
   <string>C_ombR_tH_alfR_ingB_lw.glif</string>
   <key>CombRtHarpoonBarbDwnBlw</key>
   <string>C_ombR_tH_arpoonB_arbD_wnB_lw.glif</string>
+  <key>CombRtParenAbv</key>
+  <string>C_ombR_tP_arenA_bv.glif</string>
+  <key>CombRtParenBlw</key>
+  <string>C_ombR_tP_arenB_lw.glif</string>
   <key>CombRtTackBlw</key>
   <string>C_ombR_tT_ackB_lw.glif</string>
   <key>CombSeagullBlw</key>
@@ -402,6 +416,8 @@
   <string>C_ombS_nakeB_lw.glif</string>
   <key>CombSnakeBlwDep</key>
   <string>C_ombS_nakeB_lwD_ep.glif</string>
+  <key>CombSqBracketsAbv</key>
+  <string>C_ombS_qB_racketsA_bv.glif</string>
   <key>CombSqrBlw</key>
   <string>C_ombS_qrB_lw.glif</string>
   <key>CombStrongCentralizationStrkBlw</key>
@@ -1350,6 +1366,8 @@
   <string>D_blL_owL_ine.glif</string>
   <key>DblPrime</key>
   <string>D_blP_rime.glif</string>
+  <key>DblSolidus</key>
+  <string>D_blS_olidus.glif</string>
   <key>DblVertLine</key>
   <string>D_blV_ertL_ine.glif</string>
   <key>DegreeSgn</key>
@@ -1360,42 +1378,62 @@
   <string>D_igitE_ight.glif</string>
   <key>DigitEight.Sophia</key>
   <string>D_igitE_ight.S_ophia.glif</string>
+  <key>DigitEight.dnom</key>
+  <string>D_igitE_ight.dnom.glif</string>
   <key>DigitFive</key>
   <string>D_igitF_ive.glif</string>
   <key>DigitFive.Sophia</key>
   <string>D_igitF_ive.S_ophia.glif</string>
+  <key>DigitFive.dnom</key>
+  <string>D_igitF_ive.dnom.glif</string>
   <key>DigitFour</key>
   <string>D_igitF_our.glif</string>
   <key>DigitFour.Sophia</key>
   <string>D_igitF_our.S_ophia.glif</string>
+  <key>DigitFour.dnom</key>
+  <string>D_igitF_our.dnom.glif</string>
   <key>DigitNine</key>
   <string>D_igitN_ine.glif</string>
   <key>DigitNine.Sophia</key>
   <string>D_igitN_ine.S_ophia.glif</string>
+  <key>DigitNine.dnom</key>
+  <string>D_igitN_ine.dnom.glif</string>
   <key>DigitOne</key>
   <string>D_igitO_ne.glif</string>
   <key>DigitOne.Sophia</key>
   <string>D_igitO_ne.S_ophia.glif</string>
+  <key>DigitOne.dnom</key>
+  <string>D_igitO_ne.dnom.glif</string>
   <key>DigitSeven</key>
   <string>D_igitS_even.glif</string>
   <key>DigitSeven.Sophia</key>
   <string>D_igitS_even.S_ophia.glif</string>
+  <key>DigitSeven.dnom</key>
+  <string>D_igitS_even.dnom.glif</string>
   <key>DigitSix</key>
   <string>D_igitS_ix.glif</string>
   <key>DigitSix.Sophia</key>
   <string>D_igitS_ix.S_ophia.glif</string>
+  <key>DigitSix.dnom</key>
+  <string>D_igitS_ix.dnom.glif</string>
   <key>DigitThree</key>
   <string>D_igitT_hree.glif</string>
   <key>DigitThree.Sophia</key>
   <string>D_igitT_hree.S_ophia.glif</string>
+  <key>DigitThree.dnom</key>
+  <string>D_igitT_hree.dnom.glif</string>
   <key>DigitTwo</key>
   <string>D_igitT_wo.glif</string>
   <key>DigitTwo.Sophia</key>
   <string>D_igitT_wo.S_ophia.glif</string>
+  <key>DigitTwo.dnom</key>
+  <string>D_igitT_wo.dnom.glif</string>
   <key>DigitZero</key>
   <string>D_igitZ_ero.glif</string>
   <key>DigitZero.Sophia</key>
   <string>D_igitZ_ero.S_ophia.glif</string>
+  <key>DigitZero.dnom</key>
+  <string>D_igitZ_ero.dnom.glif</string>
   <key>DivSgn</key>
   <string>D_ivS_gn.glif</string>
   <key>DollarSgn</key>
@@ -1506,6 +1544,8 @@
   <string>F_racN_umtrO_ne.glif</string>
   <key>FracSlash</key>
   <string>F_racS_lash.glif</string>
+  <key>FracSlash.frac</key>
+  <string>F_racS_lash.frac.glif</string>
   <key>FrenchFrancSgn</key>
   <string>F_renchF_rancS_gn.glif</string>
   <key>FullStop</key>
