@@ -576,6 +576,7 @@ LtnSmDHook,uni0257,1300.81,1300.81,,,,,
 LtnSmDHook.TopBar,uni0257.TopBar,1300.82,1300.82,cv17,cv17,,0257,0257
 LtnSmDTail,uni0256,1300.86,1300.86,,,,,
 LtnSmDTailHook,uni1D91,1300.87,1300.87,,,,,
+LtnSmDMidLftHook,u1DF25,1300.88,1300.88,,,,,
 LtnSmDCurl,uni0221,1300.91,1300.91,,,,,
 LtnSmDTopbar,uni018C,1309.1,1309.1,,,,,
 LtnSmDBDigraph,uni0238,1310.1,1310.1,,,,,
@@ -1185,6 +1186,7 @@ ModSmLMiddleTilde,uniAB5E,2100.7423,2100.7423,,,,,
 LtnSmLStrk,lslash,2100.75,2100.75,,,,,
 LtnSmLRetrHook,uni026D,2100.86,2100.86,,,,,
 LtnSupSmLRetrHook,uni1DA9,2100.8622,2100.8622,,,,,
+LtnSmLMidLftHook,u1DF26,2100.88,2100.88,,,,,
 LtnSmLCurl,uni0234,2100.91,2100.91,,,,,
 LtnSmLBelt,uni026C,2100.92,2100.92,,,,,
 LtnSmLRetrHookBelt,uniA78E,2100.9286,2100.9286,,,,,
@@ -1294,6 +1296,7 @@ LtnSmEngPalHook,u1DF14,2300.8565,2300.8565,,,,,
 LtnSmRevEng,u1DF07,2300.859,2300.859,,,,,
 LtnSmNRetrHook,uni0273,2300.86,2300.86,,,,,
 ModSmNRetrHook,uni1DAF,2300.8623,2300.8623,,,,,
+LtnSmNMidLftHook,u1DF27,2300.88,2300.88,,,,,
 LtnSmNCurl,uni0235,2300.911,2300.911,,,,,
 LtnSmNDesc,uniA791,2300.93,2300.93,,,,,
 LtnSmNLngRtLeg,uni019E,2300.95,2300.95,,,,,
@@ -1559,6 +1562,7 @@ LtnSmRMiddleTilde,uni1D72,2700.74,2700.74,,,,,
 LtnSmRDiagStrk,uniA7A7,2700.75,2700.75,,,,,
 LtnSmRHookTail,uni027D,2700.86,2700.86,,,,,
 LtnSmRHookTail.LCStyle,uni027D.LCStyle,2700.87,2700.87,cv55,cv55,,027D,027D
+LtnSmRMidLftHook,u1DF28,2700.88,2700.88,,,,,
 LtnSmRLngLeg,uni027C,2700.95,2700.95,,,,,
 LtnSmRRotunda,uniA75B,2701.1,2701.1,,,,,
 LtnSmRumRotunda,uniA75D,2702.1,2702.1,,,,,
@@ -1632,6 +1636,7 @@ ModSmSHook,uni1DB3,2800.6423,2800.6423,,,,,
 LtnSmSPalHook,uni1D8A,2800.65,2800.65,,,,,
 LtnSmSMiddleTilde,uni1D74,2800.74,2800.74,,,,,
 LtnSmSDiagStrk,uniA7A9,2800.75,2800.75,,,,,
+LtnSmSMidLftHook,u1DF29,2800.88,2800.88,,,,,
 LtnSmSCurl,u1DF1E,2800.91,2800.91,,,,,
 LtnSmSSwashTail,uni023F,2800.93,2800.93,,,,,
 LtnSmTnTwo,uni01A8,2820.1,2820.1,,,,,
@@ -1684,6 +1689,7 @@ LtnSmTHook,uni01AD,2900.81,2900.81,,,,,
 LtnSmTHook.RtHook,uni01AD.RtHook,2900.82,2900.82,cv57,cv57,,01AD,01AD
 LtnSmTHookRetrHook,u1DF09,2900.8264,2900.8264,,,,,
 LtnSmTRetrHook,uni0288,2900.86,2900.86,,,,,
+LtnSmTMidLftHook,u1DF2A,2900.88,2900.88,,,,,
 LtnSmTCurl,uni0236,2900.91,2900.91,,,,,
 LtnSmLBeltPalHook,u1DF13,2900.929,2900.929,,,,,
 LtnSmTum,uniA777,2901.1,2901.1,,,,,
@@ -2249,6 +2255,7 @@ NotParallelTo,uni2226,5610.3,5610.3,,,,,
 TripleVertBar,uni2980,5615.1,5615.1,,,,,
 Perpendicular,uni27C2,5615.1,5615.1,,,,,
 TripleVertBar.bascl,uni2980.bascl,5615.11,5615.11,cv69,cv69,,2980,2980
+Asterism,uni2042,5619.1,5619.1,,,,,
 Therefore,uni2234,5620.1,5620.1,,,,,
 Because,uni2235,5621.1,5621.1,,,,,
 RefMrk,uni203B,5622.1,5622.1,,,,,
@@ -2653,6 +2660,8 @@ FaceFrown,uni2639,8003.1,8003.1,,,,,
 FaceNeutral,uni1F610,8005.1,8005.1,,,,,
 FaceSmile,uni263A,8007.1,8007.1,,,,,
 ShadowedWhiteCirc,uni274D,8013.2,8013.2,,,,,
+WhiteCirc,uni25CB,8014.1,8014.1,,,,,
+Fisheye,uni25C9,8051.1,8051.1,,,,,
 TriangularBullet,uni2023,8056.1,8056.1,,,,,
 DwnArrw,arrowdown,8070.1,8070.1,,,,,
 RomNumFiftyEarly,uni2186,8070.19,8070.19,,,,,
@@ -2722,6 +2731,7 @@ FemaleSgn,uni2640,8300.1,8300.1,,,,,
 MaleSgn,uni2642,8310.1,8310.1,,,,,
 MusicFlatSign,uni266D,8320.1,8320.1,,,,,
 MusicSharpSign,uni266F,8321.1,8321.1,,,,,
+LoopedSqr,uni2318,8330.1,8330.1,,,,,
 ModTnYinShang,uniA702,8401.1,8401.1,,,,,
 ModTnYinPing,uniA700,8402.1,8402.1,,,,,
 ModTnYinQu,uniA704,8403.1,8403.1,,,,,
@@ -3554,6 +3564,7 @@ LtnCapJCrossedTail.BarTop,uniA7B2.BarTop,31950.69,31950.69,,cv35,,,A7B2
 LtnSubSmL.TailL,uni2097.TailL,32100.21,32100.21,,cv39,,,2097
 LtnSmLCaron.Caron.TailL,lcaron.Caron.TailL,32100.334,32100.334,,cv39,,,013E
 LtnSmLHighBar.TailL,uniA749.TailL,32100.721,32100.721,,cv39,,,A749
+LtnSmLMidLftHook.TailL,u1DF26.TailL,32100.88,32100.88,,cv39,,,1DF26
 LtnSmL.TailL,l.TailL,32101.1,32101.1,,cv39,,,006C
 ModSmL.TailL,uni02E1.TailL,32101.23,32101.23,,cv39,,,02E1
 LtnSmLAcute.TailL,lacute.TailL,32101.311,32101.311,,cv39,,,013A
@@ -3585,6 +3596,7 @@ LtnSmQDiagStrk.DiagTail,uniA759.DiagTail,32653.1,32653.1,,cv52,,,A759
 LtnSmCapQ.DiagTail,uniA7AF.DiagTail,32670.1,32670.1,,cv52,,,A7AF
 LtnSubSmT.NoTailT,uni209C.NoTailT,32900.21,32900.21,,cv56,,,209C
 LtnSmTCaron.Caron.NoTailT,tcaron.Caron.NoTailT,32900.334,32900.334,,cv56,,,0165
+LtnSmTMidLftHook.NoTailT,u1DF2A.NoTailT,32900.88,32900.88,,cv56,,,1DF2A
 LtnSmLBeltPalHook.TailL,u1DF11.TailL,32900.929,32900.929,,cv39,,,1DF13
 LtnSmT.NoTailT,t.NoTailT,32901.1,32901.1,,cv56,,,0074
 LtnSupSmT.NoTailT,uni1D57.NoTailT,32901.22,32901.22,,cv56,,,1D57
