@@ -3248,6 +3248,10 @@
   <string>L_tnS_mA_E_gA_lef.glif</string>
   <key>LtnSmAEgAlef.SngStory</key>
   <string>L_tnS_mA_E_gA_lef.S_ngS_tory.glif</string>
+  <key>LtnSmAEgAlef.SngStory.sc</key>
+  <string>L_tnS_mA_E_gA_lef.S_ngS_tory.sc.glif</string>
+  <key>LtnSmAEgAlef.sc</key>
+  <string>L_tnS_mA_E_gA_lef.sc.glif</string>
   <key>LtnSmAGrave</key>
   <string>L_tnS_mA_G_rave.glif</string>
   <key>LtnSmAGrave.2StorySItal</key>
@@ -4274,6 +4278,8 @@
   <string>L_tnS_mI_D_otB_lw.sc.glif</string>
   <key>LtnSmIEgAlef</key>
   <string>L_tnS_mI_E_gA_lef.glif</string>
+  <key>LtnSmIEgAlef.sc</key>
+  <string>L_tnS_mI_E_gA_lef.sc.glif</string>
   <key>LtnSmIGrave</key>
   <string>L_tnS_mI_G_rave.glif</string>
   <key>LtnSmIGrave.SItal</key>
@@ -5530,6 +5536,8 @@
   <string>L_tnS_mU_D_otB_lw.sc.glif</string>
   <key>LtnSmUEgAlef</key>
   <string>L_tnS_mU_E_gA_lef.glif</string>
+  <key>LtnSmUEgAlef.sc</key>
+  <string>L_tnS_mU_E_gA_lef.sc.glif</string>
   <key>LtnSmUGrave</key>
   <string>L_tnS_mU_G_rave.glif</string>
   <key>LtnSmUGrave.sc</key>
@@ -6032,6 +6040,8 @@
   <string>L_tnS_upS_mO_pnO_.T_opS_erif.glif</string>
   <key>LtnSupSmP</key>
   <string>L_tnS_upS_mP_.glif</string>
+  <key>LtnSupSmQ</key>
+  <string>L_tnS_upS_mQ_.glif</string>
   <key>LtnSupSmRamsHorn</key>
   <string>L_tnS_upS_mR_amsH_orn.glif</string>
   <key>LtnSupSmRamsHornDep</key>
@@ -6168,6 +6178,8 @@
   <string>M_odA_cuteA_ccent.C_hinantecT_n.glif</string>
   <key>ModAcuteAccentDep</key>
   <string>M_odA_cuteA_ccentD_ep.glif</string>
+  <key>ModAlveolarClick</key>
+  <string>M_odA_lveolarC_lick.glif</string>
   <key>ModApos</key>
   <string>M_odA_pos.glif</string>
   <key>ModApos.Lrg</key>
@@ -6176,6 +6188,8 @@
   <string>M_odB_eginH_ighT_n.glif</string>
   <key>ModBeginLowTn</key>
   <string>M_odB_eginL_owT_n.glif</string>
+  <key>ModBilabialClick</key>
+  <string>M_odB_ilabialC_lick.glif</string>
   <key>ModCapA</key>
   <string>M_odC_apA_.glif</string>
   <key>ModCapAe</key>
@@ -6184,10 +6198,14 @@
   <string>M_odC_apB_.glif</string>
   <key>ModCapBarredB</key>
   <string>M_odC_apB_arredB_.glif</string>
+  <key>ModCapC</key>
+  <string>M_odC_apC_.glif</string>
   <key>ModCapD</key>
   <string>M_odC_apD_.glif</string>
   <key>ModCapE</key>
   <string>M_odC_apE_.glif</string>
+  <key>ModCapF</key>
+  <string>M_odC_apF_.glif</string>
   <key>ModCapG</key>
   <string>M_odC_apG_.glif</string>
   <key>ModCapH</key>
@@ -6212,6 +6230,8 @@
   <string>M_odC_apO_u.O_penT_op.glif</string>
   <key>ModCapP</key>
   <string>M_odC_apP_.glif</string>
+  <key>ModCapQ</key>
+  <string>M_odC_apQ_.glif</string>
   <key>ModCapR</key>
   <string>M_odC_apR_.glif</string>
   <key>ModCapRevE</key>
@@ -6258,6 +6278,8 @@
   <string>M_odD_blA_pos.glif</string>
   <key>ModDblPrime</key>
   <string>M_odD_blP_rime.glif</string>
+  <key>ModDentalClick</key>
+  <string>M_odD_entalC_lick.glif</string>
   <key>ModDwnArrwhd</key>
   <string>M_odD_wnA_rrwhd.glif</string>
   <key>ModDwnTack</key>
@@ -6270,6 +6292,8 @@
   <string>M_odG_lottalS_top.glif</string>
   <key>ModGlottalStopDep</key>
   <string>M_odG_lottalS_topD_ep.glif</string>
+  <key>ModGlottalStopStrk</key>
+  <string>M_odG_lottalS_topS_trk.glif</string>
   <key>ModGraveAccent</key>
   <string>M_odG_raveA_ccent.glif</string>
   <key>ModGraveAccent.ChinantecTn</key>
@@ -6278,6 +6302,8 @@
   <string>M_odG_raveA_ccentD_ep.glif</string>
   <key>ModHalfTriangularColon</key>
   <string>M_odH_alfT_riangularC_olon.glif</string>
+  <key>ModLateralClick</key>
+  <string>M_odL_ateralC_lick.glif</string>
   <key>ModLftArrwhd</key>
   <string>M_odL_ftA_rrwhd.glif</string>
   <key>ModLftHalfRing</key>
@@ -6354,10 +6380,14 @@
   <string>M_odR_aisedU_pA_rrw.glif</string>
   <key>ModRaisedUpArrwDep</key>
   <string>M_odR_aisedU_pA_rrwD_ep.glif</string>
+  <key>ModRetroflexClickRetrHook</key>
+  <string>M_odR_etroflexC_lickR_etrH_ook.glif</string>
   <key>ModRevComma</key>
   <string>M_odR_evC_omma.glif</string>
   <key>ModRevGlottalStop</key>
   <string>M_odR_evG_lottalS_top.glif</string>
+  <key>ModRevGlottalStopStrk</key>
+  <string>M_odR_evG_lottalS_topS_trk.glif</string>
   <key>ModRhoticHook</key>
   <string>M_odR_hoticH_ook.glif</string>
   <key>ModRtArrwhd</key>
@@ -6374,6 +6404,8 @@
   <string>M_odS_hortE_qS_gnD_ep.glif</string>
   <key>ModSmAin</key>
   <string>M_odS_mA_in.glif</string>
+  <key>ModSmBHook</key>
+  <string>M_odS_mB_H_ook.glif</string>
   <key>ModSmBeta</key>
   <string>M_odS_mB_eta.glif</string>
   <key>ModSmBottomHalfO</key>
@@ -6382,6 +6414,16 @@
   <string>M_odS_mC_.glif</string>
   <key>ModSmCDep</key>
   <string>M_odS_mC_D_ep.glif</string>
+  <key>ModSmCapAADigraph</key>
+  <string>M_odS_mC_apA_A_D_igraph.glif</string>
+  <key>ModSmCapB</key>
+  <string>M_odS_mC_apB_.glif</string>
+  <key>ModSmCapG</key>
+  <string>M_odS_mC_apG_.glif</string>
+  <key>ModSmCapGHook</key>
+  <string>M_odS_mC_apG_H_ook.glif</string>
+  <key>ModSmCapH</key>
+  <string>M_odS_mC_apH_.glif</string>
   <key>ModSmCapHDblStrk</key>
   <string>M_odS_mC_apH_D_blS_trk.glif</string>
   <key>ModSmCapIStrk</key>
@@ -6392,12 +6434,16 @@
   <string>M_odS_mC_apI_nvR_.glif</string>
   <key>ModSmCapL</key>
   <string>M_odS_mC_apL_.glif</string>
+  <key>ModSmCapLBelt</key>
+  <string>M_odS_mC_apL_B_elt.glif</string>
   <key>ModSmCapLDep</key>
   <string>M_odS_mC_apL_D_ep.glif</string>
   <key>ModSmCapN</key>
   <string>M_odS_mC_apN_.glif</string>
   <key>ModSmCapNDep</key>
   <string>M_odS_mC_apN_D_ep.glif</string>
+  <key>ModSmCapR</key>
+  <string>M_odS_mC_apR_.glif</string>
   <key>ModSmCapU</key>
   <string>M_odS_mC_apU_.glif</string>
   <key>ModSmCapUBar</key>
@@ -6406,12 +6452,34 @@
   <string>M_odS_mC_apU_D_ep.glif</string>
   <key>ModSmChi</key>
   <string>M_odS_mC_hi.glif</string>
+  <key>ModSmClosedOmega</key>
+  <string>M_odS_mC_losedO_mega.glif</string>
+  <key>ModSmDHook</key>
+  <string>M_odS_mD_H_ook.glif</string>
+  <key>ModSmDTail</key>
+  <string>M_odS_mD_T_ail.glif</string>
+  <key>ModSmDTailHook</key>
+  <string>M_odS_mD_T_ailH_ook.glif</string>
   <key>ModSmDelta</key>
   <string>M_odS_mD_elta.glif</string>
+  <key>ModSmDezhDigraph</key>
+  <string>M_odS_mD_ezhD_igraph.glif</string>
+  <key>ModSmDotlessJStrkHook</key>
+  <string>M_odS_mD_otlessJ_S_trkH_ook.glif</string>
+  <key>ModSmDzDigraph</key>
+  <string>M_odS_mD_zD_igraph.glif</string>
+  <key>ModSmDzDigraphCurl</key>
+  <string>M_odS_mD_zD_igraphC_url.glif</string>
+  <key>ModSmDzRetrHook</key>
+  <string>M_odS_mD_zR_etrH_ook.glif</string>
   <key>ModSmEth</key>
   <string>M_odS_mE_th.glif</string>
   <key>ModSmEthDep</key>
   <string>M_odS_mE_thD_ep.glif</string>
+  <key>ModSmFengDigraph</key>
+  <string>M_odS_mF_engD_igraph.glif</string>
+  <key>ModSmGHook</key>
+  <string>M_odS_mG_H_ook.glif</string>
   <key>ModSmGamma</key>
   <string>M_odS_mG_amma.glif</string>
   <key>ModSmGrGamma</key>
@@ -6428,6 +6496,8 @@
   <string>M_odS_mH_S_trkD_ep.glif</string>
   <key>ModSmHeng</key>
   <string>M_odS_mH_eng.glif</string>
+  <key>ModSmHengHook</key>
+  <string>M_odS_mH_engH_ook.glif</string>
   <key>ModSmIota</key>
   <string>M_odS_mI_ota.glif</string>
   <key>ModSmIotaDep</key>
@@ -6444,12 +6514,24 @@
   <string>M_odS_mJ_C_rossedT_ailD_ep.glif</string>
   <key>ModSmL</key>
   <string>M_odS_mL_.glif</string>
+  <key>ModSmLBelt</key>
+  <string>M_odS_mL_B_elt.glif</string>
   <key>ModSmLMiddleTilde</key>
   <string>M_odS_mL_M_iddleT_ilde.glif</string>
   <key>ModSmLPalHook</key>
   <string>M_odS_mL_P_alH_ook.glif</string>
   <key>ModSmLPalHookDep</key>
   <string>M_odS_mL_P_alH_ookD_ep.glif</string>
+  <key>ModSmLRetrHookBelt</key>
+  <string>M_odS_mL_R_etrH_ookB_elt.glif</string>
+  <key>ModSmLSDigraph</key>
+  <string>M_odS_mL_S_D_igraph.glif</string>
+  <key>ModSmLZDigraph</key>
+  <string>M_odS_mL_Z_D_igraph.glif</string>
+  <key>ModSmLezh</key>
+  <string>M_odS_mL_ezh.glif</string>
+  <key>ModSmLezhRetrHook</key>
+  <string>M_odS_mL_ezhR_etrH_ook.glif</string>
   <key>ModSmMHook</key>
   <string>M_odS_mM_H_ook.glif</string>
   <key>ModSmMHookDep</key>
@@ -6464,10 +6546,16 @@
   <string>M_odS_mP_hiD_ep.glif</string>
   <key>ModSmR</key>
   <string>M_odS_mR_.glif</string>
+  <key>ModSmRFishhook</key>
+  <string>M_odS_mR_F_ishhook.glif</string>
+  <key>ModSmRHookTail</key>
+  <string>M_odS_mR_H_ookT_ail.glif</string>
   <key>ModSmRevGlottalStop</key>
   <string>M_odS_mR_evG_lottalS_top.glif</string>
   <key>ModSmS</key>
   <string>M_odS_mS_.glif</string>
+  <key>ModSmSCurl</key>
+  <string>M_odS_mS_C_url.glif</string>
   <key>ModSmSHook</key>
   <string>M_odS_mS_H_ook.glif</string>
   <key>ModSmSHookDep</key>
@@ -6478,6 +6566,12 @@
   <string>M_odS_mT_P_alH_ook.glif</string>
   <key>ModSmTPalHookDep</key>
   <string>M_odS_mT_P_alH_ookD_ep.glif</string>
+  <key>ModSmTRetrHook</key>
+  <string>M_odS_mT_R_etrH_ook.glif</string>
+  <key>ModSmTcDigraphCurl</key>
+  <string>M_odS_mT_cD_igraphC_url.glif</string>
+  <key>ModSmTeshDigraph</key>
+  <string>M_odS_mT_eshD_igraph.glif</string>
   <key>ModSmTheta</key>
   <string>M_odS_mT_heta.glif</string>
   <key>ModSmThetaDep</key>
@@ -6494,12 +6588,22 @@
   <string>M_odS_mT_rndR_.glif</string>
   <key>ModSmTrndRHook</key>
   <string>M_odS_mT_rndR_H_ook.glif</string>
+  <key>ModSmTsDigraph</key>
+  <string>M_odS_mT_sD_igraph.glif</string>
+  <key>ModSmTsHook</key>
+  <string>M_odS_mT_sH_ook.glif</string>
   <key>ModSmTurnedH</key>
   <string>M_odS_mT_urnedH_.glif</string>
   <key>ModSmTurnedHDep</key>
   <string>M_odS_mT_urnedH_D_ep.glif</string>
+  <key>ModSmTurnedRLngLeg</key>
+  <string>M_odS_mT_urnedR_L_ngL_eg.glif</string>
+  <key>ModSmTurnedRLngLegHook</key>
+  <string>M_odS_mT_urnedR_L_ngL_egH_ook.glif</string>
   <key>ModSmTurnedY</key>
   <string>M_odS_mT_urnedY_.glif</string>
+  <key>ModSmTurnedYBelt</key>
+  <string>M_odS_mT_urnedY_B_elt.glif</string>
   <key>ModSmTurnedYDep</key>
   <string>M_odS_mT_urnedY_D_ep.glif</string>
   <key>ModSmVHook</key>
@@ -6510,6 +6614,8 @@
   <string>M_odS_mV_H_ook.S_traightL_ftH_ighH_ook.glif</string>
   <key>ModSmVHookDep</key>
   <string>M_odS_mV_H_ookD_ep.glif</string>
+  <key>ModSmVRtHook</key>
+  <string>M_odS_mV_R_tH_ook.glif</string>
   <key>ModSmW</key>
   <string>M_odS_mW_.glif</string>
   <key>ModSmX</key>
@@ -6524,6 +6630,10 @@
   <string>M_odS_tressH_ighT_n.glif</string>
   <key>ModStressLowTn</key>
   <string>M_odS_tressL_owT_n.glif</string>
+  <key>ModSupHalfTriangularColon</key>
+  <string>M_odS_upH_alfT_riangularC_olon.glif</string>
+  <key>ModSupTriangularColon</key>
+  <string>M_odS_upT_riangularC_olon.glif</string>
   <key>ModTnYangPing</key>
   <string>M_odT_nY_angP_ing.glif</string>
   <key>ModTnYangPingDep</key>
