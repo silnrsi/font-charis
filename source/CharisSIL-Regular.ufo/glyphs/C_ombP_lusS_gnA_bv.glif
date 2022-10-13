@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CombPlusSgnAbv" format="2">
+  <unicode hex="1AC8"/>
+  <anchor x="-557" y="-500" name="L"/>
+  <anchor x="-557" y="-100" name="_L"/>
+  <outline>
+    <component base="CombPlusSgnBlw"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.18,0.16,0.78,1</string>
+    </dict>
+  </lib>
+</glyph>
