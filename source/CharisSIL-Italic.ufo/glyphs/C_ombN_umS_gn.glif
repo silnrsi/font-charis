@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CombNumSgn" format="2">
+  <advance width="1004"/>
+  <unicode hex="1AC6"/>
+  <outline>
+    <contour>
+      <point x="932" y="1677" type="line"/>
+      <point x="931" y="1740" type="line"/>
+      <point x="742" y="1740" type="line"/>
+      <point x="840" y="2010" type="line"/>
+      <point x="770" y="2030" type="line"/>
+      <point x="667" y="1740" type="line"/>
+      <point x="470" y="1740" type="line"/>
+      <point x="569" y="2010" type="line"/>
+      <point x="499" y="2030" type="line"/>
+      <point x="396" y="1740" type="line"/>
+      <point x="155" y="1740" type="line"/>
+      <point x="156" y="1677" type="line"/>
+      <point x="374" y="1677" type="line"/>
+      <point x="310" y="1501" type="line"/>
+      <point x="97" y="1501" type="line"/>
+      <point x="98" y="1440" type="line"/>
+      <point x="290" y="1440" type="line"/>
+      <point x="187" y="1153" type="line"/>
+      <point x="255" y="1132" type="line"/>
+      <point x="364" y="1440" type="line"/>
+      <point x="560" y="1440" type="line"/>
+      <point x="458" y="1152" type="line"/>
+      <point x="526" y="1132" type="line"/>
+      <point x="636" y="1440" type="line"/>
+      <point x="876" y="1440" type="line"/>
+      <point x="875" y="1501" type="line"/>
+      <point x="658" y="1501" type="line"/>
+      <point x="720" y="1677" type="line"/>
+    </contour>
+    <contour>
+      <point x="644" y="1677" type="line"/>
+      <point x="582" y="1501" type="line"/>
+      <point x="386" y="1501" type="line"/>
+      <point x="448" y="1677" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.18,0.16,0.78,1</string>
+    </dict>
+  </lib>
+</glyph>

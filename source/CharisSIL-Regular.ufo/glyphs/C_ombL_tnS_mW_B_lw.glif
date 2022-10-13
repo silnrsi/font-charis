@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CombLtnSmWBlw" format="2">
+  <advance width="1042"/>
+  <unicode hex="1ABF"/>
+  <anchor x="521" y="-825" name="L"/>
+  <anchor x="540" y="-105" name="U"/>
+  <outline>
+    <contour>
+      <point x="1029" y="-221" type="line"/>
+      <point x="1029" y="-173" type="line"/>
+      <point x="796" y="-173" type="line"/>
+      <point x="796" y="-221" type="line"/>
+      <point x="857" y="-224" type="line" smooth="yes"/>
+      <point x="872" y="-226"/>
+      <point x="880" y="-239"/>
+      <point x="876" y="-251" type="curve" smooth="yes"/>
+      <point x="753" y="-634" type="line"/>
+      <point x="599" y="-173" type="line"/>
+      <point x="504" y="-173" type="line"/>
+      <point x="333" y="-634" type="line"/>
+      <point x="222" y="-251" type="line" smooth="yes"/>
+      <point x="218" y="-238"/>
+      <point x="228" y="-226"/>
+      <point x="242" y="-224" type="curve" smooth="yes"/>
+      <point x="305" y="-221" type="line"/>
+      <point x="305" y="-173" type="line"/>
+      <point x="13" y="-173" type="line"/>
+      <point x="13" y="-221" type="line"/>
+      <point x="86" y="-228" type="line"/>
+      <point x="257" y="-765" type="line"/>
+      <point x="352" y="-765" type="line"/>
+      <point x="527" y="-305" type="line"/>
+      <point x="684" y="-765" type="line"/>
+      <point x="779" y="-765" type="line"/>
+      <point x="961" y="-228" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.18,0.16,0.78,1</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CombLtnSmInsularT" format="2">
+  <advance width="629"/>
+  <unicode hex="1ACE"/>
+  <anchor x="323" y="1100" name="L"/>
+  <anchor x="315" y="1820" name="U"/>
+  <outline>
+    <contour>
+      <point x="578" y="1664" type="line"/>
+      <point x="578" y="1752" type="line"/>
+      <point x="49" y="1752" type="line"/>
+      <point x="49" y="1664" type="line"/>
+    </contour>
+    <contour>
+      <point x="351" y="1746" type="line"/>
+      <point x="200" y="1658"/>
+      <point x="61" y="1538"/>
+      <point x="61" y="1392" type="curve" smooth="yes"/>
+      <point x="61" y="1258"/>
+      <point x="147" y="1145"/>
+      <point x="353" y="1145" type="curve" smooth="yes"/>
+      <point x="443" y="1145"/>
+      <point x="518" y="1176"/>
+      <point x="578" y="1206" type="curve"/>
+      <point x="578" y="1276" type="line"/>
+      <point x="521" y="1241"/>
+      <point x="460" y="1222"/>
+      <point x="398" y="1222" type="curve" smooth="yes"/>
+      <point x="249" y="1222"/>
+      <point x="197" y="1308"/>
+      <point x="197" y="1420" type="curve" smooth="yes"/>
+      <point x="197" y="1521"/>
+      <point x="239" y="1626"/>
+      <point x="363" y="1720" type="curve"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.18,0.16,0.78,1</string>
+    </dict>
+  </lib>
+</glyph>
