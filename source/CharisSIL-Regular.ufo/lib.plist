@@ -2444,6 +2444,7 @@
     <string>ModLowVertLine</string>
     <string>ModVertLine</string>
     <string>MeasuredAngle</string>
+    <string>DivisionSlash</string>
     <string>DblSolidus</string>
     <string>CombShortSolidusOverlay</string>
     <string>CombLngSolidusOverlay</string>
@@ -5384,6 +5385,8 @@
     <string>zero.dnom</string>
     <key>DivSgn</key>
     <string>divide</string>
+    <key>DivisionSlash</key>
+    <string>uni2215</string>
     <key>DollarSgn</key>
     <string>dollar</string>
     <key>DongSgn</key>
