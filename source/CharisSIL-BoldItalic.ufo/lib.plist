@@ -850,6 +850,7 @@
     <string>CySmSchwa</string>
     <string>LtnSubSmSchwa</string>
     <string>LtnSupSmSchwa</string>
+    <string>ModCySmSchwa</string>
     <string>CySmSchwaDiaer</string>
     <string>LtnSmSchwaRetrHook</string>
     <string>LtnSmSchwaHook</string>
@@ -1134,8 +1135,11 @@
     <string>CySmByelorusUkrainI</string>
     <string>SmRomNumOne</string>
     <string>LtnSubSmI</string>
+    <string>CySubSmByelorusUkrainI</string>
     <string>LtnSupSmI</string>
+    <string>ModCySmByelorusUkrainI</string>
     <string>CombLtnSmI</string>
+    <string>CombCySmByelorusUkrainI</string>
     <string>LtnSmIAcute.SItal</string>
     <string>LtnSmIGrave.SItal</string>
     <string>LtnSmIDblGrave</string>
@@ -1230,6 +1234,7 @@
     <string>CySmJe</string>
     <string>LtnSubSmJ</string>
     <string>ModSmJ</string>
+    <string>ModCySmJe</string>
     <string>LtnSmJCircum</string>
     <string>LtnSmJCaron</string>
     <string>LtnSmJStrk</string>
@@ -1564,6 +1569,7 @@
     <string>LtnSmBarredO</string>
     <string>CySmBarredO</string>
     <string>LtnSupSmBarredO</string>
+    <string>ModCySmBarredO</string>
     <string>CySmBarredODiaer</string>
     <string>GrSmTheta</string>
     <string>GrThetaSym</string>
@@ -4081,6 +4087,8 @@
     <string>uni0315</string>
     <key>CombCommaBlw</key>
     <string>uni0326</string>
+    <key>CombCySmByelorusUkrainI</key>
+    <string>u1E08F</string>
     <key>CombDblAcute</key>
     <string>uni030B</string>
     <key>CombDblBreve</key>
@@ -5311,6 +5319,8 @@
     <string>uni04DD</string>
     <key>CySmZheDiaer.sc</key>
     <string>uni04DD.sc</string>
+    <key>CySubSmByelorusUkrainI</key>
+    <string>u1E068</string>
     <key>Dagger</key>
     <string>dagger</string>
     <key>DblAcuteAccent</key>
@@ -10233,8 +10243,16 @@
     <string>uni02D2</string>
     <key>ModCrossAccent</key>
     <string>uni02DF</string>
+    <key>ModCySmBarredO</key>
+    <string>u1E04E</string>
+    <key>ModCySmByelorusUkrainI</key>
+    <string>u1E04C</string>
     <key>ModCySmEn</key>
     <string>uni1D78</string>
+    <key>ModCySmJe</key>
+    <string>u1E04D</string>
+    <key>ModCySmSchwa</key>
+    <string>u1E04B</string>
     <key>ModDblApos</key>
     <string>uni02EE</string>
     <key>ModDblPrime</key>
