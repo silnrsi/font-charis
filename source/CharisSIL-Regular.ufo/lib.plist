@@ -394,8 +394,10 @@
     <string>CySmA</string>
     <string>LtnSubSmA</string>
     <string>LtnSubSmA.SngStory</string>
+    <string>CySubSmA</string>
     <string>LtnSupSmA</string>
     <string>LtnSupSmA.SngStory</string>
+    <string>ModCySmA</string>
     <string>CombLtnSmA</string>
     <string>CombLtnSmA.SngStory</string>
     <string>LtnSmADblGrave</string>
@@ -616,14 +618,23 @@
     <string>LtnSmTnSix</string>
     <string>LtnSmBTopbar</string>
     <string>CySmBe</string>
+    <string>CySubSmBe</string>
+    <string>ModCySmBe</string>
     <string>CySmBe.Serb</string>
+    <string>CySubSmBe.Serb</string>
+    <string>ModCySmBe.Serb</string>
     <string>CySmSoftSgn</string>
     <string>CySmSemisoftSgn</string>
     <string>CySmHardSgn</string>
+    <string>CySubSmHardSgn</string>
     <string>CySmYat</string>
     <string>CySmYeru</string>
+    <string>CySubSmYeru</string>
+    <string>ModCySmYeru</string>
     <string>CySmYeruDiaer</string>
     <string>CySmVe</string>
+    <string>CySubSmVe</string>
+    <string>ModCySmVe</string>
     <string>CyCapVe</string>
     <string>ModCapB</string>
     <string>LtnSmCapB</string>
@@ -656,7 +667,9 @@
     <string>LtnCapSharpS</string>
     <string>CySmEs</string>
     <string>SmRomNumOneHundred</string>
+    <string>CySubSmEs</string>
     <string>ModSmC</string>
+    <string>ModCySmEs</string>
     <string>CombLtnSmC</string>
     <string>LtnSmCAcute</string>
     <string>LtnSmCCircum</string>
@@ -664,6 +677,7 @@
     <string>LtnSmCDotAbv</string>
     <string>LtnSmCCedillaAcute</string>
     <string>CySmEsDesc</string>
+    <string>ModCySmEsDesc</string>
     <string>LtnSmCRetrHook</string>
     <string>LtnSmCPalHook</string>
     <string>LtnSmCBar</string>
@@ -685,6 +699,7 @@
     <string>LtnSmSdwysOpnO</string>
     <string>CySmUkrainIe</string>
     <string>CySmE</string>
+    <string>ModCySmE</string>
     <string>CySmEDiaer</string>
     <string>CySmE.MongolStyle</string>
     <string>CyCapEs</string>
@@ -796,6 +811,8 @@
     <string>RomNumOneHundredThousand</string>
     <string>DrachmaSgn</string>
     <string>CySmIe</string>
+    <string>CySubSmIe</string>
+    <string>ModCySmIe</string>
     <string>LtnSubSmE</string>
     <string>LtnSupSmE</string>
     <string>CombLtnSmE</string>
@@ -858,6 +875,8 @@
     <string>LtnSupSmClosedRevOpnE</string>
     <string>CySmRevZe</string>
     <string>CySmZe</string>
+    <string>CySubSmZe</string>
+    <string>ModCySmZe</string>
     <string>CySmZeDiaer</string>
     <string>CySmZeDesc</string>
     <string>CySmKomiDzje</string>
@@ -941,10 +960,15 @@
     <string>LtnSmLngSHighStrk</string>
     <string>LtnSmLngSDiagStrk</string>
     <string>CySmGhe</string>
+    <string>CySubSmGhe</string>
+    <string>ModCySmGhe</string>
     <string>CySmGhe.Serb</string>
+    <string>CySubSmGhe.Serb</string>
+    <string>ModCySmGhe.Serb</string>
     <string>CySmGje</string>
     <string>CySmGje.Serb</string>
     <string>CySmGheUpturn</string>
+    <string>CySubSmGheUpturn</string>
     <string>CySmGheDesc</string>
     <string>CySmGheStrk</string>
     <string>CySmGheStrk.SItal</string>
@@ -1070,12 +1094,21 @@
     <string>CySmKomiNje</string>
     <string>CySmEnMiddleHook</string>
     <string>CySmPe</string>
+    <string>CySubSmPe</string>
+    <string>ModCySmPe</string>
     <string>CySmPe.Serb</string>
+    <string>CySubSmPe.Serb</string>
+    <string>ModCySmPe.Serb</string>
     <string>CySmPeDesc</string>
     <string>CySmPeMiddleHook</string>
     <string>CySmDzhe</string>
+    <string>CySubSmDzhe</string>
     <string>CySmTse</string>
+    <string>CySubSmTse</string>
+    <string>ModCySmTse</string>
     <string>CySmSha</string>
+    <string>CySubSmSha</string>
+    <string>ModCySmSha</string>
     <string>CySmShcha</string>
     <string>GrSmCapPi</string>
     <string>CyCapEn</string>
@@ -1183,9 +1216,11 @@
     <string>ModSmIota</string>
     <string>LtnSmIotaStrk</string>
     <string>CySmYu</string>
+    <string>ModCySmYu</string>
     <string>CyCapByelorusUkrainI</string>
     <string>CyPalochka</string>
     <string>CySmPalochka</string>
+    <string>ModCySmPalochka</string>
     <string>RomNumOne</string>
     <string>ModCapI</string>
     <string>LtnSmCapI</string>
@@ -1243,6 +1278,8 @@
     <string>ModSmDotlessJStrkHook</string>
     <string>LtnSmIs</string>
     <string>CySmEl</string>
+    <string>CySubSmEl</string>
+    <string>ModCySmEl</string>
     <string>CySmElDesc</string>
     <string>CySmElTail</string>
     <string>CySmLje</string>
@@ -1250,7 +1287,11 @@
     <string>CySmKomiLje</string>
     <string>CySmElMiddleHook</string>
     <string>CySmDe</string>
+    <string>CySubSmDe</string>
+    <string>ModCySmDe</string>
     <string>CySmDe.Serb</string>
+    <string>CySubSmDe.Serb</string>
+    <string>ModCySmDe.Serb</string>
     <string>CySmDeZheLig</string>
     <string>CySmLha</string>
     <string>CyCapJe</string>
@@ -1290,6 +1331,8 @@
     <string>LtnSmRevK</string>
     <string>LtnSmKra</string>
     <string>CySmKa</string>
+    <string>CySubSmKa</string>
+    <string>ModCySmKa</string>
     <string>CySmKje</string>
     <string>CySmKaDesc</string>
     <string>CySmBashkirKa</string>
@@ -1298,6 +1341,8 @@
     <string>CySmKaHook</string>
     <string>CySmAleutKa</string>
     <string>CySmZhe</string>
+    <string>CySubSmZhe</string>
+    <string>ModCySmZhe</string>
     <string>CySmZheBreve</string>
     <string>CySmZheDiaer</string>
     <string>CySmZheDesc</string>
@@ -1432,6 +1477,7 @@
     <string>LtnSupSmTurnedMLngLeg</string>
     <string>LtnSmSdwysTrndM</string>
     <string>CySmEm</string>
+    <string>ModCySmEm</string>
     <string>CySmEmTail</string>
     <string>CyCapEm</string>
     <string>RomNumOneThousand</string>
@@ -1481,6 +1527,8 @@
     <string>LtnSmNLngRtLeg</string>
     <string>LtnSmNj</string>
     <string>CySmI</string>
+    <string>CySubSmI</string>
+    <string>ModCySmI</string>
     <string>CySmIGrave</string>
     <string>CySmShortI</string>
     <string>CySmShortITail</string>
@@ -1520,7 +1568,9 @@
     <string>CyCapIMacron</string>
     <string>CySmO</string>
     <string>LtnSubSmO</string>
+    <string>CySubSmO</string>
     <string>LtnSupSmO</string>
+    <string>ModCySmO</string>
     <string>CombLtnSmO</string>
     <string>LtnSmODblAcute</string>
     <string>LtnSmODblGrave</string>
@@ -1655,6 +1705,7 @@
     <string>LtnBilabialClick</string>
     <string>ModBilabialClick</string>
     <string>CySmEr</string>
+    <string>ModCySmEr</string>
     <string>LtnSubSmP</string>
     <string>LtnSupSmP</string>
     <string>LtnSmPAcute</string>
@@ -1678,6 +1729,8 @@
     <string>LtnSmPhi</string>
     <string>ModSmPhi</string>
     <string>CySmEf</string>
+    <string>CySubSmEf</string>
+    <string>ModCySmEf</string>
     <string>GrSmPhi</string>
     <string>GrSubSmPhi</string>
     <string>ModSmGrPhi</string>
@@ -1802,6 +1855,7 @@
     <string>CySmYae</string>
     <string>CyCapYae</string>
     <string>CySmDze</string>
+    <string>CySubSmDze</string>
     <string>LtnSubSmS</string>
     <string>ModSmS</string>
     <string>LtnSmSAcute</string>
@@ -1894,7 +1948,9 @@
     <string>LtnSmTurnedT</string>
     <string>LtnSmTurnedTCurl</string>
     <string>CySmTe</string>
+    <string>ModCySmTe</string>
     <string>CySmTe.Serb</string>
+    <string>ModCySmTe.Serb</string>
     <string>CySmTeDesc</string>
     <string>CySmKomiTje</string>
     <string>CySmLigTeTse</string>
@@ -2097,7 +2153,9 @@
     <string>CySmHa</string>
     <string>SmRomNumTen</string>
     <string>LtnSubSmX</string>
+    <string>CySubSmHa</string>
     <string>ModSmX</string>
+    <string>ModCySmHa</string>
     <string>CombLtnSmX</string>
     <string>LtnSmXDiaer</string>
     <string>LtnSmXDotAbv</string>
@@ -2122,6 +2180,8 @@
     <string>RomNumTwelve</string>
     <string>LtnCapChi</string>
     <string>CySmU</string>
+    <string>CySubSmU</string>
+    <string>ModCySmU</string>
     <string>ModSmY</string>
     <string>LtnSmYAcute</string>
     <string>CySmUDblAcute</string>
@@ -2143,7 +2203,9 @@
     <string>LtnSmYHook</string>
     <string>LtnSmYLoop</string>
     <string>CySmStraightU</string>
+    <string>ModCySmStraightU</string>
     <string>CySmStraightUStrk</string>
+    <string>ModCySmStraightUStrk</string>
     <string>LtnSmTurnedY</string>
     <string>ModSmTurnedY</string>
     <string>LtnSmTurnedYBelt</string>
@@ -2151,6 +2213,8 @@
     <string>GrSmLamda</string>
     <string>LtnSmLambdaStrk</string>
     <string>CySmChe</string>
+    <string>CySubSmChe</string>
+    <string>ModCySmChe</string>
     <string>CySmCheDiaer</string>
     <string>CySmCheVertStrk</string>
     <string>CySmCheDesc</string>
@@ -5307,8 +5371,66 @@
     <string>uni04DD</string>
     <key>CySmZheDiaer.sc</key>
     <string>uni04DD.sc</string>
+    <key>CySubSmA</key>
+    <string>u1E051</string>
+    <key>CySubSmBe</key>
+    <string>u1E052</string>
+    <key>CySubSmBe.Serb</key>
+    <string>u1E052.Serb</string>
     <key>CySubSmByelorusUkrainI</key>
     <string>u1E068</string>
+    <key>CySubSmChe</key>
+    <string>u1E063</string>
+    <key>CySubSmDe</key>
+    <string>u1E055</string>
+    <key>CySubSmDe.Serb</key>
+    <string>u1E055.Serb</string>
+    <key>CySubSmDze</key>
+    <string>u1E069</string>
+    <key>CySubSmDzhe</key>
+    <string>u1E06A</string>
+    <key>CySubSmEf</key>
+    <string>u1E060</string>
+    <key>CySubSmEl</key>
+    <string>u1E05B</string>
+    <key>CySubSmEs</key>
+    <string>u1E05E</string>
+    <key>CySubSmGhe</key>
+    <string>u1E054</string>
+    <key>CySubSmGhe.Serb</key>
+    <string>u1E054.Serb</string>
+    <key>CySubSmGheUpturn</key>
+    <string>u1E067</string>
+    <key>CySubSmHa</key>
+    <string>u1E061</string>
+    <key>CySubSmHardSgn</key>
+    <string>u1E065</string>
+    <key>CySubSmI</key>
+    <string>u1E059</string>
+    <key>CySubSmIe</key>
+    <string>u1E056</string>
+    <key>CySubSmKa</key>
+    <string>u1E05A</string>
+    <key>CySubSmO</key>
+    <string>u1E05C</string>
+    <key>CySubSmPe</key>
+    <string>u1E05D</string>
+    <key>CySubSmPe.Serb</key>
+    <string>u1E05D.Serb</string>
+    <key>CySubSmSha</key>
+    <string>u1E064</string>
+    <key>CySubSmTse</key>
+    <string>u1E062</string>
+    <key>CySubSmU</key>
+    <string>u1E05F</string>
+    <key>CySubSmVe</key>
+    <string>u1E053</string>
+    <key>CySubSmYeru</key>
+    <string>u1E066</string>
+    <key>CySubSmZe</key>
+    <string>u1E058</string>
+    <key>CySubSmZhe</key>
+    <string>u1E057</string>
     <key>Dagger</key>
     <string>dagger</string>
     <key>DblAcuteAccent</key>
@@ -10231,16 +10353,86 @@
     <string>uni02D2</string>
     <key>ModCrossAccent</key>
     <string>uni02DF</string>
+    <key>ModCySmA</key>
+    <string>u1E030</string>
     <key>ModCySmBarredO</key>
     <string>u1E04E</string>
+    <key>ModCySmBe</key>
+    <string>u1E031</string>
+    <key>ModCySmBe.Serb</key>
+    <string>u1E031.Serb</string>
     <key>ModCySmByelorusUkrainI</key>
     <string>u1E04C</string>
+    <key>ModCySmChe</key>
+    <string>u1E045</string>
+    <key>ModCySmDe</key>
+    <string>u1E034</string>
+    <key>ModCySmDe.Serb</key>
+    <string>u1E034.Serb</string>
+    <key>ModCySmE</key>
+    <string>u1E048</string>
+    <key>ModCySmEf</key>
+    <string>u1E042</string>
+    <key>ModCySmEl</key>
+    <string>u1E03A</string>
+    <key>ModCySmEm</key>
+    <string>u1E03B</string>
     <key>ModCySmEn</key>
     <string>uni1D78</string>
+    <key>ModCySmEr</key>
+    <string>u1E03E</string>
+    <key>ModCySmEs</key>
+    <string>u1E03F</string>
+    <key>ModCySmEsDesc</key>
+    <string>u1E06B</string>
+    <key>ModCySmGhe</key>
+    <string>u1E033</string>
+    <key>ModCySmGhe.Serb</key>
+    <string>u1E033.Serb</string>
+    <key>ModCySmHa</key>
+    <string>u1E043</string>
+    <key>ModCySmI</key>
+    <string>u1E038</string>
+    <key>ModCySmIe</key>
+    <string>u1E035</string>
     <key>ModCySmJe</key>
     <string>u1E04D</string>
+    <key>ModCySmKa</key>
+    <string>u1E039</string>
+    <key>ModCySmO</key>
+    <string>u1E03C</string>
+    <key>ModCySmPalochka</key>
+    <string>u1E050</string>
+    <key>ModCySmPe</key>
+    <string>u1E03D</string>
+    <key>ModCySmPe.Serb</key>
+    <string>u1E03D.Serb</string>
     <key>ModCySmSchwa</key>
     <string>u1E04B</string>
+    <key>ModCySmSha</key>
+    <string>u1E046</string>
+    <key>ModCySmStraightU</key>
+    <string>u1E04F</string>
+    <key>ModCySmStraightUStrk</key>
+    <string>u1E06D</string>
+    <key>ModCySmTe</key>
+    <string>u1E040</string>
+    <key>ModCySmTe.Serb</key>
+    <string>u1E040.Serb</string>
+    <key>ModCySmTse</key>
+    <string>u1E044</string>
+    <key>ModCySmU</key>
+    <string>u1E041</string>
+    <key>ModCySmVe</key>
+    <string>u1E032</string>
+    <key>ModCySmYeru</key>
+    <string>u1E047</string>
+    <key>ModCySmYu</key>
+    <string>u1E049</string>
+    <key>ModCySmZe</key>
+    <string>u1E037</string>
+    <key>ModCySmZhe</key>
+    <string>u1E036</string>
     <key>ModDblApos</key>
     <string>uni02EE</string>
     <key>ModDblPrime</key>

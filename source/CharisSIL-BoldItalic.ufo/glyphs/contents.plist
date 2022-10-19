@@ -1380,8 +1380,66 @@
   <string>C_yS_mZ_heD_iaer.glif</string>
   <key>CySmZheDiaer.sc</key>
   <string>C_yS_mZ_heD_iaer.sc.glif</string>
+  <key>CySubSmA</key>
+  <string>C_yS_ubS_mA_.glif</string>
+  <key>CySubSmBe</key>
+  <string>C_yS_ubS_mB_e.glif</string>
+  <key>CySubSmBe.Serb</key>
+  <string>C_yS_ubS_mB_e.S_erb.glif</string>
   <key>CySubSmByelorusUkrainI</key>
   <string>C_yS_ubS_mB_yelorusU_krainI_.glif</string>
+  <key>CySubSmChe</key>
+  <string>C_yS_ubS_mC_he.glif</string>
+  <key>CySubSmDe</key>
+  <string>C_yS_ubS_mD_e.glif</string>
+  <key>CySubSmDe.Serb</key>
+  <string>C_yS_ubS_mD_e.S_erb.glif</string>
+  <key>CySubSmDze</key>
+  <string>C_yS_ubS_mD_ze.glif</string>
+  <key>CySubSmDzhe</key>
+  <string>C_yS_ubS_mD_zhe.glif</string>
+  <key>CySubSmEf</key>
+  <string>C_yS_ubS_mE_f.glif</string>
+  <key>CySubSmEl</key>
+  <string>C_yS_ubS_mE_l.glif</string>
+  <key>CySubSmEs</key>
+  <string>C_yS_ubS_mE_s.glif</string>
+  <key>CySubSmGhe</key>
+  <string>C_yS_ubS_mG_he.glif</string>
+  <key>CySubSmGhe.Serb</key>
+  <string>C_yS_ubS_mG_he.S_erb.glif</string>
+  <key>CySubSmGheUpturn</key>
+  <string>C_yS_ubS_mG_heU_pturn.glif</string>
+  <key>CySubSmHa</key>
+  <string>C_yS_ubS_mH_a.glif</string>
+  <key>CySubSmHardSgn</key>
+  <string>C_yS_ubS_mH_ardS_gn.glif</string>
+  <key>CySubSmI</key>
+  <string>C_yS_ubS_mI_.glif</string>
+  <key>CySubSmIe</key>
+  <string>C_yS_ubS_mI_e.glif</string>
+  <key>CySubSmKa</key>
+  <string>C_yS_ubS_mK_a.glif</string>
+  <key>CySubSmO</key>
+  <string>C_yS_ubS_mO_.glif</string>
+  <key>CySubSmPe</key>
+  <string>C_yS_ubS_mP_e.glif</string>
+  <key>CySubSmPe.Serb</key>
+  <string>C_yS_ubS_mP_e.S_erb.glif</string>
+  <key>CySubSmSha</key>
+  <string>C_yS_ubS_mS_ha.glif</string>
+  <key>CySubSmTse</key>
+  <string>C_yS_ubS_mT_se.glif</string>
+  <key>CySubSmU</key>
+  <string>C_yS_ubS_mU_.glif</string>
+  <key>CySubSmVe</key>
+  <string>C_yS_ubS_mV_e.glif</string>
+  <key>CySubSmYeru</key>
+  <string>C_yS_ubS_mY_eru.glif</string>
+  <key>CySubSmZe</key>
+  <string>C_yS_ubS_mZ_e.glif</string>
+  <key>CySubSmZhe</key>
+  <string>C_yS_ubS_mZ_he.glif</string>
   <key>Dagger</key>
   <string>D_agger.glif</string>
   <key>DblAcuteAccent</key>
@@ -6304,16 +6362,86 @@
   <string>M_odC_ntrdR_tH_alfR_ing.glif</string>
   <key>ModCrossAccent</key>
   <string>M_odC_rossA_ccent.glif</string>
+  <key>ModCySmA</key>
+  <string>M_odC_yS_mA_.glif</string>
   <key>ModCySmBarredO</key>
   <string>M_odC_yS_mB_arredO_.glif</string>
+  <key>ModCySmBe</key>
+  <string>M_odC_yS_mB_e.glif</string>
+  <key>ModCySmBe.Serb</key>
+  <string>M_odC_yS_mB_e.S_erb.glif</string>
   <key>ModCySmByelorusUkrainI</key>
   <string>M_odC_yS_mB_yelorusU_krainI_.glif</string>
+  <key>ModCySmChe</key>
+  <string>M_odC_yS_mC_he.glif</string>
+  <key>ModCySmDe</key>
+  <string>M_odC_yS_mD_e.glif</string>
+  <key>ModCySmDe.Serb</key>
+  <string>M_odC_yS_mD_e.S_erb.glif</string>
+  <key>ModCySmE</key>
+  <string>M_odC_yS_mE_.glif</string>
+  <key>ModCySmEf</key>
+  <string>M_odC_yS_mE_f.glif</string>
+  <key>ModCySmEl</key>
+  <string>M_odC_yS_mE_l.glif</string>
+  <key>ModCySmEm</key>
+  <string>M_odC_yS_mE_m.glif</string>
   <key>ModCySmEn</key>
   <string>M_odC_yS_mE_n.glif</string>
+  <key>ModCySmEr</key>
+  <string>M_odC_yS_mE_r.glif</string>
+  <key>ModCySmEs</key>
+  <string>M_odC_yS_mE_s.glif</string>
+  <key>ModCySmEsDesc</key>
+  <string>M_odC_yS_mE_sD_esc.glif</string>
+  <key>ModCySmGhe</key>
+  <string>M_odC_yS_mG_he.glif</string>
+  <key>ModCySmGhe.Serb</key>
+  <string>M_odC_yS_mG_he.S_erb.glif</string>
+  <key>ModCySmHa</key>
+  <string>M_odC_yS_mH_a.glif</string>
+  <key>ModCySmI</key>
+  <string>M_odC_yS_mI_.glif</string>
+  <key>ModCySmIe</key>
+  <string>M_odC_yS_mI_e.glif</string>
   <key>ModCySmJe</key>
   <string>M_odC_yS_mJ_e.glif</string>
+  <key>ModCySmKa</key>
+  <string>M_odC_yS_mK_a.glif</string>
+  <key>ModCySmO</key>
+  <string>M_odC_yS_mO_.glif</string>
+  <key>ModCySmPalochka</key>
+  <string>M_odC_yS_mP_alochka.glif</string>
+  <key>ModCySmPe</key>
+  <string>M_odC_yS_mP_e.glif</string>
+  <key>ModCySmPe.Serb</key>
+  <string>M_odC_yS_mP_e.S_erb.glif</string>
   <key>ModCySmSchwa</key>
   <string>M_odC_yS_mS_chwa.glif</string>
+  <key>ModCySmSha</key>
+  <string>M_odC_yS_mS_ha.glif</string>
+  <key>ModCySmStraightU</key>
+  <string>M_odC_yS_mS_traightU_.glif</string>
+  <key>ModCySmStraightUStrk</key>
+  <string>M_odC_yS_mS_traightU_S_trk.glif</string>
+  <key>ModCySmTe</key>
+  <string>M_odC_yS_mT_e.glif</string>
+  <key>ModCySmTe.Serb</key>
+  <string>M_odC_yS_mT_e.S_erb.glif</string>
+  <key>ModCySmTse</key>
+  <string>M_odC_yS_mT_se.glif</string>
+  <key>ModCySmU</key>
+  <string>M_odC_yS_mU_.glif</string>
+  <key>ModCySmVe</key>
+  <string>M_odC_yS_mV_e.glif</string>
+  <key>ModCySmYeru</key>
+  <string>M_odC_yS_mY_eru.glif</string>
+  <key>ModCySmYu</key>
+  <string>M_odC_yS_mY_u.glif</string>
+  <key>ModCySmZe</key>
+  <string>M_odC_yS_mZ_e.glif</string>
+  <key>ModCySmZhe</key>
+  <string>M_odC_yS_mZ_he.glif</string>
   <key>ModDblApos</key>
   <string>M_odD_blA_pos.glif</string>
   <key>ModDblPrime</key>
