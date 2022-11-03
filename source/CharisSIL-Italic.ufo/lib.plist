@@ -2450,18 +2450,10 @@ o/CombInvDblArchAbv o/CombBreve o/CombVertLineAbv o/CombPlusSgnAbv o/CombDblPlus
     <string>HyphenationPt</string>
     <string>BulletOperator</string>
     <string>LtnSinolDot</string>
-    <string>CombLftParenBlw</string>
     <string>SubLftParen</string>
     <string>SupLftParen</string>
-    <string>CombLftParenAbv</string>
-    <string>CombRtParenBlw</string>
     <string>SubRtParen</string>
     <string>SupRtParen</string>
-    <string>CombRtParenAbv</string>
-    <string>CombParensBlw</string>
-    <string>CombParensAbv</string>
-    <string>CombDblParensAbv</string>
-    <string>CombSqBracketsAbv</string>
     <string>MathLftWhiteSqrBrac</string>
     <string>MathRtWhiteSqrBrac</string>
     <string>SqrTxtBracHighLft</string>
@@ -4192,8 +4184,6 @@ o/CombInvDblArchAbv o/CombBreve o/CombVertLineAbv o/CombPlusSgnAbv o/CombDblPlus
     <string>uni1AB8</string>
     <key>CombDblOverline</key>
     <string>uni033F</string>
-    <key>CombDblParensAbv</key>
-    <string>uni1ABC</string>
     <key>CombDblPlusSgnAbv</key>
     <string>uni1AC9</string>
     <key>CombDblPlusSgnBlw</key>
@@ -4296,10 +4286,6 @@ o/CombInvDblArchAbv o/CombBreve o/CombVertLineAbv o/CombPlusSgnAbv o/CombDblPlus
     <string>uni031C</string>
     <key>CombLftHarpoonBarbDwnBlw</key>
     <string>uni20ED</string>
-    <key>CombLftParenAbv</key>
-    <string>uni1AC1</string>
-    <key>CombLftParenBlw</key>
-    <string>uni1AC3</string>
     <key>CombLftRtArrwBlw</key>
     <string>uni034D</string>
     <key>CombLftTackBlw</key>
@@ -4400,10 +4386,6 @@ o/CombInvDblArchAbv o/CombBreve o/CombVertLineAbv o/CombPlusSgnAbv o/CombDblPlus
     <string>uni0305</string>
     <key>CombPalHook</key>
     <string>uni0321</string>
-    <key>CombParensAbv</key>
-    <string>uni1ABB</string>
-    <key>CombParensBlw</key>
-    <string>uni1ABD</string>
     <key>CombPlusSgnAbv</key>
     <string>uni1AC8</string>
     <key>CombPlusSgnBlw</key>
@@ -4434,10 +4416,6 @@ o/CombInvDblArchAbv o/CombBreve o/CombVertLineAbv o/CombPlusSgnAbv o/CombDblPlus
     <string>uni0339</string>
     <key>CombRtHarpoonBarbDwnBlw</key>
     <string>uni20EC</string>
-    <key>CombRtParenAbv</key>
-    <string>uni1AC2</string>
-    <key>CombRtParenBlw</key>
-    <string>uni1AC4</string>
     <key>CombRtTackBlw</key>
     <string>uni0319</string>
     <key>CombSeagullBlw</key>
@@ -4450,8 +4428,6 @@ o/CombInvDblArchAbv o/CombBreve o/CombVertLineAbv o/CombPlusSgnAbv o/CombDblPlus
     <string>uni1DC2</string>
     <key>CombSnakeBlwDep</key>
     <string>uniF170</string>
-    <key>CombSqBracketsAbv</key>
-    <string>uni1AC5</string>
     <key>CombSqrBlw</key>
     <string>uni033B</string>
     <key>CombStrongCentralizationStrkBlw</key>
