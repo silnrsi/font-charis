@@ -8,7 +8,7 @@
     <array/>
   </dict>
   <key>com.schriftgestaltung.appVersion</key>
-  <string>3140</string>
+  <string>3133</string>
   <key>com.schriftgestaltung.customName</key>
   <string>Italic</string>
   <key>com.schriftgestaltung.customParameter.GSFont.DisplayStrings</key>
@@ -16,6 +16,11 @@
     <string>o/CombLtnSmA o/CombLtnSmG o/CombLtnSmG.SngBowl o/CombLtnSmInsularG o/CombLtnSmK o/CombLtnSmInsularR o/CombLtnSmInsularT o/CombLtnSmTurnedW o/CombLtnSmTurnedWBlw o/CombLtnSmWBlw o/CombLtnSmRBlw 
 o/CombInvDblArchAbv o/CombBreve o/CombVertLineAbv o/CombPlusSgnAbv o/CombDblPlusSgnAbv o/CombNumSgn o</string>
     <string>do/CombLtnSmA o/CombLtnSmA.SngStory o/CombLtnSmC o/CombLtnSmD o/CombLtnSmE o/CombLtnSmG o/CombLtnSmG.SngBowl o/CombLtnSmInsularG o/CombLtnSmH o/CombLtnSmI o/CombCySmByelorusUkrainI o/CombLtnSmK o/CombLtnSmM o/CombLtnSmO o/CombLtnSmR o/CombLtnSmInsularR o/CombLtnSmT o/CombLtnSmInsularT o/CombLtnSmU o/CombLtnSmV o/CombLtnSmTurnedW o/CombLtnSmX</string>
+    <string>000102030405060708090
+|/DblVertLine/DblSolidus///FracSlash/FracSlash.frac/Space/DigitZero.numr/DigitZero.numr/DigitZero.numr/FracSlash.frac/DigitZero.dnom/DigitZero.dnom/DigitZero.dnom/Space/DigitZero.dnom/DigitZero.dnom/DigitZero.dnom/DigitOne.dnom/DigitZero.dnom/DigitTwo.dnom/DigitZero.dnom/DigitThree.dnom/DigitZero.dnom/DigitFour.dnom/DigitZero.dnom/DigitFive.dnom/DigitZero.dnom/DigitSix.dnom/DigitZero.dnom/DigitSeven.dnom/DigitZero.dnom/DigitEight.dnom/DigitZero.dnom/DigitNine.dnom/DigitZero.dnom 
+/DigitZero.numr/FracSlash.frac/DigitOne.dnom/DigitZero.numr/FracSlash.frac/DigitTwo.dnom/DigitZero.numr/FracSlash.frac/DigitThree.dnom/DigitZero.numr/FracSlash.frac/DigitFour.dnom/DigitZero.numr/FracSlash.frac/DigitFive.dnom/DigitZero.numr/FracSlash.frac/DigitSix.dnom/DigitZero.numr/FracSlash.frac/DigitSeven.dnom/DigitZero.numr/FracSlash.frac/DigitEight.dnom/DigitZero.numr/FracSlash.frac/DigitNine.dnom/DigitOne.numr/FracSlash.frac/DigitZero.dnom/DigitTwo.numr/FracSlash.frac/DigitZero.dnom/DigitThree.numr/FracSlash.frac/DigitZero.dnom/DigitFour.numr/FracSlash.frac/DigitZero.dnom/DigitFive.numr/FracSlash.frac/DigitZero.dnom/DigitSix.numr/FracSlash.frac/DigitZero.dnom/DigitSeven.numr/FracSlash.frac/DigitZero.dnom/DigitEight.numr/FracSlash.frac/DigitZero.dnom/DigitNine.numr/FracSlash.frac/DigitZero.dnom 
+/VulgFracZeroThirds/FracNumtrOne/VulgFracOneTenth ½/VulgFracOneThird ¼/VulgFracOneFifth/VulgFracOneSixth/VulgFracOneSeventh/VulgFracOneEighth/VulgFracOneNinth/VulgFracTwoThirds/VulgFracTwoFifths ¾/VulgFracThreeFifths/VulgFracThreeEighths/VulgFracFourFifths/VulgFracFiveSixths/VulgFracFiveEighths/VulgFracSevenEighths 
+/DigitZero.numr/DigitZero.numr/DigitZero.numr/DigitOne.numr/DigitZero.numr/DigitTwo.numr/DigitZero.numr/DigitThree.numr/DigitZero.numr/DigitFour.numr/DigitZero.numr/DigitFive.numr/DigitZero.numr/DigitSix.numr/DigitZero.numr/DigitSeven.numr/DigitZero.numr/DigitEight.numr/DigitZero.numr/DigitNine.numr/DigitZero.numr/Space 308/DigitThree.numr/FracSlash.frac/DigitEight.dnom/Space 457/DigitTwo.numr/DigitSix.numr/DigitFour.numr/FracSlash.frac/DigitThree.dnom/DigitZero.dnom/DigitFive.dnom</string>
   </array>
   <key>com.schriftgestaltung.customParameter.GSFont.disablesAutomaticAlignment</key>
   <true/>
@@ -2351,21 +2356,26 @@ o/CombInvDblArchAbv o/CombBreve o/CombVertLineAbv o/CombPlusSgnAbv o/CombDblPlus
     <string>SomSgn</string>
     <string>SubZero</string>
     <string>DigitZero.dnom</string>
+    <string>DigitZero.numr</string>
     <string>SupZero</string>
     <string>SubOne</string>
     <string>DigitOne.dnom</string>
+    <string>DigitOne.numr</string>
     <string>SupOne</string>
     <string>SubTwo</string>
     <string>DigitTwo.dnom</string>
+    <string>DigitTwo.numr</string>
     <string>SupTwo</string>
     <string>LtnTwoStrk</string>
     <string>TurnedDigitTwo</string>
     <string>SubThree</string>
     <string>DigitThree.dnom</string>
+    <string>DigitThree.numr</string>
     <string>SupThree</string>
     <string>TurnedDigitThree</string>
     <string>SubFour</string>
     <string>DigitFour.dnom</string>
+    <string>DigitFour.numr</string>
     <string>SupFour</string>
     <string>LtnCapCuatrillo</string>
     <string>LtnCapCuatrilloComma</string>
@@ -2373,22 +2383,27 @@ o/CombInvDblArchAbv o/CombBreve o/CombVertLineAbv o/CombPlusSgnAbv o/CombDblPlus
     <string>LtnSmCuatrilloComma</string>
     <string>SubFive</string>
     <string>DigitFive.dnom</string>
+    <string>DigitFive.numr</string>
     <string>SupFive</string>
     <string>LtnCapTnFive</string>
     <string>LtnSmTnFive</string>
     <string>SubSix</string>
     <string>DigitSix.dnom</string>
+    <string>DigitSix.numr</string>
     <string>SupSix</string>
     <string>LtnSmOpenSix</string>
     <string>LtnCapOpenSix</string>
     <string>SubSeven</string>
     <string>DigitSeven.dnom</string>
+    <string>DigitSeven.numr</string>
     <string>SupSeven</string>
     <string>SubEight</string>
     <string>DigitEight.dnom</string>
+    <string>DigitEight.numr</string>
     <string>SupEight</string>
     <string>SubNine</string>
     <string>DigitNine.dnom</string>
+    <string>DigitNine.numr</string>
     <string>SupNine</string>
     <string>LtnCapOpenNine</string>
     <string>LtnSmOpenNine</string>
@@ -5450,60 +5465,80 @@ o/CombInvDblArchAbv o/CombBreve o/CombVertLineAbv o/CombPlusSgnAbv o/CombDblPlus
     <string>compDigitEight</string>
     <key>DigitEight.dnom</key>
     <string>eight.dnom</string>
+    <key>DigitEight.numr</key>
+    <string>eight.numr</string>
     <key>DigitFive</key>
     <string>five</string>
     <key>DigitFive.Sophia</key>
     <string>compDigitFive</string>
     <key>DigitFive.dnom</key>
     <string>five.dnom</string>
+    <key>DigitFive.numr</key>
+    <string>five.numr</string>
     <key>DigitFour</key>
     <string>four</string>
     <key>DigitFour.Sophia</key>
     <string>compDigitFour</string>
     <key>DigitFour.dnom</key>
     <string>four.dnom</string>
+    <key>DigitFour.numr</key>
+    <string>four.numr</string>
     <key>DigitNine</key>
     <string>nine</string>
     <key>DigitNine.Sophia</key>
     <string>compDigitNine</string>
     <key>DigitNine.dnom</key>
     <string>nine.dnom</string>
+    <key>DigitNine.numr</key>
+    <string>nine.numr</string>
     <key>DigitOne</key>
     <string>one</string>
     <key>DigitOne.Sophia</key>
     <string>compDigitOne</string>
     <key>DigitOne.dnom</key>
     <string>one.dnom</string>
+    <key>DigitOne.numr</key>
+    <string>one.numr</string>
     <key>DigitSeven</key>
     <string>seven</string>
     <key>DigitSeven.Sophia</key>
     <string>compDigitSeven</string>
     <key>DigitSeven.dnom</key>
     <string>seven.dnom</string>
+    <key>DigitSeven.numr</key>
+    <string>seven.numr</string>
     <key>DigitSix</key>
     <string>six</string>
     <key>DigitSix.Sophia</key>
     <string>compDigitSix</string>
     <key>DigitSix.dnom</key>
     <string>six.dnom</string>
+    <key>DigitSix.numr</key>
+    <string>six.numr</string>
     <key>DigitThree</key>
     <string>three</string>
     <key>DigitThree.Sophia</key>
     <string>compDigitThree</string>
     <key>DigitThree.dnom</key>
     <string>three.dnom</string>
+    <key>DigitThree.numr</key>
+    <string>three.numr</string>
     <key>DigitTwo</key>
     <string>two</string>
     <key>DigitTwo.Sophia</key>
     <string>compDigitTwo</string>
     <key>DigitTwo.dnom</key>
     <string>two.dnom</string>
+    <key>DigitTwo.numr</key>
+    <string>two.numr</string>
     <key>DigitZero</key>
     <string>zero</string>
     <key>DigitZero.Sophia</key>
     <string>compDigitZero</string>
     <key>DigitZero.dnom</key>
     <string>zero.dnom</string>
+    <key>DigitZero.numr</key>
+    <string>zero.numr</string>
     <key>DivSgn</key>
     <string>divide</string>
     <key>DivisionSlash</key>
