@@ -764,8 +764,9 @@ o/CombInvDblArchAbv o/CombBreve o/CombVertLineAbv o/CombPlusSgnAbv o/CombDblPlus
     <string>LtnSmDCedilla</string>
     <string>LtnSmDCaron</string>
     <string>LtnSmDPalHook</string>
-    <string>LtnSmDBarredStem.BarBowl</string>
+    <string>LtnSmDShortStrk</string>
     <string>LtnSmDBarredStem</string>
+    <string>LtnSmDBarredStem.BarBowl</string>
     <string>DongSgn</string>
     <string>LtnSmDMiddleTilde</string>
     <string>LtnSmDum</string>
@@ -807,6 +808,7 @@ o/CombInvDblArchAbv o/CombBreve o/CombVertLineAbv o/CombPlusSgnAbv o/CombDblPlus
     <string>LtnCapDLineBlw</string>
     <string>LtnCapDDotBlw</string>
     <string>LtnCapDCedilla</string>
+    <string>LtnCapDShortStrk</string>
     <string>LtnCapEth</string>
     <string>LtnCapDStrk</string>
     <string>LtnCapAfricanD</string>
@@ -1891,6 +1893,7 @@ o/CombInvDblArchAbv o/CombBreve o/CombVertLineAbv o/CombPlusSgnAbv o/CombDblPlus
     <string>LtnSmSPalHook</string>
     <string>LtnSmSMiddleTilde</string>
     <string>LtnSmSDiagStrk</string>
+    <string>LtnSmSShortStrk</string>
     <string>LtnSmSMidLftHook</string>
     <string>LtnSmSCurl</string>
     <string>ModSmSCurl</string>
@@ -1918,6 +1921,7 @@ o/CombInvDblArchAbv o/CombBreve o/CombVertLineAbv o/CombPlusSgnAbv o/CombDblPlus
     <string>LtnCapSCedilla</string>
     <string>LtnCapSHook</string>
     <string>LtnCapSDiagStrk</string>
+    <string>LtnCapSShortStrk</string>
     <string>LtnCapSSwashTail</string>
     <string>LtnCapTnTwo</string>
     <string>HryvniaSign</string>
@@ -6085,6 +6089,8 @@ o/CombInvDblArchAbv o/CombBreve o/CombVertLineAbv o/CombPlusSgnAbv o/CombDblPlus
     <string>uni018A.TopBar</string>
     <key>LtnCapDLineBlw</key>
     <string>uni1E0E</string>
+    <key>LtnCapDShortStrk</key>
+    <string>uniA7C7</string>
     <key>LtnCapDSmZ</key>
     <string>uni01F2</string>
     <key>LtnCapDSmZ.sc</key>
@@ -6695,6 +6701,8 @@ o/CombInvDblArchAbv o/CombBreve o/CombVertLineAbv o/CombPlusSgnAbv o/CombDblPlus
     <string>uni1E68</string>
     <key>LtnCapSHook</key>
     <string>uniA7C5</string>
+    <key>LtnCapSShortStrk</key>
+    <string>uniA7C9</string>
     <key>LtnCapSSwashTail</key>
     <string>uni2C7E</string>
     <key>LtnCapSaltillo</key>
@@ -7835,6 +7843,8 @@ o/CombInvDblArchAbv o/CombBreve o/CombVertLineAbv o/CombPlusSgnAbv o/CombDblPlus
     <string>uni1D81</string>
     <key>LtnSmDPalHookDep</key>
     <string>uniF226</string>
+    <key>LtnSmDShortStrk</key>
+    <string>uniA7C8</string>
     <key>LtnSmDTail</key>
     <string>uni0256</string>
     <key>LtnSmDTail.sc</key>
@@ -9321,6 +9331,8 @@ o/CombInvDblArchAbv o/CombBreve o/CombVertLineAbv o/CombPlusSgnAbv o/CombDblPlus
     <string>uni1D8A</string>
     <key>LtnSmSPalHookDep</key>
     <string>uniF22F</string>
+    <key>LtnSmSShortStrk</key>
+    <string>uniA7CA</string>
     <key>LtnSmSSwashTail</key>
     <string>uni023F</string>
     <key>LtnSmSSwashTail.sc</key>

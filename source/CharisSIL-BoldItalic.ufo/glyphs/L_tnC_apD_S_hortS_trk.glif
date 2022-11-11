@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapDShortStrk" format="2">
+  <advance width="1460"/>
+  <unicode hex="A7C7"/>
+  <anchor x="569" y="-100" name="L"/>
+  <anchor x="857" y="1500" name="U"/>
+  <outline>
+    <component base="LtnCapD"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>
