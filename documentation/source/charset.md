@@ -56,8 +56,7 @@ Variation Selectors|U+FE00..U+FE0F
 Combining Half Marks|U+FE20..U+FE23
 Arabic Presentation Forms-B|U+FEFF (zero-width no-break space)
 Specials|U+FFF9..U+FFFD
-Latin Extended-F|U+10783, U+1078F, U+10791, U+10795, U+107A0, U+107A2..U+107A3, U+107B2
-Nabatean|U+1088E
+Latin Extended-F|U+10783, U+1078E, U+1078F, U+10791, U+10795, U+107A0, U+107A2..U+107A3, U+107B2
 Mathematical Alphanumeric Symbols|U+1D40C, U+1D504..U+1D505, U+1D50A, U+1D50E..U+1D510, U+1D513..U+1D514, U+1D516..U+1D517, U+1D519
 Latin Extended-G|U+1DF00..U+1DF1E
 Enclosed Alphanumeric Supplement|U+1F12F
