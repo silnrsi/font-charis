@@ -1134,32 +1134,32 @@ U+023E">
       <comment>LtnCapAStrk LtnCapTDiagStrk</comment>
       <string>\u00023A\u000315\u00023E\u000315</string>
     </test>
-    <test label="U+A733
-U+A735">
-      <comment>LtnSmAADigraph LtnSmAODigraph</comment>
-      <string>\u00A733\u000315\u00A735\u000315</string>
+    <test label="U+A733">
+      <comment>LtnSmAADigraph</comment>
+      <string>\u00A733\u000315</string>
     </test>
-    <test label="U+A733
-U+A735" stylename="smcp_1">
-      <comment>LtnSmAADigraph LtnSmAODigraph</comment>
-      <string>\u00A733\u000315\u00A735\u000315</string>
+    <test label="U+A733" stylename="smcp_1">
+      <comment>LtnSmAADigraph</comment>
+      <string>\u00A733\u000315</string>
     </test>
-    <test label="U+A732
-U+A734">
-      <comment>LtnCapAADigraph LtnCapAODigraph</comment>
-      <string>\u00A732\u000315\u00A734\u000315</string>
+    <test label="U+A732">
+      <comment>LtnCapAADigraph</comment>
+      <string>\u00A732\u000315</string>
     </test>
-    <test label="U+A741">
-      <comment>LtnSmKStrk</comment>
-      <string>\u00A741\u000315</string>
+    <test label="U+A735
+U+A741">
+      <comment>LtnSmAODigraph LtnSmKStrk</comment>
+      <string>\u00A735\u000315\u00A741\u000315</string>
     </test>
-    <test label="U+A741" stylename="smcp_1">
-      <comment>LtnSmKStrk</comment>
-      <string>\u00A741\u000315</string>
+    <test label="U+A735
+U+A741" stylename="smcp_1">
+      <comment>LtnSmAODigraph LtnSmKStrk</comment>
+      <string>\u00A735\u000315\u00A741\u000315</string>
     </test>
-    <test label="U+A740">
-      <comment>LtnCapKStrk</comment>
-      <string>\u00A740\u000315</string>
+    <test label="U+A734
+U+A740">
+      <comment>LtnCapAODigraph LtnCapKStrk</comment>
+      <string>\u00A734\u000315\u00A740\u000315</string>
     </test>
     <test label="U+A74F">
       <comment>LtnSmOODigraph</comment>
@@ -1172,6 +1172,24 @@ U+A734">
     <test label="U+A74E">
       <comment>LtnCapOODigraph</comment>
       <string>\u00A74E\u000315</string>
+    </test>
+    <test label="U+A7BB
+U+A7BD
+U+A7BF">
+      <comment>LtnSmAEgAlef LtnSmIEgAlef LtnSmUEgAlef</comment>
+      <string>\u00A7BB\u000315\u00A7BD\u000315\u00A7BF\u000315</string>
+    </test>
+    <test label="U+A7BB
+U+A7BD
+U+A7BF" stylename="smcp_1">
+      <comment>LtnSmAEgAlef LtnSmIEgAlef LtnSmUEgAlef</comment>
+      <string>\u00A7BB\u000315\u00A7BD\u000315\u00A7BF\u000315</string>
+    </test>
+    <test label="U+A7BA
+U+A7BC
+U+A7BE">
+      <comment>LtnCapAEgAlef LtnCapIEgAlef LtnCapUEgAlef</comment>
+      <string>\u00A7BA\u000315\u00A7BC\u000315\u00A7BE\u000315</string>
     </test>
     <test label="U+0066
 U+0069
@@ -1600,6 +1618,16 @@ U+1EE6" stylename="c2sc_1">
     <test label="U+A74E" stylename="c2sc_1">
       <comment>LtnCapOODigraph</comment>
       <string>\u00A74E\u000315</string>
+    </test>
+    <test label="U+A7BC
+U+A7BE">
+      <comment>LtnCapIEgAlef LtnCapUEgAlef</comment>
+      <string>\u00A7BC\u000315\u00A7BE\u000315</string>
+    </test>
+    <test label="U+A7BC
+U+A7BE" stylename="c2sc_1">
+      <comment>LtnCapIEgAlef LtnCapUEgAlef</comment>
+      <string>\u00A7BC\u000315\u00A7BE\u000315</string>
     </test>
   </testgroup>
 </ftml>
