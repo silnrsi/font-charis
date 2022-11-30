@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="CombRetrHook" format="2">
-  <advance width="420"/>
   <unicode hex="0322"/>
-  <anchor x="210" y="-500" name="L"/>
-  <anchor x="210" y="-100" name="_L"/>
   <outline>
-    <component base="Ogonek.RetroHook"/>
+    <component base="Ogonek.RetroHook" xOffset="-348"/>
   </outline>
 </glyph>
