@@ -230,7 +230,7 @@
     </test>
     <test label="U+006D">
       <comment>LtnSmM</comment>
-      <string>m\u000327 m\u000329 m\u00030D</string>
+      <string>m\u000327 m\u000329 m\u000328 m\u00030D</string>
     </test>
     <test label="U+006E">
       <comment>LtnSmN</comment>
@@ -4610,7 +4610,7 @@
     </test>
     <test label="U+1E3F">
       <comment>LtnSmMAcute</comment>
-      <string>\u001E3F\u000327 \u001E3F\u000329 \u001E3F\u00030D</string>
+      <string>\u001E3F\u000327 \u001E3F\u000329 \u001E3F\u000328 \u001E3F\u00030D</string>
     </test>
     <test label="U+1E40">
       <comment>LtnCapMDotAbv</comment>
@@ -4618,7 +4618,7 @@
     </test>
     <test label="U+1E41">
       <comment>LtnSmMDotAbv</comment>
-      <string>\u001E41\u000327 \u001E41\u000329 \u001E41\u00030D</string>
+      <string>\u001E41\u000327 \u001E41\u000329 \u001E41\u000328 \u001E41\u00030D</string>
     </test>
     <test label="U+1E42">
       <comment>LtnCapMDotBlw</comment>
@@ -4626,7 +4626,7 @@
     </test>
     <test label="U+1E43">
       <comment>LtnSmMDotBlw</comment>
-      <string>\u001E43\u000327 \u001E43\u000329 \u001E43\u00030D</string>
+      <string>\u001E43\u000327 \u001E43\u000329 \u001E43\u000328 \u001E43\u00030D</string>
     </test>
     <test label="U+1E44">
       <comment>LtnCapNDotAbv</comment>
@@ -5670,7 +5670,7 @@
     </test>
     <test label="U+2183">
       <comment>RomNumRevOneHundred</comment>
-      <string>\u002183\u00030D</string>
+      <string>\u002183\u000327 \u002183\u000329 \u002183\u000315 \u002183\u00030D</string>
     </test>
     <test label="U+2184">
       <comment>LtnSmRevC</comment>
@@ -7997,14 +7997,6 @@
     <test label="U+0320">
       <comment>CombMinusSgnBlw</comment>
       <string>A\u000320 E\u000320 H\u000320 O\u000320 a\u000320 e\u000320 i\u000320 o\u000320 \u001D52\u000320</string>
-    </test>
-    <test label="U+0321">
-      <comment>CombPalHook</comment>
-      <string>A\u000321 E\u000321 H\u000321 O\u000321 a\u000321 e\u000321 i\u000321 o\u000321 \u001D52\u000321</string>
-    </test>
-    <test label="U+0322">
-      <comment>CombRetrHook</comment>
-      <string>A\u000322 E\u000322 H\u000322 O\u000322 a\u000322 e\u000322 i\u000322 o\u000322 \u001D52\u000322</string>
     </test>
     <test label="U+0323">
       <comment>CombDotBlw</comment>

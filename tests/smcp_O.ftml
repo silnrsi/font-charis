@@ -34,19 +34,22 @@ U+0045">
       <string>A\u000328E\u000328</string>
     </test>
     <test label="U+0069
+U+006D
 U+006F">
-      <comment>LtnSmI LtnSmO</comment>
-      <string>i\u000328o\u000328</string>
+      <comment>LtnSmI LtnSmM LtnSmO</comment>
+      <string>i\u000328m\u000328o\u000328</string>
     </test>
     <test label="U+0069
+U+006D
 U+006F" stylename="smcp_1">
-      <comment>LtnSmI LtnSmO</comment>
-      <string>i\u000328o\u000328</string>
+      <comment>LtnSmI LtnSmM LtnSmO</comment>
+      <string>i\u000328m\u000328o\u000328</string>
     </test>
     <test label="U+0049
+U+004D
 U+004F">
-      <comment>LtnCapI LtnCapO</comment>
-      <string>I\u000328O\u000328</string>
+      <comment>LtnCapI LtnCapM LtnCapO</comment>
+      <string>I\u000328M\u000328O\u000328</string>
     </test>
     <test label="U+0075
 U+0076">
@@ -671,6 +674,24 @@ U+1E2F" stylename="smcp_1">
 U+1E2E">
       <comment>LtnCapITildeBlw LtnCapIDiaerAcute</comment>
       <string>\u001E2C\u000328\u001E2E\u000328</string>
+    </test>
+    <test label="U+1E3F
+U+1E41
+U+1E43">
+      <comment>LtnSmMAcute LtnSmMDotAbv LtnSmMDotBlw</comment>
+      <string>\u001E3F\u000328\u001E41\u000328\u001E43\u000328</string>
+    </test>
+    <test label="U+1E3F
+U+1E41
+U+1E43" stylename="smcp_1">
+      <comment>LtnSmMAcute LtnSmMDotAbv LtnSmMDotBlw</comment>
+      <string>\u001E3F\u000328\u001E41\u000328\u001E43\u000328</string>
+    </test>
+    <test label="U+1E3E
+U+1E40
+U+1E42">
+      <comment>LtnCapMAcute LtnCapMDotAbv LtnCapMDotBlw</comment>
+      <string>\u001E3E\u000328\u001E40\u000328\u001E42\u000328</string>
     </test>
     <test label="U+1E4D
 U+1E4F
