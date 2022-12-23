@@ -86,6 +86,12 @@ lookup ss_ctx {
     sub @c_superscripts @cno_Sup' lookup ss_sub;
 } ss_ctx;
 
+lookup y_ognk_sub {
+  lookupflag 0;
+    sub LtnSmY CombOgonek by LtnSmYOgonek;
+    sub LtnSmY CombOgonek.RetroHook by LtnSmYOgonek.RetroHook;
+} y_ognk_sub;
+
 lookup sc1_sub {
   lookupflag 0;
     # sub @cno_sc by @c_sc;
@@ -617,11 +623,10 @@ lookup yhk_sub {
     sub LtnSmYHook.RtHook.sc from [LtnSmYHook.sc ];
 } yhk_sub;
 
-lookup y_ognk_sub {
+lookup bascl_sub {
   lookupflag 0;
-    sub LtnSmY CombOgonek by LtnSmYOgonek;
-    sub LtnSmY CombOgonek.RetroHook by LtnSmYOgonek.RetroHook;
-} y_ognk_sub;
+    sub @cno_bascl by @c_bascl;
+} bascl_sub;
 
 lookup apos_sub {
   lookupflag 0;
@@ -1630,6 +1635,29 @@ feature cv68 {
 
   lookup yhk_sub;
 } cv68;
+
+feature cv69 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Baseline clicks";  # English US
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Alternate form of clicks on baseline";  # English US
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "ǀǁǂǃ⦀";  # English US
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Baseline";  # English US
+      };
+  };
+
+  lookup bascl_sub;
+} cv69;
 
 feature cv70 {
 
