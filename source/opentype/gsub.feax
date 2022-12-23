@@ -617,6 +617,12 @@ lookup yhk_sub {
     sub LtnSmYHook.RtHook.sc from [LtnSmYHook.sc ];
 } yhk_sub;
 
+lookup y_ognk_sub {
+  lookupflag 0;
+    sub LtnSmY CombOgonek by LtnSmYOgonek;
+    sub LtnSmY CombOgonek.RetroHook by LtnSmYOgonek.RetroHook;
+} y_ognk_sub;
+
 lookup apos_sub {
   lookupflag 0;
     sub LtnCapSaltillo from [LtnCapSaltillo.Lrg ];
@@ -871,6 +877,7 @@ ifinfo(familyName, "Andika") {
 feature ccmp {
   lookup di_ctx;
   lookup ss_ctx;
+  lookup y_ognk_sub;
 do let f = info("familyName");
    if f.find("Gentium") != -1; {
   lookup lpdiac_ctx; #Gentium
