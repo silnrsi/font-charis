@@ -15,6 +15,12 @@
       <style feats="'cv79' 1" name="cv79_1"/>
       <style feats="'cv84' 1" name="cv84_1"/>
       <style feats="'frac' 1" name="frac_1"/>
+      <style feats="'cv01' 1" name="cv01_1"/>
+      <style feats="'cv04' 1" name="cv04_1"/>
+      <style feats="'cv06' 1" name="cv06_1"/>
+      <style feats="'cv07' 1" name="cv07_1"/>
+      <style feats="'cv10' 1" name="cv10_1"/>
+      <style feats="'frac' 1, 'cv01' 1, 'cv04' 1, 'cv06' 1, 'cv07' 1, 'cv10' 1" name="frac_1_cv_digits_1"/>
     </styles>
     <title>Misc</title>
   </head>
@@ -75,6 +81,12 @@
     </test>
     <test label="U+0031 U+0032 U+0033 U+002F U+0034 U+0035 U+0036" stylename="frac_1">
       <string>\u000031\u000032\u000033\u00002F\u000034\u000035\u000036</string>
+    </test>
+    <test label="U+0031 U+0034 U+0036 U+2044 U+0039 U+0037 U+0030" stylename="frac_1">
+      <string>\u000031\u000034\u000036\u002044\u000039\u000037\u000030</string>
+    </test>
+    <test label="U+0031 U+0034 U+0036 U+2044 U+0039 U+0037 U+0030" stylename="frac_1_cv_digits_1">
+      <string>\u000031\u000034\u000036\u002044\u000039\u000037\u000030</string>
     </test>
   </testgroup>
 </ftml>

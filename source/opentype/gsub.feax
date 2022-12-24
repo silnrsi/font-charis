@@ -401,40 +401,27 @@ do let f = info("familyName");
    if f.find("Andika") != -1; {
 lookup one_sub {
   lookupflag 0;
-    sub DigitOne from [DigitOne.NoBase ];
-    sub SubOne from [SubOne.NoBase ];
-    sub SupOne from [SupOne.NoBase ];
+    sub @cno_NoBase by @c_NoBase;
 } one_sub;
 
 lookup four_sub {
   lookupflag 0;
-    sub DigitFour from [DigitFour.Open ];
-    sub SubFour from [SubFour.Open ];
-    sub SupFour from [SupFour.Open ];
+    sub @cno_Open by @c_Open;
 } four_sub;
 
 lookup six_sub {
   lookupflag 0;
-    sub DigitSix from [DigitSix.Diag ];
-    sub DigitNine from [DigitNine.Diag ];
-    sub SubSix from [SubSix.Diag ];
-    sub SupSix from [SupSix.Diag ];
-    sub SubNine from [SubNine.Diag ];
-    sub SupNine from [SupNine.Diag ];
+    sub @cno_Diag by @c_Diag;
 } six_sub;
 
 lookup seven_sub {
   lookupflag 0;
-    sub DigitSeven from [DigitSeven.Bar ];
-    sub SubSeven from [SubSeven.Bar ];
-    sub SupSeven from [SupSeven.Bar ];
+    sub @cno_Bar by @c_Bar;
 } seven_sub;
 
 lookup zero_sub {
   lookupflag 0;
-    sub DigitZero from [DigitZero.Slash ];
-    sub SubZero from [SubZero.Slash ];
-    sub SupZero from [SupZero.Slash ];
+    sub @cno_Slash by @c_Slash;
 } zero_sub;
 }
 
