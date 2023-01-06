@@ -2340,56 +2340,76 @@
     <string>LariSgn</string>
     <string>SomSgn</string>
     <string>SubZero</string>
+    <string>DigitZero.subs</string>
     <string>DigitZero.dnom</string>
     <string>DigitZero.numr</string>
     <string>SupZero</string>
+    <string>DigitZero.sups</string>
     <string>SubOne</string>
+    <string>DigitOne.subs</string>
     <string>DigitOne.dnom</string>
     <string>DigitOne.numr</string>
     <string>SupOne</string>
+    <string>DigitOne.sups</string>
     <string>SubTwo</string>
+    <string>DigitTwo.subs</string>
     <string>DigitTwo.dnom</string>
     <string>DigitTwo.numr</string>
     <string>SupTwo</string>
+    <string>DigitTwo.sups</string>
     <string>LtnTwoStrk</string>
     <string>TurnedDigitTwo</string>
     <string>SubThree</string>
+    <string>DigitThree.subs</string>
     <string>DigitThree.dnom</string>
     <string>DigitThree.numr</string>
     <string>SupThree</string>
+    <string>DigitThree.sups</string>
     <string>TurnedDigitThree</string>
     <string>SubFour</string>
+    <string>DigitFour.subs</string>
     <string>DigitFour.dnom</string>
     <string>DigitFour.numr</string>
     <string>SupFour</string>
+    <string>DigitFour.sups</string>
     <string>LtnCapCuatrillo</string>
     <string>LtnCapCuatrilloComma</string>
     <string>LtnSmCuatrillo</string>
     <string>LtnSmCuatrilloComma</string>
     <string>SubFive</string>
+    <string>DigitFive.subs</string>
     <string>DigitFive.dnom</string>
     <string>DigitFive.numr</string>
     <string>SupFive</string>
+    <string>DigitFive.sups</string>
     <string>LtnCapTnFive</string>
     <string>LtnSmTnFive</string>
     <string>SubSix</string>
+    <string>DigitSix.subs</string>
     <string>DigitSix.dnom</string>
     <string>DigitSix.numr</string>
     <string>SupSix</string>
+    <string>DigitSix.sups</string>
     <string>LtnSmOpenSix</string>
     <string>LtnCapOpenSix</string>
     <string>SubSeven</string>
+    <string>DigitSeven.subs</string>
     <string>DigitSeven.dnom</string>
     <string>DigitSeven.numr</string>
     <string>SupSeven</string>
+    <string>DigitSeven.sups</string>
     <string>SubEight</string>
+    <string>DigitEight.subs</string>
     <string>DigitEight.dnom</string>
     <string>DigitEight.numr</string>
     <string>SupEight</string>
+    <string>DigitEight.sups</string>
     <string>SubNine</string>
+    <string>DigitNine.subs</string>
     <string>DigitNine.dnom</string>
     <string>DigitNine.numr</string>
     <string>SupNine</string>
+    <string>DigitNine.sups</string>
     <string>LtnCapOpenNine</string>
     <string>LtnSmOpenNine</string>
     <string>ModOpenNine</string>
@@ -5452,6 +5472,10 @@
     <string>eight.dnom</string>
     <key>DigitEight.numr</key>
     <string>eight.numr</string>
+    <key>DigitEight.subs</key>
+    <string>eight.subs</string>
+    <key>DigitEight.sups</key>
+    <string>eight.sups</string>
     <key>DigitFive</key>
     <string>five</string>
     <key>DigitFive.Sophia</key>
@@ -5460,6 +5484,10 @@
     <string>five.dnom</string>
     <key>DigitFive.numr</key>
     <string>five.numr</string>
+    <key>DigitFive.subs</key>
+    <string>five.subs</string>
+    <key>DigitFive.sups</key>
+    <string>five.sups</string>
     <key>DigitFour</key>
     <string>four</string>
     <key>DigitFour.Sophia</key>
@@ -5468,6 +5496,10 @@
     <string>four.dnom</string>
     <key>DigitFour.numr</key>
     <string>four.numr</string>
+    <key>DigitFour.subs</key>
+    <string>four.subs</string>
+    <key>DigitFour.sups</key>
+    <string>four.sups</string>
     <key>DigitNine</key>
     <string>nine</string>
     <key>DigitNine.Sophia</key>
@@ -5476,6 +5508,10 @@
     <string>nine.dnom</string>
     <key>DigitNine.numr</key>
     <string>nine.numr</string>
+    <key>DigitNine.subs</key>
+    <string>nine.subs</string>
+    <key>DigitNine.sups</key>
+    <string>nine.sups</string>
     <key>DigitOne</key>
     <string>one</string>
     <key>DigitOne.Sophia</key>
@@ -5484,6 +5520,10 @@
     <string>one.dnom</string>
     <key>DigitOne.numr</key>
     <string>one.numr</string>
+    <key>DigitOne.subs</key>
+    <string>one.subs</string>
+    <key>DigitOne.sups</key>
+    <string>one.sups</string>
     <key>DigitSeven</key>
     <string>seven</string>
     <key>DigitSeven.Sophia</key>
@@ -5492,6 +5532,10 @@
     <string>seven.dnom</string>
     <key>DigitSeven.numr</key>
     <string>seven.numr</string>
+    <key>DigitSeven.subs</key>
+    <string>seven.subs</string>
+    <key>DigitSeven.sups</key>
+    <string>seven.sups</string>
     <key>DigitSix</key>
     <string>six</string>
     <key>DigitSix.Sophia</key>
@@ -5500,6 +5544,10 @@
     <string>six.dnom</string>
     <key>DigitSix.numr</key>
     <string>six.numr</string>
+    <key>DigitSix.subs</key>
+    <string>six.subs</string>
+    <key>DigitSix.sups</key>
+    <string>six.sups</string>
     <key>DigitThree</key>
     <string>three</string>
     <key>DigitThree.Sophia</key>
@@ -5508,6 +5556,10 @@
     <string>three.dnom</string>
     <key>DigitThree.numr</key>
     <string>three.numr</string>
+    <key>DigitThree.subs</key>
+    <string>three.subs</string>
+    <key>DigitThree.sups</key>
+    <string>three.sups</string>
     <key>DigitTwo</key>
     <string>two</string>
     <key>DigitTwo.Sophia</key>
@@ -5516,6 +5568,10 @@
     <string>two.dnom</string>
     <key>DigitTwo.numr</key>
     <string>two.numr</string>
+    <key>DigitTwo.subs</key>
+    <string>two.subs</string>
+    <key>DigitTwo.sups</key>
+    <string>two.sups</string>
     <key>DigitZero</key>
     <string>zero</string>
     <key>DigitZero.Sophia</key>
@@ -5524,6 +5580,10 @@
     <string>zero.dnom</string>
     <key>DigitZero.numr</key>
     <string>zero.numr</string>
+    <key>DigitZero.subs</key>
+    <string>zero.subs</string>
+    <key>DigitZero.sups</key>
+    <string>zero.sups</string>
     <key>DivSgn</key>
     <string>divide</string>
     <key>DivisionSlash</key>
