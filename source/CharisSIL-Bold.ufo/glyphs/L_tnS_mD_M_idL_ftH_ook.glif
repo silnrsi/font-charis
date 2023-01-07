@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="LtnSmDMidLftHook" format="2">
-  <advance width="1411"/>
+  <advance width="1516"/>
   <unicode hex="1DF25"/>
-  <anchor x="794" y="0" name="H"/>
-  <anchor x="794" y="-100" name="L"/>
-  <anchor x="1357" y="1000" name="R"/>
-  <anchor x="694" y="1540" name="U"/>
+  <anchor x="899" y="0" name="H"/>
+  <anchor x="899" y="-100" name="L"/>
+  <anchor x="1462" y="1000" name="R"/>
+  <anchor x="799" y="1540" name="U"/>
   <outline>
-    <component base="LtnSmD" xOffset="164"/>
+    <component base="LtnSmD" xOffset="269"/>
     <contour>
-      <point x="-84" y="676" type="line"/>
-      <point x="55" y="676" type="line"/>
-      <point x="72" y="702"/>
-      <point x="109" y="758"/>
-      <point x="188" y="758" type="curve" smooth="yes"/>
-      <point x="245" y="758"/>
-      <point x="297" y="737"/>
-      <point x="321" y="721" type="curve"/>
-      <point x="321" y="807" type="line"/>
-      <point x="270" y="872"/>
-      <point x="139" y="1024"/>
-      <point x="45" y="1024" type="curve" smooth="yes"/>
-      <point x="-2" y="1024"/>
-      <point x="-60" y="1006"/>
-      <point x="-84" y="987" type="curve"/>
+      <point x="21" y="676" type="line"/>
+      <point x="160" y="676" type="line"/>
+      <point x="177" y="702"/>
+      <point x="214" y="758"/>
+      <point x="293" y="758" type="curve" smooth="yes"/>
+      <point x="350" y="758"/>
+      <point x="402" y="737"/>
+      <point x="426" y="721" type="curve"/>
+      <point x="426" y="807" type="line"/>
+      <point x="375" y="872"/>
+      <point x="244" y="1024"/>
+      <point x="150" y="1024" type="curve" smooth="yes"/>
+      <point x="103" y="1024"/>
+      <point x="45" y="1006"/>
+      <point x="21" y="987" type="curve"/>
     </contour>
   </outline>
 </glyph>
