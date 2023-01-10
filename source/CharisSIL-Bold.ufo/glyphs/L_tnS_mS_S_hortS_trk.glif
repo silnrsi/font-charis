@@ -2,11 +2,17 @@
 <glyph name="LtnSmSShortStrk" format="2">
   <advance width="911"/>
   <unicode hex="A7CA"/>
-  <anchor x="460" y="0" name="H"/>
-  <anchor x="460" y="-100" name="L"/>
-  <anchor x="480" y="1100" name="U"/>
+  <anchor x="465" y="0" name="H"/>
+  <anchor x="465" y="-100" name="L"/>
+  <anchor x="485" y="1100" name="U"/>
   <outline>
-    <component base="LtnSmS"/>
+    <component base="LtnSmS" xOffset="5"/>
+    <contour>
+      <point x="887" y="444" type="line"/>
+      <point x="887" y="575" type="line"/>
+      <point x="44" y="575" type="line"/>
+      <point x="44" y="444" type="line"/>
+    </contour>
   </outline>
   <lib>
     <dict>
