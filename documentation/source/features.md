@@ -37,7 +37,7 @@ Feature | Sample                      | Feature setting
 Standard   | <span class='charis-R normal'>A ... Z</span> (all capitals) | `c2sc=0`
 Small caps | <span class='charis-R normal' style='font-feature-settings: "c2sc" 1'>A ... Z</span> (all capitals) | `c2sc=1`
 
-#### Double-story a and g
+#### Single-story a and g
 
 *This feature was formerly called 'Literacy alternates'.*
 
