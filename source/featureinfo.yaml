@@ -38,7 +38,7 @@
       tt_setting_name: No base serif
       tt_setting_tag: T
   doc_group: num
-  doc_order: 801
+  doc_order: 811
   doc_name: One
   doc_affects: U+0031 U+00B9 U+2081
   doc_sample: 
@@ -65,7 +65,7 @@
       tt_setting_name: Open top
       tt_setting_tag: Opn
   doc_group: num
-  doc_order: 804
+  doc_order: 814
   doc_name: Four
   doc_affects: U+0034 U+2074 U+2084
   doc_sample: 
@@ -92,7 +92,7 @@
       tt_setting_name: Diagonal stems
       tt_setting_tag: T
   doc_group: num
-  doc_order: 806
+  doc_order: 816
   doc_name: Six and Nine
   doc_affects: U+0036 U+0039 U+2076 U+2079 U+2086 U+2089
   doc_sample: 
@@ -119,7 +119,7 @@
       tt_setting_name: Barred
       tt_setting_tag: T
   doc_group: num
-  doc_order: 807
+  doc_order: 817
   doc_name: Seven
   doc_affects: U+0037 U+2077 U+2087
   doc_sample: 
@@ -146,7 +146,7 @@
       tt_setting_name: Slashed
       tt_setting_tag: T
   doc_group: num
-  doc_order: 800
+  doc_order: 810
   doc_name: Zero
   doc_affects: U+0030 U+2070 U+2080
   doc_sample: 
@@ -850,6 +850,33 @@
   ftml_comment: 
   ftml_string: 
 
+- tag: cv69
+  fonts: CDGA
+  version_added: 6.2
+  cv_label: Clicks
+  cv_tooltip: Alternate form of clicks that sit on baseline
+  cv_sample: 
+  tt_tag: Click
+  tt_name: Clicks
+  tt_value: Standard (descending)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (descending)
+      tt_setting_name: Standard (descending)
+      tt_setting_tag: Dflt
+    - setting_value: 1
+      setting_ui_label: Baseline
+      setting_doc_desc: Baseline
+      tt_setting_name: Baseline
+      tt_setting_tag: T
+  doc_group: chars
+  doc_order: 240
+  doc_name: Clicks
+  doc_affects: U+01C0 U+01C1 U+01C2 U+01C3 U+2980
+  doc_sample: 
+  ftml_comment: 
+  ftml_string: 
+
 - tag: cv70
   fonts: CDGA
   version_added: 5
@@ -1019,12 +1046,19 @@
   cv_label: Kayan diacritics
   cv_tooltip: Alternate side by side alignment of grave and acute for Kayan
   cv_sample: 
+  tt_tag: Kayan
+  tt_name: Kayan diacritics
+  tt_value: Standard (stacked)
   settings:
     - setting_value: 0
       setting_doc_desc: Standard (stacked)
+      tt_setting_name: Standard (stacked)
+      tt_setting_tag: Dflt
     - setting_value: 1
       setting_ui_label: Side by side
       setting_doc_desc: Side by side
+      tt_setting_name: Side by side
+      tt_setting_tag: T
   doc_group: diacsym
   doc_order: 303
   doc_name: Kayan diacritics
@@ -1259,6 +1293,22 @@
   doc_order: 351
   doc_name: Empty set
   doc_affects: U+2205
+  doc_sample: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: frac
+  fonts: CDGA
+  version_added: 6.2
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (none)
+    - setting_value: 1
+      setting_doc_desc: Automatic
+  doc_group: num
+  doc_order: 803
+  doc_name: Automatic fractions
+  doc_affects: U+0030 U+0031 U+0032 U+0033 U+0034 U+0035 U+0036 U+0037 U+0038 U+0039 U+002F U+2044
   doc_sample: 
   ftml_comment: 
   ftml_string: 
@@ -1535,6 +1585,52 @@
   doc_order: 124
   doc_name: Double-story g
   doc_affects: U+0067 U+011D U+011F U+0121 U+0123 U+01E7 U+01F5 U+01E5 U+1E21 U+A7A1 U+1D4D
+  doc_sample: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: subs
+  fonts: CDGA
+  version_added: 6.2
+  tt_tag: Subs
+  tt_name: Subscript numerals
+  tt_value: Standard
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard
+      tt_setting_name: Standard
+      tt_setting_tag: Dflt
+    - setting_value: 1
+      setting_doc_desc: Subscript
+      tt_setting_name: Subscript
+      tt_setting_tag: T
+  doc_group: num
+  doc_order: 801
+  doc_name: Subscript numerals
+  doc_affects: U+0030 U+0031 U+0032 U+0033 U+0034 U+0035 U+0036 U+0037 U+0038 U+0039
+  doc_sample: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: sups
+  fonts: CDGA
+  version_added: 6.2
+  tt_tag: Sups
+  tt_name: Superscript numerals
+  tt_value: Standard
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard
+      tt_setting_name: Standard
+      tt_setting_tag: Dflt
+    - setting_value: 1
+      setting_doc_desc: Superscript
+      tt_setting_name: Superscript
+      tt_setting_tag: T
+  doc_group: num
+  doc_order: 802
+  doc_name: Superscript numerals
+  doc_affects: U+0030 U+0031 U+0032 U+0033 U+0034 U+0035 U+0036 U+0037 U+0038 U+0039
   doc_sample: 
   ftml_comment: 
   ftml_string: 
