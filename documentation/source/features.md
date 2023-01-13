@@ -1,6 +1,6 @@
 ---
 title: Charis SIL - Font Features
-fontversion: 6.101
+fontversion: 6.200
 ---
 
 Charis SIL is an OpenType-enabled font family that supports the Latin and Cyrillic scripts. It includes a number of optional features that may be useful or required for particular uses or languages. This document lists all the available features.
@@ -234,6 +234,15 @@ Standard    | <span class='charis-R normal'>ɤ</span> | `cv25=0`
 Large bowl  | <span class='charis-R normal' style='font-feature-settings: "cv25" 1'>ɤ</span> | `cv25=1`
 Small gamma | <span class='charis-R normal' style='font-feature-settings: "cv25" 2'>ɤ</span> | `cv25=2`
 
+#### Clicks
+
+<span class='affects'>Affects: U+01C0 U+01C1 U+01C2 U+01C3 U+2980</span>
+
+Feature | Sample                      | Feature setting
+------- | --------------------------- | -------
+Standard (descending) | <span class='charis-R normal'>ǀ ǁ ǂ ǃ ⦀</span> | `cv69=0`
+Baseline              | <span class='charis-R normal' style='font-feature-settings: "cv69" 1'>ǀ ǁ ǂ ǃ ⦀</span> | `cv69=1`
+
 ### Diacritic and symbol alternates
 
 #### Vietnamese-style diacritics
@@ -246,8 +255,6 @@ Standard         | <span class='charis-R normal'>Ấấ Ầầ Ẩẩ Ẫẫ Ắ
 Vietnamese-style | <span class='charis-R normal' style='font-feature-settings: "cv75" 1'>Ấấ Ầầ Ẩẩ Ẫẫ Ắắ Ằằ Ẳẳ Ẵẵ Ếế Ềề Ểể Ễễ Ốố Ồồ Ổổ Ỗỗ</span> | `cv75=1`
 
 #### Kayan diacritics
-
-*This feature is not supported in TypeTuner Web.*
 
 <span class='affects'>Affects: U+0300 U+0301</span>
 
@@ -397,6 +404,37 @@ Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
 Standard | <span class='charis-R normal'>˥ ˦ ˧ ˨ ˩ ꜒ ꜓ ꜔ ꜕ ꜖ (˩˦˥˧˨ ꜖꜓꜒꜔꜕)</span> | `cv92=0`
 Hide staves  | <span class='charis-R normal' style='font-feature-settings: "cv92" 1'>˥ ˦ ˧ ˨ ˩ ꜒ ꜓ ꜔ ꜕ ꜖ (˩˦˥˧˨ ꜖꜓꜒꜔꜕)</span> | `cv92=1`
+
+### Numeral alternates
+
+#### Subscript numerals
+
+<span class='affects'>Affects: U+0030 U+0031 U+0032 U+0033 U+0034 U+0035 U+0036 U+0037 U+0038 U+0039</span>
+
+Feature | Sample                      | Feature setting
+------- | --------------------------- | -------
+Standard  | <span class='charis-R normal'>0 1 2 3 4 5 6 7 8 9</span> | `subs=0`
+Subscript | <span class='charis-R normal' style='font-feature-settings: "subs" 1'>0 1 2 3 4 5 6 7 8 9</span> | `subs=1`
+
+#### Superscript numerals
+
+<span class='affects'>Affects: U+0030 U+0031 U+0032 U+0033 U+0034 U+0035 U+0036 U+0037 U+0038 U+0039</span>
+
+Feature | Sample                      | Feature setting
+------- | --------------------------- | -------
+Standard    | <span class='charis-R normal'>0 1 2 3 4 5 6 7 8 9</span> | `sups=0`
+Superscript | <span class='charis-R normal' style='font-feature-settings: "sups" 1'>0 1 2 3 4 5 6 7 8 9</span> | `sups=1`
+
+#### Automatic fractions
+
+*When activated this feature will automatically create fractions when numerals are separated by either the fraction slash (U+2044) or the solidus (U+002F). This feature is not supported in TypeTuner Web.*
+
+<span class='affects'>Affects: U+0030 U+0031 U+0032 U+0033 U+0034 U+0035 U+0036 U+0037 U+0038 U+0039 U+002F U+2044</span>
+
+Feature | Sample                      | Feature setting
+------- | --------------------------- | -------
+Standard (none) | <span class='charis-R normal'>1⁄2 456⁄789 1/2 456/789</span> | `frac=0`
+Automatic       | <span class='charis-R normal' style='font-feature-settings: "frac" 1'>1⁄2 456⁄789 1/2 456/789</span> | `frac=1`
 
 <!-- PRODUCT SITE ONLY
 [font id='charis' face='CharisSIL-Regular' italic='CharisSIL-Italic' bold='CharisSIL-Bold' bolditalic='CharisSIL-BoldItalic' size='150%']
