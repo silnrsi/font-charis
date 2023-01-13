@@ -12,6 +12,7 @@
   <key>com.schriftgestaltung.customParameter.GSFont.DisplayStrings</key>
   <array>
     <string>o/LtnSmDMidLftHook o/LtnSmLMidLftHook o/LtnSmNMidLftHook o/LtnSmRMidLftHook o/LtnSmSMidLftHook o/LtnSmTMidLftHook</string>
+    <string>/ModSmW/ModSmTurnedW/ModSmX</string>
   </array>
   <key>com.schriftgestaltung.customParameter.GSFont.disablesAutomaticAlignment</key>
   <true/>
@@ -2137,7 +2138,7 @@
     <string>LtnBilabialPercussive</string>
     <string>LtnSmTurnedW</string>
     <string>CombLtnSmTurnedWBlw</string>
-    <string>CombLtnSmTurnedW</string>
+    <string>ModSmTurnedW</string>
     <string>LtnSmOmega</string>
     <string>GrSmOmega</string>
     <string>LtnSmClosedOmega</string>
@@ -4359,8 +4360,6 @@
     <string>uniF178</string>
     <key>CombLtnSmT</key>
     <string>uni036D</string>
-    <key>CombLtnSmTurnedW</key>
-    <string>uniAB69</string>
     <key>CombLtnSmTurnedWBlw</key>
     <string>uni1AC0</string>
     <key>CombLtnSmU</key>
@@ -10839,6 +10838,8 @@
     <string>u107A6</string>
     <key>ModSmTurnedRLngLegHook</key>
     <string>u107A7</string>
+    <key>ModSmTurnedW</key>
+    <string>uniAB69</string>
     <key>ModSmTurnedY</key>
     <string>u107A0</string>
     <key>ModSmTurnedYBelt</key>
