@@ -1,6 +1,6 @@
 ---
 title: Charis SIL - Developer information
-fontversion: 6.101
+fontversion: 6.200
 ---
 
 ## Welcome font developers!

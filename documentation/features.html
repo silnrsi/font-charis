@@ -68,7 +68,7 @@
     </tr>
     </tbody>
     </table>
-    <h4 id="double-story-a-and-g">Double-story a and g</h4>
+    <h4 id="single-story-a-and-g">Single-story a and g</h4>
     <p><em>This feature was formerly called 'Literacy alternates'.</em></p>
     <p><span class="affects">Affects: U+0061 U+00E0 U+00E1 U+00E2 U+00E3 U+00E4 U+00E5 U+0101 U+0103 U+0105 U+01CE U+01DF U+01E1 U+01FB U+0201 U+0203 U+0227 U+1E01 U+1E9A U+1EA1 U+1EA3 U+1EA5 U+1EA7 U+1EA9 U+1EAB U+1EAD U+1EAF U+1EB1 U+1EB3 U+1EB5 U+1EB7 U+2C65 U+2090 U+1D43 U+0363 U+0067 U+011D U+011F U+0121 U+0123 U+01E7 U+01F5 U+01E5 U+1E21 U+A7A1 U+1D4D</span></p>
     <table>
@@ -588,6 +588,29 @@
     </tr>
     </tbody>
     </table>
+    <h4 id="clicks">Clicks</h4>
+    <p><span class="affects">Affects: U+01C0 U+01C1 U+01C2 U+01C3 U+2980</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard (descending)</td>
+    <td><span class="charis-R normal">ǀ ǁ ǂ ǃ ⦀</span></td>
+    <td><code>cv69=0</code></td>
+    </tr>
+    <tr class="even">
+    <td>Baseline</td>
+    <td><span class="charis-R normal" style="font-feature-settings: &quot;cv69&quot; 1">ǀ ǁ ǂ ǃ ⦀</span></td>
+    <td><code>cv69=1</code></td>
+    </tr>
+    </tbody>
+    </table>
     <h3 id="diacritic-and-symbol-alternates">Diacritic and symbol alternates</h3>
     <h4 id="vietnamese-style-diacritics">Vietnamese-style diacritics</h4>
     <p><span class="affects">Affects: U+1EA4 U+1EA5 U+1EA6 U+1EA7 U+1EA8 U+1EA9 U+1EAA U+1EAB U+1EAE U+1EAF U+1EB0 U+1EB1 U+1EB2 U+1EB3 U+1EB4 U+1EB5 U+1EBE U+1EBF U+1EC0 U+1EC1 U+1EC2 U+1EC3 U+1EC4 U+1EC5 U+1ED0 U+1ED1 U+1ED2 U+1ED3 U+1ED4 U+1ED5 U+1ED6 U+1ED7</span></p>
@@ -613,7 +636,6 @@
     </tbody>
     </table>
     <h4 id="kayan-diacritics">Kayan diacritics</h4>
-    <p><em>This feature is not supported in TypeTuner Web.</em></p>
     <p><span class="affects">Affects: U+0300 U+0301</span></p>
     <table>
     <thead>
@@ -966,11 +988,82 @@
     </tr>
     </tbody>
     </table>
+    <h3 id="numeral-alternates">Numeral alternates</h3>
+    <h4 id="subscript-numerals">Subscript numerals</h4>
+    <p><span class="affects">Affects: U+0030 U+0031 U+0032 U+0033 U+0034 U+0035 U+0036 U+0037 U+0038 U+0039</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="charis-R normal">0 1 2 3 4 5 6 7 8 9</span></td>
+    <td><code>subs=0</code></td>
+    </tr>
+    <tr class="even">
+    <td>Subscript</td>
+    <td><span class="charis-R normal" style="font-feature-settings: &quot;subs&quot; 1">0 1 2 3 4 5 6 7 8 9</span></td>
+    <td><code>subs=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="superscript-numerals">Superscript numerals</h4>
+    <p><span class="affects">Affects: U+0030 U+0031 U+0032 U+0033 U+0034 U+0035 U+0036 U+0037 U+0038 U+0039</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="charis-R normal">0 1 2 3 4 5 6 7 8 9</span></td>
+    <td><code>sups=0</code></td>
+    </tr>
+    <tr class="even">
+    <td>Superscript</td>
+    <td><span class="charis-R normal" style="font-feature-settings: &quot;sups&quot; 1">0 1 2 3 4 5 6 7 8 9</span></td>
+    <td><code>sups=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="automatic-fractions">Automatic fractions</h4>
+    <p><em>When activated this feature will automatically create fractions when numerals are separated by either the fraction slash (U+2044) or the solidus (U+002F). This feature is not supported in TypeTuner Web.</em></p>
+    <p><span class="affects">Affects: U+0030 U+0031 U+0032 U+0033 U+0034 U+0035 U+0036 U+0037 U+0038 U+0039 U+002F U+2044</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard (none)</td>
+    <td><span class="charis-R normal">1⁄2 456⁄789 1/2 456/789</span></td>
+    <td><code>frac=0</code></td>
+    </tr>
+    <tr class="even">
+    <td>Automatic</td>
+    <td><span class="charis-R normal" style="font-feature-settings: &quot;frac&quot; 1">1⁄2 456⁄789 1/2 456/789</span></td>
+    <td><code>frac=1</code></td>
+    </tr>
+    </tbody>
+    </table>
     <!-- PRODUCT SITE ONLY
     [font id='charis' face='CharisSIL-Regular' italic='CharisSIL-Italic' bold='CharisSIL-Bold' bolditalic='CharisSIL-BoldItalic' size='150%']
     -->
     <footer class="footer">
-        <p>This guide is from the <a href="https://software.sil.org/charis/" title="" class="active">Charis SIL project</a> version 6.101 and is copyright © 1997-2022 SIL International.</p>
+        <p>This guide is from the <a href="https://software.sil.org/charis/" title="" class="active">Charis SIL project</a> version 6.200 and is copyright © 1997-2023 SIL International.</p>
     </footer>
 </article>
 </div>

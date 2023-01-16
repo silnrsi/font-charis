@@ -40,10 +40,6 @@ This release is focused on adding features and glyphs, including support for ove
     - U+A7BE LATIN CAPITAL LETTER GLOTTAL U
     - U+A7BF LATIN SMALL LETTER GLOTTAL U
 
-- Greek editorial combining marks
-    - U+1DC0 COMBINING DOTTED GRAVE ACCENT
-    - U+1DC1 COMBINING DOTTED ACUTE ACCENT
-
 - Combining marks
     - U+1ABF COMBINING LATIN SMALL LETTER W BELOW
     - U+1AC0 COMBINING LATIN SMALL LETTER TURNED W BELOW

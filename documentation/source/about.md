@@ -1,6 +1,6 @@
 ---
 title: Charis SIL - About
-fontversion: 6.101
+fontversion: 6.200
 ---
 
 ## About this project

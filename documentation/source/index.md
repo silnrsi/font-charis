@@ -1,6 +1,6 @@
 ---
 title: Charis SIL - Documentation
-fontversion: 6.101
+fontversion: 6.200
 ---
 
 Thank you for your interest in the Charis SIL fonts. This font family supports the broad variety of writing systems that use Latin and Cyrillic scripts. The design is optimized for high readability at a wide range of sizes and resolutions, making it ideal for new readers moving on from simple sans serif forms. 

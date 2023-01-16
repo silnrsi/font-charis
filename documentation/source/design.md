@@ -1,6 +1,6 @@
 ---
 title: Charis SIL - Design
-fontversion: 6.101
+fontversion: 6.200
 ---
 
 Charis SIL is optimized for readability in long printed documents. It is highly readable and holds up well in less-than-ideal reproduction environments due to its simple and robust design with strong serifs and clear features.

@@ -1,4 +1,9 @@
-Release 6.101 - TypeTuner Web and special-purpose modified fonts
+Release 6.200 - New features and additional character support
+
+180+ new chars
+240+ new glyphs
+3609 > 3857 glyphs +248
+
 
 This is a maintenance release primarily focused on making the v6 fonts available on *TypeTuner Web*. This enables us to also provide v6 versions of many special-purpose modified fonts, including *Literacy* and *Compact* versions.
 
