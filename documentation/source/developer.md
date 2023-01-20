@@ -36,7 +36,6 @@ Here are a few examples of contributions that would be welcomed (some more than 
 - Coptic (Gentium)
 - Historic/Archaic Cyrillic
 - Mathematical glyphs
-- OpenType code and glyphs for on-the-fly fraction creation
 - Additional scripts (Armenian, etc.), and any needed OpenType code
 
 Because we want to be able to guarantee a high level of quality for our fonts, we will review submissions carefully. Contributions will need to cover all the weights and styles of the family and in some cases all four font projects. Please don’t be discouraged if we do not include a submission due to quality or incompleteness, or if we ask you to make specific revisions. 

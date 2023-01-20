@@ -225,7 +225,7 @@ This release is focused on adding features and glyphs, including support for ove
 
 #### Improvements and fixes
 
-- Kayan diacritics feature () now supported by TypeTuner Web
+- Kayan diacritics feature (cv79) now supported by TypeTuner Web
 
 - Combining letters, modifier letters, superscripts, and subscripts have been made more consistent in size and weight
 
