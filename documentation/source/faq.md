@@ -28,7 +28,7 @@ Here are a few of the most frequently asked questions specifically regarding Cha
 
 #### *Why does the font have some Greek characters, but not all?*
 
-Although Charis SIL includes some Greek characters, it is not intended to provide general support for the Greek language. The Greek characters that are included are there to support various notational systems (linguistic, logical, mathematical). Other fonts, such as [Gentium Plus](http://software.sil.org/gentium) provide complete Greek script support. 
+Although Charis SIL includes some Greek characters, it is not intended to provide general support for the Greek language. The Greek characters that are included are there to support various notational systems (linguistic, logical, mathematical). Other fonts, such as [Gentium Plus](http://software.sil.org/gentium), provide complete Greek script support. 
 
 #### *Will you add full Greek script support?*
 
@@ -36,4 +36,4 @@ We have no plans to do that, however the [OFL licensing](https://scripts.sil.org
 
 #### *Isn’t Charis SIL just a copy of Charter?*
 
-Charis SIL is very closely based on the design of Bitstream Charter, however the glyphs were completely redrawn based only on visual reference to Charter. There are some significant design differences in the serif structure, proportions, diacritics, and Cyrillic. The design was also adjusted and extended to cover a much wider range of characters and publishing needs.
+Charis SIL is very closely based on the design of Bitstream Charter. However the glyphs were completely redrawn based only on visual reference to Charter. There are some significant design differences in the serif structure, proportions, diacritics, and Cyrillic. The design was also adjusted and extended to cover a much wider range of characters and publishing needs.
