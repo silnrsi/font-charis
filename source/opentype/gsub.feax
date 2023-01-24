@@ -107,6 +107,16 @@ lookup sc2_sub {
     sub CyPalochka by CyPalochka.sc;
 } sc2_sub;
 
+lookup sups_sub {
+  lookupflag 0;
+    sub @cno_sups by @c_sups;
+} sups_sub;
+
+lookup subs_sub {
+  lookupflag 0;
+    sub @cno_subs by @c_subs;
+} subs_sub;
+
 lookup f_sub {
   lookupflag 0;
     sub LtnSmF LtnSmI  by LtnLigSmFSmI;
@@ -791,6 +801,8 @@ feature aalt {
   feature locl;
   feature smcp;
   feature c2sc;
+  feature sups;
+  feature subs;
 #  feature liga; #cannot include many-to-one substitutions
   feature numr;
   feature dnom;
@@ -899,6 +911,14 @@ feature smcp {
 feature c2sc {
   lookup sc2_sub;
 } c2sc;
+
+feature sups {
+  lookup sups_sub;
+} sups;
+
+feature subs {
+  lookup subs_sub;
+} subs;
 
 feature liga {
   lookup f_sub;
