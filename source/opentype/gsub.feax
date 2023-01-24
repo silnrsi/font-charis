@@ -832,6 +832,7 @@ ifinfo(familyName, "Andika") {
   feature cv67; #Andika
 }
   feature cv68;
+  feature cv69;
   feature cv70;
   feature cv71;
   feature cv75;
@@ -1627,11 +1628,11 @@ feature cv69 {
 
   cvParameters {
       FeatUILabelNameID {
-       name 3 1 0x0409 "Baseline clicks";  # English US
+       name 3 1 0x0409 "Clicks";  # English US
       };
       
       FeatUITooltipTextNameID {
-       name 3 1 0x0409 "Alternate form of clicks on baseline";  # English US
+       name 3 1 0x0409 "Alternate form of clicks that sit on baseline";  # English US
       };
       
       SampleTextNameID {

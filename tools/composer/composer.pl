@@ -271,6 +271,8 @@ my %nm_to_tag = (
 	'Lowercase y' => 'SmYTail', #new
 	'Capital D-hook alternate' => 'LgDHk',
 	'Capital D hook' => 'LgDHk', #new
+	'Clicks' => 'Click', #new
+	'Baseline' => 'T', #new
 	'Porsonic circumflex' => 'PorCirc', 
 	'Greek circumflex' => 'PorCirc', #new
 	'Porsonic-style' => 'Por',
@@ -349,6 +351,7 @@ my %featset_to_suffix = (
 	'SmTTail-Strt' => '\.NoTailT',
 	'SmYTail-Strt' => '\.NoTailY',
 	'LgDHk-Lc' => '\.TopBar',
+	'Click-T' => '\.bascl', #new
 	'PorCirc-PorStyle' => '\.Por',
 	'PorCirc-Por' => '\.Por', #new
 	'IotaAd-Sub' => '\.ISub',
@@ -365,6 +368,7 @@ my %featset_to_suffix = (
 # Chinantec tones negates low profile diacritics
 # small caps negate the lower case tail variants
 my %reduced_featsets = (
+	'Click-T SmCp-T' => 'SmCp-T', #new
 	'CapQ-T SmQTail-T' => 'SmQTail-T', # lower case glyph not affected by Capital Q alternate
 	'Caron-T SmCp-T' => 'SmCp-T',
 	'CHZtn-T LpDiacs-T' => 'CHZtn-T',
