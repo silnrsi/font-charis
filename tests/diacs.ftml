@@ -6536,6 +6536,10 @@
       <comment>LtnSmTurnedRMiddleTilde</comment>
       <string>\u00AB68\u000329 \u00AB68\u00030D</string>
     </test>
+    <test label="U+AB69">
+      <comment>ModSmTurnedW</comment>
+      <string>\u00AB69\u000329 \u00AB69\u00030D</string>
+    </test>
     <test label="U+F176">
       <comment>CombDblBreveBlwDep</comment>
       <string>\u00F176\u000329</string>
@@ -7356,9 +7360,13 @@
       <comment>ModSmClosedOmega</comment>
       <string>\u0107A4\u000329 \u0107A4\u000315 \u0107A4\u00030D</string>
     </test>
-    <test label="U+107A6">
+    <test label="U+107A5">
       <comment>LtnSupSmQ</comment>
-      <string>\u0107A6\u000329 \u0107A6\u000315 \u0107A6\u00030D</string>
+      <string>\u0107A5\u000329 \u0107A5\u000315 \u0107A5\u00030D</string>
+    </test>
+    <test label="U+107A6">
+      <comment>ModSmTurnedRLngLeg</comment>
+      <string>\u0107A6\u000329 \u0107A6\u00030D</string>
     </test>
     <test label="U+107A7">
       <comment>ModSmTurnedRLngLegHook</comment>
@@ -8740,7 +8748,7 @@ U+1D56">
       <comment>LtnSupSmN LtnSupSmNLftHook LtnSupSmO LtnSupSmOStrk LtnSupSmOe LtnSupSmOpnE LtnSupSmOpnO LtnSupSmP</comment>
       <string>\u00207F \u001DAE \u001D52 \u0107A2 \u00A7F9 \u001D4B \u001D53 \u001D56</string>
     </test>
-    <test label="U+107A6
+    <test label="U+107A5
 U+10791
 U+1078E
 U+1D9F
@@ -8749,11 +8757,11 @@ U+1DA2
 U+1D57
 U+1D44">
       <comment>LtnSupSmQ LtnSupSmRamsHorn LtnSupSmRevE LtnSupSmRevOpnE LtnSupSmSchwa LtnSupSmScriptG LtnSupSmT LtnSupSmTurnedA</comment>
-      <string>\u0107A6\u000308 \u010791\u000308 \u01078E\u000308 \u001D9F\u000308 \u001D4A\u000308 \u001DA2\u000308 \u001D57\u000308 \u001D44\u000308</string>
+      <string>\u0107A5\u000308 \u010791\u000308 \u01078E\u000308 \u001D9F\u000308 \u001D4A\u000308 \u001DA2\u000308 \u001D57\u000308 \u001D44\u000308</string>
     </test>
     <test label="U+0308">
       <comment>LtnSupSmQ LtnSupSmRamsHorn LtnSupSmRevE LtnSupSmRevOpnE LtnSupSmSchwa LtnSupSmScriptG LtnSupSmT LtnSupSmTurnedA</comment>
-      <string>\u0107A6 \u010791 \u01078E \u001D9F \u001D4A \u001DA2 \u001D57 \u001D44</string>
+      <string>\u0107A5 \u010791 \u01078E \u001D9F \u001D4A \u001DA2 \u001D57 \u001D44</string>
     </test>
     <test label="U+1D9B
 U+1D5A
@@ -9031,37 +9039,39 @@ U+02B5
 U+107AC
 U+107AD
 U+1DA3
-U+107A7
-U+107A0">
-      <comment>ModSmTrndOpnE ModSmTrndR ModSmTrndRHook ModSmTsDigraph ModSmTsHook ModSmTurnedH ModSmTurnedRLngLegHook ModSmTurnedY</comment>
-      <string>\u001D4C\u000308 \u0002B4\u000308 \u0002B5\u000308 \u0107AC\u000308 \u0107AD\u000308 \u001DA3\u000308 \u0107A7\u000308 \u0107A0\u000308</string>
+U+107A6
+U+107A7">
+      <comment>ModSmTrndOpnE ModSmTrndR ModSmTrndRHook ModSmTsDigraph ModSmTsHook ModSmTurnedH ModSmTurnedRLngLeg ModSmTurnedRLngLegHook</comment>
+      <string>\u001D4C\u000308 \u0002B4\u000308 \u0002B5\u000308 \u0107AC\u000308 \u0107AD\u000308 \u001DA3\u000308 \u0107A6\u000308 \u0107A7\u000308</string>
     </test>
     <test label="U+0308">
-      <comment>ModSmTrndOpnE ModSmTrndR ModSmTrndRHook ModSmTsDigraph ModSmTsHook ModSmTurnedH ModSmTurnedRLngLegHook ModSmTurnedY</comment>
-      <string>\u001D4C \u0002B4 \u0002B5 \u0107AC \u0107AD \u001DA3 \u0107A7 \u0107A0</string>
+      <comment>ModSmTrndOpnE ModSmTrndR ModSmTrndRHook ModSmTsDigraph ModSmTsHook ModSmTurnedH ModSmTurnedRLngLeg ModSmTurnedRLngLegHook</comment>
+      <string>\u001D4C \u0002B4 \u0002B5 \u0107AC \u0107AD \u001DA3 \u0107A6 \u0107A7</string>
     </test>
-    <test label="U+107A1
+    <test label="U+AB69
+U+107A0
+U+107A1
 U+1DB9
 U+107B0
 U+02B7
 U+02E3
-U+02B8
-U+1DBC
-U+02C0">
-      <comment>ModSmTurnedYBelt ModSmVHook ModSmVRtHook ModSmW ModSmX ModSmY ModSmZRetrHook ModGlottalStop</comment>
-      <string>\u0107A1\u000308 \u001DB9\u000308 \u0107B0\u000308 \u0002B7\u000308 \u0002E3\u000308 \u0002B8\u000308 \u001DBC\u000308 \u0002C0\u000308</string>
+U+02B8">
+      <comment>ModSmTurnedW ModSmTurnedY ModSmTurnedYBelt ModSmVHook ModSmVRtHook ModSmW ModSmX ModSmY</comment>
+      <string>\u00AB69\u000308 \u0107A0\u000308 \u0107A1\u000308 \u001DB9\u000308 \u0107B0\u000308 \u0002B7\u000308 \u0002E3\u000308 \u0002B8\u000308</string>
     </test>
     <test label="U+0308">
-      <comment>ModSmTurnedYBelt ModSmVHook ModSmVRtHook ModSmW ModSmX ModSmY ModSmZRetrHook ModGlottalStop</comment>
-      <string>\u0107A1 \u001DB9 \u0107B0 \u0002B7 \u0002E3 \u0002B8 \u001DBC \u0002C0</string>
+      <comment>ModSmTurnedW ModSmTurnedY ModSmTurnedYBelt ModSmVHook ModSmVRtHook ModSmW ModSmX ModSmY</comment>
+      <string>\u00AB69 \u0107A0 \u0107A1 \u001DB9 \u0107B0 \u0002B7 \u0002E3 \u0002B8</string>
     </test>
-    <test label="U+02C1">
-      <comment>ModRevGlottalStop</comment>
-      <string>\u0002C1\u000308</string>
+    <test label="U+1DBC
+U+02C0
+U+02C1">
+      <comment>ModSmZRetrHook ModGlottalStop ModRevGlottalStop</comment>
+      <string>\u001DBC\u000308 \u0002C0\u000308 \u0002C1\u000308</string>
     </test>
     <test label="U+0308">
-      <comment>ModRevGlottalStop</comment>
-      <string>\u0002C1</string>
+      <comment>ModSmZRetrHook ModGlottalStop ModRevGlottalStop</comment>
+      <string>\u001DBC \u0002C0 \u0002C1</string>
     </test>
   </testgroup>
   <testgroup label="Vietnamese (NFC)">

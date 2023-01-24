@@ -8835,7 +8835,7 @@
       <string>\u00AB68</string>
     </test>
     <test label="U+AB69">
-      <comment>CombLtnSmTurnedW</comment>
+      <comment>ModSmTurnedW</comment>
       <string>\u00AB69</string>
     </test>
     <test label="U+AB6A">
@@ -10006,8 +10006,12 @@
       <comment>ModSmClosedOmega</comment>
       <string>\u0107A4</string>
     </test>
-    <test label="U+107A6">
+    <test label="U+107A5">
       <comment>LtnSupSmQ</comment>
+      <string>\u0107A5</string>
+    </test>
+    <test label="U+107A6">
+      <comment>ModSmTurnedRLngLeg</comment>
       <string>\u0107A6</string>
     </test>
     <test label="U+107A7">
