@@ -5,7 +5,7 @@ fontversion: 6.200
 
 ## Requirements
 
-These fonts are supported by all major operating systems (macOS, Windows, Linux-based, iOS, and Android), however the extent of that support depends on the individual OS and application.
+These fonts are supported by all major operating systems (macOS, Windows, Linux-based, iOS, and Android). However, the extent of that support depends on the individual OS and application.
 
 ## Installation
 
@@ -23,9 +23,9 @@ These fonts will work normally like any other fonts in most applications. If the
 
 These fonts also include extensive OpenType features for small caps, literacy forms, character alernates and language-specific preferences. For information on the specific features available in these fonts see [Font features](features.md). 
 
-If special font features are to be activated the application will need to provide a way to turn on the feature or choose the feature setting. Details of current application support, and specific techniques for activating features, are on the [Using Font Features](http://software.sil.org/fonts/features) help page.
+If special font features are to be activated, the application will need to provide a way to turn on the feature or choose the feature setting. Details of current application support, and specific techniques for activating features, are on the [Using Font Features](https://software.sil.org/fonts/features) help page.
 
-Although the current fonts support only OpenType, previous versions provided support for Graphite and AAT (Apple Advanced Typography) technologies. Graphite was supported through version 5 and AAT was supported up to version 4. These older versions remain available from our [Previous Versions archive](http://software.sil.org/charis/download/previous-versions).
+Although the current fonts support only OpenType, previous versions provided support for Graphite and AAT (Apple Advanced Typography) technologies. Graphite was supported through version 5 and AAT was supported up to version 4. These older versions remain available from our [Previous Versions archive](https://software.sil.org/charis/download/previous-versions).
 
 ## TypeTuner
 
@@ -33,7 +33,7 @@ The [TypeTuner Web](https://scripts.sil.org/ttw/fonts2go.cgi) service allows you
 
 ## Web fonts
 
-Web font versions of these fonts (in WOFF and WOFF2 formats) are available in the `web` folder. These can be copied to a web server and used as fonts on web pages. A very basic HTML/CSS demo page is also included. For more information on the options and techniques available for using these fonts on web pages see [Using SIL Fonts on Web Pages](http://software.sil.org/fonts/webfonts).
+Web font versions of these fonts (in WOFF and WOFF2 formats) are available in the `web` folder. These can be copied to a web server and used as fonts on web pages. A very basic HTML/CSS demo page is also included. For more information on the options and techniques available for using these fonts on web pages see [Using SIL Fonts on Web Pages](https://software.sil.org/fonts/webfonts).
 
 ## Text conversion
 
