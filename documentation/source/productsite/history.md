@@ -237,6 +237,8 @@ This release is focused on adding features and glyphs, including support for ove
 
 - The combination of U+0079 LATIN SMALL LETTER Y and U+0328 COMBINING OGONEK forms a ligature
 
+- Small cap form corrected for U+A78D LATIN CAPITAL LETTER TURNED H / U+0265 LATIN SMALL LETTER TURNED H
+
 - U+0328 COMBINING OGONEK repositioned to middle leg of U+006D LATIN SMALL LETTER M
 
 - Diacritic positioning improved for U+006A LATIN SMALL LETTER J

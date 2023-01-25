@@ -19,7 +19,7 @@ The highest priorities for future additions and enhancements are mainly driven b
 
 Although some expert typographic features are supported (e.g. small caps), those are a lesser priority.
 
-Please send us your requests using the [form on the font website](https://software.sil.org/charis/about/contact/). If you are interested in helping us make the fonts better see the [Developer](developer) page.
+Please send us your requests using the [form on the font website](https://software.sil.org/charis/about/contact/). If you are interested in helping us make the fonts better, see the [Developer](developer) page.
 
 ## Announcement list
 
@@ -31,15 +31,15 @@ You can subscribe using either of the two following options.
 
 - If you would rather not use a Google profile, you can subscribe any email address by sending a message to [sil-font-news+subscribe@groups.sil.org](mailto:sil-font-news+subscribe@groups.sil.org) and following the instructions you get in the confirmation message.
 
-Our font announcements are also available through Twitter [@silfonts](http://twitter.com/silfonts).
+Our font announcements are also available through Twitter [@silfonts](https://twitter.com/silfonts).
 
 ## Supporting the project
 
-These fonts are provided at no cost, however they are expensive to produce and maintain. Please consider donating to SIL’s font development efforts to support future development. Go to [SIL’s Give Direct page](https://donate.givedirect.org/?cid=13536&n=206909) and designate your gift for _Scripts & Fonts_. **Thank you!** 
+These fonts are provided at no cost. However, they are expensive to produce and maintain. Please consider donating to SIL’s font development efforts to support future development. Go to [SIL’s Give Direct page](https://donate.givedirect.org/?cid=13536&n=206909) and designate your gift for _Scripts & Fonts_. **Thank you!** 
 
 ## About SIL International
 
-[SIL International](http://www.sil.org/) is a global, faith-based nonprofit that works with local communities around the world to develop language solutions that expand possibilities for a better life. 
+[SIL International](https://www.sil.org/) is a global, faith-based nonprofit that works with local communities around the world to develop language solutions that expand possibilities for a better life. 
 
 We are involved in approximately 1,350 active language projects in 104 countries. These projects impact more than 1.1 billion people within 1,600 local communities. SIL’s work brings together more than 4,300 staff from 89 countries who work alongside thousands more local partners and community volunteers worldwide. Our services are available without regard to religious belief, political ideology, gender, race or ethnic background.
 
