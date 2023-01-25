@@ -132,9 +132,6 @@ lookup f_sub {
 # Since all rules in the lookup must be of the same type, 
 #  the input sequence must be marked in all rules (so they are all type 6)
 # Subtables are applied in order until one matches, then the lkup moves to the next glyph to be processed
-# The OT spec says that frac may be implemented in apps by applying numr and dnom
-#  The slash should be handled by numr
-
 @c_slash = [Solidus FracSlash DivisionSlash];
 
 lookup frac_sub {
@@ -144,17 +141,6 @@ lookup frac_sub {
     sub @c_dnom @cno_dnom' by @c_dnom;
     sub @cno_numr' by @c_numr;
 } frac_sub;
-
-lookup numr_sub {
-  lookupflag 0;
-    sub @cno_numr by @c_numr;
-    sub @c_slash by FracSlash.frac;
-} numr_sub;
-
-lookup dnom_sub {
-  lookupflag 0;
-    sub @cno_dnom by @c_dnom;
-} dnom_sub;
 
 # must come after lkups used by smcp (and c2sc ?)
 lookup srb_sub {
@@ -804,8 +790,6 @@ feature aalt {
   feature sups;
   feature subs;
 #  feature liga; #cannot include many-to-one substitutions
-  feature numr;
-  feature dnom;
 ifinfo(familyName, "Andika") {
   feature cv01; #Andika
   feature cv04; #Andika
@@ -927,14 +911,6 @@ feature liga {
 feature frac {
   lookup frac_sub;
 } frac;
-
-feature numr {
-  lookup numr_sub;
-} numr;
-
-feature dnom {
-  lookup dnom_sub;
-} dnom;
 
 # Andika
 do let f = info("familyName");
