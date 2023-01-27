@@ -1136,6 +1136,15 @@
 			<cmd name="encode" args="A723 uniA723.sc" />
 		</value>
 	</feature>
+	<feature name="Kayan diacritics" value="Standard (stacked)" tag="Kayan">
+		<value name="Standard (stacked)" tag="Dflt">
+			<cmd name="null" args="null" />
+		</value>
+		<value name="Side by side" tag="T">
+			<cmd name="lookup_add" args="GSUB {ccmp_DFLT_dflt} {kayan_grave_ctx}" />
+			<cmd name="lookup_add" args="GSUB {ccmp_DFLT_dflt} {kayan_sub}" />
+		</value>
+	</feature>
 	<feature name="Line spacing" value="Normal" tag="LnSpc">
 		
 		<value name="Normal" tag="Nrml">

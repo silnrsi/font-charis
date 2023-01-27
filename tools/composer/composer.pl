@@ -282,6 +282,8 @@ my %nm_to_tag = (
 	'Cyr Serbian Macedonian' => 'SerbMac', #new
 	'Serbian Macedonian forms' => 'SrMk', #new
 	'Diacritic selection' => 'DiacSlct',
+	'Kayan diacritics' => 'Kayan', #new
+	'Side by side' => 'T', #new
 	'Line spacing' => 'LnSpc',
 	'Loose' => 'Ls',
 	'Imported' => 'Im',
@@ -1524,6 +1526,35 @@ sub Features_output($\%\%\%\%)
 	# }
 
 #bookmark
+	### output "Kayan diacritics" feature
+	unless ($opt_g)
+	{
+		my $kayan_tag = Tag_lookup('Kayan diacritics', %nm_to_tag);
+		my $side_tag = Tag_lookup('Side by side', %nm_to_tag);
+		if (not $opt_t)
+		{ #be careful of tabs in section below for proper output
+			print $fh <<END;
+	<feature name="Kayan diacritics" value="Default" tag="$kayan_tag">
+END
+		}
+		else
+		{
+			print $fh <<END;
+	<feature name="Kayan diacritics" value="$side_tag" tag="$kayan_tag">
+END
+		}
+		print $fh <<END;
+		<value name="Default" tag="Dflt">
+			<cmd name="null" args="null"/>
+		</value>
+		<value name="Side by side" tag="$side_tag">
+			<cmd name="lookup_add" args="GSUB {ccmp_DFLT_dflt} {kayan_grave_ctx}"/>
+			<cmd name="lookup_add" args="GSUB {ccmp_DFLT_dflt} {kayan_sub}"/>
+		</value>
+	</feature>
+END
+	}
+
 	### output line spacing feature
 	unless ($opt_g)
 	{
