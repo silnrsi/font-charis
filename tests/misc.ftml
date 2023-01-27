@@ -28,6 +28,9 @@
     <test label="U+006F U+0300 U+0301" stylename="cv79_1">
       <string>\u00006F\u000300\u000301</string>
     </test>
+    <test label="U+00E0 U+0301" stylename="cv79_1">
+      <string>\u0000E0\u000301</string>
+    </test>
   </testgroup>
   <testgroup label="Arrow">
     <test label="U+006F U+1DC4 U+1AB3">
