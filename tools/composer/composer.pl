@@ -1,4 +1,4 @@
-# Copyright (c) 2007-2021 SIL International  (http://www.sil.org)
+# Copyright (c) 2007-2023 SIL International  (http://www.sil.org)
 # Released under the MIT License (http://opensource.org/licenses/MIT)
 
 #Script to create a template for the TypeTuner feat_all.xml file for our Roman fonts.
@@ -88,135 +88,135 @@ my %nm_to_tag = (
 	'Non-ligated with no tramlines' => 'NoLgt',
 	'Non-ligated with tramlines' => 'TrmLnNoLgt',
 	'Vietnamese-style diacritics' => 'VIEdiacs',
-	'Vietnamese diacritics' => 'VIEdiacs', #new
+	'Vietnamese diacritics' => 'VIEdiacs',
 	'Vietnamese-style' => 'T',
-	'Vietnamese style' => 'T', #new
+	'Vietnamese style' => 'T',
 	'Romanian-style diacritics' => 'RONdiacs',
 	'Chinantec tones' => 'CHZtn',
 	'Chinantec-style' => 'T',
-	'Chinantec style' => 'T', #new
+	'Chinantec style' => 'T',
 	'Bridging diacritics' => 'BrdgDiacs',
 	'Barred-bowl forms' => 'BarBwl',
 	'Barred-bowl' => 'T',
 	'Literacy alternates' => 'Lit',
-	'Single-story a and g' => 'Lit', #new
-	'Single-story a' => 'SSA', #new
-	'Single-story g' => 'SSG', #new
-	'Double-story a and g' => 'Lit', #new (for Andika, ss01 UI string changed from "Single-story a and g")
-	'Double-story a' => 'DSA', #new
-	'Double-story g' => 'DSG', #new
+	'Single-story a and g' => 'Lit',
+	'Single-story a' => 'SSA',
+	'Single-story g' => 'SSG',
+	'Double-story a and g' => 'Lit', #(for Andika, ss01 UI string changed from "Single-story a and g")
+	'Double-story a' => 'DSA',
+	'Double-story g' => 'DSG',
 	'Slant italic specials' => 'SlntItlc',
-	'Slanted italic specials' => 'SlntItlc', #new
+	'Slanted italic specials' => 'SlntItlc',
 	'Uppercase Eng alternates' => 'Eng',
-	'Capital Eng' => 'Eng', #new
+	'Capital Eng' => 'Eng',
 	'Large eng with descender' => 'LgDsc',
 	'Large eng on baseline' => 'LgBsln',
-	'Lowercase no descender' => 'LgBsln', #new
+	'Lowercase no descender' => 'LgBsln',
 	'Capital N with tail' => 'CapN',
-	'Capital form' => 'Uc', #new, #TODO: duplicate of Cyrillic lowercase shha setting (CapN desired)
+	'Capital form' => 'Uc', #TODO: duplicate of Cyrillic lowercase shha setting (CapN desired)
 	'Large eng with short stem' => 'LgShrtStm',
-	'Lowercase short stem' => 'LgShrtStm', #new
+	'Lowercase short stem' => 'LgShrtStm',
 	'Rams horn alternates' => 'RmHrn',
-	'Lowercase rams horn' => 'RmHrn', #new
+	'Lowercase rams horn' => 'RmHrn',
 	'Small bowl' => 'Sm',
 	'Large bowl' => 'Lrg',
-	'Large Bowl' => 'Lrg', #new
+	'Large Bowl' => 'Lrg',
 	'Small gamma' => 'Gma',
 	'Ogonek alternate' => 'Ognk',
-	'Ogonek' => 'Ognk', #new
+	'Ogonek' => 'Ognk',
 	'Curved' => 'Crv',
 	'Straight' => 'Strt',
-	'No tail' => 'Strt', #new
-	'Straight tail' => 'Strt', #new
+	'No tail' => 'Strt',
+	'Straight tail' => 'Strt',
 	'Capital B-hook alternate' => 'LrgBHk',
-	'Capital B hook' => 'LrgBHk', #new
+	'Capital B hook' => 'LrgBHk',
 	'Capital H-stroke alternate' => 'LgHStrk',
-	'Capital H stroke' => 'LgHStrk', #new
+	'Capital H stroke' => 'LgHStrk',
 	'Horizontal-stroke' => 'Hrz',
 	'Vertical-stroke' => 'Vrt',
-	'Vertical stroke' => 'Vrt', #new
+	'Vertical stroke' => 'Vrt',
 	'J-stroke hook alternate' => 'JStrk',
-	'Lowercase J stroke hook' => 'JStrk', #new
+	'Lowercase J stroke hook' => 'JStrk',
 	'No top serif' => 'NoSrf',
 	'Top serif' => 'TopSrf',
 	'Capital N-left-hook alternate' => 'LgNLftHk',
-	'Capital N left hook' => 'LgNLftHk', #new
+	'Capital N left hook' => 'LgNLftHk',
 	'Uppercase style' => 'Uc',
 	'Lowercase style' => 'Lc',
-	'Single bowl' => 'Lc', #new
-	'Half bowl' => 'Lc', #new
-	'Lowercase form' => 'Lc', #new
+	'Single bowl' => 'Lc',
+	'Half bowl' => 'Lc',
+	'Lowercase form' => 'Lc',
 	'Open-O alternates' => 'OpnO',
-	'Open O' => 'OpnO', #new
+	'Open O' => 'OpnO',
 	'Bottom serif' => 'BtmSrf',
 	'Small p-hook alternate' => 'SmPHk',
-	'Lowercase p hook' => 'SmPHk', #new
+	'Lowercase p hook' => 'SmPHk',
 	'Left hook' => 'LftHk',
 	'Right hook' => 'RtHk',
-	'Right Hook' => 'RtHk', #new
+	'Right Hook' => 'RtHk',
 	'Capital R-tail alternate' => 'LgRTl',
-	'Capital R tail' => 'LgRTl', #new
+	'Capital R tail' => 'LgRTl',
 	'Capital T-hook alternate' => 'LgTHk',
-	'Capital T hook' => 'LgTHk', #new
+	'Capital T hook' => 'LgTHk',
 	'V-hook alternates' => 'VHk',
-	'V hook' => 'VHk', #new
+	'V hook' => 'VHk',
 	'Curved' => 'Crvd', 
 	'Straight with low hook' => 'StrtLftLowHk',
 	'Straight with high hook' => 'StrtLftHk',
 	'Capital Y-hook alternate' => 'LgYHk',
-	'Capital Y hook' => 'LgYHk', #new
+	'Capital Y hook' => 'LgYHk',
 	'Small ezh-curl alternate' => 'SmEzhCrl',
-	'Lowercase ezh curl' => 'SmEzhCrl', #new
+	'Lowercase ezh curl' => 'SmEzhCrl',
 	'Capital Ezh alternates' => 'LgEzh',
-	'Capital Ezh' => 'LgEzh', #new
+	'Capital Ezh' => 'LgEzh',
 	'Normal' => 'Nrml',
 	'Reversed sigma' => 'RvSgma',
 	'OU alternates' => 'Ou',
-	'OU' => 'Ou', #new
+	'OU' => 'Ou',
 	'Closed' => 'Clsd',
 	'Open' => 'Opn',
-	'Open top' => 'Opn', #new
+	'Open top' => 'Opn',
 	'Mongolian-style Cyrillic E' => 'CyrE',
-	'Cyrillic E' => 'CyrE', #new
+	'Cyrillic E' => 'CyrE',
 	'Mongolian-style' => 'T',
-	'Mongolian style' => 'T', #new
+	'Mongolian style' => 'T',
 	'Modifier apostrophe alternates' => 'ModAp',
-	'Modifier apostrophe' => 'ModAp', #new
+	'Modifier apostrophe' => 'ModAp',
 	'Small' => 'Sm',
 	'Large' => 'Lg',
 	'Modifier colon alternate' => 'ModCol',
-	'Modifier colon' => 'ModCol', #new
+	'Modifier colon' => 'ModCol',
 	'Tight' => 'Tght',
 	'Expanded' => 'Wd',
 	'Non-European caron alternates' => 'Caron',
-	'Caron' => 'Caron', #new
+	'Caron' => 'Caron',
 	'European style' => 'F',
 	'Non-European style' => 'T',
-	'Global style' => 'T', #new
+	'Global style' => 'T',
 	'Combining breve Cyrillic form' => 'CmbBrvCyr',
-	'Cyrillic breve' => 'CmbBrvCyr', #new
+	'Cyrillic breve' => 'CmbBrvCyr',
 	'Cyrillic-style' => 'T',
-	'Cyrillic form' => 'T', #new
+	'Cyrillic form' => 'T',
 	'Cyrillic shha alternate' => 'CyShha',
-	'Cyrillic lowercase shha' => 'CyShha', #new
+	'Cyrillic lowercase shha' => 'CyShha',
 	# 'Capital form' => 'Uc', #TODO: duplicate of uppercase eng setting
 	'Empty set alternates' => 'EmpSet',
-	'Empty set alternate' => 'EmpSet', #new
-	'Empty set' => 'EmpSet', #new
+	'Empty set alternate' => 'EmpSet',
+	'Empty set' => 'EmpSet',
 	'Circle' => 'Crcl',
 	'Zero' => 'Zro',
-	'Zero form' => 'Zro', #new
+	'Zero form' => 'Zro',
 	'Small Caps' => 'SmCp',
-	'Small caps from lowercase' => 'SmCp', #new
-	'Small caps' => 'T', #new
+	'Small caps from lowercase' => 'SmCp',
+	'Small caps' => 'T',
 	'Low-profile diacritics' => 'LpDiacs',
-	'Low profile diacritic alternates' => 'LpDiacs', #new
+	'Low profile diacritic alternates' => 'LpDiacs',
 	'Serbian-style alternates' => 'Serb',
 	'Serif beta alternates' => 'BetaSerif',
-	'Lowercase beta' => 'BetaSerif', #new
+	'Lowercase beta' => 'BetaSerif',
 	'No serif' => 'F',
 	'Serif' => 'T',
-	'With serif' => 'T', #new
+	'With serif' => 'T',
 	'Show deprecated PUA' => 'DepPUA',
 	'None' => 'none',
 	'Through Unicode 4.0' => '40',
@@ -227,63 +227,63 @@ my %nm_to_tag = (
 	'Digit Zero with slash' => 'Dig0',
 	'No slash' => 'F',
 	'Slash' => 'T',
-	'Slashed' => 'T', #new
+	'Slashed' => 'T',
 	'Digit One without base' => 'Dig1',
-	'One' => 'Dig1', #new
+	'One' => 'Dig1',
 	'Base' => 'F',
 	'No base' => 'T',
-	'No base serif' => 'T', #new
+	'No base serif' => 'T',
 	'Digit Four with open top' => 'Dig4',
-	'Four' => 'Dig4', #new
+	'Four' => 'Dig4',
 	'Digit Six and Nine alternates' => 'Dig69',
-	'Six and Nine' => 'Dig69', #new
+	'Six and Nine' => 'Dig69',
 	'Curved stem' => 'F',
 	'Diagonal stem' => 'T',
-	'Diagonal stems' => 'T', #new
+	'Diagonal stems' => 'T',
 	'Digit Seven with bar' => 'Dig7',
-	'Seven' => 'Dig7', #new
+	'Seven' => 'Dig7',
 	'No bar' => 'F',
 	'Bar' => 'T',
-	'Barred' => 'T', #new
+	'Barred' => 'T',
 	'Small i-tail alternate' => 'SmITail',
-	'Lowercase i' => 'SmITail', #new
+	'Lowercase i' => 'SmITail',
 	'Curved tail' => 'CrvTl',
 	'Capital J alternate' => 'CapJ',
-	'Capital J' => 'CapJ', #new
+	'Capital J' => 'CapJ',
 	'No top bar' => 'F',
 	'Top bar' => 'T',
 	'Small j-serif alternate' => 'SmJSerif',
-	'Lowercase j' => 'SmJSerif', #new
+	'Lowercase j' => 'SmJSerif',
 	'Small l-tail alternate' => 'SmLTail',
-	'Lowercase l' => 'SmLTail', #new
+	'Lowercase l' => 'SmLTail',
 	'Capital Q alternate' => 'CapQ',
-	'Capital Q' => 'CapQ', #new
+	'Capital Q' => 'CapQ',
 	'Tail' => 'F',
 	'Tail across' => 'T',
-	'Crossing tail' => 'T', #new
+	'Crossing tail' => 'T',
 	'Small q-tail alternate' => 'SmQTail',
-	'Lowercase q' => 'SmQTail', #new
+	'Lowercase q' => 'SmQTail',
 	'Point' => 'T',
-	'Pointed' => 'T', #new
+	'Pointed' => 'T',
 	'Small t-tail alternate' => 'SmTTail',
-	'Lowercase t' => 'SmTTail', #new
+	'Lowercase t' => 'SmTTail',
 	'Small y-tail alternate' => 'SmYTail',
-	'Lowercase y' => 'SmYTail', #new
+	'Lowercase y' => 'SmYTail',
 	'Capital D-hook alternate' => 'LgDHk',
-	'Capital D hook' => 'LgDHk', #new
-	'Clicks' => 'Click', #new
-	'Baseline' => 'T', #new
+	'Capital D hook' => 'LgDHk',
+	'Clicks' => 'Click',
+	'Baseline' => 'T',
 	'Porsonic circumflex' => 'PorCirc', 
-	'Greek circumflex' => 'PorCirc', #new
+	'Greek circumflex' => 'PorCirc',
 	'Porsonic-style' => 'Por',
-	'Porsonic form' => 'Por', #new
-	'Greek iota adscript' => 'IotaAd', #new
-	'Subscript' => 'Sub', #new
-	'Cyr Serbian Macedonian' => 'SerbMac', #new
-	'Serbian Macedonian forms' => 'SrMk', #new
+	'Porsonic form' => 'Por',
+	'Greek iota adscript' => 'IotaAd',
+	'Subscript' => 'Sub',
+	'Cyr Serbian Macedonian' => 'SerbMac',
+	'Serbian Macedonian forms' => 'SrMk',
 	'Diacritic selection' => 'DiacSlct',
-	'Kayan diacritics' => 'Kayan', #new
-	'Side by side' => 'T', #new
+	'Kayan diacritics' => 'Kayan',
+	'Side by side' => 'T',
 	'Line spacing' => 'LnSpc',
 	'Loose' => 'Ls',
 	'Imported' => 'Im',
@@ -301,10 +301,10 @@ my %featset_to_suffix = (
 	'CyrE-T' => '\.MongolStyle',
 	'Lit-T' => '(\.SngBowl|\.SngStory)',
 	'Lit-F' => '^[a-zA-Z0-9]+(\.|$)(?!SngBowl|SngStory)',
-	'SSA-T' => '\.SngStory', #new
-	'SSG-T' => '\.SngBowl', #new
-	'DSA-T' => '^[a-zA-Z0-9]+(\.|$)(?!SngStory)', #new
-	'DSG-T' => '^[a-zA-Z0-9]+(\.|$)(?!SngBowl)', #new
+	'SSA-T' => '\.SngStory',
+	'SSG-T' => '\.SngBowl',
+	'DSA-T' => '^[a-zA-Z0-9]+(\.|$)(?!SngStory)',
+	'DSG-T' => '^[a-zA-Z0-9]+(\.|$)(?!SngBowl)',
 	'ModAp-Lg' => '\.Lrg',
 	'Ognk-Strt' => '\.RetroHook',
 	'OpnO-TopSrf' => '\.TopSerif',
@@ -315,7 +315,7 @@ my %featset_to_suffix = (
 	'SmCp-T' => '\.sc',
 	'SmPHk-RtHk' => '\.BowlHook', 
 	'VHk-Crvd' => '(uni01B2|uni028B)(?!\.StraightLftHighHook|\.StraightLft)',
-	'VHk-Dflt' => '(uni01B2|uni028B)(?!\.StraightLftHighHook|\.StraightLft)', #new
+	'VHk-Dflt' => '(uni01B2|uni028B)(?!\.StraightLftHighHook|\.StraightLft)',
 	'VHk-StrtLftLowHk' => '\.StraightLft',
 	'VHk-StrtLftHk' => '\.StraightLftHighHook',
 	'VIEdiacs-T' => '\.VN',
@@ -324,10 +324,10 @@ my %featset_to_suffix = (
 	'DepPUA-51' => '\.Dep51',
 	'BrdgDiacs-T' => '(\.UU|\.UL|\.LL)',
 	'Eng-LgDsc' => '[eE]ng(?!\.UCStyle|\.BaselineHook|\.Kom)',
-	'Eng-Dflt' => '[eE]ng(?!\.UCStyle|\.BaselineHook|\.Kom)', #new
+	'Eng-Dflt' => '[eE]ng(?!\.UCStyle|\.BaselineHook|\.Kom)',
 	'Eng-LgBsln' => '\.BaselineHook',
 	'Eng-CapN' => '\.UCStyle',
-	'Eng-Uc' => '\.UCStyle', #new
+	'Eng-Uc' => '\.UCStyle',
 	'Eng-LgShrtStm' => '\.Kom',
 	'RmHrn-Dflt' => 'uni0264(?!\.GammaStyle|\.LrgBowl)',
 	'RmHrn-Gma' => '\.GammaStyle',
@@ -352,17 +352,17 @@ my %featset_to_suffix = (
 	'SmQTail-T' => '\.Point',
 	'SmTTail-Strt' => '\.NoTailT',
 	'SmYTail-Strt' => '\.NoTailY',
-	'Dig1-T' => '\.NoBase', #new
-	'Dig4-Opn' => '\.Open', #new
-	'Dig69-T' => '\.Diag', #new
-	'Dig7-T' => '\.Bar', #new
-	'Zro-T' => '\.Slash', #new
+	'Dig1-T' => '\.NoBase',
+	'Dig4-Opn' => '\.Open',
+	'Dig69-T' => '\.Diag',
+	'Dig7-T' => '\.Bar',
+	'Zro-T' => '\.Slash',
 	'LgDHk-Lc' => '\.TopBar',
-	'Click-T' => '\.bascl', #new
+	'Click-T' => '\.bascl',
 	'PorCirc-PorStyle' => '\.Por',
-	'PorCirc-Por' => '\.Por', #new
+	'PorCirc-Por' => '\.Por',
 	'IotaAd-Sub' => '\.ISub',
-	'SerbMac-SrMk' => '\.Serb', #new
+	'SerbMac-SrMk' => '\.Serb',
 );
 
 #map one set of feature settings to a simpler set
@@ -375,7 +375,7 @@ my %featset_to_suffix = (
 # Chinantec tones negates low profile diacritics
 # small caps negate the lower case tail variants
 my %reduced_featsets = (
-	'Click-T SmCp-T' => 'SmCp-T', #new
+	'Click-T SmCp-T' => 'SmCp-T',
 	'CapQ-T SmQTail-T' => 'SmQTail-T', # lower case glyph not affected by Capital Q alternate
 	'Caron-T SmCp-T' => 'SmCp-T',
 	'CHZtn-T LpDiacs-T' => 'CHZtn-T',
@@ -384,11 +384,11 @@ my %reduced_featsets = (
 	'LgYHk-LftHk SmYTail-Strt' => 'SmYTail-Strt', # lower case glyph not affected by Capital Y-hook alternate
 	'Lit-T SlntItlc-T' => 'Lit-T',
 	'Lit-T SmCp-T' => 'SmCp-T',
-	'Lit-T SSA-T' => 'Lit-T', #new
-	'Lit-T LpDiacs-T SSA-T' => 'Lit-T LpDiacs-T', #new
-	'Lit-T SSG-T' => 'Lit-T', #new
-	'Lit-T LpDiacs-T SSG-T' => 'Lit-T LpDiacs-T', #new
-	'SSA-T SlntItlc-T' => 'SSA-T', #new
+	'Lit-T SSA-T' => 'Lit-T',
+	'Lit-T LpDiacs-T SSA-T' => 'Lit-T LpDiacs-T',
+	'Lit-T SSG-T' => 'Lit-T',
+	'Lit-T LpDiacs-T SSG-T' => 'Lit-T LpDiacs-T',
+	'SSA-T SlntItlc-T' => 'SSA-T',
 	'SSA-T SmCp-T' => 'SmCp-T',
 	'LpDiacs-T SmCp-T' => 'SmCp-T',
 	#'LrgBHk-Lc SmCp-T' => 'SmCp-T', #this seems like an error
@@ -405,41 +405,41 @@ my %reduced_featsets = (
 	'SmCp-T SmQTail-T' => 'SmCp-T',
 	'SmCp-T SmTTail-Strt' => 'SmCp-T',
 	'SmCp-T SmYTail-Strt' => 'SmCp-T',
-	'SerbMac-SrMk SmCp-T'=> 'SmCp-T', #new
-	'BarBwl-T Lit-T SSG-T' => 'BarBwl-T Lit-T', #new
-	'Lit-T Ognk-Strt SSA-T' => 'Lit-T Ognk-Strt', #new
-	'Lit-T SSA-T SlntItlc-T' => 'Lit-T SlntItlc-T', #new, above
-	'LpDiacs-T SSA-T SlntItlc-T' => 'LpDiacs-T SSA-T', #new
-	'Lit-T SSA-T SmCp-T' => 'Lit-T SmCp-T', #new, above
-	'LpDiacs-T SSA-T SmCp-T' => 'LpDiacs-T SmCp-T', #new, above
-	'Lit-T SSA-T VIEdiacs-T' => 'Lit-T VIEdiacs-T', #new
-	'Lit-T LpDiacs-T SSA-T VIEdiacs-T' => 'Lit-T LpDiacs-T VIEdiacs-T', #new
-	'Lit-T SSG-T SmCp-T' => 'Lit-T SmCp-T', #new
-	'LpDiacs-T SSG-T SmCp-T' => 'LpDiacs-T SmCp-T', #new, above
+	'SerbMac-SrMk SmCp-T'=> 'SmCp-T',
+	'BarBwl-T Lit-T SSG-T' => 'BarBwl-T Lit-T',
+	'Lit-T Ognk-Strt SSA-T' => 'Lit-T Ognk-Strt',
+	'Lit-T SSA-T SlntItlc-T' => 'Lit-T SlntItlc-T', #above
+	'LpDiacs-T SSA-T SlntItlc-T' => 'LpDiacs-T SSA-T',
+	'Lit-T SSA-T SmCp-T' => 'Lit-T SmCp-T', #above
+	'LpDiacs-T SSA-T SmCp-T' => 'LpDiacs-T SmCp-T', #above
+	'Lit-T SSA-T VIEdiacs-T' => 'Lit-T VIEdiacs-T',
+	'Lit-T LpDiacs-T SSA-T VIEdiacs-T' => 'Lit-T LpDiacs-T VIEdiacs-T',
+	'Lit-T SSG-T SmCp-T' => 'Lit-T SmCp-T',
+	'LpDiacs-T SSG-T SmCp-T' => 'LpDiacs-T SmCp-T', #above
 	'CapQ-T SmCp-T SmQTail-T' => 'CapQ-T SmCp-T',
 	'Caron-T SmCp-T SmLTail-CrvTl' => 'Caron-T SmCp-T',
 	'Caron-T SmCp-T SmTTail-Strt' => 'Caron-T SmCp-T',
 	'LgTHk-RtHk SmCp-T SmTTail-Strt' => 'LgTHk-RtHk SmCp-T',
 	'LgYHk-LftHk SmCp-T SmYTail-Strt' => 'LgYHk-LftHk SmCp-T',
 	'Lit-T LpDiacs-T SlntItlc-T' => 'Lit-T LpDiacs-T',
-	'Lit-T LpDiacs-T SSA-T SlntItlc-T' => 'Lit-T LpDiacs-T SlntItlc-T', #new, above
+	'Lit-T LpDiacs-T SSA-T SlntItlc-T' => 'Lit-T LpDiacs-T SlntItlc-T', #above
 	'Lit-T LpDiacs-T SmCp-T' => 'LpDiacs-T SmCp-T', #above
-	'Lit-T LpDiacs-T SSA-T SmCp-T' => 'Lit-T LpDiacs-T SmCp-T', #new, above
-	'Lit-T LpDiacs-T SSG-T SmCp-T' => 'Lit-T LpDiacs-T SmCp-T', #new, above
-	'Lit-T Ognk-Strt SlntItlc-T' => 'Lit-T Ognk-Strt', #new
+	'Lit-T LpDiacs-T SSA-T SmCp-T' => 'Lit-T LpDiacs-T SmCp-T', #above
+	'Lit-T LpDiacs-T SSG-T SmCp-T' => 'Lit-T LpDiacs-T SmCp-T', #above
+	'Lit-T Ognk-Strt SlntItlc-T' => 'Lit-T Ognk-Strt',
 	'Lit-T Ognk-Strt SmCp-T' => 'Ognk-Strt SmCp-T',
-	'Ognk-Strt SSA-T SmCp-T' => 'Ognk-Strt SmCp-T', #new
+	'Ognk-Strt SSA-T SmCp-T' => 'Ognk-Strt SmCp-T',
 	'Lit-T SlntItlc-T SmCp-T'=> 'SmCp-T',
 	'Lit-T SlntItlc-T VIEdiacs-T' => 'Lit-T VIEdiacs-T',
 	'Lit-T SmCp-T VIEdiacs-T' => 'SmCp-T VIEdiacs-T',
-	'SmCp-T SSA-T VIEdiacs-T' => 'SmCp-T VIEdiacs-T', #new
-	'Ognk-Strt SSA-T SlntItlc-T' => 'Ognk-Strt SSA-T', #new
-	'SSA-T SlntItlc-T SmCp-T' => 'SSA-T SmCp-T', #new, above
-	'SSA-T SlntItlc-T VIEdiacs-T' => 'SSA-T VIEdiacs-T', #new
+	'SmCp-T SSA-T VIEdiacs-T' => 'SmCp-T VIEdiacs-T',
+	'Ognk-Strt SSA-T SlntItlc-T' => 'Ognk-Strt SSA-T',
+	'SSA-T SlntItlc-T SmCp-T' => 'SSA-T SmCp-T', #above
+	'SSA-T SlntItlc-T VIEdiacs-T' => 'SSA-T VIEdiacs-T',
 	'LpDiacs-T Ognk-Strt SmCp-T' => 'Ognk-Strt SmCp-T',
 	'LpDiacs-T SlntItlc-T SmCp-T' => 'LpDiacs-T SmCp-T', #above
 	'LpDiacs-T SmCp-T VIEdiacs-T' => 'SmCp-T VIEdiacs-T',
-	'Ognk-Strt SlntItlc-T SmCp-T' => 'Ognk-Strt SmCp-T', #new
+	'Ognk-Strt SlntItlc-T SmCp-T' => 'Ognk-Strt SmCp-T',
 	'Ognk-Strt SmCp-T SmITail-CrvTl' => 'Ognk-Strt SmCp-T',
 	'RONdiacs-T SmCp-T SmTTail-Strt' => 'RONdiacs-T SmCp-T',
 	'SlntItlc-T SmCp-T VIEdiacs-T' => 'SmCp-T VIEdiacs-T',
@@ -451,29 +451,29 @@ my %reduced_featsets = (
 	'Lit-T LpDiacs-T SlntItlc-T VIEdiacs-T' => 'Lit-T LpDiacs-T VIEdiacs-T',
 	'Lit-T LpDiacs-T SmCp-T VIEdiacs-T' => 'LpDiacs-T SmCp-T VIEdiacs-T', #above
 	'Lit-T SlntItlc-T SmCp-T VIEdiacs-T' => 'SmCp-T VIEdiacs-T',
-	'BarBwl-T Lit-T SSG-T SmCp-T' => 'BarBwl-T Lit-T SmCp-T', #new
-	'Lit-T Ognk-Strt SSA-T SlntItlc-T' => 'Lit-T Ognk-Strt SlntItlc-T', #new, above
-	'Lit-T Ognk-Strt SSA-T SmCp-T' => 'Lit-T Ognk-Strt SmCp-T', #new
-	'Lit-T SSA-T SlntItlc-T SmCp-T' => 'Lit-T SlntItlc-T SmCp-T', #new
-	'Lit-T SSA-T SlntItlc-T VIEdiacs-T' => 'Lit-T SlntItlc-T VIEdiacs-T', #new
-	'Lit-T SSA-T SmCp-T VIEdiacs-T' => 'Lit-T SmCp-T VIEdiacs-T', #new
-	'Ognk-Strt SSA-T SlntItlc-T SmCp-T' => 'Ognk-Strt SSA-T SmCp-T', #new, above
-	'SSA-T SlntItlc-T SmCp-T VIEdiacs-T' => 'SSA-T SmCp-T VIEdiacs-T', #new, above
+	'BarBwl-T Lit-T SSG-T SmCp-T' => 'BarBwl-T Lit-T SmCp-T',
+	'Lit-T Ognk-Strt SSA-T SlntItlc-T' => 'Lit-T Ognk-Strt SlntItlc-T', #above
+	'Lit-T Ognk-Strt SSA-T SmCp-T' => 'Lit-T Ognk-Strt SmCp-T',
+	'Lit-T SSA-T SlntItlc-T SmCp-T' => 'Lit-T SlntItlc-T SmCp-T',
+	'Lit-T SSA-T SlntItlc-T VIEdiacs-T' => 'Lit-T SlntItlc-T VIEdiacs-T',
+	'Lit-T SSA-T SmCp-T VIEdiacs-T' => 'Lit-T SmCp-T VIEdiacs-T',
+	'Ognk-Strt SSA-T SlntItlc-T SmCp-T' => 'Ognk-Strt SSA-T SmCp-T', #above
+	'SSA-T SlntItlc-T SmCp-T VIEdiacs-T' => 'SSA-T SmCp-T VIEdiacs-T', #above
 	'LpDiacs-T SlntItlc-T SmCp-T VIEdiacs-T' => 'LpDiacs-T SmCp-T VIEdiacs-T', #above
 	'Lit-T LpDiacs-T SlntItlc-T SmCp-T VIEdiacs-T' => 'LpDiacs-T SmCp-T VIEdiacs-T', #above
-	'Lit-T Ognk-Strt SlntItlc-T SmCp-T' => 'Lit-T Ognk-Strt SmCp-T', #new, above
-	'CapJ-T SmJSerif-TopSrf' => 'SmJSerif-TopSrf', #new, Andika
-	'CapJ-T SmCp-T SmJSerif-TopSrf' => 'CapJ-T SmCp-T', #new, Andika
-	'Lit-T Ognk-Strt SSA-T SlntItlc-T SmCp-T' => 'Lit-T Ognk-Strt SlntItlc-T SmCp-T', #new, above
-	'Lit-T SSA-T SlntItlc-T SmCp-T VIEdiacs-T' => 'Lit-T SlntItlc-T SmCp-T VIEdiacs-T', #new, above
-	'LpDiacs-T SSA-T SlntItlc-T SmCp-T' => 'LpDiacs-T SSA-T SmCp-T', #new
-	'LpDiacs-T SSA-T SlntItlc-T VIEdiacs-T' => 'LpDiacs-T SSA-T VIEdiacs-T', #new
-	'LpDiacs-T SSA-T SmCp-T VIEdiacs-T' => 'LpDiacs-T SmCp-T VIEdiacs-T', #new, above
-	'Lit-T LpDiacs-T SSA-T SlntItlc-T SmCp-T' => 'Lit-T LpDiacs-T SlntItlc-T SmCp-T', #new, above
-	'Lit-T LpDiacs-T SSA-T SlntItlc-T VIEdiacs-T' => 'Lit-T LpDiacs-T SlntItlc-T VIEdiacs-T', #new, above
-	'Lit-T LpDiacs-T SSA-T SmCp-T VIEdiacs-T' => 'Lit-T LpDiacs-T SmCp-T VIEdiacs-T', #new, above
-	'LpDiacs-T SSA-T SlntItlc-T SmCp-T VIEdiacs-T' => 'LpDiacs-T SlntItlc-T SmCp-T VIEdiacs-T', #new, above
-	'Lit-T LpDiacs-T SSA-T SlntItlc-T SmCp-T VIEdiacs-T' => 'Lit-T LpDiacs-T SlntItlc-T SmCp-T VIEdiacs-T', #new, above
+	'Lit-T Ognk-Strt SlntItlc-T SmCp-T' => 'Lit-T Ognk-Strt SmCp-T', #above
+	'CapJ-T SmJSerif-TopSrf' => 'SmJSerif-TopSrf', #Andika
+	'CapJ-T SmCp-T SmJSerif-TopSrf' => 'CapJ-T SmCp-T', #Andika
+	'Lit-T Ognk-Strt SSA-T SlntItlc-T SmCp-T' => 'Lit-T Ognk-Strt SlntItlc-T SmCp-T', #above
+	'Lit-T SSA-T SlntItlc-T SmCp-T VIEdiacs-T' => 'Lit-T SlntItlc-T SmCp-T VIEdiacs-T', #above
+	'LpDiacs-T SSA-T SlntItlc-T SmCp-T' => 'LpDiacs-T SSA-T SmCp-T',
+	'LpDiacs-T SSA-T SlntItlc-T VIEdiacs-T' => 'LpDiacs-T SSA-T VIEdiacs-T',
+	'LpDiacs-T SSA-T SmCp-T VIEdiacs-T' => 'LpDiacs-T SmCp-T VIEdiacs-T', #above
+	'Lit-T LpDiacs-T SSA-T SlntItlc-T SmCp-T' => 'Lit-T LpDiacs-T SlntItlc-T SmCp-T', #above
+	'Lit-T LpDiacs-T SSA-T SlntItlc-T VIEdiacs-T' => 'Lit-T LpDiacs-T SlntItlc-T VIEdiacs-T', #above
+	'Lit-T LpDiacs-T SSA-T SmCp-T VIEdiacs-T' => 'Lit-T LpDiacs-T SmCp-T VIEdiacs-T', #above
+	'LpDiacs-T SSA-T SlntItlc-T SmCp-T VIEdiacs-T' => 'LpDiacs-T SlntItlc-T SmCp-T VIEdiacs-T', #above
+	'Lit-T LpDiacs-T SSA-T SlntItlc-T SmCp-T VIEdiacs-T' => 'Lit-T LpDiacs-T SlntItlc-T SmCp-T VIEdiacs-T', #above
 );
 
 #specify glyph variants which have a suffix but no corresponding non-default feature setting
@@ -517,7 +517,7 @@ my %glyph_to_featset_andika = (
 	'uni0201' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['0201', 'SngStory'])}, 
 	'uni0203' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['0203', 'SngStory'])}, 
 	'uni0227' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['0227', 'SngStory'])}, 
-	'uni0363' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['0363', 'SngStory'])}, 	
+	'uni0363' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['0363', 'SngStory'])}, 
 	'uni1D43' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['1D43', 'SngStory'])}, 
 	'uni1D4D' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['1D4D', 'SngBowl'])}, 
 	'uni1E01' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['1E01', 'SngStory'])}, 
@@ -538,6 +538,9 @@ my %glyph_to_featset_andika = (
 	'uni2090' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['2090', 'SngStory'])}, 
 	'uni2C65' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['2C65', 'SngStory'])}, 
 	'uniA7A1' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['A7A1', 'SngBowl'])}, 
+	'uniA7BB' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['A7BB', 'SngStory'])}, 
+	'ordfeminine' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['00AA', 'SngStory'])}, 
+	'uni1DDA' => {('dflt' => 'Lit-T', 'alts' => [('Lit-F', 'DSA-T', 'DSG-T')], 'lit' => ['1DDA', 'SngBowl'])}, 
 );
 
 #bookmark
@@ -1531,19 +1534,9 @@ sub Features_output($\%\%\%\%)
 	{
 		my $kayan_tag = Tag_lookup('Kayan diacritics', %nm_to_tag);
 		my $side_tag = Tag_lookup('Side by side', %nm_to_tag);
-		if (not $opt_t)
-		{ #be careful of tabs in section below for proper output
-			print $fh <<END;
-	<feature name="Kayan diacritics" value="Default" tag="$kayan_tag">
-END
-		}
-		else
-		{
-			print $fh <<END;
-	<feature name="Kayan diacritics" value="$side_tag" tag="$kayan_tag">
-END
-		}
+		# be careful of tabs in section below for proper output
 		print $fh <<END;
+	<feature name="Kayan diacritics" value="Default" tag="$kayan_tag">
 		<value name="Default" tag="Dflt">
 			<cmd name="null" args="null"/>
 		</value>
@@ -1563,9 +1556,8 @@ END
 		my $normal_tag = Tag_lookup('Normal', %nm_to_tag);
 		my $loose_tag = Tag_lookup('Loose', %nm_to_tag);
 		my $imported_tag = Tag_lookup('Imported', %nm_to_tag);
-		if (not $opt_t)
-		{ #be careful of tabs in section below for proper output
-			print $fh <<END;
+		# be careful of tabs in section below for proper output
+		print $fh <<END;
 	<feature name="Line spacing" value="Normal" tag="$line_gap_tag">
 END
 			if ($family_nm eq 'doulos') {
@@ -1627,27 +1619,6 @@ END
 		</value>
 	</feature>
 END
-		}
-		else
-		{ #be careful of tabs in section below for proper output
-			print $fh <<END
-	<feature name="Line spacing" value="Normal" tag="$line_gap_tag">
-		<!-- Doulos -->
-		<value name="Normal" tag="$normal_tag">
-			<cmd name="null" args="2324 810"/>
-		</value>
-		<value name="Tight" tag="$tight_tag">
-			<cmd name="line_metrics" args="1420 442 307 1825 443 1825 443 87"/>
-		</value>
-		<value name="Loose" tag="$loose_tag">
-			<cmd name="line_gap" args="2800 1100"/>
-		</value>
-		<value name="Imported" tag="$imported_tag">
-			<cmd name="line_metrics_scaled" args="null"/>
-		</value>
-	</feature>
-END
-		}
 	}
 }
 
