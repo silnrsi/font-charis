@@ -220,7 +220,7 @@ class FTMLBuilder_LCG(FB.FTMLBuilder):
         for uid in self.uids():
             c = self.char(uid)
             if "ss01" in c.feats: # ss01 specified in glyph_data
-                if re.search("SmA", c.basename):
+                if re.search("SmA|FemOrd", c.basename):
                     c.feats.add(lita)
                 elif re.search("SmG", c.basename):
                     c.feats.add(litg)
