@@ -12,7 +12,7 @@ This release is focused on adding features and glyphs, including support for ove
 - Feature to display alternate design of clicks that sit on baseline
     - Baseline clicks (cv69)
  
-- Standard 'subs' and 'sups' features for numerals
+- Standard 'subs' and 'sups' features for numerals. These are not supported by *TypeTuner Web*.
     - Subscript numerals (subs)
     - Superscript numerals (sups)
 

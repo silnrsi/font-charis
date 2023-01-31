@@ -405,6 +405,8 @@ Hide staves  | <span class='charis-cv92-1-R normal'>˥ ˦ ˧ ˨ ˩ ꜒ ꜓ ꜔ �
 
 #### Subscript numerals
 
+*This feature is not supported in TypeTuner Web.*
+
 <span class='affects'>Affects: U+0030 U+0031 U+0032 U+0033 U+0034 U+0035 U+0036 U+0037 U+0038 U+0039</span>
 
 Feature | Sample                      | Feature setting
@@ -413,6 +415,8 @@ Standard  | <span class='charis-R normal'>0 1 2 3 4 5 6 7 8 9</span> | `subs=0`
 Subscript | <span class='charis-subs-1-R normal'>0 1 2 3 4 5 6 7 8 9</span> | `subs=1`
 
 #### Superscript numerals
+
+*This feature is not supported in TypeTuner Web.*
 
 <span class='affects'>Affects: U+0030 U+0031 U+0032 U+0033 U+0034 U+0035 U+0036 U+0037 U+0038 U+0039</span>
 

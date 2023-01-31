@@ -1592,18 +1592,11 @@
 - tag: subs
   fonts: CDGA
   version_added: 6.2
-  tt_tag: Subs
-  tt_name: Subscript numerals
-  tt_value: Standard
   settings:
     - setting_value: 0
       setting_doc_desc: Standard
-      tt_setting_name: Standard
-      tt_setting_tag: Dflt
     - setting_value: 1
       setting_doc_desc: Subscript
-      tt_setting_name: Subscript
-      tt_setting_tag: T
   doc_group: num
   doc_order: 801
   doc_name: Subscript numerals
@@ -1615,18 +1608,11 @@
 - tag: sups
   fonts: CDGA
   version_added: 6.2
-  tt_tag: Sups
-  tt_name: Superscript numerals
-  tt_value: Standard
   settings:
     - setting_value: 0
       setting_doc_desc: Standard
-      tt_setting_name: Standard
-      tt_setting_tag: Dflt
     - setting_value: 1
       setting_doc_desc: Superscript
-      tt_setting_name: Superscript
-      tt_setting_tag: T
   doc_group: num
   doc_order: 802
   doc_name: Superscript numerals
