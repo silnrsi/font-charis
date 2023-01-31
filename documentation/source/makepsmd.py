@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 '''Process font documentation .md files for use on product sites '''
 __url__ = 'http://github.com/silnrsi/fontdocs'
-__copyright__ = 'Copyright (c) 2021 SIL International (http://www.sil.org)'
+__copyright__ = 'Copyright (c) 2021-2023 SIL International (http://www.sil.org)'
 __license__ = 'Released under the MIT License (http://opensource.org/licenses/MIT)'
 __author__ = 'Victor Gaultney'
 
@@ -62,6 +62,9 @@ def doit(args):
 
     # replace links to external markdown files
     temptext = temptext.replace(".rawmd",".md")
+
+    # replace escaped @ in link texts
+    temptext = temptext.replace("[\@","[@")
 
     # make a list of new classes needed for font shortcode
     # separate searches for spans with 1, 2, or 3 settings

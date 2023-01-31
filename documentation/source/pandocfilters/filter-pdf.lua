@@ -1,5 +1,6 @@
 function Link(el)
-  el.target = string.gsub(el.target, "(.+)", "../../pdf/%0")
+  --el.target = string.gsub(el.target, "(.+)", "../../pdf/%0")
+  el.target = string.gsub(el.target, "(.+)", "")
   el.target = string.gsub(el.target, "%.md", ".pdf")
   el.target = string.gsub(el.target, "%.rawmd", ".md")
   return el
