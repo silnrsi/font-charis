@@ -32,7 +32,7 @@ This release is focused on adding features and glyphs, including support for ove
     - U+1DF29 LATIN SMALL LETTER S WITH MID-HEIGHT LEFT HOOK
     - U+1DF2A LATIN SMALL LETTER T WITH MID-HEIGHT LEFT HOOK
 
-- Letters used for Egyptological transiteration
+- Letters used for Egyptological transliteration
     - U+A7BA LATIN CAPITAL LETTER GLOTTAL A
     - U+A7BB LATIN SMALL LETTER GLOTTAL A
     - U+A7BC LATIN CAPITAL LETTER GLOTTAL I
