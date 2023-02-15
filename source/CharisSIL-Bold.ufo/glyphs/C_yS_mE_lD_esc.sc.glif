@@ -5,6 +5,15 @@
   <anchor x="837" y="1238" name="U"/>
   <outline>
     <contour>
+      <point x="177" y="-26" type="curve" smooth="yes"/>
+      <point x="361" y="-26"/>
+      <point x="455" y="34"/>
+      <point x="537" y="185" type="curve"/>
+      <point x="593" y="294"/>
+      <point x="634" y="580"/>
+      <point x="634" y="1005" type="curve"/>
+      <point x="925" y="1005" type="line"/>
+      <point x="925" y="370" type="line"/>
       <point x="1189" y="370" type="line"/>
       <point x="1189" y="984" type="line"/>
       <point x="1189" y="1000"/>
@@ -34,26 +43,8 @@
       <point x="12" y="113" type="curve" smooth="yes"/>
       <point x="12" y="48"/>
       <point x="107" y="-26"/>
-      <point x="177" y="-26" type="curve" smooth="yes"/>
-      <point x="361" y="-26"/>
-      <point x="455" y="34"/>
-      <point x="537" y="185" type="curve"/>
-      <point x="593" y="294"/>
-      <point x="634" y="580"/>
-      <point x="634" y="1005" type="curve"/>
-      <point x="925" y="1005" type="line"/>
-      <point x="925" y="370" type="line"/>
     </contour>
     <contour>
-      <point x="925" y="137" type="line"/>
-      <point x="925" y="121"/>
-      <point x="905" y="110"/>
-      <point x="884" y="108" type="curve"/>
-      <point x="789" y="100" type="line"/>
-      <point x="789" y="0" type="line"/>
-      <point x="882" y="0" type="line"/>
-      <point x="1036" y="0"/>
-      <point x="1189" y="-93"/>
       <point x="1189" y="-338" type="curve"/>
       <point x="1323" y="-338" type="line"/>
       <point x="1323" y="100" type="line"/>
@@ -68,6 +59,15 @@
       <point x="1021" y="685"/>
       <point x="944" y="676"/>
       <point x="925" y="662" type="curve"/>
+      <point x="925" y="137" type="line"/>
+      <point x="925" y="121"/>
+      <point x="905" y="110"/>
+      <point x="884" y="108" type="curve"/>
+      <point x="789" y="100" type="line"/>
+      <point x="789" y="0" type="line"/>
+      <point x="882" y="0" type="line"/>
+      <point x="1036" y="0"/>
+      <point x="1189" y="-93"/>
     </contour>
   </outline>
 </glyph>

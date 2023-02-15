@@ -8,15 +8,12 @@
   <anchor x="341" y="1457" name="U"/>
   <outline>
     <contour>
+      <point x="20" y="740" type="line"/>
       <point x="662" y="740" type="line"/>
       <point x="662" y="1422" type="line"/>
       <point x="20" y="1422" type="line"/>
-      <point x="20" y="740" type="line"/>
     </contour>
     <contour>
-      <point x="632" y="1075" type="curve" smooth="yes"/>
-      <point x="632" y="883"/>
-      <point x="475" y="770"/>
       <point x="314" y="770" type="curve" smooth="yes"/>
       <point x="223" y="770"/>
       <point x="138" y="799"/>
@@ -37,15 +34,18 @@
       <point x="333" y="1392" type="curve" smooth="yes"/>
       <point x="498" y="1392"/>
       <point x="632" y="1267"/>
+      <point x="632" y="1075" type="curve" smooth="yes"/>
+      <point x="632" y="883"/>
+      <point x="475" y="770"/>
     </contour>
     <contour>
+      <point x="170" y="1161" type="curve"/>
       <point x="484" y="1161" type="line"/>
       <point x="468" y="1263"/>
       <point x="403" y="1337"/>
       <point x="327" y="1337" type="curve" smooth="yes"/>
       <point x="259" y="1337"/>
       <point x="192" y="1270"/>
-      <point x="170" y="1161" type="curve"/>
     </contour>
   </outline>
 </glyph>

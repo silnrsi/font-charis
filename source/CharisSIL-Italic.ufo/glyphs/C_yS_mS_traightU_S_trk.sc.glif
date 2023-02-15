@@ -5,6 +5,25 @@
   <anchor x="762" y="1238" name="U"/>
   <outline>
     <contour>
+      <point x="281" y="0" type="line"/>
+      <point x="761" y="0" type="line"/>
+      <point x="761" y="85" type="line"/>
+      <point x="658" y="93" type="line"/>
+      <point x="628" y="95"/>
+      <point x="619" y="102"/>
+      <point x="621" y="112" type="curve"/>
+      <point x="645" y="221"/>
+      <point x="671" y="333"/>
+      <point x="695" y="441" type="curve"/>
+      <point x="695" y="435" type="line"/>
+      <point x="1014" y="435" type="line"/>
+      <point x="1036" y="535" type="line"/>
+      <point x="761" y="535" type="line"/>
+      <point x="1168" y="1007" type="line"/>
+      <point x="1168" y="1006" type="line"/>
+      <point x="1177" y="1014"/>
+      <point x="1197" y="1027"/>
+      <point x="1216" y="1029" type="curve"/>
       <point x="1320" y="1035" type="line"/>
       <point x="1320" y="1120" type="line"/>
       <point x="876" y="1120" type="line"/>
@@ -42,25 +61,6 @@
       <point x="409" y="95"/>
       <point x="388" y="93" type="curve"/>
       <point x="281" y="85" type="line"/>
-      <point x="281" y="0" type="line"/>
-      <point x="761" y="0" type="line"/>
-      <point x="761" y="85" type="line"/>
-      <point x="658" y="93" type="line"/>
-      <point x="628" y="95"/>
-      <point x="619" y="102"/>
-      <point x="621" y="112" type="curve"/>
-      <point x="645" y="221"/>
-      <point x="671" y="333"/>
-      <point x="695" y="441" type="curve"/>
-      <point x="695" y="435" type="line"/>
-      <point x="1014" y="435" type="line"/>
-      <point x="1036" y="535" type="line"/>
-      <point x="761" y="535" type="line"/>
-      <point x="1168" y="1007" type="line"/>
-      <point x="1168" y="1006" type="line"/>
-      <point x="1177" y="1014"/>
-      <point x="1197" y="1027"/>
-      <point x="1216" y="1029" type="curve"/>
     </contour>
   </outline>
 </glyph>
