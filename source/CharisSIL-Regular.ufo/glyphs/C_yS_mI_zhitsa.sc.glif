@@ -9,9 +9,7 @@
     <contour>
       <point x="568" y="-26" type="line"/>
       <point x="714" y="-26" type="line"/>
-      <point x="824" y="258"/>
-      <point x="968" y="630"/>
-      <point x="1078" y="915" type="curve"/>
+      <point x="1078" y="915" type="line"/>
       <point x="1115" y="1007"/>
       <point x="1143" y="1064"/>
       <point x="1196" y="1067" type="curve"/>
@@ -35,10 +33,7 @@
       <point x="467" y="1120" type="line"/>
       <point x="25" y="1120" type="line"/>
       <point x="25" y="1033" type="line"/>
-      <point x="62" y="1029"/>
-      <point x="98" y="1023"/>
-      <point x="134" y="1018" type="curve"/>
-      <point x="134" y="1023" type="line"/>
+      <point x="134" y="1018" type="line"/>
     </contour>
   </outline>
 </glyph>
