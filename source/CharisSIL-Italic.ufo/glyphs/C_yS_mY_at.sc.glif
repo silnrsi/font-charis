@@ -14,7 +14,6 @@
       <point x="708" y="690"/>
       <point x="631" y="681"/>
       <point x="624" y="681" type="curve"/>
-      <point x="667" y="873" type="line"/>
       <point x="667" y="868" type="line"/>
       <point x="856" y="868" type="line"/>
       <point x="875" y="868"/>
@@ -24,9 +23,7 @@
       <point x="981" y="722" type="line"/>
       <point x="1033" y="959" type="line"/>
       <point x="687" y="959" type="line"/>
-      <point x="693" y="984"/>
-      <point x="696" y="1001"/>
-      <point x="701" y="1026" type="curve" smooth="yes"/>
+      <point x="701" y="1026" type="line"/>
       <point x="704" y="1036"/>
       <point x="720" y="1052"/>
       <point x="747" y="1054" type="curve"/>
@@ -34,21 +31,18 @@
       <point x="873" y="1147" type="line"/>
       <point x="359" y="1147" type="line"/>
       <point x="359" y="1060" type="line"/>
-      <point x="399" y="1059"/>
-      <point x="442" y="1055"/>
-      <point x="482" y="1054" type="curve" smooth="yes"/>
+      <point x="482" y="1054" type="line"/>
       <point x="507" y="1052"/>
       <point x="517" y="1037"/>
       <point x="514" y="1029" type="curve"/>
-      <point x="498" y="953" type="line"/>
       <point x="498" y="959" type="line"/>
       <point x="151" y="959" type="line"/>
       <point x="98" y="722" type="line"/>
       <point x="201" y="722" type="line"/>
       <point x="252" y="842" type="line"/>
-      <point x="259" y="854"/>
+      <point x="259" y="861"/>
       <point x="274" y="868"/>
-      <point x="291" y="868" type="curve"/>
+      <point x="291" y="868" type="curve" smooth="yes"/>
       <point x="478" y="868" type="line"/>
       <point x="313" y="121" type="line"/>
       <point x="310" y="111"/>
@@ -61,9 +55,6 @@
       <point x="542" y="95"/>
       <point x="499" y="98"/>
       <point x="494" y="98" type="curve"/>
-      <point x="531" y="266"/>
-      <point x="569" y="425"/>
-      <point x="605" y="592" type="curve"/>
       <point x="605" y="586" type="line"/>
       <point x="605" y="586"/>
       <point x="686" y="594"/>

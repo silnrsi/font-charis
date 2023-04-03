@@ -5,7 +5,7 @@
   <anchor x="0" y="1000" name="R_"/>
   <outline>
     <contour>
-      <point x="-125" y="743" type="curve"/>
+      <point x="-125" y="743" type="line"/>
       <point x="37" y="811"/>
       <point x="202" y="942"/>
       <point x="228" y="1073" type="curve" smooth="yes"/>
@@ -22,8 +22,6 @@
       <point x="93" y="959"/>
       <point x="0" y="878"/>
       <point x="-110" y="819" type="curve"/>
-      <point x="-114" y="797"/>
-      <point x="-120" y="766"/>
     </contour>
   </outline>
 </glyph>

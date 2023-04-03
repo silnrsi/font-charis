@@ -31,11 +31,9 @@
     </contour>
     <contour>
       <point x="641" y="174" type="line"/>
-      <point x="641" y="174"/>
-      <point x="641" y="300"/>
-      <point x="641" y="300" type="curve"/>
+      <point x="641" y="300" type="line"/>
       <point x="324" y="300" type="line"/>
-      <point x="299" y="175" type="line"/>
+      <point x="299" y="174" type="line"/>
     </contour>
   </outline>
 </glyph>
