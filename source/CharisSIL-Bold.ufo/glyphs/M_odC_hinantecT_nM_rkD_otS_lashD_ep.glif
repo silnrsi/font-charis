@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="ModChinantecTnMrkDotSlashDep" format="2">
-  <advance width="685"/>
+  <advance width="621"/>
   <unicode hex="F199"/>
   <outline>
     <contour>
-      <point x="8" y="984" type="line"/>
-      <point x="677" y="984" type="line"/>
-      <point x="677" y="1653" type="line"/>
-      <point x="8" y="1653" type="line"/>
+      <point x="8" y="1015" type="line"/>
+      <point x="613" y="1015" type="line"/>
+      <point x="613" y="1621" type="line"/>
+      <point x="8" y="1621" type="line"/>
     </contour>
     <contour>
-      <point x="162" y="1014" type="line"/>
-      <point x="38" y="1138" type="line"/>
-      <point x="522" y="1623" type="line"/>
-      <point x="647" y="1501" type="line"/>
+      <point x="131" y="1045" type="line"/>
+      <point x="38" y="1135" type="line"/>
+      <point x="494" y="1591" type="line"/>
+      <point x="583" y="1501" type="line"/>
     </contour>
     <contour>
-      <point x="75" y="1444" type="curve" smooth="yes"/>
-      <point x="36" y="1483"/>
-      <point x="34" y="1548"/>
-      <point x="75" y="1586" type="curve" smooth="yes"/>
-      <point x="112" y="1625"/>
-      <point x="180" y="1627"/>
-      <point x="219" y="1589" type="curve" smooth="yes"/>
-      <point x="259" y="1548"/>
-      <point x="254" y="1483"/>
-      <point x="217" y="1444" type="curve" smooth="yes"/>
-      <point x="178" y="1404"/>
-      <point x="112" y="1404"/>
+      <point x="153" y="1397" type="curve" smooth="yes"/>
+      <point x="110" y="1397"/>
+      <point x="75" y="1433"/>
+      <point x="75" y="1475" type="curve" smooth="yes"/>
+      <point x="75" y="1518"/>
+      <point x="110" y="1554"/>
+      <point x="153" y="1554" type="curve" smooth="yes"/>
+      <point x="196" y="1554"/>
+      <point x="232" y="1518"/>
+      <point x="232" y="1475" type="curve" smooth="yes"/>
+      <point x="232" y="1433"/>
+      <point x="196" y="1397"/>
     </contour>
   </outline>
 </glyph>

@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="CombMacron_GraveDep" format="2">
-  <advance width="844"/>
+  <advance width="745"/>
   <unicode hex="F173"/>
-  <anchor x="422" y="1100" name="_U"/>
+  <anchor x="372" y="1100" name="_U"/>
   <outline>
     <contour>
       <point x="-30" y="1098" type="line"/>
-      <point x="874" y="1098" type="line"/>
-      <point x="874" y="1595" type="line"/>
-      <point x="-30" y="1595" type="line"/>
+      <point x="775" y="1098" type="line"/>
+      <point x="775" y="1535" type="line"/>
+      <point x="-30" y="1535" type="line"/>
     </contour>
     <contour>
-      <point x="741" y="1128" type="line"/>
-      <point x="457" y="1399" type="line"/>
-      <point x="0" y="1399" type="line"/>
-      <point x="0" y="1565" type="line"/>
-      <point x="473" y="1565" type="line" smooth="yes"/>
-      <point x="565" y="1565"/>
-      <point x="582" y="1546"/>
-      <point x="649" y="1462" type="curve"/>
-      <point x="844" y="1128" type="line"/>
+      <point x="662" y="1128" type="line"/>
+      <point x="406" y="1374" type="line"/>
+      <point x="0" y="1374" type="line"/>
+      <point x="0" y="1505" type="line"/>
+      <point x="420" y="1505" type="line" smooth="yes"/>
+      <point x="496" y="1505"/>
+      <point x="510" y="1499"/>
+      <point x="565" y="1430" type="curve"/>
+      <point x="745" y="1128" type="line"/>
     </contour>
   </outline>
 </glyph>
