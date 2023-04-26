@@ -3,8 +3,6 @@
     <axes>
         <axis default="400.0" maximum="700.0" minimum="400.0" name="weight" tag="wght">
             <map input="400.0" output="400.0" />
-            <map input="500.0" output="500.0" />
-            <map input="600.0" output="600.0" />
             <map input="700.0" output="700.0" />
             <labelname xml:lang="en">Weight</labelname>
         </axis>
@@ -18,7 +16,7 @@
         </axis>
     </axes>
     <sources>
-        <source familyname="Charis SIL" filename="masters/CharisSIL-Italic.ufo" name="Charis SIL Italic" stylename="Italic">
+        <source familyname="Charis SIL" filename="CharisSIL-Italic.ufo" name="Charis SIL Italic" stylename="Italic">
             <lib copy="1" />
             <groups copy="1" />
             <features copy="1" />
@@ -29,7 +27,7 @@
                 <dimension name="custom" xvalue="0.000000" />
             </location>
         </source>
-        <source familyname="Charis SIL" filename="masters/CharisSIL-BoldItalic.ufo" name="Charis SIL Bold Italic" stylename="Bold Italic">
+        <source familyname="Charis SIL" filename="CharisSIL-BoldItalic.ufo" name="Charis SIL Bold Italic" stylename="Bold Italic">
             <location>
                 <dimension name="weight" xvalue="700.000000" />
                 <dimension name="width" xvalue="100.000000" />
@@ -38,7 +36,7 @@
         </source>
     </sources>
     <instances>
-        <instance familyname="Charis SIL" filename="instances/CharisSIL-Italic.ufo" name="Charis SIL Italic" stylemapfamilyname="Charis SIL" stylemapstylename="italic" stylename="Italic" postscriptfontname="CharisSIL-Italic">
+        <instance familyname="Charis SIL" filename="CharisSIL-Italic.ufo" name="Charis SIL Italic" stylemapfamilyname="Charis SIL" stylemapstylename="italic" stylename="Italic">
             <location>
                 <dimension name="weight" xvalue="400.000000" />
                 <dimension name="width" xvalue="100.000000" />
@@ -47,25 +45,7 @@
             <info />
             <kerning />
         </instance>
-        <instance familyname="Charis SIL" filename="instances/CharisSIL-MediumItalic.ufo" name="Charis SIL Medium Italic" stylemapfamilyname="Charis SIL Medium Italic" stylemapstylename="italic" stylename="Medium Italic" postscriptfontname="CharisSIL-MediumItalic">
-            <location>
-                <dimension name="weight" xvalue="500.000000" />
-                <dimension name="width" xvalue="100.000000" />
-                <dimension name="custom" xvalue="0.000000" />
-            </location>
-            <info />
-            <kerning />
-        </instance>
-        <instance familyname="Charis SIL" filename="instances/CharisSIL-SemiBoldItalic.ufo" name="Charis SIL SemiBold Italic" stylemapfamilyname="Charis SIL SemiBold Italic" stylemapstylename="italic" stylename="SemiBold Italic" postscriptfontname="CharisSIL-SemiBoldItalic">
-            <location>
-                <dimension name="weight" xvalue="600.000000" />
-                <dimension name="width" xvalue="100.000000" />
-                <dimension name="custom" xvalue="0.000000" />
-            </location>
-            <info />
-            <kerning />
-        </instance>
-        <instance familyname="Charis SIL" filename="instances/CharisSIL-BoldItalic.ufo" name="Charis SIL Bold Italic" stylemapfamilyname="Charis SIL" stylemapstylename="bold italic" stylename="Bold Italic" postscriptfontname="CharisSIL-BoldItalic">
+        <instance familyname="Charis SIL" filename="CharisSIL-BoldItalic.ufo" name="Charis SIL Bold Italic" stylemapfamilyname="Charis SIL" stylemapstylename="bold italic" stylename="Bold Italic">
             <location>
                 <dimension name="weight" xvalue="700.000000" />
                 <dimension name="width" xvalue="100.000000" />

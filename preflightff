@@ -1,26 +1,26 @@
 #!/bin/sh
 
 echo "-----Fixing FontForge debris and normalizing UFOs..."
-psffixffglifs source/CharisSIL-Regular.ufo -p checkfix=fix     &
-psffixffglifs source/CharisSIL-Bold.ufo -p checkfix=fix        &
-psffixffglifs source/CharisSIL-Italic.ufo -p checkfix=fix      &
-psffixffglifs source/CharisSIL-BoldItalic.ufo -p checkfix=fix  &
+psffixffglifs source/masters/CharisSIL-Regular.ufo -p checkfix=fix     &
+psffixffglifs source/masters/CharisSIL-Bold.ufo -p checkfix=fix        &
+psffixffglifs source/masters/CharisSIL-Italic.ufo -p checkfix=fix      &
+psffixffglifs source/masters/CharisSIL-BoldItalic.ufo -p checkfix=fix  &
 wait
 
 echo "-----Updating production names in Regular..."
-psfsetpsnames -q -p checkfix=fix -i source/glyph_data.csv source/CharisSIL-Regular.ufo -p backup=False -x
+psfsetpsnames -q -p checkfix=fix -i source/glyph_data.csv source/masters/CharisSIL-Regular.ufo -p backup=False -x
 
 echo "-----Updating glyph orders in Regular..."
-psfsetglyphorder -q --header sort_final_cdg -i source/glyph_data.csv source/CharisSIL-Regular.ufo -p backup=False -x
+psfsetglyphorder -q --header sort_final_cdg -i source/glyph_data.csv source/masters/CharisSIL-Regular.ufo -p backup=False -x
 
 echo "-----Rebuilding composites..."
-psfbuildcomp -i source/composites.txt -c -n source/CharisSIL-Regular.ufo -p backup=False -p loglevel=v
-psfbuildcomp -i source/composites.txt -c -n source/CharisSIL-Bold.ufo -p backup=False -p loglevel=v
-psfbuildcomp -i source/composites.txt -c -n source/CharisSIL-Italic.ufo -p backup=False  -p loglevel=v
-psfbuildcomp -i source/composites.txt -c -n source/CharisSIL-BoldItalic.ufo -p backup=False  -p loglevel=v
+psfbuildcomp -i source/composites.txt -c -n source/masters/CharisSIL-Regular.ufo -p backup=False -p loglevel=v
+psfbuildcomp -i source/composites.txt -c -n source/masters/CharisSIL-Bold.ufo -p backup=False -p loglevel=v
+psfbuildcomp -i source/composites.txt -c -n source/masters/CharisSIL-Italic.ufo -p backup=False  -p loglevel=v
+psfbuildcomp -i source/composites.txt -c -n source/masters/CharisSIL-BoldItalic.ufo -p backup=False  -p loglevel=v
 
 echo "-----Syncing glyph orders, psnames, and other metadata to other UFOs..."
-psfsyncmasters -q source/CharisSILRoman.designspace source/CharisSILItalic.designspace
+psfsyncmasters --complex -q source/CharisSILRoman.designspace source/CharisSILItalic.designspace
 
 # echo "-----Updating woff metadata file..."
 # psfmakewoffmetadata -q -n "CharisSIL" -i "org.sil.fonts" source/CharisSIL-Regular.ufo
