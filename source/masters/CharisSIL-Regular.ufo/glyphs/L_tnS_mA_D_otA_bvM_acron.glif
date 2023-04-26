@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmADotAbvMacron" format="2">
+  <advance width="1042"/>
+  <unicode hex="01E1"/>
+  <anchor x="761" y="0" name="H"/>
+  <anchor x="510" y="-100" name="L"/>
+  <anchor x="904" y="0" name="O"/>
+  <anchor x="1042" y="1000" name="R"/>
+  <anchor x="510" y="1905" name="U"/>
+  <outline>
+    <component base="LtnSmA"/>
+    <component base="CombMacron" xOffset="1067" yOffset="400"/>
+    <component base="DotAbv" xOffset="396"/>
+  </outline>
+</glyph>

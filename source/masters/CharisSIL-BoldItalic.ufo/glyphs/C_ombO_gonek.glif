@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CombOgonek" format="2">
+  <unicode hex="0328"/>
+  <anchor x="-581" y="-500" name="L"/>
+  <anchor x="-440" y="0" name="_O"/>
+  <outline>
+    <contour>
+      <point x="-464" y="-362" type="curve"/>
+      <point x="-505" y="-256" type="line"/>
+      <point x="-530" y="-272"/>
+      <point x="-579" y="-307"/>
+      <point x="-606" y="-307" type="curve" smooth="yes"/>
+      <point x="-655" y="-307"/>
+      <point x="-692" y="-279"/>
+      <point x="-692" y="-227" type="curve" smooth="yes"/>
+      <point x="-692" y="-129"/>
+      <point x="-593" y="-47"/>
+      <point x="-518" y="2" type="curve"/>
+      <point x="-647" y="2" type="line"/>
+      <point x="-743" y="-57"/>
+      <point x="-866" y="-166"/>
+      <point x="-866" y="-287" type="curve" smooth="yes"/>
+      <point x="-866" y="-391"/>
+      <point x="-759" y="-426"/>
+      <point x="-671" y="-426" type="curve" smooth="yes"/>
+      <point x="-618" y="-426"/>
+      <point x="-516" y="-385"/>
+    </contour>
+  </outline>
+</glyph>

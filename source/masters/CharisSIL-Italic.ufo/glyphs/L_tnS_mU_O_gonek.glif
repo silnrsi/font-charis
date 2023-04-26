@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmUOgonek" format="2">
+  <advance width="1079"/>
+  <unicode hex="0173"/>
+  <anchor x="395" y="-400" name="L"/>
+  <anchor x="686" y="1100" name="U"/>
+  <outline>
+    <component base="LtnSmU"/>
+    <component base="CombOgonek" xOffset="1319"/>
+  </outline>
+</glyph>

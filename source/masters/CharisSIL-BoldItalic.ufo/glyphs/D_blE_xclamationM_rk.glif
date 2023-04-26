@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DblExclamationMrk" format="2">
+  <advance width="1298"/>
+  <unicode hex="203C"/>
+  <anchor x="556" y="-100" name="L"/>
+  <anchor x="842" y="1540" name="U"/>
+  <outline>
+    <component base="ExclamationMrk" xOffset="520"/>
+    <component base="ExclamationMrk"/>
+  </outline>
+</glyph>

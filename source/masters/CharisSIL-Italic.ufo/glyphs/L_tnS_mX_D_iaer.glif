@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmXDiaer" format="2">
+  <advance width="1081"/>
+  <unicode hex="1E8D"/>
+  <anchor x="720" y="0" name="H"/>
+  <anchor x="424" y="-100" name="L"/>
+  <anchor x="712" y="1500" name="U"/>
+  <outline>
+    <component base="LtnSmX"/>
+    <component base="CombDiaer" xOffset="1051"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

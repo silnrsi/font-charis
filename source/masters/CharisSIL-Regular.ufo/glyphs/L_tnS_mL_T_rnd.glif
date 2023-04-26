@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmLTrnd" format="2">
+  <advance width="608"/>
+  <unicode hex="A781"/>
+  <anchor x="302" y="-500" name="L"/>
+  <anchor x="302" y="1100" name="U"/>
+  <outline>
+    <contour>
+      <point x="53" y="987" type="line"/>
+      <point x="53" y="907" type="line"/>
+      <point x="164" y="901" type="line" smooth="yes"/>
+      <point x="182" y="901"/>
+      <point x="207" y="876"/>
+      <point x="207" y="858" type="curve" smooth="yes"/>
+      <point x="207" y="-469" type="line"/>
+      <point x="291" y="-469" type="line"/>
+      <point x="553" y="-390" type="line"/>
+      <point x="553" y="-322" type="line"/>
+      <point x="397" y="-322" type="line"/>
+      <point x="397" y="858" type="line" smooth="yes"/>
+      <point x="397" y="876"/>
+      <point x="424" y="901"/>
+      <point x="442" y="901" type="curve" smooth="yes"/>
+      <point x="551" y="907" type="line"/>
+      <point x="551" y="987" type="line"/>
+    </contour>
+  </outline>
+</glyph>

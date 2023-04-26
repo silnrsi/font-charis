@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ModLowInvExclamationMrk" format="2">
+  <advance width="452"/>
+  <unicode hex="A71F"/>
+  <outline>
+    <contour>
+      <point x="245" y="51" type="curve" smooth="yes"/>
+      <point x="245" y="106"/>
+      <point x="199" y="154"/>
+      <point x="136" y="154" type="curve" smooth="yes"/>
+      <point x="78" y="154"/>
+      <point x="34" y="110"/>
+      <point x="34" y="56" type="curve" smooth="yes"/>
+      <point x="34" y="3"/>
+      <point x="77" y="-44"/>
+      <point x="134" y="-44" type="curve" smooth="yes"/>
+      <point x="193" y="-44"/>
+      <point x="245" y="-3"/>
+    </contour>
+    <contour>
+      <point x="143" y="-116" type="line"/>
+      <point x="72" y="-116" type="line"/>
+      <point x="11" y="-287"/>
+      <point x="-108" y="-595"/>
+      <point x="-108" y="-626" type="curve" smooth="yes"/>
+      <point x="-108" y="-681"/>
+      <point x="-69" y="-705"/>
+      <point x="-17" y="-705" type="curve" smooth="yes"/>
+      <point x="43" y="-705"/>
+      <point x="109" y="-674"/>
+      <point x="113" y="-605" type="curve" smooth="yes"/>
+    </contour>
+  </outline>
+</glyph>

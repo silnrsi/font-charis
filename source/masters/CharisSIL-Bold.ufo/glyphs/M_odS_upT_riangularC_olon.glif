@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ModSupTriangularColon" format="2">
+  <advance width="371"/>
+  <unicode hex="10781"/>
+  <anchor x="188" y="725" name="L"/>
+  <anchor x="188" y="1445" name="U"/>
+  <outline>
+    <contour>
+      <point x="325" y="1395" type="line"/>
+      <point x="51" y="1395" type="line"/>
+      <point x="128" y="1162" type="line"/>
+      <point x="247" y="1162" type="line"/>
+    </contour>
+    <contour>
+      <point x="325" y="785" type="line"/>
+      <point x="247" y="1016" type="line"/>
+      <point x="128" y="1016" type="line"/>
+      <point x="51" y="785" type="line"/>
+    </contour>
+  </outline>
+</glyph>

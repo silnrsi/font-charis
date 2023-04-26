@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapUBreve" format="2">
+  <advance width="1534"/>
+  <unicode hex="016C"/>
+  <anchor x="659" y="0" name="H"/>
+  <anchor x="657" y="-100" name="L"/>
+  <anchor x="988" y="0" name="O"/>
+  <anchor x="1650" y="1350" name="R"/>
+  <anchor x="989" y="1900" name="U"/>
+  <outline>
+    <component base="LtnCapU"/>
+    <component base="CombBreve" xOffset="1388" yOffset="400"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

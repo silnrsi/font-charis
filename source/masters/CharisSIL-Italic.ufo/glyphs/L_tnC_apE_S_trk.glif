@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapEStrk" format="2">
+  <advance width="1143"/>
+  <unicode hex="0246"/>
+  <anchor x="469" y="-100" name="L"/>
+  <anchor x="757" y="1500" name="U"/>
+  <outline>
+    <component base="LtnCapE"/>
+    <contour>
+      <point x="1167" y="1470" type="line"/>
+      <point x="1062" y="1534" type="line"/>
+      <point x="5" y="-98" type="line"/>
+      <point x="93" y="-164" type="line"/>
+    </contour>
+  </outline>
+</glyph>

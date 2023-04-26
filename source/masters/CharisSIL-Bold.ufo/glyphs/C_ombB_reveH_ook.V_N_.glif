@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CombBreveHook.VN" format="2">
+  <advance width="641"/>
+  <anchor x="320" y="1717" name="U"/>
+  <anchor x="320" y="1100" name="_U"/>
+  <outline>
+    <component base="CombBreve" xOffset="918"/>
+    <component base="CombHookAbv" xOffset="918" yOffset="217"/>
+  </outline>
+</glyph>

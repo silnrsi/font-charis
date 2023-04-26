@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmAOgonek" format="2">
+  <advance width="1067"/>
+  <unicode hex="0105"/>
+  <anchor x="483" y="0" name="H"/>
+  <anchor x="806" y="-400" name="L"/>
+  <anchor x="1067" y="1000" name="R"/>
+  <anchor x="705" y="1100" name="U"/>
+  <outline>
+    <component base="LtnSmA"/>
+    <component base="CombOgonek" xOffset="1340"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

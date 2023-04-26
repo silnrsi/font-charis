@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CombCircumGrave.VN" format="2">
+  <advance width="1042"/>
+  <anchor x="628" y="1100" name="_U"/>
+  <outline>
+    <contour>
+      <point x="299" y="1128" type="line"/>
+      <point x="469" y="1128" type="line"/>
+      <point x="686" y="1323" type="line"/>
+      <point x="823" y="1128" type="line"/>
+      <point x="995" y="1128" type="line"/>
+      <point x="838" y="1479" type="line"/>
+      <point x="596" y="1479" type="line"/>
+    </contour>
+    <contour>
+      <point x="393" y="1331" type="line"/>
+      <point x="444" y="1391" type="line"/>
+      <point x="395" y="1593" type="line" smooth="yes"/>
+      <point x="385" y="1636"/>
+      <point x="346" y="1661"/>
+      <point x="303" y="1661" type="curve" smooth="yes"/>
+      <point x="266" y="1661"/>
+      <point x="211" y="1626"/>
+      <point x="211" y="1589" type="curve" smooth="yes"/>
+      <point x="211" y="1569"/>
+      <point x="211" y="1548"/>
+      <point x="225" y="1532" type="curve" smooth="yes"/>
+    </contour>
+  </outline>
+</glyph>

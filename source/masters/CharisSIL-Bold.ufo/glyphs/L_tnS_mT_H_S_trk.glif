@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmTHStrk" format="2">
+  <advance width="2050"/>
+  <unicode hex="1D7A"/>
+  <anchor x="1047" y="-100" name="L"/>
+  <anchor x="1047" y="1540" name="U"/>
+  <outline>
+    <component base="LtnSmT"/>
+    <component base="LtnSmH" xOffset="768"/>
+    <contour>
+      <point x="1436" y="1532" type="line"/>
+      <point x="494" y="-117" type="line"/>
+      <point x="598" y="-178" type="line"/>
+      <point x="1542" y="1473" type="line"/>
+    </contour>
+  </outline>
+</glyph>

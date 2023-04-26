@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmTurnedRLngLeg" format="2">
+  <advance width="735"/>
+  <unicode hex="027A"/>
+  <anchor x="255" y="-100" name="L"/>
+  <anchor x="571" y="1540" name="U"/>
+  <outline>
+    <contour>
+      <point x="793" y="1509" type="line"/>
+      <point x="709" y="1509" type="line"/>
+      <point x="393" y="1448" type="line"/>
+      <point x="393" y="1386" type="line"/>
+      <point x="575" y="1368" type="line"/>
+      <point x="397" y="471" type="line" smooth="yes"/>
+      <point x="375" y="352"/>
+      <point x="227" y="166"/>
+      <point x="127" y="123" type="curve"/>
+      <point x="78" y="221" type="line"/>
+      <point x="-35" y="221"/>
+      <point x="-104" y="209"/>
+      <point x="-104" y="113" type="curve" smooth="yes"/>
+      <point x="-104" y="57"/>
+      <point x="-72" y="-25"/>
+      <point x="27" y="-25" type="curve" smooth="yes"/>
+      <point x="150" y="-25"/>
+      <point x="258" y="53"/>
+      <point x="342" y="182" type="curve"/>
+      <point x="299" y="-25" type="line"/>
+      <point x="381" y="-25" type="line"/>
+      <point x="688" y="39" type="line"/>
+      <point x="688" y="98" type="line"/>
+      <point x="516" y="117" type="line"/>
+    </contour>
+  </outline>
+</glyph>

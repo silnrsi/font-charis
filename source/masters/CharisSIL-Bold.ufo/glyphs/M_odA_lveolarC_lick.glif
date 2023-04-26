@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ModAlveolarClick" format="2">
+  <advance width="545"/>
+  <unicode hex="107B8"/>
+  <anchor x="275" y="485" name="L"/>
+  <anchor x="275" y="1727" name="U"/>
+  <outline>
+    <contour>
+      <point x="34" y="1144" type="line"/>
+      <point x="516" y="1144" type="line"/>
+      <point x="516" y="1231" type="line"/>
+      <point x="34" y="1231" type="line"/>
+    </contour>
+    <contour>
+      <point x="34" y="979" type="line"/>
+      <point x="516" y="979" type="line"/>
+      <point x="516" y="1065" type="line"/>
+      <point x="34" y="1065" type="line"/>
+    </contour>
+    <contour>
+      <point x="328" y="521" type="line"/>
+      <point x="328" y="1689" type="line"/>
+      <point x="222" y="1689" type="line"/>
+      <point x="222" y="521" type="line"/>
+    </contour>
+  </outline>
+</glyph>

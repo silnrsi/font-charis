@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmSAcuteDotAbv" format="2">
+  <advance width="911"/>
+  <unicode hex="1E65"/>
+  <anchor x="460" y="0" name="H"/>
+  <anchor x="460" y="-100" name="L"/>
+  <anchor x="480" y="1900" name="U"/>
+  <outline>
+    <component base="LtnSmS"/>
+    <component base="CombAcute" xOffset="1078"/>
+    <component base="CombDotAbv" xOffset="1078" yOffset="400"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ModCySmPalochka" format="2">
+  <advance width="405"/>
+  <unicode hex="1E050"/>
+  <anchor x="208" y="785" name="H"/>
+  <anchor x="208" y="725" name="L"/>
+  <anchor x="341" y="1385" name="R"/>
+  <anchor x="208" y="1733" name="U"/>
+  <outline>
+    <contour>
+      <point x="270" y="1584" type="line"/>
+      <point x="274" y="1594"/>
+      <point x="288" y="1609"/>
+      <point x="300" y="1609" type="curve"/>
+      <point x="370" y="1613" type="line"/>
+      <point x="370" y="1661" type="line"/>
+      <point x="47" y="1661" type="line"/>
+      <point x="47" y="1613" type="line"/>
+      <point x="119" y="1609" type="line"/>
+      <point x="131" y="1609"/>
+      <point x="151" y="1594"/>
+      <point x="147" y="1584" type="curve" smooth="yes"/>
+      <point x="147" y="862" type="line" smooth="yes"/>
+      <point x="147" y="852"/>
+      <point x="129" y="837"/>
+      <point x="118" y="837" type="curve" smooth="yes"/>
+      <point x="47" y="833" type="line"/>
+      <point x="47" y="785" type="line"/>
+      <point x="370" y="785" type="line"/>
+      <point x="370" y="833" type="line"/>
+      <point x="298" y="837" type="line" smooth="yes"/>
+      <point x="287" y="837"/>
+      <point x="270" y="852"/>
+      <point x="270" y="862" type="curve" smooth="yes"/>
+    </contour>
+  </outline>
+</glyph>

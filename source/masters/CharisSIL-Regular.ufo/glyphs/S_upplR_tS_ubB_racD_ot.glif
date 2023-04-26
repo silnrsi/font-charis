@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="SupplRtSubBracDot" format="2">
+  <advance width="587"/>
+  <unicode hex="2E05"/>
+  <outline>
+    <contour>
+      <point x="233" y="1047" type="curve" smooth="yes"/>
+      <point x="233" y="1088"/>
+      <point x="203" y="1119"/>
+      <point x="162" y="1119" type="curve" smooth="yes"/>
+      <point x="123" y="1119"/>
+      <point x="90" y="1088"/>
+      <point x="90" y="1047" type="curve" smooth="yes"/>
+      <point x="90" y="1008"/>
+      <point x="123" y="976"/>
+      <point x="162" y="976" type="curve" smooth="yes"/>
+      <point x="203" y="976"/>
+      <point x="233" y="1008"/>
+    </contour>
+    <contour>
+      <point x="152" y="1323" type="line"/>
+      <point x="393" y="1096" type="line"/>
+      <point x="393" y="724" type="line"/>
+      <point x="513" y="724" type="line"/>
+      <point x="513" y="1150" type="line"/>
+      <point x="234" y="1414" type="line"/>
+    </contour>
+  </outline>
+</glyph>

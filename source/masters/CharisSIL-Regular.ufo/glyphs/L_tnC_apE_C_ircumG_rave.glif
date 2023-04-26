@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapECircumGrave" format="2">
+  <advance width="1194"/>
+  <unicode hex="1EC0"/>
+  <anchor x="597" y="0" name="H"/>
+  <anchor x="597" y="-100" name="L"/>
+  <anchor x="980" y="0" name="O"/>
+  <anchor x="1194" y="1200" name="R"/>
+  <anchor x="597" y="2300" name="U"/>
+  <outline>
+    <component base="LtnCapE"/>
+    <component base="CombCircum" xOffset="1154" yOffset="400"/>
+    <component base="CombGrave" xOffset="1154" yOffset="800"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

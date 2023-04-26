@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmOpnORetrHook" format="2">
+  <advance width="1028"/>
+  <unicode hex="1D97"/>
+  <anchor x="515" y="-500" name="L"/>
+  <anchor x="515" y="1100" name="U"/>
+  <outline>
+    <component base="LtnSmOpnO"/>
+    <contour>
+      <point x="645" y="-328" type="curve" smooth="yes"/>
+      <point x="645" y="-221"/>
+      <point x="594" y="-176"/>
+      <point x="529" y="-139" type="curve"/>
+      <point x="332" y="-326" type="line"/>
+      <point x="252" y="-326"/>
+      <point x="209" y="-309"/>
+      <point x="209" y="-219" type="curve" smooth="yes"/>
+      <point x="209" y="200" type="line"/>
+      <point x="80" y="200" type="line"/>
+      <point x="80" y="-215" type="line" smooth="yes"/>
+      <point x="80" y="-397"/>
+      <point x="262" y="-469"/>
+      <point x="392" y="-469" type="curve" smooth="yes"/>
+      <point x="492" y="-469"/>
+      <point x="645" y="-426"/>
+    </contour>
+  </outline>
+</glyph>

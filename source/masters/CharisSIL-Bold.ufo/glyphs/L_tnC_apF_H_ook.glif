@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapFHook" format="2">
+  <advance width="1145"/>
+  <unicode hex="0191"/>
+  <anchor x="743" y="-100" name="L"/>
+  <anchor x="587" y="1500" name="U"/>
+  <outline>
+    <contour>
+      <point x="1090" y="1024" type="line"/>
+      <point x="1090" y="1374" type="line"/>
+      <point x="49" y="1374" type="line"/>
+      <point x="49" y="1270" type="line"/>
+      <point x="166" y="1260" type="line" smooth="yes"/>
+      <point x="190" y="1258"/>
+      <point x="213" y="1241"/>
+      <point x="213" y="1214" type="curve" smooth="yes"/>
+      <point x="213" y="-51" type="line" smooth="yes"/>
+      <point x="213" y="-252"/>
+      <point x="186" y="-322"/>
+      <point x="143" y="-387" type="curve"/>
+      <point x="-76" y="-184" type="line"/>
+      <point x="-145" y="-207"/>
+      <point x="-211" y="-260"/>
+      <point x="-211" y="-328" type="curve" smooth="yes"/>
+      <point x="-211" y="-453"/>
+      <point x="-88" y="-496"/>
+      <point x="0" y="-496" type="curve" smooth="yes"/>
+      <point x="305" y="-496"/>
+      <point x="506" y="-211"/>
+      <point x="506" y="72" type="curve" smooth="yes"/>
+      <point x="506" y="614" type="line"/>
+      <point x="760" y="614" type="line" smooth="yes"/>
+      <point x="776" y="614"/>
+      <point x="793" y="592"/>
+      <point x="795" y="578" type="curve" smooth="yes"/>
+      <point x="815" y="438" type="line"/>
+      <point x="942" y="438" type="line"/>
+      <point x="942" y="922" type="line"/>
+      <point x="815" y="922" type="line"/>
+      <point x="795" y="782" type="line" smooth="yes"/>
+      <point x="793" y="768"/>
+      <point x="778" y="745"/>
+      <point x="760" y="745" type="curve" smooth="yes"/>
+      <point x="506" y="745" type="line"/>
+      <point x="506" y="1249" type="line"/>
+      <point x="877" y="1249" type="line" smooth="yes"/>
+      <point x="895" y="1249"/>
+      <point x="910" y="1231"/>
+      <point x="913" y="1210" type="curve" smooth="yes"/>
+      <point x="942" y="1024" type="line"/>
+    </contour>
+  </outline>
+</glyph>

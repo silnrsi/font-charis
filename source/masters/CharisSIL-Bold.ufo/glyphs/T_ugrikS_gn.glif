@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="TugrikSgn" format="2">
+  <advance width="1202"/>
+  <unicode hex="20AE"/>
+  <outline>
+    <contour>
+      <point x="953" y="914" type="line"/>
+      <point x="891" y="1004" type="line"/>
+      <point x="239" y="564" type="line"/>
+      <point x="297" y="470" type="line"/>
+    </contour>
+    <contour>
+      <point x="956" y="687" type="line"/>
+      <point x="897" y="778" type="line"/>
+      <point x="245" y="338" type="line"/>
+      <point x="300" y="243" type="line"/>
+    </contour>
+    <contour>
+      <point x="1162" y="999" type="line"/>
+      <point x="1162" y="1374" type="line"/>
+      <point x="40" y="1374" type="line"/>
+      <point x="40" y="999" type="line"/>
+      <point x="210" y="999" type="line"/>
+      <point x="215" y="1227" type="line" smooth="yes"/>
+      <point x="217" y="1243"/>
+      <point x="228" y="1251"/>
+      <point x="245" y="1251" type="curve" smooth="yes"/>
+      <point x="462" y="1251" type="line"/>
+      <point x="462" y="160" type="line" smooth="yes"/>
+      <point x="462" y="133"/>
+      <point x="441" y="117"/>
+      <point x="418" y="115" type="curve" smooth="yes"/>
+      <point x="304" y="104" type="line"/>
+      <point x="304" y="0" type="line"/>
+      <point x="898" y="0" type="line"/>
+      <point x="898" y="104" type="line"/>
+      <point x="783" y="115" type="line" smooth="yes"/>
+      <point x="760" y="117"/>
+      <point x="740" y="133"/>
+      <point x="740" y="160" type="curve" smooth="yes"/>
+      <point x="740" y="1251" type="line"/>
+      <point x="958" y="1251" type="line" smooth="yes"/>
+      <point x="974" y="1251"/>
+      <point x="984" y="1243"/>
+      <point x="986" y="1227" type="curve" smooth="yes"/>
+      <point x="1021" y="999" type="line"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmABreveTilde.2StorySItal.VN" format="2">
+  <advance width="1085"/>
+  <anchor x="445" y="0" name="H"/>
+  <anchor x="418" y="-100" name="L"/>
+  <anchor x="914" y="0" name="O"/>
+  <anchor x="1085" y="1000" name="R"/>
+  <anchor x="822" y="1789" name="U"/>
+  <outline>
+    <component base="LtnSmA.2StorySItal"/>
+    <component base="CombBreveTilde.VN" xOffset="202"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

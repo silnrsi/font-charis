@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmUOgonek.sc" format="2">
+  <advance width="1374"/>
+  <anchor x="683" y="8" name="H"/>
+  <anchor x="580" y="-492" name="L"/>
+  <anchor x="1374" y="992" name="R"/>
+  <anchor x="699" y="1238" name="U"/>
+  <outline>
+    <component base="LtnSmU.sc"/>
+    <component base="CombOgonek" xOffset="1242" yOffset="8"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

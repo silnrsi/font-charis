@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="VulgFracOneSeventh" format="2">
+  <advance width="1858"/>
+  <unicode hex="2150"/>
+  <outline>
+    <contour>
+      <point x="1497" y="1423" type="line"/>
+      <point x="1347" y="1423" type="line"/>
+      <point x="161" y="0" type="line"/>
+      <point x="311" y="0" type="line"/>
+    </contour>
+    <contour>
+      <point x="593" y="1450" type="line"/>
+      <point x="503" y="1450" type="line"/>
+      <point x="171" y="1366" type="line"/>
+      <point x="171" y="1296" type="line"/>
+      <point x="376" y="1323" type="line"/>
+      <point x="245" y="700" type="line"/>
+      <point x="242" y="692"/>
+      <point x="232" y="682"/>
+      <point x="220" y="682" type="curve"/>
+      <point x="85" y="674" type="line"/>
+      <point x="85" y="606" type="line"/>
+      <point x="558" y="606" type="line"/>
+      <point x="558" y="674" type="line"/>
+      <point x="458" y="682" type="line"/>
+      <point x="443" y="684"/>
+      <point x="431" y="690"/>
+      <point x="433" y="698" type="curve" smooth="yes"/>
+    </contour>
+    <contour>
+      <point x="1773" y="837" type="line"/>
+      <point x="1109" y="837" type="line"/>
+      <point x="1058" y="577" type="line"/>
+      <point x="1148" y="577" type="line"/>
+      <point x="1191" y="690" type="line"/>
+      <point x="1564" y="690" type="line"/>
+      <point x="1005" y="0" type="line"/>
+      <point x="1171" y="0" type="line"/>
+      <point x="1177" y="37" type="line"/>
+      <point x="1757" y="751" type="line"/>
+    </contour>
+  </outline>
+</glyph>

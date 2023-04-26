@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmITildeBlw" format="2">
+  <advance width="621"/>
+  <unicode hex="1E2D"/>
+  <anchor x="310" y="0" name="H"/>
+  <anchor x="316" y="-500" name="L"/>
+  <anchor x="466" y="0" name="O"/>
+  <anchor x="621" y="1000" name="R"/>
+  <anchor x="310" y="1100" name="U"/>
+  <outline>
+    <component base="LtnSmI"/>
+    <component base="CombTildeBlw" xOffset="873"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

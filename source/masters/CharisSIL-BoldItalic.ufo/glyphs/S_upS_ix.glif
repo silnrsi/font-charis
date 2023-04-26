@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="SupSix" format="2">
+  <advance width="797"/>
+  <unicode hex="2076"/>
+  <anchor x="448" y="725" name="L"/>
+  <anchor x="617" y="1650" name="U"/>
+  <outline>
+    <contour>
+      <point x="874" y="1118" type="curve" smooth="yes"/>
+      <point x="874" y="1251"/>
+      <point x="780" y="1343"/>
+      <point x="602" y="1343" type="curve" smooth="yes"/>
+      <point x="535" y="1343"/>
+      <point x="479" y="1331"/>
+      <point x="430" y="1313" type="curve"/>
+      <point x="492" y="1456"/>
+      <point x="647" y="1567"/>
+      <point x="858" y="1587" type="curve"/>
+      <point x="856" y="1667" type="line"/>
+      <point x="414" y="1626"/>
+      <point x="172" y="1343"/>
+      <point x="172" y="1051" type="curve" smooth="yes"/>
+      <point x="172" y="829"/>
+      <point x="324" y="764"/>
+      <point x="483" y="764" type="curve" smooth="yes"/>
+      <point x="721" y="764"/>
+      <point x="874" y="936"/>
+    </contour>
+    <contour>
+      <point x="678" y="1087" type="curve" smooth="yes"/>
+      <point x="678" y="946"/>
+      <point x="565" y="838"/>
+      <point x="492" y="838" type="curve" smooth="yes"/>
+      <point x="373" y="838"/>
+      <point x="371" y="958"/>
+      <point x="371" y="1036" type="curve" smooth="yes"/>
+      <point x="371" y="1094"/>
+      <point x="391" y="1178"/>
+      <point x="397" y="1196" type="curve"/>
+      <point x="469" y="1245"/>
+      <point x="518" y="1253"/>
+      <point x="547" y="1253" type="curve" smooth="yes"/>
+      <point x="621" y="1253"/>
+      <point x="678" y="1198"/>
+    </contour>
+  </outline>
+</glyph>

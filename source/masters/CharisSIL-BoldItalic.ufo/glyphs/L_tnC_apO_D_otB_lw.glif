@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapODotBlw" format="2">
+  <advance width="1540"/>
+  <unicode hex="1ECC"/>
+  <anchor x="668" y="0" name="H"/>
+  <anchor x="572" y="-500" name="L"/>
+  <anchor x="931" y="0" name="O"/>
+  <anchor x="1520" y="1250" name="R"/>
+  <anchor x="936" y="1500" name="U"/>
+  <outline>
+    <component base="LtnCapO"/>
+    <component base="CombDotBlw" xOffset="1335"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

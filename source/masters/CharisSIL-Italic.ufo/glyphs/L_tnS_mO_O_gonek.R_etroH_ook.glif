@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmOOgonek.RetroHook" format="2">
+  <advance width="1036"/>
+  <anchor x="419" y="0" name="H"/>
+  <anchor x="324" y="-500" name="L"/>
+  <anchor x="625" y="0" name="O"/>
+  <anchor x="996" y="1000" name="R"/>
+  <anchor x="643" y="1100" name="U"/>
+  <outline>
+    <component base="LtnSmO"/>
+    <component base="CombOgonek.RetroHook" xOffset="332"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

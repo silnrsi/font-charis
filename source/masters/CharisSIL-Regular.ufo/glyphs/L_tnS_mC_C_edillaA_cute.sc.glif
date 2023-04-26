@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmCCedillaAcute.sc" format="2">
+  <advance width="1181"/>
+  <anchor x="672" y="-592" name="L"/>
+  <anchor x="690" y="1638" name="U"/>
+  <outline>
+    <component base="LtnSmC.sc"/>
+    <component base="CombCedilla" xOffset="1229" yOffset="8"/>
+    <component base="CombAcute" xOffset="1247" yOffset="138"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

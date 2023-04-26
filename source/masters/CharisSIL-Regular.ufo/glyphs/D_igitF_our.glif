@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DigitFour" format="2">
+  <advance width="1153"/>
+  <unicode hex="0034"/>
+  <anchor x="576" y="-100" name="L"/>
+  <anchor x="576" y="1500" name="U"/>
+  <outline>
+    <contour>
+      <point x="1071" y="408" type="line"/>
+      <point x="1071" y="547" type="line"/>
+      <point x="897" y="547" type="line"/>
+      <point x="897" y="1407" type="line"/>
+      <point x="754" y="1407" type="line"/>
+      <point x="82" y="549" type="line"/>
+      <point x="82" y="408" type="line"/>
+      <point x="705" y="408" type="line"/>
+      <point x="705" y="-33" type="line"/>
+      <point x="897" y="-33" type="line"/>
+      <point x="897" y="408" type="line"/>
+    </contour>
+    <contour>
+      <point x="705" y="547" type="line"/>
+      <point x="244" y="547" type="line"/>
+      <point x="705" y="1145" type="line"/>
+    </contour>
+  </outline>
+</glyph>

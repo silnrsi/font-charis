@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmLRetrHook" format="2">
+  <advance width="608"/>
+  <unicode hex="026D"/>
+  <anchor x="303" y="-500" name="L"/>
+  <anchor x="303" y="1540" name="U"/>
+  <outline>
+    <contour>
+      <point x="752" y="-332" type="curve" smooth="yes"/>
+      <point x="752" y="-260"/>
+      <point x="705" y="-229"/>
+      <point x="666" y="-213" type="curve"/>
+      <point x="496" y="-375" type="line"/>
+      <point x="403" y="-322"/>
+      <point x="397" y="-104"/>
+      <point x="397" y="-14" type="curve" smooth="yes"/>
+      <point x="397" y="1509" type="line"/>
+      <point x="315" y="1509" type="line"/>
+      <point x="53" y="1430" type="line"/>
+      <point x="53" y="1362" type="line"/>
+      <point x="209" y="1362" type="line"/>
+      <point x="209" y="4" type="line" smooth="yes"/>
+      <point x="209" y="-272"/>
+      <point x="285" y="-469"/>
+      <point x="557" y="-469" type="curve" smooth="yes"/>
+      <point x="641" y="-469"/>
+      <point x="752" y="-408"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="SupFour" format="2">
+  <advance width="780"/>
+  <unicode hex="2074"/>
+  <anchor x="390" y="725" name="L"/>
+  <anchor x="390" y="1650" name="U"/>
+  <outline>
+    <contour>
+      <point x="733" y="1014" type="line"/>
+      <point x="733" y="1114" type="line"/>
+      <point x="627" y="1114" type="line"/>
+      <point x="627" y="1628" type="line"/>
+      <point x="481" y="1628" type="line"/>
+      <point x="47" y="1120" type="line"/>
+      <point x="47" y="1014" type="line"/>
+      <point x="457" y="1014" type="line"/>
+      <point x="457" y="764" type="line"/>
+      <point x="627" y="764" type="line"/>
+      <point x="627" y="1014" type="line"/>
+    </contour>
+    <contour>
+      <point x="457" y="1114" type="line"/>
+      <point x="176" y="1114" type="line"/>
+      <point x="457" y="1438" type="line"/>
+    </contour>
+  </outline>
+</glyph>

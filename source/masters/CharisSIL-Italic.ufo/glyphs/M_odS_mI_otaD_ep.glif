@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ModSmIotaDep" format="2">
+  <advance width="411"/>
+  <unicode hex="F1CA"/>
+  <anchor x="246" y="725" name="L"/>
+  <anchor x="377" y="1450" name="U"/>
+  <outline>
+    <contour>
+      <point x="119" y="740" type="line"/>
+      <point x="536" y="740" type="line"/>
+      <point x="536" y="1422" type="line"/>
+      <point x="119" y="1422" type="line"/>
+    </contour>
+    <contour>
+      <point x="506" y="879" type="curve" smooth="yes"/>
+      <point x="506" y="797"/>
+      <point x="394" y="770"/>
+      <point x="303" y="770" type="curve" smooth="yes"/>
+      <point x="214" y="770"/>
+      <point x="163" y="833"/>
+      <point x="175" y="888" type="curve" smooth="yes"/>
+      <point x="261" y="1307" type="line"/>
+      <point x="149" y="1318" type="line"/>
+      <point x="149" y="1354" type="line"/>
+      <point x="349" y="1392" type="line"/>
+      <point x="404" y="1392" type="line"/>
+      <point x="303" y="910" type="line" smooth="yes"/>
+      <point x="292" y="860"/>
+      <point x="316" y="839"/>
+      <point x="384" y="839" type="curve"/>
+      <point x="443" y="942" type="line"/>
+      <point x="476" y="940"/>
+      <point x="506" y="908"/>
+    </contour>
+  </outline>
+</glyph>

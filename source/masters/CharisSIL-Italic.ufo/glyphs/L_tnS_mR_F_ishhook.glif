@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmRFishhook" format="2">
+  <advance width="676"/>
+  <unicode hex="027E"/>
+  <anchor x="190" y="-100" name="L"/>
+  <anchor x="530" y="1100" name="U"/>
+  <outline>
+    <contour>
+      <point x="750" y="899" type="curve" smooth="yes"/>
+      <point x="750" y="954"/>
+      <point x="715" y="1012"/>
+      <point x="606" y="1012" type="curve" smooth="yes"/>
+      <point x="360" y="1012"/>
+      <point x="188" y="850"/>
+      <point x="141" y="614" type="curve" smooth="yes"/>
+      <point x="20" y="0" type="line"/>
+      <point x="211" y="0" type="line"/>
+      <point x="332" y="610" type="line" smooth="yes"/>
+      <point x="369" y="797"/>
+      <point x="395" y="864"/>
+      <point x="498" y="897" type="curve"/>
+      <point x="637" y="778" type="line"/>
+      <point x="686" y="784"/>
+      <point x="750" y="829"/>
+    </contour>
+  </outline>
+</glyph>

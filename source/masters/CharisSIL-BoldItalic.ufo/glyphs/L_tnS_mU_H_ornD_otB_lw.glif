@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmUHornDotBlw" format="2">
+  <advance width="1438"/>
+  <unicode hex="1EF1"/>
+  <anchor x="388" y="-500" name="L"/>
+  <anchor x="708" y="1100" name="U"/>
+  <outline>
+    <component base="LtnSmUHorn"/>
+    <component base="CombDotBlw" xOffset="1151"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

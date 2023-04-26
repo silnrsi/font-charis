@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="RtBtmCurlyBrac" format="2">
+  <advance width="1250"/>
+  <unicode hex="23AD"/>
+  <outline>
+    <contour>
+      <point x="500" y="750" type="line"/>
+      <point x="500" y="0"/>
+      <point x="465" y="-300"/>
+      <point x="135" y="-300" type="curve" smooth="yes"/>
+      <point x="55" y="-300" type="line"/>
+      <point x="55" y="-450" type="line"/>
+      <point x="145" y="-450" type="line" smooth="yes"/>
+      <point x="635" y="-450"/>
+      <point x="750" y="-50"/>
+      <point x="750" y="700" type="curve" smooth="yes"/>
+      <point x="750" y="2500" type="line"/>
+      <point x="500" y="2500" type="line"/>
+    </contour>
+  </outline>
+</glyph>

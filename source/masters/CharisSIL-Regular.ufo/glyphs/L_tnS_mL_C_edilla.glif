@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmLCedilla" format="2">
+  <advance width="608"/>
+  <unicode hex="013C"/>
+  <anchor x="303" y="0" name="H"/>
+  <anchor x="303" y="-500" name="L"/>
+  <anchor x="508" y="1000" name="R"/>
+  <anchor x="303" y="1580" name="U"/>
+  <outline>
+    <component base="LtnSmL"/>
+    <component base="CombCommaBlw" xOffset="860"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

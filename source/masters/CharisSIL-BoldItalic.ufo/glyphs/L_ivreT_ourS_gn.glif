@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LivreTourSgn" format="2">
+  <advance width="1225"/>
+  <unicode hex="20B6"/>
+  <outline>
+    <contour>
+      <point x="1129" y="165" type="line"/>
+      <point x="1064" y="142"/>
+      <point x="984" y="117"/>
+      <point x="938" y="117" type="curve" smooth="yes"/>
+      <point x="874" y="117"/>
+      <point x="843" y="160"/>
+      <point x="858" y="223" type="curve"/>
+      <point x="987" y="874" type="line"/>
+      <point x="1247" y="874" type="line"/>
+      <point x="1247" y="987" type="line"/>
+      <point x="1007" y="987" type="line"/>
+      <point x="1088" y="1407" type="line"/>
+      <point x="800" y="1327" type="line"/>
+      <point x="734" y="987" type="line"/>
+      <point x="147" y="987" type="line"/>
+      <point x="147" y="870" type="line"/>
+      <point x="710" y="870" type="line"/>
+      <point x="589" y="242" type="line" smooth="yes"/>
+      <point x="583" y="213"/>
+      <point x="581" y="186"/>
+      <point x="581" y="160" type="curve" smooth="yes"/>
+      <point x="581" y="53"/>
+      <point x="657" y="-25"/>
+      <point x="815" y="-25" type="curve" smooth="yes"/>
+      <point x="910" y="-25"/>
+      <point x="1045" y="18"/>
+      <point x="1128" y="49" type="curve"/>
+    </contour>
+    <contour>
+      <point x="423" y="0" type="line"/>
+      <point x="697" y="1407" type="line"/>
+      <point x="409" y="1327" type="line"/>
+      <point x="152" y="0" type="line"/>
+    </contour>
+  </outline>
+</glyph>

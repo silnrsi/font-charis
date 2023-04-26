@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmRFishhook" format="2">
+  <advance width="795"/>
+  <unicode hex="027E"/>
+  <anchor x="290" y="-100" name="L"/>
+  <anchor x="413" y="1100" name="U"/>
+  <outline>
+    <contour>
+      <point x="750" y="891" type="curve" smooth="yes"/>
+      <point x="750" y="942"/>
+      <point x="709" y="1012"/>
+      <point x="563" y="1012" type="curve" smooth="yes"/>
+      <point x="332" y="1012"/>
+      <point x="184" y="848"/>
+      <point x="184" y="631" type="curve" smooth="yes"/>
+      <point x="184" y="131" type="line" smooth="yes"/>
+      <point x="184" y="115"/>
+      <point x="158" y="92"/>
+      <point x="141" y="90" type="curve" smooth="yes"/>
+      <point x="43" y="80" type="line"/>
+      <point x="43" y="0" type="line"/>
+      <point x="520" y="0" type="line"/>
+      <point x="520" y="80" type="line"/>
+      <point x="420" y="90" type="line" smooth="yes"/>
+      <point x="403" y="92"/>
+      <point x="375" y="115"/>
+      <point x="375" y="131" type="curve" smooth="yes"/>
+      <point x="375" y="631" type="line" smooth="yes"/>
+      <point x="375" y="860"/>
+      <point x="422" y="913"/>
+      <point x="498" y="913" type="curve"/>
+      <point x="662" y="770" type="line"/>
+      <point x="700" y="784"/>
+      <point x="750" y="827"/>
+    </contour>
+  </outline>
+</glyph>

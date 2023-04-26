@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ModTnYangPing" format="2">
+  <advance width="450"/>
+  <unicode hex="A701"/>
+  <outline>
+    <contour>
+      <point x="417" y="-191" type="line"/>
+      <point x="417" y="-122" type="line"/>
+      <point x="266" y="-122" type="line" smooth="yes"/>
+      <point x="135" y="-122"/>
+      <point x="100" y="-95"/>
+      <point x="100" y="-2" type="curve" smooth="yes"/>
+      <point x="100" y="91"/>
+      <point x="135" y="120"/>
+      <point x="266" y="120" type="curve" smooth="yes"/>
+      <point x="417" y="120" type="line"/>
+      <point x="417" y="191" type="line"/>
+      <point x="273" y="191" type="line" smooth="yes"/>
+      <point x="108" y="191"/>
+      <point x="25" y="139"/>
+      <point x="25" y="-2" type="curve" smooth="yes"/>
+      <point x="25" y="-143"/>
+      <point x="108" y="-193"/>
+      <point x="273" y="-193" type="curve"/>
+    </contour>
+    <contour>
+      <point x="417" y="-392" type="line"/>
+      <point x="417" y="-323" type="line"/>
+      <point x="45" y="-323" type="line"/>
+      <point x="45" y="-394" type="line"/>
+    </contour>
+  </outline>
+</glyph>

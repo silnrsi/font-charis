@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmChi" format="2">
+  <advance width="1122"/>
+  <unicode hex="AB53"/>
+  <anchor x="556" y="-500" name="L"/>
+  <anchor x="556" y="1100" name="U"/>
+  <outline>
+    <contour>
+      <point x="557" y="405" type="line"/>
+      <point x="603" y="209" type="line"/>
+      <point x="960" y="889" type="line"/>
+      <point x="1075" y="903" type="line"/>
+      <point x="1075" y="999" type="line"/>
+      <point x="708" y="999" type="line"/>
+      <point x="708" y="903" type="line"/>
+      <point x="774" y="897" type="line" smooth="yes"/>
+      <point x="787" y="896"/>
+      <point x="792" y="886"/>
+      <point x="792" y="876" type="curve" smooth="yes"/>
+      <point x="792" y="870"/>
+      <point x="790" y="865"/>
+      <point x="788" y="860" type="curve" smooth="yes"/>
+    </contour>
+    <contour>
+      <point x="128" y="889" type="line"/>
+      <point x="783" y="-449" type="line"/>
+      <point x="1112" y="-449" type="line"/>
+      <point x="1112" y="-353" type="line"/>
+      <point x="998" y="-336" type="line"/>
+      <point x="350" y="999" type="line"/>
+      <point x="15" y="999" type="line"/>
+      <point x="15" y="903" type="line"/>
+    </contour>
+    <contour>
+      <point x="537" y="174" type="line"/>
+      <point x="496" y="382" type="line"/>
+      <point x="113" y="-336" type="line"/>
+      <point x="-10" y="-353" type="line"/>
+      <point x="-10" y="-449" type="line"/>
+      <point x="366" y="-449" type="line"/>
+      <point x="366" y="-353" type="line"/>
+      <point x="294" y="-345" type="line" smooth="yes"/>
+      <point x="281" y="-344"/>
+      <point x="275" y="-336"/>
+      <point x="275" y="-327" type="curve" smooth="yes"/>
+      <point x="275" y="-322"/>
+      <point x="277" y="-316"/>
+      <point x="280" y="-310" type="curve" smooth="yes"/>
+    </contour>
+  </outline>
+</glyph>

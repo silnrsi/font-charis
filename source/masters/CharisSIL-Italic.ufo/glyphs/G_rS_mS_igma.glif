@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="GrSmSigma" format="2">
+  <advance width="1036"/>
+  <unicode hex="03C3"/>
+  <anchor x="376" y="-100" name="L"/>
+  <anchor x="620" y="1100" name="U"/>
+  <outline>
+    <contour>
+      <point x="1178" y="1051" type="curve"/>
+      <point x="1114" y="1051" type="line"/>
+      <point x="1102" y="1006"/>
+      <point x="1081" y="981"/>
+      <point x="985" y="981" type="curve" smooth="yes"/>
+      <point x="838" y="981"/>
+      <point x="741" y="1010"/>
+      <point x="606" y="1012" type="curve"/>
+      <point x="285" y="1012"/>
+      <point x="63" y="694"/>
+      <point x="63" y="362" type="curve" smooth="yes"/>
+      <point x="63" y="125"/>
+      <point x="203" y="-25"/>
+      <point x="428" y="-25" type="curve" smooth="yes"/>
+      <point x="743" y="-25"/>
+      <point x="973" y="283"/>
+      <point x="973" y="614" type="curve" smooth="yes"/>
+      <point x="973" y="719"/>
+      <point x="948" y="799"/>
+      <point x="909" y="860" type="curve"/>
+      <point x="934" y="852"/>
+      <point x="965" y="846"/>
+      <point x="991" y="846" type="curve" smooth="yes"/>
+      <point x="1120" y="846"/>
+      <point x="1165" y="1010"/>
+    </contour>
+    <contour>
+      <point x="766" y="623" type="curve" smooth="yes"/>
+      <point x="766" y="381"/>
+      <point x="647" y="68"/>
+      <point x="453" y="68" type="curve" smooth="yes"/>
+      <point x="350" y="68"/>
+      <point x="270" y="170"/>
+      <point x="270" y="373" type="curve" smooth="yes"/>
+      <point x="270" y="639"/>
+      <point x="406" y="924"/>
+      <point x="584" y="924" type="curve" smooth="yes"/>
+      <point x="688" y="924"/>
+      <point x="766" y="817"/>
+    </contour>
+  </outline>
+</glyph>

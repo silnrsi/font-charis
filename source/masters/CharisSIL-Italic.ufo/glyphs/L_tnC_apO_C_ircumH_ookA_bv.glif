@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapOCircumHookAbv" format="2">
+  <advance width="1454"/>
+  <unicode hex="1ED4"/>
+  <anchor x="625" y="0" name="H"/>
+  <anchor x="605" y="-100" name="L"/>
+  <anchor x="873" y="0" name="O"/>
+  <anchor x="1430" y="1250" name="R"/>
+  <anchor x="981" y="2300" name="U"/>
+  <outline>
+    <component base="LtnCapO"/>
+    <component base="CombCircum" xOffset="1276" yOffset="400"/>
+    <component base="CombHookAbv" xOffset="1320" yOffset="800"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

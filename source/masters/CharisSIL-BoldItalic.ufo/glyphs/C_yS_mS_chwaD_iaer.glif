@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CySmSchwaDiaer" format="2">
+  <advance width="983"/>
+  <unicode hex="04DB"/>
+  <anchor x="336" y="0" name="H"/>
+  <anchor x="316" y="-100" name="L"/>
+  <anchor x="415" y="0" name="O"/>
+  <anchor x="600" y="1500" name="U"/>
+  <outline>
+    <component base="LtnSmSchwa"/>
+    <component base="CombDiaer" xOffset="999"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnWynn.sc" format="2">
+  <advance width="1167"/>
+  <anchor x="83" y="-402" name="L"/>
+  <anchor x="674" y="1238" name="U"/>
+  <outline>
+    <contour>
+      <point x="-150" y="-358" type="line"/>
+      <point x="400" y="-358" type="line"/>
+      <point x="400" y="-261" type="line"/>
+      <point x="282" y="-251" type="line" smooth="yes"/>
+      <point x="255" y="-249"/>
+      <point x="245" y="-242"/>
+      <point x="247" y="-235" type="curve" smooth="yes"/>
+      <point x="305" y="22" type="line"/>
+      <point x="305" y="17" type="line"/>
+      <point x="617" y="175"/>
+      <point x="1158" y="545"/>
+      <point x="1158" y="907" type="curve" smooth="yes"/>
+      <point x="1158" y="1052"/>
+      <point x="1013" y="1147"/>
+      <point x="879" y="1147" type="curve" smooth="yes"/>
+      <point x="717" y="1147"/>
+      <point x="592" y="1088"/>
+      <point x="516" y="1034" type="curve"/>
+      <point x="536" y="1131" type="line"/>
+      <point x="413" y="1131" type="line"/>
+      <point x="100" y="1078" type="line"/>
+      <point x="100" y="1003" type="line"/>
+      <point x="261" y="991" type="line"/>
+      <point x="-5" y="-233" type="line" smooth="yes"/>
+      <point x="-8" y="-246"/>
+      <point x="-17" y="-249"/>
+      <point x="-40" y="-251" type="curve" smooth="yes"/>
+      <point x="-150" y="-260" type="line"/>
+    </contour>
+    <contour>
+      <point x="339" y="194" type="curve"/>
+      <point x="489" y="882" type="line"/>
+      <point x="489" y="877" type="line"/>
+      <point x="580" y="945"/>
+      <point x="669" y="981"/>
+      <point x="761" y="981" type="curve" smooth="yes"/>
+      <point x="837" y="981"/>
+      <point x="878" y="930"/>
+      <point x="878" y="852" type="curve" smooth="yes"/>
+      <point x="878" y="622"/>
+      <point x="603" y="366"/>
+    </contour>
+  </outline>
+</glyph>

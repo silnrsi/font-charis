@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ModSmBHook" format="2">
+  <advance width="770"/>
+  <unicode hex="10785"/>
+  <anchor x="418" y="725" name="L"/>
+  <anchor x="418" y="1709" name="U"/>
+  <outline>
+    <contour>
+      <point x="732" y="1122" type="curve" smooth="yes"/>
+      <point x="732" y="1297"/>
+      <point x="613" y="1399"/>
+      <point x="471" y="1399" type="curve" smooth="yes"/>
+      <point x="374" y="1399"/>
+      <point x="278" y="1339"/>
+      <point x="278" y="1339" type="curve"/>
+      <point x="278" y="1399" type="line" smooth="yes"/>
+      <point x="278" y="1553"/>
+      <point x="360" y="1618"/>
+      <point x="433" y="1618" type="curve"/>
+      <point x="543" y="1499" type="line"/>
+      <point x="543" y="1499"/>
+      <point x="623" y="1509"/>
+      <point x="623" y="1582" type="curve" smooth="yes"/>
+      <point x="623" y="1659"/>
+      <point x="518" y="1695"/>
+      <point x="405" y="1695" type="curve" smooth="yes"/>
+      <point x="276" y="1695"/>
+      <point x="193" y="1640"/>
+      <point x="149" y="1567" type="curve" smooth="yes"/>
+      <point x="117" y="1516"/>
+      <point x="104" y="1457"/>
+      <point x="104" y="1399" type="curve" smooth="yes"/>
+      <point x="104" y="785" type="line"/>
+      <point x="330" y="785" type="line" smooth="yes"/>
+      <point x="598" y="785"/>
+      <point x="732" y="927"/>
+    </contour>
+    <contour>
+      <point x="542" y="1085" type="curve" smooth="yes"/>
+      <point x="542" y="941"/>
+      <point x="481" y="854"/>
+      <point x="326" y="854" type="curve" smooth="yes"/>
+      <point x="278" y="854" type="line"/>
+      <point x="278" y="1288" type="line"/>
+      <point x="278" y="1288"/>
+      <point x="322" y="1294"/>
+      <point x="353" y="1294" type="curve" smooth="yes"/>
+      <point x="476" y="1294"/>
+      <point x="542" y="1218"/>
+    </contour>
+  </outline>
+</glyph>

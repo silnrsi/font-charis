@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CySmKomiDe" format="2">
+  <advance width="1077"/>
+  <unicode hex="0501"/>
+  <anchor x="476" y="0" name="H"/>
+  <anchor x="501" y="-100" name="L"/>
+  <anchor x="1023" y="1000" name="R"/>
+  <anchor x="817" y="1540" name="U"/>
+  <outline>
+    <component base="LtnSmD"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

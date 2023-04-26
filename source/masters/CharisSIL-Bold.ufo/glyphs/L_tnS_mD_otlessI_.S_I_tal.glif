@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmDotlessI.SItal" format="2">
+  <advance width="682"/>
+  <anchor x="344" y="0" name="H"/>
+  <anchor x="344" y="-100" name="L"/>
+  <anchor x="525" y="0" name="O"/>
+  <anchor x="682" y="1000" name="R"/>
+  <anchor x="344" y="1100" name="U"/>
+  <outline>
+    <contour>
+      <point x="623" y="0" type="line"/>
+      <point x="623" y="96" type="line"/>
+      <point x="524" y="102" type="line" smooth="yes"/>
+      <point x="500" y="104"/>
+      <point x="477" y="125"/>
+      <point x="477" y="150" type="curve" smooth="yes"/>
+      <point x="477" y="1024" type="line"/>
+      <point x="373" y="1024" type="line"/>
+      <point x="74" y="922" type="line"/>
+      <point x="74" y="838" type="line"/>
+      <point x="205" y="838" type="line"/>
+      <point x="205" y="150" type="line" smooth="yes"/>
+      <point x="205" y="125"/>
+      <point x="184" y="104"/>
+      <point x="160" y="102" type="curve" smooth="yes"/>
+      <point x="66" y="96" type="line"/>
+      <point x="66" y="0" type="line"/>
+    </contour>
+  </outline>
+</glyph>

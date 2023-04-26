@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmACircumAcute.2StorySItal.VN" format="2">
+  <advance width="1004"/>
+  <anchor x="385" y="0" name="H"/>
+  <anchor x="385" y="-100" name="L"/>
+  <anchor x="843" y="0" name="O"/>
+  <anchor x="1004" y="1000" name="R"/>
+  <outline>
+    <component base="LtnSmA.2StorySItal"/>
+    <component base="CombCircumAcute.VN" xOffset="53"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

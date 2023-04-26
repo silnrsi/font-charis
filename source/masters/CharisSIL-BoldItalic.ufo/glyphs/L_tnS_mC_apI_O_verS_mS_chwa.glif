@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmCapIOverSmSchwa" format="2">
+  <advance width="641"/>
+  <unicode hex="F258"/>
+  <anchor x="188" y="-100" name="L"/>
+  <anchor x="478" y="1405" name="U"/>
+  <outline>
+    <component base="LtnSupSmSchwa" xOffset="-150" yOffset="-795"/>
+    <component base="LtnSupSmCapI" xOffset="90" yOffset="-100"/>
+  </outline>
+</glyph>

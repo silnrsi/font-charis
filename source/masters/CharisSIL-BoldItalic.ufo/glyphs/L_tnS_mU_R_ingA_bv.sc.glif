@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmURingAbv.sc" format="2">
+  <advance width="1411"/>
+  <anchor x="606" y="8" name="H"/>
+  <anchor x="604" y="-74" name="L"/>
+  <anchor x="837" y="8" name="O"/>
+  <anchor x="1439" y="992" name="R"/>
+  <anchor x="943" y="1798" name="U"/>
+  <outline>
+    <component base="LtnSmU.sc"/>
+    <component base="CombRingAbv" xOffset="1312" yOffset="138"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

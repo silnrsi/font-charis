@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmIDiaerAcute" format="2">
+  <advance width="682"/>
+  <unicode hex="1E2F"/>
+  <anchor x="344" y="0" name="H"/>
+  <anchor x="344" y="-100" name="L"/>
+  <anchor x="525" y="0" name="O"/>
+  <anchor x="682" y="1000" name="R"/>
+  <anchor x="344" y="1900" name="U"/>
+  <outline>
+    <component base="LtnSmDotlessI"/>
+    <component base="CombDiaer" xOffset="942"/>
+    <component base="CombAcute" xOffset="942" yOffset="400"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

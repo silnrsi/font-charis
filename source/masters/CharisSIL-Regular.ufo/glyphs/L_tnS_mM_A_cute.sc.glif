@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmMAcute.sc" format="2">
+  <advance width="1650"/>
+  <anchor x="1335" y="0" name="H"/>
+  <anchor x="823" y="-74" name="L"/>
+  <anchor x="823" y="1638" name="U"/>
+  <outline>
+    <component base="LtnSmM.sc"/>
+    <component base="CombAcute" xOffset="1380" yOffset="138"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

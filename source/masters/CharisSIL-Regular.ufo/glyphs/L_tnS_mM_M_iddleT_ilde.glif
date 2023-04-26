@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmMMiddleTilde" format="2">
+  <advance width="1741"/>
+  <unicode hex="1D6F"/>
+  <anchor x="865" y="-100" name="L"/>
+  <anchor x="865" y="1100" name="U"/>
+  <outline>
+    <component base="LtnSmM"/>
+    <contour>
+      <point x="1718" y="593" type="curve"/>
+      <point x="1632" y="593" type="line"/>
+      <point x="1618" y="533"/>
+      <point x="1475" y="475"/>
+      <point x="1343" y="475" type="curve" smooth="yes"/>
+      <point x="975" y="475"/>
+      <point x="750" y="593"/>
+      <point x="542" y="593" type="curve" smooth="yes"/>
+      <point x="223" y="593"/>
+      <point x="100" y="487"/>
+      <point x="26" y="342" type="curve"/>
+      <point x="112" y="342" type="line"/>
+      <point x="126" y="401"/>
+      <point x="262" y="460"/>
+      <point x="395" y="460" type="curve" smooth="yes"/>
+      <point x="763" y="460"/>
+      <point x="963" y="342"/>
+      <point x="1202" y="342" type="curve" smooth="yes"/>
+      <point x="1518" y="342"/>
+      <point x="1644" y="449"/>
+    </contour>
+  </outline>
+</glyph>

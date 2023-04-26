@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="QuadruplePrime" format="2">
+  <advance width="1775"/>
+  <unicode hex="2057"/>
+  <outline>
+    <component base="Prime"/>
+    <component base="Prime" xOffset="380"/>
+    <component base="Prime" xOffset="760"/>
+    <component base="Prime" xOffset="1140"/>
+  </outline>
+</glyph>

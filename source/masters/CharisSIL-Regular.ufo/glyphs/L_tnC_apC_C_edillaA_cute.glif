@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapCCedillaAcute" format="2">
+  <advance width="1284"/>
+  <unicode hex="1E08"/>
+  <anchor x="730" y="-600" name="L"/>
+  <anchor x="750" y="1900" name="U"/>
+  <outline>
+    <component base="LtnCapC"/>
+    <component base="CombCedilla" xOffset="1287"/>
+    <component base="CombAcute" xOffset="1307" yOffset="400"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

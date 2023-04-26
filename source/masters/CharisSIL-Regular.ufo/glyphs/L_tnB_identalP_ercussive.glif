@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnBidentalPercussive" format="2">
+  <advance width="1015"/>
+  <unicode hex="02AD"/>
+  <anchor x="507" y="-100" name="L"/>
+  <anchor x="507" y="1540" name="U"/>
+  <outline>
+    <contour>
+      <point x="945" y="1005" type="line"/>
+      <point x="945" y="1410" type="line"/>
+      <point x="60" y="1410" type="line"/>
+      <point x="60" y="1005" type="line"/>
+      <point x="139" y="1005" type="line"/>
+      <point x="139" y="1292" type="line"/>
+      <point x="866" y="1292" type="line"/>
+      <point x="866" y="1005" type="line"/>
+    </contour>
+    <contour>
+      <point x="955" y="0" type="line"/>
+      <point x="955" y="405" type="line"/>
+      <point x="70" y="405" type="line"/>
+      <point x="70" y="0" type="line"/>
+      <point x="149" y="0" type="line"/>
+      <point x="149" y="287" type="line"/>
+      <point x="876" y="287" type="line"/>
+      <point x="876" y="0" type="line"/>
+    </contour>
+  </outline>
+</glyph>

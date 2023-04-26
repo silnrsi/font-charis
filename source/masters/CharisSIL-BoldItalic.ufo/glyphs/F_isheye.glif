@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Fisheye" format="2">
+  <advance width="1211"/>
+  <unicode hex="25C9"/>
+  <outline>
+    <component base="Bullet" xScale="1.45" yScale="1.45" xOffset="194" yOffset="-313"/>
+    <contour>
+      <point x="639" y="170" type="curve" smooth="yes"/>
+      <point x="931" y="170"/>
+      <point x="1167" y="404"/>
+      <point x="1167" y="696" type="curve" smooth="yes"/>
+      <point x="1167" y="987"/>
+      <point x="931" y="1223"/>
+      <point x="639" y="1223" type="curve" smooth="yes"/>
+      <point x="348" y="1223"/>
+      <point x="118" y="987"/>
+      <point x="118" y="696" type="curve" smooth="yes"/>
+      <point x="118" y="404"/>
+      <point x="348" y="170"/>
+    </contour>
+    <contour>
+      <point x="639" y="269" type="curve" smooth="yes"/>
+      <point x="404" y="269"/>
+      <point x="217" y="459"/>
+      <point x="217" y="696" type="curve" smooth="yes"/>
+      <point x="217" y="930"/>
+      <point x="404" y="1124"/>
+      <point x="639" y="1124" type="curve" smooth="yes"/>
+      <point x="875" y="1124"/>
+      <point x="1068" y="930"/>
+      <point x="1068" y="696" type="curve" smooth="yes"/>
+      <point x="1068" y="459"/>
+      <point x="875" y="269"/>
+    </contour>
+  </outline>
+</glyph>

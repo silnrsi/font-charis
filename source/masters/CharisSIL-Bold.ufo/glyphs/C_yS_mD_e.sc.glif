@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CySmDe.sc" format="2">
+  <advance width="1395"/>
+  <anchor x="673" y="-74" name="L"/>
+  <anchor x="828" y="1238" name="U"/>
+  <outline>
+    <contour>
+      <point x="16" y="-338" type="line"/>
+      <point x="151" y="-338" type="line"/>
+      <point x="151" y="-94"/>
+      <point x="316" y="-5"/>
+      <point x="415" y="-5" type="curve"/>
+      <point x="917" y="-5" type="line"/>
+      <point x="1013" y="-5"/>
+      <point x="1181" y="-94"/>
+      <point x="1181" y="-338" type="curve"/>
+      <point x="1316" y="-338" type="line"/>
+      <point x="1316" y="16" type="line"/>
+      <point x="1285" y="20"/>
+      <point x="1255" y="24"/>
+      <point x="1224" y="27" type="curve"/>
+      <point x="1190" y="32"/>
+      <point x="1181" y="49"/>
+      <point x="1181" y="71" type="curve"/>
+      <point x="1181" y="984" type="line"/>
+      <point x="1181" y="1000"/>
+      <point x="1200" y="1010"/>
+      <point x="1222" y="1013" type="curve"/>
+      <point x="1316" y="1021" type="line"/>
+      <point x="1316" y="1120" type="line"/>
+      <point x="320" y="1120" type="line"/>
+      <point x="320" y="1021" type="line"/>
+      <point x="417" y="1013" type="line"/>
+      <point x="437" y="1010"/>
+      <point x="457" y="1000"/>
+      <point x="457" y="984" type="curve" smooth="yes"/>
+      <point x="457" y="791"/>
+      <point x="400" y="430"/>
+      <point x="301" y="255" type="curve"/>
+      <point x="209" y="93"/>
+      <point x="16" y="21"/>
+      <point x="16" y="21" type="curve"/>
+    </contour>
+    <contour>
+      <point x="405" y="112" type="line"/>
+      <point x="425" y="134"/>
+      <point x="455" y="169"/>
+      <point x="476" y="203" type="curve" smooth="yes"/>
+      <point x="539" y="310"/>
+      <point x="625" y="579"/>
+      <point x="627" y="1005" type="curve"/>
+      <point x="917" y="1005" type="line"/>
+      <point x="917" y="112" type="line"/>
+    </contour>
+  </outline>
+</glyph>

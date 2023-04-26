@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnLateralClick" format="2">
+  <advance width="753"/>
+  <unicode hex="01C1"/>
+  <anchor x="193" y="-500" name="L"/>
+  <anchor x="590" y="1570" name="U"/>
+  <outline>
+    <contour>
+      <point x="435" y="-440" type="line"/>
+      <point x="806" y="1507" type="line"/>
+      <point x="651" y="1507" type="line"/>
+      <point x="280" y="-440" type="line"/>
+    </contour>
+    <contour>
+      <point x="145" y="-440" type="line"/>
+      <point x="516" y="1507" type="line"/>
+      <point x="361" y="1507" type="line"/>
+      <point x="-10" y="-440" type="line"/>
+    </contour>
+  </outline>
+</glyph>

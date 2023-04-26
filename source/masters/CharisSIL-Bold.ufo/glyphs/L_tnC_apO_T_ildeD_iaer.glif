@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapOTildeDiaer" format="2">
+  <advance width="1548"/>
+  <unicode hex="1E4E"/>
+  <anchor x="775" y="0" name="H"/>
+  <anchor x="775" y="-100" name="L"/>
+  <anchor x="1043" y="0" name="O"/>
+  <anchor x="1508" y="1250" name="R"/>
+  <anchor x="775" y="2300" name="U"/>
+  <outline>
+    <component base="LtnCapO"/>
+    <component base="CombTilde" xOffset="1373" yOffset="400"/>
+    <component base="CombDiaer" xOffset="1373" yOffset="800"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

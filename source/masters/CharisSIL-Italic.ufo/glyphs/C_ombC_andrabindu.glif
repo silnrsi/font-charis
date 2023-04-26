@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CombCandrabindu" format="2">
+  <unicode hex="0310"/>
+  <anchor x="-339" y="1500" name="U"/>
+  <anchor x="-383" y="1100" name="_U"/>
+  <outline>
+    <component base="CombBreve"/>
+    <component base="DotAbv" xOffset="-598" yOffset="150"/>
+  </outline>
+</glyph>

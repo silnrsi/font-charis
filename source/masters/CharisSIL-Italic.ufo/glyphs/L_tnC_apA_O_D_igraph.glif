@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapAODigraph" format="2">
+  <advance width="2175"/>
+  <unicode hex="A734"/>
+  <anchor x="989" y="0" name="H"/>
+  <anchor x="950" y="-100" name="L"/>
+  <anchor x="1680" y="0" name="O"/>
+  <anchor x="1320" y="1500" name="U"/>
+  <outline>
+    <contour>
+      <point x="1406" y="-33" type="curve" smooth="yes"/>
+      <point x="1888" y="-33"/>
+      <point x="2136" y="422"/>
+      <point x="2136" y="854" type="curve" smooth="yes"/>
+      <point x="2136" y="1159"/>
+      <point x="1951" y="1407"/>
+      <point x="1611" y="1407" type="curve" smooth="yes"/>
+      <point x="1326" y="1407"/>
+      <point x="1127" y="1235"/>
+      <point x="997" y="997" type="curve"/>
+      <point x="926" y="1407" type="line"/>
+      <point x="762" y="1407" type="line"/>
+      <point x="6" y="98" type="line"/>
+      <point x="-109" y="86" type="line"/>
+      <point x="-109" y="0" type="line"/>
+      <point x="332" y="0" type="line"/>
+      <point x="332" y="86" type="line"/>
+      <point x="238" y="96" type="line" smooth="yes"/>
+      <point x="199" y="100"/>
+      <point x="184" y="109"/>
+      <point x="199" y="135" type="curve"/>
+      <point x="408" y="526" type="line"/>
+      <point x="872" y="526" type="line"/>
+      <point x="886" y="438" type="line" smooth="yes"/>
+      <point x="938" y="113"/>
+      <point x="1138" y="-33"/>
+    </contour>
+    <contour>
+      <point x="463" y="623" type="line"/>
+      <point x="766" y="1155" type="line"/>
+      <point x="854" y="623" type="line"/>
+    </contour>
+    <contour>
+      <point x="1421" y="74" type="curve" smooth="yes"/>
+      <point x="1230" y="74"/>
+      <point x="1111" y="244"/>
+      <point x="1111" y="520" type="curve" smooth="yes"/>
+      <point x="1111" y="883"/>
+      <point x="1294" y="1305"/>
+      <point x="1593" y="1305" type="curve" smooth="yes"/>
+      <point x="1789" y="1305"/>
+      <point x="1903" y="1126"/>
+      <point x="1903" y="854" type="curve" smooth="yes"/>
+      <point x="1903" y="506"/>
+      <point x="1720" y="74"/>
+    </contour>
+  </outline>
+</glyph>

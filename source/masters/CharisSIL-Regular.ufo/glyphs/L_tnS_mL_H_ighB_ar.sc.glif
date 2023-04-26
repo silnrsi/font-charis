@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmLHighBar.sc" format="2">
+  <advance width="1000"/>
+  <anchor x="483" y="-74" name="L"/>
+  <anchor x="483" y="1238" name="U"/>
+  <outline>
+    <contour>
+      <point x="387" y="97" type="line"/>
+      <point x="387" y="999" type="line"/>
+      <point x="387" y="1011"/>
+      <point x="400" y="1023"/>
+      <point x="426" y="1026" type="curve"/>
+      <point x="526" y="1033" type="line"/>
+      <point x="526" y="1120" type="line"/>
+      <point x="54" y="1120" type="line"/>
+      <point x="54" y="1033" type="line"/>
+      <point x="162" y="1026" type="line"/>
+      <point x="188" y="1024"/>
+      <point x="201" y="1011"/>
+      <point x="201" y="999" type="curve"/>
+      <point x="201" y="121" type="line"/>
+      <point x="201" y="109"/>
+      <point x="188" y="95"/>
+      <point x="162" y="93" type="curve"/>
+      <point x="54" y="87" type="line"/>
+      <point x="54" y="0" type="line"/>
+      <point x="952" y="0" type="line"/>
+      <point x="952" y="322" type="line"/>
+      <point x="848" y="322" type="line"/>
+      <point x="817" y="117" type="line"/>
+      <point x="815" y="107"/>
+      <point x="793" y="97"/>
+      <point x="776" y="97" type="curve"/>
+    </contour>
+    <contour>
+      <point x="27" y="785" type="line"/>
+      <point x="651" y="785" type="line"/>
+      <point x="651" y="884" type="line"/>
+      <point x="27" y="884" type="line"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmRFishhookMiddleTilde" format="2">
+  <advance width="774"/>
+  <unicode hex="1D73"/>
+  <anchor x="167" y="-100" name="L"/>
+  <anchor x="547" y="1100" name="U"/>
+  <outline>
+    <component base="LtnSmRFishhook" xOffset="98"/>
+    <component base="SmTilde" xOffset="-211" yOffset="-815"/>
+  </outline>
+</glyph>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapInsularG" format="2">
+  <advance width="1085"/>
+  <unicode hex="A77D"/>
+  <anchor x="553" y="-100" name="L"/>
+  <anchor x="538" y="1500" name="U"/>
+  <outline>
+    <contour>
+      <point x="88" y="1165" type="line"/>
+      <point x="650" y="1165" type="line"/>
+      <point x="370" y="1082"/>
+      <point x="294" y="964"/>
+      <point x="294" y="865" type="curve" smooth="yes"/>
+      <point x="294" y="788"/>
+      <point x="322" y="746"/>
+      <point x="402" y="692" type="curve"/>
+      <point x="199" y="623"/>
+      <point x="40" y="497"/>
+      <point x="40" y="319" type="curve" smooth="yes"/>
+      <point x="40" y="125"/>
+      <point x="220" y="-33"/>
+      <point x="513" y="-33" type="curve" smooth="yes"/>
+      <point x="802" y="-33"/>
+      <point x="1045" y="174"/>
+      <point x="1045" y="393" type="curve" smooth="yes"/>
+      <point x="1045" y="730"/>
+      <point x="524" y="779"/>
+      <point x="524" y="933" type="curve" smooth="yes"/>
+      <point x="524" y="1020"/>
+      <point x="688" y="1107"/>
+      <point x="939" y="1165" type="curve"/>
+      <point x="959" y="1165" type="line"/>
+      <point x="959" y="1374" type="line"/>
+      <point x="88" y="1374" type="line"/>
+    </contour>
+    <contour>
+      <point x="498" y="618" type="curve"/>
+      <point x="628" y="534"/>
+      <point x="798" y="479"/>
+      <point x="798" y="316" type="curve" smooth="yes"/>
+      <point x="798" y="173"/>
+      <point x="654" y="99"/>
+      <point x="573" y="99" type="curve" smooth="yes"/>
+      <point x="443" y="99"/>
+      <point x="297" y="216"/>
+      <point x="297" y="352" type="curve" smooth="yes"/>
+      <point x="297" y="460"/>
+      <point x="381" y="551"/>
+    </contour>
+  </outline>
+</glyph>

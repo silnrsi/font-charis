@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="FullStop" format="2">
+  <advance width="573"/>
+  <unicode hex="002E"/>
+  <outline>
+    <contour>
+      <point x="311" y="113" type="curve" smooth="yes"/>
+      <point x="311" y="188"/>
+      <point x="248" y="250"/>
+      <point x="172" y="250" type="curve" smooth="yes"/>
+      <point x="96" y="250"/>
+      <point x="37" y="188"/>
+      <point x="37" y="113" type="curve" smooth="yes"/>
+      <point x="37" y="37"/>
+      <point x="96" y="-25"/>
+      <point x="172" y="-25" type="curve" smooth="yes"/>
+      <point x="248" y="-25"/>
+      <point x="311" y="37"/>
+    </contour>
+  </outline>
+</glyph>

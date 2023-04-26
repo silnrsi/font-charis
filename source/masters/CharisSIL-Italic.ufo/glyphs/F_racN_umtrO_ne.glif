@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="FracNumtrOne" format="2">
+  <advance width="1800"/>
+  <unicode hex="215F"/>
+  <outline>
+    <contour>
+      <point x="1540" y="1430" type="line"/>
+      <point x="1395" y="1430" type="line"/>
+      <point x="205" y="0" type="line"/>
+      <point x="350" y="0" type="line"/>
+    </contour>
+    <contour>
+      <point x="571" y="1436" type="line"/>
+      <point x="528" y="1436" type="line"/>
+      <point x="223" y="1356" type="line"/>
+      <point x="223" y="1290" type="line"/>
+      <point x="420" y="1313" type="line"/>
+      <point x="299" y="709" type="line"/>
+      <point x="293" y="686"/>
+      <point x="281" y="674"/>
+      <point x="252" y="674" type="curve"/>
+      <point x="139" y="668" type="line"/>
+      <point x="139" y="598" type="line"/>
+      <point x="539" y="598" type="line"/>
+      <point x="539" y="666" type="line"/>
+      <point x="451" y="674" type="line"/>
+      <point x="428" y="674"/>
+      <point x="418" y="686"/>
+      <point x="422" y="709" type="curve"/>
+    </contour>
+  </outline>
+</glyph>

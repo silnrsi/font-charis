@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapSCircum" format="2">
+  <advance width="1098"/>
+  <unicode hex="015C"/>
+  <anchor x="558" y="0" name="H"/>
+  <anchor x="558" y="-100" name="L"/>
+  <anchor x="579" y="1900" name="U"/>
+  <outline>
+    <component base="LtnCapS"/>
+    <component base="CombCircum" xOffset="1177" yOffset="400"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

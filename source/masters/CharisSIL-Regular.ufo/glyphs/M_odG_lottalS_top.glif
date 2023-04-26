@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ModGlottalStop" format="2">
+  <advance width="621"/>
+  <unicode hex="02C0"/>
+  <anchor x="310" y="725" name="L"/>
+  <anchor x="310" y="1700" name="U"/>
+  <outline>
+    <contour>
+      <point x="579" y="1399" type="curve" smooth="yes"/>
+      <point x="579" y="1532"/>
+      <point x="449" y="1618"/>
+      <point x="293" y="1618" type="curve" smooth="yes"/>
+      <point x="147" y="1618"/>
+      <point x="41" y="1534"/>
+      <point x="41" y="1475" type="curve" smooth="yes"/>
+      <point x="41" y="1440"/>
+      <point x="60" y="1405"/>
+      <point x="113" y="1405" type="curve" smooth="yes"/>
+      <point x="146" y="1405"/>
+      <point x="170" y="1424"/>
+      <point x="170" y="1424" type="curve"/>
+      <point x="207" y="1540" type="line"/>
+      <point x="232" y="1557"/>
+      <point x="268" y="1563"/>
+      <point x="295" y="1563" type="curve" smooth="yes"/>
+      <point x="367" y="1565"/>
+      <point x="444" y="1495"/>
+      <point x="444" y="1387" type="curve" smooth="yes"/>
+      <point x="444" y="1266"/>
+      <point x="326" y="1196"/>
+      <point x="242" y="1169" type="curve"/>
+      <point x="242" y="862" type="line" smooth="yes"/>
+      <point x="242" y="852"/>
+      <point x="223" y="840"/>
+      <point x="211" y="838" type="curve" smooth="yes"/>
+      <point x="143" y="831" type="line"/>
+      <point x="143" y="784" type="line"/>
+      <point x="463" y="784" type="line"/>
+      <point x="463" y="831" type="line"/>
+      <point x="393" y="838" type="line" smooth="yes"/>
+      <point x="383" y="840"/>
+      <point x="365" y="852"/>
+      <point x="365" y="862" type="curve" smooth="yes"/>
+      <point x="365" y="1157" type="line"/>
+      <point x="438" y="1188"/>
+      <point x="579" y="1243"/>
+    </contour>
+  </outline>
+</glyph>

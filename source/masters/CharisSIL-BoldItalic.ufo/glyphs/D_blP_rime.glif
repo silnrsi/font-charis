@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DblPrime" format="2">
+  <advance width="1114"/>
+  <unicode hex="2033"/>
+  <outline>
+    <contour>
+      <point x="1114" y="1317" type="curve" smooth="yes"/>
+      <point x="1114" y="1364"/>
+      <point x="1055" y="1407"/>
+      <point x="971" y="1407" type="curve" smooth="yes"/>
+      <point x="885" y="1407"/>
+      <point x="807" y="1335"/>
+      <point x="807" y="1335" type="curve"/>
+      <point x="580" y="834" type="line"/>
+      <point x="748" y="834" type="line"/>
+      <point x="1098" y="1262" type="line" smooth="yes"/>
+      <point x="1106" y="1274"/>
+      <point x="1114" y="1292"/>
+    </contour>
+    <contour>
+      <point x="694" y="1317" type="curve" smooth="yes"/>
+      <point x="694" y="1364"/>
+      <point x="635" y="1407"/>
+      <point x="551" y="1407" type="curve" smooth="yes"/>
+      <point x="465" y="1407"/>
+      <point x="387" y="1335"/>
+      <point x="387" y="1335" type="curve"/>
+      <point x="160" y="834" type="line"/>
+      <point x="328" y="834" type="line"/>
+      <point x="678" y="1262" type="line" smooth="yes"/>
+      <point x="686" y="1274"/>
+      <point x="694" y="1292"/>
+    </contour>
+  </outline>
+</glyph>

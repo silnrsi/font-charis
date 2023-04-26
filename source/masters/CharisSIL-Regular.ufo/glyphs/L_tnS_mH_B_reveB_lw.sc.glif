@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmHBreveBlw.sc" format="2">
+  <advance width="1400"/>
+  <anchor x="295" y="8" name="H"/>
+  <anchor x="700" y="-474" name="L"/>
+  <anchor x="700" y="1238" name="U"/>
+  <outline>
+    <component base="LtnSmH.sc"/>
+    <component base="CombBreveBlw" xOffset="1257" yOffset="26"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

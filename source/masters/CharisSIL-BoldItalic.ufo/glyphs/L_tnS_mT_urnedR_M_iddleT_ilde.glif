@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmTurnedRMiddleTilde" format="2">
+  <advance width="931"/>
+  <unicode hex="AB68"/>
+  <anchor x="300" y="-100" name="L"/>
+  <anchor x="544" y="1100" name="U"/>
+  <outline>
+    <component base="LtnSmTurnedR"/>
+    <component base="CombTilde" xOffset="956" yOffset="-790"/>
+  </outline>
+</glyph>

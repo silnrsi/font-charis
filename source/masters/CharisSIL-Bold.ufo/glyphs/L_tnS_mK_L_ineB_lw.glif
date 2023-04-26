@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmKLineBlw" format="2">
+  <advance width="1212"/>
+  <unicode hex="1E35"/>
+  <anchor x="321" y="0" name="H"/>
+  <anchor x="617" y="-400" name="L"/>
+  <anchor x="1212" y="1000" name="R"/>
+  <anchor x="617" y="1540" name="U"/>
+  <outline>
+    <component base="LtnSmK"/>
+    <component base="CombMacronBlw" xOffset="1215"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

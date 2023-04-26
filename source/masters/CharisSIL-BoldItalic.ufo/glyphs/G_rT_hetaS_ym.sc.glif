@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="GrThetaSym.sc" format="2">
+  <advance width="1420"/>
+  <anchor x="600" y="-82" name="L"/>
+  <anchor x="860" y="1222" name="U"/>
+  <outline>
+    <contour>
+      <point x="830" y="1147" type="curve" smooth="yes"/>
+      <point x="373" y="1147"/>
+      <point x="103" y="786"/>
+      <point x="103" y="439" type="curve" smooth="yes"/>
+      <point x="103" y="169"/>
+      <point x="301" y="-27"/>
+      <point x="645" y="-27" type="curve" smooth="yes"/>
+      <point x="1130" y="-27"/>
+      <point x="1370" y="354"/>
+      <point x="1370" y="696" type="curve" smooth="yes"/>
+      <point x="1370" y="933"/>
+      <point x="1187" y="1147"/>
+    </contour>
+    <contour>
+      <point x="814" y="1031" type="curve" smooth="yes"/>
+      <point x="941" y="1031"/>
+      <point x="1082" y="919"/>
+      <point x="1082" y="696" type="curve" smooth="yes"/>
+      <point x="1082" y="676"/>
+      <point x="1081" y="660"/>
+      <point x="1080" y="640" type="curve"/>
+      <point x="421" y="640" type="line"/>
+      <point x="486" y="863"/>
+      <point x="645" y="1031"/>
+    </contour>
+    <contour>
+      <point x="659" y="93" type="curve" smooth="yes"/>
+      <point x="537" y="93"/>
+      <point x="391" y="196"/>
+      <point x="391" y="425" type="curve" smooth="yes"/>
+      <point x="391" y="449"/>
+      <point x="392" y="469"/>
+      <point x="394" y="492" type="curve"/>
+      <point x="1053" y="492" type="line"/>
+      <point x="988" y="269"/>
+      <point x="827" y="93"/>
+    </contour>
+  </outline>
+</glyph>

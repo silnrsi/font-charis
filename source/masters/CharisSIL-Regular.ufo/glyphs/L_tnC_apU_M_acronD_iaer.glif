@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapUMacronDiaer" format="2">
+  <advance width="1458"/>
+  <unicode hex="1E7A"/>
+  <anchor x="733" y="0" name="H"/>
+  <anchor x="750" y="-100" name="L"/>
+  <anchor x="1045" y="0" name="O"/>
+  <anchor x="1508" y="1350" name="R"/>
+  <anchor x="750" y="2270" name="U"/>
+  <outline>
+    <component base="LtnCapU"/>
+    <component base="CombMacron" xOffset="1307" yOffset="400"/>
+    <component base="CombDiaer" xOffset="1307" yOffset="770"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

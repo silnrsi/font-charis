@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmARtHalfRing" format="2">
+  <advance width="1067"/>
+  <unicode hex="1E9A"/>
+  <anchor x="483" y="0" name="H"/>
+  <anchor x="461" y="-100" name="L"/>
+  <anchor x="930" y="0" name="O"/>
+  <anchor x="1067" y="1000" name="R"/>
+  <anchor x="785" y="1580" name="U"/>
+  <outline>
+    <component base="LtnSmA"/>
+    <component base="CombRtHalfRingAbv" xOffset="1088"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

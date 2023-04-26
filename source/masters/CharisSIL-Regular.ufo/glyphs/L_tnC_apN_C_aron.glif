@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapNCaron" format="2">
+  <advance width="1477"/>
+  <unicode hex="0147"/>
+  <anchor x="1180" y="0" name="H"/>
+  <anchor x="734" y="-100" name="L"/>
+  <anchor x="734" y="1900" name="U"/>
+  <outline>
+    <component base="LtnCapN"/>
+    <component base="CombCaron" xOffset="1291" yOffset="400"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

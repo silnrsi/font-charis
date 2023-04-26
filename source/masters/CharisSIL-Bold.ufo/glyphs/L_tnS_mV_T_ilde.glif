@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmVTilde" format="2">
+  <advance width="1159"/>
+  <unicode hex="1E7D"/>
+  <anchor x="580" y="0" name="H"/>
+  <anchor x="580" y="-100" name="L"/>
+  <anchor x="702" y="0" name="O"/>
+  <anchor x="580" y="1500" name="U"/>
+  <outline>
+    <component base="LtnSmV"/>
+    <component base="CombTilde" xOffset="1178"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

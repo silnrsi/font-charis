@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmI.sc" format="2">
+  <advance width="622"/>
+  <anchor x="311" y="8" name="H"/>
+  <anchor x="311" y="-74" name="L"/>
+  <anchor x="454" y="8" name="O"/>
+  <anchor x="622" y="992" name="R"/>
+  <anchor x="311" y="1238" name="U"/>
+  <outline>
+    <contour>
+      <point x="64" y="0" type="line"/>
+      <point x="551" y="0" type="line"/>
+      <point x="551" y="87" type="line"/>
+      <point x="439" y="93" type="line"/>
+      <point x="413" y="95"/>
+      <point x="400" y="109"/>
+      <point x="400" y="121" type="curve"/>
+      <point x="400" y="999" type="line"/>
+      <point x="400" y="1011"/>
+      <point x="413" y="1024"/>
+      <point x="439" y="1026" type="curve"/>
+      <point x="551" y="1032" type="line"/>
+      <point x="551" y="1120" type="line"/>
+      <point x="64" y="1120" type="line"/>
+      <point x="64" y="1032" type="line"/>
+      <point x="175" y="1026" type="line"/>
+      <point x="201" y="1024"/>
+      <point x="213" y="1011"/>
+      <point x="213" y="999" type="curve"/>
+      <point x="213" y="121" type="line"/>
+      <point x="213" y="109"/>
+      <point x="201" y="95"/>
+      <point x="175" y="93" type="curve"/>
+      <point x="64" y="87" type="line"/>
+    </contour>
+  </outline>
+</glyph>

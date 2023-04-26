@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CombInvBreveBlw" format="2">
+  <unicode hex="032F"/>
+  <anchor x="-557" y="-500" name="L"/>
+  <anchor x="-557" y="-100" name="_L"/>
+  <outline>
+    <contour>
+      <point x="-252" y="-428" type="line"/>
+      <point x="-252" y="-285"/>
+      <point x="-354" y="-125"/>
+      <point x="-557" y="-125" type="curve" smooth="yes"/>
+      <point x="-762" y="-125"/>
+      <point x="-862" y="-285"/>
+      <point x="-862" y="-428" type="curve"/>
+      <point x="-780" y="-428" type="line"/>
+      <point x="-756" y="-313"/>
+      <point x="-657" y="-262"/>
+      <point x="-557" y="-262" type="curve" smooth="yes"/>
+      <point x="-456" y="-262"/>
+      <point x="-358" y="-313"/>
+      <point x="-332" y="-428" type="curve"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapARingBlw" format="2">
+  <advance width="1464"/>
+  <unicode hex="1E00"/>
+  <anchor x="600" y="0" name="H"/>
+  <anchor x="485" y="-657" name="L"/>
+  <anchor x="1254" y="0" name="O"/>
+  <anchor x="879" y="1500" name="U"/>
+  <outline>
+    <component base="LtnCapA"/>
+    <component base="CombRingBlw" xOffset="1278"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

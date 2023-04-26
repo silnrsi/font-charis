@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmRMiddleTilde" format="2">
+  <advance width="887"/>
+  <unicode hex="1D72"/>
+  <anchor x="221" y="-100" name="L"/>
+  <anchor x="603" y="1100" name="U"/>
+  <outline>
+    <component base="LtnSmR" xOffset="29"/>
+    <component base="SmTilde" xOffset="-209" yOffset="-830"/>
+  </outline>
+</glyph>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapECedilla" format="2">
+  <advance width="1229"/>
+  <unicode hex="0228"/>
+  <anchor x="392" y="-600" name="L"/>
+  <anchor x="920" y="0" name="O"/>
+  <anchor x="1300" y="1200" name="R"/>
+  <anchor x="776" y="1500" name="U"/>
+  <outline>
+    <component base="LtnCapE"/>
+    <component base="CombCedilla" xOffset="1175"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

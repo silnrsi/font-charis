@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ModCapV" format="2">
+  <advance width="912"/>
+  <unicode hex="2C7D"/>
+  <anchor x="513" y="725" name="L"/>
+  <anchor x="701" y="1685" name="U"/>
+  <outline>
+    <contour>
+      <point x="439" y="765" type="line"/>
+      <point x="591" y="765" type="line"/>
+      <point x="1051" y="1541" type="line"/>
+      <point x="1124" y="1548" type="line"/>
+      <point x="1124" y="1609" type="line"/>
+      <point x="797" y="1609" type="line"/>
+      <point x="797" y="1547" type="line"/>
+      <point x="863" y="1546" type="line"/>
+      <point x="874" y="1545"/>
+      <point x="890" y="1543"/>
+      <point x="882" y="1527" type="curve"/>
+      <point x="586" y="1015" type="line"/>
+      <point x="500" y="1527" type="line" smooth="yes"/>
+      <point x="497" y="1542"/>
+      <point x="509" y="1546"/>
+      <point x="524" y="1546" type="curve"/>
+      <point x="584" y="1547" type="line"/>
+      <point x="584" y="1609" type="line"/>
+      <point x="225" y="1609" type="line"/>
+      <point x="225" y="1547" type="line"/>
+      <point x="277" y="1545" type="line"/>
+      <point x="292" y="1545"/>
+      <point x="305" y="1542"/>
+      <point x="308" y="1526" type="curve" smooth="yes"/>
+    </contour>
+  </outline>
+</glyph>

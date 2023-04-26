@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapUOgonek" format="2">
+  <advance width="1458"/>
+  <unicode hex="0172"/>
+  <anchor x="733" y="0" name="H"/>
+  <anchor x="758" y="-400" name="L"/>
+  <anchor x="1458" y="1000" name="R"/>
+  <anchor x="750" y="1500" name="U"/>
+  <outline>
+    <component base="LtnCapU"/>
+    <component base="CombOgonek" xOffset="1283"/>
+  </outline>
+</glyph>

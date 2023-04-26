@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmGlottalStop" format="2">
+  <advance width="868"/>
+  <unicode hex="0242"/>
+  <anchor x="303" y="-100" name="L"/>
+  <anchor x="547" y="1100" name="U"/>
+  <outline>
+    <contour>
+      <point x="39" y="0" type="line"/>
+      <point x="598" y="0" type="line"/>
+      <point x="598" y="96" type="line"/>
+      <point x="485" y="102" type="line"/>
+      <point x="469" y="102"/>
+      <point x="463" y="111"/>
+      <point x="467" y="127" type="curve" smooth="yes"/>
+      <point x="524" y="426" type="line"/>
+      <point x="700" y="483"/>
+      <point x="844" y="580"/>
+      <point x="844" y="784" type="curve" smooth="yes"/>
+      <point x="844" y="918"/>
+      <point x="731" y="1024"/>
+      <point x="473" y="1024" type="curve" smooth="yes"/>
+      <point x="227" y="1024"/>
+      <point x="121" y="897"/>
+      <point x="121" y="813" type="curve" smooth="yes"/>
+      <point x="121" y="729"/>
+      <point x="172" y="666"/>
+      <point x="242" y="666" type="curve" smooth="yes"/>
+      <point x="274" y="666"/>
+      <point x="313" y="692"/>
+      <point x="313" y="692" type="curve"/>
+      <point x="414" y="899" type="line"/>
+      <point x="428" y="911"/>
+      <point x="469" y="920"/>
+      <point x="496" y="920" type="curve" smooth="yes"/>
+      <point x="545" y="920"/>
+      <point x="567" y="883"/>
+      <point x="567" y="811" type="curve" smooth="yes"/>
+      <point x="567" y="608"/>
+      <point x="459" y="502"/>
+      <point x="258" y="457" type="curve"/>
+      <point x="193" y="127" type="line" smooth="yes"/>
+      <point x="190" y="111"/>
+      <point x="180" y="102"/>
+      <point x="164" y="102" type="curve"/>
+      <point x="39" y="96" type="line"/>
+    </contour>
+  </outline>
+</glyph>

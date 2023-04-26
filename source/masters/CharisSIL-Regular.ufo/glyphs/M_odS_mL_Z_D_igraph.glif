@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ModSmLZDigraph" format="2">
+  <advance width="782"/>
+  <unicode hex="1079A"/>
+  <anchor x="392" y="725" name="L"/>
+  <anchor x="427" y="1733" name="U"/>
+  <outline>
+    <contour>
+      <point x="738" y="785" type="line"/>
+      <point x="738" y="970" type="line"/>
+      <point x="666" y="970" type="line"/>
+      <point x="653" y="873" type="line" smooth="yes"/>
+      <point x="651" y="861"/>
+      <point x="636" y="844"/>
+      <point x="623" y="844" type="curve" smooth="yes"/>
+      <point x="355" y="844" type="line"/>
+      <point x="720" y="1327" type="line"/>
+      <point x="720" y="1377" type="line"/>
+      <point x="270" y="1377" type="line"/>
+      <point x="270" y="1690" type="line"/>
+      <point x="216" y="1690" type="line"/>
+      <point x="45" y="1643" type="line"/>
+      <point x="45" y="1602" type="line"/>
+      <point x="147" y="1602" type="line"/>
+      <point x="147" y="862" type="line" smooth="yes"/>
+      <point x="147" y="852"/>
+      <point x="129" y="837"/>
+      <point x="118" y="837" type="curve"/>
+      <point x="47" y="833" type="line"/>
+      <point x="47" y="785" type="line"/>
+    </contour>
+    <contour>
+      <point x="296" y="1294" type="line"/>
+      <point x="299" y="1305"/>
+      <point x="310" y="1320"/>
+      <point x="323" y="1320" type="curve" smooth="yes"/>
+      <point x="566" y="1320" type="line"/>
+      <point x="270" y="925" type="line"/>
+      <point x="270" y="1203" type="line"/>
+    </contour>
+  </outline>
+</glyph>

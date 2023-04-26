@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapOOgonekMacron.RetroHook" format="2">
+  <advance width="1497"/>
+  <anchor x="748" y="0" name="H"/>
+  <anchor x="748" y="-500" name="L"/>
+  <anchor x="1005" y="0" name="O"/>
+  <anchor x="1487" y="1350" name="R"/>
+  <anchor x="748" y="1870" name="U"/>
+  <outline>
+    <component base="LtnCapO"/>
+    <component base="CombMacron" xOffset="1305" yOffset="400"/>
+    <component base="CombOgonek.RetroHook" xOffset="558"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

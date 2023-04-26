@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CombGrave_Macron" format="2">
+  <unicode hex="1DC5"/>
+  <anchor x="-557" y="1500" name="U"/>
+  <anchor x="-557" y="1100" name="_U"/>
+  <outline>
+    <contour>
+      <point x="-184" y="1128" type="line"/>
+      <point x="-184" y="1257" type="line"/>
+      <point x="-589" y="1257" type="line"/>
+      <point x="-845" y="1505" type="line"/>
+      <point x="-929" y="1505" type="line"/>
+      <point x="-749" y="1204" type="line"/>
+      <point x="-693" y="1135"/>
+      <point x="-679" y="1128"/>
+      <point x="-603" y="1128" type="curve" smooth="yes"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ModRtHalfRing" format="2">
+  <advance width="559"/>
+  <unicode hex="02BE"/>
+  <anchor x="270" y="-100" name="L"/>
+  <anchor x="270" y="1580" name="U"/>
+  <outline>
+    <component base="ModCntrdRtHalfRing" yOffset="708"/>
+  </outline>
+</glyph>

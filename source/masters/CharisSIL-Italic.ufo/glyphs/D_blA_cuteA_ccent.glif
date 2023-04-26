@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DblAcuteAccent" format="2">
+  <advance width="856"/>
+  <unicode hex="02DD"/>
+  <outline>
+    <contour>
+      <point x="1032" y="1411" type="curve" smooth="yes"/>
+      <point x="1032" y="1452"/>
+      <point x="999" y="1499"/>
+      <point x="928" y="1499" type="curve" smooth="yes"/>
+      <point x="866" y="1499"/>
+      <point x="838" y="1479"/>
+      <point x="811" y="1448" type="curve" smooth="yes"/>
+      <point x="532" y="1128" type="line"/>
+      <point x="676" y="1128" type="line"/>
+      <point x="983" y="1327" type="line"/>
+      <point x="1012" y="1348"/>
+      <point x="1032" y="1372"/>
+    </contour>
+    <contour>
+      <point x="616" y="1411" type="curve" smooth="yes"/>
+      <point x="616" y="1452"/>
+      <point x="584" y="1499"/>
+      <point x="512" y="1499" type="curve" smooth="yes"/>
+      <point x="451" y="1499"/>
+      <point x="420" y="1479"/>
+      <point x="393" y="1448" type="curve" smooth="yes"/>
+      <point x="117" y="1128" type="line"/>
+      <point x="258" y="1128" type="line"/>
+      <point x="567" y="1327" type="line"/>
+      <point x="596" y="1348"/>
+      <point x="616" y="1372"/>
+    </contour>
+  </outline>
+</glyph>

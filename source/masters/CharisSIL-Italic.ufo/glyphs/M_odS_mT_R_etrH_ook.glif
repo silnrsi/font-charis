@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ModSmTRetrHook" format="2">
+  <advance width="444"/>
+  <unicode hex="107AF"/>
+  <anchor x="154" y="485" name="L"/>
+  <anchor x="550" y="1385" name="R"/>
+  <anchor x="359" y="1603" name="U"/>
+  <outline>
+    <contour>
+      <point x="578" y="1300" type="line"/>
+      <point x="577" y="1356" type="line"/>
+      <point x="391" y="1356" type="line"/>
+      <point x="415" y="1497" type="line"/>
+      <point x="333" y="1497" type="line"/>
+      <point x="269" y="1374" type="line"/>
+      <point x="156" y="1333" type="line"/>
+      <point x="157" y="1293" type="line"/>
+      <point x="254" y="1300" type="line"/>
+      <point x="122" y="658" type="line" smooth="yes"/>
+      <point x="119" y="641"/>
+      <point x="118" y="624"/>
+      <point x="118" y="608" type="curve" smooth="yes"/>
+      <point x="119" y="548"/>
+      <point x="148" y="504"/>
+      <point x="245" y="504" type="curve" smooth="yes"/>
+      <point x="324" y="504"/>
+      <point x="444" y="549"/>
+      <point x="465" y="558" type="curve"/>
+      <point x="464" y="607" type="line"/>
+      <point x="437" y="598"/>
+      <point x="375" y="577"/>
+      <point x="325" y="577" type="curve" smooth="yes"/>
+      <point x="284" y="577"/>
+      <point x="245" y="599"/>
+      <point x="245" y="635" type="curve" smooth="yes"/>
+      <point x="245" y="639"/>
+      <point x="245" y="643"/>
+      <point x="246" y="648" type="curve" smooth="yes"/>
+      <point x="380" y="1300" type="line"/>
+    </contour>
+  </outline>
+</glyph>

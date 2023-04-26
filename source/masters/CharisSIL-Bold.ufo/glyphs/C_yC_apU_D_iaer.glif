@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CyCapUDiaer" format="2">
+  <advance width="1491"/>
+  <unicode hex="04F0"/>
+  <anchor x="745" y="-100" name="L"/>
+  <anchor x="795" y="1900" name="U"/>
+  <outline>
+    <component base="CyCapU"/>
+    <component base="CombDiaer" xOffset="1393" yOffset="400"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

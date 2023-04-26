@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmTHook.RtHook" format="2">
+  <advance width="705"/>
+  <anchor x="272" y="-100" name="L"/>
+  <anchor x="588" y="1540" name="U"/>
+  <outline>
+    <component base="LtnSmTHook"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CombAcute_Macron" format="2">
+  <unicode hex="1DC7"/>
+  <anchor x="-557" y="1580" name="U"/>
+  <anchor x="-557" y="1100" name="_U"/>
+  <outline>
+    <contour>
+      <point x="-184" y="1374" type="line"/>
+      <point x="-184" y="1505" type="line"/>
+      <point x="-603" y="1505" type="line" smooth="yes"/>
+      <point x="-679" y="1505"/>
+      <point x="-693" y="1499"/>
+      <point x="-749" y="1430" type="curve"/>
+      <point x="-929" y="1128" type="line"/>
+      <point x="-845" y="1128" type="line"/>
+      <point x="-589" y="1374" type="line"/>
+    </contour>
+  </outline>
+</glyph>

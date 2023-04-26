@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="AustralSign" format="2">
+  <advance width="1225"/>
+  <unicode hex="20B3"/>
+  <outline>
+    <contour>
+      <point x="-60" y="0" type="line"/>
+      <point x="388" y="0" type="line"/>
+      <point x="388" y="102" type="line"/>
+      <point x="297" y="113" type="line"/>
+      <point x="275" y="115"/>
+      <point x="264" y="123"/>
+      <point x="275" y="143" type="curve"/>
+      <point x="699" y="1032" type="line"/>
+      <point x="827" y="143" type="line"/>
+      <point x="830" y="119"/>
+      <point x="817" y="115"/>
+      <point x="794" y="113" type="curve"/>
+      <point x="714" y="102" type="line"/>
+      <point x="714" y="0" type="line"/>
+      <point x="1196" y="0" type="line"/>
+      <point x="1196" y="102" type="line"/>
+      <point x="1116" y="111" type="line"/>
+      <point x="1090" y="115"/>
+      <point x="1084" y="119"/>
+      <point x="1081" y="145" type="curve"/>
+      <point x="891" y="1407" type="line"/>
+      <point x="686" y="1407" type="line"/>
+      <point x="41" y="115" type="line"/>
+      <point x="-60" y="102" type="line"/>
+    </contour>
+    <contour>
+      <point x="7" y="335" type="line"/>
+      <point x="1196" y="335" type="line"/>
+      <point x="1196" y="460" type="line"/>
+      <point x="7" y="460" type="line"/>
+    </contour>
+    <contour>
+      <point x="7" y="575" type="line"/>
+      <point x="1196" y="575" type="line"/>
+      <point x="1196" y="700" type="line"/>
+      <point x="7" y="700" type="line"/>
+    </contour>
+  </outline>
+</glyph>

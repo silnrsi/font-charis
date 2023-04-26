@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmEStrk" format="2">
+  <advance width="889"/>
+  <unicode hex="0247"/>
+  <anchor x="378" y="-100" name="L"/>
+  <anchor x="622" y="1100" name="U"/>
+  <outline>
+    <component base="LtnSmE"/>
+    <component base="CombShortSolidusOverlay" xOffset="1020"/>
+  </outline>
+</glyph>

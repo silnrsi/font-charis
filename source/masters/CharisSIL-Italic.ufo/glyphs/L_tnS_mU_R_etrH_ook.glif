@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmURetrHook" format="2">
+  <advance width="1079"/>
+  <unicode hex="1D99"/>
+  <anchor x="430" y="-100" name="L"/>
+  <anchor x="674" y="1100" name="U"/>
+  <outline>
+    <component base="LtnSmU"/>
+    <contour>
+      <point x="1129" y="-467" type="curve" smooth="yes"/>
+      <point x="1250" y="-467"/>
+      <point x="1365" y="-412"/>
+      <point x="1365" y="-334" type="curve" smooth="yes"/>
+      <point x="1365" y="-242"/>
+      <point x="1309" y="-223"/>
+      <point x="1297" y="-217" type="curve"/>
+      <point x="1107" y="-360" type="line"/>
+      <point x="1047" y="-360"/>
+      <point x="1010" y="-338"/>
+      <point x="1010" y="-281" type="curve" smooth="yes"/>
+      <point x="1010" y="-268"/>
+      <point x="1013" y="-254"/>
+      <point x="1073" y="51" type="curve"/>
+      <point x="968" y="51" type="line"/>
+      <point x="908" y="-252"/>
+      <point x="906" y="-274"/>
+      <point x="906" y="-295" type="curve" smooth="yes"/>
+      <point x="906" y="-408"/>
+      <point x="980" y="-467"/>
+    </contour>
+  </outline>
+</glyph>

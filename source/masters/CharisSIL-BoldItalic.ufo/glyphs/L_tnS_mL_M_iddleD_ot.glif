@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmLMiddleDot" format="2">
+  <advance width="900"/>
+  <unicode hex="0140"/>
+  <anchor x="137" y="0" name="H"/>
+  <anchor x="116" y="-100" name="L"/>
+  <anchor x="440" y="1580" name="U"/>
+  <outline>
+    <component base="LtnSmL"/>
+    <component base="MiddleDot" xOffset="577"/>
+  </outline>
+</glyph>

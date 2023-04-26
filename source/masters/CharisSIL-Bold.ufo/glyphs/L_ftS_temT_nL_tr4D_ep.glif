@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LftStemTnLtr4Dep" format="2">
+  <advance width="808"/>
+  <unicode hex="F1D1"/>
+  <outline>
+    <contour>
+      <point x="85" y="-30" type="line"/>
+      <point x="708" y="-30" type="line"/>
+      <point x="708" y="1510" type="line"/>
+      <point x="85" y="1510" type="line"/>
+    </contour>
+    <contour>
+      <point x="229" y="57" type="line"/>
+      <point x="229" y="26"/>
+      <point x="203" y="0"/>
+      <point x="172" y="0" type="curve" smooth="yes"/>
+      <point x="141" y="0"/>
+      <point x="115" y="26"/>
+      <point x="115" y="57" type="curve" smooth="yes"/>
+      <point x="115" y="1423" type="line" smooth="yes"/>
+      <point x="115" y="1454"/>
+      <point x="141" y="1480"/>
+      <point x="172" y="1480" type="curve" smooth="yes"/>
+      <point x="203" y="1480"/>
+      <point x="229" y="1454"/>
+      <point x="229" y="1423" type="curve" smooth="yes"/>
+      <point x="229" y="1140" type="line"/>
+      <point x="621" y="1140" type="line" smooth="yes"/>
+      <point x="652" y="1140"/>
+      <point x="678" y="1114"/>
+      <point x="678" y="1083" type="curve" smooth="yes"/>
+      <point x="678" y="1052"/>
+      <point x="652" y="1026"/>
+      <point x="621" y="1026" type="curve" smooth="yes"/>
+      <point x="229" y="1026" type="line"/>
+    </contour>
+  </outline>
+</glyph>

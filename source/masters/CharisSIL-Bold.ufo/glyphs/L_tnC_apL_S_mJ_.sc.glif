@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapLSmJ.sc" format="2">
+  <advance width="2009"/>
+  <anchor x="532" y="8" name="H"/>
+  <anchor x="1443" y="-74" name="L"/>
+  <anchor x="584" y="828" name="R"/>
+  <anchor x="1705" y="1238" name="U"/>
+  <outline>
+    <component base="LtnSmL.sc"/>
+    <component base="LtnSmJ.sc" xOffset="1044"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

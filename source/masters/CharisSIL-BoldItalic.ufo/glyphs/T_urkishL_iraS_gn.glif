@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="TurkishLiraSgn" format="2">
+  <advance width="1225"/>
+  <unicode hex="20BA"/>
+  <outline>
+    <contour>
+      <point x="177" y="0" type="line"/>
+      <point x="503" y="0" type="line" smooth="yes"/>
+      <point x="900" y="0"/>
+      <point x="1099" y="320"/>
+      <point x="1152" y="620" type="curve"/>
+      <point x="900" y="620" type="line"/>
+      <point x="860" y="394"/>
+      <point x="761" y="125"/>
+      <point x="536" y="125" type="curve" smooth="yes"/>
+      <point x="472" y="125" type="line"/>
+      <point x="692" y="1374" type="line"/>
+      <point x="418" y="1374" type="line"/>
+    </contour>
+    <contour>
+      <point x="25" y="517" type="line"/>
+      <point x="913" y="865" type="line"/>
+      <point x="913" y="984" type="line"/>
+      <point x="25" y="636" type="line"/>
+    </contour>
+    <contour>
+      <point x="59" y="730" type="line"/>
+      <point x="947" y="1078" type="line"/>
+      <point x="947" y="1197" type="line"/>
+      <point x="59" y="849" type="line"/>
+    </contour>
+    <contour>
+      <point x="390" y="1214" type="curve"/>
+      <point x="664" y="1214" type="line"/>
+      <point x="668" y="1241"/>
+      <point x="690" y="1257"/>
+      <point x="716" y="1260" type="curve"/>
+      <point x="830" y="1270" type="line"/>
+      <point x="830" y="1374" type="line"/>
+      <point x="245" y="1374" type="line"/>
+      <point x="245" y="1270" type="line"/>
+      <point x="354" y="1260" type="line"/>
+      <point x="378" y="1257"/>
+      <point x="394" y="1241"/>
+    </contour>
+  </outline>
+</glyph>

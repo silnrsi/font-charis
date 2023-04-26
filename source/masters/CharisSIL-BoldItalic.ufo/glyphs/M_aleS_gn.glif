@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="MaleSgn" format="2">
+  <advance width="1971"/>
+  <unicode hex="2642"/>
+  <outline>
+    <contour>
+      <point x="1807" y="952" type="line"/>
+      <point x="1790" y="1143"/>
+      <point x="1792" y="1198"/>
+      <point x="1805" y="1441" type="curve"/>
+      <point x="1563" y="1427"/>
+      <point x="1508" y="1425"/>
+      <point x="1317" y="1443" type="curve"/>
+      <point x="1311" y="1384" type="line"/>
+      <point x="1494" y="1354"/>
+      <point x="1429" y="1337"/>
+      <point x="1623" y="1337" type="curve"/>
+      <point x="1202" y="916" type="line"/>
+      <point x="1092" y="1010"/>
+      <point x="950" y="1064"/>
+      <point x="794" y="1064" type="curve" smooth="yes"/>
+      <point x="446" y="1064"/>
+      <point x="164" y="782"/>
+      <point x="164" y="434" type="curve" smooth="yes"/>
+      <point x="164" y="85"/>
+      <point x="446" y="-197"/>
+      <point x="794" y="-197" type="curve" smooth="yes"/>
+      <point x="1143" y="-197"/>
+      <point x="1425" y="85"/>
+      <point x="1425" y="434" type="curve" smooth="yes"/>
+      <point x="1425" y="587"/>
+      <point x="1369" y="728"/>
+      <point x="1279" y="835" type="curve"/>
+      <point x="1701" y="1258" type="line"/>
+      <point x="1701" y="1064"/>
+      <point x="1719" y="1130"/>
+      <point x="1749" y="946" type="curve"/>
+    </contour>
+    <contour>
+      <point x="1326" y="434" type="curve" smooth="yes"/>
+      <point x="1326" y="140"/>
+      <point x="1088" y="-98"/>
+      <point x="794" y="-98" type="curve" smooth="yes"/>
+      <point x="500" y="-98"/>
+      <point x="262" y="140"/>
+      <point x="262" y="434" type="curve" smooth="yes"/>
+      <point x="262" y="728"/>
+      <point x="500" y="966"/>
+      <point x="794" y="966" type="curve" smooth="yes"/>
+      <point x="1088" y="966"/>
+      <point x="1326" y="728"/>
+    </contour>
+  </outline>
+</glyph>

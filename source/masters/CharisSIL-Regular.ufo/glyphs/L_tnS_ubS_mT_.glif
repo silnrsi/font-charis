@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSubSmT" format="2">
+  <advance width="476"/>
+  <unicode hex="209C"/>
+  <anchor x="258" y="-520" name="L"/>
+  <anchor x="252" y="358" name="U"/>
+  <outline>
+    <contour>
+      <point x="462" y="-434" type="curve"/>
+      <point x="462" y="-385" type="line"/>
+      <point x="462" y="-385"/>
+      <point x="423" y="-406"/>
+      <point x="371" y="-406" type="curve" smooth="yes"/>
+      <point x="300" y="-406"/>
+      <point x="264" y="-370"/>
+      <point x="264" y="-272" type="curve" smooth="yes"/>
+      <point x="264" y="71" type="line"/>
+      <point x="452" y="71" type="line"/>
+      <point x="452" y="132" type="line"/>
+      <point x="264" y="132" type="line"/>
+      <point x="264" y="281" type="line"/>
+      <point x="206" y="281" type="line"/>
+      <point x="146" y="151" type="line"/>
+      <point x="55" y="111" type="line"/>
+      <point x="55" y="71" type="line"/>
+      <point x="140" y="71" type="line"/>
+      <point x="140" y="-337" type="line" smooth="yes"/>
+      <point x="140" y="-434"/>
+      <point x="183" y="-475"/>
+      <point x="283" y="-475" type="curve" smooth="yes"/>
+      <point x="378" y="-475"/>
+      <point x="462" y="-434"/>
+    </contour>
+  </outline>
+</glyph>

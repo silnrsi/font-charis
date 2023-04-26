@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CombLtnSmInsularT" format="2">
+  <unicode hex="1ACE"/>
+  <anchor x="-240" y="1820" name="U"/>
+  <anchor x="-383" y="1100" name="_U"/>
+  <outline>
+    <contour>
+      <point x="-293" y="1650" type="line"/>
+      <point x="-430" y="1607"/>
+      <point x="-580" y="1499"/>
+      <point x="-577" y="1332" type="curve" smooth="yes"/>
+      <point x="-576" y="1206"/>
+      <point x="-499" y="1128"/>
+      <point x="-378" y="1128" type="curve" smooth="yes"/>
+      <point x="-265" y="1128"/>
+      <point x="-183" y="1195"/>
+      <point x="-132" y="1242" type="curve"/>
+      <point x="-133" y="1314" type="line"/>
+      <point x="-203" y="1249"/>
+      <point x="-274" y="1203"/>
+      <point x="-342" y="1203" type="curve" smooth="yes"/>
+      <point x="-426" y="1203"/>
+      <point x="-456" y="1282"/>
+      <point x="-457" y="1346" type="curve" smooth="yes"/>
+      <point x="-458" y="1417"/>
+      <point x="-420" y="1571"/>
+      <point x="-260" y="1632" type="curve"/>
+    </contour>
+    <contour>
+      <point x="-28" y="1616" type="line"/>
+      <point x="-28" y="1699" type="line"/>
+      <point x="-534" y="1699" type="line"/>
+      <point x="-532" y="1616" type="line"/>
+    </contour>
+  </outline>
+</glyph>

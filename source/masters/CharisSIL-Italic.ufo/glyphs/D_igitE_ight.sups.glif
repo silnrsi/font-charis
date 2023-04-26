@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="DigitEight.sups" format="2">
+  <advance width="739"/>
+  <anchor x="401" y="725" name="L"/>
+  <anchor x="570" y="1650" name="U"/>
+  <outline>
+    <component base="SupEight"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

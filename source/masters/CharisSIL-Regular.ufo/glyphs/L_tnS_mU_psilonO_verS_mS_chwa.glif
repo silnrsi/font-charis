@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmUpsilonOverSmSchwa" format="2">
+  <advance width="749"/>
+  <unicode hex="F259"/>
+  <anchor x="374" y="-100" name="L"/>
+  <anchor x="374" y="1405" name="U"/>
+  <outline>
+    <component base="LtnSupSmSchwa" xOffset="56" yOffset="-795"/>
+    <component base="LtnSupSmUpsilon" xOffset="6" yOffset="-100"/>
+  </outline>
+</glyph>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CySmSemisoftSgn" format="2">
+  <advance width="1069"/>
+  <unicode hex="048D"/>
+  <anchor x="510" y="-100" name="L"/>
+  <anchor x="510" y="1300" name="U"/>
+  <outline>
+    <contour>
+      <point x="45" y="0" type="line"/>
+      <point x="428" y="0"/>
+      <point x="375" y="0"/>
+      <point x="516" y="0" type="curve" smooth="yes"/>
+      <point x="899" y="0"/>
+      <point x="1006" y="104"/>
+      <point x="1006" y="301" type="curve" smooth="yes"/>
+      <point x="1006" y="500"/>
+      <point x="840" y="625"/>
+      <point x="545" y="625" type="curve" smooth="yes"/>
+      <point x="522" y="625"/>
+      <point x="483" y="623"/>
+      <point x="459" y="621" type="curve"/>
+      <point x="459" y="1170" type="line"/>
+      <point x="184" y="1170" type="line"/>
+      <point x="184" y="150" type="line" smooth="yes"/>
+      <point x="184" y="125"/>
+      <point x="164" y="104"/>
+      <point x="139" y="102" type="curve" smooth="yes"/>
+      <point x="45" y="96" type="line"/>
+    </contour>
+    <contour>
+      <point x="528" y="104" type="curve" smooth="yes"/>
+      <point x="514" y="104"/>
+      <point x="469" y="106"/>
+      <point x="459" y="106" type="curve"/>
+      <point x="459" y="512" type="line"/>
+      <point x="479" y="512"/>
+      <point x="537" y="514"/>
+      <point x="551" y="514" type="curve" smooth="yes"/>
+      <point x="684" y="514"/>
+      <point x="721" y="426"/>
+      <point x="721" y="301" type="curve" smooth="yes"/>
+      <point x="721" y="201"/>
+      <point x="707" y="104"/>
+    </contour>
+    <contour>
+      <point x="14" y="868" type="line"/>
+      <point x="629" y="868" type="line"/>
+      <point x="629" y="999" type="line"/>
+      <point x="14" y="999" type="line"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CyCapAbkhasCheDesc" format="2">
+  <advance width="1591"/>
+  <unicode hex="04BE"/>
+  <anchor x="758" y="-500" name="L"/>
+  <anchor x="1159" y="1497" name="U"/>
+  <outline>
+    <component base="CyCapAbkhasChe"/>
+    <contour>
+      <point x="593" y="98" type="line"/>
+      <point x="647" y="40" type="line"/>
+      <point x="749" y="-10"/>
+      <point x="784" y="-93"/>
+      <point x="707" y="-420" type="curve"/>
+      <point x="851" y="-420" type="line"/>
+      <point x="913" y="-92"/>
+      <point x="955" y="-16"/>
+      <point x="1127" y="40" type="curve"/>
+      <point x="1177" y="98" type="line"/>
+    </contour>
+  </outline>
+</glyph>

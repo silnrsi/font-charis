@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmAAcute.SngStory" format="2">
+  <advance width="1163"/>
+  <anchor x="520" y="0" name="H"/>
+  <anchor x="500" y="-100" name="L"/>
+  <anchor x="1072" y="0" name="O"/>
+  <anchor x="1163" y="1000" name="R"/>
+  <anchor x="789" y="1500" name="U"/>
+  <outline>
+    <component base="LtnSmA.SngStory"/>
+    <component base="CombAcute" xOffset="1188"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

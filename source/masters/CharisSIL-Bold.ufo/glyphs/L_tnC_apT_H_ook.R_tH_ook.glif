@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapTHook.RtHook" format="2">
+  <advance width="1247"/>
+  <anchor x="635" y="-100" name="L"/>
+  <anchor x="635" y="1500" name="U"/>
+  <outline>
+    <contour>
+      <point x="1237" y="1098" type="curve" smooth="yes"/>
+      <point x="1237" y="1333"/>
+      <point x="1071" y="1374"/>
+      <point x="915" y="1374" type="curve" smooth="yes"/>
+      <point x="33" y="1374" type="line"/>
+      <point x="33" y="999" type="line"/>
+      <point x="180" y="999" type="line"/>
+      <point x="217" y="1227" type="line" smooth="yes"/>
+      <point x="219" y="1243"/>
+      <point x="231" y="1251"/>
+      <point x="248" y="1251" type="curve" smooth="yes"/>
+      <point x="477" y="1251" type="line"/>
+      <point x="477" y="160" type="line" smooth="yes"/>
+      <point x="477" y="133"/>
+      <point x="455" y="117"/>
+      <point x="430" y="115" type="curve" smooth="yes"/>
+      <point x="311" y="104" type="line"/>
+      <point x="311" y="0" type="line"/>
+      <point x="936" y="0" type="line"/>
+      <point x="936" y="104" type="line"/>
+      <point x="815" y="115" type="line" smooth="yes"/>
+      <point x="791" y="117"/>
+      <point x="770" y="133"/>
+      <point x="770" y="160" type="curve" smooth="yes"/>
+      <point x="770" y="1251" type="line"/>
+      <point x="969" y="1251" type="line" smooth="yes"/>
+      <point x="1014" y="1251"/>
+      <point x="1065" y="1223"/>
+      <point x="1065" y="1167" type="curve" smooth="yes"/>
+      <point x="1065" y="1145" type="line"/>
+      <point x="930" y="1022" type="line"/>
+      <point x="930" y="928"/>
+      <point x="997" y="885"/>
+      <point x="1051" y="885" type="curve" smooth="yes"/>
+      <point x="1165" y="885"/>
+      <point x="1237" y="979"/>
+    </contour>
+  </outline>
+</glyph>

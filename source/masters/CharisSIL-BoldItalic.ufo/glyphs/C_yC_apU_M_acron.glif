@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CyCapUMacron" format="2">
+  <advance width="1491"/>
+  <unicode hex="04EE"/>
+  <anchor x="617" y="-100" name="L"/>
+  <anchor x="1014" y="1870" name="U"/>
+  <outline>
+    <component base="CyCapU"/>
+    <component base="CombMacron" xOffset="1398" yOffset="400"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmDCaron.Caron" format="2">
+  <advance width="1077"/>
+  <anchor x="476" y="0" name="H"/>
+  <anchor x="501" y="-100" name="L"/>
+  <anchor x="1023" y="1000" name="R"/>
+  <anchor x="861" y="1940" name="U"/>
+  <outline>
+    <component base="LtnSmD"/>
+    <component base="CombCaron" xOffset="1200" yOffset="440"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

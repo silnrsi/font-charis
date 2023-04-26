@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmEngPalHook" format="2">
+  <advance width="1532"/>
+  <unicode hex="1DF14"/>
+  <anchor x="379" y="-500" name="L"/>
+  <anchor x="699" y="1100" name="U"/>
+  <outline>
+    <component base="LtnSmEng"/>
+    <contour>
+      <point x="1432" y="210" type="line"/>
+      <point x="792" y="210" type="line"/>
+      <point x="847" y="100" type="line"/>
+      <point x="1287" y="100" type="line"/>
+      <point x="1251" y="-75" type="line" smooth="yes"/>
+      <point x="1232" y="-165"/>
+      <point x="1216" y="-182"/>
+      <point x="1195" y="-182" type="curve"/>
+      <point x="1101" y="-20" type="line"/>
+      <point x="1029" y="-50"/>
+      <point x="982" y="-92"/>
+      <point x="982" y="-184" type="curve" smooth="yes"/>
+      <point x="982" y="-270"/>
+      <point x="1056" y="-325"/>
+      <point x="1137" y="-325" type="curve" smooth="yes"/>
+      <point x="1266" y="-325"/>
+      <point x="1346" y="-254"/>
+      <point x="1380" y="-71" type="curve" smooth="yes"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmEOgonek" format="2">
+  <advance width="983"/>
+  <unicode hex="0119"/>
+  <anchor x="350" y="-500" name="L"/>
+  <anchor x="670" y="1100" name="U"/>
+  <outline>
+    <component base="LtnSmE"/>
+    <contour>
+      <point x="659" y="-256" type="line"/>
+      <point x="634" y="-272"/>
+      <point x="585" y="-307"/>
+      <point x="558" y="-307" type="curve" smooth="yes"/>
+      <point x="509" y="-307"/>
+      <point x="472" y="-279"/>
+      <point x="472" y="-227" type="curve" smooth="yes"/>
+      <point x="472" y="-129"/>
+      <point x="572" y="-34"/>
+      <point x="756" y="74" type="curve"/>
+      <point x="517" y="2" type="line"/>
+      <point x="421" y="-57"/>
+      <point x="298" y="-166"/>
+      <point x="298" y="-287" type="curve" smooth="yes"/>
+      <point x="298" y="-391"/>
+      <point x="405" y="-426"/>
+      <point x="493" y="-426" type="curve" smooth="yes"/>
+      <point x="546" y="-426"/>
+      <point x="648" y="-385"/>
+      <point x="700" y="-362" type="curve"/>
+    </contour>
+  </outline>
+</glyph>

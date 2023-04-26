@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmDHook.TopBar" format="2">
+  <advance width="1188"/>
+  <anchor x="586" y="-100" name="L"/>
+  <anchor x="586" y="1540" name="U"/>
+  <outline>
+    <component base="LtnSmDHook"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

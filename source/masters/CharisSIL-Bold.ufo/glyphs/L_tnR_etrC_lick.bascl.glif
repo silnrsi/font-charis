@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnRetrClick.bascl" format="2">
+  <advance width="434"/>
+  <anchor x="217" y="-100" name="L"/>
+  <anchor x="217" y="1540" name="U"/>
+  <outline>
+    <contour>
+      <point x="384" y="1341" type="line"/>
+      <point x="384" y="1458"/>
+      <point x="310" y="1507"/>
+      <point x="218" y="1507" type="curve" smooth="yes"/>
+      <point x="126" y="1507"/>
+      <point x="50" y="1456"/>
+      <point x="50" y="1341" type="curve"/>
+      <point x="163" y="426" type="line"/>
+      <point x="274" y="426" type="line"/>
+    </contour>
+    <contour>
+      <point x="382" y="143" type="curve" smooth="yes"/>
+      <point x="382" y="244"/>
+      <point x="294" y="305"/>
+      <point x="218" y="305" type="curve" smooth="yes"/>
+      <point x="142" y="305"/>
+      <point x="52" y="250"/>
+      <point x="52" y="143" type="curve" smooth="yes"/>
+      <point x="52" y="23"/>
+      <point x="151" y="-25"/>
+      <point x="218" y="-25" type="curve" smooth="yes"/>
+      <point x="306" y="-25"/>
+      <point x="382" y="49"/>
+    </contour>
+  </outline>
+</glyph>

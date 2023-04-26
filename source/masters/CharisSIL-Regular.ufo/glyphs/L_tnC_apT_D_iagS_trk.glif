@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapTDiagStrk" format="2">
+  <advance width="1227"/>
+  <unicode hex="023E"/>
+  <anchor x="613" y="0" name="H"/>
+  <anchor x="613" y="-100" name="L"/>
+  <anchor x="613" y="1500" name="U"/>
+  <outline>
+    <component base="LtnCapT"/>
+    <contour>
+      <point x="82" y="-104" type="line"/>
+      <point x="176" y="-162" type="line"/>
+      <point x="1151" y="1475" type="line"/>
+      <point x="1054" y="1532" type="line"/>
+    </contour>
+  </outline>
+</glyph>

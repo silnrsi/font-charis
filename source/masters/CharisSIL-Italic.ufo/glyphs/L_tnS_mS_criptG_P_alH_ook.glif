@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmScriptGPalHook" format="2">
+  <advance width="1474"/>
+  <unicode hex="1D83"/>
+  <anchor x="331" y="-539" name="L"/>
+  <anchor x="659" y="1100" name="U"/>
+  <outline>
+    <component base="LtnSmG.SngBowl" xOffset="-40"/>
+    <contour>
+      <point x="1374" y="235" type="line"/>
+      <point x="758" y="235" type="line"/>
+      <point x="744" y="150" type="line"/>
+      <point x="1256" y="150" type="line"/>
+      <point x="1214" y="-60" type="line" smooth="yes"/>
+      <point x="1196" y="-148"/>
+      <point x="1184" y="-180"/>
+      <point x="1125" y="-180" type="curve"/>
+      <point x="1047" y="-37" type="line"/>
+      <point x="992" y="-64"/>
+      <point x="935" y="-94"/>
+      <point x="935" y="-168" type="curve" smooth="yes"/>
+      <point x="935" y="-226"/>
+      <point x="987" y="-287"/>
+      <point x="1061" y="-287" type="curve" smooth="yes"/>
+      <point x="1223" y="-287"/>
+      <point x="1287" y="-204"/>
+      <point x="1318" y="-49" type="curve" smooth="yes"/>
+    </contour>
+  </outline>
+</glyph>

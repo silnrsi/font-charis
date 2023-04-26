@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CombSnakeBlwDep" format="2">
+  <advance width="315"/>
+  <unicode hex="F170"/>
+  <anchor x="-110" y="-815" name="L"/>
+  <anchor x="27" y="-100" name="_L"/>
+  <outline>
+    <contour>
+      <point x="-204" y="-786" type="line"/>
+      <point x="194" y="-786" type="line"/>
+      <point x="194" y="-95" type="line"/>
+      <point x="-204" y="-95" type="line"/>
+    </contour>
+    <contour>
+      <point x="53" y="-756" type="line"/>
+      <point x="-2" y="-756"/>
+      <point x="-174" y="-750"/>
+      <point x="-174" y="-664" type="curve" smooth="yes"/>
+      <point x="-174" y="-575"/>
+      <point x="-51" y="-604"/>
+      <point x="-51" y="-520" type="curve" smooth="yes"/>
+      <point x="-51" y="-469"/>
+      <point x="-127" y="-483"/>
+      <point x="-127" y="-422" type="curve" smooth="yes"/>
+      <point x="-127" y="-307"/>
+      <point x="43" y="-322"/>
+      <point x="43" y="-248" type="curve" smooth="yes"/>
+      <point x="43" y="-184"/>
+      <point x="-82" y="-217"/>
+      <point x="-94" y="-252" type="curve"/>
+      <point x="-166" y="-252" type="line"/>
+      <point x="-119" y="-176"/>
+      <point x="-51" y="-125"/>
+      <point x="41" y="-125" type="curve" smooth="yes"/>
+      <point x="143" y="-125"/>
+      <point x="164" y="-162"/>
+      <point x="164" y="-201" type="curve" smooth="yes"/>
+      <point x="164" y="-344"/>
+      <point x="-6" y="-319"/>
+      <point x="-6" y="-387" type="curve" smooth="yes"/>
+      <point x="-6" y="-422"/>
+      <point x="68" y="-424"/>
+      <point x="68" y="-487" type="curve" smooth="yes"/>
+      <point x="68" y="-598"/>
+      <point x="-57" y="-573"/>
+      <point x="-57" y="-659" type="curve" smooth="yes"/>
+      <point x="-57" y="-690"/>
+      <point x="-35" y="-717"/>
+      <point x="57" y="-735" type="curve"/>
+    </contour>
+  </outline>
+</glyph>

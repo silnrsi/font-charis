@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmACircumGrave.SngStory.VN" format="2">
+  <advance width="1243"/>
+  <anchor x="629" y="0" name="H"/>
+  <anchor x="629" y="-100" name="L"/>
+  <anchor x="998" y="0" name="O"/>
+  <anchor x="1243" y="1000" name="R"/>
+  <outline>
+    <component base="LtnSmA.SngStory"/>
+    <component base="CombCircumGrave.VN" xOffset="112"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmScriptG" format="2">
+  <advance width="1243"/>
+  <unicode hex="0261"/>
+  <anchor x="645" y="-432" name="H"/>
+  <anchor x="645" y="-500" name="L"/>
+  <anchor x="1243" y="1000" name="R"/>
+  <anchor x="645" y="1100" name="U"/>
+  <outline>
+    <component base="LtnSmG.SngBowl"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

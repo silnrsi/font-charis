@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapIDiaerAcute" format="2">
+  <advance width="643"/>
+  <unicode hex="1E2E"/>
+  <anchor x="220" y="0" name="H"/>
+  <anchor x="200" y="-100" name="L"/>
+  <anchor x="384" y="0" name="O"/>
+  <anchor x="767" y="1200" name="R"/>
+  <anchor x="576" y="2300" name="U"/>
+  <outline>
+    <component base="LtnCapI"/>
+    <component base="CombDiaer" xOffset="871" yOffset="400"/>
+    <component base="CombAcute" xOffset="915" yOffset="800"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

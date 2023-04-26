@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="GrSmMu" format="2">
+  <advance width="1227"/>
+  <unicode hex="03BC"/>
+  <anchor x="585" y="-100" name="L"/>
+  <anchor x="587" y="1100" name="U"/>
+  <outline>
+    <contour>
+      <point x="1159" y="0" type="line"/>
+      <point x="1159" y="96" type="line"/>
+      <point x="1069" y="102" type="line" smooth="yes"/>
+      <point x="1044" y="104"/>
+      <point x="1021" y="125"/>
+      <point x="1021" y="150" type="curve" smooth="yes"/>
+      <point x="1021" y="1024" type="line"/>
+      <point x="747" y="1024" type="line"/>
+      <point x="747" y="197" type="line"/>
+      <point x="747" y="197"/>
+      <point x="669" y="162"/>
+      <point x="583" y="162" type="curve" smooth="yes"/>
+      <point x="409" y="162"/>
+      <point x="395" y="289"/>
+      <point x="395" y="389" type="curve" smooth="yes"/>
+      <point x="395" y="1024" type="line"/>
+      <point x="120" y="1024" type="line"/>
+      <point x="120" y="309" type="line"/>
+      <point x="120" y="100"/>
+      <point x="190" y="-25"/>
+      <point x="423" y="-25" type="curve" smooth="yes"/>
+      <point x="573" y="-25"/>
+      <point x="747" y="113"/>
+      <point x="747" y="113" type="curve"/>
+      <point x="747" y="0" type="line"/>
+    </contour>
+    <contour>
+      <point x="120" y="307" type="line"/>
+      <point x="120" y="-268"/>
+      <point x="119" y="-293"/>
+      <point x="119" y="-422" type="curve"/>
+      <point x="426" y="-422" type="line"/>
+      <point x="426" y="-342" type="line"/>
+      <point x="408" y="-284"/>
+      <point x="253" y="-6"/>
+      <point x="253" y="206" type="curve"/>
+    </contour>
+  </outline>
+</glyph>

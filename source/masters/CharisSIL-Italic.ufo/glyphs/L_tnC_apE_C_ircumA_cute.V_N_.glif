@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapECircumAcute.VN" format="2">
+  <advance width="1143"/>
+  <anchor x="466" y="0" name="H"/>
+  <anchor x="446" y="-100" name="L"/>
+  <anchor x="848" y="0" name="O"/>
+  <anchor x="1306" y="1200" name="R"/>
+  <outline>
+    <component base="LtnCapE"/>
+    <component base="CombCircumAcute.VN" xOffset="158" yOffset="400"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

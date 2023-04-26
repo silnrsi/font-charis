@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ModRhoticHook" format="2">
+  <advance width="377"/>
+  <unicode hex="02DE"/>
+  <anchor x="530" y="1000" name="R"/>
+  <anchor x="0" y="1000" name="R_"/>
+  <outline>
+    <contour>
+      <point x="377" y="737" type="curve"/>
+      <point x="299" y="780" type="line"/>
+      <point x="281" y="698"/>
+      <point x="266" y="596"/>
+      <point x="176" y="596" type="curve" smooth="yes"/>
+      <point x="111" y="596"/>
+      <point x="98" y="664"/>
+      <point x="98" y="743" type="curve" smooth="yes"/>
+      <point x="98" y="938" type="line"/>
+      <point x="18" y="979" type="line"/>
+      <point x="-244" y="807" type="line"/>
+      <point x="-201" y="721" type="line"/>
+      <point x="0" y="856" type="line"/>
+      <point x="0" y="688" type="line" smooth="yes"/>
+      <point x="0" y="598"/>
+      <point x="70" y="502"/>
+      <point x="168" y="502" type="curve" smooth="yes"/>
+      <point x="324" y="502"/>
+      <point x="358" y="643"/>
+    </contour>
+  </outline>
+</glyph>

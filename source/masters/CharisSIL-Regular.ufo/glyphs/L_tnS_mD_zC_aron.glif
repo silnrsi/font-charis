@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmDzCaron" format="2">
+  <advance width="2101"/>
+  <unicode hex="01C6"/>
+  <anchor x="1638" y="0" name="H"/>
+  <anchor x="1638" y="-100" name="L"/>
+  <anchor x="1638" y="1500" name="U"/>
+  <outline>
+    <component base="LtnSmD"/>
+    <component base="LtnSmZ" xOffset="1155"/>
+    <component base="CombCaron" xOffset="2195"/>
+  </outline>
+</glyph>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmIDotAbv.SItal" format="2">
+  <advance width="621"/>
+  <anchor x="310" y="0" name="H"/>
+  <anchor x="316" y="-100" name="L"/>
+  <anchor x="466" y="0" name="O"/>
+  <anchor x="621" y="1000" name="R"/>
+  <anchor x="310" y="1100" name="U"/>
+  <outline>
+    <component base="LtnSmI.SItal"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CySmDe.Serb" format="2">
+  <advance width="1174"/>
+  <anchor x="561" y="-100" name="L"/>
+  <anchor x="664" y="1050" name="U"/>
+  <outline>
+    <contour>
+      <point x="10" y="-319" type="line"/>
+      <point x="111" y="-319" type="line"/>
+      <point x="111" y="-113"/>
+      <point x="211" y="0"/>
+      <point x="395" y="0" type="curve" smooth="yes"/>
+      <point x="735" y="0" type="line" smooth="yes"/>
+      <point x="897" y="0"/>
+      <point x="1022" y="-113"/>
+      <point x="1022" y="-319" type="curve"/>
+      <point x="1120" y="-319" type="line"/>
+      <point x="1120" y="4" type="line"/>
+      <point x="1047" y="10" type="line" smooth="yes"/>
+      <point x="1024" y="12"/>
+      <point x="989" y="37"/>
+      <point x="989" y="61" type="curve" smooth="yes"/>
+      <point x="989" y="889" type="line" smooth="yes"/>
+      <point x="989" y="901"/>
+      <point x="999" y="920"/>
+      <point x="1024" y="920" type="curve"/>
+      <point x="1120" y="926" type="line"/>
+      <point x="1120" y="987" type="line"/>
+      <point x="233" y="987" type="line"/>
+      <point x="233" y="926" type="line"/>
+      <point x="341" y="920" type="line"/>
+      <point x="366" y="920"/>
+      <point x="366" y="897"/>
+      <point x="376" y="889" type="curve"/>
+      <point x="376" y="625"/>
+      <point x="322" y="313"/>
+      <point x="268" y="219" type="curve"/>
+      <point x="184" y="66"/>
+      <point x="66" y="18"/>
+      <point x="10" y="4" type="curve"/>
+    </contour>
+    <contour>
+      <point x="309" y="100" type="line"/>
+      <point x="309" y="100"/>
+      <point x="332" y="125"/>
+      <point x="358" y="172" type="curve"/>
+      <point x="416" y="270"/>
+      <point x="476" y="498"/>
+      <point x="476" y="887" type="curve"/>
+      <point x="799" y="887" type="line"/>
+      <point x="799" y="100" type="line"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CombBreveGrave.VN" format="2">
+  <advance width="641"/>
+  <anchor x="410" y="1790" name="U"/>
+  <anchor x="438" y="1100" name="_U"/>
+  <outline>
+    <component base="CombBreve" xOffset="821"/>
+    <component base="CombGrave" xOffset="749" yOffset="290"/>
+  </outline>
+</glyph>

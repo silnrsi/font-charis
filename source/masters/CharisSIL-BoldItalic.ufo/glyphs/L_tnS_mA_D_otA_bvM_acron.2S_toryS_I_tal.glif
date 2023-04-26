@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmADotAbvMacron.2StorySItal" format="2">
+  <advance width="1085"/>
+  <anchor x="445" y="0" name="H"/>
+  <anchor x="418" y="-100" name="L"/>
+  <anchor x="914" y="0" name="O"/>
+  <anchor x="1085" y="1000" name="R"/>
+  <anchor x="765" y="1870" name="U"/>
+  <outline>
+    <component base="LtnSmA.2StorySItal"/>
+    <component base="CombDotAbv" xOffset="1105"/>
+    <component base="CombMacron" xOffset="1149" yOffset="400"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

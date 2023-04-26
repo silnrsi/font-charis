@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapAVDigraphStrk" format="2">
+  <advance width="1803"/>
+  <unicode hex="A73A"/>
+  <anchor x="786" y="-100" name="L"/>
+  <anchor x="1293" y="1500" name="U"/>
+  <outline>
+    <contour>
+      <point x="962" y="-33" type="line"/>
+      <point x="1117" y="-33" type="line"/>
+      <point x="1844" y="1276" type="line"/>
+      <point x="1952" y="1288" type="line"/>
+      <point x="1952" y="1374" type="line"/>
+      <point x="1535" y="1374" type="line"/>
+      <point x="1535" y="1288" type="line"/>
+      <point x="1635" y="1284" type="line" smooth="yes"/>
+      <point x="1674" y="1282"/>
+      <point x="1676" y="1264"/>
+      <point x="1666" y="1243" type="curve"/>
+      <point x="1126" y="254" type="line"/>
+      <point x="926" y="1407" type="line"/>
+      <point x="762" y="1407" type="line"/>
+      <point x="6" y="98" type="line"/>
+      <point x="-109" y="86" type="line"/>
+      <point x="-109" y="0" type="line"/>
+      <point x="332" y="0" type="line"/>
+      <point x="332" y="86" type="line"/>
+      <point x="238" y="96" type="line" smooth="yes"/>
+      <point x="199" y="100"/>
+      <point x="184" y="109"/>
+      <point x="199" y="135" type="curve"/>
+      <point x="408" y="526" type="line"/>
+      <point x="872" y="526" type="line"/>
+    </contour>
+    <contour>
+      <point x="463" y="623" type="line"/>
+      <point x="766" y="1155" type="line"/>
+      <point x="854" y="623" type="line"/>
+    </contour>
+    <contour>
+      <point x="1030" y="526" type="line"/>
+      <point x="1751" y="526" type="line"/>
+      <point x="1751" y="623" type="line"/>
+      <point x="1030" y="623" type="line"/>
+    </contour>
+  </outline>
+</glyph>

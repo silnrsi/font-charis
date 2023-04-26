@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="GrSmCapRho" format="2">
+  <advance width="1001"/>
+  <unicode hex="1D29"/>
+  <anchor x="490" y="-100" name="L"/>
+  <anchor x="490" y="1100" name="U"/>
+  <outline>
+    <component base="LtnSmCapP"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CySmLigAIe" format="2">
+  <advance width="1477"/>
+  <unicode hex="04D5"/>
+  <anchor x="770" y="0" name="H"/>
+  <anchor x="770" y="-100" name="L"/>
+  <anchor x="1269" y="0" name="O"/>
+  <anchor x="1477" y="1000" name="R"/>
+  <anchor x="770" y="1100" name="U"/>
+  <outline>
+    <component base="LtnSmAe"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

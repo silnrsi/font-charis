@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnAlveolarClick" format="2">
+  <advance width="853"/>
+  <unicode hex="01C2"/>
+  <anchor x="426" y="-500" name="L"/>
+  <anchor x="426" y="1570" name="U"/>
+  <outline>
+    <component base="LtnDentalClick" xOffset="200"/>
+    <contour>
+      <point x="50" y="599" type="line"/>
+      <point x="803" y="599" type="line"/>
+      <point x="803" y="743" type="line"/>
+      <point x="50" y="743" type="line"/>
+    </contour>
+    <contour>
+      <point x="50" y="323" type="line"/>
+      <point x="803" y="323" type="line"/>
+      <point x="803" y="467" type="line"/>
+      <point x="50" y="467" type="line"/>
+    </contour>
+  </outline>
+</glyph>

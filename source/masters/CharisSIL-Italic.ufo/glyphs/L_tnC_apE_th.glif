@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapEth" format="2">
+  <advance width="1374"/>
+  <unicode hex="00D0"/>
+  <anchor x="532" y="-100" name="L"/>
+  <anchor x="820" y="1500" name="U"/>
+  <outline>
+    <component base="LtnCapD"/>
+    <contour>
+      <point x="59" y="668" type="line"/>
+      <point x="711" y="668" type="line"/>
+      <point x="711" y="776" type="line"/>
+      <point x="59" y="776" type="line"/>
+    </contour>
+  </outline>
+</glyph>

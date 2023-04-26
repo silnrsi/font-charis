@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmIDblGrave.sc" format="2">
+  <advance width="592"/>
+  <anchor x="202" y="8" name="H"/>
+  <anchor x="184" y="-74" name="L"/>
+  <anchor x="353" y="8" name="O"/>
+  <anchor x="706" y="992" name="R"/>
+  <anchor x="493" y="1638" name="U"/>
+  <outline>
+    <component base="LtnSmI.sc"/>
+    <component base="CombDblGrave" xOffset="832" yOffset="138"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

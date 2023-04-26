@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmACircumDotBlw.SngStory.sc" format="2">
+  <advance width="1293"/>
+  <anchor x="639" y="8" name="H"/>
+  <anchor x="639" y="-474" name="L"/>
+  <anchor x="1187" y="8" name="O"/>
+  <anchor x="639" y="1638" name="U"/>
+  <outline>
+    <component base="LtnSmA.sc"/>
+    <component base="CombDotBlw" xOffset="1237" yOffset="26"/>
+    <component base="CombCircum" xOffset="1237" yOffset="138"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

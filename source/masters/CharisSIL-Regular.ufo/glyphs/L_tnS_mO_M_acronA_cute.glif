@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmOMacronAcute" format="2">
+  <advance width="1114"/>
+  <unicode hex="1E53"/>
+  <anchor x="557" y="0" name="H"/>
+  <anchor x="557" y="-100" name="L"/>
+  <anchor x="838" y="0" name="O"/>
+  <anchor x="1114" y="1000" name="R"/>
+  <anchor x="557" y="1870" name="U"/>
+  <outline>
+    <component base="LtnSmO"/>
+    <component base="CombMacron" xOffset="1114"/>
+    <component base="CombAcute" xOffset="1114" yOffset="370"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>

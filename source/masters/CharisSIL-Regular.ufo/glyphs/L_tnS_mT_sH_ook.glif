@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmTsHook" format="2">
+  <advance width="1321"/>
+  <unicode hex="AB67"/>
+  <anchor x="652" y="-550" name="L"/>
+  <anchor x="686" y="1363" name="U"/>
+  <outline>
+    <component base="LtnSmTsDigraph"/>
+    <contour>
+      <point x="1047" y="-353" type="curve" smooth="yes"/>
+      <point x="1047" y="-261"/>
+      <point x="969" y="-238"/>
+      <point x="957" y="-232" type="curve"/>
+      <point x="793" y="-375" type="line"/>
+      <point x="719" y="-375"/>
+      <point x="676" y="-343"/>
+      <point x="676" y="-255" type="curve" smooth="yes"/>
+      <point x="676" y="25" type="line"/>
+      <point x="574" y="25" type="line"/>
+      <point x="574" y="-244" type="line" smooth="yes"/>
+      <point x="574" y="-400"/>
+      <point x="660" y="-482"/>
+      <point x="836" y="-482" type="curve" smooth="yes"/>
+      <point x="957" y="-482"/>
+      <point x="1047" y="-412"/>
+    </contour>
+  </outline>
+</glyph>

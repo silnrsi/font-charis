@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmDDotAbv" format="2">
+  <advance width="1077"/>
+  <unicode hex="1E0B"/>
+  <anchor x="521" y="0" name="H"/>
+  <anchor x="501" y="-100" name="L"/>
+  <anchor x="1023" y="1000" name="R"/>
+  <anchor x="861" y="1940" name="U"/>
+  <outline>
+    <component base="LtnSmD"/>
+    <component base="DotAbv" xOffset="584" yOffset="440"/>
+  </outline>
+</glyph>

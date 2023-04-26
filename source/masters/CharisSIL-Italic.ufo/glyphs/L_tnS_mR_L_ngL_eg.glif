@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmRLngLeg" format="2">
+  <advance width="766"/>
+  <unicode hex="027C"/>
+  <anchor x="25" y="-500" name="L"/>
+  <anchor x="482" y="1100" name="U"/>
+  <outline>
+    <contour>
+      <point x="838" y="874" type="curve" smooth="yes"/>
+      <point x="838" y="930"/>
+      <point x="805" y="1012"/>
+      <point x="707" y="1012" type="curve" smooth="yes"/>
+      <point x="584" y="1012"/>
+      <point x="475" y="934"/>
+      <point x="391" y="805" type="curve"/>
+      <point x="434" y="1012" type="line"/>
+      <point x="352" y="1012" type="line"/>
+      <point x="43" y="948" type="line"/>
+      <point x="43" y="889" type="line"/>
+      <point x="215" y="870" type="line"/>
+      <point x="-49" y="-446" type="line"/>
+      <point x="139" y="-446" type="line"/>
+      <point x="336" y="516" type="line"/>
+      <point x="358" y="635"/>
+      <point x="506" y="821"/>
+      <point x="606" y="864" type="curve"/>
+      <point x="655" y="766" type="line"/>
+      <point x="766" y="766"/>
+      <point x="838" y="778"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSupSmTurnedAlpha" format="2">
+  <advance width="750"/>
+  <unicode hex="1D9B"/>
+  <anchor x="374" y="725" name="L"/>
+  <anchor x="519" y="784" name="O"/>
+  <anchor x="758" y="1376" name="R"/>
+  <anchor x="374" y="1457" name="U"/>
+  <outline>
+    <component base="LtnSmTurnedAlpha" xScale="0.65" yScale="0.6" xOffset="5" yOffset="785"/>
+  </outline>
+</glyph>

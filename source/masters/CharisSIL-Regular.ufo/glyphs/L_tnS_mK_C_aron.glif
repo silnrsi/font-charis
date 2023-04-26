@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmKCaron" format="2">
+  <advance width="1094"/>
+  <unicode hex="01E9"/>
+  <anchor x="280" y="0" name="H"/>
+  <anchor x="551" y="-100" name="L"/>
+  <anchor x="1094" y="1000" name="R"/>
+  <anchor x="551" y="1940" name="U"/>
+  <outline>
+    <component base="LtnSmK"/>
+    <component base="CombCaron" xOffset="1108" yOffset="440"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>
