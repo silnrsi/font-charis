@@ -18,7 +18,7 @@ for a in AP_type_lst:
 
 # find the file name without the extension of the Regular style ufo
 # TODO: ensure that Book Regular is not chosen ?
-for ufo_path in ("source/", "results/source/instances/"):
+for ufo_path in ("source/", "results/source/instances/", "source/masters/"):
     regular_ufo_fn_lst = glob.glob(ufo_path + "*-Regular.ufo")
     if regular_ufo_fn_lst: break
 regular_ufo_base = os.path.splitext(os.path.basename(regular_ufo_fn_lst[0]))[0]
