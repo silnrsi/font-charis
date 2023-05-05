@@ -1,10 +1,16 @@
 import xml.etree.ElementTree as ET
 import sys, os, re
 
-if sys.argv[1].lower() != "andika":
+if sys.argv[1].lower() == "charis":
     font = "C"
-else:
+elif sys.argv[1].lower() == "andika":
     font = "A"
+elif sys.argv[1].lower() == "gentium":
+    font = "G"
+elif sys.argv[1].lower() == "doulos":
+    font = "D"
+else:
+    assert(False)
 
 feat_info_fn = "featureinfo.yaml"
 # font = "C"
