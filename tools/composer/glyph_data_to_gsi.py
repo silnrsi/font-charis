@@ -3,9 +3,14 @@
 
 import sys, csv, re
 
+if sys.argv[1].lower() != "andika":
+    andika_f = 0
+else:
+    andika_f = 1
+
 glyph_data_csv_fn = "glyph_data.csv"
 
-andika_f = 0
+# andika_f = 0
 if not andika_f:
     gsi_fn = "gsi_glyph_data_cdg.xml"
 else:

@@ -1,11 +1,13 @@
 # assumes the ttf has been built with updated fea and classes
 #  smith build --quick
+# for a given family, modify *.ttf file names, option to glyph_data_to_gsi.py and updateTTfeatnames.py,
+#  and name of gsi_glyph_data_*.xml file passed to composer.pl
 
 cp ../../source/glyph_data.csv .
 cp ../../source/featureinfo.yaml .
 cp ../../results/CharisSIL-Regular.ttf .
 cp ../../results/source/CharisSIL-Regular.map .
 
-python3 glyph_data_to_gsi.py
+python3 glyph_data_to_gsi.py charis
 perl composer.pl -f charis -d -m feature_map.csv CharisSIL-Regular.ttf gsi_glyph_data_cdg.xml gsi_dfltvars.xml > composer_dbg.log
-python3 updateTTfeatnames.py  > updateTTfeatnames.log
+python3 updateTTfeatnames.py charis > updateTTfeatnames.log

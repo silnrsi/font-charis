@@ -1,8 +1,13 @@
 import xml.etree.ElementTree as ET
-import os, re
+import sys, os, re
+
+if sys.argv[1].lower() != "andika":
+    font = "C"
+else:
+    font = "A"
 
 feat_info_fn = "featureinfo.yaml"
-font = "C"
+# font = "C"
 feat_all_in_fn = "feat_all_composer.xml"
 feat_all_out_fn = "feat_all_composer_yaml.xml"
 feat_map_in_fn = "feature_map.csv"  # can be set to None to disable processing
@@ -59,7 +64,7 @@ for line in feat_info_lines:
                 feature.setdefault(field, []).append(value)
             break
 # store last record if needed
-if feature:
+if feature and "tt_value" in feature.keys():
     if not feature["tt_value"] in feature["tt_setting_name"]:
         print(f"**for feature {feature[tag]} tt_value {feature[tt_value]} does not match any tt_setting_name")
     feat_info[feature["tt_tag"]] = feature
