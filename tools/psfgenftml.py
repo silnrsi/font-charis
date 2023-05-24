@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 'generate ftml tests from glyph_data.csv and UFO'
 __url__ = 'http://github.com/silnrsi/pysilfont'
-__copyright__ = 'Copyright (c) 2021 SIL International  (http://www.sil.org)'
+__copyright__ = 'Copyright (c) 2021 SIL International  (https://www.sil.org)'
 __license__ = 'Released under the MIT License (http://opensource.org/licenses/MIT)'
 __author__ = 'Alan Ward'
 

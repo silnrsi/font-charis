@@ -5,7 +5,7 @@
 # hand edit CVs 1) with more than one param value, 2) that were not in makeot.pl
 # TODO: create better sample text for 1) Mac (0 1) name strings 2) Kayan diac & Viet diac
 
-__copyright__ = 'Copyright (c) 2020 SIL International  (http://www.sil.org)'
+__copyright__ = 'Copyright (c) 2020 SIL International  (https://www.sil.org)'
 __license__ = 'Released under the MIT License (http://opensource.org/licenses/MIT)'
 __author__ = 'Alan Ward'
 
