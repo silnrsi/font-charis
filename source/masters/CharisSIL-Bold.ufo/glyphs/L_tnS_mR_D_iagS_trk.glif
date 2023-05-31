@@ -28,22 +28,22 @@
       <point x="635" y="0" type="line"/>
       <point x="635" y="96" type="line"/>
       <point x="504" y="102" type="line" smooth="yes"/>
-      <point x="477" y="102"/>
+      <point x="477" y="103"/>
       <point x="459" y="125"/>
       <point x="459" y="149" type="curve" smooth="yes"/>
       <point x="459" y="723" type="line"/>
-      <point x="459" y="723"/>
-      <point x="514" y="760"/>
+      <point x="493" y="739"/>
+      <point x="548" y="760"/>
       <point x="592" y="760" type="curve" smooth="yes"/>
-      <point x="672" y="760"/>
-      <point x="707" y="704"/>
+      <point x="668" y="760"/>
+      <point x="710" y="704"/>
       <point x="725" y="678" type="curve"/>
     </contour>
     <contour>
-      <point x="885" y="579" type="line"/>
-      <point x="-19" y="404" type="line"/>
       <point x="3" y="287" type="line"/>
       <point x="908" y="460" type="line"/>
+      <point x="885" y="579" type="line"/>
+      <point x="-19" y="404" type="line"/>
     </contour>
   </outline>
 </glyph>
