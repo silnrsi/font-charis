@@ -46,11 +46,11 @@
       <point x="1229" y="-338" type="curve"/>
       <point x="1363" y="-338" type="line"/>
       <point x="1363" y="100" type="line"/>
-      <point x="1142" y="100" type="line"/>
-      <point x="1117" y="101"/>
+      <point x="1142" y="100" type="line" smooth="yes"/>
+      <point x="1117" y="100"/>
       <point x="1108" y="113"/>
       <point x="1100" y="133" type="curve"/>
-      <point x="949" y="2" type="line"/>
+      <point x="965" y="0" type="line"/>
       <point x="1069" y="-16"/>
       <point x="1229" y="-93"/>
     </contour>

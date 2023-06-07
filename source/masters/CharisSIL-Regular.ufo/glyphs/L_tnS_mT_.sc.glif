@@ -18,16 +18,14 @@
       <point x="466" y="1024" type="line"/>
       <point x="466" y="121" type="line"/>
       <point x="466" y="109"/>
-      <point x="453" y="95"/>
-      <point x="427" y="93" type="curve"/>
+      <point x="453" y="94"/>
+      <point x="427" y="93" type="curve" smooth="yes"/>
       <point x="308" y="87" type="line"/>
       <point x="308" y="0" type="line"/>
       <point x="809" y="0" type="line"/>
       <point x="809" y="87" type="line"/>
-      <point x="770" y="89"/>
-      <point x="730" y="92"/>
-      <point x="691" y="93" type="curve" smooth="yes"/>
-      <point x="665" y="95"/>
+      <point x="691" y="93" type="line" smooth="yes"/>
+      <point x="665" y="94"/>
       <point x="652" y="109"/>
       <point x="652" y="121" type="curve"/>
       <point x="652" y="1024" type="line"/>
