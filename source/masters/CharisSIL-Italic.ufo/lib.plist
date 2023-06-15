@@ -2483,8 +2483,10 @@
     <string>HyphenationPt</string>
     <string>BulletOperator</string>
     <string>LtnSinolDot</string>
+    <string>LftDblParen</string>
     <string>SubLftParen</string>
     <string>SupLftParen</string>
+    <string>RtDblParen</string>
     <string>SubRtParen</string>
     <string>SupRtParen</string>
     <string>MathLftWhiteSqrBrac</string>
@@ -2521,6 +2523,7 @@
     <string>RtMidCurlyBrac</string>
     <string>RtBtmCurlyBrac</string>
     <string>WigglyVerticalLine</string>
+    <string>VerticalSixDots</string>
     <string>LtnDentalClick</string>
     <string>LtnDentalClick.bascl</string>
     <string>ModDentalClick</string>
@@ -2996,12 +2999,14 @@
     <string>ModLowLftArrwhd</string>
     <string>LftPtngAngBrac</string>
     <string>MathLftAngBrac</string>
+    <string>MathLftDblAngleBrac</string>
     <string>ModRtArrwhd</string>
     <string>CombRtArrwhdAbv</string>
     <string>CombRtArrwhdBlw</string>
     <string>ModLowRtArrwhd</string>
     <string>RtPtngAngBrac</string>
     <string>MathRtAngBrac</string>
+    <string>MathRtDblAngleBrac</string>
     <string>CombRtArrwhdUpArrwhdBlw</string>
     <string>CombRtArrwhdDwnArrwhdBlw</string>
     <string>TironianSignEt</string>
@@ -3012,6 +3017,12 @@
     <string>MusicFlatSign</string>
     <string>MusicSharpSign</string>
     <string>LoopedSqr</string>
+    <string>MetricalBreve</string>
+    <string>MetricalLongShort</string>
+    <string>MetricalShortLong</string>
+    <string>MetricalShortShort</string>
+    <string>MetricalLongShortShort</string>
+    <string>MetricalShortShortLong</string>
     <string>ModTnYinShang</string>
     <string>ModTnYinPing</string>
     <string>ModTnYinQu</string>
@@ -5869,6 +5880,8 @@
     <string>braceleft</string>
     <key>LftDblArrw</key>
     <string>arrowdblleft</string>
+    <key>LftDblParen</key>
+    <string>uni2E28</string>
     <key>LftDblQuotMrk</key>
     <string>quotedblleft</string>
     <key>LftMidCurlyBrac</key>
@@ -10325,14 +10338,30 @@
     <string>u1D519</string>
     <key>MathLftAngBrac</key>
     <string>uni27E8</string>
+    <key>MathLftDblAngleBrac</key>
+    <string>uni27EA</string>
     <key>MathLftWhiteSqrBrac</key>
     <string>uni27E6</string>
     <key>MathRtAngBrac</key>
     <string>uni27E9</string>
+    <key>MathRtDblAngleBrac</key>
+    <string>uni27EB</string>
     <key>MathRtWhiteSqrBrac</key>
     <string>uni27E7</string>
     <key>MeasuredAngle</key>
     <string>uni2221</string>
+    <key>MetricalBreve</key>
+    <string>uni23D1</string>
+    <key>MetricalLongShort</key>
+    <string>uni23D2</string>
+    <key>MetricalLongShortShort</key>
+    <string>uni23D4</string>
+    <key>MetricalShortLong</key>
+    <string>uni23D3</string>
+    <key>MetricalShortShort</key>
+    <string>uni23D6</string>
+    <key>MetricalShortShortLong</key>
+    <string>uni23D5</string>
     <key>MicroSgn</key>
     <string>mu</string>
     <key>MiddleDot</key>
@@ -11125,6 +11154,8 @@
     <string>braceright</string>
     <key>RtDblArrw</key>
     <string>arrowdblright</string>
+    <key>RtDblParen</key>
+    <string>uni2E29</string>
     <key>RtDblQuotMrk</key>
     <string>quotedblright</string>
     <key>RtMidCurlyBrac</key>
@@ -11687,6 +11718,8 @@
     <string>uni2123</string>
     <key>VertLine</key>
     <string>bar</string>
+    <key>VerticalSixDots</key>
+    <string>uni2E3D</string>
     <key>VulgFracFiveEighths</key>
     <string>fiveeighths</string>
     <key>VulgFracFiveSixths</key>

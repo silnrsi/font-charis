@@ -1840,6 +1840,8 @@
   <string>L_ftC_urlyB_rac.glif</string>
   <key>LftDblArrw</key>
   <string>L_ftD_blA_rrw.glif</string>
+  <key>LftDblParen</key>
+  <string>L_ftD_blP_aren.glif</string>
   <key>LftDblQuotMrk</key>
   <string>L_ftD_blQ_uotM_rk.glif</string>
   <key>LftMidCurlyBrac</key>
@@ -6296,14 +6298,30 @@
   <string>M_athF_rktC_apV_.glif</string>
   <key>MathLftAngBrac</key>
   <string>M_athL_ftA_ngB_rac.glif</string>
+  <key>MathLftDblAngleBrac</key>
+  <string>M_athL_ftD_blA_ngleB_rac.glif</string>
   <key>MathLftWhiteSqrBrac</key>
   <string>M_athL_ftW_hiteS_qrB_rac.glif</string>
   <key>MathRtAngBrac</key>
   <string>M_athR_tA_ngB_rac.glif</string>
+  <key>MathRtDblAngleBrac</key>
+  <string>M_athR_tD_blA_ngleB_rac.glif</string>
   <key>MathRtWhiteSqrBrac</key>
   <string>M_athR_tW_hiteS_qrB_rac.glif</string>
   <key>MeasuredAngle</key>
   <string>M_easuredA_ngle.glif</string>
+  <key>MetricalBreve</key>
+  <string>M_etricalB_reve.glif</string>
+  <key>MetricalLongShort</key>
+  <string>M_etricalL_ongS_hort.glif</string>
+  <key>MetricalLongShortShort</key>
+  <string>M_etricalL_ongS_hortS_hort.glif</string>
+  <key>MetricalShortLong</key>
+  <string>M_etricalS_hortL_ong.glif</string>
+  <key>MetricalShortShort</key>
+  <string>M_etricalS_hortS_hort.glif</string>
+  <key>MetricalShortShortLong</key>
+  <string>M_etricalS_hortS_hortL_ong.glif</string>
   <key>MicroSgn</key>
   <string>M_icroS_gn.glif</string>
   <key>MiddleDot</key>
@@ -7096,6 +7114,8 @@
   <string>R_tC_urlyB_rac.glif</string>
   <key>RtDblArrw</key>
   <string>R_tD_blA_rrw.glif</string>
+  <key>RtDblParen</key>
+  <string>R_tD_blP_aren.glif</string>
   <key>RtDblQuotMrk</key>
   <string>R_tD_blQ_uotM_rk.glif</string>
   <key>RtMidCurlyBrac</key>
@@ -7658,6 +7678,8 @@
   <string>V__V_ersicle.glif</string>
   <key>VertLine</key>
   <string>V_ertL_ine.glif</string>
+  <key>VerticalSixDots</key>
+  <string>V_erticalS_ixD_ots.glif</string>
   <key>VulgFracFiveEighths</key>
   <string>V_ulgF_racF_iveE_ighths.glif</string>
   <key>VulgFracFiveSixths</key>

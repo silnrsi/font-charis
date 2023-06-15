@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="RtDblParen" format="2">
+  <advance width="1736"/>
+  <unicode hex="2E29"/>
+  <outline>
+    <component base="RtParen"/>
+    <component base="RtParen" xOffset="868"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.99,0.62,0.11,1</string>
+    </dict>
+  </lib>
+</glyph>
