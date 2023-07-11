@@ -2359,18 +2359,21 @@
     <string>DigitZero.numr</string>
     <string>SupZero</string>
     <string>DigitZero.sups</string>
+    <string>DigitZero.osf</string>
     <string>SubOne</string>
     <string>DigitOne.subs</string>
     <string>DigitOne.dnom</string>
     <string>DigitOne.numr</string>
     <string>SupOne</string>
     <string>DigitOne.sups</string>
+    <string>DigitOne.osf</string>
     <string>SubTwo</string>
     <string>DigitTwo.subs</string>
     <string>DigitTwo.dnom</string>
     <string>DigitTwo.numr</string>
     <string>SupTwo</string>
     <string>DigitTwo.sups</string>
+    <string>DigitTwo.osf</string>
     <string>LtnTwoStrk</string>
     <string>TurnedDigitTwo</string>
     <string>SubThree</string>
@@ -2379,6 +2382,7 @@
     <string>DigitThree.numr</string>
     <string>SupThree</string>
     <string>DigitThree.sups</string>
+    <string>DigitThree.osf</string>
     <string>TurnedDigitThree</string>
     <string>SubFour</string>
     <string>DigitFour.subs</string>
@@ -2386,6 +2390,7 @@
     <string>DigitFour.numr</string>
     <string>SupFour</string>
     <string>DigitFour.sups</string>
+    <string>DigitFour.osf</string>
     <string>LtnCapCuatrillo</string>
     <string>LtnCapCuatrilloComma</string>
     <string>LtnSmCuatrillo</string>
@@ -2396,6 +2401,7 @@
     <string>DigitFive.numr</string>
     <string>SupFive</string>
     <string>DigitFive.sups</string>
+    <string>DigitFive.osf</string>
     <string>LtnCapTnFive</string>
     <string>LtnSmTnFive</string>
     <string>SubSix</string>
@@ -2404,6 +2410,7 @@
     <string>DigitSix.numr</string>
     <string>SupSix</string>
     <string>DigitSix.sups</string>
+    <string>DigitSix.osf</string>
     <string>LtnSmOpenSix</string>
     <string>LtnCapOpenSix</string>
     <string>SubSeven</string>
@@ -2412,18 +2419,21 @@
     <string>DigitSeven.numr</string>
     <string>SupSeven</string>
     <string>DigitSeven.sups</string>
+    <string>DigitSeven.osf</string>
     <string>SubEight</string>
     <string>DigitEight.subs</string>
     <string>DigitEight.dnom</string>
     <string>DigitEight.numr</string>
     <string>SupEight</string>
     <string>DigitEight.sups</string>
+    <string>DigitEight.osf</string>
     <string>SubNine</string>
     <string>DigitNine.subs</string>
     <string>DigitNine.dnom</string>
     <string>DigitNine.numr</string>
     <string>SupNine</string>
     <string>DigitNine.sups</string>
+    <string>DigitNine.osf</string>
     <string>LtnCapOpenNine</string>
     <string>LtnSmOpenNine</string>
     <string>ModOpenNine</string>
@@ -5495,6 +5505,8 @@
     <string>eight.dnom</string>
     <key>DigitEight.numr</key>
     <string>eight.numr</string>
+    <key>DigitEight.osf</key>
+    <string>eight.osf</string>
     <key>DigitEight.subs</key>
     <string>eight.subs</string>
     <key>DigitEight.sups</key>
@@ -5507,6 +5519,8 @@
     <string>five.dnom</string>
     <key>DigitFive.numr</key>
     <string>five.numr</string>
+    <key>DigitFive.osf</key>
+    <string>five.osf</string>
     <key>DigitFive.subs</key>
     <string>five.subs</string>
     <key>DigitFive.sups</key>
@@ -5519,6 +5533,8 @@
     <string>four.dnom</string>
     <key>DigitFour.numr</key>
     <string>four.numr</string>
+    <key>DigitFour.osf</key>
+    <string>four.osf</string>
     <key>DigitFour.subs</key>
     <string>four.subs</string>
     <key>DigitFour.sups</key>
@@ -5531,6 +5547,8 @@
     <string>nine.dnom</string>
     <key>DigitNine.numr</key>
     <string>nine.numr</string>
+    <key>DigitNine.osf</key>
+    <string>nine.osf</string>
     <key>DigitNine.subs</key>
     <string>nine.subs</string>
     <key>DigitNine.sups</key>
@@ -5543,6 +5561,8 @@
     <string>one.dnom</string>
     <key>DigitOne.numr</key>
     <string>one.numr</string>
+    <key>DigitOne.osf</key>
+    <string>one.osf</string>
     <key>DigitOne.subs</key>
     <string>one.subs</string>
     <key>DigitOne.sups</key>
@@ -5555,6 +5575,8 @@
     <string>seven.dnom</string>
     <key>DigitSeven.numr</key>
     <string>seven.numr</string>
+    <key>DigitSeven.osf</key>
+    <string>seven.osf</string>
     <key>DigitSeven.subs</key>
     <string>seven.subs</string>
     <key>DigitSeven.sups</key>
@@ -5567,6 +5589,8 @@
     <string>six.dnom</string>
     <key>DigitSix.numr</key>
     <string>six.numr</string>
+    <key>DigitSix.osf</key>
+    <string>six.osf</string>
     <key>DigitSix.subs</key>
     <string>six.subs</string>
     <key>DigitSix.sups</key>
@@ -5579,6 +5603,8 @@
     <string>three.dnom</string>
     <key>DigitThree.numr</key>
     <string>three.numr</string>
+    <key>DigitThree.osf</key>
+    <string>three.osf</string>
     <key>DigitThree.subs</key>
     <string>three.subs</string>
     <key>DigitThree.sups</key>
@@ -5591,6 +5617,8 @@
     <string>two.dnom</string>
     <key>DigitTwo.numr</key>
     <string>two.numr</string>
+    <key>DigitTwo.osf</key>
+    <string>two.osf</string>
     <key>DigitTwo.subs</key>
     <string>two.subs</string>
     <key>DigitTwo.sups</key>
@@ -5603,6 +5631,8 @@
     <string>zero.dnom</string>
     <key>DigitZero.numr</key>
     <string>zero.numr</string>
+    <key>DigitZero.osf</key>
+    <string>zero.osf</string>
     <key>DigitZero.subs</key>
     <string>zero.subs</string>
     <key>DigitZero.sups</key>
