@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="MetricalBreve" format="2">
-  <advance width="767"/>
+  <advance width="788"/>
   <unicode hex="23D1"/>
   <outline>
     <contour>
-      <point x="773" y="672" type="curve"/>
-      <point x="683" y="672" type="line"/>
-      <point x="609" y="517"/>
-      <point x="479" y="466"/>
-      <point x="378" y="466" type="curve" smooth="yes"/>
-      <point x="278" y="466"/>
-      <point x="187" y="517"/>
-      <point x="173" y="672" type="curve"/>
-      <point x="83" y="672" type="line"/>
-      <point x="82" y="660"/>
-      <point x="82" y="647"/>
-      <point x="82" y="635" type="curve" smooth="yes"/>
-      <point x="82" y="467"/>
-      <point x="181" y="328"/>
-      <point x="372" y="328" type="curve" smooth="yes"/>
-      <point x="575" y="328"/>
-      <point x="718" y="488"/>
+      <point x="779" y="692" type="curve"/>
+      <point x="679" y="692" type="line"/>
+      <point x="611" y="517"/>
+      <point x="479" y="456"/>
+      <point x="378" y="456" type="curve" smooth="yes"/>
+      <point x="278" y="456"/>
+      <point x="189" y="517"/>
+      <point x="189" y="692" type="curve"/>
+      <point x="89" y="692" type="line"/>
+      <point x="85" y="663"/>
+      <point x="83" y="636"/>
+      <point x="83" y="609" type="curve" smooth="yes"/>
+      <point x="83" y="427"/>
+      <point x="180" y="298"/>
+      <point x="368" y="298" type="curve" smooth="yes"/>
+      <point x="581" y="298"/>
+      <point x="726" y="468"/>
     </contour>
   </outline>
   <lib>
