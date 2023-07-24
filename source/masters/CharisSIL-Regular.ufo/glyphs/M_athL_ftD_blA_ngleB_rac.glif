@@ -1,14 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="MathLftDblAngleBrac" format="2">
-  <advance width="1024"/>
+  <advance width="924"/>
   <unicode hex="27EA"/>
   <outline>
-    <component base="LftPtngAngBrac"/>
+    <contour>
+      <point x="550" y="-291" type="line"/>
+      <point x="550" y="-40" type="line"/>
+      <point x="197" y="631" type="line"/>
+      <point x="197" y="545" type="line"/>
+      <point x="550" y="1216" type="line"/>
+      <point x="550" y="1466" type="line"/>
+      <point x="74" y="588" type="line"/>
+    </contour>
+    <contour>
+      <point x="850" y="-291" type="line"/>
+      <point x="850" y="-40" type="line"/>
+      <point x="497" y="631" type="line"/>
+      <point x="497" y="545" type="line"/>
+      <point x="850" y="1216" type="line"/>
+      <point x="850" y="1466" type="line"/>
+      <point x="374" y="588" type="line"/>
+    </contour>
   </outline>
   <lib>
     <dict>
       <key>public.markColor</key>
-      <string>0.99,0.62,0.11,1</string>
+      <string>0.97,1,0,1</string>
     </dict>
   </lib>
 </glyph>
