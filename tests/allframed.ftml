@@ -7650,6 +7650,30 @@
       <comment>RtBtmCurlyBrac</comment>
       <string>o\u0023ADo</string>
     </test>
+    <test label="U+23D1">
+      <comment>MetricalBreve</comment>
+      <string>o\u0023D1o</string>
+    </test>
+    <test label="U+23D2">
+      <comment>MetricalLongShort</comment>
+      <string>o\u0023D2o</string>
+    </test>
+    <test label="U+23D3">
+      <comment>MetricalShortLong</comment>
+      <string>o\u0023D3o</string>
+    </test>
+    <test label="U+23D4">
+      <comment>MetricalLongShortShort</comment>
+      <string>o\u0023D4o</string>
+    </test>
+    <test label="U+23D5">
+      <comment>MetricalShortShortLong</comment>
+      <string>o\u0023D5o</string>
+    </test>
+    <test label="U+23D6">
+      <comment>MetricalShortShort</comment>
+      <string>o\u0023D6o</string>
+    </test>
     <test label="U+2423">
       <comment>OpnBx</comment>
       <string>o\u002423o</string>
@@ -7737,6 +7761,14 @@
     <test label="U+27E9">
       <comment>MathRtAngBrac</comment>
       <string>o\u0027E9o</string>
+    </test>
+    <test label="U+27EA">
+      <comment>MathLftDblAngleBrac</comment>
+      <string>o\u0027EAo</string>
+    </test>
+    <test label="U+27EB">
+      <comment>MathRtDblAngleBrac</comment>
+      <string>o\u0027EBo</string>
     </test>
     <test label="U+2980">
       <comment>TripleVertBar</comment>
@@ -7962,6 +7994,14 @@
       <comment>SupplBottomRtHalfBrac</comment>
       <string>o\u002E25o</string>
     </test>
+    <test label="U+2E28">
+      <comment>LftDblParen</comment>
+      <string>o\u002E28o</string>
+    </test>
+    <test label="U+2E29">
+      <comment>RtDblParen</comment>
+      <string>o\u002E29o</string>
+    </test>
     <test label="U+2E3A">
       <comment>TwoEmDash</comment>
       <string>o\u002E3Ao</string>
@@ -7969,6 +8009,10 @@
     <test label="U+2E3B">
       <comment>ThreeEmDash</comment>
       <string>o\u002E3Bo</string>
+    </test>
+    <test label="U+2E3D">
+      <comment>VerticalSixDots</comment>
+      <string>o\u002E3Do</string>
     </test>
     <test label="U+2E3E">
       <comment>WigglyVerticalLine</comment>

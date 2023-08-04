@@ -7650,6 +7650,30 @@
       <comment>RtBtmCurlyBrac</comment>
       <string>\u0023AD</string>
     </test>
+    <test label="U+23D1">
+      <comment>MetricalBreve</comment>
+      <string>\u0023D1</string>
+    </test>
+    <test label="U+23D2">
+      <comment>MetricalLongShort</comment>
+      <string>\u0023D2</string>
+    </test>
+    <test label="U+23D3">
+      <comment>MetricalShortLong</comment>
+      <string>\u0023D3</string>
+    </test>
+    <test label="U+23D4">
+      <comment>MetricalLongShortShort</comment>
+      <string>\u0023D4</string>
+    </test>
+    <test label="U+23D5">
+      <comment>MetricalShortShortLong</comment>
+      <string>\u0023D5</string>
+    </test>
+    <test label="U+23D6">
+      <comment>MetricalShortShort</comment>
+      <string>\u0023D6</string>
+    </test>
     <test label="U+2423">
       <comment>OpnBx</comment>
       <string>\u002423</string>
@@ -7737,6 +7761,14 @@
     <test label="U+27E9">
       <comment>MathRtAngBrac</comment>
       <string>\u0027E9</string>
+    </test>
+    <test label="U+27EA">
+      <comment>MathLftDblAngleBrac</comment>
+      <string>\u0027EA</string>
+    </test>
+    <test label="U+27EB">
+      <comment>MathRtDblAngleBrac</comment>
+      <string>\u0027EB</string>
     </test>
     <test label="U+2980">
       <comment>TripleVertBar</comment>
@@ -7962,6 +7994,14 @@
       <comment>SupplBottomRtHalfBrac</comment>
       <string>\u002E25</string>
     </test>
+    <test label="U+2E28">
+      <comment>LftDblParen</comment>
+      <string>\u002E28</string>
+    </test>
+    <test label="U+2E29">
+      <comment>RtDblParen</comment>
+      <string>\u002E29</string>
+    </test>
     <test label="U+2E3A">
       <comment>TwoEmDash</comment>
       <string>\u002E3A</string>
@@ -7969,6 +8009,10 @@
     <test label="U+2E3B">
       <comment>ThreeEmDash</comment>
       <string>\u002E3B</string>
+    </test>
+    <test label="U+2E3D">
+      <comment>VerticalSixDots</comment>
+      <string>\u002E3D</string>
     </test>
     <test label="U+2E3E">
       <comment>WigglyVerticalLine</comment>

@@ -276,6 +276,7 @@ U+0165" stylename="cv77_1">
   <testgroup label="cv84"/>
   <testgroup label="cv90"/>
   <testgroup label="cv98"/>
+  <testgroup label="onum"/>
   <testgroup label="ss01">
     <test label="U+0061
 U+0067
@@ -993,6 +994,8 @@ U+0165" stylename="cv77_1_smcp_1">
     </test>
   </testgroup>
   <testgroup label="cv84 smcp"/>
+  <testgroup label="onum subs"/>
+  <testgroup label="onum sups"/>
   <testgroup label="smcp ss01">
     <test label="U+0061
 U+0067
@@ -1983,6 +1986,7 @@ U+1EB5" stylename="cv75_1_ss05_1_ss11_1">
       <string>\u000105\u000327</string>
     </test>
   </testgroup>
+  <testgroup label="onum subs sups"/>
   <testgroup label="smcp ss01 ss04"/>
   <testgroup label="smcp ss01 ss05">
     <test label="U+0061

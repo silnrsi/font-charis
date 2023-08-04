@@ -96,6 +96,10 @@
       <style feats="'cv84' 1" name="cv84_1"/>
       <style feats="'cv84' 1, 'smcp' 1" name="cv84_1_smcp_1"/>
       <style lang="mk" name="mk"/>
+      <style feats="'onum' 1" name="onum_1"/>
+      <style feats="'onum' 1, 'subs' 1" name="onum_1_subs_1"/>
+      <style feats="'onum' 1, 'subs' 1, 'sups' 1" name="onum_1_subs_1_sups_1"/>
+      <style feats="'onum' 1, 'sups' 1" name="onum_1_sups_1"/>
       <style feats="'smcp' 1, 'ss01' 1" name="smcp_1_ss01_1"/>
       <style feats="'smcp' 1, 'ss01' 1, 'ss04' 1" name="smcp_1_ss01_1_ss04_1"/>
       <style feats="'smcp' 1, 'ss01' 1, 'ss04' 1, 'ss12' 1" name="smcp_1_ss01_1_ss04_1_ss12_1"/>
@@ -609,6 +613,40 @@ U+1E05D" stylename="cv84_1">
   </testgroup>
   <testgroup label="cv90"/>
   <testgroup label="cv98"/>
+  <testgroup label="onum">
+    <test label="U+0030
+U+0031
+U+0032
+U+0033
+U+0034
+U+0035
+U+0036
+U+0037">
+      <comment>DigitZero DigitOne DigitTwo DigitThree DigitFour DigitFive DigitSix DigitSeven</comment>
+      <string>0\u0003291\u0003292\u0003293\u0003294\u0003295\u0003296\u0003297\u000329</string>
+    </test>
+    <test label="U+0030
+U+0031
+U+0032
+U+0033
+U+0034
+U+0035
+U+0036
+U+0037" stylename="onum_1">
+      <comment>DigitZero DigitOne DigitTwo DigitThree DigitFour DigitFive DigitSix DigitSeven</comment>
+      <string>0\u0003291\u0003292\u0003293\u0003294\u0003295\u0003296\u0003297\u000329</string>
+    </test>
+    <test label="U+0038
+U+0039">
+      <comment>DigitEight DigitNine</comment>
+      <string>8\u0003299\u000329</string>
+    </test>
+    <test label="U+0038
+U+0039" stylename="onum_1">
+      <comment>DigitEight DigitNine</comment>
+      <string>8\u0003299\u000329</string>
+    </test>
+  </testgroup>
   <testgroup label="ss01">
     <test label="U+0061
 U+0067
@@ -1623,6 +1661,74 @@ U+0442
 U+0453" stylename="cv84_1_smcp_1">
       <comment>CySmBe CySmGhe CySmDe CySmPe CySmTe CySmGje</comment>
       <string>\u000431\u000329\u000433\u000329\u000434\u000329\u00043F\u000329\u000442\u000329\u000453\u000329</string>
+    </test>
+  </testgroup>
+  <testgroup label="onum subs">
+    <test label="U+0030
+U+0031
+U+0032
+U+0033
+U+0034
+U+0035
+U+0036
+U+0037">
+      <comment>DigitZero DigitOne DigitTwo DigitThree DigitFour DigitFive DigitSix DigitSeven</comment>
+      <string>0\u0003291\u0003292\u0003293\u0003294\u0003295\u0003296\u0003297\u000329</string>
+    </test>
+    <test label="U+0030
+U+0031
+U+0032
+U+0033
+U+0034
+U+0035
+U+0036
+U+0037" stylename="onum_1_subs_1">
+      <comment>DigitZero DigitOne DigitTwo DigitThree DigitFour DigitFive DigitSix DigitSeven</comment>
+      <string>0\u0003291\u0003292\u0003293\u0003294\u0003295\u0003296\u0003297\u000329</string>
+    </test>
+    <test label="U+0038
+U+0039">
+      <comment>DigitEight DigitNine</comment>
+      <string>8\u0003299\u000329</string>
+    </test>
+    <test label="U+0038
+U+0039" stylename="onum_1_subs_1">
+      <comment>DigitEight DigitNine</comment>
+      <string>8\u0003299\u000329</string>
+    </test>
+  </testgroup>
+  <testgroup label="onum sups">
+    <test label="U+0030
+U+0031
+U+0032
+U+0033
+U+0034
+U+0035
+U+0036
+U+0037">
+      <comment>DigitZero DigitOne DigitTwo DigitThree DigitFour DigitFive DigitSix DigitSeven</comment>
+      <string>0\u0003291\u0003292\u0003293\u0003294\u0003295\u0003296\u0003297\u000329</string>
+    </test>
+    <test label="U+0030
+U+0031
+U+0032
+U+0033
+U+0034
+U+0035
+U+0036
+U+0037" stylename="onum_1_sups_1">
+      <comment>DigitZero DigitOne DigitTwo DigitThree DigitFour DigitFive DigitSix DigitSeven</comment>
+      <string>0\u0003291\u0003292\u0003293\u0003294\u0003295\u0003296\u0003297\u000329</string>
+    </test>
+    <test label="U+0038
+U+0039">
+      <comment>DigitEight DigitNine</comment>
+      <string>8\u0003299\u000329</string>
+    </test>
+    <test label="U+0038
+U+0039" stylename="onum_1_sups_1">
+      <comment>DigitEight DigitNine</comment>
+      <string>8\u0003299\u000329</string>
     </test>
   </testgroup>
   <testgroup label="smcp ss01">
@@ -2719,6 +2825,40 @@ U+1EB5" stylename="cv75_1_ss05_1_ss11_1">
     <test label="U+0105" stylename="cv76_1_ss05_1_ss11_1">
       <comment>LtnSmAOgonek</comment>
       <string>\u000105\u000329</string>
+    </test>
+  </testgroup>
+  <testgroup label="onum subs sups">
+    <test label="U+0030
+U+0031
+U+0032
+U+0033
+U+0034
+U+0035
+U+0036
+U+0037">
+      <comment>DigitZero DigitOne DigitTwo DigitThree DigitFour DigitFive DigitSix DigitSeven</comment>
+      <string>0\u0003291\u0003292\u0003293\u0003294\u0003295\u0003296\u0003297\u000329</string>
+    </test>
+    <test label="U+0030
+U+0031
+U+0032
+U+0033
+U+0034
+U+0035
+U+0036
+U+0037" stylename="onum_1_subs_1_sups_1">
+      <comment>DigitZero DigitOne DigitTwo DigitThree DigitFour DigitFive DigitSix DigitSeven</comment>
+      <string>0\u0003291\u0003292\u0003293\u0003294\u0003295\u0003296\u0003297\u000329</string>
+    </test>
+    <test label="U+0038
+U+0039">
+      <comment>DigitEight DigitNine</comment>
+      <string>8\u0003299\u000329</string>
+    </test>
+    <test label="U+0038
+U+0039" stylename="onum_1_subs_1_sups_1">
+      <comment>DigitEight DigitNine</comment>
+      <string>8\u0003299\u000329</string>
     </test>
   </testgroup>
   <testgroup label="smcp ss01 ss04">
