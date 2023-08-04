@@ -52,5 +52,25 @@
 \setTestFont[features="+onum"]
 \proof[size="18pt"]{0+0−0÷0×0±0<0>0≤0≥0=0≠0≈0∞0#0\%0‰0°0√0}
 
+\setTestFont[features=""]
+\proof[size="18pt"]{October 15th, 1953–a good day for me! Mobile +254 376 958 577 Home +1 972 296-6145 ~~Good-bye, friend Cal, Saturday, 4 Aug 2018 at 14:28~~Psalm 116:15~~ }
+\setTestFont[features=""]
+\proof[size="18pt"]{NN0NN1NN2NN3NN4NN5NN6NN7NN8NN9NN}
+\setTestFont[features=""]
+\proof[size="18pt"]{OO0OO1OO2OO3OO4OO5OO6OO7OO8OO9OO}
+
+\setTestFont[features="+onum"]
+\proof[size="18pt"]{October 15th, 1953–a good day for me! Mobile +254 376 958 577 Home +1 972 296-6145 ~~Good-bye, friend Cal, Saturday, 4 Aug 2018 at 14:28~~Psalm 116:15~~}
+\setTestFont[features="+onum"]
+\proof[size="18pt"]{NN0NN1NN2NN3NN4NN5NN6NN7NN8NN9NN}
+\setTestFont[features="+onum"]
+\proof[size="18pt"]{OO0OO1OO2OO3OO4OO5OO6OO7OO8OO9OO}
+
+\setTestFont[features="+onum,+smcp"]
+\proof[size="18pt"]{October 15th, 1953–a good day for me! Mobile +254 376 958 577 Home +1 972 296-6145 ~~Good-bye, friend Cal, Saturday, 4 Aug 2018 at 14:28~~Psalm 116:15~~ }
+\setTestFont[features="+onum,+smcp"]
+\proof[size="18pt"]{NN0NN1NN2NN3NN4NN5NN6NN7NN8NN9NN}
+\setTestFont[features="+onum,+smcp"]
+\proof[size="18pt"]{OO0OO1OO2OO3OO4OO5OO6OO7OO8OO9OO}
 
 \end{document}
