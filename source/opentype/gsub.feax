@@ -117,6 +117,20 @@ lookup subs_sub {
     sub @cno_subs by @c_subs;
 } subs_sub;
 
+# Charis & Gentium
+do let f = info("familyName");
+   if f.find("Charis") != -1 or f.find("Gentium") != -1; {
+lookup lnum_sub {
+  lookupflag 0;
+    sub @c_osf by @cno_osf;
+} lnum_sub;
+
+lookup onum_sub {
+  lookupflag 0;
+    sub @cno_osf by @c_osf;
+} onum_sub;
+}
+
 lookup f_sub {
   lookupflag 0;
     sub LtnSmF LtnSmI  by LtnLigSmFSmI;
@@ -789,6 +803,10 @@ feature aalt {
   feature c2sc;
   feature sups;
   feature subs;
+ifinfo(familyName, "Charis|Gentium") {
+  feature lnum; #Charis & Gentium
+  feature onum; #Charis & Gentium
+}
 #  feature liga; #cannot include many-to-one substitutions
 ifinfo(familyName, "Andika") {
   feature cv01; #Andika
@@ -903,6 +921,17 @@ feature sups {
 feature subs {
   lookup subs_sub;
 } subs;
+
+do let f = info("familyName");
+   if f.find("Charis") != -1 or f.find("Gentium") != -1; {
+feature lnum {
+  lookup lnum_sub; #Charis & Gentium
+} lnum;
+
+feature onum {
+  lookup onum_sub; #Charis & Gentium
+} onum;
+}
 
 feature liga {
   lookup f_sub;
