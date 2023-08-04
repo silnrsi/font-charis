@@ -1,0 +1,48 @@
+\begin[class=fontproof]{document}
+\bidi-off
+\setTestFont[size="18pt"]
+
+%%%%% GROUPS
+
+% Latin groups
+\patterngroup[name="latincaps"]{ABCDEFGHIJKLMNOPQRSTUVWXYZ}
+\patterngroup[name="latinlc"]{abcdefghijklmnopqrstuvwxyz}
+\patterngroup[name="latinext"]{ıßÆæŒœØøÐðÞþﬁﬂ}
+\patterngroup[name="latincombcaps"]{ÄÅÀÃÂÁÇÉÊËÈÍÎÏÌÑÖÕÓÔÒŠÜÚÛÙŸÝŽ}
+\patterngroup[name="latincomblc"]{áàâäãåçéèêëíìîïñóòôöõšúùûüÿýž}
+
+% Math
+\patterngroup[name="numerals"]{1234567890}
+\patterngroup[name="supnumsfracs"]{⁄¹²³⁴½¼¾}
+\patterngroup[name="math"]{+−÷×±<>≤≥=≠≈∞#\%‰°√}
+
+% General
+\patterngroup[name="punctuation"]{.,:;!?¿¡…}
+\patterngroup[name="centers"]{-–—÷‐‑­‒―•·‧∙¬~}
+\patterngroup[name="quotes"]{"'“”‘’‚„`}
+\patterngroup[name="barspairs"]{\\/|¦\{\}[]()‹›«»}
+\patterngroup[name="sym"]{µ∂∑∏π∫Ω∆ƒ$¢£¥¤€¶§&@◊†‡©®*^™ªº_␣}
+\patterngroup[name="spacingdiac"]{ˆ˜¯˘˙˚¸˝˛ˇ}
+\patterngroup[name="spaces"]{            }
+
+%%%%% TESTS
+
+\subsection{NUMERALS AND MATH}
+\proof[size="36pt"]{0123456789}
+\pattern[chars="@",reps="group_numerals",format="list"]{0@0@1@2@3@4@5@6@7@8@9@}
+\pi[digits=500]
+\proof[size="18pt"]{0⁄0¹0²0³0⁴0½0¼0¾0}
+\proof[size="18pt"]{8+8−8÷8×8±8<8>8≤8≥8=8≠8≈8∞8#8\%8‰8°8√8}
+
+\subsection{OSF}
+\proof[size="36pt"]{0123456789}
+\setTestFont[features="+onum"]
+\proof[size="36pt"]{0123456789}
+\setTestFont[features=""]
+\proof[size="36pt"]{Year 2023}
+\setTestFont[features="+onum"]
+\proof[size="36pt"]{Year 2023}
+\setTestFont[features="+onum,+smcp"]
+\proof[size="36pt"]{Year 2023}
+
+\end{document}
