@@ -1,4 +1,4 @@
-Shell scripts are often used to call Python scripts with the needed command lines. Some Python scripts lack command line interfaces and use hard-coded values at the start of the file. Such scripts often use files with standardized names. The shell scripts may copy needed input files from their canonical location to the tools folder.
+Shell scripts are often used to call Python scripts with the needed command lines. Some Python scripts lack command line interfaces and use hard-coded values at the start of the file. Such scripts often use files with standardized names. The shell scripts may copy needed input files from their canonical location to the tools folder with the standardized names.
 
 Glpyh classes specified in classes.xml are used in feax where psfmakefea does not generate classes with all the needed glyphs (historically because of differences in processing order between gdl and ot). Some classes and glpyh names (if that seemed more readable than using classes) are hard-coded in feax.
 
@@ -34,6 +34,7 @@ ftml.xsl: xsl used to render fmtl as html in a browser (referenced from ftml fil
 ftml-smith.xsl: xsl used to render ftml in "smith test" generated output (regression testing)
 ftml.dtd: could be used to validate ftml
 
+copy_common.sh: copies shared files from the current repo to the other LCG font repos. user is responsible to not overwrite files. derived from the font-arab-tools abscopySHLfiles.sh file
 
 advance_widths.py
 compare_anchors.py
