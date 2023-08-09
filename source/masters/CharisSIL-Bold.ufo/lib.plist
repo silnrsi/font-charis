@@ -2,13 +2,34 @@
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+  <key>com.github.googlei18n.ufo2ft.featureWriters</key>
+  <array>
+    <dict>
+      <key>class</key>
+      <string>KernFeatureWriter</string>
+    </dict>
+    <dict>
+      <key>class</key>
+      <string>ContextualMarkFeatureWriter</string>
+      <key>module</key>
+      <string>glyphsLib.featureWriters.markFeatureWriter</string>
+    </dict>
+    <dict>
+      <key>class</key>
+      <string>GdefFeatureWriter</string>
+    </dict>
+    <dict>
+      <key>class</key>
+      <string>CursFeatureWriter</string>
+    </dict>
+  </array>
   <key>com.schriftgestaltung.Glyphs.fontUserData</key>
   <dict>
     <key>com.schriftgestaltung.Glyphs.groupsNotInFeature</key>
     <array/>
   </dict>
   <key>com.schriftgestaltung.appVersion</key>
-  <string>3151</string>
+  <string>3208</string>
   <key>com.schriftgestaltung.customParameter.GSFont.DisplayStrings</key>
   <array>
     <string>o/DigitZero.osf/DigitZero.osf/LtnSmO.sc/LtnSmB.sc/LtnSmN.sc/LtnSmH.sc/DigitOne.osf/LtnSmL.sc/LtnSmN.sc/LtnSmH.sc/DigitTwo.osf/LtnSmH.sc/DigitZero.osf/DigitThree.osf/LtnSmN.sc/LtnSmH.sc/DigitOne.osf/LtnSmL.sc/DigitFour.osf/LtnSmH.sc/LtnSmN.sc/LtnSmN.sc/DigitThree.osf/LtnSmH.sc/DigitFive.osf/LtnSmN.sc/DigitSix.osf/DigitSix.osf/LtnSmN.sc/DigitSeven.osf/LtnSmN.sc/DigitEight.osf/DigitEight.osf/LtnSmN.sc/LtnSmN.sc/DigitNine.osf/DigitNine.osf/DigitSix.osf/LtnSmN.sc 
