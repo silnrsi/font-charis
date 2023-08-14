@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="MathLftAngBrac" format="2">
-  <advance width="1024"/>
+  <advance width="924"/>
   <unicode hex="27E8"/>
   <outline>
-    <component base="LftPtngAngBrac"/>
+    <contour>
+      <point x="850" y="-291" type="line"/>
+      <point x="850" y="-64" type="line"/>
+      <point x="207" y="664" type="line"/>
+      <point x="207" y="512" type="line"/>
+      <point x="850" y="1239" type="line"/>
+      <point x="850" y="1466" type="line"/>
+      <point x="74" y="588" type="line"/>
+    </contour>
   </outline>
   <lib>
     <dict>
