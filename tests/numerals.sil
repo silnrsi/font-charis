@@ -38,35 +38,36 @@
 \setTestFont[features="+onum,+smcp"]
 \proof[size="36pt"]{Year 2023}
 
+\setTestFont[features=""]{Default glyphs}
+\pattern[chars="@",reps="group_numerals",format="list"]{0@0@1@2@3@4@5@6@7@8@9@}
+\setTestFont[features=""]
+\pi[digits=500]
+\setTestFont[features=""]
+\proof[size="18pt"]{0+0−0÷0×0±0<0>0≤0≥0=0≠0≈0∞0#0\%0‰0°0√0}
+
+\setTestFont[features=""]{Default glyphs}
+\proof[size="18pt"]{October 15th, 1953–a good day for me! Mobile +254 376 958 577, Home +1 972 296-6145 ~Good-bye, friend Cal, Saturday, 4 Aug 2018 at 14:28. Psalm 116:15~ Nearly 260 yrs ago Capt Cook set sail in 1768 (on Aug 24th, in fact) once again, dialing +5 831 945 5264 at 22:40. He reached -16.498019° S, -151.759428° W before landing.}
+
 \setTestFont[features="+onum"]
 \pattern[chars="@",reps="group_numerals",format="list"]{0@0@1@2@3@4@5@6@7@8@9@}
 \setTestFont[features="+onum"]
-\pi[digits=400]
+\pi[digits=500]
 \setTestFont[features="+onum"]
 \proof[size="18pt"]{0+0−0÷0×0±0<0>0≤0≥0=0≠0≈0∞0#0\%0‰0°0√0}
 
 \setTestFont[features="+onum"]
-\proof[size="18pt"]{October 15th, 1953–a good day for me! Mobile +254 376 958 577, Home +1 972 296-6145 ~Good-bye, friend Cal, Saturday, 4 Aug 2018 at 14:28. Psalm 116:15~ Nearly 260 yrs ago Capt Cook set sail in 1768 (on Aug 24th, in fact) once again, dialing +5 839 945 5264 at 22:40. He reached -16.498019° S, -151.759429° W before landing.}
+\proof[size="18pt"]{October 15th, 1953–a good day for me! Mobile +254 376 958 577, Home +1 972 296-6145 ~Good-bye, friend Cal, Saturday, 4 Aug 2018 at 14:28. Psalm 116:15~ Nearly 260 yrs ago Capt Cook set sail in 1768 (on Aug 24th, in fact) once again, dialing +5 839 945 5264 at 22:40. He reached -16.498019° S, -151.759428° W before landing.}
 \setTestFont[features="+onum"]
 \proof[size="18pt"]{nn0nn1nn2nn3nn4nn5nn6nn7nn8nn9nn}
 \proof[size="18pt"]{oo0oo1oo2oo3oo4oo5oo6oo7oo8oo9oo}
 \proof[size="18pt"]{hh0hh1hh2hh3hh4hh5hh6hh7hh8hh9hh}
 
 \setTestFont[features="+onum,+smcp"]
-\proof[size="18pt"]{October 15th, 1953–a good day for me! Mobile +254 376 958 577, Home +1 972 296-6145 ~Good-bye, friend Cal, Saturday, 4 Aug 2018 at 14:28. Psalm 116:15~ Nearly 260 yrs ago Capt Cook set sail in 1768 (on Aug 24th, in fact) once again, dialing +5 839 945 5264 at 22:40. He reached -16.498019° S, -151.759429° W before landing.}
+\proof[size="18pt"]{October 15th, 1953–a good day for me! Mobile +254 376 958 577, Home +1 972 296-6145 ~Good-bye, friend Cal, Saturday, 4 Aug 2018 at 14:28. Psalm 116:15~ Nearly 260 yrs ago Capt Cook set sail in 1768 (on Aug 24th, in fact) once again, dialing +5 831 945 5264 at 22:40. He reached -16.498019° S, -151.759428° W before landing.}
 \setTestFont[features="+onum,+smcp"]
 \proof[size="18pt"]{nn0nn1nn2nn3nn4nn5nn6nn7nn8nn9nn}
 \proof[size="18pt"]{oo0oo1oo2oo3oo4oo5oo6oo7oo8oo9oo}
 \proof[size="18pt"]{hh0hh1hh2hh3hh4hh5hh6hh7hh8hh9hh}
 
-\setTestFont[features=""]{Default glyphs}
-\pattern[chars="@",reps="group_numerals",format="list"]{0@0@1@2@3@4@5@6@7@8@9@}
-\setTestFont[features=""]
-\pi[digits=400]
-\setTestFont[features=""]
-\proof[size="18pt"]{0+0−0÷0×0±0<0>0≤0≥0=0≠0≈0∞0#0\%0‰0°0√0}
-
-\setTestFont[features=""]{Default glyphs}
-\proof[size="18pt"]{October 15th, 1953–a good day for me! Mobile +254 376 958 577, Home +1 972 296-6145 ~Good-bye, friend Cal, Saturday, 4 Aug 2018 at 14:28. Psalm 116:15~ Nearly 260 yrs ago Capt Cook set sail in 1768 (on Aug 24th, in fact) once again, dialing +5 839 945 5264 at 22:40. He reached -16.498019° S, -151.759429° W before landing.}
 
 \end{document}
