@@ -1,6 +1,8 @@
 #!/bin/bash
 
-# This script copies common files between LCG font project repos.
+# This script copies files that are common between Charis, Gentium, Andika, and
+# Doulos font project repos to the related project repos.
+# Derived from tools/copycommon-shl in the font-arab-tools repo.
 
 # Copyright (c) 2023 SIL International  (https://www.sil.org)
 # Released under the MIT License (http://opensource.org/licenses/MIT)
@@ -9,24 +11,7 @@
 #   Related project repo clones are all siblings in the file tree.
 #   Current working directory is the root folder of one of the related project repo clones
 
-set -e
-
-# Allow a -q to suppress most output
-
-verbose=' -v '
-while getopts 'qh' opt; do
-  case "$opt" in
-    q)
-      verbose=
-      ;;
-
-    ?|h)
-      echo "Usage: $(basename $0) [-q]"
-      exit 1
-      ;;
-  esac
-done
-shift "$(($OPTIND -1))"
+## Configuration:
 
 # Relative path to all repo clones of related projects:
 
@@ -53,19 +38,42 @@ files=(
     tools/psfgenftml.py
     tools/ftml.xsl
     tools/ftml-smith.xsl
-    tools/copy_common.sh
+    tools/copycommon
 	tools/composer/glyph_data_to_gsi.py
 	tools/composer/composer.pl
 	tools/composer/gsi_dfltvars.xml
 	tools/composer/updateTTfeatnames.py
 )
 
+#-----------------------------------------------------
+###### No user-servicable parts below this point #####
+#-----------------------------------------------------
+
+set -e
+
+# Allow a -q to suppress most output
+
+verbose=' -v '
+while getopts 'qh' opt; do
+  case "$opt" in
+    q)
+      verbose=
+      ;;
+
+    ?|h)
+      echo "Usage: $(basename $0) [-q]"
+      exit 1
+      ;;
+  esac
+done
+shift "$(($OPTIND -1))"
+
 # Make sure current working directory is the root one of the above repos
 me=$(basename `pwd`)
 if [[ ! " ${repos[@]} " =~ " ../$me " ]]; then
-    echo "Please cd to root of the repo to use" $(basename "$0")
-#    echo "then use ./tools/nameofscript.sh"
-    echo "then use ./tools/copy_common.sh"
+    scriptname=$(basename "$0")
+    echo "Please cd to root of the repo to use the $scriptname script."
+    echo "then use: tools/$scriptname"
     exit 2  
 fi
 
