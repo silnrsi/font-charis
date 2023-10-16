@@ -1,5 +1,5 @@
 
-This font supports over 2,400 characters from [The Unicode Standard](https://unicode.org/) as well as a number of [Private Use Area (PUA)](https://scripts.sil.org/SILPUAassignments) characters. In total, over 3,800 glyphs are included, supporting stylistic alternates for a number of characters as well as a large number of ligated sequences (e.g., contour tone letters used in phonetic transcription of tonal languages). 
+This font supports over 2,400 characters from [The Unicode Standard](https://unicode.org/) as well as a number of [Private Use Area (PUA)](https://github.com/silnrsi/silpua) characters. In total, over 3,800 glyphs are included, supporting stylistic alternates for a number of characters as well as a large number of ligated sequences (e.g., contour tone letters used in phonetic transcription of tonal languages). 
 
 ## Supported characters
 
