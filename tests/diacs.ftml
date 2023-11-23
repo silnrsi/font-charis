@@ -2414,31 +2414,31 @@
     </test>
     <test label="U+035C">
       <comment>CombDblBreveBlw</comment>
-      <string>\u0025CC\u00035C\u000329</string>
+      <string>\u0025CC\u00035C\u000329 \u0025CC\u00035C\u00030D</string>
     </test>
     <test label="U+035D">
       <comment>CombDblBreve</comment>
-      <string>\u0025CC\u00035D\u00030D</string>
+      <string>\u0025CC\u00035D\u000329 \u0025CC\u00035D\u00030D</string>
     </test>
     <test label="U+035E">
       <comment>CombDblMacron</comment>
-      <string>\u0025CC\u00035E\u00030D</string>
+      <string>\u0025CC\u00035E\u000329 \u0025CC\u00035E\u00030D</string>
     </test>
     <test label="U+035F">
       <comment>CombDblMacronBlw</comment>
-      <string>\u0025CC\u00035F\u000329</string>
+      <string>\u0025CC\u00035F\u000329 \u0025CC\u00035F\u00030D</string>
     </test>
     <test label="U+0360">
       <comment>CombDblTilde</comment>
-      <string>\u0025CC\u000360\u00030D</string>
+      <string>\u0025CC\u000360\u000329 \u0025CC\u000360\u00030D</string>
     </test>
     <test label="U+0361">
       <comment>CombDblInvBreve</comment>
-      <string>\u0025CC\u000361\u00030D</string>
+      <string>\u0025CC\u000361\u000329 \u0025CC\u000361\u00030D</string>
     </test>
     <test label="U+0362">
       <comment>CombDblRtArrwBlw</comment>
-      <string>\u0025CC\u000362\u000329</string>
+      <string>\u0025CC\u000362\u000329 \u0025CC\u000362\u00030D</string>
     </test>
     <test label="U+0393">
       <comment>GrCapGamma</comment>
@@ -4350,11 +4350,11 @@
     </test>
     <test label="U+1DCD">
       <comment>CombDblCircum</comment>
-      <string>\u0025CC\u001DCD\u00030D</string>
+      <string>\u0025CC\u001DCD\u000329 \u0025CC\u001DCD\u00030D</string>
     </test>
     <test label="U+1DFC">
       <comment>CombDblInvBreveBlw</comment>
-      <string>\u0025CC\u001DFC\u000329</string>
+      <string>\u0025CC\u001DFC\u000329 \u0025CC\u001DFC\u00030D</string>
     </test>
     <test label="U+1E00">
       <comment>LtnCapARingBlw</comment>
@@ -6546,7 +6546,7 @@
     </test>
     <test label="U+F17A">
       <comment>CombDblDiaer</comment>
-      <string>\u00F17A\u00030D</string>
+      <string>\u00F17A\u000329 \u00F17A\u00030D</string>
     </test>
     <test label="U+F180">
       <comment>LtnSupSmMDep</comment>

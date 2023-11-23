@@ -474,6 +474,11 @@ lookup hstrk_sub {
 # Andika
 do let f = info("familyName");
    if f.find("Andika") != -1; {
+lookup nobar_sub {
+  lookupflag 0;
+    sub @cno_nobar by @c_nobar;
+} nobar_sub;
+
 lookup itl_sub {
   lookupflag 0;
     sub @cno_TailI by @c_TailI;
@@ -822,6 +827,7 @@ ifinfo(familyName, "Andika") {
   feature cv25;
   feature cv28;
 ifinfo(familyName, "Andika") {
+  feature cv30; #Andika
   feature cv31; #Andika
   feature cv34; #Andika
   feature cv35; #Andika
@@ -1205,6 +1211,29 @@ feature cv28 {
 # Andika
 do let f = info("familyName");
    if f.find("Andika") != -1; {
+feature cv30 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "No bar I";  # English US
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Alternate form of capital I with no bars";  # English US
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "none";  # English US
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "No bar";  # English US
+      };
+  };
+
+  lookup nobar_sub;
+} cv30;
+
 feature cv31 {
 
   cvParameters {
