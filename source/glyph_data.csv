@@ -285,6 +285,7 @@ LtnSmAOgonek,aogonek,1000.62,1000.62,,ss01,,,0105
 LtnSmAOgonek.RetroHook,aogonek.RetroHook,1000.63,1000.63,cv76,cv76,,0105,0105
 LtnSmARetrHook,uni1D8F,1000.64,1000.64,,,,,
 LtnSmAStrk,uni2C65,1000.75,1000.75,,ss01,,,2C65
+LtnSmACirc,uni24D0,1000.9,1000.9,,,,,
 LtnSmATilde.2StorySItal,atilde.2StorySItal,1001.34,1001.34,ss05,ss05,,00E3,00E3
 LtnSmADotBlw.2StorySItal,uni1EA1.2StorySItal,1001.471,1001.471,ss05,ss05,,1EA1,1EA1
 LtnSmAADigraph,uniA733,1002.1,1002.1,,,,,
@@ -422,6 +423,7 @@ LtnCapARingBlw,uni1E00,1050.473,1050.473,,,,,
 LtnCapAOgonek,Aogonek,1050.62,1050.62,,,,,
 LtnCapAOgonek.RetroHook,Aogonek.RetroHook,1050.63,1050.63,cv76,cv76,,0104,0104
 LtnCapAStrk,uni023A,1050.75,1050.75,,,,,
+LtnCapACirc,uni24B6,1050.9,1050.9,,,,,
 LtnCapTurnedA,uni2C6F,1051.1,1051.1,,,,,
 LtnCapAODigraph,uniA734,1052.1,1052.1,,,,,
 LtnCapAADigraph,uniA732,1053.1,1053.1,,,,,
@@ -1964,9 +1966,11 @@ SmRomNumEight,uni2177,3112.1,3112.1,,,,,
 LtnSmTurnedV,uni028C,3120.1,3120.1,,,,,
 LtnSupSmTurnedV,uni1DBA,3120.22,3120.22,,,,,
 LtnSmRamsHorn.LrgBowl,uni0264.LrgBowl,3130.1,3130.1,cv25,cv25,1,0264,0264
+LtnSupSmRamsHorn.LrgBowl,u10791.LrgBowl,3130.22,3130.22,cv25,cv25,1,10791,10791
 LtnSmRamsHorn,uni0264,3131.1,3131.1,cv25,cv25,0,,
-LtnSupSmRamsHorn,u10791,3131.22,3131.22,,,,,
+LtnSupSmRamsHorn,u10791,3131.22,3131.22,cv25,cv25,0,,
 LtnSmRamsHorn.GammaStyle,uni0264.GammaStyle,3132.1,3132.1,cv25,cv25,2,0264,0264
+LtnSupSmRamsHorn.GammaStyle,u10791.GammaStyle,3132.22,3132.22,cv25,cv25,2,10791,10791
 LtnSmGamma,uni0263,3133.1,3133.1,,,,,
 ModSmGamma,uni02E0,3133.23,3133.23,,,,,
 GrSmGamma,gamma,3140.1,3140.1,,,,,
@@ -2340,9 +2344,11 @@ ModLowColon.Wide,uniA789.Wide,5300.31,5300.31,cv71,cv71,,A789,A789
 GrQstnMrk,uni037E,5310.16,5310.16,,,,,
 ModTurnedComma,uni02BB,5330.11,5330.11,,,,,
 CombTrndCommaAbv,uni0312,5330.24,5330.24,,,,,
+CombTrndCommaAbv.Lrg,uni0312.Lrg,5330.25,5330.25,cv70,cv70,,0312,0312
 SglHighRev9QuotMrk,quotereversed,5335.1,5335.1,,,,,
 ModRevComma,uni02BD,5335.23,5335.23,,,,,
 CombRevCommaAbv,uni0314,5335.24,5335.24,,,,,
+CombRevCommaAbv.Lrg,uni02314.Lrg,5335.25,5335.25,cv70,cv70,,0314,0314
 ModApos,uni02BC,5340.23,5340.23,,,,,
 ModApos.Lrg,uni02BC.Lrg,5340.24,5340.24,cv70,cv70,,02BC,02BC
 DblHighRev9QuotMrk,uni201F,5360.1,5360.1,,,,,
@@ -2849,6 +2855,7 @@ LftRtArrw,arrowboth,8084.1,8084.1,,,,,
 CombLftRtArrwBlw,uni034D,8085.1,8085.1,,,,,
 LftArrwStrk,uni219A,8086.1,8086.1,,,,,
 RtArrwStrk,uni219B,8087.1,8087.1,,,,,
+LftRtArrwStrk,uni21AE,8088.1,8088.1,,,,,
 DwnDblArrw,arrowdbldown,8090.1,8090.1,,,,,
 UpDblArrw,arrowdblup,8091.1,8091.1,,,,,
 UpDwnDblArrw,uni21D5,8092.1,8092.1,,,,,
@@ -2872,9 +2879,12 @@ CWTopArrw,uni21B7,8203.1,8203.1,,,,,
 DwnArrwhd,uni2228,8220.1,8220.1,,,,,
 ModDwnArrwhd,uni02C5,8221.1,8221.1,,,,,
 ModLowDwnArrwhd,uni02EF,8222.1,8222.1,,,,,
+NOR,uni22BD,8225.1,8225.1,,,,,
+XOR,uni22BB,8226.1,8226.1,,,,,
 UpArrwhd,uni2227,8230.1,8230.1,,,,,
 ModUpArrwhd,uni02C4,8231.1,8231.1,,,,,
 ModLowUpArrwhd,uni02F0,8232.1,8232.1,,,,,
+NAND,uni22BC,8235.1,8235.1,,,,,
 ModLftArrwhd,uni02C2,8242.1,8242.1,,,,,
 CombLftArrwhdAbv,uni1DFE,8243.1,8243.1,,,,,
 CombLftArrwhdBlw,uni0354,8243.2,8243.2,,,,,
