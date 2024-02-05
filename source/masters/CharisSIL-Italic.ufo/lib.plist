@@ -478,6 +478,7 @@
     <string>LtnSmAOgonek.RetroHook</string>
     <string>LtnSmARetrHook</string>
     <string>LtnSmAStrk</string>
+    <string>LtnSmACirc</string>
     <string>LtnSmATilde.2StorySItal</string>
     <string>LtnSmADotBlw.2StorySItal</string>
     <string>LtnSmAADigraph</string>
@@ -614,6 +615,7 @@
     <string>LtnCapAOgonek</string>
     <string>LtnCapAOgonek.RetroHook</string>
     <string>LtnCapAStrk</string>
+    <string>LtnCapACirc</string>
     <string>LtnCapTurnedA</string>
     <string>LtnCapAODigraph</string>
     <string>LtnCapAADigraph</string>
@@ -2495,9 +2497,11 @@
     <string>ModLowColon.Wide</string>
     <string>ModTurnedComma</string>
     <string>CombTrndCommaAbv</string>
+    <string>CombTrndCommaAbv.Lrg</string>
     <string>SglHighRev9QuotMrk</string>
     <string>ModRevComma</string>
     <string>CombRevCommaAbv</string>
+    <string>CombRevCommaAbv.Lrg</string>
     <string>ModApos</string>
     <string>ModApos.Lrg</string>
     <string>DblHighRev9QuotMrk</string>
@@ -2994,6 +2998,7 @@
     <string>CombLftRtArrwBlw</string>
     <string>LftArrwStrk</string>
     <string>RtArrwStrk</string>
+    <string>LftRtArrwStrk</string>
     <string>DwnDblArrw</string>
     <string>UpDblArrw</string>
     <string>UpDwnDblArrw</string>
@@ -3017,9 +3022,12 @@
     <string>DwnArrwhd</string>
     <string>ModDwnArrwhd</string>
     <string>ModLowDwnArrwhd</string>
+    <string>NOR</string>
+    <string>XOR</string>
     <string>UpArrwhd</string>
     <string>ModUpArrwhd</string>
     <string>ModLowUpArrwhd</string>
+    <string>NAND</string>
     <string>ModLftArrwhd</string>
     <string>CombLftArrwhdAbv</string>
     <string>CombLftArrwhdBlw</string>
@@ -4463,6 +4471,8 @@
     <string>uni0322</string>
     <key>CombRevCommaAbv</key>
     <string>uni0314</string>
+    <key>CombRevCommaAbv.Lrg</key>
+    <string>uni02314.Lrg</string>
     <key>CombRingAbv</key>
     <string>uni030A</string>
     <key>CombRingBlw</key>
@@ -4515,6 +4525,8 @@
     <string>uni1AB4</string>
     <key>CombTrndCommaAbv</key>
     <string>uni0312</string>
+    <key>CombTrndCommaAbv.Lrg</key>
+    <string>uni0312.Lrg</string>
     <key>CombUpArrwBlw</key>
     <string>uni034E</string>
     <key>CombUpTackAbv</key>
@@ -5947,6 +5959,8 @@
     <string>guillemotleft</string>
     <key>LftRtArrw</key>
     <string>arrowboth</string>
+    <key>LftRtArrwStrk</key>
+    <string>uni21AE</string>
     <key>LftRtDblArrw</key>
     <string>arrowdblboth</string>
     <key>LftSglQuotMrk</key>
@@ -6051,6 +6065,8 @@
     <string>uni1EB4.VN</string>
     <key>LtnCapACaron</key>
     <string>uni01CD</string>
+    <key>LtnCapACirc</key>
+    <string>uni24B6</string>
     <key>LtnCapACircum</key>
     <string>Acircumflex</string>
     <key>LtnCapACircumAcute</key>
@@ -7311,6 +7327,8 @@
     <string>uni01CE.SngStory.sc</string>
     <key>LtnSmACaron.sc</key>
     <string>uni01CE.sc</string>
+    <key>LtnSmACirc</key>
+    <string>uni24D0</string>
     <key>LtnSmACircum</key>
     <string>acircumflex</string>
     <key>LtnSmACircum.2StorySItal</key>
@@ -11023,12 +11041,16 @@
     <string>uni266D</string>
     <key>MusicSharpSign</key>
     <string>uni266F</string>
+    <key>NAND</key>
+    <string>uni22BC</string>
     <key>NAryProduct</key>
     <string>product</string>
     <key>NArySummation</key>
     <string>summation</string>
     <key>NEArrw</key>
     <string>uni2197</string>
+    <key>NOR</key>
+    <string>uni22BD</string>
     <key>NWArrw</key>
     <string>uni2196</string>
     <key>NairaSgn</key>
@@ -11813,6 +11835,8 @@
     <string>uni20A9</string>
     <key>WordJoiner</key>
     <string>uni2060</string>
+    <key>XOR</key>
+    <string>uni22BB</string>
     <key>YenSgn</key>
     <string>yen</string>
     <key>ZeroWidthJoiner</key>

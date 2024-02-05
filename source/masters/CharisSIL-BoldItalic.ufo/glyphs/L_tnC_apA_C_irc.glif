@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnCapACirc" format="2">
+  <advance width="1464"/>
+  <unicode hex="24B6"/>
+  <anchor x="600" y="0" name="H"/>
+  <anchor x="591" y="-100" name="L"/>
+  <anchor x="1254" y="0" name="O"/>
+  <anchor x="879" y="1500" name="U"/>
+  <outline>
+    <component base="LtnCapA"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.99,0.62,0.11,1</string>
+    </dict>
+  </lib>
+</glyph>
