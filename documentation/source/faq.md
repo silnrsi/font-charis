@@ -18,7 +18,7 @@ Many questions can be answered by consulting the following FAQ pages. Here are a
     - *Why don’t my diacritics position properly?*
     - *Why is the line spacing so much looser that other fonts?*
 
-- [The SIL Open Font License (OFL-FAQ)](https://scripts.sil.org/OFL-FAQ_web)
+- [The SIL Open Font License (OFL-FAQ)](https://openfontlicense.org/ofl-faq)
     - *Can I use this font for...?*
     - *Can I modify the font and then include it in...*
     - *If I use the font on a web page do I have to include an acknowledgement?*
@@ -32,7 +32,7 @@ Although Charis SIL includes some Greek characters, it is not intended to provid
 
 #### *Will you add full Greek script support?*
 
-We have no plans to do that, however the [OFL licensing](https://scripts.sil.org/OFL_web) allows anyone to add Greek support and freely distribute the font to others. It is even possible to [contribute that work back to the project](developer.md) and share it with others.
+We have no plans to do that, however the [OFL licensing](https://openfontlicense.org_web) allows anyone to add Greek support and freely distribute the font to others. It is even possible to [contribute that work back to the project](developer.md) and share it with others.
 
 #### *Isn’t Charis SIL just a copy of Charter?*
 
