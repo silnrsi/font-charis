@@ -44,7 +44,7 @@ for dspace in ('Roman', 'Italic'):
                     ),
                 typetuner = typetuner('source/typetuner/feat_all.xml'),
                 woff = woff('web/${DS:FILENAME_BASE}.woff',
-                    metadata=f'../source/{familyname}-WOFF-metadata.xml'),
+                    metadata=f'../source/charissil-WOFF-metadata.xml'),
                 version = VERSION,
 #                pdf=fret(params = '-r -oi')
                 )
