@@ -2,6 +2,7 @@
 <glyph name="LtnSmJStrk.Dotless" format="2">
   <advance width="598"/>
   <anchor x="125" y="-500" name="L"/>
+  <anchor x="348" y="-377" name="O"/>
   <anchor x="598" y="1000" name="R"/>
   <anchor x="323" y="1100" name="U"/>
   <outline>
@@ -10,7 +11,7 @@
   <lib>
     <dict>
       <key>public.markColor</key>
-      <string>0.18,0.16,0.78,1</string>
+      <string>0.5,0.09,0.79,1</string>
     </dict>
   </lib>
 </glyph>

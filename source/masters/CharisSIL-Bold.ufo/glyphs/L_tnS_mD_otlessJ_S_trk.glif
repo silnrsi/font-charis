@@ -3,6 +3,7 @@
   <advance width="664"/>
   <unicode hex="025F"/>
   <anchor x="136" y="-500" name="L"/>
+  <anchor x="361" y="-383" name="O"/>
   <anchor x="664" y="1000" name="R"/>
   <anchor x="357" y="1100" name="U"/>
   <outline>
@@ -19,9 +20,9 @@
       <point x="27" y="573" type="line"/>
       <point x="27" y="444" type="line"/>
       <point x="205" y="444" type="line"/>
-      <point x="205" y="-10" type="line"/>
-      <point x="205" y="-10"/>
-      <point x="211" y="-279"/>
+      <point x="205" y="-10" type="line" smooth="yes"/>
+      <point x="205" y="-134"/>
+      <point x="198" y="-301"/>
       <point x="147" y="-383" type="curve"/>
       <point x="-53" y="-180" type="line"/>
       <point x="-123" y="-186"/>

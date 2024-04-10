@@ -2,6 +2,7 @@
 <glyph name="LtnSmJ.Dotless" format="2">
   <advance width="664"/>
   <anchor x="146" y="-500" name="L"/>
+  <anchor x="361" y="-383" name="O"/>
   <anchor x="331" y="1100" name="U"/>
   <outline>
     <contour>
@@ -11,9 +12,9 @@
       <point x="59" y="922" type="line"/>
       <point x="59" y="838" type="line"/>
       <point x="205" y="838" type="line"/>
-      <point x="205" y="-10" type="line"/>
-      <point x="205" y="-10"/>
-      <point x="211" y="-279"/>
+      <point x="205" y="-10" type="line" smooth="yes"/>
+      <point x="205" y="-134"/>
+      <point x="198" y="-301"/>
       <point x="147" y="-383" type="curve"/>
       <point x="-53" y="-180" type="line"/>
       <point x="-123" y="-186"/>
