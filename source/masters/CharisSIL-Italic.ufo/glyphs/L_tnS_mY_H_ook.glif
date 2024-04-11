@@ -2,6 +2,7 @@
 <glyph name="LtnSmYHook" format="2">
   <advance width="1081"/>
   <anchor x="682" y="-100" name="L"/>
+  <anchor x="323" y="-332" name="O"/>
   <anchor x="593" y="1100" name="U"/>
   <outline>
     <component base="LtnSmYHook.RtHook"/>
@@ -9,7 +10,7 @@
   <lib>
     <dict>
       <key>public.markColor</key>
-      <string>0.18,0.16,0.78,1</string>
+      <string>0.5,0.09,0.79,1</string>
     </dict>
   </lib>
 </glyph>
