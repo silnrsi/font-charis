@@ -87,6 +87,64 @@
       <integer>-500</integer>
     </dict>
   </dict>
+  <key>org.sil.lcg.bridgeLevels</key>
+  <dict>
+    <key>belowhigh</key>
+    <dict>
+      <key>LAnchorMax</key>
+      <integer>0</integer>
+      <key>LAnchorMin</key>
+      <integer>-100</integer>
+      <key>shiftX</key>
+      <integer>55</integer>
+      <key>shiftY</key>
+      <integer>375</integer>
+    </dict>
+    <key>belowlow</key>
+    <dict>
+      <key>LAnchorMax</key>
+      <integer>-101</integer>
+      <key>LAnchorMin</key>
+      <integer>-999</integer>
+      <key>shiftX</key>
+      <integer>0</integer>
+      <key>shiftY</key>
+      <integer>0</integer>
+    </dict>
+    <key>high</key>
+    <dict>
+      <key>UAnchorMax</key>
+      <integer>2999</integer>
+      <key>UAnchorMin</key>
+      <integer>1501</integer>
+      <key>shiftX</key>
+      <integer>0</integer>
+      <key>shiftY</key>
+      <integer>0</integer>
+    </dict>
+    <key>low</key>
+    <dict>
+      <key>UAnchorMax</key>
+      <integer>1100</integer>
+      <key>UAnchorMin</key>
+      <integer>900</integer>
+      <key>shiftX</key>
+      <integer>-80</integer>
+      <key>shiftY</key>
+      <integer>-438</integer>
+    </dict>
+    <key>mid</key>
+    <dict>
+      <key>UAnchorMax</key>
+      <integer>1500</integer>
+      <key>UAnchorMin</key>
+      <integer>1101</integer>
+      <key>shiftX</key>
+      <integer>-14</integer>
+      <key>shiftY</key>
+      <integer>-100</integer>
+    </dict>
+  </dict>
   <key>org.sil.lcg.toneLetters</key>
   <dict>
     <key>contourWidth</key>
