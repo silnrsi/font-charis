@@ -2,8 +2,8 @@
 <glyph name="CombDblDiaer" format="2">
   <unicode hex="F17A"/>
   <anchor x="0" y="-100" name="L"/>
-  <anchor x="0" y="1500" name="U"/>
+  <anchor x="0" y="1940" name="U"/>
   <outline>
-    <component base="CombDiaer" xOffset="598"/>
+    <component base="CombDiaer" xOffset="598" yOffset="395"/>
   </outline>
 </glyph>
