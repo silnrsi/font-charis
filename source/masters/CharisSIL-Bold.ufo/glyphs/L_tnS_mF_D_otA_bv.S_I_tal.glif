@@ -3,15 +3,15 @@
   <advance width="711"/>
   <anchor x="451" y="0" name="H"/>
   <anchor x="305" y="-100" name="L"/>
-  <anchor x="537" y="1840" name="U"/>
+  <anchor x="537" y="1980" name="U"/>
   <outline>
     <component base="LtnSmF.SItal"/>
-    <component base="CombDotAbv" xOffset="1135" yOffset="340"/>
+    <component base="CombDotAbv" xOffset="1135" yOffset="480"/>
   </outline>
   <lib>
     <dict>
       <key>public.markColor</key>
-      <string>0.18,0.16,0.78,1</string>
+      <string>0.5,0.09,0.79,1</string>
     </dict>
   </lib>
 </glyph>
