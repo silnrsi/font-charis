@@ -23,6 +23,42 @@ lookup cursive_R {
     pos cursive @R_ @R;
 } cursive_R;
 
+# TODO: add glyphs to the below classes
+@c_low_base = [LtnSmA LtnSmE LtnSmI LtnSmO LtnSmU];
+@c_dsc_base = [LtnSmG];
+
+@c_abv_dbl_diac = [CombDblInvBreve CombDblBreve CombDblCircum CombDblTilde 
+CombDblMacron CombDblDiaer];
+@c_blw_dbl_diac = [CombDblBreveBlw CombDblMacronBlw CombDblInvBreveBlw CombDblRtArrwBlw];
+
+@c_cgj = [CombGraphemeJoiner];
+
+# TODO: calculate dy values, may need more variables for various contexts
+do 
+    let abv_dy = -250;
+    let blw_dy = -100;
+{
+    lookup dbl_diac_lower { #lower dbl diac over two low glyphs
+      lookupflag 0;
+        pos @c_low_base @c_abv_dbl_diac' <0 $abv_dy 0 0> @c_cgj @_U @c_low_base;
+        pos @c_low_base @c_abv_dbl_diac' <0 $abv_dy 0 0> @c_cgj @_L @c_low_base;
+        pos @c_low_base @c_abv_dbl_diac' <0 $abv_dy 0 0> @c_low_base;
+    } dbl_diac_lower;
+
+    lookup dbl_diac_raise { #lower dbl diac under one or two glyphs with descenders
+      lookupflag 0;
+      # first three lines below are like lookup above and may not be needed
+      # after four lines following them were added
+        pos @c_dsc_base @c_blw_dbl_diac' <0 $blw_dy 0 0> @c_cgj @_U @c_dsc_base;
+        pos @c_dsc_base @c_blw_dbl_diac' <0 $blw_dy 0 0> @c_cgj @_L @c_dsc_base;
+        pos @c_dsc_base @c_blw_dbl_diac' <0 $blw_dy 0 0> @c_dsc_base;
+        pos @c_dsc_base @c_blw_dbl_diac' <0 $blw_dy 0 0>;
+        pos @c_blw_dbl_diac' <0 $blw_dy 0 0> @c_cgj @_U @c_dsc_base;
+        pos @c_blw_dbl_diac' <0 $blw_dy 0 0> @c_cgj @_L @c_dsc_base;
+        pos @c_blw_dbl_diac' <0 $blw_dy 0 0> @c_dsc_base;
+    } dbl_diac_raise;
+}
+
 # provided by _gsub.fea
 # languagesystem DFLT dflt;
 # languagesystem cyrl dflt;
@@ -37,6 +73,8 @@ feature mark {
   lookup base_mark_O;
   lookup base_mark_H;
   lookup cursive_R;
+  lookup dbl_diac_lower;
+  lookup dbl_diac_raise;
 } mark;
 
 @cMarkFilter_U = [@U_MarkBase @_U];
