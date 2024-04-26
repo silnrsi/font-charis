@@ -74,6 +74,8 @@ class Font(object):
         self.unicodes = OrderedDict()
         self.g_classes = OrderedDict()
         self.g_variants = OrderedDict()
+        self.u_levels = {}
+        self.l_levels = {}
 
     def read_font(self, ufo_nm):
         self.file_nm = ufo_nm
@@ -85,11 +87,24 @@ class Font(object):
             unicode_lst = ufo_g['unicode']
             if unicode_lst:
                 # store primary encoding, allow for double encoding
-                self.unicodes.setdefault(unicode_lst[0].hex, []).append(glyph)
+                usv_str = unicode_lst[0].hex
+                self.unicodes.setdefault(usv_str, []).append(glyph)
             if 'anchor' in ufo_g:
                 for anchor in ufo_g['anchor']:
                     a_attr = anchor.element.attrib
-                    glyph.add_anchor(a_attr['name'], int(float(a_attr['x'])), int(float(a_attr['y'])))
+                    a_nm, a_x, a_y = a_attr['name'], int(float(a_attr['x'])), int(float(a_attr['y']))
+                    glyph.add_anchor(a_nm, a_x, a_y)
+                    if a_nm == "U":
+                        self.u_levels.setdefault(a_y, []).append(glyph)
+                    if a_nm == "L":
+                        self.l_levels.setdefault(a_y, []).append(glyph)
+
+        lib_plist = ufo_f.lib.getval("org.sil.lcg.bridgeLevels")
+        self.level_ranges = {}
+        for k in ('high', 'mid', 'low'):
+            self.level_ranges[k] = (lib_plist[k]['UAnchorMin'], lib_plist[k]['UAnchorMax'])
+        for k in ('belowhigh', 'belowlow'):
+            self.level_ranges[k] = (lib_plist[k]['LAnchorMin'], lib_plist[k]['LAnchorMax'])
 
     def make_classes(self, class_spec_lst):
         # create multisuffix classes
@@ -183,7 +198,24 @@ class Font(object):
                     for a in glyph_lst[0].anchors:
                         if a == 'U':
                             self.g_classes.setdefault('c_takes_lp_diac', []).append(g_nm)
-        
+
+        # create classes of glyphs for supporting bridging diacrtics
+        # TODO: explain criteria for class membership
+        for level in self.u_levels:
+            if not level >= self.level_ranges['low'][0]: continue
+            for glyph in self.u_levels[level]:
+                if 'L' in glyph.anchors and glyph.anchors['L'][1] <= self.level_ranges['belowhigh'][0]:
+                    if level >= self.level_ranges['low'][0] and level <= self.level_ranges['low'][1]:
+                        self.g_classes.setdefault('c_takes_low_diac',[]).append(glyph.name)
+                    if level >= self.level_ranges['mid'][0] and level <= self.level_ranges['mid'][1]:
+                        self.g_classes.setdefault('c_takes_mid_diac',[]).append(glyph.name)
+        for level in self.l_levels:
+            if not level <= self.level_ranges['belowhigh'][1]: continue
+            for glyph in self.l_levels[level]:
+                if 'U' in glyph.anchors and glyph.anchors['U'][1] >= self.level_ranges['low'][0]:
+                    if level >= self.level_ranges['belowlow'][0] and level <= self.level_ranges['belowlow'][1]:
+                        self.g_classes.setdefault('c_takes_belowlow_diac',[]).append(glyph.name)
+
         # add irregular glyphs to classes not found by the above algorithms
         for cls, g_lst in glyph_class_additions.items():
             # for g in g_lst: assert(not g in self.g_classes[cls])

@@ -24,8 +24,8 @@ lookup cursive_R {
 } cursive_R;
 
 # TODO: add glyphs to the below classes
-@c_low_base = [LtnSmA LtnSmE LtnSmI LtnSmO LtnSmU];
-@c_dsc_base = [LtnSmG];
+# @c_low_base = [LtnSmA LtnSmE LtnSmI LtnSmO LtnSmU];
+# @c_dsc_base = [LtnSmG];
 
 @c_abv_dbl_diac = [CombDblInvBreve CombDblBreve CombDblCircum CombDblTilde 
 CombDblMacron CombDblDiaer];
@@ -35,27 +35,44 @@ CombDblMacron CombDblDiaer];
 
 # TODO: calculate dy values, may need more variables for various contexts
 do 
-    let abv_dy = -250;
-    let blw_dy = -100;
+    let abv_mid_dy = -250;
+    let abv_low_dy = -500;
+    let blw_low_dy = -100;
 {
     lookup dbl_diac_lower { #lower dbl diac over two low glyphs
       lookupflag 0;
-        pos @c_low_base @c_abv_dbl_diac' <0 $abv_dy 0 0> @c_cgj @_U @c_low_base;
-        pos @c_low_base @c_abv_dbl_diac' <0 $abv_dy 0 0> @c_cgj @_L @c_low_base;
-        pos @c_low_base @c_abv_dbl_diac' <0 $abv_dy 0 0> @c_low_base;
+        # pos @c_low_base @c_abv_dbl_diac' <0 $abv_dy 0 0> @c_cgj @_U @c_low_base;
+        # pos @c_low_base @c_abv_dbl_diac' <0 $abv_dy 0 0> @c_cgj @_L @c_low_base;
+        # pos @c_low_base @c_abv_dbl_diac' <0 $abv_dy 0 0> @c_low_base;
+        pos @c_takes_mid_diac @c_abv_dbl_diac' <0 $abv_mid_dy 0 0> @c_cgj @_U @c_takes_mid_diac;
+        pos @c_takes_mid_diac @c_abv_dbl_diac' <0 $abv_mid_dy 0 0> @c_cgj @_L @c_takes_mid_diac;
+        pos @c_takes_mid_diac @c_abv_dbl_diac' <0 $abv_mid_dy 0 0> @c_takes_mid_diac;
+        pos @c_takes_mid_diac @c_abv_dbl_diac' <0 $abv_mid_dy 0 0> @c_cgj @_U @c_takes_low_diac;
+        pos @c_takes_mid_diac @c_abv_dbl_diac' <0 $abv_mid_dy 0 0> @c_cgj @_L @c_takes_low_diac;
+        pos @c_takes_mid_diac @c_abv_dbl_diac' <0 $abv_mid_dy 0 0> @c_takes_low_diac;
+        pos @c_takes_low_diac @c_abv_dbl_diac' <0 $abv_mid_dy 0 0> @c_cgj @_U @c_takes_mid_diac;
+        pos @c_takes_low_diac @c_abv_dbl_diac' <0 $abv_mid_dy 0 0> @c_cgj @_L @c_takes_mid_diac;
+        pos @c_takes_low_diac @c_abv_dbl_diac' <0 $abv_mid_dy 0 0> @c_takes_mid_diac;
+        pos @c_takes_low_diac @c_abv_dbl_diac' <0 $abv_low_dy 0 0> @c_cgj @_U  @c_takes_low_diac;
+        pos @c_takes_low_diac @c_abv_dbl_diac' <0 $abv_low_dy 0 0> @c_cgj @_L @c_takes_low_diac;
+        pos @c_takes_low_diac @c_abv_dbl_diac' <0 $abv_low_dy 0 0> @c_takes_low_diac;
     } dbl_diac_lower;
 
     lookup dbl_diac_raise { #lower dbl diac under one or two glyphs with descenders
       lookupflag 0;
       # first three lines below are like lookup above and may not be needed
       # after four lines following them were added
-        pos @c_dsc_base @c_blw_dbl_diac' <0 $blw_dy 0 0> @c_cgj @_U @c_dsc_base;
-        pos @c_dsc_base @c_blw_dbl_diac' <0 $blw_dy 0 0> @c_cgj @_L @c_dsc_base;
-        pos @c_dsc_base @c_blw_dbl_diac' <0 $blw_dy 0 0> @c_dsc_base;
-        pos @c_dsc_base @c_blw_dbl_diac' <0 $blw_dy 0 0>;
-        pos @c_blw_dbl_diac' <0 $blw_dy 0 0> @c_cgj @_U @c_dsc_base;
-        pos @c_blw_dbl_diac' <0 $blw_dy 0 0> @c_cgj @_L @c_dsc_base;
-        pos @c_blw_dbl_diac' <0 $blw_dy 0 0> @c_dsc_base;
+        # pos @c_dsc_base @c_blw_dbl_diac' <0 $blw_dy 0 0> @c_cgj @_U @c_dsc_base;
+        # pos @c_dsc_base @c_blw_dbl_diac' <0 $blw_dy 0 0> @c_cgj @_L @c_dsc_base;
+        # pos @c_dsc_base @c_blw_dbl_diac' <0 $blw_dy 0 0> @c_dsc_base;
+        # pos @c_dsc_base @c_blw_dbl_diac' <0 $blw_dy 0 0>;
+        # pos @c_blw_dbl_diac' <0 $blw_dy 0 0> @c_cgj @_U @c_dsc_base;
+        # pos @c_blw_dbl_diac' <0 $blw_dy 0 0> @c_cgj @_L @c_dsc_base;
+        # pos @c_blw_dbl_diac' <0 $blw_dy 0 0> @c_dsc_base;
+        pos @c_takes_belowlow_diac @c_blw_dbl_diac' <0 $blw_low_dy 0 0>;
+        pos @c_blw_dbl_diac' <0 $blw_low_dy 0 0> @c_cgj @_U @c_takes_belowlow_diac;
+        pos @c_blw_dbl_diac' <0 $blw_low_dy 0 0> @c_cgj @_L @c_takes_belowlow_diac;
+        pos @c_blw_dbl_diac' <0 $blw_low_dy 0 0> @c_takes_belowlow_diac;
     } dbl_diac_raise;
 }
 
