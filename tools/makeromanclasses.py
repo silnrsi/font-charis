@@ -28,7 +28,7 @@ class_spec_lst = [('smcp', 'sc'),
                   ('nobar', 'NB')
                   ]
 
-super_sub_mod_regex = "\wSubSm\w|\wSupSm\w|^ModCap\w|^ModSm\w|^ModCy\w"
+super_sub_mod_regex = r"\wSubSm\w|\wSupSm\w|^ModCap\w|^ModSm\w|^ModCy\w"
 
 glyph_class_additions = {# 'cno_c2sc' : ['LtnYr', 'CyPalochka'],
                          # 'c_c2sc' : ['LtnSmCapR.sc', 'CyPalochka.sc'],
@@ -116,8 +116,8 @@ class Font(object):
             c_lst, cno_lst = [], []
             for suffix in class_spec[1:]:
                 for g_nm in self.glyphs:
-                    if re.search("\." + suffix, g_nm):
-                        gno_nm = re.sub("\." + suffix, "", g_nm)
+                    if re.search(r"\." + suffix, g_nm):
+                        gno_nm = re.sub(r"\." + suffix, "", g_nm)
                         if gno_nm in self.glyphs:
                             c_lst.append(g_nm)
                             cno_lst.append(gno_nm)
@@ -171,7 +171,7 @@ class Font(object):
         #  need to decompose glyphs that contain to a grave
         for g_nm in self.glyphs:
             if (re.search('Ltn(Cap|Sm).Grave', g_nm)):
-                g_base_nm = re.sub('(.*)Grave(.*)', '\g<1>\g<2>', g_nm)
+                g_base_nm = re.sub('(.*)Grave(.*)', r'\g<1>\g<2>', g_nm)
                 # TODO: generalize the below
                 if g_base_nm.find('LtnSmI') != -1 and g_base_nm.find('.sc') == -1 :
                     g_base_nm = re.sub('LtnSmI', 'LtnSmI.Dotless', g_base_nm)
@@ -181,7 +181,7 @@ class Font(object):
 
         # create classes of glyphs containing combining diacs w low profile variants
         for g_nm in self.glyphs:
-            if (re.search('Comb.*\.(LP|VNLP)', g_nm)):
+            if (re.search(r'Comb.*\.(LP|VNLP)', g_nm)):
                 g_no_nm = g_nm[:-3] if g_nm.find('VNLP') == -1 else g_nm[:-2]
                 self.g_classes.setdefault('c_lprof_diac', []).append(g_nm)
                 self.g_classes.setdefault('cno_lprof_diac', []).append(g_no_nm)
@@ -213,8 +213,8 @@ class Font(object):
             if not level <= self.level_ranges['belowhigh'][1]: continue
             for glyph in self.l_levels[level]:
                 if 'U' in glyph.anchors and glyph.anchors['U'][1] >= self.level_ranges['low'][0]:
-                    if level >= self.level_ranges['belowlow'][0] and level <= self.level_ranges['belowlow'][1]:
-                        self.g_classes.setdefault('c_takes_belowlow_diac',[]).append(glyph.name)
+                    if level >= self.level_ranges['belowhigh'][0] and level <= self.level_ranges['belowhigh'][1]:
+                        self.g_classes.setdefault('c_takes_belowhigh_diac',[]).append(glyph.name)
 
         # add irregular glyphs to classes not found by the above algorithms
         for cls, g_lst in glyph_class_additions.items():
@@ -243,11 +243,11 @@ class Font(object):
         #  creates a mapping from a glyph to all glyphs with an additional suffix
         # only called if fea is being generated
         for g_nm in self.glyphs:
-            suffix_lst = re.findall('(\..*?)(?=\.|$)', g_nm)
+            suffix_lst = re.findall(r'(\..*?)(?=\.|$)', g_nm)
             for suffix in suffix_lst:
                 if suffix in ('.notdef', '.null'):
                     continue
-                if re.match('\.(1|2|3|4|5|rstaff|rstaffno|lstaff|lstaffno)$',suffix):
+                if re.match(r'\.(1|2|3|4|5|rstaff|rstaffno|lstaff|lstaffno)$',suffix):
                     # exclude tone-related glyphs
                     continue
                 variation = suffix[1:]

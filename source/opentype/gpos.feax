@@ -23,10 +23,7 @@ lookup cursive_R {
     pos cursive @R_ @R;
 } cursive_R;
 
-# TODO: add glyphs to the below classes
-# @c_low_base = [LtnSmA LtnSmE LtnSmI LtnSmO LtnSmU];
-# @c_dsc_base = [LtnSmG];
-
+# TODO: are classes below complete?
 @c_abv_dbl_diac = [CombDblInvBreve CombDblBreve CombDblCircum CombDblTilde 
 CombDblMacron CombDblDiaer];
 @c_blw_dbl_diac = [CombDblBreveBlw CombDblMacronBlw CombDblInvBreveBlw CombDblRtArrwBlw];
@@ -38,10 +35,10 @@ CombDblMacron CombDblDiaer];
 do 
     let abv_mid_dy = -250;
     let abv_low_dy = -500;
-    let blw_low_dy = -100;
+    let blw_low_dy = 100;
 {
     # Do not change bridging diac position if a diac is placed over (or under) a base glyph
-    lookup dbl_diac_lower { #lower dbl diac over two low glyphs
+    lookup dbl_diac_abv_lower { #lower dbl diac over two lower glyphs
       lookupflag 0;
         pos @c_takes_mid_diac @c_abv_dbl_diac' <0 $abv_mid_dy 0 0> @c_cgj @_U @c_takes_mid_diac;
         pos @c_takes_mid_diac @c_abv_dbl_diac' <0 $abv_mid_dy 0 0> @c_cgj @_L @c_takes_mid_diac;
@@ -55,15 +52,14 @@ do
         pos @c_takes_low_diac @c_abv_dbl_diac' <0 $abv_low_dy 0 0> @c_cgj @_U  @c_takes_low_diac;
         pos @c_takes_low_diac @c_abv_dbl_diac' <0 $abv_low_dy 0 0> @c_cgj @_L @c_takes_low_diac;
         pos @c_takes_low_diac @c_abv_dbl_diac' <0 $abv_low_dy 0 0> @c_takes_low_diac;
-    } dbl_diac_lower;
+    } dbl_diac_abv_lower;
 
-    lookup dbl_diac_raise { #lower dbl diac under one or two glyphs with descenders
+    lookup dbl_diac_blw_raise { #raise dbl diac under two glyphs without descenders
       lookupflag 0;
-        pos @c_takes_belowlow_diac @c_blw_dbl_diac' <0 $blw_low_dy 0 0>;
-        pos @c_blw_dbl_diac' <0 $blw_low_dy 0 0> @c_cgj @_U @c_takes_belowlow_diac;
-        pos @c_blw_dbl_diac' <0 $blw_low_dy 0 0> @c_cgj @_L @c_takes_belowlow_diac;
-        pos @c_blw_dbl_diac' <0 $blw_low_dy 0 0> @c_takes_belowlow_diac;
-    } dbl_diac_raise;
+        pos @c_takes_belowhigh_diac @c_blw_dbl_diac' <0 $blw_low_dy 0 0> @c_cgj @_U @c_takes_belowhigh_diac;
+        pos @c_takes_belowhigh_diac @c_blw_dbl_diac' <0 $blw_low_dy 0 0> @c_cgj @_L @c_takes_belowhigh_diac;
+        pos @c_takes_belowhigh_diac @c_blw_dbl_diac' <0 $blw_low_dy 0 0> @c_takes_belowhigh_diac;
+    } dbl_diac_blw_raise;
 }
 
 # provided by _gsub.fea
@@ -80,8 +76,8 @@ feature mark {
   lookup base_mark_O;
   lookup base_mark_H;
   lookup cursive_R;
-  lookup dbl_diac_lower;
-  lookup dbl_diac_raise;
+  lookup dbl_diac_abv_lower;
+  lookup dbl_diac_blw_raise;
 } mark;
 
 @cMarkFilter_U = [@U_MarkBase @_U];
