@@ -190,17 +190,20 @@ U+04E1" stylename="cv20_1">
     </test>
   </testgroup>
   <testgroup label="cv25">
-    <test label="U+0264">
-      <comment>LtnSmRamsHorn</comment>
-      <string>\u000264</string>
+    <test label="U+0264
+U+10791">
+      <comment>LtnSmRamsHorn LtnSupSmRamsHorn</comment>
+      <string>\u000264\u010791</string>
     </test>
-    <test label="U+0264" stylename="cv25_1">
-      <comment>LtnSmRamsHorn</comment>
-      <string>\u000264</string>
+    <test label="U+0264
+U+10791" stylename="cv25_1">
+      <comment>LtnSmRamsHorn LtnSupSmRamsHorn</comment>
+      <string>\u000264\u010791</string>
     </test>
-    <test label="U+0264" stylename="cv25_2">
-      <comment>LtnSmRamsHorn</comment>
-      <string>\u000264</string>
+    <test label="U+0264
+U+10791" stylename="cv25_2">
+      <comment>LtnSmRamsHorn LtnSupSmRamsHorn</comment>
+      <string>\u000264\u010791</string>
     </test>
   </testgroup>
   <testgroup label="cv28">
@@ -379,16 +382,20 @@ U+2980" stylename="cv69_1">
   </testgroup>
   <testgroup label="cv70">
     <test label="U+02BC
+U+0312
+U+0314
 U+A78B
 U+A78C">
-      <comment>ModApos LtnCapSaltillo LtnSmSaltillo</comment>
-      <string>\u0002BC\u00A78B\u00A78C</string>
+      <comment>ModApos CombTrndCommaAbv CombRevCommaAbv LtnCapSaltillo LtnSmSaltillo</comment>
+      <string>\u0002BC\u000312\u000314\u00A78B\u00A78C</string>
     </test>
     <test label="U+02BC
+U+0312
+U+0314
 U+A78B
 U+A78C" stylename="cv70_1">
-      <comment>ModApos LtnCapSaltillo LtnSmSaltillo</comment>
-      <string>\u0002BC\u00A78B\u00A78C</string>
+      <comment>ModApos CombTrndCommaAbv CombRevCommaAbv LtnCapSaltillo LtnSmSaltillo</comment>
+      <string>\u0002BC\u000312\u000314\u00A78B\u00A78C</string>
     </test>
   </testgroup>
   <testgroup label="cv71">

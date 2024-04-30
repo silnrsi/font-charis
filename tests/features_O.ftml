@@ -13,12 +13,15 @@
     <fontsrc label="CBI6">url(../references/v6101/CharisSIL-BoldItalic.ttf)</fontsrc>
     <styles>
       <style lang="cnr" name="cnr"/>
+      <style feats="'cv37' 1" name="cv37_1"/>
       <style feats="'cv46' 1" name="cv46_1"/>
       <style feats="'cv46' 1, 'smcp' 1" name="cv46_1_smcp_1"/>
       <style feats="'cv62' 1" name="cv62_1"/>
       <style feats="'cv62' 1, 'smcp' 1" name="cv62_1_smcp_1"/>
       <style feats="'cv62' 2" name="cv62_2"/>
       <style feats="'cv62' 2, 'smcp' 1" name="cv62_2_smcp_1"/>
+      <style feats="'cv68' 1" name="cv68_1"/>
+      <style feats="'cv68' 1, 'smcp' 1" name="cv68_1_smcp_1"/>
       <style feats="'cv75' 1" name="cv75_1"/>
       <style feats="'cv75' 1, 'smcp' 1" name="cv75_1_smcp_1"/>
       <style feats="'cv75' 1, 'smcp' 1, 'ss01' 1" name="cv75_1_smcp_1_ss01_1"/>
@@ -61,7 +64,16 @@
   <testgroup label="cv20"/>
   <testgroup label="cv25"/>
   <testgroup label="cv28"/>
-  <testgroup label="cv37"/>
+  <testgroup label="cv37">
+    <test label="U+0284">
+      <comment>LtnSmDotlessJStrkHook</comment>
+      <string>\u000284\u000328</string>
+    </test>
+    <test label="U+0284" stylename="cv37_1">
+      <comment>LtnSmDotlessJStrkHook</comment>
+      <string>\u000284\u000328</string>
+    </test>
+  </testgroup>
   <testgroup label="cv43"/>
   <testgroup label="cv44"/>
   <testgroup label="cv46">
@@ -92,7 +104,18 @@
       <string>\u00028B\u000328</string>
     </test>
   </testgroup>
-  <testgroup label="cv68"/>
+  <testgroup label="cv68">
+    <test label="U+01B3
+U+01B4">
+      <comment>LtnCapYHook.RtHook LtnSmYHook.RtHook</comment>
+      <string>\u0001B3\u000328\u0001B4\u000328</string>
+    </test>
+    <test label="U+01B3
+U+01B4" stylename="cv68_1">
+      <comment>LtnCapYHook.RtHook LtnSmYHook.RtHook</comment>
+      <string>\u0001B3\u000328\u0001B4\u000328</string>
+    </test>
+  </testgroup>
   <testgroup label="cv69"/>
   <testgroup label="cv70"/>
   <testgroup label="cv71"/>
@@ -629,7 +652,16 @@ U+A7BB" stylename="ss11_1">
       <string>\u00028B\u000328</string>
     </test>
   </testgroup>
-  <testgroup label="cv68 smcp"/>
+  <testgroup label="cv68 smcp">
+    <test label="U+01B4">
+      <comment>LtnSmYHook.RtHook</comment>
+      <string>\u0001B4\u000328</string>
+    </test>
+    <test label="U+01B4" stylename="cv68_1_smcp_1">
+      <comment>LtnSmYHook.RtHook</comment>
+      <string>\u0001B4\u000328</string>
+    </test>
+  </testgroup>
   <testgroup label="cv69 smcp"/>
   <testgroup label="cv70 smcp"/>
   <testgroup label="cv75 smcp">
