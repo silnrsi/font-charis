@@ -29,7 +29,7 @@
     <array/>
   </dict>
   <key>com.schriftgestaltung.appVersion</key>
-  <string>3302</string>
+  <string>3303</string>
   <key>com.schriftgestaltung.customParameter.GSFont.DisplayStrings</key>
   <array>
     <string>ôöõÖÕÔf/LtnSmF.SItal/LtnSmFDotAbv/LtnSmFDotAbv.SItal/LtnSmFPalHook/LtnSmFMiddleTilde/LtnSmFHookStrk l/LtnSmLDotBlwMacron/Space i/LtnSmI.SItal/SmRomNumOne/LtnSmIRetrHook/LtnSmIStrk/LtnSmIStrkRetrHook/Space j/LtnSmJStrk/LtnSmJCrossedTail 
@@ -37,6 +37,11 @@ o/CombDblInvBreveBlw oo/CombDblBreveBlw oo/CombDblMacronBlw oo/CombDblRtArrwBlw 
 g/CombDblInvBreveBlw gg/CombDblBreveBlw gg/CombDblMacronBlw gg/CombDblRtArrwBlw g/Space f/CombDblInvBreve f/Space f/CombDblBreve f/Space f/CombDblCircum f/Space f/CombDblTilde f/Space f/CombDblMacron f/Space f/CombDblDiaer f
 O/CombDblInvBreve OO/CombDblBreve OO/CombDblCircum OO/CombDblTilde OO/CombDblMacron OO/CombDblDiaer O
 </string>
+    <string>l/CombDblInvBreve l/Space l/CombDblBreve l/Space l/CombDblCircum l/Space l/CombDblTilde l/Space l/CombDblMacron l/Space l/CombDblDiaer l
+O/CombDblInvBreve.mid OO/CombDblBreve.mid OO/CombDblCircum.mid OO/CombDblTilde.mid OO/CombDblMacron.mid OO/CombDblDiaer.mid O
+o/CombDblInvBreve.low oo/CombDblBreve.low oo/CombDblCircum.low oo/CombDblTilde.low oo/CombDblMacron.low oo/CombDblDiaer.low o
+o/CombDblInvBreveBlw.blwhigh oo/CombDblBreveBlw.blwhigh oo/CombDblMacronBlw.blwhigh oo/CombDblRtArrwBlw.blwhigh o
+g/CombDblInvBreveBlw gg/CombDblBreveBlw gg/CombDblMacronBlw gg/CombDblRtArrwBlw g</string>
   </array>
   <key>com.schriftgestaltung.customParameter.GSFont.disablesAutomaticAlignment</key>
   <true/>
