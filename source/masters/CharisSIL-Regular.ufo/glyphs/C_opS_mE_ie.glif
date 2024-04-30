@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="CopSmEie" format="2">
-  <advance width="1477"/>
+  <advance width="1153"/>
   <unicode hex="2C89"/>
   <outline>
-    <component base="CopCapEie"/>
+    <component base="CopCapEie" xScale="0.768" yScale="0.768" xOffset="9" yOffset="-5"/>
   </outline>
   <lib>
     <dict>
       <key>public.markColor</key>
-      <string>0.99,0.62,0.11,1</string>
+      <string>0.97,1,0,1</string>
     </dict>
   </lib>
 </glyph>
