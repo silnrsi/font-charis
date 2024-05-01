@@ -9,14 +9,26 @@
 results/**
 buildlinux2/**
 bin/**
-
-# Temporary files
 source/temp/*
+source/masters/temp/*
 source/backups/*
-*-backup.glyphs
-source/*.glyphs
-source/masters/*.glyphs
-documentation/source/pdftemp/*.html
+.tmp/*
+
+# temporary fontdocs files
+documentation/source/pdftemp/
+documentation/source/productsite/
+web/*.woff*
+
+# graphite
+$_temp.gdl
+gdlerr.txt
+graide_dbg_output.json
+graide_image*.png
+dbg_*.txt
+
+# diffenator2
+.ninja_log
+build.ninja
 
 # general backup files
 *~
@@ -49,7 +61,6 @@ Thumbs.db
 ehthumbs.db
 *.lnk
 
-
 # AFDKO
 current.fpr
 
@@ -57,8 +68,8 @@ current.fpr
 *.bak
 *.vfbak
 *.~tt
-+.idea/*
-.vscode/settings.json
+.idea/*
+.vscode/*
 
 # Shares
 .AppleDB
@@ -102,9 +113,12 @@ $RECYCLE.BIN/
 # Other
 .sass-cache/
 .jekyll-metadata
+tmp/
 
 # Byte-compiled / optimized files
 *.py[co]
 *$py.class
 __pycache__/
 
+# Glyphs.App
+*.glyphs
