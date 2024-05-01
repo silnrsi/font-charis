@@ -348,6 +348,33 @@
   ftml_comment: 
   ftml_string: 
 
+- tag: cv30
+  fonts: A
+  version_added: 7
+  cv_label: Capital I
+  cv_tooltip: Alternate form of capital I with no bars
+  cv_sample: 
+  tt_tag: LgI
+  tt_name: Capital I
+  tt_value: Standard (with bars)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (with bars)
+      tt_setting_name: Standard (with bars)
+      tt_setting_tag: Barred
+    - setting_value: 1
+      setting_ui_label: Barless
+      setting_doc_desc: Barless
+      tt_setting_name: Barless
+      tt_setting_tag: Barless
+  doc_group: chars
+  doc_order: 203.5
+  doc_name: Capital I
+  doc_affects: U+0049 U+00CC U+00CD U+00CE U+00CF U+0128 U+012A U+012C U+012E U+0130 U+0197 U+01CF U+0208 U+020A U+1E2C U+1E2E U+1EC8 U+1ECA U+A7BC
+  doc_sample: 
+  ftml_comment: 
+  ftml_string: 
+
 - tag: cv31
   fonts: A
   version_added: 5
