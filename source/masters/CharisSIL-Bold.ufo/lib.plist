@@ -715,9 +715,11 @@ g/CombDblInvBreveBlw gg/CombDblBreveBlw gg/CombDblMacronBlw gg/CombDblRtArrwBlw 
     <string>CySubSmBe.Serb</string>
     <string>ModCySmBe.Serb</string>
     <string>CySmSoftSgn</string>
+    <string>ModCySmSoftSgn</string>
     <string>CySmSemisoftSgn</string>
     <string>CySmHardSgn</string>
     <string>CySubSmHardSgn</string>
+    <string>ModCySmHardSgn</string>
     <string>CySmYat</string>
     <string>CySmYeru</string>
     <string>CySubSmYeru</string>
@@ -2190,9 +2192,11 @@ g/CombDblInvBreveBlw gg/CombDblBreveBlw gg/CombDblMacronBlw gg/CombDblRtArrwBlw 
     <string>LtnSmTurnedV</string>
     <string>LtnSupSmTurnedV</string>
     <string>LtnSmRamsHorn.LrgBowl</string>
+    <string>LtnSupSmRamsHorn.LrgBowl</string>
     <string>LtnSmRamsHorn</string>
     <string>LtnSupSmRamsHorn</string>
     <string>LtnSmRamsHorn.GammaStyle</string>
+    <string>LtnSupSmRamsHorn.GammaStyle</string>
     <string>LtnSmGamma</string>
     <string>ModSmGamma</string>
     <string>GrSmGamma</string>
@@ -10404,6 +10408,10 @@ g/CombDblInvBreveBlw gg/CombDblBreveBlw gg/CombDblMacronBlw gg/CombDblRtArrwBlw 
     <string>q.sup</string>
     <key>LtnSupSmRamsHorn</key>
     <string>u10791</string>
+    <key>LtnSupSmRamsHorn.GammaStyle</key>
+    <string>u10791.GammaStyle</string>
+    <key>LtnSupSmRamsHorn.LrgBowl</key>
+    <string>u10791.LrgBowl</string>
     <key>LtnSupSmRamsHornDep</key>
     <string>uniF1B5</string>
     <key>LtnSupSmRevE</key>
@@ -10686,6 +10694,8 @@ g/CombDblInvBreveBlw gg/CombDblBreveBlw gg/CombDblMacronBlw gg/CombDblRtArrwBlw 
     <string>u1E033.Serb</string>
     <key>ModCySmHa</key>
     <string>u1E043</string>
+    <key>ModCySmHardSgn</key>
+    <string>uniA69C</string>
     <key>ModCySmI</key>
     <string>u1E038</string>
     <key>ModCySmIe</key>
@@ -10706,6 +10716,8 @@ g/CombDblInvBreveBlw gg/CombDblBreveBlw gg/CombDblMacronBlw gg/CombDblRtArrwBlw 
     <string>u1E04B</string>
     <key>ModCySmSha</key>
     <string>u1E046</string>
+    <key>ModCySmSoftSgn</key>
+    <string>uniA69D</string>
     <key>ModCySmStraightU</key>
     <string>u1E04F</string>
     <key>ModCySmStraightUStrk</key>
