@@ -284,6 +284,8 @@ my %nm_to_tag = (
 	'Diacritic selection' => 'DiacSlct',
 	'Kayan diacritics' => 'Kayan',
 	'Side by side' => 'T',
+	'No bar I' => 'NoBarI',
+	'Barless' => 'T',
 	'Line spacing' => 'LnSpc',
 	'Loose' => 'Ls',
 	'Imported' => 'Im',
@@ -363,6 +365,7 @@ my %featset_to_suffix = (
 	'PorCirc-Por' => '\.Por',
 	'IotaAd-Sub' => '\.ISub',
 	'SerbMac-SrMk' => '\.Serb',
+	'NoBarI-T' => '\.NB',
 );
 
 #map one set of feature settings to a simpler set
@@ -405,7 +408,9 @@ my %reduced_featsets = (
 	'SmCp-T SmQTail-T' => 'SmCp-T',
 	'SmCp-T SmTTail-Strt' => 'SmCp-T',
 	'SmCp-T SmYTail-Strt' => 'SmCp-T',
-	'SerbMac-SrMk SmCp-T'=> 'SmCp-T',
+	'SerbMac-SrMk SmCp-T' => 'SmCp-T',
+	'NoBarI-T SlntItlc-T' => 'SlntItlc-T',
+	'NoBarI-T SmITail-CrvTl' => 'SmITail-CrvTl',
 	'BarBwl-T Lit-T SSG-T' => 'BarBwl-T Lit-T',
 	'Lit-T Ognk-Strt SSA-T' => 'Lit-T Ognk-Strt',
 	'Lit-T SSA-T SlntItlc-T' => 'Lit-T SlntItlc-T', #above
@@ -445,6 +450,10 @@ my %reduced_featsets = (
 	'SlntItlc-T SmCp-T VIEdiacs-T' => 'SmCp-T VIEdiacs-T',
 	'SlntItlc-T SmCp-T SmITail-CrvTl' => 'SmCp-T SmITail-CrvTl', #above
 	'SlntItlc-T SmCp-T SmLTail-CrvTl' => 'SmCp-T SmLTail-CrvTl', #above
+	'NoBarI-T Ognk-Strt SmITail-CrvTl' => 'Ognk-Strt SmITail-CrvTl',
+	'NoBarI-T SlntItlc-T SmCp-T' => 'NoBarI-T SmCp-T',
+	'NoBarI-T SlntItlc-T SmITail-CrvTl' => 'SlntItlc-T SmITail-CrvTl', #above
+	'NoBarI-T SmCp-T SmITail-CrvTl' => 'NoBarI-T SmCp-T',
 	#below line not needed with code to convert Lit-T to Lit-F for Andika processing
 	#'Lit-F SlntItlc-T SmCp-T VIEdiacs-T' => 'SmCp-T VIEdiacs-T', #Lit-F is non-default value for Andika
 	'Lit-T LpDiacs-T SlntItlc-T SmCp-T' => 'LpDiacs-T SmCp-T', #above
@@ -469,6 +478,8 @@ my %reduced_featsets = (
 	'LpDiacs-T SSA-T SlntItlc-T SmCp-T' => 'LpDiacs-T SSA-T SmCp-T',
 	'LpDiacs-T SSA-T SlntItlc-T VIEdiacs-T' => 'LpDiacs-T SSA-T VIEdiacs-T',
 	'LpDiacs-T SSA-T SmCp-T VIEdiacs-T' => 'LpDiacs-T SmCp-T VIEdiacs-T', #above
+	'NoBarI-T Ognk-Strt SmCp-T SmITail-CrvTl' => 'NoBarI-T Ognk-Strt SmCp-T',
+	'NoBarI-T SlntItlc-T SmCp-T SmITail-CrvTl' => 'NoBarI-T SlntItlc-T SmCp-T',
 	'Lit-T LpDiacs-T SSA-T SlntItlc-T SmCp-T' => 'Lit-T LpDiacs-T SlntItlc-T SmCp-T', #above
 	'Lit-T LpDiacs-T SSA-T SlntItlc-T VIEdiacs-T' => 'Lit-T LpDiacs-T SlntItlc-T VIEdiacs-T', #above
 	'Lit-T LpDiacs-T SSA-T SmCp-T VIEdiacs-T' => 'Lit-T LpDiacs-T SmCp-T VIEdiacs-T', #above

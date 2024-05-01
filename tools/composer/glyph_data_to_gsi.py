@@ -87,9 +87,9 @@ for row_file in glyph_data_reader:
     if row_file[csv_cols.index(assoc_feat)] == "ss01":
         glyph_nm = row_file[csv_cols.index(glyph_name)]
         if not andika_f:
-            if re.search("\.SngStory", glyph_nm):
+            if re.search(r"\.SngStory", glyph_nm):
                 row_file[csv_cols.index(assoc_feat)] = "ss11"
-            elif re.search("\.SngBowl", glyph_nm):
+            elif re.search(r"\.SngBowl", glyph_nm):
                 row_file[csv_cols.index(assoc_feat)] = "ss12"
         else:
             if re.search("SmA|FemOrd", glyph_nm):

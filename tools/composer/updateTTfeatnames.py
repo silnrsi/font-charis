@@ -34,7 +34,7 @@ feat_info_f = open(feat_info_fn, "r")
 # tags that are substrings of other tags must come later since the list is used in simplistic search
 fields = ["ss_name", "cv_label", "setting_value", 
 "tt_name", "tt_value", "tt_setting_name", "tt_setting_tag", "tt_tag", "tag"] 
-record_start = "^-\s*tag:"
+record_start = r"^-\s*tag:"
 
 # find the value after a colon in a line of yaml
 def find_value(line):
