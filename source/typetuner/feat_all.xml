@@ -44,9 +44,11 @@
 		</value>
 		<value name="Large bowl" tag="Lrg">
 			<cmd name="encode" args="0264 uni0264.LrgBowl" />
+			<cmd name="encode" args="10791 u10791.LrgBowl" />
 		</value>
 		<value name="Small gamma" tag="Gma">
 			<cmd name="encode" args="0264 uni0264.GammaStyle" />
+			<cmd name="encode" args="10791 u10791.GammaStyle" />
 		</value>
 	</feature>
 	<feature name="Capital H stroke" value="Standard (horiz stroke)" tag="LgHStrk">
@@ -184,6 +186,8 @@
 		<value name="Large" tag="Lg">
 			<cmd name="encode" args="A78B uniA78B.Lrg" />
 			<cmd name="encode" args="A78C uniA78C.Lrg" />
+			<cmd name="encode" args="0312 uni0312.Lrg" />
+			<cmd name="encode" args="0314 uni02314.Lrg" />
 			<cmd name="encode" args="02BC uni02BC.Lrg" />
 		</value>
 	</feature>
@@ -1134,6 +1138,23 @@
 			<cmd name="encode" args="2980 uni2980.sc" />
 			<cmd name="encode" args="A725 uniA725.sc" />
 			<cmd name="encode" args="A723 uniA723.sc" />
+		</value>
+	</feature>
+	<feature name="Old style proportial figures" value="Default" tag="OSF">
+		<value name="Default" tag="Dflt">
+			<cmd name="null" args="null" />
+		</value>
+		<value name="Old style figures" tag="T">
+			<cmd name="encode" args="0030 zero.osf" />
+			<cmd name="encode" args="0031 one.osf" />
+			<cmd name="encode" args="0032 two.osf" />
+			<cmd name="encode" args="0033 three.osf" />
+			<cmd name="encode" args="0034 four.osf" />
+			<cmd name="encode" args="0035 five.osf" />
+			<cmd name="encode" args="0036 six.osf" />
+			<cmd name="encode" args="0037 seven.osf" />
+			<cmd name="encode" args="0038 eight.osf" />
+			<cmd name="encode" args="0039 nine.osf" />
 		</value>
 	</feature>
 	<feature name="Kayan diacritics" value="Standard (stacked)" tag="Kayan">

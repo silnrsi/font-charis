@@ -286,6 +286,8 @@ my %nm_to_tag = (
 	'Side by side' => 'T',
 	'No bar I' => 'NoBarI',
 	'Barless' => 'T',
+	'Old style proportial figures' => 'OSF',
+	'Old style figures' => 'T',
 	'Line spacing' => 'LnSpc',
 	'Loose' => 'Ls',
 	'Imported' => 'Im',
@@ -366,6 +368,7 @@ my %featset_to_suffix = (
 	'IotaAd-Sub' => '\.ISub',
 	'SerbMac-SrMk' => '\.Serb',
 	'NoBarI-T' => '\.NB',
+	'OSF-T' => '\.osf',
 );
 
 #map one set of feature settings to a simpler set
@@ -822,6 +825,20 @@ sub OT_Feats_get($\%)
 	$feats->{'smcp'}{'settings'}{0}{'tag'} = 'Dflt';
 	$feats->{'smcp'}{'settings'}{1}{'name'} = 'Small caps';
 	$feats->{'smcp'}{'settings'}{1}{'tag'} = Tag_lookup('True', %nm_to_tag);
+
+	# add onum feature which does not have GSUB info like CV and SS feats
+	#  it's much like a SS feat
+	# feat not in Andika but also not specified for Andika on any glyphs in glyph_data.csv
+	#  so the below will not effect the generated Features xml file for Andika
+	push(@{$feats->{' ids'}}, 'onum');
+	$feats->{'onum'}{'name'} = 'Old style proportial figures';
+	$feats->{'onum'}{'tag'} = Tag_lookup('Old style proportial figures', %nm_to_tag);
+	$feats->{'onum'}{'default'} = 0;
+	$feats->{'onum'}{'settings'}{' ids'} = [0, 1];
+	$feats->{'onum'}{'settings'}{0}{'name'} = 'Default';
+	$feats->{'onum'}{'settings'}{0}{'tag'} = 'Dflt';
+	$feats->{'onum'}{'settings'}{1}{'name'} = 'Old style figures';
+	$feats->{'onum'}{'settings'}{1}{'tag'} = Tag_lookup('True', %nm_to_tag);
 
 	if ($opt_m or $opt_d)
 	{
