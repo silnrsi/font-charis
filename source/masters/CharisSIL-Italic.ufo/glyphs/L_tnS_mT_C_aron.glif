@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="LtnSmTCaron" format="2">
-  <advance width="614"/>
+  <advance width="719"/>
   <unicode hex="0165"/>
   <anchor x="256" y="0" name="H"/>
   <anchor x="236" y="-100" name="L"/>
@@ -36,23 +36,11 @@
       <point x="414" y="858" type="line"/>
     </contour>
     <contour>
-      <point x="880" y="1415" type="curve" smooth="yes"/>
-      <point x="880" y="1489"/>
-      <point x="843" y="1538"/>
-      <point x="767" y="1538" type="curve" smooth="yes"/>
-      <point x="702" y="1538"/>
-      <point x="642" y="1489"/>
-      <point x="642" y="1422" type="curve" smooth="yes"/>
-      <point x="642" y="1403"/>
-      <point x="647" y="1381"/>
-      <point x="659" y="1366" type="curve"/>
-      <point x="767" y="1366" type="line"/>
-      <point x="745" y="1250"/>
-      <point x="704" y="1221"/>
-      <point x="593" y="1186" type="curve"/>
-      <point x="581" y="1118" type="line"/>
-      <point x="735" y="1147"/>
-      <point x="880" y="1243"/>
+      <point x="538" y="1087" type="line"/>
+      <point x="638" y="1087" type="line"/>
+      <point x="827" y="1441" type="line"/>
+      <point x="842" y="1509" type="line"/>
+      <point x="667" y="1509" type="line"/>
     </contour>
   </outline>
 </glyph>
