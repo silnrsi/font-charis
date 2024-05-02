@@ -3,13 +3,12 @@
 <ftml version="1.0">
   <head>
     <fontscale>200</fontscale>
-    <fontsrc label="CRv6">url(../results/CharisSIL-Regular.ttf)</fontsrc>
-    <fontsrc label="CBv6">url(../results/CharisSIL-Bold.ttf)</fontsrc>
-    <fontsrc label="CIv6">url(../results/CharisSIL-Italic.ttf)</fontsrc>
-    <fontsrc label="CBIv6">url(../results/CharisSIL-BoldItalic.ttf)</fontsrc>
-    <fontsrc label="CRv5">url(../references/v5/CharisSIL-Regular.ttf)</fontsrc>
-    <fontsrc label="CIv5">url(../references/v5/CharisSIL-Italic.ttf)</fontsrc>
-    <!-- fontsrc label="DRb1">url(../references/b1/DoulosSIL-Regular.ttf)</fontsrc -->
+    <fontsrc label="CRv7">url(../results/CharisSIL-Regular.ttf)</fontsrc>
+    <fontsrc label="CBv7">url(../results/CharisSIL-Bold.ttf)</fontsrc>
+    <fontsrc label="CIv7">url(../results/CharisSIL-Italic.ttf)</fontsrc>
+    <fontsrc label="CBIv7">url(../results/CharisSIL-BoldItalic.ttf)</fontsrc>
+    <fontsrc label="CRv62">url(../references/v6200/CharisSIL-Regular.ttf)</fontsrc>
+    <fontsrc label="CIv62">url(../references/v6200/CharisSIL-Italic.ttf)</fontsrc>
     <fontsrc label="DRv5">url(../references/v5/DoulosSIL-Regular.ttf)</fontsrc>
     <title>Bridging diacritics</title>
   </head>
