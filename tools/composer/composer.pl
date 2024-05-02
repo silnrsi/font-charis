@@ -284,8 +284,8 @@ my %nm_to_tag = (
 	'Diacritic selection' => 'DiacSlct',
 	'Kayan diacritics' => 'Kayan',
 	'Side by side' => 'T',
-	'No bar I' => 'NoBarI',
-	'Barless' => 'T',
+	'Capital I' => 'LgI',
+	'Barless' => 'Barless',
 	'Old style proportial figures' => 'OSF',
 	'Old style figures' => 'T',
 	'Line spacing' => 'LnSpc',
@@ -367,7 +367,7 @@ my %featset_to_suffix = (
 	'PorCirc-Por' => '\.Por',
 	'IotaAd-Sub' => '\.ISub',
 	'SerbMac-SrMk' => '\.Serb',
-	'NoBarI-T' => '\.NB',
+	'LgI-Barless' => '\.NB',
 	'OSF-T' => '\.osf',
 );
 
@@ -412,8 +412,8 @@ my %reduced_featsets = (
 	'SmCp-T SmTTail-Strt' => 'SmCp-T',
 	'SmCp-T SmYTail-Strt' => 'SmCp-T',
 	'SerbMac-SrMk SmCp-T' => 'SmCp-T',
-	'NoBarI-T SlntItlc-T' => 'SlntItlc-T',
-	'NoBarI-T SmITail-CrvTl' => 'SmITail-CrvTl',
+	'LgI-Barless SlntItlc-T' => 'SlntItlc-T',
+	'LgI-Barless SmITail-CrvTl' => 'SmITail-CrvTl',
 	'BarBwl-T Lit-T SSG-T' => 'BarBwl-T Lit-T',
 	'Lit-T Ognk-Strt SSA-T' => 'Lit-T Ognk-Strt',
 	'Lit-T SSA-T SlntItlc-T' => 'Lit-T SlntItlc-T', #above
@@ -453,10 +453,10 @@ my %reduced_featsets = (
 	'SlntItlc-T SmCp-T VIEdiacs-T' => 'SmCp-T VIEdiacs-T',
 	'SlntItlc-T SmCp-T SmITail-CrvTl' => 'SmCp-T SmITail-CrvTl', #above
 	'SlntItlc-T SmCp-T SmLTail-CrvTl' => 'SmCp-T SmLTail-CrvTl', #above
-	'NoBarI-T Ognk-Strt SmITail-CrvTl' => 'Ognk-Strt SmITail-CrvTl',
-	'NoBarI-T SlntItlc-T SmCp-T' => 'NoBarI-T SmCp-T',
-	'NoBarI-T SlntItlc-T SmITail-CrvTl' => 'SlntItlc-T SmITail-CrvTl', #above
-	'NoBarI-T SmCp-T SmITail-CrvTl' => 'NoBarI-T SmCp-T',
+	'LgI-Barless Ognk-Strt SmITail-CrvTl' => 'Ognk-Strt SmITail-CrvTl',
+	'LgI-Barless SlntItlc-T SmCp-T' => 'LgI-Barless SmCp-T',
+	'LgI-Barless SlntItlc-T SmITail-CrvTl' => 'SlntItlc-T SmITail-CrvTl', #above
+	'LgI-Barless SmCp-T SmITail-CrvTl' => 'LgI-Barless SmCp-T',
 	#below line not needed with code to convert Lit-T to Lit-F for Andika processing
 	#'Lit-F SlntItlc-T SmCp-T VIEdiacs-T' => 'SmCp-T VIEdiacs-T', #Lit-F is non-default value for Andika
 	'Lit-T LpDiacs-T SlntItlc-T SmCp-T' => 'LpDiacs-T SmCp-T', #above
@@ -481,8 +481,8 @@ my %reduced_featsets = (
 	'LpDiacs-T SSA-T SlntItlc-T SmCp-T' => 'LpDiacs-T SSA-T SmCp-T',
 	'LpDiacs-T SSA-T SlntItlc-T VIEdiacs-T' => 'LpDiacs-T SSA-T VIEdiacs-T',
 	'LpDiacs-T SSA-T SmCp-T VIEdiacs-T' => 'LpDiacs-T SmCp-T VIEdiacs-T', #above
-	'NoBarI-T Ognk-Strt SmCp-T SmITail-CrvTl' => 'NoBarI-T Ognk-Strt SmCp-T',
-	'NoBarI-T SlntItlc-T SmCp-T SmITail-CrvTl' => 'NoBarI-T SlntItlc-T SmCp-T',
+	'LgI-Barless Ognk-Strt SmCp-T SmITail-CrvTl' => 'LgI-Barless Ognk-Strt SmCp-T',
+	'LgI-Barless SlntItlc-T SmCp-T SmITail-CrvTl' => 'LgI-Barless SlntItlc-T SmCp-T',
 	'Lit-T LpDiacs-T SSA-T SlntItlc-T SmCp-T' => 'Lit-T LpDiacs-T SlntItlc-T SmCp-T', #above
 	'Lit-T LpDiacs-T SSA-T SlntItlc-T VIEdiacs-T' => 'Lit-T LpDiacs-T SlntItlc-T VIEdiacs-T', #above
 	'Lit-T LpDiacs-T SSA-T SmCp-T VIEdiacs-T' => 'Lit-T LpDiacs-T SmCp-T VIEdiacs-T', #above
@@ -828,8 +828,9 @@ sub OT_Feats_get($\%)
 
 	# add onum feature which does not have GSUB info like CV and SS feats
 	#  it's much like a SS feat
-	# feat not in Andika but also not specified for Andika on any glyphs in glyph_data.csv
-	#  so the below will not effect the generated Features xml file for Andika
+	# this feature is not in Andika
+	#  since no glyphs in glyph_data.csv are associated with this feature for Andika
+	#  the below will produce a Feature element but it will do nothing
 	push(@{$feats->{' ids'}}, 'onum');
 	$feats->{'onum'}{'name'} = 'Old style proportial figures';
 	$feats->{'onum'}{'tag'} = Tag_lookup('Old style proportial figures', %nm_to_tag);
