@@ -1376,6 +1376,30 @@
   ftml_comment: 
   ftml_string: 
 
+- tag: onum
+  fonts: CG
+  version_added: 7
+  tt_tag: OSF
+  tt_name: Old style figures
+  tt_value: Standard (tabular)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard
+      tt_setting_name: Standard (tabular)
+      tt_setting_tag: Dflt
+    - setting_value: 1
+      setting_doc_desc: Old style
+      tt_setting_name: Old style
+      tt_setting_tag: T
+  doc_group: num
+  doc_order: 800
+  doc_name: Old style figures
+  doc_affects: all numerals
+  doc_sample: 
+  doc_sample_addl: (all numerals)
+  ftml_comment: 
+  ftml_string: 
+
 - tag: smcp
   fonts: CDGA
   version_added: 5
