@@ -1263,7 +1263,7 @@ feature cv30 {
 
   cvParameters {
       FeatUILabelNameID {
-       name 3 1 0x0409 "No bar I";  # English US
+       name 3 1 0x0409 "Capital I";  # English US
       };
       
       FeatUITooltipTextNameID {
@@ -1275,7 +1275,7 @@ feature cv30 {
       };
       
       ParamUILabelNameID {
-       name 3 1 0x0409 "No bar";  # English US
+       name 3 1 0x0409 "Barless";  # English US
       };
   };
 

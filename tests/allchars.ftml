@@ -8046,6 +8046,14 @@
       <comment>WigglyVerticalLine</comment>
       <string>\u002E3E</string>
     </test>
+    <test label="U+A69C">
+      <comment>ModCySmHardSgn</comment>
+      <string>\u00A69C</string>
+    </test>
+    <test label="U+A69D">
+      <comment>ModCySmSoftSgn</comment>
+      <string>\u00A69D</string>
+    </test>
     <test label="U+A700">
       <comment>ModTnYinPing</comment>
       <string>\u00A700</string>

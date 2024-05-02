@@ -5844,6 +5844,14 @@
       <comment>LtnCapZSwashTail</comment>
       <string>\u002C7F\u000329 \u002C7F\u00030D</string>
     </test>
+    <test label="U+A69C">
+      <comment>ModCySmHardSgn</comment>
+      <string>\u00A69C\u000329 \u00A69C\u00030D</string>
+    </test>
+    <test label="U+A69D">
+      <comment>ModCySmSoftSgn</comment>
+      <string>\u00A69D\u000329 \u00A69D\u00030D</string>
+    </test>
     <test label="U+A722">
       <comment>LtnCapEgAlef</comment>
       <string>\u00A722\u000329 \u00A722\u00030D</string>
@@ -8862,220 +8870,222 @@ U+1E03F
 U+1E06B
 U+1E033
 U+1E043
+U+A69C
 U+1E038
-U+1E035
-U+1E04D">
-      <comment>ModCySmEr ModCySmEs ModCySmEsDesc ModCySmGhe ModCySmHa ModCySmI ModCySmIe ModCySmJe</comment>
-      <string>\u01E03E\u000308 \u01E03F\u000308 \u01E06B\u000308 \u01E033\u000308 \u01E043\u000308 \u01E038\u000308 \u01E035\u000308 \u01E04D\u000308</string>
+U+1E035">
+      <comment>ModCySmEr ModCySmEs ModCySmEsDesc ModCySmGhe ModCySmHa ModCySmHardSgn ModCySmI ModCySmIe</comment>
+      <string>\u01E03E\u000308 \u01E03F\u000308 \u01E06B\u000308 \u01E033\u000308 \u01E043\u000308 \u00A69C\u000308 \u01E038\u000308 \u01E035\u000308</string>
     </test>
     <test label="U+0308">
-      <comment>ModCySmEr ModCySmEs ModCySmEsDesc ModCySmGhe ModCySmHa ModCySmI ModCySmIe ModCySmJe</comment>
-      <string>\u01E03E \u01E03F \u01E06B \u01E033 \u01E043 \u01E038 \u01E035 \u01E04D</string>
+      <comment>ModCySmEr ModCySmEs ModCySmEsDesc ModCySmGhe ModCySmHa ModCySmHardSgn ModCySmI ModCySmIe</comment>
+      <string>\u01E03E \u01E03F \u01E06B \u01E033 \u01E043 \u00A69C \u01E038 \u01E035</string>
     </test>
-    <test label="U+1E039
+    <test label="U+1E04D
+U+1E039
 U+1E03C
 U+1E050
 U+1E03D
 U+1E04B
 U+1E046
-U+1E04F
-U+1E06D">
-      <comment>ModCySmKa ModCySmO ModCySmPalochka ModCySmPe ModCySmSchwa ModCySmSha ModCySmStraightU ModCySmStraightUStrk</comment>
-      <string>\u01E039\u000308 \u01E03C\u000308 \u01E050\u000308 \u01E03D\u000308 \u01E04B\u000308 \u01E046\u000308 \u01E04F\u000308 \u01E06D\u000308</string>
+U+A69D">
+      <comment>ModCySmJe ModCySmKa ModCySmO ModCySmPalochka ModCySmPe ModCySmSchwa ModCySmSha ModCySmSoftSgn</comment>
+      <string>\u01E04D\u000308 \u01E039\u000308 \u01E03C\u000308 \u01E050\u000308 \u01E03D\u000308 \u01E04B\u000308 \u01E046\u000308 \u00A69D\u000308</string>
     </test>
     <test label="U+0308">
-      <comment>ModCySmKa ModCySmO ModCySmPalochka ModCySmPe ModCySmSchwa ModCySmSha ModCySmStraightU ModCySmStraightUStrk</comment>
-      <string>\u01E039 \u01E03C \u01E050 \u01E03D \u01E04B \u01E046 \u01E04F \u01E06D</string>
+      <comment>ModCySmJe ModCySmKa ModCySmO ModCySmPalochka ModCySmPe ModCySmSchwa ModCySmSha ModCySmSoftSgn</comment>
+      <string>\u01E04D \u01E039 \u01E03C \u01E050 \u01E03D \u01E04B \u01E046 \u00A69D</string>
     </test>
-    <test label="U+1E040
+    <test label="U+1E04F
+U+1E06D
+U+1E040
 U+1E044
 U+1E041
 U+1E032
 U+1E047
-U+1E049
-U+1E037
-U+1E036">
-      <comment>ModCySmTe ModCySmTse ModCySmU ModCySmVe ModCySmYeru ModCySmYu ModCySmZe ModCySmZhe</comment>
-      <string>\u01E040\u000308 \u01E044\u000308 \u01E041\u000308 \u01E032\u000308 \u01E047\u000308 \u01E049\u000308 \u01E037\u000308 \u01E036\u000308</string>
+U+1E049">
+      <comment>ModCySmStraightU ModCySmStraightUStrk ModCySmTe ModCySmTse ModCySmU ModCySmVe ModCySmYeru ModCySmYu</comment>
+      <string>\u01E04F\u000308 \u01E06D\u000308 \u01E040\u000308 \u01E044\u000308 \u01E041\u000308 \u01E032\u000308 \u01E047\u000308 \u01E049\u000308</string>
     </test>
     <test label="U+0308">
-      <comment>ModCySmTe ModCySmTse ModCySmU ModCySmVe ModCySmYeru ModCySmYu ModCySmZe ModCySmZhe</comment>
-      <string>\u01E040 \u01E044 \u01E041 \u01E032 \u01E047 \u01E049 \u01E037 \u01E036</string>
+      <comment>ModCySmStraightU ModCySmStraightUStrk ModCySmTe ModCySmTse ModCySmU ModCySmVe ModCySmYeru ModCySmYu</comment>
+      <string>\u01E04F \u01E06D \u01E040 \u01E044 \u01E041 \u01E032 \u01E047 \u01E049</string>
     </test>
-    <test label="U+1D5C
+    <test label="U+1E037
+U+1E036
+U+1D5C
 U+10785
 U+1D5D
 U+1D55
 U+1D9C
-U+10780
-U+10784
-U+10792">
-      <comment>ModSmAin ModSmBHook ModSmBeta ModSmBottomHalfO ModSmC ModSmCapAADigraph ModSmCapB ModSmCapG</comment>
-      <string>\u001D5C\u000308 \u010785\u000308 \u001D5D\u000308 \u001D55\u000308 \u001D9C\u000308 \u010780\u000308 \u010784\u000308 \u010792\u000308</string>
+U+10780">
+      <comment>ModCySmZe ModCySmZhe ModSmAin ModSmBHook ModSmBeta ModSmBottomHalfO ModSmC ModSmCapAADigraph</comment>
+      <string>\u01E037\u000308 \u01E036\u000308 \u001D5C\u000308 \u010785\u000308 \u001D5D\u000308 \u001D55\u000308 \u001D9C\u000308 \u010780\u000308</string>
     </test>
     <test label="U+0308">
-      <comment>ModSmAin ModSmBHook ModSmBeta ModSmBottomHalfO ModSmC ModSmCapAADigraph ModSmCapB ModSmCapG</comment>
-      <string>\u001D5C \u010785 \u001D5D \u001D55 \u001D9C \u010780 \u010784 \u010792</string>
+      <comment>ModCySmZe ModCySmZhe ModSmAin ModSmBHook ModSmBeta ModSmBottomHalfO ModSmC ModSmCapAADigraph</comment>
+      <string>\u01E037 \u01E036 \u001D5C \u010785 \u001D5D \u001D55 \u001D9C \u010780</string>
     </test>
-    <test label="U+10794
+    <test label="U+10784
+U+10792
+U+10794
 U+10796
 U+A7F8
 U+1DA7
 U+02B6
-U+1DAB
-U+1079C
-U+1DB0">
-      <comment>ModSmCapGHook ModSmCapH ModSmCapHDblStrk ModSmCapIStrk ModSmCapInvR ModSmCapL ModSmCapLBelt ModSmCapN</comment>
-      <string>\u010794\u000308 \u010796\u000308 \u00A7F8\u000308 \u001DA7\u000308 \u0002B6\u000308 \u001DAB\u000308 \u01079C\u000308 \u001DB0\u000308</string>
+U+1DAB">
+      <comment>ModSmCapB ModSmCapG ModSmCapGHook ModSmCapH ModSmCapHDblStrk ModSmCapIStrk ModSmCapInvR ModSmCapL</comment>
+      <string>\u010784\u000308 \u010792\u000308 \u010794\u000308 \u010796\u000308 \u00A7F8\u000308 \u001DA7\u000308 \u0002B6\u000308 \u001DAB\u000308</string>
     </test>
     <test label="U+0308">
-      <comment>ModSmCapGHook ModSmCapH ModSmCapHDblStrk ModSmCapIStrk ModSmCapInvR ModSmCapL ModSmCapLBelt ModSmCapN</comment>
-      <string>\u010794 \u010796 \u00A7F8 \u001DA7 \u0002B6 \u001DAB \u01079C \u001DB0</string>
+      <comment>ModSmCapB ModSmCapG ModSmCapGHook ModSmCapH ModSmCapHDblStrk ModSmCapIStrk ModSmCapInvR ModSmCapL</comment>
+      <string>\u010784 \u010792 \u010794 \u010796 \u00A7F8 \u001DA7 \u0002B6 \u001DAB</string>
     </test>
-    <test label="U+107AA
+    <test label="U+1079C
+U+1DB0
+U+107AA
 U+1DB8
 U+F1CD
 U+1D61
 U+107A4
-U+1078C
-U+1078B
-U+1078D">
-      <comment>ModSmCapR ModSmCapU ModSmCapUBar ModSmChi ModSmClosedOmega ModSmDHook ModSmDTail ModSmDTailHook</comment>
-      <string>\u0107AA\u000308 \u001DB8\u000308 \u00F1CD\u000308 \u001D61\u000308 \u0107A4\u000308 \u01078C\u000308 \u01078B\u000308 \u01078D\u000308</string>
+U+1078C">
+      <comment>ModSmCapLBelt ModSmCapN ModSmCapR ModSmCapU ModSmCapUBar ModSmChi ModSmClosedOmega ModSmDHook</comment>
+      <string>\u01079C\u000308 \u001DB0\u000308 \u0107AA\u000308 \u001DB8\u000308 \u00F1CD\u000308 \u001D61\u000308 \u0107A4\u000308 \u01078C\u000308</string>
     </test>
     <test label="U+0308">
-      <comment>ModSmCapR ModSmCapU ModSmCapUBar ModSmChi ModSmClosedOmega ModSmDHook ModSmDTail ModSmDTailHook</comment>
-      <string>\u0107AA \u001DB8 \u00F1CD \u001D61 \u0107A4 \u01078C \u01078B \u01078D</string>
+      <comment>ModSmCapLBelt ModSmCapN ModSmCapR ModSmCapU ModSmCapUBar ModSmChi ModSmClosedOmega ModSmDHook</comment>
+      <string>\u01079C \u001DB0 \u0107AA \u001DB8 \u00F1CD \u001D61 \u0107A4 \u01078C</string>
     </test>
-    <test label="U+1D5F
+    <test label="U+1078B
+U+1078D
+U+1D5F
 U+1078A
 U+10798
 U+10787
 U+10789
-U+10788
-U+1D9E
-U+10790">
-      <comment>ModSmDelta ModSmDezhDigraph ModSmDotlessJStrkHook ModSmDzDigraph ModSmDzDigraphCurl ModSmDzRetrHook ModSmEth ModSmFengDigraph</comment>
-      <string>\u001D5F\u000308 \u01078A\u000308 \u010798\u000308 \u010787\u000308 \u010789\u000308 \u010788\u000308 \u001D9E\u000308 \u010790\u000308</string>
+U+10788">
+      <comment>ModSmDTail ModSmDTailHook ModSmDelta ModSmDezhDigraph ModSmDotlessJStrkHook ModSmDzDigraph ModSmDzDigraphCurl ModSmDzRetrHook</comment>
+      <string>\u01078B\u000308 \u01078D\u000308 \u001D5F\u000308 \u01078A\u000308 \u010798\u000308 \u010787\u000308 \u010789\u000308 \u010788\u000308</string>
     </test>
     <test label="U+0308">
-      <comment>ModSmDelta ModSmDezhDigraph ModSmDotlessJStrkHook ModSmDzDigraph ModSmDzDigraphCurl ModSmDzRetrHook ModSmEth ModSmFengDigraph</comment>
-      <string>\u001D5F \u01078A \u010798 \u010787 \u010789 \u010788 \u001D9E \u010790</string>
+      <comment>ModSmDTail ModSmDTailHook ModSmDelta ModSmDezhDigraph ModSmDotlessJStrkHook ModSmDzDigraph ModSmDzDigraphCurl ModSmDzRetrHook</comment>
+      <string>\u01078B \u01078D \u001D5F \u01078A \u010798 \u010787 \u010789 \u010788</string>
     </test>
-    <test label="U+10793
+    <test label="U+1D9E
+U+10790
+U+10793
 U+02E0
 U+1D5E
 U+1D60
 U+02B0
-U+02B1
-U+10795
-U+AB5C">
-      <comment>ModSmGHook ModSmGamma ModSmGrGamma ModSmGrPhi ModSmH ModSmHHook ModSmHStrk ModSmHeng</comment>
-      <string>\u010793\u000308 \u0002E0\u000308 \u001D5E\u000308 \u001D60\u000308 \u0002B0\u000308 \u0002B1\u000308 \u010795\u000308 \u00AB5C\u000308</string>
+U+02B1">
+      <comment>ModSmEth ModSmFengDigraph ModSmGHook ModSmGamma ModSmGrGamma ModSmGrPhi ModSmH ModSmHHook</comment>
+      <string>\u001D9E\u000308 \u010790\u000308 \u010793\u000308 \u0002E0\u000308 \u001D5E\u000308 \u001D60\u000308 \u0002B0\u000308 \u0002B1\u000308</string>
     </test>
     <test label="U+0308">
-      <comment>ModSmGHook ModSmGamma ModSmGrGamma ModSmGrPhi ModSmH ModSmHHook ModSmHStrk ModSmHeng</comment>
-      <string>\u010793 \u0002E0 \u001D5E \u001D60 \u0002B0 \u0002B1 \u010795 \u00AB5C</string>
+      <comment>ModSmEth ModSmFengDigraph ModSmGHook ModSmGamma ModSmGrGamma ModSmGrPhi ModSmH ModSmHHook</comment>
+      <string>\u001D9E \u010790 \u010793 \u0002E0 \u001D5E \u001D60 \u0002B0 \u0002B1</string>
     </test>
-    <test label="U+10797
+    <test label="U+10795
+U+AB5C
+U+10797
 U+1DA5
 U+02B2
 U+1DA8
 U+02E1
-U+1079B
-U+AB5E
-U+1DAA">
-      <comment>ModSmHengHook ModSmIota ModSmJ ModSmJCrossedTail ModSmL ModSmLBelt ModSmLMiddleTilde ModSmLPalHook</comment>
-      <string>\u010797\u000308 \u001DA5\u000308 \u0002B2\u000308 \u001DA8\u000308 \u0002E1\u000308 \u01079B\u000308 \u00AB5E\u000308 \u001DAA\u000308</string>
+U+1079B">
+      <comment>ModSmHStrk ModSmHeng ModSmHengHook ModSmIota ModSmJ ModSmJCrossedTail ModSmL ModSmLBelt</comment>
+      <string>\u010795\u000308 \u00AB5C\u000308 \u010797\u000308 \u001DA5\u000308 \u0002B2\u000308 \u001DA8\u000308 \u0002E1\u000308 \u01079B\u000308</string>
     </test>
     <test label="U+0308">
-      <comment>ModSmHengHook ModSmIota ModSmJ ModSmJCrossedTail ModSmL ModSmLBelt ModSmLMiddleTilde ModSmLPalHook</comment>
-      <string>\u010797 \u001DA5 \u0002B2 \u001DA8 \u0002E1 \u01079B \u00AB5E \u001DAA</string>
+      <comment>ModSmHStrk ModSmHeng ModSmHengHook ModSmIota ModSmJ ModSmJCrossedTail ModSmL ModSmLBelt</comment>
+      <string>\u010795 \u00AB5C \u010797 \u001DA5 \u0002B2 \u001DA8 \u0002E1 \u01079B</string>
     </test>
-    <test label="U+1079D
+    <test label="U+AB5E
+U+1DAA
+U+1079D
 U+10799
 U+1079A
 U+1079E
 U+1079F
-U+1DAC
-U+1DAF
-U+1DB2">
-      <comment>ModSmLRetrHookBelt ModSmLSDigraph ModSmLZDigraph ModSmLezh ModSmLezhRetrHook ModSmMHook ModSmNRetrHook ModSmPhi</comment>
-      <string>\u01079D\u000308 \u010799\u000308 \u01079A\u000308 \u01079E\u000308 \u01079F\u000308 \u001DAC\u000308 \u001DAF\u000308 \u001DB2\u000308</string>
+U+1DAC">
+      <comment>ModSmLMiddleTilde ModSmLPalHook ModSmLRetrHookBelt ModSmLSDigraph ModSmLZDigraph ModSmLezh ModSmLezhRetrHook ModSmMHook</comment>
+      <string>\u00AB5E\u000308 \u001DAA\u000308 \u01079D\u000308 \u010799\u000308 \u01079A\u000308 \u01079E\u000308 \u01079F\u000308 \u001DAC\u000308</string>
     </test>
     <test label="U+0308">
-      <comment>ModSmLRetrHookBelt ModSmLSDigraph ModSmLZDigraph ModSmLezh ModSmLezhRetrHook ModSmMHook ModSmNRetrHook ModSmPhi</comment>
-      <string>\u01079D \u010799 \u01079A \u01079E \u01079F \u001DAC \u001DAF \u001DB2</string>
+      <comment>ModSmLMiddleTilde ModSmLPalHook ModSmLRetrHookBelt ModSmLSDigraph ModSmLZDigraph ModSmLezh ModSmLezhRetrHook ModSmMHook</comment>
+      <string>\u00AB5E \u001DAA \u01079D \u010799 \u01079A \u01079E \u01079F \u001DAC</string>
     </test>
-    <test label="U+02B3
+    <test label="U+1DAF
+U+1DB2
+U+02B3
 U+107A9
 U+107A8
 U+02E4
 U+02E2
-U+107BA
-U+1DB3
-U+1D59">
-      <comment>ModSmR ModSmRFishhook ModSmRHookTail ModSmRevGlottalStop ModSmS ModSmSCurl ModSmSHook ModSmSdwysU</comment>
-      <string>\u0002B3\u000308 \u0107A9\u000308 \u0107A8\u000308 \u0002E4\u000308 \u0002E2\u000308 \u0107BA\u000308 \u001DB3\u000308 \u001D59\u000308</string>
+U+107BA">
+      <comment>ModSmNRetrHook ModSmPhi ModSmR ModSmRFishhook ModSmRHookTail ModSmRevGlottalStop ModSmS ModSmSCurl</comment>
+      <string>\u001DAF\u000308 \u001DB2\u000308 \u0002B3\u000308 \u0107A9\u000308 \u0107A8\u000308 \u0002E4\u000308 \u0002E2\u000308 \u0107BA\u000308</string>
     </test>
     <test label="U+0308">
-      <comment>ModSmR ModSmRFishhook ModSmRHookTail ModSmRevGlottalStop ModSmS ModSmSCurl ModSmSHook ModSmSdwysU</comment>
-      <string>\u0002B3 \u0107A9 \u0107A8 \u0002E4 \u0002E2 \u0107BA \u001DB3 \u001D59</string>
+      <comment>ModSmNRetrHook ModSmPhi ModSmR ModSmRFishhook ModSmRHookTail ModSmRevGlottalStop ModSmS ModSmSCurl</comment>
+      <string>\u001DAF \u001DB2 \u0002B3 \u0107A9 \u0107A8 \u0002E4 \u0002E2 \u0107BA</string>
     </test>
-    <test label="U+1DB5
+    <test label="U+1DB3
+U+1D59
+U+1DB5
 U+107AF
 U+107AB
 U+107AE
 U+1DBF
-U+1D54
-U+1D46
-U+1D4E">
-      <comment>ModSmTPalHook ModSmTRetrHook ModSmTcDigraphCurl ModSmTeshDigraph ModSmTheta ModSmTopHalfO ModSmTrndAe ModSmTrndI</comment>
-      <string>\u001DB5\u000308 \u0107AF\u000308 \u0107AB\u000308 \u0107AE\u000308 \u001DBF\u000308 \u001D54\u000308 \u001D46\u000308 \u001D4E\u000308</string>
+U+1D54">
+      <comment>ModSmSHook ModSmSdwysU ModSmTPalHook ModSmTRetrHook ModSmTcDigraphCurl ModSmTeshDigraph ModSmTheta ModSmTopHalfO</comment>
+      <string>\u001DB3\u000308 \u001D59\u000308 \u001DB5\u000308 \u0107AF\u000308 \u0107AB\u000308 \u0107AE\u000308 \u001DBF\u000308 \u001D54\u000308</string>
     </test>
     <test label="U+0308">
-      <comment>ModSmTPalHook ModSmTRetrHook ModSmTcDigraphCurl ModSmTeshDigraph ModSmTheta ModSmTopHalfO ModSmTrndAe ModSmTrndI</comment>
-      <string>\u001DB5 \u0107AF \u0107AB \u0107AE \u001DBF \u001D54 \u001D46 \u001D4E</string>
+      <comment>ModSmSHook ModSmSdwysU ModSmTPalHook ModSmTRetrHook ModSmTcDigraphCurl ModSmTeshDigraph ModSmTheta ModSmTopHalfO</comment>
+      <string>\u001DB3 \u001D59 \u001DB5 \u0107AF \u0107AB \u0107AE \u001DBF \u001D54</string>
     </test>
-    <test label="U+1D4C
+    <test label="U+1D46
+U+1D4E
+U+1D4C
 U+02B4
 U+02B5
 U+107AC
 U+107AD
-U+1DA3
-U+107A6
-U+107A7">
-      <comment>ModSmTrndOpnE ModSmTrndR ModSmTrndRHook ModSmTsDigraph ModSmTsHook ModSmTurnedH ModSmTurnedRLngLeg ModSmTurnedRLngLegHook</comment>
-      <string>\u001D4C\u000308 \u0002B4\u000308 \u0002B5\u000308 \u0107AC\u000308 \u0107AD\u000308 \u001DA3\u000308 \u0107A6\u000308 \u0107A7\u000308</string>
+U+1DA3">
+      <comment>ModSmTrndAe ModSmTrndI ModSmTrndOpnE ModSmTrndR ModSmTrndRHook ModSmTsDigraph ModSmTsHook ModSmTurnedH</comment>
+      <string>\u001D46\u000308 \u001D4E\u000308 \u001D4C\u000308 \u0002B4\u000308 \u0002B5\u000308 \u0107AC\u000308 \u0107AD\u000308 \u001DA3\u000308</string>
     </test>
     <test label="U+0308">
-      <comment>ModSmTrndOpnE ModSmTrndR ModSmTrndRHook ModSmTsDigraph ModSmTsHook ModSmTurnedH ModSmTurnedRLngLeg ModSmTurnedRLngLegHook</comment>
-      <string>\u001D4C \u0002B4 \u0002B5 \u0107AC \u0107AD \u001DA3 \u0107A6 \u0107A7</string>
+      <comment>ModSmTrndAe ModSmTrndI ModSmTrndOpnE ModSmTrndR ModSmTrndRHook ModSmTsDigraph ModSmTsHook ModSmTurnedH</comment>
+      <string>\u001D46 \u001D4E \u001D4C \u0002B4 \u0002B5 \u0107AC \u0107AD \u001DA3</string>
     </test>
-    <test label="U+AB69
+    <test label="U+107A6
+U+107A7
+U+AB69
 U+107A0
 U+107A1
 U+1DB9
 U+107B0
-U+02B7
-U+02E3
-U+02B8">
-      <comment>ModSmTurnedW ModSmTurnedY ModSmTurnedYBelt ModSmVHook ModSmVRtHook ModSmW ModSmX ModSmY</comment>
-      <string>\u00AB69\u000308 \u0107A0\u000308 \u0107A1\u000308 \u001DB9\u000308 \u0107B0\u000308 \u0002B7\u000308 \u0002E3\u000308 \u0002B8\u000308</string>
+U+02B7">
+      <comment>ModSmTurnedRLngLeg ModSmTurnedRLngLegHook ModSmTurnedW ModSmTurnedY ModSmTurnedYBelt ModSmVHook ModSmVRtHook ModSmW</comment>
+      <string>\u0107A6\u000308 \u0107A7\u000308 \u00AB69\u000308 \u0107A0\u000308 \u0107A1\u000308 \u001DB9\u000308 \u0107B0\u000308 \u0002B7\u000308</string>
     </test>
     <test label="U+0308">
-      <comment>ModSmTurnedW ModSmTurnedY ModSmTurnedYBelt ModSmVHook ModSmVRtHook ModSmW ModSmX ModSmY</comment>
-      <string>\u00AB69 \u0107A0 \u0107A1 \u001DB9 \u0107B0 \u0002B7 \u0002E3 \u0002B8</string>
+      <comment>ModSmTurnedRLngLeg ModSmTurnedRLngLegHook ModSmTurnedW ModSmTurnedY ModSmTurnedYBelt ModSmVHook ModSmVRtHook ModSmW</comment>
+      <string>\u0107A6 \u0107A7 \u00AB69 \u0107A0 \u0107A1 \u001DB9 \u0107B0 \u0002B7</string>
     </test>
-    <test label="U+1DBC
+    <test label="U+02E3
+U+02B8
+U+1DBC
 U+02C0
 U+02C1">
-      <comment>ModSmZRetrHook ModGlottalStop ModRevGlottalStop</comment>
-      <string>\u001DBC\u000308 \u0002C0\u000308 \u0002C1\u000308</string>
+      <comment>ModSmX ModSmY ModSmZRetrHook ModGlottalStop ModRevGlottalStop</comment>
+      <string>\u0002E3\u000308 \u0002B8\u000308 \u001DBC\u000308 \u0002C0\u000308 \u0002C1\u000308</string>
     </test>
     <test label="U+0308">
-      <comment>ModSmZRetrHook ModGlottalStop ModRevGlottalStop</comment>
-      <string>\u001DBC \u0002C0 \u0002C1</string>
+      <comment>ModSmX ModSmY ModSmZRetrHook ModGlottalStop ModRevGlottalStop</comment>
+      <string>\u0002E3 \u0002B8 \u001DBC \u0002C0 \u0002C1</string>
     </test>
   </testgroup>
   <testgroup label="Vietnamese (NFC)">
