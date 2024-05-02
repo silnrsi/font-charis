@@ -286,8 +286,8 @@ my %nm_to_tag = (
 	'Side by side' => 'T',
 	'Capital I' => 'LgI',
 	'Barless' => 'Barless',
-	'Old style proportial figures' => 'OSF',
-	'Old style figures' => 'T',
+	'Old style figures' => 'OSF',
+	'Old style' => 'T',
 	'Line spacing' => 'LnSpc',
 	'Loose' => 'Ls',
 	'Imported' => 'Im',
@@ -829,17 +829,18 @@ sub OT_Feats_get($\%)
 	# add onum feature which does not have GSUB info like CV and SS feats
 	#  it's much like a SS feat
 	# this feature is not in Andika
-	#  since no glyphs in glyph_data.csv are associated with this feature for Andika
-	#  the below will produce a Feature element but it will do nothing
-	push(@{$feats->{' ids'}}, 'onum');
-	$feats->{'onum'}{'name'} = 'Old style proportial figures';
-	$feats->{'onum'}{'tag'} = Tag_lookup('Old style proportial figures', %nm_to_tag);
-	$feats->{'onum'}{'default'} = 0;
-	$feats->{'onum'}{'settings'}{' ids'} = [0, 1];
-	$feats->{'onum'}{'settings'}{0}{'name'} = 'Default';
-	$feats->{'onum'}{'settings'}{0}{'tag'} = 'Dflt';
-	$feats->{'onum'}{'settings'}{1}{'name'} = 'Old style figures';
-	$feats->{'onum'}{'settings'}{1}{'tag'} = Tag_lookup('True', %nm_to_tag);
+	if ($family_nm ne 'andika' and !$opt_a) 
+	{
+		push(@{$feats->{' ids'}}, 'onum');
+		$feats->{'onum'}{'name'} = 'Old style figures';
+		$feats->{'onum'}{'tag'} = Tag_lookup('Old style figures', %nm_to_tag);
+		$feats->{'onum'}{'default'} = 0;
+		$feats->{'onum'}{'settings'}{' ids'} = [0, 1];
+		$feats->{'onum'}{'settings'}{0}{'name'} = 'Default';
+		$feats->{'onum'}{'settings'}{0}{'tag'} = 'Dflt';
+		$feats->{'onum'}{'settings'}{1}{'name'} = 'Old style';
+		$feats->{'onum'}{'settings'}{1}{'tag'} = Tag_lookup('True', %nm_to_tag);
+	}
 
 	if ($opt_m or $opt_d)
 	{

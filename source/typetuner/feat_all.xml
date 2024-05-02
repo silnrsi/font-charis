@@ -1140,11 +1140,11 @@
 			<cmd name="encode" args="A723 uniA723.sc" />
 		</value>
 	</feature>
-	<feature name="Old style proportial figures" value="Default" tag="OSF">
-		<value name="Default" tag="Dflt">
+	<feature name="Old style figures" value="Standard (tabular)" tag="OSF">
+		<value name="Standard (tabular)" tag="Dflt">
 			<cmd name="null" args="null" />
 		</value>
-		<value name="Old style figures" tag="T">
+		<value name="Old style" tag="T">
 			<cmd name="encode" args="0030 zero.osf" />
 			<cmd name="encode" args="0031 one.osf" />
 			<cmd name="encode" args="0032 two.osf" />
