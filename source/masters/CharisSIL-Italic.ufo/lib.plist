@@ -29,7 +29,7 @@
     <array/>
   </dict>
   <key>com.schriftgestaltung.appVersion</key>
-  <string>3305</string>
+  <string>3260</string>
   <key>com.schriftgestaltung.customName</key>
   <string>Italic</string>
   <key>com.schriftgestaltung.customParameter.GSFont.DisplayStrings</key>
@@ -60,7 +60,8 @@ Ve/LtnSmLCaron ká/Space Bi/LtnSmLCaron ak/Space podnikate/LtnSmLCaron ]
 /LtnCapLCaron A/Space/LtnCapLCaron B/Space/LtnCapLCaron/LtnCapCCaron/Space/LtnCapLCaron G/Space/LtnCapLCaron H/Space/LtnCapLCaron K/Space/LtnCapLCaron M/Space/LtnCapLCaron N/Space/LtnCapLCaron/LtnCapNCaron 
 /LtnCapLCaron O/Space/LtnCapLCaron S/Space/LtnCapLCaron/LtnCapSCaron/Space/LtnCapLCaron T/Space/LtnCapLCaron U/Space/LtnCapLCaron Ú/Space/LtnCapLCaron VALVELT
 /LtnCapLCaron ahko/Space</string>
-    <string>/LftArrwStrk/LftRtArrw/LftRtArrwStrk/DwnArrwhd 3+=/XOR/NAND/NOR 4</string>
+    <string>/RtArrwStrk/RtArrw/LftArrw/LftArrwStrk/LftRtArrw/LftRtArrwStrk/DwnArrwhd x=
+/ModUpArrwhd/ModDwnArrwhd p/DwnArrwhd q/XOR p/UpArrwhd f/NAND q/NOR</string>
   </array>
   <key>com.schriftgestaltung.customParameter.GSFont.disablesAutomaticAlignment</key>
   <true/>

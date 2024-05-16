@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="XOR" format="2">
-  <advance width="899"/>
+  <advance width="1170"/>
   <unicode hex="22BB"/>
   <outline>
     <component base="DwnArrwhd"/>
     <contour>
-      <point x="848" y="2"/>
-      <point x="854" y="31" type="curve"/>
-      <point x="832" y="55" type="line"/>
-      <point x="86" y="55" type="line"/>
-      <point x="73" y="29"/>
-      <point x="51" y="-11"/>
-      <point x="45" y="-40" type="curve"/>
-      <point x="67" y="-65" type="line"/>
-      <point x="815" y="-65" type="line"/>
-      <point x="826" y="-40"/>
+      <point x="1060" y="-227" type="line"/>
+      <point x="1060" y="-100" type="line"/>
+      <point x="110" y="-100" type="line"/>
+      <point x="110" y="-227" type="line"/>
     </contour>
   </outline>
   <lib>
@@ -22,7 +16,7 @@
       <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
       <string>CP</string>
       <key>public.markColor</key>
-      <string>0.99,0.62,0.11,1</string>
+      <string>0.97,1,0,1</string>
     </dict>
   </lib>
 </glyph>
