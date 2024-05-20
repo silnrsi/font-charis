@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="NOR" format="2">
-  <advance width="1170"/>
+  <advance width="1190"/>
   <unicode hex="22BD"/>
   <outline>
-    <component base="DwnArrwhd"/>
+    <component base="DwnArrwhd" xOffset="50"/>
     <contour>
-      <point x="1113" y="993" type="line"/>
-      <point x="1113" y="1120" type="line"/>
-      <point x="163" y="1120" type="line"/>
-      <point x="163" y="993" type="line"/>
+      <point x="1163" y="1190" type="line"/>
+      <point x="1163" y="1317" type="line"/>
+      <point x="213" y="1317" type="line"/>
+      <point x="213" y="1190" type="line"/>
     </contour>
   </outline>
   <lib>
