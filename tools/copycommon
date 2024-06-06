@@ -4,7 +4,7 @@
 # Doulos font project repos to the related project repos.
 # Derived from tools/copycommon-shl in the font-arab-tools repo.
 
-# Copyright (c) 2023 SIL International  (https://www.sil.org)
+# Copyright (c) 2023-2024 SIL International  (https://www.sil.org)
 # Released under the MIT License (http://opensource.org/licenses/MIT)
 
 # Requires:
@@ -51,17 +51,25 @@ files=(
 
 set -e
 
-# Allow a -q to suppress most output
+# Options:
+# -q  suppress most output
+# -d  "dry-run" (not actually copy)
 
 verbose=' -v '
-while getopts 'qh' opt; do
+while getopts 'dqh' opt; do
   case "$opt" in
+    d)
+      dryrun='yes'
+      ;;
+
     q)
       verbose=
       ;;
 
     ?|h)
-      echo "Usage: $(basename $0) [-q]"
+      echo -e "Usage: $(basename $0) [-q] [-d]
+      -q  suppress most output
+      -d  dry-run (don't actually copy)"
       exit 1
       ;;
   esac
@@ -120,6 +128,8 @@ else
                 if cmp -s "$file" "$repo/$file" ; then
                     # Target copy is already up-to-date; output msg if in verbose mode
                     [[ -n "$verbose" ]] && echo "  already up to date: $repo/$file"
+                elif [[ "$dryrun" = "yes" ]]; then
+                    echo "  Would copy $file"
                 else
                     # Target file needs updating
                     # Would use the simpler cp --parents here but not supported on macOS
