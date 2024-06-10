@@ -154,28 +154,54 @@
   <string>C_ombD_blA_cute.glif</string>
   <key>CombDblBreve</key>
   <string>C_ombD_blB_reve.glif</string>
+  <key>CombDblBreve.lhigh</key>
+  <string>C_ombD_blB_reve.lhigh.glif</string>
   <key>CombDblBreve.low</key>
   <string>C_ombD_blB_reve.low.glif</string>
+  <key>CombDblBreve.low.lhigh</key>
+  <string>C_ombD_blB_reve.low.lhigh.glif</string>
   <key>CombDblBreve.mid</key>
   <string>C_ombD_blB_reve.mid.glif</string>
+  <key>CombDblBreve.mid.lhigh</key>
+  <string>C_ombD_blB_reve.mid.lhigh.glif</string>
   <key>CombDblBreveBlw</key>
   <string>C_ombD_blB_reveB_lw.glif</string>
   <key>CombDblBreveBlw.blwhigh</key>
   <string>C_ombD_blB_reveB_lw.blwhigh.glif</string>
+  <key>CombDblBreveBlw.blwhigh.ulow</key>
+  <string>C_ombD_blB_reveB_lw.blwhigh.ulow.glif</string>
+  <key>CombDblBreveBlw.blwhigh.umid</key>
+  <string>C_ombD_blB_reveB_lw.blwhigh.umid.glif</string>
+  <key>CombDblBreveBlw.ulow</key>
+  <string>C_ombD_blB_reveB_lw.ulow.glif</string>
+  <key>CombDblBreveBlw.umid</key>
+  <string>C_ombD_blB_reveB_lw.umid.glif</string>
   <key>CombDblBreveBlwDep</key>
   <string>C_ombD_blB_reveB_lwD_ep.glif</string>
   <key>CombDblCircum</key>
   <string>C_ombD_blC_ircum.glif</string>
+  <key>CombDblCircum.lhigh</key>
+  <string>C_ombD_blC_ircum.lhigh.glif</string>
   <key>CombDblCircum.low</key>
   <string>C_ombD_blC_ircum.low.glif</string>
+  <key>CombDblCircum.low.lhigh</key>
+  <string>C_ombD_blC_ircum.low.lhigh.glif</string>
   <key>CombDblCircum.mid</key>
   <string>C_ombD_blC_ircum.mid.glif</string>
+  <key>CombDblCircum.mid.lhigh</key>
+  <string>C_ombD_blC_ircum.mid.lhigh.glif</string>
   <key>CombDblDiaer</key>
   <string>C_ombD_blD_iaer.glif</string>
+  <key>CombDblDiaer.lhigh</key>
+  <string>C_ombD_blD_iaer.lhigh.glif</string>
   <key>CombDblDiaer.low</key>
   <string>C_ombD_blD_iaer.low.glif</string>
+  <key>CombDblDiaer.low.lhigh</key>
+  <string>C_ombD_blD_iaer.low.lhigh.glif</string>
   <key>CombDblDiaer.mid</key>
   <string>C_ombD_blD_iaer.mid.glif</string>
+  <key>CombDblDiaer.mid.lhigh</key>
+  <string>C_ombD_blD_iaer.mid.lhigh.glif</string>
   <key>CombDblGrave</key>
   <string>C_ombD_blG_rave.glif</string>
   <key>CombDblInvBreve</key>
@@ -186,14 +212,28 @@
   <string>C_ombD_blI_nvB_reve.U_L_.glif</string>
   <key>CombDblInvBreve.UU</key>
   <string>C_ombD_blI_nvB_reve.U_U_.glif</string>
+  <key>CombDblInvBreve.lhigh</key>
+  <string>C_ombD_blI_nvB_reve.lhigh.glif</string>
   <key>CombDblInvBreve.low</key>
   <string>C_ombD_blI_nvB_reve.low.glif</string>
+  <key>CombDblInvBreve.low.lhigh</key>
+  <string>C_ombD_blI_nvB_reve.low.lhigh.glif</string>
   <key>CombDblInvBreve.mid</key>
   <string>C_ombD_blI_nvB_reve.mid.glif</string>
+  <key>CombDblInvBreve.mid.lhigh</key>
+  <string>C_ombD_blI_nvB_reve.mid.lhigh.glif</string>
   <key>CombDblInvBreveBlw</key>
   <string>C_ombD_blI_nvB_reveB_lw.glif</string>
   <key>CombDblInvBreveBlw.blwhigh</key>
   <string>C_ombD_blI_nvB_reveB_lw.blwhigh.glif</string>
+  <key>CombDblInvBreveBlw.blwhigh.ulow</key>
+  <string>C_ombD_blI_nvB_reveB_lw.blwhigh.ulow.glif</string>
+  <key>CombDblInvBreveBlw.blwhigh.umid</key>
+  <string>C_ombD_blI_nvB_reveB_lw.blwhigh.umid.glif</string>
+  <key>CombDblInvBreveBlw.ulow</key>
+  <string>C_ombD_blI_nvB_reveB_lw.ulow.glif</string>
+  <key>CombDblInvBreveBlw.umid</key>
+  <string>C_ombD_blI_nvB_reveB_lw.umid.glif</string>
   <key>CombDblInvBreveLft</key>
   <string>C_ombD_blI_nvB_reveL_ft.glif</string>
   <key>CombDblInvBreveRt</key>
@@ -202,14 +242,28 @@
   <string>C_ombD_blL_owL_ine.glif</string>
   <key>CombDblMacron</key>
   <string>C_ombD_blM_acron.glif</string>
+  <key>CombDblMacron.lhigh</key>
+  <string>C_ombD_blM_acron.lhigh.glif</string>
   <key>CombDblMacron.low</key>
   <string>C_ombD_blM_acron.low.glif</string>
+  <key>CombDblMacron.low.lhigh</key>
+  <string>C_ombD_blM_acron.low.lhigh.glif</string>
   <key>CombDblMacron.mid</key>
   <string>C_ombD_blM_acron.mid.glif</string>
+  <key>CombDblMacron.mid.lhigh</key>
+  <string>C_ombD_blM_acron.mid.lhigh.glif</string>
   <key>CombDblMacronBlw</key>
   <string>C_ombD_blM_acronB_lw.glif</string>
   <key>CombDblMacronBlw.blwhigh</key>
   <string>C_ombD_blM_acronB_lw.blwhigh.glif</string>
+  <key>CombDblMacronBlw.blwhigh.ulow</key>
+  <string>C_ombD_blM_acronB_lw.blwhigh.ulow.glif</string>
+  <key>CombDblMacronBlw.blwhigh.umid</key>
+  <string>C_ombD_blM_acronB_lw.blwhigh.umid.glif</string>
+  <key>CombDblMacronBlw.ulow</key>
+  <string>C_ombD_blM_acronB_lw.ulow.glif</string>
+  <key>CombDblMacronBlw.umid</key>
+  <string>C_ombD_blM_acronB_lw.umid.glif</string>
   <key>CombDblOpnMrkBlw</key>
   <string>C_ombD_blO_pnM_rkB_lw.glif</string>
   <key>CombDblOverline</key>
@@ -224,12 +278,26 @@
   <string>C_ombD_blR_tA_rrwB_lw.glif</string>
   <key>CombDblRtArrwBlw.blwhigh</key>
   <string>C_ombD_blR_tA_rrwB_lw.blwhigh.glif</string>
+  <key>CombDblRtArrwBlw.blwhigh.ulow</key>
+  <string>C_ombD_blR_tA_rrwB_lw.blwhigh.ulow.glif</string>
+  <key>CombDblRtArrwBlw.blwhigh.umid</key>
+  <string>C_ombD_blR_tA_rrwB_lw.blwhigh.umid.glif</string>
+  <key>CombDblRtArrwBlw.ulow</key>
+  <string>C_ombD_blR_tA_rrwB_lw.ulow.glif</string>
+  <key>CombDblRtArrwBlw.umid</key>
+  <string>C_ombD_blR_tA_rrwB_lw.umid.glif</string>
   <key>CombDblTilde</key>
   <string>C_ombD_blT_ilde.glif</string>
+  <key>CombDblTilde.lhigh</key>
+  <string>C_ombD_blT_ilde.lhigh.glif</string>
   <key>CombDblTilde.low</key>
   <string>C_ombD_blT_ilde.low.glif</string>
+  <key>CombDblTilde.low.lhigh</key>
+  <string>C_ombD_blT_ilde.low.lhigh.glif</string>
   <key>CombDblTilde.mid</key>
   <string>C_ombD_blT_ilde.mid.glif</string>
+  <key>CombDblTilde.mid.lhigh</key>
+  <string>C_ombD_blT_ilde.mid.lhigh.glif</string>
   <key>CombDblTildeLft</key>
   <string>C_ombD_blT_ildeL_ft.glif</string>
   <key>CombDblTildeRt</key>
