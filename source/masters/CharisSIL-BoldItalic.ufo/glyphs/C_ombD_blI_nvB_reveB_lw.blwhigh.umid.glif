@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="CombDblInvBreveBlw.blwhigh.umid" format="2">
   <anchor x="-183" y="-375" name="L"/>
-  <anchor x="110" y="1100" name="U"/>
+  <anchor x="175" y="1468" name="U"/>
   <outline>
     <component base="CombDblInvBreve" xOffset="-380" yOffset="-2015"/>
   </outline>
-  <lib>
-    <dict>
-      <key>public.markColor</key>
-      <string>0.98,0.36,0.67,1</string>
-    </dict>
-  </lib>
 </glyph>
