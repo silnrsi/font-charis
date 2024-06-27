@@ -138,6 +138,34 @@ lookup dbl_diac_blw_raise { #raise dbl diac under two glyphs without descenders
     sub @c_takes_belowhigh_diac @cno_blwhigh' lookup dbl_diac_blwhigh @c_takes_belowhigh_diac;
 } dbl_diac_blw_raise;
 
+lookup dbl_diac_lhigh {
+  lookupflag 0;
+    sub @cno_lhigh by @c_lhigh;
+} dbl_diac_lhigh;
+
+lookup dbl_diac_abv_raise_l { #raise l ap under two glyphs without descenders
+  lookupflag 0;
+    sub @c_takes_belowhigh_diac @cno_lhigh' lookup dbl_diac_lhigh @c_cgj @_L @c_takes_belowhigh_diac;
+} dbl_diac_abv_raise_l;
+
+lookup dbl_diac_umid {
+  lookupflag 0;
+    sub @cno_umid by @c_umid;
+} dbl_diac_umid;
+
+lookup dbl_diac_ulow {
+  lookupflag 0;
+    sub @cno_ulow by @c_ulow;
+} dbl_diac_ulow;
+
+lookup dbl_diac_blw_lower_u { #lower u ap over two lower glyphs
+  lookupflag 0;
+    sub @c_takes_mid_diac @cno_umid' lookup dbl_diac_umid @c_cgj @_U @c_takes_mid_diac;
+    sub @c_takes_mid_diac @cno_umid' lookup dbl_diac_umid @c_cgj @_U @c_takes_low_diac;
+    sub @c_takes_low_diac @cno_umid' lookup dbl_diac_umid @c_cgj @_U @c_takes_mid_diac;
+    sub @c_takes_low_diac @cno_ulow' lookup dbl_diac_ulow @c_cgj @_U  @c_takes_low_diac;
+} dbl_diac_blw_lower_u;
+
 lookup sc1_sub {
   lookupflag 0;
     # sub @cno_sc by @c_sc;
@@ -939,6 +967,8 @@ feature ccmp {
   lookup y_ognk_sub;
   lookup dbl_diac_abv_lower;
   lookup dbl_diac_blw_raise;
+  lookup dbl_diac_abv_raise_l;
+  lookup dbl_diac_blw_lower_u;
 do let f = info("familyName");
    if f.find("Gentium") != -1; {
   lookup lpdiac_ctx; #Gentium
