@@ -708,8 +708,10 @@ lookup apos_sub {
   lookupflag 0;
     sub LtnCapSaltillo from [LtnCapSaltillo.Lrg ];
     sub LtnSmSaltillo from [LtnSmSaltillo.Lrg ];
-    sub ModApos from [ModApos.Lrg ];
     sub LtnSmSaltillo.sc from [LtnSmSaltillo.Lrg.sc ];
+    sub ModApos from [ModApos.Lrg ];
+    sub CombTrndCommaAbv from [CombTrndCommaAbv.Lrg ];
+    sub CombRevCommaAbv from [CombRevCommaAbv.Lrg ];
 } apos_sub;
 
 lookup colon_sub {
