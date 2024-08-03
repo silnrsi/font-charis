@@ -477,23 +477,43 @@ def doit(args):
                 uid_char_lst = [u for u in uid_lst if type(u) is int]
                 uid_lig_lst = [u for u in uid_lst if type(u) is list]
 
+                # add diacBase before non-spacing marks using tuples
+                #  (diacBase, uid) tuples needed for breaking uids into groups per line below
+                uid_diacbase_char_lst = [u if get_ucd(u, 'gc') != 'Mn' else (builder.diacBase, u) for u in uid_char_lst]
+
                 # break uids into groups
                 uidlst_ct = 16 if not ap_type else 8
 
                 # generate ftml for all chars associated with the features
-                uidlst_lst = [uid_char_lst[i:i+uidlst_ct] for i in range(0, len(uid_char_lst), uidlst_ct)]
-                for uidlst in uidlst_lst: #uidlst contains uids to test
+                uidlst_lst = [uid_diacbase_char_lst[i:i+uidlst_ct] for i in range(0, len(uid_diacbase_char_lst), uidlst_ct)]
+                for uidlst in uidlst_lst: #uidlst may contain uids and (diacBase, uid) tuples to test
+                    # base_diac_lst contains full test string including uids to test and diacBases
+                    # base_lst just contains uids that are being tested (used to generate test labels, etc.)
                     base_diac_lst, base_lst = [], []
                     if not ap_type:
                         # features test (no '_<AP>')
-                        base_diac_lst, base_lst = uidlst, uidlst
+                        for uid in uidlst:
+                            if type(uid) is int:
+                                base_diac_lst.append(uid)
+                                base_lst.append(uid)
+                            else: # (diacBase, uid) tuple
+                                base_diac_lst.extend(uid)
+                                base_lst.append(uid[1])
+                        # base_lst = [uid if type(uid) is int else uid[1] for uid in uidlst]
                     else:
                         # features_U, features_L, etc. tests
                         for uid in uidlst:
-                            c_base = builder.char(uid)
-                            if builder.matchMarkBase(c_mark, c_base):
-                                base_lst.append(uid)
-                                base_diac_lst.extend((uid, ap_uid))
+                        # base_diac_lst contains full test string including uids to test, diacBases, and diacs to attach
+                            if type(uid) is int:
+                                c_base = builder.char(uid)
+                                if builder.matchMarkBase(c_mark, c_base): # only include seqs where attachment can occur
+                                    base_diac_lst.extend((uid, ap_uid))
+                                    base_lst.append(uid)
+                            else: # (diacBase, uid) tuple
+                                c_base = builder.char(uid[1])
+                                if builder.matchMarkBase(c_mark, c_base):
+                                    base_diac_lst.extend((*uid, ap_uid))
+                                    base_lst.append(uid[1])
                     ftml.clearFeatures()
                     builder.render(base_diac_lst, ftml, descUIDs=base_lst) # render all uids without feat setting
                     for tv_lst in p_lst: # for one list of values out of all lists of values
@@ -502,6 +522,10 @@ def doit(args):
 
                 # generate ftml for all ligatures associated with the features
                 #   the ligature sequence is followed by a space
+                # these will appear at the end of each feature test after the non-lig sequences
+                #   see cv76 applied to 0079 0328 (straight ogonek on y ogonek) ; cv79 applied to 0300 0301 (kayan diacs on acute grave)
+                #   see slant ital (ss05) applied to f ligs
+                # the only lig seqs affected by a feature with non-spacing marks are seqs for viet diacs. diacBases could be added as above
                 liglst_lst = [uid_lig_lst[i:i+uidlst_ct] for i in range(0, len(uid_lig_lst), uidlst_ct)]
                 for liglst in liglst_lst: # liglst contains lists of uids & name to tests
                     lig_lst, lig_diac_lst = [], []
@@ -515,7 +539,7 @@ def doit(args):
                         else:
                             # features_U, features_L, etc. tests
                             c_base = builder.special(lig)
-                            if builder.matchMarkBase(c_mark, c_base):
+                            if builder.matchMarkBase(c_mark, c_base): # only include seqs where attachment can occur
                                 lig_lst.extend(lig)
                                 lig_lst.append(ord(' '))
                                 lig_diac_lst.extend(lig)
