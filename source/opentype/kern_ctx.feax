@@ -1,0 +1,11 @@
+lookup kern_ctx {
+    lookupflag 0;
+    # Regular 
+    ifinfo(styleName, "(?<!Italic)$") {
+    # pos @public.kern1.LCapDiagV' -70 @public.kern2.RSmCurve @_U;
+    }
+    # Italic
+    ifinfo(styleName, "(?<=Italic)$") {
+    # pos @public.kern1.LCapDiagV' -80 @public.kern2.RSmCurve @_U;
+    }
+} kern_ctx;

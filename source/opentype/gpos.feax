@@ -57,23 +57,69 @@ feature mkmk {
   lookup mark_mark_L;
 } mkmk;
 
-# Gentium
-do let f = info("familyName");
-   if f.find("Gentium") != -1; {
-lookup kernpairs {
-    kernpairs;
-} kernpairs;
-}
-
 # lookup tns_pos { # not needed by tone glyphs currently being used
 #   lookupflag IgnoreMarks;
 #     pos cursive @TL_ @TL;
 # } tns_pos;
 
-do let f = info("familyName");
-   if f.find("Gentium") != -1; {
+# feature kern {
+#   lookup tns_pos;
+# } kern;
+
+# Gentium
+
+ifinfo(familyName, "Andika|Charis|Gentium") {
+
+# for debugging
+# def kpairs() {
+#   # l = [('@public.kern1.LCapTopT', '@public.kern2.RSmCurve', '-90')]
+#   l = kerninfo(0) # one arg required (not used so can be anything)
+#   return l
+# } kpairs;
+
+# undo kerning for pairs in UFO followed by an upper mark. usually to apply contextual kerning later
+include(../../source/opentype/kernpairs_undo.feax);
+# example of content from kernpairs_undo.feax for reference
+# def unkpairs() {
+#   l = [
+#     ('@public.kern1.LCapTopT', '@public.kern2.RSmCurve')
+#   ]
+#   return l
+# } unkpairs;
+
+lookup kernpairs {
+  lookupflag IgnoreMarks;
+    kernpairs;
+} kernpairs;
+
+lookup kernpairs_undo {
+  lookupflag 0;
+do
+  let u = unkpairs();
+  # let k = kpairs(); # for debugging
+  let k = kerninfo(0); # one arg required (not used so can be anything)
+  forlet p = u;
+  let k1, k2 = p;
+  forlet q = k;
+  let g1, g2, n = q;
+  let n = -int(n); # should probably use round() but not supported in feax
+  if k1 == g1 and k2 == g2; # no way to terminate inner loop
+  {
+    pos $g1' $n $g2 @_U;
+  }
+  } kernpairs_undo;
+
+# contextual kerning mainly for base+base+mark
+include(../../source/opentype/kern_ctx.feax);
+# example of content from kern_ctx.feax for reference
+# lookup kern_ctx {
+#     pos @public.kern1.LCapTopT' 45 @public.kern2.RSmCurve CombDiaer;
+# } kern_ctx;
+
 feature kern {
-  # lookup tns_pos;
   lookup kernpairs;
+  lookup kernpairs_undo;
+  lookup kern_ctx;
 } kern;
-}
+
+} 
