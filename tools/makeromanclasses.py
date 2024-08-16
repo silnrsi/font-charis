@@ -187,14 +187,15 @@ class Font(object):
                 self.g_classes.setdefault('cno_lprof_diac', []).append(g_no_nm)
 
         # create class used to test for glyphs that need low profile diacritics by default
-        # Latin upper case with U AP; variants can be ignored because LP diacs handled early in processing
+        # Latin, Roman numerals, or Cyrillic upper case with U AP;
+        # variants can be ignored because LP diacs handled early in processing
         for uni_str in self.unicodes:
             unichr = chr(int(uni_str, 16))
             if unichr.isupper():
                 glyph_lst = self.unicodes[uni_str]
                 assert(len(glyph_lst) == 1)
                 g_nm = glyph_lst[0].name
-                if g_nm.startswith('Ltn') or g_nm.startswith('Rom'):
+                if g_nm.startswith('Ltn') or g_nm.startswith('Rom') or g_nm.startswith('Cy'):
                     for a in glyph_lst[0].anchors:
                         if a == 'U':
                             self.g_classes.setdefault('c_takes_lp_diac', []).append(g_nm)
