@@ -585,6 +585,7 @@ lookup ezh_sub {
 lookup rams_sub {
   lookupflag 0;
     sub LtnSmRamsHorn from [LtnSmRamsHorn.LrgBowl LtnSmRamsHorn.GammaStyle ];
+    sub LtnSupSmRamsHorn from [LtnSupSmRamsHorn.LrgBowl LtnSupSmRamsHorn.GammaStyle ];
 } rams_sub;
 
 lookup hstrk_sub {
