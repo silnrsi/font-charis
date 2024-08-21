@@ -129,14 +129,32 @@
     <test label="U+0361 U+034F U+035F (RFS-4)">
       <string>\u00006F\u000361\u000075 \u00006F\u00035F\u000075 \u00006F\u000361\u00034F\u00035F\u000075</string>
     </test>
+    <test label="U+0361 (RFS-4)">
+      <string>\u000041\u000361\u000068 \u000041\u000361\u000041 \u000041\u000361\u000061</string>
+    </test>
+    <test label="U+0361 (RFS-4)">
+      <string>\u000068\u000361\u000068 \u000068\u000361\u000041 \u000068\u000361\u000061</string>
+    </test>
     <test label="U+0303 U+0361 base U+0303 (RFS-7)">
       <string>\u00004C\u000361\u00004C \u00004C\u000303\u000361\u00004C\u000303</string>
+    </test>
+    <test label="U+0303 U+0361 base U+0303 (RFS-7)">
+      <string>\u00006C\u000361\u00006C \u00006C\u000303\u000361\u00006C\u000303</string>
+    </test>
+    <test label="U+0303 U+0361 base U+0303 (RFS-7)">
+      <string>\u000063\u000361\u000063 \u000063\u000361\u000063\u000303 \u000063\u000303\u000361\u000063\u000303</string>
+    </test>
+    <test label="U+0303 U+0361 base U+0303 (RFS-7)">
+      <string>\u000061\u000361\u000061 \u000061\u000303\u000361\u000061\u000303</string>
+    </test>
+    <test label="U+0303 U+0361 base U+0303 (RFS-7)">
+      <string>\u000069\u000361\u000069 \u000069\u000303\u000361\u000069\u000303</string>
     </test>
     <test label="U+0325 U+035F base U+0325 (RFS-7)">
       <string>\u00014A\u00035F\u00014A \u00014A\u000325\u00035F\u00014A\u000325</string>
     </test>
     <test label="U+0362 under diacs (RFS-7)">
-      <string>\u000074\u000362\u000074 \u000074\u00032A\u000362\u000074 \u000074\u000362\u000074\u00032A \u000074\u00032A\u000362\u000074\u00032A </string>
+      <string>\u000074\u000362\u000074 \u000074\u00032A\u000362\u000074 \u000074\u000362\u000074\u00032A \u000074\u00032A\u000362\u000074\u00032A</string>
     </test>
     <test label="U+035E (RFS-8)">
       <string>\u000041\u00035E\u000041 \u000041\u00035E\u000061 \u000061\u00035E\u000061</string>
