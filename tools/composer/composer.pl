@@ -53,6 +53,7 @@ my $feat_all_elem = "all_features";
 # my $vietnamese_style_diacs_feat = 'viet';
 my $vietnamese_style_diacs_feat = 'cv75';
 my $romanian_style_diacs_feat = 'romn';
+my $old_style_figures_feat = 'onum';
 
 #generated using the -l switch 
 # then copying & pasting the file produced into this file.
@@ -1398,6 +1399,9 @@ sub Features_output($\%\%\%\%)
 		my ($feat_nm, $feat_tag) = ($feat->{'name'}, $feat->{'tag'});
 		my $feat_def_id = $feat->{'default'};
 		my $feat_def_nm = $feat->{'settings'}{$feat_def_id}{'name'};
+
+		if ($old_style_figures_feat =~ /$feat_id/ and $family_nm eq 'doulos')
+			{next;} #exclude onum feat from Doulos
 		
 		#start feature element
 		print $fh "\t<feature name=\"$feat_nm\" value=\"$feat_def_nm\" tag=\"$feat_tag\">\n";
