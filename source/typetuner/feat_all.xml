@@ -555,6 +555,12 @@
 			<cmd name="null" args="null" />
 		</value>
 		<value name="Small caps" tag="T">
+			<cmd name="encode" args="0028 parenleft.sc" />
+			<cmd name="encode" args="0029 parenright.sc" />
+			<cmd name="encode" args="005B bracketleft.sc" />
+			<cmd name="encode" args="005D bracketright.sc" />
+			<cmd name="encode" args="007B braceleft.sc" />
+			<cmd name="encode" args="007D braceright.sc" />
 			<cmd name="encode" args="0061 a.sc" />
 			<cmd name="encode" args="0430 uni0430.sc" />
 			<cmd name="encode" args="00E1 aacute.sc" />
