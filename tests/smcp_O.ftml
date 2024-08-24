@@ -4,8 +4,12 @@
   <head>
     <fontscale>200</fontscale>
     <fontsrc label="CR">url(../results/CharisSIL-Regular.ttf)</fontsrc>
+    <fontsrc label="CM">url(../results/CharisSIL-Medium.ttf)</fontsrc>
+    <fontsrc label="CS">url(../results/CharisSIL-SemiBold.ttf)</fontsrc>
     <fontsrc label="CB">url(../results/CharisSIL-Bold.ttf)</fontsrc>
     <fontsrc label="CI">url(../results/CharisSIL-Italic.ttf)</fontsrc>
+    <fontsrc label="CMI">url(../results/CharisSIL-MediumItalic.ttf)</fontsrc>
+    <fontsrc label="CSI">url(../results/CharisSIL-SemiBoldItalic.ttf)</fontsrc>
     <fontsrc label="CBI">url(../results/CharisSIL-BoldItalic.ttf)</fontsrc>
     <fontsrc label="CR6">url(../references/v6101/CharisSIL-Regular.ttf)</fontsrc>
     <fontsrc label="CB6">url(../references/v6101/CharisSIL-Bold.ttf)</fontsrc>

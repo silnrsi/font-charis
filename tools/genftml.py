@@ -11,7 +11,9 @@ import psfgenftml
 
 # tests to generate (see psfgenftml.py)
 test_lst = ["allchars", "allframed", "diacs", "features", "smcp"]
+# test_lst = ["features"] # for debugging
 AP_type_lst = ["U", "L", "O", "H", "R"]
+# AP_type_lst = [] # for debugging
 for a in AP_type_lst:
     test_lst.append("features_" + a)
     test_lst.append("smcp_" + a)
@@ -28,8 +30,9 @@ assert(ufo_path and regular_ufo_base)
 ttf_results_fn_lst = glob.glob("results/*.ttf")
 ttf_fn_lst = [os.path.basename(f) for f in ttf_results_fn_lst]
 
-sort_style_lst = ["-Regular", "-Bold(?!Italic)", "-(?!Bold)Italic", "-BoldItalic"]
-# heavy_style = "Book" # not needed in current implementation
+# exclude -ExtraBold and -ExtraBoldItalic; use Book -Bold and -BoldItalic instead (see below)
+sort_style_lst = ["-Regular", "-Medium(?!Italic)", "-SemiBold(?!Italic)", "-Bold(?!Italic)", 
+                  "-Italic", "-MediumItalic", "-SemiBoldItalic", "-BoldItalic"]
 
 # sort() and reverse() ensure Regular comes before Book Regular
 ttf_fn_lst.sort()
@@ -92,10 +95,14 @@ for test in test_lst:
     # generate multi-font test
     arg_lst = [arg.format(**arg_values_dict) for arg in arg_cols_template_lst]
     for fn in ttf_fn_sort_lst:
+        # skip all Book fonts except for -Bold and -BoldItalic
+        if fn.find('Book') != -1:
+            if not re.search("-Bold(?!Italic)|-BoldItalic", fn):
+                continue
         family = fn[0]
         family += 'Bk' if fn.find('Book') != -1 else ''
-        style = fn[fn.index('-') + 1]
-        style += 'I' if fn.find('BoldItalic') != -1 else ''
+        style = fn[fn.find('-') + 1]
+        style += 'I' if re.search("-.+Italic", fn) else ''
         arg_lst.extend(["-s", "../results/{}={}{}".format(fn, family, style)])
     # TODO: kludgy way to add columns for other fonts, assumes tests/reference folder
     arg_lst.extend(["-s", "../references/v6101/CharisSIL-Regular.ttf=CR6"])
