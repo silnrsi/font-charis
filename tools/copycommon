@@ -36,13 +36,14 @@ files=(
     source/opentype/featureinfo.xlsx
     tools/makeromanclasses.py
     tools/psfgenftml.py
+    tools/genftml.py
     tools/ftml.xsl
     tools/ftml-smith.xsl
     tools/copycommon
-	tools/composer/glyph_data_to_gsi.py
-	tools/composer/composer.pl
-	tools/composer/gsi_dfltvars.xml
-	tools/composer/updateTTfeatnames.py
+    tools/composer/glyph_data_to_gsi.py
+    tools/composer/composer.pl
+    tools/composer/gsi_dfltvars.xml
+    tools/composer/updateTTfeatnames.py
 )
 
 #-----------------------------------------------------

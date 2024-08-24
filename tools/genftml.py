@@ -104,11 +104,10 @@ for test in test_lst:
         style = fn[fn.find('-') + 1]
         style += 'I' if re.search("-.+Italic", fn) else ''
         arg_lst.extend(["-s", "../results/{}={}{}".format(fn, family, style)])
-    # TODO: kludgy way to add columns for other fonts, assumes tests/reference folder
-    arg_lst.extend(["-s", "../references/v6101/CharisSIL-Regular.ttf=CR6"])
-    arg_lst.extend(["-s", "../references/v6101/CharisSIL-Bold.ttf=CB6"])
-    arg_lst.extend(["-s", "../references/v6101/CharisSIL-Italic.ttf=CI6"])
-    arg_lst.extend(["-s", "../references/v6101/CharisSIL-BoldItalic.ttf=CBI6"])
+    # add columns for reference fonts
+    from ref_fonts_ftml import ref_fonts
+    for ref_font in ref_fonts:
+        arg_lst.extend(["-s", ref_font])
     sys.argv = [psfgenftml.__file__]
     sys.argv.extend(arg_lst)
     psfgenftml.cmd()
