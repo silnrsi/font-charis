@@ -20,7 +20,6 @@ CombRtArrwhdAbv CombAcute_MacronDep CombMacron_AcuteDep
 CombGrave_MacronDep CombMacron_GraveDep CombAcute_Grave_AcuteDep 
 CombGrave_Acute_GraveDep CombKayanGraveAcute]; 
 
-
 lookup di_sub {
   lookupflag 0;
     sub @cno_dotlss by @c_dotlss;
@@ -597,15 +596,21 @@ lookup hstrk_sub {
 # Andika
 do let f = info("familyName");
    if f.find("Andika") != -1; {
-lookup nobar_sub {
-  lookupflag 0;
-    sub @cno_nobar by @c_nobar;
-} nobar_sub;
-
+# tail-i must come before barless-I (smcp is above) even though the tail-i cv## is higher
+# so it has precedence if both feats are applied
+# barless-I class will not match tail-i glyphs
+# tail-i class will not match smcp glyphs but barless-I class will match smcp
+# slant ital (below) will not match tail-i (ok) or barless-I (bad) classes
 lookup itl_sub {
   lookupflag 0;
     sub @cno_TailI by @c_TailI;
 } itl_sub;
+
+# see notes on itl_sub lkup
+lookup nobar_sub {
+  lookupflag 0;
+    sub @cno_nobar by @c_nobar;
+} nobar_sub;
 
 lookup jsrf_sub {
   lookupflag 0;
