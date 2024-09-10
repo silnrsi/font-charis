@@ -64,7 +64,7 @@ def doit(args):
     temptext = temptext.replace(".rawmd",".md")
 
     # replace escaped @ in link texts
-    temptext = temptext.replace("[\@","[@")
+    temptext = temptext.replace(r"[\@",r"[@")
 
     # make a list of new classes needed for font shortcode
     # separate searches for spans with 1, 2, or 3 settings
