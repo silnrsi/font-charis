@@ -6,7 +6,7 @@ DOCDIR = ["documentation", "web"]
 
 STANDARDS = 'references/v6101'
 
-APPNAME = 'CharisSIL'
+APPNAME = 'Charis'
 familyname = APPNAME
 DEBPKG = 'fonts-sil-charis'
 
@@ -32,7 +32,7 @@ for dspace in ('Roman', 'Italic'):
 #for dspace in ('Italic',):
     designspace('source/' + familyname + dspace + '.designspace',
                 target = process('${DS:FILENAME_BASE}.ttf', *cmds),
-                instances = ['Charis SIL Regular'] if '--quick' in opts else None,
+                instances = ['Charis Regular'] if '--quick' in opts else None,
 #                classes = 'source/${DS:FAMILYNAME_NOSPC}_classes.xml', # fails for Gentium Book
                 classes = 'source/classes.xml',
                 opentype = fea('source/${DS:FILENAME_BASE}.fea',
@@ -46,7 +46,7 @@ for dspace in ('Roman', 'Italic'):
                     ),
                 typetuner = typetuner('source/typetuner/feat_all.xml'),
                 woff = woff('web/${DS:FILENAME_BASE}.woff',
-                    metadata=f'../source/charissil-WOFF-metadata.xml'),
+                    metadata=f'../source/charis-WOFF-metadata.xml'),
                 version = VERSION,
 #                pdf=fret(params = '-r -oi')
                 )
