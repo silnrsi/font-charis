@@ -11,9 +11,11 @@
   <key>descender</key>
   <integer>-900</integer>
   <key>familyName</key>
-  <string>Charis SIL</string>
+  <string>Charis</string>
+  <key>italicAngle</key>
+  <integer>-11</integer>
   <key>openTypeHeadCreated</key>
-  <string>2024/06/13 14:16:13</string>
+  <string>2024/06/13 15:01:19</string>
   <key>openTypeHeadFlags</key>
   <array>
     <integer>0</integer>
@@ -83,13 +85,13 @@ THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
   <key>openTypeNameManufacturerURL</key>
   <string>https://www.sil.org/</string>
   <key>openTypeNamePreferredFamilyName</key>
-  <string>Charis SIL</string>
+  <string>Charis</string>
   <key>openTypeNamePreferredSubfamilyName</key>
-  <string>Bold</string>
+  <string>Italic</string>
   <key>openTypeNameUniqueID</key>
-  <string>SIL International: Charis SIL Bold: 2024</string>
+  <string>SIL International: Charis Italic: 2024</string>
   <key>openTypeNameVersion</key>
-  <string>Version 6.901</string>
+  <string>Version 6.910</string>
   <key>openTypeOS2CodePageRanges</key>
   <array>
     <integer>0</integer>
@@ -104,12 +106,12 @@ THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
   <array>
     <integer>2</integer>
     <integer>0</integer>
-    <integer>8</integer>
+    <integer>5</integer>
     <integer>0</integer>
     <integer>6</integer>
     <integer>0</integer>
     <integer>0</integer>
-    <integer>2</integer>
+    <integer>9</integer>
     <integer>0</integer>
     <integer>4</integer>
   </array>
@@ -184,7 +186,7 @@ THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
   <key>openTypeOS2VendorID</key>
   <string>SIL </string>
   <key>openTypeOS2WeightClass</key>
-  <integer>700</integer>
+  <integer>400</integer>
   <key>openTypeOS2WidthClass</key>
   <integer>5</integer>
   <key>openTypeOS2WinAscent</key>
@@ -195,36 +197,36 @@ THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
   <array>
     <integer>-33</integer>
     <integer>0</integer>
-    <integer>999</integer>
-    <integer>1024</integer>
+    <integer>987</integer>
+    <integer>1012</integer>
     <integer>1374</integer>
     <integer>1407</integer>
   </array>
   <key>postscriptFontName</key>
-  <string>CharisSIL-Bold</string>
+  <string>Charis-Italic</string>
   <key>postscriptOtherBlues</key>
   <array>
-    <integer>-473</integer>
-    <integer>-449</integer>
+    <integer>-469</integer>
+    <integer>-446</integer>
   </array>
   <key>postscriptStemSnapH</key>
   <array>
-    <integer>115</integer>
-    <integer>131</integer>
+    <integer>98</integer>
+    <integer>104</integer>
   </array>
   <key>postscriptStemSnapV</key>
   <array>
-    <integer>272</integer>
-    <integer>293</integer>
+    <integer>184</integer>
+    <integer>215</integer>
   </array>
   <key>postscriptUnderlinePosition</key>
   <integer>-290</integer>
   <key>postscriptUnderlineThickness</key>
   <integer>120</integer>
   <key>styleName</key>
-  <string>Bold</string>
+  <string>Italic</string>
   <key>trademark</key>
-  <string>Charis SIL is a trademark of SIL International.</string>
+  <string>Charis is a trademark of SIL International.</string>
   <key>unitsPerEm</key>
   <integer>2048</integer>
   <key>versionMajor</key>
@@ -251,7 +253,7 @@ THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
     <array>
       <dict>
         <key>text</key>
-        <string>Charis SIL is a Unicode-based font family that supports the wide range of languages that use the Latin and Cyrillic scripts. It is specially designed to make long texts pleasant and easy to read, even in less than ideal reproduction and display environments.</string>
+        <string>Charis is a Unicode-based font family that supports the wide range of languages that use the Latin and Cyrillic scripts. It is specially designed to make long texts pleasant and easy to read, even in less than ideal reproduction and display environments.</string>
       </dict>
     </array>
     <key>url</key>

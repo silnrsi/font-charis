@@ -1,28 +1,28 @@
 #!/bin/sh
 
 echo "-----Fixing FontForge debris and normalizing UFOs..."
-psffixffglifs source/masters/CharisSIL-Regular.ufo -p checkfix=fix     &
-psffixffglifs source/masters/CharisSIL-Bold.ufo -p checkfix=fix        &
-psffixffglifs source/masters/CharisSIL-Italic.ufo -p checkfix=fix      &
-psffixffglifs source/masters/CharisSIL-BoldItalic.ufo -p checkfix=fix  &
+psffixffglifs source/masters/Charis-Regular.ufo -p checkfix=fix     &
+psffixffglifs source/masters/Charis-Bold.ufo -p checkfix=fix        &
+psffixffglifs source/masters/Charis-Italic.ufo -p checkfix=fix      &
+psffixffglifs source/masters/Charis-BoldItalic.ufo -p checkfix=fix  &
 wait
 
 echo "-----Updating production names in Regular..."
-psfsetpsnames -q -p checkfix=fix -i source/glyph_data.csv source/masters/CharisSIL-Regular.ufo -p backup=False -x
+psfsetpsnames -q -p checkfix=fix -i source/glyph_data.csv source/masters/Charis-Regular.ufo -p backup=False -x
 
 echo "-----Updating glyph orders in Regular..."
-psfsetglyphorder -q --header sort_final_cdg -i source/glyph_data.csv source/masters/CharisSIL-Regular.ufo -p backup=False -x
+psfsetglyphorder -q --header sort_final_cdg -i source/glyph_data.csv source/masters/Charis-Regular.ufo -p backup=False -x
 
 echo "-----Rebuilding composites..."
-psfbuildcomp -i source/composites.txt -c -n source/masters/CharisSIL-Regular.ufo -p backup=False -p loglevel=v
-psfbuildcomp -i source/composites.txt -c -n source/masters/CharisSIL-Bold.ufo -p backup=False -p loglevel=v
-psfbuildcomp -i source/composites.txt -c -n source/masters/CharisSIL-Italic.ufo -p backup=False  -p loglevel=v
-psfbuildcomp -i source/composites.txt -c -n source/masters/CharisSIL-BoldItalic.ufo -p backup=False  -p loglevel=v
+psfbuildcomp -i source/composites.txt -c -n source/masters/Charis-Regular.ufo -p backup=False -p loglevel=v
+psfbuildcomp -i source/composites.txt -c -n source/masters/Charis-Bold.ufo -p backup=False -p loglevel=v
+psfbuildcomp -i source/composites.txt -c -n source/masters/Charis-Italic.ufo -p backup=False  -p loglevel=v
+psfbuildcomp -i source/composites.txt -c -n source/masters/Charis-BoldItalic.ufo -p backup=False  -p loglevel=v
 
 echo "-----Syncing glyph orders, psnames, and other metadata to other UFOs..."
-psfsyncmasters -q source/CharisSILRoman.designspace source/CharisSILItalic.designspace
+psfsyncmasters -q source/CharisRoman.designspace source/CharisItalic.designspace
 
 # echo "-----Updating woff metadata file..."
-# psfmakewoffmetadata -q -n "charissil" -i "org.sil.fonts" -o source/charissil-WOFF-metadata.xml source/masters/CharisSIL-Regular.ufo
+# psfmakewoffmetadata -q -n "charis" -i "org.sil.fonts" -o source/charis-WOFF-metadata.xml source/masters/Charis-Regular.ufo
 
 echo "-----Preflight completed!"
