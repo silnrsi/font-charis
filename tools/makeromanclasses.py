@@ -210,12 +210,18 @@ class Font(object):
                         self.g_classes.setdefault('c_takes_low_diac',[]).append(glyph.name)
                     if level >= self.level_ranges['mid'][0] and level <= self.level_ranges['mid'][1]:
                         self.g_classes.setdefault('c_takes_mid_diac',[]).append(glyph.name)
+                    if level >= self.level_ranges['high'][0] and level <= self.level_ranges['high'][1]:
+                        # self.g_classes.setdefault('c_takes_udflt_diac',[]).append(glyph.name)
+                        self.g_classes.setdefault('c_takes_high_diac',[]).append(glyph.name)
         for level in self.l_levels:
             if not level <= self.level_ranges['belowhigh'][1]: continue
             for glyph in self.l_levels[level]:
                 if 'U' in glyph.anchors and glyph.anchors['U'][1] >= self.level_ranges['low'][0]:
                     if level >= self.level_ranges['belowhigh'][0] and level <= self.level_ranges['belowhigh'][1]:
                         self.g_classes.setdefault('c_takes_belowhigh_diac',[]).append(glyph.name)
+                    if level >= self.level_ranges['belowlow'][0] and level <= self.level_ranges['belowlow'][1]:
+                        # self.g_classes.setdefault('c_takes_ldflt_diac',[]).append(glyph.name)
+                        self.g_classes.setdefault('c_takes_belowlow_diac',[]).append(glyph.name)
 
         # add irregular glyphs to classes not found by the above algorithms
         for cls, g_lst in glyph_class_additions.items():
