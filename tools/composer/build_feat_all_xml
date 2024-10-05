@@ -5,9 +5,9 @@
 
 cp ../../source/glyph_data.csv .
 cp ../../source/featureinfo.yaml .
-cp ../../results/CharisSIL-Regular.ttf .
-cp ../../results/source/CharisSIL-Regular.map .
+cp ../../results/Charis-Regular.ttf .
+cp ../../results/source/Charis-Regular.map .
 
 python3 glyph_data_to_gsi.py charis
-perl composer.pl -f charis -d -m feature_map.csv CharisSIL-Regular.ttf gsi_glyph_data_cdg.xml gsi_dfltvars.xml > composer_dbg.log
+perl composer.pl -f charis -d -m feature_map.csv Charis-Regular.ttf gsi_glyph_data_cdg.xml gsi_dfltvars.xml > composer_dbg.log
 python3 updateTTfeatnames.py charis > updateTTfeatnames.log

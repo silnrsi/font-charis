@@ -1,3 +1,3 @@
 # run from the tools/ directory
-psfftml2TThtml -o ../results/TThtml_reg --ftml ../tests/features.ftml --xsl ftml.xsl ../results/CharisSIL-Regular.ttf ../source/typetuner/feature_map.csv
-psfftml2TThtml -o ../results/TThtml_ital --ftml ../tests/features.ftml --xsl ftml.xsl ../results/CharisSIL-Italic.ttf ../source/typetuner/feature_map.csv
+psfftml2TThtml -o ../results/TThtml_reg --ftml ../tests/features.ftml --xsl ftml.xsl ../results/Charis-Regular.ttf ../source/typetuner/feature_map.csv
+psfftml2TThtml -o ../results/TThtml_ital --ftml ../tests/features.ftml --xsl ftml.xsl ../results/Charis-Italic.ttf ../source/typetuner/feature_map.csv
