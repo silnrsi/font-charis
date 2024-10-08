@@ -2747,18 +2747,23 @@ H/LtnCapWHook H/LtnCapWHook AH/LtnCapYHook.RtHook H/LtnCapYHook.RtHook AH/Space<
     <string>CombInvBreve.LL</string>
     <string>CombFermata</string>
     <string>CharTieAbv</string>
-    <string>CombDblInvBreveBlw</string>
-    <string>CombDblInvBreveBlw.umid</string>
+    <string>CombDblInvBreveBlw.blwlow.ulow</string>
+    <string>CombDblInvBreveBlw.blwlow.umid</string>
+    <string>CombDblInvBreveBlw.blwlow</string>
     <string>CombDblInvBreveBlw.ulow</string>
-    <string>CombDblInvBreveBlw.blwhigh</string>
-    <string>CombDblInvBreveBlw.blwhigh.umid</string>
+    <string>CombDblInvBreveBlw.umid</string>
+    <string>CombDblInvBreveBlw</string>
     <string>CombDblInvBreveBlw.blwhigh.ulow</string>
-    <string>CombDblInvBreve</string>
-    <string>CombDblInvBreve.lhigh</string>
-    <string>CombDblInvBreve.mid</string>
-    <string>CombDblInvBreve.mid.lhigh</string>
+    <string>CombDblInvBreveBlw.blwhigh.umid</string>
+    <string>CombDblInvBreveBlw.blwhigh</string>
     <string>CombDblInvBreve.low</string>
     <string>CombDblInvBreve.low.lhigh</string>
+    <string>CombDblInvBreve.mid</string>
+    <string>CombDblInvBreve.mid.lhigh</string>
+    <string>CombDblInvBreve</string>
+    <string>CombDblInvBreve.lhigh</string>
+    <string>CombDblInvBreve.high</string>
+    <string>CombDblInvBreve.high.lhigh</string>
     <string>CombDblInvBreve.UU</string>
     <string>CombDblInvBreve.UL</string>
     <string>CombDblInvBreve.LL</string>
@@ -2776,24 +2781,31 @@ H/LtnCapWHook H/LtnCapWHook AH/LtnCapYHook.RtHook H/LtnCapYHook.RtHook AH/Space<
     <string>CombBreve.CyShortMrkAlt.UCHt</string>
     <string>CombBreve_Macron</string>
     <string>CharTieBlw</string>
-    <string>CombDblBreveBlw</string>
-    <string>CombDblBreveBlw.umid</string>
+    <string>CombDblBreveBlw.blwlow.ulow</string>
+    <string>CombDblBreveBlw.blwlow.umid</string>
+    <string>CombDblBreveBlw.blwlow</string>
     <string>CombDblBreveBlw.ulow</string>
-    <string>CombDblBreveBlw.blwhigh</string>
-    <string>CombDblBreveBlw.blwhigh.umid</string>
+    <string>CombDblBreveBlw.umid</string>
+    <string>CombDblBreveBlw</string>
     <string>CombDblBreveBlw.blwhigh.ulow</string>
-    <string>CombDblBreve</string>
-    <string>CombDblBreve.lhigh</string>
-    <string>CombDblBreve.mid</string>
-    <string>CombDblBreve.mid.lhigh</string>
+    <string>CombDblBreveBlw.blwhigh.umid</string>
+    <string>CombDblBreveBlw.blwhigh</string>
     <string>CombDblBreve.low</string>
     <string>CombDblBreve.low.lhigh</string>
-    <string>CombDblCircum</string>
-    <string>CombDblCircum.lhigh</string>
-    <string>CombDblCircum.mid</string>
-    <string>CombDblCircum.mid.lhigh</string>
+    <string>CombDblBreve.mid</string>
+    <string>CombDblBreve.mid.lhigh</string>
+    <string>CombDblBreve</string>
+    <string>CombDblBreve.lhigh</string>
+    <string>CombDblBreve.high</string>
+    <string>CombDblBreve.high.lhigh</string>
     <string>CombDblCircum.low</string>
     <string>CombDblCircum.low.lhigh</string>
+    <string>CombDblCircum.mid</string>
+    <string>CombDblCircum.mid.lhigh</string>
+    <string>CombDblCircum</string>
+    <string>CombDblCircum.lhigh</string>
+    <string>CombDblCircum.high</string>
+    <string>CombDblCircum.high.lhigh</string>
     <string>ModVoicing</string>
     <string>CombCaronBlw</string>
     <string>CombCaron</string>
@@ -2816,12 +2828,14 @@ H/LtnCapWHook H/LtnCapWHook AH/LtnCapYHook.RtHook H/LtnCapYHook.RtHook AH/Space<
     <string>CombAlmostEqToAbv</string>
     <string>CombAlmostEqToBlw</string>
     <string>CombHomotheticAbv</string>
-    <string>CombDblTilde</string>
-    <string>CombDblTilde.lhigh</string>
-    <string>CombDblTilde.mid</string>
-    <string>CombDblTilde.mid.lhigh</string>
     <string>CombDblTilde.low</string>
     <string>CombDblTilde.low.lhigh</string>
+    <string>CombDblTilde.mid</string>
+    <string>CombDblTilde.mid.lhigh</string>
+    <string>CombDblTilde</string>
+    <string>CombDblTilde.lhigh</string>
+    <string>CombDblTilde.high</string>
+    <string>CombDblTilde.high.lhigh</string>
     <string>CombDblTildeLft</string>
     <string>CombDblTildeRt</string>
     <string>CombVertTilde</string>
@@ -2842,18 +2856,23 @@ H/LtnCapWHook H/LtnCapWHook AH/LtnCapYHook.RtHook H/LtnCapYHook.RtHook AH/Space<
     <string>ModMacron</string>
     <string>CombMacron</string>
     <string>CombMacron.Short</string>
-    <string>CombDblMacronBlw</string>
-    <string>CombDblMacronBlw.umid</string>
+    <string>CombDblMacronBlw.blwlow.ulow</string>
+    <string>CombDblMacronBlw.blwlow.umid</string>
+    <string>CombDblMacronBlw.blwlow</string>
     <string>CombDblMacronBlw.ulow</string>
-    <string>CombDblMacronBlw.blwhigh</string>
-    <string>CombDblMacronBlw.blwhigh.umid</string>
+    <string>CombDblMacronBlw.umid</string>
+    <string>CombDblMacronBlw</string>
     <string>CombDblMacronBlw.blwhigh.ulow</string>
-    <string>CombDblMacron</string>
-    <string>CombDblMacron.lhigh</string>
-    <string>CombDblMacron.mid</string>
-    <string>CombDblMacron.mid.lhigh</string>
+    <string>CombDblMacronBlw.blwhigh.umid</string>
+    <string>CombDblMacronBlw.blwhigh</string>
     <string>CombDblMacron.low</string>
     <string>CombDblMacron.low.lhigh</string>
+    <string>CombDblMacron.mid</string>
+    <string>CombDblMacron.mid.lhigh</string>
+    <string>CombDblMacron</string>
+    <string>CombDblMacron.lhigh</string>
+    <string>CombDblMacron.high</string>
+    <string>CombDblMacron.high.lhigh</string>
     <string>CombLowLine</string>
     <string>CombOverline</string>
     <string>Overline</string>
@@ -2874,12 +2893,14 @@ H/LtnCapWHook H/LtnCapWHook AH/LtnCapYHook.RtHook H/LtnCapYHook.RtHook AH/Space<
     <string>CombDiaer.LL</string>
     <string>CombDiaer.UL</string>
     <string>CombDiaer.Sup</string>
-    <string>CombDblDiaer</string>
-    <string>CombDblDiaer.lhigh</string>
-    <string>CombDblDiaer.mid</string>
-    <string>CombDblDiaer.mid.lhigh</string>
     <string>CombDblDiaer.low</string>
     <string>CombDblDiaer.low.lhigh</string>
+    <string>CombDblDiaer.mid</string>
+    <string>CombDblDiaer.mid.lhigh</string>
+    <string>CombDblDiaer</string>
+    <string>CombDblDiaer.lhigh</string>
+    <string>CombDblDiaer.high</string>
+    <string>CombDblDiaer.high.lhigh</string>
     <string>CombDiaerRing</string>
     <string>CombTripleDot</string>
     <string>CombDotBlw</string>
@@ -3124,12 +3145,15 @@ H/LtnCapWHook H/LtnCapWHook AH/LtnCapYHook.RtHook H/LtnCapYHook.RtHook AH/Space<
     <string>RtArrw</string>
     <string>CombRtArrwBlw</string>
     <string>CombRtHarpoonBarbDwnBlw</string>
-    <string>CombDblRtArrwBlw</string>
-    <string>CombDblRtArrwBlw.umid</string>
+    <string>CombDblRtArrwBlw.blwlow.ulow</string>
+    <string>CombDblRtArrwBlw.blwlow.umid</string>
+    <string>CombDblRtArrwBlw.blwlow</string>
     <string>CombDblRtArrwBlw.ulow</string>
-    <string>CombDblRtArrwBlw.blwhigh</string>
-    <string>CombDblRtArrwBlw.blwhigh.umid</string>
+    <string>CombDblRtArrwBlw.umid</string>
+    <string>CombDblRtArrwBlw</string>
     <string>CombDblRtArrwBlw.blwhigh.ulow</string>
+    <string>CombDblRtArrwBlw.blwhigh.umid</string>
+    <string>CombDblRtArrwBlw.blwhigh</string>
     <string>LftRtArrw</string>
     <string>CombLftRtArrwBlw</string>
     <string>LftArrwStrk</string>
@@ -4371,6 +4395,10 @@ H/LtnCapWHook H/LtnCapWHook AH/LtnCapYHook.RtHook H/LtnCapYHook.RtHook AH/Space<
     <string>uni030B</string>
     <key>CombDblBreve</key>
     <string>uni035D</string>
+    <key>CombDblBreve.high</key>
+    <string>uni035D.high</string>
+    <key>CombDblBreve.high.lhigh</key>
+    <string>uni035D.high.lhigh</string>
     <key>CombDblBreve.lhigh</key>
     <string>uni035D.lhigh</string>
     <key>CombDblBreve.low</key>
@@ -4389,6 +4417,12 @@ H/LtnCapWHook H/LtnCapWHook AH/LtnCapYHook.RtHook H/LtnCapYHook.RtHook AH/Space<
     <string>uni035C.blwhigh.ulow</string>
     <key>CombDblBreveBlw.blwhigh.umid</key>
     <string>uni035C.blwhigh.umid</string>
+    <key>CombDblBreveBlw.blwlow</key>
+    <string>uni035C.blwlow</string>
+    <key>CombDblBreveBlw.blwlow.ulow</key>
+    <string>uni035C.blwlow.ulow</string>
+    <key>CombDblBreveBlw.blwlow.umid</key>
+    <string>uni035C.blwlow.umid</string>
     <key>CombDblBreveBlw.ulow</key>
     <string>uni035C.ulow</string>
     <key>CombDblBreveBlw.umid</key>
@@ -4397,6 +4431,10 @@ H/LtnCapWHook H/LtnCapWHook AH/LtnCapYHook.RtHook H/LtnCapYHook.RtHook AH/Space<
     <string>uniF176</string>
     <key>CombDblCircum</key>
     <string>uni1DCD</string>
+    <key>CombDblCircum.high</key>
+    <string>uni1DCD.high</string>
+    <key>CombDblCircum.high.lhigh</key>
+    <string>uni1DCD.high.lhigh</string>
     <key>CombDblCircum.lhigh</key>
     <string>uni1DCD.lhigh</string>
     <key>CombDblCircum.low</key>
@@ -4409,6 +4447,10 @@ H/LtnCapWHook H/LtnCapWHook AH/LtnCapYHook.RtHook H/LtnCapYHook.RtHook AH/Space<
     <string>uni1DCD.mid.lhigh</string>
     <key>CombDblDiaer</key>
     <string>uniF17A</string>
+    <key>CombDblDiaer.high</key>
+    <string>uniF17A.high</string>
+    <key>CombDblDiaer.high.lhigh</key>
+    <string>uniF17A.high.lhigh</string>
     <key>CombDblDiaer.lhigh</key>
     <string>uniF17A.lhigh</string>
     <key>CombDblDiaer.low</key>
@@ -4429,6 +4471,10 @@ H/LtnCapWHook H/LtnCapWHook AH/LtnCapYHook.RtHook H/LtnCapYHook.RtHook AH/Space<
     <string>uni0361.UL</string>
     <key>CombDblInvBreve.UU</key>
     <string>uni0361.UU</string>
+    <key>CombDblInvBreve.high</key>
+    <string>uni0361.high</string>
+    <key>CombDblInvBreve.high.lhigh</key>
+    <string>uni0361.high.lhigh</string>
     <key>CombDblInvBreve.lhigh</key>
     <string>uni0361.lhigh</string>
     <key>CombDblInvBreve.low</key>
@@ -4447,6 +4493,12 @@ H/LtnCapWHook H/LtnCapWHook AH/LtnCapYHook.RtHook H/LtnCapYHook.RtHook AH/Space<
     <string>uni1DFC.blwhigh.ulow</string>
     <key>CombDblInvBreveBlw.blwhigh.umid</key>
     <string>uni1DFC.blwhigh.umid</string>
+    <key>CombDblInvBreveBlw.blwlow</key>
+    <string>uni1DFC.blwlow</string>
+    <key>CombDblInvBreveBlw.blwlow.ulow</key>
+    <string>uni1DFC.blwlow.ulow</string>
+    <key>CombDblInvBreveBlw.blwlow.umid</key>
+    <string>uni1DFC.blwlow.umid</string>
     <key>CombDblInvBreveBlw.ulow</key>
     <string>uni1DFC.ulow</string>
     <key>CombDblInvBreveBlw.umid</key>
@@ -4459,6 +4511,10 @@ H/LtnCapWHook H/LtnCapWHook AH/LtnCapYHook.RtHook H/LtnCapYHook.RtHook AH/Space<
     <string>uni0333</string>
     <key>CombDblMacron</key>
     <string>uni035E</string>
+    <key>CombDblMacron.high</key>
+    <string>uni035E.high</string>
+    <key>CombDblMacron.high.lhigh</key>
+    <string>uni035E.high.lhigh</string>
     <key>CombDblMacron.lhigh</key>
     <string>uni035E.lhigh</string>
     <key>CombDblMacron.low</key>
@@ -4477,6 +4533,12 @@ H/LtnCapWHook H/LtnCapWHook AH/LtnCapYHook.RtHook H/LtnCapYHook.RtHook AH/Space<
     <string>uni035F.blwhigh.ulow</string>
     <key>CombDblMacronBlw.blwhigh.umid</key>
     <string>uni035F.blwhigh.umid</string>
+    <key>CombDblMacronBlw.blwlow</key>
+    <string>uni035F.blwlow</string>
+    <key>CombDblMacronBlw.blwlow.ulow</key>
+    <string>uni035F.blwlow.ulow</string>
+    <key>CombDblMacronBlw.blwlow.umid</key>
+    <string>uni035F.blwlow.umid</string>
     <key>CombDblMacronBlw.ulow</key>
     <string>uni035F.ulow</string>
     <key>CombDblMacronBlw.umid</key>
@@ -4499,12 +4561,22 @@ H/LtnCapWHook H/LtnCapWHook AH/LtnCapYHook.RtHook H/LtnCapYHook.RtHook AH/Space<
     <string>uni0362.blwhigh.ulow</string>
     <key>CombDblRtArrwBlw.blwhigh.umid</key>
     <string>uni0362.blwhigh.umid</string>
+    <key>CombDblRtArrwBlw.blwlow</key>
+    <string>uni0362.blwlow</string>
+    <key>CombDblRtArrwBlw.blwlow.ulow</key>
+    <string>uni0362.blwlow.ulow</string>
+    <key>CombDblRtArrwBlw.blwlow.umid</key>
+    <string>uni0362.blwlow.umid</string>
     <key>CombDblRtArrwBlw.ulow</key>
     <string>uni0362.ulow</string>
     <key>CombDblRtArrwBlw.umid</key>
     <string>uni0362.umid</string>
     <key>CombDblTilde</key>
     <string>uni0360</string>
+    <key>CombDblTilde.high</key>
+    <string>uni0360.high</string>
+    <key>CombDblTilde.high.lhigh</key>
+    <string>uni0360.high.lhigh</string>
     <key>CombDblTilde.lhigh</key>
     <string>uni0360.lhigh</string>
     <key>CombDblTilde.low</key>
