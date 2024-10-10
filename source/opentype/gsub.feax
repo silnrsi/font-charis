@@ -98,6 +98,10 @@ lookup y_ognk_sub {
 @c_takes_midlow_diac = [@c_takes_mid_diac @c_takes_low_diac];
 @c_takes_belowhighlow_diac = [@c_takes_belowhigh_diac @c_takes_belowlow_diac];
 
+def CGJSeq(n) {
+    return ["@c_cgj @_U @_L", "@c_cgj @_L @_U", "@c_cgj @_U", "@c_cgj @_L", ""]
+} CGJSeq;
+
 ### Move dbl diac over two base glyphs if needed
 # high  - where bridge is higher than default
 lookup dbl_diac_high {
@@ -119,49 +123,20 @@ lookup dbl_diac_low {
 #  or raise dbl diac if over higher glyphs with diacs on bases
 lookup dbl_diac_abv_move { # Below rules that do not end with U will match a trailing U
   lookupflag 0;
-    sub @c_takes_highmid_diac @_U @cno_high' lookup dbl_diac_high @c_cgj @_U @_L @c_takes_highmidlow_diac;
-    sub @c_takes_highmid_diac @_U @cno_high' lookup dbl_diac_high @c_cgj @_L @_U @c_takes_highmidlow_diac;
-    sub @c_takes_highmid_diac @_U @cno_high' lookup dbl_diac_high @c_cgj @_U @c_takes_highmidlow_diac;
-    sub @c_takes_highmid_diac @_U @cno_high' lookup dbl_diac_high @c_cgj @_L @c_takes_highmidlow_diac;
-    sub @c_takes_highmid_diac @_U @cno_high' lookup dbl_diac_high @c_takes_highmidlow_diac;
+do
+  forlet cgj_combo = CGJSeq(0); # one arg required but not used
+  {
+    sub @c_takes_highmid_diac @_U @cno_high' lookup dbl_diac_high $cgj_combo @c_takes_highmidlow_diac;    
+    sub @c_takes_highmidlow_diac @cno_high' lookup dbl_diac_high $cgj_combo @c_takes_highmid_diac @_U;
 
-    sub @c_takes_highmidlow_diac @cno_high' lookup dbl_diac_high @c_cgj @_U @_L @c_takes_highmid_diac @_U;
-    sub @c_takes_highmidlow_diac @cno_high' lookup dbl_diac_high @c_cgj @_L @_U @c_takes_highmid_diac @_U;
-    sub @c_takes_highmidlow_diac @cno_high' lookup dbl_diac_high @c_cgj @_U @c_takes_highmid_diac @_U;
-    sub @c_takes_highmidlow_diac @cno_high' lookup dbl_diac_high @c_cgj @_L @c_takes_highmid_diac @_U;
-    sub @c_takes_highmidlow_diac @cno_high' lookup dbl_diac_high @c_takes_highmid_diac @_U;
-
-    sub @c_takes_mid_diac @cno_mid' lookup dbl_diac_mid @c_cgj @_U @_L @c_takes_midlow_diac;
-    sub @c_takes_mid_diac @cno_mid' lookup dbl_diac_mid @c_cgj @_L @_U @c_takes_midlow_diac;
-    sub @c_takes_mid_diac @cno_mid' lookup dbl_diac_mid @c_cgj @_U @c_takes_midlow_diac;
-    sub @c_takes_mid_diac @cno_mid' lookup dbl_diac_mid @c_cgj @_L @c_takes_midlow_diac;
-    sub @c_takes_mid_diac @cno_mid' lookup dbl_diac_mid @c_takes_midlow_diac;
-
-    sub @c_takes_low_diac @_U @cno_mid' lookup dbl_diac_mid @c_cgj @_U @_L @c_takes_midlow_diac;
-    sub @c_takes_low_diac @_U @cno_mid' lookup dbl_diac_mid @c_cgj @_L @_U @c_takes_midlow_diac;
-    sub @c_takes_low_diac @_U @cno_mid' lookup dbl_diac_mid @c_cgj @_U @c_takes_midlow_diac;
-    sub @c_takes_low_diac @_U @cno_mid' lookup dbl_diac_mid @c_cgj @_L @c_takes_midlow_diac;
-    sub @c_takes_low_diac @_U @cno_mid' lookup dbl_diac_mid @c_takes_midlow_diac;
-
-    sub @c_takes_low_diac @cno_mid' lookup dbl_diac_mid @c_cgj @_U @_L @c_takes_low_diac @_U;
-    sub @c_takes_low_diac @cno_mid' lookup dbl_diac_mid @c_cgj @_L @_U @c_takes_low_diac @_U;
-    sub @c_takes_low_diac @cno_mid' lookup dbl_diac_mid @c_cgj @_U @c_takes_low_diac @_U;
-    sub @c_takes_low_diac @cno_mid' lookup dbl_diac_mid @c_cgj @_L @c_takes_low_diac @_U;
-    sub @c_takes_low_diac @cno_mid' lookup dbl_diac_mid @c_takes_low_diac @_U;
-
-    sub @c_takes_low_diac @cno_mid' lookup dbl_diac_mid @c_cgj @_U @_L @c_takes_mid_diac;
-    sub @c_takes_low_diac @cno_mid' lookup dbl_diac_mid @c_cgj @_L @_U @c_takes_mid_diac;
-    sub @c_takes_low_diac @cno_mid' lookup dbl_diac_mid @c_cgj @_U @c_takes_mid_diac;
-    sub @c_takes_low_diac @cno_mid' lookup dbl_diac_mid @c_cgj @_L @c_takes_mid_diac;
-    sub @c_takes_low_diac @cno_mid' lookup dbl_diac_mid @c_takes_mid_diac;
-
+    sub @c_takes_mid_diac @cno_mid' lookup dbl_diac_mid $cgj_combo @c_takes_midlow_diac;
+    sub @c_takes_low_diac @cno_mid' lookup dbl_diac_mid $cgj_combo @c_takes_mid_diac;
+    sub @c_takes_low_diac @_U @cno_mid' lookup dbl_diac_mid $cgj_combo @c_takes_midlow_diac;
+    sub @c_takes_low_diac @cno_mid' lookup dbl_diac_mid $cgj_combo @c_takes_low_diac @_U;
 
     # Ignores seqs with U over first base
-    sub @c_takes_low_diac @cno_low' lookup dbl_diac_low @c_cgj @_U @_L @c_takes_low_diac;
-    sub @c_takes_low_diac @cno_low' lookup dbl_diac_low @c_cgj @_L @_U @c_takes_low_diac;
-    sub @c_takes_low_diac @cno_low' lookup dbl_diac_low @c_cgj @_U @c_takes_low_diac;
-    sub @c_takes_low_diac @cno_low' lookup dbl_diac_low @c_cgj @_L @c_takes_low_diac;
-    sub @c_takes_low_diac @cno_low' lookup dbl_diac_low @c_takes_low_diac;
+    sub @c_takes_low_diac @cno_low' lookup dbl_diac_low $cgj_combo @c_takes_low_diac;
+  }
 } dbl_diac_abv_move;
 
 ### Move dbl diac under two glyphs if needed
@@ -180,37 +155,17 @@ lookup dbl_diac_blwlow {
 #  or lower dbl diac if under low glyphs with diacs on bases
 lookup dbl_diac_blw_move { # Below rules that do not end with L will match a trailing L
   lookupflag 0;
-    sub @c_takes_belowlow_diac @_L @cno_blwlow' lookup dbl_diac_blwlow @c_cgj @_U @_L @c_takes_belowhighlow_diac;
-    sub @c_takes_belowlow_diac @_L @cno_blwlow' lookup dbl_diac_blwlow @c_cgj @_L @_U @c_takes_belowhighlow_diac;
-    sub @c_takes_belowlow_diac @_L @cno_blwlow' lookup dbl_diac_blwlow @c_cgj @_U @c_takes_belowhighlow_diac;
-    sub @c_takes_belowlow_diac @_L @cno_blwlow' lookup dbl_diac_blwlow @c_cgj @_L @c_takes_belowhighlow_diac;
-    sub @c_takes_belowlow_diac @_L @cno_blwlow' lookup dbl_diac_blwlow @c_takes_belowhighlow_diac;
+do
+  forlet cgj_combo = CGJSeq(0); # one arg required but not used
+  {
+    sub @c_takes_belowlow_diac @_L @cno_blwlow' lookup dbl_diac_blwlow $cgj_combo @c_takes_belowhighlow_diac;
+    sub @c_takes_belowhighlow_diac @cno_blwlow' lookup dbl_diac_blwlow $cgj_combo @c_takes_belowlow_diac @_L;
+    sub @c_takes_belowhighlow_diac @_L @cno_blwlow' lookup dbl_diac_blwlow $cgj_combo @c_takes_belowlow_diac @_L;
 
-    sub @c_takes_belowhighlow_diac @_L @cno_blwlow' lookup dbl_diac_blwlow @c_cgj @_U @_L @c_takes_belowlow_diac @_L;
-    sub @c_takes_belowhighlow_diac @_L @cno_blwlow' lookup dbl_diac_blwlow @c_cgj @_L @_U @c_takes_belowlow_diac @_L;
-    sub @c_takes_belowhighlow_diac @_L @cno_blwlow' lookup dbl_diac_blwlow @c_cgj @_U @c_takes_belowlow_diac @_L;
-    sub @c_takes_belowhighlow_diac @_L @cno_blwlow' lookup dbl_diac_blwlow @c_cgj @_L @c_takes_belowlow_diac @_L;
-    sub @c_takes_belowhighlow_diac @_L @cno_blwlow' lookup dbl_diac_blwlow @c_takes_belowlow_diac @_L;
-
-    sub @c_takes_belowhighlow_diac @cno_blwlow' lookup dbl_diac_blwlow @c_cgj @_U @_L @c_takes_belowlow_diac @_L;
-    sub @c_takes_belowhighlow_diac @cno_blwlow' lookup dbl_diac_blwlow @c_cgj @_L @_U @c_takes_belowlow_diac @_L;
-    sub @c_takes_belowhighlow_diac @cno_blwlow' lookup dbl_diac_blwlow @c_cgj @_U @c_takes_belowlow_diac @_L;
-    sub @c_takes_belowhighlow_diac @cno_blwlow' lookup dbl_diac_blwlow @c_cgj @_L @c_takes_belowlow_diac @_L;
-    sub @c_takes_belowhighlow_diac @cno_blwlow' lookup dbl_diac_blwlow @c_takes_belowlow_diac @_L;
-
-
-    ignore sub @c_takes_belowhigh_diac @cno_blwhigh' @c_cgj @_U @_L @c_takes_belowhigh_diac @_L;
-    ignore sub @c_takes_belowhigh_diac @cno_blwhigh' @c_cgj @_L @_U @c_takes_belowhigh_diac @_L;
-    ignore sub @c_takes_belowhigh_diac @cno_blwhigh' @c_cgj @_U @c_takes_belowhigh_diac @_L;
-    ignore sub @c_takes_belowhigh_diac @cno_blwhigh' @c_cgj @_L @c_takes_belowhigh_diac @_L;
-    ignore sub @c_takes_belowhigh_diac @cno_blwhigh' @c_takes_belowhigh_diac @_L;
-
+    ignore sub @c_takes_belowhigh_diac @cno_blwhigh' $cgj_combo @c_takes_belowhigh_diac @_L;
     # Ignores seqs with L over first base
-    sub @c_takes_belowhigh_diac @cno_blwhigh' lookup dbl_diac_blwhigh @c_cgj @_U @_L @c_takes_belowhigh_diac;
-    sub @c_takes_belowhigh_diac @cno_blwhigh' lookup dbl_diac_blwhigh @c_cgj @_L @_U @c_takes_belowhigh_diac;
-    sub @c_takes_belowhigh_diac @cno_blwhigh' lookup dbl_diac_blwhigh @c_cgj @_U @c_takes_belowhigh_diac;
-    sub @c_takes_belowhigh_diac @cno_blwhigh' lookup dbl_diac_blwhigh @c_cgj @_L @c_takes_belowhigh_diac;
-    sub @c_takes_belowhigh_diac @cno_blwhigh' lookup dbl_diac_blwhigh @c_takes_belowhigh_diac;
+    sub @c_takes_belowhigh_diac @cno_blwhigh' lookup dbl_diac_blwhigh $cgj_combo @c_takes_belowhigh_diac;
+  }
 } dbl_diac_blw_move;
 
 ### Raise l ap under two glyphs without descenders
