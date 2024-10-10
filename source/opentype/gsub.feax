@@ -95,10 +95,7 @@ lookup y_ognk_sub {
 @c_cgj = [CombGraphemeJoiner];
 
 ### Move dbl diac over two base glyphs if needed
-# TODO: add .high bridging diac glyphs - where bridge is higher than default
-@cno_high = [CombDblInvBreve]; #TODO: remove after debugging
-# @c_high = [CombDblInvBreve.high];
-@c_high = [CombDblTilde];
+# high  - where bridge is higher than default
 lookup dbl_diac_high {
   lookupflag 0;
     sub @cno_high by @c_high;
@@ -248,10 +245,7 @@ lookup dbl_diac_blwhigh {
     sub @cno_blwhigh by @c_blwhigh;
 } dbl_diac_blwhigh;
 
-# TODO: add .blwlow bridging diac glyphs - where bridge below is lower than default
-@cno_blwlow = [CombDblInvBreveBlw]; # TODO: remove after debugging
-# @c_blwlow = [CombDblInvBreveBlw.blwlow];
-@c_blwlow = [CombDblInvBreveBlw];
+# blwlow - where bridge below is lower than default
 lookup dbl_diac_blwlow {
   lookupflag 0;
     sub @cno_blwlow by @c_blwlow;
@@ -293,7 +287,7 @@ lookup dbl_diac_blw_move {
 } dbl_diac_blw_move;
 
 ### Raise l ap under two glyphs without descenders
-# TODO: add .high.blwhigh bridging diac glyphs where L AP is lower (other .blwhigh already exist)
+# lhigh - above bridges where L AP is raised
 lookup dbl_diac_lhigh {
   lookupflag 0;
     sub @cno_lhigh by @c_lhigh;
@@ -308,7 +302,7 @@ lookup dbl_diac_abv_raise_l { #raise l ap on dbl diac under two glyphs without d
 } dbl_diac_abv_raise_l;
 
 ### Lower u ap over two lower glyphs
-# TODO: add .blwlow.umid and .blwlow.ulow glyphs where U AP is higer (other .umin and .ulow already exist)
+# umid and ulow - below bridges where U AP is lowered
 lookup dbl_diac_umid {
   lookupflag 0;
     sub @cno_umid by @c_umid;
