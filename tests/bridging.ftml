@@ -129,6 +129,9 @@
     <test label="U+0361 U+034F U+035F (RFS-4)">
       <string>\u00006F\u000361\u000075 \u00006F\u00035F\u000075 \u00006F\u000361\u00034F\u00035F\u000075</string>
     </test>
+    <test label="U+0361 U+034F U+035F (RFS-4)">
+      <string>\u00004F\u000361\u00034F\u00035F\u000075 \u000071\u000361\u00034F\u00035F\u00006C \u00006C\u000361\u00034F\u00035F\u00006C</string>
+    </test>
     <test label="U+0361 (RFS-4)">
       <string>\u000041\u000361\u000068 \u000041\u000361\u000041 \u000041\u000361\u000061</string>
     </test>
@@ -165,7 +168,7 @@
     <test label="U+035E U+034F U+0360 (RFS-693)">
       <string>\u000061\u00035E\u00034F\u000360\u000131</string>
     </test>
-    <test label="U+035E U+034F U+0360 U+0355 (RFS-693)">
+    <test label="U+035E U+034F U+0360 U+0355 (RFS-693) (fail expected)">
       <string>\u000061\u00035E\u00034F\u000360\u000355\u000131</string>
     </test>
     <test label="U+035E U+034F U+0360 U+034F U+0355 (RFS-693)">
@@ -186,7 +189,7 @@
     <test label="U+0361 U+034F U+030C U+032D (RFS-784, GDoc)">
       <string>\u000064\u000361\u00034F\u00030C\u00032D\u00007A \u000434\u000361\u00034F\u00030C\u00032D\u000436</string>
     </test>
-    <test label="U+0361 U+034F U+030C U+034F U+032D (RFS-784, GDoc)">
+    <test label="U+0361 U+034F U+030C U+034F U+032D (RFS-784, GDoc) (fail expected)">
       <string>\u000064\u000361\u00034F\u00030C\u00034F\u00032D\u00007A \u000434\u000361\u00034F\u00030C\u00034F\u00032D\u000436</string>
     </test>
   </testgroup>
