@@ -228,6 +228,22 @@ lookup dbl_diac_abv_move_seq { # below rule order is important, glyph classes ov
   sub @c_takes_highmidlow_diac @cno_high' @c_cgj' @cno_high' lookup dbl_diac_high @c_cgj @cno_blwlow @c_takes_highmidlow_diac;
 } dbl_diac_abv_move_seq;
 
+### Handle upper dbl diac followed by lower dbl diac with no other diacs
+# diacs separate by cgj
+lookup dbl_diac_abv_and_blw_move { 
+  lookupflag 0;
+    # Lower dbl diac over two lower glyphs
+    sub @c_takes_mid_diac @cno_mid' lookup dbl_diac_mid @c_cgj @cno_blwhigh @c_takes_midlow_diac;
+    sub @c_takes_midlow_diac @cno_mid' lookup dbl_diac_mid @c_cgj @cno_blwhigh @c_takes_mid_diac;
+
+    sub @c_takes_low_diac @cno_low' lookup dbl_diac_low @c_cgj @cno_blwhigh @c_takes_low_diac;
+
+    # Raise dbl diac under two lower glyphs
+    #  first dbl diac substituted by above rules
+    sub @c_takes_belowhigh_diac @c_mid @c_cgj @cno_blwhigh' lookup dbl_diac_blwhigh @c_takes_belowhigh_diac;
+    sub @c_takes_belowhigh_diac @c_low @c_cgj @cno_blwhigh' lookup dbl_diac_blwhigh @c_takes_belowhigh_diac;
+} dbl_diac_abv_and_blw_move;
+
 # End of bridging diacritics
 
 lookup sc1_sub {
@@ -1043,6 +1059,7 @@ feature ccmp {
   lookup dbl_diac_abv_raise_l;
   lookup dbl_diac_blw_lower_u;
   lookup dbl_diac_abv_move_seq;
+  lookup dbl_diac_abv_and_blw_move;
 do let f = info("familyName");
    if f.find("Gentium") != -1; {
   lookup lpdiac_ctx; #Gentium
