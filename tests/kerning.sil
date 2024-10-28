@@ -1,0 +1,410 @@
+\begin[class=fontproof]{document}
+\bidi-off
+\setTestFont[size="14pt"]
+
+%%%%% GROUPS
+
+% Basic Cyr
+\patterngroup[name="cyrbasiccaps"]{АБВГЃҐДЂЕЀЁЄЖЗЅИЍЙІЇЈКЌЛЉМНЊОПРСТЋУЎФХЦЏШЩЪЫЬѢЭЮЯѲѴ№}
+\patterngroup[name="cyrbasiclc"]{абвгѓґдђеѐёєжзѕиѝйіїјкќлљмнњопрстћуўфхцџчшщъыьѣэюяѳѵ}
+
+% Ext Cyr
+\patterngroup[name="cyrextcaps"]{ҊҌҎҐҒҔҖҘҚҜҞҠҢҤҦԢҨҪҬҮҰҲҴҶҸҺҼҾӀӁӃӅӇӉӋӍӐӒӔӖӘӚӜӞӠӢӤӦӨӪӬӮӰӲӴӶӸӺӼӾԀԂԄԆԈԊԌԎԐԒ}
+\patterngroup[name="cyrextlc"]{ҋҍҏґғҕҗҙқҝҟҡңҥҧԣҩҫҭүұҳҵҷҹһҽҿӂӄӆӈӊӌӎӏӑӓӕӗәӛӝӟӡӣӥӧөӫӭӯӱӳӵӷӹӻӽӿԁԃԅԇԉԋԍԏԑ}
+
+% General
+\patterngroup[name="numerals"]{1234567890}
+\patterngroup[name="punctuation"]{.,:;!-}
+
+%%%%% TESTS
+
+\section{LATIN & CYR - Letters}
+
+\proof{HACH HAGH HAOH HAQH HATH HAVH HAYH HAWH HAUH
+
+HLCH HLGH HLOH HLQH HLVH HLYH HLTH HLWH
+
+HFAH HPAH HVAH HVOH HVAVH
+
+HRTH HRVH HRYH HRWH EVERY
+
+HUAH HCAH HOAH HTSH HVSH HYSH HWSH
+
+HDAH HDXH HDVH HDYH HDTH HDWH
+
+HOAH HOXH HOVH HOYH HOTH HOWH
+
+HQAH HQXH HQVH HQYH HQTH HQWH
+
+HKCH HKGH HKOH HKQH
+
+HXCH HXGH HXOH HXQH
+
+HTAH HTCH HTGH HTOH HTQH HATCH
+
+HVAH HVCH HVGH HVOH HVQH
+
+HYAH HYCH HYGH HYOH HYQH
+
+HWAH HWCH HWGH HWOH HWQH
+
+TOTVOVYOYWOWOVE
+
+HƁH HLƁH HAƁH HRƁH HCƁH HOƁH 
+
+HHƊHꞪHƤHT
+
+RRƊRꞪRƤRT
+
+
+НГДН НГЛН НРДН НРЛН НТДН НТЛН НУДН НУЛН
+
+
+HAnn HAbn HAsn HAvn HAwn HAyn
+
+HLvn HLwn HLyn
+
+HVcn HVdn HVen HVon HVqn HVʌn VOVVovov
+
+HYcn HYdn HYen HYon HYqn HYʌn
+
+HWcn HWdn HWen HWon HWqn HWʌn
+
+HTcn HTdn HTen HTon HTqn HTʌn
+
+HFcn HFdn HFen HFon HFqn HFʌn
+
+HPcn HPdn HPen HPon HPqn HPʌn
+
+HUcn HUdn HUen HUon HUqn HUʌn
+
+HVan HVgn HVmn HVnn HVpn HVrn HVsn HVun HVzn
+
+HYan HYgn HYmn HYnn HYpn HYrn HYsn HYun HYzn
+
+HWan HWgn HWmn HWnn HWpn HWrn HWsn HWun HWzn
+
+HTan HTgn HTmn HTnn HTpn HTrn HTsn HTun HTzn
+
+HFan HFgn HFmn HFnn HFpn HFrn HFsn HFun HFzn
+
+HPan HPgn HPmn HPnn HPpn HPrn HPsn HPun HPzn
+
+
+nbvn nbwn nbyn nbxn nbʌn
+
+nevn newn neyn nexn neʌn
+
+novn nown noyn noxn noʌn
+
+npvn npwn npyn npxn npʌn
+
+nʌvn nʌwn nʌyn nʌxn nᴀvn
+
+nvʌn nwʌn nyʌn nxan nvᴀn
+
+nȡvn nȡon nȡsn n𝼒vn nⱸvn
+
+nrcn nrdn nren nron nrqn nran nrgn nrsn nr𝼛n
+
+nvcn nvdn nven nvov nvqn nvan nvgn nvsn nv𝼛n
+
+nwcn nwdn nwen nwow nwqn nwan nwgn nwsn nw𝼛n
+
+nycn nydn nyen nyon nyqn nyan nygn nysn ny𝼛n
+
+nᴀcn nʌcn nʌdn nʌen nʌon nʌqn nʌan nʌgn nʌsn nʌ𝼛n
+
+nkcn nkdn nken nkon nkqn nk𝼛n
+
+nxcn nxdn nxen nxon nxqn nx𝼛n
+
+
+ncn nchn ncln nckn ncbn ncþn
+
+nsn nshn nsln nskn nsbn nsþn
+
+ntn nthn ntln ntkn ntbn ntþn
+
+nzn nzhn nzln nzkn nzbn nzþn
+
+nan navn nayn nawn
+
+nhn nhvn nhyn nhwn
+
+nmn nmvn nmyn nmwn
+
+nnn nnvn nnyn nnwn
+
+nun nuvn nuyn nuwn}
+
+\section{LATIN - Punctuation}
+
+\proof{H"HH'HH“HH”HH‘HH’HHʼHH̚H
+
+O"OO'OO“OO”OO‘OO’OOʼOO̚O
+
+'A"HA'HA“HA”HA‘HA’HAʼHA̚H
+
+L"HL'HL“HL”HL‘HL’HLʼHL̚H
+
+d"hd'hd“hd”hd‘hd’hdʼhd̚h
+
+b"hb'hb“hb”hb‘hb’hbʼhb̚h
+
+e"he'he“he”he‘he’heʼhe̚h
+
+o"ho'ho“ho”ho‘ho’hoʼho̚h
+
+p"hp'hp“hp”hp‘hp’hpʼhp̚h
+
+
+d"hd'hd“hd”hd‘hd’hdʼhd̚h
+
+r"hr'hr“hr”hr‘hr’hrʼhr̚h
+
+v"hv'hv“hv”hv‘hv’hvʼhv̚h
+
+w"hw'hw“hw”hw‘hw’hwʼhw̚h
+
+y"hy'hy“hy”hy‘hy’hyʼhy̚h
+
+k"hk'hk“hk”hk‘hk’hkʼhk̚h
+
+x"hx'hx“hx”hx‘hx’hxʼhx̚h
+
+g"hg'hg“hg”hg‘hg’hgʼhg̚h
+
+q"hq'hq“hq”hq‘hq’hqʼhq̚h
+
+ʌ"hʌ'hʌ“hʌ”hʌ‘hʌ’hʌʼhʌ̚h
+
+
+a"ha'ha“ha”ha‘ha’haʼh
+
+c"hc'hc“hc”hc‘hc’hcʼh
+
+h"hh'hh“hh”hh‘hh’hhʼh
+
+m"hm'hm“hm”hm‘hm’hmʼh
+
+n"hn'hn“hn”hn‘hn’hnʼh
+
+s"hs'hs“hs”hs‘hs’hsʼh
+
+t"ht'ht“ht”ht‘ht’htʼh
+
+u"hu'hu“hu”hu‘hu’huʼh
+
+z"hz'hz“hz”hz‘hz’hzʼh
+
+f"hf'hf“hf”hf‘hf’hfʼh
+
+
+"A"c"d"e"o"q"v"y"w"x"ʌ
+
+'A'c'd'e'o'q'v'y'w'x'ʌ
+
+“A“c“d“e“o“q“v“y“w“x“ʌ
+
+”A”c”d”e”o”q”v”y”w”x”ʌ
+
+‘A‘c‘d‘e‘o‘q‘v‘y‘w‘x‘ʌ
+
+’A’c’d’e’o’q’v’y’w’x’ʌ
+
+ʼAʼcʼdʼeʼoʼqʼvʼyʼwʼx
+
+
+"a"g"s"m"n"p"r"u"z
+
+'a'g's'm'n'p'r'u'z
+
+“a“g“s“m“n“p“r“u“z
+
+”a”g”s”m”n”p”r”u”z
+
+‘a‘g‘s‘m‘n‘p‘r‘u‘z
+
+’a’g’s’m’n’p’r’u’z
+
+ʼaʼgʼsʼmʼnʼpʼrʼuʼz
+
+a̚h̚m̚n̚u̚c̚s̚t̚z̚
+
+
+HH. F. P. T. V. Y. W. n. r. v. y. w. 
+
+HH, F, P, T, V, Y, W, n, r, v, y, w, 
+
+.HH .T .V .Y .W .n .v .y .w 
+
+,HH ,T ,V ,Y ,W ,n ,v ,y ,w 
+
+H",H".H"…H"‚H"„H
+
+H',H'.H'…H'‚H'„H
+
+H“,H“.H“…H“‚H“„H
+
+H”,H”.H”…H”‚H”„H
+
+H‘,H‘.H‘…H‘‚H‘„H
+
+H’,H’.H’…H’‚H’„H
+
+Hʼ,Hʼ.Hʼ…Hʼ‚Hʼ„H
+
+
+H,"H,'H,“H,”H,‘H,’H,ʼH
+
+H."H.'H.“H.”H.‘H.’H.ʼH
+
+H…"H…'H…“H…”H…‘H…’H…ʼH
+
+H‚"H‚'H‚“H‚”H‚‘H‚’H‚ʼH
+
+H„"H„'H„“H„”H„‘H„’H„ʼH}
+
+
+\section{LATIN - Czech & Slovak carons}
+
+\proof{nď, ď. ď: ď; ď! ď? (ď) [ď] {ď} ‘ď’ „ď“ ‚ď‘ ď*
+
+nďa ďá ďh ďk ďl ďm ďn ďo ďt ďu ďž
+
+loďka ďas ďáblova buď!
+
+
+nť, ť. ť: ť; ť! ť? (ť) [ť] {ť} ‘ť’ „ť“ ‚ť‘ ť*
+
+nťa ťá ťc ťd ťj ťk ťm ťn ťo ťr ťs ťt ťu ťž
+
+šťastně křišťálový déšť voliť)
+
+
+nľ, ľ. ľ: ľ; ľ! ľ? (ľ) [ľ] {ľ} ‘ľ’ „ľ“ ‚ľ‘ ľ*
+
+nľa ľb ľč ľg ľh ľk ľm ľn ľň ľo ľs ľš ľt ľu ľú ľv
+
+Veľká Biľak podnikateľ]
+
+
+Ľ, Ľ. Ľ: Ľ; Ľ! Ľ? (Ľ) [Ľ] {Ľ} ‘Ľ’ „Ľ“ ‚Ľ‘ Ľ*
+
+Ľa Ľb Ľč Ľg Ľh Ľk Ľm Ľn Ľň
+
+Ľo Ľs Ľš Ľt Ľu Ľú Ľv
+
+ĽA ĽB ĽČ ĽG ĽH ĽK ĽM ĽN ĽŇ
+
+ĽO ĽS ĽŠ ĽT ĽU ĽÚ ĽV
+
+Ľahko }
+
+
+\section{LATIN - Viet hooks}
+
+\proof{OAƠAUAƯAO’Ơ’U’Ư’
+
+oaodohonotovoxoʼo’
+
+ơaơgơ𝼛ơdơhơþơnơtơvơxơʼơ’
+
+uauduhunutuvuxuʼu’
+
+ưaưgư𝼛ưdưhưþưnưtưvưxưʼư’}
+
+\section{LATIN - Right hooks}
+
+\proof{vavevɛvnvʋvbvfvvvʌvyvxvgv𝼛vþvp
+
+ⱱaⱱeⱱɛⱱnⱱʋⱱbⱱfⱱvⱱʌⱱyⱱxⱱgⱱ𝼛ⱱþⱱp
+
+wawewɛwnwʋwbwfwvwʌwywxwgw𝼛wþwp
+
+ⱳaⱳeⱳɛⱳnⱳʋⱳbⱳfⱳvⱳʌⱳyⱳxⱳgⱳ𝼛ⱳþⱳp
+
+yayeyɛynyʋybyfyvyʌyyyxygy𝼛yþyp
+
+ƴaƴeƴɛƴnƴʋƴbƴfƴvƴʌƴyƴxƴgƴ𝼛ƴþƴp
+
+vävöⱱäⱱöw.w‘ⱳ.ⱳ‘
+
+WaWeWɛWnWʋWbWfWvWʌWyWx
+
+ⱲaⱲeⱲɛⱲnⱲʋⱲbⱲfⱲvⱲʌⱲyⱲx
+
+WgW𝼛WþWpWäWöW.W‘
+
+ⱲgⱲ𝼛ⱲþⱲpⱲäⱲöⱲ.Ⱳ‘
+
+YaYeYɛYnYʋYbYfYvYʌYyYx
+
+ƳaƳeƳɛƳnƳʋƳbƳfƳvƳʌƳyƳx
+
+YgY𝼛YþYpYäYöY.Y‘
+
+ƳgƳ𝼛ƳþƳpƳäƳöƳ.Ƴ‘
+
+HⱲHⱲAWAHƳHƳAYAH}
+
+\section{LATIN - Positive kerns}
+
+\proof{ngjnqjnᶏjn
+
+nf)nf]nf} (jn[jn{jn ƈ]ɗ]ᶑ]
+
+ᶏgᶐg𝼝gɖgᶑgꭦgᶒgᶕgᶓgʯgᶖg𝼚gɭgꞎgɳgɋgƪgɻg𝼈gʅgᶙgʐg
+
+ɖþɖʈɖgɖ𝼛ɖpɖy
+
+nïn nïïn nïĩn
+
+aɳʈi aɳɡi ɳt̪ uɭɭa aʈʈa ʃh ʃʰ (GPS combos)}
+
+\section{LATIN - base+base+mark}
+
+\proof{Van Ván Vän Va͊n Vgn Vǵn Vg̈n Vg͊n Von Vón Vön Vo͊n Vnn Vńn Vn̈n Vn͊n
+
+Wan Wán Wän Wa͊n Wgn Wǵn Wg̈n Wg͊n Won Wón Wön Wo͊n Wnn Wńn Wn̈n Wn͊n
+
+Pan Pán Pän Pa͊n Pgn Pǵn Pg̈n Pg͊n Pon Pón Pön Po͊n Pnn Pńn Pn̈n Pn͊n
+
+Tan Tán Tän Ta͊n Tgn Tǵn Tg̈n Tg͊n Ton Tón Tön To͊n Tnn Tńn Tn̈n Tn͊n
+
+ʼan ʼán ʼän ʼa͊n ʼgn ʼǵn ʼg̈n ʼg͊n ʼon ʼón ʼön ʼo͊n ʼnn ʼńn ʼn̈n ʼn͊n
+
+‘an ‘án ‘än ‘a͊n ‘gn ‘ǵn ‘g̈n ‘g͊n ‘on ‘ón ‘ön ‘o͊n ‘nn ‘ńn ‘n̈n ‘n͊n
+
+ďan ďán ďän ďa͊n ďgn ďǵn ďg̈n ďg͊n ďon ďón ďön ďo͊n ďnn ďńn ďn̈n ďn͊n
+
+ťan ťán ťän ťa͊n ťgn ťǵn ťg̈n ťg͊n ťon ťón ťön ťo͊n ťnn ťńn ťn̈n ťn͊n}
+
+\section{LATIN & CYR - Precomposed}
+
+\proof{VaVäVoVöWaWäWoWöPaPäFaFäPoPöFoFö
+
+TaTäToTöʼaʼäʼoʼö‘a‘ä‘o‘ö
+
+aʼáʼa’á’a̚á̚avávayáygʼǵʼg’ǵ’g̚ǵ̚gjǵj
+
+vʼṽʼv.ṽ.v’ṽ’v̚ṽ̚vaṽaväṽävgṽgvoṽovöṽöv𝼛ṽ𝼛vʌṽʌ
+
+xʼẍʼx’ẍ’x̚ẍ̚xoẍoxöẍöx𝼛ẍ𝼛
+
+oʼöʼo’ö’o̚ö̚ovövoyöyoxöxoʌöʌ
+
+cʼćʼc’ć’c̚ć̚chćhcþćþ  ʌaʌäʌoʌö
+
+ơaơäơoơöďaďäľaľäťaťäďoďöľoľöťoťö
+
+олод улмо кӱлшӧ тудын шӱдыр}
+
+
+\section{CYRILLIC - test cross-script kerning}
+
+\proof{Latin WATA Mixed WАТA}
+
+
+\end{document}
