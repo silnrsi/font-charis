@@ -1740,7 +1740,8 @@ LtnSmSCedilla,scedilla,2800.61,2800.61,,,,,
 LtnSmSHook,uni0282,2800.64,2800.64,,,,,
 ModSmSHook,uni1DB3,2800.6423,2800.6423,,,,,
 LtnSmSPalHook,uni1D8A,2800.65,2800.65,,,,,
-LtnSmSMiddleTilde,uni1D74,2800.74,2800.74,,,,,
+LtnSmSMiddleTilde,uni1D74,2800.73,2800.73,,,,,
+LtnSmSFullDiagStrk,uniA7CD,2800.74,2800.74,,,,,
 LtnSmSDiagStrk,uniA7A9,2800.75,2800.75,,,,,
 LtnSmSShortStrk,uniA7CA,2800.76,2800.76,,,,,
 LtnSmSMidLftHook,u1DF29,2800.88,2800.88,,,,,
@@ -1770,6 +1771,7 @@ LtnCapSDotBlwDotAbv,uni1E68,2850.471371,2850.471371,,,,,
 LtnCapSCommaBlw,uni0218,2850.472,2850.472,,,,,
 LtnCapSCedilla,Scedilla,2850.61,2850.61,,,,,
 LtnCapSHook,uniA7C5,2850.64,2850.64,,,,,
+LtnCapSFullDiagStrk,uniA7CC,2850.74,2850.74,,,,,
 LtnCapSDiagStrk,uniA7A8,2850.75,2850.75,,,,,
 LtnCapSShortStrk,uniA7C9,2850.76,2850.76,,,,,
 LtnCapSSwashTail,uni2C7E,2850.93,2850.93,,,,,
@@ -1825,7 +1827,8 @@ CySmTe.Serb,uni0442.Serb,2940.15,2940.15,cv84,cv84,,0442,0442
 ModCySmTe.Serb,u1E040.Serb,2940.152,2940.152,cv84,cv84,,1E040,1E040
 CySmTeDesc,uni04AD,2940.2,2940.2,,,,,
 CySmKomiTje,uni050F,2940.3,2940.3,,,,,
-CySmLigTeTse,uni04B5,2940.4,2940.4,,,,,
+CySmTje,uni1C8A,2940.4,2940.4,,,,,
+CySmLigTeTse,uni04B5,2940.5,2940.5,,,,,
 CyCapTe,uni0422,2950.15,2950.15,,,,,
 GrCapTau,Tau,2950.16,2950.16,,,,,
 ModCapT,uni1D40,2950.23,2950.23,,,,,
@@ -1852,6 +1855,7 @@ CyCapKomiTje,uni050E,2955.2,2955.2,,,,,
 CyCapLigTeTse,uni04B4,2960.1,2960.1,,,,,
 CyCapTshe,uni040B,2970.1,2970.1,,,,,
 CyCapDje,uni0402,2970.2,2970.2,,,,,
+CyCapTje,uni1C89,2971.1,2971.1,,,,,
 MathFrktCapT,u1D517,2980.1,2980.1,,,,,
 LtnSubSmU,uni1D64,3000.21,3000.21,,,,,
 LtnSupSmU,uni1D58,3000.22,3000.22,,,,,
@@ -1990,7 +1994,7 @@ LtnCapVend,uniA768,3163.1,3163.1,,,,,
 LtnCapTurnedV,uni0245,3170.1,3170.1,,,,,
 GrSmCapLamda,uni1D27,3170.26,3170.26,,,,,
 MathFrktCapV,u1D519,3180.1,3180.1,,,,,
-LtnCapRamsHorn,uniF26E,3185.1,3185.1,,,,,
+LtnCapRamsHorn,uniA7CB,3185.1,3185.1,,,,,
 LtnCapGamma,uni0194,3190.1,3190.1,,,,,
 CySmWe,uni051D,3200.15,3200.15,,,,,
 CombLtnSmWBlw,uni1ABF,3200.2,3200.2,,,,,
@@ -2087,6 +2091,7 @@ ModSmTurnedY,u107A0,3420.23,3420.23,,,,,
 LtnSmTurnedYBelt,u1DF06,3420.92,3420.92,,,,,
 ModSmTurnedYBelt,u107A1,3420.9223,3420.9223,,,,,
 GrSmLamda,lambda,3430.1,3430.1,,,,,
+LtnSmLambda,uniA7DB,3430.2,3430.2,,,,,
 LtnSmLambdaStrk,uni019B,3430.75,3430.75,,,,,
 CySmChe,uni0447,3440.1,3440.1,,,,,
 CySubSmChe,u1E063,3440.11,3440.11,,,,,
@@ -2119,6 +2124,8 @@ CyCapUDblAcute,uni04F2,3470.312,3470.312,,,,,
 CyCapShortU,uni040E,3470.333,3470.333,,,,,
 CyCapUMacron,uni04EE,3470.35,3470.35,,,,,
 CyCapUDiaer,uni04F0,3470.36,3470.36,,,,,
+LtnCapLambda,uniA7DA,3480.2,3480.2,,,,,
+LtnCapLambdaStrk,uniA7DC,3480.75,3480.75,,,,,
 CyCapChe,uni0427,3490.1,3490.1,,,,,
 CyCapCheDiaer,uni04F4,3490.2,3490.2,,,,,
 CyCapCheVertStrk,uni04B8,3490.3,3490.3,,,,,
@@ -4663,6 +4670,7 @@ LtnSmSDotBlw.sc,uni1E63.sc,42800.471,42800.471,smcp,smcp,,1E63,1E63
 LtnSmSDotBlwDotAbv.sc,uni1E69.sc,42800.47137,42800.47137,smcp,smcp,,1E69,1E69
 LtnSmSCommaBlw.sc,uni0219.sc,42800.472,42800.472,smcp,smcp,,0219,0219
 LtnSmSCedilla.sc,scedilla.sc,42800.61,42800.61,smcp,smcp,,015F,015F
+LtnSmSFullDiagStrk.sc,uniA7CD.sc,42800.74,42800.74,smcp,,,A7CD,
 LtnSmSDiagStrk.sc,uniA7A9.sc,42800.75,42800.75,smcp,smcp,,A7A9,A7A9
 LtnSmSSwashTail.sc,uni023F.sc,42800.93,42800.93,smcp,smcp,,023F,023F
 LtnSmSharpS.sc,germandbls.sc,42810.1,42810.1,smcp,smcp,,00DF,00DF
@@ -4689,7 +4697,8 @@ LtnSmInsularT.sc,uniA787.sc,42914.1,42914.1,smcp,smcp,,A787,A787
 LtnSmTurnedT.sc,uni0287.sc,42920.1,42920.1,smcp,smcp,,0287,0287
 CySmTe.sc,uni0442.sc,42940.1,42940.1,smcp,smcp,,0442,0442
 CySmKomiTje.sc,uni050F.sc,42940.3,42940.3,smcp,smcp,,050F,050F
-CySmLigTeTse.sc,uni04B5.sc,42940.4,42940.4,smcp,smcp,,04B5,04B5
+CySmTje.sc,uni1C8A.sc,42940.4,42940.4,smcp,,,1C8A,
+CySmLigTeTse.sc,uni04B5.sc,42940.5,42940.5,smcp,smcp,,04B5,04B5
 CySmTeDesc.sc,uni04AD.sc,42940.89,42940.89,smcp,smcp,,04AD,04AD
 LtnSmU.sc,u.sc,43000.1,43000.1,smcp,smcp,,0075,0075
 LtnSmUAcute.sc,uacute.sc,43000.311,43000.311,smcp,smcp,,00FA,00FA
@@ -4780,6 +4789,8 @@ LtnSmYHook.RtHook.NoTailY.sc,uni01B4.RtHook.NoTailY.sc,43400.872,43400.872,,smcp
 LtnSmYLoop.sc,uni1EFF.sc,43400.91,43400.91,smcp,smcp,,1EFF,1EFF
 CySmStraightU.sc,uni04AF.sc,43410.1,43410.1,smcp,smcp,,04AF,04AF
 CySmStraightUStrk.sc,uni04B1.sc,43410.72,43410.72,smcp,smcp,,04B1,04B1
+LtnSmLambda.sc,uniA7DB.sc,43430.2,43430.2,smcp,,,A7DB,
+LtnSmLambdaStrk.sc,uni019B.sc,43430.75,43430.75,smcp,,,019B,
 CySmChe.sc,uni0447.sc,43440.1,43440.1,smcp,smcp,,0447,0447
 CySmCheDiaer.sc,uni04F5.sc,43440.36,43440.36,smcp,smcp,,04F5,04F5
 CySmKhakasChe.sc,uni04CC.sc,43440.5,43440.5,smcp,smcp,,04CC,04CC
@@ -4833,7 +4844,6 @@ GrSmEta.sc,eta.sc,46513.1,46513.1,smcp,,,03B7,
 GrSmEtaWYpo.sc,uni1FC3.sc,46513.2,46513.2,smcp,,,1FC3,
 GrSmGamma.sc,gamma.sc,46514.1,46514.1,smcp,,,03B3,
 GrSmIota.sc,iota.sc,46516.1,46516.1,smcp,,,03B9,
-GrSmIotaWDial.sc,iotadieresis.sc,46516.2,46516.2,smcp,,,03CA,
 GrSmKappa.sc,kappa.sc,46518.1,46518.1,smcp,,,03BA,
 GrSmLamda.sc,lambda.sc,46520.1,46520.1,smcp,,,03BB,
 GrSmMu.sc,uni03BC.sc,46521.1,46521.1,smcp,,,03BC,
@@ -4849,7 +4859,6 @@ GrSmSigma.sc,sigma.sc,46533.1,46533.1,smcp,,,03C3,
 GrSmTau.sc,tau.sc,46535.1,46535.1,smcp,,,03C4,
 GrSmTheta.sc,theta.sc,46536.1,46536.1,smcp,,,03B8,
 GrSmUpsilon.sc,upsilon.sc,46537.1,46537.1,smcp,,,03C5,
-GrSmUpsilonWDial.sc,upsilondieresis.sc,46537.2,46537.2,smcp,,,03CB,
 GrSmXi.sc,xi.sc,46539.1,46539.1,smcp,,,03BE,
 GrSmZeta.sc,zeta.sc,46540.1,46540.1,smcp,,,03B6,
 GrDottedLunateSigma.sc,uni037C.sc,46551.1,46551.1,smcp,,,037C,
@@ -4997,6 +5006,7 @@ LtnSmVCurlDep,uniF25E,83100.911,83100.911,,,,,
 LtnSupSmTurnedVDep,uniF1B3,83120.221,83120.221,,,,,
 LtnSupSmRamsHornDep,uniF1B5,83131.22,83131.22,,,,,
 LtnCapTurnedVDep,uniF219,83170.11,83170.11,,,,,
+LtnCapRamsHornDep,uniF26E,83185.1,83185.1,,,,,
 LtnSmWHookDep,uniF21A,83200.811,83200.811,,,,,
 LtnCapWHookDep,uniF21B,83250.811,83250.811,,,,,
 LtnSmXPalHookDep,uniF232,83300.651,83300.651,,,,,
