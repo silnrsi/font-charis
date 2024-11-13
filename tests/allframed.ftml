@@ -4502,6 +4502,14 @@
       <comment>CombLtnSmInsularT</comment>
       <string>o\u001ACEo</string>
     </test>
+    <test label="U+1C89">
+      <comment>CyCapTje</comment>
+      <string>o\u001C89o</string>
+    </test>
+    <test label="U+1C8A">
+      <comment>CySmTje</comment>
+      <string>o\u001C8Ao</string>
+    </test>
     <test label="U+1D00">
       <comment>LtnSmCapA</comment>
       <string>o\u001D00o</string>
@@ -8830,6 +8838,30 @@
       <comment>LtnSmSShortStrk</comment>
       <string>o\u00A7CAo</string>
     </test>
+    <test label="U+A7CB">
+      <comment>LtnCapRamsHorn</comment>
+      <string>o\u00A7CBo</string>
+    </test>
+    <test label="U+A7CC">
+      <comment>LtnCapSFullDiagStrk</comment>
+      <string>o\u00A7CCo</string>
+    </test>
+    <test label="U+A7CD">
+      <comment>LtnSmSFullDiagStrk</comment>
+      <string>o\u00A7CDo</string>
+    </test>
+    <test label="U+A7DA">
+      <comment>LtnCapLambda</comment>
+      <string>o\u00A7DAo</string>
+    </test>
+    <test label="U+A7DB">
+      <comment>LtnSmLambda</comment>
+      <string>o\u00A7DBo</string>
+    </test>
+    <test label="U+A7DC">
+      <comment>LtnCapLambdaStrk</comment>
+      <string>o\u00A7DCo</string>
+    </test>
     <test label="U+A7F2">
       <comment>ModCapC</comment>
       <string>o\u00A7F2o</string>
@@ -9763,7 +9795,7 @@
       <string>o\u00F26Do</string>
     </test>
     <test label="U+F26E">
-      <comment>LtnCapRamsHorn</comment>
+      <comment>LtnCapRamsHornDep</comment>
       <string>o\u00F26Eo</string>
     </test>
     <test label="U+F320">

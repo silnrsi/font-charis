@@ -3584,6 +3584,14 @@
       <comment>CySmElDesc</comment>
       <string>\u00052F\u000329 \u00052F\u00030D</string>
     </test>
+    <test label="U+1C89">
+      <comment>CyCapTje</comment>
+      <string>\u001C89\u000329 \u001C89\u00030D</string>
+    </test>
+    <test label="U+1C8A">
+      <comment>CySmTje</comment>
+      <string>\u001C8A\u000329 \u001C8A\u00030D</string>
+    </test>
     <test label="U+1D00">
       <comment>LtnSmCapA</comment>
       <string>\u001D00\u000329 \u001D00\u00030D</string>
@@ -6468,6 +6476,30 @@
       <comment>LtnSmSShortStrk</comment>
       <string>\u00A7CA\u000327 \u00A7CA\u000329 \u00A7CA\u00030D</string>
     </test>
+    <test label="U+A7CB">
+      <comment>LtnCapRamsHorn</comment>
+      <string>\u00A7CB\u000329 \u00A7CB\u00030D</string>
+    </test>
+    <test label="U+A7CC">
+      <comment>LtnCapSFullDiagStrk</comment>
+      <string>\u00A7CC\u000327 \u00A7CC\u000329 \u00A7CC\u00030D</string>
+    </test>
+    <test label="U+A7CD">
+      <comment>LtnSmSFullDiagStrk</comment>
+      <string>\u00A7CD\u000327 \u00A7CD\u000329 \u00A7CD\u00030D</string>
+    </test>
+    <test label="U+A7DA">
+      <comment>LtnCapLambda</comment>
+      <string>\u00A7DA\u000329 \u00A7DA\u000328 \u00A7DA\u00030D</string>
+    </test>
+    <test label="U+A7DB">
+      <comment>LtnSmLambda</comment>
+      <string>\u00A7DB\u000329 \u00A7DB\u00030D</string>
+    </test>
+    <test label="U+A7DC">
+      <comment>LtnCapLambdaStrk</comment>
+      <string>\u00A7DC\u000329 \u00A7DC\u000328 \u00A7DC\u00030D</string>
+    </test>
     <test label="U+A7F2">
       <comment>ModCapC</comment>
       <string>\u00A7F2\u000327 \u00A7F2\u000329 \u00A7F2\u00030D</string>
@@ -7165,7 +7197,7 @@
       <string>\u00F26D\u000329 \u00F26D\u00030D</string>
     </test>
     <test label="U+F26E">
-      <comment>LtnCapRamsHorn</comment>
+      <comment>LtnCapRamsHornDep</comment>
       <string>\u00F26E\u000329 \u00F26E\u00030D</string>
     </test>
     <test label="U+F320">

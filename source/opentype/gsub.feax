@@ -918,6 +918,28 @@ lookup sital_sub {
 # Gentium
 do let f = info("familyName");
    if f.find("Gentium") != -1; {
+
+# define lookups for decomposing and recomposing greek diac seqs: grk_decomp_sub, grk_recomp_sub
+#    also define grk_sc1_sub lookup for handling Greek small caps, including where diacritics are removed
+include(../../source/opentype/grk_compose.feax);
+
+# below are examples of content from grk_compose.feax for reference
+
+# lookup grk_decomp_sub {
+#   lookupflag 0;
+#     sub GrCapAlphaWMacron by GrCapAlpha CombMacron;
+# } grk_decomp_sub;
+
+# lookup grk_recomp_sub {
+#   lookupflag 0;
+#     sub GrCapAlpha CombRevCommaAbv by GrCapAlphaWDasia;
+# } grk_recomp_sub;
+
+# lookup grk_sc1_sub {
+#   lookupflag 0;
+#     sub GrSmAlphaWDasiaOxiaYpo by GrSmAlphaWYpo.sc;
+# } grk_sc1_sub;
+
 lookup srfb_sub {
   lookupflag 0;
     sub GrSmBeta from [GrSmBeta.Serif ];
@@ -1063,6 +1085,8 @@ feature ccmp {
   lookup dbl_diac_abv_and_blw_move;
 do let f = info("familyName");
    if f.find("Gentium") != -1; {
+  lookup grk_decomp_sub;
+  lookup grk_recomp_sub;
   lookup lpdiac_ctx; #Gentium
 }
   lookup tn_ctx;
@@ -1084,6 +1108,10 @@ feature locl {
 
 feature smcp {
   lookup sc1_sub;
+do let f = info("familyName");
+   if f.find("Gentium") != -1; {
+  lookup grk_sc1_sub;
+}
 } smcp;
 
 feature c2sc {
