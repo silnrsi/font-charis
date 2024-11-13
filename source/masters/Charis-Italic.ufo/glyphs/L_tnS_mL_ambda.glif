@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmLambda" format="2">
+  <advance width="1161"/>
+  <unicode hex="A7DB"/>
+  <anchor x="423" y="-100" name="L"/>
+  <anchor x="739" y="1540" name="U"/>
+  <outline>
+    <component base="LtnSmLambdaStrk"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.99,0.62,0.11,1</string>
+    </dict>
+  </lib>
+</glyph>
