@@ -8559,38 +8559,39 @@ U+0458
 U+0069
 U+1D96
 U+0268
+U+1DF1A
 U+006A
-U+029D
-U+0249">
-      <comment>CySmByelorusUkrainI CySmJe LtnSmI LtnSmIRetrHook LtnSmIStrk LtnSmJ LtnSmJCrossedTail LtnSmJStrk</comment>
-      <string>\u000456\u000301 \u000458\u000301 i\u000301 \u001D96\u000301 \u000268\u000301 j\u000301 \u00029D\u000301 \u000249\u000301</string>
+U+029D">
+      <comment>CySmByelorusUkrainI CySmJe LtnSmI LtnSmIRetrHook LtnSmIStrk LtnSmIStrkRetrHook LtnSmJ LtnSmJCrossedTail</comment>
+      <string>\u000456\u000301 \u000458\u000301 i\u000301 \u001D96\u000301 \u000268\u000301 \u01DF1A\u000301 j\u000301 \u00029D\u000301</string>
     </test>
     <test label="U+0301">
-      <comment>CySmByelorusUkrainI CySmJe LtnSmI LtnSmIRetrHook LtnSmIStrk LtnSmJ LtnSmJCrossedTail LtnSmJStrk</comment>
-      <string>\u000456 \u000458 i \u001D96 \u000268 j \u00029D \u000249</string>
+      <comment>CySmByelorusUkrainI CySmJe LtnSmI LtnSmIRetrHook LtnSmIStrk LtnSmIStrkRetrHook LtnSmJ LtnSmJCrossedTail</comment>
+      <string>\u000456 \u000458 i \u001D96 \u000268 \u01DF1A j \u00029D</string>
     </test>
-    <test label="U+1D62
+    <test label="U+0249
+U+1D62
 U+2C7C
 U+2071
 U+1DA4
 U+02B2
 U+1DA8
-U+1ECB
-U+1E2D">
-      <comment>LtnSubSmI LtnSubSmJ LtnSupSmI LtnSupSmIStrk ModSmJ ModSmJCrossedTail LtnSmIDotBlw LtnSmITildeBlw</comment>
-      <string>\u001D62\u000301 \u002C7C\u000301 \u002071\u000301 \u001DA4\u000301 \u0002B2\u000301 \u001DA8\u000301 \u001ECB\u000301 \u001E2D\u000301</string>
+U+1ECB">
+      <comment>LtnSmJStrk LtnSubSmI LtnSubSmJ LtnSupSmI LtnSupSmIStrk ModSmJ ModSmJCrossedTail LtnSmIDotBlw</comment>
+      <string>\u000249\u000301 \u001D62\u000301 \u002C7C\u000301 \u002071\u000301 \u001DA4\u000301 \u0002B2\u000301 \u001DA8\u000301 \u001ECB\u000301</string>
     </test>
     <test label="U+0301">
-      <comment>LtnSubSmI LtnSubSmJ LtnSupSmI LtnSupSmIStrk ModSmJ ModSmJCrossedTail LtnSmIDotBlw LtnSmITildeBlw</comment>
-      <string>\u001D62 \u002C7C \u002071 \u001DA4 \u0002B2 \u001DA8 \u001ECB \u001E2D</string>
+      <comment>LtnSmJStrk LtnSubSmI LtnSubSmJ LtnSupSmI LtnSupSmIStrk ModSmJ ModSmJCrossedTail LtnSmIDotBlw</comment>
+      <string>\u000249 \u001D62 \u002C7C \u002071 \u001DA4 \u0002B2 \u001DA8 \u001ECB</string>
     </test>
-    <test label="U+012F">
-      <comment>LtnSmIOgonek</comment>
-      <string>\u00012F\u000301</string>
+    <test label="U+1E2D
+U+012F">
+      <comment>LtnSmITildeBlw LtnSmIOgonek</comment>
+      <string>\u001E2D\u000301 \u00012F\u000301</string>
     </test>
     <test label="U+0301">
-      <comment>LtnSmIOgonek</comment>
-      <string>\u00012F</string>
+      <comment>LtnSmITildeBlw LtnSmIOgonek</comment>
+      <string>\u001E2D \u00012F</string>
     </test>
     <test label="U+0456
 U+0458
