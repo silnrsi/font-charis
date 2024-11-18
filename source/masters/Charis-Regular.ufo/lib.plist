@@ -1480,6 +1480,7 @@ c/ModApos/LtnSmCAcute/ModApos c/RtSglQuotMrk/LtnSmCAcute/RtSglQuotMrk c/CombLftA
     <string>LtnSmIRetrHook.Dotless</string>
     <string>LtnSmIStrk.Dotless</string>
     <string>LtnSupSmIStrk.Dotless</string>
+    <string>LtnSmIStrkRetrHook.Dotless</string>
     <string>LtnSmTrndI</string>
     <string>ModSmTrndI</string>
     <string>LtnSmLigIj</string>
@@ -9084,6 +9085,8 @@ c/ModApos/LtnSmCAcute/ModApos c/RtSglQuotMrk/LtnSmCAcute/RtSglQuotMrk c/CombLftA
     <string>uni0268.sc</string>
     <key>LtnSmIStrkRetrHook</key>
     <string>u1DF1A</string>
+    <key>LtnSmIStrkRetrHook.Dotless</key>
+    <string>u1DF1A.Dotless</string>
     <key>LtnSmITilde</key>
     <string>itilde</string>
     <key>LtnSmITilde.SItal</key>
