@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
   <key>ascender</key>
-  <integer>2450</integer>
+  <integer>2200</integer>
   <key>capHeight</key>
   <integer>1374</integer>
   <key>copyright</key>
   <string>Copyright (c) 1997-2024 SIL International</string>
   <key>descender</key>
-  <integer>-900</integer>
+  <integer>-500</integer>
   <key>familyName</key>
   <string>Charis</string>
   <key>italicAngle</key>
@@ -23,9 +23,9 @@
     <integer>3</integer>
   </array>
   <key>openTypeHheaAscender</key>
-  <integer>2450</integer>
+  <integer>2200</integer>
   <key>openTypeHheaDescender</key>
-  <integer>-900</integer>
+  <integer>-500</integer>
   <key>openTypeHheaLineGap</key>
   <integer>0</integer>
   <key>openTypeNameDescription</key>
@@ -142,9 +142,9 @@ THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
   <key>openTypeOS2Type</key>
   <array/>
   <key>openTypeOS2TypoAscender</key>
-  <integer>2450</integer>
+  <integer>2200</integer>
   <key>openTypeOS2TypoDescender</key>
-  <integer>-900</integer>
+  <integer>-500</integer>
   <key>openTypeOS2TypoLineGap</key>
   <integer>0</integer>
   <key>openTypeOS2UnicodeRanges</key>
@@ -192,7 +192,7 @@ THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
   <key>openTypeOS2WinAscent</key>
   <integer>2600</integer>
   <key>openTypeOS2WinDescent</key>
-  <integer>1092</integer>
+  <integer>1442</integer>
   <key>postscriptBlueValues</key>
   <array>
     <integer>-33</integer>
