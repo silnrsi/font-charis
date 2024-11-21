@@ -1,10 +1,12 @@
 function Link(el)
-  el.target = string.gsub(el.target, "%.md", ".html")
+  if string.find(el.target, "^https?://") == nil then
+    el.target = string.gsub(el.target, "%.md", ".html")
+  end
   el.target = string.gsub(el.target, "%.rawmd", ".md")
   return el
 end
 
-function CodeBlock(el)
-  el.text = string.gsub(el.text, "(.+)", "    %0")
+function Image(el)
+  el.src = string.gsub(el.src, "../assets", "assets")
   return el
 end

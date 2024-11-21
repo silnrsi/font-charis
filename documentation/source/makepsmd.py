@@ -2,7 +2,7 @@
 '''Process font documentation .md files for use on product sites '''
 __url__ = 'https://github.com/silnrsi/fontdocs'
 __copyright__ = 'Copyright (c) 2021-2024 SIL Global (https://www.sil.org)'
-__license__ = 'Released under the MIT License (http://opensource.org/licenses/MIT)'
+__license__ = 'Released under the MIT License (https://opensource.org/licenses/MIT)'
 __author__ = 'Victor Gaultney'
 
 import re
@@ -58,7 +58,8 @@ def doit(args):
     temptext = mdimagecap.sub(r"[caption]<em>\1</em>[/caption]", temptext)
 
     # replace local links with site references
-    temptext = temptext.replace(".md","")
+    mdlink = re.compile(r"\((?!https://)(?P<path>[^()]*).md\)")
+    temptext = mdlink.sub(r"(\g<path>)",temptext)
 
     # replace links to external markdown files
     temptext = temptext.replace(".rawmd",".md")
