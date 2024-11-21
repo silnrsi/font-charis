@@ -29,7 +29,7 @@ Although the current fonts support only OpenType, previous versions provided sup
 
 ## TypeTuner
 
-The [TypeTuner Web](https://scripts.sil.org/ttw/fonts2go.cgi) service allows you to choose smart font features and download a font with those features preset. This enables them to work in many applications that do not fully support OpenType.
+The [TypeTuner Web](https://typetunerweb.languagetechnology.org/ttw/fonts2go.cgi) service allows you to choose smart font features and download a font with those features preset. This enables them to work in many applications that do not fully support OpenType.
 
 ## Web fonts
 
