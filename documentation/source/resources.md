@@ -37,4 +37,4 @@ Web font versions of these fonts (in WOFF and WOFF2 formats) are available in th
 
 ## Text conversion
 
-These fonts are encoded according to [The Unicode Standard](http://unicode.org). If you have text that uses a legacy, non-Unicode encoding there are tools that can help you convert that text for use with Unicode fonts. See [Introduction to Text Conversion and Transliteration](https://scriptsource.org/entry/xlzd6n5aqt).
+These fonts are encoded according to [The Unicode Standard](https://unicode.org). If you have text that uses a legacy, non-Unicode encoding there are tools that can help you convert that text for use with Unicode fonts. See [Introduction to Text Conversion and Transliteration](https://scriptsource.org/entry/xlzd6n5aqt).

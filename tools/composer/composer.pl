@@ -1,5 +1,5 @@
 # Copyright (c) 2007-2024 SIL Global  (https://www.sil.org)
-# Released under the MIT License (http://opensource.org/licenses/MIT)
+# Released under the MIT License (https://opensource.org/licenses/MIT)
 
 #Script to create a template for the TypeTuner feat_all.xml file for our Roman fonts.
 # I should have written this in Python. I could have parsed the features.gdh file myself

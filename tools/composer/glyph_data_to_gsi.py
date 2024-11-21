@@ -1,5 +1,5 @@
 # Copyright (c) 2007-2024 SIL Global  (https://www.sil.org)
-# Released under the MIT License (http://opensource.org/licenses/MIT)
+# Released under the MIT License (https://opensource.org/licenses/MIT)
 
 import sys, csv, re
 
