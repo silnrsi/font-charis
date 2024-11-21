@@ -69,7 +69,7 @@ Emoticons|U+1F610
 
 ## Private-use (PUA) characters
 
-There are a number of private-use characters that are supported in this font. These conform to [SIL International’s corporate registry](https://scripts.sil.org/PUA_home) for usage of the Unicode private-use areas. Characters which are not yet in Unicode are shown below. 
+There are a number of private-use characters that are supported in this font. These conform to [SIL Global’s corporate registry](https://scripts.sil.org/PUA_home) for usage of the Unicode private-use areas. Characters which are not yet in Unicode are shown below. 
 
 ### Specials
 

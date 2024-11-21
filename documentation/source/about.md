@@ -41,9 +41,9 @@ Our font announcements are also available through X (formerly Twitter) [\@silfon
 
 These fonts are provided at no cost. However, they are expensive to produce and maintain. Please consider donating to SIL’s font development efforts to support future development. Go to [SIL’s Give Direct page](https://give.sil.org/give/485238). **Thank you!** 
 
-## About SIL International
+## About SIL Global
 
-[SIL International](https://www.sil.org/) is a global, faith-based nonprofit that works with local communities around the world to develop language solutions that expand possibilities for a better life. 
+[SIL Global](https://www.sil.org/) is a global, faith-based nonprofit that works with local communities around the world to develop language solutions that expand possibilities for a better life. 
 
 We are involved in active language projects in 109 countries. These projects impact more than 855 million people within 1,466 local communities. SIL’s work brings together more than 4,000 staff from 89 countries who work alongside thousands more local partners and community volunteers worldwide. Our services are available without regard to religious belief, political ideology, gender, race or ethnic background.
 

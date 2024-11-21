@@ -21,6 +21,6 @@ This Charis SIL font is essentially the same design as the SIL Charis font first
 >
 > BITSTREAM CHARTER is a registered trademark of Bitstream Inc.
 
-SIL International is the creator of the Charis SIL fonts, and is the owner of all proprietary rights therein.
+SIL Global is the creator of the Charis SIL fonts, and is the owner of all proprietary rights therein.
 
-*Charis SIL* is a trademark of SIL International.
+*Charis SIL* is a trademark of SIL Global.
