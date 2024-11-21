@@ -1,5 +1,5 @@
 ---
-title: Charis SIL - Resources
+title: Charis - Resources
 fontversion: 6.200
 ---
 

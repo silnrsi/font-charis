@@ -1,5 +1,5 @@
 ---
-title: Charis SIL - Version History
+title: Charis - Version History
 fontversion: 6.200
 ---
 

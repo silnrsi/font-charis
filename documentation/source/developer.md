@@ -1,5 +1,5 @@
 ---
-title: Charis SIL - Developer information
+title: Charis - Developer information
 fontversion: 6.200
 ---
 
