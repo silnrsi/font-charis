@@ -5,23 +5,23 @@ Font Names "Charis" and "SIL". This Font Software is licensed under the SIL
 Open Font License, Version 1.1 (https://openfontlicense.org).
 */
 @font-face {
-    font-family: CharisSIL-R;
-    src: url("../../../web/CharisSIL-Regular.woff2") format("woff2");
+    font-family: Charis-R;
+    src: url("../../../web/Charis-Regular.woff2") format("woff2");
 }
 @font-face {
-    font-family: CharisSIL-I;
-    src: url("../../../web/CharisSIL-Italic.woff2") format("woff2");
+    font-family: Charis-I;
+    src: url("../../../web/Charis-Italic.woff2") format("woff2");
 }
 @font-face {
-    font-family: CharisSIL-B;
-    src: url("../../../web/CharisSIL-Bold.woff2") format("woff2");
+    font-family: Charis-B;
+    src: url("../../../web/Charis-Bold.woff2") format("woff2");
 }
 @font-face {
-    font-family: CharisSIL-BI;
-    src: url("../../../web/CharisSIL-BoldItalic.woff2") format("woff2");
+    font-family: Charis-BI;
+    src: url("../../../web/Charis-BoldItalic.woff2") format("woff2");
 }
 
-.charis-R { font-family: CharisSIL-R; }
-.charis-B { font-family: CharisSIL-B; }
-.charis-I { font-family: CharisSIL-I; }
-.charis-BI { font-family: CharisSIL-BI; }
+.charis-R { font-family: Charis-R; }
+.charis-B { font-family: Charis-B; }
+.charis-I { font-family: Charis-I; }
+.charis-BI { font-family: Charis-BI; }

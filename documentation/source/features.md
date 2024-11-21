@@ -9,7 +9,7 @@ These OpenType features are primarily specified using four-letter tags (e.g. 'cv
 
 *Please note that Graphite support has been removed in the current release, but continues to be available in the version 5 fonts. See our [Previous Versions archive](https://software.sil.org/charis/download/previous-versions).*
 
-This page uses web fonts (WOFF2) to demonstrate font features and should display correctly in all modern browsers. For a more concise example of how to use Charis as a web font see *CharisSIL-webfont-example.html* in the font package *web* folder. For detailed information see [Using SIL Fonts on Web Pages](https://software.sil.org/fonts/webfonts).
+This page uses web fonts (WOFF2) to demonstrate font features and should display correctly in all modern browsers. For a more concise example of how to use Charis as a web font see *Charis-webfont-example.html* in the font package *web* folder. For detailed information see [Using SIL Fonts on Web Pages](https://software.sil.org/fonts/webfonts).
 
 *If this document is not displaying correctly a PDF version is also provided in the documentation/pdf folder of the release package.*
 
@@ -441,5 +441,5 @@ Standard (none) | <span class='charis-R normal'>1⁄2 456⁄789 1/2 456/789</spa
 Automatic       | <span class='charis-R normal' style='font-feature-settings: "frac" 1'>1⁄2 456⁄789 1/2 456/789</span> | `frac=1`
 
 <!-- PRODUCT SITE ONLY
-[font id='charis' face='CharisSIL-Regular' italic='CharisSIL-Italic' bold='CharisSIL-Bold' bolditalic='CharisSIL-BoldItalic' size='150%']
+[font id='charis' face='Charis-Regular' italic='Charis-Italic' bold='Charis-Bold' bolditalic='Charis-BoldItalic' size='150%']
 -->

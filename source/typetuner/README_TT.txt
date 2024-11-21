@@ -2,7 +2,7 @@ README
 Charis
 ==========
 
-Note: This package contains a TypeTuned version of the Charis fonts. The TypeTuner settings file used to generate the enclosed font is included in the package as CharisSIL-feat_set_tuned.xml. By inspecting this file with a text editor you can determine which alternate behaviors have been enabled.
+Note: This package contains a TypeTuned version of the Charis fonts. The TypeTuner settings file used to generate the enclosed font is included in the package as Charis-feat_set_tuned.xml. By inspecting this file with a text editor you can determine which alternate behaviors have been enabled.
 
 This project is intended to provide a free and open font family for all current languages and writing systems that use Latin and Cyrillic scripts. It supports almost the complete range of Unicode characters for these scripts, including a comprehensive range of diacritics and a large set of symbols useful for linguistics and literacy work. Smart font routines automatically adjust the position of diacritics to support and optimize arbitrary base+diacritic combinations. This project uses a UFO-based design and production workflow, with all sources in open formats and a completely open-source build toolkit. 
 

@@ -7,32 +7,32 @@ Open Font License, Version 1.1 (https://openfontlicense.org).
 
 /* use Charis SIL - Regular in .woff2 format */
 @font-face {
-  font-family: CharisSILW;
-  src: url(CharisSIL-Regular.woff2);
+  font-family: CharisW;
+  src: url(Charis-Regular.woff2);
 }
 /* use Charis SIL - Italic in .woff2 format */
 @font-face {
-  font-family: CharisSILW;
+  font-family: CharisW;
   font-style: italic;
-  src: url(CharisSIL-Italic.woff2);
+  src: url(Charis-Italic.woff2);
 }
 /* use Charis SIL - Bold in .woff2 format */
 @font-face {
-	font-family: CharisSILW;
+	font-family: CharisW;
 	font-weight: bold;
-	src: url(CharisSIL-Bold.woff2);
+	src: url(Charis-Bold.woff2);
 }
 /* use Charis SIL - Bold Italic in .woff2 format */
 @font-face {
-	font-family: CharisSILW;
+	font-family: CharisW;
 	font-weight: bold;
 	font-style: italic;
-	src: url(CharisSIL-BoldItalic.woff2);
+	src: url(Charis-BoldItalic.woff2);
 }
 
 /* set body to use Charis SIL */
 body {
-  font-family: CharisSILW, sans-serif;
+  font-family: CharisW, sans-serif;
     /* fall back to sans serif so that it's really obvious if the fonts don't load */
 }
 /* remove bold styling from heading */
