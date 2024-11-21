@@ -15,9 +15,9 @@ SIL’s fonts are licensed according to the terms of the [SIL Open Font License]
 
 The full source code for our Latin, Greek, and Cyrillic fonts is available on Github:
 
-- [Charis SIL Github repository](https://github.com/silnrsi/font-charis)
+- [Charis Github repository](https://github.com/silnrsi/font-charis)
 - [Doulos SIL Github repository](https://github.com/silnrsi/font-doulos)
-- [Gentium Plus Github repository](https://github.com/silnrsi/font-gentium)
+- [Gentium Github repository](https://github.com/silnrsi/font-gentium)
 - [Andika Github repository](https://github.com/silnrsi/font-andika)
 
 Font sources are in the [UFO3](https://unifiedfontobject.org/versions/ufo3/) format with font family structures defined using [designspace](https://github.com/fonttools/fonttools/tree/master/Doc/source/designspaceLib). OpenType source code is stored in the [.fea](https://adobe-type-tools.github.io/afdko/OpenTypeFeatureFileSpecification.html) format in the UFO (features.fea) but is maintained in a separate file using the more efficient and powerful [.feax](https://github.com/silnrsi/pysilfont/blob/master/docs/feaextensions.rawmd) format.
@@ -40,4 +40,4 @@ Here are a few examples of contributions that would be welcomed (some more than 
 
 Because we want to be able to guarantee a high level of quality for our fonts, we will review submissions carefully. Contributions will need to cover all the weights and styles of the family and in some cases all four font projects. Please don’t be discouraged if we do not include a submission due to quality or incompleteness, or if we ask you to make specific revisions. 
 
-To enable us to accept contributions in a way that honors your contribution and respects your copyright while preserving long-term flexibility for open source licensing, you would also need to agree to the **SIL International Contributor License Agreement for Font Software (v1.0)** prior to sending us your contribution. To read more about this requirement and find out how to submit the required form, please visit the [CLA information page](https://software.sil.org/fontcla).
+To enable us to accept contributions in a way that honors your contribution and respects your copyright while preserving long-term flexibility for open source licensing, you would also need to agree to the **SIL Global Contributor License Agreement for Font Software (v1.1)** prior to sending us your contribution. To read more about this requirement and find out how to submit the required form, please visit the [CLA information page](https://software.sil.org/fontcla).
