@@ -104,14 +104,17 @@ lookup dbl_diac_abv_move { # Below rules that do not end with U will match a tra
 do
   forlet cgj_combo = CGJSeq(0); # one arg required but not used
   {
-    sub @c_takes_highmid_diac @_U @cno_high' lookup dbl_diac_high $cgj_combo @c_takes_highmidlow_diac;    
+    sub @c_takes_highmid_diac @_U @cno_high' lookup dbl_diac_high $cgj_combo @c_takes_highmidlow_diac;
     sub @c_takes_highmidlow_diac @cno_high' lookup dbl_diac_high $cgj_combo @c_takes_highmid_diac @_U;
+    sub @c_takes_highmidlow_diac @_U @cno_high' lookup dbl_diac_high $cgj_combo @c_takes_highmid_diac @_U;
 
     sub @c_takes_mid_diac @cno_mid' lookup dbl_diac_mid $cgj_combo @c_takes_midlow_diac;
     sub @c_takes_low_diac @cno_mid' lookup dbl_diac_mid $cgj_combo @c_takes_mid_diac;
-    sub @c_takes_low_diac @_U @cno_mid' lookup dbl_diac_mid $cgj_combo @c_takes_midlow_diac;
-    sub @c_takes_low_diac @cno_mid' lookup dbl_diac_mid $cgj_combo @c_takes_low_diac @_U;
+    # leave the below at default level
+    # sub @c_takes_low_diac @_U @cno_mid' lookup dbl_diac_mid $cgj_combo @c_takes_midlow_diac;
+    # sub @c_takes_low_diac @cno_mid' lookup dbl_diac_mid $cgj_combo @c_takes_low_diac @_U;
 
+    ignore sub @c_takes_low_diac @cno_low' $cgj_combo @c_takes_low_diac @_U;
     # Ignores seqs with U over first base
     sub @c_takes_low_diac @cno_low' lookup dbl_diac_low $cgj_combo @c_takes_low_diac;
   }
@@ -188,7 +191,7 @@ lookup dbl_diac_blw_lower_u { #lower u ap on dbl diac over two lower glyphs
     sub @c_takes_low_diac @cno_ulow' lookup dbl_diac_ulow @c_cgj @_U @c_takes_low_diac;
 } dbl_diac_blw_lower_u;
 
-### Handle two upper dbl diac seqs by moving and avoiding collision
+### Handle two upper dbl diac seqs by moving to avoid collision
 # also handle a third diac below (either dbl or not), all diacs separated by cgj
 # assumes c_low, c_mid, c_high (and their matching cno classes) are parallel
 lookup dbl_diac_abv_move_seq { # below rule order is important, glyph classes overlap and are not optimized
@@ -197,14 +200,29 @@ lookup dbl_diac_abv_move_seq { # below rule order is important, glyph classes ov
   sub @c_takes_midlow_diac @cno_mid' lookup dbl_diac_mid @c_cgj' @cno_mid' @c_takes_midlow_diac; #assume low low handled above
   sub @c_takes_highmidlow_diac @cno_high' @c_cgj' @cno_high' lookup dbl_diac_high @c_takes_highmidlow_diac;
 
+  # handle trailing lower diac
   sub @c_takes_low_diac @cno_low' lookup dbl_diac_low @c_cgj' @cno_mid' lookup dbl_diac_mid @c_cgj @_L @c_takes_low_diac;
   sub @c_takes_midlow_diac @cno_mid' lookup dbl_diac_mid @c_cgj' @cno_mid' @c_cgj @_L @c_takes_midlow_diac;
   sub @c_takes_highmidlow_diac @cno_high' @c_cgj' @cno_high' lookup dbl_diac_high @c_cgj @_L @c_takes_highmidlow_diac;
 
+  # handle trailing lower dbl diac
   sub @c_takes_low_diac @cno_low' lookup dbl_diac_low @c_cgj' @cno_mid' lookup dbl_diac_mid @c_cgj @cno_blwlow @c_takes_low_diac;
   sub @c_takes_midlow_diac @cno_mid' lookup dbl_diac_mid @c_cgj' @cno_mid' @c_cgj @cno_blwlow @c_takes_midlow_diac;
   sub @c_takes_highmidlow_diac @cno_high' @c_cgj' @cno_high' lookup dbl_diac_high @c_cgj @cno_blwlow @c_takes_highmidlow_diac;
 } dbl_diac_abv_move_seq;
+
+### Raise diac below (dbl or not) two glyphs without descenders with two upper dbl diacs
+# assumes dbl_diac_abv_move_seq (with trailing lower diac or lower dbl diac) has been applied
+lookup dbl_diac_abv_raise_blw {
+  lookupflag 0;
+  sub @c_takes_belowhigh_diac @c_low @c_cgj @c_mid' lookup dbl_diac_lhigh @c_cgj @_L @c_takes_belowhigh_diac;
+  sub @c_takes_belowhigh_diac @c_mid @c_cgj @cno_mid' lookup dbl_diac_lhigh  @c_cgj @_L@c_takes_belowhigh_diac;
+  sub @c_takes_belowhigh_diac @cno_high @c_cgj @c_high' lookup dbl_diac_lhigh  @c_cgj @_L@c_takes_belowhigh_diac;
+
+  sub @c_takes_belowhigh_diac @c_low @c_cgj @c_mid @c_cgj @cno_blwlow' lookup dbl_diac_blwhigh @c_takes_belowhigh_diac;
+  sub @c_takes_belowhigh_diac @c_mid @c_cgj @cno_mid @c_cgj @cno_blwlow' lookup dbl_diac_blwhigh @c_takes_belowhigh_diac;
+  sub @c_takes_belowhigh_diac @cno_high @c_cgj @c_high @c_cgj @cno_blwlow' lookup dbl_diac_blwhigh @c_takes_belowhigh_diac;
+} dbl_diac_abv_raise_blw;
 
 ### Handle upper dbl diac followed by lower dbl diac with no other diacs
 # diacs separate by cgj
@@ -1060,6 +1078,7 @@ feature ccmp {
   lookup dbl_diac_abv_raise_l;
   lookup dbl_diac_blw_lower_u;
   lookup dbl_diac_abv_move_seq;
+  lookup dbl_diac_abv_raise_blw;
   lookup dbl_diac_abv_and_blw_move;
 do let f = info("familyName");
    if f.find("Gentium") != -1; {
