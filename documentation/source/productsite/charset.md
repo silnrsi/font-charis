@@ -5,7 +5,7 @@ This font supports over 2,400 characters from [The Unicode Standard](https://uni
 
 The following character ranges are supported by this font:
 
-Unicode block | Charis SIL support
+Unicode block | Charis support
 ------------- | ---------------
 C0 Controls and Basic Latin*|U+0020..U+007E
 C1 Controls and Latin-1 Supplement*|U+00A0..U+00FF
@@ -65,7 +65,7 @@ Emoticons|U+1F610
 
 ## Private-use (PUA) characters
 
-There are a number of private-use characters that are supported in this font. These conform to [SIL International’s corporate registry](https://scripts.sil.org/PUA_home) for usage of the Unicode private-use areas. Characters which are not yet in Unicode are shown below. 
+There are a number of private-use characters that are supported in this font. These conform to [SIL Global’s corporate registry](https://scripts.sil.org/PUA_home) for usage of the Unicode private-use areas. Characters which are not yet in Unicode are shown below. 
 
 ### Specials
 

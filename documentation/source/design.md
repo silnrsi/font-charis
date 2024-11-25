@@ -1,11 +1,11 @@
 ---
 title: Charis - Design
-fontversion: 6.200
+fontversion: 7.000
 ---
 
 Charis is optimized for readability in long printed documents. It is highly readable and holds up well in less-than-ideal reproduction environments due to its simple and robust design with strong serifs and clear features.
 
-![Charis Sample - Precomposed Latin Diacritics](assets/images/CharisTypePage.png){.fullsize}
+![Charis Sample - Precomposed Latin Diacritics](../assets/images/CharisTypePage.png){.fullsize}
 <!-- PRODUCT SITE IMAGE SRC https://software.sil.org/charis/wp-content/uploads/sites/14/2015/12/CharisTypePage.png -->
 <figcaption>Charis Sample - Precomposed Latin Diacritics</figcaption>
 

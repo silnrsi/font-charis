@@ -1,14 +1,14 @@
 
-Charis SIL is optimized for readability in long printed documents. It is highly readable and holds up well in less-than-ideal reproduction environments due to its simple and robust design with strong serifs and clear features.
+Charis is optimized for readability in long printed documents. It is highly readable and holds up well in less-than-ideal reproduction environments due to its simple and robust design with strong serifs and clear features.
 
-<img class='fullsize' alt='Charis SIL Sample - Precomposed Latin Diacritics' src='http://software.sil.org/charis/wp-content/uploads/sites/14/2015/12/CharisSILTypePage.png' />
-[caption]<em>Charis SIL Sample - Precomposed Latin Diacritics</em>[/caption]
+<img class='fullsize' alt='Charis Sample - Precomposed Latin Diacritics' src='https://software.sil.org/charis/wp-content/uploads/sites/14/2015/12/CharisTypePage.png' />
+[caption]<em>Charis Sample - Precomposed Latin Diacritics</em>[/caption]
 
-Type samples showing an inventory of some of the unusual glyphs and features are available in a PDF sample: [Charis SIL Type Sample](https://software.sil.org/charis/wp-content/uploads/sites/14/2015/12/CharisSILTypeSample.pdf). For a complete list of characters included in Charis SIL, see [Character Set Support](charset).
+Type samples showing an inventory of some of the unusual glyphs and features are available in a PDF sample: [Charis Type Sample](https://software.sil.org/charis/wp-content/uploads/sites/14/2015/12/CharisTypeSample.pdf). For a complete list of characters included in Charis, see [Character Set Support](charset).
 
 ### Note regarding Charter
 
-This Charis SIL font is essentially the same design as the SIL Charis font first released by SIL in 1997. The design of the basic character set of Charis SIL is similar (but not identical) to Bitstream Charter, designed by Matthew Carter. The following notice accompanied the Charter fonts: 
+This Charis font is essentially the same design as the SIL Charis font first released by SIL in 1997. The design of the basic character set of Charis is similar (but not identical) to Bitstream Charter, designed by Matthew Carter. The following notice accompanied the Charter fonts: 
 
 > © Copyright 1989-1992, Bitstream Inc., Cambridge, MA. 
 >
@@ -16,6 +16,6 @@ This Charis SIL font is essentially the same design as the SIL Charis font first
 >
 > BITSTREAM CHARTER is a registered trademark of Bitstream Inc.
 
-SIL International is the creator of the Charis SIL fonts, and is the owner of all proprietary rights therein.
+SIL Global is the creator of the Charis fonts, and is the owner of all proprietary rights therein.
 
-*Charis SIL* is a trademark of SIL International.
+*Charis* is a trademark of SIL Global.

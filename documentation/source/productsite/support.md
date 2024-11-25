@@ -11,9 +11,9 @@ For person-to-person support visit the [SIL Language Software Community](https:/
 
 ## Reporting bugs and feature requests
 
-If you have a bug to report or a suggestion for how we could improve the fonts please create an issue in the [Github Charis SIL project](https://github.com/silnrsi/font-charis/issues) or contact us directly.
+If you have a bug to report or a suggestion for how we could improve the fonts please create an issue in the [Github Charis project](https://github.com/silnrsi/font-charis/issues) or contact us directly.
 
 ## Contact form
 
-If the documentation and community fail to answer your question or need further help using the fonts, please contact us using [the form on the Charis SIL web site](https://software.sil.org/charis/about/contact/).
+If the documentation and community fail to answer your question or need further help using the fonts, please contact us using [the form on the Charis web site](https://software.sil.org/charis/about/contact/).
 

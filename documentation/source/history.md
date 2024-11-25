@@ -1,6 +1,6 @@
 ---
 title: Charis - Version History
-fontversion: 6.200
+fontversion: 7.000
 ---
 
 ### 1 Feb 2023 (SIL WSTech Team) Charis SIL version 6.200

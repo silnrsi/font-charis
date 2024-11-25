@@ -1,6 +1,6 @@
 ---
 title: Charis - Developer information
-fontversion: 6.200
+fontversion: 7.000
 ---
 
 ## Welcome font developers!
