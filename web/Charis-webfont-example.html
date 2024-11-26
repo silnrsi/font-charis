@@ -15,7 +15,12 @@ Open Font License, Version 1.1 (https://openfontlicense.org).
 
 <p>The page demonstrates how to use the WOFF2 version of Charis for web pages, using local copies of the .woff2 files in this archive. For more information on this technique - and how to use the normal TrueType version as a web font - see <a href="https://software.sil.org/fonts/webfonts">Using SIL Fonts on Web Pages</a>.</p>
 
-<p>The body of this document is styled using an external stylesheet, with Charis set as the default font, and loaded directly as a WOFF2 file using the @font-face rule. If you're seeing a serif font here then it is working. Otherwise the text will be in a sans-serif or your browser default. <i>Here is some italic, </i><b>some bold text, <i>some bold italic</i></b> and back to regular. This technique is supported in all modern browsers.</p>
+<p>The body of this document is styled using an external stylesheet, with Charis set as the default font, and loaded directly as a WOFF2 file using the @font-face rule. If you're seeing a serif font here then it is working. Otherwise the text will be in a sans-serif or your browser default. Styling can be done with HTML tags: <i>Here is some italic, </i><b>some bold text, <i>some bold italic</i></b> and back to regular. It can also be done by referring to specific CSS weight axis values:</p>
+
+<p style="font-weight: 400;">This is 400 (Regular).</p>
+<p style="font-weight: 500;">This is 500 (Medium).</p>
+<p style="font-weight: 600;">This is 600 (SemiBold).</p>
+<p style="font-weight: 700;">This is 700 (Bold).</p>
 	
 <p>To see specifically how these techniques are specified in the CSS and HTML view the source to this page and the accompanying CSS file.</p>
 	

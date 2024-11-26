@@ -5,32 +5,60 @@ Font Names "Charis" and "SIL". This Font Software is licensed under the SIL
 Open Font License, Version 1.1 (https://openfontlicense.org).
 */
 
-/* use Charis SIL - Regular in .woff2 format */
+/* use Charis - Regular in .woff2 format */
 @font-face {
   font-family: CharisW;
+  font-weight: 400;
   src: url(Charis-Regular.woff2);
 }
-/* use Charis SIL - Italic in .woff2 format */
+/* use Charis - Medium in .woff2 format */
 @font-face {
   font-family: CharisW;
+  font-weight: 500;
+  src: url(Charis-Medium.woff2);
+}
+/* use Charis - SemiBold in .woff2 format */
+@font-face {
+  font-family: CharisW;
+  font-weight: 600;
+  src: url(Charis-SemiBold.woff2);
+}
+/* use Charis - Bold in .woff2 format */
+@font-face {
+	font-family: CharisW;
+  font-weight: 700;
+	src: url(Charis-Bold.woff2);
+}
+/* use Charis - Italic in .woff2 format */
+@font-face {
+  font-family: CharisW;
+  font-weight: 400;
   font-style: italic;
   src: url(Charis-Italic.woff2);
 }
-/* use Charis SIL - Bold in .woff2 format */
+/* use Charis - MediumItalic in .woff2 format */
 @font-face {
-	font-family: CharisW;
-	font-weight: bold;
-	src: url(Charis-Bold.woff2);
+  font-family: CharisW;
+  font-weight: 500;
+  font-style: italic;
+  src: url(Charis-MediumItalic.woff2);
 }
-/* use Charis SIL - Bold Italic in .woff2 format */
+/* use Charis - SemiBoldItalic in .woff2 format */
+@font-face {
+  font-family: CharisW;
+  font-weight: 600;
+  font-style: italic;
+  src: url(Charis-SemiBoldItalic.woff2);
+}
+/* use Charis - BoldItalic in .woff2 format */
 @font-face {
 	font-family: CharisW;
-	font-weight: bold;
-	font-style: italic;
+  font-weight: 700;
+  font-style: italic;
 	src: url(Charis-BoldItalic.woff2);
 }
 
-/* set body to use Charis SIL */
+/* set body to use Charis */
 body {
   font-family: CharisW, sans-serif;
     /* fall back to sans serif so that it's really obvious if the fonts don't load */
