@@ -22,6 +22,7 @@ Greek and Coptic|U+0387, U+0393..U+0394, U+0398, U+039E, U+03A0, U+03A8..U+03A9,
 Cyrillic|U+0400..U+045F, U+0462..U+0463, U+0472..U+0475, U+048A..U+04FF
 Cyrillic Supplement*|U+0500..U+052F
 Combining Diacritical Marks Extended|U+1AB0..U+1ABA. U+1ABF..U+1AC0, U+1AC6..U+1ACE
+Cyrillic Extended-C|U+1C89..U+1C8A
 Phonetic Extensions*|U+1D00..U+1D7F
 Phonetic Extensions Supplement*|U+1D80..U+1DBF
 Combining Diacritical Marks Supplement|U+1DC2, U+1DC4..U+1DCD, U+1DDA, U+1DDC, U+1DF5, U+1DFC..U+1DFF
@@ -32,21 +33,23 @@ Currency Symbols*|U+20A0..U+20C0
 Combining Diacritical Marks for Symbols|U+20E5, U+20EC..U+20EF
 Letterlike Symbols|U+210C, U+2113, U+2116..U+2117, U+211F, U+2122..U+2123, U+2126, U+212D, U+2135, U+214F
 Number Forms*|U+2150..U+218B
-Arrows|U+2190..U+219B, U+21A8, U+21B6..U+21B7, U+21Ba..U+21BB, U+21D0..U+21D5
-Mathematical Operators|U+2202..U+2206, U+220F, U+2211..U+2213, U+2215, U+2219..U+221A, U+221E, U+2221, U+2225..U+2228, U+222B, U+2234..U+2235, U+223C, U+2248, U+225F, U+2260..U+2262, U+2264..U+2265, U+226E..U+226F, U+U+2282..U+2287
-Miscellaneous Technical|U+2308..U+230B, U+2318, U+231C..U+231F, U+2329..U+232A, U+239B..U+23AD
+Arrows|U+2190..U+219B, U+21A8, U+21AE, U+21B6..U+21B7, U+21BA..U+21BB, U+21D0..U+21D5
+Mathematical Operators|U+2202..U+2206, U+220F, U+2211..U+2213, U+2215, U+2219..U+221A, U+221E, U+2221, U+2225..U+2228, U+222B, U+2234..U+2235, U+223C, U+2248, U+225F, U+2260..U+2262, U+2264..U+2265, U+226E..U+226F, U+U+2282..U+2287, U+22BB..U+22BD
+Miscellaneous Technical|U+2308..U+230B, U+2318, U+231C..U+231F, U+2329..U+232A, U+239B..U+23AD, U+23D1..U+23D6
 Control Pictures|U+2423
+Enclosed Alphanumerics|U+24B6, U+24D0
 Geometric Shapes|U+25C9, U+25CA..U+25CC
 Miscellaneous Symbols|U+2610..U+2612, U+2639..U+263A, U+2640, U+2642, U+266D, U+266F
 Dingbats|U+2713, U+2717, U+274D
-Misc. Math. Symbols-A|U+27C2, U+27E6..U+27E9
+Misc. Math. Symbols-A|U+27C2, U+27E6..U+27EB
 Misc. Math. Symbols-B|U+2980
 Supplemental Math. Operators|U+2AFD
 Latin Extended-C*|U+2C60..U+2C7F
-Coptic|U+2C88
-Supplemental Punctuation|U+2E00..U+2E0D, U+2E13, U+2E14, U+2E17, U+2E22..U+2E25, U+2E3A..U+2E3B, U+2E3E
+Coptic|U+2C88..U+2C89
+Supplemental Punctuation|U+2E00..U+2E0D, U+2E13..U+2E15, U+2E17, U+2E22..U+2E25, U+2E28..U+2E29, U+2E3A..U+2E3B, U+2E3D..U+2E3E
+Cyrillic Extended-B|U+A69C..U+A69D
 Modifier Tone Letters*|U+A700..U+A71F
-Latin Extended-D|U+A720..U+A799, U+A7A0..U+A7AF, U+A7B0..U+A7BF, U+A7C4..U+A7CA, U+A7F2..U+A7F4, U+A7F7..U+A7FF
+Latin Extended-D|U+A720..U+A799, U+A7A0..U+A7AF, U+A7B0..U+A7BF, U+A7C4..U+A7CD, U+A7DA..U+A7DC, U+A7F2..U+A7F4, U+A7F7..U+A7FF
 Kayah Li|U+A92E
 Latin Extended-E|U+AB30, U+AB53, U+AB5C, U+AB5E, U+AB64..U+AB6B
 PUA: Specials|U+F130..U+F133
@@ -88,7 +91,6 @@ There are a number of private-use characters that are supported in this font. Th
 - U+F258  LATIN LETTER SMALL CAPITAL I OVER SMALL SCHWA
 - U+F259  LATIN LETTER SMALL UPSILON OVER SMALL SCHWA
 - U+F26D  LATIN SMALL LETTER B WITH LEFT HOOK
-- U+F26E  LATIN CAPITAL LETTER RAMS HORN
 
 ### Cyrillic
 

@@ -14,6 +14,233 @@
     <header>
         <h1 class="title">Charis - Version History</h1>
     </header>
+    <h3 id="n-jan-2025-sil-wstech-team-charis-version-7.000">N Jan 2025
+    (SIL WSTech Team) Charis version 7.000</h3>
+    <p><strong><em>Note that this is a major upgrade with significant
+    changes to family structure, line spacing, and glyph metrics. Please
+    read the following carefully to understand how the changes may
+    affect you.</em></strong></p>
+    <h4 id="font-names-family-structure-and-line-metrics">Font names,
+    family structure, and line metrics</h4>
+    <ul>
+    <li><p>Font family names have changed. It is possible to have both
+    this release (v7) and the previous one (v6.2) installed at the same
+    time. This is a permanent change intended to help with the
+    transition from v6.2 to v7.</p>
+    <ul>
+    <li><em>Charis SIL</em> is now <em>Charis</em></li>
+    </ul></li>
+    <li><p>There are additional intermediate weights. Previously
+    existing weights have not changed. Here is a list, with retained
+    weights in <strong>bold</strong> and new weights in <em>italic</em>.
+    The CSS values for the weights within each family are in
+    parentheses. Italic faces follow a similar structure and
+    correspondence.</p>
+    <ul>
+    <li><strong>Charis Regular</strong> (400)</li>
+    <li><em>Charis Medium</em> (500)</li>
+    <li><em>Charis SemiBold</em> (600)</li>
+    <li><strong>Charis Bold</strong> (700)</li>
+    </ul></li>
+    <li><p>The default line spacing has been significantly decreased to
+    be more similar to other common text fonts, but remains wide enough
+    to accommodate multiple stacked diacritics.</p></li>
+    <li><p>There are no <em>Compact</em> variants. These are less needed
+    since the default line spacing has been decreased. <em>Compact</em>
+    versions of the v6.2 fonts remain available from
+    https://software.sil.org/lcgfonts/download/</p></li>
+    <li><p>TypeTuner Web no longer offers line spacing alternatives for
+    the v7 fonts (Normal, Tight, Loose). If you need Tight or Loose
+    variants the v6.2 fonts remain available and support line spacing
+    alternatives.</p></li>
+    <li><p>There are no ‘pre-tuned’ regional or <em>Literacy</em>
+    special-purpose modified variants. The v6.2 variants, including
+    <em>Literacy</em> versions, remain available from
+    https://software.sil.org/lcgfonts/download/. You can still manually
+    create v7 variants with TypeTuner Web that include literacy forms
+    and other alternatives.</p></li>
+    </ul>
+    <h4 id="new-features-and-enhancements">New features and
+    enhancements</h4>
+    <ul>
+    <li><p>Kerning has now been added and covers the full range of
+    alphabetic symbols, including small caps. <strong>Warning: Because
+    of the addition of extensive kerning, line, paragraph, and page
+    lengths may be different from v6.2.</strong></p></li>
+    <li><p>Proportional Oldstyle figures are now supported through the
+    standard OpenType feature (<code>onum</code>). These only apply to
+    the main numerals, not fractions, superscripts, or numeral-based
+    symbols.</p></li>
+    <li><p>Additions to Modifier Apostrophe feature
+    (<code>cv70</code>)</p>
+    <ul>
+    <li>U+0312 COMBINING TURNED COMMA ABOVE</li>
+    <li>U+0314 COMBINING REVERSED COMMA ABOVE</li>
+    </ul></li>
+    <li><p>Addition to Rams Horn feature (<code>cv25</code>)</p>
+    <ul>
+    <li>U+10791 MODIFIER LETTER SMALL RAMS HORN</li>
+    </ul></li>
+    <li><p>Small caps added for these parentheses and brackets</p>
+    <ul>
+    <li>U+0028 LEFT PARENTHESIS</li>
+    <li>U+0029 RIGHT PARENTHESIS</li>
+    <li>U+005B LEFT SQUARE BRACKET</li>
+    <li>U+005D RIGHT SQUARE BRACKET</li>
+    <li>U+007B LEFT CURLY BRACKET</li>
+    <li>U+007D RIGHT CURLY BRACKET</li>
+    </ul></li>
+    </ul>
+    <h4 id="new-character-support">New character support</h4>
+    <ul>
+    <li>Unicode 16 additions
+    <ul>
+    <li>U+1C89 CYRILLIC CAPITAL LETTER TJE</li>
+    <li>U+1C8A CYRILLIC SMALL LETTER TJE</li>
+    <li>U+A7CB LATIN CAPITAL LETTER RAMS HORN
+    <ul>
+    <li>This was previously in the SIL PUA (U+F26E)</li>
+    </ul></li>
+    <li>U+A7CC LATIN CAPITAL LETTER S WITH DIAGONAL STROKE</li>
+    <li>U+A7CD LATIN SMALL LETTER S WITH DIAGONAL STROKE</li>
+    <li>U+A7DA LATIN CAPITAL LETTER LAMBDA</li>
+    <li>U+A7DB LATIN SMALL LETTER LAMBDA</li>
+    <li>U+A7DC LATIN CAPITAL LETTER LAMBDA WITH STROKE</li>
+    </ul></li>
+    <li>Orthographic at signs
+    <ul>
+    <li>U+24B6 CIRCLED LATIN CAPITAL LETTER A</li>
+    <li>U+24D0 CIRCLED LATIN SMALL LETTER A</li>
+    </ul></li>
+    <li>Additional Cyrillic modifiers
+    <ul>
+    <li>U+A69C MODIFIER LETTER CYRILLIC HARD SIGN</li>
+    <li>U+A69D MODIFIER LETTER CYRILLIC SOFT SIGN</li>
+    </ul></li>
+    <li>Case mapping for Coptic eie
+    <ul>
+    <li>U+2C89 COPTIC SMALL LETTER EIE</li>
+    </ul></li>
+    <li>Upwards ancora (and revised downwards form)
+    <ul>
+    <li>U+2E14 DOWNWARDS ANCORA</li>
+    <li>U+2E15 UPWARDS ANCORA</li>
+    </ul></li>
+    <li>Prosodic symbols
+    <ul>
+    <li>U+23D1 METRICAL BREVE</li>
+    <li>U+23D2 METRICAL LONG OVER SHORT</li>
+    <li>U+23D3 METRICAL SHORT OVER LONG</li>
+    <li>U+23D4 METRICAL LONG OVER TWO SHORTS</li>
+    <li>U+23D5 METRICAL TWO SHORTS OVER LONG</li>
+    <li>U+23D6 METRICAL TWO SHORTS JOINED</li>
+    <li>U+2E3D VERTICAL SIX DOTS</li>
+    </ul></li>
+    <li>Doubled brackets and parentheses
+    <ul>
+    <li>U+27EA MATHEMATICAL LEFT DOUBLE ANGLE BRACKET</li>
+    <li>U+27EB MATHEMATICAL RIGHT DOUBLE ANGLE BRACKET</li>
+    <li>U+2E28 LEFT DOUBLE PARENTHESIS</li>
+    <li>U+2E29 RIGHT DOUBLE PARENTHESIS</li>
+    </ul></li>
+    <li>Logical symbols
+    <ul>
+    <li>U+21AE LEFT RIGHT ARROW WITH STROKE</li>
+    <li>U+22BB XOR</li>
+    <li>U+22BC NAND</li>
+    <li>U+22BD NOR</li>
+    </ul></li>
+    </ul>
+    <h4 id="improvements-and-fixes">Improvements and fixes</h4>
+    <ul>
+    <li>Support added for complex positioning of bridging double
+    diacritics and nearby marks. Correct rendering requires a very
+    specific encoding sequence - see
+    https://software.sil.org/fonts/bridging-diacritics/
+    <ul>
+    <li>U+035C COMBINING DOUBLE BREVE BELOW</li>
+    <li>U+035D COMBINING DOUBLE BREVE</li>
+    <li>U+035E COMBINING DOUBLE MACRON</li>
+    <li>U+035F COMBINING DOUBLE MACRON BELOW</li>
+    <li>U+0360 COMBINING DOUBLE TILDE</li>
+    <li>U+0361 COMBINING DOUBLE INVERTED BREVE</li>
+    <li>U+0362 COMBINING DOUBLE RIGHTWARDS ARROW BELOW</li>
+    <li>U+1DCD COMBINING DOUBLE CIRCUMFLEX ABOVE</li>
+    <li>U+1DFC COMBINING DOUBLE INVERTED BREVE BELOW</li>
+    <li>U+F17A COMBINING DOUBLE DIAERESIS (in SIL PUA)</li>
+    </ul></li>
+    <li>Redesigned Central European carons
+    <ul>
+    <li>U+010F LATIN SMALL LETTER D WITH CARON</li>
+    <li>U+013D LATIN CAPITAL LETTER L WITH CARON</li>
+    <li>U+013E LATIN SMALL LETTER L WITH CARON</li>
+    <li>U+0165 LATIN SMALL LETTER T WITH CARON</li>
+    </ul></li>
+    <li>Revised design and spacing of hooked letters
+    <ul>
+    <li>U+01B3 LATIN CAPITAL LETTER Y WITH HOOK</li>
+    <li>U+01B4 LATIN SMALL LETTER Y WITH HOOK</li>
+    <li>U+2C71 LATIN SMALL LETTER V WITH RIGHT HOOK</li>
+    <li>U+2C72 LATIN CAPITAL LETTER W WITH HOOK</li>
+    <li>U+2C73 LATIN SMALL LETTER W WITH HOOK</li>
+    </ul></li>
+    <li>Fixed position of
+    <ul>
+    <li>U+1D09 LATIN SMALL LETTER TURNED I</li>
+    <li>U+1D4E MODIFIER LETTER SMALL TURNED I</li>
+    </ul></li>
+    <li>Fixed dotless form of
+    <ul>
+    <li>U+1DF1A LATIN SMALL LETTER I WITH STROKE AND RETROFLEX HOOK</li>
+    </ul></li>
+    <li>Fixed spacing of
+    <ul>
+    <li>U+0037 DIGIT SEVEN</li>
+    </ul></li>
+    <li>Revised design of
+    <ul>
+    <li>U+A720 MODIFIER LETTER STRESS AND HIGH TONE</li>
+    <li>U+A721 MODIFIER LETTER STRESS AND LOW TONE</li>
+    </ul></li>
+    <li>Fixed position of
+    <ul>
+    <li>U+1ACE COMBINING LATIN SMALL LETTER INSULAR T</li>
+    </ul></li>
+    <li>Increased size of Vietnamese hook above
+    <ul>
+    <li>U+0309 COMBINING HOOK ABOVE</li>
+    </ul></li>
+    <li>Improved design of some combining diacritics
+    <ul>
+    <li>U+032B COMBINING INVERTED DOUBLE ARCH BELOW</li>
+    <li>U+033C COMBINING SEAGULL BELOW</li>
+    <li>U+1AB7 COMBINING OPEN MARK BELOW</li>
+    <li>U+1AB8 COMBINING DOUBLE OPEN MARK BELOW</li>
+    <li>U+1AC7 COMBINING INVERTED DOUBLE ARCH ABOVE</li>
+    </ul></li>
+    <li>Revised anchors on many letters to improve diacritic
+    positioning, including these and related letters
+    <ul>
+    <li>U+004A LATIN CAPITAL LETTER J</li>
+    <li>U+0051 LATIN CAPITAL LETTER Q</li>
+    <li>U+0059 LATIN CAPITAL LETTER Y</li>
+    <li>U+0066 LATIN SMALL LETTER F</li>
+    <li>U+0069 LATIN SMALL LETTER I</li>
+    <li>U+006A LATIN SMALL LETTER J</li>
+    <li>U+0079 LATIN SMALL LETTER Y</li>
+    <li>U+0434 CYRILLIC SMALL LETTER DE</li>
+    </ul></li>
+    <li>Reviewed anchors on spacing acutes and graves
+    <ul>
+    <li>U+0060 GRAVE ACCENT</li>
+    <li>U+00B4 ACUTE ACCENT</li>
+    <li>U+02CA MODIFIER LETTER ACUTE ACCENT</li>
+    <li>U+02CB MODIFIER LETTER GRAVE ACCENT</li>
+    <li>U+02CE MODIFIER LETTER LOW GRAVE ACCENT</li>
+    <li>U+02CF MODIFIER LETTER LOW ACUTE ACCENT</li>
+    </ul></li>
+    <li>Autohinting is more consistent across the font family</li>
+    </ul>
     <h3 id="feb-2023-sil-wstech-team-charis-sil-version-6.200">1 Feb
     2023 (SIL WSTech Team) Charis SIL version 6.200</h3>
     <p>This release is focused on adding features and glyphs, including
@@ -43,7 +270,7 @@
     <li>Automatic fractions (frac)</li>
     </ul></li>
     </ul>
-    <h4 id="new-character-support">New character support</h4>
+    <h4 id="new-character-support-1">New character support</h4>
     <ul>
     <li>Additional click (also supported by new baseline clicks feature)
     <ul>
@@ -268,7 +495,7 @@
     <li>U+1F610 NEUTRAL FACE</li>
     </ul></li>
     </ul>
-    <h4 id="improvements-and-fixes">Improvements and fixes</h4>
+    <h4 id="improvements-and-fixes-1">Improvements and fixes</h4>
     <ul>
     <li><p>Kayan diacritics feature (cv79) now supported by TypeTuner
     Web</p></li>

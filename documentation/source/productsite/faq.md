@@ -33,3 +33,7 @@ We have no plans to do that, however the [OFL licensing](https://openfontlicense
 #### *Isn’t Charis just a copy of Charter?*
 
 Charis is very closely based on the design of Bitstream Charter. However the glyphs were completely redrawn based only on visual reference to Charter. There are some significant design differences in the serif structure, proportions, diacritics, and Cyrillic. The design was also adjusted and extended to cover a much wider range of characters and publishing needs.
+
+#### *Why did you get rid of the Compact fonts?*
+
+

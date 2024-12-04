@@ -12,6 +12,8 @@ echo "     > index.html"
 pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/index.md -o documentation/index.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
 echo "     > about.html"
 pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/about.md -o documentation/about.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
+echo "     > v7changes.html"
+pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/v7changes.md -o documentation/v7changes.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
 echo "     > charset.html"
 pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/charset.md -o documentation/charset.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
 echo "     > design.html"
@@ -40,6 +42,9 @@ weasyprint documentation/source/pdftemp/index.html documentation/pdf/index.pdf
 echo "     > about.html > about.pdf"
 pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/about.md -o documentation/source/pdftemp/about.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
 weasyprint documentation/source/pdftemp/about.html documentation/pdf/about.pdf
+echo "     > v7changes.html > v7changes.pdf"
+pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/v7changes.md -o documentation/source/pdftemp/v7changes.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
+weasyprint documentation/source/pdftemp/v7changes.html documentation/pdf/v7changes.pdf
 echo "     > charset.html > charset.pdf"
 pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/charset.md -o documentation/source/pdftemp/charset.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
 weasyprint documentation/source/pdftemp/charset.html documentation/pdf/charset.pdf
@@ -72,6 +77,8 @@ echo "     >>> PRODUCT SITE MARKDOWN (documentation/source/productsite/)"
 
 echo "     > about.md"
 python3 documentation/source/makepsmd.py documentation/source/about.md documentation/source/productsite/about.md -q
+echo "     > v7changes.md"
+python3 documentation/source/makepsmd.py documentation/source/v7changes.md documentation/source/productsite/v7changes.md -q
 echo "     > charset.md"
 python3 documentation/source/makepsmd.py documentation/source/charset.md documentation/source/productsite/charset.md -q
 echo "     > design.md"
