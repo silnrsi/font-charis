@@ -19,12 +19,12 @@ This page uses web fonts (WOFF2) to demonstrate font features and should display
 
 #### Small caps from lowercase
 
-<span class='affects'>Affects: all lowercase letters with capital equivalents</span>
+<span class='affects'>Affects: all lowercase letters with capital equivalents and some bracketing punctuation</span>
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard   | <span class='charis-R normal'>a ... z</span> (all letters with capital equivalents) | `smcp=0`
-Small caps | <span class='charis-R normal' style='font-feature-settings: "smcp" 1'>a ... z</span> (all letters with capital equivalents) | `smcp=1`
+Standard   | <span class='charis-R normal'>a ... z</span> (all letters with capital equivalents) ( ) [ ] { } | `smcp=0`
+Small caps | <span class='charis-R normal' style='font-feature-settings: "smcp" 1'>a ... z</span> (all letters with capital equivalents) ( ) [ ] { } | `smcp=1`
 
 #### Small caps from capitals
 
@@ -226,13 +226,13 @@ Large bowl | <span class='charis-R normal' style='font-feature-settings: "cv19" 
 
 #### rams horn
 
-<span class='affects'>Affects: U+0264</span>
+<span class='affects'>Affects: U+0264 U+10791</span>
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard    | <span class='charis-R normal'>ɤ</span> | `cv25=0`
-Large bowl  | <span class='charis-R normal' style='font-feature-settings: "cv25" 1'>ɤ</span> | `cv25=1`
-Small gamma | <span class='charis-R normal' style='font-feature-settings: "cv25" 2'>ɤ</span> | `cv25=2`
+Standard    | <span class='charis-R normal'>ɤ 𐞑</span> | `cv25=0`
+Large bowl  | <span class='charis-R normal' style='font-feature-settings: "cv25" 1'>ɤ 𐞑</span> | `cv25=1`
+Small gamma | <span class='charis-R normal' style='font-feature-settings: "cv25" 2'>ɤ 𐞑</span> | `cv25=2`
 
 #### Clicks
 
@@ -283,12 +283,12 @@ Global-style | <span class='charis-R normal' style='font-feature-settings: "cv77
 
 #### Modifier apostrophe
 
-<span class='affects'>Affects: U+02BC U+A78B U+A78C</span>
+<span class='affects'>Affects: U+02BC U+0312 U+0314 U+A78B U+A78C</span>
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard | <span class='charis-R normal'>ʼ Ꞌ ꞌ</span> | `cv70=0`
-Large    | <span class='charis-R normal' style='font-feature-settings: "cv70" 1'>ʼ Ꞌ ꞌ</span> | `cv70=1`
+Standard | <span class='charis-R normal'>ʼ  ̒  ̔ Ꞌ ꞌ</span> | `cv70=0`
+Large    | <span class='charis-R normal' style='font-feature-settings: "cv70" 1'>ʼ  ̒  ̔ Ꞌ ꞌ</span> | `cv70=1`
 
 #### Modifier colon
 
@@ -363,7 +363,7 @@ Macedonian | <span class='charis-I normal' lang='mk'>б г д п т ѓ</span> | 
 
 #### Serbian and Macedonian Cyrillic alternates
 
-*This feature provides an alternate way to activate the Serbian and Macedonian forms in applications that do not support language-specific features.*
+*This feature provides an alternate way to activate the Serbian and Macedonian forms in applications that do not support language-specific features. It cannot, however, be used to explicitly turn off these forms in text tagged as being in the Serbian or Macedonian languages.*
 
 <span class='affects'>Affects: U+0431 U+0433 U+0434 U+043F U+0442 U+0453</span>
 
@@ -406,6 +406,15 @@ Standard | <span class='charis-R normal'>˥ ˦ ˧ ˨ ˩ ꜒ ꜓ ꜔ ꜕ ꜖ (˩�
 Hide staves  | <span class='charis-R normal' style='font-feature-settings: "cv92" 1'>˥ ˦ ˧ ˨ ˩ ꜒ ꜓ ꜔ ꜕ ꜖ (˩˦˥˧˨ ꜖꜓꜒꜔꜕)</span> | `cv92=1`
 
 ### Numeral alternates
+
+#### Proportional oldstyle figures
+
+<span class='affects'>Affects: U+0030 U+0031 U+0032 U+0033 U+0034 U+0035 U+0036 U+0037 U+0038 U+0039</span>
+
+Feature | Sample                      | Feature setting
+------- | --------------------------- | -------
+Standard  | <span class='charis-R normal'>0 1 2 3 4 5 6 7 8 9</span> | `onum=0`
+Subscript | <span class='charis-R normal' style='font-feature-settings: "onum" 1'>0 1 2 3 4 5 6 7 8 9</span> | `onum=1`
 
 #### Subscript numerals
 
