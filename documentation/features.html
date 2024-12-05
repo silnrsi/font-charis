@@ -25,11 +25,6 @@
     environments and applications, see <a
     href="https://software.sil.org/fonts/features">Using Font
     Features</a>.</p>
-    <p><em>Please note that Graphite support has been removed in the
-    current release, but continues to be available in the version 5
-    fonts. See our <a
-    href="https://software.sil.org/charis/download/previous-versions">Previous
-    Versions archive</a>.</em></p>
     <p>This page uses web fonts (WOFF2) to demonstrate font features and
     should display correctly in all modern browsers. For a more concise
     example of how to use Charis as a web font see
@@ -44,7 +39,7 @@
     <h3 id="stylistic-alternates">Stylistic alternates</h3>
     <h4 id="small-caps-from-lowercase">Small caps from lowercase</h4>
     <p><span class="affects">Affects: all lowercase letters with capital
-    equivalents</span></p>
+    equivalents and some bracketing punctuation</span></p>
     <table>
     <colgroup>
     <col style="width: 17%" />
@@ -62,14 +57,14 @@
     <tr class="odd">
     <td>Standard</td>
     <td><span class="charis-R normal">a ... z</span> (all letters with
-    capital equivalents)</td>
+    capital equivalents) ( ) [ ] { }</td>
     <td><code>smcp=0</code></td>
     </tr>
     <tr class="even">
     <td>Small caps</td>
     <td><span class="charis-R normal"
     style="font-feature-settings: &quot;smcp&quot; 1">a ... z</span>
-    (all letters with capital equivalents)</td>
+    (all letters with capital equivalents) ( ) [ ] { }</td>
     <td><code>smcp=1</code></td>
     </tr>
     </tbody>
@@ -741,7 +736,7 @@
     </tbody>
     </table>
     <h4 id="rams-horn">rams horn</h4>
-    <p><span class="affects">Affects: U+0264</span></p>
+    <p><span class="affects">Affects: U+0264 U+10791</span></p>
     <table>
     <colgroup>
     <col style="width: 17%" />
@@ -758,19 +753,19 @@
     <tbody>
     <tr class="odd">
     <td>Standard</td>
-    <td><span class="charis-R normal">ɤ</span></td>
+    <td><span class="charis-R normal">ɤ 𐞑</span></td>
     <td><code>cv25=0</code></td>
     </tr>
     <tr class="even">
     <td>Large bowl</td>
     <td><span class="charis-R normal"
-    style="font-feature-settings: &quot;cv25&quot; 1">ɤ</span></td>
+    style="font-feature-settings: &quot;cv25&quot; 1">ɤ 𐞑</span></td>
     <td><code>cv25=1</code></td>
     </tr>
     <tr class="odd">
     <td>Small gamma</td>
     <td><span class="charis-R normal"
-    style="font-feature-settings: &quot;cv25&quot; 2">ɤ</span></td>
+    style="font-feature-settings: &quot;cv25&quot; 2">ɤ 𐞑</span></td>
     <td><code>cv25=2</code></td>
     </tr>
     </tbody>
@@ -937,7 +932,8 @@
     </tbody>
     </table>
     <h4 id="modifier-apostrophe">Modifier apostrophe</h4>
-    <p><span class="affects">Affects: U+02BC U+A78B U+A78C</span></p>
+    <p><span class="affects">Affects: U+02BC U+0312 U+0314 U+A78B
+    U+A78C</span></p>
     <table>
     <colgroup>
     <col style="width: 17%" />
@@ -954,13 +950,14 @@
     <tbody>
     <tr class="odd">
     <td>Standard</td>
-    <td><span class="charis-R normal">ʼ Ꞌ ꞌ</span></td>
+    <td><span class="charis-R normal">ʼ ̒ ̔ Ꞌ ꞌ</span></td>
     <td><code>cv70=0</code></td>
     </tr>
     <tr class="even">
     <td>Large</td>
     <td><span class="charis-R normal"
-    style="font-feature-settings: &quot;cv70&quot; 1">ʼ Ꞌ ꞌ</span></td>
+    style="font-feature-settings: &quot;cv70&quot; 1">ʼ ̒ ̔ Ꞌ
+    ꞌ</span></td>
     <td><code>cv70=1</code></td>
     </tr>
     </tbody>
@@ -1189,7 +1186,9 @@
     Macedonian Cyrillic alternates</h4>
     <p><em>This feature provides an alternate way to activate the
     Serbian and Macedonian forms in applications that do not support
-    language-specific features.</em></p>
+    language-specific features. It cannot, however, be used to
+    explicitly turn off these forms in text tagged as being in the
+    Serbian or Macedonian languages.</em></p>
     <p><span class="affects">Affects: U+0431 U+0433 U+0434 U+043F U+0442
     U+0453</span></p>
     <table>
@@ -1318,6 +1317,38 @@
     </tbody>
     </table>
     <h3 id="numeral-alternates">Numeral alternates</h3>
+    <h4 id="proportional-oldstyle-figures">Proportional oldstyle
+    figures</h4>
+    <p><span class="affects">Affects: U+0030 U+0031 U+0032 U+0033 U+0034
+    U+0035 U+0036 U+0037 U+0038 U+0039</span></p>
+    <table>
+    <colgroup>
+    <col style="width: 17%" />
+    <col style="width: 65%" />
+    <col style="width: 17%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Sample</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Standard</td>
+    <td><span class="charis-R normal">0 1 2 3 4 5 6 7 8 9</span></td>
+    <td><code>onum=0</code></td>
+    </tr>
+    <tr class="even">
+    <td>Subscript</td>
+    <td><span class="charis-R normal"
+    style="font-feature-settings: &quot;onum&quot; 1">0 1 2 3 4 5 6 7 8
+    9</span></td>
+    <td><code>onum=1</code></td>
+    </tr>
+    </tbody>
+    </table>
     <h4 id="subscript-numerals">Subscript numerals</h4>
     <p><em>This feature is not supported in TypeTuner Web.</em></p>
     <p><span class="affects">Affects: U+0030 U+0031 U+0032 U+0033 U+0034
