@@ -1380,7 +1380,7 @@
   fonts: CG
   version_added: 7
   tt_tag: OSF
-  tt_name: Old style figures
+  tt_name: Proportional oldstyle figures
   tt_value: Standard (tabular)
   settings:
     - setting_value: 0
@@ -1388,15 +1388,15 @@
       tt_setting_name: Standard (tabular)
       tt_setting_tag: Dflt
     - setting_value: 1
-      setting_doc_desc: Old style
-      tt_setting_name: Old style
+      setting_doc_desc: Oldstyle
+      tt_setting_name: Oldstyle
       tt_setting_tag: T
   doc_group: num
   doc_order: 800
-  doc_name: Old style figures
-  doc_affects: all numerals
+  doc_name: Proportional oldstyle figures
+  doc_affects: U+0030 U+0031 U+0032 U+0033 U+0034 U+0035 U+0036 U+0037 U+0038 U+0039
   doc_sample: 
-  doc_sample_addl: (all numerals)
+  doc_sample_addl: (all basic numerals)
   ftml_comment: 
   ftml_string: 
 
