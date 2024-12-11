@@ -75,26 +75,26 @@
 - tag: cv06
   fonts: A
   version_added: 5
-  cv_label: Six and Nine
-  cv_tooltip: Alternate forms of numerals six and nine with diagonal stems
+  cv_label: Six
+  cv_tooltip: Alternate form of numeral six with diagonal stem
   cv_sample: 
-  tt_tag: Dig69
-  tt_name: Six and Nine
-  tt_value: Standard (curved stems)
+  tt_tag: Dig6
+  tt_name: Six
+  tt_value: Standard (curved stem)
   settings:
     - setting_value: 0
-      setting_doc_desc: Standard (curved stems)
-      tt_setting_name: Standard (curved stems)
+      setting_doc_desc: Standard (curved stem)
+      tt_setting_name: Standard (curved stem)
       tt_setting_tag: Dflt
     - setting_value: 1
-      setting_ui_label: Diagonal stems
-      setting_doc_desc: Diagonal stems
-      tt_setting_name: Diagonal stems
+      setting_ui_label: Diagonal stem
+      setting_doc_desc: Diagonal stem
+      tt_setting_name: Diagonal stem
       tt_setting_tag: T
   doc_group: num
   doc_order: 816
-  doc_name: Six and Nine
-  doc_affects: U+0036 U+0039 U+2076 U+2079 U+2086 U+2089
+  doc_name: Six
+  doc_affects: U+0037 U+2077 U+2087 U+2150 U+215E
   doc_sample: 
   ftml_comment: 
   ftml_string: 
@@ -122,6 +122,33 @@
   doc_order: 817
   doc_name: Seven
   doc_affects: U+0037 U+2077 U+2087
+  doc_sample: 
+  ftml_comment: 
+  ftml_string: 
+
+- tag: cv09
+  fonts: A
+  version_added: 7
+  cv_label: Nine
+  cv_tooltip: Alternate form of numeral nine with diagonal stem
+  cv_sample: 
+  tt_tag: Dig9
+  tt_name: Nine
+  tt_value: Standard (curved stem)
+  settings:
+    - setting_value: 0
+      setting_doc_desc: Standard (curved stem)
+      tt_setting_name: Standard (curved stem)
+      tt_setting_tag: Dflt
+    - setting_value: 1
+      setting_ui_label: Diagonal stem
+      setting_doc_desc: Diagonal stem
+      tt_setting_name: Diagonal stem
+      tt_setting_tag: T
+  doc_group: num
+  doc_order: 819
+  doc_name: Nine
+  doc_affects: U+0039 U+2079 U+2089 U+2151
   doc_sample: 
   ftml_comment: 
   ftml_string: 
