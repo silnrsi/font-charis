@@ -29,7 +29,7 @@
     <array/>
   </dict>
   <key>com.schriftgestaltung.appVersion</key>
-  <string>3326</string>
+  <string>3316</string>
   <key>com.schriftgestaltung.customParameter.GSFont.DisplayStrings</key>
   <array>
     <string>ngjnqjn/LtnSmARetrHook jn
@@ -12382,5 +12382,41 @@ c/ModApos/LtnSmCAcute/ModApos c/RtSglQuotMrk/LtnSmCAcute/RtSglQuotMrk c/CombLftA
     <key>ZeroWidthSpace</key>
     <string>uni200B</string>
   </dict>
+  <key>public.skipExportGlyphs</key>
+  <array>
+    <string>LftParen.Sophia</string>
+    <string>RtParen.Sophia</string>
+    <string>Comma.Sophia</string>
+    <string>DigitZero.Sophia</string>
+    <string>DigitOne.Sophia</string>
+    <string>DigitTwo.Sophia</string>
+    <string>DigitThree.Sophia</string>
+    <string>DigitFour.Sophia</string>
+    <string>DigitFive.Sophia</string>
+    <string>DigitSix.Sophia</string>
+    <string>DigitSeven.Sophia</string>
+    <string>DigitEight.Sophia</string>
+    <string>DigitNine.Sophia</string>
+    <string>LtnCapB.Sophia</string>
+    <string>LtnCapC.Sophia</string>
+    <string>LtnCapD.Sophia</string>
+    <string>LtnCapE.Sophia</string>
+    <string>LtnCapF.Sophia</string>
+    <string>LtnCapG.Sophia</string>
+    <string>LtnCapH.Sophia</string>
+    <string>LtnCapJ.Sophia</string>
+    <string>LtnCapL.Sophia</string>
+    <string>LtnCapM.Sophia</string>
+    <string>LtnCapN.Sophia</string>
+    <string>LtnCapO.Sophia</string>
+    <string>LtnCapP.Sophia</string>
+    <string>LtnCapR.Sophia</string>
+    <string>LtnCapS.Sophia</string>
+    <string>LtnCapV.Sophia</string>
+    <string>LtnCapW.Sophia</string>
+    <string>LtnCapX.Sophia</string>
+    <string>LtnCapY.Sophia</string>
+    <string>LtnCapZ.Sophia</string>
+  </array>
 </dict>
 </plist>
