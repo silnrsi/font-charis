@@ -25,7 +25,7 @@ omitapps = '--omitaps "C _C L11 L12 L13 L21 L22 L23 L31 L32 L33 ' + \
 
 cmds = []
 cmds.append(cmd('psfchangettfglyphnames ${SRC} ${DEP} ${TGT}', ['${source}']))
-cmds.append(cmd('${TTFAUTOHINT} -n -W ${DEP} ${TGT}'))
+cmds.append(cmd('${TTFAUTOHINT} -n -W --reference=../source/autohinting/CharisAutohintingRef-Regular.ttf ${DEP} ${TGT}'))
 
 for dspace in ('Roman', 'Italic'):
 #for dspace in ('Roman',):
