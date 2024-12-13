@@ -20,10 +20,11 @@ This enables you to keep the old v6.2 fonts installed when you install the new v
 ### Revised family groups with additional weights
 
 Charis now has additional intermediate weights. Previously existing weights have not changed. Here is a list, with retained weights in **bold** and new weights in *italic*. The CSS values for the weights within each family are in parentheses. Italic faces follow a similar structure and correspondence.
-    - **Charis Regular** (400)
-    - *Charis Medium* (500)
-    - *Charis SemiBold* (600)
-    - **Charis Bold** (700)
+
+- **Charis Regular** (400)
+- *Charis Medium* (500)
+- *Charis SemiBold* (600)
+- **Charis Bold** (700)
 
 The new intermediate weights in this extended, axis-based family can be confusing for applications that still assume families should have only four members (Regular, Italic, Bold, Bold Italic). This is the case for Microsoft Word and some older Windows applications. For details on how to use the intermediate weights in these applications, see [Using Axis-Based Font Families](https://software.sil.org/fonts/axis-based-fonts/).
 
@@ -57,6 +58,14 @@ Charis now includes support for standard OpenType proportional oldstyle figures 
 
 Support has been added for 29 additional characters, some of which were introduced in Unicode 16. For a full list see [Version history](history.md).
 
+## Consistent autohinting
+
+Autohinting has been improved to be more consistent across the whole family.
+
+![Charis autohinting](../assets/images/v7autohinting.png){.fullsize}
+<!-- PRODUCT SITE IMAGE SRC https://software.sil.org/charis/wp-content/uploads/sites/20/2015/12/v7autohinting.png -->
+<figcaption>Upright and italic faces appear more consistent in height in smaller sizes (Windows 11, Word, 9 pt, 150%, enlarged)</figcaption>
+
 ## General improvements
 
 Other improvements have been made to over 150 glyphs, OpenType code, and other font aspects, including: 
@@ -64,7 +73,6 @@ Other improvements have been made to over 150 glyphs, OpenType code, and other f
 - Central European carons have improved designs and kerning.
 - Bridging diacritics handle many more possible combinations. See [Using Bridging Diacritics](https://software.sil.org/fonts/bridging-diacritics/) for details on how these need to be encoded and ordered.
 - Small caps apply to bracketing punctuation.
-- Autohinting is more consistent.
 
 For more details see [Version history](history.md).
 

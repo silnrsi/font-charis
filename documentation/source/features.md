@@ -407,12 +407,14 @@ Hide staves  | <span class='charis-R normal' style='font-feature-settings: "cv92
 
 #### Proportional oldstyle figures
 
+*This feature only affects full-size numerals, not superscripts, subscripts, fractions, or numeral-based symbols.*
+
 <span class='affects'>Affects: U+0030 U+0031 U+0032 U+0033 U+0034 U+0035 U+0036 U+0037 U+0038 U+0039</span>
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
 Standard  | <span class='charis-R normal'>0 1 2 3 4 5 6 7 8 9</span> | `onum=0`
-Oldstyle | <span class='charis-R normal' style='font-feature-settings: "onum" 1'>0 1 2 3 4 5 6 7 8 9</span> | `onum=1`
+Oldstyle  | <span class='charis-R normal' style='font-feature-settings: "onum" 1'>0 1 2 3 4 5 6 7 8 9</span> | `onum=1`
 
 #### Subscript numerals
 
