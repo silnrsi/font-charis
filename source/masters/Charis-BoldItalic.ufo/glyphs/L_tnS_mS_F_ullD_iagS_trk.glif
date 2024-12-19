@@ -7,9 +7,17 @@
   <anchor x="558" y="1100" name="U"/>
   <outline>
     <component base="LtnSmS"/>
+    <contour>
+      <point x="898" y="1144" type="line"/>
+      <point x="785" y="1210" type="line"/>
+      <point x="-105" y="-106" type="line"/>
+      <point x="4" y="-176" type="line"/>
+    </contour>
   </outline>
   <lib>
     <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>CP</string>
       <key>public.markColor</key>
       <string>0.99,0.62,0.11,1</string>
     </dict>
