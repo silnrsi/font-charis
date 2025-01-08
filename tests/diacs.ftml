@@ -2360,6 +2360,10 @@
       <comment>ModLowGraveAccent</comment>
       <string>\u0002CE\u000329</string>
     </test>
+    <test label="U+02CF">
+      <comment>ModLowAcuteAccent</comment>
+      <string>\u0002CF\u000329</string>
+    </test>
     <test label="U+02D0">
       <comment>ModTriangularColon</comment>
       <string>\u0002D0\u000329 \u0002D0\u00030D</string>

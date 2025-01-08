@@ -570,10 +570,21 @@ lookup four_sub {
     sub @cno_Open by @c_Open;
 } four_sub;
 
+# Replace with two features that separately affect six and nine; drop backwards compatibility
+# lookup six_sub {
+#   lookupflag 0;
+#     sub @cno_Diag by @c_Diag;
+# } six_sub;
+
 lookup six_sub {
   lookupflag 0;
-    sub @cno_Diag by @c_Diag;
+    sub @cno_sixDiag by @c_sixDiag;
 } six_sub;
+
+lookup nine_sub {
+  lookupflag 0;
+    sub @cno_nineDiag by @c_nineDiag;
+} nine_sub;
 
 lookup seven_sub {
   lookupflag 0;
@@ -917,6 +928,7 @@ do let f = info("familyName");
 
 # define lookups for decomposing and recomposing greek diac seqs: grk_decomp_sub, grk_recomp_sub
 #    also define grk_sc1_sub lookup for handling Greek small caps, including where diacritics are removed
+#    and grk_sc2_sub lookup for handling Greek upper case base glyphs like lower case
 include(../../source/opentype/grk_compose.feax);
 
 # below are examples of content from grk_compose.feax for reference
@@ -935,6 +947,11 @@ include(../../source/opentype/grk_compose.feax);
 #   lookupflag 0;
 #     sub GrSmAlphaWDasiaOxiaYpo by GrSmAlphaWYpo.sc;
 # } grk_sc1_sub;
+
+# lookup grk_sc2_sub {
+#   lookupflag 0;
+#     sub GrCapAlphaWDasiaOxiaPros by GrSmAlphaWYpo.sc;
+# } grk_sc2_sub;
 
 lookup srfb_sub {
   lookupflag 0;
@@ -1000,6 +1017,7 @@ ifinfo(familyName, "Andika") {
   feature cv04; #Andika
   feature cv06; #Andika
   feature cv07; #Andika
+  feature cv09; #Andika
   feature cv10; #Andika
 }
   feature cv13;
@@ -1113,6 +1131,10 @@ do let f = info("familyName");
 
 feature c2sc {
   lookup sc2_sub;
+do let f = info("familyName");
+   if f.find("Gentium") != -1; {
+  lookup grk_sc2_sub;
+}
 } c2sc;
 
 feature sups {
@@ -1195,19 +1217,19 @@ feature cv06 {
 
   cvParameters {
       FeatUILabelNameID {
-       name 3 1 0x0409 "Six and Nine";  # English US
+       name 3 1 0x0409 "Six";  # English US
       };
       
       FeatUITooltipTextNameID {
-       name 3 1 0x0409 "Alternate forms of numerals six and nine with diagonal stems";  # English US
+       name 3 1 0x0409 "Alternate form of numeral six with diagonal stem";  # English US
       };
       
       SampleTextNameID {
-       name 3 1 0x0409 "6₆⁹9₉⁹";  # English US
+       name 3 1 0x0409 "6⁶₆⅙⅚";  # English US
       };
       
       ParamUILabelNameID {
-       name 3 1 0x0409 "Diagonal stems";  # English US
+       name 3 1 0x0409 "Diagonal stem";  # English US
       };
   };
 
@@ -1236,6 +1258,29 @@ feature cv07 {
 
   lookup seven_sub;
 } cv07;
+
+feature cv09 {
+
+  cvParameters {
+      FeatUILabelNameID {
+       name 3 1 0x0409 "Nine";  # English US
+      };
+      
+      FeatUITooltipTextNameID {
+       name 3 1 0x0409 "Alternate form of numeral nine with diagonal stem";  # English US
+      };
+      
+      SampleTextNameID {
+       name 3 1 0x0409 "9⁹₉⅑";  # English US
+      };
+      
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Diagonal stem";  # English US
+      };
+  };
+
+  lookup nine_sub;
+} cv09;
 
 feature cv10 {
 
