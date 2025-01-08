@@ -25,6 +25,11 @@
   </array>
   <key>com.schriftgestaltung.Glyphs.fontUserData</key>
   <dict>
+    <key>GSDimensionPlugin.Dimensions</key>
+    <dict>
+      <key>9794B5B3-7BE6-461A-AB8D-B7C72B2F6386</key>
+      <dict/>
+    </dict>
     <key>com.schriftgestaltung.Glyphs.groupsNotInFeature</key>
     <array/>
   </dict>
@@ -225,9 +230,9 @@ o/ModApos ö/ModApos o/RtSglQuotMrk ö/RtSglQuotMrk o/CombLftAngAbv ö/CombLftAn
 c/ModApos/LtnSmCAcute/ModApos c/RtSglQuotMrk/LtnSmCAcute/RtSglQuotMrk c/CombLftAngAbv/LtnSmCAcute/CombLftAngAbv ch/LtnSmCAcute hcþ/LtnSmCAcute þ/Space/Space/LtnSmTurnedV a/LtnSmTurnedV ä/LtnSmTurnedV o/LtnSmTurnedV ö
 /LtnSmOHorn a/LtnSmOHorn ä/LtnSmOHorn o/LtnSmOHorn ö/LtnSmDCaron a/LtnSmDCaron ä/LtnSmLCaron a/LtnSmLCaron ä/LtnSmTCaron a/LtnSmTCaron ä/LtnSmDCaron o/LtnSmDCaron ö/LtnSmLCaron o/LtnSmLCaron ö/LtnSmTCaron o/LtnSmTCaron ö
 /CySmO/CySmEl/CySmO/CySmDe/Space/CySmU/CySmEl/CySmEm/CySmO/Space/CySmKa/CySmUDiaer/CySmEl/CySmSha/CySmODiaer/Space/CySmTe/CySmU/CySmDe/CySmYeru/CySmEn/Space/CySmSha/CySmUDiaer/CySmDe/CySmYeru/CySmEr</string>
-    <string>/LtnSmLambda/LtnSmLambdaStrk/LtnCapLambda/LtnCapLambdaStrk/LtnCapLStrk/LtnCapSFullDiagStrk/LtnSmSFullDiagStrk/LtnCapCStrk/LtnSmCStrk/LtnCapTDiagStrk/LtnSmTDiagStrk/LtnCapVDiagStrk/LtnSmVDiagStrk 
+    <string>/LtnSmLambda/LtnSmLambdaStrk/LtnCapLambda/LtnCapLambdaStrk/CyCapStraightUStrk/LtnCapLStrk/LtnCapSFullDiagStrk/LtnSmSFullDiagStrk/LtnCapCStrk/LtnSmCStrk/LtnCapTDiagStrk/LtnSmTDiagStrk/LtnCapVDiagStrk/LtnSmVDiagStrk 
 T/CyCapDje/CyCapTje/CySmTje/CySmHardSgn/CySmNje/CyCapYat/CySmYat/CyCapKomiTje/CySmKomiTje 
-x/LtnSmTrndI n/ModSmTurnedH/ModSmX/ModSmTrndI/ModSmR (/SupplDownwardsAncora/KayahLiSignCwi 
+x/LtnSmTurnedH/LtnSmLTrnd/LtnSmTrndI/LtnSmLDotBlw n/ModSmTurnedH/ModSmX/ModSmTrndI/ModSmR s/SupplDownwardsAncora/KayahLiSignCwi 
 ´/ModAcuteAccent/ModLowAcuteAccent/Space `/ModGraveAccent/ModLowGraveAccent</string>
   </array>
   <key>com.schriftgestaltung.customParameter.GSFont.disablesAutomaticAlignment</key>
