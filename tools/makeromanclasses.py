@@ -125,6 +125,20 @@ class Font(object):
                 self.g_classes.setdefault(c_nm, []).extend(c_lst)
                 self.g_classes.setdefault(cno_nm, []).extend(cno_lst)
 
+        # create class of glyphs containing variants of six with diagonal stems (only in Andika)
+        for g_nm in self.glyphs:
+            if (re.search(r'Six', g_nm) and re.search(r'.Diag', g_nm)):
+                g_no_nm = re.sub(r'.Diag', r'', g_nm)
+                self.g_classes.setdefault('c_sixDiag', []).append(g_nm)
+                self.g_classes.setdefault('cno_sixDiag', []).append(g_no_nm)
+
+        # create class of glyphs containing variants of nine with diagonal stems (only in Andika)
+        for g_nm in self.glyphs:
+            if (re.search(r'Nin', g_nm) and re.search(r'.Diag', g_nm)):
+                g_no_nm = re.sub(r'.Diag', r'', g_nm)
+                self.g_classes.setdefault('c_nineDiag', []).append(g_nm)
+                self.g_classes.setdefault('cno_nineDiag', []).append(g_no_nm)
+
         # create classes for c2sc
         for uni_str in self.unicodes:
             upper_unichr = chr(int(uni_str, 16))
