@@ -3,6 +3,30 @@
   <advance width="1398"/>
   <unicode hex="2E15"/>
   <outline>
-    <component base="SupplDownwardsAncora"/>
+    <contour>
+      <point x="1252" y="1233" type="line"/>
+      <point x="264" y="228" type="line"/>
+      <point x="341" y="135" type="line"/>
+      <point x="1343" y="1154" type="line"/>
+    </contour>
+    <contour>
+      <point x="72" y="725" type="line"/>
+      <point x="61" y="658"/>
+      <point x="55" y="594"/>
+      <point x="55" y="534" type="curve" smooth="yes"/>
+      <point x="55" y="190"/>
+      <point x="236" y="-30"/>
+      <point x="607" y="-30" type="curve" smooth="yes"/>
+      <point x="687" y="-30"/>
+      <point x="775" y="-20"/>
+      <point x="872" y="1" type="curve"/>
+      <point x="876" y="93" type="line"/>
+      <point x="841" y="90"/>
+      <point x="807" y="88"/>
+      <point x="775" y="88" type="curve" smooth="yes"/>
+      <point x="377" y="88"/>
+      <point x="182" y="325"/>
+      <point x="163" y="735" type="curve"/>
+    </contour>
   </outline>
 </glyph>
