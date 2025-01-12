@@ -287,8 +287,10 @@ my %nm_to_tag = (
 	'Side by side' => 'T',
 	'Capital I' => 'LgI',
 	'Barless' => 'Barless',
-	'Old style figures' => 'OSF',
-	'Old style' => 'T',
+	'Proportional oldstyle figures' => 'OSF', #for v7 fonts
+	'Oldstyle' => 'T', #for v7 fonts
+	'Old style figures' => 'OSF', #replaced above for v7 fonts
+	'Old style' => 'T', #replaced above for v7 fonts
 	'Line spacing' => 'LnSpc',
 	'Loose' => 'Ls',
 	'Imported' => 'Im',
@@ -382,6 +384,7 @@ my %featset_to_suffix = (
 # Chinantec tones negates low profile diacritics
 # small caps negate the lower case tail variants
 my %reduced_featsets = (
+	'BetaSerif-T SmCp-T' => 'SmCp-T',
 	'Click-T SmCp-T' => 'SmCp-T',
 	'CapQ-T SmQTail-T' => 'SmQTail-T', # lower case glyph not affected by Capital Q alternate
 	'Caron-T SmCp-T' => 'SmCp-T',
@@ -833,13 +836,13 @@ sub OT_Feats_get($\%)
 	if ($family_nm ne 'andika' and !$opt_a) 
 	{
 		push(@{$feats->{' ids'}}, 'onum');
-		$feats->{'onum'}{'name'} = 'Old style figures';
-		$feats->{'onum'}{'tag'} = Tag_lookup('Old style figures', %nm_to_tag);
+		$feats->{'onum'}{'name'} = 'Proportional oldstyle figures';
+		$feats->{'onum'}{'tag'} = Tag_lookup('Proportional oldstyle figures', %nm_to_tag);
 		$feats->{'onum'}{'default'} = 0;
 		$feats->{'onum'}{'settings'}{' ids'} = [0, 1];
 		$feats->{'onum'}{'settings'}{0}{'name'} = 'Default';
 		$feats->{'onum'}{'settings'}{0}{'tag'} = 'Dflt';
-		$feats->{'onum'}{'settings'}{1}{'name'} = 'Old style';
+		$feats->{'onum'}{'settings'}{1}{'name'} = 'Oldstyle';
 		$feats->{'onum'}{'settings'}{1}{'tag'} = Tag_lookup('True', %nm_to_tag);
 	}
 
@@ -1582,8 +1585,9 @@ sub Features_output($\%\%\%\%)
 END
 	}
 
-	### output line spacing feature
-	unless ($opt_g)
+	### output line spacing feature - no longer supported in v7 of fonts
+	# unless ($opt_g)
+	if (0)
 	{
 		my $line_gap_tag = Tag_lookup('Line spacing', %nm_to_tag);
 		my $tight_tag = Tag_lookup('Tight', %nm_to_tag);
