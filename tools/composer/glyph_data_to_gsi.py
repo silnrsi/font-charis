@@ -1,4 +1,4 @@
-# Copyright (c) 2007-2024 SIL Global  (https://www.sil.org)
+# Copyright (c) 2007-2025 SIL Global  (https://www.sil.org)
 # Released under the MIT License (https://opensource.org/licenses/MIT)
 
 import sys, csv, re
@@ -7,6 +7,11 @@ if sys.argv[1].lower() != "andika":
     andika_f = 0
 else:
     andika_f = 1
+
+if sys.argv[1].lower() != "gentium":
+    gentium_f = 0
+else:
+    gentium_f = 1
 
 glyph_data_csv_fn = "glyph_data.csv"
 
@@ -82,6 +87,19 @@ gsi_xml.write(gsi_xml_start)
 
 ct = 0
 for row_file in glyph_data_reader:
+    # smcp is the only feature that spans families and that affects different USVs in those families
+    # if non-Gentium font, filter out smcp glyphs associated with Greek USVs
+    #   except for Greek Symbols (eg GrThetaSym.sc) that are in non-Gentium fonts
+    #   Greek USVs: 0370-03FF, 1F00-1FFF (includes some coptic, which are not currently in CDGA fonts)
+    if not gentium_f:
+        if row_file[csv_cols.index(assoc_feat)] == 'smcp':
+            assoc_uid_str = row_file[csv_cols.index(assoc_uids)]
+            if assoc_uid_str and not " " in assoc_uid_str:
+                uid = int(assoc_uid_str, 16)
+                if (uid >= 0x0370 and uid <= 0x03FF) or (uid >= 0x1F00 and uid <= 0x1FFF):
+                    if not re.search(r"Gr.*Sym", row_file[csv_cols.index(glyph_name)]):
+                        continue
+
     ct += 1
     rows_temp = [list(row_file)]
     if row_file[csv_cols.index(assoc_feat)] == "ss01":
@@ -127,7 +145,7 @@ for row_file in glyph_data_reader:
             pass
 
         gsi_xml.write(gsi_xml_tmplt_end)
-print(ct)
+print("gsi records generated: {}\n".format(ct))
 
 gsi_xml.write(gsi_xml_end)
 
