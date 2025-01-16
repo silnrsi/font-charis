@@ -1,4 +1,4 @@
-# Copyright (c) 2007-2024 SIL Global  (https://www.sil.org)
+# Copyright (c) 2007-2025 SIL Global  (https://www.sil.org)
 # Released under the MIT License (https://opensource.org/licenses/MIT)
 
 #Script to create a template for the TypeTuner feat_all.xml file for our Roman fonts.
@@ -238,6 +238,8 @@ my %nm_to_tag = (
 	'Four' => 'Dig4',
 	'Digit Six and Nine alternates' => 'Dig69',
 	'Six and Nine' => 'Dig69',
+	'Six' => 'Dig6',
+	'Nine' => 'Dig9',
 	'Curved stem' => 'F',
 	'Diagonal stem' => 'T',
 	'Diagonal stems' => 'T',
@@ -362,6 +364,8 @@ my %featset_to_suffix = (
 	'Dig1-T' => '\.NoBase',
 	'Dig4-Opn' => '\.Open',
 	'Dig69-T' => '\.Diag',
+	'Dig6-T' => '\.Diag',
+	'Dig9-T' => '\.Diag',
 	'Dig7-T' => '\.Bar',
 	'Zro-T' => '\.Slash',
 	'LgDHk-Lc' => '\.TopBar',

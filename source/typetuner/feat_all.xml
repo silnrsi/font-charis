@@ -995,6 +995,7 @@
 			<cmd name="encode" args="1E69 uni1E69.sc" />
 			<cmd name="encode" args="0219 uni0219.sc" />
 			<cmd name="encode" args="015F scedilla.sc" />
+			<cmd name="encode" args="A7CD uniA7CD.sc" />
 			<cmd name="encode" args="A7A9 uniA7A9.sc" />
 			<cmd name="encode" args="023F uni023F.sc" />
 			<cmd name="encode" args="00DF germandbls.sc" />
@@ -1018,6 +1019,7 @@
 			<cmd name="encode" args="0287 uni0287.sc" />
 			<cmd name="encode" args="0442 uni0442.sc" />
 			<cmd name="encode" args="050F uni050F.sc" />
+			<cmd name="encode" args="1C8A uni1C8A.sc" />
 			<cmd name="encode" args="04B5 uni04B5.sc" />
 			<cmd name="encode" args="04AD uni04AD.sc" />
 			<cmd name="encode" args="0075 u.sc" />
@@ -1104,6 +1106,8 @@
 			<cmd name="encode" args="1EFF uni1EFF.sc" />
 			<cmd name="encode" args="04AF uni04AF.sc" />
 			<cmd name="encode" args="04B1 uni04B1.sc" />
+			<cmd name="encode" args="A7DB uniA7DB.sc" />
+			<cmd name="encode" args="019B uni019B.sc" />
 			<cmd name="encode" args="0447 uni0447.sc" />
 			<cmd name="encode" args="04F5 uni04F5.sc" />
 			<cmd name="encode" args="04CC uni04CC.sc" />
@@ -1146,11 +1150,11 @@
 			<cmd name="encode" args="A723 uniA723.sc" />
 		</value>
 	</feature>
-	<feature name="Old style figures" value="Standard (tabular)" tag="OSF">
+	<feature name="Proportional oldstyle figures" value="Standard (tabular)" tag="OSF">
 		<value name="Standard (tabular)" tag="Dflt">
 			<cmd name="null" args="null" />
 		</value>
-		<value name="Old style" tag="T">
+		<value name="Oldstyle" tag="T">
 			<cmd name="encode" args="0030 zero.osf" />
 			<cmd name="encode" args="0031 one.osf" />
 			<cmd name="encode" args="0032 two.osf" />
@@ -1170,21 +1174,6 @@
 		<value name="Side by side" tag="T">
 			<cmd name="lookup_add" args="GSUB {ccmp_DFLT_dflt} {kayan_grave_ctx}" />
 			<cmd name="lookup_add" args="GSUB {ccmp_DFLT_dflt} {kayan_sub}" />
-		</value>
-	</feature>
-	<feature name="Line spacing" value="Normal" tag="LnSpc">
-		
-		<value name="Normal" tag="Nrml">
-			<cmd name="null" args="2450 900" />
-		</value>
-		<value name="Tight" tag="Tght">
-			<cmd name="line_gap" args="1950 500" />
-		</value>
-		<value name="Loose" tag="Ls">
-			<cmd name="line_gap" args="2900 1200" />
-		</value>
-		<value name="Imported" tag="Im">
-			<cmd name="line_metrics_scaled" args="null" />
 		</value>
 	</feature>
 	<interactions>
