@@ -1,73 +1,4 @@
-lookup base_mark_U {
-  lookupflag IgnoreLigatures;
-    pos base @U mark @_U;
-} base_mark_U;
-
-lookup base_mark_L {
-  lookupflag IgnoreLigatures;
-    pos base @L mark @_L;
-} base_mark_L;
-
-lookup base_mark_O {
-  lookupflag IgnoreLigatures;
-    pos base @O mark @_O;
-} base_mark_O;
-
-lookup base_mark_H {
-  lookupflag IgnoreLigatures;
-    pos base @H mark @_H;
-} base_mark_H;
-
-lookup cursive_R {
-  lookupflag IgnoreMarks;
-    pos cursive @R_ @R;
-} cursive_R;
-
-# provided by _gsub.fea
-# languagesystem DFLT dflt;
-# languagesystem cyrl dflt;
-# languagesystem cyrl SRB;
-# languagesystem latn dflt;
-# languagesystem latn IPPH;
-# languagesystem latn VIT;
-
-feature mark {
-  lookup base_mark_U;
-  lookup base_mark_L;
-  lookup base_mark_O;
-  lookup base_mark_H;
-  lookup cursive_R;
-} mark;
-
-@cMarkFilter_U = [@U_MarkBase @_U];
-@cMarkFilter_L = [@L_MarkBase @_L];
-
-lookup mark_mark_U {
-  lookupflag UseMarkFilteringSet @cMarkFilter_U;
-    pos mark @U_MarkBase mark @_U;
-} mark_mark_U;
-
-lookup mark_mark_L {
-  lookupflag UseMarkFilteringSet @cMarkFilter_L;
-    pos mark @L_MarkBase mark @_L;
-} mark_mark_L;
-
-feature mkmk {
-  lookup mark_mark_U;
-  lookup mark_mark_L;
-} mkmk;
-
-# lookup tns_pos { # not needed by tone glyphs currently being used
-#   lookupflag IgnoreMarks;
-#     pos cursive @TL_ @TL;
-# } tns_pos;
-
-# feature kern {
-#   lookup tns_pos;
-# } kern;
-
-# Gentium
-
+# kerning for Gentium, Charis, Andika
 ifinfo(familyName, "Andika|Charis|Gentium") {
 
 # for debugging
@@ -77,7 +8,7 @@ ifinfo(familyName, "Andika|Charis|Gentium") {
 #   return l
 # } kpairs;
 
-# undo kerning for pairs in UFO followed by an upper mark. usually to apply contextual kerning later
+# undo kerning for pairs in UFO if followed by an upper mark. usually to apply contextual kerning later
 include(../../source/opentype/kernpairs_undo.feax);
 # example of content from kernpairs_undo.feax for reference
 # def unkpairs() {
@@ -116,6 +47,14 @@ include(../../source/opentype/kern_ctx.feax);
 #     pos @public.kern1.LCapTopT' 45 @public.kern2.RSmCurve CombDiaer;
 # } kern_ctx;
 
+# provided by gsub.feax
+# languagesystem DFLT dflt;
+# languagesystem cyrl dflt;
+# languagesystem cyrl SRB;
+# languagesystem latn dflt;
+# languagesystem latn IPPH;
+# languagesystem latn VIT;
+
 feature kern {
   lookup kernpairs;
   lookup kernpairs_undo;
@@ -123,3 +62,68 @@ feature kern {
 } kern;
 
 } 
+
+# attachment point positioning
+
+lookup base_mark_U {
+  lookupflag IgnoreLigatures;
+    pos base @U mark @_U;
+} base_mark_U;
+
+lookup base_mark_L {
+  lookupflag IgnoreLigatures;
+    pos base @L mark @_L;
+} base_mark_L;
+
+lookup base_mark_O {
+  lookupflag IgnoreLigatures;
+    pos base @O mark @_O;
+} base_mark_O;
+
+lookup base_mark_H {
+  lookupflag IgnoreLigatures;
+    pos base @H mark @_H;
+} base_mark_H;
+
+lookup cursive_R {
+  lookupflag IgnoreMarks;
+    pos cursive @R_ @R;
+} cursive_R;
+
+feature mark {
+  lookup base_mark_U;
+  lookup base_mark_L;
+  lookup base_mark_O;
+  lookup base_mark_H;
+  lookup cursive_R;
+} mark;
+
+@cMarkFilter_U = [@U_MarkBase @_U];
+@cMarkFilter_L = [@L_MarkBase @_L];
+
+lookup mark_mark_U {
+  lookupflag UseMarkFilteringSet @cMarkFilter_U;
+    pos mark @U_MarkBase mark @_U;
+} mark_mark_U;
+
+lookup mark_mark_L {
+  lookupflag UseMarkFilteringSet @cMarkFilter_L;
+    pos mark @L_MarkBase mark @_L;
+} mark_mark_L;
+
+feature mkmk {
+  lookup mark_mark_U;
+  lookup mark_mark_L;
+} mkmk;
+
+# tone positioning - no longer used
+
+# lookup tns_pos { # not needed by tone glyphs currently being used
+#   lookupflag IgnoreMarks;
+#     pos cursive @TL_ @TL;
+# } tns_pos;
+
+# feature kern {
+#   lookup tns_pos;
+# } kern;
+
