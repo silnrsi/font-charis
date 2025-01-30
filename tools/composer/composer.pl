@@ -1854,7 +1854,7 @@ END
 sub Usage_print()
 {
 	print <<END;
-RFComposer ver $version (c) 2007-2024 SIL Global.
+RFComposer ver $version (c) 2007-2025 SIL Global.
 usage: 
 	composer -f <family name> [<switches>] <font.ttf> <gsi.xml> <gsi_supp_fn.xml>
 	switches:

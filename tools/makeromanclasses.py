@@ -2,7 +2,7 @@
 'Make fea classes and lookups for Roman fonts'
 
 # __url__ = 'https://github.com/silnrsi/pysilfont'
-__copyright__ = 'Copyright (c) 2018-2024 SIL Global  (https://www.sil.org)'
+__copyright__ = 'Copyright (c) 2018-2025 SIL Global  (https://www.sil.org)'
 __license__ = 'Released under the MIT License (https://opensource.org/licenses/MIT)'
 __author__ = 'Alan Ward'
 
