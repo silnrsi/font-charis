@@ -578,21 +578,21 @@
   fonts: CDGA
   version_added: 5
   cv_label: Capital N left hook
-  cv_tooltip: Alternate form of capital N left hook with lowercase form
+  cv_tooltip: Alternate form of capital N left hook with uppercase form
   cv_sample: 
   tt_tag: LgNLftHk
   tt_name: Capital N left hook
-  tt_value: Standard (capital form)
+  tt_value: Standard (lowercase form)
   settings:
     - setting_value: 0
-      setting_doc_desc: Standard (capital form)
-      tt_setting_name: Standard (capital form)
+      setting_doc_desc: Standard (lowercase form)
+      tt_setting_name: Standard (lowercase form)
       tt_setting_tag: Dflt
     - setting_value: 1
-      setting_ui_label: Lowercase form
-      setting_doc_desc: Lowercase form
-      tt_setting_name: Lowercase form
-      tt_setting_tag: Lc
+      setting_ui_label: Uppercase form
+      setting_doc_desc: Uppercase form
+      tt_setting_name: Uppercase form
+      tt_setting_tag: Uc
   doc_group: chars
   doc_order: 210
   doc_name: Capital N left hook

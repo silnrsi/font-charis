@@ -699,8 +699,8 @@ lookup engs_sub {
 
 lookup nhk_sub {
   lookupflag 0;
-    sub LtnCapNLftHook from [LtnCapNLftHook.LCStyle ];
-    sub LtnSmNLftHook.sc from [LtnSmNLftHook.LCStyle.sc ];
+    sub LtnCapNLftHook from [LtnCapNLftHook.UCStyle ];
+    sub LtnSmNLftHook.sc from [LtnSmNLftHook.UCStyle.sc ];
 } nhk_sub;
 
 lookup opno_sub {
@@ -1633,7 +1633,7 @@ feature cv44 {
       };
       
       FeatUITooltipTextNameID {
-       name 3 1 0x0409 "Alternate form of capital N left hook with lowercase form";  # English US
+       name 3 1 0x0409 "Alternate form of capital N left hook with uppercase form";  # English US
       };
       
       SampleTextNameID {
@@ -1641,7 +1641,7 @@ feature cv44 {
       };
       
       ParamUILabelNameID {
-       name 3 1 0x0409 "Lowercase form";  # English US
+       name 3 1 0x0409 "Uppercase form";  # English US
       };
   };
 
