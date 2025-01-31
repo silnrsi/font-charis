@@ -1374,7 +1374,7 @@ LtnSmNDiagStrk,uniA7A5,2300.75,2300.75,,,,,
 LtnSmNum,uniA774,2300.76,2300.76,,,,,
 LtnSmNLftHook,uni0272,2300.83,2300.83,,,,,
 LtnSupSmNLftHook,uni1DAE,2300.8322,2300.8322,,,,,
-LtnSmNLftHook.LCStyle,uni0272.LCStyle,2300.84,2300.84,cv44,cv44,,0272,0272
+LtnSmNLftHook.UCStyle,uni0272.UCStyle,2300.84,2300.84,cv44,cv44,,0272,0272
 LtnSmEng,eng,2300.85,2300.85,,,,,
 LtnSmEng.BaselineHook,eng.BaselineHook,2300.851,2300.851,cv43,cv43,1,014B,014B
 LtnSmEng.UCStyle,eng.UCStyle,2300.852,2300.852,cv43,cv43,2,014B,014B
@@ -1411,12 +1411,12 @@ LtnCapNDotBlw,uni1E46,2350.471,2350.471,,,,,
 LtnCapNCedilla,Ncommaaccent,2350.472,2350.472,,,,,
 NairaSgn,uni20A6,2350.73,2350.73,,,,,
 LtnCapNDiagStrk,uniA7A4,2350.75,2350.75,,,,,
-LtnCapNLftHook,uni019D,2350.83,2350.83,,,,,
+LtnCapNLftHook.UCStyle,uni019D.UCStyle,2350.83,2350.83,cv44,cv44,,019D,019D
 LtnCapEng.UCStyle,Eng.UCStyle,2350.85,2350.85,cv43,cv43,2,014A,014A
 LtnCapNDesc,uniA790,2350.93,2350.93,,,,,
 LtnSmCapRevN,uni1D0E,2360.1,2360.1,,,,,
 ModCapRevN,uni1D3B,2360.23,2360.23,,,,,
-LtnCapNLftHook.LCStyle,uni019D.LCStyle,2370.83,2370.83,cv44,cv44,,019D,019D
+LtnCapNLftHook,uni019D,2370.83,2370.83,,,,,
 LtnCapEng.BaselineHook,Eng.BaselineHook,2370.851,2370.851,cv43,cv43,1,014A,014A
 LtnCapEng,Eng,2370.852,2370.852,cv43,cv43,0,,
 LtnCapNLngRtLeg,uni0220,2370.95,2370.95,,,,,
@@ -4539,6 +4539,7 @@ LtnSmNCedilla.sc,ncommaaccent.sc,42300.61,42300.61,smcp,smcp,,0146,0146
 LtnSmNDiagStrk.sc,uniA7A5.sc,42300.75,42300.75,smcp,smcp,,A7A5,A7A5
 LtnSmNLftHook.sc,uni0272.sc,42300.83,42300.83,smcp,smcp,,0272,0272
 LtnSmNLftHook.LCStyle.sc,uni0272.LCStyle.sc,42300.831,42300.831,smcp,smcp,,0272,0272
+LtnSmNLftHook.UCStyle.sc,uni0272.UCStyle.sc,42300.831,42300.831,smcp,smcp,,0272,0272
 LtnSmEng.sc,eng.sc,42300.85,42300.85,smcp,smcp,,014B,014B
 LtnSmEng.BaselineHook.sc,eng.BaselineHook.sc,42300.851,42300.851,smcp,smcp,,014B,014B
 LtnSmEng.UCStyle.sc,eng.UCStyle.sc,42300.852,42300.852,smcp,smcp,,014B,014B

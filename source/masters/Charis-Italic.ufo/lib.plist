@@ -1808,7 +1808,7 @@ x/LtnSmTurnedH/LtnSmLTrnd/LtnSmTrndI/LtnSmLDotBlw n/ModSmTurnedH/ModSmX/ModSmTrn
     <string>LtnSmNum</string>
     <string>LtnSmNLftHook</string>
     <string>LtnSupSmNLftHook</string>
-    <string>LtnSmNLftHook.LCStyle</string>
+    <string>LtnSmNLftHook.UCStyle</string>
     <string>LtnSmEng</string>
     <string>LtnSmEng.BaselineHook</string>
     <string>LtnSmEng.UCStyle</string>
@@ -1844,12 +1844,12 @@ x/LtnSmTurnedH/LtnSmLTrnd/LtnSmTrndI/LtnSmLDotBlw n/ModSmTurnedH/ModSmX/ModSmTrn
     <string>LtnCapNCedilla</string>
     <string>NairaSgn</string>
     <string>LtnCapNDiagStrk</string>
-    <string>LtnCapNLftHook</string>
+    <string>LtnCapNLftHook.UCStyle</string>
     <string>LtnCapEng.UCStyle</string>
     <string>LtnCapNDesc</string>
     <string>LtnSmCapRevN</string>
     <string>ModCapRevN</string>
-    <string>LtnCapNLftHook.LCStyle</string>
+    <string>LtnCapNLftHook</string>
     <string>LtnCapEng.BaselineHook</string>
     <string>LtnCapEng</string>
     <string>LtnCapNLngRtLeg</string>
@@ -3934,7 +3934,7 @@ x/LtnSmTurnedH/LtnSmLTrnd/LtnSmTrndI/LtnSmLDotBlw n/ModSmTurnedH/ModSmX/ModSmTrn
     <string>LtnSmNCedilla.sc</string>
     <string>LtnSmNDiagStrk.sc</string>
     <string>LtnSmNLftHook.sc</string>
-    <string>LtnSmNLftHook.LCStyle.sc</string>
+    <string>LtnSmNLftHook.UCStyle.sc</string>
     <string>LtnSmEng.sc</string>
     <string>LtnSmEng.BaselineHook.sc</string>
     <string>LtnSmEng.UCStyle.sc</string>
@@ -7126,8 +7126,8 @@ x/LtnSmTurnedH/LtnSmLTrnd/LtnSmTrndI/LtnSmLDotBlw n/ModSmTurnedH/ModSmX/ModSmTrn
     <string>uni01F8</string>
     <key>LtnCapNLftHook</key>
     <string>uni019D</string>
-    <key>LtnCapNLftHook.LCStyle</key>
-    <string>uni019D.LCStyle</string>
+    <key>LtnCapNLftHook.UCStyle</key>
+    <string>uni019D.UCStyle</string>
     <key>LtnCapNLineBlw</key>
     <string>uni1E48</string>
     <key>LtnCapNLngRtLeg</key>
@@ -9472,10 +9472,10 @@ x/LtnSmTurnedH/LtnSmLTrnd/LtnSmTrndI/LtnSmLDotBlw n/ModSmTurnedH/ModSmX/ModSmTrn
     <string>uni01F9.sc</string>
     <key>LtnSmNLftHook</key>
     <string>uni0272</string>
-    <key>LtnSmNLftHook.LCStyle</key>
-    <string>uni0272.LCStyle</string>
-    <key>LtnSmNLftHook.LCStyle.sc</key>
-    <string>uni0272.LCStyle.sc</string>
+    <key>LtnSmNLftHook.UCStyle</key>
+    <string>uni0272.UCStyle</string>
+    <key>LtnSmNLftHook.UCStyle.sc</key>
+    <string>uni0272.UCStyle.sc</string>
     <key>LtnSmNLftHook.sc</key>
     <string>uni0272.sc</string>
     <key>LtnSmNLineBlw</key>
