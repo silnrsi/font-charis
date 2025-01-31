@@ -54,6 +54,10 @@ Kerning has now been add to cover the full range of alphabetic symbols, includin
 
 Charis now includes support for standard OpenType proportional oldstyle figures (`onum`). These only apply to the main numerals, not fractions, superscripts, or numeral-based symbols.
 
+### Capital N Left Hook default changed to lowercase style
+
+The default form for capital N with left hook has been changed to the lowercase style to match the capital Eng. The related feature (`cv44`) has been changed to substitute the uppercase style form. See the [Feature list](features.md).
+
 ### Additional character support including Unicode 16
 
 Support has been added for 29 additional characters, some of which were introduced in Unicode 16. For a full list see [Version history](history.md).

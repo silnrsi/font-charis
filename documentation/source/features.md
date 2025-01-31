@@ -138,7 +138,7 @@ Alt. lowercase style on baseline  | <span class='charis-R normal' style='font-fe
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
 Standard        | <span class='charis-R normal'>Ɲ</span> | `cv44=0`
-Lowercase-style | <span class='charis-R normal' style='font-feature-settings: "cv44" 1'>Ɲ</span> | `cv44=1`
+Uppercase-style | <span class='charis-R normal' style='font-feature-settings: "cv44" 1'>Ɲ</span> | `cv44=1`
 
 #### Open-O
 
