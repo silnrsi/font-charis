@@ -38,6 +38,10 @@ Improvements to both these fonts and industry font technology has reduced the ne
 
 We have not prepared ‘pre-tuned’ *Literacy* versions of the version 7 fonts. The standard fonts include the literacy forms, which can be turned on in many applications and on web pages using OpenType stylistic sets (`ss01`, `ss11`, `ss12`) — see [Using Font Features](https://software.sil.org/fonts/features) and [Using SIL Fonts on Web Pages](https://software.sil.org/fonts/webfonts). If your application does not allow you to control these features the [v6.2 Literacy fonts remain available](https://software.sil.org/lcgfonts/download/). Please also contact the app developer to request that they give users access to OpenType stylistic sets.
 
+#### *Is there a guide to the many versions of Charis and its variants?*
+
+Yes! See the [Versions](versions.md) page.
+
 #### *Why does my application not show the Bold weight in font menus and dialogs?*
 
 Some applications will list all the weights but leave out Bold. To access the Bold you need to choose Regular and turn on Bold using the application’s UI controls such as a “B” button. See our [Font Help Guide on Axis-Based Font Families](https://software.sil.org/fonts/axis-based-fonts/) for more information.
