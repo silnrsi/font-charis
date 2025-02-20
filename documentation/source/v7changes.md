@@ -44,9 +44,9 @@ Note that even in version 7 the literacy forms and other features can be manuall
 
 ## New features and character support
 
-### Greatly enhanced kerning
+### New kerning
 
-Kerning has now been add to cover the full range of alphabetic symbols, including small caps. To make this practically useful for a wide range of languages the letters have been clustered into overly generalized groups. This enables the kerning to apply to more combinations, but does not allow for careful fine-tuning. The expanded kerning may not be ideal in all cases, and may still require manual adjustment, but it should provide improved spacing compared with previous versions. It is very possible that we have made some mistakes in this massive kerning effort, so please [contact us](https://software.sil.org/charis/about/contact/) if you encounter any combinations whose spacing has been made worse than in v6.2.
+Kerning has now been add to cover the full range of alphabetic symbols, including small caps. To make this practically useful for a wide range of languages the letters have been clustered into overly generalized groups. This enables the kerning to apply to more combinations, but does not allow for careful fine-tuning. The generalized kerning may not be ideal in all cases, and may still require manual adjustment, but it should provide improved spacing compared with previous versions. It is very possible that we have made some mistakes in this massive kerning effort, so please [contact us](https://software.sil.org/charis/about/contact/) if you encounter any combinations whose spacing has been made worse than in v6.2.
 
 **Warning: Because of the addition of extensive kerning, line, paragraph, and page lengths may be different from v6.2.**
 
