@@ -2,6 +2,11 @@
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+  <key>public.kern1.LBracket</key>
+  <dict>
+    <key>public.kern2.RSmDescJ</key>
+    <integer>120</integer>
+  </dict>
   <key>public.kern1.LCapBaseL</key>
   <dict>
     <key>public.kern2.RCapDiagV</key>
@@ -94,6 +99,35 @@
     <integer>-1</integer>
     <key>public.kern2.RCapTopS</key>
     <integer>-1</integer>
+  </dict>
+  <key>public.kern1.LSmDesc</key>
+  <dict>
+    <key>public.kern2.RSmDescJ</key>
+    <integer>180</integer>
+  </dict>
+  <key>public.kern1.LSmDescHook</key>
+  <dict>
+    <key>public.kern2.RBracket</key>
+    <integer>140</integer>
+    <key>public.kern2.RSmAscDesc</key>
+    <integer>310</integer>
+    <key>public.kern2.RSmBarDesc</key>
+    <integer>120</integer>
+    <key>public.kern2.RSmCurveDesc</key>
+    <integer>340</integer>
+    <key>public.kern2.RSmDescJ</key>
+    <integer>620</integer>
+    <key>public.kern2.RSmDiagY</key>
+    <integer>290</integer>
+    <key>public.kern2.RSmRoundDesc</key>
+    <integer>140</integer>
+    <key>public.kern2.RSmSerifDesc</key>
+    <integer>300</integer>
+  </dict>
+  <key>public.kern1.LSmTopF</key>
+  <dict>
+    <key>public.kern2.RBracket</key>
+    <integer>140</integer>
   </dict>
 </dict>
 </plist>
