@@ -5,13 +5,13 @@
   <key>public.kern1.LCapBaseL</key>
   <dict>
     <key>public.kern2.RCapDiagV</key>
-    <integer>-130</integer>
+    <integer>-180</integer>
     <key>public.kern2.RCapDiagW</key>
-    <integer>-80</integer>
+    <integer>-130</integer>
     <key>public.kern2.RCapRound</key>
     <integer>-1</integer>
     <key>public.kern2.RCapTopT</key>
-    <integer>-100</integer>
+    <integer>-130</integer>
   </dict>
   <key>public.kern1.LCapBaseR</key>
   <dict>
@@ -35,39 +35,39 @@
   <key>public.kern1.LCapDiagA</key>
   <dict>
     <key>public.kern2.RCapBaseU</key>
-    <integer>-50</integer>
+    <integer>-70</integer>
     <key>public.kern2.RCapDiagV</key>
-    <integer>-150</integer>
+    <integer>-180</integer>
     <key>public.kern2.RCapDiagW</key>
-    <integer>-100</integer>
+    <integer>-140</integer>
     <key>public.kern2.RCapRound</key>
-    <integer>-50</integer>
+    <integer>-80</integer>
     <key>public.kern2.RCapTopT</key>
     <integer>-110</integer>
   </dict>
   <key>public.kern1.LCapDiagV</key>
   <dict>
     <key>public.kern2.RCapDiagA</key>
-    <integer>-150</integer>
+    <integer>-90</integer>
     <key>public.kern2.RCapRound</key>
-    <integer>-50</integer>
+    <integer>-1</integer>
     <key>public.kern2.RCapTopS</key>
-    <integer>-30</integer>
+    <integer>-1</integer>
   </dict>
   <key>public.kern1.LCapDiagW</key>
   <dict>
     <key>public.kern2.RCapTopS</key>
-    <integer>-10</integer>
+    <integer>-1</integer>
   </dict>
   <key>public.kern1.LCapRound</key>
   <dict>
     <key>public.kern2.RCapDiagA</key>
-    <integer>-30</integer>
+    <integer>-1</integer>
   </dict>
   <key>public.kern1.LCapTopP</key>
   <dict>
     <key>public.kern2.RCapDiagA</key>
-    <integer>-130</integer>
+    <integer>-80</integer>
   </dict>
   <key>public.kern1.LCapTopT</key>
   <dict>
