@@ -25,7 +25,7 @@
   <key>public.kern1.LCapBaseU</key>
   <dict>
     <key>public.kern2.RCapDiagA</key>
-    <integer>-50</integer>
+    <integer>-60</integer>
   </dict>
   <key>public.kern1.LCapCurve</key>
   <dict>
@@ -35,42 +35,63 @@
   <key>public.kern1.LCapDiagA</key>
   <dict>
     <key>public.kern2.RCapBaseU</key>
-    <integer>-50</integer>
+    <integer>-60</integer>
     <key>public.kern2.RCapDiagV</key>
-    <integer>-150</integer>
+    <integer>-210</integer>
     <key>public.kern2.RCapDiagW</key>
-    <integer>-100</integer>
+    <integer>-150</integer>
     <key>public.kern2.RCapRound</key>
     <integer>-50</integer>
     <key>public.kern2.RCapTopT</key>
-    <integer>-110</integer>
+    <integer>-160</integer>
   </dict>
   <key>public.kern1.LCapDiagV</key>
   <dict>
     <key>public.kern2.RCapDiagA</key>
-    <integer>-150</integer>
+    <integer>-190</integer>
     <key>public.kern2.RCapRound</key>
-    <integer>-50</integer>
+    <integer>-40</integer>
     <key>public.kern2.RCapTopS</key>
     <integer>-30</integer>
   </dict>
   <key>public.kern1.LCapDiagW</key>
   <dict>
+    <key>public.kern2.RCapDiagA</key>
+    <integer>-140</integer>
+    <key>public.kern2.RCapRound</key>
+    <integer>-20</integer>
     <key>public.kern2.RCapTopS</key>
     <integer>-10</integer>
+  </dict>
+  <key>public.kern1.LCapDiagX</key>
+  <dict>
+    <key>public.kern2.RCapRound</key>
+    <integer>-50</integer>
   </dict>
   <key>public.kern1.LCapRound</key>
   <dict>
     <key>public.kern2.RCapDiagA</key>
     <integer>-30</integer>
+    <key>public.kern2.RCapDiagV</key>
+    <integer>-40</integer>
+    <key>public.kern2.RCapDiagW</key>
+    <integer>-20</integer>
+    <key>public.kern2.RCapDiagX</key>
+    <integer>-40</integer>
+    <key>public.kern2.RCapTopT</key>
+    <integer>-1</integer>
   </dict>
   <key>public.kern1.LCapTopP</key>
   <dict>
     <key>public.kern2.RCapDiagA</key>
-    <integer>-130</integer>
+    <integer>-120</integer>
   </dict>
   <key>public.kern1.LCapTopT</key>
   <dict>
+    <key>public.kern2.RCapDiagA</key>
+    <integer>-130</integer>
+    <key>public.kern2.RCapRound</key>
+    <integer>-1</integer>
     <key>public.kern2.RCapTopS</key>
     <integer>-1</integer>
   </dict>
