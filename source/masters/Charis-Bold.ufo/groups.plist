@@ -784,7 +784,23 @@
   </array>
   <key>public.kern1.LSmDiagR</key>
   <array>
+    <string>LtnSmInsularS</string>
     <string>LtnSmR</string>
+    <string>LtnSmRBar</string>
+    <string>LtnSmRCedilla</string>
+    <string>LtnSmRDiagStrk</string>
+    <string>LtnSmRDotBlw</string>
+    <string>LtnSmRFishhook</string>
+    <string>LtnSmRFishhookMiddleTilde</string>
+    <string>LtnSmRFishhookPalHook</string>
+    <string>LtnSmRHookTail</string>
+    <string>LtnSmRHookTail.LCStyle</string>
+    <string>LtnSmRLineBlw</string>
+    <string>LtnSmRLngLeg</string>
+    <string>LtnSmRMidLftHook</string>
+    <string>LtnSmRMiddleTilde</string>
+    <string>LtnSmRPalHook</string>
+    <string>LtnSmRum</string>
   </array>
   <key>public.kern1.LSmDiagTrndV</key>
   <array>
@@ -828,27 +844,11 @@
     <string>LtnSmCapW</string>
     <string>LtnSmCapY</string>
     <string>LtnSmGamma</string>
-    <string>LtnSmInsularS</string>
     <string>LtnSmOCurl</string>
-    <string>LtnSmRBar</string>
-    <string>LtnSmRCedilla</string>
-    <string>LtnSmRDiagStrk</string>
-    <string>LtnSmRDotBlw</string>
-    <string>LtnSmRFishhook</string>
-    <string>LtnSmRFishhookMiddleTilde</string>
-    <string>LtnSmRFishhookPalHook</string>
-    <string>LtnSmRHookTail</string>
-    <string>LtnSmRHookTail.LCStyle</string>
-    <string>LtnSmRLineBlw</string>
-    <string>LtnSmRLngLeg</string>
-    <string>LtnSmRMidLftHook</string>
-    <string>LtnSmRMiddleTilde</string>
-    <string>LtnSmRPalHook</string>
     <string>LtnSmRamsHorn</string>
     <string>LtnSmRamsHorn.GammaStyle</string>
     <string>LtnSmRamsHorn.LrgBowl</string>
     <string>LtnSmRevOpnEHook</string>
-    <string>LtnSmRum</string>
     <string>LtnSmSchwaHook</string>
     <string>LtnSmV</string>
     <string>LtnSmV.SItal</string>
@@ -941,25 +941,18 @@
   </array>
   <key>public.kern1.LSmRound</key>
   <array>
-    <string>CySmAbkhasChe</string>
-    <string>CySmAbkhasCheDesc</string>
     <string>CySmBarredO</string>
     <string>CySmE</string>
     <string>CySmE.MongolStyle</string>
     <string>CySmEf</string>
     <string>CySmEr</string>
     <string>CySmFita</string>
-    <string>CySmIe</string>
-    <string>CySmLigAIe</string>
     <string>CySmO</string>
     <string>CySmSchwa</string>
-    <string>CySmYae</string>
     <string>CySmYu</string>
     <string>LtnInvGlottalStop</string>
     <string>LtnInvGlottalStopCurl</string>
     <string>LtnSmAODigraph</string>
-    <string>LtnSmAe</string>
-    <string>LtnSmAe.2StorySItal</string>
     <string>LtnSmB</string>
     <string>LtnSmBBarredStem</string>
     <string>LtnSmBDotAbv</string>
@@ -980,17 +973,9 @@
     <string>LtnSmClosedOmega</string>
     <string>LtnSmClosedOpnE</string>
     <string>LtnSmDBDigraph</string>
-    <string>LtnSmECedilla</string>
-    <string>LtnSmECircumBlw</string>
-    <string>LtnSmEDotBlw</string>
-    <string>LtnSmEOgonek</string>
-    <string>LtnSmEOgonek.RetroHook</string>
-    <string>LtnSmEStrk</string>
-    <string>LtnSmETildeBlw</string>
     <string>LtnSmHalfH</string>
     <string>LtnSmInsularD</string>
     <string>LtnSmLBeltPalHook</string>
-    <string>LtnSmLigOe</string>
     <string>LtnSmO</string>
     <string>LtnSmODotBlw</string>
     <string>LtnSmOLngStrk</string>
@@ -1023,7 +1008,6 @@
     <string>LtnSmTurnedAlpha</string>
     <string>LtnSmTurnedE</string>
     <string>LtnSmTurnedRMiddleTilde</string>
-    <string>LtnSmUe</string>
     <string>LtnSmVHook</string>
   </array>
   <key>public.kern1.LSmRoundDiac</key>
@@ -1098,7 +1082,23 @@
   </array>
   <key>public.kern1.LSmRoundE</key>
   <array>
+    <string>CySmAbkhasChe</string>
+    <string>CySmAbkhasCheDesc</string>
+    <string>CySmIe</string>
+    <string>CySmLigAIe</string>
+    <string>CySmYae</string>
+    <string>LtnSmAe</string>
+    <string>LtnSmAe.2StorySItal</string>
     <string>LtnSmE</string>
+    <string>LtnSmECedilla</string>
+    <string>LtnSmECircumBlw</string>
+    <string>LtnSmEDotBlw</string>
+    <string>LtnSmEOgonek</string>
+    <string>LtnSmEOgonek.RetroHook</string>
+    <string>LtnSmEStrk</string>
+    <string>LtnSmETildeBlw</string>
+    <string>LtnSmLigOe</string>
+    <string>LtnSmUe</string>
   </array>
   <key>public.kern1.LSmSerif</key>
   <array>
