@@ -782,6 +782,10 @@
     <string>LtnSmITilde</string>
     <string>LtnSmITilde.SItal</string>
   </array>
+  <key>public.kern1.LSmDiagR</key>
+  <array>
+    <string>LtnSmR</string>
+  </array>
   <key>public.kern1.LSmDiagTrndV</key>
   <array>
     <string>CySmElMiddleHook</string>
@@ -826,7 +830,6 @@
     <string>LtnSmGamma</string>
     <string>LtnSmInsularS</string>
     <string>LtnSmOCurl</string>
-    <string>LtnSmR</string>
     <string>LtnSmRBar</string>
     <string>LtnSmRCedilla</string>
     <string>LtnSmRDiagStrk</string>

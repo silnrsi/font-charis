@@ -100,6 +100,13 @@
     <key>public.kern2.RCapTopS</key>
     <integer>-1</integer>
   </dict>
+  <key>public.kern1.LSmCurve</key>
+  <dict>
+    <key>public.kern2.RSmDiagV</key>
+    <integer>-60</integer>
+    <key>public.kern2.RSmDiagY</key>
+    <integer>-60</integer>
+  </dict>
   <key>public.kern1.LSmDesc</key>
   <dict>
     <key>public.kern2.RSmDescJ</key>
@@ -124,17 +131,53 @@
     <key>public.kern2.RSmSerifDesc</key>
     <integer>180</integer>
   </dict>
+  <key>public.kern1.LSmDiagR</key>
+  <dict>
+    <key>public.kern2.RSmCurve</key>
+    <integer>-1</integer>
+    <key>public.kern2.RSmCurveDesc</key>
+    <integer>-1</integer>
+    <key>public.kern2.RSmDiagTrndV</key>
+    <integer>-110</integer>
+    <key>public.kern2.RSmRound</key>
+    <integer>-1</integer>
+    <key>public.kern2.RSmRoundDesc</key>
+    <integer>-1</integer>
+  </dict>
   <key>public.kern1.LSmDiagTrndV</key>
   <dict>
+    <key>public.kern2.RSmCurve</key>
+    <integer>-1</integer>
+    <key>public.kern2.RSmCurveDesc</key>
+    <integer>-1</integer>
     <key>public.kern2.RSmDiagV</key>
     <integer>-120</integer>
     <key>public.kern2.RSmDiagY</key>
     <integer>-120</integer>
+    <key>public.kern2.RSmRound</key>
+    <integer>-40</integer>
+    <key>public.kern2.RSmRoundDesc</key>
+    <integer>-40</integer>
   </dict>
   <key>public.kern1.LSmDiagV</key>
   <dict>
+    <key>public.kern2.RSmCurve</key>
+    <integer>-10</integer>
+    <key>public.kern2.RSmCurveDesc</key>
+    <integer>-40</integer>
     <key>public.kern2.RSmDiagTrndV</key>
     <integer>-130</integer>
+    <key>public.kern2.RSmRound</key>
+    <integer>-40</integer>
+    <key>public.kern2.RSmRoundDesc</key>
+    <integer>-40</integer>
+  </dict>
+  <key>public.kern1.LSmDiagX</key>
+  <dict>
+    <key>public.kern2.RSmRound</key>
+    <integer>-30</integer>
+    <key>public.kern2.RSmRoundDesc</key>
+    <integer>-30</integer>
   </dict>
   <key>public.kern1.LSmRound</key>
   <dict>
@@ -157,6 +200,13 @@
     <integer>-1</integer>
     <key>public.kern2.RSmDiagY</key>
     <integer>-10</integer>
+  </dict>
+  <key>public.kern1.LSmSerif</key>
+  <dict>
+    <key>public.kern2.RSmAsc</key>
+    <integer>-10</integer>
+    <key>public.kern2.RSmAscDesc</key>
+    <integer>-30</integer>
   </dict>
   <key>public.kern1.LSmTopF</key>
   <dict>
