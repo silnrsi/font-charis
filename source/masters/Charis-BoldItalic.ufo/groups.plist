@@ -977,7 +977,6 @@
     <string>LtnSmClosedOmega</string>
     <string>LtnSmClosedOpnE</string>
     <string>LtnSmDBDigraph</string>
-    <string>LtnSmE</string>
     <string>LtnSmECedilla</string>
     <string>LtnSmECircumBlw</string>
     <string>LtnSmEDotBlw</string>
@@ -1093,6 +1092,10 @@
     <string>LtnSmOTildeMacron</string>
     <string>LtnSmPAcute</string>
     <string>LtnSmPDotAbv</string>
+  </array>
+  <key>public.kern1.LSmRoundE</key>
+  <array>
+    <string>LtnSmE</string>
   </array>
   <key>public.kern1.LSmSerif</key>
   <array>

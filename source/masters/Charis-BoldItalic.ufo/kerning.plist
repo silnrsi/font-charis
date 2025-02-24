@@ -124,6 +124,40 @@
     <key>public.kern2.RSmSerifDesc</key>
     <integer>280</integer>
   </dict>
+  <key>public.kern1.LSmDiagTrndV</key>
+  <dict>
+    <key>public.kern2.RSmDiagV</key>
+    <integer>-60</integer>
+    <key>public.kern2.RSmDiagY</key>
+    <integer>-60</integer>
+  </dict>
+  <key>public.kern1.LSmDiagV</key>
+  <dict>
+    <key>public.kern2.RSmDiagTrndV</key>
+    <integer>-60</integer>
+  </dict>
+  <key>public.kern1.LSmRound</key>
+  <dict>
+    <key>public.kern2.RSmDiagTrndV</key>
+    <integer>-40</integer>
+    <key>public.kern2.RSmDiagV</key>
+    <integer>-30</integer>
+    <key>public.kern2.RSmDiagX</key>
+    <integer>-50</integer>
+    <key>public.kern2.RSmDiagY</key>
+    <integer>-30</integer>
+  </dict>
+  <key>public.kern1.LSmRoundE</key>
+  <dict>
+    <key>public.kern2.RSmDiagTrndV</key>
+    <integer>-1</integer>
+    <key>public.kern2.RSmDiagV</key>
+    <integer>-1</integer>
+    <key>public.kern2.RSmDiagX</key>
+    <integer>-1</integer>
+    <key>public.kern2.RSmDiagY</key>
+    <integer>-1</integer>
+  </dict>
   <key>public.kern1.LSmTopF</key>
   <dict>
     <key>public.kern2.RBracket</key>
