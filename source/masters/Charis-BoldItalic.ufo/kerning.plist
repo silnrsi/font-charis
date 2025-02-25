@@ -17,6 +17,10 @@
     <integer>-1</integer>
     <key>public.kern2.RCapTopT</key>
     <integer>-130</integer>
+    <key>public.kern2.RSmDiagV</key>
+    <integer>-70</integer>
+    <key>public.kern2.RSmDiagY</key>
+    <integer>-70</integer>
   </dict>
   <key>public.kern1.LCapBaseR</key>
   <dict>
@@ -31,6 +35,10 @@
   <dict>
     <key>public.kern2.RCapDiagA</key>
     <integer>-60</integer>
+    <key>public.kern2.RSmDiagTrndV</key>
+    <integer>-60</integer>
+    <key>public.kern2.RSmRound</key>
+    <integer>-20</integer>
   </dict>
   <key>public.kern1.LCapCurve</key>
   <dict>
@@ -49,6 +57,10 @@
     <integer>-80</integer>
     <key>public.kern2.RCapTopT</key>
     <integer>-190</integer>
+    <key>public.kern2.RSmDiagV</key>
+    <integer>-90</integer>
+    <key>public.kern2.RSmDiagY</key>
+    <integer>-90</integer>
   </dict>
   <key>public.kern1.LCapDiagV</key>
   <dict>
@@ -58,6 +70,18 @@
     <integer>-1</integer>
     <key>public.kern2.RCapTopS</key>
     <integer>-1</integer>
+    <key>public.kern2.RSmCurve</key>
+    <integer>-90</integer>
+    <key>public.kern2.RSmCurveDesc</key>
+    <integer>-30</integer>
+    <key>public.kern2.RSmDiagTrndV</key>
+    <integer>-160</integer>
+    <key>public.kern2.RSmRound</key>
+    <integer>-90</integer>
+    <key>public.kern2.RSmSerif</key>
+    <integer>-20</integer>
+    <key>public.kern2.RSmSerifDesc</key>
+    <integer>-1</integer>
   </dict>
   <key>public.kern1.LCapDiagW</key>
   <dict>
@@ -66,6 +90,18 @@
     <key>public.kern2.RCapRound</key>
     <integer>-1</integer>
     <key>public.kern2.RCapTopS</key>
+    <integer>-1</integer>
+    <key>public.kern2.RSmCurve</key>
+    <integer>-70</integer>
+    <key>public.kern2.RSmCurveDesc</key>
+    <integer>-30</integer>
+    <key>public.kern2.RSmDiagTrndV</key>
+    <integer>-130</integer>
+    <key>public.kern2.RSmRound</key>
+    <integer>-70</integer>
+    <key>public.kern2.RSmSerif</key>
+    <integer>-10</integer>
+    <key>public.kern2.RSmSerifDesc</key>
     <integer>-1</integer>
   </dict>
   <key>public.kern1.LCapDiagX</key>
@@ -90,6 +126,14 @@
   <dict>
     <key>public.kern2.RCapDiagA</key>
     <integer>-70</integer>
+    <key>public.kern2.RSmCurve</key>
+    <integer>-10</integer>
+    <key>public.kern2.RSmCurveDesc</key>
+    <integer>-1</integer>
+    <key>public.kern2.RSmDiagTrndV</key>
+    <integer>-110</integer>
+    <key>public.kern2.RSmRound</key>
+    <integer>-20</integer>
   </dict>
   <key>public.kern1.LCapTopT</key>
   <dict>
@@ -98,6 +142,18 @@
     <key>public.kern2.RCapRound</key>
     <integer>-1</integer>
     <key>public.kern2.RCapTopS</key>
+    <integer>-1</integer>
+    <key>public.kern2.RSmCurve</key>
+    <integer>-70</integer>
+    <key>public.kern2.RSmCurveDesc</key>
+    <integer>-30</integer>
+    <key>public.kern2.RSmDiagTrndV</key>
+    <integer>-120</integer>
+    <key>public.kern2.RSmRound</key>
+    <integer>-70</integer>
+    <key>public.kern2.RSmSerif</key>
+    <integer>-1</integer>
+    <key>public.kern2.RSmSerifDesc</key>
     <integer>-1</integer>
   </dict>
   <key>public.kern1.LSmCurve</key>
