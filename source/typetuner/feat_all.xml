@@ -85,13 +85,13 @@
 			<cmd name="encode" args="014A Eng.Kom" />
 		</value>
 	</feature>
-	<feature name="Capital N left hook" value="Standard (capital form)" tag="LgNLftHk">
-		<value name="Standard (capital form)" tag="Dflt">
+	<feature name="Capital N left hook" value="Standard (lowercase form)" tag="LgNLftHk">
+		<value name="Standard (lowercase form)" tag="Dflt">
 			<cmd name="null" args="null" />
 		</value>
-		<value name="Lowercase form" tag="Lc">
-			<cmd name="encode" args="0272 uni0272.LCStyle" />
-			<cmd name="encode" args="019D uni019D.LCStyle" />
+		<value name="Uppercase form" tag="Uc">
+			<cmd name="encode" args="0272 uni0272.UCStyle" />
+			<cmd name="encode" args="019D uni019D.UCStyle" />
 		</value>
 	</feature>
 	<feature name="Open O" value="Standard (bottom serif)" tag="OpnO">
@@ -1228,8 +1228,8 @@
 		<test select="LgHStrk-Vrt SmCp-T">
 			<cmd name="encode" args="0127 hbar.VertStrk.sc" />
 		</test>
-		<test select="LgNLftHk-Lc SmCp-T">
-			<cmd name="encode" args="0272 uni0272.LCStyle.sc" />
+		<test select="LgNLftHk-Uc SmCp-T">
+			<cmd name="encode" args="0272 uni0272.UCStyle.sc" />
 		</test>
 		<test select="LgRTl-Lc SmCp-T">
 			<cmd name="encode" args="027D uni027D.LCStyle.sc" />
