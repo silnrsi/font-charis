@@ -144,7 +144,7 @@ f"hf'hf/LftDblQuotMrk hf/RtDblQuotMrk hf/LftSglQuotMrk hf/RtSglQuotMrk hf/ModApo
 /RtDblQuotMrk A/RtDblQuotMrk c/RtDblQuotMrk d/RtDblQuotMrk e/RtDblQuotMrk o/RtDblQuotMrk q/RtDblQuotMrk v/RtDblQuotMrk y/RtDblQuotMrk w/RtDblQuotMrk x/RtDblQuotMrk/LtnSmTurnedV 
 /LftSglQuotMrk A/LftSglQuotMrk c/LftSglQuotMrk d/LftSglQuotMrk e/LftSglQuotMrk o/LftSglQuotMrk q/LftSglQuotMrk v/LftSglQuotMrk y/LftSglQuotMrk w/LftSglQuotMrk x/LftSglQuotMrk/LtnSmTurnedV 
 /RtSglQuotMrk A/RtSglQuotMrk c/RtSglQuotMrk d/RtSglQuotMrk e/RtSglQuotMrk o/RtSglQuotMrk q/RtSglQuotMrk v/RtSglQuotMrk y/RtSglQuotMrk w/RtSglQuotMrk x/RtSglQuotMrk/LtnSmTurnedV 
-/ModApos A/ModApos c/ModApos d/ModApos e/ModApos o/ModApos q/ModApos v/ModApos y/ModApos w/ModApos x</string>
+/ModApos A/ModApos c/ModApos d/ModApos e/ModApos o/ModApos q/ModApos v/ModApos y/ModApos w/ModApos x/ModApos/LtnSmTurnedV</string>
     <string>"a"g"s"m"n"p"r"u"z
 'a'g's'm'n'p'r'u'z
 /LftDblQuotMrk a/LftDblQuotMrk g/LftDblQuotMrk s/LftDblQuotMrk m/LftDblQuotMrk n/LftDblQuotMrk p/LftDblQuotMrk r/LftDblQuotMrk u/LftDblQuotMrk z
@@ -225,8 +225,8 @@ YgY/LtnSmORetrHook YþYpYäYöY.Y/LftSglQuotMrk
 H/LtnCapWHook H/LtnCapWHook AWAH/LtnCapYHook.RtHook H/LtnCapYHook.RtHook AYAH</string>
     <string>VaVäVoVöV/LtnSmORetrHook WaWäWoWöW/LtnSmORetrHook 
 PaPäFaFäPoPöP/LtnSmORetrHook FoFöF/LtnSmORetrHook 
-TaTäToTöT/LtnSmORetrHook/ModApos a/ModApos ä/ModApos o/ModApos ö/LftSglQuotMrk a/LftSglQuotMrk ä/LftSglQuotMrk o/LftSglQuotMrk ö
-a/ModApos á/ModApos a/RtSglQuotMrk á/RtSglQuotMrk a/CombLftAngAbv á/CombLftAngAbv avávayáyg/ModApos/LtnSmGAcute/ModApos g/RtSglQuotMrk/LtnSmGAcute/RtSglQuotMrk g/CombLftAngAbv/LtnSmGAcute/CombLftAngAbv gj/LtnSmGAcute j
+TaTäToTöT/ModApos/LtnSmORetrHook/ModApos a/ModApos ä/ModApos o/ModApos ö/LftSglQuotMrk/LtnSmORetrHook/LftSglQuotMrk a/LftSglQuotMrk ä/LftSglQuotMrk o/LftSglQuotMrk ö
+a/ModApos á/ModApos a/RtSglQuotMrk á/RtSglQuotMrk a/CombLftAngAbv á/CombLftAngAbv avávayáy/ModApos g/ModApos/LtnSmGAcute/ModApos g/RtSglQuotMrk/LtnSmGAcute/RtSglQuotMrk g/CombLftAngAbv/LtnSmGAcute/CombLftAngAbv gj/LtnSmGAcute j
 v/ModApos/LtnSmVTilde/ModApos v./LtnSmVTilde .v/RtSglQuotMrk/LtnSmVTilde/RtSglQuotMrk v/CombLftAngAbv/LtnSmVTilde/CombLftAngAbv va/LtnSmVTilde avä/LtnSmVTilde ävg/LtnSmVTilde gvo/LtnSmVTilde ovö/LtnSmVTilde öv/LtnSmORetrHook/LtnSmVTilde/LtnSmORetrHook v/LtnSmTurnedV/LtnSmVTilde/LtnSmTurnedV 
 r/ModApos/LtnSmRAcute/ModApos r./LtnSmRAcute .r/RtSglQuotMrk/LtnSmRAcute/RtSglQuotMrk r/CombLftAngAbv/LtnSmRAcute/CombLftAngAbv ra/LtnSmRAcute arä/LtnSmRAcute ärg/LtnSmRAcute gro/LtnSmRAcute orö/LtnSmRAcute ör/LtnSmORetrHook/LtnSmRAcute/LtnSmORetrHook r/LtnSmTurnedV/LtnSmRAcute/LtnSmTurnedV 
 x/ModApos/LtnSmXDiaer/ModApos x/RtSglQuotMrk/LtnSmXDiaer/RtSglQuotMrk x/CombLftAngAbv/LtnSmXDiaer/CombLftAngAbv xo/LtnSmXDiaer oxö/LtnSmXDiaer öx/LtnSmORetrHook/LtnSmXDiaer/LtnSmORetrHook/Space/Space 
