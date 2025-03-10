@@ -2774,10 +2774,12 @@ x/LtnSmTurnedH/LtnSmLTrnd/LtnSmTrndI/LtnSmLDotBlw n/ModSmTurnedH/ModSmX/ModSmTrn
     <string>ModLowColon</string>
     <string>ModLowColon.Wide</string>
     <string>ModTurnedComma</string>
+    <string>ModTurnedComma.Lrg</string>
     <string>CombTrndCommaAbv</string>
     <string>CombTrndCommaAbv.Lrg</string>
     <string>SglHighRev9QuotMrk</string>
     <string>ModRevComma</string>
+    <string>ModRevComma.Lrg</string>
     <string>CombRevCommaAbv</string>
     <string>CombRevCommaAbv.Lrg</string>
     <string>ModApos</string>
@@ -4984,7 +4986,7 @@ x/LtnSmTurnedH/LtnSmLTrnd/LtnSmTrndI/LtnSmLDotBlw n/ModSmTurnedH/ModSmX/ModSmTrn
     <key>CombRevCommaAbv</key>
     <string>uni0314</string>
     <key>CombRevCommaAbv.Lrg</key>
-    <string>uni02314.Lrg</string>
+    <string>uni0314.Lrg</string>
     <key>CombRingAbv</key>
     <string>uni030A</string>
     <key>CombRingBlw</key>
@@ -11281,6 +11283,8 @@ x/LtnSmTurnedH/LtnSmLTrnd/LtnSmTrndI/LtnSmLDotBlw n/ModSmTurnedH/ModSmX/ModSmTrn
     <string>u107B9</string>
     <key>ModRevComma</key>
     <string>uni02BD</string>
+    <key>ModRevComma.Lrg</key>
+    <string>uni02BD.Lrg</string>
     <key>ModRevGlottalStop</key>
     <string>uni02C1</string>
     <key>ModRevGlottalStopStrk</key>
@@ -11569,6 +11573,8 @@ x/LtnSmTurnedH/LtnSmLTrnd/LtnSmTrndI/LtnSmLDotBlw n/ModSmTurnedH/ModSmX/ModSmTrn
     <string>uni02D0</string>
     <key>ModTurnedComma</key>
     <string>uni02BB</string>
+    <key>ModTurnedComma.Lrg</key>
+    <string>uni02BB.Lrg</string>
     <key>ModUnaspd</key>
     <string>uni02ED</string>
     <key>ModUpArrwhd</key>
