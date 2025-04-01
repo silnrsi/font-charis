@@ -82,6 +82,8 @@
     <integer>-1</integer>
     <key>public.kern2.RCapTopS</key>
     <integer>-1</integer>
+    <key>public.kern2.RPunctBase</key>
+    <integer>-160</integer>
     <key>public.kern2.RSmCurve</key>
     <integer>-90</integer>
     <key>public.kern2.RSmCurveDesc</key>
@@ -109,6 +111,8 @@
     <integer>-1</integer>
     <key>public.kern2.RCapTopS</key>
     <integer>-1</integer>
+    <key>public.kern2.RPunctBase</key>
+    <integer>-100</integer>
     <key>public.kern2.RSmCurve</key>
     <integer>-70</integer>
     <key>public.kern2.RSmCurveDesc</key>
@@ -150,6 +154,8 @@
   <dict>
     <key>public.kern2.RCapDiagA</key>
     <integer>-70</integer>
+    <key>public.kern2.RPunctBase</key>
+    <integer>-180</integer>
     <key>public.kern2.RSmCurve</key>
     <integer>-10</integer>
     <key>public.kern2.RSmCurveDesc</key>
@@ -173,6 +179,8 @@
     <integer>-1</integer>
     <key>public.kern2.RCapTopS</key>
     <integer>-1</integer>
+    <key>public.kern2.RPunctBase</key>
+    <integer>-130</integer>
     <key>public.kern2.RSmCurve</key>
     <integer>-70</integer>
     <key>public.kern2.RSmCurveDesc</key>
@@ -221,9 +229,26 @@
     <key>public.kern2.RSmSerifDesc</key>
     <integer>-1</integer>
   </dict>
+  <key>public.kern1.LPunctBase</key>
+  <dict>
+    <key>public.kern2.RCapDiagV</key>
+    <integer>-230</integer>
+    <key>public.kern2.RCapDiagW</key>
+    <integer>-190</integer>
+    <key>public.kern2.RCapTopT</key>
+    <integer>-180</integer>
+    <key>public.kern2.RQuote</key>
+    <integer>-180</integer>
+    <key>public.kern2.RSmDiagV</key>
+    <integer>-110</integer>
+    <key>public.kern2.RSmDiagY</key>
+    <integer>-110</integer>
+  </dict>
   <key>public.kern1.LQuote</key>
   <dict>
     <key>public.kern2.RCapDiagA</key>
+    <integer>-180</integer>
+    <key>public.kern2.RPunctBase</key>
     <integer>-180</integer>
     <key>public.kern2.RSmCurve</key>
     <integer>-70</integer>
@@ -319,6 +344,8 @@
   </dict>
   <key>public.kern1.LSmDiagR</key>
   <dict>
+    <key>public.kern2.RPunctBase</key>
+    <integer>-150</integer>
     <key>public.kern2.RRelease</key>
     <integer>-120</integer>
     <key>public.kern2.RSmCurve</key>
@@ -338,6 +365,8 @@
   </dict>
   <key>public.kern1.LSmDiagRDiac</key>
   <dict>
+    <key>public.kern2.RPunctBase</key>
+    <integer>-150</integer>
     <key>public.kern2.RRelease</key>
     <integer>-10</integer>
     <key>public.kern2.RSmCurve</key>
@@ -384,6 +413,8 @@
   <dict>
     <key>public.kern2.RModApos</key>
     <integer>-60</integer>
+    <key>public.kern2.RPunctBase</key>
+    <integer>-100</integer>
     <key>public.kern2.RQuote</key>
     <integer>-60</integer>
     <key>public.kern2.RRelease</key>
@@ -407,6 +438,8 @@
   <dict>
     <key>public.kern2.RModApos</key>
     <integer>-60</integer>
+    <key>public.kern2.RPunctBase</key>
+    <integer>-100</integer>
     <key>public.kern2.RQuote</key>
     <integer>-60</integer>
     <key>public.kern2.RRelease</key>
