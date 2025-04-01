@@ -199,9 +199,11 @@ O/CombDblInvBreve.mid OO/CombDblBreve.mid OO/CombDblCircum.mid OO/CombDblTilde.m
 o/CombDblInvBreve.low oo/CombDblBreve.low oo/CombDblCircum.low oo/CombDblTilde.low oo/CombDblMacron.low oo/CombDblDiaer.low o
 o/CombDblInvBreveBlw.blwhigh oo/CombDblBreveBlw.blwhigh oo/CombDblMacronBlw.blwhigh oo/CombDblRtArrwBlw.blwhigh o
 g/CombDblInvBreveBlw gg/CombDblBreveBlw gg/CombDblMacronBlw gg/CombDblRtArrwBlw g/Space g/CombDblBreveBlw/CombDblInvBreveBlw.blwlow gg/CombDblBreveBlw/CombDblBreveBlw.blwlow gg/CombDblBreveBlw/CombDblMacronBlw.blwlow gg/CombDblBreveBlw/CombDblRtArrwBlw.blwlow g</string>
-    <string>/Space H/LtnCapBHook HL/LtnCapBHook A/LtnCapBHook R/LtnCapBHook C/LtnCapBHook O/LtnCapBHook 
-H/LtnCapDStrkHook H/LtnCapDHook H/LtnCapHHook H/LtnCapPHook H/LtnCapYHook HT
-R/LtnCapDStrkHook R/LtnCapDHook R/LtnCapHHook R/LtnCapPHook R/LtnCapYHook RT</string>
+    <string>H/LtnCapBHook HL/LtnCapBHook A/LtnCapBHook R/LtnCapBHook C/LtnCapBHook O/LtnCapBHook 
+H/LtnCapDStrkHook H/LtnCapDHook H/LtnCapHHook H/LtnCapPHook H/LtnCapYHook H/LtnCapTHook HT
+R/LtnCapDStrkHook R/LtnCapDHook R/LtnCapHHook R/LtnCapPHook R/LtnCapYHook R/LtnCapTHook RT
+/LftSglQuotMrk/LtnCapDStrkHook/LftSglQuotMrk/LtnCapDHook/LftSglQuotMrk/LtnCapHHook/LftSglQuotMrk/LtnCapPHook/LftSglQuotMrk/LtnCapYHook/LftSglQuotMrk/LtnCapTHook/LftSglQuotMrk T
+/RtSglQuotMrk/LtnCapDStrkHook/RtSglQuotMrk/LtnCapDHook/RtSglQuotMrk/LtnCapHHook/RtSglQuotMrk/LtnCapPHook/RtSglQuotMrk/LtnCapYHook/RtSglQuotMrk/LtnCapTHook/RtSglQuotMrk T</string>
     <string>OA/LtnCapOHorn AUA/LtnCapUHorn AO/RtSglQuotMrk/LtnCapOHorn/RtSglQuotMrk U/RtSglQuotMrk/LtnCapUHorn/RtSglQuotMrk 
 oaodohonotovoxo/ModApos o/RtSglQuotMrk 
 /LtnSmOHorn a/LtnSmOHorn g/LtnSmOHorn/LtnSmORetrHook/LtnSmOHorn d/LtnSmOHorn h/LtnSmOHorn þ/LtnSmOHorn n/LtnSmOHorn t/LtnSmOHorn v/LtnSmOHorn x/LtnSmOHorn/ModApos/LtnSmOHorn/RtSglQuotMrk 
@@ -222,7 +224,14 @@ YaYeY/LtnSmOpnE YnY/LtnSmVHook YbYfYvY/LtnSmTurnedV YyYx
 /LtnCapYHook.RtHook a/LtnCapYHook.RtHook e/LtnCapYHook.RtHook/LtnSmOpnE/LtnCapYHook.RtHook n/LtnCapYHook.RtHook/LtnSmVHook/LtnCapYHook.RtHook b/LtnCapYHook.RtHook f/LtnCapYHook.RtHook v/LtnCapYHook.RtHook/LtnSmTurnedV/LtnCapYHook.RtHook y/LtnCapYHook.RtHook x
 YgY/LtnSmORetrHook YþYpYäYöY.Y/LftSglQuotMrk 
 /LtnCapYHook.RtHook g/LtnCapYHook.RtHook/LtnSmORetrHook/LtnCapYHook.RtHook þ/LtnCapYHook.RtHook p/LtnCapYHook.RtHook ä/LtnCapYHook.RtHook ö/LtnCapYHook.RtHook ./LtnCapYHook.RtHook/LftSglQuotMrk 
-H/LtnCapWHook H/LtnCapWHook AWAH/LtnCapYHook.RtHook H/LtnCapYHook.RtHook AYAH</string>
+H/LtnCapWHook H/LtnCapWHook AWAH/LtnCapYHook.RtHook H/LtnCapYHook.RtHook AYAH
+cidifi/LtnSmG.SngBowl ipiqitiviwiyi/Space wi/RtSglQuotMrk iwi/ModApos i
+/LtnSmCHook i/LtnSmDHook i/LtnSmDTailHook ifi/LtnSmFHook i/LtnSmDotlessJStrkHook i/LtnSmGHook i/LtnSmPHook.BowlHook i/LtnSmQHook i/LtnSmTHook i/LtnSmTHookRetrHook i/LtnSmTeshDigraph i/LtnSmVRtHook i/LtnSmWHook i/LtnSmYHook.RtHook i
+/LtnSmCHook l/LtnSmDHook l/LtnSmDTailHook lfl/LtnSmFHook l/LtnSmDotlessJStrkHook l/LtnSmGHook l/LtnSmPHook.BowlHook l/LtnSmQHook l/LtnSmTHook l/LtnSmTHookRetrHook l/LtnSmTeshDigraph l/LtnSmVRtHook l/LtnSmWHook l/LtnSmYHook.RtHook l
+/LtnSmDHook/LtnSmBHook/LtnSmDHook k/LtnSmDHook l/LtnSmDHook b/LtnSmYHook.RtHook e/LtnSmYHook.RtHook k/LtnSmYHook.RtHook l/LtnSmYHook.RtHook n/LtnSmYHook.RtHook o/LtnSmYHook.RtHook u/LtnSmYHook.RtHook r/LtnSmYHook.RtHook/LtnSmYHook.RtHook 
+/LtnSmCHook '/LtnSmDHook.TopBar '/LtnSmDTailHook 'f'/LtnSmFHook '/LtnSmDotlessJStrkHook '/LtnSmGHook '/LtnSmPHook.BowlHook '/LtnSmQHook '/LtnSmTHook '/LtnSmTHookRetrHook '/LtnSmTeshDigraph '/LtnSmVRtHook '/LtnSmWHook '/LtnSmYHook.RtHook '/LtnCapCHook '/LtnCapGHook '/LtnCapWHook '/LtnCapYHook.RtHook '
+/LtnSmCHook/RtSglQuotMrk/LtnSmDHook.TopBar/RtSglQuotMrk/LtnSmDTailHook/RtSglQuotMrk f/RtSglQuotMrk/LtnSmFHook/RtSglQuotMrk/LtnSmDotlessJStrkHook/RtSglQuotMrk/LtnSmGHook/RtSglQuotMrk/LtnSmPHook.BowlHook/RtSglQuotMrk/LtnSmQHook/RtSglQuotMrk/LtnSmTHook/RtSglQuotMrk/LtnSmTHookRetrHook/RtSglQuotMrk/LtnSmTeshDigraph/RtSglQuotMrk/LtnSmVRtHook/RtSglQuotMrk/LtnSmWHook/RtSglQuotMrk/LtnSmYHook.RtHook/RtSglQuotMrk/LtnCapCHook/RtSglQuotMrk/LtnCapGHook/RtSglQuotMrk/LtnCapWHook/RtSglQuotMrk/LtnCapYHook.RtHook/RtSglQuotMrk 
+|/LtnSmCHook |/LtnSmDHook |/LtnSmDTailHook |f|/LtnSmFHook |/LtnSmDotlessJStrkHook |/LtnSmGHook |/LtnSmPHook.BowlHook |/LtnSmQHook |/LtnSmTHook |/LtnSmTHookRetrHook |/LtnSmTeshDigraph |/LtnSmVRtHook |/LtnSmWHook |/LtnSmYHook.RtHook |/LtnCapCHook |/LtnCapGHook |/LtnCapWHook |/LtnCapYHook.RtHook |</string>
     <string>VaVäVoVöV/LtnSmORetrHook WaWäWoWöW/LtnSmORetrHook 
 PaPäFaFäPoPöP/LtnSmORetrHook FoFöF/LtnSmORetrHook 
 TaTäToTöT/ModApos/LtnSmORetrHook/ModApos a/ModApos ä/ModApos o/ModApos ö/LftSglQuotMrk/LtnSmORetrHook/LftSglQuotMrk a/LftSglQuotMrk ä/LftSglQuotMrk o/LftSglQuotMrk ö
