@@ -376,6 +376,8 @@
   <key>public.kern1.LModApos</key>
   <array>
     <string>ModApos</string>
+    <string>ModRevComma</string>
+    <string>ModTurnedComma</string>
   </array>
   <key>public.kern1.LPunctBase</key>
   <array>
@@ -1604,6 +1606,8 @@
   <key>public.kern2.RModApos</key>
   <array>
     <string>ModApos</string>
+    <string>ModRevComma</string>
+    <string>ModTurnedComma</string>
   </array>
   <key>public.kern2.RPunctBase</key>
   <array>
