@@ -1,8 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="ModTurnedComma.Lrg" format="2">
-  <anchor x="-399" y="1720" name="U"/>
-  <anchor x="-443" y="1100" name="_U"/>
+  <advance width="693"/>
   <outline>
-    <component base="CombTrndCommaAbv.Lrg"/>
+    <contour>
+      <point x="358" y="689" type="curve" smooth="yes"/>
+      <point x="480" y="689"/>
+      <point x="599" y="793"/>
+      <point x="599" y="919" type="curve" smooth="yes"/>
+      <point x="599" y="955"/>
+      <point x="587" y="996"/>
+      <point x="569" y="1027" type="curve"/>
+      <point x="409" y="1027" type="line"/>
+      <point x="444" y="1214"/>
+      <point x="566" y="1357"/>
+      <point x="747" y="1420" type="curve"/>
+      <point x="721" y="1520" type="line"/>
+      <point x="454" y="1446"/>
+      <point x="172" y="1192"/>
+      <point x="172" y="900" type="curve" smooth="yes"/>
+      <point x="172" y="780"/>
+      <point x="230" y="689"/>
+    </contour>
   </outline>
 </glyph>
