@@ -933,7 +933,12 @@
     <string>LtnSmXDiaer</string>
     <string>LtnSmXDotAbv</string>
   </array>
-  <key>public.kern1.LSmHook</key>
+  <key>public.kern1.LSmHookC</key>
+  <array>
+    <string>LtnSmCHook</string>
+    <string>LtnSmGHook</string>
+  </array>
+  <key>public.kern1.LSmHookV</key>
   <array>
     <string>LtnSmVRtHook</string>
     <string>LtnSmWHook</string>
@@ -1260,7 +1265,6 @@
     <string>CySmYi</string>
     <string>LtnLigSmFSmF</string>
     <string>LtnLigSmFSmF.SItal</string>
-    <string>LtnSmCHook</string>
     <string>LtnSmCapGHook</string>
     <string>LtnSmDHook</string>
     <string>LtnSmDHook.TopBar</string>
@@ -1278,7 +1282,6 @@
     <string>LtnSmFHookStrk</string>
     <string>LtnSmFMiddleTilde</string>
     <string>LtnSmFPalHook</string>
-    <string>LtnSmGHook</string>
     <string>LtnSmIs</string>
     <string>LtnSmLigFf</string>
     <string>LtnSmLngS</string>

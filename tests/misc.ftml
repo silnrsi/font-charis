@@ -92,4 +92,57 @@
       <string>\u000031\u000034\u000036\u002044\u000039\u000037\u000030</string>
     </test>
   </testgroup>
+  <testgroup label="Hooked combos in Pulaar (fuc) and Serer (srr)">
+    <test label="fuc + srr">
+      <string>ƴoo</string>
+    </test>
+    <test label="fuc + srr">
+      <string>ƴuf</string>
+    </test>
+    <test label="srr">
+      <string>moƴna</string>
+    </test>
+    <test label="srr">
+      <string>xaƴi</string>
+    </test>
+    <test label="srr">
+      <string>sooƴkee</string>
+    </test>
+    <test label="srr">
+      <string>ƈi</string>
+    </test>
+    <test label="fuc + srr">
+      <string>ɗik</string>
+    </test>
+    <test label="fuc">
+      <string>woɗɓe</string>
+    </test>
+    <test label="fuc">
+      <string>leƴƴi</string>
+    </test>
+    <test label="fuc">
+      <string>Taƴre</string>
+    </test>
+    <test label="fuc">
+      <string>ƴeew</string>
+    </test>
+    <test label="fuc">
+      <string>Ƴeew</string>
+    </test>
+    <test label="srr 2019">
+      <string>njaaxiɗ\u002019a</string>
+    </test>
+    <test label="srr 02BE">
+      <string>njaaxiɗ\u0002BEa</string>
+    </test>
+    <test label="U+2019">
+      <string>nqaƴ\u002019eena</string>
+    </test>
+    <test label="U+02BC">
+      <string>nqaƴ\u0002BCeena</string>
+    </test>
+    <test label="U+02BE">
+      <string>nqaƴ\u0002BEeena</string>
+    </test>
+  </testgroup>
 </ftml>
