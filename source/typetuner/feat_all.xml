@@ -186,8 +186,10 @@
 		<value name="Large" tag="Lg">
 			<cmd name="encode" args="A78B uniA78B.Lrg" />
 			<cmd name="encode" args="A78C uniA78C.Lrg" />
+			<cmd name="encode" args="02BB uni02BB.Lrg" />
 			<cmd name="encode" args="0312 uni0312.Lrg" />
-			<cmd name="encode" args="0314 uni02314.Lrg" />
+			<cmd name="encode" args="02BD uni02BD.Lrg" />
+			<cmd name="encode" args="0314 uni0314.Lrg" />
 			<cmd name="encode" args="02BC uni02BC.Lrg" />
 		</value>
 	</feature>

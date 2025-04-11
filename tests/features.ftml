@@ -385,21 +385,25 @@ U+2980" stylename="cv69_1">
     </test>
   </testgroup>
   <testgroup label="cv70">
-    <test label="U+02BC
+    <test label="U+02BB
+U+02BC
+U+02BD
 U+0312
 U+0314
 U+A78B
 U+A78C">
-      <comment>ModApos CombTrndCommaAbv CombRevCommaAbv LtnCapSaltillo LtnSmSaltillo</comment>
-      <string>\u0002BC\u0025CC\u000312\u0025CC\u000314\u00A78B\u00A78C</string>
+      <comment>ModTurnedComma ModApos ModRevComma CombTrndCommaAbv CombRevCommaAbv LtnCapSaltillo LtnSmSaltillo</comment>
+      <string>\u0002BB\u0002BC\u0002BD\u0025CC\u000312\u0025CC\u000314\u00A78B\u00A78C</string>
     </test>
-    <test label="U+02BC
+    <test label="U+02BB
+U+02BC
+U+02BD
 U+0312
 U+0314
 U+A78B
 U+A78C" stylename="cv70_1">
-      <comment>ModApos CombTrndCommaAbv CombRevCommaAbv LtnCapSaltillo LtnSmSaltillo</comment>
-      <string>\u0002BC\u0025CC\u000312\u0025CC\u000314\u00A78B\u00A78C</string>
+      <comment>ModTurnedComma ModApos ModRevComma CombTrndCommaAbv CombRevCommaAbv LtnCapSaltillo LtnSmSaltillo</comment>
+      <string>\u0002BB\u0002BC\u0002BD\u0025CC\u000312\u0025CC\u000314\u00A78B\u00A78C</string>
     </test>
   </testgroup>
   <testgroup label="cv71">

@@ -799,6 +799,7 @@ lookup bascl_sub {
     sub @cno_bascl by @c_bascl;
 } bascl_sub;
 
+# c_Lrg does not contain correct glyphs for cv70
 lookup apos_sub {
   lookupflag 0;
     sub LtnCapSaltillo from [LtnCapSaltillo.Lrg ];
@@ -807,6 +808,8 @@ lookup apos_sub {
     sub ModApos from [ModApos.Lrg ];
     sub CombTrndCommaAbv from [CombTrndCommaAbv.Lrg ];
     sub CombRevCommaAbv from [CombRevCommaAbv.Lrg ];
+    sub ModTurnedComma from [ModTurnedComma.Lrg ];
+    sub ModRevComma from [ModRevComma.Lrg ];
 } apos_sub;
 
 lookup colon_sub {
@@ -1953,7 +1956,7 @@ feature cv70 {
       };
       
       SampleTextNameID {
-       name 3 1 0x0409 "ʼꞋꞌ";  # English US
+       name 3 1 0x0409 "ʼꞋꞌʻʽ";  # English US
       };
       
       ParamUILabelNameID {
