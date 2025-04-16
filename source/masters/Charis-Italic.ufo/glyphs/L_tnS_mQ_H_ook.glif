@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="LtnSmQHook" format="2">
-  <advance width="1069"/>
+  <advance width="1109"/>
   <unicode hex="02A0"/>
   <anchor x="222" y="-100" name="L"/>
   <anchor x="863" y="1540" name="U"/>
@@ -13,24 +13,21 @@
       <point x="748" y="-355"/>
       <point x="739" y="-340"/>
       <point x="743" y="-317" type="curve" smooth="yes"/>
-      <point x="1018" y="1092" type="line" smooth="yes"/>
-      <point x="1061" y="1313"/>
-      <point x="1077" y="1384"/>
-      <point x="1155" y="1384" type="curve"/>
-      <point x="1317" y="1274" type="line"/>
-      <point x="1366" y="1282"/>
-      <point x="1430" y="1317"/>
-      <point x="1430" y="1386" type="curve" smooth="yes"/>
-      <point x="1430" y="1444"/>
-      <point x="1405" y="1509"/>
-      <point x="1276" y="1509" type="curve" smooth="yes"/>
-      <point x="1028" y="1509"/>
-      <point x="908" y="1343"/>
-      <point x="862" y="1108" type="curve" smooth="yes"/>
-      <point x="852" y="1056"/>
-      <point x="843" y="1004"/>
-      <point x="834" y="952" type="curve"/>
-      <point x="797" y="981"/>
+      <point x="989" y="943" type="line" smooth="yes"/>
+      <point x="1026" y="1133"/>
+      <point x="1047" y="1185"/>
+      <point x="1091" y="1205" type="curve"/>
+      <point x="1253" y="1095" type="line"/>
+      <point x="1302" y="1103"/>
+      <point x="1366" y="1138"/>
+      <point x="1366" y="1207" type="curve" smooth="yes"/>
+      <point x="1366" y="1265"/>
+      <point x="1341" y="1330"/>
+      <point x="1212" y="1330" type="curve" smooth="yes"/>
+      <point x="977" y="1330"/>
+      <point x="849" y="1167"/>
+      <point x="813" y="961" type="curve"/>
+      <point x="776" y="990"/>
       <point x="727" y="1012"/>
       <point x="641" y="1012" type="curve" smooth="yes"/>
       <point x="299" y="1012"/>
@@ -58,7 +55,7 @@
       <point x="668" y="918" type="curve" smooth="yes"/>
       <point x="698" y="918"/>
       <point x="778" y="825"/>
-      <point x="772" y="795" type="curve"/>
+      <point x="772" y="795" type="curve" smooth="yes"/>
       <point x="662" y="231" type="line"/>
       <point x="600" y="168"/>
       <point x="514" y="100"/>
