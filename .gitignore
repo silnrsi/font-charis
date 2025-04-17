@@ -19,6 +19,9 @@ documentation/source/pdftemp/
 documentation/source/productsite/
 web/*.woff*
 
+# temporary interpolation test folder
+variable_ttf/
+
 # graphite
 $_temp.gdl
 gdlerr.txt

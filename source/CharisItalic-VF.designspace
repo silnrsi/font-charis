@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='utf-8'?>
+<designspace format="3">
+    <axes>
+        <axis default="400.0" maximum="700.0" minimum="400.0" name="weight" tag="wght">
+            <map input="400.0" output="400.0" />
+            <map input="500.0" output="500.0" />
+            <map input="600.0" output="600.0" />
+            <map input="700.0" output="700.0" />
+            <labelname xml:lang="en">Weight</labelname>
+        </axis>
+        <axis default="100.0" maximum="100.0" minimum="100.0" name="width" tag="wdth">
+            <map input="100.0" output="100.0" />
+            <labelname xml:lang="en">Width</labelname>
+        </axis>
+        <axis default="0.0" maximum="0.0" minimum="0.0" name="custom" tag="XXXX">
+            <map input="0.0" output="0.0" />
+            <labelname xml:lang="en">Custom</labelname>
+        </axis>
+    </axes>
+    <sources>
+        <source familyname="Charis" filename="masters/Charis-Italic.ufo" name="Charis Italic" stylename="Italic">
+            <lib copy="1" />
+            <groups copy="1" />
+            <features copy="1" />
+            <info copy="1" />
+            <location>
+                <dimension name="weight" xvalue="400.000000" />
+                <dimension name="width" xvalue="100.000000" />
+                <dimension name="custom" xvalue="0.000000" />
+            </location>
+        </source>
+        <source familyname="Charis" filename="masters/Charis-BoldItalic.ufo" name="Charis Bold Italic" stylename="Bold Italic">
+            <location>
+                <dimension name="weight" xvalue="700.000000" />
+                <dimension name="width" xvalue="100.000000" />
+                <dimension name="custom" xvalue="0.000000" />
+            </location>
+        </source>
+    </sources>
+    <instances>
+        <instance familyname="Charis" filename="instances/Charis-Italic.ufo" name="Charis Italic" stylename="Italic" postscriptfontname="Charis-Italic">
+            <location>
+                <dimension name="weight" xvalue="400.000000" />
+                <dimension name="width" xvalue="100.000000" />
+                <dimension name="custom" xvalue="0.000000" />
+            </location>
+            <info />
+            <kerning />
+        </instance>
+        <instance familyname="Charis" filename="instances/Charis-MediumItalic.ufo" name="Charis Medium Italic" stylename="Medium Italic" postscriptfontname="Charis-MediumItalic">
+            <location>
+                <dimension name="weight" xvalue="500.000000" />
+                <dimension name="width" xvalue="100.000000" />
+                <dimension name="custom" xvalue="0.000000" />
+            </location>
+            <info />
+            <kerning />
+        </instance>
+        <instance familyname="Charis" filename="instances/Charis-SemiBoldItalic.ufo" name="Charis SemiBold Italic" stylename="SemiBold Italic" postscriptfontname="Charis-SemiBoldItalic">
+            <location>
+                <dimension name="weight" xvalue="600.000000" />
+                <dimension name="width" xvalue="100.000000" />
+                <dimension name="custom" xvalue="0.000000" />
+            </location>
+            <info />
+            <kerning />
+        </instance>
+        <instance familyname="Charis" filename="instances/Charis-BoldItalic.ufo" name="Charis Bold Italic" sstylename="Bold Italic" postscriptfontname="Charis-BoldItalic">
+            <location>
+                <dimension name="weight" xvalue="700.000000" />
+                <dimension name="width" xvalue="100.000000" />
+                <dimension name="custom" xvalue="0.000000" />
+            </location>
+            <info />
+            <kerning />
+        </instance>
+    </instances>
+</designspace>
