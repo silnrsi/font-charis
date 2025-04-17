@@ -3,6 +3,15 @@
   <advance width="688"/>
   <unicode hex="AB6A"/>
   <outline>
-    <component base="ModYangDepartingToneMrk" xScale="-1" xOffset="688"/>
+    <contour>
+      <point x="487" y="203" type="line"/>
+      <point x="569" y="203" type="line"/>
+      <point x="569" y="774" type="line"/>
+      <point x="487" y="774" type="line"/>
+      <point x="487" y="528" type="line"/>
+      <point x="119" y="528" type="line"/>
+      <point x="119" y="446" type="line"/>
+      <point x="487" y="446" type="line"/>
+    </contour>
   </outline>
 </glyph>
