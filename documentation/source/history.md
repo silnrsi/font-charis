@@ -121,12 +121,18 @@ fontversion: 7.000
     - U+013E LATIN SMALL LETTER L WITH CARON
     - U+0165 LATIN SMALL LETTER T WITH CARON
 
-- Revised design and spacing of hooked letters
+- Revised hooked letters to improve spacing (including kerning) and reduce collisions. Some collisions have been retained to reduce unwanted whitespace within words (e.g. ƴk). 
+    - U+0188 LATIN SMALL LETTER C WITH HOOK
+    - U+01A5 LATIN SMALL LETTER P WITH HOOK
+    - U+01AD LATIN SMALL LETTER T WITH HOOK
     - U+01B3 LATIN CAPITAL LETTER Y WITH HOOK
     - U+01B4 LATIN SMALL LETTER Y WITH HOOK
+    - U+0260 LATIN SMALL LETTER G WITH HOOK
+    - U+02A0 LATIN SMALL LETTER Q WITH HOOK
     - U+2C71 LATIN SMALL LETTER V WITH RIGHT HOOK
     - U+2C72 LATIN CAPITAL LETTER W WITH HOOK
     - U+2C73 LATIN SMALL LETTER W WITH HOOK
+    - U+1DF09 LATIN SMALL LETTER T WITH HOOK AND RETROFLEX HOOK
 
 - Fixed position of
     - U+1D09 LATIN SMALL LETTER TURNED I
