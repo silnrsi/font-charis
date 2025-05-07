@@ -181,7 +181,8 @@
 @public.kern1.LSmSerif = [CySmAleutKa CySmBashkirKa CySmChe CySmCheDesc CySmCheVertStrk CySmDe CySmDe.Serb CySmDeCheLig CySmDeZheLig CySmDze CySmDzhe CySmEl CySmElDesc CySmElHook CySmElTail CySmEm CySmEmTail CySmEn CySmEnDesc CySmEnHook CySmEnLftHook CySmEnTail CySmEs CySmEsDesc CySmGhe CySmGhe.Serb CySmGheDesc CySmGheMiddleHook CySmGheStrk CySmGheStrk.SItal CySmGheStrkDesc CySmGheStrkDesc.SItal CySmGheStrkHook CySmGheStrkHook.SItal CySmGheUpturn CySmI CySmIzhitsa CySmKa CySmKaDesc CySmKaHook CySmKaStrk CySmKaVertStrk CySmKhakasChe CySmLigEnGhe CySmLigTeTse CySmPe CySmPe.Serb CySmPeDesc CySmRevZe CySmSha CySmShcha CySmTe CySmTe.Serb CySmTeDesc CySmTse CySmUkrainIe CySmZhe CySmZheBreve CySmZheDesc CySmZheDiaer LtnCapDSmZ LtnSmC LtnSmCBar LtnSmCCedilla LtnSmCCurl LtnSmCapC LtnSmCapEzh LtnSmCapInvR LtnSmCapRevR LtnSmCapRum LtnSmCapS LtnSmCapTrndR LtnSmCapU LtnSmCapZ LtnSmDz LtnSmDzDigraph LtnSmInsularT LtnSmKra LtnSmLSDigraph LtnSmLZDigraph LtnSmOStrk LtnSmOpnE LtnSmS LtnSmSCurl LtnSmSDiagStrk LtnSmSHook LtnSmSMidLftHook LtnSmSMiddleTilde LtnSmSShortStrk LtnSmT LtnSmTCaron.Caron LtnSmTCurl LtnSmTDiaer LtnSmTDiagStrk LtnSmTDotAbv LtnSmTHook.RtHook LtnSmTMidLftHook LtnSmTMiddleTilde LtnSmTStrk LtnSmTcDigraphCurl LtnSmTsDigraph LtnSmTsHook LtnSmUpsilon LtnSmUpsilonStrk LtnSmZ LtnSmZ.SItal LtnSmZCurl LtnSmZHook LtnSmZMiddleTilde LtnSmZStrk SmRomNumOneHundred];
 @public.kern1.LSmSerifDiac = [CySmCheDiaer CySmGje CySmGje.Serb CySmIDiaer CySmIGrave CySmIMacron CySmKje CySmShortI CySmShortITail LtnCapDSmZCaron LtnSmCAcute LtnSmCCaron LtnSmCCedillaAcute LtnSmCCircum LtnSmCDotAbv LtnSmDzCaron LtnSmSAcute LtnSmSAcuteDotAbv LtnSmSCaron LtnSmSCaronDotAbv LtnSmSCircum LtnSmSDotAbv LtnSmZAcute LtnSmZAcute.SItal LtnSmZCaron LtnSmZCaron.SItal LtnSmZCircum LtnSmZCircum.SItal LtnSmZDotAbv LtnSmZDotAbv.SItal];
 @public.kern1.LSmTopF = [CySmYi LtnLigSmFSmF LtnLigSmFSmF.SItal LtnSmCapGHook LtnSmDHook LtnSmDHook.TopBar LtnSmDotlessJStrkHook LtnSmDotlessJStrkHook.DblSerif LtnSmEsh LtnSmEshCurl LtnSmEshCurlDblBar LtnSmEshDblBar LtnSmEshHook LtnSmF LtnSmF.SItal LtnSmFDotAbv LtnSmFDotAbv.SItal LtnSmFHook LtnSmFHookStrk LtnSmFMiddleTilde LtnSmFPalHook LtnSmIs LtnSmLigFf LtnSmLngS LtnSmLngSDiagStrk LtnSmLngSDotAbv LtnSmLngSHighStrk LtnSmPHook.BowlHook LtnSmQHook LtnSmTeshDigraph LtnSmTeshRetrHook];
-@public.kern1.LSmVCaronD = [LtnSmDCaron LtnSmLCaron];
+@public.kern1.LSmVCaronD = [LtnSmDCaron];
+@public.kern1.LSmVCaronL = [LtnSmLCaron];
 @public.kern1.LSmVCaronT = [LtnSmTCaron];
 @public.kern2.RBracket = [RtCurlyBrac RtParen RtSqrBrac];
 @public.kern2.RCapBaseU = [LtnCapU LtnCapUAcute LtnCapUBar LtnCapUBreve LtnCapUCaron LtnCapUCircum LtnCapUCircumBlw LtnCapUDblAcute LtnCapUDblGrave LtnCapUDiaer LtnCapUDiaerAcute LtnCapUDiaerBlw LtnCapUDiaerCaron LtnCapUDiaerGrave LtnCapUDiaerMacron LtnCapUDotBlw LtnCapUGrave LtnCapUHookAbv LtnCapUHorn LtnCapUInvBreve LtnCapUMacron LtnCapUMacronDiaer LtnCapUOgonek LtnCapUOgonek.RetroHook LtnCapURingAbv LtnCapUStrk LtnCapUTilde LtnCapUTildeAcute LtnCapUTildeBlw LtnCapVHook];
@@ -5585,6 +5586,21 @@ feature ss05 {
         pos @public.kern1.LCapDiagW -10 @public.kern2.RSmSerif;
         pos @public.kern1.LCapDiagW -1 @public.kern2.RSmSerifDesc;
         pos @public.kern1.LCapDiagX -80 @public.kern2.RCapRound;
+        pos @public.kern1.LCapHook -250 @public.kern2.RCapDiagA;
+        pos @public.kern1.LCapHook -300 @public.kern2.RPunctBase;
+        pos @public.kern1.LCapHook 10 @public.kern2.RQuote;
+        pos @public.kern1.LCapHook -270 @public.kern2.RSmCurve;
+        pos @public.kern1.LCapHook -230 @public.kern2.RSmCurveDesc;
+        pos @public.kern1.LCapHook -90 @public.kern2.RSmCurveDiac;
+        pos @public.kern1.LCapHook -330 @public.kern2.RSmDiagTrndV;
+        pos @public.kern1.LCapHook -200 @public.kern2.RSmDiagV;
+        pos @public.kern1.LCapHook -200 @public.kern2.RSmDiagX;
+        pos @public.kern1.LCapHook -200 @public.kern2.RSmDiagY;
+        pos @public.kern1.LCapHook -270 @public.kern2.RSmRound;
+        pos @public.kern1.LCapHook -270 @public.kern2.RSmRoundDesc;
+        pos @public.kern1.LCapHook -60 @public.kern2.RSmRoundDiac;
+        pos @public.kern1.LCapHook -210 @public.kern2.RSmSerif;
+        pos @public.kern1.LCapHook -200 @public.kern2.RSmSerifDesc;
         pos @public.kern1.LCapRound -1 @public.kern2.RCapDiagA;
         pos @public.kern1.LCapRound -60 @public.kern2.RCapDiagV;
         pos @public.kern1.LCapRound -40 @public.kern2.RCapDiagW;
@@ -5612,6 +5628,11 @@ feature ss05 {
         pos @public.kern1.LCapTopT -35 @public.kern2.RSmRoundDiac;
         pos @public.kern1.LCapTopT -1 @public.kern2.RSmSerif;
         pos @public.kern1.LCapTopT -1 @public.kern2.RSmSerifDesc;
+        pos @public.kern1.LCapVCaronL -50 @public.kern2.RCapDiagV;
+        pos @public.kern1.LCapVCaronL -40 @public.kern2.RCapTopT;
+        pos @public.kern1.LCapVCaronL -100 @public.kern2.RQuote;
+        pos @public.kern1.LCapVCaronL -70 @public.kern2.RSmDiagV;
+        pos @public.kern1.LCapVCaronL -70 @public.kern2.RSmDiagY;
         pos @public.kern1.LModApos -220 @public.kern2.RCapDiagA;
         pos @public.kern1.LModApos -100 @public.kern2.RSmCurve;
         pos @public.kern1.LModApos -100 @public.kern2.RSmCurveDesc;
@@ -5671,6 +5692,7 @@ feature ss05 {
         pos @public.kern1.LSmDescHook 270 @public.kern2.RSmDiagY;
         pos @public.kern1.LSmDescHook 80 @public.kern2.RSmRoundDesc;
         pos @public.kern1.LSmDescHook 280 @public.kern2.RSmSerifDesc;
+        pos @public.kern1.LSmDiacWide 170 @public.kern2.RSmDiacWide;
         pos @public.kern1.LSmDiagR -120 @public.kern2.RPunctBase;
         pos @public.kern1.LSmDiagR -150 @public.kern2.RRelease;
         pos @public.kern1.LSmDiagR -1 @public.kern2.RSmCurve;
@@ -5734,6 +5756,46 @@ feature ss05 {
         pos @public.kern1.LSmDiagXDiac -40 @public.kern2.RSmRound;
         pos @public.kern1.LSmDiagXDiac -30 @public.kern2.RSmRoundDesc;
         pos @public.kern1.LSmDiagXDiac -30 @public.kern2.RSmRoundDiac;
+        pos @public.kern1.LSmHookC 50 @public.kern2.RModApos;
+        pos @public.kern1.LSmHookC -60 @public.kern2.RPunctBase;
+        pos @public.kern1.LSmHookC 80 @public.kern2.RQuote;
+        pos @public.kern1.LSmHookC 70 @public.kern2.RSmAsc;
+        pos @public.kern1.LSmHookC 70 @public.kern2.RSmAscDesc;
+        pos @public.kern1.LSmHookC -60 @public.kern2.RSmCurve;
+        pos @public.kern1.LSmHookC 20 @public.kern2.RSmCurveDiac;
+        pos @public.kern1.LSmHookC -60 @public.kern2.RSmDiagTrndV;
+        pos @public.kern1.LSmHookC -60 @public.kern2.RSmDiagV;
+        pos @public.kern1.LSmHookC -60 @public.kern2.RSmDiagX;
+        pos @public.kern1.LSmHookC -60 @public.kern2.RSmDiagY;
+        pos @public.kern1.LSmHookC -60 @public.kern2.RSmRound;
+        pos @public.kern1.LSmHookC -60 @public.kern2.RSmRoundDesc;
+        pos @public.kern1.LSmHookC 20 @public.kern2.RSmRoundDiac;
+        pos @public.kern1.LSmHookC -60 @public.kern2.RSmSerif;
+        pos @public.kern1.LSmHookC -60 @public.kern2.RSmSerifDesc;
+        pos @public.kern1.LSmHookV 70 @public.kern2.RModApos;
+        pos @public.kern1.LSmHookV -220 @public.kern2.RPunctBase;
+        pos @public.kern1.LSmHookV 100 @public.kern2.RQuote;
+        pos @public.kern1.LSmHookV -90 @public.kern2.RSmAsc;
+        pos @public.kern1.LSmHookV -90 @public.kern2.RSmAscDesc;
+        pos @public.kern1.LSmHookV -220 @public.kern2.RSmCurve;
+        pos @public.kern1.LSmHookV 10 @public.kern2.RSmCurveDiac;
+        pos @public.kern1.LSmHookV -200 @public.kern2.RSmDiagTrndV;
+        pos @public.kern1.LSmHookV -140 @public.kern2.RSmDiagV;
+        pos @public.kern1.LSmHookV -120 @public.kern2.RSmDiagX;
+        pos @public.kern1.LSmHookV -140 @public.kern2.RSmDiagY;
+        pos @public.kern1.LSmHookV -210 @public.kern2.RSmRound;
+        pos @public.kern1.LSmHookV -210 @public.kern2.RSmRoundDesc;
+        pos @public.kern1.LSmHookV 10 @public.kern2.RSmRoundDiac;
+        pos @public.kern1.LSmHookV -160 @public.kern2.RSmSerif;
+        pos @public.kern1.LSmHookV -160 @public.kern2.RSmSerifDesc;
+        pos @public.kern1.LSmHorn -70 @public.kern2.RSmAsc;
+        pos @public.kern1.LSmHorn -70 @public.kern2.RSmAscDesc;
+        pos @public.kern1.LSmHorn -90 @public.kern2.RSmCurve;
+        pos @public.kern1.LSmHorn -90 @public.kern2.RSmCurveDesc;
+        pos @public.kern1.LSmHorn -90 @public.kern2.RSmCurveDiac;
+        pos @public.kern1.LSmHorn -90 @public.kern2.RSmRound;
+        pos @public.kern1.LSmHorn -90 @public.kern2.RSmRoundDesc;
+        pos @public.kern1.LSmHorn -90 @public.kern2.RSmRoundDiac;
         pos @public.kern1.LSmRound -90 @public.kern2.RModApos;
         pos @public.kern1.LSmRound -80 @public.kern2.RQuote;
         pos @public.kern1.LSmRound -270 @public.kern2.RRelease;
@@ -5775,16 +5837,112 @@ feature ss05 {
         pos @public.kern1.LSmTopF 140 @public.kern2.RBracket;
         pos @public.kern1.LSmTopF 90 @public.kern2.RModApos;
         pos @public.kern1.LSmTopF 90 @public.kern2.RQuote;
+        pos @public.kern1.LSmVCaronD -251 @public.kern2.RPunctBase;
+        pos @public.kern1.LSmVCaronD -251 @public.kern2.RPunctMid;
+        pos @public.kern1.LSmVCaronD -251 @public.kern2.RSmBar;
+        pos @public.kern1.LSmVCaronD -251 @public.kern2.RSmBarDesc;
+        pos @public.kern1.LSmVCaronD -251 @public.kern2.RSmCurve;
+        pos @public.kern1.LSmVCaronD -251 @public.kern2.RSmCurveDesc;
+        pos @public.kern1.LSmVCaronD -201 @public.kern2.RSmCurveDiac;
+        pos @public.kern1.LSmVCaronD -171 @public.kern2.RSmDescJ;
+        pos @public.kern1.LSmVCaronD -251 @public.kern2.RSmDiagV;
+        pos @public.kern1.LSmVCaronD -251 @public.kern2.RSmDiagX;
+        pos @public.kern1.LSmVCaronD -251 @public.kern2.RSmDiagY;
+        pos @public.kern1.LSmVCaronD -251 @public.kern2.RSmRound;
+        pos @public.kern1.LSmVCaronD -251 @public.kern2.RSmRoundDesc;
+        pos @public.kern1.LSmVCaronD -221 @public.kern2.RSmRoundDiac;
+        pos @public.kern1.LSmVCaronD -251 @public.kern2.RSmSerif;
+        pos @public.kern1.LSmVCaronD -251 @public.kern2.RSmSerifDesc;
+        pos @public.kern1.LSmVCaronL -221 @public.kern2.RPunctBase;
+        pos @public.kern1.LSmVCaronL -221 @public.kern2.RPunctMid;
+        pos @public.kern1.LSmVCaronL -221 @public.kern2.RSmBar;
+        pos @public.kern1.LSmVCaronL -221 @public.kern2.RSmBarDesc;
+        pos @public.kern1.LSmVCaronL -221 @public.kern2.RSmCurve;
+        pos @public.kern1.LSmVCaronL -221 @public.kern2.RSmCurveDesc;
+        pos @public.kern1.LSmVCaronL -171 @public.kern2.RSmCurveDiac;
+        pos @public.kern1.LSmVCaronL -161 @public.kern2.RSmDescJ;
+        pos @public.kern1.LSmVCaronL -221 @public.kern2.RSmDiagV;
+        pos @public.kern1.LSmVCaronL -221 @public.kern2.RSmDiagX;
+        pos @public.kern1.LSmVCaronL -221 @public.kern2.RSmDiagY;
+        pos @public.kern1.LSmVCaronL -221 @public.kern2.RSmRound;
+        pos @public.kern1.LSmVCaronL -221 @public.kern2.RSmRoundDesc;
+        pos @public.kern1.LSmVCaronL -221 @public.kern2.RSmRoundDiac;
+        pos @public.kern1.LSmVCaronL -221 @public.kern2.RSmSerif;
+        pos @public.kern1.LSmVCaronL -221 @public.kern2.RSmSerifDesc;
+        pos @public.kern1.LSmVCaronT -103 @public.kern2.RPunctBase;
+        pos @public.kern1.LSmVCaronT -103 @public.kern2.RPunctMid;
+        pos @public.kern1.LSmVCaronT -103 @public.kern2.RSmBar;
+        pos @public.kern1.LSmVCaronT -103 @public.kern2.RSmBarDesc;
+        pos @public.kern1.LSmVCaronT -103 @public.kern2.RSmCurve;
+        pos @public.kern1.LSmVCaronT -103 @public.kern2.RSmCurveDesc;
+        pos @public.kern1.LSmVCaronT -103 @public.kern2.RSmCurveDiac;
+        pos @public.kern1.LSmVCaronT -103 @public.kern2.RSmDescJ;
+        pos @public.kern1.LSmVCaronT -103 @public.kern2.RSmDiagV;
+        pos @public.kern1.LSmVCaronT -103 @public.kern2.RSmDiagX;
+        pos @public.kern1.LSmVCaronT -103 @public.kern2.RSmDiagY;
+        pos @public.kern1.LSmVCaronT -103 @public.kern2.RSmRound;
+        pos @public.kern1.LSmVCaronT -103 @public.kern2.RSmRoundDesc;
+        pos @public.kern1.LSmVCaronT -103 @public.kern2.RSmRoundDiac;
+        pos @public.kern1.LSmVCaronT -103 @public.kern2.RSmSerif;
+        pos @public.kern1.LSmVCaronT -103 @public.kern2.RSmSerifDesc;
     } kernpairs;
 
     lookup kernpairs_undo {
         lookupflag 0;
-                    
+                    # let k = kpairs(); # for debugging
+            # one arg required (not used so can be anything)
+            # should probably use round() but not supported in feax
+            # no way to terminate inner loop
+            pos @public.kern1.LCapDiagV' 90 @public.kern2.RSmCurve @_U;
+            pos @public.kern1.LCapDiagV' 30 @public.kern2.RSmCurveDesc @_U;
+            pos @public.kern1.LCapDiagV' 90 @public.kern2.RSmRound @_U;
+            pos @public.kern1.LCapDiagV' 90 @public.kern2.RSmRoundDesc @_U;
+            pos @public.kern1.LCapDiagW' 70 @public.kern2.RSmCurve @_U;
+            pos @public.kern1.LCapDiagW' 30 @public.kern2.RSmCurveDesc @_U;
+            pos @public.kern1.LCapHook' 270 @public.kern2.RSmCurve @_U;
+            pos @public.kern1.LCapHook' 230 @public.kern2.RSmCurveDesc @_U;
+            pos @public.kern1.LCapHook' 330 @public.kern2.RSmDiagTrndV @_U;
+            pos @public.kern1.LCapHook' 200 @public.kern2.RSmDiagV @_U;
+            pos @public.kern1.LCapHook' 200 @public.kern2.RSmDiagX @_U;
+            pos @public.kern1.LCapHook' 200 @public.kern2.RSmDiagY @_U;
+            pos @public.kern1.LCapHook' 270 @public.kern2.RSmRound @_U;
+            pos @public.kern1.LCapHook' 270 @public.kern2.RSmRoundDesc @_U;
+            pos @public.kern1.LCapHook' 210 @public.kern2.RSmSerif @_U;
+            pos @public.kern1.LCapHook' 200 @public.kern2.RSmSerifDesc @_U;
+            pos @public.kern1.LCapTopT' 70 @public.kern2.RSmCurve @_U;
+            pos @public.kern1.LCapTopT' 30 @public.kern2.RSmCurveDesc @_U;
+            pos @public.kern1.LCapTopT' 70 @public.kern2.RSmRound @_U;
+            pos @public.kern1.LCapTopT' 70 @public.kern2.RSmRoundDesc @_U;
+            pos @public.kern1.LModApos' 100 @public.kern2.RSmCurve @_U;
+            pos @public.kern1.LModApos' 100 @public.kern2.RSmCurveDesc @_U;
+            pos @public.kern1.LModApos' 1 @public.kern2.RSmDiagV @_U;
+            pos @public.kern1.LModApos' 1 @public.kern2.RSmDiagX @_U;
+            pos @public.kern1.LModApos' 1 @public.kern2.RSmDiagY @_U;
+            pos @public.kern1.LModApos' 120 @public.kern2.RSmRound @_U;
+            pos @public.kern1.LModApos' 120 @public.kern2.RSmRoundDesc @_U;
+            pos @public.kern1.LQuote' 70 @public.kern2.RSmCurve @_U;
+            pos @public.kern1.LQuote' 70 @public.kern2.RSmCurveDesc @_U;
+            pos @public.kern1.LQuote' 50 @public.kern2.RSmRound @_U;
+            pos @public.kern1.LQuote' 50 @public.kern2.RSmRoundDesc @_U;
+            pos @public.kern1.LSmHookC' 60 @public.kern2.RSmCurve @_U;
+            pos @public.kern1.LSmHookC' 60 @public.kern2.RSmDiagTrndV @_U;
+            pos @public.kern1.LSmHookC' 60 @public.kern2.RSmDiagV @_U;
+            pos @public.kern1.LSmHookC' 60 @public.kern2.RSmDiagX @_U;
+            pos @public.kern1.LSmHookC' 60 @public.kern2.RSmDiagY @_U;
+            pos @public.kern1.LSmHookC' 60 @public.kern2.RSmRound @_U;
+            pos @public.kern1.LSmHookC' 60 @public.kern2.RSmRoundDesc @_U;
+            pos @public.kern1.LSmHookC' 60 @public.kern2.RSmSerif @_U;
+            pos @public.kern1.LSmHookC' 60 @public.kern2.RSmSerifDesc @_U;
+            pos @public.kern1.LSmHookV' 220 @public.kern2.RSmCurve @_U;
+            pos @public.kern1.LSmHookV' 200 @public.kern2.RSmDiagTrndV @_U;
+            pos @public.kern1.LSmHookV' 140 @public.kern2.RSmDiagV @_U;
+            pos @public.kern1.LSmHookV' 120 @public.kern2.RSmDiagX @_U;
+            pos @public.kern1.LSmHookV' 140 @public.kern2.RSmDiagY @_U;
+            pos @public.kern1.LSmHookV' 210 @public.kern2.RSmRound @_U;
+            pos @public.kern1.LSmHookV' 210 @public.kern2.RSmRoundDesc @_U;
+            pos @public.kern1.LSmHookV' 160 @public.kern2.RSmSerif @_U;
+            pos @public.kern1.LSmHookV' 160 @public.kern2.RSmSerifDesc @_U;
 
-        # let k = kpairs(); # for debugging
-        # one arg required (not used so can be anything)
-        # should probably use round() but not supported in feax
-        # no way to terminate inner loop
     } kernpairs_undo;
 
     # contextual kerning mainly for base+base+mark
@@ -5793,7 +5951,25 @@ feature ss05 {
         # Regular 
         
         # Italic
-                    # pos @public.kern1.LCapDiagV' -80 @public.kern2.RSmCurve @_U;
+                    pos @public.kern1.LCapDiagV' -15 @public.kern2.RSmCurveDesc @_U;
+            pos @public.kern1.LCapDiagV' -45 @public.kern2.RSmCurve @_U;
+            pos @public.kern1.LCapDiagV' -45 @public.kern2.RSmRound @_U;
+            pos @public.kern1.LCapDiagV' -45 @public.kern2.RSmRoundDesc @_U;
+            pos @public.kern1.LCapDiagW' -15 @public.kern2.RSmCurveDesc @_U;
+            pos @public.kern1.LCapDiagW' -35 @public.kern2.RSmCurve @_U;
+            pos @public.kern1.LCapTopT' -35 @public.kern2.RSmRound @_U;
+            pos @public.kern1.LCapTopT' -35 @public.kern2.RSmRoundDesc @_U;
+            pos @public.kern1.LModApos' -35 @public.kern2.RSmRound @_U;
+            pos @public.kern1.LModApos' -35 @public.kern2.RSmRoundDesc @_U;
+            pos @public.kern1.LModApos' -50 @public.kern2.RSmCurve @_U;
+            pos @public.kern1.LModApos' -50 @public.kern2.RSmCurveDesc @_U;
+            pos @public.kern1.LSmDescHook' 200 @public.kern2.RSmCurve @_L;
+            pos @public.kern1.LSmDescHook' 200 @public.kern2.RSmRound @_L;
+            pos @public.kern1.LSmDescHook' 200 @public.kern2.RSmAsc @_L;
+            pos @public.kern1.LSmDescHook' 200 @public.kern2.RSmBar @_L;
+            pos @public.kern1.LSmDescHook' 200 @public.kern2.RSmSerif @_L;
+            pos @public.kern1.LSmDescHook' 200 @public.kern2.RSmDiagV @_L;
+            pos @public.kern1.LSmDescHook' 200 @public.kern2.RSmDiagTrndV @_L;
 
     } kern_ctx;
 
