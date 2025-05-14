@@ -5,8 +5,13 @@
   <key>public.kern1.LBracket</key>
   <array>
     <string>LftCurlyBrac</string>
+    <string>LftDblParen</string>
     <string>LftParen</string>
+    <string>LftPtngAngBrac</string>
     <string>LftSqrBrac</string>
+    <string>MathLftAngBrac</string>
+    <string>MathLftDblAngleBrac</string>
+    <string>MathLftWhiteSqrBrac</string>
   </array>
   <key>public.kern1.LCapBaseL</key>
   <array>
@@ -1308,8 +1313,13 @@
   </array>
   <key>public.kern2.RBracket</key>
   <array>
+    <string>MathRtAngBrac</string>
+    <string>MathRtDblAngleBrac</string>
+    <string>MathRtWhiteSqrBrac</string>
     <string>RtCurlyBrac</string>
+    <string>RtDblParen</string>
     <string>RtParen</string>
+    <string>RtPtngAngBrac</string>
     <string>RtSqrBrac</string>
   </array>
   <key>public.kern2.RCapBaseU</key>
@@ -1641,6 +1651,12 @@
   <key>public.kern2.RRelease</key>
   <array>
     <string>CombLftAngAbv</string>
+  </array>
+  <key>public.kern2.RSlash</key>
+  <array>
+    <string>DblSolidus</string>
+    <string>DivisionSlash</string>
+    <string>Solidus</string>
   </array>
   <key>public.kern2.RSmAsc</key>
   <array>
