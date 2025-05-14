@@ -145,4 +145,36 @@
       <string>nqaƴ\u0002BEeena</string>
     </test>
   </testgroup>
+  <testgroup label="Diacritics above hooked characters and unhooked relations">
+    <test label="c + ring">
+      <string>c\u00030Aƈ\u00030A</string>
+    </test>
+    <test label="d + ring">
+      <string>d\u00030Aɗ\u00030Aᶑ\u00030A</string>
+    </test>
+    <test label="f + ring">
+      <string>f\u00030Aƒ\u00030Aʄ\u00030A</string>
+    </test>
+    <test label="g + ring">
+      <string>ɡ\u00030Aɠ\u00030A</string>
+    </test>
+    <test label="p + ring">
+      <string>p\u00030Aƥ\u00030A</string>
+    </test>
+    <test label="q + ring">
+      <string>q\u00030Aʠ\u00030A</string>
+    </test>
+    <test label="t + ring">
+      <string>t\u00030Aƭ\u00030A𝼉\u00030A</string>
+    </test>
+    <test label="v + ring">
+      <string>v\u00030Aⱱ\u00030A</string>
+    </test>
+    <test label="w + ring">
+      <string>w\u00030Aⱳ\u00030A</string>
+    </test>
+    <test label="y + ring">
+      <string>y\u00030Aƴ\u00030A</string>
+    </test>
+  </testgroup>
 </ftml>
