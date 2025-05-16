@@ -49,9 +49,9 @@
     <key>public.kern2.RCapBaseU</key>
     <integer>-60</integer>
     <key>public.kern2.RCapDiagV</key>
-    <integer>-210</integer>
+    <integer>-190</integer>
     <key>public.kern2.RCapDiagW</key>
-    <integer>-150</integer>
+    <integer>-140</integer>
     <key>public.kern2.RCapRound</key>
     <integer>-50</integer>
     <key>public.kern2.RCapTopT</key>
@@ -177,7 +177,7 @@
   <key>public.kern1.LCapTopP</key>
   <dict>
     <key>public.kern2.RCapDiagA</key>
-    <integer>-120</integer>
+    <integer>-110</integer>
     <key>public.kern2.RPunctBase</key>
     <integer>-220</integer>
     <key>public.kern2.RSmCurve</key>
@@ -403,7 +403,7 @@
     <key>public.kern2.RSmDiagY</key>
     <integer>-120</integer>
     <key>public.kern2.RSmRound</key>
-    <integer>-40</integer>
+    <integer>-50</integer>
     <key>public.kern2.RSmRoundDesc</key>
     <integer>-40</integer>
     <key>public.kern2.RSmRoundDiac</key>
@@ -428,11 +428,11 @@
     <key>public.kern2.RSmDiagTrndV</key>
     <integer>-130</integer>
     <key>public.kern2.RSmRound</key>
-    <integer>-40</integer>
+    <integer>-30</integer>
     <key>public.kern2.RSmRoundDesc</key>
-    <integer>-40</integer>
+    <integer>-30</integer>
     <key>public.kern2.RSmRoundDiac</key>
-    <integer>-40</integer>
+    <integer>-30</integer>
   </dict>
   <key>public.kern1.LSmDiagVDiac</key>
   <dict>
@@ -453,11 +453,11 @@
     <key>public.kern2.RSmDiagTrndV</key>
     <integer>-130</integer>
     <key>public.kern2.RSmRound</key>
-    <integer>-40</integer>
+    <integer>-30</integer>
     <key>public.kern2.RSmRoundDesc</key>
-    <integer>-40</integer>
+    <integer>-30</integer>
     <key>public.kern2.RSmRoundDiac</key>
-    <integer>-40</integer>
+    <integer>-30</integer>
   </dict>
   <key>public.kern1.LSmDiagX</key>
   <dict>
@@ -503,6 +503,8 @@
     <integer>20</integer>
     <key>public.kern2.RSmCurve</key>
     <integer>-30</integer>
+    <key>public.kern2.RSmCurveDesc</key>
+    <integer>-30</integer>
     <key>public.kern2.RSmCurveDiac</key>
     <integer>50</integer>
     <key>public.kern2.RSmDiagTrndV</key>
@@ -537,6 +539,8 @@
     <key>public.kern2.RSmAscDesc</key>
     <integer>-100</integer>
     <key>public.kern2.RSmCurve</key>
+    <integer>-110</integer>
+    <key>public.kern2.RSmCurveDesc</key>
     <integer>-110</integer>
     <key>public.kern2.RSmCurveDiac</key>
     <integer>50</integer>
