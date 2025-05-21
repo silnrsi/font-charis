@@ -277,12 +277,12 @@ Global-style | <span class='charis-cv77-1-R normal'>ď Ľ ľ ť</span> | `cv77=1
 
 #### Modifier apostrophe <a id="cv70"></a>
 
-<span class='affects'>Affects: U+02BC U+0312 U+0314 U+A78B U+A78C</span>
+<span class='affects'>Affects: U+02BB U+02BC U+02BD U+0312 U+0314 U+A78B U+A78C</span>
 
 Feature | Sample                      | Feature setting
 ------- | --------------------------- | -------
-Standard | <span class='charis-R normal'>ʼ  ̒  ̔ Ꞌ ꞌ</span> | `cv70=0`
-Large    | <span class='charis-cv70-1-R normal'>ʼ  ̒  ̔ Ꞌ ꞌ</span> | `cv70=1`
+Standard | <span class='charis-R normal'>ʻ ʼ ʽ ◌̒ ◌̔ Ꞌ ꞌ</span> | `cv70=0`
+Large    | <span class='charis-cv70-1-R normal'>ʻ ʼ ʽ ◌̒ ◌̔ Ꞌ ꞌ</span> | `cv70=1`
 
 #### Modifier colon <a id="cv71"></a>
 

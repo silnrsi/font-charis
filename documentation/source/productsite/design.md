@@ -4,7 +4,7 @@ Charis is optimized for readability in long printed documents. It is highly read
 <img class='fullsize' alt='Charis Sample - Precomposed Latin Diacritics' src='https://software.sil.org/charis/wp-content/uploads/sites/14/2015/12/CharisTypePage.png' />
 [caption]<em>Charis Sample - Precomposed Latin Diacritics</em>[/caption]
 
-Type samples showing an inventory of some of the unusual glyphs and features are available in a PDF sample: [Charis Type Sample](https://software.sil.org/charis/wp-content/uploads/sites/14/2015/12/CharisTypeSample.pdf). For a complete list of characters included in Charis, see [Character Set Support](charset).
+For a complete list of characters included in Charis, see [Character Set Support](charset).
 
 ### Note regarding Charter
 

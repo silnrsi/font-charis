@@ -19,12 +19,10 @@ This enables you to keep the old v6.2 fonts installed when you install the new v
 
 ### Revised family groups with additional weights
 
-Charis now has additional intermediate weights. Previously existing weights have not changed. Here is a list, with retained weights in **bold** and new weights in *italic*. The CSS values for the weights within each family are in parentheses. Italic faces follow a similar structure and correspondence.
+Charis now has additional intermediate weights. Previously existing weights have not changed. The CSS values for the weights within each family are in parentheses. Italic faces follow a similar structure and correspondence.
 
-- **Charis Regular** (400)
-- *Charis Medium* (500)
-- *Charis SemiBold* (600)
-- **Charis Bold** (700)
+![New v7 weights](../assets/images/weights.png){.fullsize}
+<!-- PRODUCT SITE IMAGE SRC https://software.sil.org/charis/wp-content/uploads/sites/20/2015/12/Gentium_design_balance.png -->
 
 The new intermediate weights in this extended, axis-based family can be confusing for applications that still assume families should have only four members (Regular, Italic, Bold, Bold Italic). This is the case for Microsoft Word and some older Windows applications. For details on how to use the intermediate weights in these applications, see [Using Axis-Based Font Families](https://software.sil.org/fonts/axis-based-fonts/).
 
@@ -46,13 +44,19 @@ Note that even in version 7 the literacy forms and other features can be manuall
 
 ### New kerning
 
-Kerning has now been add to cover the full range of alphabetic symbols, including small caps. To make this practically useful for a wide range of languages the letters have been clustered into overly generalized groups. This enables the kerning to apply to more combinations, but does not allow for careful fine-tuning. The generalized kerning may not be ideal in all cases, and may still require manual adjustment, but it should provide improved spacing compared with previous versions. It is very possible that we have made some mistakes in this massive kerning effort, so please [contact us](https://software.sil.org/charis/about/contact/) if you encounter any combinations whose spacing has been made worse than in v6.2.
+Kerning has now been added to cover the full range of alphabetic symbols except for small caps (which will be included in a future update). To make this practically useful for a wide range of languages the letters have been clustered into overly generalized groups. This enables the kerning to apply to more combinations, but does not allow for careful fine-tuning. The generalized kerning may not be ideal in all cases, and may still require manual adjustment, but it should provide improved spacing compared with previous versions. It is very possible that we have made some mistakes in this massive kerning effort, so please [contact us](https://software.sil.org/charis/about/contact/) if you encounter any combinations whose spacing has been made worse than in v6.2.
 
 **Warning: Because of the addition of extensive kerning, line, paragraph, and page lengths may be different from v6.2.**
+
+![New kerning](../assets/images/kerning.png){.fullsize}
+<!-- PRODUCT SITE IMAGE SRC https://software.sil.org/charis/wp-content/uploads/sites/20/2015/12/Gentium_design_balance.png -->
 
 ### Proportional Oldstyle figures
 
 Charis now includes support for standard OpenType proportional oldstyle figures (`onum`). These only apply to the main numerals, not fractions, superscripts, or numeral-based symbols.
+
+![Oldstyle figures](../assets/images/oldstylefigures.png){.fullsize}
+<!-- PRODUCT SITE IMAGE SRC https://software.sil.org/gentium/wp-content/uploads/sites/20/2015/12/Gentium_design_balance.png -->
 
 ### Capital N Left Hook default changed to lowercase style
 

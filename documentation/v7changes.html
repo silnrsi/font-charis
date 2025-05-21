@@ -38,17 +38,12 @@
     <h3 id="revised-family-groups-with-additional-weights">Revised
     family groups with additional weights</h3>
     <p>Charis now has additional intermediate weights. Previously
-    existing weights have not changed. Here is a list, with retained
-    weights in <strong>bold</strong> and new weights in <em>italic</em>.
-    The CSS values for the weights within each family are in
-    parentheses. Italic faces follow a similar structure and
-    correspondence.</p>
-    <ul>
-    <li><strong>Charis Regular</strong> (400)</li>
-    <li><em>Charis Medium</em> (500)</li>
-    <li><em>Charis SemiBold</em> (600)</li>
-    <li><strong>Charis Bold</strong> (700)</li>
-    </ul>
+    existing weights have not changed. The CSS values for the weights
+    within each family are in parentheses. Italic faces follow a similar
+    structure and correspondence.</p>
+    <p><img src="assets/images/weights.png" class="fullsize"
+    alt="New v7 weights" />
+    <!-- PRODUCT SITE IMAGE SRC https://software.sil.org/charis/wp-content/uploads/sites/20/2015/12/Gentium_design_balance.png --></p>
     <p>The new intermediate weights in this extended, axis-based family
     can be confusing for applications that still assume families should
     have only four members (Regular, Italic, Bold, Bold Italic). This is
@@ -102,26 +97,33 @@
     <h2 id="new-features-and-character-support">New features and
     character support</h2>
     <h3 id="new-kerning">New kerning</h3>
-    <p>Kerning has now been add to cover the full range of alphabetic
-    symbols, including small caps. To make this practically useful for a
-    wide range of languages the letters have been clustered into overly
-    generalized groups. This enables the kerning to apply to more
-    combinations, but does not allow for careful fine-tuning. The
-    generalized kerning may not be ideal in all cases, and may still
-    require manual adjustment, but it should provide improved spacing
-    compared with previous versions. It is very possible that we have
-    made some mistakes in this massive kerning effort, so please <a
+    <p>Kerning has now been added to cover the full range of alphabetic
+    symbols except for small caps (which will be included in a future
+    update). To make this practically useful for a wide range of
+    languages the letters have been clustered into overly generalized
+    groups. This enables the kerning to apply to more combinations, but
+    does not allow for careful fine-tuning. The generalized kerning may
+    not be ideal in all cases, and may still require manual adjustment,
+    but it should provide improved spacing compared with previous
+    versions. It is very possible that we have made some mistakes in
+    this massive kerning effort, so please <a
     href="https://software.sil.org/charis/about/contact/">contact us</a>
     if you encounter any combinations whose spacing has been made worse
     than in v6.2.</p>
     <p><strong>Warning: Because of the addition of extensive kerning,
     line, paragraph, and page lengths may be different from
     v6.2.</strong></p>
+    <p><img src="assets/images/kerning.png" class="fullsize"
+    alt="New kerning" />
+    <!-- PRODUCT SITE IMAGE SRC https://software.sil.org/charis/wp-content/uploads/sites/20/2015/12/Gentium_design_balance.png --></p>
     <h3 id="proportional-oldstyle-figures">Proportional Oldstyle
     figures</h3>
     <p>Charis now includes support for standard OpenType proportional
     oldstyle figures (<code>onum</code>). These only apply to the main
     numerals, not fractions, superscripts, or numeral-based symbols.</p>
+    <p><img src="assets/images/oldstylefigures.png" class="fullsize"
+    alt="Oldstyle figures" />
+    <!-- PRODUCT SITE IMAGE SRC https://software.sil.org/gentium/wp-content/uploads/sites/20/2015/12/Gentium_design_balance.png --></p>
     <h3
     id="capital-n-left-hook-default-changed-to-lowercase-style">Capital
     N Left Hook default changed to lowercase style</h3>
@@ -149,6 +151,10 @@
     <p>Other improvements have been made to over 150 glyphs, OpenType
     code, and other font aspects, including:</p>
     <ul>
+    <li>Letters with upper-right hooks have been redesigned to improve
+    spacing (including kerning) and reduce collisions. Some collisions
+    have been retained to reduce unwanted whitespace within words (e.g.
+    ƴk).</li>
     <li>Central European carons have improved designs and kerning.</li>
     <li>Bridging diacritics handle many more possible combinations. See
     <a href="https://software.sil.org/fonts/bridging-diacritics/">Using
