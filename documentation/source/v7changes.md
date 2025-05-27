@@ -22,7 +22,7 @@ This enables you to keep the old v6.2 fonts installed when you install the new v
 Charis now has additional intermediate weights. Previously existing weights have not changed. The CSS values for the weights within each family are in parentheses. Italic faces follow a similar structure and correspondence.
 
 ![New v7 weights](../assets/images/weights.png){.fullsize}
-<!-- PRODUCT SITE IMAGE SRC https://software.sil.org/charis/wp-content/uploads/sites/20/2015/12/Gentium_design_balance.png -->
+<!-- PRODUCT SITE IMAGE SRC https://software.sil.org/charis/wp-content/uploads/sites/14/2025/05/weights.png -->
 
 The new intermediate weights in this extended, axis-based family can be confusing for applications that still assume families should have only four members (Regular, Italic, Bold, Bold Italic). This is the case for Microsoft Word and some older Windows applications. For details on how to use the intermediate weights in these applications, see [Using Axis-Based Font Families](https://software.sil.org/fonts/axis-based-fonts/).
 
@@ -49,14 +49,14 @@ Kerning has now been added to cover the full range of alphabetic symbols except 
 **Warning: Because of the addition of extensive kerning, line, paragraph, and page lengths may be different from v6.2.**
 
 ![New kerning](../assets/images/kerning.png){.fullsize}
-<!-- PRODUCT SITE IMAGE SRC https://software.sil.org/charis/wp-content/uploads/sites/20/2015/12/Gentium_design_balance.png -->
+<!-- PRODUCT SITE IMAGE SRC https://software.sil.org/charis/wp-content/uploads/sites/14/2025/05/kerning.png -->
 
 ### Proportional Oldstyle figures
 
 Charis now includes support for standard OpenType proportional oldstyle figures (`onum`). These only apply to the main numerals, not fractions, superscripts, or numeral-based symbols.
 
 ![Oldstyle figures](../assets/images/oldstylefigures.png){.fullsize}
-<!-- PRODUCT SITE IMAGE SRC https://software.sil.org/gentium/wp-content/uploads/sites/20/2015/12/Gentium_design_balance.png -->
+<!-- PRODUCT SITE IMAGE SRC https://software.sil.org/charis/wp-content/uploads/sites/14/2025/05/oldstylefigures.png -->
 
 ### Capital N Left Hook default changed to lowercase style
 
@@ -71,7 +71,7 @@ Support has been added for 29 additional characters, some of which were introduc
 Autohinting has been improved to be more consistent across the whole family.
 
 ![Charis autohinting](../assets/images/v7autohinting.png){.fullsize}
-<!-- PRODUCT SITE IMAGE SRC https://software.sil.org/charis/wp-content/uploads/sites/20/2015/12/v7autohinting.png -->
+<!-- PRODUCT SITE IMAGE SRC https://software.sil.org/charis/wp-content/uploads/sites/14/2025/05/v7autohinting.png -->
 <figcaption>Upright and italic faces appear more consistent in height in smaller sizes (Windows 11, Word, 9 pt, 150%, enlarged)</figcaption>
 
 ## General improvements

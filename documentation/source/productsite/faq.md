@@ -13,6 +13,7 @@ Many questions can be answered by consulting the following FAQ pages. Here are a
     - *How do I use both a single-story and double-story 'a' in italic?*
     - *Why don’t my diacritics position properly?*
     - *Why is the line spacing so much looser than other fonts?*
+    - *I’ve updated my font to the latest version and some letters have become black boxes with white letters - why?*
 
 - [The SIL Open Font License (OFL-FAQ)](https://openfontlicense.org/ofl-faq)
     - *Can I use this font for...?*
