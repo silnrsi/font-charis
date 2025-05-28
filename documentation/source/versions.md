@@ -13,8 +13,6 @@ Our font announcements are also available through X (formerly Twitter) [\@silfon
 
 The latest version of the fonts is always available from the [Charis download page](https://software.sil.org/charis/download/) as a .zip archive for all major platforms.
 
-This font package is also available in the [SIL software repository for Ubuntu](https://packages.sil.org/). Users can subscribe to this software repository and get current versions and updates automatically.
-
 Charis is also available through the [TypeTuner Web](https://typetunerweb.languagetechnology.org/ttw/fonts2go.cgi) service, which allows you to choose among the smart font features and download a font with those features preset. This enables them to work in many applications that do not fully support OpenType. **Please note that the version 7 fonts available through TypeTuner Web no longer offer line spacing alternatives (Normal, Tight, Loose). If you need Tight or Loose variants the version 6.200 fonts remain available and support line spacing alternatives.**
 
 ## Other Charis SIL versions and variants
