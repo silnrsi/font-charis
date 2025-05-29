@@ -4,7 +4,7 @@
 # set the default output folders for release docs
 DOCDIR = ["documentation", "web"]
 
-STANDARDS = 'references/v6101'
+STANDARDS = 'references/v6200'
 
 APPNAME = 'Charis'
 familyname = APPNAME
