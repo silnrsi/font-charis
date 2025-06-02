@@ -1,7 +1,7 @@
 
 Charis is optimized for readability in long printed documents. It is highly readable and holds up well in less-than-ideal reproduction environments due to its simple and robust design with strong serifs and clear features.
 
-<img class='fullsize' alt='Charis Sample - Precomposed Latin Diacritics' src='https://software.sil.org/charis/wp-content/uploads/sites/14/2015/12/CharisTypePage.png' />
+<img class='fullsize' alt='Charis Sample - Precomposed Latin Diacritics' src='https://software.sil.org/charis/wp-content/uploads/sites/14/2015/12/CharisSILTypePage.png' />
 [caption]<em>Charis Sample - Precomposed Latin Diacritics</em>[/caption]
 
 For a complete list of characters included in Charis, see [Character Set Support](charset).
