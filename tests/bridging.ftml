@@ -193,4 +193,39 @@
       <string>\u000064\u000361\u00034F\u00030C\u00034F\u00032D\u00007A \u000434\u000361\u00034F\u00030C\u00034F\u00032D\u000436</string>
     </test>
   </testgroup>
+  <testgroup label="Additional reported combinations">
+    <test label="U+0256 U+0361 U+0290">
+      <string>\u000256\u000361\u000290</string>
+    </test>
+    <test label="U+0071 U+0361 U+AB53 (LtnSmChi)">
+      <string>\u000071\u000361\u00AB53</string>
+    </test>
+    <test label="U+0071 U+0361 U+03C7 (GrSmChi)">
+      <string>\u000071\u000361\u0003C7</string>
+    </test>
+    <test label="U+0071 U+0361 U+01C1">
+      <string>\u000071\u000361\u0001C1</string>
+    </test>
+    <test label="U+0074 U+0361 U+0070">
+      <string>\u000074\u000361\u000070</string>
+    </test>
+    <test label="U+0074 U+032A U+0361 U+0070">
+      <string>\u000074\u00032A\u000361\u000070</string>
+    </test>
+    <test label="U+006E U+0361 U+006D">
+      <string>\u00006E\u000361\u00006D</string>
+    </test>
+    <test label="U+006E U+032A U+0361 U+006D">
+      <string>\u00006E\u00032A\u000361\u00006D</string>
+    </test>
+    <test label="U+0070 U+035C U+0066">
+      <string>\u000070\u00035C\u000066</string>
+    </test>
+    <test label="U+0256 U+035C U+0290">
+      <string>\u000256\u00035C\u000290</string>
+    </test>
+    <test label="U+0074 U+035C U+03B8 (GrSmTheta)">
+      <string>\u000074\u00035C\u0003B8</string>
+    </test>
+  </testgroup>
 </ftml>
