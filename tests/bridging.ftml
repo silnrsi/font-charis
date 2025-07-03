@@ -3,13 +3,12 @@
 <ftml version="1.0">
   <head>
     <fontscale>200</fontscale>
-    <fontsrc label="CRv7">url(../results/Charis-Regular.ttf)</fontsrc>
-    <fontsrc label="CBv7">url(../results/Charis-Bold.ttf)</fontsrc>
-    <fontsrc label="CIv7">url(../results/Charis-Italic.ttf)</fontsrc>
-    <fontsrc label="CBIv7">url(../results/Charis-BoldItalic.ttf)</fontsrc>
-    <fontsrc label="CRv62">url(../references/v6200/CharisSIL-Regular.ttf)</fontsrc>
-    <fontsrc label="CIv62">url(../references/v6200/CharisSIL-Italic.ttf)</fontsrc>
-    <fontsrc label="DRv5">url(../references/v5/DoulosSIL-Regular.ttf)</fontsrc>
+    <fontsrc label="GRv7">url(../results/Gentium-Regular.ttf)</fontsrc>
+    <fontsrc label="GBv7">url(../results/Gentium-Bold.ttf)</fontsrc>
+    <fontsrc label="GIv7">url(../results/Gentium-Italic.ttf)</fontsrc>
+    <fontsrc label="GBIv7">url(../results/Gentium-BoldItalic.ttf)</fontsrc>
+    <fontsrc label="GRv62">url(../references/v6200/GentiumPlus-Regular.ttf)</fontsrc>
+    <fontsrc label="GIv62">url(../references/v6200/GentiumPlus-Italic.ttf)</fontsrc>
     <title>Bridging diacritics</title>
   </head>
   <testgroup label="Experimental combos (only the first and last are expected to fully center)">
@@ -193,7 +192,7 @@
       <string>\u000064\u000361\u00034F\u00030C\u00034F\u00032D\u00007A \u000434\u000361\u00034F\u00030C\u00034F\u00032D\u000436</string>
     </test>
   </testgroup>
-  <testgroup label="Additional reported combinations">
+  <testgroup label="Additional reported combinations that should work">
     <test label="U+0256 U+0361 U+0290">
       <string>\u000256\u000361\u000290</string>
     </test>
@@ -218,14 +217,19 @@
     <test label="U+006E U+032A U+0361 U+006D">
       <string>\u00006E\u00032A\u000361\u00006D</string>
     </test>
+    <test label="U+0074 U+035C U+03B8">
+      <string>\u000074\u00035C\u0003B8</string>
+    </test>
+    <test label="U+03B8 U+0362 U+0073">
+      <string>\u0003B8\u000362\u000073</string>
+    </test>
+  </testgroup>
+  <testgroup label="Additional reported combinations that we may not fix">
     <test label="U+0070 U+035C U+0066">
       <string>\u000070\u00035C\u000066</string>
     </test>
     <test label="U+0256 U+035C U+0290">
       <string>\u000256\u00035C\u000290</string>
-    </test>
-    <test label="U+0074 U+035C U+03B8 (GrSmTheta)">
-      <string>\u000074\u00035C\u0003B8</string>
     </test>
   </testgroup>
 </ftml>
