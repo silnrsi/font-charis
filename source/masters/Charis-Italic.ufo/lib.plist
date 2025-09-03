@@ -1030,6 +1030,7 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>LtnSmRevC</string>
     <string>LtnSmRevCMiddleDot</string>
     <string>LtnSmSdwysOpnO</string>
+    <string>LtnSmOpnOe</string>
     <string>CySmUkrainIe</string>
     <string>CySmE</string>
     <string>ModCySmE</string>
@@ -1428,6 +1429,7 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>CySmEnLftHook</string>
     <string>CySmKomiNje</string>
     <string>CySmEnMiddleHook</string>
+    <string>LtnSmSakhaYat</string>
     <string>CySmPe</string>
     <string>CySubSmPe</string>
     <string>ModCySmPe</string>
@@ -1551,6 +1553,7 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>LtnSmIota</string>
     <string>ModSmIota</string>
     <string>LtnSmIotaStrk</string>
+    <string>LtnSmIotifiedE</string>
     <string>CySmYu</string>
     <string>ModCySmYu</string>
     <string>CyCapByelorusUkrainI</string>
@@ -2359,6 +2362,7 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>LtnSmUHornHookAbv</string>
     <string>LtnSmUHornDotBlw</string>
     <string>LtnSmUe</string>
+    <string>LtnSmUo</string>
     <string>LtnSmSdwysU</string>
     <string>ModSmSdwysU</string>
     <string>LtnSmSdwysDiaerU</string>
@@ -2828,6 +2832,7 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>GrAnoTeleia</string>
     <string>HyphenationPt</string>
     <string>BulletOperator</string>
+    <string>DotOperator</string>
     <string>LtnSinolDot</string>
     <string>LftDblParen</string>
     <string>SubLftParen</string>
@@ -2919,9 +2924,12 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>SubMinus</string>
     <string>SupMinus</string>
     <string>CombMinusSgnBlw</string>
+    <string>CombMinusSgnAbv</string>
     <string>CombShortStrkOverlay</string>
     <string>CombLngStrkOverlay</string>
     <string>CombNumSgn</string>
+    <string>CombSharp</string>
+    <string>CombFlat</string>
     <string>SupplRtAngleSubMkr</string>
     <string>SupplRtAngleSubMkrDot</string>
     <string>SupplLftSubBrac</string>
@@ -3038,6 +3046,7 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>ModVoicing</string>
     <string>CombCaronBlw</string>
     <string>CombCaron</string>
+    <string>CombDoubledCaron</string>
     <string>CombAcute_Macron</string>
     <string>CombMacron_Acute</string>
     <string>CombMacron_Breve</string>
@@ -3078,7 +3087,10 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>CombXXBlw</string>
     <string>CombInvDblArchBlw</string>
     <string>CombInvDblArchAbv</string>
+    <string>CombDblArchBlw</string>
+    <string>CombDblArchAbv</string>
     <string>CombSeagullBlw</string>
+    <string>CombSeagullAbv</string>
     <string>ModLowMacron</string>
     <string>CombMacronBlw</string>
     <string>CombMacronBlw.Short</string>
@@ -3108,6 +3120,7 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>DblLowLine</string>
     <string>CombDblLowLine</string>
     <string>CombEqSgnBlw</string>
+    <string>CombEqSgnAbv</string>
     <string>CombDblOverline</string>
     <string>ModUnaspd</string>
     <string>ModShortEqSgn</string>
@@ -3130,6 +3143,8 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>CombDblDiaer.lhigh</string>
     <string>CombDblDiaer.high</string>
     <string>CombDblDiaer.high.lhigh</string>
+    <string>CombDiaerRaisedLftDot</string>
+    <string>CombDotRingBlw</string>
     <string>CombDiaerRing</string>
     <string>CombTripleDot</string>
     <string>CombDotBlw</string>
@@ -3170,17 +3185,30 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>CombDblPlusSgnAbv</string>
     <string>CombDwnTackBlw</string>
     <string>ModDwnTack</string>
+    <string>CombDwnTackAbv</string>
     <string>CombUpTackBlw</string>
     <string>ModUpTack</string>
     <string>CombUpTackAbv</string>
     <string>CombLftTackBlw</string>
     <string>ModLftTack</string>
+    <string>CombLftTackAbv</string>
     <string>CombRtTackBlw</string>
     <string>ModYangDepartingToneMrk</string>
     <string>ModRtTack</string>
+    <string>CombRtTackAbv</string>
     <string>ModYinDepartingTnMrk</string>
     <string>CombLftAngBlw</string>
+    <string>CombLftAngCenteredAbv</string>
     <string>CombLftAngAbv</string>
+    <string>CombVertLineMacron</string>
+    <string>CombMacronVertLine</string>
+    <string>CombMacronAcuteGrave</string>
+    <string>CombVertLineAcute</string>
+    <string>CombVertLineAcuteGrave</string>
+    <string>CombVertLineGrave</string>
+    <string>CombVertLineGraveAcute</string>
+    <string>CombGraveVertLine</string>
+    <string>CombAcuteVertLine</string>
     <string>ModGraveAccent.ChinantecTn</string>
     <string>ModVertLine.ChinantecTn</string>
     <string>ModAcuteAccent.ChinantecTn</string>
@@ -3210,7 +3238,9 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>CombBridgeAbv</string>
     <string>CombInvBridgeBlw</string>
     <string>OpnBx</string>
+    <string>CombInvBridgeAbv</string>
     <string>CombSqrBlw</string>
+    <string>CombSqrAbv</string>
     <string>ModRhoticHook</string>
     <string>TnLtrSpcFlatLeft</string>
     <string>TnLtrSpcFlatRight</string>
@@ -3365,6 +3395,7 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>UpArrw</string>
     <string>ModRaisedUpArrw</string>
     <string>CombUpArrwBlw</string>
+    <string>CombUpArrwAbv</string>
     <string>UpDwnArrw</string>
     <string>UpDwnArrwWBase</string>
     <string>LftArrw</string>
@@ -3383,8 +3414,10 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>CombDblRtArrwBlw.blwhigh.ulow</string>
     <string>CombDblRtArrwBlw.blwhigh.umid</string>
     <string>CombDblRtArrwBlw.blwhigh</string>
+    <string>CombDblRtArrwAbv</string>
     <string>LftRtArrw</string>
     <string>CombLftRtArrwBlw</string>
+    <string>CombLftRtArrwAbv</string>
     <string>LftArrwStrk</string>
     <string>RtArrwStrk</string>
     <string>LftRtArrwStrk</string>
@@ -3460,6 +3493,7 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>FunctionApplication</string>
     <string>InvisibleSeparator</string>
     <string>InvisibleTimes</string>
+    <string>InvisiblePlus</string>
     <string>LftToRtEmbedding</string>
     <string>LftToRtMrk</string>
     <string>LftToRtOverride</string>
@@ -4560,6 +4594,8 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>acutecomb</string>
     <key>CombAcuteBlw</key>
     <string>uni0317</string>
+    <key>CombAcuteVertLine</key>
+    <string>uni1AD3</string>
     <key>CombAcute_Grave_Acute</key>
     <string>uni1DC9</string>
     <key>CombAcute_Grave_AcuteDep</key>
@@ -4628,6 +4664,10 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>u1E08F</string>
     <key>CombDblAcute</key>
     <string>uni030B</string>
+    <key>CombDblArchAbv</key>
+    <string>uni1AE7</string>
+    <key>CombDblArchBlw</key>
+    <string>uni1AE6</string>
     <key>CombDblBreve</key>
     <string>uni035D</string>
     <key>CombDblBreve.high</key>
@@ -4788,6 +4828,8 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>uni1ACA</string>
     <key>CombDblRingBlw</key>
     <string>uni035A</string>
+    <key>CombDblRtArrwAbv</key>
+    <string>uni1AEB</string>
     <key>CombDblRtArrwBlw</key>
     <string>uni0362</string>
     <key>CombDblRtArrwBlw.blwhigh</key>
@@ -4842,28 +4884,42 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>uni0308.UU</string>
     <key>CombDiaerBlw</key>
     <string>uni0324</string>
+    <key>CombDiaerRaisedLftDot</key>
+    <string>uni1ADC</string>
     <key>CombDiaerRing</key>
     <string>uni1AB1</string>
     <key>CombDotAbv</key>
     <string>uni0307</string>
     <key>CombDotBlw</key>
     <string>dotbelowcomb</string>
+    <key>CombDotRingBlw</key>
+    <string>uni1ADD</string>
+    <key>CombDoubledCaron</key>
+    <string>uni1ACF</string>
     <key>CombDoubledCircum</key>
     <string>uni1AB0</string>
     <key>CombDwnArrw</key>
     <string>uni1AB3</string>
+    <key>CombDwnTackAbv</key>
+    <string>uni1ADB</string>
     <key>CombDwnTackBlw</key>
     <string>uni031E</string>
+    <key>CombEqSgnAbv</key>
+    <string>uni1AE8</string>
     <key>CombEqSgnBlw</key>
     <string>uni0347</string>
     <key>CombFermata</key>
     <string>uni0352</string>
+    <key>CombFlat</key>
+    <string>uni1ADA</string>
     <key>CombGraphemeJoiner</key>
     <string>uni034F</string>
     <key>CombGrave</key>
     <string>gravecomb</string>
     <key>CombGraveBlw</key>
     <string>uni0316</string>
+    <key>CombGraveVertLine</key>
+    <string>uni1AD1</string>
     <key>CombGrave_Acute_Grave</key>
     <string>uni1DC8</string>
     <key>CombGrave_Acute_GraveDep</key>
@@ -4890,6 +4946,8 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>uni0311.UU</string>
     <key>CombInvBreveBlw</key>
     <string>uni032F</string>
+    <key>CombInvBridgeAbv</key>
+    <string>uni1AE3</string>
     <key>CombInvBridgeBlw</key>
     <string>uni033A</string>
     <key>CombInvDblArchAbv</key>
@@ -4902,6 +4960,8 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>uni031A</string>
     <key>CombLftAngBlw</key>
     <string>uni0349</string>
+    <key>CombLftAngCenteredAbv</key>
+    <string>uni1AE9</string>
     <key>CombLftArrwBlw</key>
     <string>uni20EE</string>
     <key>CombLftArrwhdAbv</key>
@@ -4914,8 +4974,12 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>uni031C</string>
     <key>CombLftHarpoonBarbDwnBlw</key>
     <string>uni20ED</string>
+    <key>CombLftRtArrwAbv</key>
+    <string>uni20E1</string>
     <key>CombLftRtArrwBlw</key>
     <string>uni034D</string>
+    <key>CombLftTackAbv</key>
+    <string>uni1AE0</string>
     <key>CombLftTackBlw</key>
     <string>uni0318</string>
     <key>CombLightCentralizationStrkBlw</key>
@@ -4980,10 +5044,14 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>uni0304</string>
     <key>CombMacron.Short</key>
     <string>uni0304.Short</string>
+    <key>CombMacronAcuteGrave</key>
+    <string>uni1AD8</string>
     <key>CombMacronBlw</key>
     <string>uni0331</string>
     <key>CombMacronBlw.Short</key>
     <string>uni0331.Short</string>
+    <key>CombMacronVertLine</key>
+    <string>uni1AD5</string>
     <key>CombMacron_Acute</key>
     <string>uni1DC4</string>
     <key>CombMacron_AcuteDep</key>
@@ -4994,6 +5062,8 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>uni1DC6</string>
     <key>CombMacron_GraveDep</key>
     <string>uniF173</string>
+    <key>CombMinusSgnAbv</key>
+    <string>uni1AE2</string>
     <key>CombMinusSgnBlw</key>
     <string>uni0320</string>
     <key>CombNotTildeAbv</key>
@@ -5044,10 +5114,16 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>uni0339</string>
     <key>CombRtHarpoonBarbDwnBlw</key>
     <string>uni20EC</string>
+    <key>CombRtTackAbv</key>
+    <string>uni1AE1</string>
     <key>CombRtTackBlw</key>
     <string>uni0319</string>
+    <key>CombSeagullAbv</key>
+    <string>uni1AE5</string>
     <key>CombSeagullBlw</key>
     <string>uni033C</string>
+    <key>CombSharp</key>
+    <string>uni1AD9</string>
     <key>CombShortSolidusOverlay</key>
     <string>uni0337</string>
     <key>CombShortStrkOverlay</key>
@@ -5056,6 +5132,8 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>uni1DC2</string>
     <key>CombSnakeBlwDep</key>
     <string>uniF170</string>
+    <key>CombSqrAbv</key>
+    <string>uni1AE4</string>
     <key>CombSqrBlw</key>
     <string>uni033B</string>
     <key>CombStrongCentralizationStrkBlw</key>
@@ -5076,6 +5154,8 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>uni0312</string>
     <key>CombTrndCommaAbv.Lrg</key>
     <string>uni0312.Lrg</string>
+    <key>CombUpArrwAbv</key>
+    <string>uni1AEA</string>
     <key>CombUpArrwBlw</key>
     <string>uni034E</string>
     <key>CombUpTackAbv</key>
@@ -5084,8 +5164,18 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>uni031D</string>
     <key>CombVertLineAbv</key>
     <string>uni030D</string>
+    <key>CombVertLineAcute</key>
+    <string>uni1AD0</string>
+    <key>CombVertLineAcuteGrave</key>
+    <string>uni1AD6</string>
     <key>CombVertLineBlw</key>
     <string>uni0329</string>
+    <key>CombVertLineGrave</key>
+    <string>uni1AD2</string>
+    <key>CombVertLineGraveAcute</key>
+    <string>uni1AD7</string>
+    <key>CombVertLineMacron</key>
+    <string>uni1AD4</string>
     <key>CombVertTilde</key>
     <string>uni033E</string>
     <key>CombWigglyLineBlw</key>
@@ -6252,6 +6342,8 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>uniA70D</string>
     <key>DotLftStemTnLtr5Dep</key>
     <string>uniF1DA</string>
+    <key>DotOperator</key>
+    <string>uni22C5</string>
     <key>DotTnLtr1</key>
     <string>uniA70C</string>
     <key>DotTnLtr1Dep</key>
@@ -6468,6 +6560,8 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>exclamdown</string>
     <key>InvQstnMrk</key>
     <string>questiondown</string>
+    <key>InvisiblePlus</key>
+    <string>uni2064</string>
     <key>InvisibleSeparator</key>
     <string>uni2063</string>
     <key>InvisibleTimes</key>
@@ -9196,6 +9290,8 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>uni1D7C</string>
     <key>LtnSmIotaStrkDep</key>
     <string>uniF25D</string>
+    <key>LtnSmIotifiedE</key>
+    <string>uniAB61</string>
     <key>LtnSmIs</key>
     <string>uniA76D</string>
     <key>LtnSmIs.sc</key>
@@ -9778,6 +9874,8 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>uni1D97.TopSerif</string>
     <key>LtnSmOpnORetrHookDep</key>
     <string>uniF23D</string>
+    <key>LtnSmOpnOe</key>
+    <string>uniAB62</string>
     <key>LtnSmOu</key>
     <string>uni0223</string>
     <key>LtnSmOu.OpenTop</key>
@@ -10054,6 +10152,8 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>uni023F.sc</string>
     <key>LtnSmSSwashTailDep</key>
     <string>uniF256</string>
+    <key>LtnSmSakhaYat</key>
+    <string>uniAB60</string>
     <key>LtnSmSaltillo</key>
     <string>uniA78C</string>
     <key>LtnSmSaltillo.Lrg</key>
@@ -10450,6 +10550,8 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>uni1D6B</string>
     <key>LtnSmUm</key>
     <string>uniA778</string>
+    <key>LtnSmUo</key>
+    <string>uniAB63</string>
     <key>LtnSmUpsilon</key>
     <string>uni028A</string>
     <key>LtnSmUpsilon.sc</key>

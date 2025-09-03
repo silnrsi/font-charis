@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmSakhaYat" format="2">
+  <advance width="2138"/>
+  <unicode hex="AB60"/>
+  <anchor x="1638" y="-100" name="L"/>
+  <anchor x="1638" y="1100" name="U"/>
+  <outline>
+    <component base="CySmPe"/>
+    <component base="CySmSoftSgn" xOffset="1157"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.99,0.62,0.11,1</string>
+    </dict>
+  </lib>
+</glyph>

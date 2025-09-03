@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CombDblArchBlw" format="2">
+  <unicode hex="1AE6"/>
+  <anchor x="-713" y="-500" name="L"/>
+  <anchor x="-637" y="-100" name="_L"/>
+  <outline>
+    <component base="CombInvDblArchBlw"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.99,0.62,0.11,1</string>
+    </dict>
+  </lib>
+</glyph>

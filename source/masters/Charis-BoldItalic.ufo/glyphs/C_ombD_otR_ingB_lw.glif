@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CombDotRingBlw" format="2">
+  <unicode hex="1ADD"/>
+  <anchor x="-309" y="1660" name="U"/>
+  <anchor x="-443" y="1100" name="_U"/>
+  <outline>
+    <component base="CombDiaerRing"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.99,0.62,0.11,1</string>
+    </dict>
+  </lib>
+</glyph>

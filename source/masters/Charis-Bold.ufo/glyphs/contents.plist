@@ -84,6 +84,8 @@
   <string>C_ombA_cute.glif</string>
   <key>CombAcuteBlw</key>
   <string>C_ombA_cuteB_lw.glif</string>
+  <key>CombAcuteVertLine</key>
+  <string>C_ombA_cuteV_ertL_ine.glif</string>
   <key>CombAcute_Grave_Acute</key>
   <string>C_ombA_cute_G_rave_A_cute.glif</string>
   <key>CombAcute_Grave_AcuteDep</key>
@@ -152,6 +154,10 @@
   <string>C_ombC_yS_mB_yelorusU_krainI_.glif</string>
   <key>CombDblAcute</key>
   <string>C_ombD_blA_cute.glif</string>
+  <key>CombDblArchAbv</key>
+  <string>C_ombD_blA_rchA_bv.glif</string>
+  <key>CombDblArchBlw</key>
+  <string>C_ombD_blA_rchB_lw.glif</string>
   <key>CombDblBreve</key>
   <string>C_ombD_blB_reve.glif</string>
   <key>CombDblBreve.high</key>
@@ -312,6 +318,8 @@
   <string>C_ombD_blP_lusS_gnB_lw.glif</string>
   <key>CombDblRingBlw</key>
   <string>C_ombD_blR_ingB_lw.glif</string>
+  <key>CombDblRtArrwAbv</key>
+  <string>C_ombD_blR_tA_rrwA_bv.glif</string>
   <key>CombDblRtArrwBlw</key>
   <string>C_ombD_blR_tA_rrwB_lw.glif</string>
   <key>CombDblRtArrwBlw.blwhigh</key>
@@ -366,28 +374,42 @@
   <string>C_ombD_iaer.U_U_.glif</string>
   <key>CombDiaerBlw</key>
   <string>C_ombD_iaerB_lw.glif</string>
+  <key>CombDiaerRaisedLftDot</key>
+  <string>C_ombD_iaerR_aisedL_ftD_ot.glif</string>
   <key>CombDiaerRing</key>
   <string>C_ombD_iaerR_ing.glif</string>
   <key>CombDotAbv</key>
   <string>C_ombD_otA_bv.glif</string>
   <key>CombDotBlw</key>
   <string>C_ombD_otB_lw.glif</string>
+  <key>CombDotRingBlw</key>
+  <string>C_ombD_otR_ingB_lw.glif</string>
+  <key>CombDoubledCaron</key>
+  <string>C_ombD_oubledC_aron.glif</string>
   <key>CombDoubledCircum</key>
   <string>C_ombD_oubledC_ircum.glif</string>
   <key>CombDwnArrw</key>
   <string>C_ombD_wnA_rrw.glif</string>
+  <key>CombDwnTackAbv</key>
+  <string>C_ombD_wnT_ackA_bv.glif</string>
   <key>CombDwnTackBlw</key>
   <string>C_ombD_wnT_ackB_lw.glif</string>
+  <key>CombEqSgnAbv</key>
+  <string>C_ombE_qS_gnA_bv.glif</string>
   <key>CombEqSgnBlw</key>
   <string>C_ombE_qS_gnB_lw.glif</string>
   <key>CombFermata</key>
   <string>C_ombF_ermata.glif</string>
+  <key>CombFlat</key>
+  <string>C_ombF_lat.glif</string>
   <key>CombGraphemeJoiner</key>
   <string>C_ombG_raphemeJ_oiner.glif</string>
   <key>CombGrave</key>
   <string>C_ombG_rave.glif</string>
   <key>CombGraveBlw</key>
   <string>C_ombG_raveB_lw.glif</string>
+  <key>CombGraveVertLine</key>
+  <string>C_ombG_raveV_ertL_ine.glif</string>
   <key>CombGrave_Acute_Grave</key>
   <string>C_ombG_rave_A_cute_G_rave.glif</string>
   <key>CombGrave_Acute_GraveDep</key>
@@ -414,6 +436,8 @@
   <string>C_ombI_nvB_reve.U_U_.glif</string>
   <key>CombInvBreveBlw</key>
   <string>C_ombI_nvB_reveB_lw.glif</string>
+  <key>CombInvBridgeAbv</key>
+  <string>C_ombI_nvB_ridgeA_bv.glif</string>
   <key>CombInvBridgeBlw</key>
   <string>C_ombI_nvB_ridgeB_lw.glif</string>
   <key>CombInvDblArchAbv</key>
@@ -426,6 +450,8 @@
   <string>C_ombL_ftA_ngA_bv.glif</string>
   <key>CombLftAngBlw</key>
   <string>C_ombL_ftA_ngB_lw.glif</string>
+  <key>CombLftAngCenteredAbv</key>
+  <string>C_ombL_ftA_ngC_enteredA_bv.glif</string>
   <key>CombLftArrwBlw</key>
   <string>C_ombL_ftA_rrwB_lw.glif</string>
   <key>CombLftArrwhdAbv</key>
@@ -438,8 +464,12 @@
   <string>C_ombL_ftH_alfR_ingB_lw.glif</string>
   <key>CombLftHarpoonBarbDwnBlw</key>
   <string>C_ombL_ftH_arpoonB_arbD_wnB_lw.glif</string>
+  <key>CombLftRtArrwAbv</key>
+  <string>C_ombL_ftR_tA_rrwA_bv.glif</string>
   <key>CombLftRtArrwBlw</key>
   <string>C_ombL_ftR_tA_rrwB_lw.glif</string>
+  <key>CombLftTackAbv</key>
+  <string>C_ombL_ftT_ackA_bv.glif</string>
   <key>CombLftTackBlw</key>
   <string>C_ombL_ftT_ackB_lw.glif</string>
   <key>CombLightCentralizationStrkBlw</key>
@@ -504,10 +534,14 @@
   <string>C_ombM_acron.glif</string>
   <key>CombMacron.Short</key>
   <string>C_ombM_acron.S_hort.glif</string>
+  <key>CombMacronAcuteGrave</key>
+  <string>C_ombM_acronA_cuteG_rave.glif</string>
   <key>CombMacronBlw</key>
   <string>C_ombM_acronB_lw.glif</string>
   <key>CombMacronBlw.Short</key>
   <string>C_ombM_acronB_lw.S_hort.glif</string>
+  <key>CombMacronVertLine</key>
+  <string>C_ombM_acronV_ertL_ine.glif</string>
   <key>CombMacron_Acute</key>
   <string>C_ombM_acron_A_cute.glif</string>
   <key>CombMacron_AcuteDep</key>
@@ -518,6 +552,8 @@
   <string>C_ombM_acron_G_rave.glif</string>
   <key>CombMacron_GraveDep</key>
   <string>C_ombM_acron_G_raveD_ep.glif</string>
+  <key>CombMinusSgnAbv</key>
+  <string>C_ombM_inusS_gnA_bv.glif</string>
   <key>CombMinusSgnBlw</key>
   <string>C_ombM_inusS_gnB_lw.glif</string>
   <key>CombNotTildeAbv</key>
@@ -568,10 +604,16 @@
   <string>C_ombR_tH_alfR_ingB_lw.glif</string>
   <key>CombRtHarpoonBarbDwnBlw</key>
   <string>C_ombR_tH_arpoonB_arbD_wnB_lw.glif</string>
+  <key>CombRtTackAbv</key>
+  <string>C_ombR_tT_ackA_bv.glif</string>
   <key>CombRtTackBlw</key>
   <string>C_ombR_tT_ackB_lw.glif</string>
+  <key>CombSeagullAbv</key>
+  <string>C_ombS_eagullA_bv.glif</string>
   <key>CombSeagullBlw</key>
   <string>C_ombS_eagullB_lw.glif</string>
+  <key>CombSharp</key>
+  <string>C_ombS_harp.glif</string>
   <key>CombShortSolidusOverlay</key>
   <string>C_ombS_hortS_olidusO_verlay.glif</string>
   <key>CombShortStrkOverlay</key>
@@ -580,6 +622,8 @@
   <string>C_ombS_nakeB_lw.glif</string>
   <key>CombSnakeBlwDep</key>
   <string>C_ombS_nakeB_lwD_ep.glif</string>
+  <key>CombSqrAbv</key>
+  <string>C_ombS_qrA_bv.glif</string>
   <key>CombSqrBlw</key>
   <string>C_ombS_qrB_lw.glif</string>
   <key>CombStrongCentralizationStrkBlw</key>
@@ -600,6 +644,8 @@
   <string>C_ombT_rndC_ommaA_bv.glif</string>
   <key>CombTrndCommaAbv.Lrg</key>
   <string>C_ombT_rndC_ommaA_bv.L_rg.glif</string>
+  <key>CombUpArrwAbv</key>
+  <string>C_ombU_pA_rrwA_bv.glif</string>
   <key>CombUpArrwBlw</key>
   <string>C_ombU_pA_rrwB_lw.glif</string>
   <key>CombUpTackAbv</key>
@@ -608,8 +654,18 @@
   <string>C_ombU_pT_ackB_lw.glif</string>
   <key>CombVertLineAbv</key>
   <string>C_ombV_ertL_ineA_bv.glif</string>
+  <key>CombVertLineAcute</key>
+  <string>C_ombV_ertL_ineA_cute.glif</string>
+  <key>CombVertLineAcuteGrave</key>
+  <string>C_ombV_ertL_ineA_cuteG_rave.glif</string>
   <key>CombVertLineBlw</key>
   <string>C_ombV_ertL_ineB_lw.glif</string>
+  <key>CombVertLineGrave</key>
+  <string>C_ombV_ertL_ineG_rave.glif</string>
+  <key>CombVertLineGraveAcute</key>
+  <string>C_ombV_ertL_ineG_raveA_cute.glif</string>
+  <key>CombVertLineMacron</key>
+  <string>C_ombV_ertL_ineM_acron.glif</string>
   <key>CombVertTilde</key>
   <string>C_ombV_ertT_ilde.glif</string>
   <key>CombWigglyLineBlw</key>
@@ -1776,6 +1832,8 @@
   <string>D_otL_ftS_temT_nL_tr5.glif</string>
   <key>DotLftStemTnLtr5Dep</key>
   <string>D_otL_ftS_temT_nL_tr5D_ep.glif</string>
+  <key>DotOperator</key>
+  <string>D_otO_perator.glif</string>
   <key>DotTnLtr1</key>
   <string>D_otT_nL_tr1.glif</string>
   <key>DotTnLtr1Dep</key>
@@ -1992,6 +2050,8 @@
   <string>I_nvE_xclamationM_rk.glif</string>
   <key>InvQstnMrk</key>
   <string>I_nvQ_stnM_rk.glif</string>
+  <key>InvisiblePlus</key>
+  <string>I_nvisibleP_lus.glif</string>
   <key>InvisibleSeparator</key>
   <string>I_nvisibleS_eparator.glif</string>
   <key>InvisibleTimes</key>
@@ -4720,6 +4780,8 @@
   <string>L_tnS_mI_otaS_trk.glif</string>
   <key>LtnSmIotaStrkDep</key>
   <string>L_tnS_mI_otaS_trkD_ep.glif</string>
+  <key>LtnSmIotifiedE</key>
+  <string>L_tnS_mI_otifiedE_.glif</string>
   <key>LtnSmIs</key>
   <string>L_tnS_mI_s.glif</string>
   <key>LtnSmIs.sc</key>
@@ -5302,6 +5364,8 @@
   <string>L_tnS_mO_pnO_R_etrH_ook.T_opS_erif.glif</string>
   <key>LtnSmOpnORetrHookDep</key>
   <string>L_tnS_mO_pnO_R_etrH_ookD_ep.glif</string>
+  <key>LtnSmOpnOe</key>
+  <string>L_tnS_mO_pnO_e.glif</string>
   <key>LtnSmOu</key>
   <string>L_tnS_mO_u.glif</string>
   <key>LtnSmOu.OpenTop</key>
@@ -5578,6 +5642,8 @@
   <string>L_tnS_mS_S_washT_ail.sc.glif</string>
   <key>LtnSmSSwashTailDep</key>
   <string>L_tnS_mS_S_washT_ailD_ep.glif</string>
+  <key>LtnSmSakhaYat</key>
+  <string>L_tnS_mS_akhaY_at.glif</string>
   <key>LtnSmSaltillo</key>
   <string>L_tnS_mS_altillo.glif</string>
   <key>LtnSmSaltillo.Lrg</key>
@@ -5974,6 +6040,8 @@
   <string>L_tnS_mU_e.glif</string>
   <key>LtnSmUm</key>
   <string>L_tnS_mU_m.glif</string>
+  <key>LtnSmUo</key>
+  <string>L_tnS_mU_o.glif</string>
   <key>LtnSmUpsilon</key>
   <string>L_tnS_mU_psilon.glif</string>
   <key>LtnSmUpsilon.sc</key>
