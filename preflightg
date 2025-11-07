@@ -5,6 +5,12 @@ psfglyphs2ufo --preservefea source/masters/CharisRoman.glyphs source/masters   &
 psfglyphs2ufo --preservefea source/masters/CharisItalic.glyphs source/masters  &
 wait
 
+echo "-----Fix spacing combining marks..."
+psfremovegliflibkeys source/masters/Charis-Regular.ufo com.schriftgestaltung.Glyphs.originalWidth
+psfremovegliflibkeys source/masters/Charis-Bold.ufo com.schriftgestaltung.Glyphs.originalWidth
+psfremovegliflibkeys source/masters/Charis-Italic.ufo com.schriftgestaltung.Glyphs.originalWidth
+psfremovegliflibkeys source/masters/Charis-BoldItalic.ufo com.schriftgestaltung.Glyphs.originalWidth
+
 echo "-----Normalizing Regular UFO..."
 echo "-----Updating production names in Regular..."
 psfsetpsnames -p checkfix=fix -i source/glyph_data.csv source/masters/Charis-Regular.ufo -x
