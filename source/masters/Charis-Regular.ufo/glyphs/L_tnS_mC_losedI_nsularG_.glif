@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmClosedInsularG" format="2">
+  <advance width="987"/>
+  <unicode hex="A7D1"/>
+  <anchor x="498" y="-500" name="L"/>
+  <anchor x="987" y="1000" name="R"/>
+  <anchor x="498" y="1100" name="U"/>
+  <outline>
+    <component base="LtnSmInsularG"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.18,0.16,0.78,1</string>
+    </dict>
+  </lib>
+</glyph>

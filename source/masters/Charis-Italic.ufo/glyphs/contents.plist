@@ -54,6 +54,8 @@
   <string>C_W_B_ottomA_rrw.glif</string>
   <key>CWTopArrw</key>
   <string>C_W_T_opA_rrw.glif</string>
+  <key>CareOf</key>
+  <string>C_areO_f.glif</string>
   <key>Caret</key>
   <string>C_aret.glif</string>
   <key>CaretInsPt</key>
@@ -2288,6 +2290,8 @@
   <string>L_tnC_apA_eM_acron.glif</string>
   <key>LtnCapAfricanD</key>
   <string>L_tnC_apA_fricanD_.glif</string>
+  <key>LtnCapAngW</key>
+  <string>L_tnC_apA_ngW_.glif</string>
   <key>LtnCapArchaicM</key>
   <string>L_tnC_apA_rchaicM_.glif</string>
   <key>LtnCapAtDep</key>
@@ -2342,6 +2346,8 @@
   <string>L_tnC_apC_S_trk.glif</string>
   <key>LtnCapChi</key>
   <string>L_tnC_apC_hi.glif</string>
+  <key>LtnCapClosedInsularG</key>
+  <string>L_tnC_apC_losedI_nsularG_.glif</string>
   <key>LtnCapCuatrillo</key>
   <string>L_tnC_apC_uatrillo.glif</string>
   <key>LtnCapCuatrilloComma</key>
@@ -2386,6 +2392,10 @@
   <string>L_tnC_apD_blB_arredL_.glif</string>
   <key>LtnCapDblBarredLDep</key>
   <string>L_tnC_apD_blB_arredL_D_ep.glif</string>
+  <key>LtnCapDblThorn</key>
+  <string>L_tnC_apD_blT_horn.glif</string>
+  <key>LtnCapDblWynn</key>
+  <string>L_tnC_apD_blW_ynn.glif</string>
   <key>LtnCapDz</key>
   <string>L_tnC_apD_z.glif</string>
   <key>LtnCapDzCaron</key>
@@ -3822,6 +3832,8 @@
   <string>L_tnS_mA_lphaR_etrH_ook.glif</string>
   <key>LtnSmAlphaRetrHookDep</key>
   <string>L_tnS_mA_lphaR_etrH_ookD_ep.glif</string>
+  <key>LtnSmAngW</key>
+  <string>L_tnS_mA_ngW_.glif</string>
   <key>LtnSmAtDep</key>
   <string>L_tnS_mA_tD_ep.glif</string>
   <key>LtnSmB</key>
@@ -4050,6 +4062,8 @@
   <string>L_tnS_mC_hi.glif</string>
   <key>LtnSmChi.sc</key>
   <string>L_tnS_mC_hi.sc.glif</string>
+  <key>LtnSmClosedInsularG</key>
+  <string>L_tnS_mC_losedI_nsularG_.glif</string>
   <key>LtnSmClosedOmega</key>
   <string>L_tnS_mC_losedO_mega.glif</string>
   <key>LtnSmClosedOpnE</key>
@@ -4150,6 +4164,10 @@
   <string>L_tnS_mD_blB_arredL_.sc.glif</string>
   <key>LtnSmDblBarredLDep</key>
   <string>L_tnS_mD_blB_arredL_D_ep.glif</string>
+  <key>LtnSmDblThorn</key>
+  <string>L_tnS_mD_blT_horn.glif</string>
+  <key>LtnSmDblWynn</key>
+  <string>L_tnS_mD_blW_ynn.glif</string>
   <key>LtnSmDelta</key>
   <string>L_tnS_mD_elta.glif</string>
   <key>LtnSmDezhDigraph</key>
@@ -5996,6 +6014,8 @@
   <string>L_tnS_mU_I_nvB_reve.glif</string>
   <key>LtnSmUInvBreve.sc</key>
   <string>L_tnS_mU_I_nvB_reve.sc.glif</string>
+  <key>LtnSmULeftHook</key>
+  <string>L_tnS_mU_L_eftH_ook.glif</string>
   <key>LtnSmUMacron</key>
   <string>L_tnS_mU_M_acron.glif</string>
   <key>LtnSmUMacron.sc</key>

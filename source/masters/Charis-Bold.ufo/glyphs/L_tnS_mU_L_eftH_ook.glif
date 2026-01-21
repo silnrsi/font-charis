@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmULeftHook" format="2">
+  <advance width="1270"/>
+  <unicode hex="AB52"/>
+  <anchor x="637" y="0" name="H"/>
+  <anchor x="637" y="-100" name="L"/>
+  <anchor x="1083" y="0" name="O"/>
+  <anchor x="1270" y="1000" name="R"/>
+  <anchor x="637" y="1100" name="U"/>
+  <outline>
+    <component base="LtnSmU"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>
