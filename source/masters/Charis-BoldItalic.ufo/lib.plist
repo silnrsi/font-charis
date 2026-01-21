@@ -1274,7 +1274,7 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>LtnSmFDotAbv.SItal</string>
     <string>LtnSmFPalHook</string>
     <string>LtnSmFMiddleTilde</string>
-    <string>LtnSmFHookStrk</string>
+    <string>LtnSmFStrk</string>
     <string>LtnLigSmFSmI</string>
     <string>LtnLigSmFSmI.SItal</string>
     <string>LtnLigSmFSmL</string>
@@ -1317,7 +1317,7 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>LtnCapFDotAbv</string>
     <string>FrenchFrancSgn</string>
     <string>LtnCapFHook</string>
-    <string>LtnCapFHookStrk</string>
+    <string>LtnCapFStrk</string>
     <string>LtnCapRevF</string>
     <string>CyCapGhe</string>
     <string>GrCapGamma</string>
@@ -3810,7 +3810,7 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>LtnSmF.sc</string>
     <string>LtnSmFDotAbv.sc</string>
     <string>LtnSmFHook.sc</string>
-    <string>LtnSmFHookStrk.sc</string>
+    <string>LtnSmFStrk.sc</string>
     <string>LtnLigSmFSmI.sc</string>
     <string>LtnLigSmFSmI.SItal.sc</string>
     <string>LtnLigSmFSmL.sc</string>
@@ -7004,7 +7004,7 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>uni1E1E</string>
     <key>LtnCapFHook</key>
     <string>uni0191</string>
-    <key>LtnCapFHookStrk</key>
+    <key>LtnCapFStrk</key>
     <string>uniA798</string>
     <key>LtnCapG</key>
     <string>G</string>
@@ -8932,10 +8932,6 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>florin</string>
     <key>LtnSmFHook.sc</key>
     <string>florin.sc</string>
-    <key>LtnSmFHookStrk</key>
-    <string>uniA799</string>
-    <key>LtnSmFHookStrk.sc</key>
-    <string>uniA799.sc</string>
     <key>LtnSmFMiddleTilde</key>
     <string>uni1D6E</string>
     <key>LtnSmFMiddleTildeDep</key>
@@ -8944,6 +8940,10 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>uni1D82</string>
     <key>LtnSmFPalHookDep</key>
     <string>uniF227</string>
+    <key>LtnSmFStrk</key>
+    <string>uniA799</string>
+    <key>LtnSmFStrk.sc</key>
+    <string>uniA799.sc</string>
     <key>LtnSmFengDigraph</key>
     <string>uni02A9</string>
     <key>LtnSmFengDigraphTrill</key>
