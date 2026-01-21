@@ -1,4 +1,4 @@
-# Copyright (c) 2007-2025 SIL Global  (https://www.sil.org)
+# Copyright (c) 2007-2026 SIL Global  (https://www.sil.org)
 # Released under the MIT License (https://opensource.org/licenses/MIT)
 
 #Script to create a template for the TypeTuner feat_all.xml file for our Roman fonts.
@@ -1856,7 +1856,7 @@ END
 sub Usage_print()
 {
 	print <<END;
-RFComposer ver $version (c) 2007-2025 SIL Global.
+RFComposer ver $version (c) 2007-2026 SIL Global.
 usage: 
 	composer -f <family name> [<switches>] <font.ttf> <gsi.xml> <gsi_supp_fn.xml>
 	switches:
