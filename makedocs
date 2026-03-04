@@ -97,4 +97,8 @@ echo "     > support.md"
 python3 documentation/source/makepsmd.py documentation/source/support.md documentation/source/productsite/support.md -q
 echo "     Markdown source for other pages is in separate repo"
 
+echo "     >>> SAMPLE FONT IMAGES (documentation/assets/images/)"
+
+python3 documentation/source/makesampleimages.py results/Charis-Regular.ttf documentation/assets/images --base "Charis-R" --sizes "S,M,L"
+
 echo "-----Completed!"
