@@ -1,6 +1,6 @@
 ref_fonts = [
-	"../references/v6200/CharisSIL-Regular.ttf=CR6",
-	"../references/v6200/CharisSIL-Bold.ttf=CB6",
-    "../references/v6200/CharisSIL-Italic.ttf=CI6",
-    "../references/v6200/CharisSIL-BoldItalic.ttf=CBI6",
+	"../references/v7000/Charis-Regular.ttf=CR7",
+	"../references/v7000/Charis-Bold.ttf=CB7",
+    "../references/v7000/Charis-Italic.ttf=CI7",
+    "../references/v7000/Charis-BoldItalic.ttf=CBI7",
 ]
