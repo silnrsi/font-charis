@@ -576,9 +576,8 @@ lookup tnn_ctx {
 
 @DotTnLtrs = [DotTnLtr5 DotTnLtr4 DotTnLtr3 DotTnLtr2 DotTnLtr1 ];
 @DotTnLtrsNo = [DotTnLtr5no DotTnLtr4no DotTnLtr3no DotTnLtr2no DotTnLtr1no ];
-#@DotTnLtrsNo = [TnLtrDot5 TnLtrDot4 TnLtrDot3 TnLtrDot2 TnLtrDot1 ]; # for debugging until proper glyphs added
 
-# below is commented out until glyphs added (if it's decided to hide staves on left stem ones
+# below is commented out until glyphs added (if it's decided to hide staves on left stem ones)
 # @DotLftStemTnLtrs = [DotLftStemTnLtr5 DotLftStemTnLtr4 DotLftStemTnLtr3 DotLftStemTnLtr2 DotLftStemTnLtr1 ];
 # @DotLftStemTnLtrsNo = [DotLftStemTnLtr5no DotLftStemTnLtr4no DotLftStemTnLtr3no DotLftStemTnLtr2no DotLftStemTnLtr1no ];
 
