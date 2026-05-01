@@ -6,6 +6,7 @@
     <fontsrc>url(../results/Charis-Regular.ttf)</fontsrc>
     <styles>
       <style feats="'cv91' 1" name="cv91_1"/>
+      <style feats="'cv91' 2" name="cv91_2"/>
       <style feats="'cv92' 1" name="cv92_1"/>
     </styles>
     <title>Tone Bar tests</title>
@@ -145,128 +146,256 @@
       <comment>solo tones</comment>
       <string>\u0002E5 \u0002E6 \u0002E7 \u0002E8 \u0002E9</string>
     </test>
+    <test label="U+02E5 U+02E6 U+02E7 U+02E8 U+02E9" stylename="cv91_2">
+      <comment>solo tones (reversed)</comment>
+      <string>\u0002E5 \u0002E6 \u0002E7 \u0002E8 \u0002E9</string>
+    </test>
     <test label="U+02E5 U+02E6 U+02E7 U+02E8 U+02E9" stylename="cv91_1">
       <comment>identical paired tones</comment>
+      <string> \u0002E5\u0002E5  \u0002E6\u0002E6  \u0002E7\u0002E7  \u0002E8\u0002E8  \u0002E9\u0002E9 </string>
+    </test>
+    <test label="U+02E5 U+02E6 U+02E7 U+02E8 U+02E9" stylename="cv91_2">
+      <comment>identical paired tones (reversed)</comment>
       <string> \u0002E5\u0002E5  \u0002E6\u0002E6  \u0002E7\u0002E7  \u0002E8\u0002E8  \u0002E9\u0002E9 </string>
     </test>
     <test label="U+02E5" stylename="cv91_1">
       <comment>tone pairs</comment>
       <string>\u0002E5\u0002E5 \u0002E5\u0002E6 \u0002E5\u0002E7 \u0002E5\u0002E8 \u0002E5\u0002E9</string>
     </test>
+    <test label="U+02E5 (reversed)" stylename="cv91_2">
+      <comment>tone pairs (reversed)</comment>
+      <string>\u0002E5\u0002E5 \u0002E5\u0002E6 \u0002E5\u0002E7 \u0002E5\u0002E8 \u0002E5\u0002E9</string>
+    </test>
     <test label="U+02E6" stylename="cv91_1">
       <comment>tone pairs</comment>
+      <string>\u0002E6\u0002E5 \u0002E6\u0002E6 \u0002E6\u0002E7 \u0002E6\u0002E8 \u0002E6\u0002E9</string>
+    </test>
+    <test label="U+02E6 (reversed)" stylename="cv91_2">
+      <comment>tone pairs (reversed)</comment>
       <string>\u0002E6\u0002E5 \u0002E6\u0002E6 \u0002E6\u0002E7 \u0002E6\u0002E8 \u0002E6\u0002E9</string>
     </test>
     <test label="U+02E7" stylename="cv91_1">
       <comment>tone pairs</comment>
       <string>\u0002E7\u0002E5 \u0002E7\u0002E6 \u0002E7\u0002E7 \u0002E7\u0002E8 \u0002E7\u0002E9</string>
     </test>
+    <test label="U+02E7 (reversed)" stylename="cv91_2">
+      <comment>tone pairs (reversed)</comment>
+      <string>\u0002E7\u0002E5 \u0002E7\u0002E6 \u0002E7\u0002E7 \u0002E7\u0002E8 \u0002E7\u0002E9</string>
+    </test>
     <test label="U+02E8" stylename="cv91_1">
       <comment>tone pairs</comment>
+      <string>\u0002E8\u0002E5 \u0002E8\u0002E6 \u0002E8\u0002E7 \u0002E8\u0002E8 \u0002E8\u0002E9</string>
+    </test>
+    <test label="U+02E8 (reversed)" stylename="cv91_2">
+      <comment>tone pairs (reversed)</comment>
       <string>\u0002E8\u0002E5 \u0002E8\u0002E6 \u0002E8\u0002E7 \u0002E8\u0002E8 \u0002E8\u0002E9</string>
     </test>
     <test label="U+02E9" stylename="cv91_1">
       <comment>tone pairs</comment>
       <string>\u0002E9\u0002E5 \u0002E9\u0002E6 \u0002E9\u0002E7 \u0002E9\u0002E8 \u0002E9\u0002E9</string>
     </test>
+    <test label="U+02E9 (reversed)" stylename="cv91_2">
+      <comment>tone pairs (reversed)</comment>
+      <string>\u0002E9\u0002E5 \u0002E9\u0002E6 \u0002E9\u0002E7 \u0002E9\u0002E8 \u0002E9\u0002E9</string>
+    </test>
     <test label="U+02E5 U+02E5" stylename="cv91_1">
       <comment>tone triplets</comment>
+      <string>\u0002E5\u0002E5\u0002E5 \u0002E5\u0002E5\u0002E6 \u0002E5\u0002E5\u0002E7 \u0002E5\u0002E5\u0002E8 \u0002E5\u0002E5\u0002E9</string>
+    </test>
+    <test label="U+02E5 U+02E5 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
       <string>\u0002E5\u0002E5\u0002E5 \u0002E5\u0002E5\u0002E6 \u0002E5\u0002E5\u0002E7 \u0002E5\u0002E5\u0002E8 \u0002E5\u0002E5\u0002E9</string>
     </test>
     <test label="U+02E5 U+02E6" stylename="cv91_1">
       <comment>tone triplets</comment>
       <string>\u0002E5\u0002E6\u0002E5 \u0002E5\u0002E6\u0002E6 \u0002E5\u0002E6\u0002E7 \u0002E5\u0002E6\u0002E8 \u0002E5\u0002E6\u0002E9</string>
     </test>
+    <test label="U+02E5 U+02E6 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
+      <string>\u0002E5\u0002E6\u0002E5 \u0002E5\u0002E6\u0002E6 \u0002E5\u0002E6\u0002E7 \u0002E5\u0002E6\u0002E8 \u0002E5\u0002E6\u0002E9</string>
+    </test>
     <test label="U+02E5 U+02E7" stylename="cv91_1">
       <comment>tone triplets</comment>
+      <string>\u0002E5\u0002E7\u0002E5 \u0002E5\u0002E7\u0002E6 \u0002E5\u0002E7\u0002E7 \u0002E5\u0002E7\u0002E8 \u0002E5\u0002E7\u0002E9</string>
+    </test>
+    <test label="U+02E5 U+02E7 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
       <string>\u0002E5\u0002E7\u0002E5 \u0002E5\u0002E7\u0002E6 \u0002E5\u0002E7\u0002E7 \u0002E5\u0002E7\u0002E8 \u0002E5\u0002E7\u0002E9</string>
     </test>
     <test label="U+02E5 U+02E8" stylename="cv91_1">
       <comment>tone triplets</comment>
       <string>\u0002E5\u0002E8\u0002E5 \u0002E5\u0002E8\u0002E6 \u0002E5\u0002E8\u0002E7 \u0002E5\u0002E8\u0002E8 \u0002E5\u0002E8\u0002E9</string>
     </test>
+    <test label="U+02E5 U+02E8 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
+      <string>\u0002E5\u0002E8\u0002E5 \u0002E5\u0002E8\u0002E6 \u0002E5\u0002E8\u0002E7 \u0002E5\u0002E8\u0002E8 \u0002E5\u0002E8\u0002E9</string>
+    </test>
     <test label="U+02E5 U+02E9" stylename="cv91_1">
       <comment>tone triplets</comment>
+      <string>\u0002E5\u0002E9\u0002E5 \u0002E5\u0002E9\u0002E6 \u0002E5\u0002E9\u0002E7 \u0002E5\u0002E9\u0002E8 \u0002E5\u0002E9\u0002E9</string>
+    </test>
+    <test label="U+02E5 U+02E9 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
       <string>\u0002E5\u0002E9\u0002E5 \u0002E5\u0002E9\u0002E6 \u0002E5\u0002E9\u0002E7 \u0002E5\u0002E9\u0002E8 \u0002E5\u0002E9\u0002E9</string>
     </test>
     <test label="U+02E6 U+02E5" stylename="cv91_1">
       <comment>tone triplets</comment>
       <string>\u0002E6\u0002E5\u0002E5 \u0002E6\u0002E5\u0002E6 \u0002E6\u0002E5\u0002E7 \u0002E6\u0002E5\u0002E8 \u0002E6\u0002E5\u0002E9</string>
     </test>
+    <test label="U+02E6 U+02E5 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
+      <string>\u0002E6\u0002E5\u0002E5 \u0002E6\u0002E5\u0002E6 \u0002E6\u0002E5\u0002E7 \u0002E6\u0002E5\u0002E8 \u0002E6\u0002E5\u0002E9</string>
+    </test>
     <test label="U+02E6 U+02E6" stylename="cv91_1">
       <comment>tone triplets</comment>
+      <string>\u0002E6\u0002E6\u0002E5 \u0002E6\u0002E6\u0002E6 \u0002E6\u0002E6\u0002E7 \u0002E6\u0002E6\u0002E8 \u0002E6\u0002E6\u0002E9</string>
+    </test>
+    <test label="U+02E6 U+02E6 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
       <string>\u0002E6\u0002E6\u0002E5 \u0002E6\u0002E6\u0002E6 \u0002E6\u0002E6\u0002E7 \u0002E6\u0002E6\u0002E8 \u0002E6\u0002E6\u0002E9</string>
     </test>
     <test label="U+02E6 U+02E7" stylename="cv91_1">
       <comment>tone triplets</comment>
       <string>\u0002E6\u0002E7\u0002E5 \u0002E6\u0002E7\u0002E6 \u0002E6\u0002E7\u0002E7 \u0002E6\u0002E7\u0002E8 \u0002E6\u0002E7\u0002E9</string>
     </test>
+    <test label="U+02E6 U+02E7 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
+      <string>\u0002E6\u0002E7\u0002E5 \u0002E6\u0002E7\u0002E6 \u0002E6\u0002E7\u0002E7 \u0002E6\u0002E7\u0002E8 \u0002E6\u0002E7\u0002E9</string>
+    </test>
     <test label="U+02E6 U+02E8" stylename="cv91_1">
       <comment>tone triplets</comment>
+      <string>\u0002E6\u0002E8\u0002E5 \u0002E6\u0002E8\u0002E6 \u0002E6\u0002E8\u0002E7 \u0002E6\u0002E8\u0002E8 \u0002E6\u0002E8\u0002E9</string>
+    </test>
+    <test label="U+02E6 U+02E8 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
       <string>\u0002E6\u0002E8\u0002E5 \u0002E6\u0002E8\u0002E6 \u0002E6\u0002E8\u0002E7 \u0002E6\u0002E8\u0002E8 \u0002E6\u0002E8\u0002E9</string>
     </test>
     <test label="U+02E6 U+02E9" stylename="cv91_1">
       <comment>tone triplets</comment>
       <string>\u0002E6\u0002E9\u0002E5 \u0002E6\u0002E9\u0002E6 \u0002E6\u0002E9\u0002E7 \u0002E6\u0002E9\u0002E8 \u0002E6\u0002E9\u0002E9</string>
     </test>
+    <test label="U+02E6 U+02E9 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
+      <string>\u0002E6\u0002E9\u0002E5 \u0002E6\u0002E9\u0002E6 \u0002E6\u0002E9\u0002E7 \u0002E6\u0002E9\u0002E8 \u0002E6\u0002E9\u0002E9</string>
+    </test>
     <test label="U+02E7 U+02E5" stylename="cv91_1">
       <comment>tone triplets</comment>
+      <string>\u0002E7\u0002E5\u0002E5 \u0002E7\u0002E5\u0002E6 \u0002E7\u0002E5\u0002E7 \u0002E7\u0002E5\u0002E8 \u0002E7\u0002E5\u0002E9</string>
+    </test>
+    <test label="U+02E7 U+02E5 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
       <string>\u0002E7\u0002E5\u0002E5 \u0002E7\u0002E5\u0002E6 \u0002E7\u0002E5\u0002E7 \u0002E7\u0002E5\u0002E8 \u0002E7\u0002E5\u0002E9</string>
     </test>
     <test label="U+02E7 U+02E6" stylename="cv91_1">
       <comment>tone triplets</comment>
       <string>\u0002E7\u0002E6\u0002E5 \u0002E7\u0002E6\u0002E6 \u0002E7\u0002E6\u0002E7 \u0002E7\u0002E6\u0002E8 \u0002E7\u0002E6\u0002E9</string>
     </test>
+    <test label="U+02E7 U+02E6 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
+      <string>\u0002E7\u0002E6\u0002E5 \u0002E7\u0002E6\u0002E6 \u0002E7\u0002E6\u0002E7 \u0002E7\u0002E6\u0002E8 \u0002E7\u0002E6\u0002E9</string>
+    </test>
     <test label="U+02E7 U+02E7" stylename="cv91_1">
       <comment>tone triplets</comment>
+      <string>\u0002E7\u0002E7\u0002E5 \u0002E7\u0002E7\u0002E6 \u0002E7\u0002E7\u0002E7 \u0002E7\u0002E7\u0002E8 \u0002E7\u0002E7\u0002E9</string>
+    </test>
+    <test label="U+02E7 U+02E7 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
       <string>\u0002E7\u0002E7\u0002E5 \u0002E7\u0002E7\u0002E6 \u0002E7\u0002E7\u0002E7 \u0002E7\u0002E7\u0002E8 \u0002E7\u0002E7\u0002E9</string>
     </test>
     <test label="U+02E7 U+02E8" stylename="cv91_1">
       <comment>tone triplets</comment>
       <string>\u0002E7\u0002E8\u0002E5 \u0002E7\u0002E8\u0002E6 \u0002E7\u0002E8\u0002E7 \u0002E7\u0002E8\u0002E8 \u0002E7\u0002E8\u0002E9</string>
     </test>
+    <test label="U+02E7 U+02E8 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
+      <string>\u0002E7\u0002E8\u0002E5 \u0002E7\u0002E8\u0002E6 \u0002E7\u0002E8\u0002E7 \u0002E7\u0002E8\u0002E8 \u0002E7\u0002E8\u0002E9</string>
+    </test>
     <test label="U+02E7 U+02E9" stylename="cv91_1">
       <comment>tone triplets</comment>
+      <string>\u0002E7\u0002E9\u0002E5 \u0002E7\u0002E9\u0002E6 \u0002E7\u0002E9\u0002E7 \u0002E7\u0002E9\u0002E8 \u0002E7\u0002E9\u0002E9</string>
+    </test>
+    <test label="U+02E7 U+02E9 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
       <string>\u0002E7\u0002E9\u0002E5 \u0002E7\u0002E9\u0002E6 \u0002E7\u0002E9\u0002E7 \u0002E7\u0002E9\u0002E8 \u0002E7\u0002E9\u0002E9</string>
     </test>
     <test label="U+02E8 U+02E5" stylename="cv91_1">
       <comment>tone triplets</comment>
       <string>\u0002E8\u0002E5\u0002E5 \u0002E8\u0002E5\u0002E6 \u0002E8\u0002E5\u0002E7 \u0002E8\u0002E5\u0002E8 \u0002E8\u0002E5\u0002E9</string>
     </test>
+    <test label="U+02E8 U+02E5 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
+      <string>\u0002E8\u0002E5\u0002E5 \u0002E8\u0002E5\u0002E6 \u0002E8\u0002E5\u0002E7 \u0002E8\u0002E5\u0002E8 \u0002E8\u0002E5\u0002E9</string>
+    </test>
     <test label="U+02E8 U+02E6" stylename="cv91_1">
       <comment>tone triplets</comment>
+      <string>\u0002E8\u0002E6\u0002E5 \u0002E8\u0002E6\u0002E6 \u0002E8\u0002E6\u0002E7 \u0002E8\u0002E6\u0002E8 \u0002E8\u0002E6\u0002E9</string>
+    </test>
+    <test label="U+02E8 U+02E6 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
       <string>\u0002E8\u0002E6\u0002E5 \u0002E8\u0002E6\u0002E6 \u0002E8\u0002E6\u0002E7 \u0002E8\u0002E6\u0002E8 \u0002E8\u0002E6\u0002E9</string>
     </test>
     <test label="U+02E8 U+02E7" stylename="cv91_1">
       <comment>tone triplets</comment>
       <string>\u0002E8\u0002E7\u0002E5 \u0002E8\u0002E7\u0002E6 \u0002E8\u0002E7\u0002E7 \u0002E8\u0002E7\u0002E8 \u0002E8\u0002E7\u0002E9</string>
     </test>
+    <test label="U+02E8 U+02E7 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
+      <string>\u0002E8\u0002E7\u0002E5 \u0002E8\u0002E7\u0002E6 \u0002E8\u0002E7\u0002E7 \u0002E8\u0002E7\u0002E8 \u0002E8\u0002E7\u0002E9</string>
+    </test>
     <test label="U+02E8 U+02E8" stylename="cv91_1">
       <comment>tone triplets</comment>
+      <string>\u0002E8\u0002E8\u0002E5 \u0002E8\u0002E8\u0002E6 \u0002E8\u0002E8\u0002E7 \u0002E8\u0002E8\u0002E8 \u0002E8\u0002E8\u0002E9</string>
+    </test>
+    <test label="U+02E8 U+02E8 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
       <string>\u0002E8\u0002E8\u0002E5 \u0002E8\u0002E8\u0002E6 \u0002E8\u0002E8\u0002E7 \u0002E8\u0002E8\u0002E8 \u0002E8\u0002E8\u0002E9</string>
     </test>
     <test label="U+02E8 U+02E9" stylename="cv91_1">
       <comment>tone triplets</comment>
       <string>\u0002E8\u0002E9\u0002E5 \u0002E8\u0002E9\u0002E6 \u0002E8\u0002E9\u0002E7 \u0002E8\u0002E9\u0002E8 \u0002E8\u0002E9\u0002E9</string>
     </test>
+    <test label="U+02E8 U+02E9 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
+      <string>\u0002E8\u0002E9\u0002E5 \u0002E8\u0002E9\u0002E6 \u0002E8\u0002E9\u0002E7 \u0002E8\u0002E9\u0002E8 \u0002E8\u0002E9\u0002E9</string>
+    </test>
     <test label="U+02E9 U+02E5" stylename="cv91_1">
       <comment>tone triplets</comment>
+      <string>\u0002E9\u0002E5\u0002E5 \u0002E9\u0002E5\u0002E6 \u0002E9\u0002E5\u0002E7 \u0002E9\u0002E5\u0002E8 \u0002E9\u0002E5\u0002E9</string>
+    </test>
+    <test label="U+02E9 U+02E5 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
       <string>\u0002E9\u0002E5\u0002E5 \u0002E9\u0002E5\u0002E6 \u0002E9\u0002E5\u0002E7 \u0002E9\u0002E5\u0002E8 \u0002E9\u0002E5\u0002E9</string>
     </test>
     <test label="U+02E9 U+02E6" stylename="cv91_1">
       <comment>tone triplets</comment>
       <string>\u0002E9\u0002E6\u0002E5 \u0002E9\u0002E6\u0002E6 \u0002E9\u0002E6\u0002E7 \u0002E9\u0002E6\u0002E8 \u0002E9\u0002E6\u0002E9</string>
     </test>
+    <test label="U+02E9 U+02E6 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
+      <string>\u0002E9\u0002E6\u0002E5 \u0002E9\u0002E6\u0002E6 \u0002E9\u0002E6\u0002E7 \u0002E9\u0002E6\u0002E8 \u0002E9\u0002E6\u0002E9</string>
+    </test>
     <test label="U+02E9 U+02E7" stylename="cv91_1">
       <comment>tone triplets</comment>
+      <string>\u0002E9\u0002E7\u0002E5 \u0002E9\u0002E7\u0002E6 \u0002E9\u0002E7\u0002E7 \u0002E9\u0002E7\u0002E8 \u0002E9\u0002E7\u0002E9</string>
+    </test>
+    <test label="U+02E9 U+02E7 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
       <string>\u0002E9\u0002E7\u0002E5 \u0002E9\u0002E7\u0002E6 \u0002E9\u0002E7\u0002E7 \u0002E9\u0002E7\u0002E8 \u0002E9\u0002E7\u0002E9</string>
     </test>
     <test label="U+02E9 U+02E8" stylename="cv91_1">
       <comment>tone triplets</comment>
       <string>\u0002E9\u0002E8\u0002E5 \u0002E9\u0002E8\u0002E6 \u0002E9\u0002E8\u0002E7 \u0002E9\u0002E8\u0002E8 \u0002E9\u0002E8\u0002E9</string>
     </test>
+    <test label="U+02E9 U+02E8 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
+      <string>\u0002E9\u0002E8\u0002E5 \u0002E9\u0002E8\u0002E6 \u0002E9\u0002E8\u0002E7 \u0002E9\u0002E8\u0002E8 \u0002E9\u0002E8\u0002E9</string>
+    </test>
     <test label="U+02E9 U+02E9" stylename="cv91_1">
       <comment>tone triplets</comment>
+      <string>\u0002E9\u0002E9\u0002E5 \u0002E9\u0002E9\u0002E6 \u0002E9\u0002E9\u0002E7 \u0002E9\u0002E9\u0002E8 \u0002E9\u0002E9\u0002E9</string>
+    </test>
+    <test label="U+02E9 U+02E9 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
       <string>\u0002E9\u0002E9\u0002E5 \u0002E9\u0002E9\u0002E6 \u0002E9\u0002E9\u0002E7 \u0002E9\u0002E9\u0002E8 \u0002E9\u0002E9\u0002E9</string>
     </test>
   </testgroup>
@@ -535,128 +664,256 @@
       <comment>solo tones</comment>
       <string>\u00A712 \u00A713 \u00A714 \u00A715 \u00A716</string>
     </test>
+    <test label="U+A712 U+A713 U+A714 U+A715 U+A716" stylename="cv91_2">
+      <comment>solo tones (reversed)</comment>
+      <string>\u00A712 \u00A713 \u00A714 \u00A715 \u00A716</string>
+    </test>
     <test label="U+A712 U+A713 U+A714 U+A715 U+A716" stylename="cv91_1">
       <comment>identical paired tones</comment>
+      <string> \u00A712\u00A712  \u00A713\u00A713  \u00A714\u00A714  \u00A715\u00A715  \u00A716\u00A716 </string>
+    </test>
+    <test label="U+A712 U+A713 U+A714 U+A715 U+A716" stylename="cv91_2">
+      <comment>identical paired tones (reversed)</comment>
       <string> \u00A712\u00A712  \u00A713\u00A713  \u00A714\u00A714  \u00A715\u00A715  \u00A716\u00A716 </string>
     </test>
     <test label="U+A712" stylename="cv91_1">
       <comment>tone pairs</comment>
       <string>\u00A712\u00A712 \u00A712\u00A713 \u00A712\u00A714 \u00A712\u00A715 \u00A712\u00A716</string>
     </test>
+    <test label="U+A712 (reversed)" stylename="cv91_2">
+      <comment>tone pairs (reversed)</comment>
+      <string>\u00A712\u00A712 \u00A712\u00A713 \u00A712\u00A714 \u00A712\u00A715 \u00A712\u00A716</string>
+    </test>
     <test label="U+A713" stylename="cv91_1">
       <comment>tone pairs</comment>
+      <string>\u00A713\u00A712 \u00A713\u00A713 \u00A713\u00A714 \u00A713\u00A715 \u00A713\u00A716</string>
+    </test>
+    <test label="U+A713 (reversed)" stylename="cv91_2">
+      <comment>tone pairs (reversed)</comment>
       <string>\u00A713\u00A712 \u00A713\u00A713 \u00A713\u00A714 \u00A713\u00A715 \u00A713\u00A716</string>
     </test>
     <test label="U+A714" stylename="cv91_1">
       <comment>tone pairs</comment>
       <string>\u00A714\u00A712 \u00A714\u00A713 \u00A714\u00A714 \u00A714\u00A715 \u00A714\u00A716</string>
     </test>
+    <test label="U+A714 (reversed)" stylename="cv91_2">
+      <comment>tone pairs (reversed)</comment>
+      <string>\u00A714\u00A712 \u00A714\u00A713 \u00A714\u00A714 \u00A714\u00A715 \u00A714\u00A716</string>
+    </test>
     <test label="U+A715" stylename="cv91_1">
       <comment>tone pairs</comment>
+      <string>\u00A715\u00A712 \u00A715\u00A713 \u00A715\u00A714 \u00A715\u00A715 \u00A715\u00A716</string>
+    </test>
+    <test label="U+A715 (reversed)" stylename="cv91_2">
+      <comment>tone pairs (reversed)</comment>
       <string>\u00A715\u00A712 \u00A715\u00A713 \u00A715\u00A714 \u00A715\u00A715 \u00A715\u00A716</string>
     </test>
     <test label="U+A716" stylename="cv91_1">
       <comment>tone pairs</comment>
       <string>\u00A716\u00A712 \u00A716\u00A713 \u00A716\u00A714 \u00A716\u00A715 \u00A716\u00A716</string>
     </test>
+    <test label="U+A716 (reversed)" stylename="cv91_2">
+      <comment>tone pairs (reversed)</comment>
+      <string>\u00A716\u00A712 \u00A716\u00A713 \u00A716\u00A714 \u00A716\u00A715 \u00A716\u00A716</string>
+    </test>
     <test label="U+A712 U+A712" stylename="cv91_1">
       <comment>tone triplets</comment>
+      <string>\u00A712\u00A712\u00A712 \u00A712\u00A712\u00A713 \u00A712\u00A712\u00A714 \u00A712\u00A712\u00A715 \u00A712\u00A712\u00A716</string>
+    </test>
+    <test label="U+A712 U+A712 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
       <string>\u00A712\u00A712\u00A712 \u00A712\u00A712\u00A713 \u00A712\u00A712\u00A714 \u00A712\u00A712\u00A715 \u00A712\u00A712\u00A716</string>
     </test>
     <test label="U+A712 U+A713" stylename="cv91_1">
       <comment>tone triplets</comment>
       <string>\u00A712\u00A713\u00A712 \u00A712\u00A713\u00A713 \u00A712\u00A713\u00A714 \u00A712\u00A713\u00A715 \u00A712\u00A713\u00A716</string>
     </test>
+    <test label="U+A712 U+A713 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
+      <string>\u00A712\u00A713\u00A712 \u00A712\u00A713\u00A713 \u00A712\u00A713\u00A714 \u00A712\u00A713\u00A715 \u00A712\u00A713\u00A716</string>
+    </test>
     <test label="U+A712 U+A714" stylename="cv91_1">
       <comment>tone triplets</comment>
+      <string>\u00A712\u00A714\u00A712 \u00A712\u00A714\u00A713 \u00A712\u00A714\u00A714 \u00A712\u00A714\u00A715 \u00A712\u00A714\u00A716</string>
+    </test>
+    <test label="U+A712 U+A714 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
       <string>\u00A712\u00A714\u00A712 \u00A712\u00A714\u00A713 \u00A712\u00A714\u00A714 \u00A712\u00A714\u00A715 \u00A712\u00A714\u00A716</string>
     </test>
     <test label="U+A712 U+A715" stylename="cv91_1">
       <comment>tone triplets</comment>
       <string>\u00A712\u00A715\u00A712 \u00A712\u00A715\u00A713 \u00A712\u00A715\u00A714 \u00A712\u00A715\u00A715 \u00A712\u00A715\u00A716</string>
     </test>
+    <test label="U+A712 U+A715 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
+      <string>\u00A712\u00A715\u00A712 \u00A712\u00A715\u00A713 \u00A712\u00A715\u00A714 \u00A712\u00A715\u00A715 \u00A712\u00A715\u00A716</string>
+    </test>
     <test label="U+A712 U+A716" stylename="cv91_1">
       <comment>tone triplets</comment>
+      <string>\u00A712\u00A716\u00A712 \u00A712\u00A716\u00A713 \u00A712\u00A716\u00A714 \u00A712\u00A716\u00A715 \u00A712\u00A716\u00A716</string>
+    </test>
+    <test label="U+A712 U+A716 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
       <string>\u00A712\u00A716\u00A712 \u00A712\u00A716\u00A713 \u00A712\u00A716\u00A714 \u00A712\u00A716\u00A715 \u00A712\u00A716\u00A716</string>
     </test>
     <test label="U+A713 U+A712" stylename="cv91_1">
       <comment>tone triplets</comment>
       <string>\u00A713\u00A712\u00A712 \u00A713\u00A712\u00A713 \u00A713\u00A712\u00A714 \u00A713\u00A712\u00A715 \u00A713\u00A712\u00A716</string>
     </test>
+    <test label="U+A713 U+A712 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
+      <string>\u00A713\u00A712\u00A712 \u00A713\u00A712\u00A713 \u00A713\u00A712\u00A714 \u00A713\u00A712\u00A715 \u00A713\u00A712\u00A716</string>
+    </test>
     <test label="U+A713 U+A713" stylename="cv91_1">
       <comment>tone triplets</comment>
+      <string>\u00A713\u00A713\u00A712 \u00A713\u00A713\u00A713 \u00A713\u00A713\u00A714 \u00A713\u00A713\u00A715 \u00A713\u00A713\u00A716</string>
+    </test>
+    <test label="U+A713 U+A713 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
       <string>\u00A713\u00A713\u00A712 \u00A713\u00A713\u00A713 \u00A713\u00A713\u00A714 \u00A713\u00A713\u00A715 \u00A713\u00A713\u00A716</string>
     </test>
     <test label="U+A713 U+A714" stylename="cv91_1">
       <comment>tone triplets</comment>
       <string>\u00A713\u00A714\u00A712 \u00A713\u00A714\u00A713 \u00A713\u00A714\u00A714 \u00A713\u00A714\u00A715 \u00A713\u00A714\u00A716</string>
     </test>
+    <test label="U+A713 U+A714 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
+      <string>\u00A713\u00A714\u00A712 \u00A713\u00A714\u00A713 \u00A713\u00A714\u00A714 \u00A713\u00A714\u00A715 \u00A713\u00A714\u00A716</string>
+    </test>
     <test label="U+A713 U+A715" stylename="cv91_1">
       <comment>tone triplets</comment>
+      <string>\u00A713\u00A715\u00A712 \u00A713\u00A715\u00A713 \u00A713\u00A715\u00A714 \u00A713\u00A715\u00A715 \u00A713\u00A715\u00A716</string>
+    </test>
+    <test label="U+A713 U+A715 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
       <string>\u00A713\u00A715\u00A712 \u00A713\u00A715\u00A713 \u00A713\u00A715\u00A714 \u00A713\u00A715\u00A715 \u00A713\u00A715\u00A716</string>
     </test>
     <test label="U+A713 U+A716" stylename="cv91_1">
       <comment>tone triplets</comment>
       <string>\u00A713\u00A716\u00A712 \u00A713\u00A716\u00A713 \u00A713\u00A716\u00A714 \u00A713\u00A716\u00A715 \u00A713\u00A716\u00A716</string>
     </test>
+    <test label="U+A713 U+A716 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
+      <string>\u00A713\u00A716\u00A712 \u00A713\u00A716\u00A713 \u00A713\u00A716\u00A714 \u00A713\u00A716\u00A715 \u00A713\u00A716\u00A716</string>
+    </test>
     <test label="U+A714 U+A712" stylename="cv91_1">
       <comment>tone triplets</comment>
+      <string>\u00A714\u00A712\u00A712 \u00A714\u00A712\u00A713 \u00A714\u00A712\u00A714 \u00A714\u00A712\u00A715 \u00A714\u00A712\u00A716</string>
+    </test>
+    <test label="U+A714 U+A712 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
       <string>\u00A714\u00A712\u00A712 \u00A714\u00A712\u00A713 \u00A714\u00A712\u00A714 \u00A714\u00A712\u00A715 \u00A714\u00A712\u00A716</string>
     </test>
     <test label="U+A714 U+A713" stylename="cv91_1">
       <comment>tone triplets</comment>
       <string>\u00A714\u00A713\u00A712 \u00A714\u00A713\u00A713 \u00A714\u00A713\u00A714 \u00A714\u00A713\u00A715 \u00A714\u00A713\u00A716</string>
     </test>
+    <test label="U+A714 U+A713 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
+      <string>\u00A714\u00A713\u00A712 \u00A714\u00A713\u00A713 \u00A714\u00A713\u00A714 \u00A714\u00A713\u00A715 \u00A714\u00A713\u00A716</string>
+    </test>
     <test label="U+A714 U+A714" stylename="cv91_1">
       <comment>tone triplets</comment>
+      <string>\u00A714\u00A714\u00A712 \u00A714\u00A714\u00A713 \u00A714\u00A714\u00A714 \u00A714\u00A714\u00A715 \u00A714\u00A714\u00A716</string>
+    </test>
+    <test label="U+A714 U+A714 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
       <string>\u00A714\u00A714\u00A712 \u00A714\u00A714\u00A713 \u00A714\u00A714\u00A714 \u00A714\u00A714\u00A715 \u00A714\u00A714\u00A716</string>
     </test>
     <test label="U+A714 U+A715" stylename="cv91_1">
       <comment>tone triplets</comment>
       <string>\u00A714\u00A715\u00A712 \u00A714\u00A715\u00A713 \u00A714\u00A715\u00A714 \u00A714\u00A715\u00A715 \u00A714\u00A715\u00A716</string>
     </test>
+    <test label="U+A714 U+A715 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
+      <string>\u00A714\u00A715\u00A712 \u00A714\u00A715\u00A713 \u00A714\u00A715\u00A714 \u00A714\u00A715\u00A715 \u00A714\u00A715\u00A716</string>
+    </test>
     <test label="U+A714 U+A716" stylename="cv91_1">
       <comment>tone triplets</comment>
+      <string>\u00A714\u00A716\u00A712 \u00A714\u00A716\u00A713 \u00A714\u00A716\u00A714 \u00A714\u00A716\u00A715 \u00A714\u00A716\u00A716</string>
+    </test>
+    <test label="U+A714 U+A716 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
       <string>\u00A714\u00A716\u00A712 \u00A714\u00A716\u00A713 \u00A714\u00A716\u00A714 \u00A714\u00A716\u00A715 \u00A714\u00A716\u00A716</string>
     </test>
     <test label="U+A715 U+A712" stylename="cv91_1">
       <comment>tone triplets</comment>
       <string>\u00A715\u00A712\u00A712 \u00A715\u00A712\u00A713 \u00A715\u00A712\u00A714 \u00A715\u00A712\u00A715 \u00A715\u00A712\u00A716</string>
     </test>
+    <test label="U+A715 U+A712 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
+      <string>\u00A715\u00A712\u00A712 \u00A715\u00A712\u00A713 \u00A715\u00A712\u00A714 \u00A715\u00A712\u00A715 \u00A715\u00A712\u00A716</string>
+    </test>
     <test label="U+A715 U+A713" stylename="cv91_1">
       <comment>tone triplets</comment>
+      <string>\u00A715\u00A713\u00A712 \u00A715\u00A713\u00A713 \u00A715\u00A713\u00A714 \u00A715\u00A713\u00A715 \u00A715\u00A713\u00A716</string>
+    </test>
+    <test label="U+A715 U+A713 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
       <string>\u00A715\u00A713\u00A712 \u00A715\u00A713\u00A713 \u00A715\u00A713\u00A714 \u00A715\u00A713\u00A715 \u00A715\u00A713\u00A716</string>
     </test>
     <test label="U+A715 U+A714" stylename="cv91_1">
       <comment>tone triplets</comment>
       <string>\u00A715\u00A714\u00A712 \u00A715\u00A714\u00A713 \u00A715\u00A714\u00A714 \u00A715\u00A714\u00A715 \u00A715\u00A714\u00A716</string>
     </test>
+    <test label="U+A715 U+A714 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
+      <string>\u00A715\u00A714\u00A712 \u00A715\u00A714\u00A713 \u00A715\u00A714\u00A714 \u00A715\u00A714\u00A715 \u00A715\u00A714\u00A716</string>
+    </test>
     <test label="U+A715 U+A715" stylename="cv91_1">
       <comment>tone triplets</comment>
+      <string>\u00A715\u00A715\u00A712 \u00A715\u00A715\u00A713 \u00A715\u00A715\u00A714 \u00A715\u00A715\u00A715 \u00A715\u00A715\u00A716</string>
+    </test>
+    <test label="U+A715 U+A715 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
       <string>\u00A715\u00A715\u00A712 \u00A715\u00A715\u00A713 \u00A715\u00A715\u00A714 \u00A715\u00A715\u00A715 \u00A715\u00A715\u00A716</string>
     </test>
     <test label="U+A715 U+A716" stylename="cv91_1">
       <comment>tone triplets</comment>
       <string>\u00A715\u00A716\u00A712 \u00A715\u00A716\u00A713 \u00A715\u00A716\u00A714 \u00A715\u00A716\u00A715 \u00A715\u00A716\u00A716</string>
     </test>
+    <test label="U+A715 U+A716 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
+      <string>\u00A715\u00A716\u00A712 \u00A715\u00A716\u00A713 \u00A715\u00A716\u00A714 \u00A715\u00A716\u00A715 \u00A715\u00A716\u00A716</string>
+    </test>
     <test label="U+A716 U+A712" stylename="cv91_1">
       <comment>tone triplets</comment>
+      <string>\u00A716\u00A712\u00A712 \u00A716\u00A712\u00A713 \u00A716\u00A712\u00A714 \u00A716\u00A712\u00A715 \u00A716\u00A712\u00A716</string>
+    </test>
+    <test label="U+A716 U+A712 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
       <string>\u00A716\u00A712\u00A712 \u00A716\u00A712\u00A713 \u00A716\u00A712\u00A714 \u00A716\u00A712\u00A715 \u00A716\u00A712\u00A716</string>
     </test>
     <test label="U+A716 U+A713" stylename="cv91_1">
       <comment>tone triplets</comment>
       <string>\u00A716\u00A713\u00A712 \u00A716\u00A713\u00A713 \u00A716\u00A713\u00A714 \u00A716\u00A713\u00A715 \u00A716\u00A713\u00A716</string>
     </test>
+    <test label="U+A716 U+A713 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
+      <string>\u00A716\u00A713\u00A712 \u00A716\u00A713\u00A713 \u00A716\u00A713\u00A714 \u00A716\u00A713\u00A715 \u00A716\u00A713\u00A716</string>
+    </test>
     <test label="U+A716 U+A714" stylename="cv91_1">
       <comment>tone triplets</comment>
+      <string>\u00A716\u00A714\u00A712 \u00A716\u00A714\u00A713 \u00A716\u00A714\u00A714 \u00A716\u00A714\u00A715 \u00A716\u00A714\u00A716</string>
+    </test>
+    <test label="U+A716 U+A714 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
       <string>\u00A716\u00A714\u00A712 \u00A716\u00A714\u00A713 \u00A716\u00A714\u00A714 \u00A716\u00A714\u00A715 \u00A716\u00A714\u00A716</string>
     </test>
     <test label="U+A716 U+A715" stylename="cv91_1">
       <comment>tone triplets</comment>
       <string>\u00A716\u00A715\u00A712 \u00A716\u00A715\u00A713 \u00A716\u00A715\u00A714 \u00A716\u00A715\u00A715 \u00A716\u00A715\u00A716</string>
     </test>
+    <test label="U+A716 U+A715 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
+      <string>\u00A716\u00A715\u00A712 \u00A716\u00A715\u00A713 \u00A716\u00A715\u00A714 \u00A716\u00A715\u00A715 \u00A716\u00A715\u00A716</string>
+    </test>
     <test label="U+A716 U+A716" stylename="cv91_1">
       <comment>tone triplets</comment>
+      <string>\u00A716\u00A716\u00A712 \u00A716\u00A716\u00A713 \u00A716\u00A716\u00A714 \u00A716\u00A716\u00A715 \u00A716\u00A716\u00A716</string>
+    </test>
+    <test label="U+A716 U+A716 (reversed)" stylename="cv91_2">
+      <comment>tone triplets (reversed)</comment>
       <string>\u00A716\u00A716\u00A712 \u00A716\u00A716\u00A713 \u00A716\u00A716\u00A714 \u00A716\u00A716\u00A715 \u00A716\u00A716\u00A716</string>
     </test>
   </testgroup>

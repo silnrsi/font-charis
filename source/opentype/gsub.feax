@@ -445,16 +445,16 @@ lookup tne_ctx {
 # substitute numerals for tone bars
 lookup tnn_sub {
   lookupflag 0;
-    sub TnLtr5 by [SupFive ];
-    sub TnLtr4 by [SupFour ];
-    sub TnLtr3 by [SupThree ];
-    sub TnLtr2 by [SupTwo ];
-    sub TnLtr1 by [SupOne ];
-    sub LftStemTnLtr5 by [SupFive ];
-    sub LftStemTnLtr4 by [SupFour ];
-    sub LftStemTnLtr3 by [SupThree ];
-    sub LftStemTnLtr2 by [SupTwo ];
-    sub LftStemTnLtr1 by [SupOne ];
+    sub TnLtr5 from [SupFive SupOne ];
+    sub TnLtr4 from [SupFour SupTwo ];
+    sub TnLtr3 from [SupThree SupThree ];
+    sub TnLtr2 from [SupTwo SupFour ];
+    sub TnLtr1 from [SupOne SupFive ];
+    sub LftStemTnLtr5 from [SupFive SupOne ];
+    sub LftStemTnLtr4 from [SupFour SupTwo ];
+    sub LftStemTnLtr3 from [SupThree SupThree ];
+    sub LftStemTnLtr2 from [SupTwo SupFour ];
+    sub LftStemTnLtr1 from [SupOne SupFive ];
 } tnn_sub;
 
 # the following is to turn tone segments (and contours) into numerals
@@ -486,24 +486,48 @@ lookup tnn_sub {
 @TnStaffLft = [TnStaffLft5 TnStaffLft4 TnStaffLft3 TnStaffLft2 TnStaffLft1 ];
 @SupNum = [SupFive SupFour SupThree SupTwo SupOne];
 
+@SupFive = [SupFive SupFive SupFive SupFive SupFive ];
+@SupFour = [SupFour SupFour SupFour SupFour SupFour ];
+@SupThree = [SupThree SupThree SupThree SupThree SupThree ];
+@SupTwo = [SupTwo SupTwo SupTwo SupTwo SupTwo ];
+@SupOne = [SupOne SupOne SupOne SupOne SupOne ];
+
 lookup tnnr_sub {
   lookupflag 0;
-    sub [@RtTnLtrSeg5 @TnContRt5] by SupFive;
-    sub [@RtTnLtrSeg4 @TnContRt4] by SupFour;
-    sub [@RtTnLtrSeg3 @TnContRt3] by SupThree;
-    sub [@RtTnLtrSeg2 @TnContRt2] by SupTwo;
-    sub [@RtTnLtrSeg1 @TnContRt1] by SupOne;
-    sub @TnStaffRt by @SupNum;
+    sub @RtTnLtrSeg5 from [@SupFive @SupOne ];
+    sub @TnContRt5 from [@SupFive @SupOne ];
+    sub @RtTnLtrSeg4 from [@SupFour @SupTwo ];
+    sub @TnContRt4 from [@SupFour @SupTwo ];
+    sub @RtTnLtrSeg3 from [@SupThree @SupThree ];
+    sub @TnContRt3 from [@SupThree @SupThree ];
+    sub @RtTnLtrSeg2 from [@SupTwo @SupFour ];
+    sub @TnContRt2 from [@SupTwo @SupFour ];
+    sub @RtTnLtrSeg1 from [@SupOne @SupFive ];
+    sub @TnContRt1 from [@SupOne @SupFive ];
+    sub TnStaffRt5 from [SupFive SupOne ];
+    sub TnStaffRt4 from [SupFour SupTwo ];
+    sub TnStaffRt3 from [SupThree SupThree ];
+    sub TnStaffRt2 from [SupTwo SupFour ];
+    sub TnStaffRt1 from [SupOne SupFive ];
 } tnnr_sub;
 
 lookup tnnl_sub {
   lookupflag 0;
-    sub [@LftTnLtrSeg5 @TnContLft5] by SupFive;
-    sub [@LftTnLtrSeg4 @TnContLft4] by SupFour;
-    sub [@LftTnLtrSeg3 @TnContLft3] by SupThree;
-    sub [@LftTnLtrSeg2 @TnContLft2] by SupTwo;
-    sub [@LftTnLtrSeg1 @TnContLft1] by SupOne;
-    sub @TnStaffLft by @SupNum;
+    sub @LftTnLtrSeg5 from [@SupFive @SupOne ];
+    sub @TnContLft5 from [@SupFive @SupOne ];
+    sub @LftTnLtrSeg4 from [@SupFour @SupTwo ];
+    sub @TnContLft4 from [@SupFour @SupTwo ];
+    sub @LftTnLtrSeg3 from [@SupThree @SupThree ];
+    sub @TnContLft3 from [@SupThree @SupThree ];
+    sub @LftTnLtrSeg2 from [@SupTwo @SupFour ];
+    sub @TnContLft2 from [@SupTwo @SupFour ];
+    sub @LftTnLtrSeg1 from [@SupOne @SupFive ];
+    sub @TnContLft1 from [@SupOne @SupFive ];
+    sub TnStaffLft5 from [SupFive SupOne ];
+    sub TnStaffLft4 from [SupFour SupTwo ];
+    sub TnStaffLft3 from [SupThree SupThree ];
+    sub TnStaffLft2 from [SupTwo SupFour ];
+    sub TnStaffLft1 from [SupOne SupFive ];
 } tnnl_sub;
 
 lookup tnn_ctx {
@@ -2227,6 +2251,10 @@ feature cv91 {
       
       ParamUILabelNameID {
        name 3 1 0x0409 "Numerals";  # English US
+      };
+
+      ParamUILabelNameID {
+       name 3 1 0x0409 "Numerals (reversed)";  # English US
       };
   };
 

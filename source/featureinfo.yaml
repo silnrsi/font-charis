@@ -1295,7 +1295,10 @@
       setting_doc_desc: Standard (bars)
     - setting_value: 1
       setting_ui_label: Numerals
-      setting_doc_desc: Numerals
+      setting_doc_desc: Numerals (5=high)
+    - setting_value: 2
+      setting_ui_label: Numerals (reversed)
+      setting_doc_desc: Numerals (1=high)
   doc_group: tone
   doc_order: 711
   doc_name: Tone letters
