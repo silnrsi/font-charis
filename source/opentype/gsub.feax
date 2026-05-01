@@ -442,12 +442,6 @@ lookup tne_ctx {
     sub @TnStaffLft' @TnLtrSeg'lookup tnel_sub;
 } tne_ctx;
 
-@TnLtrsNo = [TnLtr5no TnLtr4no TnLtr3no TnLtr2no TnLtr1no ];
-@LftStemTnLtrsNo = [LftStemTnLtr5no LftStemTnLtr4no LftStemTnLtr3no LftStemTnLtr2no LftStemTnLtr1no ];
-
-@TnStaffRtNo = [TnStaffRt5no TnStaffRt4no TnStaffRt3no TnStaffRt2no TnStaffRt1no ];
-@TnStaffLftNo = [TnStaffLft5no TnStaffLft4no TnStaffLft3no TnStaffLft2no TnStaffLft1no ];
-
 # substitute numerals for tone bars
 lookup tnn_sub {
   lookupflag 0;
@@ -549,12 +543,28 @@ lookup tnn_ctx {
 
 # hide the tone bar staves
 #  place after tone numbers lookup so it has less precedence
+#  also hide staves for dotted tone letters (but NOT left stem dotted ones)
+@TnLtrsNo = [TnLtr5no TnLtr4no TnLtr3no TnLtr2no TnLtr1no ];
+@LftStemTnLtrsNo = [LftStemTnLtr5no LftStemTnLtr4no LftStemTnLtr3no LftStemTnLtr2no LftStemTnLtr1no ];
+
+@TnStaffRtNo = [TnStaffRt5no TnStaffRt4no TnStaffRt3no TnStaffRt2no TnStaffRt1no ];
+@TnStaffLftNo = [TnStaffLft5no TnStaffLft4no TnStaffLft3no TnStaffLft2no TnStaffLft1no ];
+
+@DotTnLtrs = [DotTnLtr5 DotTnLtr4 DotTnLtr3 DotTnLtr2 DotTnLtr1 ];
+@DotTnLtrsNo = [DotTnLtr5no DotTnLtr4no DotTnLtr3no DotTnLtr2no DotTnLtr1no ];
+#@DotTnLtrsNo = [TnLtrDot5 TnLtrDot4 TnLtrDot3 TnLtrDot2 TnLtrDot1 ]; # for debugging until proper glyphs added
+
+# below is commented out until glyphs added (if it's decided to hide staves on left stem ones
+# @DotLftStemTnLtrs = [DotLftStemTnLtr5 DotLftStemTnLtr4 DotLftStemTnLtr3 DotLftStemTnLtr2 DotLftStemTnLtr1 ];
+# @DotLftStemTnLtrsNo = [DotLftStemTnLtr5no DotLftStemTnLtr4no DotLftStemTnLtr3no DotLftStemTnLtr2no DotLftStemTnLtr1no ];
+
 lookup tnh_sub {
   lookupflag 0;
     sub @TnLtrs by @TnLtrsNo;
     sub @LftStemTnLtrs by @LftStemTnLtrsNo;
     sub @TnStaffRt by @TnStaffRtNo;
     sub @TnStaffLft by @TnStaffLftNo;
+    sub @DotTnLtrs by @DotTnLtrsNo;
 } tnh_sub;
 
 # Andika

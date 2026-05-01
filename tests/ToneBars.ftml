@@ -920,6 +920,136 @@
       <string>\u00A70C\u00A70C\u00A708 \u00A70C\u00A70C\u00A709 \u00A70C\u00A70C\u00A70A \u00A70C\u00A70C\u00A70B \u00A70C\u00A70C\u00A70C</string>
     </test>
   </testgroup>
+  <testgroup label="Dotted Tone Bars hidden staves">
+    <test label="U+A708 U+A709 U+A70A U+A70B U+A70C" stylename="cv92_1">
+      <comment>solo tones</comment>
+      <string>\u00A708 \u00A709 \u00A70A \u00A70B \u00A70C</string>
+    </test>
+    <test label="U+A708 U+A709 U+A70A U+A70B U+A70C" stylename="cv92_1">
+      <comment>identical paired tones</comment>
+      <string> \u00A708\u00A708  \u00A709\u00A709  \u00A70A\u00A70A  \u00A70B\u00A70B  \u00A70C\u00A70C </string>
+    </test>
+    <test label="U+A708" stylename="cv92_1">
+      <comment>tone pairs</comment>
+      <string>\u00A708\u00A708 \u00A708\u00A709 \u00A708\u00A70A \u00A708\u00A70B \u00A708\u00A70C</string>
+    </test>
+    <test label="U+A709" stylename="cv92_1">
+      <comment>tone pairs</comment>
+      <string>\u00A709\u00A708 \u00A709\u00A709 \u00A709\u00A70A \u00A709\u00A70B \u00A709\u00A70C</string>
+    </test>
+    <test label="U+A70A" stylename="cv92_1">
+      <comment>tone pairs</comment>
+      <string>\u00A70A\u00A708 \u00A70A\u00A709 \u00A70A\u00A70A \u00A70A\u00A70B \u00A70A\u00A70C</string>
+    </test>
+    <test label="U+A70B" stylename="cv92_1">
+      <comment>tone pairs</comment>
+      <string>\u00A70B\u00A708 \u00A70B\u00A709 \u00A70B\u00A70A \u00A70B\u00A70B \u00A70B\u00A70C</string>
+    </test>
+    <test label="U+A70C" stylename="cv92_1">
+      <comment>tone pairs</comment>
+      <string>\u00A70C\u00A708 \u00A70C\u00A709 \u00A70C\u00A70A \u00A70C\u00A70B \u00A70C\u00A70C</string>
+    </test>
+    <test label="U+A708 U+A708" stylename="cv92_1">
+      <comment>tone triplets</comment>
+      <string>\u00A708\u00A708\u00A708 \u00A708\u00A708\u00A709 \u00A708\u00A708\u00A70A \u00A708\u00A708\u00A70B \u00A708\u00A708\u00A70C</string>
+    </test>
+    <test label="U+A708 U+A709" stylename="cv92_1">
+      <comment>tone triplets</comment>
+      <string>\u00A708\u00A709\u00A708 \u00A708\u00A709\u00A709 \u00A708\u00A709\u00A70A \u00A708\u00A709\u00A70B \u00A708\u00A709\u00A70C</string>
+    </test>
+    <test label="U+A708 U+A70A" stylename="cv92_1">
+      <comment>tone triplets</comment>
+      <string>\u00A708\u00A70A\u00A708 \u00A708\u00A70A\u00A709 \u00A708\u00A70A\u00A70A \u00A708\u00A70A\u00A70B \u00A708\u00A70A\u00A70C</string>
+    </test>
+    <test label="U+A708 U+A70B" stylename="cv92_1">
+      <comment>tone triplets</comment>
+      <string>\u00A708\u00A70B\u00A708 \u00A708\u00A70B\u00A709 \u00A708\u00A70B\u00A70A \u00A708\u00A70B\u00A70B \u00A708\u00A70B\u00A70C</string>
+    </test>
+    <test label="U+A708 U+A70C" stylename="cv92_1">
+      <comment>tone triplets</comment>
+      <string>\u00A708\u00A70C\u00A708 \u00A708\u00A70C\u00A709 \u00A708\u00A70C\u00A70A \u00A708\u00A70C\u00A70B \u00A708\u00A70C\u00A70C</string>
+    </test>
+    <test label="U+A709 U+A708" stylename="cv92_1">
+      <comment>tone triplets</comment>
+      <string>\u00A709\u00A708\u00A708 \u00A709\u00A708\u00A709 \u00A709\u00A708\u00A70A \u00A709\u00A708\u00A70B \u00A709\u00A708\u00A70C</string>
+    </test>
+    <test label="U+A709 U+A709" stylename="cv92_1">
+      <comment>tone triplets</comment>
+      <string>\u00A709\u00A709\u00A708 \u00A709\u00A709\u00A709 \u00A709\u00A709\u00A70A \u00A709\u00A709\u00A70B \u00A709\u00A709\u00A70C</string>
+    </test>
+    <test label="U+A709 U+A70A" stylename="cv92_1">
+      <comment>tone triplets</comment>
+      <string>\u00A709\u00A70A\u00A708 \u00A709\u00A70A\u00A709 \u00A709\u00A70A\u00A70A \u00A709\u00A70A\u00A70B \u00A709\u00A70A\u00A70C</string>
+    </test>
+    <test label="U+A709 U+A70B" stylename="cv92_1">
+      <comment>tone triplets</comment>
+      <string>\u00A709\u00A70B\u00A708 \u00A709\u00A70B\u00A709 \u00A709\u00A70B\u00A70A \u00A709\u00A70B\u00A70B \u00A709\u00A70B\u00A70C</string>
+    </test>
+    <test label="U+A709 U+A70C" stylename="cv92_1">
+      <comment>tone triplets</comment>
+      <string>\u00A709\u00A70C\u00A708 \u00A709\u00A70C\u00A709 \u00A709\u00A70C\u00A70A \u00A709\u00A70C\u00A70B \u00A709\u00A70C\u00A70C</string>
+    </test>
+    <test label="U+A70A U+A708" stylename="cv92_1">
+      <comment>tone triplets</comment>
+      <string>\u00A70A\u00A708\u00A708 \u00A70A\u00A708\u00A709 \u00A70A\u00A708\u00A70A \u00A70A\u00A708\u00A70B \u00A70A\u00A708\u00A70C</string>
+    </test>
+    <test label="U+A70A U+A709" stylename="cv92_1">
+      <comment>tone triplets</comment>
+      <string>\u00A70A\u00A709\u00A708 \u00A70A\u00A709\u00A709 \u00A70A\u00A709\u00A70A \u00A70A\u00A709\u00A70B \u00A70A\u00A709\u00A70C</string>
+    </test>
+    <test label="U+A70A U+A70A" stylename="cv92_1">
+      <comment>tone triplets</comment>
+      <string>\u00A70A\u00A70A\u00A708 \u00A70A\u00A70A\u00A709 \u00A70A\u00A70A\u00A70A \u00A70A\u00A70A\u00A70B \u00A70A\u00A70A\u00A70C</string>
+    </test>
+    <test label="U+A70A U+A70B" stylename="cv92_1">
+      <comment>tone triplets</comment>
+      <string>\u00A70A\u00A70B\u00A708 \u00A70A\u00A70B\u00A709 \u00A70A\u00A70B\u00A70A \u00A70A\u00A70B\u00A70B \u00A70A\u00A70B\u00A70C</string>
+    </test>
+    <test label="U+A70A U+A70C" stylename="cv92_1">
+      <comment>tone triplets</comment>
+      <string>\u00A70A\u00A70C\u00A708 \u00A70A\u00A70C\u00A709 \u00A70A\u00A70C\u00A70A \u00A70A\u00A70C\u00A70B \u00A70A\u00A70C\u00A70C</string>
+    </test>
+    <test label="U+A70B U+A708" stylename="cv92_1">
+      <comment>tone triplets</comment>
+      <string>\u00A70B\u00A708\u00A708 \u00A70B\u00A708\u00A709 \u00A70B\u00A708\u00A70A \u00A70B\u00A708\u00A70B \u00A70B\u00A708\u00A70C</string>
+    </test>
+    <test label="U+A70B U+A709" stylename="cv92_1">
+      <comment>tone triplets</comment>
+      <string>\u00A70B\u00A709\u00A708 \u00A70B\u00A709\u00A709 \u00A70B\u00A709\u00A70A \u00A70B\u00A709\u00A70B \u00A70B\u00A709\u00A70C</string>
+    </test>
+    <test label="U+A70B U+A70A" stylename="cv92_1">
+      <comment>tone triplets</comment>
+      <string>\u00A70B\u00A70A\u00A708 \u00A70B\u00A70A\u00A709 \u00A70B\u00A70A\u00A70A \u00A70B\u00A70A\u00A70B \u00A70B\u00A70A\u00A70C</string>
+    </test>
+    <test label="U+A70B U+A70B" stylename="cv92_1">
+      <comment>tone triplets</comment>
+      <string>\u00A70B\u00A70B\u00A708 \u00A70B\u00A70B\u00A709 \u00A70B\u00A70B\u00A70A \u00A70B\u00A70B\u00A70B \u00A70B\u00A70B\u00A70C</string>
+    </test>
+    <test label="U+A70B U+A70C" stylename="cv92_1">
+      <comment>tone triplets</comment>
+      <string>\u00A70B\u00A70C\u00A708 \u00A70B\u00A70C\u00A709 \u00A70B\u00A70C\u00A70A \u00A70B\u00A70C\u00A70B \u00A70B\u00A70C\u00A70C</string>
+    </test>
+    <test label="U+A70C U+A708" stylename="cv92_1">
+      <comment>tone triplets</comment>
+      <string>\u00A70C\u00A708\u00A708 \u00A70C\u00A708\u00A709 \u00A70C\u00A708\u00A70A \u00A70C\u00A708\u00A70B \u00A70C\u00A708\u00A70C</string>
+    </test>
+    <test label="U+A70C U+A709" stylename="cv92_1">
+      <comment>tone triplets</comment>
+      <string>\u00A70C\u00A709\u00A708 \u00A70C\u00A709\u00A709 \u00A70C\u00A709\u00A70A \u00A70C\u00A709\u00A70B \u00A70C\u00A709\u00A70C</string>
+    </test>
+    <test label="U+A70C U+A70A" stylename="cv92_1">
+      <comment>tone triplets</comment>
+      <string>\u00A70C\u00A70A\u00A708 \u00A70C\u00A70A\u00A709 \u00A70C\u00A70A\u00A70A \u00A70C\u00A70A\u00A70B \u00A70C\u00A70A\u00A70C</string>
+    </test>
+    <test label="U+A70C U+A70B" stylename="cv92_1">
+      <comment>tone triplets</comment>
+      <string>\u00A70C\u00A70B\u00A708 \u00A70C\u00A70B\u00A709 \u00A70C\u00A70B\u00A70A \u00A70C\u00A70B\u00A70B \u00A70C\u00A70B\u00A70C</string>
+    </test>
+    <test label="U+A70C U+A70C" stylename="cv92_1">
+      <comment>tone triplets</comment>
+      <string>\u00A70C\u00A70C\u00A708 \u00A70C\u00A70C\u00A709 \u00A70C\u00A70C\u00A70A \u00A70C\u00A70C\u00A70B \u00A70C\u00A70C\u00A70C</string>
+    </test>
+  </testgroup>
   <testgroup label="Dotted Leftstem Tone Bars">
     <test label="U+A70D U+A70E U+A70F U+A710 U+A711">
       <comment>solo tones</comment>
