@@ -3391,6 +3391,11 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>LftStemTnLtr3</string>
     <string>LftStemTnLtr2</string>
     <string>LftStemTnLtr1</string>
+    <string>DotTnLtr5no</string>
+    <string>DotTnLtr4no</string>
+    <string>DotTnLtr3no</string>
+    <string>DotTnLtr2no</string>
+    <string>DotTnLtr1no</string>
     <string>CopyleftSgn</string>
     <string>FaceFrown</string>
     <string>FaceNeutral</string>
@@ -6361,22 +6366,32 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>uniA70C</string>
     <key>DotTnLtr1Dep</key>
     <string>uniF1D9</string>
+    <key>DotTnLtr1no</key>
+    <string>uniA70C.no</string>
     <key>DotTnLtr2</key>
     <string>uniA70B</string>
     <key>DotTnLtr2Dep</key>
     <string>uniF1D8</string>
+    <key>DotTnLtr2no</key>
+    <string>uniA70B.no</string>
     <key>DotTnLtr3</key>
     <string>uniA70A</string>
     <key>DotTnLtr3Dep</key>
     <string>uniF1D7</string>
+    <key>DotTnLtr3no</key>
+    <string>uniA70A.no</string>
     <key>DotTnLtr4</key>
     <string>uniA709</string>
     <key>DotTnLtr4Dep</key>
     <string>uniF1D6</string>
+    <key>DotTnLtr4no</key>
+    <string>uniA709.no</string>
     <key>DotTnLtr5</key>
     <string>uniA708</string>
     <key>DotTnLtr5Dep</key>
     <string>uniF1D5</string>
+    <key>DotTnLtr5no</key>
+    <string>uniA708.no</string>
     <key>DottedCirc</key>
     <string>uni25CC</string>
     <key>DrachmaSgn</key>
