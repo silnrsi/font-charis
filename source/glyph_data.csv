@@ -861,10 +861,10 @@ LtnSmGCaron,gcaron,1600.334,1600.334,,ss01,,,01E7
 LtnSmGMacron,uni1E21,1600.35,1600.35,,ss01,,,1E21
 LtnSmGDotAbv,gdotaccent,1600.371,1600.371,,ss01,,,0121
 LtnSmGCedilla,gcommaaccent,1600.61,1600.61,,ss01,,,0123
+LtnSmGPalHook,uni1D83,1600.65,1600.65,,ss01,,,1D83
 LtnSmGStrk,uni01E5,1600.71,1600.71,,ss01,,,01E5
 LtnSmG.BarBowl,uni01E5.BarBowl,1600.72,1600.72,ss04,ss04,,01E5,01E5
 LtnSmGDiagStrk,uniA7A1,1600.75,1600.75,,ss01,,,A7A1
-LtnSmGDiagStrk.SngBowl,uniA7A1.SngBowl,1600.7514,1600.7514,ss01,,,A7A1,
 LtnSmG.SngBowl,g.SngBowl,1610.1,74,ss01,,,0067,
 LtnSmScriptG,uni0261,1610.11,1610.11,,,,,
 LtnSupSmScriptG,uni1DA2,1610.22,1610.22,,,,,
@@ -876,9 +876,10 @@ LtnSmGCaron.SngBowl,gcaron.SngBowl,1610.334,1610.334,ss01,,,01E7,
 LtnSmGMacron.SngBowl,uni1E21.SngBowl,1610.35,1610.35,ss01,,,1E21,
 LtnSmGDotAbv.SngBowl,gdotaccent.SngBowl,1610.371,1610.371,ss01,,,0121,
 LtnSmGCedilla.SngBowl,gcommaaccent.SngBowl,1610.61,1610.61,ss01,,,0123,
-LtnSmScriptGPalHook,uni1D83,1610.65,1610.65,,,,,
+LtnSmGPalHook.SngBowl,uni1D83.SngBowl,1610.65,1610.65,ss01,,,1D83,
 LtnSmGStrk.SngBowl,uni01E5.SngBowl,1610.71,1610.71,ss01,,,01E5,
 LtnSmG.BarBowl.SngBowl,uni01E5.BarBowl.SngBowl,1610.72,1610.72,ss01,,,01E5,
+LtnSmGDiagStrk.SngBowl,uniA7A1.SngBowl,1610.75,1610.75,ss01,,,A7A1,
 LtnSmGHook,uni0260,1610.81,1610.81,,,,,
 ModSmGHook,u10793,1610.8123,1610.8123,,,,,
 LtnSmRevScriptG,u1DF01,1611.1,1611.1,,,,,

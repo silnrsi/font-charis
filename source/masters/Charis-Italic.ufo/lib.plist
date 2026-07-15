@@ -1342,10 +1342,10 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>LtnSmGMacron</string>
     <string>LtnSmGDotAbv</string>
     <string>LtnSmGCedilla</string>
+    <string>LtnSmGPalHook</string>
     <string>LtnSmGStrk</string>
     <string>LtnSmG.BarBowl</string>
     <string>LtnSmGDiagStrk</string>
-    <string>LtnSmGDiagStrk.SngBowl</string>
     <string>LtnSmG.SngBowl</string>
     <string>LtnSmScriptG</string>
     <string>LtnSupSmScriptG</string>
@@ -1357,9 +1357,10 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>LtnSmGMacron.SngBowl</string>
     <string>LtnSmGDotAbv.SngBowl</string>
     <string>LtnSmGCedilla.SngBowl</string>
-    <string>LtnSmScriptGPalHook</string>
+    <string>LtnSmGPalHook.SngBowl</string>
     <string>LtnSmGStrk.SngBowl</string>
     <string>LtnSmG.BarBowl.SngBowl</string>
+    <string>LtnSmGDiagStrk.SngBowl</string>
     <string>LtnSmGHook</string>
     <string>ModSmGHook</string>
     <string>LtnSmRevScriptG</string>
@@ -9078,6 +9079,10 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>uni1E21.SngBowl.sc</string>
     <key>LtnSmGMacron.sc</key>
     <string>uni1E21.sc</string>
+    <key>LtnSmGPalHook</key>
+    <string>uni1D83</string>
+    <key>LtnSmGPalHook.SngBowl</key>
+    <string>uni1D83.SngBowl</string>
     <key>LtnSmGStrk</key>
     <string>uni01E5</string>
     <key>LtnSmGStrk.SngBowl</key>
@@ -10224,8 +10229,6 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>uni0261</string>
     <key>LtnSmScriptG.sc</key>
     <string>uni0261.sc</string>
-    <key>LtnSmScriptGPalHook</key>
-    <string>uni1D83</string>
     <key>LtnSmScriptGPalHookDep</key>
     <string>uniF228</string>
     <key>LtnSmSdwysDiaerU</key>
