@@ -5,16 +5,16 @@
   <anchor x="242" y="-500" name="L"/>
   <anchor x="629" y="1570" name="U"/>
   <outline>
-    <component base="LtnDentalClick" xOffset="200"/>
+    <component base="LtnDentalClick" xOffset="200" yOffset="-4"/>
     <contour>
-      <point x="100" y="619" type="line"/>
-      <point x="853" y="619" type="line"/>
-      <point x="853" y="723" type="line"/>
-      <point x="100" y="723" type="line"/>
+      <point x="90" y="619" type="line"/>
+      <point x="843" y="619" type="line"/>
+      <point x="843" y="721" type="line"/>
+      <point x="90" y="721" type="line"/>
     </contour>
     <contour>
-      <point x="40" y="343" type="line"/>
-      <point x="793" y="343" type="line"/>
+      <point x="40" y="345" type="line"/>
+      <point x="793" y="345" type="line"/>
       <point x="793" y="447" type="line"/>
       <point x="40" y="447" type="line"/>
     </contour>
