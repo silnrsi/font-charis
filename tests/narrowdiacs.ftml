@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="../tools/ftml.xsl" type="text/xsl"?>
+<ftml version="1.0">
+  <head>
+    <fontscale>200</fontscale>
+    <fontsrc label="GR">url(../results/Gentium-Regular.ttf)</fontsrc>
+    <fontsrc label="GBkR">url(../results/GentiumBook-Regular.ttf)</fontsrc>
+    <fontsrc label="GB">url(../results/Gentium-Bold.ttf)</fontsrc>
+    <fontsrc label="GBkB">url(../results/GentiumBook-Bold.ttf)</fontsrc>
+    <fontsrc label="GI">url(../results/Gentium-Italic.ttf)</fontsrc>
+    <fontsrc label="GBkI">url(../results/GentiumBook-Italic.ttf)</fontsrc>
+    <fontsrc label="GBI">url(../results/Gentium-BoldItalic.ttf)</fontsrc>
+    <fontsrc label="GBkBI">url(../results/GentiumBook-BoldItalic.ttf)</fontsrc>
+    <fontsrc label="GRv7">url(../references/v7000/Gentium-Regular.ttf)</fontsrc>
+    <fontsrc label="GIv7">url(../references/v7000/Gentium-Italic.ttf)</fontsrc>
+    <title>Narrow diacritics</title>
+  </head>
+  <testgroup label="base + diac">
+    <test label="i + diacsabv">
+      <string>\u000069\u000304 \u000069\u000302 \u000069\u000308 \u000069\u000303 \u000069\u00030C \u000069\u000300</string>
+    </test>
+    <test label="i + diacsblw">
+      <string>\u000069\u000331 \u000069\u000324 \u000069\u000330</string>
+    </test>
+    <test label="l + diacsabv">
+      <string>\u00006C\u000304 \u00006C\u000302 \u00006C\u000308 \u00006C\u000303 \u00006C\u00030C \u00006C\u000300</string>
+    </test>
+    <test label="l + diacsblw">
+      <string>\u00006C\u000331 \u00006C\u000324 \u00006C\u000330</string>
+    </test>
+    <test label="j + diacsabv">
+      <string>\u00006A\u000304 \u00006A\u000302 \u00006A\u000308 \u00006A\u000303 \u00006A\u00030C \u00006A\u000300</string>
+    </test>
+    <test label="j + diacsblw">
+      <string>\u00006A\u000331 \u00006A\u000324 \u00006A\u000330</string>
+    </test>
+    <test label="o + diacsabv">
+      <string>\u00006F\u000304 \u00006F\u000302 \u00006F\u000308 \u00006F\u000303 \u00006F\u00030C \u00006F\u000300</string>
+    </test>
+    <test label="o + diacsblw">
+      <string>\u00006F\u000331 \u00006F\u000324 \u00006F\u000330</string>
+    </test>
+  </testgroup>
+  <testgroup label="doubled base + diac">
+    <test label="d + i + diacsabv + b">
+      <string>\u000064\u000069\u000304\u000069\u000304\u000062 \u000064\u000069\u000302\u000069\u000302\u000062 \u000064\u000069\u000308\u000069\u000308\u000062 \u000064\u000069\u000303\u000069\u000303\u000062 \u000064\u000069\u00030C\u000069\u00030C\u000062 \u000064\u000069\u000300\u000069\u000300\u000062</string>
+    </test>
+    <test label="d + j + diacsabv + b">
+      <string>\u000064\u00006A\u000304\u00006A\u000304\u000062 \u000064\u00006A\u000302\u00006A\u000302\u000062 \u000064\u00006A\u000308\u00006A\u000308\u000062 \u000064\u00006A\u000303\u00006A\u000303\u000062 \u000064\u00006A\u00030C\u00006A\u00030C\u000062 \u000064\u00006A\u000300\u00006A\u000300\u000062</string>
+    </test>
+    <test label="g + i + diacsblw + g">
+      <string>\u000067\u000069\u000331\u000069\u000331\u000067 \u000067\u000069\u000324\u000069\u000324\u000067 \u000067\u000069\u000330\u000069\u000330\u000067</string>
+    </test>
+    <test label="g + l + diacsblw + g">
+      <string>\u000067\u00006C\u000331\u00006C\u000331\u000067 \u000067\u00006C\u000324\u00006C\u000324\u000067 \u000067\u00006C\u000330\u00006C\u000330\u000067</string>
+    </test>
+  </testgroup>
+  <testgroup label="hook + base + diac">
+    <test label="f + i + diacsabv">
+      <string>\u000066\u000069 \u000066\u000069\u000304 \u000066\u000069\u000302 \u000066\u000069\u000308 \u000066\u000069\u000303 \u000066\u000069\u00030C \u000066\u000069\u000300</string>
+    </test>
+    <test label="ɗ + i + diacsabv">
+      <string>\u000257\u000069 \u000257\u000069\u000304 \u000257\u000069\u000302 \u000257\u000069\u000308 \u000257\u000069\u000303 \u000257\u000069\u00030C \u000257\u000069\u000300</string>
+    </test>
+    <test label="ƴ + i + diacsabv">
+      <string>\u0001B4\u000069 \u0001B4\u000069\u000304 \u0001B4\u000069\u000302 \u0001B4\u000069\u000308 \u0001B4\u000069\u000303 \u0001B4\u000069\u00030C \u0001B4\u000069\u000300</string>
+    </test>
+    <test label="Ƴ + i + diacsabv">
+      <string>\u0001B3\u000069 \u0001B3\u000069\u000304 \u0001B3\u000069\u000302 \u0001B3\u000069\u000308 \u0001B3\u000069\u000303 \u0001B3\u000069\u00030C \u0001B3\u000069\u000300</string>
+    </test>
+  </testgroup>
+</ftml>

@@ -14,6 +14,10 @@
 
 %%%%% TESTS
 
+\subsection{Pairs without diacs above}
+
+\pattern[chars="@",reps="group_narrowabv",format="table"]{f@ɗ@ƴ@Ƴ@}
+
 \subsection{Pairs with diacs above}
 
 \pattern[chars="@,#",reps="group_narrowabv,group_combdiacsabv",format="table"]{f@#@#b}
