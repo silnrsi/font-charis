@@ -1,0 +1,29 @@
+\begin[class=fontproof]{document}
+\bidi-off
+\setTestFont[size="14pt"]
+
+%%%%% GROUPS
+
+% Combining diacritics
+\patterngroup[name="combdiacsabv"]{̄̂̈̃̀̌́}
+\patterngroup[name="combdiacsblw"]{̱̤̰}
+
+% Narrow bases
+\patterngroup[name="narrowabv"]{ɪᵻiıіᶖɨ𝼚ɩᵼᴉꞁjјɉȷɟʝ}
+\patterngroup[name="narrowblw"]{ɪᵻiıіїɨɩᵼlƚⱡł}
+
+%%%%% TESTS
+
+\subsection{Pairs with diacs above}
+
+\pattern[chars="@,#",reps="group_narrowabv,group_combdiacsabv",format="table"]{f@#@#b}
+\pattern[chars="@,#",reps="group_narrowabv,group_combdiacsabv",format="table"]{ɗ@#ƴ@#}
+\pattern[chars="@,#",reps="group_narrowabv,group_combdiacsabv",format="table"]{Ƴ@#}
+
+\subsection{Pairs with diacs below}
+
+\pattern[chars="@,#",reps="group_narrowblw,group_combdiacsblw",format="table"]{g@#@#y}
+\pattern[chars="@,#",reps="group_narrowblw,group_combdiacsblw",format="table"]{@#g@#j}
+
+
+\end{document}
