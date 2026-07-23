@@ -2956,6 +2956,7 @@ HQHOH/LtnCapOi H/LtnCapScriptG H/LtnCapEng HCHG</string>
     <string>ModMiddleGraveAccent</string>
     <string>ModGraveAccent</string>
     <string>CombGrave</string>
+    <string>CombGrave.narrow</string>
     <string>RevPrime</string>
     <string>RevDblPrime</string>
     <string>ModMiddleDblGraveAccent</string>
@@ -2965,6 +2966,7 @@ HQHOH/LtnCapOi H/LtnCapScriptG H/LtnCapEng HCHG</string>
     <string>CombCircumBlw</string>
     <string>ModLowCircum</string>
     <string>CombCircum</string>
+    <string>CombCircum.narrow</string>
     <string>CombCircumAcute.VN</string>
     <string>CombCircumGrave.VN</string>
     <string>CombCircumTilde.VN</string>
@@ -3039,6 +3041,7 @@ HQHOH/LtnCapOi H/LtnCapScriptG H/LtnCapEng HCHG</string>
     <string>ModVoicing</string>
     <string>CombCaronBlw</string>
     <string>CombCaron</string>
+    <string>CombCaron.narrow</string>
     <string>CombDoubledCaron</string>
     <string>CombAcute_Macron</string>
     <string>CombMacron_Acute</string>
@@ -3050,8 +3053,10 @@ HQHOH/LtnCapOi H/LtnCapScriptG H/LtnCapEng HCHG</string>
     <string>CombKayanGraveAcute</string>
     <string>ModLowTilde</string>
     <string>CombTildeBlw</string>
+    <string>CombTildeBlw.narrow</string>
     <string>CombTildeOverlay</string>
     <string>CombTilde</string>
+    <string>CombTilde.narrow</string>
     <string>CombNotTildeAbv</string>
     <string>CombTildeOverlay.Lrg</string>
     <string>TildeOperator</string>
@@ -3123,7 +3128,9 @@ HQHOH/LtnCapOi H/LtnCapScriptG H/LtnCapEng HCHG</string>
     <string>IdenticalTo</string>
     <string>MinusPlusSgn</string>
     <string>CombDiaerBlw</string>
+    <string>CombDiaerBlw.narrow</string>
     <string>CombDiaer</string>
+    <string>CombDiaer.narrow</string>
     <string>CombDiaer.UU</string>
     <string>CombDiaer.LL</string>
     <string>CombDiaer.UL</string>
@@ -4638,12 +4645,16 @@ HQHOH/LtnCapOi H/LtnCapScriptG H/LtnCapEng HCHG</string>
     <string>uni0310</string>
     <key>CombCaron</key>
     <string>uni030C</string>
+    <key>CombCaron.narrow</key>
+    <string>uni030C.narrow</string>
     <key>CombCaronBlw</key>
     <string>uni032C</string>
     <key>CombCedilla</key>
     <string>uni0327</string>
     <key>CombCircum</key>
     <string>uni0302</string>
+    <key>CombCircum.narrow</key>
+    <string>uni0302.narrow</string>
     <key>CombCircumAcute.VN</key>
     <string>uni0302_acutecomb.VN</string>
     <key>CombCircumBlw</key>
@@ -4882,8 +4893,12 @@ HQHOH/LtnCapOi H/LtnCapScriptG H/LtnCapEng HCHG</string>
     <string>uni0308.UL</string>
     <key>CombDiaer.UU</key>
     <string>uni0308.UU</string>
+    <key>CombDiaer.narrow</key>
+    <string>uni0308.narrow</string>
     <key>CombDiaerBlw</key>
     <string>uni0324</string>
+    <key>CombDiaerBlw.narrow</key>
+    <string>uni0324.narrow</string>
     <key>CombDiaerRaisedLftDot</key>
     <string>uni1ADC</string>
     <key>CombDiaerRing</key>
@@ -4916,6 +4931,8 @@ HQHOH/LtnCapOi H/LtnCapScriptG H/LtnCapEng HCHG</string>
     <string>uni034F</string>
     <key>CombGrave</key>
     <string>gravecomb</string>
+    <key>CombGrave.narrow</key>
+    <string>gravecomb.narrow</string>
     <key>CombGraveBlw</key>
     <string>uni0316</string>
     <key>CombGraveVertLine</key>
@@ -5140,8 +5157,12 @@ HQHOH/LtnCapOi H/LtnCapScriptG H/LtnCapEng HCHG</string>
     <string>uni1ABA</string>
     <key>CombTilde</key>
     <string>tildecomb</string>
+    <key>CombTilde.narrow</key>
+    <string>tildecomb.narrow</string>
     <key>CombTildeBlw</key>
     <string>uni0330</string>
+    <key>CombTildeBlw.narrow</key>
+    <string>uni0330.narrow</string>
     <key>CombTildeOverlay</key>
     <string>uni0334</string>
     <key>CombTildeOverlay.Lrg</key>
