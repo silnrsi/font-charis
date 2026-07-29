@@ -2,7 +2,7 @@
 <glyph name="LtnSmOi" format="2">
   <advance width="1709"/>
   <unicode hex="01A3"/>
-  <anchor x="791" y="-100" name="L"/>
+  <anchor x="471" y="-100" name="L"/>
   <anchor x="1035" y="1100" name="U"/>
   <outline>
     <contour>
@@ -55,10 +55,4 @@
       <point x="1483" y="1024" type="line"/>
     </contour>
   </outline>
-  <lib>
-    <dict>
-      <key>public.markColor</key>
-      <string>0.97,1,0,1</string>
-    </dict>
-  </lib>
 </glyph>
