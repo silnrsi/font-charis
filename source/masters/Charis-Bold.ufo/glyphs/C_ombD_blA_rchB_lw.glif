@@ -4,7 +4,49 @@
   <anchor x="-598" y="-500" name="L"/>
   <anchor x="-598" y="-100" name="_L"/>
   <outline>
-    <component base="CombInvDblArchBlw"/>
+    <contour>
+      <point x="-876" y="-486" type="curve"/>
+      <point x="-766" y="-486" type="line"/>
+      <point x="-793" y="-452"/>
+      <point x="-816" y="-403"/>
+      <point x="-816" y="-357" type="curve" smooth="yes"/>
+      <point x="-816" y="-295"/>
+      <point x="-781" y="-259"/>
+      <point x="-735" y="-259" type="curve" smooth="yes"/>
+      <point x="-689" y="-259"/>
+      <point x="-657" y="-305"/>
+      <point x="-657" y="-345" type="curve"/>
+      <point x="-657" y="-415" type="line"/>
+      <point x="-536" y="-415" type="line"/>
+      <point x="-536" y="-345" type="line"/>
+      <point x="-536" y="-304"/>
+      <point x="-502" y="-259"/>
+      <point x="-456" y="-259" type="curve" smooth="yes"/>
+      <point x="-410" y="-259"/>
+      <point x="-377" y="-294"/>
+      <point x="-377" y="-356" type="curve" smooth="yes"/>
+      <point x="-377" y="-402"/>
+      <point x="-400" y="-451"/>
+      <point x="-427" y="-486" type="curve"/>
+      <point x="-317" y="-486" type="line"/>
+      <point x="-283" y="-448"/>
+      <point x="-255" y="-399"/>
+      <point x="-255" y="-329" type="curve" smooth="yes"/>
+      <point x="-255" y="-228"/>
+      <point x="-314" y="-125"/>
+      <point x="-416" y="-125" type="curve" smooth="yes"/>
+      <point x="-498" y="-125"/>
+      <point x="-579" y="-202"/>
+      <point x="-595" y="-271" type="curve"/>
+      <point x="-612" y="-202"/>
+      <point x="-695" y="-125"/>
+      <point x="-775" y="-125" type="curve" smooth="yes"/>
+      <point x="-877" y="-125"/>
+      <point x="-937" y="-228"/>
+      <point x="-937" y="-330" type="curve" smooth="yes"/>
+      <point x="-937" y="-399"/>
+      <point x="-910" y="-448"/>
+    </contour>
   </outline>
   <lib>
     <dict>
