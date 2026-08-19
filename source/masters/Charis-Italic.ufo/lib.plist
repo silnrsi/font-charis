@@ -3438,7 +3438,14 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>CombDblRtArrwBlw.blwhigh.ulow</string>
     <string>CombDblRtArrwBlw.blwhigh.umid</string>
     <string>CombDblRtArrwBlw.blwhigh</string>
+    <string>CombDblRtArrwAbv.low</string>
+    <string>CombDblRtArrwAbv.low.lhigh</string>
+    <string>CombDblRtArrwAbv.mid</string>
+    <string>CombDblRtArrwAbv.mid.lhigh</string>
     <string>CombDblRtArrwAbv</string>
+    <string>CombDblRtArrwAbv.lhigh</string>
+    <string>CombDblRtArrwAbv.high</string>
+    <string>CombDblRtArrwAbv.high.lhigh</string>
     <string>LftRtArrw</string>
     <string>CombLftRtArrwBlw</string>
     <string>CombLftRtArrwAbv</string>
@@ -4860,6 +4867,20 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>uni035A</string>
     <key>CombDblRtArrwAbv</key>
     <string>uni1AEB</string>
+    <key>CombDblRtArrwAbv.high</key>
+    <string>uni1AEB.high</string>
+    <key>CombDblRtArrwAbv.high.lhigh</key>
+    <string>uni1AEB.high.lhigh</string>
+    <key>CombDblRtArrwAbv.lhigh</key>
+    <string>uni1AEB.lhigh</string>
+    <key>CombDblRtArrwAbv.low</key>
+    <string>uni1AEB.low</string>
+    <key>CombDblRtArrwAbv.low.lhigh</key>
+    <string>uni1AEB.low.lhigh</string>
+    <key>CombDblRtArrwAbv.mid</key>
+    <string>uni1AEB.mid</string>
+    <key>CombDblRtArrwAbv.mid.lhigh</key>
+    <string>uni1AEB.mid.lhigh</string>
     <key>CombDblRtArrwBlw</key>
     <string>uni0362</string>
     <key>CombDblRtArrwBlw.blwhigh</key>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="CombDblRtArrwAbv" format="2">
   <unicode hex="1AEB"/>
-  <anchor x="0" y="-1000" name="L"/>
-  <anchor x="0" y="1588" name="U"/>
+  <anchor x="0" y="-525" name="L"/>
+  <anchor x="0" y="2100" name="U"/>
   <outline>
-    <component base="CombDblRtArrwBlw"/>
+    <component base="CombDblRtArrwBlw" yOffset="2660"/>
   </outline>
   <lib>
     <dict>
