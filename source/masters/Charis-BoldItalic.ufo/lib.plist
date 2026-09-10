@@ -3787,6 +3787,7 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>LtnSmDz.sc</string>
     <string>LtnSmDzCaron.sc</string>
     <string>LtnSmEth.sc</string>
+    <string>LtnSmDShortStrk.sc</string>
     <string>LtnCapDSmZ.sc</string>
     <string>LtnCapDSmZCaron.sc</string>
     <string>LtnSmE.sc</string>
@@ -4179,6 +4180,7 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>LtnSmTnTwo.sc</string>
     <string>LtnSmEsh.sc</string>
     <string>LtnSmSHook.sc</string>
+    <string>LtnSmSShortStrk.sc</string>
     <string>LtnSmT.sc</string>
     <string>LtnSmTCaron.Caron.sc</string>
     <string>LtnSmTDotAbv.sc</string>
@@ -8726,6 +8728,8 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>uniF226</string>
     <key>LtnSmDShortStrk</key>
     <string>uniA7C8</string>
+    <key>LtnSmDShortStrk.sc</key>
+    <string>uniA7C7.sc</string>
     <key>LtnSmDTail</key>
     <string>uni0256</string>
     <key>LtnSmDTail.sc</key>
@@ -10238,6 +10242,8 @@ x/CombTrndCommaAbv x/CombTrndCommaAbv.Lrg x/CombRevCommaAbv x/CombRevCommaAbv.Lr
     <string>uniF22F</string>
     <key>LtnSmSShortStrk</key>
     <string>uniA7CA</string>
+    <key>LtnSmSShortStrk.sc</key>
+    <string>uniA7C9.sc</string>
     <key>LtnSmSSwashTail</key>
     <string>uni023F</string>
     <key>LtnSmSSwashTail.sc</key>
