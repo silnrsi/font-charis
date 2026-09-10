@@ -1088,7 +1088,6 @@ LtnSmSDotBlw.sc = LtnSmS.sc + CombDotBlw@L
 LtnSmSDotBlwDotAbv.sc = LtnSmS.sc + CombDotBlw@L + CombDotAbv@LtnSmS.sc:U
 LtnSmSCommaBlw.sc = LtnSmS.sc + CombCommaBlw@L
 LtnSmSCedilla.sc = LtnSmS.sc + CombCedilla@H
-LtnSmSharpS.sc = LtnSmS.sc & LtnSmS.sc
 LtnSmTCaron.Caron.sc = LtnSmT.sc + CombCaron@U
 LtnSmTDotAbv.sc = LtnSmT.sc + CombDotAbv@U
 LtnSmTCircumBlw.sc = LtnSmT.sc + CombCircumBlw@L
