@@ -633,11 +633,18 @@ def doit(args):
             # TODO: may need a better way to convert lower to upper
             upper_base_diac_lst, upper_base_lst = [], []
             for lower_uid in base_diac_lst:
-                try: upper_base_diac_lst.append(ord(chr(lower_uid).upper()))
-                except: upper_base_diac_lst.append(ord('X'))
+                upper_str = get_ucd(lower_uid, 'suc')
+                if upper_str:
+                    upper_base_diac_lst.append(ord(upper_str))
+                else:
+                    upper_base_diac_lst.append(lower_uid)
             for lower_uid in base_lst:
-                try: upper_base_lst.append(ord(chr(lower_uid).upper()))
-                except: upper_base_lst.append(ord('X'))
+                upper_str = get_ucd(lower_uid, 'suc')
+                if upper_str:
+                    upper_base_lst.append(ord(upper_str))
+                else:
+                    # upper_base_lst.append(ord('X'))
+                    upper_base_lst.append(lower_uid)
             builder.render(upper_base_diac_lst, ftml, descUIDs=upper_base_lst)
             # ftml.setFeatures([("c2sc", "1")]) # TODO: kludgy way to add a 'c2sc' test
             # builder.render(upper_base_diac_lst, ftml, descUIDs=upper_base_lst)

@@ -10,6 +10,7 @@ from collections import OrderedDict
 import re
 import silfont.ufo as ufo
 from silfont.core import execute
+from palaso.unicode.ucd import get_ucd
 
 class_spec_lst = [('smcp', 'sc'),
                   ('lit', 'SngStory', 'SngBowl'),
@@ -141,12 +142,10 @@ class Font(object):
 
         # create classes for c2sc
         for uni_str in self.unicodes:
-            upper_unichr = chr(int(uni_str, 16))
-            if upper_unichr.isupper() and upper_unichr.lower(): # TODO: Is this complete?
-                lower_unichr = upper_unichr.lower()
-                if len(lower_unichr) > 1: continue
-                # lower_str = hex(ord(lower_unichr))[2:].zfill(4)
-                lower_str = "{0:04X}".format(ord(lower_unichr))
+            upper_usv = int(uni_str, 16)
+            if get_ucd(upper_usv, 'Upper') and get_ucd(upper_usv, 'slc'):
+                lower_usv = ord(get_ucd(upper_usv, 'slc'))
+                lower_str = "{0:04X}".format(lower_usv)
                 if lower_str in self.unicodes:
                     lower_glyph_lst = self.unicodes[lower_str]
                     assert(len(lower_glyph_lst) == 1) # no double encoded glyphs allowed
