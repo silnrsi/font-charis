@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmCapRPalHook" format="2">
+  <advance width="1153"/>
+  <unicode hex="1DF35"/>
+  <anchor x="599" y="-100" name="L"/>
+  <anchor x="599" y="1100" name="U"/>
+  <outline>
+    <component base="LtnSmCapR"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.99,0.62,0.11,1</string>
+    </dict>
+  </lib>
+</glyph>

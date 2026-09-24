@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="CombSqBracketsAbv" format="2">
+  <advance width="1732"/>
+  <unicode hex="1AC5"/>
+  <outline>
+    <component base="LftSqrBrac"/>
+    <component base="RtSqrBrac" xOffset="866"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.99,0.62,0.11,1</string>
+    </dict>
+  </lib>
+</glyph>

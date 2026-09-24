@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmMHookBarred" format="2">
+  <advance width="1688"/>
+  <unicode hex="1DF4C"/>
+  <anchor x="422" y="-100" name="L"/>
+  <anchor x="863" y="1100" name="U"/>
+  <outline>
+    <component base="LtnSmMHook"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.99,0.62,0.11,1</string>
+    </dict>
+  </lib>
+</glyph>

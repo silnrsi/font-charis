@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmBetaPalHook" format="2">
+  <advance width="1193"/>
+  <unicode hex="1DF3B"/>
+  <anchor x="720" y="-100" name="L"/>
+  <anchor x="620" y="1540" name="U"/>
+  <outline>
+    <component base="LtnSmBeta"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.99,0.62,0.11,1</string>
+    </dict>
+  </lib>
+</glyph>

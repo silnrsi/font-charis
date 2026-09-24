@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="LtnSmChiPalHook" format="2">
+  <advance width="1122"/>
+  <unicode hex="1DF3D"/>
+  <anchor x="556" y="-500" name="L"/>
+  <anchor x="556" y="1100" name="U"/>
+  <outline>
+    <component base="LtnSmChi"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.99,0.62,0.11,1</string>
+    </dict>
+  </lib>
+</glyph>
