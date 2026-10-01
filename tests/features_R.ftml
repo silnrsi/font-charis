@@ -103,14 +103,16 @@
   <testgroup label="cv44"/>
   <testgroup label="cv46">
     <test label="U+0254
-U+1D53">
-      <comment>LtnSmOpnO LtnSupSmOpnO</comment>
-      <string>\u000254\u000315\u001D53\u000315</string>
+U+1D53
+U+1DF42">
+      <comment>LtnSmOpnO LtnSupSmOpnO LtnSmOpnOBarred</comment>
+      <string>\u000254\u000315\u001D53\u000315\u01DF42\u000315</string>
     </test>
     <test label="U+0254
-U+1D53" stylename="cv46_1">
-      <comment>LtnSmOpnO LtnSupSmOpnO</comment>
-      <string>\u000254\u000315\u001D53\u000315</string>
+U+1D53
+U+1DF42" stylename="cv46_1">
+      <comment>LtnSmOpnO LtnSupSmOpnO LtnSmOpnOBarred</comment>
+      <string>\u000254\u000315\u001D53\u000315\u01DF42\u000315</string>
     </test>
   </testgroup>
   <testgroup label="cv47"/>

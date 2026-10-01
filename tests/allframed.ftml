@@ -4458,6 +4458,18 @@
       <comment>CombStrongCentralizationStrkBlw</comment>
       <string>o\u001ABAo</string>
     </test>
+    <test label="U+1ABB">
+      <comment>CombParensAbv</comment>
+      <string>o\u001ABBo</string>
+    </test>
+    <test label="U+1ABC">
+      <comment>CombDblParensAbv</comment>
+      <string>o\u001ABCo</string>
+    </test>
+    <test label="U+1ABD">
+      <comment>CombParensBlw</comment>
+      <string>o\u001ABDo</string>
+    </test>
     <test label="U+1ABF">
       <comment>CombLtnSmWBlw</comment>
       <string>o\u001ABFo</string>
@@ -4465,6 +4477,26 @@
     <test label="U+1AC0">
       <comment>CombLtnSmTurnedWBlw</comment>
       <string>o\u001AC0o</string>
+    </test>
+    <test label="U+1AC1">
+      <comment>CombLftParenAbv</comment>
+      <string>o\u001AC1o</string>
+    </test>
+    <test label="U+1AC2">
+      <comment>CombRtParenAbv</comment>
+      <string>o\u001AC2o</string>
+    </test>
+    <test label="U+1AC3">
+      <comment>CombLftParenBlw</comment>
+      <string>o\u001AC3o</string>
+    </test>
+    <test label="U+1AC4">
+      <comment>CombRtParenBlw</comment>
+      <string>o\u001AC4o</string>
+    </test>
+    <test label="U+1AC5">
+      <comment>CombSqBracketsAbv</comment>
+      <string>o\u001AC5o</string>
     </test>
     <test label="U+1AC6">
       <comment>CombNumSgn</comment>
@@ -4562,6 +4594,14 @@
       <comment>CombDotRingBlw</comment>
       <string>o\u001ADDo</string>
     </test>
+    <test label="U+1ADE">
+      <comment>CombGraveDot</comment>
+      <string>o\u001ADEo</string>
+    </test>
+    <test label="U+1ADF">
+      <comment>CombDotAcute</comment>
+      <string>o\u001ADFo</string>
+    </test>
     <test label="U+1AE0">
       <comment>CombLftTackAbv</comment>
       <string>o\u001AE0o</string>
@@ -4609,6 +4649,26 @@
     <test label="U+1AEB">
       <comment>CombDblRtArrwAbv</comment>
       <string>o\u001AEBo</string>
+    </test>
+    <test label="U+1AEC">
+      <comment>CombCaronAcute</comment>
+      <string>o\u001AECo</string>
+    </test>
+    <test label="U+1AED">
+      <comment>CombVertLineDblAcute</comment>
+      <string>o\u001AEDo</string>
+    </test>
+    <test label="U+1AEE">
+      <comment>CombDblGraveBlw</comment>
+      <string>o\u001AEEo</string>
+    </test>
+    <test label="U+1AEF">
+      <comment>CombDblAcuteBlw</comment>
+      <string>o\u001AEFo</string>
+    </test>
+    <test label="U+1AF0">
+      <comment>CombDblCommaAbv</comment>
+      <string>o\u001AF0o</string>
     </test>
     <test label="U+1C89">
       <comment>CyCapTje</comment>
@@ -6926,6 +6986,10 @@
       <comment>SubRtParen</comment>
       <string>o\u00208Eo</string>
     </test>
+    <test label="U+208F">
+      <comment>ModHighLowVertLine</comment>
+      <string>o\u00208Fo</string>
+    </test>
     <test label="U+2090">
       <comment>LtnSubSmA</comment>
       <string>o\u002090o</string>
@@ -8986,6 +9050,14 @@
       <comment>LtnSmSFullDiagStrk</comment>
       <string>o\u00A7CDo</string>
     </test>
+    <test label="U+A7CE">
+      <comment>LtnCapRevGlottalStop</comment>
+      <string>o\u00A7CEo</string>
+    </test>
+    <test label="U+A7CF">
+      <comment>LtnSmRevGlottalStop</comment>
+      <string>o\u00A7CFo</string>
+    </test>
     <test label="U+A7D0">
       <comment>LtnCapClosedInsularG</comment>
       <string>o\u00A7D0o</string>
@@ -9021,6 +9093,14 @@
     <test label="U+A7DC">
       <comment>LtnCapLambdaStrk</comment>
       <string>o\u00A7DCo</string>
+    </test>
+    <test label="U+A7DD">
+      <comment>LtnCapClosedOmega</comment>
+      <string>o\u00A7DDo</string>
+    </test>
+    <test label="U+A7E2">
+      <comment>LtnCapRLngLeg</comment>
+      <string>o\u00A7E2o</string>
     </test>
     <test label="U+A7F2">
       <comment>ModCapC</comment>
@@ -10581,6 +10661,186 @@
     <test label="U+1DF2A">
       <comment>LtnSmTMidLftHook</comment>
       <string>o\u01DF2Ao</string>
+    </test>
+    <test label="U+1DF2B">
+      <comment>LtnSmDezhDigraphCurl</comment>
+      <string>o\u01DF2Bo</string>
+    </test>
+    <test label="U+1DF2C">
+      <comment>LtnSmTeshDigraphCurl</comment>
+      <string>o\u01DF2Co</string>
+    </test>
+    <test label="U+1DF2D">
+      <comment>LtnSmDHookPalHook</comment>
+      <string>o\u01DF2Do</string>
+    </test>
+    <test label="U+1DF2E">
+      <comment>LtnSmDzDigraphPalHook</comment>
+      <string>o\u01DF2Eo</string>
+    </test>
+    <test label="U+1DF2F">
+      <comment>LtnSmEthPalHook</comment>
+      <string>o\u01DF2Fo</string>
+    </test>
+    <test label="U+1DF30">
+      <comment>LtnSmCapGPalHook</comment>
+      <string>o\u01DF30o</string>
+    </test>
+    <test label="U+1DF31">
+      <comment>LtnSmGammaPalHook</comment>
+      <string>o\u01DF31o</string>
+    </test>
+    <test label="U+1DF32">
+      <comment>LtnSmHStrkPalHook</comment>
+      <string>o\u01DF32o</string>
+    </test>
+    <test label="U+1DF33">
+      <comment>LtnSmPhiPalHook</comment>
+      <string>o\u01DF33o</string>
+    </test>
+    <test label="U+1DF34">
+      <comment>LtnSmQPalHook</comment>
+      <string>o\u01DF34o</string>
+    </test>
+    <test label="U+1DF35">
+      <comment>LtnSmCapRPalHook</comment>
+      <string>o\u01DF35o</string>
+    </test>
+    <test label="U+1DF36">
+      <comment>LtnSmCapInvRPalHook</comment>
+      <string>o\u01DF36o</string>
+    </test>
+    <test label="U+1DF37">
+      <comment>LtnSmRHookTailPalHook</comment>
+      <string>o\u01DF37o</string>
+    </test>
+    <test label="U+1DF38">
+      <comment>LtnSmTsDigraphPalHook</comment>
+      <string>o\u01DF38o</string>
+    </test>
+    <test label="U+1DF39">
+      <comment>LtnSmVHookPalHook</comment>
+      <string>o\u01DF39o</string>
+    </test>
+    <test label="U+1DF3A">
+      <comment>LtnRevGlottalStopPalHook</comment>
+      <string>o\u01DF3Ao</string>
+    </test>
+    <test label="U+1DF3B">
+      <comment>LtnSmBetaPalHook</comment>
+      <string>o\u01DF3Bo</string>
+    </test>
+    <test label="U+1DF3C">
+      <comment>LtnSmThetaPalHook</comment>
+      <string>o\u01DF3Co</string>
+    </test>
+    <test label="U+1DF3D">
+      <comment>LtnSmChiPalHook</comment>
+      <string>o\u01DF3Do</string>
+    </test>
+    <test label="U+1DF3E">
+      <comment>LtnSmTurnedHBarred</comment>
+      <string>o\u01DF3Eo</string>
+    </test>
+    <test label="U+1DF3F">
+      <comment>LtnSmWBarred</comment>
+      <string>o\u01DF3Fo</string>
+    </test>
+    <test label="U+1DF40">
+      <comment>LtnCapABarred</comment>
+      <string>o\u01DF40o</string>
+    </test>
+    <test label="U+1DF41">
+      <comment>LtnSmABarred</comment>
+      <string>o\u01DF41o</string>
+    </test>
+    <test label="U+1DF42">
+      <comment>LtnSmOpnOBarred</comment>
+      <string>o\u01DF42o</string>
+    </test>
+    <test label="U+1DF43">
+      <comment>LtnSmCapEBarred</comment>
+      <string>o\u01DF43o</string>
+    </test>
+    <test label="U+1DF44">
+      <comment>LtnSmOpnEBarred</comment>
+      <string>o\u01DF44o</string>
+    </test>
+    <test label="U+1DF45">
+      <comment>LtnSmGBarredPalHook</comment>
+      <string>o\u01DF45o</string>
+    </test>
+    <test label="U+1DF46">
+      <comment>LtnSmHBarred</comment>
+      <string>o\u01DF46o</string>
+    </test>
+    <test label="U+1DF47">
+      <comment>LtnSmHHookBarred</comment>
+      <string>o\u01DF47o</string>
+    </test>
+    <test label="U+1DF48">
+      <comment>LtnCapKBarred</comment>
+      <string>o\u01DF48o</string>
+    </test>
+    <test label="U+1DF49">
+      <comment>LtnSmKBarred</comment>
+      <string>o\u01DF49o</string>
+    </test>
+    <test label="U+1DF4A">
+      <comment>LtnCapMBarred</comment>
+      <string>o\u01DF4Ao</string>
+    </test>
+    <test label="U+1DF4B">
+      <comment>LtnSmMBarred</comment>
+      <string>o\u01DF4Bo</string>
+    </test>
+    <test label="U+1DF4C">
+      <comment>LtnSmMHookBarred</comment>
+      <string>o\u01DF4Co</string>
+    </test>
+    <test label="U+1DF4D">
+      <comment>LtnCapNBarred</comment>
+      <string>o\u01DF4Do</string>
+    </test>
+    <test label="U+1DF4E">
+      <comment>LtnSmNBarred</comment>
+      <string>o\u01DF4Eo</string>
+    </test>
+    <test label="U+1DF4F">
+      <comment>LtnSmEngBarred</comment>
+      <string>o\u01DF4Fo</string>
+    </test>
+    <test label="U+1DF50">
+      <comment>LtnSmTurnedRBarred</comment>
+      <string>o\u01DF50o</string>
+    </test>
+    <test label="U+1DF51">
+      <comment>LtnCapVBarred</comment>
+      <string>o\u01DF51o</string>
+    </test>
+    <test label="U+1DF52">
+      <comment>LtnSmVBarred</comment>
+      <string>o\u01DF52o</string>
+    </test>
+    <test label="U+1DF53">
+      <comment>LtnSmClosedOmegaBarred</comment>
+      <string>o\u01DF53o</string>
+    </test>
+    <test label="U+1DF54">
+      <comment>LtnSmChiBarred</comment>
+      <string>o\u01DF54o</string>
+    </test>
+    <test label="U+1DF55">
+      <comment>LtnSmYLowStrk</comment>
+      <string>o\u01DF55o</string>
+    </test>
+    <test label="U+1DF56">
+      <comment>LtnGlottalStopDblStrk</comment>
+      <string>o\u01DF56o</string>
+    </test>
+    <test label="U+1DF67">
+      <comment>LtnSmLezhCurl</comment>
+      <string>o\u01DF67o</string>
     </test>
     <test label="U+1E030">
       <comment>ModCySmA</comment>

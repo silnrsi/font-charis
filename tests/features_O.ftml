@@ -81,13 +81,15 @@
   <testgroup label="cv43"/>
   <testgroup label="cv44"/>
   <testgroup label="cv46">
-    <test label="U+0254">
-      <comment>LtnSmOpnO</comment>
-      <string>\u000254\u000328</string>
+    <test label="U+0254
+U+1DF42">
+      <comment>LtnSmOpnO LtnSmOpnOBarred</comment>
+      <string>\u000254\u000328\u01DF42\u000328</string>
     </test>
-    <test label="U+0254" stylename="cv46_1">
-      <comment>LtnSmOpnO</comment>
-      <string>\u000254\u000328</string>
+    <test label="U+0254
+U+1DF42" stylename="cv46_1">
+      <comment>LtnSmOpnO LtnSmOpnOBarred</comment>
+      <string>\u000254\u000328\u01DF42\u000328</string>
     </test>
   </testgroup>
   <testgroup label="cv47"/>
