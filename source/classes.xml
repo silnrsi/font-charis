@@ -592,19 +592,21 @@
 	</class>
 	<class name="c_dotlss" fixed="0">
 		CySmByelorusUkrainI.Dotless CySmByelorusUkrainI.Dotless.sc CySmJe.Dotless CySmJe.Dotless.sc
-		LtnSmI.Dotless LtnSmI.Dotless.SItal LtnSmI.Dotless.sc LtnSmIDotBlw.Dotless.sc
-		LtnSmIRetrHook.Dotless LtnSmIStrk.Dotless LtnSmIStrk.Dotless.sc LtnSmIStrkRetrHook.Dotless
-		LtnSmJ.Dotless LtnSmJ.Dotless.sc LtnSmJCrossedTail.Dotless LtnSmJCrossedTail.Dotless.sc
-		LtnSmJStrk.Dotless LtnSmJStrk.Dotless.sc LtnSubSmI.Dotless LtnSubSmJ.Dotless
-		LtnSupSmI.Dotless LtnSupSmIStrk.Dotless ModSmJ.Dotless ModSmJCrossedTail.Dotless
+		CySubSmByelorusUkrainI.Dotless LtnSmI.Dotless LtnSmI.Dotless.SItal LtnSmI.Dotless.sc
+		LtnSmIDotBlw.Dotless.sc LtnSmIRetrHook.Dotless LtnSmIStrk.Dotless LtnSmIStrk.Dotless.sc
+		LtnSmIStrkRetrHook.Dotless LtnSmJ.Dotless LtnSmJ.Dotless.sc LtnSmJCrossedTail.Dotless
+		LtnSmJCrossedTail.Dotless.sc LtnSmJStrk.Dotless LtnSmJStrk.Dotless.sc LtnSubSmI.Dotless
+		LtnSubSmJ.Dotless LtnSupSmI.Dotless LtnSupSmIStrk.Dotless ModCySmByelorusUkrainI.Dotless
+		ModSmJ.Dotless ModSmJCrossedTail.Dotless
 	</class>
 	<class name="cno_dotlss" fixed="0">
 		CySmByelorusUkrainI CySmByelorusUkrainI.sc CySmJe CySmJe.sc
-		LtnSmI LtnSmI.SItal LtnSmI.sc LtnSmIDotBlw.sc
-		LtnSmIRetrHook LtnSmIStrk LtnSmIStrk.sc LtnSmIStrkRetrHook
-		LtnSmJ LtnSmJ.sc LtnSmJCrossedTail LtnSmJCrossedTail.sc
-		LtnSmJStrk LtnSmJStrk.sc LtnSubSmI LtnSubSmJ
-		LtnSupSmI LtnSupSmIStrk ModSmJ ModSmJCrossedTail
+		CySubSmByelorusUkrainI LtnSmI LtnSmI.SItal LtnSmI.sc
+		LtnSmIDotBlw.sc LtnSmIRetrHook LtnSmIStrk LtnSmIStrk.sc
+		LtnSmIStrkRetrHook LtnSmJ LtnSmJ.sc LtnSmJCrossedTail
+		LtnSmJCrossedTail.sc LtnSmJStrk LtnSmJStrk.sc LtnSubSmI
+		LtnSubSmJ LtnSupSmI LtnSupSmIStrk ModCySmByelorusUkrainI
+		ModSmJ ModSmJCrossedTail
 	</class>
 	<class name="c_rtrhk" fixed="0">
 		CombOgonek.RetroHook LtnCapAOgonek.RetroHook LtnCapEOgonek.RetroHook LtnCapIOgonek.RetroHook
@@ -924,75 +926,75 @@
 	</class>
 	<class name="c_superscripts" fixed="0">
 		CySubSmA CySubSmBe CySubSmBe.Serb CySubSmByelorusUkrainI
-		CySubSmChe CySubSmDe CySubSmDe.Serb CySubSmDze
-		CySubSmDzhe CySubSmEf CySubSmEl CySubSmEs
-		CySubSmGhe CySubSmGhe.Serb CySubSmGheUpturn CySubSmHa
-		CySubSmHardSgn CySubSmI CySubSmIe CySubSmKa
-		CySubSmO CySubSmPe CySubSmPe.Serb CySubSmSha
-		CySubSmTse CySubSmU CySubSmVe CySubSmYeru
-		CySubSmZe CySubSmZhe GrSubSmBeta GrSubSmChi
-		GrSubSmGamma GrSubSmPhi GrSubSmRho LtnSubSmA
-		LtnSubSmA.SngStory LtnSubSmE LtnSubSmH LtnSubSmI
-		LtnSubSmI.Dotless LtnSubSmJ LtnSubSmJ.Dotless LtnSubSmK
-		LtnSubSmL LtnSubSmL.SItal LtnSubSmM LtnSubSmN
-		LtnSubSmO LtnSubSmP LtnSubSmR LtnSubSmS
-		LtnSubSmSchwa LtnSubSmT LtnSubSmU LtnSubSmV
-		LtnSubSmX LtnSupSmA LtnSupSmA.SngStory LtnSupSmAe
-		LtnSupSmAlpha LtnSupSmB LtnSupSmBarredO LtnSupSmCCurl
-		LtnSupSmCapI LtnSupSmCapOe LtnSupSmCapY LtnSupSmClosedRevOpnE
-		LtnSupSmD LtnSupSmDotlessJStrk LtnSupSmE LtnSupSmEng
-		LtnSupSmEsh LtnSupSmEzh LtnSupSmF LtnSupSmG
-		LtnSupSmG.SngBowl LtnSupSmI LtnSupSmI.Dotless LtnSupSmIStrk
-		LtnSupSmIStrk.Dotless LtnSupSmK LtnSupSmLRetrHook LtnSupSmM
-		LtnSupSmN LtnSupSmNLftHook LtnSupSmO LtnSupSmOStrk
-		LtnSupSmOe LtnSupSmOpnE LtnSupSmOpnO LtnSupSmOpnO.TopSerif
-		LtnSupSmP LtnSupSmQ LtnSupSmRamsHorn LtnSupSmRamsHorn.GammaStyle
-		LtnSupSmRamsHorn.LrgBowl LtnSupSmRevE LtnSupSmRevOpnE LtnSupSmSchwa
-		LtnSupSmScriptG LtnSupSmT LtnSupSmTurnedA LtnSupSmTurnedAlpha
-		LtnSupSmTurnedM LtnSupSmTurnedMLngLeg LtnSupSmTurnedV LtnSupSmU
-		LtnSupSmUBar LtnSupSmUpsilon LtnSupSmV LtnSupSmZ
-		LtnSupSmZCurl ModCapA ModCapAe ModCapB
-		ModCapBarredB ModCapC ModCapD ModCapE
-		ModCapF ModCapG ModCapH ModCapI
-		ModCapJ ModCapK ModCapL ModCapM
-		ModCapN ModCapO ModCapOu ModCapOu.OpenTop
-		ModCapP ModCapQ ModCapR ModCapRevE
-		ModCapRevN ModCapT ModCapU ModCapV
-		ModCapW ModCySmA ModCySmBarredO ModCySmBe
-		ModCySmBe.Serb ModCySmByelorusUkrainI ModCySmChe ModCySmDe
-		ModCySmDe.Serb ModCySmE ModCySmEf ModCySmEl
-		ModCySmEm ModCySmEn ModCySmEr ModCySmEs
-		ModCySmEsDesc ModCySmGhe ModCySmGhe.Serb ModCySmHa
-		ModCySmHardSgn ModCySmI ModCySmIe ModCySmJe
-		ModCySmKa ModCySmO ModCySmPalochka ModCySmPe
-		ModCySmPe.Serb ModCySmSchwa ModCySmSha ModCySmSoftSgn
-		ModCySmStraightU ModCySmStraightUStrk ModCySmTe ModCySmTe.Serb
-		ModCySmTse ModCySmU ModCySmVe ModCySmYeru
-		ModCySmYu ModCySmZe ModCySmZhe ModSmAin
-		ModSmBHook ModSmBeta ModSmBottomHalfO ModSmC
-		ModSmCapAADigraph ModSmCapB ModSmCapG ModSmCapGHook
-		ModSmCapH ModSmCapHDblStrk ModSmCapIStrk ModSmCapInvR
-		ModSmCapL ModSmCapLBelt ModSmCapN ModSmCapR
-		ModSmCapU ModSmCapUBar ModSmChi ModSmClosedOmega
-		ModSmDHook ModSmDTail ModSmDTailHook ModSmDelta
-		ModSmDezhDigraph ModSmDotlessJStrkHook ModSmDzDigraph ModSmDzDigraphCurl
-		ModSmDzRetrHook ModSmEth ModSmFengDigraph ModSmGHook
-		ModSmGamma ModSmGrGamma ModSmGrPhi ModSmH
-		ModSmHHook ModSmHStrk ModSmHeng ModSmHengHook
-		ModSmIota ModSmJ ModSmJ.Dotless ModSmJCrossedTail
-		ModSmJCrossedTail.Dotless ModSmL ModSmLBelt ModSmLMiddleTilde
-		ModSmLPalHook ModSmLRetrHookBelt ModSmLSDigraph ModSmLZDigraph
-		ModSmLezh ModSmLezhRetrHook ModSmMHook ModSmNRetrHook
-		ModSmPhi ModSmR ModSmRFishhook ModSmRHookTail
-		ModSmRevGlottalStop ModSmS ModSmSCurl ModSmSHook
-		ModSmSdwysU ModSmTPalHook ModSmTRetrHook ModSmTcDigraphCurl
-		ModSmTeshDigraph ModSmTheta ModSmTopHalfO ModSmTrndAe
-		ModSmTrndI ModSmTrndOpnE ModSmTrndR ModSmTrndRHook
-		ModSmTsDigraph ModSmTsHook ModSmTurnedH ModSmTurnedRLngLeg
-		ModSmTurnedRLngLegHook ModSmTurnedW ModSmTurnedY ModSmTurnedYBelt
-		ModSmVHook ModSmVHook.StraightLft ModSmVHook.StraightLftHighHook ModSmVRtHook
-		ModSmW ModSmX ModSmY ModSmZRetrHook
-		ModGlottalStop ModRevGlottalStop
+		CySubSmByelorusUkrainI.Dotless CySubSmChe CySubSmDe CySubSmDe.Serb
+		CySubSmDze CySubSmDzhe CySubSmEf CySubSmEl
+		CySubSmEs CySubSmGhe CySubSmGhe.Serb CySubSmGheUpturn
+		CySubSmHa CySubSmHardSgn CySubSmI CySubSmIe
+		CySubSmKa CySubSmO CySubSmPe CySubSmPe.Serb
+		CySubSmSha CySubSmTse CySubSmU CySubSmVe
+		CySubSmYeru CySubSmZe CySubSmZhe GrSubSmBeta
+		GrSubSmChi GrSubSmGamma GrSubSmPhi GrSubSmRho
+		LtnSubSmA LtnSubSmA.SngStory LtnSubSmE LtnSubSmH
+		LtnSubSmI LtnSubSmI.Dotless LtnSubSmJ LtnSubSmJ.Dotless
+		LtnSubSmK LtnSubSmL LtnSubSmL.SItal LtnSubSmM
+		LtnSubSmN LtnSubSmO LtnSubSmP LtnSubSmR
+		LtnSubSmS LtnSubSmSchwa LtnSubSmT LtnSubSmU
+		LtnSubSmV LtnSubSmX LtnSupSmA LtnSupSmA.SngStory
+		LtnSupSmAe LtnSupSmAlpha LtnSupSmB LtnSupSmBarredO
+		LtnSupSmCCurl LtnSupSmCapI LtnSupSmCapOe LtnSupSmCapY
+		LtnSupSmClosedRevOpnE LtnSupSmD LtnSupSmDotlessJStrk LtnSupSmE
+		LtnSupSmEng LtnSupSmEsh LtnSupSmEzh LtnSupSmF
+		LtnSupSmG LtnSupSmG.SngBowl LtnSupSmI LtnSupSmI.Dotless
+		LtnSupSmIStrk LtnSupSmIStrk.Dotless LtnSupSmK LtnSupSmLRetrHook
+		LtnSupSmM LtnSupSmN LtnSupSmNLftHook LtnSupSmO
+		LtnSupSmOStrk LtnSupSmOe LtnSupSmOpnE LtnSupSmOpnO
+		LtnSupSmOpnO.TopSerif LtnSupSmP LtnSupSmQ LtnSupSmRamsHorn
+		LtnSupSmRamsHorn.GammaStyle LtnSupSmRamsHorn.LrgBowl LtnSupSmRevE LtnSupSmRevOpnE
+		LtnSupSmSchwa LtnSupSmScriptG LtnSupSmT LtnSupSmTurnedA
+		LtnSupSmTurnedAlpha LtnSupSmTurnedM LtnSupSmTurnedMLngLeg LtnSupSmTurnedV
+		LtnSupSmU LtnSupSmUBar LtnSupSmUpsilon LtnSupSmV
+		LtnSupSmZ LtnSupSmZCurl ModCapA ModCapAe
+		ModCapB ModCapBarredB ModCapC ModCapD
+		ModCapE ModCapF ModCapG ModCapH
+		ModCapI ModCapJ ModCapK ModCapL
+		ModCapM ModCapN ModCapO ModCapOu
+		ModCapOu.OpenTop ModCapP ModCapQ ModCapR
+		ModCapRevE ModCapRevN ModCapT ModCapU
+		ModCapV ModCapW ModCySmA ModCySmBarredO
+		ModCySmBe ModCySmBe.Serb ModCySmByelorusUkrainI ModCySmByelorusUkrainI.Dotless
+		ModCySmChe ModCySmDe ModCySmDe.Serb ModCySmE
+		ModCySmEf ModCySmEl ModCySmEm ModCySmEn
+		ModCySmEr ModCySmEs ModCySmEsDesc ModCySmGhe
+		ModCySmGhe.Serb ModCySmHa ModCySmHardSgn ModCySmI
+		ModCySmIe ModCySmJe ModCySmKa ModCySmO
+		ModCySmPalochka ModCySmPe ModCySmPe.Serb ModCySmSchwa
+		ModCySmSha ModCySmSoftSgn ModCySmStraightU ModCySmStraightUStrk
+		ModCySmTe ModCySmTe.Serb ModCySmTse ModCySmU
+		ModCySmVe ModCySmYeru ModCySmYu ModCySmZe
+		ModCySmZhe ModSmAin ModSmBHook ModSmBeta
+		ModSmBottomHalfO ModSmC ModSmCapAADigraph ModSmCapB
+		ModSmCapG ModSmCapGHook ModSmCapH ModSmCapHDblStrk
+		ModSmCapIStrk ModSmCapInvR ModSmCapL ModSmCapLBelt
+		ModSmCapN ModSmCapR ModSmCapU ModSmCapUBar
+		ModSmChi ModSmClosedOmega ModSmDHook ModSmDTail
+		ModSmDTailHook ModSmDelta ModSmDezhDigraph ModSmDotlessJStrkHook
+		ModSmDzDigraph ModSmDzDigraphCurl ModSmDzRetrHook ModSmEth
+		ModSmFengDigraph ModSmGHook ModSmGamma ModSmGrGamma
+		ModSmGrPhi ModSmH ModSmHHook ModSmHStrk
+		ModSmHeng ModSmHengHook ModSmIota ModSmJ
+		ModSmJ.Dotless ModSmJCrossedTail ModSmJCrossedTail.Dotless ModSmL
+		ModSmLBelt ModSmLMiddleTilde ModSmLPalHook ModSmLRetrHookBelt
+		ModSmLSDigraph ModSmLZDigraph ModSmLezh ModSmLezhRetrHook
+		ModSmMHook ModSmNRetrHook ModSmPhi ModSmR
+		ModSmRFishhook ModSmRHookTail ModSmRevGlottalStop ModSmS
+		ModSmSCurl ModSmSHook ModSmSdwysU ModSmTPalHook
+		ModSmTRetrHook ModSmTcDigraphCurl ModSmTeshDigraph ModSmTheta
+		ModSmTopHalfO ModSmTrndAe ModSmTrndI ModSmTrndOpnE
+		ModSmTrndR ModSmTrndRHook ModSmTsDigraph ModSmTsHook
+		ModSmTurnedH ModSmTurnedRLngLeg ModSmTurnedRLngLegHook ModSmTurnedW
+		ModSmTurnedY ModSmTurnedYBelt ModSmVHook ModSmVHook.StraightLft
+		ModSmVHook.StraightLftHighHook ModSmVRtHook ModSmW ModSmX
+		ModSmY ModSmZRetrHook ModGlottalStop ModRevGlottalStop
 	</class>
 	<class name="c_grave_comp" fixed="0">
 		LtnCapAGrave LtnCapEGrave LtnCapIGrave LtnCapNGrave

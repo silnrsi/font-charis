@@ -8992,42 +8992,44 @@ U+1EF2" stylename="cv79_1">
   <testgroup label="Dot removal">
     <test label="U+0456
 U+0458
+U+1E068
 U+0069
 U+1D96
 U+0268
 U+1DF1A
-U+006A
-U+029D">
-      <comment>CySmByelorusUkrainI CySmJe LtnSmI LtnSmIRetrHook LtnSmIStrk LtnSmIStrkRetrHook LtnSmJ LtnSmJCrossedTail</comment>
-      <string>\u000456\u000301 \u000458\u000301 i\u000301 \u001D96\u000301 \u000268\u000301 \u01DF1A\u000301 j\u000301 \u00029D\u000301</string>
+U+006A">
+      <comment>CySmByelorusUkrainI CySmJe CySubSmByelorusUkrainI LtnSmI LtnSmIRetrHook LtnSmIStrk LtnSmIStrkRetrHook LtnSmJ</comment>
+      <string>\u000456\u000301 \u000458\u000301 \u01E068\u000301 i\u000301 \u001D96\u000301 \u000268\u000301 \u01DF1A\u000301 j\u000301</string>
     </test>
     <test label="U+0301">
-      <comment>CySmByelorusUkrainI CySmJe LtnSmI LtnSmIRetrHook LtnSmIStrk LtnSmIStrkRetrHook LtnSmJ LtnSmJCrossedTail</comment>
-      <string>\u000456 \u000458 i \u001D96 \u000268 \u01DF1A j \u00029D</string>
+      <comment>CySmByelorusUkrainI CySmJe CySubSmByelorusUkrainI LtnSmI LtnSmIRetrHook LtnSmIStrk LtnSmIStrkRetrHook LtnSmJ</comment>
+      <string>\u000456 \u000458 \u01E068 i \u001D96 \u000268 \u01DF1A j</string>
     </test>
-    <test label="U+0249
+    <test label="U+029D
+U+0249
 U+1D62
 U+2C7C
 U+2071
 U+1DA4
-U+02B2
-U+1DA8
-U+1ECB">
-      <comment>LtnSmJStrk LtnSubSmI LtnSubSmJ LtnSupSmI LtnSupSmIStrk ModSmJ ModSmJCrossedTail LtnSmIDotBlw</comment>
-      <string>\u000249\u000301 \u001D62\u000301 \u002C7C\u000301 \u002071\u000301 \u001DA4\u000301 \u0002B2\u000301 \u001DA8\u000301 \u001ECB\u000301</string>
+U+1E04C
+U+02B2">
+      <comment>LtnSmJCrossedTail LtnSmJStrk LtnSubSmI LtnSubSmJ LtnSupSmI LtnSupSmIStrk ModCySmByelorusUkrainI ModSmJ</comment>
+      <string>\u00029D\u000301 \u000249\u000301 \u001D62\u000301 \u002C7C\u000301 \u002071\u000301 \u001DA4\u000301 \u01E04C\u000301 \u0002B2\u000301</string>
     </test>
     <test label="U+0301">
-      <comment>LtnSmJStrk LtnSubSmI LtnSubSmJ LtnSupSmI LtnSupSmIStrk ModSmJ ModSmJCrossedTail LtnSmIDotBlw</comment>
-      <string>\u000249 \u001D62 \u002C7C \u002071 \u001DA4 \u0002B2 \u001DA8 \u001ECB</string>
+      <comment>LtnSmJCrossedTail LtnSmJStrk LtnSubSmI LtnSubSmJ LtnSupSmI LtnSupSmIStrk ModCySmByelorusUkrainI ModSmJ</comment>
+      <string>\u00029D \u000249 \u001D62 \u002C7C \u002071 \u001DA4 \u01E04C \u0002B2</string>
     </test>
-    <test label="U+1E2D
+    <test label="U+1DA8
+U+1ECB
+U+1E2D
 U+012F">
-      <comment>LtnSmITildeBlw LtnSmIOgonek</comment>
-      <string>\u001E2D\u000301 \u00012F\u000301</string>
+      <comment>ModSmJCrossedTail LtnSmIDotBlw LtnSmITildeBlw LtnSmIOgonek</comment>
+      <string>\u001DA8\u000301 \u001ECB\u000301 \u001E2D\u000301 \u00012F\u000301</string>
     </test>
     <test label="U+0301">
-      <comment>LtnSmITildeBlw LtnSmIOgonek</comment>
-      <string>\u001E2D \u00012F</string>
+      <comment>ModSmJCrossedTail LtnSmIDotBlw LtnSmITildeBlw LtnSmIOgonek</comment>
+      <string>\u001DA8 \u001ECB \u001E2D \u00012F</string>
     </test>
     <test label="U+0456
 U+0458
