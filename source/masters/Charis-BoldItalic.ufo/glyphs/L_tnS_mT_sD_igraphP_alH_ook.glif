@@ -2,15 +2,35 @@
 <glyph name="LtnSmTsDigraphPalHook" format="2">
   <advance width="1384"/>
   <unicode hex="1DF38"/>
-  <anchor x="542" y="-100" name="L"/>
+  <anchor x="517" y="-500" name="L"/>
   <anchor x="842" y="1363" name="U"/>
   <outline>
     <component base="LtnSmTsDigraph"/>
+    <contour>
+      <point x="820" y="-469" type="curve" smooth="yes"/>
+      <point x="1104" y="-469"/>
+      <point x="1178" y="-233"/>
+      <point x="1227" y="-2" type="curve" smooth="yes"/>
+      <point x="1278" y="240" type="line"/>
+      <point x="1090" y="29" type="line"/>
+      <point x="1064" y="-86" type="line" smooth="yes"/>
+      <point x="1038" y="-202"/>
+      <point x="984" y="-297"/>
+      <point x="920" y="-307" type="curve"/>
+      <point x="779" y="-178" type="line"/>
+      <point x="705" y="-195"/>
+      <point x="625" y="-252"/>
+      <point x="625" y="-332" type="curve" smooth="yes"/>
+      <point x="625" y="-410"/>
+      <point x="680" y="-469"/>
+    </contour>
   </outline>
   <lib>
     <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PC</string>
       <key>public.markColor</key>
-      <string>0.99,0.62,0.11,1</string>
+      <string>0.97,1,0,1</string>
     </dict>
   </lib>
 </glyph>

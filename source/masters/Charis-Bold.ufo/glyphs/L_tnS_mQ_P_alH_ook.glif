@@ -1,17 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="LtnSmQPalHook" format="2">
-  <advance width="1235"/>
+  <advance width="1751"/>
   <unicode hex="1DF34"/>
   <anchor x="349" y="-100" name="L"/>
   <anchor x="1235" y="1000" name="R"/>
   <anchor x="623" y="1100" name="U"/>
   <outline>
     <component base="LtnSmQ"/>
+    <contour>
+      <point x="1733" y="-215" type="curve"/>
+      <point x="1733" y="110" type="line"/>
+      <point x="1017" y="110" type="line"/>
+      <point x="999" y="0" type="line"/>
+      <point x="1604" y="0" type="line"/>
+      <point x="1604" y="-219" type="line" smooth="yes"/>
+      <point x="1604" y="-309"/>
+      <point x="1583" y="-326"/>
+      <point x="1531" y="-326" type="curve"/>
+      <point x="1385" y="-139" type="line"/>
+      <point x="1319" y="-176"/>
+      <point x="1268" y="-221"/>
+      <point x="1268" y="-328" type="curve" smooth="yes"/>
+      <point x="1268" y="-426"/>
+      <point x="1397" y="-469"/>
+      <point x="1472" y="-469" type="curve" smooth="yes"/>
+      <point x="1601" y="-469"/>
+      <point x="1733" y="-397"/>
+    </contour>
   </outline>
   <lib>
     <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PC</string>
       <key>public.markColor</key>
-      <string>0.99,0.62,0.11,1</string>
+      <string>0.97,1,0,1</string>
     </dict>
   </lib>
 </glyph>

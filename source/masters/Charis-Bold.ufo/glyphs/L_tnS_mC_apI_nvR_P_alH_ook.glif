@@ -2,15 +2,35 @@
 <glyph name="LtnSmCapInvRPalHook" format="2">
   <advance width="1153"/>
   <unicode hex="1DF36"/>
-  <anchor x="599" y="-100" name="L"/>
+  <anchor x="599" y="-500" name="L"/>
   <anchor x="599" y="1100" name="U"/>
   <outline>
     <component base="LtnSmCapInvR"/>
+    <contour>
+      <point x="889" y="-215" type="curve"/>
+      <point x="889" y="228" type="line"/>
+      <point x="760" y="228" type="line"/>
+      <point x="760" y="-219" type="line" smooth="yes"/>
+      <point x="760" y="-309"/>
+      <point x="717" y="-326"/>
+      <point x="637" y="-326" type="curve"/>
+      <point x="441" y="-139" type="line"/>
+      <point x="375" y="-176"/>
+      <point x="324" y="-221"/>
+      <point x="324" y="-308" type="curve" smooth="yes"/>
+      <point x="324" y="-426"/>
+      <point x="478" y="-469"/>
+      <point x="578" y="-469" type="curve" smooth="yes"/>
+      <point x="707" y="-469"/>
+      <point x="889" y="-397"/>
+    </contour>
   </outline>
   <lib>
     <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PC</string>
       <key>public.markColor</key>
-      <string>0.99,0.62,0.11,1</string>
+      <string>0.97,1,0,1</string>
     </dict>
   </lib>
 </glyph>

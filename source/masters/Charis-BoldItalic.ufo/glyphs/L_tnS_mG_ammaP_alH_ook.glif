@@ -1,16 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="LtnSmGammaPalHook" format="2">
-  <advance width="1030"/>
+  <advance width="1249"/>
   <unicode hex="1DF31"/>
   <anchor x="278" y="-500" name="L"/>
   <anchor x="598" y="1100" name="U"/>
   <outline>
     <component base="LtnSmGamma"/>
+    <contour>
+      <point x="1184" y="489" type="line"/>
+      <point x="741" y="489" type="line"/>
+      <point x="639" y="379" type="line"/>
+      <point x="1039" y="379" type="line"/>
+      <point x="1003" y="204" type="line" smooth="yes"/>
+      <point x="984" y="114"/>
+      <point x="968" y="97"/>
+      <point x="947" y="97" type="curve"/>
+      <point x="853" y="259" type="line"/>
+      <point x="781" y="229"/>
+      <point x="734" y="187"/>
+      <point x="734" y="95" type="curve" smooth="yes"/>
+      <point x="734" y="9"/>
+      <point x="808" y="-46"/>
+      <point x="889" y="-46" type="curve" smooth="yes"/>
+      <point x="1018" y="-46"/>
+      <point x="1098" y="25"/>
+      <point x="1132" y="208" type="curve" smooth="yes"/>
+    </contour>
   </outline>
   <lib>
     <dict>
+      <key>com.schriftgestaltung.Glyphs.shapeOrder</key>
+      <string>PC</string>
       <key>public.markColor</key>
-      <string>0.99,0.62,0.11,1</string>
+      <string>0.97,1,0,1</string>
     </dict>
   </lib>
 </glyph>
